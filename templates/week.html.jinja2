@@ -26,154 +26,87 @@
   --shadow: 0 2px 8px rgba(0,0,0,0.3);
   --shadow-hover: 0 8px 24px rgba(0,0,0,0.5);
 }
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
-  background: var(--bg); color: var(--text); line-height: 1.6;
-  transition: background 0.3s, color 0.3s;
-}
-a { color: var(--primary); text-decoration: none; }
-a:hover { text-decoration: underline; }
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;transition:background 0.3s,color 0.3s}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
 
-/* Top bar */
-.topbar {
-  background: linear-gradient(135deg, #1a365d, #2b6cb0);
-  color: #fff; padding: 1rem 1.5rem;
-  display: flex; align-items: center; gap: 1rem;
-  position: sticky; top: 0; z-index: 100;
-}
-.back-btn {
-  color: #fff; font-size: 1.2rem; font-weight: 700;
-  padding: 0.4rem 0.8rem; border-radius: var(--radius-sm);
-  border: 1.5px solid rgba(255,255,255,0.3);
-  transition: all 0.2s; white-space: nowrap;
-}
-.back-btn:hover { background: rgba(255,255,255,0.15); text-decoration: none; }
-.topbar .title-area { flex: 1; min-width: 0; }
-.topbar .week-range { font-size: 0.8rem; opacity: 0.8; }
-.topbar .week-topic { font-size: 1.05rem; font-weight: 700; line-height: 1.3; }
-.topbar .theme-toggle {
-  padding: 0.4rem 0.8rem; border: 1.5px solid rgba(255,255,255,0.3);
-  border-radius: var(--radius-sm); background: transparent;
-  color: #fff; cursor: pointer; font-size: 0.85rem;
-  transition: all 0.2s; white-space: nowrap;
-}
-.topbar .theme-toggle:hover { background: rgba(255,255,255,0.15); }
+/* === Top Bar === */
+.topbar{background:linear-gradient(135deg,#1a365d,#2b6cb0);color:#fff;padding:0.8rem 1.5rem;display:flex;align-items:center;gap:1rem;position:sticky;top:0;z-index:100}
+.back-btn{color:#fff;font-size:0.95rem;font-weight:600;padding:0.4rem 0.8rem;border-radius:var(--radius-sm);border:1.5px solid rgba(255,255,255,0.3);transition:all 0.2s;white-space:nowrap}
+.back-btn:hover{background:rgba(255,255,255,0.15);text-decoration:none}
+.topbar .title-area{flex:1;min-width:0}
+.topbar .week-range{font-size:0.78rem;opacity:0.8}
+.topbar .week-topic{font-size:1rem;font-weight:700;line-height:1.3}
+.topbar .theme-toggle{padding:0.4rem 0.8rem;border:1.5px solid rgba(255,255,255,0.3);border-radius:var(--radius-sm);background:transparent;color:#fff;cursor:pointer;font-size:0.85rem;transition:all 0.2s;white-space:nowrap}
+.topbar .theme-toggle:hover{background:rgba(255,255,255,0.15)}
 
-.container { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
+.container{max-width:1100px;margin:0 auto;padding:1.5rem}
 
-/* Keywords bar */
-.keywords-bar {
-  display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center;
-  margin-bottom: 1.2rem; padding: 0.8rem 1rem;
-  background: var(--bg-card); border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-}
-.keywords-bar .kw-label { font-size: 0.85rem; color: var(--text-muted); font-weight: 600; }
-.keywords-bar .kw-tag {
-  padding: 0.25rem 0.65rem; border-radius: 12px;
-  font-size: 0.8rem; font-weight: 500;
-  background: var(--teal-light); color: var(--teal);
-}
+/* === Article Section === */
+.article-section{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;margin-bottom:1.5rem;box-shadow:var(--shadow)}
+.article-section h2{font-size:1.3rem;color:var(--primary-dark);margin:1.5rem 0 0.75rem;padding-bottom:0.4rem;border-bottom:2px solid var(--primary-light)}
+.article-section h2:first-child{margin-top:0}
+.article-section p{margin-bottom:0.8rem;line-height:1.8;color:var(--text)}
+.article-section strong{color:var(--primary-dark)}
+.article-section ol,.article-section ul{padding-left:1.5rem;margin-bottom:0.8rem}
+.article-section li{margin-bottom:0.5rem;line-height:1.7}
+.article-tag{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-right:0.5rem}
+.tag-overview{background:var(--primary-light);color:var(--primary-dark)}
+.tag-highlight{background:var(--accent-light);color:var(--accent)}
+.tag-innovative{background:var(--gold-light);color:var(--gold)}
+.tag-recommend{background:var(--teal-light);color:var(--teal)}
 
-/* Controls */
-.controls {
-  display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center;
-  margin-bottom: 1rem;
-}
-.search-box { flex: 1; min-width: 200px; position: relative; }
-.search-box input {
-  width: 100%; padding: 0.6rem 1rem 0.6rem 2.5rem;
-  border: 2px solid var(--border); border-radius: var(--radius-sm);
-  font-size: 0.9rem; background: var(--bg-card); color: var(--text);
-  transition: border-color 0.2s;
-}
-.search-box input:focus { outline: none; border-color: var(--primary); }
-.search-box .search-icon {
-  position: absolute; left: 0.8rem; top: 50%;
-  transform: translateY(-50%); color: var(--text-muted); pointer-events: none;
-}
+/* === Stats Row === */
+.stats-row{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.stat-mini{padding:0.5rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-secondary)}
+.stat-mini strong{color:var(--primary);font-size:1.1rem}
 
-/* Paper Grid */
-.paper-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 0.85rem;
-}
-.paper-card {
-  background: var(--bg-card); border: 1px solid var(--border);
-  border-radius: var(--radius-sm); padding: 1.1rem;
-  transition: all 0.25s; display: flex; flex-direction: column;
-  position: relative;
-}
-.paper-card:hover {
-  box-shadow: var(--shadow-hover); transform: translateY(-1px);
-  border-color: var(--primary-light);
-}
-.paper-card .journal {
-  font-size: 0.78rem; color: var(--teal); font-weight: 600;
-  margin-bottom: 0.3rem;
-}
-.paper-card .title {
-  font-size: 0.95rem; font-weight: 700; line-height: 1.45; margin-bottom: 0.35rem;
-}
-.paper-card .title a { color: var(--text); }
-.paper-card .title a:hover { color: var(--primary); text-decoration: none; }
-.paper-card .meta {
-  font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.6rem;
-  display: flex; flex-wrap: wrap; gap: 0.5rem;
-}
+/* === Controls === */
+.controls{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.search-box{flex:1;min-width:200px;position:relative}
+.search-box input{width:100%;padding:0.6rem 1rem 0.6rem 2.5rem;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:0.9rem;background:var(--bg-card);color:var(--text);transition:border-color 0.2s}
+.search-box input:focus{outline:none;border-color:var(--primary)}
+.search-box .search-icon{position:absolute;left:0.8rem;top:50%;transform:translateY(-50%);color:var(--text-muted);pointer-events:none}
+
+/* === Paper Grid === */
+.section-title{font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:0.75rem;display:flex;align-items:center;gap:0.5rem}
+.paper-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:0.85rem;margin-bottom:1.5rem}
+.paper-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1.1rem;transition:all 0.25s;display:flex;flex-direction:column;position:relative}
+.paper-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);border-color:var(--primary-light)}
+.paper-card.high-impact{border-left:3px solid var(--accent)}
+.paper-card .hi-badge{position:absolute;top:0.5rem;right:0.5rem;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:10px;background:var(--accent-light);color:var(--accent);font-weight:700}
+.paper-card .journal{font-size:0.78rem;color:var(--teal);font-weight:600;margin-bottom:0.3rem}
+.paper-card .title{font-size:0.95rem;font-weight:700;line-height:1.45;margin-bottom:0.35rem}
+.paper-card .title a{color:var(--text)}
+.paper-card .title a:hover{color:var(--primary);text-decoration:none}
+.paper-card .meta{font-size:0.78rem;color:var(--text-muted);margin-bottom:0.6rem;display:flex;flex-wrap:wrap;gap:0.5rem}
 
 /* Chinese Summary */
-.paper-card .summary-cn {
-  background: linear-gradient(135deg, #fffaf0, #fffff0);
-  border-left: 3px solid var(--gold); padding: 0.75rem 0.9rem;
-  margin-bottom: 0.5rem; border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-  font-size: 0.9rem; line-height: 1.6; color: #744210;
-}
-[data-theme="dark"] .paper-card .summary-cn {
-  background: linear-gradient(135deg, #3d2e1a, #372a10); color: #fbd38d;
-}
+.paper-card .summary-cn{background:linear-gradient(135deg,#fffaf0,#fffff0);border-left:3px solid var(--gold);padding:0.7rem 0.85rem;margin-bottom:0.5rem;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:0.88rem;line-height:1.55;color:#744210}
+[data-theme="dark"] .paper-card .summary-cn{background:linear-gradient(135deg,#3d2e1a,#372a10);color:#fbd38d}
 
-/* Abstract */
-.abstract-toggle {
-  font-size: 0.8rem; color: var(--primary); cursor: pointer;
-  font-weight: 600; user-select: none;
-  display: inline-flex; align-items: center; gap: 0.25rem;
-  padding: 0.3rem 0; border: none; background: none;
-}
-.abstract-toggle:hover { color: var(--accent); }
-.abstract-toggle .arrow { transition: transform 0.2s; font-size: 0.7rem; }
-.abstract-toggle.open .arrow { transform: rotate(90deg); }
-.abstract-content {
-  display: none; font-size: 0.82rem; color: var(--text-secondary);
-  line-height: 1.55; padding: 0.5rem 0;
-  border-top: 1px dashed var(--border); margin-top: 0.4rem;
-}
-.abstract-content.visible { display: block; }
+.abstract-toggle{font-size:0.8rem;color:var(--primary);cursor:pointer;font-weight:600;user-select:none;display:inline-flex;align-items:center;gap:0.25rem;padding:0.3rem 0;border:none;background:none}
+.abstract-toggle:hover{color:var(--accent)}
+.abstract-toggle .arrow{transition:transform 0.2s;font-size:0.7rem}
+.abstract-toggle.open .arrow{transform:rotate(90deg)}
+.abstract-content{display:none;font-size:0.82rem;color:var(--text-secondary);line-height:1.55;padding:0.5rem 0;border-top:1px dashed var(--border);margin-top:0.4rem}
+.abstract-content.visible{display:block}
 
-/* No results */
-.paper-card.hidden { display: none; }
-.no-results { display: none; text-align: center; padding: 2rem; color: var(--text-muted); }
-.no-results.visible { display: block; }
+.paper-card.hidden{display:none}
+.no-results{display:none;text-align:center;padding:2rem;color:var(--text-muted)}
+.no-results.visible{display:block}
 
-@media (max-width: 768px) {
-  .paper-grid { grid-template-columns: 1fr; }
-  .topbar { flex-wrap: wrap; }
-  .topbar .week-topic { font-size: 0.9rem; }
-}
+@media(max-width:768px){.paper-grid{grid-template-columns:1fr}.article-section{padding:1.25rem}.topbar{flex-wrap:wrap}.topbar .week-topic{font-size:0.9rem}}
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-.paper-card { animation: fadeIn 0.4s ease-out; }
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.paper-card{animation:fadeIn 0.4s ease-out}
 </style>
 </head>
 <body>
 
 <div class="topbar">
-  <a class="back-btn" href="index.html">← 返回</a>
+  <a class="back-btn" href="index.html">← 返回主页</a>
   <div class="title-area">
     <div class="week-range">{{ week.week_range }}</div>
     <div class="week-topic">{{ week.topic }}</div>
@@ -184,15 +117,25 @@ a:hover { text-decoration: underline; }
 </div>
 
 <div class="container">
-  {% if week.keywords_list %}
-  <div class="keywords-bar">
-    <span class="kw-label">🏷️ 本周关键词：</span>
-    {% for kw in week.keywords_list %}
-    <span class="kw-tag">{{ kw }}</span>
-    {% endfor %}
+
+  <!-- 深度综述文章 -->
+  {% if week.article %}
+  <div class="article-section">
+    {{ week.article_html|safe }}
   </div>
   {% endif %}
 
+  <!-- 统计 -->
+  <div class="stats-row">
+    <div class="stat-mini">📄 <strong>{{ week.papers|length }}</strong> 篇论文</div>
+    <div class="stat-mini">🌟 <strong>{{ week.high_impact_count }}</strong> 篇高影响力期刊</div>
+    <div class="stat-mini">🤖 <strong>{{ summary_count }}</strong> 篇 AI 中文总结</div>
+    {% if week.keywords_list %}
+    <div class="stat-mini">🏷️ {% for kw in week.keywords_list[:4] %}{{ kw }} {% endfor %}</div>
+    {% endif %}
+  </div>
+
+  <!-- 搜索 -->
   <div class="controls">
     <div class="search-box">
       <span class="search-icon">🔍</span>
@@ -202,20 +145,29 @@ a:hover { text-decoration: underline; }
 
   <div class="no-results" id="noResults">😕 没有匹配的论文</div>
 
+  <!-- 全部论文列表 -->
+  <div class="section-title">📄 本周全部论文（{{ week.papers|length }} 篇）</div>
   <div class="paper-grid">
     {% for paper in week.papers %}
-    <div class="paper-card"
+    <div class="paper-card{% if paper.high_impact %} high-impact{% endif %}"
          data-title="{{ paper.title|lower }}"
          data-authors="{{ paper.authors|lower }}"
          data-journal="{{ paper.journal|lower }}"
          data-abstract="{{ paper.abstract|lower }}"
-         data-summary="{{ paper.summary_cn|lower }}">
+         data-summary="{{ paper.summary_cn|lower }}"
+         data-impact="{{ 'true' if paper.high_impact else 'false' }}">
 
-      {% if paper.journal %}
-      <div class="journal">📰 {{ paper.journal }}</div>
+      {% if paper.high_impact %}
+      <div class="hi-badge">🌟 高影响力</div>
       {% endif %}
 
-      <!-- 中文总结 -->
+      {% if paper.journal %}
+      <div class="journal">
+        {% if paper.high_impact %}⭐{% endif %}
+        📰 {{ paper.journal }}
+      </div>
+      {% endif %}
+
       {% if paper.summary_cn and not paper.summary_cn.startswith('[') %}
       <div class="summary-cn">💡 {{ paper.summary_cn }}</div>
       {% endif %}
@@ -240,53 +192,35 @@ a:hover { text-decoration: underline; }
     </div>
     {% endfor %}
   </div>
+
 </div>
 
 <script>
-function toggleTheme() {
-  const html = document.documentElement;
-  const icon = document.getElementById('themeIcon');
-  const label = document.getElementById('themeLabel');
-  const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-  html.setAttribute('data-theme', next);
-  icon.textContent = next === 'dark' ? '☀️' : '🌙';
-  label.textContent = next === 'dark' ? '亮色' : '暗色';
-  localStorage.setItem('theme', next);
-}
-(function() {
-  const saved = localStorage.getItem('theme');
-  if (saved) {
-    document.documentElement.setAttribute('data-theme', saved);
-    document.getElementById('themeIcon').textContent = saved === 'dark' ? '☀️' : '🌙';
-    document.getElementById('themeLabel').textContent = saved === 'dark' ? '亮色' : '暗色';
-  }
+(function(){
+  var s=localStorage.getItem('theme');
+  if(s){document.documentElement.setAttribute('data-theme',s);
+  document.getElementById('themeIcon').textContent=s==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=s==='dark'?'亮色':'暗色';}
 })();
-
-function toggleAbstract(btn) {
-  const content = btn.nextElementSibling;
-  const visible = content.classList.contains('visible');
-  content.classList.toggle('visible');
-  btn.classList.toggle('open');
-  btn.querySelector('.arrow').textContent = visible ? '▶' : '▼';
+function toggleTheme(){
+  var h=document.documentElement,n=h.getAttribute('data-theme')==='dark'?'light':'dark';
+  h.setAttribute('data-theme',n);
+  document.getElementById('themeIcon').textContent=n==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=n==='dark'?'亮色':'暗色';
+  localStorage.setItem('theme',n);
 }
-
-function filterPapers() {
-  const query = (document.getElementById('searchInput').value || '').toLowerCase().trim();
-  const cards = document.querySelectorAll('.paper-card');
-  let visible = 0;
-  cards.forEach(card => {
-    const text = [
-      card.getAttribute('data-title') || '',
-      card.getAttribute('data-authors') || '',
-      card.getAttribute('data-journal') || '',
-      card.getAttribute('data-abstract') || '',
-      card.getAttribute('data-summary') || '',
-    ].join(' ');
-    const show = !query || text.includes(query);
-    card.classList.toggle('hidden', !show);
-    if (show) visible++;
+function toggleAbstract(b){
+  var c=b.nextElementSibling,v=c.classList.contains('visible');
+  c.classList.toggle('visible');b.classList.toggle('open');
+  b.querySelector('.arrow').textContent=v?'▶':'▼';
+}
+function filterPapers(){
+  var q=(document.getElementById('searchInput').value||'').toLowerCase().trim(),vis=0;
+  document.querySelectorAll('.paper-card').forEach(function(c){
+    var t=[c.getAttribute('data-title')||'',c.getAttribute('data-authors')||'',c.getAttribute('data-journal')||'',c.getAttribute('data-abstract')||'',c.getAttribute('data-summary')||''].join(' ');
+    var s=!q||t.includes(q);c.classList.toggle('hidden',!s);if(s)vis++;
   });
-  document.getElementById('noResults').classList.toggle('visible', visible === 0);
+  document.getElementById('noResults').classList.toggle('visible',vis===0);
 }
 </script>
 </body>

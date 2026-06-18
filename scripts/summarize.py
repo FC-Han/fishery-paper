@@ -46,8 +46,38 @@ SUMMARY_SYSTEM = """你是渔业科学学术编辑。将英文论文标题和摘
 5. 关键术语保留英文（如 stock assessment, MPA）
 6. 明显与渔业无关的内容输出「非渔业相关」"""
 
-# 提示词：每周综述标题
-WEEKLY_TOPIC_SYSTEM = """你是渔业科学主编。根据本周论文标题，起一个中文综述标题（10-20字），概括本周研究热点和趋势。
+# 提示词：每周深度综述
+WEEKLY_ARTICLE_SYSTEM = """你是渔业科学领域的资深学术主编，负责为研究者撰写每周文献综述。
+
+我会提供本周发表的所有渔业相关论文信息（标题、期刊、摘要）。请撰写一篇结构化的中文综述（600-1000字），按以下格式输出：
+
+## 本周研究概览
+用一段话（3-4句）概括本周论文的总体情况：共多少篇、主要涉及哪些研究方向、整体研究趋势。
+
+## 高影响力期刊亮点
+重点介绍发表在以下高影响力期刊上的研究：Nature, Science, PNAS, Nature Climate Change, Nature Ecology & Evolution, Nature Sustainability, Nature Communications, Science Advances。
+对每篇高影响力论文用2-3句话说明其研究内容和意义。如本周无此类论文则写"本周暂无"。
+
+## 创新性研究
+挑选3-5篇创新性较强的研究（不限期刊），说明其创新点何在、对本领域的潜在影响。每篇2-3句话。
+
+## 推荐阅读
+推荐5篇最值得阅读的论文（考虑期刊影响力、研究创新性、方法新颖性），格式：
+1. **论文标题** — 推荐理由（1句话）
+2. **论文标题** — 推荐理由（1句话）
+...
+
+要求：
+- 用专业、流畅的学术中文写作
+- 使用中文，但关键术语保留英文
+- 实事求是，不夸大
+- 标注清楚论文标题以便查找"""
+
+# 旧的简短提示词保留备用
+WEEKLY_TOPIC_SYSTEM = """你是渔业科学主编。根据本周论文标题，起一个中文综述标题（10-20字），概括本周研究热点和趋势。只输出标题本身。"""
+
+WEEKLY_KEYWORDS_SYSTEM = """你是渔业科学编辑。从本周论文标题中提取5-8个研究关键词（中文+英文术语）。"""
+
 
 只输出标题本身，不加引号、编号或任何修饰。标题要有信息量。
 
@@ -88,6 +118,24 @@ def save_papers(data: dict):
     data["last_updated"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
+
+
+# 高影响力期刊列表
+HIGH_IMPACT_JOURNALS = [
+    "nature", "science", "pnas",
+    "nature climate change", "nature ecology & evolution",
+    "nature sustainability", "nature communications", "science advances",
+    "proceedings of the national academy",
+]
+
+
+def is_high_impact(journal: str) -> bool:
+    """判断是否为高影响力期刊"""
+    jl = journal.lower().strip()
+    for hj in HIGH_IMPACT_JOURNALS:
+        if hj in jl:
+            return True
+    return False
 
 
 def get_week_key(date_str: str) -> str:
@@ -162,11 +210,32 @@ def summarize_paper(client: OpenAI, paper: dict) -> str:
 
 
 def generate_weekly_topic(client: OpenAI, titles: list[str]) -> str:
-    """生成每周综述标题"""
+    """生成简短综述标题（用于主页卡片）"""
     if not titles:
         return "本周暂无文献"
     text = "\n".join(f"- {t}" for t in titles[:30])
     return call_deepseek(client, WEEKLY_TOPIC_SYSTEM, f"本周论文标题：\n\n{text}", MAX_TOKENS_TOPIC)
+
+
+def generate_weekly_article(client: OpenAI, papers: list[dict]) -> str:
+    """生成每周深度综述文章"""
+    if not papers:
+        return "本周暂无文献发表。"
+
+    # 构建论文信息文本
+    lines = []
+    for i, p in enumerate(papers[:50], 1):  # 最多50篇
+        title = p.get("title", "")
+        journal = p.get("journal", "")
+        abstract = p.get("abstract", "")
+        if abstract:
+            abstract = abstract[:300]  # 截断过长摘要
+        lines.append(f"{i}. 标题：{title}\n   期刊：{journal}\n   摘要：{abstract or '（无摘要）'}")
+
+    papers_text = "\n\n".join(lines)
+    user_message = f"以下是本周（{get_week_key(papers[0].get('date', ''))}）发表的渔业相关论文：\n\n{papers_text}"
+
+    return call_deepseek(client, WEEKLY_ARTICLE_SYSTEM, user_message, 2000)
 
 
 def generate_weekly_keywords(client: OpenAI, titles: list[str]) -> str:
@@ -215,33 +284,50 @@ def summarize_all_papers(client: OpenAI, papers: list[dict], force_all: bool = F
 
 
 def generate_all_weekly_topics(client: OpenAI, papers: list[dict]) -> dict:
-    """为所有周生成综述标题和关键词"""
+    """为所有周生成综述标题、关键词、深度综述文章、高影响力论文标识"""
     weeks = defaultdict(list)
     for p in papers:
         wk = get_week_key(p.get("date", ""))
-        weeks[wk].append(p["title"])
+        weeks[wk].append(p)
 
     topics = {}
-    print(f"📅 生成每周综述... ({len(weeks)} 周)\n")
-    for wk in sorted(weeks.keys(), reverse=True):
-        titles = weeks[wk]
-        week_range = get_week_range(wk)
-        print(f"  → {wk} ({week_range}) — {len(titles)} 篇")
+    print(f"📅 生成每周深度综述... ({len(weeks)} 周)\n")
 
+    for wk in sorted(weeks.keys(), reverse=True):
+        week_papers = weeks[wk]
+        titles = [p["title"] for p in week_papers]
+        week_range = get_week_range(wk)
+        hi_count = sum(1 for p in week_papers if is_high_impact(p.get("journal", "")))
+
+        print(f"  → {wk} ({week_range}) — {len(week_papers)} 篇 (高影响力: {hi_count})")
+
+        # 生成简短标题（主页卡片用）
         topic = generate_weekly_topic(client, titles)
         print(f"    📌 标题: {topic}")
 
+        # 生成深度综述文章
+        print(f"    📝 生成深度综述...")
+        article = generate_weekly_article(client, week_papers)
+        print(f"       ({len(article)} 字)")
+
+        # 提取关键词
         keywords = generate_weekly_keywords(client, titles)
         print(f"    🏷️ 关键词: {keywords}")
+
+        # 标识高影响力论文
+        for p in week_papers:
+            p["high_impact"] = is_high_impact(p.get("journal", ""))
 
         topics[wk] = {
             "week_key": wk,
             "week_range": week_range,
             "topic": topic,
             "keywords": keywords,
-            "paper_count": len(titles),
+            "article": article,
+            "paper_count": len(week_papers),
+            "high_impact_count": hi_count,
         }
-        time.sleep(0.5)
+        time.sleep(1)
 
     return topics
 

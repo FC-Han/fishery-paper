@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>渔业文献精选 · 38 篇 — 渔业文献每周速览</title>
+<title>渔业文献精选 · 51 篇 — 渔业文献每周速览</title>
 <style>
 :root {
   --bg: #f7fafc; --bg-card: #ffffff; --text: #2d3748;
@@ -26,157 +26,90 @@
   --shadow: 0 2px 8px rgba(0,0,0,0.3);
   --shadow-hover: 0 8px 24px rgba(0,0,0,0.5);
 }
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
-  background: var(--bg); color: var(--text); line-height: 1.6;
-  transition: background 0.3s, color 0.3s;
-}
-a { color: var(--primary); text-decoration: none; }
-a:hover { text-decoration: underline; }
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;transition:background 0.3s,color 0.3s}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
 
-/* Top bar */
-.topbar {
-  background: linear-gradient(135deg, #1a365d, #2b6cb0);
-  color: #fff; padding: 1rem 1.5rem;
-  display: flex; align-items: center; gap: 1rem;
-  position: sticky; top: 0; z-index: 100;
-}
-.back-btn {
-  color: #fff; font-size: 1.2rem; font-weight: 700;
-  padding: 0.4rem 0.8rem; border-radius: var(--radius-sm);
-  border: 1.5px solid rgba(255,255,255,0.3);
-  transition: all 0.2s; white-space: nowrap;
-}
-.back-btn:hover { background: rgba(255,255,255,0.15); text-decoration: none; }
-.topbar .title-area { flex: 1; min-width: 0; }
-.topbar .week-range { font-size: 0.8rem; opacity: 0.8; }
-.topbar .week-topic { font-size: 1.05rem; font-weight: 700; line-height: 1.3; }
-.topbar .theme-toggle {
-  padding: 0.4rem 0.8rem; border: 1.5px solid rgba(255,255,255,0.3);
-  border-radius: var(--radius-sm); background: transparent;
-  color: #fff; cursor: pointer; font-size: 0.85rem;
-  transition: all 0.2s; white-space: nowrap;
-}
-.topbar .theme-toggle:hover { background: rgba(255,255,255,0.15); }
+/* === Top Bar === */
+.topbar{background:linear-gradient(135deg,#1a365d,#2b6cb0);color:#fff;padding:0.8rem 1.5rem;display:flex;align-items:center;gap:1rem;position:sticky;top:0;z-index:100}
+.back-btn{color:#fff;font-size:0.95rem;font-weight:600;padding:0.4rem 0.8rem;border-radius:var(--radius-sm);border:1.5px solid rgba(255,255,255,0.3);transition:all 0.2s;white-space:nowrap}
+.back-btn:hover{background:rgba(255,255,255,0.15);text-decoration:none}
+.topbar .title-area{flex:1;min-width:0}
+.topbar .week-range{font-size:0.78rem;opacity:0.8}
+.topbar .week-topic{font-size:1rem;font-weight:700;line-height:1.3}
+.topbar .theme-toggle{padding:0.4rem 0.8rem;border:1.5px solid rgba(255,255,255,0.3);border-radius:var(--radius-sm);background:transparent;color:#fff;cursor:pointer;font-size:0.85rem;transition:all 0.2s;white-space:nowrap}
+.topbar .theme-toggle:hover{background:rgba(255,255,255,0.15)}
 
-.container { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
+.container{max-width:1100px;margin:0 auto;padding:1.5rem}
 
-/* Keywords bar */
-.keywords-bar {
-  display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center;
-  margin-bottom: 1.2rem; padding: 0.8rem 1rem;
-  background: var(--bg-card); border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-}
-.keywords-bar .kw-label { font-size: 0.85rem; color: var(--text-muted); font-weight: 600; }
-.keywords-bar .kw-tag {
-  padding: 0.25rem 0.65rem; border-radius: 12px;
-  font-size: 0.8rem; font-weight: 500;
-  background: var(--teal-light); color: var(--teal);
-}
+/* === Article Section === */
+.article-section{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;margin-bottom:1.5rem;box-shadow:var(--shadow)}
+.article-section h2{font-size:1.3rem;color:var(--primary-dark);margin:1.5rem 0 0.75rem;padding-bottom:0.4rem;border-bottom:2px solid var(--primary-light)}
+.article-section h2:first-child{margin-top:0}
+.article-section p{margin-bottom:0.8rem;line-height:1.8;color:var(--text)}
+.article-section strong{color:var(--primary-dark)}
+.article-section ol,.article-section ul{padding-left:1.5rem;margin-bottom:0.8rem}
+.article-section li{margin-bottom:0.5rem;line-height:1.7}
+.article-tag{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-right:0.5rem}
+.tag-overview{background:var(--primary-light);color:var(--primary-dark)}
+.tag-highlight{background:var(--accent-light);color:var(--accent)}
+.tag-innovative{background:var(--gold-light);color:var(--gold)}
+.tag-recommend{background:var(--teal-light);color:var(--teal)}
 
-/* Controls */
-.controls {
-  display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center;
-  margin-bottom: 1rem;
-}
-.search-box { flex: 1; min-width: 200px; position: relative; }
-.search-box input {
-  width: 100%; padding: 0.6rem 1rem 0.6rem 2.5rem;
-  border: 2px solid var(--border); border-radius: var(--radius-sm);
-  font-size: 0.9rem; background: var(--bg-card); color: var(--text);
-  transition: border-color 0.2s;
-}
-.search-box input:focus { outline: none; border-color: var(--primary); }
-.search-box .search-icon {
-  position: absolute; left: 0.8rem; top: 50%;
-  transform: translateY(-50%); color: var(--text-muted); pointer-events: none;
-}
+/* === Stats Row === */
+.stats-row{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.stat-mini{padding:0.5rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-secondary)}
+.stat-mini strong{color:var(--primary);font-size:1.1rem}
 
-/* Paper Grid */
-.paper-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 0.85rem;
-}
-.paper-card {
-  background: var(--bg-card); border: 1px solid var(--border);
-  border-radius: var(--radius-sm); padding: 1.1rem;
-  transition: all 0.25s; display: flex; flex-direction: column;
-  position: relative;
-}
-.paper-card:hover {
-  box-shadow: var(--shadow-hover); transform: translateY(-1px);
-  border-color: var(--primary-light);
-}
-.paper-card .journal {
-  font-size: 0.78rem; color: var(--teal); font-weight: 600;
-  margin-bottom: 0.3rem;
-}
-.paper-card .title {
-  font-size: 0.95rem; font-weight: 700; line-height: 1.45; margin-bottom: 0.35rem;
-}
-.paper-card .title a { color: var(--text); }
-.paper-card .title a:hover { color: var(--primary); text-decoration: none; }
-.paper-card .meta {
-  font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.6rem;
-  display: flex; flex-wrap: wrap; gap: 0.5rem;
-}
+/* === Controls === */
+.controls{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.search-box{flex:1;min-width:200px;position:relative}
+.search-box input{width:100%;padding:0.6rem 1rem 0.6rem 2.5rem;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:0.9rem;background:var(--bg-card);color:var(--text);transition:border-color 0.2s}
+.search-box input:focus{outline:none;border-color:var(--primary)}
+.search-box .search-icon{position:absolute;left:0.8rem;top:50%;transform:translateY(-50%);color:var(--text-muted);pointer-events:none}
+
+/* === Paper Grid === */
+.section-title{font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:0.75rem;display:flex;align-items:center;gap:0.5rem}
+.paper-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:0.85rem;margin-bottom:1.5rem}
+.paper-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1.1rem;transition:all 0.25s;display:flex;flex-direction:column;position:relative}
+.paper-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);border-color:var(--primary-light)}
+.paper-card.high-impact{border-left:3px solid var(--accent)}
+.paper-card .hi-badge{position:absolute;top:0.5rem;right:0.5rem;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:10px;background:var(--accent-light);color:var(--accent);font-weight:700}
+.paper-card .journal{font-size:0.78rem;color:var(--teal);font-weight:600;margin-bottom:0.3rem}
+.paper-card .title{font-size:0.95rem;font-weight:700;line-height:1.45;margin-bottom:0.35rem}
+.paper-card .title a{color:var(--text)}
+.paper-card .title a:hover{color:var(--primary);text-decoration:none}
+.paper-card .meta{font-size:0.78rem;color:var(--text-muted);margin-bottom:0.6rem;display:flex;flex-wrap:wrap;gap:0.5rem}
 
 /* Chinese Summary */
-.paper-card .summary-cn {
-  background: linear-gradient(135deg, #fffaf0, #fffff0);
-  border-left: 3px solid var(--gold); padding: 0.75rem 0.9rem;
-  margin-bottom: 0.5rem; border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-  font-size: 0.9rem; line-height: 1.6; color: #744210;
-}
-[data-theme="dark"] .paper-card .summary-cn {
-  background: linear-gradient(135deg, #3d2e1a, #372a10); color: #fbd38d;
-}
+.paper-card .summary-cn{background:linear-gradient(135deg,#fffaf0,#fffff0);border-left:3px solid var(--gold);padding:0.7rem 0.85rem;margin-bottom:0.5rem;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:0.88rem;line-height:1.55;color:#744210}
+[data-theme="dark"] .paper-card .summary-cn{background:linear-gradient(135deg,#3d2e1a,#372a10);color:#fbd38d}
 
-/* Abstract */
-.abstract-toggle {
-  font-size: 0.8rem; color: var(--primary); cursor: pointer;
-  font-weight: 600; user-select: none;
-  display: inline-flex; align-items: center; gap: 0.25rem;
-  padding: 0.3rem 0; border: none; background: none;
-}
-.abstract-toggle:hover { color: var(--accent); }
-.abstract-toggle .arrow { transition: transform 0.2s; font-size: 0.7rem; }
-.abstract-toggle.open .arrow { transform: rotate(90deg); }
-.abstract-content {
-  display: none; font-size: 0.82rem; color: var(--text-secondary);
-  line-height: 1.55; padding: 0.5rem 0;
-  border-top: 1px dashed var(--border); margin-top: 0.4rem;
-}
-.abstract-content.visible { display: block; }
+.abstract-toggle{font-size:0.8rem;color:var(--primary);cursor:pointer;font-weight:600;user-select:none;display:inline-flex;align-items:center;gap:0.25rem;padding:0.3rem 0;border:none;background:none}
+.abstract-toggle:hover{color:var(--accent)}
+.abstract-toggle .arrow{transition:transform 0.2s;font-size:0.7rem}
+.abstract-toggle.open .arrow{transform:rotate(90deg)}
+.abstract-content{display:none;font-size:0.82rem;color:var(--text-secondary);line-height:1.55;padding:0.5rem 0;border-top:1px dashed var(--border);margin-top:0.4rem}
+.abstract-content.visible{display:block}
 
-/* No results */
-.paper-card.hidden { display: none; }
-.no-results { display: none; text-align: center; padding: 2rem; color: var(--text-muted); }
-.no-results.visible { display: block; }
+.paper-card.hidden{display:none}
+.no-results{display:none;text-align:center;padding:2rem;color:var(--text-muted)}
+.no-results.visible{display:block}
 
-@media (max-width: 768px) {
-  .paper-grid { grid-template-columns: 1fr; }
-  .topbar { flex-wrap: wrap; }
-  .topbar .week-topic { font-size: 0.9rem; }
-}
+@media(max-width:768px){.paper-grid{grid-template-columns:1fr}.article-section{padding:1.25rem}.topbar{flex-wrap:wrap}.topbar .week-topic{font-size:0.9rem}}
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-.paper-card { animation: fadeIn 0.4s ease-out; }
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.paper-card{animation:fadeIn 0.4s ease-out}
 </style>
 </head>
 <body>
 
 <div class="topbar">
-  <a class="back-btn" href="index.html">← 返回</a>
+  <a class="back-btn" href="index.html">← 返回主页</a>
   <div class="title-area">
     <div class="week-range">6月15日—6月19日</div>
-    <div class="week-topic">渔业文献精选 · 38 篇</div>
+    <div class="week-topic">渔业文献精选 · 51 篇</div>
   </div>
   <button class="theme-toggle" onclick="toggleTheme()">
     <span id="themeIcon">🌙</span> <span id="themeLabel">暗色</span>
@@ -184,8 +117,19 @@ a:hover { text-decoration: underline; }
 </div>
 
 <div class="container">
+
+  <!-- 深度综述文章 -->
   
 
+  <!-- 统计 -->
+  <div class="stats-row">
+    <div class="stat-mini">📄 <strong>51</strong> 篇论文</div>
+    <div class="stat-mini">🌟 <strong>0</strong> 篇高影响力期刊</div>
+    <div class="stat-mini">🤖 <strong>0</strong> 篇 AI 中文总结</div>
+    
+  </div>
+
+  <!-- 搜索 -->
   <div class="controls">
     <div class="search-box">
       <span class="search-icon">🔍</span>
@@ -195,6 +139,8 @@ a:hover { text-decoration: underline; }
 
   <div class="no-results" id="noResults">😕 没有匹配的论文</div>
 
+  <!-- 全部论文列表 -->
+  <div class="section-title">📄 本周全部论文（51 篇）</div>
   <div class="paper-grid">
     
     <div class="paper-card"
@@ -202,13 +148,18 @@ a:hover { text-decoration: underline; }
          data-authors="wahju, ronny irawan; taurusman, am azbas; riyanto, mochammad; widhiastika, dhita; safitri, asyifah"
          data-journal="albacore jurnal penelitian perikanan laut"
          data-abstract="crab gillnet is a fishing gear intended for catching crabs that have the potential to cause abandoned, lost, and discarded fishing gear (aldfg). this research aims to estimate the potential for aldfg and waste supplies from crab gillnet fisheries and to identify the causes and mitigation efforts. data collection was carried out using survey methods and field observations, then the data were analysed descriptively. the research results show that the estimated lost crab gillnets potential in 1 month was 16 units (320 pieces) with a total weight of 1,137 kg. meanwhile, in 1 year it is estimated that there will be 166 units (3.320 pieces) with a total weight of 11.375 kg or with a total loss value of idr 573,750,000. the estimated abandoned crab gillnets potential in 1 month was 0.3 units (6 pieces) with a total weight of 23 kg, while in 1 year it is estimated that there will be 3 units (60 pieces) with a total weight of 230 kg and a loss of idr 14,500,000. this study proposes a mitigation efforts including dissemination of the negative impacts of aldfg and ghost gear, reporting program of lost fishing gear, providing incentives and implementing gear marking. key words: aldfg, debris, fishing gear, gillnet, ppn muara angke"
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 ALBACORE Jurnal Penelitian Perikanan Laut</div>
+
+      
+      <div class="journal">
+        
+        📰 ALBACORE Jurnal Penelitian Perikanan Laut
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -231,17 +182,93 @@ a:hover { text-decoration: underline; }
     </div>
     
     <div class="paper-card"
+         data-title="co-culture duration reshapes the rhizosphere microbial functional potential for nitrous oxide production and consumption in a traditional rice–fish system"
+         data-authors="xie, lina; chen, wanlu; wu, shiying; lin, shiwei; sun, jiamin; liu, qigen; li, yalei"
+         data-journal="agronomy"
+         data-abstract="rice–fish co-culture is widely promoted for mitigating nitrous oxide (n2o) emissions from paddy soils, yet how the duration of co-culture reshapes the underlying nitrogen-cycling microbial community under low-nitrogen input remains poorly understood. this study aimed to (i) characterize how co-culture duration alters the rhizosphere microbial functional potential for n2o production and consumption, and (ii) identify the water and soil variables linking fish activity to that response. the experiment was conducted during the 2024 rice growing season in the qingtian rice–fish system (zhejiang province, china), a traditional agricultural heritage system managed without chemical fertilizer or supplementary feed. three treatments (i.e., rice monoculture, first-year co-culture, and long-established (~10-year) co-culture) were compared using six independently bunded replicate plots each. rhizosphere soils were collected at the tillering, heading and maturity stages for shotgun metagenomic profiling of nitrogen-cycling functional genes, with concurrent measurement of n2o flux and water and soil physicochemical properties. fluxes were uniformly low and did not differ among treatments (p &gt; 0.05), defining a substrate-limited baseline. against this baseline, first-year co-culture induced a coordinated shift toward complete denitrification (nosz increased by 25–33% across all stages; nosz/(nirk + nirs) rose to 0.99 at heading), associated with a transient water organic carbon pulse and dissolved-oxygen availability. the long-established system resembled monoculture, indicating a non-monotonic, duration-dependent response."
+         data-summary=""
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Agronomy
+      </div>
+      
+
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/agronomy16121185" target="_blank" rel="noopener">Co-Culture Duration Reshapes the Rhizosphere Microbial Functional Potential for Nitrous Oxide Production and Consumption in a Traditional Rice–Fish System</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Xie, Lina; Chen, Wanlu; Wu, Shiying; Lin, Shiwei; Sun, Jiami...</span>
+        
+        <span>📅 2026-06-18</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Rice–fish co-culture is widely promoted for mitigating nitrous oxide (N2O) emissions from paddy soils, yet how the duration of co-culture reshapes the underlying nitrogen-cycling microbial community under low-nitrogen input remains poorly understood. This study aimed to (i) characterize how co-culture duration alters the rhizosphere microbial functional potential for N2O production and consumption, and (ii) identify the water and soil variables linking fish activity to that response. The experiment was conducted during the 2024 rice growing season in the Qingtian rice–fish system (Zhejiang Province, China), a traditional agricultural heritage system managed without chemical fertilizer or supplementary feed. Three treatments (i.e., rice monoculture, first-year co-culture, and long-established (~10-year) co-culture) were compared using six independently bunded replicate plots each. Rhizosphere soils were collected at the tillering, heading and maturity stages for shotgun metagenomic profiling of nitrogen-cycling functional genes, with concurrent measurement of N2O flux and water and soil physicochemical properties. Fluxes were uniformly low and did not differ among treatments (p &gt; 0.05), defining a substrate-limited baseline. Against this baseline, first-year co-culture induced a coordinated shift toward complete denitrification (nosZ increased by 25–33% across all stages; nosZ/(nirK + nirS) rose to 0.99 at heading), associated with a transient water organic carbon pulse and dissolved-oxygen availability. The long-established system resembled monoculture, indicating a non-monotonic, duration-dependent response.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="longitudinal braid stability of surpass evolve®: in the aspect of fish-mouthing deformation"
+         data-authors="nahm, minu; youn, susy; yu, jaemin; han, hyun jin; park, keun young; kim, yong bae; kim, jung-jae"
+         data-journal="american journal of neuroradiology"
+         data-abstract=""
+         data-summary=""
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 American Journal of Neuroradiology
+      </div>
+      
+
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3174/ajnr.a9483" target="_blank" rel="noopener">Longitudinal braid stability of Surpass Evolve®: In the aspect of Fish-mouthing deformation</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Nahm, Minu; Youn, Susy; Yu, Jaemin; Han, Hyun Jin; Park, Keu...</span>
+        
+        <span>📅 2026-06-17</span>
+      </div>
+
+      
+    </div>
+    
+    <div class="paper-card"
          data-title="how dense is too dense? stocking density, survival, and welfare impairments in vietnamese shrimp aquaculture"
          data-authors="phan, chung thanh; vo, diem thi hong"
          data-journal="aquaculture international"
          data-abstract="abstract stocking density is a key intensification choice in shrimp aquaculture, with implications for productivity and animal welfare. on commercial farms, density is chosen alongside inputs such as aeration and monitoring, and within distinct production systems, making inference from observational data difficult. in this study, we analyse a survey of 210 shrimp farms in viet nam covering five systems from extensive to super-intensive production. welfare is measured with (i) a composite welfare-impairment severity index averaging five observable indicators scored 1–5 and (ii) an ordinal feeding-response severity measure. we assess the index using internal-consistency, correlation-matrix, principal-component, leave-one-out, and component-specific sensitivity checks. the five indicators show acceptable internal consistency ((cronbach’s alpha = 0.769; standardised alpha = 0.793), all pairwise component correlations are positive, and the first principal component closely tracks the equal-weight mean. stocking densities vary substantially across systems. in bivariate analyses, higher densities coincide with both higher survival and greater impairment severity. we estimate fractional logit models for survival with system fixed effects and flexible density terms, supplemented by log-density and restricted cubic spline checks, ordinary least squares (ols) models for the composite index, and an ordered logit model for feeding severity. density effects are imprecise: log-density specifications are similar to the baseline results, while the survival spline suggests some curvature but no robust overall density gradient. aeration intensity remains a positive correlate of survival. trimming extreme densities and estimating quantile regressions also show no systematic survival-density relationship. alternative weighting schemes and component-specific welfare models do not uncover a density-severity gradient. species-dominant subsamples suggest diminishing returns, with positive linear density terms and negative quadratic terms, but these estimates should be interpreted cautiously. overall, the findings indicate that density is better understood as part of a management bundle than as a stand-alone welfare ‘dose’. in these observational data and within this sample, universal density thresholds are difficult to justify unless they are conditioned on production system and complementary inputs."
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Aquaculture International</div>
+
+      
+      <div class="journal">
+        
+        📰 Aquaculture International
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -264,17 +291,60 @@ a:hover { text-decoration: underline; }
     </div>
     
     <div class="paper-card"
+         data-title="a critical criminological study of destructive fishing crimes in the serutbar conservation area"
+         data-authors="hahury, charly timothy; lewerissa, yanti amelia; j.e. latupeirissa"
+         data-journal="asian journal of social and humanities"
+         data-abstract="maluku province, as one of the archipelagos with the greatest potential for marine resources in indonesia, is vulnerable to the threat of maritime crime, particularly destructive fishing practices (the use of fish bombs and poison), including those occurring in the serutbar conservation area. this study aims to analyze destructive fishing crimes in the serutbar conservation area not only as a phenomenon of individual deviance (fishermen) but also as a form of structural and ecological injustice. using a critical criminology approach, this study examines criminogenic factors such as structural poverty, the marginalization of traditional fishermen, the power relations between financiers (cukong) and perpetrators in the field, and the suboptimal effectiveness of current positive law in prosecuting intellectual actors. the results of the study indicate that destructive fishing practices in the serutbar conservation area are rooted in the economic pressures of coastal communities caused by limited fishing space and lack of access to environmentally friendly technology, which are then exploited by organized crime syndicates. from a critical criminology perspective, repressive law enforcement that targets only the main perpetrators (small-scale fishermen) has proven ineffective in providing a deterrent effect and ignores the massive damage to the ecosystem. therefore, a reconstruction of criminal law policy is needed that combines prevention, criminalization of corporate intellectual actors, and a restorative justice approach that focuses on environmental restoration and alternative economic empowerment for coastal communities in maluku, particularly those living around the serutbar conservation area."
+         data-summary=""
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Asian Journal of Social and Humanities
+      </div>
+      
+
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.59888/ajosh.v4i9.730" target="_blank" rel="noopener">A Critical Criminological Study of Destructive Fishing Crimes in The Serutbar Conservation Area</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Hahury, Charly Timothy; Lewerissa, Yanti Amelia; J.E. Latupe...</span>
+        
+        <span>📅 2026-06-17</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Maluku Province, as one of the archipelagos with the greatest potential for marine resources in Indonesia, is vulnerable to the threat of maritime crime, particularly destructive fishing practices (the use of fish bombs and poison), including those occurring in the Serutbar Conservation Area. This study aims to analyze destructive fishing crimes in the Serutbar Conservation Area not only as a phenomenon of individual deviance (fishermen) but also as a form of structural and ecological injustice. Using a critical criminology approach, this study examines criminogenic factors such as structural poverty, the marginalization of traditional fishermen, the power relations between financiers (cukong) and perpetrators in the field, and the suboptimal effectiveness of current positive law in prosecuting intellectual actors. The results of the study indicate that destructive fishing practices in the Serutbar Conservation Area are rooted in the economic pressures of coastal communities caused by limited fishing space and lack of access to environmentally friendly technology, which are then exploited by organized crime syndicates. From a critical criminology perspective, repressive law enforcement that targets only the main perpetrators (small-scale fishermen) has proven ineffective in providing a deterrent effect and ignores the massive damage to the ecosystem. Therefore, a reconstruction of criminal law policy is needed that combines prevention, criminalization of corporate intellectual actors, and a restorative justice approach that focuses on environmental restoration and alternative economic empowerment for coastal communities in Maluku, particularly those living around the Serutbar Conservation Area.</div>
+      
+    </div>
+    
+    <div class="paper-card"
          data-title="transforming the global aquaculture supply chain through the integration of artificial intelligence and big data for overcome asymmetry information"
          data-authors="hernalom sitorus; zaenal arifin hasibuan; bobi kurniawan; sri supatmi"
          data-journal="big data analytics and data science"
          data-abstract="the global aquaculture sector faces structural challenges in the form of information asymmetry that causes a misalignment between production and market demand. the still-dominant production-driven paradigm leads to supply chain inefficiencies, low transparency, and limited traceability. this research aims to develop an information system integration model based on artificial intelligence (ai) and big data to transform the supply chain into a market-driven one. the research uses the design science research (dsr) method, which includes needs analysis, data integration architecture design, development of machine learning and deep learning-based predictive models, and evaluation through prototype implementation. expected outcomes include a data integration architecture, a supply-demand prediction model, and an ai-based traceability framework. this research contributes to improving the efficiency, transparency, and global competitiveness of the aquaculture sector."
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Big Data Analytics and Data Science</div>
+
+      
+      <div class="journal">
+        
+        📰 Big Data Analytics and Data Science
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -297,17 +367,98 @@ a:hover { text-decoration: underline; }
     </div>
     
     <div class="paper-card"
+         data-title="disease-modifying therapies for metabolic dysfunction–associated steatohepatitis"
+         data-authors="cda-amc"
+         data-journal="canadian journal of health technologies"
+         data-abstract="what is the issue? metabolic dysfunction–associated steatohepatitis (mash), an advanced stage of metabolic dysfunction–associated steatotic liver disease (masld), is emerging as a leading cause of liver cancer and transplant in canada, with prevalence projected to rise. management of mash traditionally relies on lifestyle modifications, including diet and exercise. new disease-modifying therapies (dmts) may target underlying disease mechanisms and promote fibrosis (liver scarring) regression from moderate disease stages. in canada, the first dmt for mash — a glucagon-like peptide-1 receptor agonist — received conditional regulatory approval in december 2025. in other countries, a glucagon-like peptide-1 receptor agonist and/or a thyroid hormone receptor–beta agonist (liver-directed thyroid hormone receptor therapy) have received conditional regulatory approval. in 2020, the annual cost of managing mash and masld in canada was an estimated $3.76 billion, largely driven by other medical conditions such as diabetes and cardiovascular disease. what did we do? canada’s drug agency sought to assess the readiness of health care systems in canada for the potential introduction of dmts for mash. we summarized evidence and experiences along the current patient pathway for mash, including specific system-level challenges and opportunities to improve care. we applied a mixed-evidence approach, combining targeted literature searches on health system readiness and diagnostic accuracy of noninvasive tests. evidence was supplemented through consultations with clinical experts and engagement with patients, carers, and indigenous people to capture contextual insights on care pathways, equity, and cultural considerations in anticipation of the potential introduction of dmts in canada. what did canada’s drug agency find? the introduction of dmts into clinical care for mash in canada may increase pressure on existing health care systems. evidence and insights shared from clinical providers and patients on the mash care pathway highlight areas that may constrain care integration and the uptake of dmts. mash is a progressive, multisystem disease that often involves complex care needs and interconnected comorbidities. as awareness and treatment options for mash expand, there may be a need to strengthen diagnostic capacity and improve access to specialists who typically treat advanced mash across jurisdictions. clinical guidance is evolving to support earlier risk identification and management across the disease spectrum, reflecting a shift from a historical focus on late-stage disease toward earlier intervention. people with low-risk mash may be monitored. earlier and more proactive care may help prevent or slow mash progression. emerging mash care pathways emphasize coordinated, multidisciplinary care to support patients with complex needs across specialties. what does this mean? the report highlights system-level opportunities to improve how mash is identified and managed in canada as new dmts emerge. strengthening mash care would require greater coordination. processes could be standardized and consolidated to prepare for rising demand. evidence and engagement feedback point to a few high-level priorities, including: strengthening awareness and education about mash and its multisystemic nature to support early identification and reduce stigma increasing diagnostic testing capacity to enable earlier and timely identification expanding and standardizing multidisciplinary care models to improve coordination and continuity and to support patients with complex metabolic and liver needs embedding equity considerations across the care pathway."
+         data-summary=""
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Canadian Journal of Health Technologies
+      </div>
+      
+
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.51731/cjht.2026.1459" target="_blank" rel="noopener">Disease-Modifying Therapies for Metabolic Dysfunction–Associated Steatohepatitis</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 CDA-AMC</span>
+        
+        <span>📅 2026-06-17</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">What Is the Issue? Metabolic dysfunction–associated steatohepatitis (MASH), an advanced stage of metabolic dysfunction–associated steatotic liver disease (MASLD), is emerging as a leading cause of liver cancer and transplant in Canada, with prevalence projected to rise. Management of MASH traditionally relies on lifestyle modifications, including diet and exercise. New disease-modifying therapies (DMTs) may target underlying disease mechanisms and promote fibrosis (liver scarring) regression from moderate disease stages. In Canada, the first DMT for MASH — a glucagon-like peptide-1 receptor agonist — received conditional regulatory approval in December 2025. In other countries, a glucagon-like peptide-1 receptor agonist and/or a thyroid hormone receptor–beta agonist (liver-directed thyroid hormone receptor therapy) have received conditional regulatory approval. In 2020, the annual cost of managing MASH and MASLD in Canada was an estimated $3.76 billion, largely driven by other medical conditions such as diabetes and cardiovascular disease. What Did We Do? Canada’s Drug Agency sought to assess the readiness of health care systems in Canada for the potential introduction of DMTs for MASH. We summarized evidence and experiences along the current patient pathway for MASH, including specific system-level challenges and opportunities to improve care. We applied a mixed-evidence approach, combining targeted literature searches on health system readiness and diagnostic accuracy of noninvasive tests. Evidence was supplemented through consultations with clinical experts and engagement with patients, carers, and Indigenous people to capture contextual insights on care pathways, equity, and cultural considerations in anticipation of the potential introduction of DMTs in Canada. What Did Canada’s Drug Agency Find? The introduction of DMTs into clinical care for MASH in Canada may increase pressure on existing health care systems. Evidence and insights shared from clinical providers and patients on the MASH care pathway highlight areas that may constrain care integration and the uptake of DMTs. MASH is a progressive, multisystem disease that often involves complex care needs and interconnected comorbidities. As awareness and treatment options for MASH expand, there may be a need to strengthen diagnostic capacity and improve access to specialists who typically treat advanced MASH across jurisdictions. Clinical guidance is evolving to support earlier risk identification and management across the disease spectrum, reflecting a shift from a historical focus on late-stage disease toward earlier intervention. People with low-risk MASH may be monitored. Earlier and more proactive care may help prevent or slow MASH progression. Emerging MASH care pathways emphasize coordinated, multidisciplinary care to support patients with complex needs across specialties. What Does This Mean? The report highlights system-level opportunities to improve how MASH is identified and managed in Canada as new DMTs emerge. Strengthening MASH care would require greater coordination. Processes could be standardized and consolidated to prepare for rising demand. Evidence and engagement feedback point to a few high-level priorities, including: strengthening awareness and education about MASH and its multisystemic nature to support early identification and reduce stigma increasing diagnostic testing capacity to enable earlier and timely identification expanding and standardizing multidisciplinary care models to improve coordination and continuity and to support patients with complex metabolic and liver needs embedding equity considerations across the care pathway.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="smart fish tank berbasis iot untuk karantina ikan hias air tawar dengan monitoring dan kontrol kualitas air otomatis"
+         data-authors="ismar, mh ramdhani ismar; syarif al ghifari, affan naufal; binuko paksi, angger; lestariningsih, tri; prima atmaja, ardian prima atmaja"
+         data-journal="dikemas (jurnal pengabdian kepada masyarakat)"
+         data-abstract="industri budidaya ikan hias menghadapi tantangan dalam menjaga kualitas air selama proses karantina. kualitas air yang buruk dapat menyebabkan stres, meningkatnya risiko penyakit, bahkan kematian pada ikan. parameter seperti suhu, ph, dan total dissolved solids (tds) sangat penting untuk dipantau secara berkala. penelitian ini mengembangkan sistem smart fish tank berbasis internet of things (iot) yang dilengkapi dengan sensor ds18b20 untuk suhu, sensor ph-4502c, dan sensor tds. data hasil monitoring dikirim ke firebase realtime database dan ditampilkan melalui aplikasi android. sistem juga dilengkapi dengan modul pengurasan otomatis yang dikendalikan oleh mikrokontroler esp32 dan modul relay 2 channel. pengguna dapat menjadwalkan pengurasan air melalui aplikasi. hasil implementasi menunjukkan sistem mampu berfungsi sesuai dengan rancangan, membantu menjaga kestabilan kualitas air selama karantina ikan hias air tawar, serta mengurangi ketergantungan terhadap sistem pemantauan konvensional."
+         data-summary=""
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 DIKEMAS (Jurnal Pengabdian Kepada Masyarakat)
+      </div>
+      
+
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.32486/dikemas.v9i2.1036" target="_blank" rel="noopener">SMART FISH TANK BERBASIS IOT UNTUK KARANTINA IKAN HIAS AIR TAWAR DENGAN MONITORING DAN KONTROL KUALITAS AIR OTOMATIS</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Ismar, MH Ramdhani Ismar; Syarif Al Ghifari, Affan Naufal; B...</span>
+        
+        <span>📅 2026-06-17</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Industri budidaya ikan hias menghadapi tantangan dalam menjaga kualitas air selama proses karantina. Kualitas air yang buruk dapat menyebabkan stres, meningkatnya risiko penyakit, bahkan kematian pada ikan. Parameter seperti suhu, pH, dan Total Dissolved Solids (TDS) sangat penting untuk dipantau secara berkala. Penelitian ini mengembangkan sistem Smart Fish Tank berbasis Internet of Things (IoT) yang dilengkapi dengan sensor DS18B20 untuk suhu, sensor pH-4502C, dan sensor TDS. Data hasil monitoring dikirim ke Firebase Realtime Database dan ditampilkan melalui aplikasi Android. Sistem juga dilengkapi dengan modul pengurasan otomatis yang dikendalikan oleh mikrokontroler ESP32 dan modul relay 2 channel. Pengguna dapat menjadwalkan pengurasan air melalui aplikasi. Hasil implementasi menunjukkan sistem mampu berfungsi sesuai dengan rancangan, membantu menjaga kestabilan kualitas air selama karantina ikan hias air tawar, serta mengurangi ketergantungan terhadap sistem pemantauan konvensional.</div>
+      
+    </div>
+    
+    <div class="paper-card"
          data-title="human health risks from multi-metal exposure via fish consumption in urban markets of southwestern nigeria"
          data-authors="laoye, babafemi j.; mabayoje, samson o.; ogunnusi, tolulope a.; akpor, oghenerobor b."
          data-journal="discover public health"
          data-abstract=""
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Discover Public Health</div>
+
+      
+      <div class="journal">
+        
+        📰 Discover Public Health
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -329,13 +480,18 @@ a:hover { text-decoration: underline; }
          data-authors="tiralongo, francesco; donnarumma, luigia; leotta, paola; sandulli, roberto"
          data-journal="diversity"
          data-abstract="marine biological invasions are rapidly reshaping mediterranean ecosystems, with growing consequences for biodiversity and fisheries. this study investigates recent changes in the composition of commercially important crustacean assemblages along the south-eastern coast of sicily (central mediterranean), focusing on penaeid shrimps (penaeus aztecus and penaeus kerathurus) and stomatopods (erugosquilla massavensis and squilla mantis). field surveys were conducted during the fishing seasons of 2021 and 2025 at major landing sites and markets (portopalo di capo passero, syracuse and catania), using standardized subsampling protocols applied to catches obtained by trammel nets and bottom trawls. species composition was quantified through repeated sampling events, and temporal differences were analyzed using non-parametric tests and binomial generalized linear models, incorporating year and fishing gear as explanatory variables. quantitative data were complemented by local ecological knowledge derived from structured interviews with professional fishers. across the four-year interval, both taxonomic groups exhibited a pronounced shift in species dominance. the proportion of the invasive shrimp p. aztecus increased from approximately 20% in 2021 to over 80% in 2025, while the invasive stomatopod e. massavensis rose from about 2% to nearly 90% of total landings. these changes were statistically significant and independent of fishing gear. fishers’ perceptions closely mirrored the quantitative trends, confirming the rapid replacement of native species by non-indigenous taxa and highlighting emerging socio-economic implications for local fisheries. our findings document a rapid shift in the composition of commercial crustacean landings in sicilian coastal waters, with invasive species becoming the dominant component of catches within a few years. this study underscores the need for adaptive fisheries management and integrated monitoring frameworks capable of responding to accelerating biological invasions in mediterranean marine ecosystems."
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Diversity</div>
+
+      
+      <div class="journal">
+        
+        📰 Diversity
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -358,17 +514,60 @@ a:hover { text-decoration: underline; }
     </div>
     
     <div class="paper-card"
+         data-title="what tires leave behind can become toxic fish food"
+         data-authors="owen, rebecca"
+         data-journal="eos"
+         data-abstract="tire particles might seem tasty, if you’re a fish—but a new study shows how this pervasive microplastic can affect growth and behavior in marine species."
+         data-summary=""
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Eos
+      </div>
+      
+
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1029/2026eo260197" target="_blank" rel="noopener">What Tires Leave Behind Can Become Toxic Fish Food</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Owen, Rebecca</span>
+        
+        <span>📅 2026-06-18</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Tire particles might seem tasty, if you’re a fish—but a new study shows how this pervasive microplastic can affect growth and behavior in marine species.</div>
+      
+    </div>
+    
+    <div class="paper-card"
          data-title="assessing seasonal changes in the efficiency of protein digestion in gastric and agastric fish using in vitro models"
          data-authors="solovyev, mikhail; kashinskaya, elena; moyano, francisco javier"
          data-journal="fish physiology and biochemistry"
          data-abstract=""
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Fish Physiology and Biochemistry</div>
+
+      
+      <div class="journal">
+        
+        📰 Fish Physiology and Biochemistry
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -390,13 +589,18 @@ a:hover { text-decoration: underline; }
          data-authors="wang, yanjun; ogino, yoshimi; furumitsu, keisuke; márquez-farías, j. fernando; yamaguchi, atsuko"
          data-journal="fisheries science"
          data-abstract=""
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Fisheries Science</div>
+
+      
+      <div class="journal">
+        
+        📰 Fisheries Science
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -418,13 +622,18 @@ a:hover { text-decoration: underline; }
          data-authors="watanabe, shigeru"
          data-journal="fisheries science"
          data-abstract=""
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Fisheries Science</div>
+
+      
+      <div class="journal">
+        
+        📰 Fisheries Science
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -446,13 +655,18 @@ a:hover { text-decoration: underline; }
          data-authors="wan, qiansheng; zhang, yingli; yang, shunxiang; peng, lewei"
          data-journal="fishes"
          data-abstract="freshwater aquaculture in china has expanded rapidly in recent decades, raising growing concerns about its environmental sustainability. however, the relationship between industrial agglomeration and environmental efficiency in freshwater aquaculture remains insufficiently understood. using panel data from 18 major freshwater aquaculture provinces in china from 2009 to 2023, this study investigates the nonlinear effects of industrial agglomeration on environmental efficiency. environmental efficiency is evaluated using a global super-sbm model incorporating undesirable outputs, while industrial agglomeration is measured by the location quotient index. a two-way fixed-effects model is employed for empirical estimation. the results reveal a significant inverted u-shaped relationship between industrial agglomeration and environmental efficiency, with a turning point at an agglomeration level of 2.519. moderate agglomeration improves environmental efficiency through economies of scale and technology diffusion, whereas excessive agglomeration generates crowding effects that reduce efficiency. further mechanism analysis shows that technology diffusion, proxied by the number of trained fishermen, plays a significant mediating role in this relationship. this study provides new empirical evidence on the nonlinear environmental effects of industrial agglomeration in freshwater aquaculture and offers policy implications for optimizing industrial spatial layout and developing differentiated environmental regulations to support the green and sustainable development of the sector."
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Fishes</div>
+
+      
+      <div class="journal">
+        
+        📰 Fishes
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -475,17 +689,98 @@ a:hover { text-decoration: underline; }
     </div>
     
     <div class="paper-card"
+         data-title="predicting the freshness of starch-coated snakehead fish fillets during storage using hyperspectral imaging combined with transfer learning"
+         data-authors="sha, mingyuan; chen, zemao; yu, jingxiao; wei, qingyi"
+         data-journal="foods"
+         data-abstract="freshness prediction of starch-coated snakehead fish fillets across different storage times remains challenging due to complex quality deterioration and spectral distribution shifts. in the current research, hyperspectral imaging (hsi) combined with transfer learning (tl) was developed to predict the freshness of starch-coated snakehead fish fillets during short-term refrigerated and long-term frozen storage. the results showed that storage led to texture deterioration, ph increase, tvb-n accumulation, and lipid oxidation, while starch coating effectively delayed quality degradation. compared with models based only on short-term or long-term data, the domain transfer convolutional neural network (dt-cnn) model improved the robustness of freshness prediction across storage stages. the dt-cnn model based on vis spectra achieved the best performance for tba prediction in the starch coating treatment group, with an rp2 of 0.76 and rmsep of 0.13, and showed strong performance for tvb-n prediction in the starch coating treatment group, with an rp2 of 0.85 and rmsep of 8.66. these results demonstrate that hsi combined with tl is a promising non-destructive method for freshness evaluation of starch-coated snakehead fish fillets during storage."
+         data-summary=""
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Foods
+      </div>
+      
+
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/foods15122191" target="_blank" rel="noopener">Predicting the Freshness of Starch-Coated Snakehead Fish Fillets During Storage Using Hyperspectral Imaging Combined with Transfer Learning</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Sha, Mingyuan; Chen, Zemao; Yu, Jingxiao; Wei, Qingyi</span>
+        
+        <span>📅 2026-06-17</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Freshness prediction of starch-coated snakehead fish fillets across different storage times remains challenging due to complex quality deterioration and spectral distribution shifts. In the current research, hyperspectral imaging (HSI) combined with transfer learning (TL) was developed to predict the freshness of starch-coated snakehead fish fillets during short-term refrigerated and long-term frozen storage. The results showed that storage led to texture deterioration, pH increase, TVB-N accumulation, and lipid oxidation, while starch coating effectively delayed quality degradation. Compared with models based only on short-term or long-term data, the domain transfer convolutional neural network (DT-CNN) model improved the robustness of freshness prediction across storage stages. The DT-CNN model based on VIS spectra achieved the best performance for TBA prediction in the starch coating treatment group, with an RP2 of 0.76 and RMSEP of 0.13, and showed strong performance for TVB-N prediction in the starch coating treatment group, with an RP2 of 0.85 and RMSEP of 8.66. These results demonstrate that HSI combined with TL is a promising non-destructive method for freshness evaluation of starch-coated snakehead fish fillets during storage.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="first assessment of life history and spatial ecology of the endemic raja ampat epaulette shark (hemiscyllium freycineti) in the dampier strait, indonesia"
+         data-authors="setyawan, edy; mambrasar, ronald; hasan, abdy w.; ambafen, orgenes; mofu, imanuel; saleo, nesmus; urbata, adrianus; mambraku, linus; mambrasar, deny; bani, hironimus"
+         data-journal="frontiers in fish science"
+         data-abstract="the raja ampat epaulette shark ( hemiscyllium freycineti ) is an endemic species inhabiting shallow coastal habitats of the raja ampat archipelago, indonesia. despite recent legal protection, information on its biology, population structure, and spatial ecology remains limited, constraining effective conservation. to address these gaps, a total of 64 nocturnal surveys (averaging 1.8–2.3 hours each) were conducted between february 2024 and april 2025 at six sites in the dampier strait region. using photo-identification and passive integrated transponder tagging, 736 unique individuals were identified from 1,191 sightings, with most records from arborek island (n = 602). of these, the population comprised 415 females and 321 males, resulting in a significantly female-biased sex ratio. total length (tl) ranged from 19.4 to 75.0 cm (mean = 51.1 cm), and body mass ranged from 24 to 1,025 g (mean = 412.8 g). the length–weight relationships indicated negative allometric growth in both females ( b = 2.91) and males ( b = 2.81). estimated length-at-maturity was 56.59 cm tl for females and 56.42 cm tl for males, with no significant difference between sexes. relative density ranged from 333 to 2,462 individuals per km², representing the highest population density recorded globally for hemiscyllium . a total of 256 individuals were resighted at least once, with resighting intervals extending up to 451 days. immature individuals exhibited significantly higher growth rates than mature ones (7.8 vs 2.8 cm year -1 ), while no sex-specific difference in growth was detected. the best-supported and biologically meaningful growth model, seasonally oscillating elefan with simulated annealing, estimated an asymptotic length ( l ∞ ) of 79.6 cm for all individuals, with a growth coefficient ( k ) of 0.747 year -1 . growth showed pronounced seasonal oscillations ( c = 0.915). sharks were most frequently observed in seagrass meadows. habitat use analyses revealed ontogenetic partitioning. coral reefs appear to function as a nursery habitat with 69% immature sharks, while seagrass and sand habitats supported higher proportions of adults. individuals were highly resident, showed no inter-site movement, and occupied small spatial ranges, with maximum net displacements of 475 m. collectively, these findings provide the first demographic and spatial baseline for h. freycineti in raja ampat."
+         data-summary=""
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Frontiers in Fish Science
+      </div>
+      
+
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3389/frish.2026.1820382" target="_blank" rel="noopener">First assessment of life history and spatial ecology of the endemic Raja Ampat epaulette shark (Hemiscyllium freycineti) in the Dampier Strait, Indonesia</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Setyawan, Edy; Mambrasar, Ronald; Hasan, Abdy W.; Ambafen, O...</span>
+        
+        <span>📅 2026-06-17</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">The Raja Ampat epaulette shark ( Hemiscyllium freycineti ) is an endemic species inhabiting shallow coastal habitats of the Raja Ampat Archipelago, Indonesia. Despite recent legal protection, information on its biology, population structure, and spatial ecology remains limited, constraining effective conservation. To address these gaps, a total of 64 nocturnal surveys (averaging 1.8–2.3 hours each) were conducted between February 2024 and April 2025 at six sites in the Dampier Strait region. Using photo-identification and passive integrated transponder tagging, 736 unique individuals were identified from 1,191 sightings, with most records from Arborek Island (n = 602). Of these, the population comprised 415 females and 321 males, resulting in a significantly female-biased sex ratio. Total length (TL) ranged from 19.4 to 75.0 cm (mean = 51.1 cm), and body mass ranged from 24 to 1,025 g (mean = 412.8 g). The length–weight relationships indicated negative allometric growth in both females ( b = 2.91) and males ( b = 2.81). Estimated length-at-maturity was 56.59 cm TL for females and 56.42 cm TL for males, with no significant difference between sexes. Relative density ranged from 333 to 2,462 individuals per km², representing the highest population density recorded globally for Hemiscyllium . A total of 256 individuals were resighted at least once, with resighting intervals extending up to 451 days. Immature individuals exhibited significantly higher growth rates than mature ones (7.8 vs 2.8 cm year -1 ), while no sex-specific difference in growth was detected. The best-supported and biologically meaningful growth model, seasonally oscillating ELEFAN with simulated annealing, estimated an asymptotic length ( L ∞ ) of 79.6 cm for all individuals, with a growth coefficient ( K ) of 0.747 year -1 . Growth showed pronounced seasonal oscillations ( C = 0.915). Sharks were most frequently observed in seagrass meadows. Habitat use analyses revealed ontogenetic partitioning. Coral reefs appear to function as a nursery habitat with 69% immature sharks, while seagrass and sand habitats supported higher proportions of adults. Individuals were highly resident, showed no inter-site movement, and occupied small spatial ranges, with maximum net displacements of 475 m. Collectively, these findings provide the first demographic and spatial baseline for H. freycineti in Raja Ampat.</div>
+      
+    </div>
+    
+    <div class="paper-card"
          data-title="stability assessment of calcium carbonate dissolution as a marine carbon dioxide removal mechanism"
          data-authors="melendez-perez, amanda b.; gilbert, kimberly; cyronak, tyler"
          data-journal="frontiers in marine science"
          data-abstract="ocean alkalinity enhancement (oae) is a promising approach for removing carbon dioxide from the atmosphere by increasing seawater alkalinity. however, the effectiveness of oae depends on avoiding the precipitation of calcium carbonate (caco 3 ) that would reduce oae efficiency by removing added alkalinity before co 2 uptake can occur, or in cases of more extensive precipitation, potentially release co 2 back to the atmosphere (e.g., ‘runaway’ precipitation). we examined the stability of alkalinity-enhanced seawater under conditions relevant to caco 3 -based oae by dissolving caco 3 in co 2 -enriched seawater and testing three alkalinity additions (+3,000, +7,000, and +14,000 µmol kg -1 ) at two temperatures (5 °c and 25 °c) using two co 2 equilibration approaches. we also evaluated how mixing alkalinity-enhanced water with natural water from the savannah river influences stability across different salinity levels and conditions. enhanced alkalinity waters showed clear threshold behavior for stability. the highest alkalinity addition (+14,000 µmol kg -1 ) consistently caused rapid caco 3 precipitation (within a day), while the lowest addition (+3,000 µmol kg -1 ) remained stable for more than one month. the intermediate addition (+7,000 µmol kg -1 ) showed delayed caco 3 formation, with the timing strongly influenced by temperature and equilibration endpoint. even in the highest alkalinity additions no ‘runaway’ precipitation was observed where more alkalinity was removed than was added to the seawater. mixing alkalinity-enhanced water with natural water increased stability, particularly when estuarine water made up at least 60% of the mixture, with salinity of the mixing waters playing an important role in stability. models showed that aragonite saturation state provides a useful indicator of precipitation risk, however, increases in calcium concentration must be taken into account when caco 3 is used as the alkalinity source. our results define practical limits for pre-equilibrated caco 3 -based alkalinity enhancement in coastal environments and emphasize the importance of site-specific conditions when determining effective alkalinity addition levels."
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Frontiers in Marine Science</div>
+
+      
+      <div class="journal">
+        
+        📰 Frontiers in Marine Science
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -512,13 +807,18 @@ a:hover { text-decoration: underline; }
          data-authors="mitchell, lavinia; young, nina m."
          data-journal="frontiers in marine science"
          data-abstract="long-finned pilot whales ( globicephala melas ) are widely distributed across the north atlantic and are often assessed for management as a single, abundant population. however, the species exhibits strong social organisation, stable matrilineal structure, and reproduction that occurs within social units, characteristics that shape demographic connectivity. these features raise questions about whether abundance alone provides a sufficient basis for assessing the sustainability of recurrent removals from a socially structured marine mammal population. recent genetic and ecological studies indicate broad-scale differentiation and suggest regional structuring within the north atlantic, yet sampling remains uneven and datasets linked directly to harvested individuals are limited. consequently, it is not currently possible to determine how removals in the faroe islands are distributed across potential demographically independent populations (dips), matrilines or family lineages. this mini review synthesises current evidence on population structure, identifies key uncertainties, and evaluates post-mortem genetic sampling as a practical approach to reducing uncertainty and improving sustainability assessments for north atlantic long-finned pilot whales."
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Frontiers in Marine Science</div>
+
+      
+      <div class="journal">
+        
+        📰 Frontiers in Marine Science
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -545,13 +845,18 @@ a:hover { text-decoration: underline; }
          data-authors="guan, yi; zhang, tianyu"
          data-journal="frontiers in marine science"
          data-abstract="marginal coral reefs in the northern south china sea (nscs) are increasingly affected by thermal stress and local disturbances, yet their potential larval connectivity remains poorly quantified. here, we assessed potential larval exchange among 23 reef patches in the nscs using a lagrangian particle-tracking model driven by regional ocean circulation data from 2000 to 2025. connectivity was evaluated under pelagic larval duration (pld) scenarios of 5, 30, and 120 days. increasing pld from 5 to 120 d increased the number of potential inter-patch links from 13 to 29, but mean positive off-diagonal connectivity declined by approximately 62%, indicating that many additional long-pld pathways were weak. episodic networks further showed that such low-frequency pathways could extend potential exchange among reef sectors, including the beibu gulf-western hainan sector, the xisha islands, and the vietnam coastal reefs. at the patch level, several beibu gulf and hainan reefs showed self-retentive tendencies, whereas patches in the xisha islands and vietnam coastal sector showed more diverse functional roles. these findings suggest that marginal reefs in the nscs are linked by a spatially uneven and temporally intermittent network of potential larval exchange, providing testable hypotheses for connectivity-informed conservation assessment that should be evaluated alongside habitat condition, recruitment, and genetic evidence."
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Frontiers in Marine Science</div>
+
+      
+      <div class="journal">
+        
+        📰 Frontiers in Marine Science
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -578,13 +883,18 @@ a:hover { text-decoration: underline; }
          data-authors="sterzelecki, fabio carneiro; bentes, bianca"
          data-journal="frontiers in marine science"
          data-abstract=""
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Frontiers in Marine Science</div>
+
+      
+      <div class="journal">
+        
+        📰 Frontiers in Marine Science
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -606,13 +916,18 @@ a:hover { text-decoration: underline; }
          data-authors="argiyanti, erlinda; manggalih, galuh ratna; damayanti, savira; febriyanti, adinda rizka; putria, alvioli; nuraya, ahmad setiawan"
          data-journal="jp"
          data-abstract="the fisheries sector is a vital pillar of indonesia's maritime economy, yet its contribution to the national gdp continues to face structural stagnation. this study aims to analyze the influence of specific fisheries sector variables, namely: domestic investment (pmdn) in fisheries, foreign investment (pma) in fisheries, fisheries production volume, and fisheries export value on the fisheries gdp in indonesia for the 2015-2025 period. the analytical method employed is multiple linear regression using the double log model. the results indicate that simultaneously, all independent variables in the fisheries sector significantly influence the fisheries gdp. however, partially, only domestic investment (pmdn) in fisheries has a positive and significant impact. conversely, foreign investment (pma) in fisheries, fisheries production volume, and fisheries export value do not show a significant effect. the lack of significance among these variables suggests structural constraints, such as low product downstreaming, logistical inefficiencies, and the negative impact of illegal, unreported, and unregulated (iuu) fishing, which leads to a leakage of economic value-added before it can be recorded in the national gdp. this study recommends that the government strengthen the domestic capital base and tighten maritime surveillance to suppress fish poaching. a downstreaming strategy for fisheries export products is key to ensuring that physical production capacity can be optimally converted into economic value-added for national gdp growth."
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 JP</div>
+
+      
+      <div class="journal">
+        
+        📰 JP
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -635,19 +950,133 @@ a:hover { text-decoration: underline; }
     </div>
     
     <div class="paper-card"
+         data-title="income analysis and business feasibility of household-scale salted fish processing in pasar bantal village, mukomuko regency"
+         data-authors="nabiu, nur lina maratana; zamdial, zamdial; hidayati, rama dhona"
+         data-journal="jp"
+         data-abstract="salted fish processing represents an important livelihood activity for many coastal households, providing opportunities to increase the value of fishery products while generating additional income. this study assessed the income and financial feasibility of household-scale salted fish processing businesses in pasar bantal village, teramang jaya district, mukomuko regency. the research was conducted from december 2025 to january 2026 using a quantitative descriptive approach. data were collected through observations, interviews, and documentation involving 15 salted fish processors selected from the local processing community. economic performance was evaluated through analyses of production costs, revenue, net income, and return cost ratio (rcr). the results revealed that the average production cost was idr 12,016,311 per year, while the average annual revenue reached idr 29,232,000. consequently, processors obtained an average net income of idr 17,215,689 per year. the average rcr value was 2.44, indicating that revenues were more than twice the production costs incurred. these findings demonstrate that household-scale salted fish processing in pasar bantal village is financially feasible and capable of generating positive economic returns. business sustainability is supported by the availability of raw materials, low capital requirements, the utilization of family labor, and relatively stable market demand. the study highlights the potential of salted fish processing as a livelihood diversification strategy that can contribute to strengthening the economic resilience of coastal households."
+         data-summary=""
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 JP
+      </div>
+      
+
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.29303/jp.v16i3.2280" target="_blank" rel="noopener">INCOME ANALYSIS AND BUSINESS FEASIBILITY OF HOUSEHOLD-SCALE SALTED FISH PROCESSING IN PASAR BANTAL VILLAGE, MUKOMUKO REGENCY</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Nabiu, Nur Lina Maratana; Zamdial, Zamdial; Hidayati, Rama D...</span>
+        
+        <span>📅 2026-06-17</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Salted fish processing represents an important livelihood activity for many coastal households, providing opportunities to increase the value of fishery products while generating additional income. This study assessed the income and financial feasibility of household-scale salted fish processing businesses in Pasar Bantal Village, Teramang Jaya District, Mukomuko Regency. The research was conducted from December 2025 to January 2026 using a quantitative descriptive approach. Data were collected through observations, interviews, and documentation involving 15 salted fish processors selected from the local processing community. Economic performance was evaluated through analyses of production costs, revenue, net income, and Return Cost Ratio (RCR). The results revealed that the average production cost was IDR 12,016,311 per year, while the average annual revenue reached IDR 29,232,000. Consequently, processors obtained an average net income of IDR 17,215,689 per year. The average RCR value was 2.44, indicating that revenues were more than twice the production costs incurred. These findings demonstrate that household-scale salted fish processing in Pasar Bantal Village is financially feasible and capable of generating positive economic returns. Business sustainability is supported by the availability of raw materials, low capital requirements, the utilization of family labor, and relatively stable market demand. The study highlights the potential of salted fish processing as a livelihood diversification strategy that can contribute to strengthening the economic resilience of coastal households.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="seaweed form as a carbon capture proxy: surface area-to-volume ratio as a general predictor of marine macroalgae productivity"
+         data-authors="machado, joão p. g.; de oliveira, vinícius p."
+         data-journal="journal of applied phycology"
+         data-abstract="abstract seaweeds are major contributors to coastal primary production and are increasingly targeted for aquaculture and blue carbon strategies. however, general and low-cost models to estimate their productivity and carbon capture remain lacking. we tested whether the surface area to volume ratio (av) predicts primary productivity across 11 tropical macroalgal species from the brazilian coast, using ex situ light–dark bottle oxygen incubations. net primary productivity (npp), gross primary productivity (gpp), and respiration (r) were quantified and related to species-specific av values obtained from morphometric analysis. av was strongly correlated with npp (r = 0.72) and gpp (r = 0.68), but weakly and negatively with r (r = –0.22). regression models with av as the predictor explained 57–65% of the variance in npp and gpp, enabling derivation of predictive equations for primary productivity and carbon capture. based on these relationships, we developed c eaweed , a trait-based framework that scales from species to communities by combining av distributions with species frequencies. this model provides a reproducible and low-cost tool for estimating seaweed carbon capture and supports applications in aquaculture, ecosystem monitoring, and blue carbon accounting. c eaweed represents the first cross-taxa quantitative model linking algal morphology to carbon capture and establishes av as a predictive functional trait for macroalgal productivity."
+         data-summary=""
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Applied Phycology
+      </div>
+      
+
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1007/s10811-026-03934-5" target="_blank" rel="noopener">Seaweed form as a carbon capture proxy: surface area-to-volume ratio as a general predictor of marine macroalgae productivity</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Machado, João P. G.; de Oliveira, Vinícius P.</span>
+        
+        <span>📅 2026-06-16</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract Seaweeds are major contributors to coastal primary production and are increasingly targeted for aquaculture and blue carbon strategies. However, general and low-cost models to estimate their productivity and carbon capture remain lacking. We tested whether the surface area to volume ratio (AV) predicts primary productivity across 11 tropical macroalgal species from the Brazilian coast, using ex situ light–dark bottle oxygen incubations. Net primary productivity (NPP), gross primary productivity (GPP), and respiration (R) were quantified and related to species-specific AV values obtained from morphometric analysis. AV was strongly correlated with NPP (r = 0.72) and GPP (r = 0.68), but weakly and negatively with R (r = –0.22). Regression models with AV as the predictor explained 57–65% of the variance in NPP and GPP, enabling derivation of predictive equations for primary productivity and carbon capture. Based on these relationships, we developed C eaweed , a trait-based framework that scales from species to communities by combining AV distributions with species frequencies. This model provides a reproducible and low-cost tool for estimating seaweed carbon capture and supports applications in aquaculture, ecosystem monitoring, and blue carbon accounting. C eaweed represents the first cross-taxa quantitative model linking algal morphology to carbon capture and establishes AV as a predictive functional trait for macroalgal productivity.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="utilization of high-pufa sardine by-product oil in emulsion gels for odeng fish cake prepared from restructured tilapia surimi"
+         data-authors="ramadhan, wahyu; uswatun hasanah, putri; riyanto, bambang; suseno, sugeng heri; santoso, joko; pari, rizfi fariz; wardana, ata aditya; ikasari, diah"
+         data-journal="journal of culinary science &amp; technology"
+         data-abstract=""
+         data-summary=""
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Culinary Science &amp; Technology
+      </div>
+      
+
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1080/15428052.2026.2687668" target="_blank" rel="noopener">Utilization of High-PUFA Sardine By-Product Oil in Emulsion Gels for Odeng Fish Cake Prepared from Restructured Tilapia Surimi</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Ramadhan, Wahyu; Uswatun Hasanah, Putri; Riyanto, Bambang; S...</span>
+        
+        <span>📅 2026-06-18</span>
+      </div>
+
+      
+    </div>
+    
+    <div class="paper-card"
          data-title="conservation and management implications of genetic and geometric scale variation in the ancient fish giant featherback (
                     <i>chitala lopis</i>
                     )"
          data-authors="muslimin, boby; muhammad, gunawan; wibowo, arif; kurniawan, kurniawan; prakoso, vitas atmadi; ginanjar, rendy; zamroni, mochammad; sumarto, bayu kreshna adhitya; astuti, septiana sri; irawan, deni"
          data-journal="journal of fish biology"
          data-abstract="abstract giant featherback ( chitala lopis ) is an ancient species of freshwater fish considered globally extinct until extant populations were re‐discovered in the sundaland region of indonesia in 2022. to improve management of the remaining populations, this study used genomic dna and landmark‐based geometric morphometric analyses of fish scales to evaluate whether these approaches can discriminate among phylogenetic clades, sexes and broad habitat ecotypes inhabited by extant c. lopis populations. dna analyses of 39 specimens from eight rivers provided the first evidence of two phylogenetic clades: (i) those from central and south borneo and (ii) those from west borneo, riau, south sumatra and jambi. scale morphology was characterised across eight body areas using scale dimensions (relative height and width to standard length and height‐to‐width ratio), centroid size and procrustes shape coordinates, with repeated‐measures structure accounted for using linear mixed models and procrustes anova with a randomised residual permutation procedure (rrpp). scale dimensions and centroid size varied significantly among body areas (all p &lt; 0.001), with lateral and dorsal regions bearing the largest scales and the pectoral region the smallest. clade membership had a small but significant effect on relative scale height (h/sl; β = −0.44, p = 0.024), with clade 2 individuals consistently showing lower values than clade 1, though scale geometry overall showed limited promise as a rapid non‐destructive stock discriminator. both clade and sex had small but significant effects on procrustes scale shape ( r 2 = 0.015 and 0.013, respectively; both p = 0.001), while phenotypic trajectory analysis revealed that males exhibited a significantly greater amplitude of scale shape change across body positions than females (trajectory magnitude: m = 0.289, f = 0.207; p = 0.034), despite both sexes following parallel shape trajectories along the body axis. these results provide a novel morphometric baseline for c. lopis and highlight the importance of body‐position‐specific and multivariate approaches when characterising scale morphology in endangered freshwater fishes."
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Journal of Fish Biology</div>
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -678,13 +1107,18 @@ a:hover { text-decoration: underline; }
          data-authors="di camillo, cristina gioia; zichittella, gaspare; tiralongo, francesco"
          data-journal="journal of fish biology"
          data-abstract="abstract functional morphology highlights the adaptive flexibility of fish feeding strategies across environmental gradients and seasonal variations, providing key insights for the management and conservation of ichthyofaunal communities and their habitats. labridae fishes possess a specialized pharyngeal jaw apparatus (pja) that enables them to crush and consume prey with heavily calcified or chitinized shells. this functional adaptation has expanded their dietary flexibility, promoted trophic specialization and enhanced the ecological diversity of wrasses. here, we present the first comprehensive morphological analysis of the pharyngeal jaws of labrus viridis linnaeus, 1758, a labrid fish widely distributed in shallow coastal habitats of the mediterranean sea. the pja was examined using micro‐computed tomography (micro‐ct), scanning electron microscopy and energy‐dispersive x‐ray spectroscopy. stomach contents from eight specimens were also analysed to infer prey composition and feeding strategy. the pharyngeal jaws of l. viridis are characterized by unicuspid molariform and caniniform teeth, showing intraosseous tooth development, weakly developed plicidentine and a one‐to‐one tooth replacement. this heterodont dentition, together with the predominance of caniniform over molariform teeth and the diverse prey items identified in gut contents, indicates an opportunistic feeding strategy and a diet distinct from that of the congeneric labrus bergylta . this work suggests the existence of ecological divergence among congeneric species. moreover, our results provide a reference point for linking the morphofunctional traits to the dietary role of l. viridis , encouraging new investigations into the morphology of the pja and trophic dynamics of other mediterranean wrasses."
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Journal of Fish Biology</div>
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -715,13 +1149,18 @@ a:hover { text-decoration: underline; }
          data-authors="seifert, jesco; moore, daniel m."
          data-journal="journal of fish biology"
          data-abstract="abstract the deep‐water catshark family (pentanchidae) is the most species‐rich family among extant shark lineages. within this family, the genus apristurus is the largest, comprising small, deep‐sea species characterised by elongated bodies and dorso‐ventrally compressed snouts. five apristurus species are currently recognised from the north atlantic, including waters surrounding ireland and the united kingdom ( a. aphyodes , a. laurussonii , a. manis , a. melanoasper and a. microps ). however, their biology remains poorly understood owing to their occurrence at considerable depths and their close morphological similarity. this study presents the first comprehensive comparative analysis of tooth morphology for apristurus species recorded in the region. the results reveal pronounced sexual dimorphism in a. aphyodes and provide evidence supporting ontogenetic changes in tooth morphology in a. melanoasper and a. microps . furthermore, distinctive morphological characteristics are identified and described for each species using scanning electron microscopy of the dentition. these findings establish novel diagnostic criteria that enhance the reliability of species identification and provide a robust framework for future taxonomic and ecological research."
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Journal of Fish Biology</div>
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -750,13 +1189,18 @@ a:hover { text-decoration: underline; }
          data-authors="paing, si thu; kregting, louise; aspin, glen; bell, peter; chambers, benie; ford, sharon; jacobs, ross; knox, greg; rhone, scott; smeaton, malcolm"
          data-journal="journal of marine science and engineering"
          data-abstract="this study presents field measurements for a non-conventional mobile square cylinder fish enclosure, with permeable ends, evaluated under both towed and moored conditions at a semi-open ocean test site. novelty lies within the enclosure design that enables both mobility and control of internal flow through the incorporation of an adjustable aft-end perimeter constriction to regulate internal flow and support fish welfare by enabling control of swimming conditions. enclosure motion, internal flow speeds and hydrodynamic loads were measured for three constrictions (0%, 40% and 60%). the primary objective was to assess the effectiveness of aft-end constriction in regulating internal flow to levels compatible with sustainable swimming speeds for finfish culture. the enclosure remained stable at approximately 9 m depth across all vessel speeds and constriction settings in both towed and moored scenarios. during towing, increasing constriction to 40% reduced time-averaged internal flow by up to 24% without a significant increase in hydrodynamic load. a 60% constriction achieved a larger reduction (~51%) but resulted in a substantial load increase (~90% relative to 0% constriction), indicating a trade-off between flow control and towing resistance. under moored conditions, aft-end constriction had minimal influence on both internal flow and hydrodynamic load. mooring loads showed no clear relationship with wave height and only a weak correlation with ambient current speed. overall, the results demonstrate that aft-end constriction is an effective mechanism for controlling internal flow during towing, but has limited impact when moored. the enclosure’s stability and controllability highlight its potential advantages over conventional gravity cages for mobile open-ocean finfish aquaculture applications."
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Journal of Marine Science and Engineering</div>
+
+      
+      <div class="journal">
+        
+        📰 Journal of Marine Science and Engineering
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -783,13 +1227,18 @@ a:hover { text-decoration: underline; }
          data-authors="daugirdas, john t."
          data-journal="journal of the american society of nephrology"
          data-abstract=""
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Journal of the American Society of Nephrology</div>
+
+      
+      <div class="journal">
+        
+        📰 Journal of the American Society of Nephrology
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -811,13 +1260,18 @@ a:hover { text-decoration: underline; }
          data-authors="azzahra, siti salwa; maresti, fatia amalia; mustaqim, kiki"
          data-journal="jurnal teknologi informatika dan komputer"
          data-abstract="marine capture fisheries in west java play a vital role in regional economic development, yet disparities in productivity among coastal areas remain unresolved. this study aims to classify coastal districts and cities in west java based on key production indicators: fish catch volume, number of vessels, number of marine fishers, average weighted price per kilogram, and the number of fishing households. a k-means clustering approach was applied to group these regions into homogeneous clusters, enabling more targeted policy development. the analysis identified three distinct clusters: moderately productive areas with low efficiency, economically efficient areas with high-value catch but limited volume, and a dominant production zone with significantly higher outputs than others. these findings provide a clearer understanding of regional fishery dynamics and offer recommendations for each cluster. proposed strategies include expanding infrastructure and training for low-performing regions, and focusing on product diversification, post-harvest processing, and sustainable management in high-performing areas. this study demonstrates the usefulness of data-driven methods to support marine fishery development and regional planning."
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Jurnal Teknologi Informatika dan Komputer</div>
+
+      
+      <div class="journal">
+        
+        📰 Jurnal Teknologi Informatika dan Komputer
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -844,13 +1298,18 @@ a:hover { text-decoration: underline; }
          data-authors="jardim, antonio augusto; de oliveira, lucas pires; frança, filipe machado; hashiguti, danielly torres; da silva, ana júlia pinheiro; de almeida, matheus silva; cunha, elida jesana santana; raseira, marcelo bassols; mendes-júnior, raimundo nonato; de assis montag, luciano fogaça"
          data-journal="landscape ecology"
          data-abstract="abstract context landscape heterogeneity and environmental gradients operating across spatial scales shape species distributions and community assembly in freshwater ecosystems. in stream networks, these landscape processes mediate both environmental filtering and dispersal, generating species co-occurrence patterns that reflect spatial aggregation or segregation. objectives our aim is to understand how environmental variables and functional and phylogenetic dissimilarity influence fish species co-occurrence patterns in tropical streams. methods fishes were sampled using circular hand nets at 18 headwater streams, distributed across two contrasting amazonian vegetation types: savannas and forests. environmental variables were assessed at three spatial scales: local, catchment, and drainage network. local habitat structure and physicochemical parameters were assessed in situ, using standardized protocols. catchment-scale variables and distances to the main river channel were obtained through remote sensing analyses. results fish assemblages differed markedly between forest and savanna streams, reflecting distinct environmental settings and coexistence patterns. co-occurrence analyses revealed non-random associations among species, encompassing both positive and negative relationships. these relationships were significantly influenced by local habitat structure, catchment vegetation cover, and spatial structure. species pairs with greater functional dissimilarity tended to co-occur more frequently than expected by chance, whereas phylogenetic dissimilarity showed no relationship with co-occurrence patterns. conclusions environmental variation between forest and savanna streams drives differences in species coexistence mechanisms. riparian vegetation and forest cover at the catchment scale are key determinants of species co-occurrence and community structure. maintaining riparian buffers and preserving forest cover are therefore essential to sustain biodiversity, ecological interactions, and functional integrity in amazonian freshwater landscapes."
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Landscape Ecology</div>
+
+      
+      <div class="journal">
+        
+        📰 Landscape Ecology
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -877,13 +1336,18 @@ a:hover { text-decoration: underline; }
          data-authors="halim, muhammad; stankovic, milica; prathep, anchana"
          data-journal="marine ecology progress series"
          data-abstract=""
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Marine Ecology Progress Series</div>
+
+      
+      <div class="journal">
+        
+        📰 Marine Ecology Progress Series
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -905,13 +1369,18 @@ a:hover { text-decoration: underline; }
          data-authors="hildebrand, lisa; pirotta, enrico; stewart, joshua david; new, leslie; bierlich, kc; bird, clara n; fernandez ajo, alejandro; torres, leigh g"
          data-journal="marine ecology progress series"
          data-abstract=""
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Marine Ecology Progress Series</div>
+
+      
+      <div class="journal">
+        
+        📰 Marine Ecology Progress Series
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -933,13 +1402,18 @@ a:hover { text-decoration: underline; }
          data-authors="balsells f-pedrera, marta; grifoll, manel; fernández-tejedor, margarita; espino, manuel"
          data-journal="marine ecology progress series"
          data-abstract=""
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Marine Ecology Progress Series</div>
+
+      
+      <div class="journal">
+        
+        📰 Marine Ecology Progress Series
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -961,13 +1435,18 @@ a:hover { text-decoration: underline; }
          data-authors="jacoby, júlia; lanco, sophie; barbraud, christophe; delord, karine; bugoni, leandro; nunes, guilherme tavares"
          data-journal="marine ecology progress series"
          data-abstract=""
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Marine Ecology Progress Series</div>
+
+      
+      <div class="journal">
+        
+        📰 Marine Ecology Progress Series
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -989,13 +1468,18 @@ a:hover { text-decoration: underline; }
          data-authors="barbosa, romina vanessa; schuster, jasmin; godwin, sean; man, lauren; dedeluk, nicola; bianucci, laura; neufeld, christopher j; costa, maycira"
          data-journal="marine ecology progress series"
          data-abstract=""
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Marine Ecology Progress Series</div>
+
+      
+      <div class="journal">
+        
+        📰 Marine Ecology Progress Series
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -1017,13 +1501,18 @@ a:hover { text-decoration: underline; }
          data-authors="liguori, gianluca; carotenuto, ylenia; dall'olmo, giorgio; ambrosio, maria assunta; buondonno, angela; chiarore, antonia; mirasole, alice; cianelli, daniela; ciannelli, lorenzo"
          data-journal="marine ecology progress series"
          data-abstract=""
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Marine Ecology Progress Series</div>
+
+      
+      <div class="journal">
+        
+        📰 Marine Ecology Progress Series
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -1045,13 +1534,18 @@ a:hover { text-decoration: underline; }
          data-authors="phillipson, jeremy; steins, nathalie a.; raakjaer, jesper"
          data-journal="maritime studies"
          data-abstract="abstract in this paper we delve into the history of fisheries social sciences in europe. we reflect, on the 30th anniversary of its start date, on the works of the european social science fisheries network (essfin) and its contribution to the development and integration of social science expertise and research within fisheries management. in the late 1990s, essfin succeeded in plugging the institutional gap, providing an opportunity to demonstrate the extent, breadth and relevance of the social sciences' potential to an understanding of issues in the organisation and governance of marine fisheries in europe. it helped change the course of fisheries social sciences and became the standard bearer for an applied social approach to fisheries governance and management, and its value to the growing focus on multi-disciplinary research. essfin had long lasting contributions in terms of substantive insights and agendas, capacity building within the marine social sciences and policy impacts, but crucially also potentially offers insights relevant to current and future challenges in the field."
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Maritime Studies</div>
+
+      
+      <div class="journal">
+        
+        📰 Maritime Studies
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -1078,13 +1572,18 @@ a:hover { text-decoration: underline; }
          data-authors="paßlack, nadine; veit, helena; funk, henri; zentek, jürgen; schuchardt, sven"
          data-journal="metabolites"
          data-abstract="background/objectives: dietary fish oil supplementation has been associated with lower total plasma triacylglycerols in felines. the present study aimed to characterize this effect in more detail, using lipidomic analyses. methods: plasma samples of cats (n = 10), receiving a complete basic diet, with and without the addition of 0.5 g and 1.0 g fish oil/kg body weight/day, each for 21 days, in a randomized crossover design, were analyzed by an fia ms/ms-based targeted metabolomics approach. results: the results demonstrated that 360 metabolites were affected by the dietary treatments, predominantly belonging to triacylglycerols (n = 124), phosphatidylcholines (n = 68), phosphatidylethanolamines (n = 63), phosphatidylglycerols (n = 33), and phosphatidylinositols (n = 21). lowering effects of fish oil supplementation on plasma triacylglycerols could be confirmed. however, increased levels of specific triacylglycerols were also observed, especially of those containing eicosapentaenoic or docosahexaenoic acid. the decreased triacylglycerols showed a lower number of carbons and a lower degree of unsaturation than the enhanced triacylglycerols. such a lipid profile is assumed to be beneficial in human medicine; its relevance for feline health, however, is unclear so far. conclusions: in conclusion, the lipidomic analyses provided a detailed characterization of the feline plasma lipidome and its modulation by a dietary fish oil supplementation. the clinical relevance of these findings warrants further investigation."
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Metabolites</div>
+
+      
+      <div class="journal">
+        
+        📰 Metabolites
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -1113,13 +1612,18 @@ a:hover { text-decoration: underline; }
          data-authors="luu, lat hong; lam, nhan thanh; phan, nguyet nhu; phan, trang thi phuong"
          data-journal="microbiology resource announcements"
          data-abstract="abstract we report the draft genome sequence of enterobacter cloacae tg-c5.2 isolated from shrimp aquaculture water in vietnam. the genome harbors multiple antimicrobial resistance genes, including blactx-m-15 ."
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Microbiology Resource Announcements</div>
+
+      
+      <div class="journal">
+        
+        📰 Microbiology Resource Announcements
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -1148,13 +1652,18 @@ a:hover { text-decoration: underline; }
          data-authors="sass, greg g; shaw, stephanie l; preul stimetz, taylor n; smith, quinnlan c; oele, dan; roberts, craig m; toshner, scott"
          data-journal="north american journal of fisheries management"
          data-abstract="abstract objective fisheries-dependent and fisheries-independent information is critical for assessing the status and trends of fish populations and regulations. we tested for changes in common fisheries-dependent and fisheries-independent metrics for largemouth bass micropterus nigricans (lmb) and smallmouth bass m. dolomieu (smb) in wisconsin during 1990–2024. we also tested for responses associated with liberalized harvest regulations compared with a more conservative bass regulation. methods we used creel survey data collected during 1990–2024 to test for trends in fisheries-dependent metrics. we used electrofishing data to test for trends in fisheries-independent metrics. electrofishing data were also used to test for differences in relative abundance and proportional size distribution in a subset of bass populations with liberalized harvest regulations versus a more conservative black bass regulation. results directed angler effort for smb significantly increased, whereas directed effort for lmb did not change. catch rates for both species significantly increased. harvest rates for lmb remained low, while smb harvest rates significantly declined. relative abundances for both species significantly increased. population size structure increased for low to intermediate length-classes of lmb and intermediate to high length-classes of smb. density-dependent growth responses in mean length at age were evident in older age-classes for both species. relative abundances of lmb populations with liberalized harvest regulations significantly declined, whereas smb showed no change. both species showed increased population size structure, but the increase was greater for lmb. conclusions our results suggest that bass populations are thriving in wisconsin. however, density-dependent effects on growth may not be balancing diverse angler desires of catch and trophy potential or alleviating the negative correlation of lmb with walleye sander vitreus. liberalized regulations on lmb showed promise for better balance in diverse bass fishing opportunity. whether future angler behavioral responses (e.g., harvest rates) will be sufficient to balance fish communities that are managed for multiple species and ecosystem services is unclear."
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 North American Journal of Fisheries Management</div>
+
+      
+      <div class="journal">
+        
+        📰 North American Journal of Fisheries Management
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -1181,13 +1690,18 @@ a:hover { text-decoration: underline; }
          data-authors="absar, shakib; ahmed, iftekhar; khalique, md istiaque; shorfuzzaman, mohammad; rahman, md. mahfuzur; haque, asrar u.; kohinoor, md. saidur rahman"
          data-journal="scientific data"
          data-abstract="abstract the sylfishbd dataset addresses the critical need for automated identification of local fish species in bangladesh’s dynamic aquatic ecosystems and bustling fish markets. it comprises 9,075 high-resolution images of 9 prevalent freshwater species, captured under uncontrolled, real-world conditions over 7 months to capture seasonal variations in appearance, freshness, and market presentation. unlike prior datasets limited to controlled studio settings, sylfishbd faithfully replicates the complexity of operational fish markets: diverse lighting (natural daylight to fluorescent), varied viewpoints (top-down, angled, close-up), cluttered backgrounds (ice, trays, water, scales), and natural occlusions (vendor hands, overlapping fish). each image contains exactly one clearly centered fish instance, annotated with a tight bounding box and a high-precision binary segmentation mask generated using the segment anything model (sam). all images are standardized to 500 × 500 pixels, organized hierarchically by species, and accompanied by comprehensive metadata, enabling seamless integration into machine learning pipelines. the dataset supports a wide range of computer vision tasks, including classification, object detection, instance segmentation, and morphological analysis, without requiring additional preprocessing. by bridging the gap between laboratory-based datasets and authentic market environments, sylfishbd serves as a robust, publicly available benchmark for developing deployable models in real-world aquaculture, trade transparency, price monitoring, and regulatory oversight. it empowers researchers and practitioners to advance automated species recognition, freshness assessment, and fair market practices in one of the world’s most active fish-producing regions."
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Scientific Data</div>
+
+      
+      <div class="journal">
+        
+        📰 Scientific Data
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -1214,13 +1728,18 @@ a:hover { text-decoration: underline; }
          data-authors="saç, gülşah; arabacı, gökmen; çağan, aleyna; ağdamar, sevan; özuluğ, müfit; doğaç, yasemin i̇spirli"
          data-journal="scientific reports"
          data-abstract=""
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Scientific Reports</div>
+
+      
+      <div class="journal">
+        
+        📰 Scientific Reports
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -1242,13 +1761,18 @@ a:hover { text-decoration: underline; }
          data-authors="el-sattar, hussein karam abd; elshambakey, mohammed; saleh, ahmed; antar, samar"
          data-journal="scientific reports"
          data-abstract="abstract water quality prediction and management are crucial for ensuring the sustainability of water supplies. contaminated water can harm humans and aquatic life. as the demand for seafood grows, the aquaculture industry faces several obstacles, including disease management, feeding optimization, water quality monitoring, and aquaculture area extraction. recently, aquaculture systems have increasingly used ai techniques to successfully and sustainably handle these issues. however, traditional ai techniques such as random forest (rf) and multi-layer perceptron (mlp) among others frequently face data scarcity and poor physical consistency. this research bridges this gap by integrating physical sciences with ai algorithms through the solution of the two coupled pollution–aeration equations to generate a high-fidelity physics-derived dataset of 50,000 observations over an extended spatial domain ranging from 0 to 4. this dataset is then used to train a novel hybrid rf–mlp algorithm to identify fish-survival zones within a polluted river at a given time, while determining the minimum allowable water velocity and the upstream dissolved oxygen level required to maintain environmentally safe conditions along the entire river reach. the proposed algorithm employs a three-stage sequential residual learning logic, combining rf’s stable feature partitioning with mlp’s improved non-linear error correction. the algorithm’s performance was benchmarked against nine standalone ai algorithms using a comprehensive suite of metrics. the experiments demonstrated exceptional precision with a correlation coefficient (cc) of 0.9999999973, a scatter index (si) of 0.00007326, a willmott’s index (wi) of 0.9999999986, a test rmse of 0.00012966, and a 0.9999999692. beyond accuracy, the hybrid algorithm demonstrated superior computational efficiency, training in just 22.58 s—a 24.45-fold reduction compared to bilstm architectures. these results provide a robust tool for decision-makers to identify optimal river reaches for fish farms based on minimum water velocity and permissible dissolved oxygen transfer levels, bridging the gap between theoretical physics and industrial aquaculture management."
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Scientific Reports</div>
+
+      
+      <div class="journal">
+        
+        📰 Scientific Reports
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -1275,13 +1799,18 @@ a:hover { text-decoration: underline; }
          data-authors="jacobs, z. l.; jebri, f.; bruggeman, j.; baker, c.; james, f.; srokosz, m.; yool, a.; loveridge, a.; popova, e."
          data-journal="scientific reports"
          data-abstract="abstract the somali upwelling is the strongest upwelling region globally during its seasonal peak. the intense productivity that occurs during the southwest monsoon (may-september) sustains artisanal and industrial fisheries. however, due to its complex structure and seasonality, and the typically coarse spatial resolution of global climate models, understanding its future fate remains a challenge. using a high-resolution future climate projection and a size-spectrum model (in the absence of reliable fish catch data), we identify key climate stressors and projected changes in higher trophic levels to understand potential future impacts on somali fisheries. overall, the productivity generated by the somali upwelling is projected to decline by the end of the century. our results show that the inner coastal zone may experience elevated productivity, potentially due to changes in the prevailing winds and somali current. this may indicate potential climate refugia and minimal impacts to the artisanal fishing fleet. however, further offshore in the great whirl region dominated by small pelagic fish, there is a projected decline in productivity and biomass, which may impact the industrial fishing fleets that may target this area in future. to overcome challenges in understanding the fate of global upwelling systems, high-resolution models must be employed to more accurately simulate individual systems."
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Scientific Reports</div>
+
+      
+      <div class="journal">
+        
+        📰 Scientific Reports
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -1308,13 +1837,18 @@ a:hover { text-decoration: underline; }
          data-authors="kupren, krzysztof; hakuć-błażowska, anna; czarkowski, tomasz kajetan"
          data-journal="sustainability"
          data-abstract="recreational fisheries are one of the most widespread forms of inland water use in developed countries, and they are increasingly being interpreted as a social–ecological system that integrates ecosystems, users, and governance structures. this study aimed to evaluate the perceived status of fish resources, the effectiveness of the management system, and the obstacles to developing recreational fisheries in poland. the evaluation was based on a nationwide survey (cawi, n = 1574). the results indicate a critical perception of both resource conditions and management performance. institutional barriers were identified as the most significant. while environmental factors remain significant, their role should be interpreted within the broader context of governance effectiveness. the structure of motivations confirms the dominance of recreational and environmental functions over utilitarian and economic ones, highlighting the growing importance of cultural ecosystem services. the findings reveal a discrepancy between the evolving recreational aspects of angling and the existing management system, indicating an institutional mismatch that poses a significant challenge to sustainable water resource management. these findings align with the sustainable development goals, particularly those related to water quality and ecosystem protection. while the study focuses on poland, the identified challenges are not unique and are relevant to many countries undergoing similar transformations. the results emphasize the need for more integrated, adaptive, and participatory governance models."
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Sustainability</div>
+
+      
+      <div class="journal">
+        
+        📰 Sustainability
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -1337,17 +1871,60 @@ a:hover { text-decoration: underline; }
     </div>
     
     <div class="paper-card"
+         data-title="occurrence, bioaccumulation and dietary exposure assessment of legacy and emerging per- and polyfluoroalkyl substances (pfas) in freshwater fish from zhejiang markets: implications for human health risks"
+         data-authors="zhang, hexiang; zheng, yibin; qi, xiaojuan; chen, lili; chen, jiang; wang, jikai; he, yue; zhu, bing"
+         data-journal="toxics"
+         data-abstract="this article assesses per- and polyfluoroalkyl substances (pfas) exposure levels, distribution, bioaccumulation characteristics, and health risks in freshwater fish from zhejiang province, china. a total of 240 market-sourced fish samples (covering carnivorous, omnivorous, and herbivorous species) collected between 2022 and 2024 were analyzed for 24 pfas congeners, including four emerging alternatives. the results revealed widespread pfas contamination, with a detection frequency of 77.5% and median total pfas (σ24pfas) concentration of 2.95 ng/g. hexafluoropropylene oxide dimer acid (hfpo-da), perfluorooctane sulfonate (pfos), and perfluoroundecanoic acid (pfunda) were the most frequently detected congeners. pfos exhibited the highest median concentrations in carnivorous and omnivorous fish, whereas pfunda was the dominant contaminant in filter-feeding and herbivorous fish. no significant difference in σ24pfas concentrations was observed among fish with different feeding habits, but highly significant spatial variation was found. long-chain pfas concentrations were significantly higher than those of short-chain pfas and emerging alternatives, with their proportion decreasing at lower trophic levels. the estimated daily intake of σ24pfas and σ4pfas for freshwater fish consumers averaged 0.14 and 0.042 ng/kg bw/day, respectively, with approximately 0.16% of the assessed individuals exceeding the recommended threshold. this study provides critical data to support food safety management and risk mitigation strategies."
+         data-summary=""
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Toxics
+      </div>
+      
+
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/toxics14060524" target="_blank" rel="noopener">Occurrence, Bioaccumulation and Dietary Exposure Assessment of Legacy and Emerging Per- and Polyfluoroalkyl Substances (PFAS) in Freshwater Fish from Zhejiang Markets: Implications for Human Health Risks</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Zhang, Hexiang; Zheng, Yibin; Qi, Xiaojuan; Chen, Lili; Chen...</span>
+        
+        <span>📅 2026-06-17</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">This article assesses per- and polyfluoroalkyl substances (PFAS) exposure levels, distribution, bioaccumulation characteristics, and health risks in freshwater fish from Zhejiang Province, China. A total of 240 market-sourced fish samples (covering carnivorous, omnivorous, and herbivorous species) collected between 2022 and 2024 were analyzed for 24 PFAS congeners, including four emerging alternatives. The results revealed widespread PFAS contamination, with a detection frequency of 77.5% and median total PFAS (Σ24PFAS) concentration of 2.95 ng/g. Hexafluoropropylene oxide dimer acid (HFPO-DA), perfluorooctane sulfonate (PFOS), and perfluoroundecanoic acid (PFUnDA) were the most frequently detected congeners. PFOS exhibited the highest median concentrations in carnivorous and omnivorous fish, whereas PFUnDA was the dominant contaminant in filter-feeding and herbivorous fish. No significant difference in Σ24PFAS concentrations was observed among fish with different feeding habits, but highly significant spatial variation was found. Long-chain PFAS concentrations were significantly higher than those of short-chain PFAS and emerging alternatives, with their proportion decreasing at lower trophic levels. The estimated daily intake of Σ24PFAS and Σ4PFAS for freshwater fish consumers averaged 0.14 and 0.042 ng/kg bw/day, respectively, with approximately 0.16% of the assessed individuals exceeding the recommended threshold. This study provides critical data to support food safety management and risk mitigation strategies.</div>
+      
+    </div>
+    
+    <div class="paper-card"
          data-title="from the river to the estuary: movements and habitat use of alligator gar in cedar lakes, texas"
          data-authors="swinford, jillian l; randall, jessica m; willis, a kevin; gelpi, carey; paudel, shambhu; anderson, joel d"
          data-journal="trans. american fisheries society"
          data-abstract="abstract objective although alligator gar atractosteus spatula are known to inhabit river mouths and brackish areas at various life stages, little is known about the residency patterns of alligator gar in estuaries. we examined coastal habitat use and movement of alligator gar in texas and analyzed potential environmental drivers of seasonal movement. methods alligator gar were tracked with acoustic tags in the cedar lakes region of the texas gulf coast, which includes two substantial river mouths and the intracoastal waterway. generalized additive mixed models were utilized to analyze the impacts of water temperature, river discharge, salinity, dissolved oxygen, turbidity, and individual size on movement. results individuals utilized both estuarine marsh habitat and riverine habitat seasonally throughout the study, with estuarine detections occurring more frequently in spring–summer (94.0% of detections) and riverine detections occurring more frequently in fall–winter (64.0% of detections). alligator gar were mostly absent from the estuary during the coldest months of the year, which was consistent with fishery catch data suggesting their relative absence from estuaries in winter. fish frequently used the intracoastal waterway to travel between habitats (18.8% of detections). relatively cool water temperatures were predictive of higher rates of movement, and temperature may be a cue for upriver migration in the fall and winter. conclusions coastal alligator gar overall showed a seasonal preference for productive, shallow estuarine habitat in spring and summer; however, in fall and winter, individuals generally made directed movements into riverine habitat. our findings indicate that coastal alligator gar are highly mobile between estuarine and freshwater habitats and respond to environmental cues to transition between these habitats. understanding the behaviors and habitat use of alligator gar in estuaries will inform future management of the species at the coastal edge of its range."
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 Trans. American Fisheries Society</div>
+
+      
+      <div class="journal">
+        
+        📰 Trans. American Fisheries Society
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -1374,13 +1951,18 @@ a:hover { text-decoration: underline; }
          data-authors="anapana, gopal; yalla, amani; donkada, satya siva ganesh; kodithala, radha; dunna, bheeshma"
          data-journal="uttar pradesh journal of zoology"
          data-abstract="artificial intelligence (ai) is increasingly used in zoological sciences to support the analysis of large, complex and heterogeneous biological and environmental datasets. this review synthesises the applications, advances, challenges and future perspectives of ai in zoology, ecology, aquaculture, toxicology and biodiversity conservation. the manuscript highlights the contribution of machine learning, deep learning, computer vision, bioacoustics, remote sensing, internet of things technologies and explainable ai to species identification, taxonomic research, animal behaviour analysis, wildlife monitoring, population estimation, disease surveillance and zoo management. in ecology and conservation, ai-assisted tools improve biodiversity assessment, habitat mapping, species distribution modelling, ecological forecasting, climate-change assessment and conservation planning. in aquaculture and fisheries, ai supports smart production systems through water-quality monitoring, precision feeding, biomass estimation, growth prediction, disease detection, mortality assessment, stock evaluation and sustainable resource management. in toxicology and ecotoxicology, ai contributes to predictive toxicity modelling, environmental risk assessment, biomarker discovery and alternative approaches that may reduce dependence on animal experimentation. the review also identifies major constraints affecting ai implementation, including data quality, taxonomic and geographical bias, limited interpretability, computational demands, cybersecurity risks, ethical concerns, regulatory requirements and unequal access to technology. particular attention is given to the need for robust validation, interdisciplinary expertise and context-specific interpretation when ai outputs are used for biological or management decisions. future progress is expected to depend on responsible integration of explainable ai, multimodal models, digital twins, environmental dna analytics, omics technologies and autonomous monitoring systems. overall, ai provides important opportunities to strengthen evidence-based zoological research and environmental management, provided that its use remains scientifically validated, ethically governed and complementary to field expertise."
-         data-summary="">
+         data-summary=""
+         data-impact="false">
 
       
-      <div class="journal">📰 UTTAR PRADESH JOURNAL OF ZOOLOGY</div>
+
+      
+      <div class="journal">
+        
+        📰 UTTAR PRADESH JOURNAL OF ZOOLOGY
+      </div>
       
 
-      <!-- 中文总结 -->
       
 
       <div class="title">
@@ -1402,54 +1984,74 @@ a:hover { text-decoration: underline; }
       
     </div>
     
+    <div class="paper-card"
+         data-title="heavy metal and pesticide toxicity in fish: metabolic effects and remediation strategies"
+         data-authors="sujatha, b.; veeresh, k.; yamini, v. siva; manaswitha, b.; savithri, y.; sekhar, p. ravi"
+         data-journal="uttar pradesh journal of zoology"
+         data-abstract="aquatic ecosystems are increasingly contaminated by pesticides and heavy metals because of industrialisation, urbanisation, mining activities and intensive agricultural practices. these contaminants accumulate in water bodies and adversely affect fish physiology, metabolism, growth, reproduction and survival. heavy metals such as cadmium, mercury, lead, chromium and arsenic are persistent, non-biodegradable pollutants that bioaccumulate in fish tissues and biomagnify through aquatic food chains. similarly, pesticide groups, including organophosphates, organochlorines, carbamates and pyrethroids, interfere with enzymatic activity, endocrine function and cellular metabolism in fish. exposure to these toxicants induces oxidative stress, disrupts carbohydrate, protein and lipid metabolism, alters haematological and biochemical parameters, and damages vital organs such as the liver, gills, kidney and brain. fish exposed to toxic pollutants may also exhibit behavioural abnormalities, immune suppression, histopathological alterations and impaired reproductive performance. evidence discussed in this review indicates that these toxic effects are mediated through the generation of reactive oxygen species, mitochondrial dysfunction and changes in gene expression associated with detoxification pathways. several remediation strategies have been developed to reduce aquatic pollution and protect fish health, including microbial bioremediation, phytoremediation using aquatic plants, adsorption techniques, nanotechnology-based remediation, probiotics and medicinal herbs. advanced molecular and biochemical approaches are also being explored for the sustainable management of contaminated aquatic systems. this review summarises the major toxic effects of pesticides and heavy metals on fish metabolic activities, discusses physiological and molecular mechanisms of toxicity, highlights relevant research findings and evaluates current remediation strategies for maintaining ecological balance, food safety and sustainable aquaculture production. the synthesis is intended to support cautious interpretation of pollutant effects and remediation needs."
+         data-summary=""
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 UTTAR PRADESH JOURNAL OF ZOOLOGY
+      </div>
+      
+
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.56557/upjoz/2026/v47i115695" target="_blank" rel="noopener">Heavy Metal and Pesticide Toxicity in Fish: Metabolic Effects and Remediation Strategies</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Sujatha, B.; Veeresh, K.; Yamini, V. Siva; Manaswitha, B.; S...</span>
+        
+        <span>📅 2026-06-17</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Aquatic ecosystems are increasingly contaminated by pesticides and heavy metals because of industrialisation, urbanisation, mining activities and intensive agricultural practices. These contaminants accumulate in water bodies and adversely affect fish physiology, metabolism, growth, reproduction and survival. Heavy metals such as cadmium, mercury, lead, chromium and arsenic are persistent, non-biodegradable pollutants that bioaccumulate in fish tissues and biomagnify through aquatic food chains. Similarly, pesticide groups, including organophosphates, organochlorines, carbamates and pyrethroids, interfere with enzymatic activity, endocrine function and cellular metabolism in fish. Exposure to these toxicants induces oxidative stress, disrupts carbohydrate, protein and lipid metabolism, alters haematological and biochemical parameters, and damages vital organs such as the liver, gills, kidney and brain. Fish exposed to toxic pollutants may also exhibit behavioural abnormalities, immune suppression, histopathological alterations and impaired reproductive performance. Evidence discussed in this review indicates that these toxic effects are mediated through the generation of reactive oxygen species, mitochondrial dysfunction and changes in gene expression associated with detoxification pathways. Several remediation strategies have been developed to reduce aquatic pollution and protect fish health, including microbial bioremediation, phytoremediation using aquatic plants, adsorption techniques, nanotechnology-based remediation, probiotics and medicinal herbs. Advanced molecular and biochemical approaches are also being explored for the sustainable management of contaminated aquatic systems. This review summarises the major toxic effects of pesticides and heavy metals on fish metabolic activities, discusses physiological and molecular mechanisms of toxicity, highlights relevant research findings and evaluates current remediation strategies for maintaining ecological balance, food safety and sustainable aquaculture production. The synthesis is intended to support cautious interpretation of pollutant effects and remediation needs.</div>
+      
+    </div>
+    
   </div>
+
 </div>
 
 <script>
-function toggleTheme() {
-  const html = document.documentElement;
-  const icon = document.getElementById('themeIcon');
-  const label = document.getElementById('themeLabel');
-  const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-  html.setAttribute('data-theme', next);
-  icon.textContent = next === 'dark' ? '☀️' : '🌙';
-  label.textContent = next === 'dark' ? '亮色' : '暗色';
-  localStorage.setItem('theme', next);
-}
-(function() {
-  const saved = localStorage.getItem('theme');
-  if (saved) {
-    document.documentElement.setAttribute('data-theme', saved);
-    document.getElementById('themeIcon').textContent = saved === 'dark' ? '☀️' : '🌙';
-    document.getElementById('themeLabel').textContent = saved === 'dark' ? '亮色' : '暗色';
-  }
+(function(){
+  var s=localStorage.getItem('theme');
+  if(s){document.documentElement.setAttribute('data-theme',s);
+  document.getElementById('themeIcon').textContent=s==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=s==='dark'?'亮色':'暗色';}
 })();
-
-function toggleAbstract(btn) {
-  const content = btn.nextElementSibling;
-  const visible = content.classList.contains('visible');
-  content.classList.toggle('visible');
-  btn.classList.toggle('open');
-  btn.querySelector('.arrow').textContent = visible ? '▶' : '▼';
+function toggleTheme(){
+  var h=document.documentElement,n=h.getAttribute('data-theme')==='dark'?'light':'dark';
+  h.setAttribute('data-theme',n);
+  document.getElementById('themeIcon').textContent=n==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=n==='dark'?'亮色':'暗色';
+  localStorage.setItem('theme',n);
 }
-
-function filterPapers() {
-  const query = (document.getElementById('searchInput').value || '').toLowerCase().trim();
-  const cards = document.querySelectorAll('.paper-card');
-  let visible = 0;
-  cards.forEach(card => {
-    const text = [
-      card.getAttribute('data-title') || '',
-      card.getAttribute('data-authors') || '',
-      card.getAttribute('data-journal') || '',
-      card.getAttribute('data-abstract') || '',
-      card.getAttribute('data-summary') || '',
-    ].join(' ');
-    const show = !query || text.includes(query);
-    card.classList.toggle('hidden', !show);
-    if (show) visible++;
+function toggleAbstract(b){
+  var c=b.nextElementSibling,v=c.classList.contains('visible');
+  c.classList.toggle('visible');b.classList.toggle('open');
+  b.querySelector('.arrow').textContent=v?'▶':'▼';
+}
+function filterPapers(){
+  var q=(document.getElementById('searchInput').value||'').toLowerCase().trim(),vis=0;
+  document.querySelectorAll('.paper-card').forEach(function(c){
+    var t=[c.getAttribute('data-title')||'',c.getAttribute('data-authors')||'',c.getAttribute('data-journal')||'',c.getAttribute('data-abstract')||'',c.getAttribute('data-summary')||''].join(' ');
+    var s=!q||t.includes(q);c.classList.toggle('hidden',!s);if(s)vis++;
   });
-  document.getElementById('noResults').classList.toggle('visible', visible === 0);
+  document.getElementById('noResults').classList.toggle('visible',vis===0);
 }
 </script>
 </body>

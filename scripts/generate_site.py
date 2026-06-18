@@ -65,6 +65,60 @@ def parse_keywords(keywords_str: str) -> list[str]:
     return [kw for kw in kws if kw][:8]
 
 
+def markdown_to_html(text: str) -> str:
+    """将 AI 生成的综述文章从简单 Markdown 转为 HTML"""
+    import re
+    lines = text.strip().split("\n")
+    html_lines = []
+    in_list = False
+    list_tag = ""
+
+    for line in lines:
+        stripped = line.strip()
+
+        # 标题 ## Heading
+        if stripped.startswith("## "):
+            if in_list:
+                html_lines.append(f"</{list_tag}>")
+                in_list = False
+            heading = stripped[3:]
+            html_lines.append(f'<h2>{heading}</h2>')
+
+        # 有序列表 1. item
+        elif re.match(r"^\d+\.\s", stripped):
+            if not in_list or list_tag != "ol":
+                if in_list:
+                    html_lines.append(f"</{list_tag}>")
+                html_lines.append("<ol>")
+                in_list = True
+                list_tag = "ol"
+            item = re.sub(r"^\d+\.\s+", "", stripped)
+            # 加粗处理
+            item = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", item)
+            html_lines.append(f"<li>{item}</li>")
+
+        # 空行
+        elif not stripped:
+            if in_list:
+                html_lines.append(f"</{list_tag}>")
+                in_list = False
+            html_lines.append("")
+
+        # 普通段落
+        else:
+            if in_list:
+                html_lines.append(f"</{list_tag}>")
+                in_list = False
+            # 加粗处理
+            para = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", stripped)
+            html_lines.append(f"<p>{para}</p>")
+
+    if in_list:
+        html_lines.append(f"</{list_tag}>")
+
+    return "\n".join(html_lines)
+
+
 def get_summary_count(papers: list[dict]) -> int:
     count = 0
     for p in papers:
@@ -101,9 +155,13 @@ def build_weeks(papers: list[dict], weekly_topics: dict) -> list[dict]:
         if isinstance(topic_info, dict):
             topic = topic_info.get("topic", "")
             keywords = topic_info.get("keywords", "")
+            article = topic_info.get("article", "")
+            high_impact_count = topic_info.get("high_impact_count", 0)
         else:
             topic = str(topic_info) if topic_info else ""
             keywords = ""
+            article = ""
+            high_impact_count = 0
 
         if not topic:
             topic = f"渔业文献精选 · {len(papers_in_week)} 篇"
@@ -116,6 +174,9 @@ def build_weeks(papers: list[dict], weekly_topics: dict) -> list[dict]:
             "topic": topic,
             "keywords": keywords,
             "keywords_list": keywords_list,
+            "article": article,
+            "article_html": markdown_to_html(article) if article else "",
+            "high_impact_count": high_impact_count,
             "papers": papers_in_week,
         })
 
@@ -169,9 +230,12 @@ def generate():
     week_template = env.get_template("week.html.jinja2")
     for week in weeks:
         wk = week["week_key"]
+        summary_in_week = sum(1 for p in week["papers"]
+                             if p.get("summary_cn","").strip() and not p.get("summary_cn","").startswith("["))
         week_context = {
             "week": week,
             "update_time": update_display,
+            "summary_count": summary_in_week,
         }
         week_html = week_template.render(**week_context)
         week_path = OUTPUT_DIR / f"week-{wk}.html"
