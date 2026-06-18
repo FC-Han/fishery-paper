@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ week.topic }} — 渔业文献每周速览</title>
+<style>
+:root {
+  --bg: #f7fafc; --bg-card: #ffffff; --text: #2d3748;
+  --text-secondary: #718096; --text-muted: #a0aec0; --border: #e2e8f0;
+  --primary: #2b6cb0; --primary-light: #bee3f8; --primary-dark: #1a365d;
+  --accent: #e76f51; --accent-light: #fed7d7;
+  --teal: #319795; --teal-light: #b2f5ea;
+  --gold: #d69e2e; --gold-light: #fefcbf;
+  --shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.10);
+  --radius: 12px; --radius-sm: 8px;
+}
+[data-theme="dark"] {
+  --bg: #1a202c; --bg-card: #2d3748; --text: #e2e8f0;
+  --text-secondary: #a0aec0; --text-muted: #718096; --border: #4a5568;
+  --primary: #90cdf4; --primary-light: #2a4365; --primary-dark: #bee3f8;
+  --accent: #fc8181; --accent-light: #742a2a;
+  --teal: #81e6d9; --teal-light: #234e52;
+  --gold: #f6e05e; --gold-light: #3d3a1a;
+  --shadow: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.5);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Top bar */
+.topbar {
+  background: linear-gradient(135deg, #1a365d, #2b6cb0);
+  color: #fff; padding: 1rem 1.5rem;
+  display: flex; align-items: center; gap: 1rem;
+  position: sticky; top: 0; z-index: 100;
+}
+.back-btn {
+  color: #fff; font-size: 1.2rem; font-weight: 700;
+  padding: 0.4rem 0.8rem; border-radius: var(--radius-sm);
+  border: 1.5px solid rgba(255,255,255,0.3);
+  transition: all 0.2s; white-space: nowrap;
+}
+.back-btn:hover { background: rgba(255,255,255,0.15); text-decoration: none; }
+.topbar .title-area { flex: 1; min-width: 0; }
+.topbar .week-range { font-size: 0.8rem; opacity: 0.8; }
+.topbar .week-topic { font-size: 1.05rem; font-weight: 700; line-height: 1.3; }
+.topbar .theme-toggle {
+  padding: 0.4rem 0.8rem; border: 1.5px solid rgba(255,255,255,0.3);
+  border-radius: var(--radius-sm); background: transparent;
+  color: #fff; cursor: pointer; font-size: 0.85rem;
+  transition: all 0.2s; white-space: nowrap;
+}
+.topbar .theme-toggle:hover { background: rgba(255,255,255,0.15); }
+
+.container { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
+
+/* Keywords bar */
+.keywords-bar {
+  display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center;
+  margin-bottom: 1.2rem; padding: 0.8rem 1rem;
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+.keywords-bar .kw-label { font-size: 0.85rem; color: var(--text-muted); font-weight: 600; }
+.keywords-bar .kw-tag {
+  padding: 0.25rem 0.65rem; border-radius: 12px;
+  font-size: 0.8rem; font-weight: 500;
+  background: var(--teal-light); color: var(--teal);
+}
+
+/* Controls */
+.controls {
+  display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center;
+  margin-bottom: 1rem;
+}
+.search-box { flex: 1; min-width: 200px; position: relative; }
+.search-box input {
+  width: 100%; padding: 0.6rem 1rem 0.6rem 2.5rem;
+  border: 2px solid var(--border); border-radius: var(--radius-sm);
+  font-size: 0.9rem; background: var(--bg-card); color: var(--text);
+  transition: border-color 0.2s;
+}
+.search-box input:focus { outline: none; border-color: var(--primary); }
+.search-box .search-icon {
+  position: absolute; left: 0.8rem; top: 50%;
+  transform: translateY(-50%); color: var(--text-muted); pointer-events: none;
+}
+
+/* Paper Grid */
+.paper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 0.85rem;
+}
+.paper-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); padding: 1.1rem;
+  transition: all 0.25s; display: flex; flex-direction: column;
+  position: relative;
+}
+.paper-card:hover {
+  box-shadow: var(--shadow-hover); transform: translateY(-1px);
+  border-color: var(--primary-light);
+}
+.paper-card .journal {
+  font-size: 0.78rem; color: var(--teal); font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.paper-card .title {
+  font-size: 0.95rem; font-weight: 700; line-height: 1.45; margin-bottom: 0.35rem;
+}
+.paper-card .title a { color: var(--text); }
+.paper-card .title a:hover { color: var(--primary); text-decoration: none; }
+.paper-card .meta {
+  font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.6rem;
+  display: flex; flex-wrap: wrap; gap: 0.5rem;
+}
+
+/* Chinese Summary */
+.paper-card .summary-cn {
+  background: linear-gradient(135deg, #fffaf0, #fffff0);
+  border-left: 3px solid var(--gold); padding: 0.75rem 0.9rem;
+  margin-bottom: 0.5rem; border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: 0.9rem; line-height: 1.6; color: #744210;
+}
+[data-theme="dark"] .paper-card .summary-cn {
+  background: linear-gradient(135deg, #3d2e1a, #372a10); color: #fbd38d;
+}
+
+/* Abstract */
+.abstract-toggle {
+  font-size: 0.8rem; color: var(--primary); cursor: pointer;
+  font-weight: 600; user-select: none;
+  display: inline-flex; align-items: center; gap: 0.25rem;
+  padding: 0.3rem 0; border: none; background: none;
+}
+.abstract-toggle:hover { color: var(--accent); }
+.abstract-toggle .arrow { transition: transform 0.2s; font-size: 0.7rem; }
+.abstract-toggle.open .arrow { transform: rotate(90deg); }
+.abstract-content {
+  display: none; font-size: 0.82rem; color: var(--text-secondary);
+  line-height: 1.55; padding: 0.5rem 0;
+  border-top: 1px dashed var(--border); margin-top: 0.4rem;
+}
+.abstract-content.visible { display: block; }
+
+/* No results */
+.paper-card.hidden { display: none; }
+.no-results { display: none; text-align: center; padding: 2rem; color: var(--text-muted); }
+.no-results.visible { display: block; }
+
+@media (max-width: 768px) {
+  .paper-grid { grid-template-columns: 1fr; }
+  .topbar { flex-wrap: wrap; }
+  .topbar .week-topic { font-size: 0.9rem; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.paper-card { animation: fadeIn 0.4s ease-out; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="back-btn" href="index.html">← 返回</a>
+  <div class="title-area">
+    <div class="week-range">{{ week.week_range }}</div>
+    <div class="week-topic">{{ week.topic }}</div>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <span id="themeIcon">🌙</span> <span id="themeLabel">暗色</span>
+  </button>
+</div>
+
+<div class="container">
+  {% if week.keywords_list %}
+  <div class="keywords-bar">
+    <span class="kw-label">🏷️ 本周关键词：</span>
+    {% for kw in week.keywords_list %}
+    <span class="kw-tag">{{ kw }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <div class="controls">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="搜索标题、作者、摘要..." oninput="filterPapers()">
+    </div>
+  </div>
+
+  <div class="no-results" id="noResults">😕 没有匹配的论文</div>
+
+  <div class="paper-grid">
+    {% for paper in week.papers %}
+    <div class="paper-card"
+         data-title="{{ paper.title|lower }}"
+         data-authors="{{ paper.authors|lower }}"
+         data-journal="{{ paper.journal|lower }}"
+         data-abstract="{{ paper.abstract|lower }}"
+         data-summary="{{ paper.summary_cn|lower }}">
+
+      {% if paper.journal %}
+      <div class="journal">📰 {{ paper.journal }}</div>
+      {% endif %}
+
+      <!-- 中文总结 -->
+      {% if paper.summary_cn and not paper.summary_cn.startswith('[') %}
+      <div class="summary-cn">💡 {{ paper.summary_cn }}</div>
+      {% endif %}
+
+      <div class="title">
+        <a href="{{ paper.url }}" target="_blank" rel="noopener">{{ paper.title }}</a>
+      </div>
+
+      <div class="meta">
+        {% if paper.authors %}
+        <span>👤 {{ paper.authors[:60] }}{% if paper.authors|length > 60 %}...{% endif %}</span>
+        {% endif %}
+        <span>📅 {{ paper.date }}</span>
+      </div>
+
+      {% if paper.abstract %}
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">{{ paper.abstract }}</div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+function toggleTheme() {
+  const html = document.documentElement;
+  const icon = document.getElementById('themeIcon');
+  const label = document.getElementById('themeLabel');
+  const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  icon.textContent = next === 'dark' ? '☀️' : '🌙';
+  label.textContent = next === 'dark' ? '亮色' : '暗色';
+  localStorage.setItem('theme', next);
+}
+(function() {
+  const saved = localStorage.getItem('theme');
+  if (saved) {
+    document.documentElement.setAttribute('data-theme', saved);
+    document.getElementById('themeIcon').textContent = saved === 'dark' ? '☀️' : '🌙';
+    document.getElementById('themeLabel').textContent = saved === 'dark' ? '亮色' : '暗色';
+  }
+})();
+
+function toggleAbstract(btn) {
+  const content = btn.nextElementSibling;
+  const visible = content.classList.contains('visible');
+  content.classList.toggle('visible');
+  btn.classList.toggle('open');
+  btn.querySelector('.arrow').textContent = visible ? '▶' : '▼';
+}
+
+function filterPapers() {
+  const query = (document.getElementById('searchInput').value || '').toLowerCase().trim();
+  const cards = document.querySelectorAll('.paper-card');
+  let visible = 0;
+  cards.forEach(card => {
+    const text = [
+      card.getAttribute('data-title') || '',
+      card.getAttribute('data-authors') || '',
+      card.getAttribute('data-journal') || '',
+      card.getAttribute('data-abstract') || '',
+      card.getAttribute('data-summary') || '',
+    ].join(' ');
+    const show = !query || text.includes(query);
+    card.classList.toggle('hidden', !show);
+    if (show) visible++;
+  });
+  document.getElementById('noResults').classList.toggle('visible', visible === 0);
+}
+</script>
+</body>
+</html>

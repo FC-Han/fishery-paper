@@ -39,11 +39,11 @@ jobs:
           CI: "true"
         run: python scripts/fetch_papers.py
 
-      - name: 🤖 AI 生成中文总结 + 每周综述
+      - name: 🤖 DeepSeek AI 中文总结 + 每周综述
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: python scripts/summarize.py
-        continue-on-error: true  # 即使总结失败也继续生成 HTML
+        continue-on-error: true
 
       - name: 🎨 生成 HTML 站点
         run: python scripts/generate_site.py

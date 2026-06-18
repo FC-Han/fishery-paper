@@ -1,115 +1,80 @@
 # 🐟 渔业文献每周速览
 
-> Fisheries Science Weekly Digest — 自动获取最新渔业期刊论文，AI 生成中文总结，每周综述
+> Fisheries Science Weekly Digest — AI 驱动 · DeepSeek 中文总结 · 每日自动更新
 
-[![Weekly Update](https://github.com/{{REPO}}/actions/workflows/daily-update.yml/badge.svg)](https://github.com/{{REPO}}/actions/workflows/daily-update.yml)
+[![Weekly Update](https://github.com/FC-Han/fishery-paper/actions/workflows/daily-update.yml/badge.svg)](https://github.com/FC-Han/fishery-paper/actions/workflows/daily-update.yml)
 
 ## ✨ 功能特点
 
-- 🔍 **全面覆盖** — 标题精确搜索 + 18 本渔业专业期刊 + Nature/Science/PNAS 等综合期刊
-- 🤖 **AI 双总结** — 每篇论文中文摘要 + 每周综述标题（Claude Haiku 驱动）
-- 📅 **每周综述** — 按周分组，AI 生成每周研究热点标题，点击展开查看全部论文
-- 🎨 **精美展示** — 海洋主题响应式页面，暗色模式，实时搜索
-- ⏰ **每日自动** — GitHub Actions 每日运行，自动更新文献库
-- 💰 **几乎免费** — 日均 API 费用不到 1 美分
+- 🔍 **全面覆盖** — 标题搜索 + 18本渔业期刊 + Nature/Science/PNAS 等综合期刊
+- 🤖 **DeepSeek AI** — 每篇论文中文摘要 + 每周综述标题 + 每周研究关键词
+- 📅 **多页面架构** — 主页轻量（~8KB），每周独立详情页，不卡顿
+- 🎨 **精美展示** — 海洋主题响应式设计、暗色模式、实时搜索
+- ⏰ **每日自动** — GitHub Actions 每日 UTC 8:00 自动运行
+- 💰 **几乎免费** — DeepSeek API 极低价格，日均不到 ¥0.05
 
-## 🔐 关于 API Key 安全性
+## 🏗 页面架构
 
-**GitHub Actions Secrets 是安全可靠的：**
-- AES-256 加密存储
-- 只在 Actions 运行时解密
-- 日志中自动屏蔽（显示为 `***`）
-- 只有仓库管理员能查看/修改
-- 这是 GitHub 官方推荐的做法，被数十万项目使用
-
-**如果你仍想在本地运行总结：**
-```bash
-# 在 .env 中设置 ANTHROPIC_API_KEY
-python scripts/summarize.py
-python scripts/generate_site.py
-git add data/ docs/ && git commit -m "手动更新" && git push
 ```
+docs/
+├── index.html              ← 主页（每周综述卡片，8KB）
+├── week-2026-W25.html      ← 第25周详情（论文列表，~130KB）
+├── week-2026-W24.html      ← 第24周详情
+└── ...
+```
+
+主页点击任意周卡片 → 跳转到该周详情页 → 浏览全部论文 + 中文总结
 
 ## 🚀 快速开始
 
-### 1. 创建仓库
+### 1. 克隆仓库
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
-cd YOUR_REPO
+git clone git@github.com:FC-Han/fishery-paper.git
+cd fishery-paper
 cp .env.example .env
 ```
 
-### 2. 获取 API Keys
+### 2. 获取 API Key
 
-- **Claude API**（必需）：https://console.anthropic.com/ → 创建 API key
-- **Semantic Scholar**（可选）：https://www.semanticscholar.org/product/api → 免费注册
+- **DeepSeek API**（必需）：https://platform.deepseek.com/ → 注册充值 10 元可用数月
+- **Semantic Scholar**（可选）：https://www.semanticscholar.org/product/api
 
 ### 3. 本地测试
 
 ```bash
 pip install -r requirements.txt
-
-# 获取论文（无需 API key）
-python scripts/fetch_papers.py
-
-# 生成 AI 总结（需要 ANTHROPIC_API_KEY）
-python scripts/summarize.py
-
-# 生成 HTML
-python scripts/generate_site.py
-# 浏览器打开 docs/index.html 查看效果
+python scripts/fetch_papers.py           # 获取论文（无需 API key）
+python scripts/summarize.py              # AI 中文总结（需要 DEEPSEEK_API_KEY）
+python scripts/generate_site.py          # 生成多页面站点
+open docs/index.html                     # 浏览器预览
 ```
 
-### 4. 配置 GitHub
+### 4. GitHub 部署
 
-**设置 Secrets：**
-`Settings > Secrets and variables > Actions > New repository secret`
-- `ANTHROPIC_API_KEY` = 你的 Claude API key
-- `SEMANTIC_SCHOLAR_API_KEY` = 你的 S2 API key（可选）
+**设置 Secret：**
+`Settings > Secrets and variables > Actions` → 添加 `DEEPSEEK_API_KEY`
 
-**启用 GitHub Pages：**
-`Settings > Pages` → Source: `Deploy from a branch` → Branch: `main`, Folder: `/docs`
+**启用 Pages：**
+`Settings > Pages` → Source: `Deploy from a branch` → `main` / `/docs`
 
-### 5. 首次运行
+**手动触发：**
+`Actions > 渔业文献每周更新 > Run workflow`
 
-`Actions > 渔业文献每周更新 > Run workflow` 手动触发即可。
+## 💰 费用对比
 
-网站地址：`https://YOUR_USERNAME.github.io/YOUR_REPO/`
-
-## 📁 项目结构
-
-```
-.
-├── .github/workflows/daily-update.yml
-├── scripts/
-│   ├── fetch_papers.py        # 论文获取（3层搜索策略）
-│   ├── summarize.py           # AI 总结 + 每周综述
-│   └── generate_site.py       # HTML 生成
-├── templates/
-│   └── index.html.jinja2      # 每周综述模板
-├── data/papers.json           # 论文数据
-├── docs/index.html            # 生成的站点 ✨
-└── requirements.txt
-```
+| 服务 | 每日 | 每月 |
+|------|------|------|
+| DeepSeek API | ~¥0.03 | ~¥1 |
+| Crossref API | 免费 | 免费 |
+| GitHub Actions | 免费 | 免费 |
+| **合计** | **~¥0.03** | **~¥1** |
 
 ## 📊 文献来源
 
-### 渔业专业期刊（18本）
-Fisheries Research · Fish and Fisheries · ICES J. Marine Science · Canadian J. Fisheries · Trans. American Fisheries Society · Reviews in Fish Biology · Aquaculture · J. Fish Biology · Fisheries Oceanography · Marine Policy · Reviews in Fisheries Science · Fisheries Science · Marine Ecology Progress Series · Marine Pollution Bulletin 等
+**渔业专业期刊：** Fisheries Research · Fish and Fisheries · ICES JMS · CJFAS · TAFS · Aquaculture · J. Fish Biology · Fisheries Oceanography · Marine Policy · MEPS 等 18 本
 
-### 综合期刊
-Nature · Science · PNAS · Nature Climate Change · Nature Ecology & Evolution · Nature Sustainability · Nature Communications · Science Advances · Scientific Data
-
-## 💰 费用
-
-| 项目 | 每日 | 每月 |
-|------|------|------|
-| Claude Haiku API | ~$0.005 | ~$0.15 |
-| Crossref API | 免费 | 免费 |
-| Semantic Scholar | 免费 | 免费 |
-| GitHub Actions | 免费 | 免费 |
-| **合计** | **~$0.005** | **~$0.15** |
+**综合期刊：** Nature · Science · PNAS · Nature Climate Change · Nature Ecology & Evolution · Nature Sustainability · Nature Communications · Science Advances
 
 ## 📝 License
 
