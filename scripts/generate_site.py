@@ -207,6 +207,17 @@ def generate():
         autoescape=select_autoescape(["html", "xml"]),
     )
 
+    # 计算运行天数
+    running_days = 1
+    if papers:
+        dates = sorted([p.get("date", "") for p in papers if p.get("date")])
+        if dates:
+            try:
+                first = datetime.strptime(dates[0][:10], "%Y-%m-%d")
+                running_days = max(1, (datetime.now() - first).days + 1)
+            except ValueError:
+                pass
+
     # === 生成主页 ===
     print("\n🏠 生成主页...")
     index_context = {
@@ -215,6 +226,7 @@ def generate():
         "week_count": len(weeks),
         "summary_count": get_summary_count(papers),
         "journal_count": get_journal_count(papers),
+        "running_days": running_days,
         "weeks": weeks,
     }
     index_template = env.get_template("index.html.jinja2")
