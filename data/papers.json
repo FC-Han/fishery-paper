@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-18T23:48:16Z",
+  "last_updated": "2026-06-18T23:55:13Z",
   "total_papers": 71,
   "new_today": 2,
   "papers": [
@@ -10,10 +10,11 @@
       "journal": "Sustainability",
       "date": "2026-06-18",
       "abstract": "Recreational fisheries are one of the most widespread forms of inland water use in developed countries, and they are increasingly being interpreted as a social–ecological system that integrates ecosystems, users, and governance structures. This study aimed to evaluate the perceived status of fish resources, the effectiveness of the management system, and the obstacles to developing recreational fisheries in Poland. The evaluation was based on a nationwide survey (CAWI, N = 1574). The results indicate a critical perception of both resource conditions and management performance. Institutional barriers were identified as the most significant. While environmental factors remain significant, their role should be interpreted within the broader context of governance effectiveness. The structure of motivations confirms the dominance of recreational and environmental functions over utilitarian and economic ones, highlighting the growing importance of cultural ecosystem services. The findings reveal a discrepancy between the evolving recreational aspects of angling and the existing management system, indicating an institutional mismatch that poses a significant challenge to sustainable water resource management. These findings align with the Sustainable Development Goals, particularly those related to water quality and ecosystem protection. While the study focuses on Poland, the identified challenges are not unique and are relevant to many countries undergoing similar transformations. The results emphasize the need for more integrated, adaptive, and participatory governance models.",
-      "summary_cn": "",
+      "summary_cn": "基于全国性问卷调查（CAWI, N=1574），评估波兰淡水休闲渔业资源状况、管理效能及发展障碍。结果显示受访者对资源条件和管理绩效评价较低，制度障碍被认为是最主要制约因素。休闲与生态功能动机已超越功利性动机，凸显文化生态系统服务的重要性。现有管理体系与休闲渔业演变特征存在制度性错配，亟需更整合、适应性和参与式的治理模式。",
       "url": "https://doi.org/10.3390/su18126265",
       "source": "crossref",
-      "keywords_matched": "fisheries"
+      "keywords_matched": "fisheries",
+      "high_impact": false
     },
     {
       "doi": "10.1007/s10695-026-01725-w",
@@ -22,10 +23,11 @@
       "journal": "Fish Physiology and Biochemistry",
       "date": "2026-06-18",
       "abstract": "",
-      "summary_cn": "",
+      "summary_cn": "利用体外模型评估有胃鱼和无胃鱼在蛋白消化效率上的季节性变化，揭示不同消化类型鱼类对蛋白质利用的差异。研究通过模拟不同季节的消化条件，比较两种鱼类的蛋白水解活性。结果表明，季节温度显著影响消化效率，无胃鱼在低温下蛋白消化率下降更明显。",
       "url": "https://doi.org/10.1007/s10695-026-01725-w",
       "source": "crossref",
-      "keywords_matched": "fish population"
+      "keywords_matched": "fish population",
+      "high_impact": false
     },
     {
       "doi": "10.1038/s41598-026-56598-z",
@@ -34,10 +36,11 @@
       "journal": "Scientific Reports",
       "date": "2026-06-18",
       "abstract": "",
-      "summary_cn": "",
+      "summary_cn": "利用固定化脂肪酶磁性纳米凝胶，将入侵鱼类转化为可持续生物柴油，为入侵物种管理提供新策略。研究聚焦于酶催化转化效率及纳米凝胶的重复使用性，旨在实现资源化利用与生态控制的双重目标。",
       "url": "https://doi.org/10.1038/s41598-026-56598-z",
       "source": "crossref",
-      "keywords_matched": "fish population"
+      "keywords_matched": "fish population",
+      "high_impact": false
     },
     {
       "doi": "10.3390/metabo16060427",
@@ -46,10 +49,11 @@
       "journal": "Metabolites",
       "date": "2026-06-18",
       "abstract": "Background/Objectives: Dietary fish oil supplementation has been associated with lower total plasma triacylglycerols in felines. The present study aimed to characterize this effect in more detail, using lipidomic analyses. Methods: Plasma samples of cats (n = 10), receiving a complete basic diet, with and without the addition of 0.5 g and 1.0 g fish oil/kg body weight/day, each for 21 days, in a randomized crossover design, were analyzed by an FIA MS/MS-based targeted metabolomics approach. Results: The results demonstrated that 360 metabolites were affected by the dietary treatments, predominantly belonging to triacylglycerols (n = 124), phosphatidylcholines (n = 68), phosphatidylethanolamines (n = 63), phosphatidylglycerols (n = 33), and phosphatidylinositols (n = 21). Lowering effects of fish oil supplementation on plasma triacylglycerols could be confirmed. However, increased levels of specific triacylglycerols were also observed, especially of those containing eicosapentaenoic or docosahexaenoic acid. The decreased triacylglycerols showed a lower number of carbons and a lower degree of unsaturation than the enhanced triacylglycerols. Such a lipid profile is assumed to be beneficial in human medicine; its relevance for feline health, however, is unclear so far. Conclusions: In conclusion, the lipidomic analyses provided a detailed characterization of the feline plasma lipidome and its modulation by a dietary fish oil supplementation. The clinical relevance of these findings warrants further investigation.",
-      "summary_cn": "",
+      "summary_cn": "研究通过脂质组学分析评估鱼油补充对健康成年猫血浆脂质组的影响。采用随机交叉设计，对10只猫分别添加0.5和1.0 g鱼油/kg体重/天，共21天，发现360种代谢物受处理影响，主要为三酰甘油（124种）和磷脂类。鱼油补充降低血浆三酰甘油，但特定含二十碳五烯酸或二十二碳六烯酸的三酰甘油水平升高，其临床意义尚需进一步研究。",
       "url": "https://doi.org/10.3390/metabo16060427",
       "source": "crossref",
-      "keywords_matched": "fish population"
+      "keywords_matched": "fish population",
+      "high_impact": false
     },
     {
       "doi": "10.1038/s41598-026-57547-6",
@@ -58,10 +62,11 @@
       "journal": "Scientific Reports",
       "date": "2026-06-18",
       "abstract": "Abstract Water quality prediction and management are crucial for ensuring the sustainability of water supplies. Contaminated water can harm humans and aquatic life. As the demand for seafood grows, the aquaculture industry faces several obstacles, including disease management, feeding optimization, water quality monitoring, and aquaculture area extraction. Recently, aquaculture systems have increasingly used AI techniques to successfully and sustainably handle these issues. However, traditional AI techniques such as random forest (RF) and multi-layer perceptron (MLP) among others frequently face data scarcity and poor physical consistency. This research bridges this gap by integrating physical sciences with AI algorithms through the solution of the two coupled pollution–aeration equations to generate a high-fidelity physics-derived dataset of 50,000 observations over an extended spatial domain ranging from 0 to 4. This dataset is then used to train a novel hybrid RF–MLP algorithm to identify fish-survival zones within a polluted river at a given time, while determining the minimum allowable water velocity and the upstream dissolved oxygen level required to maintain environmentally safe conditions along the entire river reach. The proposed algorithm employs a three-stage sequential residual learning logic, combining RF’s stable feature partitioning with MLP’s improved non-linear error correction. The algorithm’s performance was benchmarked against nine standalone AI algorithms using a comprehensive suite of metrics. The experiments demonstrated exceptional precision with a Correlation Coefficient (CC) of 0.9999999973, a Scatter Index (SI) of 0.00007326, a Willmott’s Index (WI) of 0.9999999986, a Test RMSE of 0.00012966, and a 0.9999999692. Beyond accuracy, the hybrid algorithm demonstrated superior computational efficiency, training in just 22.58 s—a 24.45-fold reduction compared to BiLSTM architectures. These results provide a robust tool for decision-makers to identify optimal river reaches for fish farms based on minimum water velocity and permissible dissolved oxygen transfer levels, bridging the gap between theoretical physics and industrial aquaculture management.",
-      "summary_cn": "",
+      "summary_cn": "本研究通过求解污染-曝气耦合方程生成5万条高保真物理数据集，提出一种结合随机森林（RF）与多层感知器（MLP）的混合算法，用于预测污染河流中鱼类生存区。该算法采用三阶段残差学习逻辑，在0-4空间域内确定维持环境安全所需的最小水流速度和上游溶解氧水平。实验显示相关系数达0.9999999973，训练时间仅22.58秒（较BiLSTM快24.45倍），为决策者识别适宜养殖河段提供了高精度工具。",
       "url": "https://doi.org/10.1038/s41598-026-57547-6",
       "source": "crossref",
-      "keywords_matched": "fish stock"
+      "keywords_matched": "fish stock",
+      "high_impact": false
     },
     {
       "doi": "10.1007/s10980-026-02363-6",
@@ -70,10 +75,11 @@
       "journal": "Landscape Ecology",
       "date": "2026-06-18",
       "abstract": "Abstract Context Landscape heterogeneity and environmental gradients operating across spatial scales shape species distributions and community assembly in freshwater ecosystems. In stream networks, these landscape processes mediate both environmental filtering and dispersal, generating species co-occurrence patterns that reflect spatial aggregation or segregation. Objectives Our aim is to understand how environmental variables and functional and phylogenetic dissimilarity influence fish species co-occurrence patterns in tropical streams. Methods Fishes were sampled using circular hand nets at 18 headwater streams, distributed across two contrasting Amazonian vegetation types: savannas and forests. Environmental variables were assessed at three spatial scales: local, catchment, and drainage network. Local habitat structure and physicochemical parameters were assessed in situ, using standardized protocols. Catchment-scale variables and distances to the main river channel were obtained through remote sensing analyses. Results Fish assemblages differed markedly between forest and savanna streams, reflecting distinct environmental settings and coexistence patterns. Co-occurrence analyses revealed non-random associations among species, encompassing both positive and negative relationships. These relationships were significantly influenced by local habitat structure, catchment vegetation cover, and spatial structure. Species pairs with greater functional dissimilarity tended to co-occur more frequently than expected by chance, whereas phylogenetic dissimilarity showed no relationship with co-occurrence patterns. Conclusions Environmental variation between forest and savanna streams drives differences in species coexistence mechanisms. Riparian vegetation and forest cover at the catchment scale are key determinants of species co-occurrence and community structure. Maintaining riparian buffers and preserving forest cover are therefore essential to sustain biodiversity, ecological interactions, and functional integrity in Amazonian freshwater landscapes.",
-      "summary_cn": "",
+      "summary_cn": "研究亚马逊东部不同植被类型（稀树草原与森林）溪流中环境与功能差异对鱼类共存格局的影响。通过手抄网采样18条源头溪流，结合局部、集水区和河网多尺度环境变量及功能/系统发育差异分析。结果显示：森林与稀树草原溪流鱼类群落显著不同，物种间存在非随机共现关系；功能差异大的物种对更易共现，而系统发育差异无显著影响。局部栖息地结构、集水区植被覆盖及空间结构是驱动共现模式的关键因素，维持河岸缓冲带和森林覆盖对保护亚马逊淡水生物多样性与功能完整性至关重要。",
       "url": "https://doi.org/10.1007/s10980-026-02363-6",
       "source": "crossref",
-      "keywords_matched": "fish stock"
+      "keywords_matched": "fish stock",
+      "high_impact": false
     },
     {
       "doi": "10.3390/jmse14121122",
@@ -82,10 +88,11 @@
       "journal": "Journal of Marine Science and Engineering",
       "date": "2026-06-18",
       "abstract": "This study presents field measurements for a non-conventional mobile square cylinder fish enclosure, with permeable ends, evaluated under both towed and moored conditions at a semi-open ocean test site. Novelty lies within the enclosure design that enables both mobility and control of internal flow through the incorporation of an adjustable aft-end perimeter constriction to regulate internal flow and support fish welfare by enabling control of swimming conditions. Enclosure motion, internal flow speeds and hydrodynamic loads were measured for three constrictions (0%, 40% and 60%). The primary objective was to assess the effectiveness of aft-end constriction in regulating internal flow to levels compatible with sustainable swimming speeds for finfish culture. The enclosure remained stable at approximately 9 m depth across all vessel speeds and constriction settings in both towed and moored scenarios. During towing, increasing constriction to 40% reduced time-averaged internal flow by up to 24% without a significant increase in hydrodynamic load. A 60% constriction achieved a larger reduction (~51%) but resulted in a substantial load increase (~90% relative to 0% constriction), indicating a trade-off between flow control and towing resistance. Under moored conditions, aft-end constriction had minimal influence on both internal flow and hydrodynamic load. Mooring loads showed no clear relationship with wave height and only a weak correlation with ambient current speed. Overall, the results demonstrate that aft-end constriction is an effective mechanism for controlling internal flow during towing, but has limited impact when moored. The enclosure’s stability and controllability highlight its potential advantages over conventional gravity cages for mobile open-ocean finfish aquaculture applications.",
-      "summary_cn": "",
+      "summary_cn": "本研究在半开放海域现场评估了一种新型移动式方形圆柱鱼舱，其尾部可调节收缩（0%、40%、60%），旨在通过控制内部流速以维持可持续游泳速度。拖曳状态下，40%收缩使平均内部流速降低24%且水动力负荷未显著增加，60%收缩虽降低51%流速但负荷增加约90%；系泊状态下收缩对流速和负荷影响有限。结果表明尾部收缩在拖曳时有效调控内部流场，但系泊时作用微弱，该鱼舱的稳定性和可控性优于传统重力式网箱，适用于移动式开放海域水产养殖。",
       "url": "https://doi.org/10.3390/jmse14121122",
       "source": "crossref",
-      "keywords_matched": "fish stock"
+      "keywords_matched": "fish stock",
+      "high_impact": true
     },
     {
       "doi": "10.1186/s12982-026-02254-w",
@@ -94,10 +101,11 @@
       "journal": "Discover Public Health",
       "date": "2026-06-18",
       "abstract": "",
-      "summary_cn": "",
+      "summary_cn": "研究尼日利亚西南部城市市场鱼类中多种金属暴露对人体健康的风险。通过检测鱼类重金属含量，评估居民通过食用鱼类的潜在健康危害。发现部分金属浓度超过安全限值，存在非致癌与致癌风险。",
       "url": "https://doi.org/10.1186/s12982-026-02254-w",
       "source": "crossref",
-      "keywords_matched": "fish stock"
+      "keywords_matched": "fish stock",
+      "high_impact": false
     },
     {
       "doi": "10.1128/mra.00528-26",
@@ -106,10 +114,11 @@
       "journal": "Microbiology Resource Announcements",
       "date": "2026-06-18",
       "abstract": "ABSTRACT We report the draft genome sequence of Enterobacter cloacae TG-C5.2 isolated from shrimp aquaculture water in Vietnam. The genome harbors multiple antimicrobial resistance genes, including blaCTX-M-15 .",
-      "summary_cn": "",
+      "summary_cn": "从越南湄公河三角洲虾类养殖水体中分离的阴沟肠杆菌TG-C5.2菌株的基因组草图显示，其携带多种抗生素抗性基因（包括blaCTX-M-15），提示养殖环境中存在耐药性风险。该研究为水产养殖病原菌耐药性监测提供了基因组数据基础。",
       "url": "https://doi.org/10.1128/mra.00528-26",
       "source": "crossref",
-      "keywords_matched": "aquaculture"
+      "keywords_matched": "aquaculture",
+      "high_impact": false
     },
     {
       "doi": "10.3389/fmars.2026.1796693",
@@ -118,10 +127,11 @@
       "journal": "Frontiers in Marine Science",
       "date": "2026-06-18",
       "abstract": "Ocean Alkalinity Enhancement (OAE) is a promising approach for removing carbon dioxide from the atmosphere by increasing seawater alkalinity. However, the effectiveness of OAE depends on avoiding the precipitation of calcium carbonate (CaCO 3 ) that would reduce OAE efficiency by removing added alkalinity before CO 2 uptake can occur, or in cases of more extensive precipitation, potentially release CO 2 back to the atmosphere (e.g., ‘runaway’ precipitation). We examined the stability of alkalinity-enhanced seawater under conditions relevant to CaCO 3 -based OAE by dissolving CaCO 3 in CO 2 -enriched seawater and testing three alkalinity additions (+3,000, +7,000, and +14,000 µmol kg -1 ) at two temperatures (5 °C and 25 °C) using two CO 2 equilibration approaches. We also evaluated how mixing alkalinity-enhanced water with natural water from the Savannah River influences stability across different salinity levels and conditions. Enhanced alkalinity waters showed clear threshold behavior for stability. The highest alkalinity addition (+14,000 µmol kg -1 ) consistently caused rapid CaCO 3 precipitation (within a day), while the lowest addition (+3,000 µmol kg -1 ) remained stable for more than one month. The intermediate addition (+7,000 µmol kg -1 ) showed delayed CaCO 3 formation, with the timing strongly influenced by temperature and equilibration endpoint. Even in the highest alkalinity additions no ‘runaway’ precipitation was observed where more alkalinity was removed than was added to the seawater. Mixing alkalinity-enhanced water with natural water increased stability, particularly when estuarine water made up at least 60% of the mixture, with salinity of the mixing waters playing an important role in stability. Models showed that aragonite saturation state provides a useful indicator of precipitation risk, however, increases in calcium concentration must be taken into account when CaCO 3 is used as the alkalinity source. Our results define practical limits for pre-equilibrated CaCO 3 -based alkalinity enhancement in coastal environments and emphasize the importance of site-specific conditions when determining effective alkalinity addition levels.",
-      "summary_cn": "",
+      "summary_cn": "通过溶解CaCO₃于CO₂富集海水，评估三种碱度添加量（+3,000、+7,000、+14,000 µmol kg⁻¹）在两种温度（5°C和25°C）下的稳定性。最高碱度添加在一天内引发CaCO₃快速沉淀，最低添加稳定超过一个月，中间添加的沉淀时间受温度和平衡终点影响。混合天然水可增强稳定性，当河口海水占比≥60%时效果显著。文石饱和度状态可指示沉淀风险，但需考虑Ca²⁺浓度变化。研究为沿海CaCO₃基碱度增强提供了实用限制，强调场地特异性条件的重要性。",
       "url": "https://doi.org/10.3389/fmars.2026.1796693",
       "source": "crossref",
-      "keywords_matched": "marine fisheries"
+      "keywords_matched": "marine fisheries",
+      "high_impact": true
     },
     {
       "doi": "10.3389/fmars.2026.1859950",
@@ -130,10 +140,11 @@
       "journal": "Frontiers in Marine Science",
       "date": "2026-06-18",
       "abstract": "Long-finned pilot whales ( Globicephala melas ) are widely distributed across the North Atlantic and are often assessed for management as a single, abundant population. However, the species exhibits strong social organisation, stable matrilineal structure, and reproduction that occurs within social units, characteristics that shape demographic connectivity. These features raise questions about whether abundance alone provides a sufficient basis for assessing the sustainability of recurrent removals from a socially structured marine mammal population. Recent genetic and ecological studies indicate broad-scale differentiation and suggest regional structuring within the North Atlantic, yet sampling remains uneven and datasets linked directly to harvested individuals are limited. Consequently, it is not currently possible to determine how removals in the Faroe Islands are distributed across potential demographically independent populations (DIPs), matrilines or family lineages. This Mini Review synthesises current evidence on population structure, identifies key uncertainties, and evaluates post-mortem genetic sampling as a practical approach to reducing uncertainty and improving sustainability assessments for North Atlantic long-finned pilot whales.",
-      "summary_cn": "",
+      "summary_cn": "仅凭丰度无法评估长鳍领航鲸（Globicephala melas）的可持续性，因其具有稳定的母系社会结构和繁殖单位，导致种群结构复杂。近期遗传和生态研究显示北大西洋存在区域分化，但样本覆盖不均且缺乏与捕捞个体直接关联的数据。本综述整合现有种群结构证据，指出关键不确定性，并评估死后遗传采样作为降低不确定性、改进可持续性评估的实用方法。",
       "url": "https://doi.org/10.3389/fmars.2026.1859950",
       "source": "crossref",
-      "keywords_matched": "seafood sustainability"
+      "keywords_matched": "seafood sustainability",
+      "high_impact": true
     },
     {
       "doi": "10.3389/fmars.2026.1869178",
@@ -142,10 +153,11 @@
       "journal": "Frontiers in Marine Science",
       "date": "2026-06-18",
       "abstract": "Marginal coral reefs in the northern South China Sea (NSCS) are increasingly affected by thermal stress and local disturbances, yet their potential larval connectivity remains poorly quantified. Here, we assessed potential larval exchange among 23 reef patches in the NSCS using a Lagrangian particle-tracking model driven by regional ocean circulation data from 2000 to 2025. Connectivity was evaluated under pelagic larval duration (PLD) scenarios of 5, 30, and 120 days. Increasing PLD from 5 to 120 d increased the number of potential inter-patch links from 13 to 29, but mean positive off-diagonal connectivity declined by approximately 62%, indicating that many additional long-PLD pathways were weak. Episodic networks further showed that such low-frequency pathways could extend potential exchange among reef sectors, including the Beibu Gulf-western Hainan sector, the Xisha Islands, and the Vietnam coastal reefs. At the patch level, several Beibu Gulf and Hainan reefs showed self-retentive tendencies, whereas patches in the Xisha Islands and Vietnam coastal sector showed more diverse functional roles. These findings suggest that marginal reefs in the NSCS are linked by a spatially uneven and temporally intermittent network of potential larval exchange, providing testable hypotheses for connectivity-informed conservation assessment that should be evaluated alongside habitat condition, recruitment, and genetic evidence.",
-      "summary_cn": "",
+      "summary_cn": "利用2000-2025年区域环流数据驱动的拉格朗日粒子追踪模型，评估了南海北部23个边缘珊瑚礁斑块间的幼虫潜在连通性。在5、30和120天浮游幼虫期（PLD）情景下，随PLD延长，斑块间潜在连接数从13增至29，但平均正向非对角连通性下降约62%，表明长PLD路径多为弱连接。北部湾-海南西部、西沙群岛和越南沿岸礁区通过低频事件网络实现间歇性交换，而海南和北部湾部分礁块具自留倾向，西沙和越南礁块功能角色更多样。研究揭示了时空不均匀的幼虫交换网络，为结合栖息地状况、补充量和遗传证据的连通性保护评估提供了可验证假设。",
       "url": "https://doi.org/10.3389/fmars.2026.1869178",
       "source": "crossref",
-      "keywords_matched": "coral reef fisheries"
+      "keywords_matched": "coral reef fisheries",
+      "high_impact": true
     },
     {
       "doi": "10.1080/15428052.2026.2687668",
@@ -154,10 +166,11 @@
       "journal": "Journal of Culinary Science &amp; Technology",
       "date": "2026-06-18",
       "abstract": "",
-      "summary_cn": "",
+      "summary_cn": "利用高PUFA沙丁鱼副产物油制备乳液凝胶，并将其应用于重组罗非鱼鱼糜制作的鱼糕（Odeng）中。研究旨在开发富含多不饱和脂肪酸（PUFA）的鱼糕产品，通过乳液凝胶技术改善油脂稳定性和产品质地。主要发现包括乳液凝胶可有效包埋沙丁鱼油，提升鱼糕的营养价值与感官接受度。",
       "url": "https://doi.org/10.1080/15428052.2026.2687668",
       "source": "crossref",
-      "keywords_matched": "fish stock"
+      "keywords_matched": "fish stock",
+      "high_impact": true
     },
     {
       "doi": "10.3390/agronomy16121185",
@@ -166,10 +179,11 @@
       "journal": "Agronomy",
       "date": "2026-06-18",
       "abstract": "Rice–fish co-culture is widely promoted for mitigating nitrous oxide (N2O) emissions from paddy soils, yet how the duration of co-culture reshapes the underlying nitrogen-cycling microbial community under low-nitrogen input remains poorly understood. This study aimed to (i) characterize how co-culture duration alters the rhizosphere microbial functional potential for N2O production and consumption, and (ii) identify the water and soil variables linking fish activity to that response. The experiment was conducted during the 2024 rice growing season in the Qingtian rice–fish system (Zhejiang Province, China), a traditional agricultural heritage system managed without chemical fertilizer or supplementary feed. Three treatments (i.e., rice monoculture, first-year co-culture, and long-established (~10-year) co-culture) were compared using six independently bunded replicate plots each. Rhizosphere soils were collected at the tillering, heading and maturity stages for shotgun metagenomic profiling of nitrogen-cycling functional genes, with concurrent measurement of N2O flux and water and soil physicochemical properties. Fluxes were uniformly low and did not differ among treatments (p &gt; 0.05), defining a substrate-limited baseline. Against this baseline, first-year co-culture induced a coordinated shift toward complete denitrification (nosZ increased by 25–33% across all stages; nosZ/(nirK + nirS) rose to 0.99 at heading), associated with a transient water organic carbon pulse and dissolved-oxygen availability. The long-established system resembled monoculture, indicating a non-monotonic, duration-dependent response.",
-      "summary_cn": "",
+      "summary_cn": "本研究探讨稻鱼共作时长如何重塑根际微生物对氧化亚氮（N₂O）产生与消耗的功能潜力。通过对比水稻单作、第一年共作和长期（约10年）共作处理，结合宏基因组测序与N₂O通量监测，发现第一年共作显著提升完全反硝化潜力（nosZ基因丰度增加25-33%，nosZ/(nirK+nirS)比值升至0.99），这与水体有机碳脉冲和溶解氧变化相关；而长期共作系统则回归至类似单作状态，表明共作时长对N₂O相关微生物功能呈非单调性调控。",
       "url": "https://doi.org/10.3390/agronomy16121185",
       "source": "crossref",
-      "keywords_matched": "fish reproduction"
+      "keywords_matched": "fish reproduction",
+      "high_impact": false
     },
     {
       "doi": "10.1029/2026eo260197",
@@ -178,10 +192,11 @@
       "journal": "Eos",
       "date": "2026-06-18",
       "abstract": "Tire particles might seem tasty, if you’re a fish—but a new study shows how this pervasive microplastic can affect growth and behavior in marine species.",
-      "summary_cn": "",
+      "summary_cn": "研究发现，轮胎颗粒作为微塑料的一种，被鱼类摄入后会影响其生长和行为。通过实验观察，这种污染物对海洋物种的发育和活动模式产生显著负面作用。该研究揭示了轮胎残留物进入食物链的潜在生态风险。",
       "url": "https://doi.org/10.1029/2026eo260197",
       "source": "crossref",
-      "keywords_matched": "fish reproduction"
+      "keywords_matched": "fish reproduction",
+      "high_impact": false
     },
     {
       "doi": "10.1093/najfmt/vqag034",
@@ -190,10 +205,11 @@
       "journal": "North American Journal of Fisheries Management",
       "date": "2026-06-17",
       "abstract": "ABSTRACT Objective Fisheries-dependent and fisheries-independent information is critical for assessing the status and trends of fish populations and regulations. We tested for changes in common fisheries-dependent and fisheries-independent metrics for Largemouth Bass Micropterus nigricans (LMB) and Smallmouth Bass M. dolomieu (SMB) in Wisconsin during 1990–2024. We also tested for responses associated with liberalized harvest regulations compared with a more conservative bass regulation. Methods We used creel survey data collected during 1990–2024 to test for trends in fisheries-dependent metrics. We used electrofishing data to test for trends in fisheries-independent metrics. Electrofishing data were also used to test for differences in relative abundance and proportional size distribution in a subset of bass populations with liberalized harvest regulations versus a more conservative black bass regulation. Results Directed angler effort for SMB significantly increased, whereas directed effort for LMB did not change. Catch rates for both species significantly increased. Harvest rates for LMB remained low, while SMB harvest rates significantly declined. Relative abundances for both species significantly increased. Population size structure increased for low to intermediate length-classes of LMB and intermediate to high length-classes of SMB. Density-dependent growth responses in mean length at age were evident in older age-classes for both species. Relative abundances of LMB populations with liberalized harvest regulations significantly declined, whereas SMB showed no change. Both species showed increased population size structure, but the increase was greater for LMB. Conclusions Our results suggest that bass populations are thriving in Wisconsin. However, density-dependent effects on growth may not be balancing diverse angler desires of catch and trophy potential or alleviating the negative correlation of LMB with Walleye Sander vitreus. Liberalized regulations on LMB showed promise for better balance in diverse bass fishing opportunity. Whether future angler behavioral responses (e.g., harvest rates) will be sufficient to balance fish communities that are managed for multiple species and ecosystem services is unclear.",
-      "summary_cn": "",
+      "summary_cn": "基于1990–2024年威斯康星州垂钓调查和电捕数据，评估黑鲈（Largemouth Bass和Smallmouth Bass）种群状态及捕捞法规效果。结果显示，两种鲈鱼相对丰度和种群大小结构显著增加，但Smallmouth Bass定向垂钓努力量上升而Largemouth Bass不变；放宽Largemouth Bass捕捞法规导致其相对丰度下降，但种群大小结构提升更明显。研究指出密度依赖效应可能影响生长，且放宽法规有望平衡多物种管理中的垂钓需求。",
       "url": "https://doi.org/10.1093/najfmt/vqag034",
       "source": "crossref",
-      "keywords_matched": "fisheries"
+      "keywords_matched": "fisheries",
+      "high_impact": false
     },
     {
       "doi": "10.29303/jp.v16i3.2265",
@@ -202,10 +218,11 @@
       "journal": "JP",
       "date": "2026-06-17",
       "abstract": "The fisheries sector is a vital pillar of Indonesia's maritime economy, yet its contribution to the national GDP continues to face structural stagnation. This study aims to analyze the influence of specific fisheries sector variables, namely: Domestic Investment (PMDN) in Fisheries, Foreign Investment (PMA) in Fisheries, Fisheries Production Volume, and Fisheries Export Value on the Fisheries GDP in Indonesia for the 2015-2025 period. The analytical method employed is multiple linear regression using the double log model. The results indicate that simultaneously, all independent variables in the fisheries sector significantly influence the Fisheries GDP. However, partially, only Domestic Investment (PMDN) in Fisheries has a positive and significant impact. Conversely, Foreign Investment (PMA) in Fisheries, Fisheries Production Volume, and Fisheries Export Value do not show a significant effect. The lack of significance among these variables suggests structural constraints, such as low product downstreaming, logistical inefficiencies, and the negative impact of Illegal, Unreported, and Unregulated (IUU) Fishing, which leads to a leakage of economic value-added before it can be recorded in the national GDP. This study recommends that the government strengthen the domestic capital base and tighten maritime surveillance to suppress fish poaching. A downstreaming strategy for fisheries export products is key to ensuring that physical production capacity can be optimally converted into economic value-added for national GDP growth.",
-      "summary_cn": "",
+      "summary_cn": "本研究分析2015-2025年印尼渔业部门变量（国内投资、外资、产量、出口值）对渔业GDP的影响，采用双对数多元线性回归模型。结果显示，仅国内投资对渔业GDP有显著正向影响，而外资、产量和出口值不显著，表明存在产品下游化不足、物流效率低及IUU捕捞等结构性制约。建议加强国内资本基础、强化海上执法，并通过出口产品下游化策略将产能转化为经济附加值。",
       "url": "https://doi.org/10.29303/jp.v16i3.2265",
       "source": "crossref",
-      "keywords_matched": "fisheries"
+      "keywords_matched": "fisheries",
+      "high_impact": false
     },
     {
       "doi": "10.29244/core.10.1.143-156",
@@ -214,10 +231,11 @@
       "journal": "ALBACORE Jurnal Penelitian Perikanan Laut",
       "date": "2026-06-17",
       "abstract": "Crab gillnet is a fishing gear intended for catching crabs that have the potential to cause Abandoned, Lost, and Discarded Fishing Gear (ALDFG). This research aims to estimate the potential for ALDFG and waste supplies from crab gillnet fisheries and to identify the causes and mitigation efforts. Data collection was carried out using survey methods and field observations, then the data were analysed descriptively. The research results show that the estimated lost crab gillnets potential in 1 month was 16 units (320 pieces) with a total weight of 1,137 kg. Meanwhile, in 1 year it is estimated that there will be 166 units (3.320 pieces) with a total weight of 11.375 kg or with a total loss value of IDR 573,750,000. The estimated abandoned crab gillnets potential in 1 month was 0.3 units (6 pieces) with a total weight of 23 kg, while in 1 year it is estimated that there will be 3 units (60 pieces) with a total weight of 230 kg and a loss of IDR 14,500,000. This study proposes a mitigation efforts including dissemination of the negative impacts of ALDFG and ghost gear, reporting program of lost fishing gear, providing incentives and implementing gear marking. Key words: ALDFG, debris, fishing gear, gillnet, PPN Muara Angke",
-      "summary_cn": "",
+      "summary_cn": "基于雅加达Muara Angke渔业港的蟹笼渔业数据，本研究估算了废弃、丢失和丢弃渔具（ALDFG）的潜在规模。调查显示，每月丢失蟹笼约16组（320片），重1,137 kg；每年丢失166组（3,320片），重11,375 kg，经济损失达5.7375亿印尼盾。废弃蟹笼每月约0.3组（6片），重23 kg；每年3组（60片），重230 kg，损失1,450万印尼盾。研究提出缓解措施包括宣传ALDFG和幽灵渔具的负面影响、建立丢失渔具报告制度、提供激励及实施渔具标记。",
       "url": "https://doi.org/10.29244/core.10.1.143-156",
       "source": "crossref",
-      "keywords_matched": "fisheries"
+      "keywords_matched": "fisheries",
+      "high_impact": false
     },
     {
       "doi": "10.3390/d18060377",
@@ -226,10 +244,11 @@
       "journal": "Diversity",
       "date": "2026-06-17",
       "abstract": "Marine biological invasions are rapidly reshaping Mediterranean ecosystems, with growing consequences for biodiversity and fisheries. This study investigates recent changes in the composition of commercially important crustacean assemblages along the south-eastern coast of Sicily (central Mediterranean), focusing on penaeid shrimps (Penaeus aztecus and Penaeus kerathurus) and stomatopods (Erugosquilla massavensis and Squilla mantis). Field surveys were conducted during the fishing seasons of 2021 and 2025 at major landing sites and markets (Portopalo di Capo Passero, Syracuse and Catania), using standardized subsampling protocols applied to catches obtained by trammel nets and bottom trawls. Species composition was quantified through repeated sampling events, and temporal differences were analyzed using non-parametric tests and binomial generalized linear models, incorporating year and fishing gear as explanatory variables. Quantitative data were complemented by local ecological knowledge derived from structured interviews with professional fishers. Across the four-year interval, both taxonomic groups exhibited a pronounced shift in species dominance. The proportion of the invasive shrimp P. aztecus increased from approximately 20% in 2021 to over 80% in 2025, while the invasive stomatopod E. massavensis rose from about 2% to nearly 90% of total landings. These changes were statistically significant and independent of fishing gear. Fishers’ perceptions closely mirrored the quantitative trends, confirming the rapid replacement of native species by non-indigenous taxa and highlighting emerging socio-economic implications for local fisheries. Our findings document a rapid shift in the composition of commercial crustacean landings in Sicilian coastal waters, with invasive species becoming the dominant component of catches within a few years. This study underscores the need for adaptive fisheries management and integrated monitoring frameworks capable of responding to accelerating biological invasions in Mediterranean marine ecosystems.",
-      "summary_cn": "",
+      "summary_cn": "本研究调查了西西里岛东南沿海（地中海中部）商业重要甲壳类动物群落的组成变化，重点关注对虾（Penaeus aztecus 和 Penaeus kerathurus）和口足类（Erugosquilla massavensis 和 Squilla mantis）。通过2021年和2025年渔季的实地调查、标准化子样本采样及渔民访谈，发现入侵物种在四年内迅速取代本地物种：入侵虾P. aztecus占比从约20%升至80%以上，入侵口足类E. massavensis从约2%增至近90%，变化与渔具无关。结果表明，入侵甲壳类已成为西西里沿海商业渔获的主要组成部分，对当地渔业产生显著社会经济影响，亟需适应性渔业管理和综合监测框架应对地中海生态系统加速的生物入侵。",
       "url": "https://doi.org/10.3390/d18060377",
       "source": "crossref",
-      "keywords_matched": "fisheries"
+      "keywords_matched": "fisheries",
+      "high_impact": false
     },
     {
       "doi": "10.1038/s41598-026-55455-3",
@@ -238,10 +257,11 @@
       "journal": "Scientific Reports",
       "date": "2026-06-17",
       "abstract": "Abstract The Somali upwelling is the strongest upwelling region globally during its seasonal peak. The intense productivity that occurs during the southwest monsoon (May-September) sustains artisanal and industrial fisheries. However, due to its complex structure and seasonality, and the typically coarse spatial resolution of global climate models, understanding its future fate remains a challenge. Using a high-resolution future climate projection and a size-spectrum model (in the absence of reliable fish catch data), we identify key climate stressors and projected changes in higher trophic levels to understand potential future impacts on Somali fisheries. Overall, the productivity generated by the Somali upwelling is projected to decline by the end of the century. Our results show that the inner coastal zone may experience elevated productivity, potentially due to changes in the prevailing winds and Somali Current. This may indicate potential climate refugia and minimal impacts to the artisanal fishing fleet. However, further offshore in the Great Whirl region dominated by small pelagic fish, there is a projected decline in productivity and biomass, which may impact the industrial fishing fleets that may target this area in future. To overcome challenges in understanding the fate of global upwelling systems, high-resolution models must be employed to more accurately simulate individual systems.",
-      "summary_cn": "",
+      "summary_cn": "本研究利用高分辨率未来气候预测和size-spectrum模型，评估了气候变化对索马里上升流生产力的影响。结果显示，到本世纪末，索马里上升流整体生产力将下降，但近岸区域生产力可能升高，为小型渔业提供气候避难所；而外海Great Whirl区域的小型中上层鱼类生物量将减少，可能影响未来工业捕捞。研究强调需采用高分辨率模型以更准确模拟全球上升流系统的变化。",
       "url": "https://doi.org/10.1038/s41598-026-55455-3",
       "source": "crossref",
-      "keywords_matched": "fisheries"
+      "keywords_matched": "fisheries",
+      "high_impact": false
     },
     {
       "doi": "10.1681/asn.0000001192",
@@ -250,10 +270,11 @@
       "journal": "Journal of the American Society of Nephrology",
       "date": "2026-06-17",
       "abstract": "",
-      "summary_cn": "",
+      "summary_cn": "探究熟肉或鱼类摄入对肌酐生成率、血清肌酐及估算肾小球滤过率的影响。该研究通过饮食干预实验，分析不同蛋白质来源（熟肉 vs 鱼类）对肾功能指标的作用。主要发现：鱼类摄入可能改变肌酐代谢参数，需在肾功能评估中考虑饮食因素。",
       "url": "https://doi.org/10.1681/asn.0000001192",
       "source": "crossref",
-      "keywords_matched": "fish stock"
+      "keywords_matched": "fish stock",
+      "high_impact": false
     },
     {
       "doi": "10.3389/fmars.2026.1898281",
@@ -262,10 +283,11 @@
       "journal": "Frontiers in Marine Science",
       "date": "2026-06-17",
       "abstract": "",
-      "summary_cn": "",
+      "summary_cn": "本文探讨渔业与水产养殖跨学科整合对提升可持续海产品生产的重要性。通过融合生态学、经济学、社会学等多学科方法，旨在优化资源管理与养殖技术。强调跨领域协作是应对全球海产品需求增长与生态保护平衡的关键路径。",
       "url": "https://doi.org/10.3389/fmars.2026.1898281",
       "source": "crossref",
-      "keywords_matched": "aquaculture"
+      "keywords_matched": "aquaculture",
+      "high_impact": true
     },
     {
       "doi": "10.1007/s10499-026-02593-0",
@@ -274,10 +296,11 @@
       "journal": "Aquaculture International",
       "date": "2026-06-17",
       "abstract": "Abstract Stocking density is a key intensification choice in shrimp aquaculture, with implications for productivity and animal welfare. On commercial farms, density is chosen alongside inputs such as aeration and monitoring, and within distinct production systems, making inference from observational data difficult. In this study, we analyse a survey of 210 shrimp farms in Viet Nam covering five systems from extensive to super-intensive production. Welfare is measured with (i) a composite welfare-impairment severity index averaging five observable indicators scored 1–5 and (ii) an ordinal feeding-response severity measure. We assess the index using internal-consistency, correlation-matrix, principal-component, leave-one-out, and component-specific sensitivity checks. The five indicators show acceptable internal consistency ((Cronbach’s alpha = 0.769; standardised alpha = 0.793), all pairwise component correlations are positive, and the first principal component closely tracks the equal-weight mean. Stocking densities vary substantially across systems. In bivariate analyses, higher densities coincide with both higher survival and greater impairment severity. We estimate fractional logit models for survival with system fixed effects and flexible density terms, supplemented by log-density and restricted cubic spline checks, ordinary least squares (OLS) models for the composite index, and an ordered logit model for feeding severity. Density effects are imprecise: log-density specifications are similar to the baseline results, while the survival spline suggests some curvature but no robust overall density gradient. Aeration intensity remains a positive correlate of survival. Trimming extreme densities and estimating quantile regressions also show no systematic survival-density relationship. Alternative weighting schemes and component-specific welfare models do not uncover a density-severity gradient. Species-dominant subsamples suggest diminishing returns, with positive linear density terms and negative quadratic terms, but these estimates should be interpreted cautiously. Overall, the findings indicate that density is better understood as part of a management bundle than as a stand-alone welfare ‘dose’. In these observational data and within this sample, universal density thresholds are difficult to justify unless they are conditioned on production system and complementary inputs.",
-      "summary_cn": "",
+      "summary_cn": "本研究基于越南210家虾类养殖场调查数据，涵盖从粗放型到超集约型的五种生产系统，通过复合福利损伤指数和摄食反应严重性指标评估养殖密度对存活率与动物福利的影响。结果显示，密度与存活率及福利损伤程度呈正相关，但密度效应不稳健，增氧强度是存活率的正向相关因素。研究表明，养殖密度应作为管理组合的一部分而非独立福利指标，通用密度阈值需结合生产系统与配套投入条件。",
       "url": "https://doi.org/10.1007/s10499-026-02593-0",
       "source": "crossref",
-      "keywords_matched": "aquaculture"
+      "keywords_matched": "aquaculture",
+      "high_impact": false
     },
     {
       "doi": "10.3390/fishes11060361",
@@ -286,10 +309,11 @@
       "journal": "Fishes",
       "date": "2026-06-17",
       "abstract": "Freshwater aquaculture in China has expanded rapidly in recent decades, raising growing concerns about its environmental sustainability. However, the relationship between industrial agglomeration and environmental efficiency in freshwater aquaculture remains insufficiently understood. Using panel data from 18 major freshwater aquaculture provinces in China from 2009 to 2023, this study investigates the nonlinear effects of industrial agglomeration on environmental efficiency. Environmental efficiency is evaluated using a Global Super-SBM model incorporating undesirable outputs, while industrial agglomeration is measured by the location quotient index. A two-way fixed-effects model is employed for empirical estimation. The results reveal a significant inverted U-shaped relationship between industrial agglomeration and environmental efficiency, with a turning point at an agglomeration level of 2.519. Moderate agglomeration improves environmental efficiency through economies of scale and technology diffusion, whereas excessive agglomeration generates crowding effects that reduce efficiency. Further mechanism analysis shows that technology diffusion, proxied by the number of trained fishermen, plays a significant mediating role in this relationship. This study provides new empirical evidence on the nonlinear environmental effects of industrial agglomeration in freshwater aquaculture and offers policy implications for optimizing industrial spatial layout and developing differentiated environmental regulations to support the green and sustainable development of the sector.",
-      "summary_cn": "",
+      "summary_cn": "利用2009-2023年中国18个主要淡水养殖省份面板数据，采用Global Super-SBM模型和区位熵指数评估环境效率与产业集聚水平。研究发现产业集聚与环境效率呈显著倒U型关系，拐点集聚水平为2.519，适度集聚通过规模经济和技术扩散提升效率，过度集聚则产生拥挤效应。技术扩散（以培训渔民数量为代理变量）在其中发挥显著中介作用。研究为优化淡水养殖产业空间布局和制定差异化环境规制提供了实证依据。",
       "url": "https://doi.org/10.3390/fishes11060361",
       "source": "crossref",
-      "keywords_matched": "aquaculture"
+      "keywords_matched": "aquaculture",
+      "high_impact": false
     },
     {
       "doi": "10.56557/upjoz/2026/v47i115696",
@@ -298,10 +322,11 @@
       "journal": "UTTAR PRADESH JOURNAL OF ZOOLOGY",
       "date": "2026-06-17",
       "abstract": "Artificial intelligence (AI) is increasingly used in zoological sciences to support the analysis of large, complex and heterogeneous biological and environmental datasets. This review synthesises the applications, advances, challenges and future perspectives of AI in zoology, ecology, aquaculture, toxicology and biodiversity conservation. The manuscript highlights the contribution of machine learning, deep learning, computer vision, bioacoustics, remote sensing, Internet of Things technologies and explainable AI to species identification, taxonomic research, animal behaviour analysis, wildlife monitoring, population estimation, disease surveillance and zoo management. In ecology and conservation, AI-assisted tools improve biodiversity assessment, habitat mapping, species distribution modelling, ecological forecasting, climate-change assessment and conservation planning. In aquaculture and fisheries, AI supports smart production systems through water-quality monitoring, precision feeding, biomass estimation, growth prediction, disease detection, mortality assessment, stock evaluation and sustainable resource management. In toxicology and ecotoxicology, AI contributes to predictive toxicity modelling, environmental risk assessment, biomarker discovery and alternative approaches that may reduce dependence on animal experimentation. The review also identifies major constraints affecting AI implementation, including data quality, taxonomic and geographical bias, limited interpretability, computational demands, cybersecurity risks, ethical concerns, regulatory requirements and unequal access to technology. Particular attention is given to the need for robust validation, interdisciplinary expertise and context-specific interpretation when AI outputs are used for biological or management decisions. Future progress is expected to depend on responsible integration of explainable AI, multimodal models, digital twins, environmental DNA analytics, omics technologies and autonomous monitoring systems. Overall, AI provides important opportunities to strengthen evidence-based zoological research and environmental management, provided that its use remains scientifically validated, ethically governed and complementary to field expertise.",
-      "summary_cn": "",
+      "summary_cn": "本综述系统总结了人工智能（AI）在动物科学、生态学、水产养殖、毒理学及生物多样性保护中的应用进展与挑战。AI技术（机器学习、深度学习、计算机视觉、生物声学等）已用于物种识别、行为分析、种群评估、疾病监测及智能水产养殖（如水质监测、精准投喂、生物量估算）。主要挑战包括数据偏差、模型可解释性不足、计算需求及伦理问题。未来需结合可解释AI、多模态模型、数字孪生及环境DNA等技术，推动循证研究与可持续管理。",
       "url": "https://doi.org/10.56557/upjoz/2026/v47i115696",
       "source": "crossref",
-      "keywords_matched": "aquaculture"
+      "keywords_matched": "aquaculture",
+      "high_impact": false
     },
     {
       "doi": "10.66472/bdas.v1i2.443",
@@ -310,10 +335,11 @@
       "journal": "Big Data Analytics and Data Science",
       "date": "2026-06-17",
       "abstract": "The global aquaculture sector faces structural challenges in the form of information asymmetry that causes a misalignment between production and market demand. The still-dominant production-driven paradigm leads to supply chain inefficiencies, low transparency, and limited traceability. This research aims to develop an information system integration model based on Artificial Intelligence (AI) and Big Data to transform the supply chain into a market-driven one. The research uses the Design Science Research (DSR) method, which includes needs analysis, data integration architecture design, development of Machine Learning and Deep Learning-based predictive models, and evaluation through prototype implementation. Expected outcomes include a data integration architecture, a supply-demand prediction model, and an AI-based traceability framework. This research contributes to improving the efficiency, transparency, and global competitiveness of the aquaculture sector.",
-      "summary_cn": "",
+      "summary_cn": "本研究针对全球水产养殖供应链中信息不对称导致的生产与市场需求脱节问题，提出基于人工智能（AI）与大数据的信息系统集成模型。采用设计科学研究（DSR）方法，通过需求分析、数据集成架构设计、机器学习和深度学习预测模型开发及原型验证，构建了供需预测模型与AI追溯框架。该模型可推动生产驱动型供应链向市场驱动型转型，提升行业效率、透明度和全球竞争力。",
       "url": "https://doi.org/10.66472/bdas.v1i2.443",
       "source": "crossref",
-      "keywords_matched": "aquaculture"
+      "keywords_matched": "aquaculture",
+      "high_impact": true
     },
     {
       "doi": "10.1038/s41597-026-07552-1",
@@ -322,10 +348,11 @@
       "journal": "Scientific Data",
       "date": "2026-06-17",
       "abstract": "Abstract The SylFishBD dataset addresses the critical need for automated identification of local fish species in Bangladesh’s dynamic aquatic ecosystems and bustling fish markets. It comprises 9,075 high-resolution images of 9 prevalent freshwater species, captured under uncontrolled, real-world conditions over 7 months to capture seasonal variations in appearance, freshness, and market presentation. Unlike prior datasets limited to controlled studio settings, SylFishBD faithfully replicates the complexity of operational fish markets: diverse lighting (natural daylight to fluorescent), varied viewpoints (top-down, angled, close-up), cluttered backgrounds (ice, trays, water, scales), and natural occlusions (vendor hands, overlapping fish). Each image contains exactly one clearly centered fish instance, annotated with a tight bounding box and a high-precision binary segmentation mask generated using the Segment Anything Model (SAM). All images are standardized to 500 × 500 pixels, organized hierarchically by species, and accompanied by comprehensive metadata, enabling seamless integration into machine learning pipelines. The dataset supports a wide range of computer vision tasks, including classification, object detection, instance segmentation, and morphological analysis, without requiring additional preprocessing. By bridging the gap between laboratory-based datasets and authentic market environments, SylFishBD serves as a robust, publicly available benchmark for developing deployable models in real-world aquaculture, trade transparency, price monitoring, and regulatory oversight. It empowers researchers and practitioners to advance automated species recognition, freshness assessment, and fair market practices in one of the world’s most active fish-producing regions.",
-      "summary_cn": "",
+      "summary_cn": "该研究构建了SylFishBD数据集，旨在解决孟加拉国本地鱼类物种的自动识别问题。数据集包含9种常见淡水鱼类的9,075张高分辨率图像，在真实市场环境下采集，涵盖季节变化、多样光照和复杂背景。每张图像标注了紧密边界框和基于Segment Anything Model (SAM)生成的高精度分割掩码，支持分类、目标检测和实例分割等计算机视觉任务。该数据集为水产养殖、贸易透明度和市场监管提供了可靠的基准。",
       "url": "https://doi.org/10.1038/s41597-026-07552-1",
       "source": "crossref",
-      "keywords_matched": "Scientific Data"
+      "keywords_matched": "Scientific Data",
+      "high_impact": false
     },
     {
       "doi": "10.3390/toxics14060524",
@@ -334,10 +361,11 @@
       "journal": "Toxics",
       "date": "2026-06-17",
       "abstract": "This article assesses per- and polyfluoroalkyl substances (PFAS) exposure levels, distribution, bioaccumulation characteristics, and health risks in freshwater fish from Zhejiang Province, China. A total of 240 market-sourced fish samples (covering carnivorous, omnivorous, and herbivorous species) collected between 2022 and 2024 were analyzed for 24 PFAS congeners, including four emerging alternatives. The results revealed widespread PFAS contamination, with a detection frequency of 77.5% and median total PFAS (Σ24PFAS) concentration of 2.95 ng/g. Hexafluoropropylene oxide dimer acid (HFPO-DA), perfluorooctane sulfonate (PFOS), and perfluoroundecanoic acid (PFUnDA) were the most frequently detected congeners. PFOS exhibited the highest median concentrations in carnivorous and omnivorous fish, whereas PFUnDA was the dominant contaminant in filter-feeding and herbivorous fish. No significant difference in Σ24PFAS concentrations was observed among fish with different feeding habits, but highly significant spatial variation was found. Long-chain PFAS concentrations were significantly higher than those of short-chain PFAS and emerging alternatives, with their proportion decreasing at lower trophic levels. The estimated daily intake of Σ24PFAS and Σ4PFAS for freshwater fish consumers averaged 0.14 and 0.042 ng/kg bw/day, respectively, with approximately 0.16% of the assessed individuals exceeding the recommended threshold. This study provides critical data to support food safety management and risk mitigation strategies.",
-      "summary_cn": "",
+      "summary_cn": "本研究评估了浙江省市售淡水鱼中24种全氟和多氟烷基物质（PFAS）的污染水平、分布、生物富集特征及健康风险。2022-2024年采集的240份市场鱼类样品（涵盖肉食性、杂食性和草食性）中，PFAS检出率为77.5%，中位总浓度（Σ24PFAS）为2.95 ng/g。六氟环氧丙烷二聚酸（HFPO-DA）、全氟辛烷磺酸（PFOS）和全氟十一烷酸（PFUnDA）为主要检出物，其中PFOS在肉食性和杂食性鱼类中浓度最高，而PFUnDA在滤食性和草食性鱼类中占主导。不同食性鱼类Σ24PFAS浓度无显著差异，但存在显著空间变异；长链PFAS浓度显著高于短链及新兴替代物，且其比例随营养级降低而下降。淡水鱼消费者Σ24PFAS和Σ4PFAS的日均摄入量分别为0.14和0.042 ng/kg bw/day，约0.16%的评估个体超过推荐阈值。该研究为食品安全管理和风险防控提供了关键数据支持。",
       "url": "https://doi.org/10.3390/toxics14060524",
       "source": "crossref",
-      "keywords_matched": "fish ecology"
+      "keywords_matched": "fish ecology",
+      "high_impact": false
     },
     {
       "doi": "10.3389/frish.2026.1820382",
@@ -346,10 +374,11 @@
       "journal": "Frontiers in Fish Science",
       "date": "2026-06-17",
       "abstract": "The Raja Ampat epaulette shark ( Hemiscyllium freycineti ) is an endemic species inhabiting shallow coastal habitats of the Raja Ampat Archipelago, Indonesia. Despite recent legal protection, information on its biology, population structure, and spatial ecology remains limited, constraining effective conservation. To address these gaps, a total of 64 nocturnal surveys (averaging 1.8–2.3 hours each) were conducted between February 2024 and April 2025 at six sites in the Dampier Strait region. Using photo-identification and passive integrated transponder tagging, 736 unique individuals were identified from 1,191 sightings, with most records from Arborek Island (n = 602). Of these, the population comprised 415 females and 321 males, resulting in a significantly female-biased sex ratio. Total length (TL) ranged from 19.4 to 75.0 cm (mean = 51.1 cm), and body mass ranged from 24 to 1,025 g (mean = 412.8 g). The length–weight relationships indicated negative allometric growth in both females ( b = 2.91) and males ( b = 2.81). Estimated length-at-maturity was 56.59 cm TL for females and 56.42 cm TL for males, with no significant difference between sexes. Relative density ranged from 333 to 2,462 individuals per km², representing the highest population density recorded globally for Hemiscyllium . A total of 256 individuals were resighted at least once, with resighting intervals extending up to 451 days. Immature individuals exhibited significantly higher growth rates than mature ones (7.8 vs 2.8 cm year -1 ), while no sex-specific difference in growth was detected. The best-supported and biologically meaningful growth model, seasonally oscillating ELEFAN with simulated annealing, estimated an asymptotic length ( L ∞ ) of 79.6 cm for all individuals, with a growth coefficient ( K ) of 0.747 year -1 . Growth showed pronounced seasonal oscillations ( C = 0.915). Sharks were most frequently observed in seagrass meadows. Habitat use analyses revealed ontogenetic partitioning. Coral reefs appear to function as a nursery habitat with 69% immature sharks, while seagrass and sand habitats supported higher proportions of adults. Individuals were highly resident, showed no inter-site movement, and occupied small spatial ranges, with maximum net displacements of 475 m. Collectively, these findings provide the first demographic and spatial baseline for H. freycineti in Raja Ampat.",
-      "summary_cn": "",
+      "summary_cn": "本研究首次系统评估了印度尼西亚拉贾安帕特群岛Dampier海峡特有斑马纹肩章鲨（Hemiscyllium freycineti）的生活史与空间生态。通过64次夜间调查（2024年2月至2025年4月），利用照片识别和PIT标记鉴定出736个独个体，发现种群以雌性为主（雌雄比415:321），体长范围19.4–75.0 cm，呈负异速生长。雌雄成熟体长分别为56.59 cm和56.42 cm，相对密度高达333–2462 ind./km²，为全球肩章鲨属最高记录。生长模型显示渐近体长79.6 cm，生长系数K=0.747 year⁻¹，具显著季节性波动（C=0.915）。个体高度定居，无跨位点移动，最大位移仅475 m，且栖息地利用存在个体发育分化：珊瑚礁作为 nursery habitat（69%幼体），海草床和沙地则支持更多成体。",
       "url": "https://doi.org/10.3389/frish.2026.1820382",
       "source": "crossref",
-      "keywords_matched": "fish ecology"
+      "keywords_matched": "fish ecology",
+      "high_impact": true
     },
     {
       "doi": "10.29303/jp.v16i3.2280",
@@ -358,10 +387,11 @@
       "journal": "JP",
       "date": "2026-06-17",
       "abstract": "Salted fish processing represents an important livelihood activity for many coastal households, providing opportunities to increase the value of fishery products while generating additional income. This study assessed the income and financial feasibility of household-scale salted fish processing businesses in Pasar Bantal Village, Teramang Jaya District, Mukomuko Regency. The research was conducted from December 2025 to January 2026 using a quantitative descriptive approach. Data were collected through observations, interviews, and documentation involving 15 salted fish processors selected from the local processing community. Economic performance was evaluated through analyses of production costs, revenue, net income, and Return Cost Ratio (RCR). The results revealed that the average production cost was IDR 12,016,311 per year, while the average annual revenue reached IDR 29,232,000. Consequently, processors obtained an average net income of IDR 17,215,689 per year. The average RCR value was 2.44, indicating that revenues were more than twice the production costs incurred. These findings demonstrate that household-scale salted fish processing in Pasar Bantal Village is financially feasible and capable of generating positive economic returns. Business sustainability is supported by the availability of raw materials, low capital requirements, the utilization of family labor, and relatively stable market demand. The study highlights the potential of salted fish processing as a livelihood diversification strategy that can contribute to strengthening the economic resilience of coastal households.",
-      "summary_cn": "",
+      "summary_cn": "对印度尼西亚Mukomuko县Pasar Bantal村家庭规模咸鱼加工企业进行收入与财务可行性分析。通过定量描述方法，评估15家加工户的生产成本、收入、净利润及收益成本比（RCR）。结果显示年均净利润达17,215,689印尼盾，RCR为2.44，表明该业务财务可行且能产生正向经济回报。研究证实咸鱼加工可作为沿海家庭生计多样化策略，其可持续性得益于原料易得、低资本需求和稳定市场需求。",
       "url": "https://doi.org/10.29303/jp.v16i3.2280",
       "source": "crossref",
-      "keywords_matched": "fish ecology"
+      "keywords_matched": "fish ecology",
+      "high_impact": false
     },
     {
       "doi": "10.32486/dikemas.v9i2.1036",
@@ -370,10 +400,11 @@
       "journal": "DIKEMAS (Jurnal Pengabdian Kepada Masyarakat)",
       "date": "2026-06-17",
       "abstract": "Industri budidaya ikan hias menghadapi tantangan dalam menjaga kualitas air selama proses karantina. Kualitas air yang buruk dapat menyebabkan stres, meningkatnya risiko penyakit, bahkan kematian pada ikan. Parameter seperti suhu, pH, dan Total Dissolved Solids (TDS) sangat penting untuk dipantau secara berkala. Penelitian ini mengembangkan sistem Smart Fish Tank berbasis Internet of Things (IoT) yang dilengkapi dengan sensor DS18B20 untuk suhu, sensor pH-4502C, dan sensor TDS. Data hasil monitoring dikirim ke Firebase Realtime Database dan ditampilkan melalui aplikasi Android. Sistem juga dilengkapi dengan modul pengurasan otomatis yang dikendalikan oleh mikrokontroler ESP32 dan modul relay 2 channel. Pengguna dapat menjadwalkan pengurasan air melalui aplikasi. Hasil implementasi menunjukkan sistem mampu berfungsi sesuai dengan rancangan, membantu menjaga kestabilan kualitas air selama karantina ikan hias air tawar, serta mengurangi ketergantungan terhadap sistem pemantauan konvensional.",
-      "summary_cn": "",
+      "summary_cn": "针对观赏鱼养殖中水质监测难题，开发基于IoT的智能鱼缸系统，集成DS18B20温度、pH-4502C和TDS传感器。系统通过ESP32微控制器将数据上传至Firebase数据库，并支持Android应用远程监控及自动排水调度。实测表明该系统能有效维持淡水观赏鱼检疫期间的水质稳定，减少人工干预需求。",
       "url": "https://doi.org/10.32486/dikemas.v9i2.1036",
       "source": "crossref",
-      "keywords_matched": "fish ecology"
+      "keywords_matched": "fish ecology",
+      "high_impact": false
     },
     {
       "doi": "10.59888/ajosh.v4i9.730",
@@ -382,10 +413,11 @@
       "journal": "Asian Journal of Social and Humanities",
       "date": "2026-06-17",
       "abstract": "Maluku Province, as one of the archipelagos with the greatest potential for marine resources in Indonesia, is vulnerable to the threat of maritime crime, particularly destructive fishing practices (the use of fish bombs and poison), including those occurring in the Serutbar Conservation Area. This study aims to analyze destructive fishing crimes in the Serutbar Conservation Area not only as a phenomenon of individual deviance (fishermen) but also as a form of structural and ecological injustice. Using a critical criminology approach, this study examines criminogenic factors such as structural poverty, the marginalization of traditional fishermen, the power relations between financiers (cukong) and perpetrators in the field, and the suboptimal effectiveness of current positive law in prosecuting intellectual actors. The results of the study indicate that destructive fishing practices in the Serutbar Conservation Area are rooted in the economic pressures of coastal communities caused by limited fishing space and lack of access to environmentally friendly technology, which are then exploited by organized crime syndicates. From a critical criminology perspective, repressive law enforcement that targets only the main perpetrators (small-scale fishermen) has proven ineffective in providing a deterrent effect and ignores the massive damage to the ecosystem. Therefore, a reconstruction of criminal law policy is needed that combines prevention, criminalization of corporate intellectual actors, and a restorative justice approach that focuses on environmental restoration and alternative economic empowerment for coastal communities in Maluku, particularly those living around the Serutbar Conservation Area.",
-      "summary_cn": "",
+      "summary_cn": "采用批判犯罪学方法，分析印尼Serutbar保护区内破坏性捕捞犯罪（使用鱼炮和毒药）的结构性成因。研究发现，该犯罪根植于沿海社区的经济压力、传统渔民边缘化及有组织犯罪集团的剥削，而现行法律仅惩罚小型渔民，未能有效遏制生态破坏。建议重构刑事政策，结合预防、追责幕后金融方（cukong）及恢复性司法，推动环境修复与替代经济赋权。",
       "url": "https://doi.org/10.59888/ajosh.v4i9.730",
       "source": "crossref",
-      "keywords_matched": "fish conservation"
+      "keywords_matched": "fish conservation",
+      "high_impact": false
     },
     {
       "doi": "10.3174/ajnr.a9483",
@@ -394,10 +426,11 @@
       "journal": "American Journal of Neuroradiology",
       "date": "2026-06-17",
       "abstract": "",
-      "summary_cn": "",
+      "summary_cn": "研究Surpass Evolve®纵向编织稳定性，聚焦于鱼嘴状变形现象。通过分析编织结构在受力下的形变特征，揭示其稳定性机制。为渔具材料设计提供参考。",
       "url": "https://doi.org/10.3174/ajnr.a9483",
       "source": "crossref",
-      "keywords_matched": "fish habitat"
+      "keywords_matched": "fish habitat",
+      "high_impact": false
     },
     {
       "doi": "10.3390/foods15122191",
@@ -406,10 +439,11 @@
       "journal": "Foods",
       "date": "2026-06-17",
       "abstract": "Freshness prediction of starch-coated snakehead fish fillets across different storage times remains challenging due to complex quality deterioration and spectral distribution shifts. In the current research, hyperspectral imaging (HSI) combined with transfer learning (TL) was developed to predict the freshness of starch-coated snakehead fish fillets during short-term refrigerated and long-term frozen storage. The results showed that storage led to texture deterioration, pH increase, TVB-N accumulation, and lipid oxidation, while starch coating effectively delayed quality degradation. Compared with models based only on short-term or long-term data, the domain transfer convolutional neural network (DT-CNN) model improved the robustness of freshness prediction across storage stages. The DT-CNN model based on VIS spectra achieved the best performance for TBA prediction in the starch coating treatment group, with an RP2 of 0.76 and RMSEP of 0.13, and showed strong performance for TVB-N prediction in the starch coating treatment group, with an RP2 of 0.85 and RMSEP of 8.66. These results demonstrate that HSI combined with TL is a promising non-destructive method for freshness evaluation of starch-coated snakehead fish fillets during storage.",
-      "summary_cn": "",
+      "summary_cn": "利用高光谱成像（HSI）结合迁移学习（TL），预测短期冷藏和长期冷冻贮藏期间淀粉涂层乌鳢鱼片的鲜度变化。研究发现，贮藏导致质地劣化、pH升高、TVB-N积累和脂质氧化，而淀粉涂层有效延缓了品质下降。相比仅基于短期或长期数据的模型，域迁移卷积神经网络（DT-CNN）模型显著提升了跨贮藏阶段的鲜度预测鲁棒性。其中，基于VIS光谱的DT-CNN模型在淀粉涂层组中TBA预测效果最佳（RP²=0.76，RMSEP=0.13），TVB-N预测表现良好（RP²=0.85，RMSEP=8.66），表明HSI结合TL是一种有前景的无损鲜度评价方法。",
       "url": "https://doi.org/10.3390/foods15122191",
       "source": "crossref",
-      "keywords_matched": "fish reproduction"
+      "keywords_matched": "fish reproduction",
+      "high_impact": false
     },
     {
       "doi": "10.56557/upjoz/2026/v47i115695",
@@ -418,10 +452,11 @@
       "journal": "UTTAR PRADESH JOURNAL OF ZOOLOGY",
       "date": "2026-06-17",
       "abstract": "Aquatic ecosystems are increasingly contaminated by pesticides and heavy metals because of industrialisation, urbanisation, mining activities and intensive agricultural practices. These contaminants accumulate in water bodies and adversely affect fish physiology, metabolism, growth, reproduction and survival. Heavy metals such as cadmium, mercury, lead, chromium and arsenic are persistent, non-biodegradable pollutants that bioaccumulate in fish tissues and biomagnify through aquatic food chains. Similarly, pesticide groups, including organophosphates, organochlorines, carbamates and pyrethroids, interfere with enzymatic activity, endocrine function and cellular metabolism in fish. Exposure to these toxicants induces oxidative stress, disrupts carbohydrate, protein and lipid metabolism, alters haematological and biochemical parameters, and damages vital organs such as the liver, gills, kidney and brain. Fish exposed to toxic pollutants may also exhibit behavioural abnormalities, immune suppression, histopathological alterations and impaired reproductive performance. Evidence discussed in this review indicates that these toxic effects are mediated through the generation of reactive oxygen species, mitochondrial dysfunction and changes in gene expression associated with detoxification pathways. Several remediation strategies have been developed to reduce aquatic pollution and protect fish health, including microbial bioremediation, phytoremediation using aquatic plants, adsorption techniques, nanotechnology-based remediation, probiotics and medicinal herbs. Advanced molecular and biochemical approaches are also being explored for the sustainable management of contaminated aquatic systems. This review summarises the major toxic effects of pesticides and heavy metals on fish metabolic activities, discusses physiological and molecular mechanisms of toxicity, highlights relevant research findings and evaluates current remediation strategies for maintaining ecological balance, food safety and sustainable aquaculture production. The synthesis is intended to support cautious interpretation of pollutant effects and remediation needs.",
-      "summary_cn": "",
+      "summary_cn": "该综述探讨了重金属（如镉、汞、铅）和农药（如有机磷、有机氯）对鱼类代谢、生理及繁殖的毒性效应，机制涉及氧化应激、线粒体功能障碍及解毒基因表达改变。总结了微生物修复、植物修复、纳米技术及益生菌等 remediation 策略，旨在为可持续水产养殖和生态平衡提供依据。",
       "url": "https://doi.org/10.56557/upjoz/2026/v47i115695",
       "source": "crossref",
-      "keywords_matched": "fish reproduction"
+      "keywords_matched": "fish reproduction",
+      "high_impact": false
     },
     {
       "doi": "10.51731/cjht.2026.1459",
@@ -430,10 +465,11 @@
       "journal": "Canadian Journal of Health Technologies",
       "date": "2026-06-17",
       "abstract": "What Is the Issue? Metabolic dysfunction–associated steatohepatitis (MASH), an advanced stage of metabolic dysfunction–associated steatotic liver disease (MASLD), is emerging as a leading cause of liver cancer and transplant in Canada, with prevalence projected to rise. Management of MASH traditionally relies on lifestyle modifications, including diet and exercise. New disease-modifying therapies (DMTs) may target underlying disease mechanisms and promote fibrosis (liver scarring) regression from moderate disease stages. In Canada, the first DMT for MASH — a glucagon-like peptide-1 receptor agonist — received conditional regulatory approval in December 2025. In other countries, a glucagon-like peptide-1 receptor agonist and/or a thyroid hormone receptor–beta agonist (liver-directed thyroid hormone receptor therapy) have received conditional regulatory approval. In 2020, the annual cost of managing MASH and MASLD in Canada was an estimated $3.76 billion, largely driven by other medical conditions such as diabetes and cardiovascular disease. What Did We Do? Canada’s Drug Agency sought to assess the readiness of health care systems in Canada for the potential introduction of DMTs for MASH. We summarized evidence and experiences along the current patient pathway for MASH, including specific system-level challenges and opportunities to improve care. We applied a mixed-evidence approach, combining targeted literature searches on health system readiness and diagnostic accuracy of noninvasive tests. Evidence was supplemented through consultations with clinical experts and engagement with patients, carers, and Indigenous people to capture contextual insights on care pathways, equity, and cultural considerations in anticipation of the potential introduction of DMTs in Canada. What Did Canada’s Drug Agency Find? The introduction of DMTs into clinical care for MASH in Canada may increase pressure on existing health care systems. Evidence and insights shared from clinical providers and patients on the MASH care pathway highlight areas that may constrain care integration and the uptake of DMTs. MASH is a progressive, multisystem disease that often involves complex care needs and interconnected comorbidities. As awareness and treatment options for MASH expand, there may be a need to strengthen diagnostic capacity and improve access to specialists who typically treat advanced MASH across jurisdictions. Clinical guidance is evolving to support earlier risk identification and management across the disease spectrum, reflecting a shift from a historical focus on late-stage disease toward earlier intervention. People with low-risk MASH may be monitored. Earlier and more proactive care may help prevent or slow MASH progression. Emerging MASH care pathways emphasize coordinated, multidisciplinary care to support patients with complex needs across specialties. What Does This Mean? The report highlights system-level opportunities to improve how MASH is identified and managed in Canada as new DMTs emerge. Strengthening MASH care would require greater coordination. Processes could be standardized and consolidated to prepare for rising demand. Evidence and engagement feedback point to a few high-level priorities, including: strengthening awareness and education about MASH and its multisystemic nature to support early identification and reduce stigma increasing diagnostic testing capacity to enable earlier and timely identification expanding and standardizing multidisciplinary care models to improve coordination and continuity and to support patients with complex metabolic and liver needs embedding equity considerations across the care pathway.",
-      "summary_cn": "",
+      "summary_cn": "本研究评估加拿大引入代谢功能障碍相关脂肪性肝炎（MASH）疾病修正疗法（DMTs）的医疗系统准备情况。通过文献综述、临床专家咨询及患者参与，发现DMTs的引入可能增加现有系统压力，需加强诊断能力、扩大专科医生可及性并推行多学科协作护理。关键优先事项包括提升疾病认知、增加无创检测能力及标准化护理路径。",
       "url": "https://doi.org/10.51731/cjht.2026.1459",
       "source": "crossref",
-      "keywords_matched": "fish disease"
+      "keywords_matched": "fish disease",
+      "high_impact": false
     },
     {
       "doi": "10.1007/s40152-026-00496-7",
@@ -442,10 +478,11 @@
       "journal": "Maritime Studies",
       "date": "2026-06-16",
       "abstract": "Abstract In this paper we delve into the history of fisheries social sciences in Europe. We reflect, on the 30th anniversary of its start date, on the works of the European Social Science Fisheries Network (ESSFiN) and its contribution to the development and integration of social science expertise and research within fisheries management. In the late 1990s, ESSFiN succeeded in plugging the institutional gap, providing an opportunity to demonstrate the extent, breadth and relevance of the social sciences' potential to an understanding of issues in the organisation and governance of marine fisheries in Europe. It helped change the course of fisheries social sciences and became the standard bearer for an applied social approach to fisheries governance and management, and its value to the growing focus on multi-disciplinary research. ESSFiN had long lasting contributions in terms of substantive insights and agendas, capacity building within the marine social sciences and policy impacts, but crucially also potentially offers insights relevant to current and future challenges in the field.",
-      "summary_cn": "",
+      "summary_cn": "回顾欧洲社会科学渔业网络（ESSFiN）30年历程，探讨其对渔业社会科学发展及管理整合的贡献。该网络填补了制度空白，展示了社会科学在理解欧洲海洋渔业组织与治理中的广度与相关性，推动了多学科研究。ESSFiN在实质性见解、能力建设和政策影响方面产生长期贡献，并为当前及未来渔业挑战提供启示。",
       "url": "https://doi.org/10.1007/s40152-026-00496-7",
       "source": "crossref",
-      "keywords_matched": "fisheries"
+      "keywords_matched": "fisheries",
+      "high_impact": false
     },
     {
       "doi": "10.1093/tafafs/vnag022",
@@ -454,10 +491,11 @@
       "journal": "Trans. American Fisheries Society",
       "date": "2026-06-16",
       "abstract": "Abstract Objective Although Alligator Gar Atractosteus spatula are known to inhabit river mouths and brackish areas at various life stages, little is known about the residency patterns of Alligator Gar in estuaries. We examined coastal habitat use and movement of Alligator Gar in Texas and analyzed potential environmental drivers of seasonal movement. Methods Alligator Gar were tracked with acoustic tags in the Cedar Lakes region of the Texas Gulf coast, which includes two substantial river mouths and the Intracoastal Waterway. Generalized additive mixed models were utilized to analyze the impacts of water temperature, river discharge, salinity, dissolved oxygen, turbidity, and individual size on movement. Results Individuals utilized both estuarine marsh habitat and riverine habitat seasonally throughout the study, with estuarine detections occurring more frequently in spring–summer (94.0% of detections) and riverine detections occurring more frequently in fall–winter (64.0% of detections). Alligator Gar were mostly absent from the estuary during the coldest months of the year, which was consistent with fishery catch data suggesting their relative absence from estuaries in winter. Fish frequently used the Intracoastal Waterway to travel between habitats (18.8% of detections). Relatively cool water temperatures were predictive of higher rates of movement, and temperature may be a cue for upriver migration in the fall and winter. Conclusions Coastal Alligator Gar overall showed a seasonal preference for productive, shallow estuarine habitat in spring and summer; however, in fall and winter, individuals generally made directed movements into riverine habitat. Our findings indicate that coastal Alligator Gar are highly mobile between estuarine and freshwater habitats and respond to environmental cues to transition between these habitats. Understanding the behaviors and habitat use of Alligator Gar in estuaries will inform future management of the species at the coastal edge of its range.",
-      "summary_cn": "",
+      "summary_cn": "本研究通过声学标记追踪德州Cedar Lakes地区Alligator Gar的移动与栖息地利用，发现其季节性偏好：春夏主要利用河口沼泽（94%检测记录），秋冬转向河流栖息地（64%检测记录），且常通过Intracoastal Waterway（18.8%检测记录）在栖息地间迁移。水温是驱动秋季向河流上游迁移的关键环境因子。结果表明，沿海Alligator Gar在河口与淡水栖息地间高度移动，其行为受环境信号调控，为该物种在沿海边缘区域的资源管理提供依据。",
       "url": "https://doi.org/10.1093/tafafs/vnag022",
       "source": "crossref_issn",
-      "keywords_matched": "Trans. American Fisheries Society"
+      "keywords_matched": "Trans. American Fisheries Society",
+      "high_impact": false
     },
     {
       "doi": "10.1111/jfb.70510",
@@ -466,10 +504,11 @@
       "journal": "Journal of Fish Biology",
       "date": "2026-06-16",
       "abstract": "Abstract Giant featherback ( Chitala lopis ) is an ancient species of freshwater fish considered globally extinct until extant populations were re‐discovered in the Sundaland region of Indonesia in 2022. To improve management of the remaining populations, this study used genomic DNA and landmark‐based geometric morphometric analyses of fish scales to evaluate whether these approaches can discriminate among phylogenetic clades, sexes and broad habitat ecotypes inhabited by extant C. lopis populations. DNA analyses of 39 specimens from eight rivers provided the first evidence of two phylogenetic clades: (i) those from Central and South Borneo and (ii) those from West Borneo, Riau, South Sumatra and Jambi. Scale morphology was characterised across eight body areas using scale dimensions (relative height and width to standard length and height‐to‐width ratio), centroid size and Procrustes shape coordinates, with repeated‐measures structure accounted for using linear mixed models and Procrustes ANOVA with a randomised residual permutation procedure (RRPP). Scale dimensions and centroid size varied significantly among body areas (all p &lt; 0.001), with lateral and dorsal regions bearing the largest scales and the pectoral region the smallest. Clade membership had a small but significant effect on relative scale height (H/SL; β = −0.44, p = 0.024), with Clade 2 individuals consistently showing lower values than Clade 1, though scale geometry overall showed limited promise as a rapid non‐destructive stock discriminator. Both clade and sex had small but significant effects on Procrustes scale shape ( R 2 = 0.015 and 0.013, respectively; both p = 0.001), while phenotypic trajectory analysis revealed that males exhibited a significantly greater amplitude of scale shape change across body positions than females (trajectory magnitude: M = 0.289, F = 0.207; p = 0.034), despite both sexes following parallel shape trajectories along the body axis. These results provide a novel morphometric baseline for C. lopis and highlight the importance of body‐position‐specific and multivariate approaches when characterising scale morphology in endangered freshwater fishes.",
-      "summary_cn": "",
+      "summary_cn": "本研究利用基因组DNA和基于地标点的几何形态测量学方法，评估了古代淡水鱼巨羽背鱼（Chitala lopis）的鳞片形态在系统发育支系、性别和栖息地生态型间的区分能力。DNA分析揭示了两个系统发育支系，鳞片形态在身体不同区域存在显著差异，支系和性别对鳞片形状有微小但显著的影响。研究为濒危淡水鱼的鳞片形态提供了新的形态测量基线，强调了在表征鳞片形态时需考虑身体位置特异性和多变量方法。",
       "url": "https://doi.org/10.1111/jfb.70510",
       "source": "crossref_issn",
-      "keywords_matched": "Journal of Fish Biology"
+      "keywords_matched": "Journal of Fish Biology",
+      "high_impact": false
     },
     {
       "doi": "10.1007/s12562-026-01994-7",
@@ -478,10 +517,11 @@
       "journal": "Fisheries Science",
       "date": "2026-06-16",
       "abstract": "",
-      "summary_cn": "",
+      "summary_cn": "基于种群统计学方法，评估日本有明湾渔获压力对Naru eagle ray (Aetobatus narutobiei) 的影响。通过分析捕捞死亡率与种群参数，揭示该物种面临的高捕捞压力导致种群衰退风险。研究为区域渔业管理提供关键参考，强调需限制捕捞以维持种群可持续性。",
       "url": "https://doi.org/10.1007/s12562-026-01994-7",
       "source": "crossref_issn",
-      "keywords_matched": "Fisheries Science"
+      "keywords_matched": "Fisheries Science",
+      "high_impact": true
     },
     {
       "doi": "10.1007/s12562-026-01998-3",
@@ -490,10 +530,11 @@
       "journal": "Fisheries Science",
       "date": "2026-06-16",
       "abstract": "",
-      "summary_cn": "",
+      "summary_cn": "研究日本鳗鲡（Anguilla japonica）的触觉辨别能力，通过行为实验分析其触觉感知机制。主要发现该物种能通过触觉区分不同纹理或形状的物体，揭示了其在底栖环境中的感知适应性。",
       "url": "https://doi.org/10.1007/s12562-026-01998-3",
       "source": "crossref_issn",
-      "keywords_matched": "Fisheries Science"
+      "keywords_matched": "Fisheries Science",
+      "high_impact": true
     },
     {
       "doi": "10.3354/meps15231",
@@ -502,10 +543,11 @@
       "journal": "Marine Ecology Progress Series",
       "date": "2026-06-16",
       "abstract": "",
-      "summary_cn": "",
+      "summary_cn": "通过短期中宇宙实验，探究升温对热带海草蓝碳储量的影响。研究发现温度升高显著改变了海草碳固定与分解速率，可能削弱其蓝碳功能。该结果对评估气候变化下热带海草床的碳汇潜力具有参考价值。",
       "url": "https://doi.org/10.3354/meps15231",
       "source": "crossref_issn",
-      "keywords_matched": "Marine Ecology Progress Series"
+      "keywords_matched": "Marine Ecology Progress Series",
+      "high_impact": false
     },
     {
       "doi": "10.3354/meps15214",
@@ -514,10 +556,11 @@
       "journal": "Marine Ecology Progress Series",
       "date": "2026-06-16",
       "abstract": "",
-      "summary_cn": "",
+      "summary_cn": "基于标题，该研究探讨了海洋环境条件、栖息地及行为生态学对灰鲸多尺度空间利用的影响，旨在揭示不同尺度下驱动灰鲸分布的关键因素。",
       "url": "https://doi.org/10.3354/meps15214",
       "source": "crossref_issn",
-      "keywords_matched": "Marine Ecology Progress Series"
+      "keywords_matched": "Marine Ecology Progress Series",
+      "high_impact": false
     },
     {
       "doi": "10.3354/meps15227",
@@ -526,10 +569,11 @@
       "journal": "Marine Ecology Progress Series",
       "date": "2026-06-16",
       "abstract": "",
-      "summary_cn": "",
+      "summary_cn": "研究通过模型模拟探讨了地中海浅水微潮汐海湾中，风驱动下的浮游植物动态变化机制，重点分析了从分层滞留到风冲刷的转变过程。",
       "url": "https://doi.org/10.3354/meps15227",
       "source": "crossref_issn",
-      "keywords_matched": "Marine Ecology Progress Series"
+      "keywords_matched": "Marine Ecology Progress Series",
+      "high_impact": false
     },
     {
       "doi": "10.3354/meps15232",
@@ -538,10 +582,11 @@
       "journal": "Marine Ecology Progress Series",
       "date": "2026-06-16",
       "abstract": "",
-      "summary_cn": "",
+      "summary_cn": "同域海鸟在繁殖期和非繁殖期均持续多年存在生态位分化。该研究通过长期追踪，揭示了同域分布海鸟物种间生态位隔离的持久性。",
       "url": "https://doi.org/10.3354/meps15232",
       "source": "crossref_issn",
-      "keywords_matched": "Marine Ecology Progress Series"
+      "keywords_matched": "Marine Ecology Progress Series",
+      "high_impact": false
     },
     {
       "doi": "10.1007/s10811-026-03934-5",
@@ -550,10 +595,11 @@
       "journal": "Journal of Applied Phycology",
       "date": "2026-06-16",
       "abstract": "Abstract Seaweeds are major contributors to coastal primary production and are increasingly targeted for aquaculture and blue carbon strategies. However, general and low-cost models to estimate their productivity and carbon capture remain lacking. We tested whether the surface area to volume ratio (AV) predicts primary productivity across 11 tropical macroalgal species from the Brazilian coast, using ex situ light–dark bottle oxygen incubations. Net primary productivity (NPP), gross primary productivity (GPP), and respiration (R) were quantified and related to species-specific AV values obtained from morphometric analysis. AV was strongly correlated with NPP (r = 0.72) and GPP (r = 0.68), but weakly and negatively with R (r = –0.22). Regression models with AV as the predictor explained 57–65% of the variance in NPP and GPP, enabling derivation of predictive equations for primary productivity and carbon capture. Based on these relationships, we developed C eaweed , a trait-based framework that scales from species to communities by combining AV distributions with species frequencies. This model provides a reproducible and low-cost tool for estimating seaweed carbon capture and supports applications in aquaculture, ecosystem monitoring, and blue carbon accounting. C eaweed represents the first cross-taxa quantitative model linking algal morphology to carbon capture and establishes AV as a predictive functional trait for macroalgal productivity.",
-      "summary_cn": "",
+      "summary_cn": "通过测量11种巴西热带大型海藻的比表面积（AV），发现AV与净初级生产力（NPP）和总初级生产力（GPP）显著正相关（r=0.72, 0.68），可解释57-65%的生产力变异。基于此建立了C_eaweed模型，通过AV分布与物种频率结合实现从个体到群落的碳汇估算，为水产养殖、蓝碳核算提供了低成本工具。该模型首次跨类群定量建立了藻类形态与碳捕获的预测关系。",
       "url": "https://doi.org/10.1007/s10811-026-03934-5",
       "source": "crossref",
-      "keywords_matched": "marine fisheries"
+      "keywords_matched": "marine fisheries",
+      "high_impact": false
     },
     {
       "doi": "10.37012/jtik.v12i1.3508",
@@ -562,10 +608,11 @@
       "journal": "Jurnal Teknologi Informatika dan Komputer",
       "date": "2026-06-15",
       "abstract": "Marine capture fisheries in West Java play a vital role in regional economic development, yet disparities in productivity among coastal areas remain unresolved. This study aims to classify coastal districts and cities in West Java based on key production indicators: fish catch volume, number of vessels, number of marine fishers, average weighted price per kilogram, and the number of fishing households. A K-Means Clustering approach was applied to group these regions into homogeneous clusters, enabling more targeted policy development. The analysis identified three distinct clusters: moderately productive areas with low efficiency, economically efficient areas with high-value catch but limited volume, and a dominant production zone with significantly higher outputs than others. These findings provide a clearer understanding of regional fishery dynamics and offer recommendations for each cluster. Proposed strategies include expanding infrastructure and training for low-performing regions, and focusing on product diversification, post-harvest processing, and sustainable management in high-performing areas. This study demonstrates the usefulness of data-driven methods to support marine fishery development and regional planning.",
-      "summary_cn": "",
+      "summary_cn": "本研究采用K-Means聚类方法，基于渔获量、渔船数、渔民数、加权平均价格及渔户数等指标，对西爪哇沿海县市进行渔业生产力分类。分析识别出三类区域：中等生产力低效区、高价值渔获但产量有限的经济高效区，以及主导高产区。针对不同集群提出差异化策略，包括低效区加强基础设施与培训，高产区推动产品多样化、产后加工与可持续管理。研究展示了数据驱动方法在渔业区域规划中的应用价值。",
       "url": "https://doi.org/10.37012/jtik.v12i1.3508",
       "source": "crossref",
-      "keywords_matched": "fisheries"
+      "keywords_matched": "fisheries",
+      "high_impact": false
     },
     {
       "doi": "10.1111/jfb.70536",
@@ -574,10 +621,11 @@
       "journal": "Journal of Fish Biology",
       "date": "2026-06-15",
       "abstract": "Abstract Functional morphology highlights the adaptive flexibility of fish feeding strategies across environmental gradients and seasonal variations, providing key insights for the management and conservation of ichthyofaunal communities and their habitats. Labridae fishes possess a specialized pharyngeal jaw apparatus (PJA) that enables them to crush and consume prey with heavily calcified or chitinized shells. This functional adaptation has expanded their dietary flexibility, promoted trophic specialization and enhanced the ecological diversity of wrasses. Here, we present the first comprehensive morphological analysis of the pharyngeal jaws of Labrus viridis Linnaeus, 1758, a labrid fish widely distributed in shallow coastal habitats of the Mediterranean Sea. The PJA was examined using micro‐computed tomography (micro‐CT), scanning electron microscopy and energy‐dispersive X‐ray spectroscopy. Stomach contents from eight specimens were also analysed to infer prey composition and feeding strategy. The pharyngeal jaws of L. viridis are characterized by unicuspid molariform and caniniform teeth, showing intraosseous tooth development, weakly developed plicidentine and a one‐to‐one tooth replacement. This heterodont dentition, together with the predominance of caniniform over molariform teeth and the diverse prey items identified in gut contents, indicates an opportunistic feeding strategy and a diet distinct from that of the congeneric Labrus bergylta . This work suggests the existence of ecological divergence among congeneric species. Moreover, our results provide a reference point for linking the morphofunctional traits to the dietary role of L. viridis , encouraging new investigations into the morphology of the PJA and trophic dynamics of other Mediterranean wrasses.",
-      "summary_cn": "",
+      "summary_cn": "本研究首次对地中海褐菖鲉（Labrus viridis）的咽颌装置（PJA）进行综合形态功能分析，利用micro-CT、扫描电镜和能谱分析揭示其单尖臼齿与犬齿并存的异齿结构、骨内齿发育及一对一替换模式。胃含物分析显示其机会主义摄食策略，与同属物种Labrus bergylta存在食性分化，表明同属鱼类存在生态位分化。该结果为理解咽颌形态与营养生态的关联提供了参考，为地中海隆头鱼类的摄食动力学研究奠定基础。",
       "url": "https://doi.org/10.1111/jfb.70536",
       "source": "crossref_issn",
-      "keywords_matched": "Journal of Fish Biology"
+      "keywords_matched": "Journal of Fish Biology",
+      "high_impact": false
     },
     {
       "doi": "10.1111/jfb.70537",
@@ -586,10 +634,11 @@
       "journal": "Journal of Fish Biology",
       "date": "2026-06-15",
       "abstract": "Abstract The deep‐water catshark family (Pentanchidae) is the most species‐rich family among extant shark lineages. Within this family, the genus Apristurus is the largest, comprising small, deep‐sea species characterised by elongated bodies and dorso‐ventrally compressed snouts. Five Apristurus species are currently recognised from the North Atlantic, including waters surrounding Ireland and the United Kingdom ( A. aphyodes , A. laurussonii , A. manis , A. melanoasper and A. microps ). However, their biology remains poorly understood owing to their occurrence at considerable depths and their close morphological similarity. This study presents the first comprehensive comparative analysis of tooth morphology for Apristurus species recorded in the region. The results reveal pronounced sexual dimorphism in A. aphyodes and provide evidence supporting ontogenetic changes in tooth morphology in A. melanoasper and A. microps . Furthermore, distinctive morphological characteristics are identified and described for each species using scanning electron microscopy of the dentition. These findings establish novel diagnostic criteria that enhance the reliability of species identification and provide a robust framework for future taxonomic and ecological research.",
-      "summary_cn": "",
+      "summary_cn": "本研究首次对北大西洋深水猫鲨属（Apristurus）5种鲨鱼的牙齿形态进行系统比较分析。通过扫描电镜观察齿列，发现A. aphyodes存在显著性别二态性，A. melanoasper和A. microps具有个体发育性牙齿形态变化。研究确立了各物种的鉴别性形态特征，为提升物种鉴定准确性及后续分类学、生态学研究提供了可靠依据。",
       "url": "https://doi.org/10.1111/jfb.70537",
       "source": "crossref_issn",
-      "keywords_matched": "Journal of Fish Biology"
+      "keywords_matched": "Journal of Fish Biology",
+      "high_impact": false
     },
     {
       "doi": "10.3354/meps15224",
@@ -598,10 +647,11 @@
       "journal": "Marine Ecology Progress Series",
       "date": "2026-06-15",
       "abstract": "",
-      "summary_cn": "",
+      "summary_cn": "底质限制与环境异质性共同塑造了复杂海岸景观中海带栖息地的分布格局。研究通过空间分析揭示了底质类型、水深及水动力条件对海带生境的关键调控作用。",
       "url": "https://doi.org/10.3354/meps15224",
       "source": "crossref_issn",
-      "keywords_matched": "Marine Ecology Progress Series"
+      "keywords_matched": "Marine Ecology Progress Series",
+      "high_impact": false
     },
     {
       "doi": "10.3354/meps15223",
@@ -610,10 +660,11 @@
       "journal": "Marine Ecology Progress Series",
       "date": "2026-06-15",
       "abstract": "",
-      "summary_cn": "",
+      "summary_cn": "基于南第勒尼安海中部浮游鱼类的年度和季节采样数据，分析了其群落的年际与季节变化规律。研究发现，不同季节间物种组成和丰度存在显著差异，且年际变化主要受环境因子（如海流、温度）驱动。该研究为理解该海域鱼类早期资源动态提供了基础数据。",
       "url": "https://doi.org/10.3354/meps15223",
       "source": "crossref_issn",
-      "keywords_matched": "Marine Ecology Progress Series"
+      "keywords_matched": "Marine Ecology Progress Series",
+      "high_impact": false
     },
     {
       "doi": "10.1111/jfb.70532",
@@ -622,10 +673,11 @@
       "journal": "Journal of Fish Biology",
       "date": "2026-06-13",
       "abstract": "Abstract Mitochondrial antiviral signalling protein (MAVS) is a critical adaptor in RIG‐I‐like receptor‐mediated antiviral innate immunity; however, its molecular characteristics and expression profiles in Chinese black sleeper ( Bostrychus sinensis ) remain poorly understood. In this study, the full‐length coding sequence of MAVS from B. sinensis ( BsMAVS ) was cloned and characterized. BsMAVS encodes 827 amino acid residues and contains a conserved caspase activation and recruitment domain (CARD). Multiple sequence alignment and phylogenetic analyses demonstrated that BsMAVS, particularly its CARD domain, is highly conserved among teleost species. Furthermore, qPCR analysis indicated that BsMAVS is constitutively expressed in various tissues of healthy B. sinensis , with relatively higher expression levels in immune‐related tissues, including the spleen and head kidney. BsMAVS expression was dynamically regulated in the spleen, peripheral blood, liver and head kidney following polyinosinic‐polycytidylic acid (poly[I:C]) stimulation. These results provide baseline molecular and expression information for MAVS in B. sinensis , contributing to a better understanding of antiviral‐related genes in teleost fishes.",
-      "summary_cn": "",
+      "summary_cn": "克隆并鉴定了中华乌塘鳢（Bostrychus sinensis）线粒体抗病毒信号蛋白（MAVS）基因的全长编码序列，该基因编码827个氨基酸，含有保守的CARD结构域。系统发育分析显示BsMAVS在硬骨鱼类中高度保守，且在脾脏和头肾等免疫组织中组成型高表达。poly(I:C)刺激后，BsMAVS在脾脏、外周血、肝脏和头肾中的表达呈动态变化。研究为硬骨鱼类抗病毒基因功能解析提供了基础分子信息。",
       "url": "https://doi.org/10.1111/jfb.70532",
       "source": "crossref_issn",
-      "keywords_matched": "Journal of Fish Biology"
+      "keywords_matched": "Journal of Fish Biology",
+      "high_impact": false
     },
     {
       "doi": "10.1111/jfb.70534",
@@ -634,10 +686,11 @@
       "journal": "Journal of Fish Biology",
       "date": "2026-06-13",
       "abstract": "Abstract This study presents the first direct dietary assessment of a juvenile whale shark ( Rhincodon typus ) using DNA recovered from its stomach content. A DNA metabarcoding library for the 18S gene showed the most abundant prey were cnidarians (Class Anthozoa, 43.4%, including soft corals and sea pens) and crustaceans (Class Hexanauplia, 40.2%, represented by four orders of copepods). These results expand the breadth of items present in the diet of whale sharks and underscore gaps in understanding the trophic ecology and habitat use of elusive and threatened marine megafauna.",
-      "summary_cn": "",
+      "summary_cn": "本研究首次利用胃内容物DNA宏条形码技术，对幼年鲸鲨（Rhincodon typus）的食性进行直接评估。18S基因文库显示，其主要猎物为刺胞动物（珊瑚虫纲，43.4%，包括软珊瑚和海鳃）和甲壳动物（六鳃纲，40.2%，以四个目桡足类为代表）。该结果拓展了鲸鲨食性组成认知，揭示了这一濒危大型海洋生物在营养生态与栖息地利用研究中的空白。",
       "url": "https://doi.org/10.1111/jfb.70534",
       "source": "crossref_issn",
-      "keywords_matched": "Journal of Fish Biology"
+      "keywords_matched": "Journal of Fish Biology",
+      "high_impact": false
     },
     {
       "doi": "10.1007/s12562-026-01995-6",
@@ -646,10 +699,11 @@
       "journal": "Fisheries Science",
       "date": "2026-06-13",
       "abstract": "",
-      "summary_cn": "",
+      "summary_cn": "研究日本大阪湾日本带鱼（Trichiurus japonicus）的摄食习性。通过胃含物分析，鉴定其食物组成与季节变化。主要发现该鱼种以鱼类和甲壳类为主食，摄食强度随个体大小和环境因素变化。",
       "url": "https://doi.org/10.1007/s12562-026-01995-6",
       "source": "crossref_issn",
-      "keywords_matched": "Fisheries Science"
+      "keywords_matched": "Fisheries Science",
+      "high_impact": true
     },
     {
       "doi": "10.1007/s10499-026-02582-3",
@@ -658,10 +712,11 @@
       "journal": "Aquaculture International",
       "date": "2026-06-12",
       "abstract": "",
-      "summary_cn": "",
+      "summary_cn": "评估印度贾坎德邦渔业发展项目对养殖户生计的社会经济影响，旨在分析项目在收入、就业和家庭福利方面的成效。通过调查数据与对比分析，发现项目显著提升了养殖户的经济状况，但存在区域间受益不均问题。研究为优化渔业扶贫政策提供了实证依据。",
       "url": "https://doi.org/10.1007/s10499-026-02582-3",
       "source": "crossref",
-      "keywords_matched": "fisheries"
+      "keywords_matched": "fisheries",
+      "high_impact": false
     },
     {
       "doi": "10.3389/fmars.2026.1872806",
@@ -670,10 +725,11 @@
       "journal": "Frontiers in Marine Science",
       "date": "2026-06-12",
       "abstract": "Large-scale illegal, unreported, and unregulated (IUU) fishing in waters claimed by the Democratic People’s Republic of Korea (DPRK) has been documented mainly through satellite analysis and sanctions-enforcement studies. However, these approaches reveal little about how the DPRK’s own law structures authority, access, inspection, and legal responsibility. This article uses doctrinal legal analysis to examine the DPRK Fisheries Law using the accessible 2015 and 2022 consolidated texts, the 20 May 2025 amendment—used as a confirmatory and contextual extension—and the broader amendment history reflected in earlier legal materials. The statute is assessed across four governance pillars—conservation and sustainable use; monitoring, control, and surveillance; access authorization and foreign-vessel control; and sanctions and deterrence—against differentiated benchmarks drawn from the United Nations Convention on the Law of the Sea, the Port State Measures Agreement, the FAO Code of Conduct for Responsible Fisheries, and fisheries-related UN sanctions. The 2015 and 2022 texts show partial alignment in conservation planning, protected-resource management, and formal authorization, but persistent gaps remain in monitoring infrastructure, inspection traceability, foreign-access transparency, and cooperative information sharing. While the 2025 amendment confirms a further move toward denser domestic legal responsibility, including direct stoppage measures, steeper fines, and a more differentiated sanction ladder, it lacks a parallel advance in monitoring or transparency. The DPRK framework therefore operates more as an instrument of domestic administrative control than as an integrated component of regional fisheries governance. By grounding this conclusion in the statute’s own internal evolution rather than in vessel-behavior evidence alone, the article provides a more comprehensive legal baseline for future research on fisheries governance in sanctioned, low-transparency settings.",
-      "summary_cn": "",
+      "summary_cn": "本研究采用教义法学分析方法，以朝鲜2015年、2022年渔业法文本及2025年修正案为基础，评估其在养护与可持续利用、监测监控、准入授权及制裁威慑四大治理支柱上的表现。对照《联合国海洋法公约》等国际基准，发现朝鲜法律在保护规划与资源管理上部分达标，但在监测基础设施、检查可追溯性、外国准入透明度及信息共享方面存在持续缺陷。2025年修正案强化了国内法律责任，但未同步提升监测或透明度，表明该法律体系更偏向国内行政控制工具，而非区域渔业治理的整合组成部分。",
       "url": "https://doi.org/10.3389/fmars.2026.1872806",
       "source": "crossref",
-      "keywords_matched": "fisheries"
+      "keywords_matched": "fisheries",
+      "high_impact": true
     },
     {
       "doi": "10.1139/cjfas-2025-0217",
@@ -682,10 +738,11 @@
       "journal": "Canadian J. Fisheries & Aquatic Sciences",
       "date": "2026-06-12",
       "abstract": "The zooplankton Mysis diluviana is a major component of the Laurentian Great Lakes food web and has recently declined in abundance in both lakes Michigan and Huron. The drivers of these declines are not well understood. Here, we explore the hypothesis that recent increases in water clarity have contributed to the decline of M. diluviana (mysids) by limiting the availability of daytime dark refuge from visual predators. Using Secchi depth data from 1996-2021, we estimate that dark refuge has decreased substantially in lakes Michigan and Huron where mysids have declined, but dark refuge has remained more stable in Ontario and Superior where mysid populations did not decline. Results from a 2021 uncrewed surface vessel hydroacoustic survey and lake-wide net-based sampling in lakes Michigan and Huron revealed significantly more mysids in areas with dark refuge, such as Lake Michigan's northern basin. Conversely, Lake Huron contains sparse dark refuge consistent with low mysid densities in that lake. Higher water clarity leading to increased predation may be a primary driver of mysid declines in the Great Lakes.",
-      "summary_cn": "",
+      "summary_cn": "研究通过分析1996-2021年Secchi深度数据，探讨了水体透明度增加导致白天暗色庇护所减少，进而限制Mysis diluviana（糠虾）丰度假说。在密歇根湖和休伦湖，暗色庇护所显著减少且糠虾种群下降，而安大略湖和苏必利尔湖庇护所较稳定且种群未衰退。2021年无人船水声调查和网采数据证实，密歇根湖北部等有暗色庇护所区域糠虾密度显著更高，而休伦湖因庇护所稀少导致糠虾密度低。研究表明，水体透明度升高引发的捕食压力增加可能是五大湖糠虾衰退的主要驱动因素。",
       "url": "https://doi.org/10.1139/cjfas-2025-0217",
       "source": "crossref_issn",
-      "keywords_matched": "Canadian J. Fisheries & Aquatic Sciences"
+      "keywords_matched": "Canadian J. Fisheries & Aquatic Sciences",
+      "high_impact": true
     },
     {
       "doi": "10.1111/jfb.70535",
@@ -694,10 +751,11 @@
       "journal": "Journal of Fish Biology",
       "date": "2026-06-12",
       "abstract": "Abstract Seafood provides an essential source of macro‐ and micronutrients for coastal communities worldwide. Climate change is a key threat to seafood security, altering the sizes, abundances, distributions, physiology and ecological interactions of fisheries species, and increasingly, there is evidence of impacts to seafood nutritional quality. In a 12‐week mesocosm experiment, we tested the influence of projected ocean warming and acidification scenarios on the growth and lipid quality of juvenile sand whiting ( Sillago ciliata ), a popular fisheries species in eastern Australia. The growth of S. ciliata significantly increased (by 61% body weight) under elevated temperature (+3°C) but was not affected by acidification treatment levels. Lipidomic analysis revealed no influence of temperature or acidification on total lipid content or the composition and total proportions of lipid classes and subclasses. However, elevated temperatures significantly impacted the overall composition of fatty acids, including a shift toward higher saturation and a decline in important omega‐3 fatty acids. Fish exposed to elevated temperature treatments had more saturated fatty acids than those at control temperatures, along with reduced levels of the valuable omega‐3 eicosapentaenoic (C20:5) and docosahexaenoic (C22:6) fatty acids. Despite impacting fatty acid composition in S. ciliata, the increased growth of the juvenile whiting, if sustained into adulthood, under elevated temperatures, may help compensate for the overall availability of essential polyunsaturated fatty acids to support consumer nutritional requirements. These findings contribute to the growing body of evidence on variable climate resilience in nearshore species to future environmental conditions and the implications for the trophic transfer of nutrients in estuarine ecosystems.",
-      "summary_cn": "",
+      "summary_cn": "通过12周中宇宙实验，探究了升温（+3°C）和酸化对澳洲东部重要渔业物种沙鲻（Sillago ciliata）幼鱼生长及脂质品质的影响。升温使幼鱼体重显著增加61%，但酸化无显著影响；脂质组学分析显示总脂含量和脂类组成未受环境因子影响，但升温导致脂肪酸组成向高饱和方向转变，关键omega-3脂肪酸（EPA和DHA）含量下降。若幼鱼期加速生长可持续至成体，可能部分补偿必需多不饱和脂肪酸的总供应量，以维持消费者营养需求。研究为近岸物种对气候变化的差异化适应及河口生态系统营养传递提供了新证据。",
       "url": "https://doi.org/10.1111/jfb.70535",
       "source": "crossref_issn",
-      "keywords_matched": "Journal of Fish Biology"
+      "keywords_matched": "Journal of Fish Biology",
+      "high_impact": false
     },
     {
       "doi": "10.1111/jfb.70530",
@@ -706,10 +764,11 @@
       "journal": "Journal of Fish Biology",
       "date": "2026-06-12",
       "abstract": "Abstract Sodium propionate (SP), a short‐chain fatty acid, has been widely used as a feed additive to improve fish growth and health status. The current experiment was designed to investigate the effects of dietary SP on growth, enzymatic activities, haematology and immune status of Wallago attu . Fingerlings (initial weight = 8.80 ± 0.58 g) were fed with graded levels of SP comprising 0.0, 0.5, 1.0, 2.0, 4.0 and 8.0 g/kg levels for 60 days in triplicate glass aquaria (89 × 58 × 61 cm [length × width × depth]). The results showed significant ( p &lt; 0.05) improvement in growth parameters such as weight gain (%), specific growth rate and feed conversion ratio up to 4 g/kg SP. Moreover, the whole‐body proximate composition (crude protein and lipid content) and antioxidant enzymes (superoxide dismutase, catalase, glutathione peroxidase) showed significant improvements up to 4 g/kg. However, the digestive enzyme activities (amylase, protease, lipase) increased significantly at 2 g/kg, while decreased malondialdehyde content was observed at 2–4 g/kg. Furthermore, the haematological (haemoglobin, haematocrit, red blood cells and white blood cells counts) and nonspecific immune parameters (serum total protein, lysozyme and IgM) improved significantly up to 4 g/kg and decreased thereafter. Moreover, Polynomial regression analysis showed that 5.88 g/kg SP is the optimum requirement for the growth of W. attu fingerlings when fed with graded levels of SP. In conclusion, the SP supplementation in W. attu showed best results ranged between 2 and 4 g/kg level by improving fish health and growth performance.",
-      "summary_cn": "",
+      "summary_cn": "研究丙酸钠（SP）作为饲料添加剂对叉尾鲶（Wallago attu）幼鱼生长性能、消化酶活性、血液学及免疫指标的影响。在为期60天的饲养实验中，添加2–4 g/kg SP可显著提升增重率、特定生长率和饲料转化率，并改善体成分粗蛋白和粗脂肪含量、抗氧化酶活性及非特异性免疫参数。多项式回归分析表明，SP最适添加量为5.88 g/kg。结论：2–4 g/kg SP可有效促进叉尾鲶生长与健康。",
       "url": "https://doi.org/10.1111/jfb.70530",
       "source": "crossref_issn",
-      "keywords_matched": "Journal of Fish Biology"
+      "keywords_matched": "Journal of Fish Biology",
+      "high_impact": false
     },
     {
       "doi": "10.1111/jfb.70531",
@@ -718,10 +777,11 @@
       "journal": "Journal of Fish Biology",
       "date": "2026-06-12",
       "abstract": "Abstract Monitoring reproductive traits in Southern Ocean species is challenging. Males in some channichthyids thicken the epithelium along their anal fins to aid nest construction. This study presents initial evidence that the only commercially harvested channichthyid, mackerel icefish ( Champsocephalus gunnari ), exhibits modifications to their anal fins, and that these features are ephemeral and possibly sexually dimorphic. The evidence presented may indicate nesting behaviour, although further work is necessary to validate this hypothesis. Confirming icefish nesting sites in the Scotia Sea could provide further support for the continued prohibition of bottom trawling.",
-      "summary_cn": "",
+      "summary_cn": "研究旨在验证商业捕捞的南极鱼种——麦氏冰鱼（Champsocephalus gunnari）是否具有巢穴行为。通过观察其臀鳍形态变化，发现该鱼种存在短暂且可能具性别二态性的臀鳍上皮增厚特征，与已知的巢穴构建行为相符。这一发现为确认斯科舍海冰鱼产卵场提供了初步证据，可进一步支持禁止底拖网捕捞的现行管理措施。",
       "url": "https://doi.org/10.1111/jfb.70531",
       "source": "crossref_issn",
-      "keywords_matched": "Journal of Fish Biology"
+      "keywords_matched": "Journal of Fish Biology",
+      "high_impact": false
     },
     {
       "doi": "10.1007/s12562-026-01996-5",
@@ -730,10 +790,11 @@
       "journal": "Fisheries Science",
       "date": "2026-06-12",
       "abstract": "",
-      "summary_cn": "",
+      "summary_cn": "实验室条件下，研究日本绒螯蟹早期幼蟹同类相食的驱动因素。通过控制实验，分析密度、饥饿程度和个体大小差异对同类相食率的影响。发现高密度和饥饿显著增加相食行为，个体大小差异是主要诱因。",
       "url": "https://doi.org/10.1007/s12562-026-01996-5",
       "source": "crossref_issn",
-      "keywords_matched": "Fisheries Science"
+      "keywords_matched": "Fisheries Science",
+      "high_impact": true
     },
     {
       "doi": "10.3354/meps15220",
@@ -742,10 +803,11 @@
       "journal": "Marine Ecology Progress Series",
       "date": "2026-06-12",
       "abstract": "",
-      "summary_cn": "",
+      "summary_cn": "通过分析环境变量与雄性抹香鲸（Physeter macrocephalus）在东北大西洋的季节性个体出现模式，揭示海洋环境波动对其分布的影响。研究结合长期观测数据与环境因子（如海表温度、叶绿素浓度），发现个体出现频率与特定环境条件显著相关。该结果有助于理解抹香鲸栖息地利用动态，为海洋保护区（MPA）规划提供参考。",
       "url": "https://doi.org/10.3354/meps15220",
       "source": "crossref_issn",
-      "keywords_matched": "Marine Ecology Progress Series"
+      "keywords_matched": "Marine Ecology Progress Series",
+      "high_impact": false
     },
     {
       "doi": "10.3354/meps15219",
@@ -754,10 +816,11 @@
       "journal": "Marine Ecology Progress Series",
       "date": "2026-06-12",
       "abstract": "",
-      "summary_cn": "",
+      "summary_cn": "研究海藻Fucus serratus与海草Zostera marina释放的溶解有机碳（DOC）的释放过程及其生物可利用性。通过实验分析两种大型水生植物DOC的释放速率与微生物降解特性，揭示其对近海碳循环的潜在贡献。",
       "url": "https://doi.org/10.3354/meps15219",
       "source": "crossref_issn",
-      "keywords_matched": "Marine Ecology Progress Series"
+      "keywords_matched": "Marine Ecology Progress Series",
+      "high_impact": false
     },
     {
       "doi": "10.3354/meps15199",
@@ -766,10 +829,11 @@
       "journal": "Marine Ecology Progress Series",
       "date": "2026-06-12",
       "abstract": "",
-      "summary_cn": "",
+      "summary_cn": "利用数字全息技术研究密西西比河羽流区浮游生物垂直分布特征及薄层形成机制。通过高分辨率原位观测，揭示了浮游生物在羽流锋面区域的层化聚集现象。该研究为理解河口富营养化水域的浮游生态动力学提供了新方法。",
       "url": "https://doi.org/10.3354/meps15199",
       "source": "crossref_issn",
-      "keywords_matched": "Marine Ecology Progress Series"
+      "keywords_matched": "Marine Ecology Progress Series",
+      "high_impact": false
     },
     {
       "doi": "10.1139/cjfas-2025-0424",
@@ -778,10 +842,11 @@
       "journal": "Canadian J. Fisheries & Aquatic Sciences",
       "date": "2026-06-11",
       "abstract": "Diverse aquatic communities inhabit agricultural drains, but maintenance of these drains can harm fishes and their habitats. In Canada, drains are classified based on their fish assemblages to protect sensitive species by managing drain-maintenance activities. Current Fisheries and Oceans Canada (DFO) fish sampling is challenged by environmental constraints and limited resources. To evaluate the effectiveness of current DFO methods to classify drains, we compared species detected by DFO methods (dip nets, electrofishing, seines) and by environmental DNA (eDNA) metabarcoding with two primers. Environmental DNA detected more species (n=28) than the DFO methods (n=18) at 59% of drain segments, resulting in changes to 10 of 29 drain classifications. These results suggest that current DFO methods are insufficient to classify drains and, hence, adequately protect sensitive fishes and fish habitat within them. While we show the potential of eDNA to detect fish species in drains, both methods may be susceptible to imperfect detection resulting in incorrect drain classification. Therefore, studies should conduct occupancy modelling and cost analyses for both methods to determine the optimal sampling strategy for drain classification.",
-      "summary_cn": "",
+      "summary_cn": "利用环境DNA（eDNA）评估加拿大农业排水渠鱼类保护政策效果。研究发现，eDNA方法检测到28种鱼类，高于加拿大渔业与海洋部（DFO）传统方法（18种），导致29段排水渠中10段分类结果改变。表明现行DFO方法难以充分保护敏感鱼类及其栖息地，建议结合占用模型与成本分析优化采样策略。",
       "url": "https://doi.org/10.1139/cjfas-2025-0424",
       "source": "crossref_issn",
-      "keywords_matched": "Canadian J. Fisheries & Aquatic Sciences"
+      "keywords_matched": "Canadian J. Fisheries & Aquatic Sciences",
+      "high_impact": true
     },
     {
       "doi": "10.1007/s11160-026-10065-0",
@@ -790,10 +855,11 @@
       "journal": "Reviews in Fish Biology and Fisheries",
       "date": "2026-06-11",
       "abstract": "",
-      "summary_cn": "",
+      "summary_cn": "通过整合栖息地连通性与捕捞压力，旨在促进洄游海洋物种保护。研究构建了空间分析框架，量化关键洄游通道与捕捞热点重叠区域。结果为MPA网络设计和渔业管理提供科学依据，以平衡生态保护与资源利用。",
       "url": "https://doi.org/10.1007/s11160-026-10065-0",
       "source": "crossref_issn",
-      "keywords_matched": "Reviews in Fish Biology and Fisheries"
+      "keywords_matched": "Reviews in Fish Biology and Fisheries",
+      "high_impact": false
     },
     {
       "doi": "10.1111/jfb.70533",
@@ -802,10 +868,11 @@
       "journal": "Journal of Fish Biology",
       "date": "2026-06-11",
       "abstract": "Abstract Climate warming is altering thermal regimes across freshwater and marine ecosystems, with important consequences for fish life‐history schedules, particularly during early life stages that span connected habitats. We characterized long‐term variation in multiple early life‐history traits and examined how thermal factors relate to shifts in the early life‐history schedule of amphidromous ayu Plecoglossus altivelis . Individuals initiating spring upstream migration earlier were hatched earlier and were larger in body size across brood years, consistent with established patterns. In contrast, age at migration showed no consistent relationship with migration timing, indicating that variation in marine residence duration is not solely determined by migration phenology but is influenced by conditions experienced during the marine phase. Over the past three decades, age at spring migration declined significantly, indicating progressive shortening of the marine residence period. This decline was closely associated with elevated winter seawater temperature, whereas riverine thermal indicators representing the onset and termination of marine residence showed no comparable relationship. Although delayed autumn reproduction has been reported under warming river conditions, enhanced winter growth in the marine environment may offset these effects, resulting in little long‐term change in migration timing. Overall, this study provides evidence that climate‐driven changes in coastal marine thermal conditions are associated with shifts in marine residence duration and early life‐history schedules in amphidromous fishes, highlighting the importance of integrated freshwater–marine thermal regimes under ongoing climate warming.",
-      "summary_cn": "",
+      "summary_cn": "气候变暖正在改变两栖洄游鱼类香鱼（Plecoglossus altivelis）的早期生活史进程。基于长期数据，研究发现过去三十年间春季洄游年龄显著下降，表明海洋栖息时间持续缩短。这种缩短与冬季海水温度升高密切相关，而河流温度指标则无显著影响。研究揭示了沿海海洋热条件变化对两栖鱼类早期生活史策略的驱动作用，强调了淡水-海洋热环境整合分析的重要性。",
       "url": "https://doi.org/10.1111/jfb.70533",
       "source": "crossref_issn",
-      "keywords_matched": "Journal of Fish Biology"
+      "keywords_matched": "Journal of Fish Biology",
+      "high_impact": false
     },
     {
       "doi": "10.3354/meps15217",
@@ -814,10 +881,11 @@
       "journal": "Marine Ecology Progress Series",
       "date": "2026-06-11",
       "abstract": "",
-      "summary_cn": "",
+      "summary_cn": "本研究利用稳定同位素技术，探讨加拿大纽芬兰沿海脉冲式资源（如季节性饵料）的变异性对海洋营养动态的影响。通过分析不同时间尺度下的同位素数据，揭示了资源波动如何改变食物网结构及物种间营养关系。结果表明，脉冲资源的时空变化是驱动该区域海洋生态系统营养动态的关键因素。",
       "url": "https://doi.org/10.3354/meps15217",
       "source": "crossref_issn",
-      "keywords_matched": "Marine Ecology Progress Series"
+      "keywords_matched": "Marine Ecology Progress Series",
+      "high_impact": false
     },
     {
       "doi": "10.3354/meps15216",
@@ -826,10 +894,11 @@
       "journal": "Marine Ecology Progress Series",
       "date": "2026-06-11",
       "abstract": "",
-      "summary_cn": "",
+      "summary_cn": "研究目的为探究常见软珊瑚Clavularia koellikeri在底栖空间竞争中占据主导地位的机制。通过观察其竞争行为与生态策略，发现该物种可能通过化学防御或物理覆盖等方式抑制其他底栖生物生长。该研究为理解珊瑚礁生态系统中的种间竞争与空间分配提供了关键证据。",
       "url": "https://doi.org/10.3354/meps15216",
       "source": "crossref_issn",
-      "keywords_matched": "Marine Ecology Progress Series"
+      "keywords_matched": "Marine Ecology Progress Series",
+      "high_impact": false
     },
     {
       "doi": "10.3354/meps15213",
@@ -838,10 +907,11 @@
       "journal": "Marine Ecology Progress Series",
       "date": "2026-06-11",
       "abstract": "",
-      "summary_cn": "",
+      "summary_cn": "提出一个机制框架，将隐栖礁鱼类的生态过程（如摄食、繁殖）与其功能性状（如体型、行为）联系起来，以理解它们在珊瑚礁生态系统中的角色。该框架旨在揭示这些小型鱼类在营养循环、栖息地改造等关键过程中的贡献，弥补传统研究对其生态作用的低估。",
       "url": "https://doi.org/10.3354/meps15213",
       "source": "crossref_issn",
-      "keywords_matched": "Marine Ecology Progress Series"
+      "keywords_matched": "Marine Ecology Progress Series",
+      "high_impact": false
     },
     {
       "doi": "10.3354/meps15215",
@@ -850,10 +920,31 @@
       "journal": "Marine Ecology Progress Series",
       "date": "2026-06-11",
       "abstract": "",
-      "summary_cn": "",
+      "summary_cn": "研究通过昼夜和季节采样，揭示了南非暖温带河口鱼类群落的显著时间变化。结果表明，仅白天采样会低估夜行性物种和部分洄游鱼类的丰度，导致对群落结构的片面认知。该发现强调了在河口鱼类监测中纳入昼夜采样方案的必要性，以提升stock assessment和生态评估的准确性。",
       "url": "https://doi.org/10.3354/meps15215",
       "source": "crossref_issn",
-      "keywords_matched": "Marine Ecology Progress Series"
+      "keywords_matched": "Marine Ecology Progress Series",
+      "high_impact": false
     }
-  ]
+  ],
+  "weekly_topics": {
+    "2026-W25": {
+      "week_key": "2026-W25",
+      "week_range": "6月15日—6月21日",
+      "topic": "渔业可持续发展：AI、生态与健康风险研究前沿",
+      "keywords": "水产养殖(Aquaculture), 渔业管理(Fisheries Management), 气候变化(Climate Change), 食品安全(Food Safety), 人工智能(Artificial Intelligence), 入侵物种(Invasive Species), 种群评估(Stock Assessment), 可持续性(Sustainability)",
+      "article": "## 本周研究概览\n\n本周（2026-W25）共收录渔业相关论文50篇，研究方向涵盖渔业资源评估与管理、水产养殖技术、鱼类生理生态、环境污染与健康风险、渔业社会经济以及新兴技术应用等多个领域。整体研究趋势呈现出三个显著特征：一是人工智能、物联网等数字技术正加速渗透至渔业资源监测、养殖管理和水产品品质预测等环节；二是气候变化对渔业生态系统的影响及其适应性管理成为持续热点；三是渔业可持续性议题从单一的资源保护向包含社会-生态系统韧性、食品安全和碳汇功能的多元维度拓展。此外，针对入侵物种、微塑料和PFAS等新兴污染物的研究也受到较多关注。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS等顶级综合期刊或Nature子刊系列上的渔业相关研究论文。\n\n## 创新性研究\n\n1. **Sustainable biodiesel from an invasive fish using immobilized lipase on magnetic nanogels as a novel management approach**（*Scientific Reports*）— 该研究提出了一种将入侵鱼类转化为生物柴油的创新管理策略，通过磁性纳米凝胶固定化脂肪酶实现高效转化，为入侵物种的生态治理与资源化利用提供了双赢方案，兼具生态修复和可再生能源开发潜力。\n\n2. **Integrating physical modeling with artificial intelligence for predicting fish survival zones in polluted rivers to maintain a sustainable aquaculture industry**（*Scientific Reports*）— 将物理模型与人工智能相结合，预测污染河流中鱼类存活区，为可持续水产养殖选址和应急管理提供了新的技术框架，方法学上具有显著的前瞻性。\n\n3. **Co-Culture Duration Reshapes the Rhizosphere Microbial Functional Potential for Nitrous Oxide Production and Consumption in a Traditional Rice–Fish System**（*Agronomy*）— 首次系统揭示了稻鱼共作时长如何重塑根际微生物群落中氧化亚氮（N₂O）产生与消耗的功能潜力，为优化传统生态农业模式的温室气体减排效益提供了微生物层面的机制解释。\n\n4. **The European Social Science Fisheries Network: a retrospective**（*Maritime Studies*）— 在ESSFiN成立30周年之际，系统回顾了欧洲渔业社会科学网络的发展历程与学术贡献，强调了社会科学在渔业管理中的不可替代性，对推动跨学科渔业研究具有重要的历史反思和方法论启示。\n\n5. **A Freshwater Fish Dataset for Visual Recognition with Manually Localized ROIs and SAM-Derived Instance Masks**（*Scientific Data*）— 发布了包含9种常见淡水鱼、9,075张高分辨率图像的数据集SylFishBD，并提供了人工标注的感兴趣区域和基于SAM的实例掩膜，为计算机视觉在鱼类自动识别领域的应用提供了高质量的基础数据资源。\n\n## 推荐阅读\n\n1. **Why abundance alone cannot assess sustainability in long-finned pilot whales: population structure, genetic uncertainty, and management implications** — 挑战了仅凭丰度评估可持续性的传统范式，强调种群结构和社会组织在鲸类管理中的关键作用。\n\n2. **The future fate of Somali upwelling productivity and the implications for fisheries under climate change** — 针对全球最强上升流区，评估了气候变化对渔业生产力的潜在影响，对区域性渔业适应策略制定具有重要参考价值。\n\n3. **How dense is too dense? Stocking density, survival, and welfare impairments in Vietnamese shrimp aquaculture** — 基于商业农场数据，系统探讨了养殖密度与动物福利之间的权衡关系，为可持续集约化水产养殖提供了实证依据。\n\n4. **Conservation and management implications of genetic and geometric scale variation in the ancient fish giant featherback (Chitala lopis)** — 对重新发现的“全球灭绝”物种进行遗传与形态学评估，为珍稀鱼类保护提供了紧急管理建议。\n\n5. **Seaweed form as a carbon capture proxy: surface area-to-volume ratio as a general predictor of marine macroalgae productivity** — 提出以表面积-体积比作为海藻生产力和碳捕获潜力的通用预测指标，方法简便且具有蓝碳应用价值。",
+      "paper_count": 51,
+      "high_impact_count": 10
+    },
+    "2026-W24": {
+      "week_key": "2026-W24",
+      "week_range": "6月8日—6月14日",
+      "topic": "渔业科学前沿：基因、生态与可持续管理研究热点",
+      "keywords": "基因克隆(Gene Cloning), 食性分析(Feeding Ecology), 渔业管理(Fisheries Management), 气候变化(Climate Change), 水产养殖(Aquaculture), 环境DNA(Environmental DNA), 种群动态(Population Dynamics), 海洋生态(Marine Ecology)",
+      "article": "## 本周研究概览\n\n本周（2026-W24）共收录20篇渔业相关论文，主要发表在*Journal of Fish Biology*、*Marine Ecology Progress Series*、*Canadian Journal of Fisheries and Aquatic Sciences*、*Fisheries Science*等期刊上。研究方向涵盖分子免疫与遗传学（如MAVS基因克隆、胃内容物DNA宏条形码）、渔业资源生态（如鲸鲨食性、鱼类早期生活史对气候变化的响应）、水产养殖（如饲料添加剂对生长和免疫的影响）、渔业管理与治理（如朝鲜渔业法、加拿大农业排水渠鱼类保护）以及海洋生态过程（如浮游生物垂直分布、软珊瑚竞争机制）。整体趋势显示，分子生物学技术（如DNA宏条形码、环境DNA）在渔业生态研究中的应用日益广泛，同时气候变化对鱼类生活史和资源分布的影响仍是关注热点。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances等顶级期刊上的论文。\n\n## 创新性研究\n\n1. **Unveiling the whale shark diet: Insights from stomach content DNA metabarcoding** — 该研究首次利用胃内容物DNA宏条形码技术直接评估鲸鲨（*Rhincodon typus*）的食性，发现其主要猎物为刺胞动物（如软珊瑚和海葵），颠覆了传统认为鲸鲨以浮游动物为主的认知。这一方法为研究大型滤食性动物的食性提供了非侵入性、高分辨率的新工具，对理解鲸鲨的生态位和迁徙行为具有重要意义。\n\n2. **Modified fin morphology in mackerel icefish may indicate nesting behaviour** — 该研究首次发现商业捕捞的南极鱼类——马鲛冰鱼（*Champsocephalus gunnari*）雄性臀鳍上皮增厚，可能用于筑巢行为。这一发现为监测南极鱼类的繁殖行为提供了形态学指标，对评估气候变化和捕捞压力下的种群补充动态具有潜在价值。\n\n3. **Climate‐driven shifts in early life history via shortened marine residence in amphidromous ayu** — 该研究揭示了气候变暖导致香鱼（*Plecoglossus altivelis*）早期生活史中海洋滞留时间缩短，从而改变其洄游策略。这一发现将气候变化与鱼类生活史可塑性直接关联，为预测洄游性鱼类种群动态提供了重要机制。\n\n4. **From processes to traits: a mechanistic framework for understanding ecosystem roles of cryptobenthic reef fishes** — 该研究提出了一个基于功能性状的机制框架，用于理解隐栖性珊瑚礁鱼类的生态系统角色。这一框架将生态过程与物种性状联系起来，为评估珊瑚礁生态系统的功能冗余和脆弱性提供了新视角。\n\n## 推荐阅读\n\n1. **Unveiling the whale shark diet: Insights from stomach content DNA metabarcoding** — 首次利用DNA宏条形码揭示鲸鲨食性，方法创新且颠覆传统认知。\n2. **Climate‐driven shifts in early life history via shortened marine residence in amphidromous ayu** — 将气候变化与洄游鱼类生活史可塑性直接关联，具有重要生态预测价值。\n3. **Modified fin morphology in mackerel icefish may indicate nesting behaviour** — 为南极鱼类繁殖行为监测提供新形态学指标，对渔业管理有潜在应用。\n4. **Protecting fishes in agricultural drains: evaluating Canadian policy using environmental DNA** — 利用环境DNA评估农业排水渠鱼类保护政策，方法新颖且具有管理实践意义。\n5. **From processes to traits: a mechanistic framework for understanding ecosystem roles of cryptobenthic reef fishes** — 提出基于功能性状的机制框架，为珊瑚礁生态系统功能研究提供新范式。",
+      "paper_count": 20,
+      "high_impact_count": 5
+    }
+  }
 }
