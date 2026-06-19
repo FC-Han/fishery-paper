@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-06-19T00:06:54Z",
+  "last_updated": "2026-06-19T00:12:09Z",
   "total_papers": 77,
-  "new_today": 7,
+  "new_today": 1,
   "papers": [
     {
       "doi": "10.3390/su18126265",
@@ -1005,24 +1005,5 @@
       "high_impact": false
     }
   ],
-  "weekly_topics": {
-    "2026-W25": {
-      "week_key": "2026-W25",
-      "week_range": "6月15日—6月21日",
-      "topic": "渔业可持续发展：从分子机制到生态系统管理的多学科融合",
-      "keywords": "水产养殖(Aquaculture), 渔业管理(Fisheries Management), 可持续性(Sustainability), 鱼类营养(Fish Nutrition), 环境健康(Environmental Health), 入侵物种(Invasive Species), 基因组学(Genomics), 气候变化(Climate Change)",
-      "article": "## 本周研究概览\n\n本周共收录渔业相关论文50篇，研究方向涵盖水产养殖技术与管理、渔业资源评估与保护、鱼类生理与营养、水产品加工与安全、渔业社会经济与政策、以及人工智能等新技术在渔业中的应用等多个领域。整体研究趋势呈现出以下特点：一是对渔业可持续性的关注持续升温，涉及气候变化影响、入侵物种、废弃渔具、重金属污染等议题；二是人工智能、物联网、遥感等新技术在渔业监测、预测和管理中的应用日益广泛；三是水产养殖研究更加注重精细化、智能化与生态友好型模式的探索，如循环水系统、稻鱼共作等。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS等顶级综合期刊上的渔业相关研究论文。不过，有一篇发表于**Nature**的短文“It slices! It dices! Sashimi-Bot handles seafood with ease”介绍了用于处理海鲜的机器人，但内容较为简短，属于技术新闻类报道，并非原创研究。\n\n## 创新性研究\n\n1. **Sustainable biodiesel from an invasive fish using immobilized lipase on magnetic nanogels as a novel management approach** (Scientific Reports) — 该研究提出了一种创新的入侵鱼类管理策略，即利用固定化脂肪酶磁性纳米凝胶将入侵鱼类转化为生物柴油，实现了“变废为宝”的资源化利用，为入侵物种控制与可再生能源生产提供了新思路。\n\n2. **Integrating physical modeling with artificial intelligence for predicting fish survival zones in polluted rivers to maintain a sustainable aquaculture industry** (Scientific Reports) — 该研究将物理模型与人工智能相结合，用于预测污染河流中鱼类的生存区域，为水产养殖业的选址和风险管理提供了更为精准的决策支持工具，体现了多学科交叉的创新性。\n\n3. **A Freshwater Fish Dataset for Visual Recognition with Manually Localized ROIs and SAM-Derived Instance Masks** (Scientific Data) — 该研究构建了一个包含9种常见淡水鱼、9,075张高分辨率图像的数据集，并提供了手动标注的感兴趣区域和基于SAM的实例分割掩码，为鱼类自动识别和计算机视觉研究提供了宝贵的标准化数据资源，有望推动渔业智能监测的发展。\n\n4. **Predicting the Freshness of Starch-Coated Snakehead Fish Fillets During Storage Using Hyperspectral Imaging Combined with Transfer Learning** (Foods) — 该研究将高光谱成像与迁移学习相结合，用于预测涂淀粉的乌鱼片在储存过程中的新鲜度，解决了传统方法难以应对复杂品质变化和光谱分布偏移的问题，为水产品品质无损检测提供了新方法。\n\n5. **Conservation and management implications of genetic and geometric scale variation in the ancient fish giant featherback (Chitala lopis)** (Journal of Fish Biology) — 该研究对一度被认为全球灭绝、后于2022年在印尼巽他地区重新发现的古老鱼类——巨羽背鱼，进行了基因组DNA和基于地标的鳞片几何形态分析，揭示了其遗传和形态变异，为这一珍稀物种的保护与管理提供了关键的科学依据。\n\n## 推荐阅读\n\n1. **Sustainable biodiesel from an invasive fish using immobilized lipase on magnetic nanogels as a novel management approach** — 创新性地将入侵鱼类转化为生物柴油，兼具生态治理与能源开发双重价值。\n2. **Integrating physical modeling with artificial intelligence for predicting fish survival zones in polluted rivers to maintain a sustainable aquaculture industry** — 物理模型与AI的巧妙结合，为污染水体中的水产养殖提供了精准预测工具。\n3. **A Freshwater Fish Dataset for Visual Recognition with Manually Localized ROIs and SAM-Derived Instance Masks** — 为鱼类自动识别研究提供了高质量、标准化的数据集，具有重要的基础性价值。\n4. **Predicting the Freshness of Starch-Coated Snakehead Fish Fillets During Storage Using Hyperspectral Imaging Combined with Transfer Learning** — 迁移学习与高光谱成像的结合，为水产品品质无损检测开辟了新路径。\n5. **Conservation and management implications of genetic and geometric scale variation in the ancient fish giant featherback (Chitala lopis)** — 对“起死回生”的珍稀鱼类进行遗传与形态学评估，为保护生物学提供了重要案例。",
-      "paper_count": 57,
-      "high_impact_count": 11
-    },
-    "2026-W24": {
-      "week_key": "2026-W24",
-      "week_range": "6月8日—6月14日",
-      "topic": "渔业科学前沿：基因、生态与可持续管理研究热点",
-      "keywords": "分子免疫(Molecular Immunity), 食性分析(Feeding Ecology), 渔业管理(Fisheries Management), 气候变化(Climate Change), 水产养殖(Aquaculture), 种群动态(Population Dynamics), 栖息地连通性(Habitat Connectivity), 环境DNA(Environmental DNA)",
-      "article": "## 本周研究概览\n\n本周（2026-W24）共收录20篇渔业相关论文，研究方向涵盖鱼类分子免疫与生理、渔业资源生态与管理、气候变化影响、以及渔业社会经济评估等多个领域。整体研究趋势呈现以下特点：一是分子生物学与生态学的交叉研究持续活跃，如利用DNA metabarcoding解析鲸鲨食性；二是气候变化对鱼类早期生活史和生理的影响成为热点，涉及温度、酸化等多因子效应；三是渔业管理研究更注重跨学科整合，如将栖息地连通性与捕捞压力结合，以及运用环境DNA（eDNA）评估政策效果。此外，关于底栖鱼类生态角色和海洋无脊椎动物竞争机制的研究也显示出对生态系统功能理解的深化。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances等顶级期刊上的论文。\n\n## 创新性研究\n\n1. **《Unveiling the whale shark diet: Insights from stomach content DNA metabarcoding》** — 该研究首次利用胃内容物DNA宏条形码技术直接评估鲸鲨（*Rhincodon typus*）的食性，发现其主要猎物为刺胞动物（Anthozoa，占43.4%），包括软珊瑚等。这一方法突破了传统胃含物分析对软体猎物识别困难的局限，为大型滤食性鲨鱼的营养生态学研究提供了新工具。\n\n2. **《Modified fin morphology in mackerel icefish (Champsocephalus gunnari) may indicate nesting behaviour》** — 研究首次报道了商业捕捞的南极鱼类——马鲛冰鱼的雄性个体存在肛鳍上皮增厚现象，提示其可能具有筑巢行为。这一发现为理解南极鱼类繁殖策略提供了新线索，对渔业管理（如禁渔期设定）具有潜在意义。\n\n3. **《From processes to traits: a mechanistic framework for understanding ecosystem roles of cryptobenthic reef fishes》** — 该研究提出了一个基于功能性状的机制框架，用于理解隐栖性珊瑚礁鱼类的生态系统角色。这一框架将生态过程与物种性状联系起来，有助于预测环境变化对这类关键但常被忽视的鱼类群落的影响。\n\n4. **《Protecting fishes in agricultural drains: evaluating Canadian policy using environmental DNA》** — 研究利用环境DNA（eDNA）技术评估加拿大农业排水渠中鱼类群落，并检验现行政策对敏感物种的保护效果。该方法为快速、非侵入性地评估人工水体生物多样性提供了新范式，对政策优化具有直接指导意义。\n\n## 推荐阅读\n\n1. **《Unveiling the whale shark diet: Insights from stomach content DNA metabarcoding》** — 首次应用DNA metabarcoding揭示鲸鲨食性，方法新颖且对大型海洋生物营养生态研究具有示范意义。\n2. **《Temperature, but not acidification, influences the growth and lipid profile of juvenile sand whiting, Sillago ciliata》** — 明确区分了温度与酸化对鱼类生长和脂质代谢的不同影响，为气候变化情景下的渔业资源预测提供关键参数。\n3. **《Climate‐driven shifts in early life history via shortened marine residence in amphidromous ayu Plecoglossus altivelis》** — 基于长期数据揭示了气候变暖如何通过缩短海洋滞留期改变洄游鱼类早期生活史，对理解种群动态和资源管理有重要价值。\n4. **《Integrating habitat connectivity and fishing pressure to promote migratory marine species conservation》** — 将栖息地连通性与捕捞压力纳入统一分析框架，为洄游性海洋物种的保护规划提供了可操作的方法论。\n5. **《Modified fin morphology in mackerel icefish (Champsocephalus gunnari) may indicate nesting behaviour》** — 首次发现商业捕捞南极鱼类的筑巢行为证据，对渔业管理（如禁渔期设定）和繁殖生物学研究具有重要启示。",
-      "paper_count": 20,
-      "high_impact_count": 5
-    }
-  }
+  "weekly_topics": {}
 }
