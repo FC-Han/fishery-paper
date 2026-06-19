@@ -1,8 +1,47 @@
 {
-  "last_updated": "2026-06-19T00:15:43Z",
-  "total_papers": 77,
-  "new_today": 1,
+  "last_updated": "2026-06-19T12:04:48Z",
+  "total_papers": 80,
+  "new_today": 4,
   "papers": [
+    {
+      "doi": "10.3390/ani16121898",
+      "title": "An Overview of the Research Status and Advances in Precision Feeding Technology and Equipment in Aquaculture",
+      "authors": "Chen, Ke; Li, Sixian; Lyu, Tieli; Li, Dongfang; Zhou, Zhiqiang; Xian, Jieyu; Xiao, Maohua",
+      "journal": "Animals",
+      "date": "2026-06-19",
+      "abstract": "Precision feeding is an important foundation for improving production efficiency in aquaculture, reducing feed waste, mitigating water pollution, and promoting the intelligent development of aquaculture. Conventional feeding practices remain heavily dependent on operator experience and are typically executed at predetermined times or fixed ration levels. Such approaches frequently result in extensive feeding management, poor adaptability, low feed utilization efficiency, and delayed responses to environmental changes. Advances in machine vision, the Internet of Things, machine learning, deep learning, and automatic control have progressively shifted aquaculture feeding research beyond standalone automatic feeders toward integrated systems encompassing demand perception, intelligent decision-making, precise control, and equipment coordination. This paper reviews the state of the art in precision feeding technologies and equipment in aquaculture. At the technical level, it summarizes advances in feeding demand perception, intelligent feeding decision-making, and precise control and execution. At the equipment level, it reviews the main types, design features, and field application status of precision feeding equipment in intensive aquaculture, pond aquaculture, and offshore aquaculture scenarios. Despite the considerable progress achieved, the practical deployment of precision feeding still faces several limitations. Environmental disturbances, water turbidity, illumination variation, and sensor drift may compromise the reliability of feeding demand perception. Existing decision-making models frequently exhibit limited generalizability across species, growth stages, and aquaculture scenarios. Moreover, insufficient integration of sensing, decision-making, and execution restricts the development of fully closed-loop feeding systems. High initial investment, maintenance costs, and the shortage of skilled personnel further constrain the adoption of precision feeding equipment, particularly in resource-limited regions. On this basis, the main challenges including sensing accuracy, model practicability, closed-loop control, equipment reliability, and standardization, are examined. Future development trends are also discussed, covering multi-source information fusion, synergy between mechanistic models and data-driven methods, system-level closed-loop control, equipment modularization, and industrial application. This review is expected to provide a reference for subsequent research and engineering applications.",
+      "summary_cn": "本文综述了水产养殖精准投喂技术与装备的研究进展。在技术层面，总结了摄食需求感知、智能投喂决策及精准控制执行的最新成果；在装备层面，梳理了集约化、池塘及海水养殖场景下的主要设备类型与设计特点。当前面临环境干扰、模型泛化性不足及闭环系统集成度低等挑战，未来将向多源信息融合、机理-数据协同建模及装备模块化方向发展。",
+      "url": "https://doi.org/10.3390/ani16121898",
+      "source": "crossref",
+      "keywords_matched": "aquaculture",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1111/jfb.70546",
+      "title": "β‐1,3‐Glucan mediates innate immunity and anti‐aging effects in aged male\n                    <i>Nothobranchius guentheri</i>\n                    and protects against\n                    <i>Aeromonas hydrophila</i>\n                    infection",
+      "authors": "Song, Lili; Qiao, Haixia; Lan, JinPing; An, Kang; Huang, Yong",
+      "journal": "Journal of Fish Biology",
+      "date": "2026-06-19",
+      "abstract": "Abstract Immunosenescence, a hallmark of aging, increases susceptibility to microbial infections and chronic inflammation. Here, we explored age‐related innate immune alterations and the anti‐aging potential of β‐1,3‐glucan using the short‐lived annual fish Nothobranchius guentheri . A comparison of 6‐month‐old (adult) and 9‐month‐old (aged) male fish revealed that aging downregulated key innate immune genes ( bf , C3 , lysozyme , mbl1 , mbl2 , nk‐lysin , β‐defensin ) while upregulating pro‐inflammatory cytokines ( interferon‐γ , tnf‐α ) in the spleen, head kidney and liver. Aged fish were also much more susceptible to Aeromonas hydrophila infection, pointing to the occurrence of immunosenescence and inflammaging. Given this deteriorated immune status in aged fish, we next investigated whether β‐1,3‐glucan could alleviate age‐associated immune dysfunction and resist bacterial pathogen invasion. The data demonstrated that β‐1,3‐glucan pretreatment significantly improved the survival rate of aged fish (53.00% ± 3.33% vs. 33.00% ± 3.33% in controls) and reduced bacterial loads in immune tissues. Mechanistically, β‐1,3‐glucan enhanced infection‐induced expression of complement, mannan‐binding lectin pathway and antimicrobial peptide genes, while suppressing excessive pro‐inflammatory cytokine production in a time‐dependent (6–24 h post‐infection) manner. Collectively, our results demonstrate that β‐1,3‐glucan mitigates immunosenescence in aged N. guentheri by balancing antimicrobial defence and inflammatory responses, highlighting its potential as a nutritional intervention for enhancing innate immunity and combating age‐related infection susceptibility.",
+      "summary_cn": "利用短寿鱼类Nothobranchius guentheri，研究β-1,3-glucan对衰老雄性个体先天免疫和抗感染能力的影响。发现衰老导致脾脏、头肾和肝脏中关键先天免疫基因下调、促炎细胞因子上调，并增加对Aeromonas hydrophila的易感性。β-1,3-glucan预处理可显著提高老年鱼存活率（53% vs 33%），降低免疫组织细菌载量，其机制为增强补体、甘露糖结合凝集素通路和抗菌肽基因表达，同时抑制过度炎症反应。结果表明β-1,3-glucan通过平衡抗菌防御与炎症反应缓解免疫衰老，可作为改善老年鱼类先天免疫和抗感染能力的营养干预策略。",
+      "url": "https://doi.org/10.1111/jfb.70546",
+      "source": "crossref_issn",
+      "keywords_matched": "Journal of Fish Biology",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1111/jfb.70538",
+      "title": "Two new species of the eel genus\n                    <i>Facciolella</i>\n                    from\n                    <scp>Taiwan</scp>\n                    , northwestern\n                    <scp>Pacific Ocean</scp>\n                    (\n                    <scp>Anguilliformes: Nettastomatidae</scp>\n                    )",
+      "authors": "Ho, Hsuan‐Ching; Huang, Jian‐Fu; Smith, David G.",
+      "journal": "Journal of Fish Biology",
+      "date": "2026-06-19",
+      "abstract": "Abstract Two new species of the duckbill eel genus Facciolella are described based on specimens collected off Taiwan, representing the first record of the genus in the western Pacific Ocean. Facciolella bicolor sp. nov ., based on three types, is most similar to F. smithi in having a bicoloured body and trunk, and can be distinguished by more preanal lateral‐line pores and preanal vertebrae and a combination of characters. Facciolella punctatus sp. nov ., based on six type specimens, is distinct in having a pale body and scattered black dots, and a combination of characters. The DNA barcoding analysis also supports the establishment of both new species. Detailed descriptions and figures are provided. The leptocephali found in the Pacific Ocean are also discussed.",
+      "summary_cn": "基于台湾海域采集的标本，描述了鳗鲡目丝鳗科Facciolella属的两个新种，这是该属在太平洋西部的首次记录。双色丝鳗（Facciolella bicolor sp. nov.）与F. smithi相似，但可通过更多肛前侧线孔和肛前椎骨等特征区分；斑点丝鳗（Facciolella punctatus sp. nov.）以浅色身体散布黑色斑点而独特。DNA条形码分析支持这两个新种的建立，研究还讨论了太平洋海域发现的leptocephali幼体。",
+      "url": "https://doi.org/10.1111/jfb.70538",
+      "source": "crossref_issn",
+      "keywords_matched": "Journal of Fish Biology",
+      "high_impact": false
+    },
     {
       "doi": "10.3390/su18126265",
       "title": "Freshwater Recreational Fisheries as a Social–Ecological System in Transition: Perceived Barriers, Resource Conditions, and Governance Challenges in Poland",
@@ -1005,5 +1044,24 @@
       "high_impact": false
     }
   ],
-  "weekly_topics": {}
+  "weekly_topics": {
+    "2026-W25": {
+      "week_key": "2026-W25",
+      "week_range": "6月15日—6月21日",
+      "topic": "精准投喂与可持续渔业：本周研究热点与趋势",
+      "keywords": "精准投喂(Precision Feeding), 鱼类免疫(Fish Immunity), 新种发现(New Species Discovery), 渔业管理(Fisheries Management), 鱼类营养(Fish Nutrition), 生物柴油(Biodiesel), 人工智能预测(AI Prediction), 生态影响(Ecological Impact)",
+      "article": "# 本周研究概览\n\n本周共收录渔业相关论文50篇，研究方向涵盖精准投喂技术、鱼类免疫与抗衰老、新物种分类、水产养殖系统优化、渔业资源评估与管理、环境污染与健康风险、人工智能应用等多个领域。整体研究趋势呈现三大特点：一是精准化与智能化技术（如AI、物联网、高光谱成像）在渔业中的应用持续深化；二是可持续性与生态保护议题日益突出，包括入侵物种管理、微塑料污染、渔业碳汇等；三是基础生物学与资源评估研究仍占重要地位，涉及鱼类遗传多样性、种群动态和栖息地利用。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS等顶级综合期刊上的渔业相关原创研究论文。但《Nature》杂志刊登了一篇题为“It slices! It dices! Sashimi-Bot handles seafood with ease”的短文，报道了用于海鲜加工的机器人技术进展，体现了自动化技术在渔业产业链中的应用潜力。\n\n## 创新性研究\n\n1. **“Sustainable biodiesel from an invasive fish using immobilized lipase on magnetic nanogels as a novel management approach”** — 该研究提出将入侵鱼类转化为生物柴油的创新思路，通过固定化脂肪酶磁性纳米凝胶技术实现资源化利用，为入侵物种管理提供了“变废为宝”的新范式，兼具生态修复与能源开发双重价值。\n\n2. **“Integrating physical modeling with artificial intelligence for predicting fish survival zones in polluted rivers to maintain a sustainable aquaculture industry”** — 将物理模型与AI相结合预测污染河流中鱼类生存区，方法新颖，为水产养殖选址和污染应急管理提供了可量化的决策工具，突破了传统单一模型预测的局限性。\n\n3. **“Co-Culture Duration Reshapes the Rhizosphere Microbial Functional Potential for Nitrous Oxide Production and Consumption in a Traditional Rice–Fish System”** — 系统揭示了稻鱼共作时长如何重塑根际微生物群落功能潜力，特别是对氧化亚氮产生与消耗的调控机制，为优化传统生态农业模式、减少温室气体排放提供了微生物学层面的新见解。\n\n4. **“Demographic analysis of the impacts of fishing pressure on the Naru eagle ray Aetobatus narutobiei in Ariake Bay, Japan”** — 针对特定鳐鱼物种开展捕捞压力的人口统计学分析，填补了软骨鱼类资源评估的薄弱环节，其方法可为数据缺乏的濒危软骨鱼类管理提供参考。\n\n5. **“A Freshwater Fish Dataset for Visual Recognition with Manually Localized ROIs and SAM-Derived Instance Masks”** — 构建了包含9种淡水鱼、9075张高分辨率图像的SylFishBD数据集，结合人工标注和SAM模型自动分割，为鱼类视觉识别研究提供了高质量基准数据，将推动计算机视觉在水产和生态监测中的应用。\n\n## 推荐阅读\n\n1. **Sustainable biodiesel from an invasive fish using immobilized lipase on magnetic nanogels as a novel management approach** — 创新性地将入侵物种治理与生物能源生产相结合，方法新颖且具有实际应用前景。\n\n2. **Integrating physical modeling with artificial intelligence for predicting fish survival zones in polluted rivers to maintain a sustainable aquaculture industry** — 物理模型与AI融合的跨学科方法为水产养殖环境管理提供了新思路。\n\n3. **Co-Culture Duration Reshapes the Rhizosphere Microbial Functional Potential for Nitrous Oxide Production and Consumption in a Traditional Rice–Fish System** — 深入揭示了稻鱼共作系统温室气体排放的微生物机制，对生态农业可持续发展具有重要指导意义。\n\n4. **Demographic analysis of the impacts of fishing pressure on the Naru eagle ray Aetobatus narutobiei in Ariake Bay, Japan** — 为数据匮乏的软骨鱼类资源评估提供了可借鉴的方法框架。\n\n5. **A Freshwater Fish Dataset for Visual Recognition with Manually Localized ROIs and SAM-Derived Instance Masks** — 高质量开源数据集将有力推动鱼类自动识别技术的发展，对渔业资源监测和智慧水产养殖具有重要价值。",
+      "paper_count": 60,
+      "high_impact_count": 11
+    },
+    "2026-W24": {
+      "week_key": "2026-W24",
+      "week_range": "6月8日—6月14日",
+      "topic": "渔业科学前沿：基因、生态与可持续发展热点透视",
+      "keywords": "分子免疫(Molecular Immunity), 食性分析(Feeding Ecology), 渔业管理(Fisheries Management), 气候变化(Climate Change), 水产养殖(Aquaculture), 环境DNA(eDNA), 栖息地连通性(Habitat Connectivity), 种群动态(Population Dynamics)",
+      "article": "## 本周研究概览\n\n本周（2026-W24）共收录20篇渔业相关论文，研究方向涵盖分子免疫与遗传学、渔业资源生态与行为、气候变化影响、水产养殖营养与病害、渔业管理与政策、以及海洋生态过程等多个领域。整体研究趋势表现为：**分子生物学技术（如DNA metabarcoding、环境DNA）在渔业资源评估与食性分析中的应用日益广泛**；**气候变化对鱼类早期生活史和生理特征的影响成为热点**；同时，**渔业管理政策（如跨境IUU治理、农业排水渠鱼类保护）的实证与法律分析也受到关注**。研究物种从经济鱼类（如带鱼、沙鮻）到珍稀物种（鲸鲨）均有涉及，体现了渔业科学从基础生物学到应用管理的多层次探索。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances等顶级期刊上的论文。\n\n## 创新性研究\n\n1. **Unveiling the whale shark diet: Insights from stomach content DNA metabarcoding** — 该研究首次利用胃内容物DNA宏条形码技术直接评估幼年鲸鲨的食性，突破了传统胃含物分析对软体动物等难以识别食物的局限。其创新点在于将高通量测序应用于大型滤食性鲨鱼的食性研究，揭示了鲸鲨可能大量摄食底栖刺胞动物（如软珊瑚）的意外发现，对理解其生态位和迁徙行为具有重要价值。\n\n2. **Modified fin morphology in mackerel icefish may indicate nesting behaviour** — 该研究首次报道了商业捕捞的南极鱼类——马鲛冰鱼（*Champsocephalus gunnari*）雄性臀鳍上皮增厚的形态学特征，并推测其与筑巢行为相关。这一发现为在极端环境下监测南极鱼类的繁殖行为提供了非侵入性的形态学指标，对渔业管理和保护生物学具有潜在应用价值。\n\n3. **From processes to traits: a mechanistic framework for understanding ecosystem roles of cryptobenthic reef fishes** — 该研究提出了一个基于功能性状的机制框架，用于理解隐栖礁鱼（cryptobenthic reef fishes）的生态系统功能。其创新性在于将传统的群落生态过程（如摄食、繁殖）与物种的功能性状（如体型、代谢率）联系起来，为量化这些小型但高丰度鱼类在珊瑚礁生态系统中的能量流动和营养循环提供了理论工具。\n\n4. **Climate‐driven shifts in early life history via shortened marine residence in amphidromous ayu** — 该研究利用长期数据揭示了气候变暖如何通过缩短香鱼（*Plecoglossus altivelis*）的海洋滞留时间，驱动其早期生活史策略的转变。创新点在于将气候变化与洄游性鱼类的“双向生活史”联系起来，阐明了温度升高如何通过影响幼鱼生长和变态时机，进而改变种群补充动态，为预测气候变化对洄游鱼类的影响提供了新视角。\n\n5. **Availability of dark daytime refuge may limit mysid abundance in the Laurentian Great Lakes** — 该研究提出并验证了一个新颖假说：水体透明度增加导致白天深水层光照增强，从而减少了糠虾（*Mysis diluviana*）的日间避难所，限制了其种群丰度。这一发现挑战了传统上仅关注食物和捕食的观点，强调了物理环境（光照）通过行为生态学途径对浮游动物种群调控的重要性，对理解湖泊食物网变化具有启示意义。\n\n## 推荐阅读\n\n1. **Unveiling the whale shark diet: Insights from stomach content DNA metabarcoding** — 首次利用DNA宏条形码技术揭示鲸鲨食性，方法新颖且结果颠覆传统认知。\n2. **Climate‐driven shifts in early life history via shortened marine residence in amphidromous ayu** — 长期数据与气候变化结合，为洄游鱼类生活史响应提供经典案例。\n3. **Availability of dark daytime refuge may limit mysid abundance in the Laurentian Great Lakes** — 提出光照限制假说，为解释大型湖泊浮游动物衰退提供新机制。\n4. **From processes to traits: a mechanistic framework for understanding ecosystem roles of cryptobenthic reef fishes** — 理论框架创新，为隐栖礁鱼生态功能研究奠定方法论基础。\n5. **Protecting fishes in agricultural drains: evaluating Canadian policy using environmental DNA** — 将eDNA技术应用于政策评估，为农业排水渠鱼类保护提供实证依据。",
+      "paper_count": 20,
+      "high_impact_count": 5
+    }
+  }
 }
