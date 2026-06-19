@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-06-18T23:55:13Z",
-  "total_papers": 71,
-  "new_today": 2,
+  "last_updated": "2026-06-19T00:06:54Z",
+  "total_papers": 77,
+  "new_today": 7,
   "papers": [
     {
       "doi": "10.3390/su18126265",
@@ -197,6 +197,84 @@
       "source": "crossref",
       "keywords_matched": "fish reproduction",
       "high_impact": false
+    },
+    {
+      "doi": "10.1177/02783649261453998",
+      "title": "Energy-optimal linear quadratic tracking control for unmanned underwater vehicles in offshore aquaculture fish net-pen visual inspection",
+      "authors": "Tun, Thein Than; Huang, Loulin; Preece, Mark Anthony",
+      "journal": "The International Journal of Robotics Research",
+      "date": "2026-06-18",
+      "abstract": "Unmanned underwater vehicles (UUVs) have been deployed for fish net-pen visual inspection (FNVI) in offshore aquaculture. Limited energy capacity of onboard power supplies constrains the UUV’s working range and operating time. To minimize the energy consumption by the UUV during the FNVI of the Blue Endeavour Project (an offshore salmon farm of the New Zealand King Salmon Company), an energy-optimal linear quadratic tracking (EO-LQT) control scheme is proposed in this paper. For EO-LQTs implementation, a new Linear-Parameter-Varying (LPV) system that approximates the nonlinear UUV dynamics model with an accuracy of approximately 99% regardless of the operating points in real-time, with the modified versions of Bhāskara I’s sine approximation and Shirali’s cosine approximation, is developed. The use of the Lagrangian under the Principle of Least Action with the UUV’s kinetic energy and the non-quadratic thruster power function in the EO-LQT performance index (PI) is demonstrated. The steps to solve the Hamilton-Jacobi-Bellman (HJB) equation with the non-quadratic Hamiltonian H are detailed to derive the new analytical EO-LQT optimal control form. Five EO-LQT controllers with different PIs are tested against the conventional LQT (CO-LQT) controller in both high-fidelity simulations under simulated disturbance speed up to 0.9 m/s and pool experiments, reducing energy consumption up to 37.1%. As key comparison metrics for the pose tracking and energy consumption, the mean-absolute-error (MAE) and T200 thruster power function are used to validate the effectiveness of the proposed EO-LQT controllers, compared to the CO-LQT controller.",
+      "summary_cn": "针对近海养殖网箱水下巡检中无人潜航器（UUV）续航受限问题，提出能量最优线性二次跟踪（EO-LQT）控制方案。通过构建精度约99%的线性变参数（LPV）系统近似UUV非线性动力学，并基于最小作用量原理将非二次型推进器功率函数纳入性能指标，推导出Hamilton-Jacobi-Bellman方程解析解。高保真仿真（模拟扰动达0.9 m/s）与水池实验表明，相比传统LQT控制器，EO-LQT可降低能耗达37.1%，通过平均绝对误差（MAE）和T200推进器功率函数验证了位姿跟踪与节能效果。",
+      "url": "https://doi.org/10.1177/02783649261453998",
+      "source": "crossref",
+      "keywords_matched": "fish population",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1186/s41110-026-00492-1",
+      "title": "Edible packaging based on Spirulina platensis: advances and challenges in meat and fish preservation",
+      "authors": "Freire Alves Gondim, Renata; Lucia Figueiredo Porto, Ana; de Sá Silva, Claudileide; Pedrosa Bezerra, Raquel",
+      "journal": "Nutrire",
+      "date": "2026-06-18",
+      "abstract": "Abstract Objective To evaluate, through a systematic literature review, the potential of bioactive edible coatings containing Spirulina platensis in preserving the quality and extending the shelf life of meats and fish, highlighting their antioxidant, antimicrobial, and sensory effects. Methods A systematic review of studies published between 2010 and 2025 was conducted, addressing the application of S. platensis in edible coatings formulated with different polymeric matrices, such as chitosan, gelatin, and vegetable polysaccharides. Studies that investigated the application of these coatings in meat and fish products were analyzed, considering microbiological, oxidative, physicochemical, and sensory parameters related to food preservation. Results The analyzed studies demonstrated that the incorporation of S. platensis in edible coatings significantly contributes to the reduction of microbial load and the control of lipid oxidation, in addition to favoring the maintenance of the sensory characteristics of the food. The application of these coatings resulted in shelf-life extensions ranging from 4 to 28 days, depending on the food matrix, coating composition, and microalgae concentration used. Conclusion Spirulina platensis shows high potential as a functional component in edible coatings and packaging applied to meats and fish. However, challenges related to the stability of bioactive compounds, the influence of blue-green coloration on sensory acceptance, and viability on an industrial scale still need to be overcome. Strategies such as microencapsulation and optimization of concentrations used show promise for expanding its technological application.",
+      "summary_cn": "通过系统文献综述评估含螺旋藻（Spirulina platensis）的可食性涂膜对肉和鱼类的保鲜效果。研究发现，该涂膜能显著降低微生物负荷、控制脂质氧化并维持感官品质，使货架期延长4-28天。螺旋藻作为功能性成分在可食性包装中潜力显著，但需解决生物活性物质稳定性、蓝绿色泽对感官接受度的影响及工业化可行性等挑战。",
+      "url": "https://doi.org/10.1186/s41110-026-00492-1",
+      "source": "crossref",
+      "keywords_matched": "fish stock",
+      "high_impact": false
+    },
+    {
+      "doi": "10.46989/001c.163474",
+      "title": "Effects of different aquaculture modes on growth performance, size distribution, and muscle nutritional composition of juvenile\n                    <i>Procambarus clarkii</i>",
+      "authors": "Zhang, Wuxiao; Yan, Zhangyu; Xia, Silei; Tian, Hongyan; Liu, Fei; Yu, Yebin; Yang, Wenping; Wang, Aimin; Teng, Tao; Li, Mingyou",
+      "journal": "Israeli Journal of Aquaculture - Bamidgeh",
+      "date": "2026-06-18",
+      "abstract": "This study evaluated the effects of two aquaculture modes on Procambarus clarkii growth, size distribution, and muscle quality. Two models were compared: Pond A (high density: 4,428 ind/mu, small size: 3.5 g; control group) and Pond B (low density: 2,261 ind/mu, large size: 9.0 g) over 30 days. Results showed that Pond B significantly enhanced weight gain and the proportion of size 1 and size 2 compared to Pond A (P&lt;0.05), while the control group exhibited a higher hepatosomatic index and proportion of Size 4 crayfish. Although proximate composition (moisture, lipid, ash) and muscle textural properties (hardness, springiness, chewiness, etc.) were unaffected, Pond B crayfish showed significantly lower muscle crude protein content and reduced levels of specific amino acids (glutamate, serine, tyrosine, methionine, lysine; P&lt;0.05). Fatty acid analysis revealed significantly higher saturated (C16:0, C18:0) and monounsaturated (C16:1, C20:1) fatty acids, but lower C18:1n9, linoleic acid (LA), and docosahexaenoic acid (DHA) in Pond B (P&lt;0.05); linolenic acid, arachidonic acid, eicosapentaenoic acid (EPA), and total PUFA remained unchanged. The low-density/large-size model optimizes growth performance and commercial size yield, increasing high-value individuals. However, it compromises specific nutritional aspects (protein, certain amino acids, and key fatty acids). As essential amino acid totals, proximate components (excluding protein), PUFA, and texture were unaffected, this model is recommended for maximizing economic return, though dietary strategies to mitigate nutritional alterations warrant further investigation.",
+      "summary_cn": "本研究比较了两种养殖模式（高密度小规格对照组 vs. 低密度大规格实验组）对克氏原螯虾（Procambarus clarkii）生长、规格分布及肌肉品质的影响。低密度大规格模式显著提高了增重率和商品规格（1、2级）比例，但降低了肌肉粗蛋白含量及特定氨基酸（谷氨酸、丝氨酸等）和脂肪酸（C18:1n9、亚油酸、DHA）水平。尽管必需氨基酸总量、质构特性及多不饱和脂肪酸（PUFA）未受影响，该模式通过优化生长性能和经济回报值得推荐，但需关注营养品质的潜在下降。",
+      "url": "https://doi.org/10.46989/001c.163474",
+      "source": "crossref",
+      "keywords_matched": "aquaculture",
+      "high_impact": false
+    },
+    {
+      "doi": "10.46989/001c.162889",
+      "title": "Optimization of coral micro-fragment cultivation in recirculating aquaculture systems: Comparative effects of heterotrophic feeding and trace element supplementation on\n                    <i>Acropora hyacinthus</i>\n                    and\n                    <i>Acropora muricata</i>",
+      "authors": "Dang, Viet D.H.; Nguyen, Hai-Thanh T.; Tran, Dien D.; Dinh, Thuy T.P.; Vo, Ha T.; Hoang, Lam N.; Nguyen, Lien P.; Dang, Thanh V.; Pham, Nghi Q.; Vu, Hanh D.",
+      "journal": "Israeli Journal of Aquaculture - Bamidgeh",
+      "date": "2026-06-18",
+      "abstract": "Optimizing nutritional strategies for coral propagation in land-based Recirculating Aquaculture Systems (RAS) is critical for reef restoration. However, the interaction between colony morphology and particulate heterotrophy remains poorly understood, leading to inconsistent survival and growth outcomes in nurseries. This study evaluated the influence of particulate organic feeding (Reef-Roids) and trace element supplementation on two morphologically distinct species Acropora hyacinthus (tabular) and Acropora muricata (branching) across three size classes (1, 2, and 3 cm) over 88 days. The results identified a “morphological filter” effect: while heterotrophy is often beneficial, it induced a significant nutritional paradox in the tabular morphology. A. hyacinthus exhibited extreme sensitivity to organic loading, with the “Food” treatment resulting in a tenfold increase in mortality risk (Hazard Ratio = 10.22, p &lt; 0.001) compared to the control. In contrast, the branching architecture of A. muricata facilitated superior resilience to organic entrapment, maintaining stable survival and leveraging heterotrophy for enhanced growth. Across both species, the 1 cm size class consistently achieved the highest specific growth rate (SGR), peaking at 0.89 ± 0.37%.day -1 for A. hyacinthus under oligotrophic conditions. Trace element supplementation was found to significantly mitigate mortality in tabular corals under high-stress organic loading but could not fully compensate for growth inhibition caused by bio-fouling. These findings emphasize that coral mariculture success is morphology-dependent, requiring stratified management: oligotrophic tracks for tabular species and nutrient-enhanced regimes for branching forms to maximize RAS production efficiency.",
+      "summary_cn": "本研究在循环水养殖系统（RAS）中评估了异养投喂（Reef-Roids）和微量元素补充对两种形态差异明显的鹿角珊瑚（Acropora hyacinthus 平板状与 Acropora muricata 分枝状）在三个规格等级（1、2、3 cm）下88天培养的影响。发现“形态过滤”效应：异养投喂对平板状珊瑚产生营养悖论，导致其死亡率增加十倍（风险比=10.22），而分枝状珊瑚则能利用异养促进生长。1 cm规格的珊瑚在贫营养条件下比生长率（SGR）最高（A. hyacinthus 达0.89±0.37%·天⁻¹），微量元素补充可缓解平板状珊瑚的高胁迫死亡率，但无法完全补偿生物污损导致的生长抑制。结果表明珊瑚养殖成功依赖形态，需采取分层管理策略：平板状珊瑚采用贫营养模式，分枝状珊瑚采用营养强化模式，以最大化RAS生产效率。",
+      "url": "https://doi.org/10.46989/001c.162889",
+      "source": "crossref",
+      "keywords_matched": "aquaculture",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1186/s12866-026-05288-x",
+      "title": "Whole genome analysis of a multidrug-resistant blaNDM−5-carrying Escherichia coli Sequence Type (ST) 167 strain isolated from seafood in Mumbai, India",
+      "authors": "Dhanush, Chandrashekar K.; Prerana, Ramanath; Lekshmi, Manjusha; Kumar, Sanath H.",
+      "journal": "BMC Microbiology",
+      "date": "2026-06-18",
+      "abstract": "",
+      "summary_cn": "从印度孟买海产品中分离出一株携带blaNDM-5的多重耐药大肠杆菌ST167菌株，通过全基因组分析揭示其耐药基因谱系与传播机制。该菌株携带多种抗生素耐药基因，包括碳青霉烯酶基因blaNDM-5，提示海产品可能成为耐药菌向人类传播的潜在途径。研究强调了海产品供应链中耐药菌监测的重要性。",
+      "url": "https://doi.org/10.1186/s12866-026-05288-x",
+      "source": "crossref",
+      "keywords_matched": "seafood sustainability",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1038/d41586-026-01871-4",
+      "title": "It slices! It dices! Sashimi-Bot handles seafood with ease",
+      "authors": "",
+      "journal": "Nature",
+      "date": "2026-06-18",
+      "abstract": "",
+      "summary_cn": "该标题描述了一种名为Sashimi-Bot的机器人设备，能够高效处理海鲜（如制作刺身）。由于缺乏摘要，无法判断其具体研究目的与方法，但内容明显涉及渔业加工技术。",
+      "url": "https://doi.org/10.1038/d41586-026-01871-4",
+      "source": "crossref",
+      "keywords_matched": "Nature",
+      "high_impact": true
     },
     {
       "doi": "10.1093/najfmt/vqag034",
@@ -931,18 +1009,18 @@
     "2026-W25": {
       "week_key": "2026-W25",
       "week_range": "6月15日—6月21日",
-      "topic": "渔业可持续发展：AI、生态与健康风险研究前沿",
-      "keywords": "水产养殖(Aquaculture), 渔业管理(Fisheries Management), 气候变化(Climate Change), 食品安全(Food Safety), 人工智能(Artificial Intelligence), 入侵物种(Invasive Species), 种群评估(Stock Assessment), 可持续性(Sustainability)",
-      "article": "## 本周研究概览\n\n本周（2026-W25）共收录渔业相关论文50篇，研究方向涵盖渔业资源评估与管理、水产养殖技术、鱼类生理生态、环境污染与健康风险、渔业社会经济以及新兴技术应用等多个领域。整体研究趋势呈现出三个显著特征：一是人工智能、物联网等数字技术正加速渗透至渔业资源监测、养殖管理和水产品品质预测等环节；二是气候变化对渔业生态系统的影响及其适应性管理成为持续热点；三是渔业可持续性议题从单一的资源保护向包含社会-生态系统韧性、食品安全和碳汇功能的多元维度拓展。此外，针对入侵物种、微塑料和PFAS等新兴污染物的研究也受到较多关注。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS等顶级综合期刊或Nature子刊系列上的渔业相关研究论文。\n\n## 创新性研究\n\n1. **Sustainable biodiesel from an invasive fish using immobilized lipase on magnetic nanogels as a novel management approach**（*Scientific Reports*）— 该研究提出了一种将入侵鱼类转化为生物柴油的创新管理策略，通过磁性纳米凝胶固定化脂肪酶实现高效转化，为入侵物种的生态治理与资源化利用提供了双赢方案，兼具生态修复和可再生能源开发潜力。\n\n2. **Integrating physical modeling with artificial intelligence for predicting fish survival zones in polluted rivers to maintain a sustainable aquaculture industry**（*Scientific Reports*）— 将物理模型与人工智能相结合，预测污染河流中鱼类存活区，为可持续水产养殖选址和应急管理提供了新的技术框架，方法学上具有显著的前瞻性。\n\n3. **Co-Culture Duration Reshapes the Rhizosphere Microbial Functional Potential for Nitrous Oxide Production and Consumption in a Traditional Rice–Fish System**（*Agronomy*）— 首次系统揭示了稻鱼共作时长如何重塑根际微生物群落中氧化亚氮（N₂O）产生与消耗的功能潜力，为优化传统生态农业模式的温室气体减排效益提供了微生物层面的机制解释。\n\n4. **The European Social Science Fisheries Network: a retrospective**（*Maritime Studies*）— 在ESSFiN成立30周年之际，系统回顾了欧洲渔业社会科学网络的发展历程与学术贡献，强调了社会科学在渔业管理中的不可替代性，对推动跨学科渔业研究具有重要的历史反思和方法论启示。\n\n5. **A Freshwater Fish Dataset for Visual Recognition with Manually Localized ROIs and SAM-Derived Instance Masks**（*Scientific Data*）— 发布了包含9种常见淡水鱼、9,075张高分辨率图像的数据集SylFishBD，并提供了人工标注的感兴趣区域和基于SAM的实例掩膜，为计算机视觉在鱼类自动识别领域的应用提供了高质量的基础数据资源。\n\n## 推荐阅读\n\n1. **Why abundance alone cannot assess sustainability in long-finned pilot whales: population structure, genetic uncertainty, and management implications** — 挑战了仅凭丰度评估可持续性的传统范式，强调种群结构和社会组织在鲸类管理中的关键作用。\n\n2. **The future fate of Somali upwelling productivity and the implications for fisheries under climate change** — 针对全球最强上升流区，评估了气候变化对渔业生产力的潜在影响，对区域性渔业适应策略制定具有重要参考价值。\n\n3. **How dense is too dense? Stocking density, survival, and welfare impairments in Vietnamese shrimp aquaculture** — 基于商业农场数据，系统探讨了养殖密度与动物福利之间的权衡关系，为可持续集约化水产养殖提供了实证依据。\n\n4. **Conservation and management implications of genetic and geometric scale variation in the ancient fish giant featherback (Chitala lopis)** — 对重新发现的“全球灭绝”物种进行遗传与形态学评估，为珍稀鱼类保护提供了紧急管理建议。\n\n5. **Seaweed form as a carbon capture proxy: surface area-to-volume ratio as a general predictor of marine macroalgae productivity** — 提出以表面积-体积比作为海藻生产力和碳捕获潜力的通用预测指标，方法简便且具有蓝碳应用价值。",
-      "paper_count": 51,
-      "high_impact_count": 10
+      "topic": "渔业可持续发展：从分子机制到生态系统管理的多学科融合",
+      "keywords": "水产养殖(Aquaculture), 渔业管理(Fisheries Management), 可持续性(Sustainability), 鱼类营养(Fish Nutrition), 环境健康(Environmental Health), 入侵物种(Invasive Species), 基因组学(Genomics), 气候变化(Climate Change)",
+      "article": "## 本周研究概览\n\n本周共收录渔业相关论文50篇，研究方向涵盖水产养殖技术与管理、渔业资源评估与保护、鱼类生理与营养、水产品加工与安全、渔业社会经济与政策、以及人工智能等新技术在渔业中的应用等多个领域。整体研究趋势呈现出以下特点：一是对渔业可持续性的关注持续升温，涉及气候变化影响、入侵物种、废弃渔具、重金属污染等议题；二是人工智能、物联网、遥感等新技术在渔业监测、预测和管理中的应用日益广泛；三是水产养殖研究更加注重精细化、智能化与生态友好型模式的探索，如循环水系统、稻鱼共作等。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS等顶级综合期刊上的渔业相关研究论文。不过，有一篇发表于**Nature**的短文“It slices! It dices! Sashimi-Bot handles seafood with ease”介绍了用于处理海鲜的机器人，但内容较为简短，属于技术新闻类报道，并非原创研究。\n\n## 创新性研究\n\n1. **Sustainable biodiesel from an invasive fish using immobilized lipase on magnetic nanogels as a novel management approach** (Scientific Reports) — 该研究提出了一种创新的入侵鱼类管理策略，即利用固定化脂肪酶磁性纳米凝胶将入侵鱼类转化为生物柴油，实现了“变废为宝”的资源化利用，为入侵物种控制与可再生能源生产提供了新思路。\n\n2. **Integrating physical modeling with artificial intelligence for predicting fish survival zones in polluted rivers to maintain a sustainable aquaculture industry** (Scientific Reports) — 该研究将物理模型与人工智能相结合，用于预测污染河流中鱼类的生存区域，为水产养殖业的选址和风险管理提供了更为精准的决策支持工具，体现了多学科交叉的创新性。\n\n3. **A Freshwater Fish Dataset for Visual Recognition with Manually Localized ROIs and SAM-Derived Instance Masks** (Scientific Data) — 该研究构建了一个包含9种常见淡水鱼、9,075张高分辨率图像的数据集，并提供了手动标注的感兴趣区域和基于SAM的实例分割掩码，为鱼类自动识别和计算机视觉研究提供了宝贵的标准化数据资源，有望推动渔业智能监测的发展。\n\n4. **Predicting the Freshness of Starch-Coated Snakehead Fish Fillets During Storage Using Hyperspectral Imaging Combined with Transfer Learning** (Foods) — 该研究将高光谱成像与迁移学习相结合，用于预测涂淀粉的乌鱼片在储存过程中的新鲜度，解决了传统方法难以应对复杂品质变化和光谱分布偏移的问题，为水产品品质无损检测提供了新方法。\n\n5. **Conservation and management implications of genetic and geometric scale variation in the ancient fish giant featherback (Chitala lopis)** (Journal of Fish Biology) — 该研究对一度被认为全球灭绝、后于2022年在印尼巽他地区重新发现的古老鱼类——巨羽背鱼，进行了基因组DNA和基于地标的鳞片几何形态分析，揭示了其遗传和形态变异，为这一珍稀物种的保护与管理提供了关键的科学依据。\n\n## 推荐阅读\n\n1. **Sustainable biodiesel from an invasive fish using immobilized lipase on magnetic nanogels as a novel management approach** — 创新性地将入侵鱼类转化为生物柴油，兼具生态治理与能源开发双重价值。\n2. **Integrating physical modeling with artificial intelligence for predicting fish survival zones in polluted rivers to maintain a sustainable aquaculture industry** — 物理模型与AI的巧妙结合，为污染水体中的水产养殖提供了精准预测工具。\n3. **A Freshwater Fish Dataset for Visual Recognition with Manually Localized ROIs and SAM-Derived Instance Masks** — 为鱼类自动识别研究提供了高质量、标准化的数据集，具有重要的基础性价值。\n4. **Predicting the Freshness of Starch-Coated Snakehead Fish Fillets During Storage Using Hyperspectral Imaging Combined with Transfer Learning** — 迁移学习与高光谱成像的结合，为水产品品质无损检测开辟了新路径。\n5. **Conservation and management implications of genetic and geometric scale variation in the ancient fish giant featherback (Chitala lopis)** — 对“起死回生”的珍稀鱼类进行遗传与形态学评估，为保护生物学提供了重要案例。",
+      "paper_count": 57,
+      "high_impact_count": 11
     },
     "2026-W24": {
       "week_key": "2026-W24",
       "week_range": "6月8日—6月14日",
       "topic": "渔业科学前沿：基因、生态与可持续管理研究热点",
-      "keywords": "基因克隆(Gene Cloning), 食性分析(Feeding Ecology), 渔业管理(Fisheries Management), 气候变化(Climate Change), 水产养殖(Aquaculture), 环境DNA(Environmental DNA), 种群动态(Population Dynamics), 海洋生态(Marine Ecology)",
-      "article": "## 本周研究概览\n\n本周（2026-W24）共收录20篇渔业相关论文，主要发表在*Journal of Fish Biology*、*Marine Ecology Progress Series*、*Canadian Journal of Fisheries and Aquatic Sciences*、*Fisheries Science*等期刊上。研究方向涵盖分子免疫与遗传学（如MAVS基因克隆、胃内容物DNA宏条形码）、渔业资源生态（如鲸鲨食性、鱼类早期生活史对气候变化的响应）、水产养殖（如饲料添加剂对生长和免疫的影响）、渔业管理与治理（如朝鲜渔业法、加拿大农业排水渠鱼类保护）以及海洋生态过程（如浮游生物垂直分布、软珊瑚竞争机制）。整体趋势显示，分子生物学技术（如DNA宏条形码、环境DNA）在渔业生态研究中的应用日益广泛，同时气候变化对鱼类生活史和资源分布的影响仍是关注热点。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances等顶级期刊上的论文。\n\n## 创新性研究\n\n1. **Unveiling the whale shark diet: Insights from stomach content DNA metabarcoding** — 该研究首次利用胃内容物DNA宏条形码技术直接评估鲸鲨（*Rhincodon typus*）的食性，发现其主要猎物为刺胞动物（如软珊瑚和海葵），颠覆了传统认为鲸鲨以浮游动物为主的认知。这一方法为研究大型滤食性动物的食性提供了非侵入性、高分辨率的新工具，对理解鲸鲨的生态位和迁徙行为具有重要意义。\n\n2. **Modified fin morphology in mackerel icefish may indicate nesting behaviour** — 该研究首次发现商业捕捞的南极鱼类——马鲛冰鱼（*Champsocephalus gunnari*）雄性臀鳍上皮增厚，可能用于筑巢行为。这一发现为监测南极鱼类的繁殖行为提供了形态学指标，对评估气候变化和捕捞压力下的种群补充动态具有潜在价值。\n\n3. **Climate‐driven shifts in early life history via shortened marine residence in amphidromous ayu** — 该研究揭示了气候变暖导致香鱼（*Plecoglossus altivelis*）早期生活史中海洋滞留时间缩短，从而改变其洄游策略。这一发现将气候变化与鱼类生活史可塑性直接关联，为预测洄游性鱼类种群动态提供了重要机制。\n\n4. **From processes to traits: a mechanistic framework for understanding ecosystem roles of cryptobenthic reef fishes** — 该研究提出了一个基于功能性状的机制框架，用于理解隐栖性珊瑚礁鱼类的生态系统角色。这一框架将生态过程与物种性状联系起来，为评估珊瑚礁生态系统的功能冗余和脆弱性提供了新视角。\n\n## 推荐阅读\n\n1. **Unveiling the whale shark diet: Insights from stomach content DNA metabarcoding** — 首次利用DNA宏条形码揭示鲸鲨食性，方法创新且颠覆传统认知。\n2. **Climate‐driven shifts in early life history via shortened marine residence in amphidromous ayu** — 将气候变化与洄游鱼类生活史可塑性直接关联，具有重要生态预测价值。\n3. **Modified fin morphology in mackerel icefish may indicate nesting behaviour** — 为南极鱼类繁殖行为监测提供新形态学指标，对渔业管理有潜在应用。\n4. **Protecting fishes in agricultural drains: evaluating Canadian policy using environmental DNA** — 利用环境DNA评估农业排水渠鱼类保护政策，方法新颖且具有管理实践意义。\n5. **From processes to traits: a mechanistic framework for understanding ecosystem roles of cryptobenthic reef fishes** — 提出基于功能性状的机制框架，为珊瑚礁生态系统功能研究提供新范式。",
+      "keywords": "分子免疫(Molecular Immunity), 食性分析(Feeding Ecology), 渔业管理(Fisheries Management), 气候变化(Climate Change), 水产养殖(Aquaculture), 种群动态(Population Dynamics), 栖息地连通性(Habitat Connectivity), 环境DNA(Environmental DNA)",
+      "article": "## 本周研究概览\n\n本周（2026-W24）共收录20篇渔业相关论文，研究方向涵盖鱼类分子免疫与生理、渔业资源生态与管理、气候变化影响、以及渔业社会经济评估等多个领域。整体研究趋势呈现以下特点：一是分子生物学与生态学的交叉研究持续活跃，如利用DNA metabarcoding解析鲸鲨食性；二是气候变化对鱼类早期生活史和生理的影响成为热点，涉及温度、酸化等多因子效应；三是渔业管理研究更注重跨学科整合，如将栖息地连通性与捕捞压力结合，以及运用环境DNA（eDNA）评估政策效果。此外，关于底栖鱼类生态角色和海洋无脊椎动物竞争机制的研究也显示出对生态系统功能理解的深化。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances等顶级期刊上的论文。\n\n## 创新性研究\n\n1. **《Unveiling the whale shark diet: Insights from stomach content DNA metabarcoding》** — 该研究首次利用胃内容物DNA宏条形码技术直接评估鲸鲨（*Rhincodon typus*）的食性，发现其主要猎物为刺胞动物（Anthozoa，占43.4%），包括软珊瑚等。这一方法突破了传统胃含物分析对软体猎物识别困难的局限，为大型滤食性鲨鱼的营养生态学研究提供了新工具。\n\n2. **《Modified fin morphology in mackerel icefish (Champsocephalus gunnari) may indicate nesting behaviour》** — 研究首次报道了商业捕捞的南极鱼类——马鲛冰鱼的雄性个体存在肛鳍上皮增厚现象，提示其可能具有筑巢行为。这一发现为理解南极鱼类繁殖策略提供了新线索，对渔业管理（如禁渔期设定）具有潜在意义。\n\n3. **《From processes to traits: a mechanistic framework for understanding ecosystem roles of cryptobenthic reef fishes》** — 该研究提出了一个基于功能性状的机制框架，用于理解隐栖性珊瑚礁鱼类的生态系统角色。这一框架将生态过程与物种性状联系起来，有助于预测环境变化对这类关键但常被忽视的鱼类群落的影响。\n\n4. **《Protecting fishes in agricultural drains: evaluating Canadian policy using environmental DNA》** — 研究利用环境DNA（eDNA）技术评估加拿大农业排水渠中鱼类群落，并检验现行政策对敏感物种的保护效果。该方法为快速、非侵入性地评估人工水体生物多样性提供了新范式，对政策优化具有直接指导意义。\n\n## 推荐阅读\n\n1. **《Unveiling the whale shark diet: Insights from stomach content DNA metabarcoding》** — 首次应用DNA metabarcoding揭示鲸鲨食性，方法新颖且对大型海洋生物营养生态研究具有示范意义。\n2. **《Temperature, but not acidification, influences the growth and lipid profile of juvenile sand whiting, Sillago ciliata》** — 明确区分了温度与酸化对鱼类生长和脂质代谢的不同影响，为气候变化情景下的渔业资源预测提供关键参数。\n3. **《Climate‐driven shifts in early life history via shortened marine residence in amphidromous ayu Plecoglossus altivelis》** — 基于长期数据揭示了气候变暖如何通过缩短海洋滞留期改变洄游鱼类早期生活史，对理解种群动态和资源管理有重要价值。\n4. **《Integrating habitat connectivity and fishing pressure to promote migratory marine species conservation》** — 将栖息地连通性与捕捞压力纳入统一分析框架，为洄游性海洋物种的保护规划提供了可操作的方法论。\n5. **《Modified fin morphology in mackerel icefish (Champsocephalus gunnari) may indicate nesting behaviour》** — 首次发现商业捕捞南极鱼类的筑巢行为证据，对渔业管理（如禁渔期设定）和繁殖生物学研究具有重要启示。",
       "paper_count": 20,
       "high_impact_count": 5
     }
