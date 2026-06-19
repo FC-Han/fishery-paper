@@ -274,13 +274,16 @@ def summarize_all_papers(client: OpenAI, papers: list[dict], force_all: bool = F
     print(f"\n✅ 论文总结: {success}/{total}")
 
 
-def generate_all_weekly_topics(client: OpenAI, papers: list[dict]) -> dict:
-    """为所有周生成综述标题、关键词、深度综述文章、高影响力论文标识"""
+def generate_all_weekly_topics(client: OpenAI, papers: list[dict], existing: dict = None) -> dict:
+    """为所有周生成综述标题、关键词、深度综述文章、高影响力论文标识
+    如果已有深度文章则不重复生成（保留人工确认的好版本）
+    """
     weeks = defaultdict(list)
     for p in papers:
         wk = get_week_key(p.get("date", ""))
         weeks[wk].append(p)
 
+    existing = existing or {}
     topics = {}
     print(f"📅 生成每周深度综述... ({len(weeks)} 周)\n")
 
@@ -289,19 +292,25 @@ def generate_all_weekly_topics(client: OpenAI, papers: list[dict]) -> dict:
         titles = [p["title"] for p in week_papers]
         week_range = get_week_range(wk)
         hi_count = sum(1 for p in week_papers if is_high_impact(p.get("journal", "")))
+        old = existing.get(wk, {})
 
         print(f"  → {wk} ({week_range}) — {len(week_papers)} 篇 (高影响力: {hi_count})")
 
-        # 生成简短标题（主页卡片用）
+        # 简短标题（主页卡片用）——每次都更新
         topic = generate_weekly_topic(client, titles)
         print(f"    📌 标题: {topic}")
 
-        # 生成深度综述文章
-        print(f"    📝 生成深度综述...")
-        article = generate_weekly_article(client, week_papers)
-        print(f"       ({len(article)} 字)")
+        # 深度综述文章 —— 已有的保留不重复生成
+        old_article = old.get("article", "") if isinstance(old, dict) else ""
+        if old_article and len(old_article) > 200 and not old_article.startswith("[失败"):
+            article = old_article
+            print(f"    📝 保留已有深度综述 ({len(article)} 字)")
+        else:
+            print(f"    📝 生成深度综述...")
+            article = generate_weekly_article(client, week_papers)
+            print(f"       ({len(article)} 字)")
 
-        # 提取关键词
+        # 关键词 —— 每次都更新
         keywords = generate_weekly_keywords(client, titles)
         print(f"    🏷️ 关键词: {keywords}")
 
@@ -347,7 +356,9 @@ def main():
     if not weekly_only:
         summarize_all_papers(client, papers, force_all)
 
-    weekly_topics = generate_all_weekly_topics(client, papers)
+    # 保留已有的深度综述文章
+    old_topics = data.get("weekly_topics", {})
+    weekly_topics = generate_all_weekly_topics(client, papers, old_topics)
 
     data = {
         "last_updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
