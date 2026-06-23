@@ -589,12 +589,14 @@ def main():
     all_papers.sort(key=lambda x: x.get("date", ""), reverse=True)
     all_papers = prune_old_papers(all_papers)
 
-    # 保存
+    # 保存（保留已有的 weekly_topics）
+    existing_data = load_existing_papers()
     data = {
         "last_updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "total_papers": len(all_papers),
         "new_today": len(all_new_papers),
         "papers": all_papers,
+        "weekly_topics": existing_data.get("weekly_topics", {}),
     }
     save_papers(data)
 
