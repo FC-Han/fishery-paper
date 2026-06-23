@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-06-23T11:03:54Z",
+  "last_updated": "2026-06-23T13:49:25Z",
   "total_papers": 146,
-  "new_today": 19,
+  "new_today": 0,
   "papers": [
     {
       "doi": "10.1111/ijlh.70173",
@@ -1902,33 +1902,5 @@
       "high_impact": false
     }
   ],
-  "weekly_topics": {
-    "2026-W26": {
-      "week_key": "2026-W26",
-      "week_range": "6月22日—6月28日",
-      "topic": "渔业科技前沿：智能监测、病害防控与生态适应",
-      "keywords": "水产养殖(Aquaculture), 鱼类健康(Fish Health), 水质管理(Water Quality), 渔业管理(Fisheries Management), 气候变化(Climate Change), 入侵物种(Invasive Species), 分子检测(Molecular Detection), 种群评估(Stock Assessment)",
-      "article": "好的，以下是本周（2026-W26）渔业相关论文的综述。\n\n***\n\n## 本周研究概览\n\n本周共收录25篇渔业相关论文，研究方向涵盖资源评估与管理、养殖技术、鱼类生理与疾病、以及渔业社会经济等多个领域。整体研究趋势呈现出几个显著特点：一是对气候变化（如海洋热浪、飓风）影响的关注度持续上升，并开始关注其对寄生虫群落等非传统指标的影响；二是数据科学与传统渔业结合日益紧密，机器学习、物联网（IoT）和遥感技术被广泛应用于水质预测、养殖监测和资源评估；三是研究视角更加多元化，从基因组学、行为生态学到市场价值链分析均有涉及，体现了学科的交叉融合。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS等顶级综合期刊上的渔业相关研究。\n\n## 创新性研究\n\n1. **“Quantifying post‐release behaviour of a critically endangered elasmobranch over two capture events using high‐resolution archival tag data”** — 该研究创新性地利用高分辨率档案标签，追踪了极度濒危的软骨鱼类在两次捕获-释放事件后的行为。其核心创新在于超越了单次释放后行为观察的局限，揭示了重复捕获对濒危物种行为模式的累积影响，为改进基于休闲垂钓的濒危物种保护策略提供了关键数据。\n\n2. **“Linking species distribution models with population abundance to support adaptive fisheries management”** — 本研究提出了一个将物种分布模型（SDM）与种群丰度数据直接关联的框架，并在亚得里亚海进行了近30年的实证分析。其创新点在于将静态的栖息地适宜性评估动态化，建立了环境变异与鱼类种群丰度之间的过程驱动型联系，为适应性渔业管理提供了更精准、更具预测能力的工具。\n\n3. **“DOM consumption and demethylation of MeHg as potential drivers of low MeHg in Mediterranean Sea sponges and benthic fish: a modeling perspective”** — 该研究通过建模视角，提出了一个解释地中海海绵和底栖鱼类甲基汞（MeHg）含量异常低的新机制。创新性地将溶解有机质（DOM）的消耗与甲基汞的去甲基化过程联系起来，挑战了传统认知，为理解海洋食物网中汞的生物地球化学循环和生物累积提供了全新视角。\n\n4. **“A frequency domain enhanced lightweight oriented object detector for floating raft aquaculture mapping in high-resolution coastal imagery”** — 针对高分辨率遥感影像中浮筏养殖（FRA）的精确制图难题，该研究开发了一种频域增强的轻量级定向目标检测器。其创新在于通过频域分析有效区分了养殖设施与背景噪声，同时保持了模型的轻量化，为大规模、自动化的海岸带养殖监测提供了高效、精准的技术方案。\n\n## 推荐阅读\n\n1. **Quantifying post‐release behaviour of a critically endangered elasmobranch over two capture events using high‐resolution archival tag data** — 首次量化重复捕获事件对濒危物种行为的影响，对基于休闲垂钓的保护管理具有直接指导意义。\n2. **Linking species distribution models with population abundance to support adaptive fisheries management** — 提出将SDM与种群丰度动态耦合的创新框架，代表了渔业资源评估方法的前沿发展方向。\n3. **DOM consumption and demethylation of MeHg as potential drivers of low MeHg in Mediterranean Sea sponges and benthic fish: a modeling perspective** — 提出关于海洋食物网中汞循环的新机制假说，对理解污染物生物累积具有重要理论价值。\n4. **Differential impacts of hurricanes on direct and complex life cycle parasites: a 42-year study of riverine fish** — 基于长达42年的数据，揭示了飓风对不同生活史类型寄生虫的差异化影响，为气候变化背景下鱼类寄生虫病动态研究提供了独特视角。\n5. **A frequency domain enhanced lightweight oriented object detector for floating raft aquaculture mapping in high-resolution coastal imagery** — 针对海岸带养殖遥感监测的痛点，提出了兼具精度与效率的创新算法，应用前景广阔。",
-      "paper_count": 25,
-      "high_impact_count": 5
-    },
-    "2026-W25": {
-      "week_key": "2026-W25",
-      "week_range": "6月15日—6月21日",
-      "topic": "鱼类生态与养殖前沿：水文脉冲、可持续生产与气候变化适应",
-      "keywords": "鱼类养殖(Fish Aquaculture), 渔业管理(Fisheries Management), 气候变化(Climate Change), 鱼类健康(Fish Health), 种群评估(Stock Assessment), 水产养殖系统(Aquaculture Systems), 鱼类遗传学(Fish Genetics), 生态模型(Ecological Modeling)",
-      "article": "# 本周研究概览\n\n本周共收录50篇渔业相关论文，研究方向涵盖水产养殖技术、渔业资源评估与管理、鱼类生态与进化、渔业社会经济分析以及气候变化影响等多个领域。整体研究趋势呈现以下特点：一是水产养殖领域聚焦于精准投喂、生物絮团技术、益生菌应用等可持续生产技术创新；二是渔业资源评估与管理研究更加注重多学科交叉，如将深度学习、物理建模与人工智能等工具应用于资源预测和风险评估；三是气候变化对渔业生态系统的影响成为热点，涉及鱼类分布变化、保护区连通性及管理适应性等议题。此外，鱼类寄生虫、微塑料污染、入侵物种等传统议题也持续受到关注。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS等顶级综合期刊上的渔业相关论文。\n\n## 创新性研究\n\n1. **“Nutritional resilience underpins fish invasion in subtropical waters”**（*Communications Earth & Environment*）— 该研究首次从食物营养质量角度解释鱼类入侵机制，发现入侵鱼类比本地鱼类更少受季节性食物质量下降的限制，为理解生物入侵提供了全新的营养生态学视角，突破了传统上仅关注物种耐受性和环境因子的研究范式。\n\n2. **“Nonlinear dynamics of fish beta diversity and the disproportionate influence of non‐native species in cascade‐dammed rivers”**（*Conservation Biology*）— 基于黄河上游近20年数据，揭示了梯级水坝开发对鱼类β多样性的非线性影响，并发现外来物种对群落结构变化的贡献远超预期。该研究为大型河流生态系统保护提供了重要的时间序列证据，对梯级水电开发的环境影响评估具有直接指导意义。\n\n3. **“Management Participants Perceive That Structural Barriers, Not Information Needs, Most Impede Adaptation in U.S. Fisheries Management”**（*Fish and Fisheries*）— 通过对美国渔业管理参与者的系统调查，创新性地指出阻碍气候适应性管理的主要障碍并非信息不足，而是结构性制度壁垒。这一发现挑战了当前主流的“信息缺口”叙事，为渔业管理体制改革提供了实证依据。\n\n4. **“Addressing Bias in Non‐Probability Fisheries Surveys Using Multilevel Regression and Poststratification Approaches”**（*Fish and Fisheries*）— 将多水平回归与事后分层方法引入非概率渔业调查的偏差校正，为低成本、大规模渔业数据采集提供了方法论突破。该方法有望显著提升公民科学数据和社交媒体数据的可用性，降低传统概率抽样调查的高昂成本。\n\n5. **“A streamlined genetic framework for identifying hatchery-origin individuals in natural populations of large yellow croaker”**（*Reviews in Fish Biology and Fisheries*）— 开发了一套简化的遗传鉴定框架，可高效区分大黄鱼野生群体与养殖逃逸个体。该技术对评估增殖放流效果、监测养殖逃逸对野生种群的遗传影响具有重要应用价值，为水产养殖与野生资源保护之间的冲突管理提供了工具支撑。\n\n## 推荐阅读\n\n1. **Nutritional resilience underpins fish invasion in subtropical waters** — 从营养生态学新视角解释鱼类入侵机制，方法新颖且具有重要理论意义。\n\n2. **Nonlinear dynamics of fish beta diversity and the disproportionate influence of non‐native species in cascade‐dammed rivers** — 基于长期数据的梯级水坝生态效应研究，对大型河流保护具有直接指导价值。\n\n3. **Management Participants Perceive That Structural Barriers, Not Information Needs, Most Impede Adaptation in U.S. Fisheries Management** — 挑战主流认知，揭示渔业气候适应性管理的真正障碍，对政策制定具有启示意义。\n\n4. **Addressing Bias in Non‐Probability Fisheries Surveys Using Multilevel Regression and Poststratification Approaches** — 方法论创新显著，有望降低渔业调查成本并提升数据质量。\n\n5. **Climate change reshapes species-specific connectivity among marine protected areas in the Yangtze River estuary and adjacent waters** — 聚焦气候变化下海洋保护区网络连通性的物种特异性变化，对保护区规划具有直接应用价值。",
-      "paper_count": 101,
-      "high_impact_count": 18
-    },
-    "2026-W24": {
-      "week_key": "2026-W24",
-      "week_range": "6月8日—6月14日",
-      "topic": "渔业科学前沿：基因、生态与可持续管理研究热点",
-      "keywords": "基因克隆(Gene Cloning), 食性分析(Feeding Ecology), 渔业管理(Fisheries Management), 气候变化(Climate Change), 水产养殖(Aquaculture), 环境DNA(Environmental DNA), 种群评估(Stock Assessment), 生态系统模型(Ecosystem Modeling)",
-      "article": "## 本周研究概览\n\n本周共收录20篇渔业相关论文，研究方向涵盖鱼类分子免疫与生理学、渔业资源生态与摄食习性、气候变化对鱼类早期生活史的影响、渔业管理政策与治理、以及水产养殖营养与病害防控等多个领域。整体研究趋势表现为：分子生物学与基因组学工具（如DNA metabarcoding、环境DNA）在渔业生态与资源评估中的应用日益广泛；气候变化（尤其是温度升高）对鱼类生长、脂质代谢及生活史策略的影响成为持续热点；同时，跨界渔业治理与非法捕捞（IUU）的法律分析也受到关注，显示出渔业科学正从单一生物学向多学科交叉融合方向发展。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances等顶级期刊上的论文。\n\n## 创新性研究\n\n1. **Unveiling the whale shark diet: Insights from stomach content DNA metabarcoding** — 该研究首次利用胃内容物DNA宏条形码技术直接评估了幼年鲸鲨的食性，发现其最丰富的猎物是刺胞动物（包括软珊瑚和海葵），颠覆了传统认为鲸鲨主要以浮游动物为食的认知。这一方法为研究大型濒危物种的食性提供了非侵入性、高分辨率的新工具，对理解鲸鲨的生态位和栖息地保护具有重要意义。\n\n2. **Modified fin morphology in mackerel icefish may indicate nesting behaviour** — 该研究首次报道了商业捕捞的南极鱼类——马鲛冰鱼的雄性个体在繁殖期可能出现肛鳍上皮增厚的现象，提示其可能具有筑巢行为。这一发现为监测南极鱼类繁殖特征提供了新的形态学指标，有助于在难以直接观察的深海环境中评估其繁殖策略和种群动态。\n\n3. **Climate-driven shifts in early life history via shortened marine residence in amphidromous ayu** — 该研究通过长期数据揭示了气候变暖如何缩短香鱼（Plecoglossus altivelis）的海洋停留时间，从而改变其早期生活史策略。这一发现将气候变化与鱼类生活史可塑性直接联系起来，为预测未来变暖情景下洄游性鱼类种群动态提供了关键机制性理解。\n\n4. **Availability of dark daytime refuge may limit mysid abundance in the Laurentian Great Lakes** — 该研究提出并验证了一个新颖假说：水体透明度增加导致白天黑暗避难所减少，可能是限制大湖中重要浮游动物Mysis diluviana丰度的关键因素。这一发现挑战了传统上仅关注营养级联效应的观点，强调了物理栖息地结构变化对底层食物网的重要调控作用。\n\n## 推荐阅读\n\n1. **Unveiling the whale shark diet: Insights from stomach content DNA metabarcoding** — 首次利用DNA宏条形码揭示鲸鲨食性，方法创新且对濒危物种保护有直接指导意义。\n2. **Climate-driven shifts in early life history via shortened marine residence in amphidromous ayu** — 将气候变暖与鱼类生活史可塑性机制紧密结合，对预测气候变化下洄游鱼类种群动态具有重要价值。\n3. **Availability of dark daytime refuge may limit mysid abundance in the Laurentian Great Lakes** — 提出并验证了水体透明度影响浮游动物丰度的新机制，为理解湖泊食物网变化提供了新视角。\n4. **Modified fin morphology in mackerel icefish may indicate nesting behaviour** — 首次报道商业捕捞南极鱼类的筑巢行为形态学证据，对南极渔业管理和繁殖生态研究具有开创性意义。\n5. **Protecting fishes in agricultural drains: evaluating Canadian policy using environmental DNA** — 利用环境DNA技术评估农业排水渠中鱼类保护政策的有效性，展示了分子工具在政策评估中的实际应用潜力。",
-      "paper_count": 20,
-      "high_impact_count": 5
-    }
-  }
+  "weekly_topics": {}
 }

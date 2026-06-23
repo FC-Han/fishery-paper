@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>渔业文献精选 · 25 篇 — 渔业文献每周速览</title>
+<style>
+:root {
+  --bg: #f7fafc; --bg-card: #ffffff; --text: #2d3748;
+  --text-secondary: #718096; --text-muted: #a0aec0; --border: #e2e8f0;
+  --primary: #2b6cb0; --primary-light: #bee3f8; --primary-dark: #1a365d;
+  --accent: #e76f51; --accent-light: #fed7d7;
+  --teal: #319795; --teal-light: #b2f5ea;
+  --gold: #d69e2e; --gold-light: #fefcbf;
+  --shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.10);
+  --radius: 12px; --radius-sm: 8px;
+}
+[data-theme="dark"] {
+  --bg: #1a202c; --bg-card: #2d3748; --text: #e2e8f0;
+  --text-secondary: #a0aec0; --text-muted: #718096; --border: #4a5568;
+  --primary: #90cdf4; --primary-light: #2a4365; --primary-dark: #bee3f8;
+  --accent: #fc8181; --accent-light: #742a2a;
+  --teal: #81e6d9; --teal-light: #234e52;
+  --gold: #f6e05e; --gold-light: #3d3a1a;
+  --shadow: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.5);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;transition:background 0.3s,color 0.3s}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* === Top Bar === */
+.topbar{background:linear-gradient(135deg,#1a365d,#2b6cb0);color:#fff;padding:0.8rem 1.5rem;display:flex;align-items:center;gap:1rem;position:sticky;top:0;z-index:100}
+.back-btn{color:#fff;font-size:0.95rem;font-weight:600;padding:0.4rem 0.8rem;border-radius:var(--radius-sm);border:1.5px solid rgba(255,255,255,0.3);transition:all 0.2s;white-space:nowrap}
+.back-btn:hover{background:rgba(255,255,255,0.15);text-decoration:none}
+.topbar .title-area{flex:1;min-width:0}
+.topbar .week-range{font-size:0.78rem;opacity:0.8}
+.topbar .week-topic{font-size:1rem;font-weight:700;line-height:1.3}
+.topbar .theme-toggle{padding:0.4rem 0.8rem;border:1.5px solid rgba(255,255,255,0.3);border-radius:var(--radius-sm);background:transparent;color:#fff;cursor:pointer;font-size:0.85rem;transition:all 0.2s;white-space:nowrap}
+.topbar .theme-toggle:hover{background:rgba(255,255,255,0.15)}
+
+.container{max-width:1100px;margin:0 auto;padding:1.5rem}
+
+/* === Article Section === */
+.article-section{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;margin-bottom:1.5rem;box-shadow:var(--shadow)}
+.article-section h2{font-size:1.3rem;color:var(--primary-dark);margin:1.5rem 0 0.75rem;padding-bottom:0.4rem;border-bottom:2px solid var(--primary-light)}
+.article-section h2:first-child{margin-top:0}
+.article-section p{margin-bottom:0.8rem;line-height:1.8;color:var(--text)}
+.article-section strong{color:var(--primary-dark)}
+.article-section ol,.article-section ul{padding-left:1.5rem;margin-bottom:0.8rem}
+.article-section li{margin-bottom:0.5rem;line-height:1.7}
+.article-tag{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-right:0.5rem}
+.tag-overview{background:var(--primary-light);color:var(--primary-dark)}
+.tag-highlight{background:var(--accent-light);color:var(--accent)}
+.tag-innovative{background:var(--gold-light);color:var(--gold)}
+.tag-recommend{background:var(--teal-light);color:var(--teal)}
+
+/* === Stats Row === */
+.stats-row{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.stat-mini{padding:0.5rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-secondary)}
+.stat-mini strong{color:var(--primary);font-size:1.1rem}
+
+/* === Controls === */
+.controls{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.search-box{flex:1;min-width:200px;position:relative}
+.search-box input{width:100%;padding:0.6rem 1rem 0.6rem 2.5rem;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:0.9rem;background:var(--bg-card);color:var(--text);transition:border-color 0.2s}
+.search-box input:focus{outline:none;border-color:var(--primary)}
+.search-box .search-icon{position:absolute;left:0.8rem;top:50%;transform:translateY(-50%);color:var(--text-muted);pointer-events:none}
+
+/* === Paper Grid === */
+.section-title{font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:0.75rem;display:flex;align-items:center;gap:0.5rem}
+.paper-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:0.85rem;margin-bottom:1.5rem}
+.paper-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1.1rem;transition:all 0.25s;display:flex;flex-direction:column;position:relative}
+.paper-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);border-color:var(--primary-light)}
+.paper-card.high-impact{border-left:3px solid var(--accent)}
+.paper-card .hi-badge{position:absolute;top:0.5rem;right:0.5rem;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:10px;background:var(--accent-light);color:var(--accent);font-weight:700}
+.paper-card .journal{font-size:0.78rem;color:var(--teal);font-weight:600;margin-bottom:0.3rem}
+.paper-card .title{font-size:0.95rem;font-weight:700;line-height:1.45;margin-bottom:0.35rem}
+.paper-card .title a{color:var(--text)}
+.paper-card .title a:hover{color:var(--primary);text-decoration:none}
+.paper-card .meta{font-size:0.78rem;color:var(--text-muted);margin-bottom:0.6rem;display:flex;flex-wrap:wrap;gap:0.5rem}
+
+/* Chinese Summary */
+.paper-card .summary-cn{background:linear-gradient(135deg,#fffaf0,#fffff0);border-left:3px solid var(--gold);padding:0.7rem 0.85rem;margin-bottom:0.5rem;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:0.88rem;line-height:1.55;color:#744210}
+[data-theme="dark"] .paper-card .summary-cn{background:linear-gradient(135deg,#3d2e1a,#372a10);color:#fbd38d}
+
+.abstract-toggle{font-size:0.8rem;color:var(--primary);cursor:pointer;font-weight:600;user-select:none;display:inline-flex;align-items:center;gap:0.25rem;padding:0.3rem 0;border:none;background:none}
+.abstract-toggle:hover{color:var(--accent)}
+.abstract-toggle .arrow{transition:transform 0.2s;font-size:0.7rem}
+.abstract-toggle.open .arrow{transform:rotate(90deg)}
+.abstract-content{display:none;font-size:0.82rem;color:var(--text-secondary);line-height:1.55;padding:0.5rem 0;border-top:1px dashed var(--border);margin-top:0.4rem}
+.abstract-content.visible{display:block}
+
+.paper-card.hidden{display:none}
+.no-results{display:none;text-align:center;padding:2rem;color:var(--text-muted)}
+.no-results.visible{display:block}
+
+@media(max-width:768px){.paper-grid{grid-template-columns:1fr}.article-section{padding:1.25rem}.topbar{flex-wrap:wrap}.topbar .week-topic{font-size:0.9rem}}
+
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.paper-card{animation:fadeIn 0.4s ease-out}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="back-btn" href="index.html">← 返回主页</a>
+  <div class="title-area">
+    <div class="week-range">6月22日—6月23日</div>
+    <div class="week-topic">渔业文献精选 · 25 篇</div>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <span id="themeIcon">🌙</span> <span id="themeLabel">暗色</span>
+  </button>
+</div>
+
+<div class="container">
+
+  <!-- 深度综述文章 -->
+  
+
+  <!-- 统计 -->
+  <div class="stats-row">
+    <div class="stat-mini">📄 <strong>25</strong> 篇论文</div>
+    <div class="stat-mini">🌟 <strong>0</strong> 篇高影响力期刊</div>
+    <div class="stat-mini">🤖 <strong>25</strong> 篇 AI 中文总结</div>
+    
+  </div>
+
+  <!-- 搜索 -->
+  <div class="controls">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="搜索标题、作者、摘要..." oninput="filterPapers()">
+    </div>
+  </div>
+
+  <div class="no-results" id="noResults">😕 没有匹配的论文</div>
+
+  <!-- 全部论文列表 -->
+  <div class="section-title">📄 本周全部论文（25 篇）</div>
+  <div class="paper-grid">
+    
+    <div class="paper-card high-impact"
+         data-title="dom consumption and demethylation of mehg as potential drivers of low mehg in mediterranean sea sponges and benthic fish: a modeling perspective"
+         data-authors="amptmeijer, david j.; hanz, ulrike; schrum, corinna; bieser, johannes"
+         data-journal="biogeosciences"
+         data-abstract="abstract. methylmercury (mehg) is a bioaccumulative neurotoxin that poses a risk to human health through seafood consumption. sponges have unique mercury (hg) profiles. measurements show an unusually high inorganic hg (ihg) content in low microbial abundance (lma) sponges and an even higher ihg content in high microbial abundance (hma) sponges, while mehg concentrations remain low, particularly in hma sponges. combined with the recently improved understanding of the important ecological role of sponges as a food source for other biota, this suggests that their low mehg content may influence mehg transfer within benthic food webs. in this study, we used a 1d water-column model to investigate the bioaccumulation of mehg in sponges. it has been hypothesized that the low mehg content in hma sponges may result from active mehg demethylation. our model results indicate that the consumption of dissolved organic matter (dom) can already explain the low observed mehg content in lma sponges, and higher dom consumption in hma sponges can account for the even lower mehg levels in hma species. alternatively, if mehg demethylation occurs, a low rate of 1 % d−1 could explain the differences between lma and hma sponges. although dom consumption increases ihg bioaccumulation in both sponge types, it does not explain the extremely high ihg concentrations observed. finally, our model suggests that hma sponges could potentially reduce mehg concentrations in benthic fish by up to 53 % when they dominate at the base of the food web. these findings highlight the potentially important role of sponges in hg cycling and indicate that sponge-dominated systems could help reduce mehg accumulation in benthic food webs."
+         data-summary="通过1d水柱模型研究地中海海绵及底栖鱼类低甲基汞（mehg）含量的驱动因素。模型结果表明，溶解有机质（dom）消耗可解释低微生物丰度（lma）海绵的低mehg水平，而高微生物丰度（hma）海绵更高的dom消耗或1% d⁻¹的mehg去甲基化速率可进一步降低其mehg含量。此外，hma海绵主导底栖食物网时，可使底栖鱼类mehg浓度降低高达53%，揭示了海绵在汞循环中的潜在调控作用。"
+         data-impact="true">
+
+      
+      <div class="hi-badge">🌟 高影响力</div>
+      
+
+      
+      <div class="journal">
+        ⭐
+        📰 Biogeosciences
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 通过1D水柱模型研究地中海海绵及底栖鱼类低甲基汞（MeHg）含量的驱动因素。模型结果表明，溶解有机质（DOM）消耗可解释低微生物丰度（LMA）海绵的低MeHg水平，而高微生物丰度（HMA）海绵更高的DOM消耗或1% d⁻¹的MeHg去甲基化速率可进一步降低其MeHg含量。此外，HMA海绵主导底栖食物网时，可使底栖鱼类MeHg浓度降低高达53%，揭示了海绵在汞循环中的潜在调控作用。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.5194/bg-23-4057-2026" target="_blank" rel="noopener">DOM consumption and demethylation of MeHg as potential drivers of low MeHg in Mediterranean Sea sponges and benthic fish: a modeling perspective</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Amptmeijer, David J.; Hanz, Ulrike; Schrum, Corinna; Bieser,...</span>
+        
+        <span>📅 2026-06-22</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract. Methylmercury (MeHg) is a bioaccumulative neurotoxin that poses a risk to human health through seafood consumption. Sponges have unique mercury (Hg) profiles. Measurements show an unusually high inorganic Hg (iHg) content in Low Microbial Abundance (LMA) sponges and an even higher iHg content in High Microbial Abundance (HMA) sponges, while MeHg concentrations remain low, particularly in HMA sponges. Combined with the recently improved understanding of the important ecological role of sponges as a food source for other biota, this suggests that their low MeHg content may influence MeHg transfer within benthic food webs. In this study, we used a 1D water-column model to investigate the bioaccumulation of MeHg in sponges. It has been hypothesized that the low MeHg content in HMA sponges may result from active MeHg demethylation. Our model results indicate that the consumption of dissolved organic matter (DOM) can already explain the low observed MeHg content in LMA sponges, and higher DOM consumption in HMA sponges can account for the even lower MeHg levels in HMA species. Alternatively, if MeHg demethylation occurs, a low rate of 1 % d−1 could explain the differences between LMA and HMA sponges. Although DOM consumption increases iHg bioaccumulation in both sponge types, it does not explain the extremely high iHg concentrations observed. Finally, our model suggests that HMA sponges could potentially reduce MeHg concentrations in benthic fish by up to 53 % when they dominate at the base of the food web. These findings highlight the potentially important role of sponges in Hg cycling and indicate that sponge-dominated systems could help reduce MeHg accumulation in benthic food webs.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="associations of perceived sedimentation impact livelihood diversification and fisheries business performance with small-scale fishermen capacity in kendari bay indonesia"
+         data-authors="limi, muhammad aswar; iswandi, r. marsuki; widayati, weka; taufik, yani; batoa, hartina; rela, iskandar zainuddin"
+         data-journal="discover sustainability"
+         data-abstract=""
+         data-summary="基于kendari bay印度尼西亚小型渔民的调查，研究感知沉积影响、生计多样化和渔业经营绩效与渔民能力之间的关联。结果显示，沉积影响感知和生计多样化显著影响渔民能力，而渔业经营绩效则无显著关联。该研究为沿海渔业管理提供了实证依据。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Discover Sustainability
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 基于Kendari Bay印度尼西亚小型渔民的调查，研究感知沉积影响、生计多样化和渔业经营绩效与渔民能力之间的关联。结果显示，沉积影响感知和生计多样化显著影响渔民能力，而渔业经营绩效则无显著关联。该研究为沿海渔业管理提供了实证依据。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1007/s43621-026-03808-3" target="_blank" rel="noopener">Associations of perceived sedimentation impact livelihood diversification and fisheries business performance with small-scale fishermen capacity in Kendari Bay Indonesia</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Limi, Muhammad Aswar; Iswandi, R. Marsuki; Widayati, Weka; T...</span>
+        
+        <span>📅 2026-06-22</span>
+      </div>
+
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="linking species distribution models with population abundance to support adaptive fisheries management"
+         data-authors="shauer, mahallelah; massaro, roberto; julius, olimide temitope; zangaro, franceso; rainó, marco; marcucci, francesca; specchia, valeria; cazzetta, armando; record, nicholas r.; pinna, maurizio"
+         data-journal="ecography"
+         data-abstract="understanding how environmental variability structures essential fish habitat (efh) is central to managing keystone populations in dynamic marine ecosystems. using nearly three decades of standardized survey data (1994–2021) from the adriatic sea, we present the first basin‐scale, process‐based framework linking estimated habitat suitability and abundance for the european anchovy engraulis encrasicolus . maximum entropy (maxent) species distribution models were coupled with quantile generalized additive models (qgams) to quantify spatiotemporal dynamics of efh and identify environmental thresholds that regulate population expansion and contraction. predicted habitat suitability was primarily driven by variation in bottom temperature and biotic interactions, with persistent core areas along the northern and central shelves. quantile analyses revealed asymmetric abundance responses to environmental gradients, indicating stronger constraints under unfavorable hydrographic regimes. this integrative approach bridges potential habitat and population dynamics, offering transferable tools for climate‐ready, ecosystem‐based fisheries management."
+         data-summary="本研究利用亚得里亚海近三十年（1994–2021）标准化调查数据，首次构建了连接欧洲鳀栖息地适宜性与种群丰度的过程框架。通过maxent物种分布模型与分位数广义加性模型（qgams）耦合，量化了关键鱼类栖息地（efh）的时空动态，发现底层温度与生物互作是驱动栖息地适宜性的主要因子，核心区域稳定分布于北部和中部陆架。分位数分析揭示种群丰度对环境梯度呈非对称响应，在不利水文条件下约束更强。该整合方法桥接了潜在栖息地与种群动态，为气候适应性生态系统渔业管理提供了可转移工具。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Ecography
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究利用亚得里亚海近三十年（1994–2021）标准化调查数据，首次构建了连接欧洲鳀栖息地适宜性与种群丰度的过程框架。通过MaxEnt物种分布模型与分位数广义加性模型（QGAMs）耦合，量化了关键鱼类栖息地（EFH）的时空动态，发现底层温度与生物互作是驱动栖息地适宜性的主要因子，核心区域稳定分布于北部和中部陆架。分位数分析揭示种群丰度对环境梯度呈非对称响应，在不利水文条件下约束更强。该整合方法桥接了潜在栖息地与种群动态，为气候适应性生态系统渔业管理提供了可转移工具。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1002/ecog.08527" target="_blank" rel="noopener">Linking species distribution models with population abundance to support adaptive fisheries management</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Shauer, Mahallelah; Massaro, Roberto; Julius, Olimide Temito...</span>
+        
+        <span>📅 2026-06-22</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Understanding how environmental variability structures essential fish habitat (EFH) is central to managing keystone populations in dynamic marine ecosystems. Using nearly three decades of standardized survey data (1994–2021) from the Adriatic Sea, we present the first basin‐scale, process‐based framework linking estimated habitat suitability and abundance for the European anchovy Engraulis encrasicolus . Maximum entropy (MaxEnt) species distribution models were coupled with quantile generalized additive models (QGAMs) to quantify spatiotemporal dynamics of EFH and identify environmental thresholds that regulate population expansion and contraction. Predicted habitat suitability was primarily driven by variation in bottom temperature and biotic interactions, with persistent core areas along the northern and central shelves. Quantile analyses revealed asymmetric abundance responses to environmental gradients, indicating stronger constraints under unfavorable hydrographic regimes. This integrative approach bridges potential habitat and population dynamics, offering transferable tools for climate‐ready, ecosystem‐based fisheries management.</div>
+      
+    </div>
+    
+    <div class="paper-card high-impact"
+         data-title="natural food preservative from fish scales extends the shelf life of tomato (
+                    <i>lycopersicon esculentum</i>
+                    )"
+         data-authors="mustary, shobnom; sultana, mst.adia; bishnu angon, prodipto; rahman, maisha; akter, tahmina; polash, mohammed arif sadik; shorna, shagata islam; khatun, most. khadiza; roy, arpita rani; sagar, jannatul ferdows"
+         data-journal="european journal of horticultural science"
+         data-abstract="abstract tomatoes ( lycopersicon esculentum ) are widely consumed and economically important vegetable crops worldwide. however, their high perishability and short postharvest life result in substantial losses. typically, tomatoes remain marketable for only 4–8 days at ambient conditions due to rapid physiological and biochemical changes, including moisture loss, softening, pigment development and compositional alterations. these postharvest losses not only affect farmers’ income but also contribute to food insecurity. this study evaluated the effectiveness of edible chitosan coatings derived from fish scales in extending the shelf life and preserving the quality of tomatoes during storage. fruits were treated with 0% (control), 1% chitosan and 2% chitosan solutions and stored at room temperature for 14 days. physical, chemical and organoleptic data were analysed throughout the storage period. the results demonstrated that chitosan coatings significantly delayed deterioration compared to the control. by day 10, control fruits exhibited severe wrinkling, soft rot and dark spots, whereas 2% chitosan showed moderate damage and 1% chitosan showed no visible deterioration. weight loss was reduced from 9.1% in control to 6.7–6.9% in treated samples. the 1% chitosan treatment retained the highest vitamin c content (31.53%), whereas the control recorded the lowest (14.65%). treated tomatoes also exhibited 16–23% higher titrable acidity. total soluble sugars increased by approximately 45% in control fruits but decreased by 26–28% in treated samples, indicating delayed ripening. pigment development was significantly higher in untreated fruits (86%) compared to treated ones (64%). nitrate content decreased in all samples, with a greater reduction observed in control fruits (73%) than in treated ones (54%). organoleptic evaluation indicated that 1% chitosan-coated tomatoes were most acceptable. overall, our research indicates that chitosan coating successfully extends the shelf life of tomato fruit and preserves fruit quality while it is in storage. it also presents a great opportunity for the edible coating to be successfully commercialized for tomato producers and the waste management sector. significance of the study what is already known on this subject? tomatoes suffer significant postharvest losses due to their short shelf life, but chitosan-based coatings offer a promising solution by forming semipermeable barriers that slow respiration, delay ripening and extend freshness. derived from crustacean shells, chitosan’s antimicrobial and film-forming properties have been shown in multiple studies to effectively preserve tomato quality attributes. what are the new findings? this study contributes several novel insights: source innovation : first use of fish scale-derived chitosan specifically for tomato preservation. optimal concentration : 1% chitosan reduced tomato weight loss by up to 65% vs. control. comprehensive quality preservation : coating retained vitamin c, acidity, chlorophyll and nitrate content. extended shelf life : fish scale chitosan extended tomato shelf life to 14 days at ambient temperature. what are the expected impacts on horticulture? utilizing fish waste-derived natural preservatives to extend tomato shelf life could reduce postharvest losses and open access to distant markets for producers. this eco-friendly approach also serves as a clean-label alternative to synthetic preservatives, aligning with both sustainability goals and consumer preferences."
+         data-summary="利用鱼鳞提取的壳聚糖制备可食用保鲜膜，评估其对番茄常温贮藏14天的保鲜效果。1%壳聚糖处理组在第10天仍无可见腐烂，而对照组严重皱缩腐烂；处理组维生素c保留率（31.53%）和可滴定酸度（高16-23%）显著优于对照组，总可溶性糖增幅降低26-28%，表明成熟延缓。鱼鳞壳聚糖涂层可将番茄货架期延长至14天，为渔业废弃物高值化利用和番茄采后减损提供新方案。"
+         data-impact="true">
+
+      
+      <div class="hi-badge">🌟 高影响力</div>
+      
+
+      
+      <div class="journal">
+        ⭐
+        📰 European Journal of Horticultural Science
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 利用鱼鳞提取的壳聚糖制备可食用保鲜膜，评估其对番茄常温贮藏14天的保鲜效果。1%壳聚糖处理组在第10天仍无可见腐烂，而对照组严重皱缩腐烂；处理组维生素C保留率（31.53%）和可滴定酸度（高16-23%）显著优于对照组，总可溶性糖增幅降低26-28%，表明成熟延缓。鱼鳞壳聚糖涂层可将番茄货架期延长至14天，为渔业废弃物高值化利用和番茄采后减损提供新方案。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1079/ejhs.2026.0014" target="_blank" rel="noopener">Natural food preservative from fish scales extends the shelf life of tomato (
+                    <i>Lycopersicon esculentum</i>
+                    )</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Mustary, Shobnom; Sultana, Mst.Adia; Bishnu Angon, Prodipto;...</span>
+        
+        <span>📅 2026-06-22</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">ABSTRACT Tomatoes ( Lycopersicon esculentum ) are widely consumed and economically important vegetable crops worldwide. However, their high perishability and short postharvest life result in substantial losses. Typically, tomatoes remain marketable for only 4–8 days at ambient conditions due to rapid physiological and biochemical changes, including moisture loss, softening, pigment development and compositional alterations. These postharvest losses not only affect farmers’ income but also contribute to food insecurity. This study evaluated the effectiveness of edible chitosan coatings derived from fish scales in extending the shelf life and preserving the quality of tomatoes during storage. Fruits were treated with 0% (control), 1% chitosan and 2% chitosan solutions and stored at room temperature for 14 days. Physical, chemical and organoleptic data were analysed throughout the storage period. The results demonstrated that chitosan coatings significantly delayed deterioration compared to the control. By day 10, control fruits exhibited severe wrinkling, soft rot and dark spots, whereas 2% chitosan showed moderate damage and 1% chitosan showed no visible deterioration. Weight loss was reduced from 9.1% in control to 6.7–6.9% in treated samples. The 1% chitosan treatment retained the highest vitamin C content (31.53%), whereas the control recorded the lowest (14.65%). Treated tomatoes also exhibited 16–23% higher titrable acidity. Total soluble sugars increased by approximately 45% in control fruits but decreased by 26–28% in treated samples, indicating delayed ripening. Pigment development was significantly higher in untreated fruits (86%) compared to treated ones (64%). Nitrate content decreased in all samples, with a greater reduction observed in control fruits (73%) than in treated ones (54%). Organoleptic evaluation indicated that 1% chitosan-coated tomatoes were most acceptable. Overall, our research indicates that chitosan coating successfully extends the shelf life of tomato fruit and preserves fruit quality while it is in storage. It also presents a great opportunity for the edible coating to be successfully commercialized for tomato producers and the waste management sector. Significance of the study What is already known on this subject? Tomatoes suffer significant postharvest losses due to their short shelf life, but chitosan-based coatings offer a promising solution by forming semipermeable barriers that slow respiration, delay ripening and extend freshness. Derived from crustacean shells, chitosan’s antimicrobial and film-forming properties have been shown in multiple studies to effectively preserve tomato quality attributes. What are the new findings? This study contributes several novel insights: Source Innovation : First use of fish scale-derived chitosan specifically for tomato preservation. Optimal Concentration : 1% chitosan reduced tomato weight loss by up to 65% vs. control. Comprehensive Quality Preservation : Coating retained vitamin C, acidity, chlorophyll and nitrate content. Extended Shelf Life : Fish scale chitosan extended tomato shelf life to 14 days at ambient temperature. What are the expected impacts on horticulture? Utilizing fish waste-derived natural preservatives to extend tomato shelf life could reduce postharvest losses and open access to distant markets for producers. This eco-friendly approach also serves as a clean-label alternative to synthetic preservatives, aligning with both sustainability goals and consumer preferences.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="market chain values of capture fisheries in the lower mekong river basin and implications for management"
+         data-authors="lai, quan t.; cowx, ian g.; coates, david; tram, tran chau bao; huy, hoang duc"
+         data-journal="fisheries management and ecology"
+         data-abstract="abstract fish are an important commodity to communities in the lower mekong basin (lmb), representing the most important protein source for millions of people in the region. sustainable fisheries do not only require sustainable fish catches but also improve benefits and return to fishing communities through the fisheries value chain. fish trade was surveyed in 12 provinces in the lmb to quantify the diversity, abundance and prices of fish species between landing sites and urban markets to understand mark‐up values through the value chain as an entry point to designing a strategic intervention to improve financial returns to fishers. across the lmb, mark‐up in prices paid to fishers at landing sites and those reportedly charged to consumers in urban markets ranged from 36% to 110% on average, and reached as high as 611% for certain species. cambodia and vietnam exhibited similar average mark‐up values at 104% and 112% respectively (range 0% to 611%), while lao pdr and thailand both showed lower mark‐up prices at 36% (range 0%–175%). this highlights the potential for higher economic returns to fishing communities. of 136 species in 11 major ecological guilds recorded from urban markets, potamodromous migratory main channel refuge seeker species (guild 4) and potamodromous short‐distance migratory main channel spawner species (guild 3) were the most diverse guilds that contributed 47% of species and were present in markets in all countries. guild 3 also dominated the weight sold and individual species value, reflecting their high market demand in all countries. these findings show the added value generated in small‐scale inland fisheries systems in the lmb and justify further investment and research on how to improve financial returns to fishers, without necessarily increasing fish prices, which is essential to increase motivation for conservation of fish stocks and their habitats."
+         data-summary="本研究调查了湄公河下游流域12个省份的鱼类贸易，量化了从上岸点到城市市场的鱼类多样性、丰度和价格，以了解价值链中的加价幅度。结果显示，上岸点渔获价格与城市市场售价的平均加价幅度为36%至110%，某些物种高达611%。柬埔寨和越南的平均加价分别为104%和112%，而老挝和泰国仅为36%，表明渔业社区有提高经济回报的潜力。在记录的136种鱼类中，洄游性河道避难种（guild 4）和短距离洄游产卵种（guild 3）占物种总数的47%，且guild 3在重量和单种价值上占主导，市场需求高。这些发现为通过价值链优化提升渔民生计、激励鱼类资源保护提供了依据。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Fisheries Management and Ecology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究调查了湄公河下游流域12个省份的鱼类贸易，量化了从上岸点到城市市场的鱼类多样性、丰度和价格，以了解价值链中的加价幅度。结果显示，上岸点渔获价格与城市市场售价的平均加价幅度为36%至110%，某些物种高达611%。柬埔寨和越南的平均加价分别为104%和112%，而老挝和泰国仅为36%，表明渔业社区有提高经济回报的潜力。在记录的136种鱼类中，洄游性河道避难种（Guild 4）和短距离洄游产卵种（Guild 3）占物种总数的47%，且Guild 3在重量和单种价值上占主导，市场需求高。这些发现为通过价值链优化提升渔民生计、激励鱼类资源保护提供了依据。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/fme.70091" target="_blank" rel="noopener">Market Chain Values of Capture Fisheries in the Lower Mekong River Basin and Implications for Management</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Lai, Quan T.; Cowx, Ian G.; Coates, David; Tram, Tran Chau B...</span>
+        
+        <span>📅 2026-06-22</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">ABSTRACT Fish are an important commodity to communities in the Lower Mekong Basin (LMB), representing the most important protein source for millions of people in the region. Sustainable fisheries do not only require sustainable fish catches but also improve benefits and return to fishing communities through the fisheries value chain. Fish trade was surveyed in 12 provinces in the LMB to quantify the diversity, abundance and prices of fish species between landing sites and urban markets to understand mark‐up values through the value chain as an entry point to designing a strategic intervention to improve financial returns to fishers. Across the LMB, mark‐up in prices paid to fishers at landing sites and those reportedly charged to consumers in urban markets ranged from 36% to 110% on average, and reached as high as 611% for certain species. Cambodia and Vietnam exhibited similar average mark‐up values at 104% and 112% respectively (range 0% to 611%), while Lao PDR and Thailand both showed lower mark‐up prices at 36% (range 0%–175%). This highlights the potential for higher economic returns to fishing communities. Of 136 species in 11 major ecological guilds recorded from urban markets, potamodromous migratory main channel refuge seeker species (Guild 4) and potamodromous short‐distance migratory main channel spawner species (Guild 3) were the most diverse guilds that contributed 47% of species and were present in markets in all countries. Guild 3 also dominated the weight sold and individual species value, reflecting their high market demand in all countries. These findings show the added value generated in small‐scale inland fisheries systems in the LMB and justify further investment and research on how to improve financial returns to fishers, without necessarily increasing fish prices, which is essential to increase motivation for conservation of fish stocks and their habitats.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="a fishery‐dependent cpue‐based proxy index for juvenile japanese anchovy (
+                    <scp>
+                      <i>engraulis japonicus</i>
+                    </scp>
+                    ) recruitment variability in southeastern korea: associations with lagged climate‐ocean conditions"
+         data-authors="kim, jin yeong; kim, minhye; jeong, yong dam; sohn, dongwha; kim, sangil; kim, yongkuk"
+         data-journal="fisheries oceanography"
+         data-abstract="abstract we developed and evaluated a fishery‐dependent catch‐per‐unit‐effort (cpue)‐based proxy index for juvenile japanese anchovy ( engraulis japonicus ) recruitment‐related variability in the southeastern coastal waters of korea. the proxy was constructed from bimonthly cpue of the smallest juvenile size class (20–40 mm) in the anchovy drag‐net fishery during 1992–2018. we reassessed lagged associations with large‐scale climate indices and local coastal variables using wavelet coherence, autocorrelation diagnostics, structural‐equation/path‐regression diagnostics, and generalized linear/additive modeling sensitivity analyses. wavelet analysis used a bimonthly time grid (dt = 2 months), 1000 monte carlo simulations, false‐discovery‐rate correction, and robustness checks based on fourier‐randomized surrogates, stl‐residual series, and ar(1)‐prewhitened series. raw white‐noise wavelet analyses reproduced localized seasonal‐to‐annual coherence, particularly for local temperature, salinity, log10‐transformed precipitation, and the vertical temperature‐difference index. however, multiyear pdo/mei coherence was not stable after fdr correction or under autocorrelation‐sensitive robustness checks. we therefore interpret multiyear climate associations as exploratory low‐frequency associations rather than direct cohort‐level biological delays. phase‐dependent path‐regression diagnostics indicated heterogeneous association structures across pdo phases, with the most consistent short‐lag signal involving temperature. seasonal log‐linear sensitivity models provided moderate explanatory power on the log scale, with adjusted r 2 values of 0.558, 0.539, and 0.523 for the august, october, and august–october seasonal proxy models, respectively. overall, the analysis supports using the cpue series as an operational fishery‐dependent proxy for recruitment‐related variability, while emphasizing that the inferred lagged relationships are statistical associations requiring cautious interpretation and future validation with fishery‐independent surveys."
+         data-summary="本研究基于1992-2018年韩国东南沿海日本鳀（engraulis japonicus）拖网渔业的最小幼鱼规格（20-40 mm）双月cpue数据，构建了依赖渔业的补充量变异代理指数。通过小波相干性、自相关诊断、结构方程/路径回归及广义线性/加性模型敏感性分析，重新评估了与滞后气候指数和局地环境变量的关联。结果表明，局地温度、盐度、对数转化降水量及垂直温差指数呈现季节性至年际相干性，但多年pdo/mei相干性在fdr校正后不稳定。季节性对数线性模型解释力中等（调整r²为0.523-0.558），支持将cpue序列作为补充量变异的操作代理，但强调滞后关系需谨慎解释并需渔业独立调查验证。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Fisheries Oceanography
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究基于1992-2018年韩国东南沿海日本鳀（Engraulis japonicus）拖网渔业的最小幼鱼规格（20-40 mm）双月CPUE数据，构建了依赖渔业的补充量变异代理指数。通过小波相干性、自相关诊断、结构方程/路径回归及广义线性/加性模型敏感性分析，重新评估了与滞后气候指数和局地环境变量的关联。结果表明，局地温度、盐度、对数转化降水量及垂直温差指数呈现季节性至年际相干性，但多年PDO/MEI相干性在FDR校正后不稳定。季节性对数线性模型解释力中等（调整R²为0.523-0.558），支持将CPUE序列作为补充量变异的操作代理，但强调滞后关系需谨慎解释并需渔业独立调查验证。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/fog.70057" target="_blank" rel="noopener">A Fishery‐Dependent CPUE‐Based Proxy Index for Juvenile Japanese Anchovy (
+                    <scp>
+                      <i>Engraulis japonicus</i>
+                    </scp>
+                    ) Recruitment Variability in Southeastern Korea: Associations With Lagged Climate‐Ocean Conditions</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Kim, Jin Yeong; Kim, Minhye; Jeong, Yong Dam; Sohn, Dongwha;...</span>
+        
+        <span>📅 2026-06-22</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">ABSTRACT We developed and evaluated a fishery‐dependent catch‐per‐unit‐effort (CPUE)‐based proxy index for juvenile Japanese anchovy ( Engraulis japonicus ) recruitment‐related variability in the southeastern coastal waters of Korea. The proxy was constructed from bimonthly CPUE of the smallest juvenile size class (20–40 mm) in the anchovy drag‐net fishery during 1992–2018. We reassessed lagged associations with large‐scale climate indices and local coastal variables using wavelet coherence, autocorrelation diagnostics, structural‐equation/path‐regression diagnostics, and generalized linear/additive modeling sensitivity analyses. Wavelet analysis used a bimonthly time grid (dt = 2 months), 1000 Monte Carlo simulations, false‐discovery‐rate correction, and robustness checks based on Fourier‐randomized surrogates, STL‐residual series, and AR(1)‐prewhitened series. Raw white‐noise wavelet analyses reproduced localized seasonal‐to‐annual coherence, particularly for local temperature, salinity, log10‐transformed precipitation, and the vertical temperature‐difference index. However, multiyear PDO/MEI coherence was not stable after FDR correction or under autocorrelation‐sensitive robustness checks. We therefore interpret multiyear climate associations as exploratory low‐frequency associations rather than direct cohort‐level biological delays. Phase‐dependent path‐regression diagnostics indicated heterogeneous association structures across PDO phases, with the most consistent short‐lag signal involving temperature. Seasonal log‐linear sensitivity models provided moderate explanatory power on the log scale, with adjusted R 2 values of 0.558, 0.539, and 0.523 for the August, October, and August–October seasonal proxy models, respectively. Overall, the analysis supports using the CPUE series as an operational fishery‐dependent proxy for recruitment‐related variability, while emphasizing that the inferred lagged relationships are statistical associations requiring cautious interpretation and future validation with fishery‐independent surveys.</div>
+      
+    </div>
+    
+    <div class="paper-card high-impact"
+         data-title="how do government subsidies affect the economic viability of industrial shrimp fisheries on the amazon continental shelf?"
+         data-authors="araújo, janayna galvão de; santos, marcos antônio souza; bentes, bianca; peixoto, ualerson; fredou, flávia lucena; isaac, victoria j."
+         data-journal="frontiers in marine science"
+         data-abstract="the southern brown shrimp (penaeus subtilis) is the primary crustacean species commercially exploited by the industrial trawl shrimp fleet operating over the amazon continental shelf. however, there is no information on the economic viability of this activity. economic studies on fisheries can provide guidance in the design and implementation of management measures. this study estimated the cost and profitability of industrial trawl fishing for southern brown shrimp, analysing two scenarios: with and without diesel fuel subsidies, to verify how this subsidy policy affects the profitability of the fishery. data from 23% of the licensed boats were obtained from three companies and nine professionals in the productive sector, in order to gather information on the characteristics of this fishery and production costs. industrial fishing requires a high level of investment, and fuel costs are the most significant variable expenses. the southern brown shrimp is fished using trawling, a non-selective fishing gear that also catches high amounts of bycatch, including fauna that can be commercially valuable (i.e., byproducts). these byproducts added to the discount from the subsidy favour the profitability of the fishery, making it more attractive. the profitability results of the brown shrimp fishery were positive, showing the economic viability of the activity. the activity requires an average investment of usd 327.235, generating an annual revenue of usd 423.907 per vessel, with a positive net profit rate of 47% and 27% with and without the diesel fuel subsidy, respectively. the first two trips out of the four or five per year are the most profitable. however, the revenue obtained is highly unstable due to changes in the catchability of the target species throughout the year, which depends on the fishing ground and climatic variations over time. without the diesel subsidy, the fishery would still show positive economic results in all trips. a review of this policy is strongly recommended, as it may mask the sustainability of the fishery in the future."
+         data-summary="本研究评估了亚马逊大陆架工业拖网捕捞南方褐虾（penaeus subtilis）的经济可行性，并分析了柴油补贴政策对渔业盈利能力的影响。基于23%许可渔船的数据，发现该渔业需要平均投资32.7万美元，每船年收入42.4万美元，在有和没有柴油补贴的情况下净利润率分别为47%和27%。尽管补贴提高了渔业吸引力，但即使无补贴，所有航次仍保持正收益，建议重新审视补贴政策以避免掩盖渔业的长期可持续性。"
+         data-impact="true">
+
+      
+      <div class="hi-badge">🌟 高影响力</div>
+      
+
+      
+      <div class="journal">
+        ⭐
+        📰 Frontiers in Marine Science
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究评估了亚马逊大陆架工业拖网捕捞南方褐虾（Penaeus subtilis）的经济可行性，并分析了柴油补贴政策对渔业盈利能力的影响。基于23%许可渔船的数据，发现该渔业需要平均投资32.7万美元，每船年收入42.4万美元，在有和没有柴油补贴的情况下净利润率分别为47%和27%。尽管补贴提高了渔业吸引力，但即使无补贴，所有航次仍保持正收益，建议重新审视补贴政策以避免掩盖渔业的长期可持续性。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3389/fmars.2026.1580526" target="_blank" rel="noopener">How do government subsidies affect the economic viability of industrial shrimp fisheries on the Amazon Continental Shelf?</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Araújo, Janayna Galvão de; Santos, Marcos Antônio Souza; Ben...</span>
+        
+        <span>📅 2026-06-22</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">The southern brown shrimp (Penaeus subtilis) is the primary crustacean species commercially exploited by the industrial trawl shrimp fleet operating over the Amazon continental shelf. However, there is no information on the economic viability of this activity. Economic studies on fisheries can provide guidance in the design and implementation of management measures. This study estimated the cost and profitability of industrial trawl fishing for southern brown shrimp, analysing two scenarios: with and without diesel fuel subsidies, to verify how this subsidy policy affects the profitability of the fishery. Data from 23% of the licensed boats were obtained from three companies and nine professionals in the productive sector, in order to gather information on the characteristics of this fishery and production costs. Industrial fishing requires a high level of investment, and fuel costs are the most significant variable expenses. The southern brown shrimp is fished using trawling, a non-selective fishing gear that also catches high amounts of bycatch, including fauna that can be commercially valuable (i.e., byproducts). These byproducts added to the discount from the subsidy favour the profitability of the fishery, making it more attractive. The profitability results of the brown shrimp fishery were positive, showing the economic viability of the activity. The activity requires an average investment of USD 327.235, generating an annual revenue of USD 423.907 per vessel, with a positive net profit rate of 47% and 27% with and without the diesel fuel subsidy, respectively. The first two trips out of the four or five per year are the most profitable. However, the revenue obtained is highly unstable due to changes in the catchability of the target species throughout the year, which depends on the fishing ground and climatic variations over time. Without the diesel subsidy, the fishery would still show positive economic results in all trips. A review of this policy is strongly recommended, as it may mask the sustainability of the fishery in the future.</div>
+      
+    </div>
+    
+    <div class="paper-card high-impact"
+         data-title="a frequency domain enhanced lightweight oriented object detector for floating raft aquaculture mapping in high-resolution coastal imagery"
+         data-authors="cao, zhen; liu, peng; ren, chuanzhen; wang, qingyang; li, jingwen"
+         data-journal="frontiers in marine science"
+         data-abstract="accurate mapping of floating raft aquaculture (fra) from high-resolution remote sensing imagery is essential for long-term coastal aquaculture monitoring and sustainable marine management. however, existing generic object detectors often struggle to achieve a satisfactory balance among target–background discrimination, orientation aware localization, and computational efficiency in large scale multi-temporal applications. to address these challenges, we propose falod, a frequency domain enhanced lightweight oriented detector for fra mapping from high-resolution remote sensing imagery. falod introduces a discrete fourier transform (dft) based spectral attention module to enhance fra-related edge, texture, and structural responses while suppressing wave-induced clutter and other sea-surface interference. in addition, an enhanced bidirectional multi-scale feature fusion strategy is designed to strengthen cross-scale feature interaction and improve the representation of dense, elongated, and scale-varying fra targets. to evaluate the proposed method, we constructed an oriented fra dataset using high-resolution google earth imagery from the maowei sea and qinzhou bay regions in guangxi, china. experimental results show that falod achieves a precision of 0.928 and a recall of 0.895, outperforming several representative oriented object detectors. furthermore, falod was applied to large-scale multi-temporal imagery from 2010 to 2025 to investigate the spatiotemporal evolution of fra activities. the results reveal a marked long-term expansion of fra, with rapid growth during 2015–2020 followed by a relatively stable but intensified development stage. these findings indicate that falod provides an accurate, efficient, and scalable solution for orientation-aware fra mapping and long-term coastal aquaculture monitoring."
+         data-summary="针对高分辨率遥感影像中浮筏养殖（fra）精准制图需求，提出频域增强轻量级定向检测器falod。该方法通过离散傅里叶变换（dft）频谱注意力模块增强养殖目标边缘纹理响应并抑制海面干扰，结合双向多尺度特征融合策略提升密集长条形目标的表征能力。基于广西茅尾海和钦州湾google earth影像构建的定向fra数据集测试显示，精度达0.928、召回率0.895，优于多种代表性定向检测器。2010-2025年多时相应用揭示fra呈长期扩张趋势，2015-2020年快速增长后进入稳定强化阶段。"
+         data-impact="true">
+
+      
+      <div class="hi-badge">🌟 高影响力</div>
+      
+
+      
+      <div class="journal">
+        ⭐
+        📰 Frontiers in Marine Science
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 针对高分辨率遥感影像中浮筏养殖（FRA）精准制图需求，提出频域增强轻量级定向检测器FALOD。该方法通过离散傅里叶变换（DFT）频谱注意力模块增强养殖目标边缘纹理响应并抑制海面干扰，结合双向多尺度特征融合策略提升密集长条形目标的表征能力。基于广西茅尾海和钦州湾Google Earth影像构建的定向FRA数据集测试显示，精度达0.928、召回率0.895，优于多种代表性定向检测器。2010-2025年多时相应用揭示FRA呈长期扩张趋势，2015-2020年快速增长后进入稳定强化阶段。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3389/fmars.2026.1871871" target="_blank" rel="noopener">A frequency domain enhanced lightweight oriented object detector for floating raft aquaculture mapping in high-resolution coastal imagery</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Cao, Zhen; Liu, Peng; Ren, Chuanzhen; Wang, Qingyang; Li, Ji...</span>
+        
+        <span>📅 2026-06-22</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Accurate mapping of floating raft aquaculture (FRA) from high-resolution remote sensing imagery is essential for long-term coastal aquaculture monitoring and sustainable marine management. However, existing generic object detectors often struggle to achieve a satisfactory balance among target–background discrimination, orientation aware localization, and computational efficiency in large scale multi-temporal applications. To address these challenges, we propose FALOD, a frequency domain enhanced lightweight oriented detector for FRA mapping from high-resolution remote sensing imagery. FALOD introduces a discrete Fourier transform (DFT) based spectral attention module to enhance FRA-related edge, texture, and structural responses while suppressing wave-induced clutter and other sea-surface interference. In addition, an enhanced bidirectional multi-scale feature fusion strategy is designed to strengthen cross-scale feature interaction and improve the representation of dense, elongated, and scale-varying FRA targets. To evaluate the proposed method, we constructed an oriented FRA dataset using high-resolution Google Earth imagery from the Maowei Sea and Qinzhou Bay regions in Guangxi, China. Experimental results show that FALOD achieves a precision of 0.928 and a recall of 0.895, outperforming several representative oriented object detectors. Furthermore, FALOD was applied to large-scale multi-temporal imagery from 2010 to 2025 to investigate the spatiotemporal evolution of FRA activities. The results reveal a marked long-term expansion of FRA, with rapid growth during 2015–2020 followed by a relatively stable but intensified development stage. These findings indicate that FALOD provides an accurate, efficient, and scalable solution for orientation-aware FRA mapping and long-term coastal aquaculture monitoring.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="climate-smart aquaculture as a tool for blue economy revolution in botswana: a review"
+         data-authors="molefe, montshwari; maulu, sahya; bokhutlo, thethela; mosepele, belda quetina; choto, choto john; lekgabe, yolanda boipelo; legodimo, phemelo phillip; letia, mokola keemenao; khibana, festor; sekate, coleen constance"
+         data-journal="frontiers in sustainable food systems"
+         data-abstract="climate smart aquaculture (csaq) has the potential to transform botswana’s aquaculture sector and contribute to the development of a resilient blue economy. this study synthesizes existing literature on botswana’s climate, hydrology, and aquaculture prospects to evaluate the suitability of csaq across the country. the analysis identifies three climatic regions: okavango-chobe, eastern margin, and arid southern-western regions. the okavango-chobe region, characterized by seasonal pans, lagoons, and lakes, is well suited to traditional aquaculture and can be further enhanced through integrated pond systems, integrated wetland aquaculture, recirculating aquaculture systems, biofloc technology, aquaponics, and integrated aquaculture-agriculture systems, subject to strict conservation requirements. the eastern margin presents moderate aquaculture potential, supported by constructed dams and capture-based aquaculture, with recirculating aquaculture system (ras), biofloc, aquaponics, and integrated agriculture-aquaculture systems (iaas) offering viable climate smart options. in contrast, aquaculture development in the arid southern-western region is largely restricted to ultra-water efficient systems, including ras, biofloc, and aquaponics. key constraints to csaq adoption include limited technical capacity, climate variability, unfavorable environmental conditions, and restricted access to finance. these challenges can be addressed through targeted capacity building, adoption of ultra-efficient production technologies, diversification strategies, increased research investment, and innovative financing mechanisms. the study recommends that successful csaq adoption in botswana be underpinned by policy and institutional frameworks that emphasize conservation compliance, sustainable water resource management, green energy technologies, and human capacity development."
+         data-summary="该综述评估了气候智慧型水产养殖（csaq）在博茨瓦纳的适用性，将其划分为三个气候区：奥卡万戈-乔贝区适合传统养殖及综合系统，东部边缘区具有中等潜力，干旱西南区仅限超节水系统。主要制约因素包括技术能力不足、气候变异和融资限制，建议通过能力建设、高效技术采用和政策框架推动csaq发展。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Frontiers in Sustainable Food Systems
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该综述评估了气候智慧型水产养殖（CSAq）在博茨瓦纳的适用性，将其划分为三个气候区：奥卡万戈-乔贝区适合传统养殖及综合系统，东部边缘区具有中等潜力，干旱西南区仅限超节水系统。主要制约因素包括技术能力不足、气候变异和融资限制，建议通过能力建设、高效技术采用和政策框架推动CSAq发展。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3389/fsufs.2026.1817357" target="_blank" rel="noopener">Climate-smart aquaculture as a tool for blue economy revolution in Botswana: a review</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Molefe, Montshwari; Maulu, Sahya; Bokhutlo, Thethela; Mosepe...</span>
+        
+        <span>📅 2026-06-22</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Climate Smart Aquaculture (CSAq) has the potential to transform Botswana’s aquaculture sector and contribute to the development of a resilient blue economy. This study synthesizes existing literature on Botswana’s climate, hydrology, and aquaculture prospects to evaluate the suitability of CSAq across the country. The analysis identifies three climatic regions: Okavango-Chobe, Eastern margin, and Arid Southern-Western regions. The Okavango-Chobe region, characterized by seasonal pans, lagoons, and lakes, is well suited to traditional aquaculture and can be further enhanced through integrated pond systems, integrated wetland aquaculture, recirculating aquaculture systems, biofloc technology, aquaponics, and Integrated Aquaculture-Agriculture systems, subject to strict conservation requirements. The Eastern margin presents moderate aquaculture potential, supported by constructed dams and capture-based aquaculture, with Recirculating Aquaculture System (RAS), biofloc, aquaponics, and Integrated Agriculture-Aquaculture Systems (IAAS) offering viable climate smart options. In contrast, aquaculture development in the Arid Southern-Western region is largely restricted to ultra-water efficient systems, including RAS, biofloc, and aquaponics. Key constraints to CSAq adoption include limited technical capacity, climate variability, unfavorable environmental conditions, and restricted access to finance. These challenges can be addressed through targeted capacity building, adoption of ultra-efficient production technologies, diversification strategies, increased research investment, and innovative financing mechanisms. The study recommends that successful CSAq adoption in Botswana be underpinned by policy and institutional frameworks that emphasize conservation compliance, sustainable water resource management, green energy technologies, and human capacity development.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="a decade of probiotic aquaculture practice: bibliometric insights into trends, players, and emerging topics"
+         data-authors="abdul razak, rashidah; yusof, muhammad fitri; ahmad ariffin, syamsul; jaapar, muhamad zudaidy; md ali, amatul samahah"
+         data-journal="indonesian aquaculture journal"
+         data-abstract="probiotics in aquaculture gain research interest due to their potential to improve production and promote sustainable aquaculture. this study aims to systematically identify the trend, topic of interest, key players and collaboration in probiotic aquaculture research field for past 10 years. we conducted a bibliometric analysis using scopus to collect and analyse scholarly publications related to probiotic in aquaculture. the sample is composed by 1467 articles in total with increase trends pattern in number of publications per year. metrics such as citation counts, co-authorship networks, and keyword co-occurrence were employed to unveil the research landscape. the vosviewer tool was utilized for network visualizations, offering insights into collaboration patterns and thematic clusters. preliminary findings indicate increasing trend in terms of documents per year, with countries such as china, india, spain and us playing pivotal roles in number of publications. keyword co-occurrence analysis uncovers central themes is probiotic and aquaculture, while emerging topics such as intestinal health, penaeus vannamei, bacteria, and water quality start to be explored. citation analysis discovers most contributing authors, countries, institution, and journals in this research area. the co-authorship network analysis reveals clustering of collaborations between countries, emphasizing the global interest research of probiotic in aquaculture. we concluded that global theme will remain the major focus with new collaborations focus on specific niche in this research will emerge as it benefits the contributing countries."
+         data-summary="通过文献计量学方法分析近十年益生菌在水产养殖领域的研究趋势，基于scopus数据库1467篇文献的引文、合著网络和关键词共现分析，发现中国、印度、西班牙和美国为主要贡献国，肠道健康、凡纳滨对虾、细菌和水质为新兴热点主题，全球合作网络呈现区域化聚集特征。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Indonesian Aquaculture Journal
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 通过文献计量学方法分析近十年益生菌在水产养殖领域的研究趋势，基于Scopus数据库1467篇文献的引文、合著网络和关键词共现分析，发现中国、印度、西班牙和美国为主要贡献国，肠道健康、凡纳滨对虾、细菌和水质为新兴热点主题，全球合作网络呈现区域化聚集特征。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.15578/iaj.21.1.2026.57-68" target="_blank" rel="noopener">A DECADE OF PROBIOTIC AQUACULTURE PRACTICE: BIBLIOMETRIC INSIGHTS INTO TRENDS, PLAYERS, AND EMERGING TOPICS</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Abdul Razak, Rashidah; Yusof, Muhammad Fitri; Ahmad Ariffin,...</span>
+        
+        <span>📅 2026-06-22</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Probiotics in aquaculture gain research interest due to their potential to improve production and promote sustainable aquaculture. This study aims to systematically identify the trend, topic of interest, key players and collaboration in probiotic aquaculture research field for past 10 years. We conducted a bibliometric analysis using Scopus to collect and analyse scholarly publications related to probiotic in aquaculture. The sample is composed by 1467 articles in total with increase trends pattern in number of publications per year. Metrics such as citation counts, co-authorship networks, and keyword co-occurrence were employed to unveil the research landscape. The VOSviewer tool was utilized for network visualizations, offering insights into collaboration patterns and thematic clusters. Preliminary findings indicate increasing trend in terms of documents per year, with countries such as China, India, Spain and US playing pivotal roles in number of publications. Keyword co-occurrence analysis uncovers central themes is probiotic and aquaculture, while emerging topics such as intestinal health, Penaeus vannamei, bacteria, and water quality start to be explored. Citation analysis discovers most contributing authors, countries, institution, and journals in this research area. The co-authorship network analysis reveals clustering of collaborations between countries, emphasizing the global interest research of probiotic in aquaculture. We concluded that global theme will remain the major focus with new collaborations focus on specific niche in this research will emerge as it benefits the contributing countries.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="efficiency of automated and manual plasma cell immunoselection for
+                    <scp>fish</scp>
+                    analysis in multiple myeloma"
+         data-authors="podgornik, helena; reberšek, katarina"
+         data-journal="international journal of laboratory hematology"
+         data-abstract="abstract introduction multiple myeloma (mm) is a heterogeneous plasma cell (pc) malignancy in both clinical presentation and genetic profile. cytogenetic characterization, particularly by interphase fluorescence in situ hybridization (fish), is critical for risk stratification and treatment decisions. fish results depend on the pc infiltration rate in bone marrow (bm); therefore, cd138‐positive immunoselection is required to overcome reduced fish sensitivity due to low infiltration. we evaluated the performance of automated pc immunoselection compared to the manual method. methods we retrospectively analyzed data from 715 bm samples sent for routine fish testing between 2019 and 2024. pcs were isolated manually ( n = 351) or automatically ( n = 364). bm infiltration was assessed by flow cytometry (fc) and/or cytomorphology. fish analysis was performed using a primary panel with three dna probes or an expanded panel with additional probes. confirmed diagnoses were obtained from clinical records. results fish was successfully performed in 81% of samples, with automated processing achieving a higher success rate (86% vs. 75%, p &lt; 0.001). automated processing provided higher pc yields, enabling testing with expanded probe sets. chromosomal abnormalities were detected in more than 90% of confirmed mm cases, regardless of isolation method. pc infiltration strongly predicted fish success, with infiltration of ≥ 3% corresponding to an 80% probability of successful fish. conclusions automated immunoselection improves pc yield, enabling broader fish testing compared to manual processing. information on pc infiltration obtained by cytomorphology or fc, which indicates sample quality, can support quality assessment in the cytogenetics laboratory."
+         data-summary="本研究比较了自动化与手动浆细胞免疫分选在多发性骨髓瘤fish分析中的效率。回顾分析715份骨髓样本（2019-2024年），自动化处理成功率（86%）显著高于手动（75%），且能获得更高浆细胞产量以支持扩展探针组检测。浆细胞浸润率≥3%时fish成功概率达80%，提示浸润率可作为细胞遗传学实验室质量评估指标。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 International Journal of Laboratory Hematology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究比较了自动化与手动浆细胞免疫分选在多发性骨髓瘤FISH分析中的效率。回顾分析715份骨髓样本（2019-2024年），自动化处理成功率（86%）显著高于手动（75%），且能获得更高浆细胞产量以支持扩展探针组检测。浆细胞浸润率≥3%时FISH成功概率达80%，提示浸润率可作为细胞遗传学实验室质量评估指标。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/ijlh.70173" target="_blank" rel="noopener">Efficiency of Automated and Manual Plasma Cell Immunoselection for
+                    <scp>FISH</scp>
+                    Analysis in Multiple Myeloma</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Podgornik, Helena; Reberšek, Katarina</span>
+        
+        <span>📅 2026-06-23</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">ABSTRACT Introduction Multiple myeloma (MM) is a heterogeneous plasma cell (PC) malignancy in both clinical presentation and genetic profile. Cytogenetic characterization, particularly by interphase fluorescence in situ hybridization (FISH), is critical for risk stratification and treatment decisions. FISH results depend on the PC infiltration rate in bone marrow (BM); therefore, CD138‐positive immunoselection is required to overcome reduced FISH sensitivity due to low infiltration. We evaluated the performance of automated PC immunoselection compared to the manual method. Methods We retrospectively analyzed data from 715 BM samples sent for routine FISH testing between 2019 and 2024. PCs were isolated manually ( n = 351) or automatically ( n = 364). BM infiltration was assessed by flow cytometry (FC) and/or cytomorphology. FISH analysis was performed using a primary panel with three DNA probes or an expanded panel with additional probes. Confirmed diagnoses were obtained from clinical records. Results FISH was successfully performed in 81% of samples, with automated processing achieving a higher success rate (86% vs. 75%, p &lt; 0.001). Automated processing provided higher PC yields, enabling testing with expanded probe sets. Chromosomal abnormalities were detected in more than 90% of confirmed MM cases, regardless of isolation method. PC infiltration strongly predicted FISH success, with infiltration of ≥ 3% corresponding to an 80% probability of successful FISH. Conclusions Automated immunoselection improves PC yield, enabling broader FISH testing compared to manual processing. Information on PC infiltration obtained by cytomorphology or FC, which indicates sample quality, can support quality assessment in the cytogenetics laboratory.</div>
+      
+    </div>
+    
+    <div class="paper-card high-impact"
+         data-title="analysis of growth and survival of kelabau fish larvae (osteochilus melanopleurus) fed natural feeds with different feed-transition periods"
+         data-authors="akmal; rukmini; noor arida fauzana"
+         data-journal="international journal of science and environment (ijse)"
+         data-abstract="kelabau fish is a local freshwater fish with high economic value, however, successful seed production is still constrained by high mortality and slow growth during the larval stage. this study aimed to analyze the growth and survival of kelabau fish larvae fed natural feeds with different feed-transition periods. the study was conducted at the mandiangin freshwater aquaculture center using a completely randomized design (crd) with four treatments and three replications. the tested treatments consisted of different transition times among natural feeds, namely infusoria, artemia nauplii, and moina, for larvae aged two days after hatching during a 15-day rearing period. the observed parameters included absolute length growth, absolute weight growth, and larval survival. the data were analyzed using analysis of variance (anova) at a 95% confidence level, followed by duncan’s test when significant differences were found. the results showed that different natural-feed transition periods had a significant effect (p &lt; 0.05) on larval length growth, but had no significant effect (p &gt; 0.05) on weight growth or survival. the highest length growth was obtained in treatment a at 8.55 ± 0.34 mm, followed by treatment b at 8.42 ± 0.28 mm, while the lowest value was recorded in treatment d at 7.08 ± 0.13 mm. weight growth ranged from 0.0161 ± 0.0016 to 0.0179 ± 0.0033 g, and survival ranged from 83.33 ± 3.85% to 95.56 ± 5.09%. treatment a, consisting of infusoria feeding until day 2 and a combination of infusoria and artemia nauplii starting on day 3, was the best treatment for improving larval length growth. therefore, an earlier transition to artemia nauplii, beginning on day 3 of rearing, is the optimal period to support the growth of kelabau fish larvae without reducing their survival rate."
+         data-summary="本研究旨在分析不同天然饵料转换期对高经济价值淡水鱼类——kelabau鱼（osteochilus melanopleurus）仔鱼生长和存活的影响。采用完全随机设计，设置四种不同转换时间（轮虫、卤虫无节幼体、moina），进行15天饲养实验。结果显示，转换期显著影响仔鱼体长生长（p<0.05），但对体重和存活率无显著影响（p>0.05）；第3天开始投喂卤虫无节幼体的处理a获得最佳体长增长（8.55±0.34 mm），存活率达83.33%-95.56%。建议在仔鱼孵化后第3天尽早转换至卤虫无节幼体，以促进生长而不降低存活率。"
+         data-impact="true">
+
+      
+      <div class="hi-badge">🌟 高影响力</div>
+      
+
+      
+      <div class="journal">
+        ⭐
+        📰 International Journal of Science and Environment (IJSE)
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究旨在分析不同天然饵料转换期对高经济价值淡水鱼类——Kelabau鱼（Osteochilus melanopleurus）仔鱼生长和存活的影响。采用完全随机设计，设置四种不同转换时间（轮虫、卤虫无节幼体、Moina），进行15天饲养实验。结果显示，转换期显著影响仔鱼体长生长（P<0.05），但对体重和存活率无显著影响（P>0.05）；第3天开始投喂卤虫无节幼体的处理A获得最佳体长增长（8.55±0.34 mm），存活率达83.33%-95.56%。建议在仔鱼孵化后第3天尽早转换至卤虫无节幼体，以促进生长而不降低存活率。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.51601/ijse.v6i2.615" target="_blank" rel="noopener">Analysis of Growth and Survival of Kelabau Fish Larvae (Osteochilus melanopleurus) Fed Natural Feeds With Different Feed-Transition Periods</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Akmal; Rukmini; Noor Arida Fauzana</span>
+        
+        <span>📅 2026-06-22</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Kelabau fish is a local freshwater fish with high economic value, however, successful seed production is still constrained by high mortality and slow growth during the larval stage. This study aimed to analyze the growth and survival of kelabau fish larvae fed natural feeds with different feed-transition periods. The study was conducted at the Mandiangin Freshwater Aquaculture Center using a completely randomized design (CRD) with four treatments and three replications. The tested treatments consisted of different transition times among natural feeds, namely infusoria, Artemia nauplii, and Moina, for larvae aged two days after hatching during a 15-day rearing period. The observed parameters included absolute length growth, absolute weight growth, and larval survival. The data were analyzed using analysis of variance (ANOVA) at a 95% confidence level, followed by Duncan’s test when significant differences were found. The results showed that different natural-feed transition periods had a significant effect (P &lt; 0.05) on larval length growth, but had no significant effect (P &gt; 0.05) on weight growth or survival. The highest length growth was obtained in treatment A at 8.55 ± 0.34 mm, followed by treatment B at 8.42 ± 0.28 mm, while the lowest value was recorded in treatment D at 7.08 ± 0.13 mm. Weight growth ranged from 0.0161 ± 0.0016 to 0.0179 ± 0.0033 g, and survival ranged from 83.33 ± 3.85% to 95.56 ± 5.09%. Treatment A, consisting of infusoria feeding until day 2 and a combination of infusoria and Artemia nauplii starting on day 3, was the best treatment for improving larval length growth. Therefore, an earlier transition to Artemia nauplii, beginning on day 3 of rearing, is the optimal period to support the growth of kelabau fish larvae without reducing their survival rate.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="quantifying post‐release behaviour of a critically endangered elasmobranch over two capture events using high‐resolution archival tag data"
+         data-authors="orrell, danielle l.; darby, jamie; haberlin, damien; cohuo, alfonso; harman, luke; doyle, thomas k."
+         data-journal="journal of fish biology"
+         data-abstract="abstract during catch‐and‐release angling, highly resident species are susceptible to multiple recapture events. biologging offers the opportunity to study post‐release behaviour in detail; however, most studies have focused on a single capture‐release event. using high‐resolution archival data and acoustic tracking, we present the post‐release behaviour of a single flapper skate ( dipturus intermedius ) that was captured, tagged and recaptured 6 days later off the southwest coast of ireland. as programmed, the archival satellite tag released 7 days after the initial capture event and 1 day after the second capture event, and the skate was monitored for an additional 212 days using an array of acoustic receivers. analysis of the archival satellite tag dataset revealed atypical movements, characterised by increased mobility and vertical descents/ascents following release on both occasions. generalised additive models corroborated that changes in depth and mobility were high after animal capture and release. change point analysis identified that at 9 and 10 h after the first and second capture event, respectively, the skate's behaviour changed from increased mobility and rapid movements to more settled behaviour. the average integrated vertical movement (ivm) post‐capture, before the identified change points, was 441% higher than the mean hourly ivm outside this timeframe (5.15 versus 22.73 m/h). acoustic tracking data corroborated that the skate remained near the capture area after both capture events. this study demonstrates the behavioural response of a flapper skate to two capture events and shows that, while capture led to 9–10 h of elevated activity, the skate remained in the capture area despite multiple capture events."
+         data-summary="利用高分辨率档案标签和声学追踪，研究极度濒危鳐鱼（dipturus intermedius）在两次捕获-释放事件后的行为反应。两次释放后均观察到异常运动模式，包括活动性增强和垂直升降，平均整合垂直运动（ivm）在行为变化点前比平时高441%。变化点分析显示，首次和二次捕获后分别经过9和10小时，行为从高活动性转为稳定。声学追踪证实该鱼在多次捕获后仍停留于捕获区域，表明短期捕获对其栖息地滞留影响有限。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 利用高分辨率档案标签和声学追踪，研究极度濒危鳐鱼（Dipturus intermedius）在两次捕获-释放事件后的行为反应。两次释放后均观察到异常运动模式，包括活动性增强和垂直升降，平均整合垂直运动（IVM）在行为变化点前比平时高441%。变化点分析显示，首次和二次捕获后分别经过9和10小时，行为从高活动性转为稳定。声学追踪证实该鱼在多次捕获后仍停留于捕获区域，表明短期捕获对其栖息地滞留影响有限。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70542" target="_blank" rel="noopener">Quantifying post‐release behaviour of a critically endangered elasmobranch over two capture events using high‐resolution archival tag data</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Orrell, Danielle L.; Darby, Jamie; Haberlin, Damien; Cohuo, ...</span>
+        
+        <span>📅 2026-06-23</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract During catch‐and‐release angling, highly resident species are susceptible to multiple recapture events. Biologging offers the opportunity to study post‐release behaviour in detail; however, most studies have focused on a single capture‐release event. Using high‐resolution archival data and acoustic tracking, we present the post‐release behaviour of a single flapper skate ( Dipturus intermedius ) that was captured, tagged and recaptured 6 days later off the southwest coast of Ireland. As programmed, the archival satellite tag released 7 days after the initial capture event and 1 day after the second capture event, and the skate was monitored for an additional 212 days using an array of acoustic receivers. Analysis of the archival satellite tag dataset revealed atypical movements, characterised by increased mobility and vertical descents/ascents following release on both occasions. Generalised additive models corroborated that changes in depth and mobility were high after animal capture and release. Change point analysis identified that at 9 and 10 h after the first and second capture event, respectively, the skate's behaviour changed from increased mobility and rapid movements to more settled behaviour. The average integrated vertical movement (IVM) post‐capture, before the identified change points, was 441% higher than the mean hourly IVM outside this timeframe (5.15 versus 22.73 m/h). Acoustic tracking data corroborated that the skate remained near the capture area after both capture events. This study demonstrates the behavioural response of a flapper skate to two capture events and shows that, while capture led to 9–10 h of elevated activity, the skate remained in the capture area despite multiple capture events.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="seeing spots: using great barracuda (
+                    <i>sphyraena barracuda</i>
+                    ) to assess abundance metrics and replicate independence for baited remote underwater video systems"
+         data-authors="schoen, sara n.; harborne, alastair r.; marquardt, madeline c.; millan, tahiry; perez, natalia n.; stinson, deirdre k.; severino, marlene; vinculado, julienne; chapman, demian d."
+         data-journal="journal of fish biology"
+         data-abstract="abstract baited remote underwater videos (bruvs) are increasingly used to study fish assemblages. therefore, understanding the biases and limitations of this methodology is critical, including questions about the derived metrics of abundance and independence among replicates. however, assessing these biases requires identifying individual fish, which is typically challenging. here, we take advantage of the distinct spot patterns on great barracuda ( sphyraena barracuda ) to identify individuals on bruvs to compare the most common bruvs abundance metric (maxn) to an alternative method based on identified individuals (ind). we also assessed whether individual s . barracuda were seen on multiple cameras to determine if a commonly used spacing (500 m) was sufficient to assume independence between replicate bruvs. s . barracuda were identified based on spot patterns on &gt;2000 videos at 43 sites across 12 countries. maxn and ind were highly positively correlated (0.93), but there were significant differences between the measures ( p &lt; 0.001) that became particularly apparent when maxn was &gt;4. ind abundances were, on average, 1.4 times greater than maxn. five sites had at least one s . barracuda appear on multiple bruvs (&lt;4% of videos), but only one occurrence during the same deployment on two cameras separated by &gt;500 m. thus, 500 m is a reasonable standard for independent sampling units for species with similar mobility to s . barracuda . while identifying individuals is time‐consuming and not feasible for many species, it does improve the accuracy of abundance estimates, and we recommend its use when possible and where estimates of true abundance on videos are important."
+         data-summary="利用大梭鱼（sphyraena barracuda）的独特斑点图案，在bruvs视频中识别个体，比较常用丰度指标maxn与基于个体识别（ind）的替代方法，并评估500米间距是否足以保证bruvs复制间的独立性。对12个国家43个地点的2000余段视频分析显示，maxn与ind高度正相关（0.93），但maxn>4时两者差异显著（p<0.001），ind丰度平均为maxn的1.4倍。仅5个站点出现个体被多台bruvs记录（<4%视频），且仅一次发生在间距>500米的相机同时部署中，表明500米间距对类似移动能力的物种是合理的独立采样单元。个体识别虽耗时，但能提高丰度估计准确性，建议在需要真实丰度时优先采用。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 利用大梭鱼（Sphyraena barracuda）的独特斑点图案，在BRUVs视频中识别个体，比较常用丰度指标MaxN与基于个体识别（IND）的替代方法，并评估500米间距是否足以保证BRUVs复制间的独立性。对12个国家43个地点的2000余段视频分析显示，MaxN与IND高度正相关（0.93），但MaxN>4时两者差异显著（p<0.001），IND丰度平均为MaxN的1.4倍。仅5个站点出现个体被多台BRUVs记录（<4%视频），且仅一次发生在间距>500米的相机同时部署中，表明500米间距对类似移动能力的物种是合理的独立采样单元。个体识别虽耗时，但能提高丰度估计准确性，建议在需要真实丰度时优先采用。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70524" target="_blank" rel="noopener">Seeing spots: Using Great Barracuda (
+                    <i>Sphyraena barracuda</i>
+                    ) to assess abundance metrics and replicate independence for baited remote underwater video systems</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Schoen, Sara N.; Harborne, Alastair R.; Marquardt, Madeline ...</span>
+        
+        <span>📅 2026-06-22</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract Baited remote underwater videos (BRUVs) are increasingly used to study fish assemblages. Therefore, understanding the biases and limitations of this methodology is critical, including questions about the derived metrics of abundance and independence among replicates. However, assessing these biases requires identifying individual fish, which is typically challenging. Here, we take advantage of the distinct spot patterns on Great Barracuda ( Sphyraena barracuda ) to identify individuals on BRUVs to compare the most common BRUVs abundance metric (MaxN) to an alternative method based on identified individuals (IND). We also assessed whether individual S . barracuda were seen on multiple cameras to determine if a commonly used spacing (500 m) was sufficient to assume independence between replicate BRUVs. S . barracuda were identified based on spot patterns on &gt;2000 videos at 43 sites across 12 countries. MaxN and IND were highly positively correlated (0.93), but there were significant differences between the measures ( p &lt; 0.001) that became particularly apparent when MaxN was &gt;4. IND abundances were, on average, 1.4 times greater than MaxN. Five sites had at least one S . barracuda appear on multiple BRUVs (&lt;4% of videos), but only one occurrence during the same deployment on two cameras separated by &gt;500 m. Thus, 500 m is a reasonable standard for independent sampling units for species with similar mobility to S . barracuda . While identifying individuals is time‐consuming and not feasible for many species, it does improve the accuracy of abundance estimates, and we recommend its use when possible and where estimates of true abundance on videos are important.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="the onward march of the invasive pink salmon (
+                    <i>oncorhynchus gorbuscha</i>
+                    ) and what it means for the north atlantic's freshwater ecosystems"
+         data-authors="perry, william bernard"
+         data-journal="journal of fish biology"
+         data-abstract=""
+         data-summary="入侵性粉红鲑在北大西洋淡水生态系统中持续扩张，研究其扩散路径与生态影响。该物种通过人为引入和自然扩散突破地理屏障，对本地鲑科鱼类构成竞争与杂交威胁。需加强监测与管理，以减缓其入侵对淡水生物多样性的破坏。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 入侵性粉红鲑在北大西洋淡水生态系统中持续扩张，研究其扩散路径与生态影响。该物种通过人为引入和自然扩散突破地理屏障，对本地鲑科鱼类构成竞争与杂交威胁。需加强监测与管理，以减缓其入侵对淡水生物多样性的破坏。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70544" target="_blank" rel="noopener">The onward march of the invasive pink salmon (
+                    <i>Oncorhynchus gorbuscha</i>
+                    ) and what it means for the North Atlantic's freshwater ecosystems</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Perry, William Bernard</span>
+        
+        <span>📅 2026-06-22</span>
+      </div>
+
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="first molecular detection of infectious spleen and kidney necrosis virus (
+                    <scp>isknv</scp>
+                    ) and the parasite
+                    <i>centrocestus formosanus</i>
+                    in the ornamental fish platy (
+                    <i>xiphophorus maculatus</i>
+                    ) in chile"
+         data-authors="solano‐iguaran, jaiber j.; pontigo, felipe; cisterna, dennis; anguita, carla; gonzález‐gómez, margarita p."
+         data-journal="journal of fish diseases"
+         data-abstract="abstract infectious spleen and kidney necrosis virus (isknv) is a significant fish pathogen historically reported in east and southeast asia and increasingly detected in other regions, often in association with the international movement of ornamental fish. centrocestus formosanus is a digenean trematode of sanitary and economic relevance, with zoonotic potential, that uses snails and fish as intermediate hosts. in this study, ornamental fish representing 24 species were sampled from 13 quarantine facilities across chile. isknv was detected in samples of platy fish ( xiphophorus maculatus ) from two quarantine facilities in the metropolitana district in chile, both supplied by the same exporter in the state of florida (united states). c. formosanus metacercariae were also detected in the gills of two isknv‐positive platy fish. these results represent the first molecular detection of isknv and c. formosanus in ornamental fish in chile and highlight the relevance of targeted surveillance for high‐risk pathogens in imported ornamental fish."
+         data-summary="本研究首次在智利观赏鱼（剑尾鱼）中通过分子检测发现传染性脾肾坏死病毒（isknv）和台湾棘带吸虫（centrocestus formosanus）。从智利13个检疫设施的24种观赏鱼中采样，在来自美国佛罗里达州同一出口商的两个检疫设施中检出isknv阳性，其中两尾阳性鱼鳃部同时检出c. formosanus囊蚴。结果强调了针对进口观赏鱼高风险病原体进行靶向监测的重要性。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Diseases
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究首次在智利观赏鱼（剑尾鱼）中通过分子检测发现传染性脾肾坏死病毒（ISKNV）和台湾棘带吸虫（Centrocestus formosanus）。从智利13个检疫设施的24种观赏鱼中采样，在来自美国佛罗里达州同一出口商的两个检疫设施中检出ISKNV阳性，其中两尾阳性鱼鳃部同时检出C. formosanus囊蚴。结果强调了针对进口观赏鱼高风险病原体进行靶向监测的重要性。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfd.70223" target="_blank" rel="noopener">First Molecular Detection of Infectious Spleen and Kidney Necrosis Virus (
+                    <scp>ISKNV</scp>
+                    ) and the Parasite
+                    <i>Centrocestus formosanus</i>
+                    in the Ornamental Fish Platy (
+                    <i>Xiphophorus maculatus</i>
+                    ) in Chile</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Solano‐Iguaran, Jaiber J.; Pontigo, Felipe; Cisterna, Dennis...</span>
+        
+        <span>📅 2026-06-22</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">ABSTRACT Infectious Spleen and Kidney Necrosis Virus (ISKNV) is a significant fish pathogen historically reported in East and Southeast Asia and increasingly detected in other regions, often in association with the international movement of ornamental fish. Centrocestus formosanus is a digenean trematode of sanitary and economic relevance, with zoonotic potential, that uses snails and fish as intermediate hosts. In this study, ornamental fish representing 24 species were sampled from 13 quarantine facilities across Chile. ISKNV was detected in samples of platy fish ( Xiphophorus maculatus ) from two quarantine facilities in the Metropolitana district in Chile, both supplied by the same exporter in the State of Florida (United States). C. formosanus metacercariae were also detected in the gills of two ISKNV‐positive platy fish. These results represent the first molecular detection of ISKNV and C. formosanus in ornamental fish in Chile and highlight the relevance of targeted surveillance for high‐risk pathogens in imported ornamental fish.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="differential impacts of hurricanes on direct and complex life cycle parasites: a 42-year study of riverine fish"
+         data-authors="whalen, connor; boyd, desmond; commisso, gabriella; christner, shyanne; jones, imani; leslie, katie; thirtyacre, jolee; díaz-morales, dakeishla m.; kuris, armand m.; mann, justin"
+         data-journal="journal of freshwater ecology"
+         data-abstract=""
+         data-summary="研究飓风对河流鱼类寄生虫的长期影响，基于42年数据比较直接与复杂生活史寄生虫的响应差异。结果显示，飓风对两类寄生虫的丰度和群落结构产生不同干扰模式，复杂生活史寄生虫恢复更慢。该发现揭示了极端气候事件对寄生虫-宿主动态的持续生态效应。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Freshwater Ecology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 研究飓风对河流鱼类寄生虫的长期影响，基于42年数据比较直接与复杂生活史寄生虫的响应差异。结果显示，飓风对两类寄生虫的丰度和群落结构产生不同干扰模式，复杂生活史寄生虫恢复更慢。该发现揭示了极端气候事件对寄生虫-宿主动态的持续生态效应。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1080/02705060.2026.2690282" target="_blank" rel="noopener">Differential impacts of hurricanes on direct and complex life cycle parasites: a 42-year study of riverine fish</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Whalen, Connor; Boyd, Desmond; Commisso, Gabriella; Christne...</span>
+        
+        <span>📅 2026-06-22</span>
+      </div>
+
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="a systematic literature review of dissolved oxygen and turbidity monitoring in biofloc aquaculture: iot and machine learning for water quality management"
+         data-authors="zulkarnain, candra; budiyanto, cucuk wawan; bakar, mohd shafie"
+         data-journal="journal of information systems and informatics"
+         data-abstract="various technologies have been developed to monitor dissolved oxygen (do) and turbidity in aquaculture, yet integrated evaluations focusing on biofloc systems, particularly those involving iot and machine learning (ml), remain limited. this review analyzed 32 studies published between 2020 and 2026 using the prisma 2020 framework to examine do measurement, turbidity measurement, iot integration, and ml applications in biofloc aquaculture. to support methodological discussion, several studies from broader aquaculture and water-quality monitoring contexts were also considered. the reviewed literatures shows that iot-based and manual methods are the most commonly used approaches for do and turbidity monitoring. iot systems, mainly based on esp32, esp8266, and arduino platforms, support real-time monitoring and automation. ml models such as random forest, lstm, and cnn-lstm are frequently applied for water-quality prediction, anomaly detection, and decision support. however, challenges related to sensor calibration, data availability, and model generalization remain. these findings suggest a growing shift toward more intelligent and integrated aquaculture monitoring systems."
+         data-summary="本研究系统综述了2020-2026年间32篇文献，聚焦生物絮团养殖中溶解氧和浊度的监测技术，重点分析iot与机器学习（ml）的应用。结果表明，基于esp32、esp8266和arduino平台的iot系统及手动方法是最常用监测手段，随机森林、lstm和cnn-lstm等ml模型常用于水质预测与异常检测。当前面临传感器校准、数据可用性和模型泛化等挑战，但整体趋势正向智能化、集成化监测系统发展。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Information Systems and Informatics
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究系统综述了2020-2026年间32篇文献，聚焦生物絮团养殖中溶解氧和浊度的监测技术，重点分析IoT与机器学习（ML）的应用。结果表明，基于ESP32、ESP8266和Arduino平台的IoT系统及手动方法是最常用监测手段，随机森林、LSTM和CNN-LSTM等ML模型常用于水质预测与异常检测。当前面临传感器校准、数据可用性和模型泛化等挑战，但整体趋势正向智能化、集成化监测系统发展。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.63158/journalisi.v8i3.1630" target="_blank" rel="noopener">A Systematic Literature Review of Dissolved Oxygen and Turbidity Monitoring in Biofloc Aquaculture: IoT and Machine Learning for Water Quality Management</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Zulkarnain, Candra; Budiyanto, Cucuk Wawan; Bakar, Mohd Shaf...</span>
+        
+        <span>📅 2026-06-23</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Various technologies have been developed to monitor dissolved oxygen (DO) and turbidity in aquaculture, yet integrated evaluations focusing on biofloc systems, particularly those involving IoT and Machine Learning (ML), remain limited. This review analyzed 32 studies published between 2020 and 2026 using the PRISMA 2020 framework to examine DO measurement, turbidity measurement, IoT integration, and ML applications in biofloc aquaculture. To support methodological discussion, several studies from broader aquaculture and water-quality monitoring contexts were also considered. The reviewed literatures shows that IoT-based and manual methods are the most commonly used approaches for DO and turbidity monitoring. IoT systems, mainly based on ESP32, ESP8266, and Arduino platforms, support real-time monitoring and automation. ML models such as Random Forest, LSTM, and CNN-LSTM are frequently applied for water-quality prediction, anomaly detection, and decision support. However, challenges related to sensor calibration, data availability, and model generalization remain. These findings suggest a growing shift toward more intelligent and integrated aquaculture monitoring systems.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="short-term metabolic stress response of the temperate cup coral caryophyllia smithii to a simulated marine heatwave"
+         data-authors="bell, james j.; harman, luke; mcallen, rob; witting, kea; wood, gabriela"
+         data-journal="marine biology"
+         data-abstract="abstract marine heatwaves (mhws) are increasing in frequency and intensity due to climate change, posing significant threats to marine biodiversity. while tropical coral responses to thermal stress are well studied, less is known about the responses of temperate, azooxanthellate corals to temperature anomalies. the aim of our study was to investigate the physiological response of the temperate scleractinian coral caryophyllia smithii to simulated short-term mhw conditions in irish coastal waters. using a controlled laboratory experiment, respiration rates were measured in corals exposed to ambient (12.5 °c) and elevated (19 °c) temperatures over a 14-day period. a linear mixed effects model revealed a significant interaction between treatment and time, with corals under elevated temperature exhibiting a pronounced increase in respiration from day 7 onward, significantly exceeding control values by day 13. these results indicate a rapid metabolic stress response, suggesting that short periods of elevated temperature consistent with strong mhws can disrupt physiological homeostasis in c. smithii . our findings highlight the potential vulnerability of temperate azooxanthellate corals to climate-driven warming and underscore the need to include temperate coral species in climate impact assessments and conservation planning."
+         data-summary="通过受控实验模拟爱尔兰沿海短期海洋热浪（mhw），研究温带无虫黄藻珊瑚caryophyllia smithii的代谢应激反应。在14天内测量环境温度（12.5°c）和升温（19°c）下的呼吸速率，线性混合效应模型显示处理与时间存在显著交互作用，升温组从第7天起呼吸速率显著增加，第13天超过对照组。结果表明短期强mhw可破坏该珊瑚的生理稳态，揭示温带无虫黄藻珊瑚对气候变暖的潜在脆弱性，需将其纳入气候影响评估与保护规划。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Marine Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 通过受控实验模拟爱尔兰沿海短期海洋热浪（MHW），研究温带无虫黄藻珊瑚Caryophyllia smithii的代谢应激反应。在14天内测量环境温度（12.5°C）和升温（19°C）下的呼吸速率，线性混合效应模型显示处理与时间存在显著交互作用，升温组从第7天起呼吸速率显著增加，第13天超过对照组。结果表明短期强MHW可破坏该珊瑚的生理稳态，揭示温带无虫黄藻珊瑚对气候变暖的潜在脆弱性，需将其纳入气候影响评估与保护规划。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1007/s00227-026-04888-5" target="_blank" rel="noopener">Short-term metabolic stress response of the temperate cup coral Caryophyllia smithii to a simulated marine heatwave</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Bell, James J.; Harman, Luke; McAllen, Rob; Witting, Kea; Wo...</span>
+        
+        <span>📅 2026-06-22</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract Marine heatwaves (MHWs) are increasing in frequency and intensity due to climate change, posing significant threats to marine biodiversity. While tropical coral responses to thermal stress are well studied, less is known about the responses of temperate, azooxanthellate corals to temperature anomalies. The aim of our study was to investigate the physiological response of the temperate scleractinian coral Caryophyllia smithii to simulated short-term MHW conditions in Irish coastal waters. Using a controlled laboratory experiment, respiration rates were measured in corals exposed to ambient (12.5 °C) and elevated (19 °C) temperatures over a 14-day period. A linear mixed effects model revealed a significant interaction between treatment and time, with corals under elevated temperature exhibiting a pronounced increase in respiration from Day 7 onward, significantly exceeding control values by Day 13. These results indicate a rapid metabolic stress response, suggesting that short periods of elevated temperature consistent with strong MHWs can disrupt physiological homeostasis in C. smithii . Our findings highlight the potential vulnerability of temperate azooxanthellate corals to climate-driven warming and underscore the need to include temperate coral species in climate impact assessments and conservation planning.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="genome sequence of
+                    <i>enterobacter vonholyi</i>
+                    h2g27 isolated from the gut of bangladesh’s national fish,
+                    <i>tenualosa ilisha</i>"
+         data-authors="galib, fahim al; kafi, abdullah al; hasnat, soharth; sakif, tahsin islam; hoque, m. nazmul; rahman, md morshedur; gupta, dipali rani; islam, tofazzal"
+         data-journal="microbiology resource announcements"
+         data-abstract="abstract the 4.7-mbp complete genome of enterobacter vonholyi strain h2g27, isolated from bangladesh’s national fish, hilsa shad ( tenualosa ilisha ), was assembled into two contigs. analysis confirmed a nonpathogenic profile and identified an antimicrobial bottromycin biosynthetic gene cluster. these findings highlight the strain’s probiotic potential for sustainable aquaculture management."
+         data-summary="从孟加拉国国鱼——鲥鱼肠道中分离的enterobacter vonholyi h2g27菌株，其4.7 mbp完整基因组被组装成两个contig。基因组分析确认其非致病性特征，并鉴定出抗微生物bottromycin生物合成基因簇，表明该菌株具有作为益生菌用于可持续水产养殖管理的潜力。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Microbiology Resource Announcements
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 从孟加拉国国鱼——鲥鱼肠道中分离的Enterobacter vonholyi H2G27菌株，其4.7 Mbp完整基因组被组装成两个contig。基因组分析确认其非致病性特征，并鉴定出抗微生物bottromycin生物合成基因簇，表明该菌株具有作为益生菌用于可持续水产养殖管理的潜力。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1128/mra.00318-26" target="_blank" rel="noopener">Genome sequence of
+                    <i>Enterobacter vonholyi</i>
+                    H2G27 isolated from the gut of Bangladesh’s national fish,
+                    <i>Tenualosa ilisha</i></a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Galib, Fahim Al; Kafi, Abdullah Al; Hasnat, Soharth; Sakif, ...</span>
+        
+        <span>📅 2026-06-22</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">ABSTRACT The 4.7-Mbp complete genome of Enterobacter vonholyi strain H2G27, isolated from Bangladesh’s national fish, hilsa shad ( Tenualosa ilisha ), was assembled into two contigs. Analysis confirmed a nonpathogenic profile and identified an antimicrobial bottromycin biosynthetic gene cluster. These findings highlight the strain’s probiotic potential for sustainable aquaculture management.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="interaction of heavy metals with marine macroalgae and their implications for bioremediation: a comprehensive review"
+         data-authors="c. p., navya; thomas, binu; t. tom, renjis"
+         data-journal="phytotalks"
+         data-abstract="heavy metals, released by both human activity and natural processes, seep into coastal waters and disrupt the balance of seaweed habitats. this review paper investigates the levels of heavy metals such as as, cd, co, cr, cu, fe, hg, mn, ni, pb, and zn in wild populations of maritime macroalgae and particularly focuses on understanding their impacts, a crucial aspect in mitigating environmental threats. it also explores the potential use of macroalgae as bioindicators and for bioremediation of heavy-metal contamination, such as phycoremediation. after careful evaluation, it was found that phaeophyceae are more promising for bioaccumulating metals, including cu, cr, as, zn, mn, pb, and cd. some macroalgae tend to localize these metals in cellular organelles as part of their metal tolerance. while macroalgae are generally able to accumulate and tolerate elevated levels of several elements, the precise levels of phytotoxicity remain unclear. this review offers an in-depth analysis of the distinct physiological adaptations of various seaweed species to heavy-metal pollution."
+         data-summary="该综述系统评估了as、cd、co等11种重金属在野生大型海藻中的积累水平，重点探讨其作为生物指示剂和生物修复（如藻类修复）的潜力。研究发现褐藻（phaeophyceae）对cu、cr、as等金属具有更强的生物富集能力，部分藻类通过将金属定位在细胞器内实现耐受。尽管大型海藻普遍能积累并耐受高浓度重金属，但植物毒性阈值尚不明确。文章深入解析了不同海藻物种应对重金属污染的生理适应机制。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 PhytoTalks
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该综述系统评估了As、Cd、Co等11种重金属在野生大型海藻中的积累水平，重点探讨其作为生物指示剂和生物修复（如藻类修复）的潜力。研究发现褐藻（Phaeophyceae）对Cu、Cr、As等金属具有更强的生物富集能力，部分藻类通过将金属定位在细胞器内实现耐受。尽管大型海藻普遍能积累并耐受高浓度重金属，但植物毒性阈值尚不明确。文章深入解析了不同海藻物种应对重金属污染的生理适应机制。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.21276/pt.2026.v3.i2.2" target="_blank" rel="noopener">Interaction of Heavy Metals with Marine Macroalgae and Their Implications for Bioremediation: A Comprehensive Review</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 C. P., Navya; Thomas, Binu; T. Tom, Renjis</span>
+        
+        <span>📅 2026-06-22</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Heavy metals, released by both human activity and natural processes, seep into coastal waters and disrupt the balance of seaweed habitats. This review paper investigates the levels of heavy metals such as As, Cd, Co, Cr, Cu, Fe, Hg, Mn, Ni, Pb, and Zn in wild populations of maritime macroalgae and particularly focuses on understanding their impacts, a crucial aspect in mitigating environmental threats. It also explores the potential use of macroalgae as bioindicators and for bioremediation of heavy-metal contamination, such as phycoremediation. After careful evaluation, it was found that Phaeophyceae are more promising for bioaccumulating metals, including Cu, Cr, As, Zn, Mn, Pb, and Cd. Some macroalgae tend to localize these metals in cellular organelles as part of their metal tolerance. While macroalgae are generally able to accumulate and tolerate elevated levels of several elements, the precise levels of phytotoxicity remain unclear. This review offers an in-depth analysis of the distinct physiological adaptations of various seaweed species to heavy-metal pollution.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="cephalopod and fish prey of southern long-finned pilot whales globicephala melas edwardii mass-stranded in the falkland islands"
+         data-authors="cherel, yves; arkhipkin, alexander i.; shcherbich, zhanna n."
+         data-journal="polar biology"
+         data-abstract=""
+         data-summary="研究分析了福克兰群岛南部长鳍领航鲸（globicephala melas edwardii）集体搁浅事件中胃含物的头足类和鱼类猎物组成。通过鉴定残留硬组织（如喙、耳石等），明确了该鲸种在西南大西洋的主要摄食对象。结果揭示了其食性偏好及与当地渔业资源的潜在重叠关系。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Polar Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 研究分析了福克兰群岛南部长鳍领航鲸（Globicephala melas edwardii）集体搁浅事件中胃含物的头足类和鱼类猎物组成。通过鉴定残留硬组织（如喙、耳石等），明确了该鲸种在西南大西洋的主要摄食对象。结果揭示了其食性偏好及与当地渔业资源的潜在重叠关系。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1007/s00300-026-03504-y" target="_blank" rel="noopener">Cephalopod and fish prey of southern long-finned pilot whales Globicephala melas edwardii mass-stranded in the Falkland Islands</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Cherel, Yves; Arkhipkin, Alexander I.; Shcherbich, Zhanna N.</span>
+        
+        <span>📅 2026-06-22</span>
+      </div>
+
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="stacking ensemble with hybrid balancing for aquaculture water quality prediction"
+         data-authors="putro, ari nugroho; muslim, much aziz"
+         data-journal="scientific journal of informatics"
+         data-abstract="purpose: this study aims to improve the accuracy of water quality classification models by addressing class imbalance and data noise. aquaculture water quality monitoring is essential to support sustainable aquaculture production and maintain aquatic organism health. as aquaculture systems become more intensive, accurate predictive models are needed for effective monitoring and decision-making. therefore, this study proposes a stacking ensemble model optimized using smoteenn hybrid balancing to improve classification performance on aquaculture water quality datasets. methods: the proposed approach combines smoteenn hybrid balancing with a meta stacking ensemble framework. first, synthetic minority oversampling technique (smote) was applied to balance minority classes by generating synthetic samples. next, edited nearest neighbor (enn) was used to remove noisy data from both original and synthetic datasets. after preprocessing, the classification process employed a meta stacking ensemble model consisting of extra trees (et) and random forest (rf) as base learners, while logistic regression (lr) served as the meta learner. the model was evaluated using the aquaculture water quality (awq) dataset. result: experimental results show that the proposed model achieves the highest performance under the smoteenn scenario, reaching an accuracy of 99.88%, outperforming smote 99.20%, enn 99.78%, and the original imbalanced data 99.18%. the results indicate that combining class balancing and noise reduction significantly improves classification performance. novelty: this study presents a novel integration of smoteenn hybrid balancing and meta stacking ensemble learning, offering an effective solution for handling imbalanced and noisy environmental datasets in water quality classification."
+         data-summary="针对水产养殖水质分类中类别不平衡和数据噪声问题，提出一种结合smoteenn混合平衡与元堆叠集成模型的方法。通过smote生成少数类合成样本，enn去除噪声数据，并以extra trees和random forest作为基学习器、logistic regression作为元学习器构建分类模型。在aquaculture water quality数据集上，该模型在smoteenn场景下达到99.88%的准确率，优于单独使用smote（99.20%）、enn（99.78%）及原始不平衡数据（99.18%），表明类别平衡与降噪结合可显著提升分类性能。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Scientific Journal of Informatics
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 针对水产养殖水质分类中类别不平衡和数据噪声问题，提出一种结合SMOTEENN混合平衡与元堆叠集成模型的方法。通过SMOTE生成少数类合成样本，ENN去除噪声数据，并以Extra Trees和Random Forest作为基学习器、Logistic Regression作为元学习器构建分类模型。在Aquaculture Water Quality数据集上，该模型在SMOTEENN场景下达到99.88%的准确率，优于单独使用SMOTE（99.20%）、ENN（99.78%）及原始不平衡数据（99.18%），表明类别平衡与降噪结合可显著提升分类性能。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.15294/sji.v13i2.49383" target="_blank" rel="noopener">Stacking Ensemble with Hybrid Balancing for Aquaculture Water Quality Prediction</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Putro, Ari Nugroho; Muslim, Much Aziz</span>
+        
+        <span>📅 2026-06-23</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Purpose: This study aims to improve the accuracy of water quality classification models by addressing class imbalance and data noise. Aquaculture water quality monitoring is essential to support sustainable aquaculture production and maintain aquatic organism health. As aquaculture systems become more intensive, accurate predictive models are needed for effective monitoring and decision-making. Therefore, this study proposes a stacking ensemble model optimized using SMOTEENN hybrid balancing to improve classification performance on aquaculture water quality datasets. Methods: The proposed approach combines SMOTEENN hybrid balancing with a meta stacking ensemble framework. First, Synthetic Minority Oversampling Technique (SMOTE) was applied to balance minority classes by generating synthetic samples. Next, Edited Nearest Neighbor (ENN) was used to remove noisy data from both original and synthetic datasets. After preprocessing, the classification process employed a meta stacking ensemble model consisting of Extra Trees (ET) and Random Forest (RF) as base learners, while Logistic Regression (LR) served as the meta learner. The model was evaluated using the Aquaculture Water Quality (AWQ) dataset. Result: Experimental results show that the proposed model achieves the highest performance under the SMOTEENN scenario, reaching an accuracy of 99.88%, outperforming SMOTE 99.20%, ENN 99.78%, and the original imbalanced data 99.18%. The results indicate that combining class balancing and noise reduction significantly improves classification performance. Novelty: This study presents a novel integration of SMOTEENN hybrid balancing and meta stacking ensemble learning, offering an effective solution for handling imbalanced and noisy environmental datasets in water quality classification.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="<i>cytochrome p450 1a</i>
+                    (
+                    <i>cyp1a</i>
+                    )‐knockout javanese medaka fish exhibit diabetic traits and reduced reproductive capacity"
+         data-authors="rusni, suhaila; yoshioka, yuki; pratiwi, hilda mardiana; takagi, toshiyuki; royan, muhammad rahmad; hojo, yuya; uno, seiichi; kanda, shinji; takehana, yusuke; kinoshita, masato"
+         data-journal="the faseb journal"
+         data-abstract="abstract cytochrome p450 1a (cyp1a) is an enzyme localized in the endoplasmic reticulum of liver cells. although its roles in detoxification of exogenous substances have been investigated, its endogenous functions remain poorly understood. here, we compared liver transcriptomes of cyp1a ‐knockout (ko) javanese medaka ( oryzias javanicus ) with those of wild‐type (wt) fish to determine the physiological roles of cyp1a. we identified 508 differentially expressed genes (degs), including genes involved in glucose metabolism that were highly upregulated, such as insulin , glucagon , and somatostatin . ko fish exhibited elevated blood glucose levels, increased liver mass, and higher hepatic triglyceride levels, together with upregulation of glucose‐regulatory genes, suggesting insulin resistance and a diabetic‐like condition. in addition, some genes associated with reproduction, including zona pellucida sperm‐binding proteins 1 and 3 ( zp1 and zp3 ), were downregulated. decreased spawning rates and fertilization rates confirmed reduced reproductive capacity in ko fish. thus, this study demonstrates that cyp1a has endogenous functions in glucose homeostasis and reproduction. the cyp1a ‐ko strain is expected to serve as a model for investigating detailed physiological processes related to diabetes and reproductive mechanisms, as well as the relationship between these processes mediated by cyp1a."
+         data-summary="本研究通过cyp1a基因敲除的爪哇青鳉与野生型肝脏转录组比较，发现508个差异表达基因，其中胰岛素、胰高血糖素等糖代谢基因显著上调。敲除鱼出现高血糖、肝重增加及肝脏甘油三酯升高，呈现胰岛素抵抗和糖尿病样特征；同时zp1、zp3等生殖相关基因下调，产卵率和受精率降低。结果表明cyp1a在葡萄糖稳态和繁殖中具有内源性功能，该敲除品系可作为研究糖尿病与生殖机制关联的模型。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 The FASEB Journal
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究通过CYP1A基因敲除的爪哇青鳉与野生型肝脏转录组比较，发现508个差异表达基因，其中胰岛素、胰高血糖素等糖代谢基因显著上调。敲除鱼出现高血糖、肝重增加及肝脏甘油三酯升高，呈现胰岛素抵抗和糖尿病样特征；同时ZP1、ZP3等生殖相关基因下调，产卵率和受精率降低。结果表明CYP1A在葡萄糖稳态和繁殖中具有内源性功能，该敲除品系可作为研究糖尿病与生殖机制关联的模型。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1096/fj.202502623r" target="_blank" rel="noopener"><i>Cytochrome P450 1a</i>
+                    (
+                    <i>CYP1A</i>
+                    )‐Knockout Javanese Medaka Fish Exhibit Diabetic Traits and Reduced Reproductive Capacity</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Rusni, Suhaila; Yoshioka, Yuki; Pratiwi, Hilda Mardiana; Tak...</span>
+        
+        <span>📅 2026-06-23</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">ABSTRACT Cytochrome P450 1A (CYP1A) is an enzyme localized in the endoplasmic reticulum of liver cells. Although its roles in detoxification of exogenous substances have been investigated, its endogenous functions remain poorly understood. Here, we compared liver transcriptomes of CYP1A ‐knockout (KO) Javanese medaka ( Oryzias javanicus ) with those of wild‐type (WT) fish to determine the physiological roles of CYP1A. We identified 508 differentially expressed genes (DEGs), including genes involved in glucose metabolism that were highly upregulated, such as insulin , glucagon , and somatostatin . KO fish exhibited elevated blood glucose levels, increased liver mass, and higher hepatic triglyceride levels, together with upregulation of glucose‐regulatory genes, suggesting insulin resistance and a diabetic‐like condition. In addition, some genes associated with reproduction, including zona pellucida sperm‐binding proteins 1 and 3 ( ZP1 and ZP3 ), were downregulated. Decreased spawning rates and fertilization rates confirmed reduced reproductive capacity in KO fish. Thus, this study demonstrates that CYP1A has endogenous functions in glucose homeostasis and reproduction. The CYP1A ‐KO strain is expected to serve as a model for investigating detailed physiological processes related to diabetes and reproductive mechanisms, as well as the relationship between these processes mediated by CYP1A.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="redescription of the coral reef inhabiting axiidean shrimp parascytoleptus tridens (rathbun, 1906) (decapoda: calocarididae), and description of a new species from the south-western indian ocean"
+         data-authors="komai, tomoyuki; anker, arthur"
+         data-journal="zootaxa"
+         data-abstract="the calocaridid shrimp genus parascytoleptus sakai &amp; de saint laurent, 1989 was hitherto represented by two species, p. tridens (rathbun, 1906), the type species, and p. papua poore &amp; collins, 2010. parascytoleptus tridens (rathbun, 1906) was seen as a widespread indo-west pacific species, inhabiting shallow and moderately deep coral reefs. however, morphological comparisons and genetic analyses using two mitochondrial markers (coi and 16s rrna genes) of material from various indo-west pacific localities revealed the presence of an undescribed species in the south-western indian ocean. in the present study, p. tridens is redescribed based on material from hawaii, including the holotype, as well as specimens from french polynesia and eastern australia, whereas p. cognatus sp. nov. is described based on specimens from nosy iranja in the vicinity of nosy bé, madagascar, and réunion. the new species is characterised by the less developed rostrum, less pronounced lateral spines of the telson in the female, the proportionally wider cheliped meri, and the more extensive brownish markings on the cheliped palm and fingers. all three species of parascytoleptus exhibit a strong sexual dimorphism in several morphological characters, including the shape of the carapace and its frontal region, size of the pleon, and proportions of the chelipeds."
+         data-summary="重新描述珊瑚礁栖息的parascytoleptus tridens（rathbun, 1906），并基于形态比较和coi、16s rrna基因的遗传分析，发现西南印度洋存在未描述新种p. cognatus sp. nov.。新种以较不发达的额角、雌性尾节侧刺较弱、螯肢长节比例更宽及掌部和指节棕色斑纹更广泛为特征。该属三种均显示强烈的性二态性，体现在头胸甲形状、腹部大小及螯肢比例上。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Zootaxa
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 重新描述珊瑚礁栖息的Parascytoleptus tridens（Rathbun, 1906），并基于形态比较和COI、16S rRNA基因的遗传分析，发现西南印度洋存在未描述新种P. cognatus sp. nov.。新种以较不发达的额角、雌性尾节侧刺较弱、螯肢长节比例更宽及掌部和指节棕色斑纹更广泛为特征。该属三种均显示强烈的性二态性，体现在头胸甲形状、腹部大小及螯肢比例上。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.11646/zootaxa.5837.1.2" target="_blank" rel="noopener">Redescription of the coral reef inhabiting axiidean shrimp Parascytoleptus tridens (Rathbun, 1906) (Decapoda: Calocarididae), and description of a new species from the south-western Indian Ocean</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 KOMAI, TOMOYUKI; ANKER, ARTHUR</span>
+        
+        <span>📅 2026-06-22</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">The calocaridid shrimp genus Parascytoleptus Sakai &amp; de Saint Laurent, 1989 was hitherto represented by two species, P. tridens (Rathbun, 1906), the type species, and P. papua Poore &amp; Collins, 2010. Parascytoleptus tridens (Rathbun, 1906) was seen as a widespread Indo-West Pacific species, inhabiting shallow and moderately deep coral reefs. However, morphological comparisons and genetic analyses using two mitochondrial markers (COI and 16S rRNA genes) of material from various Indo-West Pacific localities revealed the presence of an undescribed species in the south-western Indian Ocean. In the present study, P. tridens is redescribed based on material from Hawaii, including the holotype, as well as specimens from French Polynesia and eastern Australia, whereas P. cognatus sp. nov. is described based on specimens from Nosy Iranja in the vicinity of Nosy Bé, Madagascar, and Réunion. The new species is characterised by the less developed rostrum, less pronounced lateral spines of the telson in the female, the proportionally wider cheliped meri, and the more extensive brownish markings on the cheliped palm and fingers. All three species of Parascytoleptus exhibit a strong sexual dimorphism in several morphological characters, including the shape of the carapace and its frontal region, size of the pleon, and proportions of the chelipeds.</div>
+      
+    </div>
+    
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var s=localStorage.getItem('theme');
+  if(s){document.documentElement.setAttribute('data-theme',s);
+  document.getElementById('themeIcon').textContent=s==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=s==='dark'?'亮色':'暗色';}
+})();
+function toggleTheme(){
+  var h=document.documentElement,n=h.getAttribute('data-theme')==='dark'?'light':'dark';
+  h.setAttribute('data-theme',n);
+  document.getElementById('themeIcon').textContent=n==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=n==='dark'?'亮色':'暗色';
+  localStorage.setItem('theme',n);
+}
+function toggleAbstract(b){
+  var c=b.nextElementSibling,v=c.classList.contains('visible');
+  c.classList.toggle('visible');b.classList.toggle('open');
+  b.querySelector('.arrow').textContent=v?'▶':'▼';
+}
+function filterPapers(){
+  var q=(document.getElementById('searchInput').value||'').toLowerCase().trim(),vis=0;
+  document.querySelectorAll('.paper-card').forEach(function(c){
+    var t=[c.getAttribute('data-title')||'',c.getAttribute('data-authors')||'',c.getAttribute('data-journal')||'',c.getAttribute('data-abstract')||'',c.getAttribute('data-summary')||''].join(' ');
+    var s=!q||t.includes(q);c.classList.toggle('hidden',!s);if(s)vis++;
+  });
+  document.getElementById('noResults').classList.toggle('visible',vis===0);
+}
+</script>
+</body>
+</html>
