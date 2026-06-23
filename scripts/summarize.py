@@ -382,11 +382,12 @@ def main():
         else:
             print("✅ 所有论文已有中文总结，跳过")
 
-    # 只有有新论文的周才重新生成综述
+    # 生成/更新每周综述
     old_topics = data.get("weekly_topics", {})
-    if weeks_with_new or force_all:
-        # 只更新有新增论文的周
-        if not force_all:
+    if weeks_with_new or force_all or weekly_only:
+        if weekly_only:
+            print("\n📅 --weekly 模式：强制更新所有周综述")
+        elif not force_all:
             print(f"\n📅 有新论文的周: {weeks_with_new}")
         weekly_topics = generate_all_weekly_topics(client, papers, old_topics)
     else:
