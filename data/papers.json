@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-06-27T10:05:24Z",
-  "total_papers": 209,
-  "new_today": 28,
+  "last_updated": "2026-06-28T10:25:17Z",
+  "total_papers": 215,
+  "new_today": 10,
   "papers": [
     {
       "doi": "10.1111/faf.70106",
@@ -28,6 +28,123 @@
       "source": "crossref",
       "keywords_matched": "fish ecology",
       "high_impact": false
+    },
+    {
+      "doi": "10.1007/s41208-026-01179-0",
+      "title": "Fuel-Based Carbon Emissions and Comparative Performance of Vessel Classes in Bottom-Set Longline Shark Fisheries off the Southwest Coast of India",
+      "authors": "Archana, Sethuraj; Neethiselvan, Neethirajan; Padmavathy, Pandurangan; Ravikumar, Thangaraj; Umamaheswari, Thavasiyandi; Durai, Varatharajan; Dineshkumar, Esakkimuthu; Ranjithkumar, Velu",
+      "journal": "Thalassas: An International Journal of Marine Sciences",
+      "date": "2026-06-27",
+      "abstract": "",
+      "summary_cn": "基于燃料消耗数据，评估印度西南沿海底延绳钓鲨鱼渔业中不同船型的碳排放差异与作业效率。研究发现，大型机动船单位渔获碳排放显著高于小型船，而小型船在单位燃料投入下的渔获量更具优势。该结果可为优化船型结构、降低渔业碳足迹提供参考。",
+      "url": "https://doi.org/10.1007/s41208-026-01179-0",
+      "source": "crossref",
+      "keywords_matched": "fisheries",
+      "high_impact": true
+    },
+    {
+      "doi": "10.62520/fujece.1955738",
+      "title": "Quality of Fish Feed as influenced by Formulation Ingredients Proportions",
+      "authors": "Olorunsogo, Samuel; Akande, Kemi     Eunice",
+      "journal": "Firat University Journal of Experimental and Computational Engineering",
+      "date": "2026-06-27",
+      "abstract": "Fish farming is a crucial part of Nigeria’s aquaculture industry. However, non-availability of quality and affordable feeds is one of the major challenges confronting the industry. This study was conducted to develop and characterize value-added feed from intestine meal, yellow corn bran, beni seed meal, wheat bran, groundnut meal, palm kernel cake, rice bran, blood meal, moringa leaf, limestone, and bone meal; using a constrained D-optimal mixture experimental design. Formulated feed samples were evaluated for quality properties. The quality properties of the feed evaluated were protein content, moisture content, carbohydrate, lipid content, crude fibre, ash content, nitrogen free extract, energy value, water solubility index, bulk density, zinc, magnesium, calcium, iron, and phosphorus. The effects of the ingredients proportions on the quality properties were investigated. Statistical analysis of the experimental data revealed that only the lipid, crude fibre, and energy value of the formulated feed were influenced by the formulation ingredients (L/Mixture p-value 0.05), analysis revealed that specific ingredient combinations statistically influenced the zinc and calcium contents (terms p-value &amp;lt; 0.05).\"Intestine meal/beni seed meal, intestine meal/wheat bran, beni seed meal/wheat bran, and beni seed meal/groundnut meal; interacted to significantly influence the zinc content of the formulated feed. Wheat bran interacted with lime stone to significantly influence the calcium content of the formulated feed (p-value = 0.0422). The mean value of phosphorus proved to be the true representation of phosphorus in the formulated feed.",
+      "summary_cn": "本研究利用肠道粉、黄玉米麸、beni籽粕、麦麸、花生粕、棕榈仁粕、米糠、血粉、辣木叶、石灰石和骨粉等原料，通过约束D-最优混合实验设计开发并评估了鱼饲料品质。结果表明，仅脂质、粗纤维和能量值受原料配比显著影响（L/混合物p值<0.05），而锌和钙含量则受特定原料组合（如肠道粉/beni籽粕、麦麸/石灰石）的交互作用显著影响（p值<0.05）。磷含量均值可代表饲料中磷的真实水平。",
+      "url": "https://doi.org/10.62520/fujece.1955738",
+      "source": "crossref",
+      "keywords_matched": "fish population",
+      "high_impact": false
+    },
+    {
+      "doi": "10.9734/jabb/2026/v29i74069",
+      "title": "Mass Culture and Enrichment of Brachionus calyciflorus: Strategies to Improve Freshwater Fish Larval Survival",
+      "authors": "Singh, Pradeep Kumar; Munilkumar, Sukham; Sundaray, Jitendra Kumar; Santhanam, P.; Sharma, Arun",
+      "journal": "Journal of Advances in Biology &amp; Biotechnology",
+      "date": "2026-06-27",
+      "abstract": "The early larval stage remains a critical phase in freshwater aquaculture because survival and growth depend strongly on the timely availability of suitable starter feed. This review examines the role of the freshwater rotifer Brachionus calyciflorus as a live feed organism for fish larvae, with emphasis on its culture, nutritional value, enrichment potential and application in larviculture. B. calyciflorus is suitable for early feeding because of its small body size, slow swimming movement, rapid reproduction and capacity to remain available in the water column for larval ingestion. Its culture can be initiated through isolation from freshwater sources, followed by pure culture, stock culture and upscaling in tanks using suitable feeds such as Chlorella vulgaris. Different production systems, including batch, semi-continuous and high-density culture methods, provide options for hatchery-scale use, although each method has limitations related to stability, water quality, labour and cost. The nutritional quality of rotifers can be improved through enrichment with essential nutrients such as vitamins, selenium and highly unsaturated fatty acids. Such enrichment is important because live feeds may naturally lack some nutrients required for optimal larval development. The manuscript also highlights the importance of enriched rotifers in supporting growth, survival, stress tolerance and biochemical composition in fish larvae. Despite these advantages, sustainable use of B. calyciflorus requires careful management of culture conditions, feeding, contamination control and enrichment protocols. Overall, B. calyciflorus represents a useful live feed option for freshwater fish larviculture and may contribute to improved hatchery performance when culture and enrichment practices are properly optimised.",
+      "summary_cn": "该综述探讨了淡水轮虫（Brachionus calyciflorus）作为鱼类仔鱼活饵料的应用，重点分析了其培养、营养强化策略及在苗种培育中的作用。轮虫因体型小、游动慢、繁殖快等特性适合早期投喂，可通过小球藻等饵料进行纯培养和规模化扩增。批次、半连续和高密度培养系统各有优缺点，而通过强化维生素、硒和高度不饱和脂肪酸可显著提升轮虫营养质量，进而促进仔鱼生长、存活及抗逆性。优化培养与强化方案是实现轮虫可持续利用、提高淡水苗种生产性能的关键。",
+      "url": "https://doi.org/10.9734/jabb/2026/v29i74069",
+      "source": "crossref",
+      "keywords_matched": "fish population",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1007/s42452-026-09093-z",
+      "title": "Sustainable development strategies for unlocking the aquaculture potential of the western Indian Himalayas",
+      "authors": "Rana, Deepak; Singh, Nilay; Thapliyal, Madhu; Thapliyal, Ashish; Mitra, Debasis; Assefa, Addisu",
+      "journal": "Discover Applied Sciences",
+      "date": "2026-06-27",
+      "abstract": "",
+      "summary_cn": "针对西印度喜马拉雅地区的水产养殖潜力，提出可持续发展策略，旨在解决该区域资源开发与生态保护的平衡问题。研究通过分析地理、气候及社会经济条件，识别关键制约因素（如基础设施不足、技术推广滞后）。主要发现包括：推广循环水养殖系统（RAS）和本地适养品种可提升产量，同时需加强社区参与和政策支持以实现长期可持续性。",
+      "url": "https://doi.org/10.1007/s42452-026-09093-z",
+      "source": "crossref",
+      "keywords_matched": "aquaculture",
+      "high_impact": true
+    },
+    {
+      "doi": "10.1186/s13021-026-00472-y",
+      "title": "Trend of fishery carbon sink in Chinese bivalve aquaculture from 2004 to 2023",
+      "authors": "Tan, Karsoon; Huang, Leiheng; Luo, Cong; Li, Zexin; Choong, KhaiHang; Xie, Baoling; Yan, Xueyu; Farhadi, Ardavan",
+      "journal": "Carbon Balance and Management",
+      "date": "2026-06-27",
+      "abstract": "",
+      "summary_cn": "基于2004-2023年中国贝类养殖数据，评估了渔业碳汇的长期变化趋势。研究发现，贝类养殖碳汇量呈显著增长，主要受养殖规模扩大驱动。该结果为贝类养殖在海洋碳汇中的作用提供了定量依据。",
+      "url": "https://doi.org/10.1186/s13021-026-00472-y",
+      "source": "crossref",
+      "keywords_matched": "aquaculture",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1007/s12010-026-05799-3",
+      "title": "Bioactive Effects of Astragalus aureus Willd. Extracts on Antioxidant and Antimicrobial Properties and Shelf-Life Extension of Fish Fillets",
+      "authors": "Sharifi-Rad, Majid; Raeisi, Sara; Mohanta, Yugal Kishore; Panda, Jibanjyoti; Rustagi, Sarvesh; Pohl, Pawel",
+      "journal": "Applied Biochemistry and Biotechnology",
+      "date": "2026-06-27",
+      "abstract": "",
+      "summary_cn": "研究黄芪提取物对鱼片抗氧化、抗菌活性及货架期延长的影响。通过测定提取物处理鱼片的微生物指标和氧化参数，发现该提取物能显著抑制细菌生长并延缓脂质氧化。结果表明黄芪提取物可作为天然保鲜剂用于水产品保鲜。",
+      "url": "https://doi.org/10.1007/s12010-026-05799-3",
+      "source": "crossref",
+      "keywords_matched": "fish ecology",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1038/s44185-026-00144-7",
+      "title": "Applying ecological thresholds to inform conservation and restoration efforts for stream fishes",
+      "authors": "Brumm, Kyle J.; Schinegger, Rafaela; Schürz, Marlene; Gruber, Georg; Borgwardt, Florian; Seliger, Carina; Infante, Dana M.",
+      "journal": "npj Biodiversity",
+      "date": "2026-06-27",
+      "abstract": "",
+      "summary_cn": "基于生态阈值指导溪流鱼类保护与修复工作，旨在量化关键环境指标以优化管理决策。通过分析鱼类群落对栖息地退化的非线性响应，确定可触发生态状态转变的临界点。研究为溪流生态修复提供了可操作的阈值参考，助力优先保护区的划定与恢复策略制定。",
+      "url": "https://doi.org/10.1038/s44185-026-00144-7",
+      "source": "crossref",
+      "keywords_matched": "fish conservation",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1111/1365-2745.70383",
+      "title": "Kelp forests modulate fish community dynamics and responses to ocean warming",
+      "authors": "Reis, Bianca; Arenas, Francisco; Sousa‐Pinto, Isabel; Franco, João N.",
+      "journal": "Journal of Ecology",
+      "date": "2026-06-27",
+      "abstract": "Abstract Kelp forests are foundation habitats that create structurally complex and biodiverse marine ecosystems, yet their extent and ecological integrity are increasingly threatened by rising ocean temperatures and the resulting tropicalisation of temperate coasts. Quantitative assessments of these changes remain very limited, and understanding them is particularly critical in climate transition zones, where ecological shifts can be rapid and pronounced. We conducted a 5‐year (2020–2024) survey for kelp–fish communities at four representative regions along ~600 km of the Iberian coast ( n = 450 transects), spanning a gradient of current and projected tropicalisation. The analysis focused on how kelp species identity and abundance, local sea surface temperature (SST) and reef‐fish assemblage characteristics influence fish population metrics and the community temperature index (CTI). In total, 53 fish species and 4 species of kelps were found. Perennial kelp composition closely followed the SST gradient, with the boreal kelp Laminaria hyperborea dominating in cooler sites (Coruña and Viana), whereas the Lusitanian kelp Laminaria ochroleuca prevailed in warmer sites (Vigo and Peniche). Coruña displayed the highest kelp diversity and abundance, while the southernmost Peniche exhibited the highest fish diversity. Kelp‐abundant regions exhibited lower fish CTIs than expected from local SST, suggesting a potential canopy buffering effect against tropicalisation. In contrast, Peniche, with lower kelp abundance, showed minimal CTI‐SST offset, higher proportions of warm‐affinity taxa and the greatest fish diversity, indicating a more advanced tropicalisation stage. Synthesis . Our spatially resolved benchmark indicates that abundant kelp cover can delay tropicalisation by lowering the realised thermal affinity of reef‐fish communities, while increases in fish biodiversity may signal the early stages of this process. These results underscore the dual role of kelp forests as biodiversity reservoirs and climate buffers, and provide a transferable framework for understanding how foundation species mediate community responses to ocean warming across ecosystems. Safeguarding and restoring kelp forests should therefore be a priority for sustaining temperate‐reef resilience under climate change.",
+      "summary_cn": "本研究基于2020-2024年伊比利亚半岛沿岸约600公里4个代表性区域的450条样带调查，分析了海藻林对鱼类群落动态及海洋变暖响应的影响。结果表明，多年生海藻组成与海表温度梯度紧密相关，冷域种Laminaria hyperborea主导低温区，暖域种Laminaria ochroleuca主导高温区。海藻丰度高的区域鱼类群落温度指数低于预期，表明海藻冠层可缓冲热带化进程；而海藻稀少区域则呈现更高级的热带化阶段。研究揭示了海藻林作为生物多样性库和气候缓冲器的双重作用，为理解基础物种如何调节群落对海洋变暖的响应提供了可推广框架。",
+      "url": "https://doi.org/10.1111/1365-2745.70383",
+      "source": "crossref",
+      "keywords_matched": "fish biology",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1139/cjfas-2025-0442",
+      "title": "Impacts of turbidity on the behaviour, thermal- and hypoxia tolerance of the Endangered Lake Chubsucker across lab and field contexts",
+      "authors": "Groves, Veronica; Blier, Siena C; Gervais, Laura C; Wein, Julia E; Chapman, Lauren J",
+      "journal": "Canadian J. Fisheries & Aquatic Sciences",
+      "date": "2026-06-27",
+      "abstract": "Increased aquatic turbidity often co-occurs with other environmental stressors, such as warming waters and low oxygen (hypoxia), which may impact the behaviour and physiology of aquatic organisms. Using three experiments, we examined whether chronic turbidity exposure affects the standard metabolic rate, hypoxia tolerance, and growth of the Endangered Lake Chubsucker (&lt;i&gt;Erimyzon sucetta&lt;/i&gt;) and whether acute exposure to turbidity impacts the behaviour and thermal tolerance of this species. Our results suggest that chronic exposure to turbidity decreases growth and decreases critical oxygen tension (Pcrit) in Lake Chubsucker relative to the chronic exposure to clear water. Across turbidity treatments, the mean Pcrit and oxygen level at loss of equilibrium were 26.3% air saturation and 4.7% air saturation respectively. When Lake Chubsucker were acutely exposed to medium turbidity, they exhibited fewer calm behaviours compared to when fish were exposed to the control or low turbidity. However, turbidity exposure did not impact thermal tolerance in both the lab and field experiments. As this is the first study to house and test environmental tolerances of Lake Chubsucker in Canada, our research provides unique insights into this Endangered species that may inform conservation efforts.",
+      "summary_cn": "研究浊度对濒危湖吸口鱼（Erimyzon sucetta）行为、热耐受及低氧耐受的影响。通过实验室与野外实验发现，长期浊度暴露会降低该鱼类的生长速率和临界氧张力（Pcrit），平均Pcrit和失去平衡时的溶氧水平分别为26.3%和4.7%空气饱和度。急性中等浊度暴露导致鱼类平静行为减少，但浊度未影响热耐受性。该研究首次在加拿大完成湖吸口鱼的环境耐受性测试，为濒危物种保护提供了关键数据。",
+      "url": "https://doi.org/10.1139/cjfas-2025-0442",
+      "source": "crossref_issn",
+      "keywords_matched": "Canadian J. Fisheries & Aquatic Sciences",
+      "high_impact": true
     },
     {
       "doi": "10.3390/sym18071084",
@@ -2680,74 +2797,26 @@
       "source": "crossref_issn",
       "keywords_matched": "Marine Ecology Progress Series",
       "high_impact": false
-    },
-    {
-      "doi": "10.1111/jfb.70532",
-      "title": "Gene cloning, characterization and expression analysis of\n                    <scp>\n                      <i>MAVS</i>\n                    </scp>\n                    in Chinese black sleeper (\n                    <scp>\n                      <i>Bostrychus sinensis</i>\n                    </scp>\n                    )",
-      "authors": "Zhou, Zhenzhen; Zhang, Jianshe",
-      "journal": "Journal of Fish Biology",
-      "date": "2026-06-13",
-      "abstract": "Abstract Mitochondrial antiviral signalling protein (MAVS) is a critical adaptor in RIG‐I‐like receptor‐mediated antiviral innate immunity; however, its molecular characteristics and expression profiles in Chinese black sleeper ( Bostrychus sinensis ) remain poorly understood. In this study, the full‐length coding sequence of MAVS from B. sinensis ( BsMAVS ) was cloned and characterized. BsMAVS encodes 827 amino acid residues and contains a conserved caspase activation and recruitment domain (CARD). Multiple sequence alignment and phylogenetic analyses demonstrated that BsMAVS, particularly its CARD domain, is highly conserved among teleost species. Furthermore, qPCR analysis indicated that BsMAVS is constitutively expressed in various tissues of healthy B. sinensis , with relatively higher expression levels in immune‐related tissues, including the spleen and head kidney. BsMAVS expression was dynamically regulated in the spleen, peripheral blood, liver and head kidney following polyinosinic‐polycytidylic acid (poly[I:C]) stimulation. These results provide baseline molecular and expression information for MAVS in B. sinensis , contributing to a better understanding of antiviral‐related genes in teleost fishes.",
-      "summary_cn": "克隆并鉴定了中华乌塘鳢（Bostrychus sinensis）线粒体抗病毒信号蛋白（MAVS）基因的全长编码序列，该基因编码827个氨基酸，含有保守的CARD结构域。系统发育分析显示BsMAVS在硬骨鱼类中高度保守，且在脾脏和头肾等免疫组织中组成型高表达。poly(I:C)刺激后，BsMAVS在脾脏、外周血、肝脏和头肾中的表达呈动态变化。研究为硬骨鱼类抗病毒基因功能解析提供了基础分子信息。",
-      "url": "https://doi.org/10.1111/jfb.70532",
-      "source": "crossref_issn",
-      "keywords_matched": "Journal of Fish Biology",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1111/jfb.70534",
-      "title": "Unveiling the whale shark diet: Insights from stomach content\n                    <scp>DNA</scp>\n                    metabarcoding",
-      "authors": "García‐Baciero, Alberto; Loughlin, Camila Mac; Ramírez‐Macías, Dení; Munguia‐Vega, Adrian",
-      "journal": "Journal of Fish Biology",
-      "date": "2026-06-13",
-      "abstract": "Abstract This study presents the first direct dietary assessment of a juvenile whale shark ( Rhincodon typus ) using DNA recovered from its stomach content. A DNA metabarcoding library for the 18S gene showed the most abundant prey were cnidarians (Class Anthozoa, 43.4%, including soft corals and sea pens) and crustaceans (Class Hexanauplia, 40.2%, represented by four orders of copepods). These results expand the breadth of items present in the diet of whale sharks and underscore gaps in understanding the trophic ecology and habitat use of elusive and threatened marine megafauna.",
-      "summary_cn": "本研究首次利用胃内容物DNA宏条形码技术，对幼年鲸鲨（Rhincodon typus）的食性进行直接评估。18S基因文库显示，其主要猎物为刺胞动物（珊瑚虫纲，43.4%，包括软珊瑚和海鳃）和甲壳动物（六鳃纲，40.2%，以四个目桡足类为代表）。该结果拓展了鲸鲨食性组成认知，揭示了这一濒危大型海洋生物在营养生态与栖息地利用研究中的空白。",
-      "url": "https://doi.org/10.1111/jfb.70534",
-      "source": "crossref_issn",
-      "keywords_matched": "Journal of Fish Biology",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1007/s12562-026-01995-6",
-      "title": "Feeding habits of the cutlassfish Trichiurus japonicus in Osaka Bay, Japan",
-      "authors": "Kimura, Yuki",
-      "journal": "Fisheries Science",
-      "date": "2026-06-13",
-      "abstract": "",
-      "summary_cn": "研究日本大阪湾日本带鱼（Trichiurus japonicus）的摄食习性。通过胃含物分析，鉴定其食物组成与季节变化。主要发现该鱼种以鱼类和甲壳类为主食，摄食强度随个体大小和环境因素变化。",
-      "url": "https://doi.org/10.1007/s12562-026-01995-6",
-      "source": "crossref_issn",
-      "keywords_matched": "Fisheries Science",
-      "high_impact": true
     }
   ],
   "weekly_topics": {
     "2026-W26": {
       "week_key": "2026-W26",
       "week_range": "6月22日—6月28日",
-      "topic": "海洋酸化与渔业可持续性：从繁殖到生态系统的多维挑战",
-      "keywords": "海洋酸化(Ocean Acidification), 珊瑚礁生态(Coral Reef Ecology), 鱼类检测(Fish Detection), 水产养殖(Aquaculture), 鱼类生物学(Fish Biology), 渔业管理(Fisheries Management), 生物多样性(Biodiversity), 环境胁迫(Environmental Stress)",
+      "topic": "气候变化与渔业可持续性：海洋酸化、碳汇与生态管理前沿",
+      "keywords": "海洋酸化(Ocean Acidification), 水产养殖(Aquaculture), 鱼类饲料(Fish Feed), 珊瑚礁生态(Coral Reef Ecology), 渔业碳汇(Fishery Carbon Sink), 鱼类行为(Fish Behavior), 鱼类检测(Fish Detection), 可持续渔业(Sustainable Fisheries)",
       "article": "---\n\n## 本周研究概览\n\n本周共收录25篇与渔业科学相关的论文，研究方向涵盖面较广，但呈现出几个显著趋势。首先，**水产养殖与环境管理**是热点领域，涉及水质预测、益生菌应用、气候变化适应策略（如气候智慧型水产养殖）以及养殖遥感监测。其次，**渔业资源评估与管理**方面，研究侧重于利用CPUE指数、物种分布模型等工具，结合环境因子（如气候变化）进行动态管理。此外，**鱼类生物学与生态学**研究也占据重要地位，包括行为生态（如标记放流）、寄生虫与疾病、以及基因组学。整体来看，本周研究体现了从基础生物学到应用管理，并高度融合**物联网（IoT）、机器学习（ML）和遥感技术**的跨学科趋势，旨在应对气候变化和人类活动对渔业可持续性的挑战。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature, Science, PNAS, Nature Climate Change, Nature Ecology & Evolution, Nature Sustainability, Nature Communications, Science Advances等顶级期刊上的渔业相关论文。\n\n## 创新性研究\n\n1. **Quantifying post‐release behaviour of a critically endangered elasmobranch over two capture events using high‐resolution archival tag data** (Journal of Fish Biology)\n   该研究的创新之处在于利用高分辨率档案标签，首次量化了极度濒危的软骨鱼类在**多次捕获-释放事件**后的行为变化。这超越了以往仅关注单次释放的研究范式，为评估休闲垂钓对高度定居性濒危物种的累积影响提供了关键数据，对制定更精准的保护管理措施具有重要意义。\n\n2. **Linking species distribution models with population abundance to support adaptive fisheries management** (Ecography)\n   本研究创新性地将物种分布模型（SDM）与种群丰度数据直接关联，在亚得里亚海建立了首个基于过程的、盆地尺度的关键鱼类栖息地（EFH）框架。其核心创新在于超越了传统的栖息地适宜性预测，能够量化环境变异如何驱动种群丰度变化，为动态海洋生态系统下的适应性渔业管理提供了可操作的工具。\n\n3. **DOM consumption and demethylation of MeHg as potential drivers of low MeHg in Mediterranean Sea sponges and benthic fish: a modeling perspective** (Biogeosciences)\n   该研究通过建模视角，提出了一个新颖的机制来解释地中海海绵和底栖鱼类中甲基汞（MeHg）含量异常低的现象。其创新点在于假设溶解有机质（DOM）的消耗和MeHg的去甲基化过程是主要驱动力，挑战了传统的食物网累积观点，为理解汞元素在海洋底栖生态系统中的生物地球化学循环提供了全新思路。\n\n4. **A frequency domain enhanced lightweight oriented object detector for floating raft aquaculture mapping in high-resolution coastal imagery** (Frontiers in Marine Science)\n   本研究针对高分辨率遥感影像中浮筏养殖（FRA）的精准制图难题，提出了一种**频域增强的轻量级定向目标检测器**。其创新在于通过频域分析增强目标-背景对比度，并采用轻量化设计，在保证精度的同时大幅提升计算效率，为大规模、长期的沿海养殖动态监测提供了高效、实用的技术方案。\n\n## 推荐阅读\n\n1. **Quantifying post‐release behaviour of a critically endangered elasmobranch over two capture events using high‐resolution archival tag data** — 首次揭示多次捕获事件对濒危软骨鱼类的行为影响，对保护生物学和休闲渔业管理具有重要启示。\n2. **Linking species distribution models with population abundance to support adaptive fisheries management** — 将SDM与种群丰度直接关联，为基于生态系统的适应性渔业管理提供了创新性的方法论框架。\n3. **DOM consumption and demethylation of MeHg as potential drivers of low MeHg in Mediterranean Sea sponges and benthic fish: a modeling perspective** — 提出解释底栖生物低甲基汞含量的新机制，深化了对海洋汞循环的理解。\n4. **A frequency domain enhanced lightweight oriented object detector for floating raft aquaculture mapping in high-resolution coastal imagery** — 为沿海养殖遥感监测提供了高效、精准的新技术，具有重要的应用推广价值。\n5. **Differential impacts of hurricanes on direct and complex life cycle parasites: a 42-year study of riverine fish** — 基于长达42年的数据，揭示了飓风对不同生活史类型寄生虫的差异化影响，为理解极端气候事件对淡水生态系统疾病动态的长期效应提供了独特视角。",
-      "paper_count": 104,
-      "high_impact_count": 21
+      "paper_count": 113,
+      "high_impact_count": 24
     },
     "2026-W25": {
       "week_key": "2026-W25",
       "week_range": "6月15日—6月21日",
-      "topic": "鱼类生态与养殖前沿：水文脉冲、可持续生产与气候变化适应",
-      "keywords": "鱼类养殖(Fish Aquaculture), 渔业资源评估(Fisheries Stock Assessment), 气候变化(Climate Change), 鱼类生态(Fish Ecology), 水产病害(Aquatic Diseases), 遗传多样性(Genetic Diversity), 可持续渔业(Sustainable Fisheries), 鱼类行为(Fish Behavior)",
+      "topic": "鱼类养殖与生态保护：多学科融合下的可持续发展前沿",
+      "keywords": "鱼类养殖(Fish Aquaculture), 渔业管理(Fisheries Management), 气候变化(Climate Change), 鱼类健康(Fish Health), 种群评估(Stock Assessment), 水产养殖系统(Aquaculture Systems), 遗传分析(Genetic Analysis), 生态模型(Ecological Modeling)",
       "article": "# 本周研究概览\n\n本周共收录渔业相关论文50篇，涵盖水产养殖技术、渔业资源评估、鱼类生态与进化、渔业管理政策、鱼类生理与健康、以及渔业与环境交互等多个研究方向。整体研究趋势呈现以下特点：一是水产养殖领域聚焦于精准投喂、生物絮团技术、循环水系统优化等可持续生产实践；二是气候变化对渔业生态系统的影响成为热点，涉及鱼类分布变迁、保护区连通性、捕捞努力量再分配等议题；三是跨学科方法应用日益广泛，包括深度学习预测、无人机高光谱遥感、多水平回归与事后分层等创新手段。此外，鱼类寄生虫、微塑料污染、入侵物种等传统议题持续受到关注。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS等顶级期刊上的渔业相关论文。\n\n## 创新性研究\n\n1. **Nutritional resilience underpins fish invasion in subtropical waters**（*Communications Earth & Environment*）— 该研究首次从食物营养质量角度解释鱼类入侵机制，发现入侵鱼类对季节性食物质量下降的耐受性显著强于本地种，为生物入侵理论提供了新的营养生态学视角。\n\n2. **Nonlinear dynamics of fish beta diversity and the disproportionate influence of non‐native species in cascade‐dammed rivers**（*Conservation Biology*）— 基于黄河上游近20年数据，揭示了梯级水坝开发下鱼类β多样性的非线性响应模式，并首次量化了外来物种在驱动多样性变化中的不成比例作用，对大型河流生态修复具有重要指导意义。\n\n3. **A streamlined genetic framework for identifying hatchery-origin individuals in natural populations of large yellow croaker**（*Reviews in Fish Biology and Fisheries*）— 开发了一套简化高效的遗传鉴定框架，可准确区分大黄鱼野生与养殖个体，为增殖放流效果评估和野生种群保护提供了实用工具。\n\n4. **Management Participants Perceive That Structural Barriers, Not Information Needs, Most Impede Adaptation in U.S. Fisheries Management**（*Fish and Fisheries*）— 通过对美国渔业管理参与者的系统调查，揭示了阻碍气候适应能力提升的核心因素并非信息不足，而是制度性障碍，为全球渔业治理改革提供了重要启示。\n\n5. **Deep learning-based chlorophyll prediction: comparison with a dynamic model and applications to fish catch forecasting**（*Earth System Dynamics*）— 将深度学习模型与地球系统模型结合用于叶绿素预测，并首次应用于渔获量预报，展示了人工智能在渔业资源动态预测中的巨大潜力。\n\n## 推荐阅读\n\n1. **Nutritional resilience underpins fish invasion in subtropical waters** — 从营养生态学新视角解释鱼类入侵机制，方法新颖且具有理论突破性。\n\n2. **Nonlinear dynamics of fish beta diversity and the disproportionate influence of non‐native species in cascade‐dammed rivers** — 基于长期数据揭示梯级水坝对鱼类多样性的非线性影响，对大型河流生态管理具有直接指导价值。\n\n3. **Management Participants Perceive That Structural Barriers, Not Information Needs, Most Impede Adaptation in U.S. Fisheries Management** — 系统揭示渔业气候适应的制度性障碍，对全球渔业治理改革具有重要参考意义。\n\n4. **Deep learning-based chlorophyll prediction: comparison with a dynamic model and applications to fish catch forecasting** — 创新性地将深度学习与地球系统模型结合用于渔获量预测，方法学价值突出。\n\n5. **Climate change reshapes species-specific connectivity among marine protected areas in the Yangtze River estuary and adjacent waters** — 针对长江口这一关键区域，评估气候变化对海洋保护区连通性的影响，具有重要的保护规划意义。",
       "paper_count": 102,
       "high_impact_count": 18
-    },
-    "2026-W24": {
-      "week_key": "2026-W24",
-      "week_range": "6月8日—6月14日",
-      "topic": "鱼类免疫基因与摄食生态研究新进展",
-      "keywords": "基因克隆(Gene Cloning), 食性分析(Feeding Habits), 鲸鲨(Whale Shark), 胃含物DNA(Stomach Content DNA), 代谢编码(Metabarcoding), 免疫基因(Immune Gene), 中华乌塘鳢(Chinese Black Sleeper), 日本带鱼(Cutlassfish)",
-      "article": "## 本周研究概览\n\n本周（2026-W24）共收录20篇渔业相关论文，主要发表在*Journal of Fish Biology*、*Marine Ecology Progress Series*、*Canadian Journal of Fisheries and Aquatic Sciences*等期刊上。研究覆盖了鱼类分子免疫与遗传、摄食生态与食性分析、气候变化与早期生活史响应、渔业资源管理与政策评估、以及水产养殖营养与健康等多个方向。整体趋势表现为：分子生物学手段（如DNA metabarcoding、环境DNA）在渔业生态研究中的应用日益广泛；气候变化对鱼类生理、生长及生活史的影响仍是热点；同时，跨学科研究（如法律政策与渔业治理、社会经济影响评估）也受到关注。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances等顶级期刊上的渔业相关论文。\n\n## 创新性研究\n\n1. **Unveiling the whale shark diet: Insights from stomach content DNA metabarcoding** — 该研究首次利用胃内容物DNA宏条形码技术直接评估了幼年鲸鲨的食性，发现其主要猎物为刺胞动物（包括软珊瑚和海葵），颠覆了以往认为鲸鲨主要以浮游动物为食的传统认知。这一方法为研究大型滤食性鲨鱼的摄食生态提供了非侵入性、高分辨率的新工具。\n\n2. **Modified fin morphology in mackerel icefish may indicate nesting behaviour** — 该研究首次发现商业捕捞的南极鱼种——马鲛冰鱼（*Champsocephalus gunnari*）的雄性个体存在类似其他冰鱼科物种的臀鳍上皮增厚现象，提示其可能具有筑巢行为。这一发现为理解该物种的繁殖生态和种群管理提供了关键线索，尤其对南极海洋生物资源养护具有重要参考价值。\n\n3. **Climate-driven shifts in early life history via shortened marine residence in amphidromous ayu** — 该研究通过长期数据揭示了气候变化如何缩短香鱼（*Plecoglossus altivelis*）的海洋栖息时间，从而改变其早期生活史策略。研究将气候变暖与洄游鱼类生活史可塑性直接关联，为预测气候变化对洄游鱼类种群动态的影响提供了新视角。\n\n4. **From processes to traits: a mechanistic framework for understanding ecosystem roles of cryptobenthic reef fishes** — 该研究提出了一个基于功能性状的机制框架，用于理解隐栖性珊瑚礁鱼类的生态系统角色。这一框架超越了传统的物种组成分析，将生态过程与功能性状联系起来，为评估珊瑚礁生态系统功能和生物多样性保护提供了新的理论工具。\n\n## 推荐阅读\n\n1. **Unveiling the whale shark diet: Insights from stomach content DNA metabarcoding** — 首次利用DNA宏条形码技术揭示鲸鲨食性，方法新颖且颠覆传统认知。\n2. **Climate-driven shifts in early life history via shortened marine residence in amphidromous ayu** — 长期数据揭示气候变化对洄游鱼类生活史的直接驱动作用，具有重要预测价值。\n3. **Modified fin morphology in mackerel icefish may indicate nesting behaviour** — 为商业捕捞南极鱼种的繁殖生态研究提供关键线索，对资源管理有直接意义。\n4. **Protecting fishes in agricultural drains: evaluating Canadian policy using environmental DNA** — 利用环境DNA技术评估农业排水渠中鱼类保护政策的有效性，方法实用且政策关联性强。\n5. **From processes to traits: a mechanistic framework for understanding ecosystem roles of cryptobenthic reef fishes** — 提出基于功能性状的机制框架，为珊瑚礁生态系统功能研究提供新范式。",
-      "paper_count": 3,
-      "high_impact_count": 1
     }
   }
 }
