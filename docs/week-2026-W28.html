@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>鱼类研究前沿：深度学习、气候变化与长寿机制的多维探索 — 渔业文献每周速览</title>
+<style>
+:root {
+  --bg: #f7fafc; --bg-card: #ffffff; --text: #2d3748;
+  --text-secondary: #718096; --text-muted: #a0aec0; --border: #e2e8f0;
+  --primary: #2b6cb0; --primary-light: #bee3f8; --primary-dark: #1a365d;
+  --accent: #e76f51; --accent-light: #fed7d7;
+  --teal: #319795; --teal-light: #b2f5ea;
+  --gold: #d69e2e; --gold-light: #fefcbf;
+  --shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.10);
+  --radius: 12px; --radius-sm: 8px;
+}
+[data-theme="dark"] {
+  --bg: #1a202c; --bg-card: #2d3748; --text: #e2e8f0;
+  --text-secondary: #a0aec0; --text-muted: #718096; --border: #4a5568;
+  --primary: #90cdf4; --primary-light: #2a4365; --primary-dark: #bee3f8;
+  --accent: #fc8181; --accent-light: #742a2a;
+  --teal: #81e6d9; --teal-light: #234e52;
+  --gold: #f6e05e; --gold-light: #3d3a1a;
+  --shadow: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.5);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;transition:background 0.3s,color 0.3s}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* === Top Bar === */
+.topbar{background:linear-gradient(135deg,#1a365d,#2b6cb0);color:#fff;padding:0.8rem 1.5rem;display:flex;align-items:center;gap:1rem;position:sticky;top:0;z-index:100}
+.back-btn{color:#fff;font-size:0.95rem;font-weight:600;padding:0.4rem 0.8rem;border-radius:var(--radius-sm);border:1.5px solid rgba(255,255,255,0.3);transition:all 0.2s;white-space:nowrap}
+.back-btn:hover{background:rgba(255,255,255,0.15);text-decoration:none}
+.topbar .title-area{flex:1;min-width:0}
+.topbar .week-range{font-size:0.78rem;opacity:0.8}
+.topbar .week-topic{font-size:1rem;font-weight:700;line-height:1.3}
+.topbar .theme-toggle{padding:0.4rem 0.8rem;border:1.5px solid rgba(255,255,255,0.3);border-radius:var(--radius-sm);background:transparent;color:#fff;cursor:pointer;font-size:0.85rem;transition:all 0.2s;white-space:nowrap}
+.topbar .theme-toggle:hover{background:rgba(255,255,255,0.15)}
+
+.container{max-width:1100px;margin:0 auto;padding:1.5rem}
+
+/* === Article Section === */
+.article-section{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;margin-bottom:1.5rem;box-shadow:var(--shadow)}
+.article-section h2{font-size:1.3rem;color:var(--primary-dark);margin:1.5rem 0 0.75rem;padding-bottom:0.4rem;border-bottom:2px solid var(--primary-light)}
+.article-section h2:first-child{margin-top:0}
+.article-section p{margin-bottom:0.8rem;line-height:1.8;color:var(--text)}
+.article-section strong{color:var(--primary-dark)}
+.article-section ol,.article-section ul{padding-left:1.5rem;margin-bottom:0.8rem}
+.article-section li{margin-bottom:0.5rem;line-height:1.7}
+.article-tag{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-right:0.5rem}
+.tag-overview{background:var(--primary-light);color:var(--primary-dark)}
+.tag-highlight{background:var(--accent-light);color:var(--accent)}
+.tag-innovative{background:var(--gold-light);color:var(--gold)}
+.tag-recommend{background:var(--teal-light);color:var(--teal)}
+
+/* === Stats Row === */
+.stats-row{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.stat-mini{padding:0.5rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-secondary)}
+.stat-mini strong{color:var(--primary);font-size:1.1rem}
+
+/* === Controls === */
+.controls{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.search-box{flex:1;min-width:200px;position:relative}
+.search-box input{width:100%;padding:0.6rem 1rem 0.6rem 2.5rem;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:0.9rem;background:var(--bg-card);color:var(--text);transition:border-color 0.2s}
+.search-box input:focus{outline:none;border-color:var(--primary)}
+.search-box .search-icon{position:absolute;left:0.8rem;top:50%;transform:translateY(-50%);color:var(--text-muted);pointer-events:none}
+
+/* === Paper Grid === */
+.section-title{font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:0.75rem;display:flex;align-items:center;gap:0.5rem}
+.paper-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:0.85rem;margin-bottom:1.5rem}
+.paper-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1.1rem;transition:all 0.25s;display:flex;flex-direction:column;position:relative}
+.paper-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);border-color:var(--primary-light)}
+.paper-card.high-impact{border-left:3px solid var(--accent)}
+.paper-card .hi-badge{position:absolute;top:0.5rem;right:0.5rem;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:10px;background:var(--accent-light);color:var(--accent);font-weight:700}
+.paper-card .journal{font-size:0.78rem;color:var(--teal);font-weight:600;margin-bottom:0.3rem}
+.paper-card .title{font-size:0.95rem;font-weight:700;line-height:1.45;margin-bottom:0.35rem}
+.paper-card .title a{color:var(--text)}
+.paper-card .title a:hover{color:var(--primary);text-decoration:none}
+.paper-card .meta{font-size:0.78rem;color:var(--text-muted);margin-bottom:0.6rem;display:flex;flex-wrap:wrap;gap:0.5rem}
+
+/* Chinese Summary */
+.paper-card .summary-cn{background:linear-gradient(135deg,#fffaf0,#fffff0);border-left:3px solid var(--gold);padding:0.7rem 0.85rem;margin-bottom:0.5rem;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:0.88rem;line-height:1.55;color:#744210}
+[data-theme="dark"] .paper-card .summary-cn{background:linear-gradient(135deg,#3d2e1a,#372a10);color:#fbd38d}
+
+.abstract-toggle{font-size:0.8rem;color:var(--primary);cursor:pointer;font-weight:600;user-select:none;display:inline-flex;align-items:center;gap:0.25rem;padding:0.3rem 0;border:none;background:none}
+.abstract-toggle:hover{color:var(--accent)}
+.abstract-toggle .arrow{transition:transform 0.2s;font-size:0.7rem}
+.abstract-toggle.open .arrow{transform:rotate(90deg)}
+.abstract-content{display:none;font-size:0.82rem;color:var(--text-secondary);line-height:1.55;padding:0.5rem 0;border-top:1px dashed var(--border);margin-top:0.4rem}
+.abstract-content.visible{display:block}
+
+.paper-card.hidden{display:none}
+.no-results{display:none;text-align:center;padding:2rem;color:var(--text-muted)}
+.no-results.visible{display:block}
+
+@media(max-width:768px){.paper-grid{grid-template-columns:1fr}.article-section{padding:1.25rem}.topbar{flex-wrap:wrap}.topbar .week-topic{font-size:0.9rem}}
+
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.paper-card{animation:fadeIn 0.4s ease-out}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="back-btn" href="index.html">← 返回主页</a>
+  <div class="title-area">
+    <div class="week-range">7月6日—7月6日</div>
+    <div class="week-topic">鱼类研究前沿：深度学习、气候变化与长寿机制的多维探索</div>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <span id="themeIcon">🌙</span> <span id="themeLabel">暗色</span>
+  </button>
+</div>
+
+<div class="container">
+
+  <!-- 深度综述文章 -->
+  
+  <div class="article-section">
+    <h2>本周研究概览</h2>
+
+<p>本周（2026-W28）共收录8篇渔业相关论文，研究主题涵盖渔业资源评估、水产养殖技术、鱼类生态学与生理学、以及渔业管理等多个方向。整体趋势表现为：一是人工智能与机器学习技术在渔业中的应用持续深化，从鱼体重量预测到鲸鲨识别追踪，再到渔业产量预报，体现了数据驱动方法对传统渔业研究的赋能；二是气候变化对渔业的影响及其归因分析成为热点，研究者开始将气候因子直接纳入资源评估模型；三是鱼类基础生物学研究依然活跃，涉及长寿机制、繁殖生物学和食物网结构等经典议题。</p>
+
+<h2>高影响力期刊亮点</h2>
+
+<p>本周暂无发表在Nature、Science、PNAS等顶级综合期刊或Nature子刊上的论文。</p>
+
+<h2>创新性研究</h2>
+
+<ol>
+<li><strong>Climate Attribution in Fishery Stock Assessment: Case Studies From the Northeast U.S. Groundfish Stocks</strong>（*Fish and Fisheries*）— 该研究首次系统地将气候归因方法整合到渔业资源评估框架中，通过美国东北部底层鱼类案例展示了如何量化气候变化对种群动态的贡献。其创新之处在于突破了传统资源评估中仅考虑捕捞压力的局限，为气候适应性渔业管理提供了可操作的方法论。</li>
+</ol>
+
+<ol>
+<li><strong>Explainable AI-Driven Machine Learning for Forecasting Marine Fisheries Production Using Environmental Predictors</strong>（*Machine Learning and Knowledge Extraction*）— 该研究将可解释人工智能（XAI）引入渔业产量预测，不仅提升了预报精度，还揭示了环境因子对产量的非线性影响机制。其创新点在于克服了传统“黑箱”机器学习模型的可解释性缺陷，为区域渔业管理提供了透明、可信的决策支持工具。</li>
+</ol>
+
+<ol>
+<li><strong>Potential factors contributing to extreme longevity in the Greenland shark</strong>（*Journal of Fish Biology*）— 该研究系统探讨了格陵兰鲨（*Somniosus microcephalus*）超长寿命（>400年）的潜在机制，从代谢率、DNA修复能力、抗氧化防御等多个维度提出假说。其创新性在于整合了比较基因组学与生理生态学视角，为理解脊椎动物极端长寿的进化机制提供了新线索。</li>
+</ol>
+
+<ol>
+<li><strong>Egg and larval production of Eastern Baltic cod in captivity over one spawning season</strong>（*Journal of Fish Biology*）— 该研究首次在人工养殖条件下完整记录了东波罗的海鳕鱼（*Gadus morhua*）整个产卵季节的卵和幼体产量。其创新之处在于通过控制实验揭示了亲本大小与体况对繁殖成功率的直接影响，为解释该种群持续衰退的机制提供了关键实验证据。</li>
+</ol>
+
+<h2>推荐阅读</h2>
+
+<ol>
+<li><strong>Climate Attribution in Fishery Stock Assessment: Case Studies From the Northeast U.S. Groundfish Stocks</strong> — 开创性地将气候归因纳入资源评估，是气候适应性渔业管理的必读文献。</li>
+<li><strong>Explainable AI-Driven Machine Learning for Forecasting Marine Fisheries Production Using Environmental Predictors</strong> — 展示了可解释AI在渔业预测中的前沿应用，方法新颖且实用价值高。</li>
+<li><strong>Potential factors contributing to extreme longevity in the Greenland shark</strong> — 系统综述了脊椎动物最长寿物种的潜在机制，对理解衰老生物学具有跨学科意义。</li>
+<li><strong>Automated whale shark recognition and tracking using drones and deep learning</strong> — 结合无人机与深度学习实现了濒危物种的非侵入性监测，技术路线具有推广价值。</li>
+<li><strong>Seasonal Hydrology Restructures Basal Carbon Pathways in a Lower Yangtze River Fish Food Web: A Stable-Isotope Baseline for the Fishing-Ban Era</strong> — 为长江十年禁渔效果评估提供了关键的食物网基线数据，具有重要的管理参考价值。</li>
+</ol>
+  </div>
+  
+
+  <!-- 统计 -->
+  <div class="stats-row">
+    <div class="stat-mini">📄 <strong>8</strong> 篇论文</div>
+    <div class="stat-mini">🌟 <strong>0</strong> 篇高影响力期刊</div>
+    <div class="stat-mini">🤖 <strong>8</strong> 篇 AI 中文总结</div>
+    
+    <div class="stat-mini">🏷️ 鱼类体重预测(Fish Weight Prediction) 渔业资源评估(Fishery Stock Assessment) 深度学习(Deep Learning) 气候变化归因(Climate Attribution) </div>
+    
+  </div>
+
+  <!-- 搜索 -->
+  <div class="controls">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="搜索标题、作者、摘要..." oninput="filterPapers()">
+    </div>
+  </div>
+
+  <div class="no-results" id="noResults">😕 没有匹配的论文</div>
+
+  <!-- 全部论文列表 -->
+  <div class="section-title">📄 本周全部论文（8 篇）</div>
+  <div class="paper-grid">
+    
+    <div class="paper-card"
+         data-title="mect-mobilevit: a lightweight fish weight prediction model based on dual-view morphological feature fusion and anti-interference attention"
+         data-authors="wang, yi; tan, mingyu; deng, jingtao; yang, lin; wu, yongjie; peng, hao; ouyang, cheng; luo, yahui; hu, wenwu; jiang, pin"
+         data-journal="animals"
+         data-abstract="in intensive aquaculture, non-invasive real-time monitoring of morphological traits and body weight of largemouth bass (micropterus salmoides) is essential for precision feeding and yield estimation. manual measurement is laborious and stressful, whereas vision-based methods are challenged by insufficient dual-view feature fusion, poor robustness to underwater noise, and over-parameterized models unsuitable for edge deployment. to address these issues, a lightweight framework, mect-mobilevit, is proposed based on mobilevit-xxs. a morphometric-guided multi-scale fusion module is designed to couple physical priors with dual-branch visual features, strengthening shape–weight association. an eca-nl attention block employing instance normalization, glu gating, and threshold filtering is embedded to enhance feature robustness against visual disturbances typical in aquaculture and to accentuate critical morphological features. a three-stage synergistic pruning strategy—attention head pruning, structured channel pruning, and depthwise separable attention substitution—is applied to achieve substantial compression while preserving representational capacity. experiments on a self-built lateral–dorsal dual-view dataset show that the proposed model significantly outperforms mainstream benchmarks. the pruned version attains an r2 of 0.8266 and an rmse of 16.4201, with less than 2% accuracy degradation relative to the best unpruned model, and contains only 7.34 m parameters. this study demonstrates a promising prototype for contactless, stress-free weight estimation in largemouth bass and offers new technical insights into feature fusion, noise suppression, and collaborative model compression for aquaculture visual perception."
+         data-summary="针对集约化养殖中大口黑鲈非侵入式体重监测需求，提出轻量化模型mect-mobilevit。通过形态引导多尺度融合模块耦合物理先验与双视角视觉特征，并嵌入eca-nl注意力模块增强抗水下噪声能力。采用三阶段协同剪枝策略（注意力头剪枝、结构化通道剪枝、深度可分离注意力替换），在自建侧-背双视角数据集上实现r²=0.8266、rmse=16.4201，参数量仅7.34m。该研究为水产养殖视觉感知中的特征融合、噪声抑制与模型压缩提供了新思路。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Animals
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 针对集约化养殖中大口黑鲈非侵入式体重监测需求，提出轻量化模型MECT-MobileViT。通过形态引导多尺度融合模块耦合物理先验与双视角视觉特征，并嵌入ECA-NL注意力模块增强抗水下噪声能力。采用三阶段协同剪枝策略（注意力头剪枝、结构化通道剪枝、深度可分离注意力替换），在自建侧-背双视角数据集上实现R²=0.8266、RMSE=16.4201，参数量仅7.34M。该研究为水产养殖视觉感知中的特征融合、噪声抑制与模型压缩提供了新思路。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/ani16132076" target="_blank" rel="noopener">MECT-MobileViT: A Lightweight Fish Weight Prediction Model Based on Dual-View Morphological Feature Fusion and Anti-Interference Attention</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Wang, Yi; Tan, Mingyu; Deng, Jingtao; Yang, Lin; Wu, Yongjie...</span>
+        
+        <span>📅 2026-07-06</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">In intensive aquaculture, non-invasive real-time monitoring of morphological traits and body weight of largemouth bass (Micropterus salmoides) is essential for precision feeding and yield estimation. Manual measurement is laborious and stressful, whereas vision-based methods are challenged by insufficient dual-view feature fusion, poor robustness to underwater noise, and over-parameterized models unsuitable for edge deployment. To address these issues, a lightweight framework, MECT-MobileViT, is proposed based on MobileViT-xxs. A Morphometric-Guided Multi-Scale Fusion module is designed to couple physical priors with dual-branch visual features, strengthening shape–weight association. An ECA-NL attention block employing instance normalization, GLU gating, and threshold filtering is embedded to enhance feature robustness against visual disturbances typical in aquaculture and to accentuate critical morphological features. A three-stage synergistic pruning strategy—attention head pruning, structured channel pruning, and depthwise separable attention substitution—is applied to achieve substantial compression while preserving representational capacity. Experiments on a self-built lateral–dorsal dual-view dataset show that the proposed model significantly outperforms mainstream benchmarks. The pruned version attains an R2 of 0.8266 and an RMSE of 16.4201, with less than 2% accuracy degradation relative to the best unpruned model, and contains only 7.34 M parameters. This study demonstrates a promising prototype for contactless, stress-free weight estimation in largemouth bass and offers new technical insights into feature fusion, noise suppression, and collaborative model compression for aquaculture visual perception.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="seasonal hydrology restructures basal carbon pathways in a lower yangtze river fish food web: a stable-isotope baseline for the fishing-ban era"
+         data-authors="zhang, ya; zhou, tianshu; zhang, yuting; guo, hongyi; zhang, xuguang"
+         data-journal="biology"
+         data-abstract="seasonal hydrology reshapes large-river food webs by altering habitat connectivity and basal resource availability. trophic baselines from before the 2021 yangtze ten-year fishing ban are now valuable because monitoring has shifted from fish abundance alone toward food-web function and ecological recovery. we analysed carbon (δ13c) and nitrogen (δ15n) stable isotopes of fish and the baseline bivalve corbicula fluminea collected in march (dry season) and august (wet season) 2016 from the jingjiang section of the lower yangtze river. in the dry season, 100 individuals of 27 species were analysed; species mean δ13c ranged from −30.52‰ (micropercops swinhonis) to −21.19‰ (aristichthys nobilis) and δ15n from 6.30‰ (hypophthalmichthys molitrix) to 14.90‰ (lophiogobius ocellicauda). in the wet season, 187 individuals of 47 species were analysed; species mean δ13c ranged from −32.07‰ (pseudobrama simoni) to −20.84‰ (salanx ariakensis) and δ15n from 6.27‰ (misgurnus anguillicaudatus) to 14.87‰ (saurogobio gymnocheilus). among 24 shared species, δ13c differed significantly between seasons (paired t = 4.30, p &lt; 0.001), but δ15n did not (t = 1.52, p = 0.143). mean trophic level fell from 3.07 to 2.74 (t = 3.85, p &lt; 0.001). this decline remained significant in a trophic-enrichment-factor sensitivity analysis using 2.5–4.0‰. community-wide carbon range (cr), nitrogen range (nr), total convex-hull area (ta), mean nearest-neighbour distance (nnd), and the standard deviation of nearest-neighbour distance (sdnnd) showed larger wet-season cr (9.08 vs. 7.51), slightly larger nr, ta and nnd, and lower sdnnd. seasonal hydrology thus mainly altered basal carbon pathways and relative trophic positions rather than reorganising feeding guilds. the dataset provides a pre-ban isotopic baseline for assessing whether post-ban recovery in the lower yangtze includes restoration of trophic structure and energy-flow pathways."
+         data-summary="通过分析2016年长江下游靖江段枯水期（3月）和丰水期（8月）鱼类及底栖双壳类河蚬的碳氮稳定同位素，揭示季节性水文显著改变基础碳源路径和相对营养位置，但未重组摄食功能群。枯水期27种100尾与丰水期47种187尾鱼类中，24种共有种的δ13c存在显著季节差异，而δ15n无显著变化；平均营养级从3.07降至2.74。丰水期群落碳范围（cr）增大，表明水文驱动的栖息地连通性变化主要影响基础碳输入而非营养结构重组。该数据集为长江十年禁渔期后评估食物网功能恢复提供了关键的同位素基线。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 通过分析2016年长江下游靖江段枯水期（3月）和丰水期（8月）鱼类及底栖双壳类河蚬的碳氮稳定同位素，揭示季节性水文显著改变基础碳源路径和相对营养位置，但未重组摄食功能群。枯水期27种100尾与丰水期47种187尾鱼类中，24种共有种的δ13C存在显著季节差异，而δ15N无显著变化；平均营养级从3.07降至2.74。丰水期群落碳范围（CR）增大，表明水文驱动的栖息地连通性变化主要影响基础碳输入而非营养结构重组。该数据集为长江十年禁渔期后评估食物网功能恢复提供了关键的同位素基线。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/biology15131076" target="_blank" rel="noopener">Seasonal Hydrology Restructures Basal Carbon Pathways in a Lower Yangtze River Fish Food Web: A Stable-Isotope Baseline for the Fishing-Ban Era</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Zhang, Ya; Zhou, Tianshu; Zhang, Yuting; Guo, Hongyi; Zhang,...</span>
+        
+        <span>📅 2026-07-06</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Seasonal hydrology reshapes large-river food webs by altering habitat connectivity and basal resource availability. Trophic baselines from before the 2021 Yangtze ten-year fishing ban are now valuable because monitoring has shifted from fish abundance alone toward food-web function and ecological recovery. We analysed carbon (δ13C) and nitrogen (δ15N) stable isotopes of fish and the baseline bivalve Corbicula fluminea collected in March (dry season) and August (wet season) 2016 from the Jingjiang section of the lower Yangtze River. In the dry season, 100 individuals of 27 species were analysed; species mean δ13C ranged from −30.52‰ (Micropercops swinhonis) to −21.19‰ (Aristichthys nobilis) and δ15N from 6.30‰ (Hypophthalmichthys molitrix) to 14.90‰ (Lophiogobius ocellicauda). In the wet season, 187 individuals of 47 species were analysed; species mean δ13C ranged from −32.07‰ (Pseudobrama simoni) to −20.84‰ (Salanx ariakensis) and δ15N from 6.27‰ (Misgurnus anguillicaudatus) to 14.87‰ (Saurogobio gymnocheilus). Among 24 shared species, δ13C differed significantly between seasons (paired t = 4.30, p &lt; 0.001), but δ15N did not (t = 1.52, p = 0.143). Mean trophic level fell from 3.07 to 2.74 (t = 3.85, p &lt; 0.001). This decline remained significant in a trophic-enrichment-factor sensitivity analysis using 2.5–4.0‰. Community-wide carbon range (CR), nitrogen range (NR), total convex-hull area (TA), mean nearest-neighbour distance (NND), and the standard deviation of nearest-neighbour distance (SDNND) showed larger wet-season CR (9.08 vs. 7.51), slightly larger NR, TA and NND, and lower SDNND. Seasonal hydrology thus mainly altered basal carbon pathways and relative trophic positions rather than reorganising feeding guilds. The dataset provides a pre-ban isotopic baseline for assessing whether post-ban recovery in the lower Yangtze includes restoration of trophic structure and energy-flow pathways.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="climate attribution in fishery stock assessment: case studies from the northeast u.s. groundfish stocks"
+         data-authors="kerr, lisa a.; behan, jamie t.; cadrin, steven x.; hansell, alexander c.; hart, amanda r.; kittel, jessica a.; large, scott i.; miller, timothy j.; tyrell, abigail s."
+         data-journal="fish and fisheries"
+         data-abstract="abstract climate change poses an unprecedented risk to fisheries ecosystems and economies globally. ocean warming has led to observed geographic shifts and changes in the productivity of fish stocks. due to the rapid pace of change in many of the world's oceans, there is a critical need to develop and apply scientific knowledge and tools that can help account for non‐stationarity and integrate climate and ecosystem drivers into fishery stock assessment to improve management outcomes. we developed a structured approach to identify and integrate the impact of climate and ecosystem change on fish stock dynamics in the context of stock assessment processes. we describe lessons learned in the application of this approach to groundfish stock assessment processes in the northeast u.s. (american plaice, atlantic cod and yellowtail flounder). the approach involves three general steps: (1) synthesizing the state of knowledge on stock‐climate relationships, (2) accounting for climate impacts on key data inputs and biological parameters that inform assessments, and (3) developing and evaluating the performance of climate informed stock assessment models. this approach represents an advance in climate attribution within stock assessment and is expected to enhance assessment performance and projection realism, supporting fisheries decision‐making for future resource sustainability."
+         data-summary="本研究提出了一种结构化方法，用于在渔业资源评估中识别和整合气候与生态系统变化对鱼类种群动态的影响。以美国东北部底层鱼类（美洲拟鲽、大西洋鳕、黄尾鲽）为例，通过三步流程：综合种群-气候关系知识、量化气候对关键数据输入和生物学参数的影响、开发并评估气候信息整合的评估模型。该方法提升了资源评估中气候归因的准确性，有望改善评估表现和预测真实性，为未来渔业资源可持续管理提供决策支持。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Fish and Fisheries
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究提出了一种结构化方法，用于在渔业资源评估中识别和整合气候与生态系统变化对鱼类种群动态的影响。以美国东北部底层鱼类（美洲拟鲽、大西洋鳕、黄尾鲽）为例，通过三步流程：综合种群-气候关系知识、量化气候对关键数据输入和生物学参数的影响、开发并评估气候信息整合的评估模型。该方法提升了资源评估中气候归因的准确性，有望改善评估表现和预测真实性，为未来渔业资源可持续管理提供决策支持。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/faf.70102" target="_blank" rel="noopener">Climate Attribution in Fishery Stock Assessment: Case Studies From the Northeast U.S. Groundfish Stocks</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Kerr, Lisa A.; Behan, Jamie T.; Cadrin, Steven X.; Hansell, ...</span>
+        
+        <span>📅 2026-07-06</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">ABSTRACT Climate change poses an unprecedented risk to fisheries ecosystems and economies globally. Ocean warming has led to observed geographic shifts and changes in the productivity of fish stocks. Due to the rapid pace of change in many of the world's oceans, there is a critical need to develop and apply scientific knowledge and tools that can help account for non‐stationarity and integrate climate and ecosystem drivers into fishery stock assessment to improve management outcomes. We developed a structured approach to identify and integrate the impact of climate and ecosystem change on fish stock dynamics in the context of stock assessment processes. We describe lessons learned in the application of this approach to groundfish stock assessment processes in the Northeast U.S. (American plaice, Atlantic cod and yellowtail flounder). The approach involves three general steps: (1) synthesizing the state of knowledge on stock‐climate relationships, (2) accounting for climate impacts on key data inputs and biological parameters that inform assessments, and (3) developing and evaluating the performance of climate informed stock assessment models. This approach represents an advance in climate attribution within stock assessment and is expected to enhance assessment performance and projection realism, supporting fisheries decision‐making for future resource sustainability.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="automated whale shark recognition and tracking using drones and deep learning"
+         data-authors="delgado‐garcía, paola judith; garcía‐rodríguez, emiliano; sosa‐nishizaki, oscar; saldaña‐ruiz, luz erandi; raygoza‐romero, joan; lopez‐nava, irvin hussein"
+         data-journal="journal of fish biology"
+         data-abstract="abstract whale sharks ( rhincodon typus ) are migratory species known to form temporary coastal aggregations in regions of high plankton density, such as bahía de los ángeles (bla), mexico. due to various anthropogenic threats, the species is classified as vulnerable, underscoring the need for effective and non‐invasive monitoring strategies. this study explores the integration of drone‐based remote sensing with deep learning (dl) techniques for the automated recognition and tracking of whale sharks. in october 2023, 59 drone flights—42 from boats and 17 from land—were conducted, resulting in 23 recorded sightings. two dl‐based approaches were implemented: deeplabcut (dlc), based on pose estimation, and multi‐scale patch (msp), based on image region classification. both strategies employed convolutional neural networks, with data augmentation and transfer learning techniques to enhance performance. the most effective model, msp with multi‐size and overlapping patches, achieved a macro f1 score of 0.91 and a covered area metric of 0.65. statistical analysis indicated that environmental and operational factors—including turbidity, solar glare and external agents—had minimal impact on predictive performance. these results highlight the potential of dl‐enhanced drone monitoring for scalable, accurate and non‐invasive recognition and tracking of whale sharks, supporting ecological research and conservation efforts in bla and comparable marine environments."
+         data-summary="本研究利用无人机遥感与深度学习技术，实现鲸鲨的自动识别与追踪。在墨西哥bla海域进行59次无人机飞行，基于deeplabcut姿态估计和msp图像区域分类两种方法，最优模型（多尺度重叠斑块msp）的macro f1达0.91，覆盖面积指标0.65。环境与操作因素（如浊度、太阳眩光）对预测性能影响极小，表明该方法可支持鲸鲨生态研究与保护。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究利用无人机遥感与深度学习技术，实现鲸鲨的自动识别与追踪。在墨西哥BLA海域进行59次无人机飞行，基于DeepLabCut姿态估计和MSP图像区域分类两种方法，最优模型（多尺度重叠斑块MSP）的macro F1达0.91，覆盖面积指标0.65。环境与操作因素（如浊度、太阳眩光）对预测性能影响极小，表明该方法可支持鲸鲨生态研究与保护。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70525" target="_blank" rel="noopener">Automated whale shark recognition and tracking using drones and deep learning</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Delgado‐García, Paola Judith; García‐Rodríguez, Emiliano; So...</span>
+        
+        <span>📅 2026-07-06</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract Whale sharks ( Rhincodon typus ) are migratory species known to form temporary coastal aggregations in regions of high plankton density, such as Bahía de los Ángeles (BLA), Mexico. Due to various anthropogenic threats, the species is classified as vulnerable, underscoring the need for effective and non‐invasive monitoring strategies. This study explores the integration of drone‐based remote sensing with deep learning (DL) techniques for the automated recognition and tracking of whale sharks. In October 2023, 59 drone flights—42 from boats and 17 from land—were conducted, resulting in 23 recorded sightings. Two DL‐based approaches were implemented: DeepLabCut (DLC), based on pose estimation, and multi‐scale patch (MSP), based on image region classification. Both strategies employed convolutional neural networks, with data augmentation and transfer learning techniques to enhance performance. The most effective model, MSP with multi‐size and overlapping patches, achieved a macro F1 score of 0.91 and a covered area metric of 0.65. Statistical analysis indicated that environmental and operational factors—including turbidity, solar glare and external agents—had minimal impact on predictive performance. These results highlight the potential of DL‐enhanced drone monitoring for scalable, accurate and non‐invasive recognition and tracking of whale sharks, supporting ecological research and conservation efforts in BLA and comparable marine environments.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="egg and larval production of eastern baltic cod in captivity over one spawning season"
+         data-authors="schmidt, neele; hauber, marc m.; hylander, samuel; laurila, anssi; mittermayer, felix; dierking, jan"
+         data-journal="journal of fish biology"
+         data-abstract="abstract eastern baltic cod ( gadus morhua ) has experienced a dramatic decline in biomass, distribution, size and condition over recent decades, related to a combination of fishing pressure and environmental stressors. reduced parental size and condition are known to impact reproductive success, affecting egg quality, fertilization and hatching success and larval survival. however, how these reproductive traits vary throughout the spawning season at the population level remains poorly understood for this stock. to address this knowledge gap, this study investigated egg and larval characteristics of captive eastern baltic cod over an entire spawning season. fish from three different size classes were kept in three separate tanks and allowed to spawn naturally. eggs were collected daily from april to august, with peak spawning observed in early to mid‐june. we assessed egg and larval size, deformities, thiamine concentration, daily survival and hatching success over time. our findings revealed high variability in these reproductive traits both across the spawning season and between size groups, without consistent temporal trends. notably, smaller fish produced the largest eggs with the highest total thiamine concentrations, which contrasts with previous studies linking larger egg size with larger females. at the same time, these eggs showed the lowest survival and hatching rates. the only consistent pattern across all tanks was a positive relationship between egg and larval size, though unrelated to survival. these results suggest higher than expected complexity of reproductive dynamics in eastern baltic cod and raise the question whether the stock has undergone a shift in reproductive strategy, possibly reflecting an increased allocation towards egg quality over quantity during the recent period of stock decline."
+         data-summary="本研究通过圈养实验，探究东波罗的海鳕鱼（*gadus morhua*）在整个产卵季节的卵和幼虫特征。将三种不同体型大小的鱼分池自然产卵，每日收集卵并评估其大小、畸形率、硫胺素浓度、存活率及孵化率。结果显示，繁殖性状在季节内和体型组间高度变异，小型鱼产卵最大且硫胺素浓度最高，但存活率和孵化率最低。这表明该种群繁殖动态复杂性超出预期，可能已发生繁殖策略转变，在资源衰退期更注重卵质量而非数量。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究通过圈养实验，探究东波罗的海鳕鱼（*Gadus morhua*）在整个产卵季节的卵和幼虫特征。将三种不同体型大小的鱼分池自然产卵，每日收集卵并评估其大小、畸形率、硫胺素浓度、存活率及孵化率。结果显示，繁殖性状在季节内和体型组间高度变异，小型鱼产卵最大且硫胺素浓度最高，但存活率和孵化率最低。这表明该种群繁殖动态复杂性超出预期，可能已发生繁殖策略转变，在资源衰退期更注重卵质量而非数量。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70563" target="_blank" rel="noopener">Egg and larval production of Eastern Baltic cod in captivity over one spawning season</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Schmidt, Neele; Hauber, Marc M.; Hylander, Samuel; Laurila, ...</span>
+        
+        <span>📅 2026-07-06</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract Eastern Baltic cod ( Gadus morhua ) has experienced a dramatic decline in biomass, distribution, size and condition over recent decades, related to a combination of fishing pressure and environmental stressors. Reduced parental size and condition are known to impact reproductive success, affecting egg quality, fertilization and hatching success and larval survival. However, how these reproductive traits vary throughout the spawning season at the population level remains poorly understood for this stock. To address this knowledge gap, this study investigated egg and larval characteristics of captive Eastern Baltic cod over an entire spawning season. Fish from three different size classes were kept in three separate tanks and allowed to spawn naturally. Eggs were collected daily from April to August, with peak spawning observed in early to mid‐June. We assessed egg and larval size, deformities, thiamine concentration, daily survival and hatching success over time. Our findings revealed high variability in these reproductive traits both across the spawning season and between size groups, without consistent temporal trends. Notably, smaller fish produced the largest eggs with the highest total thiamine concentrations, which contrasts with previous studies linking larger egg size with larger females. At the same time, these eggs showed the lowest survival and hatching rates. The only consistent pattern across all tanks was a positive relationship between egg and larval size, though unrelated to survival. These results suggest higher than expected complexity of reproductive dynamics in Eastern Baltic cod and raise the question whether the stock has undergone a shift in reproductive strategy, possibly reflecting an increased allocation towards egg quality over quantity during the recent period of stock decline.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="potential factors contributing to extreme longevity in the greenland shark"
+         data-authors="lagunas‐rangel, francisco alejandro"
+         data-journal="journal of fish biology"
+         data-abstract="abstract the greenland shark ( somniosus microcephalus ) is a deep‐sea vertebrate inhabiting the cold waters of the north atlantic and arctic ocean and is renowned for its exceptional longevity, with individuals estimated to live for more than 400 years. it has also been proposed as a candidate species exhibiting negligible senescence. this narrative review synthesizes current knowledge on the biological mechanisms that may contribute to this phenotype. potential contributing factors include its extreme environment, low metabolic rate and remarkably late sexual maturation, all of which may reduce cumulative physiological stress over time. at the molecular level, recent genomic studies have identified distinctive features, including duplications of dna repair genes and structural variation in the tumour suppressor protein p53, which are consistent with enhanced genome maintenance, although their functional significance remains to be experimentally validated. additional mechanisms, such as proteostatic resilience, antioxidant defences and immune adaptations, may further support long‐term cellular homeostasis. collectively, these observations suggest that the greenland shark possesses biological characteristics that could influence multiple hallmarks of ageing, including genomic stability, proteostasis and intercellular communication. emerging evidence also indicates resistance to age‐related functional decline in systems such as vision and cardiac function. taken together, these characteristics highlight the greenland shark as a valuable, yet still underexplored, model for investigating the biology of longevity and resistance to ageing. further research in this species may provide insights into the mechanisms underlying healthy ageing across vertebrates and generate hypotheses for future translational studies."
+         data-summary="本研究综述了格陵兰鲨（somniosus microcephalus）极端长寿的潜在生物学机制，包括其极地环境、低代谢率和极晚的性成熟，这些因素可能减少累积生理压力。分子层面，基因组研究发现了dna修复基因重复和肿瘤抑制蛋白p53的结构变异，提示增强的基因组维护能力，但功能意义尚待验证。此外，蛋白稳态、抗氧化防御和免疫适应可能进一步支持细胞稳态。格陵兰鲨展现出对年龄相关功能衰退（如视觉和心脏功能）的抵抗性，使其成为研究长寿与抗衰老机制的宝贵模型。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究综述了格陵兰鲨（Somniosus microcephalus）极端长寿的潜在生物学机制，包括其极地环境、低代谢率和极晚的性成熟，这些因素可能减少累积生理压力。分子层面，基因组研究发现了DNA修复基因重复和肿瘤抑制蛋白p53的结构变异，提示增强的基因组维护能力，但功能意义尚待验证。此外，蛋白稳态、抗氧化防御和免疫适应可能进一步支持细胞稳态。格陵兰鲨展现出对年龄相关功能衰退（如视觉和心脏功能）的抵抗性，使其成为研究长寿与抗衰老机制的宝贵模型。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70562" target="_blank" rel="noopener">Potential factors contributing to extreme longevity in the Greenland shark</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Lagunas‐Rangel, Francisco Alejandro</span>
+        
+        <span>📅 2026-07-06</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract The Greenland shark ( Somniosus microcephalus ) is a deep‐sea vertebrate inhabiting the cold waters of the North Atlantic and Arctic Ocean and is renowned for its exceptional longevity, with individuals estimated to live for more than 400 years. It has also been proposed as a candidate species exhibiting negligible senescence. This narrative review synthesizes current knowledge on the biological mechanisms that may contribute to this phenotype. Potential contributing factors include its extreme environment, low metabolic rate and remarkably late sexual maturation, all of which may reduce cumulative physiological stress over time. At the molecular level, recent genomic studies have identified distinctive features, including duplications of DNA repair genes and structural variation in the tumour suppressor protein p53, which are consistent with enhanced genome maintenance, although their functional significance remains to be experimentally validated. Additional mechanisms, such as proteostatic resilience, antioxidant defences and immune adaptations, may further support long‐term cellular homeostasis. Collectively, these observations suggest that the Greenland shark possesses biological characteristics that could influence multiple hallmarks of ageing, including genomic stability, proteostasis and intercellular communication. Emerging evidence also indicates resistance to age‐related functional decline in systems such as vision and cardiac function. Taken together, these characteristics highlight the Greenland shark as a valuable, yet still underexplored, model for investigating the biology of longevity and resistance to ageing. Further research in this species may provide insights into the mechanisms underlying healthy ageing across vertebrates and generate hypotheses for future translational studies.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="explainable ai-driven machine learning for forecasting marine fisheries production using environmental predictors"
+         data-authors="bokingkito, paul; jaroensutasinee, krisanadej; jaroensutasinee, mullica"
+         data-journal="machine learning and knowledge extraction"
+         data-abstract="the marine capture fisheries sector of the philippines employs approximately 2.3 million filipinos, yet recent declines (including a 15.3% drop in q1 2026 production relative to q1 2025) underscore the need for forecasting systems resolved at the regional and sectoral level. existing philippine approaches rely on univariate classical time-series methods and seldom integrate multivariate oceanographic predictors. this study addresses three questions: (rq1) how do nine candidate machine learning algorithms compare in forecasting regional fish production from environmental predictors? (rq2) which environmental predictors most strongly drive model output, as quantified by explainable ai (xai) shap-based feature attribution? (rq3) to what extent do model performance and predictor importance vary across regions? across 32 region–sector panels spanning 2002–2025, kernel and neural network models were selected as the best-performing architecture in 26 of 32 panels (81.3%), achieving a mean composite score 12.7% higher than tree-based ensembles, a gap attributable to extrapolation along trending physical predictors. feature attribution identified the partial pressure of co2 as the leading driver in both sectors, exceeding the second-ranked variable by factors of 2.5 (commercial) and 3.4 (marine municipal). regional heterogeneity in retained predictors, winning algorithms, and shap attribution rankings supports region-specific forecasting as a necessary design choice. mean absolute percentage error of 22–25% and directional accuracy of 0.62–0.66 indicate operational utility for early-warning applications, establishing a basis for evidence-driven priority-setting in philippine fisheries governance."
+         data-summary="利用环境预测因子和可解释ai驱动的机器学习模型，预测菲律宾海洋渔业产量。研究比较了9种机器学习算法在32个区域-部门面板（2002-2025年）中的表现，发现核函数和神经网络模型在81.3%的面板中表现最优，平均综合得分比树集成模型高12.7%。shap特征归因表明，co2分压是两大渔业部门的首要驱动因素，重要性是第二变量的2.5-3.4倍。模型平均绝对百分比误差为22-25%，方向准确率为0.62-0.66，具备早期预警操作价值，支持区域特异性预测作为必要设计选择。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Machine Learning and Knowledge Extraction
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 利用环境预测因子和可解释AI驱动的机器学习模型，预测菲律宾海洋渔业产量。研究比较了9种机器学习算法在32个区域-部门面板（2002-2025年）中的表现，发现核函数和神经网络模型在81.3%的面板中表现最优，平均综合得分比树集成模型高12.7%。SHAP特征归因表明，CO2分压是两大渔业部门的首要驱动因素，重要性是第二变量的2.5-3.4倍。模型平均绝对百分比误差为22-25%，方向准确率为0.62-0.66，具备早期预警操作价值，支持区域特异性预测作为必要设计选择。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/make8070197" target="_blank" rel="noopener">Explainable AI-Driven Machine Learning for Forecasting Marine Fisheries Production Using Environmental Predictors</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Bokingkito, Paul; Jaroensutasinee, Krisanadej; Jaroensutasin...</span>
+        
+        <span>📅 2026-07-06</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">The marine capture fisheries sector of the Philippines employs approximately 2.3 million Filipinos, yet recent declines (including a 15.3% drop in Q1 2026 production relative to Q1 2025) underscore the need for forecasting systems resolved at the regional and sectoral level. Existing Philippine approaches rely on univariate classical time-series methods and seldom integrate multivariate oceanographic predictors. This study addresses three questions: (RQ1) How do nine candidate machine learning algorithms compare in forecasting regional fish production from environmental predictors? (RQ2) Which environmental predictors most strongly drive model output, as quantified by explainable AI (XAI) SHAP-based feature attribution? (RQ3) To what extent do model performance and predictor importance vary across regions? Across 32 region–sector panels spanning 2002–2025, kernel and neural network models were selected as the best-performing architecture in 26 of 32 panels (81.3%), achieving a mean composite score 12.7% higher than tree-based ensembles, a gap attributable to extrapolation along trending physical predictors. Feature attribution identified the partial pressure of CO2 as the leading driver in both sectors, exceeding the second-ranked variable by factors of 2.5 (commercial) and 3.4 (marine municipal). Regional heterogeneity in retained predictors, winning algorithms, and SHAP attribution rankings supports region-specific forecasting as a necessary design choice. Mean absolute percentage error of 22–25% and directional accuracy of 0.62–0.66 indicate operational utility for early-warning applications, establishing a basis for evidence-driven priority-setting in Philippine fisheries governance.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="effect of fish-derived lipids on inflammation status and health-related quality of life in women with endometriosis"
+         data-authors="bogusz, angelika; szewczyk, kacper; włodarek, dariusz; górnicka, magdalena"
+         data-journal="nutrients"
+         data-abstract="background: endometriosis is a chronic, estrogen-dependent inflammatory disorder associated with pain and immune dysregulation. omega-3 (n-3) fatty acids and fish-derived bioactive lipids may modulate inflammation and metabolism. this study investigated whether adding fish-derived lipids (fdls) to a healthy eating plate diet improves inflammatory markers, gut inflammation, pain, and quality of life in women with endometriosis. methods: in this 12-week randomized controlled trial, 46 women with confirmed endometriosis were assigned to either a healthy eating plate diet alone (control group, cg) or the same diet plus fdls (intervention group, ig). primary outcomes included serum cytokine concentrations (interleukin [il]-1β, il-6, il-8, il-10, and tumor necrosis factor-alpha [tnf-α]) and fecal calprotectin (cal). secondary outcomes included pain intensity measured using the visual analog scale (vas) and health-related quality of life assessed with the endometriosis health profile-30 (ehp-30). results: il-10 levels (pg/ml) increased in the ig (32.5 ± 51.5 to 265 ± 508; p = 0.024) with a significant adjusted effect (ancova: 5.07 [95% ci: 1.32–19.48], p = 0.019). other cytokines showed heterogeneous responses, and cal levels remained unchanged. ehp-30 pain scores improved within both groups (cg p = 0.016; ig p = 0.002) without significant between-group change or adjusted effects (all p &gt; 0.05). vas scores decreased within the ig (5.0 ± 2.1 to 4.3 ± 2.1; p = 0.011), although there were no between-group differences in change and ancova (all p &gt; 0.05). however, ≥1-point responder rates were higher in the ig vs. cg (73.9% vs. 34.8%): adjusted rr = 2.11 (95% ci: 1.16; 3.89; p = 0.014). conclusions: overall, fdl supplementation was associated with a selected regulatory immune signal, reflected mainly by the il-10 response, while most inflammatory, pain-related, and quality-of-life outcomes did not show consistent significant between-group effects. the observed greater likelihood of pain reduction in the fdl-supplemented group of women with endometriosis, along with the il-10 response, should be interpreted with caution and confirmed in larger studies with longer follow-up/intervention time, taking into account the potential mechanisms of biological response."
+         data-summary="非渔业相关"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Nutrients
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 非渔业相关</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/nu18132184" target="_blank" rel="noopener">Effect of Fish-Derived Lipids on Inflammation Status and Health-Related Quality of Life in Women with Endometriosis</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Bogusz, Angelika; Szewczyk, Kacper; Włodarek, Dariusz; Górni...</span>
+        
+        <span>📅 2026-07-06</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Background: Endometriosis is a chronic, estrogen-dependent inflammatory disorder associated with pain and immune dysregulation. Omega-3 (n-3) fatty acids and fish-derived bioactive lipids may modulate inflammation and metabolism. This study investigated whether adding fish-derived lipids (FDLs) to a Healthy Eating Plate diet improves inflammatory markers, gut inflammation, pain, and quality of life in women with endometriosis. Methods: In this 12-week randomized controlled trial, 46 women with confirmed endometriosis were assigned to either a Healthy Eating Plate diet alone (control group, CG) or the same diet plus FDLs (intervention group, IG). Primary outcomes included serum cytokine concentrations (interleukin [IL]-1β, IL-6, IL-8, IL-10, and tumor necrosis factor-alpha [TNF-α]) and fecal calprotectin (CAL). Secondary outcomes included pain intensity measured using the visual analog scale (VAS) and health-related quality of life assessed with the Endometriosis Health Profile-30 (EHP-30). Results: IL-10 levels (pg/mL) increased in the IG (32.5 ± 51.5 to 265 ± 508; p = 0.024) with a significant adjusted effect (ANCOVA: 5.07 [95% CI: 1.32–19.48], p = 0.019). Other cytokines showed heterogeneous responses, and CAL levels remained unchanged. EHP-30 Pain scores improved within both groups (CG p = 0.016; IG p = 0.002) without significant between-group change or adjusted effects (all p &gt; 0.05). VAS scores decreased within the IG (5.0 ± 2.1 to 4.3 ± 2.1; p = 0.011), although there were no between-group differences in change and ANCOVA (all p &gt; 0.05). However, ≥1-point responder rates were higher in the IG vs. CG (73.9% vs. 34.8%): adjusted RR = 2.11 (95% CI: 1.16; 3.89; p = 0.014). Conclusions: Overall, FDL supplementation was associated with a selected regulatory immune signal, reflected mainly by the IL-10 response, while most inflammatory, pain-related, and quality-of-life outcomes did not show consistent significant between-group effects. The observed greater likelihood of pain reduction in the FDL-supplemented group of women with endometriosis, along with the IL-10 response, should be interpreted with caution and confirmed in larger studies with longer follow-up/intervention time, taking into account the potential mechanisms of biological response.</div>
+      
+    </div>
+    
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var s=localStorage.getItem('theme');
+  if(s){document.documentElement.setAttribute('data-theme',s);
+  document.getElementById('themeIcon').textContent=s==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=s==='dark'?'亮色':'暗色';}
+})();
+function toggleTheme(){
+  var h=document.documentElement,n=h.getAttribute('data-theme')==='dark'?'light':'dark';
+  h.setAttribute('data-theme',n);
+  document.getElementById('themeIcon').textContent=n==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=n==='dark'?'亮色':'暗色';
+  localStorage.setItem('theme',n);
+}
+function toggleAbstract(b){
+  var c=b.nextElementSibling,v=c.classList.contains('visible');
+  c.classList.toggle('visible');b.classList.toggle('open');
+  b.querySelector('.arrow').textContent=v?'▶':'▼';
+}
+function filterPapers(){
+  var q=(document.getElementById('searchInput').value||'').toLowerCase().trim(),vis=0;
+  document.querySelectorAll('.paper-card').forEach(function(c){
+    var t=[c.getAttribute('data-title')||'',c.getAttribute('data-authors')||'',c.getAttribute('data-journal')||'',c.getAttribute('data-abstract')||'',c.getAttribute('data-summary')||''].join(' ');
+    var s=!q||t.includes(q);c.classList.toggle('hidden',!s);if(s)vis++;
+  });
+  document.getElementById('noResults').classList.toggle('visible',vis===0);
+}
+</script>
+</body>
+</html>
