@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>土耳其休闲渔业与鱼类遗传资源研究进展 — 渔业文献每周速览</title>
+<style>
+:root {
+  --bg: #f7fafc; --bg-card: #ffffff; --text: #2d3748;
+  --text-secondary: #718096; --text-muted: #a0aec0; --border: #e2e8f0;
+  --primary: #2b6cb0; --primary-light: #bee3f8; --primary-dark: #1a365d;
+  --accent: #e76f51; --accent-light: #fed7d7;
+  --teal: #319795; --teal-light: #b2f5ea;
+  --gold: #d69e2e; --gold-light: #fefcbf;
+  --shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.10);
+  --radius: 12px; --radius-sm: 8px;
+}
+[data-theme="dark"] {
+  --bg: #1a202c; --bg-card: #2d3748; --text: #e2e8f0;
+  --text-secondary: #a0aec0; --text-muted: #718096; --border: #4a5568;
+  --primary: #90cdf4; --primary-light: #2a4365; --primary-dark: #bee3f8;
+  --accent: #fc8181; --accent-light: #742a2a;
+  --teal: #81e6d9; --teal-light: #234e52;
+  --gold: #f6e05e; --gold-light: #3d3a1a;
+  --shadow: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.5);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;transition:background 0.3s,color 0.3s}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* === Top Bar === */
+.topbar{background:linear-gradient(135deg,#1a365d,#2b6cb0);color:#fff;padding:0.8rem 1.5rem;display:flex;align-items:center;gap:1rem;position:sticky;top:0;z-index:100}
+.back-btn{color:#fff;font-size:0.95rem;font-weight:600;padding:0.4rem 0.8rem;border-radius:var(--radius-sm);border:1.5px solid rgba(255,255,255,0.3);transition:all 0.2s;white-space:nowrap}
+.back-btn:hover{background:rgba(255,255,255,0.15);text-decoration:none}
+.topbar .title-area{flex:1;min-width:0}
+.topbar .week-range{font-size:0.78rem;opacity:0.8}
+.topbar .week-topic{font-size:1rem;font-weight:700;line-height:1.3}
+.topbar .theme-toggle{padding:0.4rem 0.8rem;border:1.5px solid rgba(255,255,255,0.3);border-radius:var(--radius-sm);background:transparent;color:#fff;cursor:pointer;font-size:0.85rem;transition:all 0.2s;white-space:nowrap}
+.topbar .theme-toggle:hover{background:rgba(255,255,255,0.15)}
+
+.container{max-width:1100px;margin:0 auto;padding:1.5rem}
+
+/* === Article Section === */
+.article-section{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;margin-bottom:1.5rem;box-shadow:var(--shadow)}
+.article-section h2{font-size:1.3rem;color:var(--primary-dark);margin:1.5rem 0 0.75rem;padding-bottom:0.4rem;border-bottom:2px solid var(--primary-light)}
+.article-section h2:first-child{margin-top:0}
+.article-section p{margin-bottom:0.8rem;line-height:1.8;color:var(--text)}
+.article-section strong{color:var(--primary-dark)}
+.article-section ol,.article-section ul{padding-left:1.5rem;margin-bottom:0.8rem}
+.article-section li{margin-bottom:0.5rem;line-height:1.7}
+.article-tag{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-right:0.5rem}
+.tag-overview{background:var(--primary-light);color:var(--primary-dark)}
+.tag-highlight{background:var(--accent-light);color:var(--accent)}
+.tag-innovative{background:var(--gold-light);color:var(--gold)}
+.tag-recommend{background:var(--teal-light);color:var(--teal)}
+
+/* === Stats Row === */
+.stats-row{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.stat-mini{padding:0.5rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-secondary)}
+.stat-mini strong{color:var(--primary);font-size:1.1rem}
+
+/* === Controls === */
+.controls{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.search-box{flex:1;min-width:200px;position:relative}
+.search-box input{width:100%;padding:0.6rem 1rem 0.6rem 2.5rem;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:0.9rem;background:var(--bg-card);color:var(--text);transition:border-color 0.2s}
+.search-box input:focus{outline:none;border-color:var(--primary)}
+.search-box .search-icon{position:absolute;left:0.8rem;top:50%;transform:translateY(-50%);color:var(--text-muted);pointer-events:none}
+
+/* === Paper Grid === */
+.section-title{font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:0.75rem;display:flex;align-items:center;gap:0.5rem}
+.paper-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:0.85rem;margin-bottom:1.5rem}
+.paper-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1.1rem;transition:all 0.25s;display:flex;flex-direction:column;position:relative}
+.paper-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);border-color:var(--primary-light)}
+.paper-card.high-impact{border-left:3px solid var(--accent)}
+.paper-card .hi-badge{position:absolute;top:0.5rem;right:0.5rem;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:10px;background:var(--accent-light);color:var(--accent);font-weight:700}
+.paper-card .journal{font-size:0.78rem;color:var(--teal);font-weight:600;margin-bottom:0.3rem}
+.paper-card .title{font-size:0.95rem;font-weight:700;line-height:1.45;margin-bottom:0.35rem}
+.paper-card .title a{color:var(--text)}
+.paper-card .title a:hover{color:var(--primary);text-decoration:none}
+.paper-card .meta{font-size:0.78rem;color:var(--text-muted);margin-bottom:0.6rem;display:flex;flex-wrap:wrap;gap:0.5rem}
+
+/* Chinese Summary */
+.paper-card .summary-cn{background:linear-gradient(135deg,#fffaf0,#fffff0);border-left:3px solid var(--gold);padding:0.7rem 0.85rem;margin-bottom:0.5rem;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:0.88rem;line-height:1.55;color:#744210}
+[data-theme="dark"] .paper-card .summary-cn{background:linear-gradient(135deg,#3d2e1a,#372a10);color:#fbd38d}
+
+.abstract-toggle{font-size:0.8rem;color:var(--primary);cursor:pointer;font-weight:600;user-select:none;display:inline-flex;align-items:center;gap:0.25rem;padding:0.3rem 0;border:none;background:none}
+.abstract-toggle:hover{color:var(--accent)}
+.abstract-toggle .arrow{transition:transform 0.2s;font-size:0.7rem}
+.abstract-toggle.open .arrow{transform:rotate(90deg)}
+.abstract-content{display:none;font-size:0.82rem;color:var(--text-secondary);line-height:1.55;padding:0.5rem 0;border-top:1px dashed var(--border);margin-top:0.4rem}
+.abstract-content.visible{display:block}
+
+.paper-card.hidden{display:none}
+.no-results{display:none;text-align:center;padding:2rem;color:var(--text-muted)}
+.no-results.visible{display:block}
+
+@media(max-width:768px){.paper-grid{grid-template-columns:1fr}.article-section{padding:1.25rem}.topbar{flex-wrap:wrap}.topbar .week-topic{font-size:0.9rem}}
+
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.paper-card{animation:fadeIn 0.4s ease-out}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="back-btn" href="index.html">← 返回主页</a>
+  <div class="title-area">
+    <div class="week-range">7月13日—7月13日</div>
+    <div class="week-topic">土耳其休闲渔业与鱼类遗传资源研究进展</div>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <span id="themeIcon">🌙</span> <span id="themeLabel">暗色</span>
+  </button>
+</div>
+
+<div class="container">
+
+  <!-- 深度综述文章 -->
+  
+  <div class="article-section">
+    <p>好的，作为渔业科学领域的资深学术主编，我已审阅本周（2026-W29）发表的渔业相关论文。以下是为您撰写的结构化综述。</p>
+
+<p>---</p>
+
+<h2>本周研究概览</h2>
+
+<p>本周共收录4篇渔业相关论文，研究主题涵盖休闲渔业的社会经济与管理、水产养殖遗传育种、鱼类系统分类学争议以及濒危洄游鱼类的兼捕问题。整体研究趋势呈现出从传统资源评估向多学科交叉融合的转向，尤其关注人类活动（如休闲捕捞、商业兼捕）对渔业资源的影响，以及利用分子生物学（SNP芯片、耳石微化学）等先进技术手段解决管理中的具体问题。此外，对鱼类分类学“通胀”现象的批判性反思也成为一个值得关注的议题。</p>
+
+<h2>高影响力期刊亮点</h2>
+
+<p>本周暂无。</p>
+
+<h2>创新性研究</h2>
+
+<ol>
+<li><strong>Taxonomic inflation in fish systematics: A critical review with illustrative evidence assessment and integrative case study of the *Salmo trutta* Complex</strong> — 该研究对当前鱼类分类学中普遍存在的“分类通胀”现象进行了系统性批判。其创新点在于不仅指出了问题，还通过整合形态学、遗传学（特别是单标记分析）和生态学证据，以褐鳟复合体为例，提出了一个更严谨、更全面的物种界定框架。这对渔业管理中的物种保护、资源评估和法规制定具有根本性的指导意义，避免因过度拆分物种而导致管理混乱或资源错配。</li>
+</ol>
+
+<ol>
+<li><strong>Population‐specific bycatch risks in two vulnerable anadromous clupeids: Insights from otolith microchemistry</strong> — 该研究创新性地运用耳石微化学技术，精准识别了两种濒危西鲱（Alosa spp.）兼捕个体的出生河流来源。其核心价值在于将“兼捕”这一宏观问题分解到“种群”层面，揭示了不同来源河流的种群承受着不成比例的兼捕压力。这一方法为制定更具针对性的、基于种群的兼捕缓解措施提供了科学依据，是精准渔业管理的一个优秀范例。</li>
+</ol>
+
+<ol>
+<li><strong>Recreational Fisheries in Türkiye: Socio‐Economic Profiles, Technological Trends and Governance Challenges</strong> — 该研究填补了土耳其休闲渔业这一重要但研究不足的领域的知识空白。其创新点在于系统性地整合了社会经济特征、技术趋势（如渔具、电子设备）与治理挑战，构建了一个跨生态系统的分析框架。这为地中海和黑海地区休闲渔业的可持续发展提供了宝贵的基线数据和政策参考，强调了将休闲渔业纳入综合渔业管理体系的紧迫性。</li>
+</ol>
+
+<h2>推荐阅读</h2>
+
+<ol>
+<li><strong>Taxonomic inflation in fish systematics: A critical review with illustrative evidence assessment and integrative case study of the *Salmo trutta* Complex</strong> — 该文对当前鱼类分类学实践进行了深刻反思，对渔业管理的基础——物种界定——提出了根本性挑战，是所有渔业科学家和管理者都应关注的核心议题。</li>
+</ol>
+
+<ol>
+<li><strong>Population‐specific bycatch risks in two vulnerable anadromous clupeids: Insights from otolith microchemistry</strong> — 展示了如何利用尖端技术（耳石微化学）解决一个经典且棘手的渔业管理问题（兼捕），方法新颖，结论对濒危物种保护具有直接指导意义。</li>
+</ol>
+
+<ol>
+<li><strong>Recreational Fisheries in Türkiye: Socio‐Economic Profiles, Technological Trends and Governance Challenges</strong> — 作为一篇区域性的综合性研究，它为全球范围内日益重要的休闲渔业管理提供了系统性的研究范式和政策启示。</li>
+</ol>
+
+<ol>
+<li><strong>SNP Genotyping Chip Reveals Genetic Structure and Selection Signatures of the “Huangxuan No 2” Population of *Portunus trituberculatus</strong>* — 该研究代表了水产养殖遗传育种领域的先进技术应用，通过高密度SNP芯片揭示了重要经济蟹类选育品种的遗传基础和选择信号，对指导后续分子标记辅助育种具有重要价值。</li>
+</ol>
+
+<ol>
+<li><strong>Taxonomic inflation in fish systematics: A critical review with illustrative evidence assessment and integrative case study of the *Salmo trutta* Complex</strong> — （重复推荐，因其重要性）该文提出的“整合证据”理念，对于纠正当前依赖单一分子标记进行物种鉴定的趋势至关重要，是提升鱼类分类学科学严谨性的里程碑式工作。</li>
+</ol>
+  </div>
+  
+
+  <!-- 统计 -->
+  <div class="stats-row">
+    <div class="stat-mini">📄 <strong>4</strong> 篇论文</div>
+    <div class="stat-mini">🌟 <strong>0</strong> 篇高影响力期刊</div>
+    <div class="stat-mini">🤖 <strong>4</strong> 篇 AI 中文总结</div>
+    
+    <div class="stat-mini">🏷️ 种群评估(Population Assessment) 遗传结构(Genetic Structure) 兼捕风险(Bycatch Risk) 休闲渔业(Recreational Fisheries) </div>
+    
+  </div>
+
+  <!-- 搜索 -->
+  <div class="controls">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="搜索标题、作者、摘要..." oninput="filterPapers()">
+    </div>
+  </div>
+
+  <div class="no-results" id="noResults">😕 没有匹配的论文</div>
+
+  <!-- 全部论文列表 -->
+  <div class="section-title">📄 本周全部论文（4 篇）</div>
+  <div class="paper-grid">
+    
+    <div class="paper-card"
+         data-title="recreational fisheries in türkiye: socio‐economic profiles, technological trends and governance challenges"
+         data-authors="ateşşahin, tuncay; dürrani, ömerhan"
+         data-journal="fisheries management and ecology"
+         data-abstract="abstract recreational fisheries in türkiye constitute an understudied socio‐economic sector spanning marine and freshwater ecosystems across the mediterranean and black sea basins, yet robust national participation estimates remain constrained by the absence of a comprehensive registry or probability‐based sampling frame. management is further limited by scarce geographically broad evidence on active recreational anglers' profiles, practices and compliance‐related experiences. we conducted a cross‐sectional online survey of 1530 active recreational anglers recruited through digital networks from 71 provinces to characterise socio‐demographic attributes, fishing behaviour and governance‐related outcomes. unlike the predominantly marine emphasis of much regional research, 62.0% of respondents identified freshwater as their primary fishing environment. respondents were overwhelmingly male (98.1%), and bait/lure preferences indicated substantial uptake of active, lure‐based approaches. a governance disconnect was evident: although 55.6% of respondents reported at least one inspection, only 6.1% of inspected anglers (52 of 851) reported receiving an administrative fine. perceived limitations in enforcement were the most frequently cited constraint, while spatial conflicts with commercial fisheries also emerged as a prominent governance concern. in multivariable logistic regression, inspection exposure varied strongly by fishing context: licence‐holding anglers had higher inspection odds than anglers without a licence (aor = 1.86), boat‐based anglers had higher inspection odds than shore‐based anglers (aor = 2.75), and inspections were less likely in marine than in freshwater environments (aor = 0.27). bias‐corrected cramér's v indicated a negligible association between administrative fine receipt and the measured socio‐demographic or practice‐based variables. by contrast, recreational anglers affiliated with fishing associations were significantly more likely to hold a voluntary licence (χ 2 = 94.9, p &lt; 0.001). for the active angling community captured by this survey, these findings support a transition from predominantly enforcement‐centred management towards co‐management facilitated through angler associations, strengthened inspection quality and conflict‐sensitive monitoring in marine coastal zones."
+         data-summary="本研究通过在线调查土耳其71个省份1530名活跃休闲垂钓者，揭示其以淡水为主（62.0%）、男性主导（98.1%）的社会经济特征及技术趋势。管理层面存在治理脱节：仅55.6%受访者经历过检查，罚款率仅6.1%，执法感知不足和与商业渔业的空间冲突是主要治理挑战。多变量逻辑回归显示持证者（aor=1.86）、船钓者（aor=2.75）检查概率更高，而海洋环境检查概率低于淡水（aor=0.27）。建议从执法主导转向垂钓者协会参与的协同管理，强化检查质量与海洋沿岸冲突监测。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Fisheries Management and Ecology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究通过在线调查土耳其71个省份1530名活跃休闲垂钓者，揭示其以淡水为主（62.0%）、男性主导（98.1%）的社会经济特征及技术趋势。管理层面存在治理脱节：仅55.6%受访者经历过检查，罚款率仅6.1%，执法感知不足和与商业渔业的空间冲突是主要治理挑战。多变量逻辑回归显示持证者（aOR=1.86）、船钓者（aOR=2.75）检查概率更高，而海洋环境检查概率低于淡水（aOR=0.27）。建议从执法主导转向垂钓者协会参与的协同管理，强化检查质量与海洋沿岸冲突监测。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/fme.70098" target="_blank" rel="noopener">Recreational Fisheries in Türkiye: Socio‐Economic Profiles, Technological Trends and Governance Challenges</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Ateşşahin, Tuncay; Dürrani, Ömerhan</span>
+        
+        <span>📅 2026-07-13</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">ABSTRACT Recreational fisheries in Türkiye constitute an understudied socio‐economic sector spanning marine and freshwater ecosystems across the Mediterranean and Black Sea basins, yet robust national participation estimates remain constrained by the absence of a comprehensive registry or probability‐based sampling frame. Management is further limited by scarce geographically broad evidence on active recreational anglers' profiles, practices and compliance‐related experiences. We conducted a cross‐sectional online survey of 1530 active recreational anglers recruited through digital networks from 71 provinces to characterise socio‐demographic attributes, fishing behaviour and governance‐related outcomes. Unlike the predominantly marine emphasis of much regional research, 62.0% of respondents identified freshwater as their primary fishing environment. Respondents were overwhelmingly male (98.1%), and bait/lure preferences indicated substantial uptake of active, lure‐based approaches. A governance disconnect was evident: although 55.6% of respondents reported at least one inspection, only 6.1% of inspected anglers (52 of 851) reported receiving an administrative fine. Perceived limitations in enforcement were the most frequently cited constraint, while spatial conflicts with commercial fisheries also emerged as a prominent governance concern. In multivariable logistic regression, inspection exposure varied strongly by fishing context: licence‐holding anglers had higher inspection odds than anglers without a licence (aOR = 1.86), boat‐based anglers had higher inspection odds than shore‐based anglers (aOR = 2.75), and inspections were less likely in marine than in freshwater environments (aOR = 0.27). Bias‐corrected Cramér's V indicated a negligible association between administrative fine receipt and the measured socio‐demographic or practice‐based variables. By contrast, recreational anglers affiliated with fishing associations were significantly more likely to hold a voluntary licence (χ 2 = 94.9, p &lt; 0.001). For the active angling community captured by this survey, these findings support a transition from predominantly enforcement‐centred management towards co‐management facilitated through angler associations, strengthened inspection quality and conflict‐sensitive monitoring in marine coastal zones.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="snp genotyping chip reveals genetic structure and selection signatures of the “huangxuan no 2” population of portunus trituberculatus"
+         data-authors="pan, hangfeng; sun, dongfang; wu, yanli; sun, shaoyong; liu, jianbing; liu, ping; pan, jiayi; zhang, bingjie; gao, baoquan"
+         data-journal="fishes"
+         data-abstract="the swimming crab (portunus trituberculatus) is a commercially important marine aquaculture species. after multiple generations of selective breeding, the third improved variety in china, “huangxuan no 2” (hx2), was successfully developed in 2018. compared to the original wild populations, hx2 exhibits enhanced resistance to low salinity stress and growth rate. however, the genomic characteristics underlying these selected traits remain largely unexplored. to investigate the genetic variation associated with artificial selection, we genotyped 90 individuals from the hx2 strain and two wild populations (c and d) using a high-density snp array. a total of 43,314 single nucleotide polymorphisms (snps) were identified, which were evenly distributed across the genome in 1 mb windows. genetic diversity analysis showed that hx2 and wild populations were similar but overall low in diversity levels. population structure analysis and fixation index (fst) values revealed low-to-moderate genetic differentiation between hx2 and the wild populations, whereas no differentiation was observed between the two wild populations. using the wild populations as a reference, we identified 24 genomic regions under potential selection in hx2 based on the fst between populations and the nucleotide diversity ratio (π-ratio), encompassing 425 candidate genes. enrichment analysis indicated that these genes are primarily involved in pathways related to immune response, infection, signal transduction, and metabolism. notably, genes associated with stress tolerance (e.g., gpx3, hmgcs1, duox), immunity (e.g., lamb1, hspg2), and growth (e.g., cht5) were identified. these findings provide valuable insights into the genomic signatures of artificial selection and offer fundamental resources for further genetic improvement of p. trituberculatus."
+         data-summary="利用高密度snp芯片对三疣梭子蟹“黄选2号”群体及两个野生群体进行基因分型，共获得43,314个snp位点。遗传多样性分析显示“黄选2号”与野生群体相似但整体偏低，群体结构分析表明两者存在低至中度遗传分化。通过fst和π-ratio筛选出24个潜在受选择基因组区域，包含425个候选基因，主要富集于免疫、应激耐受和生长相关通路，其中gpx3、hmgcs1、duox等基因与抗逆性相关。研究揭示了人工选择对三疣梭子蟹基因组的影响，为后续遗传改良提供了基础资源。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Fishes
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 利用高密度SNP芯片对三疣梭子蟹“黄选2号”群体及两个野生群体进行基因分型，共获得43,314个SNP位点。遗传多样性分析显示“黄选2号”与野生群体相似但整体偏低，群体结构分析表明两者存在低至中度遗传分化。通过Fst和π-ratio筛选出24个潜在受选择基因组区域，包含425个候选基因，主要富集于免疫、应激耐受和生长相关通路，其中GPX3、HMGCS1、Duox等基因与抗逆性相关。研究揭示了人工选择对三疣梭子蟹基因组的影响，为后续遗传改良提供了基础资源。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/fishes11070410" target="_blank" rel="noopener">SNP Genotyping Chip Reveals Genetic Structure and Selection Signatures of the “Huangxuan No 2” Population of Portunus trituberculatus</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Pan, Hangfeng; Sun, Dongfang; Wu, Yanli; Sun, Shaoyong; Liu,...</span>
+        
+        <span>📅 2026-07-13</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">The swimming crab (Portunus trituberculatus) is a commercially important marine aquaculture species. After multiple generations of selective breeding, the third improved variety in China, “Huangxuan No 2” (HX2), was successfully developed in 2018. Compared to the original wild populations, HX2 exhibits enhanced resistance to low salinity stress and growth RATE. However, the genomic characteristics underlying these selected traits remain largely unexplored. To investigate the genetic variation associated with artificial selection, we genotyped 90 individuals from the HX2 strain and two wild populations (C and D) using a high-density SNP array. A total of 43,314 single nucleotide polymorphisms (SNPs) were identified, which were evenly distributed across the genome in 1 Mb windows. Genetic diversity analysis showed that HX2 and wild populations were similar but overall low in diversity levels. Population structure analysis and fixation index (Fst) values revealed low-to-moderate genetic differentiation between HX2 and the wild populations, whereas no differentiation was observed between the two wild populations. Using the wild populations as a reference, we identified 24 genomic regions under potential selection in HX2 based on the Fst between populations and the nucleotide diversity ratio (π-ratio), encompassing 425 candidate genes. Enrichment analysis indicated that these genes are primarily involved in pathways related to immune response, infection, signal transduction, and metabolism. Notably, genes associated with stress tolerance (e.g., GPX3, HMGCS1, Duox), immunity (e.g., LAMB1, HSPG2), and growth (e.g., Cht5) were identified. These findings provide valuable insights into the genomic signatures of artificial selection and offer fundamental resources for further genetic improvement of P. trituberculatus.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="taxonomic inflation in fish systematics: a critical review with illustrative evidence assessment and integrative case study of the
+                    <i>salmo trutta</i>
+                    complex"
+         data-authors="altinok, ilhan"
+         data-journal="journal of fish biology"
+         data-abstract="abstract fish species are being described at an accelerating rate, but a substantial fraction of recent descriptions rests on evidentiary standards too weak to distinguish genuine species‐level discontinuities from intraspecific variation, local adaptation and the artefacts of single‐marker analyses, a pattern of taxonomic inflation with documented costs for biodiversity databases, conservation prioritization and macroevolutionary inference. this review examines the problem in fish systematics and uses the turkish brown trout ( salmo trutta complex) as an illustrative empirical example through which the underlying evidentiary weaknesses, and the means of correcting them, can be made concrete. a structured assessment of 21 turkish salmo descriptions published between 2000 and 2026 shows that they rest overwhelmingly on external morphology and, in fewer than half of cases, a single mitochondrial marker, with nuclear genomic, crossbreeding and karyotypic evidence almost entirely absent. integrative evidence runs counter to these delimitations: controlled crossbreeding within the danubian (da) lineage yields fully viable hybrids with shared chromosomal architecture, and multi‐marker analysis across thousands of individuals and numerous drainage basins reveals widespread haplotype sharing and cross‐basin admixture, indicating that much of the observed variation reflects intraspecific diversity rather than distinct species. drawing these threads together, a four‐tiered graded evidentiary framework (standards a–d) is proposed, scaled to biological and logistical context and anchored in the concordance criterion, whereby species recognition requires convergence of multiple independent lines of evidence. the principal recommendation is sustained investment in capacity‐building, open‐access pipelines and reciprocal training rather than any centralized validation body, with mitochondrial‐only descriptions flagged as provisional pending nuclear or reproductive corroboration."
+         data-summary="该研究批判性审视鱼类系统学中的分类膨胀问题，指出大量新种描述基于外部形态和单一线粒体标记等薄弱证据，混淆了种间差异与种内变异。以土耳其褐鳟（salmo trutta complex）为案例，通过整合核基因组、杂交实验和染色体证据，揭示已发表的21个描述种实际多为种内多样性。提出基于一致性原则的四级证据框架（标准a-d），建议将仅依赖线粒体标记的描述标记为暂定种，并加强能力建设与开放数据共享。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该研究批判性审视鱼类系统学中的分类膨胀问题，指出大量新种描述基于外部形态和单一线粒体标记等薄弱证据，混淆了种间差异与种内变异。以土耳其褐鳟（Salmo trutta complex）为案例，通过整合核基因组、杂交实验和染色体证据，揭示已发表的21个描述种实际多为种内多样性。提出基于一致性原则的四级证据框架（标准A-D），建议将仅依赖线粒体标记的描述标记为暂定种，并加强能力建设与开放数据共享。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70573" target="_blank" rel="noopener">Taxonomic inflation in fish systematics: A critical review with illustrative evidence assessment and integrative case study of the
+                    <i>Salmo trutta</i>
+                    Complex</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Altinok, Ilhan</span>
+        
+        <span>📅 2026-07-13</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract Fish species are being described at an accelerating rate, but a substantial fraction of recent descriptions rests on evidentiary standards too weak to distinguish genuine species‐level discontinuities from intraspecific variation, local adaptation and the artefacts of single‐marker analyses, a pattern of taxonomic inflation with documented costs for biodiversity databases, conservation prioritization and macroevolutionary inference. This review examines the problem in fish systematics and uses the Turkish brown trout ( Salmo trutta complex) as an illustrative empirical example through which the underlying evidentiary weaknesses, and the means of correcting them, can be made concrete. A structured assessment of 21 Turkish Salmo descriptions published between 2000 and 2026 shows that they rest overwhelmingly on external morphology and, in fewer than half of cases, a single mitochondrial marker, with nuclear genomic, crossbreeding and karyotypic evidence almost entirely absent. Integrative evidence runs counter to these delimitations: controlled crossbreeding within the Danubian (DA) lineage yields fully viable hybrids with shared chromosomal architecture, and multi‐marker analysis across thousands of individuals and numerous drainage basins reveals widespread haplotype sharing and cross‐basin admixture, indicating that much of the observed variation reflects intraspecific diversity rather than distinct species. Drawing these threads together, a four‐tiered graded evidentiary framework (Standards A–D) is proposed, scaled to biological and logistical context and anchored in the concordance criterion, whereby species recognition requires convergence of multiple independent lines of evidence. The principal recommendation is sustained investment in capacity‐building, open‐access pipelines and reciprocal training rather than any centralized validation body, with mitochondrial‐only descriptions flagged as provisional pending nuclear or reproductive corroboration.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="population‐specific bycatch risks in two vulnerable anadromous clupeids: insights from otolith microchemistry"
+         data-authors="nachón, david j.; pico‐calvo, alejandro; daverat, françoise; vieira‐lanero, rufino; crujeiras, rosa m.; belo, ana f.; mateus, catarina s.; quintella, bernardo; almeida, pedro r.; antunes, carlos"
+         data-journal="journal of fish biology"
+         data-abstract="abstract otolith microchemistry analysis revealed that bycatch of european shads, allis shad alosa alosa and twaite shad alosa fallax , in western iberian commercial fisheries removes individuals from a wide array of natal origins, with the most abundant source rivers suffering the heaviest losses. spatial variation in bycatch risk was evident: specific marine areas exhibited high natal origin diversity, reflecting complex dispersal. alosa alosa showed extensive medium‐ and long‐distance movements, including rare longitudinal displacements along the cantabrian slope, and greater natal origin diversity than a. fallax , whose dispersal was largely restricted to middle‐distance, latitudinal migrations. in both species, bycatches were dominated by the most abundant continental populations, mondego and minho for a. alosa , and ulla and minho for a. fallax , suggesting that these rivers function as source populations exporting individuals to sink populations through marine dispersal. despite their differing dispersal ranges, both species displayed dual resident–dispersive contingents coexisting within the same populations, reflecting an interplay of river proximity, philopatry and resource availability. the stronger philopatry and constrained range of a. fallax imply heightened vulnerability to localized bycatch pressure near natal rivers, whereas a. alosa 's broader dispersal and higher origin diversity expose multiple populations to risk at a regional scale. these species‐specific dispersal capacities and metapopulation structures critically shape bycatch vulnerability. incorporating natal origin and dispersal data into transnational, ecosystem‐based management, such as targeted temporal or spatial fishing restrictions at mixing hotspots, will be essential to safeguard metapopulation dynamics, mitigate bycatch mortality and maintain ecological connectivity among european shad populations."
+         data-summary="耳石微化学分析揭示了伊比利亚西部商业渔业兼捕的两种西鲱（alosa alosa和alosa fallax）个体来自广泛的出生河流，其中资源最丰富的河流损失最重。空间上，特定海域的出生地多样性高，反映复杂扩散模式：a. alosa 进行中长距离移动，包括沿坎塔布连斜坡的罕见纵向位移，出生地多样性高于主要进行中纬度迁徙的 a. fallax。两种兼捕均以大陆优势种群（如a. alosa的mondego和minho河，a. fallax的ulla和minho河）为主，表明这些河流作为源种群通过海洋扩散输出个体。a. fallax更强的归巢性和受限范围使其更易受出生河流附近局部兼捕压力影响，而a. alosa的广泛扩散暴露了区域尺度上的多群体风险。将出生地和扩散数据纳入跨国生态系统管理（如在混合热点实施时空捕捞限制），对保护集合种群动态、减少兼捕死亡率和维持生态连通性至关重要。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 耳石微化学分析揭示了伊比利亚西部商业渔业兼捕的两种西鲱（Alosa alosa和Alosa fallax）个体来自广泛的出生河流，其中资源最丰富的河流损失最重。空间上，特定海域的出生地多样性高，反映复杂扩散模式：A. alosa 进行中长距离移动，包括沿坎塔布连斜坡的罕见纵向位移，出生地多样性高于主要进行中纬度迁徙的 A. fallax。两种兼捕均以大陆优势种群（如A. alosa的Mondego和Minho河，A. fallax的Ulla和Minho河）为主，表明这些河流作为源种群通过海洋扩散输出个体。A. fallax更强的归巢性和受限范围使其更易受出生河流附近局部兼捕压力影响，而A. alosa的广泛扩散暴露了区域尺度上的多群体风险。将出生地和扩散数据纳入跨国生态系统管理（如在混合热点实施时空捕捞限制），对保护集合种群动态、减少兼捕死亡率和维持生态连通性至关重要。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70474" target="_blank" rel="noopener">Population‐specific bycatch risks in two vulnerable anadromous clupeids: Insights from otolith microchemistry</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Nachón, David J.; Pico‐Calvo, Alejandro; Daverat, Françoise;...</span>
+        
+        <span>📅 2026-07-13</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract Otolith microchemistry analysis revealed that bycatch of European shads, allis shad Alosa alosa and twaite shad Alosa fallax , in western Iberian commercial fisheries removes individuals from a wide array of natal origins, with the most abundant source rivers suffering the heaviest losses. Spatial variation in bycatch risk was evident: Specific marine areas exhibited high natal origin diversity, reflecting complex dispersal. Alosa alosa showed extensive medium‐ and long‐distance movements, including rare longitudinal displacements along the Cantabrian slope, and greater natal origin diversity than A. fallax , whose dispersal was largely restricted to middle‐distance, latitudinal migrations. In both species, bycatches were dominated by the most abundant continental populations, Mondego and Minho for A. alosa , and Ulla and Minho for A. fallax , suggesting that these rivers function as source populations exporting individuals to sink populations through marine dispersal. Despite their differing dispersal ranges, both species displayed dual resident–dispersive contingents coexisting within the same populations, reflecting an interplay of river proximity, philopatry and resource availability. The stronger philopatry and constrained range of A. fallax imply heightened vulnerability to localized bycatch pressure near natal rivers, whereas A. alosa 's broader dispersal and higher origin diversity expose multiple populations to risk at a regional scale. These species‐specific dispersal capacities and metapopulation structures critically shape bycatch vulnerability. Incorporating natal origin and dispersal data into transnational, ecosystem‐based management, such as targeted temporal or spatial fishing restrictions at mixing hotspots, will be essential to safeguard metapopulation dynamics, mitigate bycatch mortality and maintain ecological connectivity among European shad populations.</div>
+      
+    </div>
+    
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var s=localStorage.getItem('theme');
+  if(s){document.documentElement.setAttribute('data-theme',s);
+  document.getElementById('themeIcon').textContent=s==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=s==='dark'?'亮色':'暗色';}
+})();
+function toggleTheme(){
+  var h=document.documentElement,n=h.getAttribute('data-theme')==='dark'?'light':'dark';
+  h.setAttribute('data-theme',n);
+  document.getElementById('themeIcon').textContent=n==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=n==='dark'?'亮色':'暗色';
+  localStorage.setItem('theme',n);
+}
+function toggleAbstract(b){
+  var c=b.nextElementSibling,v=c.classList.contains('visible');
+  c.classList.toggle('visible');b.classList.toggle('open');
+  b.querySelector('.arrow').textContent=v?'▶':'▼';
+}
+function filterPapers(){
+  var q=(document.getElementById('searchInput').value||'').toLowerCase().trim(),vis=0;
+  document.querySelectorAll('.paper-card').forEach(function(c){
+    var t=[c.getAttribute('data-title')||'',c.getAttribute('data-authors')||'',c.getAttribute('data-journal')||'',c.getAttribute('data-abstract')||'',c.getAttribute('data-summary')||''].join(' ');
+    var s=!q||t.includes(q);c.classList.toggle('hidden',!s);if(s)vis++;
+  });
+  document.getElementById('noResults').classList.toggle('visible',vis===0);
+}
+</script>
+</body>
+</html>
