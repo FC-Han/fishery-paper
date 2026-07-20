@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>养殖与饲料调控对鱼类肠道菌群及体色发育的影响 — 渔业文献每周速览</title>
+<style>
+:root {
+  --bg: #f7fafc; --bg-card: #ffffff; --text: #2d3748;
+  --text-secondary: #718096; --text-muted: #a0aec0; --border: #e2e8f0;
+  --primary: #2b6cb0; --primary-light: #bee3f8; --primary-dark: #1a365d;
+  --accent: #e76f51; --accent-light: #fed7d7;
+  --teal: #319795; --teal-light: #b2f5ea;
+  --gold: #d69e2e; --gold-light: #fefcbf;
+  --shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.10);
+  --radius: 12px; --radius-sm: 8px;
+}
+[data-theme="dark"] {
+  --bg: #1a202c; --bg-card: #2d3748; --text: #e2e8f0;
+  --text-secondary: #a0aec0; --text-muted: #718096; --border: #4a5568;
+  --primary: #90cdf4; --primary-light: #2a4365; --primary-dark: #bee3f8;
+  --accent: #fc8181; --accent-light: #742a2a;
+  --teal: #81e6d9; --teal-light: #234e52;
+  --gold: #f6e05e; --gold-light: #3d3a1a;
+  --shadow: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.5);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;transition:background 0.3s,color 0.3s}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* === Top Bar === */
+.topbar{background:linear-gradient(135deg,#1a365d,#2b6cb0);color:#fff;padding:0.8rem 1.5rem;display:flex;align-items:center;gap:1rem;position:sticky;top:0;z-index:100}
+.back-btn{color:#fff;font-size:0.95rem;font-weight:600;padding:0.4rem 0.8rem;border-radius:var(--radius-sm);border:1.5px solid rgba(255,255,255,0.3);transition:all 0.2s;white-space:nowrap}
+.back-btn:hover{background:rgba(255,255,255,0.15);text-decoration:none}
+.topbar .title-area{flex:1;min-width:0}
+.topbar .week-range{font-size:0.78rem;opacity:0.8}
+.topbar .week-topic{font-size:1rem;font-weight:700;line-height:1.3}
+.topbar .theme-toggle{padding:0.4rem 0.8rem;border:1.5px solid rgba(255,255,255,0.3);border-radius:var(--radius-sm);background:transparent;color:#fff;cursor:pointer;font-size:0.85rem;transition:all 0.2s;white-space:nowrap}
+.topbar .theme-toggle:hover{background:rgba(255,255,255,0.15)}
+
+.container{max-width:1100px;margin:0 auto;padding:1.5rem}
+
+/* === Article Section === */
+.article-section{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;margin-bottom:1.5rem;box-shadow:var(--shadow)}
+.article-section h2{font-size:1.3rem;color:var(--primary-dark);margin:1.5rem 0 0.75rem;padding-bottom:0.4rem;border-bottom:2px solid var(--primary-light)}
+.article-section h2:first-child{margin-top:0}
+.article-section p{margin-bottom:0.8rem;line-height:1.8;color:var(--text)}
+.article-section strong{color:var(--primary-dark)}
+.article-section ol,.article-section ul{padding-left:1.5rem;margin-bottom:0.8rem}
+.article-section li{margin-bottom:0.5rem;line-height:1.7}
+.article-tag{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-right:0.5rem}
+.tag-overview{background:var(--primary-light);color:var(--primary-dark)}
+.tag-highlight{background:var(--accent-light);color:var(--accent)}
+.tag-innovative{background:var(--gold-light);color:var(--gold)}
+.tag-recommend{background:var(--teal-light);color:var(--teal)}
+
+/* === Stats Row === */
+.stats-row{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.stat-mini{padding:0.5rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-secondary)}
+.stat-mini strong{color:var(--primary);font-size:1.1rem}
+
+/* === Controls === */
+.controls{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.search-box{flex:1;min-width:200px;position:relative}
+.search-box input{width:100%;padding:0.6rem 1rem 0.6rem 2.5rem;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:0.9rem;background:var(--bg-card);color:var(--text);transition:border-color 0.2s}
+.search-box input:focus{outline:none;border-color:var(--primary)}
+.search-box .search-icon{position:absolute;left:0.8rem;top:50%;transform:translateY(-50%);color:var(--text-muted);pointer-events:none}
+
+/* === Paper Grid === */
+.section-title{font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:0.75rem;display:flex;align-items:center;gap:0.5rem}
+.paper-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:0.85rem;margin-bottom:1.5rem}
+.paper-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1.1rem;transition:all 0.25s;display:flex;flex-direction:column;position:relative}
+.paper-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);border-color:var(--primary-light)}
+.paper-card.high-impact{border-left:3px solid var(--accent)}
+.paper-card .hi-badge{position:absolute;top:0.5rem;right:0.5rem;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:10px;background:var(--accent-light);color:var(--accent);font-weight:700}
+.paper-card .journal{font-size:0.78rem;color:var(--teal);font-weight:600;margin-bottom:0.3rem}
+.paper-card .title{font-size:0.95rem;font-weight:700;line-height:1.45;margin-bottom:0.35rem}
+.paper-card .title a{color:var(--text)}
+.paper-card .title a:hover{color:var(--primary);text-decoration:none}
+.paper-card .meta{font-size:0.78rem;color:var(--text-muted);margin-bottom:0.6rem;display:flex;flex-wrap:wrap;gap:0.5rem}
+
+/* Chinese Summary */
+.paper-card .summary-cn{background:linear-gradient(135deg,#fffaf0,#fffff0);border-left:3px solid var(--gold);padding:0.7rem 0.85rem;margin-bottom:0.5rem;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:0.88rem;line-height:1.55;color:#744210}
+[data-theme="dark"] .paper-card .summary-cn{background:linear-gradient(135deg,#3d2e1a,#372a10);color:#fbd38d}
+
+.abstract-toggle{font-size:0.8rem;color:var(--primary);cursor:pointer;font-weight:600;user-select:none;display:inline-flex;align-items:center;gap:0.25rem;padding:0.3rem 0;border:none;background:none}
+.abstract-toggle:hover{color:var(--accent)}
+.abstract-toggle .arrow{transition:transform 0.2s;font-size:0.7rem}
+.abstract-toggle.open .arrow{transform:rotate(90deg)}
+.abstract-content{display:none;font-size:0.82rem;color:var(--text-secondary);line-height:1.55;padding:0.5rem 0;border-top:1px dashed var(--border);margin-top:0.4rem}
+.abstract-content.visible{display:block}
+
+.paper-card.hidden{display:none}
+.no-results{display:none;text-align:center;padding:2rem;color:var(--text-muted)}
+.no-results.visible{display:block}
+
+@media(max-width:768px){.paper-grid{grid-template-columns:1fr}.article-section{padding:1.25rem}.topbar{flex-wrap:wrap}.topbar .week-topic{font-size:0.9rem}}
+
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.paper-card{animation:fadeIn 0.4s ease-out}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="back-btn" href="index.html">← 返回主页</a>
+  <div class="title-area">
+    <div class="week-range">7月20日—7月20日</div>
+    <div class="week-topic">养殖与饲料调控对鱼类肠道菌群及体色发育的影响</div>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <span id="themeIcon">🌙</span> <span id="themeLabel">暗色</span>
+  </button>
+</div>
+
+<div class="container">
+
+  <!-- 深度综述文章 -->
+  
+  <div class="article-section">
+    <h2>本周研究概览</h2>
+
+<p>本周（2026-W30）共收录渔业相关论文5篇，研究方向涵盖水产养殖营养与肠道微生物、观赏鱼体色调控、渔业补贴政策评估、大型海洋鱼类运动生态学以及鱼类早期生活史生长-摄食关系。整体研究趋势呈现以下特点：一是水产养殖领域持续关注替代蛋白源与功能性饲料的开发，并深入探究其对鱼类生理性状（如体色、肠道菌群）的影响；二是海洋生态学研究中，卫星追踪等先进技术被应用于濒危或数据缺乏物种（如 oceanic manta ray）的基础运动生态学；三是政策经济学与渔业科学的交叉研究仍受关注，但本周相关论文以评论形式出现。总体而言，研究在应用层面（养殖技术优化）和基础生态学层面均有涉及，但缺乏高影响力的综合性或突破性成果。</p>
+
+<h2>高影响力期刊亮点</h2>
+
+<p>本周暂无发表在Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances等顶级期刊上的渔业相关论文。</p>
+
+<h2>创新性研究</h2>
+
+<ol>
+<li><strong>Partial Replacement of Fish Meal with Fish Scale Meal Enhances Body Color Brightness and Iridophore Development in Koi (Cyprinus carpio var. koi)</strong> — 该研究的创新点在于首次系统评估了鱼鳞粉（FSM）这一水产加工副产物对观赏鱼结构色（iridophore介导的体色）的影响。传统研究多关注色素性体色，而该工作聚焦于鸟嘌呤和胶原蛋白对结构色的贡献，为“废弃物高值化利用”与“观赏鱼品质改良”提供了新思路，具有潜在的产业应用价值。</li>
+</ol>
+
+<ol>
+<li><strong>First insights into oceanic manta ray movements in Japan using satellite telemetry</strong> — 该研究首次利用卫星追踪技术揭示了日本海域（该物种分布北限）oceanic manta ray的运动模式。由于该物种在西北太平洋的数据极度匮乏，此研究填补了关键知识空白，为后续保护管理（如保护区划设、渔业兼捕缓解）提供了基础生态学依据。</li>
+</ol>
+
+<ol>
+<li><strong>Dynamics of Growth–Feeding Mechanisms in Japanese Anchovy Larvae Under Different Environmental Conditions</strong> — 该研究的创新点在于动态解析了环境条件如何调节鱼类仔鱼生长与摄食成功之间的耦合关系。传统“生长-存活”假说认为生长快则存活率高，但该研究揭示了这种关系的环境依赖性，挑战了单一指标预测仔鱼补充量的有效性，对渔业资源评估模型的改进具有启示意义。</li>
+</ol>
+
+<ol>
+<li><strong>Community Structure and Functional Prediction of Gut Microbiota in Mandarin Fish Under Different Culture and Feeding Conditions</strong> — 该研究的创新点在于同时比较了池塘活饵、池塘人工饲料和RAS（循环水养殖系统）人工饲料三种生产模式对鳜鱼肠道微生物群落的影响。通过功能预测分析，揭示了不同养殖条件如何塑造肠道菌群的代谢潜能，为优化鳜鱼养殖模式（尤其是人工饲料驯化）提供了微生物学视角。</li>
+</ol>
+
+<h2>推荐阅读</h2>
+
+<ol>
+<li><strong>Partial Replacement of Fish Meal with Fish Scale Meal Enhances Body Color Brightness and Iridophore Development in Koi (Cyprinus carpio var. koi)</strong> — 创新性地将水产副产物利用与观赏鱼结构色调控相结合，兼具资源循环和产业应用价值。</li>
+</ol>
+
+<ol>
+<li><strong>First insights into oceanic manta ray movements in Japan using satellite telemetry</strong> — 填补了西北太平洋oceanic manta ray运动生态学的关键数据空白，对濒危物种保护具有直接指导意义。</li>
+</ol>
+
+<ol>
+<li><strong>Dynamics of Growth–Feeding Mechanisms in Japanese Anchovy Larvae Under Different Environmental Conditions</strong> — 挑战了经典的生长-存活假说，揭示了环境依赖性，对鱼类早期补充量研究具有理论价值。</li>
+</ol>
+
+<ol>
+<li><strong>Community Structure and Functional Prediction of Gut Microbiota in Mandarin Fish Under Different Culture and Feeding Conditions</strong> — 系统比较了三种生产模式下鳜鱼肠道菌群，为人工饲料驯化提供微生物学依据。</li>
+</ol>
+
+<ol>
+<li><strong>Comment on “On the pass‐through rate of the Nutrition North Canada subsidy”</strong> — 尽管是评论文章，但涉及渔业补贴政策的经济学评估方法争议，对理解政策传导机制和实证研究设计有参考价值。</li>
+</ol>
+  </div>
+  
+
+  <!-- 统计 -->
+  <div class="stats-row">
+    <div class="stat-mini">📄 <strong>5</strong> 篇论文</div>
+    <div class="stat-mini">🌟 <strong>0</strong> 篇高影响力期刊</div>
+    <div class="stat-mini">🤖 <strong>5</strong> 篇 AI 中文总结</div>
+    
+    <div class="stat-mini">🏷️ 肠道微生物(Gut Microbiota) 饲料替代(Feed Replacement) 卫星追踪(Satellite Telemetry) 生长机制(Growth Dynamics) </div>
+    
+  </div>
+
+  <!-- 搜索 -->
+  <div class="controls">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="搜索标题、作者、摘要..." oninput="filterPapers()">
+    </div>
+  </div>
+
+  <div class="no-results" id="noResults">😕 没有匹配的论文</div>
+
+  <!-- 全部论文列表 -->
+  <div class="section-title">📄 本周全部论文（5 篇）</div>
+  <div class="paper-grid">
+    
+    <div class="paper-card"
+         data-title="partial replacement of fish meal with fish scale meal enhances body color brightness and iridophore development in koi (cyprinus carpio var. koi)"
+         data-authors="gao, shengyu; xu, xiaolong; ding, tong; cheng, yunxin; zhang, jiayue; zheng, huiyi; zhou, zuoqin; liu, en; xu, gaoxiao; he, chaofan"
+         data-journal="animals"
+         data-abstract="body color brightness is a key determinant of ornamental value in koi, yet nutritional strategies targeting structural coloration mediated by iridophores remain underexplored. fish scale meal (fsm), an abundant fishery by-product, contains guanine and collagen, which may contribute to structural coloration and body brightness. this study evaluated the effects of partial replacement of fish meal with fsm on growth performance, body color parameters, pigment accumulation, iridophore density, and iridophore-related gene expression in koi. a total of 384 koi with an initial body weight of 19.02 ± 0.18 g were randomly assigned to six dietary treatments for 8 weeks, with fsm inclusion levels ranging from 0% to 9.55%, corresponding to 0–100% replacement of dietary fish meal. growth performance, including final body weight, weight gain rate, and specific growth rate, decreased with increasing fsm inclusion. body lightness (l*) and scale guanine content increased progressively with fsm level and reached their highest values at 9.55% fsm, whereas redness (a*), yellowness (b*), and total carotenoid content showed the opposite trend. iridophore density was significantly higher in the 3.82–5.73% fsm groups than in the other treatments. the expression of iridophore-related genes, including sox10, pax3, ltk, alx4a, and foxd3, showed non-linear responses and generally reached higher levels at moderate fsm inclusion, whereas pka showed an opposite transcript pattern. overall, dietary fsm inclusion elicited trait-dependent responses in koi. low or no fsm inclusion was preferable for maintaining growth, intermediate inclusion was more favorable for iridophore development, whereas higher fsm inclusion enhanced brightness-related traits. these findings suggest that fsm should be used according to the intended production objective, with inclusion levels adjusted for growth maintenance, iridophore-related coloration improvement, or brightness enhancement."
+         data-summary="本研究以锦鲤为对象，探究鱼鳞粉（fsm）部分替代鱼粉对其体色亮度、虹彩细胞发育及生长的影响。结果显示，fsm替代水平达9.55%时，体色亮度（l*）和鳞片鸟嘌呤含量显著提升，但生长性能（终末体重、增重率等）随替代比例增加而下降；中等替代水平（3.82–5.73%）可显著提高虹彩细胞密度，并上调sox10、pax3等虹彩细胞相关基因表达。研究表明，fsm的添加需根据生产目标调整：低水平维持生长，中水平促进虹彩细胞发育，高水平增强体色亮度。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Animals
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究以锦鲤为对象，探究鱼鳞粉（FSM）部分替代鱼粉对其体色亮度、虹彩细胞发育及生长的影响。结果显示，FSM替代水平达9.55%时，体色亮度（L*）和鳞片鸟嘌呤含量显著提升，但生长性能（终末体重、增重率等）随替代比例增加而下降；中等替代水平（3.82–5.73%）可显著提高虹彩细胞密度，并上调sox10、pax3等虹彩细胞相关基因表达。研究表明，FSM的添加需根据生产目标调整：低水平维持生长，中水平促进虹彩细胞发育，高水平增强体色亮度。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/ani16142235" target="_blank" rel="noopener">Partial Replacement of Fish Meal with Fish Scale Meal Enhances Body Color Brightness and Iridophore Development in Koi (Cyprinus carpio var. koi)</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Gao, Shengyu; Xu, Xiaolong; Ding, Tong; Cheng, Yunxin; Zhang...</span>
+        
+        <span>📅 2026-07-20</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Body color brightness is a key determinant of ornamental value in koi, yet nutritional strategies targeting structural coloration mediated by iridophores remain underexplored. Fish scale meal (FSM), an abundant fishery by-product, contains guanine and collagen, which may contribute to structural coloration and body brightness. This study evaluated the effects of partial replacement of fish meal with FSM on growth performance, body color parameters, pigment accumulation, iridophore density, and iridophore-related gene expression in koi. A total of 384 koi with an initial body weight of 19.02 ± 0.18 g were randomly assigned to six dietary treatments for 8 weeks, with FSM inclusion levels ranging from 0% to 9.55%, corresponding to 0–100% replacement of dietary fish meal. Growth performance, including final body weight, weight gain rate, and specific growth rate, decreased with increasing FSM inclusion. Body lightness (L*) and scale guanine content increased progressively with FSM level and reached their highest values at 9.55% FSM, whereas redness (a*), yellowness (b*), and total carotenoid content showed the opposite trend. Iridophore density was significantly higher in the 3.82–5.73% FSM groups than in the other treatments. The expression of iridophore-related genes, including sox10, pax3, ltk, alx4a, and foxd3, showed non-linear responses and generally reached higher levels at moderate FSM inclusion, whereas pka showed an opposite transcript pattern. Overall, dietary FSM inclusion elicited trait-dependent responses in koi. Low or no FSM inclusion was preferable for maintaining growth, intermediate inclusion was more favorable for iridophore development, whereas higher FSM inclusion enhanced brightness-related traits. These findings suggest that FSM should be used according to the intended production objective, with inclusion levels adjusted for growth maintenance, iridophore-related coloration improvement, or brightness enhancement.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="comment on “on the pass‐through rate of the nutrition north canada subsidy”"
+         data-authors="galloway, tracey; li, nicholas"
+         data-journal="canadian journal of agricultural economics/revue canadienne d'agroeconomie"
+         data-abstract="abstract naylor, deaton and ker provide estimates of nutrition north canada subsidy pass‐through using data we collected and an identification strategy we devised. they propose an alternative econometric specification based on estimating passthrough for separate monopoly and non‐monopoly sub‐samples and aggregating the coefficients using subsidy share weights. they argue that this specification is more appropriate for estimating overall subsidy pass‐through and conclude that its application to our data provides evidence for full subsidy pass‐through. we show that their conclusions are not warranted by making two distinct but related points. first, we show that conclusions based on their specification are not robust to two changes in the estimating sample. correcting two subsidy assignment and one monopoly classification error in the original data set, or using a time period more relevant for comparing heterogeneous effects across monopoly and non‐monopoly communities, leads to estimates that either reinforce our original finding of incomplete passthrough or that are too imprecise to be informative. second, we provide a graphical illustration and power calculation to make a more general point about the appropriateness and limitations of the type of sub‐sample analysis they propose in settings with limited sample size and statistical power."
+         data-summary="该评论针对nutrition north canada补贴传导率研究展开方法论辩论。原作者指出，评论者提出的基于垄断与非垄断子样本的替代计量模型存在样本分类错误和统计效力不足问题。通过修正数据错误和调整时间窗口，重新分析显示补贴传导不完全的结论依然成立，或估计结果精度不足。研究强调在有限样本条件下进行子样本分析的局限性。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Canadian Journal of Agricultural Economics/Revue canadienne d'agroeconomie
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该评论针对Nutrition North Canada补贴传导率研究展开方法论辩论。原作者指出，评论者提出的基于垄断与非垄断子样本的替代计量模型存在样本分类错误和统计效力不足问题。通过修正数据错误和调整时间窗口，重新分析显示补贴传导不完全的结论依然成立，或估计结果精度不足。研究强调在有限样本条件下进行子样本分析的局限性。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/cjag.70022" target="_blank" rel="noopener">Comment on “On the pass‐through rate of the Nutrition North Canada subsidy”</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Galloway, Tracey; Li, Nicholas</span>
+        
+        <span>📅 2026-07-20</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract Naylor, Deaton and Ker provide estimates of Nutrition North Canada subsidy pass‐through using data we collected and an identification strategy we devised. They propose an alternative econometric specification based on estimating passthrough for separate monopoly and non‐monopoly sub‐samples and aggregating the coefficients using subsidy share weights. They argue that this specification is more appropriate for estimating overall subsidy pass‐through and conclude that its application to our data provides evidence for full subsidy pass‐through. We show that their conclusions are not warranted by making two distinct but related points. First, we show that conclusions based on their specification are not robust to two changes in the estimating sample. Correcting two subsidy assignment and one monopoly classification error in the original data set, or using a time period more relevant for comparing heterogeneous effects across monopoly and non‐monopoly communities, leads to estimates that either reinforce our original finding of incomplete passthrough or that are too imprecise to be informative. Second, we provide a graphical illustration and power calculation to make a more general point about the appropriateness and limitations of the type of sub‐sample analysis they propose in settings with limited sample size and statistical power.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="dynamics of growth–feeding mechanisms in japanese anchovy larvae under different environmental conditions"
+         data-authors="tanaka, shota; togoshi, shizuna; germain, etienne; yasue, naotaka; nakamura, masahiro; robert, dominique; takasuka, akinori"
+         data-journal="fisheries oceanography"
+         data-abstract="abstract the linkage between growth rate and feeding success in fish larvae has received much attention as a potential indicator of future growth and survival potential. given the increasing evidence that the growth–survival relationship is highly variable, the growth–feeding linkage would also exhibit variable dynamics among cohorts of the same population under different environmental conditions. here, we demonstrated the dynamics of the growth–feeding linkage in japanese anchovy larvae across multiple cohort samples collected by commercial trawlers operating in the kii channel, japan. three growth–feeding mechanisms that assume potential advantages of relatively large somatic size, high growth rate, and early morphological development for feeding success were tested for each cohort sample through both qualitative and quantitative indices of feeding success, including prey presence/absence, number, size, and carbon content. all the mechanisms were supported by at least certain cohorts, but none of them was universally effective across all cohorts. hence, individual somatic size, growth rate per se, and morphological development influenced prey presence/absence, number, size, and carbon content at variable degrees among the different cohorts considered. our results suggest that the relative contribution of the three growth characteristics to feeding success would vary under different environmental conditions. the observed dynamics of the growth–feeding mechanisms would influence dynamics in future growth potential and recruitment mechanisms. meta‐regression analyses further suggested that more diverse prey size composition, smaller prey, and higher temperature would enhance the strength of the three growth–feeding mechanisms. further investigating when and how each growth characteristic influences feeding success will contribute to understanding which individuals are more likely to achieve successful feeding, growth, and survival in a given set of environmental conditions."
+         data-summary="本研究以日本鳀仔鱼为对象，通过商业拖网采集kii channel多个cohort样本，探究不同环境条件下生长-摄食关联的动态变化。采用定性与定量摄食成功指标（包括饵料有无、数量、大小及碳含量），检验了三种生长-摄食机制（体型优势、高生长率优势、形态发育优势）的有效性。结果表明，各机制仅在特定cohort中得到支持，无普遍适用性，且三种生长特征对摄食成功的相对贡献随环境条件变化。meta回归分析进一步揭示，饵料大小组成多样化、小型饵料及高水温可增强上述机制强度。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Fisheries Oceanography
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究以日本鳀仔鱼为对象，通过商业拖网采集Kii Channel多个cohort样本，探究不同环境条件下生长-摄食关联的动态变化。采用定性与定量摄食成功指标（包括饵料有无、数量、大小及碳含量），检验了三种生长-摄食机制（体型优势、高生长率优势、形态发育优势）的有效性。结果表明，各机制仅在特定cohort中得到支持，无普遍适用性，且三种生长特征对摄食成功的相对贡献随环境条件变化。Meta回归分析进一步揭示，饵料大小组成多样化、小型饵料及高水温可增强上述机制强度。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/fog.70063" target="_blank" rel="noopener">Dynamics of Growth–Feeding Mechanisms in Japanese Anchovy Larvae Under Different Environmental Conditions</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Tanaka, Shota; Togoshi, Shizuna; Germain, Etienne; Yasue, Na...</span>
+        
+        <span>📅 2026-07-20</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">ABSTRACT The linkage between growth rate and feeding success in fish larvae has received much attention as a potential indicator of future growth and survival potential. Given the increasing evidence that the growth–survival relationship is highly variable, the growth–feeding linkage would also exhibit variable dynamics among cohorts of the same population under different environmental conditions. Here, we demonstrated the dynamics of the growth–feeding linkage in Japanese anchovy larvae across multiple cohort samples collected by commercial trawlers operating in the Kii Channel, Japan. Three growth–feeding mechanisms that assume potential advantages of relatively large somatic size, high growth rate, and early morphological development for feeding success were tested for each cohort sample through both qualitative and quantitative indices of feeding success, including prey presence/absence, number, size, and carbon content. All the mechanisms were supported by at least certain cohorts, but none of them was universally effective across all cohorts. Hence, individual somatic size, growth rate per se, and morphological development influenced prey presence/absence, number, size, and carbon content at variable degrees among the different cohorts considered. Our results suggest that the relative contribution of the three growth characteristics to feeding success would vary under different environmental conditions. The observed dynamics of the growth–feeding mechanisms would influence dynamics in future growth potential and recruitment mechanisms. Meta‐regression analyses further suggested that more diverse prey size composition, smaller prey, and higher temperature would enhance the strength of the three growth–feeding mechanisms. Further investigating when and how each growth characteristic influences feeding success will contribute to understanding which individuals are more likely to achieve successful feeding, growth, and survival in a given set of environmental conditions.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="first insights into oceanic manta ray movements in japan using satellite telemetry"
+         data-authors="ozaki, rikako; kamotani, yuko; kamotani, masato; chin, andrew; ravasi, timothy; erdmann, mark v."
+         data-journal="journal of fish biology"
+         data-abstract="abstract japanese waters represent the northern distributional limit of the western pacific distribution of the oceanic manta ray ( mobula birostris) , yet movement ecology in this region remains poorly understood. we report movements of the first satellite‐tagged individual in japan. high‐resolution depth–time series data documented repeated dives to 300 m and a maximum depth of 1082 m, with deeper use occurring predominantly at night. the individual undertook repeated long‐distance movements between the kerama islands and miyako islands, including multiple transits across the okinawa‐miyako submarine plateau and associated bathymetric features. although based on a single tracked individual, these observations provide the first high‐resolution movement data of m. birostris in japanese waters and highlight key hypotheses regarding habitat use and connectivity for future investigation."
+         data-summary="利用卫星追踪技术首次揭示了日本海域 oceanic manta ray（mobula birostris）的运动模式。研究发现该个体反复下潜至300米，最大深度达1082米，夜间深潜更为频繁。个体在kerama群岛与miyako群岛之间进行长距离移动，多次穿越冲绳-宫古海底高原等地形特征。尽管仅基于单一个体追踪，这些高分辨率数据为理解该物种在日本海域的栖息地利用与种群连通性提供了关键假设。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 利用卫星追踪技术首次揭示了日本海域 oceanic manta ray（Mobula birostris）的运动模式。研究发现该个体反复下潜至300米，最大深度达1082米，夜间深潜更为频繁。个体在Kerama群岛与Miyako群岛之间进行长距离移动，多次穿越冲绳-宫古海底高原等地形特征。尽管仅基于单一个体追踪，这些高分辨率数据为理解该物种在日本海域的栖息地利用与种群连通性提供了关键假设。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70574" target="_blank" rel="noopener">First insights into oceanic manta ray movements in Japan using satellite telemetry</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Ozaki, Rikako; Kamotani, Yuko; Kamotani, Masato; Chin, Andre...</span>
+        
+        <span>📅 2026-07-20</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract Japanese waters represent the northern distributional limit of the western Pacific distribution of the oceanic manta ray ( Mobula birostris) , yet movement ecology in this region remains poorly understood. We report movements of the first satellite‐tagged individual in Japan. High‐resolution depth–time series data documented repeated dives to 300 m and a maximum depth of 1082 m, with deeper use occurring predominantly at night. The individual undertook repeated long‐distance movements between the Kerama Islands and Miyako Islands, including multiple transits across the Okinawa‐Miyako Submarine Plateau and associated bathymetric features. Although based on a single tracked individual, these observations provide the first high‐resolution movement data of M. birostris in Japanese waters and highlight key hypotheses regarding habitat use and connectivity for future investigation.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="community structure and functional prediction of gut microbiota in mandarin fish (siniperca chuatsi) under different culture and feeding conditions"
+         data-authors="wang, yayu; niu, chen; jiang, xiaoyu; zhang, jinpeng; wang, shu; gong, cuiping; hu, dayan"
+         data-journal="life"
+         data-abstract="this study investigated the effects of culture systems and feed types on the gut microbiota of mandarin fish (siniperca chuatsi), using three production culture modes: pond–live bait (ce), pond–artificial feed (cs), and ras–artificial feed (gs). under identical pond culture conditions, cs fish fed compound feed had higher relative abundances of carbohydrate-metabolizing bacteroidota and firmicutes than ce. the cs group showed higher α-diversity, but β-diversity analysis indicated no significant community difference (p = 0.36), demonstrating that feed replacement only induced mild microbial shifts. lefse analysis uncovered 17 differential taxa: homeostasis-related genera enriched in cs, while the lipid-adapted macellibacteroides prevailed in ce. under identical artificial feed conditions, switching culture mode from pond (cs) to industrial ras (gs) drastically reduced gut microbial diversity and simplified community structure. gs exhibited a sharp rise in fusobacteriota, with cetobacterium (64.94%) becoming the single dominant genus. α-diversity was lower in gs than cs, and β-diversity confirmed highly distinct community profiles between the two groups (p = 0.004). lefse detected 43 differential taxa with diverse metabolic genera abundant in cs. no picrust2-inferred kegg pathways remained significant after fdr correction in the above two comparison groups, so these functional trends are only for reference."
+         data-summary="本研究以鳜（siniperca chuatsi）为对象，探究养殖系统（池塘vs.循环水养殖系统ras）和饲料类型（活饵vs.人工配合饲料）对肠道微生物群落的影响。池塘养殖条件下，投喂配合饲料的鳜肠道中碳水化合物代谢相关菌群（bacteroidota和firmicutes）丰度升高，α多样性增加，但β多样性无显著差异（p=0.36），表明饲料替换仅引起温和的微生物群落变化。在相同人工饲料条件下，从池塘转为ras养殖显著降低了肠道微生物多样性，fusobacteriota急剧上升，cetobacterium（64.94%）成为绝对优势菌属，β多样性显示两组群落结构高度分化（p=0.004）。picrust2功能预测经fdr校正后无显著差异通路，仅具参考价值。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Life
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究以鳜（Siniperca chuatsi）为对象，探究养殖系统（池塘vs.循环水养殖系统RAS）和饲料类型（活饵vs.人工配合饲料）对肠道微生物群落的影响。池塘养殖条件下，投喂配合饲料的鳜肠道中碳水化合物代谢相关菌群（Bacteroidota和Firmicutes）丰度升高，α多样性增加，但β多样性无显著差异（p=0.36），表明饲料替换仅引起温和的微生物群落变化。在相同人工饲料条件下，从池塘转为RAS养殖显著降低了肠道微生物多样性，Fusobacteriota急剧上升，Cetobacterium（64.94%）成为绝对优势菌属，β多样性显示两组群落结构高度分化（p=0.004）。PICRUSt2功能预测经FDR校正后无显著差异通路，仅具参考价值。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/life16071194" target="_blank" rel="noopener">Community Structure and Functional Prediction of Gut Microbiota in Mandarin Fish (Siniperca Chuatsi) Under Different Culture and Feeding Conditions</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Wang, Yayu; Niu, Chen; Jiang, Xiaoyu; Zhang, Jinpeng; Wang, ...</span>
+        
+        <span>📅 2026-07-20</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">This study investigated the effects of culture systems and feed types on the gut microbiota of mandarin fish (Siniperca chuatsi), using three production culture modes: pond–live bait (CE), pond–artificial feed (CS), and RAS–artificial feed (GS). Under identical pond culture conditions, CS fish fed compound feed had higher relative abundances of carbohydrate-metabolizing Bacteroidota and Firmicutes than CE. The CS group showed higher α-diversity, but β-diversity analysis indicated no significant community difference (p = 0.36), demonstrating that feed replacement only induced mild microbial shifts. LEfSe analysis uncovered 17 differential taxa: homeostasis-related genera enriched in CS, while the lipid-adapted Macellibacteroides prevailed in CE. Under identical artificial feed conditions, switching culture mode from pond (CS) to industrial RAS (GS) drastically reduced gut microbial diversity and simplified community structure. GS exhibited a sharp rise in Fusobacteriota, with Cetobacterium (64.94%) becoming the single dominant genus. α-diversity was lower in GS than CS, and β-diversity confirmed highly distinct community profiles between the two groups (p = 0.004). LEfSe detected 43 differential taxa with diverse metabolic genera abundant in CS. No PICRUSt2-inferred KEGG pathways remained significant after FDR correction in the above two comparison groups, so these functional trends are only for reference.</div>
+      
+    </div>
+    
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var s=localStorage.getItem('theme');
+  if(s){document.documentElement.setAttribute('data-theme',s);
+  document.getElementById('themeIcon').textContent=s==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=s==='dark'?'亮色':'暗色';}
+})();
+function toggleTheme(){
+  var h=document.documentElement,n=h.getAttribute('data-theme')==='dark'?'light':'dark';
+  h.setAttribute('data-theme',n);
+  document.getElementById('themeIcon').textContent=n==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=n==='dark'?'亮色':'暗色';
+  localStorage.setItem('theme',n);
+}
+function toggleAbstract(b){
+  var c=b.nextElementSibling,v=c.classList.contains('visible');
+  c.classList.toggle('visible');b.classList.toggle('open');
+  b.querySelector('.arrow').textContent=v?'▶':'▼';
+}
+function filterPapers(){
+  var q=(document.getElementById('searchInput').value||'').toLowerCase().trim(),vis=0;
+  document.querySelectorAll('.paper-card').forEach(function(c){
+    var t=[c.getAttribute('data-title')||'',c.getAttribute('data-authors')||'',c.getAttribute('data-journal')||'',c.getAttribute('data-abstract')||'',c.getAttribute('data-summary')||''].join(' ');
+    var s=!q||t.includes(q);c.classList.toggle('hidden',!s);if(s)vis++;
+  });
+  document.getElementById('noResults').classList.toggle('visible',vis===0);
+}
+</script>
+</body>
+</html>

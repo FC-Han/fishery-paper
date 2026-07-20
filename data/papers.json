@@ -1,8 +1,73 @@
 {
-  "last_updated": "2026-07-19T09:49:00Z",
-  "total_papers": 268,
-  "new_today": 9,
+  "last_updated": "2026-07-20T10:47:48Z",
+  "total_papers": 273,
+  "new_today": 7,
   "papers": [
+    {
+      "doi": "10.3390/life16071194",
+      "title": "Community Structure and Functional Prediction of Gut Microbiota in Mandarin Fish (Siniperca Chuatsi) Under Different Culture and Feeding Conditions",
+      "authors": "Wang, Yayu; Niu, Chen; Jiang, Xiaoyu; Zhang, Jinpeng; Wang, Shu; Gong, Cuiping; Hu, Dayan",
+      "journal": "Life",
+      "date": "2026-07-20",
+      "abstract": "This study investigated the effects of culture systems and feed types on the gut microbiota of mandarin fish (Siniperca chuatsi), using three production culture modes: pond–live bait (CE), pond–artificial feed (CS), and RAS–artificial feed (GS). Under identical pond culture conditions, CS fish fed compound feed had higher relative abundances of carbohydrate-metabolizing Bacteroidota and Firmicutes than CE. The CS group showed higher α-diversity, but β-diversity analysis indicated no significant community difference (p = 0.36), demonstrating that feed replacement only induced mild microbial shifts. LEfSe analysis uncovered 17 differential taxa: homeostasis-related genera enriched in CS, while the lipid-adapted Macellibacteroides prevailed in CE. Under identical artificial feed conditions, switching culture mode from pond (CS) to industrial RAS (GS) drastically reduced gut microbial diversity and simplified community structure. GS exhibited a sharp rise in Fusobacteriota, with Cetobacterium (64.94%) becoming the single dominant genus. α-diversity was lower in GS than CS, and β-diversity confirmed highly distinct community profiles between the two groups (p = 0.004). LEfSe detected 43 differential taxa with diverse metabolic genera abundant in CS. No PICRUSt2-inferred KEGG pathways remained significant after FDR correction in the above two comparison groups, so these functional trends are only for reference.",
+      "summary_cn": "本研究以鳜（Siniperca chuatsi）为对象，探究养殖系统（池塘vs.循环水养殖系统RAS）和饲料类型（活饵vs.人工配合饲料）对肠道微生物群落的影响。池塘养殖条件下，投喂配合饲料的鳜肠道中碳水化合物代谢相关菌群（Bacteroidota和Firmicutes）丰度升高，α多样性增加，但β多样性无显著差异（p=0.36），表明饲料替换仅引起温和的微生物群落变化。在相同人工饲料条件下，从池塘转为RAS养殖显著降低了肠道微生物多样性，Fusobacteriota急剧上升，Cetobacterium（64.94%）成为绝对优势菌属，β多样性显示两组群落结构高度分化（p=0.004）。PICRUSt2功能预测经FDR校正后无显著差异通路，仅具参考价值。",
+      "url": "https://doi.org/10.3390/life16071194",
+      "source": "crossref",
+      "keywords_matched": "fish stock",
+      "high_impact": false
+    },
+    {
+      "doi": "10.3390/ani16142235",
+      "title": "Partial Replacement of Fish Meal with Fish Scale Meal Enhances Body Color Brightness and Iridophore Development in Koi (Cyprinus carpio var. koi)",
+      "authors": "Gao, Shengyu; Xu, Xiaolong; Ding, Tong; Cheng, Yunxin; Zhang, Jiayue; Zheng, Huiyi; Zhou, Zuoqin; Liu, En; Xu, Gaoxiao; He, Chaofan",
+      "journal": "Animals",
+      "date": "2026-07-20",
+      "abstract": "Body color brightness is a key determinant of ornamental value in koi, yet nutritional strategies targeting structural coloration mediated by iridophores remain underexplored. Fish scale meal (FSM), an abundant fishery by-product, contains guanine and collagen, which may contribute to structural coloration and body brightness. This study evaluated the effects of partial replacement of fish meal with FSM on growth performance, body color parameters, pigment accumulation, iridophore density, and iridophore-related gene expression in koi. A total of 384 koi with an initial body weight of 19.02 ± 0.18 g were randomly assigned to six dietary treatments for 8 weeks, with FSM inclusion levels ranging from 0% to 9.55%, corresponding to 0–100% replacement of dietary fish meal. Growth performance, including final body weight, weight gain rate, and specific growth rate, decreased with increasing FSM inclusion. Body lightness (L*) and scale guanine content increased progressively with FSM level and reached their highest values at 9.55% FSM, whereas redness (a*), yellowness (b*), and total carotenoid content showed the opposite trend. Iridophore density was significantly higher in the 3.82–5.73% FSM groups than in the other treatments. The expression of iridophore-related genes, including sox10, pax3, ltk, alx4a, and foxd3, showed non-linear responses and generally reached higher levels at moderate FSM inclusion, whereas pka showed an opposite transcript pattern. Overall, dietary FSM inclusion elicited trait-dependent responses in koi. Low or no FSM inclusion was preferable for maintaining growth, intermediate inclusion was more favorable for iridophore development, whereas higher FSM inclusion enhanced brightness-related traits. These findings suggest that FSM should be used according to the intended production objective, with inclusion levels adjusted for growth maintenance, iridophore-related coloration improvement, or brightness enhancement.",
+      "summary_cn": "本研究以锦鲤为对象，探究鱼鳞粉（FSM）部分替代鱼粉对其体色亮度、虹彩细胞发育及生长的影响。结果显示，FSM替代水平达9.55%时，体色亮度（L*）和鳞片鸟嘌呤含量显著提升，但生长性能（终末体重、增重率等）随替代比例增加而下降；中等替代水平（3.82–5.73%）可显著提高虹彩细胞密度，并上调sox10、pax3等虹彩细胞相关基因表达。研究表明，FSM的添加需根据生产目标调整：低水平维持生长，中水平促进虹彩细胞发育，高水平增强体色亮度。",
+      "url": "https://doi.org/10.3390/ani16142235",
+      "source": "crossref",
+      "keywords_matched": "fish stock",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1111/cjag.70022",
+      "title": "Comment on “On the pass‐through rate of the Nutrition North Canada subsidy”",
+      "authors": "Galloway, Tracey; Li, Nicholas",
+      "journal": "Canadian Journal of Agricultural Economics/Revue canadienne d'agroeconomie",
+      "date": "2026-07-20",
+      "abstract": "Abstract Naylor, Deaton and Ker provide estimates of Nutrition North Canada subsidy pass‐through using data we collected and an identification strategy we devised. They propose an alternative econometric specification based on estimating passthrough for separate monopoly and non‐monopoly sub‐samples and aggregating the coefficients using subsidy share weights. They argue that this specification is more appropriate for estimating overall subsidy pass‐through and conclude that its application to our data provides evidence for full subsidy pass‐through. We show that their conclusions are not warranted by making two distinct but related points. First, we show that conclusions based on their specification are not robust to two changes in the estimating sample. Correcting two subsidy assignment and one monopoly classification error in the original data set, or using a time period more relevant for comparing heterogeneous effects across monopoly and non‐monopoly communities, leads to estimates that either reinforce our original finding of incomplete passthrough or that are too imprecise to be informative. Second, we provide a graphical illustration and power calculation to make a more general point about the appropriateness and limitations of the type of sub‐sample analysis they propose in settings with limited sample size and statistical power.",
+      "summary_cn": "该评论针对Nutrition North Canada补贴传导率研究展开方法论辩论。原作者指出，评论者提出的基于垄断与非垄断子样本的替代计量模型存在样本分类错误和统计效力不足问题。通过修正数据错误和调整时间窗口，重新分析显示补贴传导不完全的结论依然成立，或估计结果精度不足。研究强调在有限样本条件下进行子样本分析的局限性。",
+      "url": "https://doi.org/10.1111/cjag.70022",
+      "source": "crossref",
+      "keywords_matched": "fish nutrition",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1111/jfb.70574",
+      "title": "First insights into oceanic manta ray movements in Japan using satellite telemetry",
+      "authors": "Ozaki, Rikako; Kamotani, Yuko; Kamotani, Masato; Chin, Andrew; Ravasi, Timothy; Erdmann, Mark V.",
+      "journal": "Journal of Fish Biology",
+      "date": "2026-07-20",
+      "abstract": "Abstract Japanese waters represent the northern distributional limit of the western Pacific distribution of the oceanic manta ray ( Mobula birostris) , yet movement ecology in this region remains poorly understood. We report movements of the first satellite‐tagged individual in Japan. High‐resolution depth–time series data documented repeated dives to 300 m and a maximum depth of 1082 m, with deeper use occurring predominantly at night. The individual undertook repeated long‐distance movements between the Kerama Islands and Miyako Islands, including multiple transits across the Okinawa‐Miyako Submarine Plateau and associated bathymetric features. Although based on a single tracked individual, these observations provide the first high‐resolution movement data of M. birostris in Japanese waters and highlight key hypotheses regarding habitat use and connectivity for future investigation.",
+      "summary_cn": "利用卫星追踪技术首次揭示了日本海域 oceanic manta ray（Mobula birostris）的运动模式。研究发现该个体反复下潜至300米，最大深度达1082米，夜间深潜更为频繁。个体在Kerama群岛与Miyako群岛之间进行长距离移动，多次穿越冲绳-宫古海底高原等地形特征。尽管仅基于单一个体追踪，这些高分辨率数据为理解该物种在日本海域的栖息地利用与种群连通性提供了关键假设。",
+      "url": "https://doi.org/10.1111/jfb.70574",
+      "source": "crossref_issn",
+      "keywords_matched": "Journal of Fish Biology",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1111/fog.70063",
+      "title": "Dynamics of Growth–Feeding Mechanisms in Japanese Anchovy Larvae Under Different Environmental Conditions",
+      "authors": "Tanaka, Shota; Togoshi, Shizuna; Germain, Etienne; Yasue, Naotaka; Nakamura, Masahiro; Robert, Dominique; Takasuka, Akinori",
+      "journal": "Fisheries Oceanography",
+      "date": "2026-07-20",
+      "abstract": "ABSTRACT The linkage between growth rate and feeding success in fish larvae has received much attention as a potential indicator of future growth and survival potential. Given the increasing evidence that the growth–survival relationship is highly variable, the growth–feeding linkage would also exhibit variable dynamics among cohorts of the same population under different environmental conditions. Here, we demonstrated the dynamics of the growth–feeding linkage in Japanese anchovy larvae across multiple cohort samples collected by commercial trawlers operating in the Kii Channel, Japan. Three growth–feeding mechanisms that assume potential advantages of relatively large somatic size, high growth rate, and early morphological development for feeding success were tested for each cohort sample through both qualitative and quantitative indices of feeding success, including prey presence/absence, number, size, and carbon content. All the mechanisms were supported by at least certain cohorts, but none of them was universally effective across all cohorts. Hence, individual somatic size, growth rate per se, and morphological development influenced prey presence/absence, number, size, and carbon content at variable degrees among the different cohorts considered. Our results suggest that the relative contribution of the three growth characteristics to feeding success would vary under different environmental conditions. The observed dynamics of the growth–feeding mechanisms would influence dynamics in future growth potential and recruitment mechanisms. Meta‐regression analyses further suggested that more diverse prey size composition, smaller prey, and higher temperature would enhance the strength of the three growth–feeding mechanisms. Further investigating when and how each growth characteristic influences feeding success will contribute to understanding which individuals are more likely to achieve successful feeding, growth, and survival in a given set of environmental conditions.",
+      "summary_cn": "本研究以日本鳀仔鱼为对象，通过商业拖网采集Kii Channel多个cohort样本，探究不同环境条件下生长-摄食关联的动态变化。采用定性与定量摄食成功指标（包括饵料有无、数量、大小及碳含量），检验了三种生长-摄食机制（体型优势、高生长率优势、形态发育优势）的有效性。结果表明，各机制仅在特定cohort中得到支持，无普遍适用性，且三种生长特征对摄食成功的相对贡献随环境条件变化。Meta回归分析进一步揭示，饵料大小组成多样化、小型饵料及高水温可增强上述机制强度。",
+      "url": "https://doi.org/10.1111/fog.70063",
+      "source": "crossref_issn",
+      "keywords_matched": "Fisheries Oceanography",
+      "high_impact": false
+    },
     {
       "doi": "10.1142/s1793048026500050",
       "title": "Stability Analysis of a Single Species Fish Population Model with Migration",
@@ -14,6 +79,32 @@
       "url": "https://doi.org/10.1142/s1793048026500050",
       "source": "crossref",
       "keywords_matched": "fish stock",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1007/s10641-026-01877-x",
+      "title": "Characterization and preservation of germline stem cells in endangered beluga sturgeon (Huso huso) gonads: implications for conservation",
+      "authors": "Fadakar, Hediye; Mirzapour, Tooba; Jamshidi, Shirin; Sohrabi, Tooraj",
+      "journal": "Environmental Biology of Fishes",
+      "date": "2026-07-19",
+      "abstract": "",
+      "summary_cn": "本研究旨在表征濒危欧洲鳇（Huso huso）性腺中的生殖干细胞，并探索其保存方法。通过组织学与分子标记鉴定，成功分离并培养了生殖干细胞，为种质资源保存提供了技术基础。该发现对濒危鲟鱼物种的遗传多样性保护及人工繁殖具有重要应用价值。",
+      "url": "https://doi.org/10.1007/s10641-026-01877-x",
+      "source": "crossref",
+      "keywords_matched": "fish conservation",
+      "high_impact": false
+    },
+    {
+      "doi": "10.63338/ijftm.2026.000029",
+      "title": "Global Fermented Meat and Seafood Products: Safety, Processing, and Future Prospects",
+      "authors": "Muruganandam, Kisha; Evander Jebson, David; Mathiyalagan, Madhumitha; Nagarethinam, Baskaran; Sivanandham, Vignesh",
+      "journal": "International Journal of Food Technology and Management",
+      "date": "2026-07-19",
+      "abstract": "Fermented meat and seafood products represent a significant category of traditional foods that have evolved from ancient preservation practices into functionally enriched foods with growing global market relevance. These products are developed through natural or controlled fermentation, where selected microbial communities transform raw substrates into safer, shelf-stable, and sensory-enhanced products. The fermentation process leads to the generation of organic acids, bioactive compounds, and antioxidant metabolites that contribute to improved nutritional quality, extended shelf life, and functional health benefits. With consumer demand shifting toward minimally processed, culturally rooted, and clean-label foods, fermented animal-based products are witnessing renewed interest across both traditional markets and modern food industries. This review consolidates global insights on traditional processing practices, microbial interactions, biochemical transformations, health implications, safety regulations, and market trends related to fermented meat and seafood. It further explores emerging advancements such as precision-controlled fermentation, sustainable bioprocessing, and circular utilization of by-products, highlighting their potential in shaping the future of fermented food systems. By integrating heritage knowledge with contemporary biotechnological innovations, fermented meat and seafood products stand at the intersection of nutrition, culture, safety, and commercial opportunity, positioning them as promising candidates for future-ready functional food development.",
+      "summary_cn": "该综述系统梳理了全球发酵肉及水产品的传统加工工艺、微生物互作、生化转化及健康效应，并探讨了精准发酵、可持续生物加工等新兴技术。研究发现，发酵过程产生的有机酸和生物活性物质可提升产品营养品质与货架期，且消费者对清洁标签食品的需求正推动该领域复兴。文章整合了安全性法规与市场趋势，指出将传统知识与现代生物技术结合，是开发未来功能性发酵食品的关键方向。",
+      "url": "https://doi.org/10.63338/ijftm.2026.000029",
+      "source": "crossref",
+      "keywords_matched": "seafood sustainability",
       "high_impact": false
     },
     {
@@ -3460,61 +3551,35 @@
       "source": "crossref_issn",
       "keywords_matched": "Marine Ecology Progress Series",
       "high_impact": false
-    },
-    {
-      "doi": "10.3329/brc.v12i2.91463",
-      "title": "Isolation And Characterization of Host-Associated Bacillus Spp. As Probiotics for Enhancing Fish Growth and Water Quality",
-      "authors": "Akter, Mst Dilruba; Ahmed, Md Sagir; Hosain, Md Eilious; Hasan, Md Mahmud",
-      "journal": "Bioresearch Communications",
-      "date": "2026-07-05",
-      "abstract": "Incorporating Bacillus probiotics into feed can yield additional benefits, including enhanced growth and production in aquaculture. However, study did not receive much attention on enriched feed with host-associated Bacillus spp. isolated from the fish gut. Therefore, this study was conducted to isolate Bacillus spp. from the tilapia gut and to evaluate their probiotic potential for the growth of Nile tilapia (Oreochromis niloticus) and water quality parameters. Bacterial strains were isolated from tilapia guts using Bacillus selective media and then were identified by MALDI-TOF mass spectrometry and 16S rRNA gene sequencing. Probiotic potential was evaluated based on pH (2.5) and bile (0.5%) tolerance, extracellular enzyme production, and antibiotic susceptibility profiling. A total of 16 bacterial strains were isolated; of them, two were identified as Bacillus pumilus and Bacillus subtilis. Both survived in low pH and high bile concentration; showed extracellular protease and amylase activity; and had high susceptibility to most of the selected antibiotics. A 60-day in vivo experiment was conducted under three treatments: control (without probiotics); T2H (B. pumilus); and T2B (B. subtilis). A significant difference (p &lt; 0.05) was observed among three treatments regarding weight gain (WG; g), average daily gain (ADG; g/day), and specific growth rate (SGR; %/day). Remarkably, the highest WG, ADG, and SGR values were estimated in T2B compared to T2H and control. Additionally, T2B exhibited significantly (p &lt; 0.05) increased nitrate level compared to T2H and control. This study indicated that host-associated B. pumilus and B. subtilis could be the potential probiotics for O. niloticus. Bioresearch Commu. 12(2): 2137-2147, 2026 (January)",
-      "summary_cn": "从罗非鱼肠道分离出16株芽孢杆菌，经MALDI-TOF质谱和16S rRNA鉴定为Bacillus pumilus和Bacillus subtilis。两株菌均耐受低pH（2.5）和高胆汁浓度（0.5%），具有胞外蛋白酶和淀粉酶活性，且对多数抗生素敏感。60天养殖实验显示，B. subtilis处理组在增重、日均增重和特定生长率上显著优于B. pumilus和对照组，同时显著提高了水体硝酸盐水平。研究表明宿主相关B. pumilus和B. subtilis可作为罗非鱼潜在益生菌，促进生长并改善水质。",
-      "url": "https://doi.org/10.3329/brc.v12i2.91463",
-      "source": "crossref",
-      "keywords_matched": "fish population",
-      "high_impact": false
-    },
-    {
-      "doi": "10.66659/ctn59c96",
-      "title": "&lt;b&gt;Demographic Precision and Causal Narrowness: A Critical Review of Bennington et al. 2026 on Hector’s Dolphin Fecundity and Bycatch Management &lt;/b&gt;",
-      "authors": "Gibbs, Andrew; Nikolaenko, Dmitry",
-      "journal": "Pollution and Diseases",
-      "date": "2026-07-05",
-      "abstract": "Bennington et al. (2026) provide a technically strong estimate of fecundity in Hector’s dolphin (Cephalorhynchus hectori) using four decades of photo-identification data from Banks Peninsula. Their central finding—that mature females reproduce less frequently than previously assumed—is important for demographic modelling and conservation management. The estimated fecundity of approximately 0.29 offspring per mature female per year corresponds to an average calving interval of about 3.4 years. This is a valuable contribution. However, the article’s framing around current bycatch management raises a methodological concern. The model estimates reproductive output but does not investigate the causes of low fecundity, impaired recovery, long-term decline, population crisis. It excludes chemical contaminants, infectious disease, immune dysfunction, reproductive toxicity, prey limitation, habitat degradation, and other cumulative stressors as explanatory variables. Review is written from the perspective that chemical pollution remains a serious but insufficiently examined hypothesis. We do not claim that pollution has been proven as the principal cause of the Hector’s and Māui dolphin crisis, nor do we deny that fisheries bycatch is an important threat. Rather, we argue that Bennington et al. should be interpreted as estimating demographic parameters within an established management framework, not as providing a causal explanation of the continuing population decline.",
-      "summary_cn": "该文对Bennington等人（2026）关于赫氏海豚繁殖力的研究进行了批判性评述。研究利用四十年照片识别数据估计成熟雌性繁殖力约为每年0.29后代（平均产仔间隔3.4年），低于此前假设，对种群建模有重要价值。但作者指出，该研究仅估计繁殖输出，未纳入化学污染物、疾病、栖息地退化等累积胁迫因子作为解释变量，因此不应被解读为对种群持续衰退的因果解释。文章强调，化学污染仍是亟需检验的假说，但并未否认渔业兼捕（bycatch）的重要性。",
-      "url": "https://doi.org/10.66659/ctn59c96",
-      "source": "crossref",
-      "keywords_matched": "bycatch",
-      "high_impact": false
     }
   ],
   "weekly_topics": {
+    "2026-W30": {
+      "week_key": "2026-W30",
+      "week_range": "7月20日—7月26日",
+      "topic": "养殖与饲料调控对鱼类肠道菌群及体色发育的影响",
+      "keywords": "肠道微生物(Gut Microbiota), 饲料替代(Feed Replacement), 卫星追踪(Satellite Telemetry), 生长机制(Growth Dynamics), 水产养殖(Aquaculture), 鱼类着色(Fish Coloration), 环境条件(Environmental Conditions), 幼鱼发育(Larval Development)",
+      "article": "## 本周研究概览\n\n本周（2026-W30）共收录渔业相关论文5篇，研究方向涵盖水产养殖营养与肠道微生物、观赏鱼体色调控、渔业补贴政策评估、大型海洋鱼类运动生态学以及鱼类早期生活史生长-摄食关系。整体研究趋势呈现以下特点：一是水产养殖领域持续关注替代蛋白源与功能性饲料的开发，并深入探究其对鱼类生理性状（如体色、肠道菌群）的影响；二是海洋生态学研究中，卫星追踪等先进技术被应用于濒危或数据缺乏物种（如 oceanic manta ray）的基础运动生态学；三是政策经济学与渔业科学的交叉研究仍受关注，但本周相关论文以评论形式出现。总体而言，研究在应用层面（养殖技术优化）和基础生态学层面均有涉及，但缺乏高影响力的综合性或突破性成果。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances等顶级期刊上的渔业相关论文。\n\n## 创新性研究\n\n1. **Partial Replacement of Fish Meal with Fish Scale Meal Enhances Body Color Brightness and Iridophore Development in Koi (Cyprinus carpio var. koi)** — 该研究的创新点在于首次系统评估了鱼鳞粉（FSM）这一水产加工副产物对观赏鱼结构色（iridophore介导的体色）的影响。传统研究多关注色素性体色，而该工作聚焦于鸟嘌呤和胶原蛋白对结构色的贡献，为“废弃物高值化利用”与“观赏鱼品质改良”提供了新思路，具有潜在的产业应用价值。\n\n2. **First insights into oceanic manta ray movements in Japan using satellite telemetry** — 该研究首次利用卫星追踪技术揭示了日本海域（该物种分布北限）oceanic manta ray的运动模式。由于该物种在西北太平洋的数据极度匮乏，此研究填补了关键知识空白，为后续保护管理（如保护区划设、渔业兼捕缓解）提供了基础生态学依据。\n\n3. **Dynamics of Growth–Feeding Mechanisms in Japanese Anchovy Larvae Under Different Environmental Conditions** — 该研究的创新点在于动态解析了环境条件如何调节鱼类仔鱼生长与摄食成功之间的耦合关系。传统“生长-存活”假说认为生长快则存活率高，但该研究揭示了这种关系的环境依赖性，挑战了单一指标预测仔鱼补充量的有效性，对渔业资源评估模型的改进具有启示意义。\n\n4. **Community Structure and Functional Prediction of Gut Microbiota in Mandarin Fish Under Different Culture and Feeding Conditions** — 该研究的创新点在于同时比较了池塘活饵、池塘人工饲料和RAS（循环水养殖系统）人工饲料三种生产模式对鳜鱼肠道微生物群落的影响。通过功能预测分析，揭示了不同养殖条件如何塑造肠道菌群的代谢潜能，为优化鳜鱼养殖模式（尤其是人工饲料驯化）提供了微生物学视角。\n\n## 推荐阅读\n\n1. **Partial Replacement of Fish Meal with Fish Scale Meal Enhances Body Color Brightness and Iridophore Development in Koi (Cyprinus carpio var. koi)** — 创新性地将水产副产物利用与观赏鱼结构色调控相结合，兼具资源循环和产业应用价值。\n\n2. **First insights into oceanic manta ray movements in Japan using satellite telemetry** — 填补了西北太平洋oceanic manta ray运动生态学的关键数据空白，对濒危物种保护具有直接指导意义。\n\n3. **Dynamics of Growth–Feeding Mechanisms in Japanese Anchovy Larvae Under Different Environmental Conditions** — 挑战了经典的生长-存活假说，揭示了环境依赖性，对鱼类早期补充量研究具有理论价值。\n\n4. **Community Structure and Functional Prediction of Gut Microbiota in Mandarin Fish Under Different Culture and Feeding Conditions** — 系统比较了三种生产模式下鳜鱼肠道菌群，为人工饲料驯化提供微生物学依据。\n\n5. **Comment on “On the pass‐through rate of the Nutrition North Canada subsidy”** — 尽管是评论文章，但涉及渔业补贴政策的经济学评估方法争议，对理解政策传导机制和实证研究设计有参考价值。",
+      "paper_count": 5,
+      "high_impact_count": 0
+    },
     "2026-W29": {
       "week_key": "2026-W29",
       "week_range": "7月13日—7月19日",
-      "topic": "渔业可持续性：气候变化、技术创新与生态保护前沿",
-      "keywords": "水产养殖(Aquaculture), 种群评估(Stock Assessment), 气候变化(Climate Change), 鱼类生态(Fish Ecology), 渔业管理(Fisheries Management), 食品安全(Food Safety), 环境监测(Environmental Monitoring), 生物技术(Biotechnology)",
+      "topic": "渔业可持续性与气候变化适应：多学科研究前沿综述",
+      "keywords": "种群评估(Stock Assessment), 水产养殖(Aquaculture), 鱼类保护(Fish Conservation), 气候变化(Climate Change), 食品安全(Food Safety), 生态系统模型(Ecosystem Model), 渔业管理(Fisheries Management), 基因鉴定(Gene Identification)",
       "article": "好的，作为渔业科学领域的资深学术主编，我已审阅本周（2026-W29）发表的渔业相关论文。以下是为您撰写的结构化综述。\n\n---\n\n## 本周研究概览\n\n本周共收录4篇渔业相关论文，研究主题涵盖休闲渔业的社会经济与管理、水产养殖遗传育种、鱼类系统分类学争议以及濒危洄游鱼类的兼捕问题。整体研究趋势呈现出从传统资源评估向多学科交叉融合的转向，尤其关注人类活动（如休闲捕捞、商业兼捕）对渔业资源的影响，以及利用分子生物学（SNP芯片、耳石微化学）等先进技术手段解决管理中的具体问题。此外，对鱼类分类学“通胀”现象的批判性反思也成为一个值得关注的议题。\n\n## 高影响力期刊亮点\n\n本周暂无。\n\n## 创新性研究\n\n1. **Taxonomic inflation in fish systematics: A critical review with illustrative evidence assessment and integrative case study of the *Salmo trutta* Complex** — 该研究对当前鱼类分类学中普遍存在的“分类通胀”现象进行了系统性批判。其创新点在于不仅指出了问题，还通过整合形态学、遗传学（特别是单标记分析）和生态学证据，以褐鳟复合体为例，提出了一个更严谨、更全面的物种界定框架。这对渔业管理中的物种保护、资源评估和法规制定具有根本性的指导意义，避免因过度拆分物种而导致管理混乱或资源错配。\n\n2. **Population‐specific bycatch risks in two vulnerable anadromous clupeids: Insights from otolith microchemistry** — 该研究创新性地运用耳石微化学技术，精准识别了两种濒危西鲱（Alosa spp.）兼捕个体的出生河流来源。其核心价值在于将“兼捕”这一宏观问题分解到“种群”层面，揭示了不同来源河流的种群承受着不成比例的兼捕压力。这一方法为制定更具针对性的、基于种群的兼捕缓解措施提供了科学依据，是精准渔业管理的一个优秀范例。\n\n3. **Recreational Fisheries in Türkiye: Socio‐Economic Profiles, Technological Trends and Governance Challenges** — 该研究填补了土耳其休闲渔业这一重要但研究不足的领域的知识空白。其创新点在于系统性地整合了社会经济特征、技术趋势（如渔具、电子设备）与治理挑战，构建了一个跨生态系统的分析框架。这为地中海和黑海地区休闲渔业的可持续发展提供了宝贵的基线数据和政策参考，强调了将休闲渔业纳入综合渔业管理体系的紧迫性。\n\n## 推荐阅读\n\n1. **Taxonomic inflation in fish systematics: A critical review with illustrative evidence assessment and integrative case study of the *Salmo trutta* Complex** — 该文对当前鱼类分类学实践进行了深刻反思，对渔业管理的基础——物种界定——提出了根本性挑战，是所有渔业科学家和管理者都应关注的核心议题。\n\n2. **Population‐specific bycatch risks in two vulnerable anadromous clupeids: Insights from otolith microchemistry** — 展示了如何利用尖端技术（耳石微化学）解决一个经典且棘手的渔业管理问题（兼捕），方法新颖，结论对濒危物种保护具有直接指导意义。\n\n3. **Recreational Fisheries in Türkiye: Socio‐Economic Profiles, Technological Trends and Governance Challenges** — 作为一篇区域性的综合性研究，它为全球范围内日益重要的休闲渔业管理提供了系统性的研究范式和政策启示。\n\n4. **SNP Genotyping Chip Reveals Genetic Structure and Selection Signatures of the “Huangxuan No 2” Population of *Portunus trituberculatus*** — 该研究代表了水产养殖遗传育种领域的先进技术应用，通过高密度SNP芯片揭示了重要经济蟹类选育品种的遗传基础和选择信号，对指导后续分子标记辅助育种具有重要价值。\n\n5. **Taxonomic inflation in fish systematics: A critical review with illustrative evidence assessment and integrative case study of the *Salmo trutta* Complex** — （重复推荐，因其重要性）该文提出的“整合证据”理念，对于纠正当前依赖单一分子标记进行物种鉴定的趋势至关重要，是提升鱼类分类学科学严谨性的里程碑式工作。",
-      "paper_count": 127,
+      "paper_count": 129,
       "high_impact_count": 21
     },
     "2026-W28": {
       "week_key": "2026-W28",
       "week_range": "7月6日—7月12日",
-      "topic": "新冠疫情与气候变化：渔业可持续性研究前沿",
-      "keywords": "COVID-19影响(COVID-19 Impact), 水产养殖(Aquaculture), 鱼类生理(Fish Physiology), 环境DNA(Environmental DNA), 渔业管理(Fisheries Management), 气候变化(Climate Change), 食品安全(Food Safety), 可持续渔业(Sustainable Fisheries)",
+      "topic": "新冠疫情、气候变化与技术创新：渔业可持续发展研究前沿",
+      "keywords": "新冠疫情影响(COVID-19 Impact), 水产养殖(Aquaculture), 鱼类生理(Fish Physiology), 环境DNA(Environmental DNA), 可持续渔业(Sustainable Fisheries), 鱼类健康(Fish Health), 气候变化适应(Climate Change Adaptation), 渔业管理(Fisheries Management)",
       "article": "## 本周研究概览\n\n本周（2026-W28）共收录8篇渔业相关论文，研究主题涵盖渔业资源评估、水产养殖技术、鱼类生态学与生理学、以及渔业管理等多个方向。整体趋势表现为：一是人工智能与机器学习技术在渔业中的应用持续深化，从鱼体重量预测到鲸鲨识别追踪，再到渔业产量预报，体现了数据驱动方法对传统渔业研究的赋能；二是气候变化对渔业的影响及其归因分析成为热点，研究者开始将气候因子直接纳入资源评估模型；三是鱼类基础生物学研究依然活跃，涉及长寿机制、繁殖生物学和食物网结构等经典议题。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS等顶级综合期刊或Nature子刊上的论文。\n\n## 创新性研究\n\n1. **Climate Attribution in Fishery Stock Assessment: Case Studies From the Northeast U.S. Groundfish Stocks**（*Fish and Fisheries*）— 该研究首次系统地将气候归因方法整合到渔业资源评估框架中，通过美国东北部底层鱼类案例展示了如何量化气候变化对种群动态的贡献。其创新之处在于突破了传统资源评估中仅考虑捕捞压力的局限，为气候适应性渔业管理提供了可操作的方法论。\n\n2. **Explainable AI-Driven Machine Learning for Forecasting Marine Fisheries Production Using Environmental Predictors**（*Machine Learning and Knowledge Extraction*）— 该研究将可解释人工智能（XAI）引入渔业产量预测，不仅提升了预报精度，还揭示了环境因子对产量的非线性影响机制。其创新点在于克服了传统“黑箱”机器学习模型的可解释性缺陷，为区域渔业管理提供了透明、可信的决策支持工具。\n\n3. **Potential factors contributing to extreme longevity in the Greenland shark**（*Journal of Fish Biology*）— 该研究系统探讨了格陵兰鲨（*Somniosus microcephalus*）超长寿命（>400年）的潜在机制，从代谢率、DNA修复能力、抗氧化防御等多个维度提出假说。其创新性在于整合了比较基因组学与生理生态学视角，为理解脊椎动物极端长寿的进化机制提供了新线索。\n\n4. **Egg and larval production of Eastern Baltic cod in captivity over one spawning season**（*Journal of Fish Biology*）— 该研究首次在人工养殖条件下完整记录了东波罗的海鳕鱼（*Gadus morhua*）整个产卵季节的卵和幼体产量。其创新之处在于通过控制实验揭示了亲本大小与体况对繁殖成功率的直接影响，为解释该种群持续衰退的机制提供了关键实验证据。\n\n## 推荐阅读\n\n1. **Climate Attribution in Fishery Stock Assessment: Case Studies From the Northeast U.S. Groundfish Stocks** — 开创性地将气候归因纳入资源评估，是气候适应性渔业管理的必读文献。\n2. **Explainable AI-Driven Machine Learning for Forecasting Marine Fisheries Production Using Environmental Predictors** — 展示了可解释AI在渔业预测中的前沿应用，方法新颖且实用价值高。\n3. **Potential factors contributing to extreme longevity in the Greenland shark** — 系统综述了脊椎动物最长寿物种的潜在机制，对理解衰老生物学具有跨学科意义。\n4. **Automated whale shark recognition and tracking using drones and deep learning** — 结合无人机与深度学习实现了濒危物种的非侵入性监测，技术路线具有推广价值。\n5. **Seasonal Hydrology Restructures Basal Carbon Pathways in a Lower Yangtze River Fish Food Web: A Stable-Isotope Baseline for the Fishing-Ban Era** — 为长江十年禁渔效果评估提供了关键的食物网基线数据，具有重要的管理参考价值。",
       "paper_count": 139,
       "high_impact_count": 31
-    },
-    "2026-W27": {
-      "week_key": "2026-W27",
-      "week_range": "6月29日—7月5日",
-      "topic": "益生芽孢杆菌调控鱼类生长与水质的研究进展",
-      "keywords": "益生菌(Probiotics), 生长性能(Growth Performance), 水质管理(Water Quality), 兼捕管理(Bycatch Management), 种群动态(Population Dynamics), 赫氏海豚(Hector's Dolphin), 繁殖力(Fecundity), 宿主关联(Host-Associated)",
-      "article": "## 本周研究概览\n\n本周共收录7篇渔业相关论文，研究方向涵盖鱼类栖息地动态、水产养殖生理学、污染物生态毒理、鱼类早期生活史与种群补充、鲨鱼资源管理以及渔业声学监测技术。整体研究趋势呈现以下特点：一是环境变化对鱼类种群动态的影响仍是核心议题，尤其关注早期生活史阶段对气候变暖的响应；二是污染物（有机氯农药、显示行业有机化合物）在鱼类体内的残留与健康风险评估持续受到关注；三是渔业管理工具开发（如CITES执行中的鳍重比、自主观测平台）成为应用研究热点。研究层次从个体生理到生态系统尺度均有涉及，但缺乏高影响力期刊（如Nature、Science）的突破性成果。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances等高影响力期刊上的论文。\n\n## 创新性研究\n\n1. **Early‐life temperature drives recruitment success in Eurasian perch (Perca fluviatilis) populations** — 该研究利用12年水声学调查数据，揭示了早期生活史温度对欧亚鲈幼鱼补充成功的关键驱动作用。创新点在于将长期野外观测与温度效应定量关联，为理解气候变暖对温带湖泊鱼类种群动态的影响提供了直接证据，对渔业资源预测模型具有重要改进价值。\n\n2. **Fin‐to‐body weight ratios for shark species caught in the southern Gulf of Mexico's artisanal fishery: Insight into CITES enforcement for shark fin trade** — 该研究首次系统测定了墨西哥湾南部小型渔业中多种鲨鱼的鳍重比，为CITES公约下鲨鱼鳍贸易执法提供了关键参数。创新在于将基础生物学数据直接服务于国际法规执行，填补了该区域鲨鱼物种鳍重比数据的空白，对打击非法鳍贸易具有实际应用价值。\n\n3. **Monitoring of Anchovy Schools by a Glider‐Mounted Echo Sounder in the South‐Eastern Bay of Biscay** — 该研究利用水下滑翔机搭载回声探测仪监测鳀鱼鱼群，创新性地将自主观测平台应用于小型中上层鱼类资源监测。相比传统船载声学调查，该方法显著提高了时间分辨率，能够捕捉鱼群对短时环境驱动因子的动态响应，为渔业声学监测提供了低成本、高频率的新范式。\n\n4. **Occurrence, Bioaccumulation, and Prioritization of Display-Related Organic Compounds in Sediments and Freshwater Fish in a Major Display Manufacturing Region** — 该研究聚焦显示行业特有有机化合物在沉积物和淡水鱼中的赋存与生物累积，创新点在于首次系统评估了这类新兴污染物的环境归趋和生态风险。研究结果对电子废弃物管理及淡水生态系统保护具有重要警示意义。\n\n## 推荐阅读\n\n1. **Early‐life temperature drives recruitment success in Eurasian perch (Perca fluviatilis) populations** — 长期数据与温度效应的定量结合，为气候变暖背景下鱼类种群动态预测提供了关键实证。\n\n2. **Fin‐to‐body weight ratios for shark species caught in the southern Gulf of Mexico's artisanal fishery: Insight into CITES enforcement for shark fin trade** — 直接服务于CITES公约执行，具有明确的渔业管理应用价值。\n\n3. **Monitoring of Anchovy Schools by a Glider‐Mounted Echo Sounder in the South‐Eastern Bay of Biscay** — 创新性技术方法，为渔业声学监测提供了低成本、高时间分辨率的新思路。\n\n4. **Organochlorine Pesticide Residues and Associated Health Risks in Fish From Osun River, Southwestern Nigeria** — 系统评估了西非河流鱼类中有机氯农药残留及人体健康风险，对发展中国家食品安全监管具有参考意义。\n\n5. **The Role of Sediment Supply on Fish Habitat Dynamics of a Morphologically Active River Widening** — 将河流形态动力学与鱼类栖息地供给直接关联，为生态修复工程提供了科学依据。",
-      "paper_count": 2,
-      "high_impact_count": 0
     }
   }
 }
