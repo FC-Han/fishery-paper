@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-25T09:42:01Z",
-  "total_papers": 244,
-  "new_today": 21,
+  "last_updated": "2026-07-26T09:55:26Z",
+  "total_papers": 243,
+  "new_today": 10,
   "papers": [
     {
       "doi": "10.1111/jfd.70246",
@@ -40,6 +40,97 @@
       "url": "https://doi.org/10.1111/jfb.70593",
       "source": "crossref_issn",
       "keywords_matched": "Journal of Fish Biology",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1007/s41208-026-01196-z",
+      "title": "Hook Size Optimization and Selectivity Modelling for Epinephelus undulosus and E. malabaricus in Experimental Longline Fisheries",
+      "authors": "Ravikumar, Thangaraji; Neethiselvan, Neethirajan; Dineshkumar, Esakkimuthu; Tamilselvan, Rajarajan; Jayakumar, Natarajan; Padmavathy, Pandurangan; Umamaheswari, Thavasiyandi; Emiema, Soosaiantony; Manikandan, Boominathan",
+      "journal": "Thalassas: An International Journal of Marine Sciences",
+      "date": "2026-07-25",
+      "abstract": "",
+      "summary_cn": "[失败: Error code: 400 - {'error': {'message': 'The supported API model names are deeps]",
+      "url": "https://doi.org/10.1007/s41208-026-01196-z",
+      "source": "crossref",
+      "keywords_matched": "fisheries",
+      "high_impact": true
+    },
+    {
+      "doi": "10.1111/jfd.70259",
+      "title": "Diagnosis and\n                    <i>Off‐Label</i>\n                    Treatment of Subcutaneous Putative Dracunculoid Nematodes in\n                    <i>Apteronotus albifrons</i>\n                    Originating From Wild‐Caught Fisheries",
+      "authors": "Cardoso, Pedro Henrique Magalhães; de Carvalho Balian, Simone; Soares, Herbert Sousa; Labruna, Marcelo Bahia; dos Santos, Gracienhe Gomes; Filho, José Blanchard Girão Ribeiro; Martins, Mauricio Laterça",
+      "journal": "Journal of Fish Diseases",
+      "date": "2026-07-25",
+      "abstract": "ABSTRACT Apteronotus albifrons (Gymnotiformes: Apteronotidae), commonly known as the black ghost knifefish, is a high‐value ornamental fish that is susceptible to various parasites. The affected fish were wild‐caught fisheries and subsequently introduced into a commercial breeding system. Among parasitic diseases, subcutaneous infections with putative dracunculoid nematodes are rarely documented in ornamental fish, and their management may be particularly challenging in wild‐caught specimens introduced into breeding systems. This study aimed to describe an outbreak of subcutaneous helminthiasis in A. albifrons , morphologically characterise the parasites and report the clinical outcome of off‐label treatment attempts. Affected fish presented with cutaneous nodules, oral expulsion of worms and reduced reproductive performance. Necropsy and morphological analysis revealed subcutaneous nematodes with features compatible with dracunculoid nematodes; however, genus‐level identification was not confirmed because no male specimens were recovered and molecular analyses were not performed. Following off‐label oral treatment and post‐treatment monitoring, clinical improvement was recorded, and no detectable parasites were observed during the 4‐week monitoring period. The findings highlight the importance of accurate parasite identification, cautious interpretation of treatment outcomes and the need for controlled studies to validate safe and effective treatments for subcutaneous nematode infections in ornamental fish.",
+      "summary_cn": "[失败: Error code: 400 - {'error': {'message': 'The supported API model names are deeps]",
+      "url": "https://doi.org/10.1111/jfd.70259",
+      "source": "crossref",
+      "keywords_matched": "fisheries",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1080/23308249.2026.2705236",
+      "title": "Thermal Modulation of Endocrine Pathways Regulating Feeding, Metabolism, and Growth in Teleost Fish",
+      "authors": "Tovar-Bohórquez, Oswaldo; Servili, Arianna; Geffroy, Benjamin; Panserat, Stéphane; Skiba-Cassy, Sandrine; Darias, Maria J.",
+      "journal": "Reviews in Fisheries Science &amp; Aquaculture",
+      "date": "2026-07-25",
+      "abstract": "",
+      "summary_cn": "[失败: Error code: 400 - {'error': {'message': 'The supported API model names are deeps]",
+      "url": "https://doi.org/10.1080/23308249.2026.2705236",
+      "source": "crossref",
+      "keywords_matched": "fish population",
+      "high_impact": true
+    },
+    {
+      "doi": "10.1007/s12562-026-02009-1",
+      "title": "Temperature hysteresis in heart rate contributes to asymmetric cooling and warming during thermoregulation in ectothermic fish",
+      "authors": "Nakamura, Itsumi",
+      "journal": "Fisheries Science",
+      "date": "2026-07-25",
+      "abstract": "",
+      "summary_cn": "[失败: Error code: 400 - {'error': {'message': 'The supported API model names are deeps]",
+      "url": "https://doi.org/10.1007/s12562-026-02009-1",
+      "source": "crossref",
+      "keywords_matched": "fish stock",
+      "high_impact": true
+    },
+    {
+      "doi": "10.1093/jambio/lxag190",
+      "title": "<i>In vitro</i>\n                    evaluation of phage cocktail efficiency against multiple aquaculture bacterial pathogens",
+      "authors": "Duarte, João; Pereira, Carla; Calado, Ricardo; Almeida, Adelaide",
+      "journal": "Journal of Applied Microbiology",
+      "date": "2026-07-25",
+      "abstract": "Abstract Aims This study aimed to evaluate whether combining phages with different properties enhances antibacterial efficacy against individual strains and enables the simultaneous control of multiple bacterial species belonging to different genera. Methods and results Our phage collection was screened for phages active against Aeromonas hydrophila, Escherichia coli, Salmonella enterica Typhimurium and Vibrio parahaemolyticus. Four phages were selected: AH-1, ECA2, phSE-5 and vB_VpS_LMAVpSH, originally isolated using A. hydrophila, S. Typhimurium, E. coli and V. parahaemolyticus as hosts, respectively. An initial phage cocktail (CK3) was prepared excluding phage SH, which was later included in a modified cocktail (CK4). Phage efficacy was evaluated in vitro (in nutrient-rich media and synthetic seawater) against bacterial strains individually and against mixed cultures of the four bacteria, for 12 h at 25°C. Both cocktails were associated with greater bacterial reduction compared with individual phage treatments, alongside reduced bacterial regrowth under the tested conditions. Although efficacy decreased in nutrient-limited conditions, phages still inhibited bacterial growth. Conclusions The findings of this study provide experimental evidence of phage-bacteria interactions in multispecies systems and offer proof-of-concept evidence supporting further evaluation of phage cocktail approaches under aquaculture-relevant conditions.",
+      "summary_cn": "[失败: Error code: 400 - {'error': {'message': 'The supported API model names are deeps]",
+      "url": "https://doi.org/10.1093/jambio/lxag190",
+      "source": "crossref",
+      "keywords_matched": "aquaculture",
+      "high_impact": false
+    },
+    {
+      "doi": "10.56557/upjoz/2026/v47i155787",
+      "title": "Molecular Characterisation and Post-embryonic Development of the Cyclopoid Copepod Apocyclops royi: Implications for Live Feed Applications in Aquaculture",
+      "authors": "Afshan, Amanulla Mehar; Saboor, Abdus; Vijayaraj, Radha; Altaff, Kareem",
+      "journal": "UTTAR PRADESH JOURNAL OF ZOOLOGY",
+      "date": "2026-07-25",
+      "abstract": "Aims: This study confirmed the taxonomic identity of the cyclopoid copepod Apocyclops royi and described its post-embryonic development under controlled laboratory conditions to assess its potential as a live feed organism in aquaculture. Study Design: An experimental study involving morphological characterisation, molecular identification using 18S rRNA gene sequencing, and developmental assessment of successive naupliar and copepodid stages under controlled laboratory conditions. Place and Duration of Study: The experimental work, including culture maintenance, species identification, and developmental observations, was carried out under laboratory conditions during the study period. Methodology: A. royi specimens were cultured under controlled laboratory conditions (29 ± 1°C, 25 PSU salinity, pH 7.8, dissolved oxygen 5.5 mg/L, and a 12L:12D photoperiod) and identified using morphological characteristics and 18S rRNA gene sequencing. The obtained sequence was compared with sequences available in the NCBI GenBank database and deposited under accession number PP275178.1. Post-embryonic development from the naupliar (NI–NVI) and copepodid (CI–CV) stages to sexually mature adults was monitored by recording body length, body width, developmental duration, and stage-specific morphological characteristics. Results: Morphological examination revealed diagnostic features consistent with previous descriptions of A. royi, while molecular analysis confirmed the species identity with high sequence similarity to available Apocyclops sequences. Phylogenetic analysis demonstrated a close genetic relationship with previously reported congeners. The complete developmental cycle from nauplius to the sexually mature adult stage was achieved in approximately 7 days. Body length increased progressively from 96 ± 2.3 µm in NI to 299 ± 7.1 µm in NVI, and from 391 ± 12.8 µm in CI to 864 ± 7.3 µm in adult females and 774 ± 8.8 µm in adult males. Distinct morphological transformations, including appendage differentiation, segmentation, and sexual dimorphism, were observed across developmental stages. The broad size spectrum exhibited by A. royi suggests its suitability as a continuous live feed source for fish larvae. Conclusion: The integration of morphological, molecular, and developmental analyses authenticated A. royi and provided baseline information on its life-history characteristics. The rapid developmental cycle, broad prey-size spectrum, and ease of culture highlight the potential of A. royi as a sustainable live feed organism for aquaculture and larval-rearing applications.",
+      "summary_cn": "[失败: Error code: 400 - {'error': {'message': 'The supported API model names are deeps]",
+      "url": "https://doi.org/10.56557/upjoz/2026/v47i155787",
+      "source": "crossref",
+      "keywords_matched": "aquaculture",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1007/s10499-026-02626-8",
+      "title": "Multiple-stressor responses of Neopyropia yezoensis seedlings to marine heatwaves, nitrogen availability and interspecific competition",
+      "authors": "Jiang, Ruitong; Wang, Chuchu; Li, He; Li, Sufang; Shang, Xiucheng; Wu, Hailong",
+      "journal": "Aquaculture International",
+      "date": "2026-07-25",
+      "abstract": "",
+      "summary_cn": "[失败: Error code: 400 - {'error': {'message': 'The supported API model names are deeps]",
+      "url": "https://doi.org/10.1007/s10499-026-02626-8",
+      "source": "crossref",
+      "keywords_matched": "marine fisheries",
       "high_impact": false
     },
     {
@@ -290,6 +381,32 @@
       "high_impact": false
     },
     {
+      "doi": "10.1093/aob/mcag226",
+      "title": "Where Kelp Forests Meet People: An analysis of the spatial overlap among human population, global economies, and environmental threats to kelp forest ecosystems",
+      "authors": "Eger, Aaron M; Filbee-Dexter, Karen; Fraschetti, Simonetta; Vergés, Adriana",
+      "journal": "Annals of Botany",
+      "date": "2026-07-24",
+      "abstract": "Abstract Kelp forests, formed by large brown algae in the orders Laminariales and Fucales, are among the most widespread marine ecosystems. Despite their scale and importance to people, kelp forests remain under-recognized by the public and underrepresented in global policy and conservation agendas. We quantify the global spatial overlap between the kelp biome and human populations, economic activity, anthropogenic pressures, and projected ocean warming to assess the extent and geography of the coupling between kelp and people. We synthesised distributions of laminarian and fucoid kelp forests, explicitly distinguishing between ‘major’ kelp forests and ‘minor’ kelp forests. These distributions were intersected with global datasets on population, Gross Domestic Product (GDP), cumulative human impact, and projected sea surface temperature (SST) change to 2100. Analyses focused on populations and economic activity within 50 km of major kelp habitats. Approximately 959 million people live within 50 km of kelp forests globally (12% of global population), including 781 million adjacent to major kelp forests. These regions account for $27.6 trillion or ∼18% of global GDP and include major metropolitan centres such as Tokyo, Seoul, Los Angeles, Sydney, and several Mediterranean cities. Cumulative human pressures on kelp-associated coastlines are highest in densely populated temperate regions, particularly the Mediterranean, northwest Atlantic, and East Asia. Warming by 2100 is greatest at high latitudes, but the strongest link to people occurs in temperate regions where projected SST increases coincide with dense populations and high economic output. Our results support the idea that kelp forests are integrated into modern social–ecological systems, while overlooked in governance and funding. This global assessment identifies the tight coupling between people and kelp forests while identifying geographic risks and opportunity hotspots. Together, the work provides a foundation for communicating the role of kelp forests in society and for prioritising kelp conservation within marine conservation agendas.",
+      "summary_cn": "[失败: Error code: 400 - {'error': {'message': 'The supported API model names are deeps]",
+      "url": "https://doi.org/10.1093/aob/mcag226",
+      "source": "crossref",
+      "keywords_matched": "fish population",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1093/femsec/fiag081",
+      "title": "Bacterial community succession and functional gene dynamics of nitrogen and phosphorus cycling in recirculating aquaculture systems of shrimp",
+      "authors": "Emmanuel, Arslan; Ramzan, Muhammad Naeem; Zheng, Zhongming",
+      "journal": "FEMS Microbiology Ecology",
+      "date": "2026-07-24",
+      "abstract": "Abstract Recirculating aquaculture systems (RAS) rely heavily on microbial processes to remove harmful nitrogenous compounds such as ammonia and nitrite. Microbial assemblages within these systems also contribute substantially to broader biogeochemical cycling. Gaining a detailed understanding of the functional potential and abundance of microorganisms responsible for nitrogen (N) and phosphorus (P) transformations is therefore crucial for evaluating nutrient remediation efficiency. In this study, we integrated high-throughput 16S rRNA sequencing with a GeoChip functional gene array to investigate how microbial community dynamics correspond to nutrient fluctuations in full-scale RAS. A suite of multivariate statistical approaches, including ordination and network-based analyses, was applied to characterize shifts in both taxonomic structure and functional gene profiles across operational phases. Our results revealed clear temporal patterns in functional gene abundance. Denitrification-related genes (nosZ, napA, nirK/S) became more prominent toward the later stages of operation, while nitrification genes (amoA/B) were most abundant early in the cycle and declined thereafter. Genes involved in ammonification (ureC) and several P-cycling genes (phnK, phoD, phoX) also increased notably during the final phase. These trends underscore the close relationship between bacterial community succession, species turnover, and nutrient cycling capacity. Overall, the study enhances current understanding of functional microbial dynamics in RAS and provides insights that could guide the development of improved nutrient management and bioremediation strategies for aquaculture systems.",
+      "summary_cn": "[失败: Error code: 400 - {'error': {'message': 'The supported API model names are deeps]",
+      "url": "https://doi.org/10.1093/femsec/fiag081",
+      "source": "crossref",
+      "keywords_matched": "aquaculture",
+      "high_impact": false
+    },
+    {
       "doi": "10.1111/1758-2229.70389",
       "title": "Geographic Variability of Fish Carcass–Associated Microbial Communities",
       "authors": "Kawamoto, Yasutake; Urabe, Jotaro",
@@ -496,6 +613,19 @@
       "source": "crossref",
       "keywords_matched": "seafood sustainability",
       "high_impact": true
+    },
+    {
+      "doi": "10.5276/jswtm/iswmaw/523-2/2026.895",
+      "title": "Characterization and Buckling Analysis of Epoxy-E-Glass-Fish-Scale (EGF) Hybrid Composite",
+      "authors": "Parida, Sarada Prasad; Koche, Tejas; Halder, Aparna; Dash, Rati Ranjan",
+      "journal": "The Journal of Solid Waste Technology and Management",
+      "date": "2026-07-23",
+      "abstract": "Solid wastes produced from daily fish market is generally thrown in open air in developing countries like India which not only creates air pollution but also contaminates water sources and creates serious health issues. However, the fish scale from these solid wastes can be used as reinforcement to prepare polymeric composites characterized by their low cost, tailored strength, environmental-friendly, and easily availability. The novelty of this work is not only fish-scale powder along with glass-fibre in epoxy is used to prepare a hybrid composite from solid waste. But also, the microanalysis is conducted ANSYS ACP to evaluate the engineering constants along with theory of the proposed material combinations to determine buckling strength. Here, four kind of specimens such as Sample 1 with 100% epoxy, Sample 2 with 50% epoxy and glass fibre each, Sample 3 with 50% epoxy, 45% glass fibre, and 5% fish-scale, and Sample 4 with 95% epoxy and 5% fish-scale are made through hand layup process and fundamental material tests and thermal stability analysis were performed according to ASTM standards. It is witnessed that tensile, flexural and impact strength of samples (Sample 3) by addition of 5% of fish-scale powder is increased by 11.2%, 1.87% and 7.1% than glass-fibre and epoxy composite (Sample 2). However, the hardness is slightly decreased and samples becomes more hydroponic with negligible effect on thermal stability. Further, computational results show buckling strength is also affected by addition of fish-scale powder.",
+      "summary_cn": "[失败: Error code: 400 - {'error': {'message': 'The supported API model names are deeps]",
+      "url": "https://doi.org/10.5276/jswtm/iswmaw/523-2/2026.895",
+      "source": "crossref",
+      "keywords_matched": "fish stock",
+      "high_impact": false
     },
     {
       "doi": "10.47191/rajar/v12i7.08",
@@ -3031,149 +3161,6 @@
       "source": "crossref",
       "keywords_matched": "aquaculture",
       "high_impact": false
-    },
-    {
-      "doi": "10.1002/jcsm.70332",
-      "title": "Dnajb5 From Antarctic Fish Reveals a Redox‐Sensitive Mechanism Coordinating Muscle Regeneration via mTORC1 and HDAC4",
-      "authors": "Cho, Sun‐Hee; Choi, Min‐Kyung; Baek, Mi‐Ock; Son, Hyeon‐Hee; Nguyen, Binh Thanh; Kang, Min‐Jung; Kim, Il‐Chan; Kim, Jin‐Hyoung; Yoon, Mee‐Sup",
-      "journal": "Journal of Cachexia, Sarcopenia and Muscle",
-      "date": "2026-07-11",
-      "abstract": "ABSTRACT Background Dnajb5, a member of the heat shock protein family, has not been previously reported to play a role in muscle differentiation. We identify Dnajb5 as a negative regulator of myogenesis via mammalian target of rapamycin (mTOR) and histone deacetylase 4 (HDAC4) signalling, functioning as a central controller of muscle growth and metabolism. Methods mTOR‐binding proteins were screened by mass spectrometry in Antarctic fish ( Notothenia coriiceps ) muscle extracts. Functional roles of Dnajb5 were examined in C2C12 and primary myoblasts using shRNA‐mediated knockdown. In vivo effects were analysed using a BaCl 2 ‐induced muscle injury model in mice ( n = 6–12 per group). Results Mass spectrometry identified Dnajb5 as an mTOR‐binding protein. This interaction was conserved in mammalian cells and weakened by hydrogen peroxide ( p &lt; 0.05). Dnajb5 knockdown in C2C12 myoblasts selectively increased S6K1 phosphorylation without altering basal Akt phosphorylation. Myogenic differentiation increased, characterized by upregulated Myog , Igf2 and Ckm expression ( p &lt; 0.05) and elevated differentiation index ( p &lt; 0.05). In vivo, Dnajb5 depletion improved tibialis anterior muscle regeneration, increasing regenerating fibre cross‐sectional area by approximately 26% at Day 5 post‐injury ( p &lt; 0.05). Dnajb5 knockdown increased Ppargc1a expression via release of mTORC1 inhibition and preventing the nuclear retention of HDAC4. Mitochondrial DNA copy number increased 1.3‐fold ( p &lt; 0.05), and oxidative enzyme activity rose significantly (succinate dehydrogenase‐positive fibres: 2.8‐fold ( p &lt; 0.01), cytochrome c oxidase‐positive fibres: 1.4‐fold ( p &lt; 0.05). Grip strength improved by 14% ( p &lt; 0.05), and rotarod endurance increased by 31% ( p &lt; 0.01) relative to controls. Conclusions Dnajb5 functions as a negative regulator of muscle differentiation and regeneration by coordinating mTORC1 signalling and the HDAC4‐MEF2 axis. These findings reveal a redox‐sensitive dual‐pathway mechanism linking protein synthesis and mitochondrial biogenesis.",
-      "summary_cn": "本研究以南极鱼（Notothenia coriiceps）为模型，通过质谱筛选mTOR结合蛋白，发现Dnajb5通过mTORC1和HDAC4信号通路负调控肌肉分化与再生。Dnajb5敲低可促进C2C12成肌细胞分化，在小鼠肌肉损伤模型中使再生纤维横截面积增加约26%，并提升线粒体DNA拷贝数和氧化酶活性。该机制具有氧化还原敏感性，揭示了协调蛋白质合成与线粒体生物发生的双通路调控模式。",
-      "url": "https://doi.org/10.1002/jcsm.70332",
-      "source": "crossref",
-      "keywords_matched": "fish population",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1111/jfb.70566",
-      "title": "An integrated transcriptomic and metabolomic analysis reveals hepatic physiological responses of\n                    <scp>\n                      <i>P</i>\n                    </scp>\n                    <i>erca fluviatilis</i>\n                    to heat stress",
-      "authors": "Chen, Siyu; Wang, Jiayi; Zhao, Zhigang; Cong, Meng; Yan, Xiaofei; Shan, Hongwei",
-      "journal": "Journal of Fish Biology",
-      "date": "2026-07-11",
-      "abstract": "Abstract Heat stress negatively affects the growth and health of fish. In this study, Eurasian perch ( Perca fluviatilis ) were exposed to control (18°C, CK) and heat stress (25°C, HS) conditions. Using liver transcriptomics and metabolomics in conjunction with physiological and biochemical indicators, we investigated the mechanisms underlying their thermal response. The results revealed that heat stress in P. fluviatilis led to liver cell damage, characterized by vacuolar degeneration and inflammatory cell infiltration. Heat stress caused a fluctuating decrease in superoxide dismutase (SOD) activity, a significant reduction in catalase (CAT) activity ( p &lt; 0.05) and a transient increase in glutathione peroxidase (GSH‐Px) activity at 24 h, followed by a sustained decrease. Malondialdehyde (MDA) content significantly increased in the later stages. Adenosine triphosphatase (ATPase) activity exhibited phase‐specific oscillations, and adenosine triphosphate (ATP) content decreased overall, while lactate dehydrogenase (LDH) activity displayed complex time‐dependent variations. In total, 536 significantly differentially expressed genes and 262 differentially abundant metabolites were identified through combined transcriptomic and metabolomic analyses. Integrated multi‐omics analysis revealed that key pathways involved in the heat stress response include alanine, aspartate and glutamate metabolism; purine metabolism; mitophagy; autophagy and apoptosis; cyclic guanosine monophosphate‐protein kinase G (cGMP‐PKG) signalling; oestrogen signalling; and lipid metabolism‐associated pathways. These findings indicate that acute heat stress induces hepatic oxidative damage, energy‐metabolism disturbance and multiomics alterations in P. fluviatilis . This study provides a basis for understanding the hepatic responses of temperate freshwater fish to elevated temperatures.",
-      "summary_cn": "通过整合转录组和代谢组分析，研究热应激（25°C）对河鲈（Perca fluviatilis）肝脏的生理响应。结果显示热应激导致肝细胞损伤、氧化应激（SOD/CAT活性下降、MDA升高）及能量代谢紊乱（ATP降低、LDH波动）。共鉴定536个差异表达基因和262个差异代谢物，关键通路涉及氨基酸代谢、嘌呤代谢、线粒体自噬及cGMP-PKG信号等。该研究揭示了温带淡水鱼类对高温胁迫的肝脏响应机制。",
-      "url": "https://doi.org/10.1111/jfb.70566",
-      "source": "crossref_issn",
-      "keywords_matched": "Journal of Fish Biology",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1111/fog.70060",
-      "title": "Quantitative Environmental DNA Reveals Temperature‐Driven Spawning Phenology in a Genetically Distinct Peripheral Population of Pacific Cod (\n                    <scp>\n                      <i>Gadus macrocephalus</i>\n                    </scp>\n                    )",
-      "authors": "Gwak, Woo‐Seok",
-      "journal": "Fisheries Oceanography",
-      "date": "2026-07-11",
-      "abstract": "ABSTRACT Understanding spawning phenology in peripheral populations is essential for effective conservation under climate change. Here, quantitative environmental DNA (eDNA) monitoring was conducted to characterize Pacific cod ( Gadus macrocephalus ) spawning migration in Jinhaeman Bay, Korea—the southernmost spawning ground of this species—over 3 years (2019–2022). Species‐specific qPCR assays revealed that eDNA concentrations were completely absent in November, sharply increased in December, and peaked in December–January, with the estimated median spawning date consistently occurring in the December–January period across all 3 years. Linear mixed‐effects model analysis confirmed temperature as the primary environmental driver of spawning migration ( β = −0.330, p = 0.004), with segmented regression identifying 10.3°C as the critical thermal threshold for spawning initiation. Spatial analysis revealed that deep‐water stations (15–24 m) accounted for 95%–97% of bay‐wide eDNA, indicating concentrated spawning activity at these depths. Commercial fishery catches peaked approximately 1 month before peak eDNA detection within the bay, demonstrating temporal mismatch between peak spawning activity (December–January) and fishing effort (November–December). Because this genetically distinct peripheral population occurs at its thermal range limit, projected winter warming of 1.5°C–2.5°C by mid‐century could elevate temperatures above the 10.3°C threshold, potentially disrupting spawning phenology. These findings support extending seasonal closures from November through February and prioritizing deep‐water habitat protection. Overall, this study demonstrates that temperature‐responsive eDNA monitoring provides a cost‐effective early‐warning framework for detecting climate‐driven phenological shifts in coastal fish populations occupying marginal thermal habitats.",
-      "summary_cn": "利用定量环境DNA（eDNA）技术，在韩国珍海湾（该物种最南端产卵场）对太平洋鳕（Gadus macrocephalus）进行了3年监测。结果显示，eDNA浓度在11月完全缺失，12月急剧上升，12月至1月达到峰值，产卵中位日期稳定在12-1月期间。温度是产卵洄游的主要环境驱动因子（β=-0.330, p=0.004），10.3°C被确定为产卵起始的关键热阈值；深水区（15-24米）贡献了95%-97%的eDNA信号。商业捕捞高峰（11-12月）早于产卵高峰（12-1月）约1个月，而该遗传独特的外围种群已处于热耐受极限，预计本世纪中叶冬季升温1.5-2.5°C可能突破10.3°C阈值，建议将季节性禁渔期延长至11月至2月并优先保护深水栖息地。",
-      "url": "https://doi.org/10.1111/fog.70060",
-      "source": "crossref",
-      "keywords_matched": "fish population",
-      "high_impact": false
-    },
-    {
-      "doi": "10.9734/jsrr/2026/v32i74347",
-      "title": "Economic Viability and Profitability of Inland Fish Farming in West Godavari District of Andhra Pradesh, India",
-      "authors": "Pavani, Mangalapuri; Paul, K. S. R.; Durga, P. Kanaka; Sitarambabu, V.; Sreenivasulu, K. N.",
-      "journal": "Journal of Scientific Research and Reports",
-      "date": "2026-07-11",
-      "abstract": "The study assessed the economic viability and profitability of inland fish farming in West Godavari district, Andhra Pradesh, India. Primary data were collected from 90 inland fish farmers selected through a multistage random sampling procedure. Cost concepts, farm efficiency measures and discounted cash-flow indicators were used to evaluate the financial performance of inland fish production under the prevailing cost and price conditions. The estimated Cost C2 was Rs. 5,97,042.94 per hectare. Variable costs accounted for Rs. 4,07,025.85 per hectare, representing 68.17 per cent of total cost, whereas fixed costs accounted for Rs. 1,90,017.09 per hectare, representing 31.83 per cent. Feed cost was the largest expenditure component, contributing 39.35 per cent of total cost, followed by the rental value of owned land and human labour. The average yield was 7,343.06 kg per hectare, with gross income of Rs. 7,29,600.44 per hectare and net income of Rs. 72,853.20 per hectare. Farm business income, family labour income and farm investment income were estimated at Rs. 3,41,334.50, Rs. 1,79,462.50 and Rs. 2,34,725.20 per hectare, respectively. The net present value was positive at Rs. 3,08,056.10 per hectare, while the benefit-cost ratio was 1.09 and the internal rate of return was 31.12 per cent. The findings indicate that inland fish farming was financially viable for the sampled farmers, subject to effective management of input costs and market price fluctuations.",
-      "summary_cn": "本研究评估印度安得拉邦西戈达瓦里地区内陆鱼类养殖的经济可行性。通过多阶段随机抽样收集90户养殖户数据，采用成本概念、农场效率指标和贴现现金流指标分析财务表现。结果显示：总成本约59.7万卢比/公顷，饲料成本占比最高（39.35%），平均产量7,343 kg/公顷，净收入7.29万卢比/公顷，净现值30.8万卢比/公顷，益本比1.09，内部收益率31.12%。研究表明内陆养鱼在有效控制投入成本和市场价格波动下具有财务可行性。",
-      "url": "https://doi.org/10.9734/jsrr/2026/v32i74347",
-      "source": "crossref",
-      "keywords_matched": "fish stock",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1007/s10499-026-02610-2",
-      "title": "Monocular fish body length estimation via brightness attenuation and fish eye scale structural constraints: application in industrial recirculating aquaculture systems",
-      "authors": "Zhang, Jianyi; Zhang, Sen; Liu, Xingcen; Feng, Xinran; Liao, Yanjie; Pan, Ting",
-      "journal": "Aquaculture International",
-      "date": "2026-07-11",
-      "abstract": "",
-      "summary_cn": "通过亮度衰减和鱼眼尺度结构约束，提出单目视觉估算鱼体长度的方法，应用于工业循环水养殖系统。该方法利用鱼眼作为生物尺度参考，结合光照衰减模型校正距离误差，实现非接触式精准测量。",
-      "url": "https://doi.org/10.1007/s10499-026-02610-2",
-      "source": "crossref",
-      "keywords_matched": "fish stock",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1007/s10924-026-03892-6",
-      "title": "Effect of Mild Extraction with a Eutectic Solvent on the Properties of Films Derived from Fish Gelatin",
-      "authors": "Gallego, Cristina; Rodríguez, Héctor; Soto, Ana; Alzate, Paola; Kerry, Joe",
-      "journal": "Journal of Polymers and the Environment",
-      "date": "2026-07-11",
-      "abstract": "Abstract The functional properties of gelatin-based films can be affected by the natural source of gelatin and by the way in which it is obtained from this source. The present work explores the influence of a mild extraction method, comprising maceration with an aqueous eutectic solvent (urea:sodium acetate trihydrate, 60:40) followed by warm water extraction, in films based on fish skin gelatin. These films were prepared using either glycerol or sorbitol as plasticizer, and analogous films made with a commercial fish skin gelatin were made for the purpose of comparison. The films with the gelatin extracted via the eutectic-assisted procedure showed superior barrier performance, with water vapor permeability being ca. 25–31% lower when a 35% plasticizer concentration was used with a film thickness of 100 μm (absolute values of 13.35 and 9.45 g·mm·m − 2 ·d − 1 ·atm − 1 for glycerol or sorbitol as plasticizer, respectively). This was likely due to residual lipids forming hydrophobic domains, in agreement with water contact angles 8–13% higher than those of the equivalent films made with the commercial gelatin. These films also showed some intrinsic antimicrobial activity, as well as greater flexibility (higher elongation at break) and lower tensile strength. In the comparison between plasticizers, glycerol produced smoother and more flexible matrices, whereas sorbitol yielded denser structures that enhanced barrier properties but reduced elasticity. Overall, this work provides proof of the validity of the proposed eutectic-assisted method to produce fish skin gelatin that is well suited for the production of gelatin films with functional properties of interest for food packaging applications.",
-      "summary_cn": "本研究采用低共熔溶剂（尿素:三水合乙酸钠，60:40）辅助温和提取鱼皮明胶，并制备明胶膜。与商业明胶膜相比，该提取方法所得明胶膜的水蒸气渗透率降低25-31%，水接触角提高8-13%，并表现出内在抗菌活性及更高柔韧性。增塑剂类型影响膜结构：甘油使基质更平滑柔韧，山梨醇则增强阻隔性但降低弹性。该低共熔溶剂辅助提取法可有效生产适用于食品包装的功能性鱼皮明胶膜。",
-      "url": "https://doi.org/10.1007/s10924-026-03892-6",
-      "source": "crossref",
-      "keywords_matched": "fish stock",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1080/1059924x.2026.2702041",
-      "title": "Behavioral Predictors of Safe Diving Practices Among Aquaculture Workers: An Occupational Health Perspective",
-      "authors": "Taşkaya, Gökay",
-      "journal": "Journal of Agromedicine",
-      "date": "2026-07-11",
-      "abstract": "",
-      "summary_cn": "基于职业健康视角，探讨水产养殖工人安全潜水行为的预测因素。通过行为分析识别影响安全实践的关键变量，为降低潜水作业风险提供依据。",
-      "url": "https://doi.org/10.1080/1059924x.2026.2702041",
-      "source": "crossref",
-      "keywords_matched": "aquaculture",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1007/s12161-026-03161-1",
-      "title": "Sensitive Determination of Sedatives and Anesthetics in Aquaculture Products by LC-MS/MS Utilizing Online Turbulent Flow Chromatography",
-      "authors": "Fang, Li; Qiu, Fengmei; Yu, Xinwei; Wang, Yuchao",
-      "journal": "Food Analytical Methods",
-      "date": "2026-07-11",
-      "abstract": "",
-      "summary_cn": "采用在线湍流色谱结合LC-MS/MS技术，建立了一种高灵敏度检测水产品中镇静剂和麻醉剂的方法。该方法无需复杂前处理，可直接分析鱼肉等基质中的痕量药物残留。研究验证了方法的线性范围、回收率和精密度，适用于水产品安全监测。",
-      "url": "https://doi.org/10.1007/s12161-026-03161-1",
-      "source": "crossref",
-      "keywords_matched": "aquaculture",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1007/s10499-026-02619-7",
-      "title": "Environmental and captivity-driven carapace shape variation in the giant freshwater prawn (Macrobrachium rosenbergii): implications for aquaculture and broodstock management",
-      "authors": "Jahan, Israt; Ferdous, Afshana; Shakil, Md. Azharul Haque; Rahman, Md Yeaminur; Mamun, Abdullah-al; Ahammad, A. K. Shakur; Rahman, Md Moshiur; Asaduzzaman, Md",
-      "journal": "Aquaculture International",
-      "date": "2026-07-11",
-      "abstract": "",
-      "summary_cn": "研究旨在探讨环境与养殖条件对罗氏沼虾（Macrobrachium rosenbergii）头胸甲形态变异的影响。通过比较野生与养殖群体的头胸甲形状差异，揭示养殖环境驱动的形态可塑性。结果表明，养殖群体头胸甲形状显著偏离野生群体，可能与人工选择和水体环境有关。该发现为优化养殖管理和亲本选育提供了形态学依据。",
-      "url": "https://doi.org/10.1007/s10499-026-02619-7",
-      "source": "crossref",
-      "keywords_matched": "aquaculture",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1186/s12917-026-05705-3",
-      "title": "Antimicrobial use, resistance awareness, and biosecurity practices among poultry and aquaculture farmers in Nigeria: a cross-sectional KAP survey",
-      "authors": "Onwuliri, Chinemerem Daniel; Ibrahim, Dauda Dauda; Jolayemi, Kelvin Olutimilehin; Gbolade, Adetomiwa; Udah, Donald; Ekechi, Henry; Mwapu, Ndahi; Abdulkareem, Zainab; Kokoiwen, Maureen Rumun; Ayandipo, Esther",
-      "journal": "BMC Veterinary Research",
-      "date": "2026-07-11",
-      "abstract": "",
-      "summary_cn": "尼日利亚家禽与水产养殖户的抗菌药物使用、耐药性认知及生物安全实践横断面KAP调查。研究评估了养殖户对抗菌药物使用和耐药性的知识、态度与实践，发现生物安全措施执行不足与耐药性认知薄弱问题。结果强调需加强养殖户培训以促进合理用药和生物安全规范。",
-      "url": "https://doi.org/10.1186/s12917-026-05705-3",
-      "source": "crossref",
-      "keywords_matched": "aquaculture",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1111/jfb.70572",
-      "title": "Early juvenile hotspots of\n                    <i>Mugil cephalus</i>\n                    in northwestern Pacific estuaries suggest a nursery role within seascapes",
-      "authors": "Kurihara, Takumi; Ogata, Yukiya; Murase, Atsunobu",
-      "journal": "Journal of Fish Biology",
-      "date": "2026-07-11",
-      "abstract": "Abstract The value of nursery habitat for the flathead grey mullet Mugil cephalus has seldom been compared across adjacent marine/estuarine contexts. Quantitative seine sampling of early juvenile M. cephalus in a temperate southern Japan seascape (estuarine river mouth, estuarine lagoon, exposed beach and embayed beaches) revealed that the river mouth had the highest nursery value, followed by the lagoon, based on abundance and sequential occurrence. Fewer early juveniles were intermittently collected from beaches. These results imply that, for this mullet population, estuaries serve as primary nurseries, rather than adjacent marine habitats.",
-      "summary_cn": "西北太平洋河口区的早期幼鱼热点表明其作为景观内育幼场的功能。研究通过定量拖网采样，比较了日本温带海域（河口、潟湖、开阔海滩和海湾海滩）中鲻鱼（Mugil cephalus）早期幼鱼的丰度与出现时序，发现河口育幼价值最高，潟湖次之，海滩仅零星捕获。结果表明该种群以河口为主要 nursery，而非邻近海洋栖息地。",
-      "url": "https://doi.org/10.1111/jfb.70572",
-      "source": "crossref_issn",
-      "keywords_matched": "Journal of Fish Biology",
-      "high_impact": false
     }
   ],
   "weekly_topics": {
@@ -3183,8 +3170,8 @@
       "topic": "[失败: Error code: 400 - {'error': {'message': 'The supported API model names are deeps]",
       "keywords": "[失败: Error code: 400 - {'error': {'message': 'The supported API model names are deeps]",
       "article": "## 本周研究概览\n\n本周（2026-W30）共收录渔业相关论文5篇，研究方向涵盖水产养殖营养与肠道微生物、观赏鱼体色调控、渔业补贴政策评估、大型海洋鱼类运动生态学以及鱼类早期生活史生长-摄食关系。整体研究趋势呈现以下特点：一是水产养殖领域持续关注替代蛋白源与功能性饲料的开发，并深入探究其对鱼类生理性状（如体色、肠道菌群）的影响；二是海洋生态学研究中，卫星追踪等先进技术被应用于濒危或数据缺乏物种（如 oceanic manta ray）的基础运动生态学；三是政策经济学与渔业科学的交叉研究仍受关注，但本周相关论文以评论形式出现。总体而言，研究在应用层面（养殖技术优化）和基础生态学层面均有涉及，但缺乏高影响力的综合性或突破性成果。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances等顶级期刊上的渔业相关论文。\n\n## 创新性研究\n\n1. **Partial Replacement of Fish Meal with Fish Scale Meal Enhances Body Color Brightness and Iridophore Development in Koi (Cyprinus carpio var. koi)** — 该研究的创新点在于首次系统评估了鱼鳞粉（FSM）这一水产加工副产物对观赏鱼结构色（iridophore介导的体色）的影响。传统研究多关注色素性体色，而该工作聚焦于鸟嘌呤和胶原蛋白对结构色的贡献，为“废弃物高值化利用”与“观赏鱼品质改良”提供了新思路，具有潜在的产业应用价值。\n\n2. **First insights into oceanic manta ray movements in Japan using satellite telemetry** — 该研究首次利用卫星追踪技术揭示了日本海域（该物种分布北限）oceanic manta ray的运动模式。由于该物种在西北太平洋的数据极度匮乏，此研究填补了关键知识空白，为后续保护管理（如保护区划设、渔业兼捕缓解）提供了基础生态学依据。\n\n3. **Dynamics of Growth–Feeding Mechanisms in Japanese Anchovy Larvae Under Different Environmental Conditions** — 该研究的创新点在于动态解析了环境条件如何调节鱼类仔鱼生长与摄食成功之间的耦合关系。传统“生长-存活”假说认为生长快则存活率高，但该研究揭示了这种关系的环境依赖性，挑战了单一指标预测仔鱼补充量的有效性，对渔业资源评估模型的改进具有启示意义。\n\n4. **Community Structure and Functional Prediction of Gut Microbiota in Mandarin Fish Under Different Culture and Feeding Conditions** — 该研究的创新点在于同时比较了池塘活饵、池塘人工饲料和RAS（循环水养殖系统）人工饲料三种生产模式对鳜鱼肠道微生物群落的影响。通过功能预测分析，揭示了不同养殖条件如何塑造肠道菌群的代谢潜能，为优化鳜鱼养殖模式（尤其是人工饲料驯化）提供了微生物学视角。\n\n## 推荐阅读\n\n1. **Partial Replacement of Fish Meal with Fish Scale Meal Enhances Body Color Brightness and Iridophore Development in Koi (Cyprinus carpio var. koi)** — 创新性地将水产副产物利用与观赏鱼结构色调控相结合，兼具资源循环和产业应用价值。\n\n2. **First insights into oceanic manta ray movements in Japan using satellite telemetry** — 填补了西北太平洋oceanic manta ray运动生态学的关键数据空白，对濒危物种保护具有直接指导意义。\n\n3. **Dynamics of Growth–Feeding Mechanisms in Japanese Anchovy Larvae Under Different Environmental Conditions** — 挑战了经典的生长-存活假说，揭示了环境依赖性，对鱼类早期补充量研究具有理论价值。\n\n4. **Community Structure and Functional Prediction of Gut Microbiota in Mandarin Fish Under Different Culture and Feeding Conditions** — 系统比较了三种生产模式下鳜鱼肠道菌群，为人工饲料驯化提供微生物学依据。\n\n5. **Comment on “On the pass‐through rate of the Nutrition North Canada subsidy”** — 尽管是评论文章，但涉及渔业补贴政策的经济学评估方法争议，对理解政策传导机制和实证研究设计有参考价值。",
-      "paper_count": 100,
-      "high_impact_count": 22
+      "paper_count": 110,
+      "high_impact_count": 25
     },
     "2026-W29": {
       "week_key": "2026-W29",
@@ -3201,7 +3188,7 @@
       "topic": "[失败: Error code: 400 - {'error': {'message': 'The supported API model names are deeps]",
       "keywords": "[失败: Error code: 400 - {'error': {'message': 'The supported API model names are deeps]",
       "article": "## 本周研究概览\n\n本周（2026-W28）共收录8篇渔业相关论文，研究主题涵盖渔业资源评估、水产养殖技术、鱼类生态学与生理学、以及渔业管理等多个方向。整体趋势表现为：一是人工智能与机器学习技术在渔业中的应用持续深化，从鱼体重量预测到鲸鲨识别追踪，再到渔业产量预报，体现了数据驱动方法对传统渔业研究的赋能；二是气候变化对渔业的影响及其归因分析成为热点，研究者开始将气候因子直接纳入资源评估模型；三是鱼类基础生物学研究依然活跃，涉及长寿机制、繁殖生物学和食物网结构等经典议题。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS等顶级综合期刊或Nature子刊上的论文。\n\n## 创新性研究\n\n1. **Climate Attribution in Fishery Stock Assessment: Case Studies From the Northeast U.S. Groundfish Stocks**（*Fish and Fisheries*）— 该研究首次系统地将气候归因方法整合到渔业资源评估框架中，通过美国东北部底层鱼类案例展示了如何量化气候变化对种群动态的贡献。其创新之处在于突破了传统资源评估中仅考虑捕捞压力的局限，为气候适应性渔业管理提供了可操作的方法论。\n\n2. **Explainable AI-Driven Machine Learning for Forecasting Marine Fisheries Production Using Environmental Predictors**（*Machine Learning and Knowledge Extraction*）— 该研究将可解释人工智能（XAI）引入渔业产量预测，不仅提升了预报精度，还揭示了环境因子对产量的非线性影响机制。其创新点在于克服了传统“黑箱”机器学习模型的可解释性缺陷，为区域渔业管理提供了透明、可信的决策支持工具。\n\n3. **Potential factors contributing to extreme longevity in the Greenland shark**（*Journal of Fish Biology*）— 该研究系统探讨了格陵兰鲨（*Somniosus microcephalus*）超长寿命（>400年）的潜在机制，从代谢率、DNA修复能力、抗氧化防御等多个维度提出假说。其创新性在于整合了比较基因组学与生理生态学视角，为理解脊椎动物极端长寿的进化机制提供了新线索。\n\n4. **Egg and larval production of Eastern Baltic cod in captivity over one spawning season**（*Journal of Fish Biology*）— 该研究首次在人工养殖条件下完整记录了东波罗的海鳕鱼（*Gadus morhua*）整个产卵季节的卵和幼体产量。其创新之处在于通过控制实验揭示了亲本大小与体况对繁殖成功率的直接影响，为解释该种群持续衰退的机制提供了关键实验证据。\n\n## 推荐阅读\n\n1. **Climate Attribution in Fishery Stock Assessment: Case Studies From the Northeast U.S. Groundfish Stocks** — 开创性地将气候归因纳入资源评估，是气候适应性渔业管理的必读文献。\n2. **Explainable AI-Driven Machine Learning for Forecasting Marine Fisheries Production Using Environmental Predictors** — 展示了可解释AI在渔业预测中的前沿应用，方法新颖且实用价值高。\n3. **Potential factors contributing to extreme longevity in the Greenland shark** — 系统综述了脊椎动物最长寿物种的潜在机制，对理解衰老生物学具有跨学科意义。\n4. **Automated whale shark recognition and tracking using drones and deep learning** — 结合无人机与深度学习实现了濒危物种的非侵入性监测，技术路线具有推广价值。\n5. **Seasonal Hydrology Restructures Basal Carbon Pathways in a Lower Yangtze River Fish Food Web: A Stable-Isotope Baseline for the Fishing-Ban Era** — 为长江十年禁渔效果评估提供了关键的食物网基线数据，具有重要的管理参考价值。",
-      "paper_count": 15,
+      "paper_count": 4,
       "high_impact_count": 2
     }
   }
