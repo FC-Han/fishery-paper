@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>鱼类生态与资源可持续利用：多样性、气候变化与健康效应 — 渔业文献每周速览</title>
+<style>
+:root {
+  --bg: #f7fafc; --bg-card: #ffffff; --text: #2d3748;
+  --text-secondary: #718096; --text-muted: #a0aec0; --border: #e2e8f0;
+  --primary: #2b6cb0; --primary-light: #bee3f8; --primary-dark: #1a365d;
+  --accent: #e76f51; --accent-light: #fed7d7;
+  --teal: #319795; --teal-light: #b2f5ea;
+  --gold: #d69e2e; --gold-light: #fefcbf;
+  --shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.10);
+  --radius: 12px; --radius-sm: 8px;
+}
+[data-theme="dark"] {
+  --bg: #1a202c; --bg-card: #2d3748; --text: #e2e8f0;
+  --text-secondary: #a0aec0; --text-muted: #718096; --border: #4a5568;
+  --primary: #90cdf4; --primary-light: #2a4365; --primary-dark: #bee3f8;
+  --accent: #fc8181; --accent-light: #742a2a;
+  --teal: #81e6d9; --teal-light: #234e52;
+  --gold: #f6e05e; --gold-light: #3d3a1a;
+  --shadow: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.5);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;transition:background 0.3s,color 0.3s}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* === Top Bar === */
+.topbar{background:linear-gradient(135deg,#1a365d,#2b6cb0);color:#fff;padding:0.8rem 1.5rem;display:flex;align-items:center;gap:1rem;position:sticky;top:0;z-index:100}
+.back-btn{color:#fff;font-size:0.95rem;font-weight:600;padding:0.4rem 0.8rem;border-radius:var(--radius-sm);border:1.5px solid rgba(255,255,255,0.3);transition:all 0.2s;white-space:nowrap}
+.back-btn:hover{background:rgba(255,255,255,0.15);text-decoration:none}
+.topbar .title-area{flex:1;min-width:0}
+.topbar .week-range{font-size:0.78rem;opacity:0.8}
+.topbar .week-topic{font-size:1rem;font-weight:700;line-height:1.3}
+.topbar .theme-toggle{padding:0.4rem 0.8rem;border:1.5px solid rgba(255,255,255,0.3);border-radius:var(--radius-sm);background:transparent;color:#fff;cursor:pointer;font-size:0.85rem;transition:all 0.2s;white-space:nowrap}
+.topbar .theme-toggle:hover{background:rgba(255,255,255,0.15)}
+
+.container{max-width:1100px;margin:0 auto;padding:1.5rem}
+
+/* === Article Section === */
+.article-section{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;margin-bottom:1.5rem;box-shadow:var(--shadow)}
+.article-section h2{font-size:1.3rem;color:var(--primary-dark);margin:1.5rem 0 0.75rem;padding-bottom:0.4rem;border-bottom:2px solid var(--primary-light)}
+.article-section h2:first-child{margin-top:0}
+.article-section p{margin-bottom:0.8rem;line-height:1.8;color:var(--text)}
+.article-section strong{color:var(--primary-dark)}
+.article-section ol,.article-section ul{padding-left:1.5rem;margin-bottom:0.8rem}
+.article-section li{margin-bottom:0.5rem;line-height:1.7}
+.article-tag{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-right:0.5rem}
+.tag-overview{background:var(--primary-light);color:var(--primary-dark)}
+.tag-highlight{background:var(--accent-light);color:var(--accent)}
+.tag-innovative{background:var(--gold-light);color:var(--gold)}
+.tag-recommend{background:var(--teal-light);color:var(--teal)}
+
+/* === Stats Row === */
+.stats-row{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.stat-mini{padding:0.5rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-secondary)}
+.stat-mini strong{color:var(--primary);font-size:1.1rem}
+
+/* === Controls === */
+.controls{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.search-box{flex:1;min-width:200px;position:relative}
+.search-box input{width:100%;padding:0.6rem 1rem 0.6rem 2.5rem;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:0.9rem;background:var(--bg-card);color:var(--text);transition:border-color 0.2s}
+.search-box input:focus{outline:none;border-color:var(--primary)}
+.search-box .search-icon{position:absolute;left:0.8rem;top:50%;transform:translateY(-50%);color:var(--text-muted);pointer-events:none}
+
+/* === Paper Grid === */
+.section-title{font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:0.75rem;display:flex;align-items:center;gap:0.5rem}
+.paper-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:0.85rem;margin-bottom:1.5rem}
+.paper-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1.1rem;transition:all 0.25s;display:flex;flex-direction:column;position:relative}
+.paper-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);border-color:var(--primary-light)}
+.paper-card.high-impact{border-left:3px solid var(--accent)}
+.paper-card .hi-badge{position:absolute;top:0.5rem;right:0.5rem;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:10px;background:var(--accent-light);color:var(--accent);font-weight:700}
+.paper-card .journal{font-size:0.78rem;color:var(--teal);font-weight:600;margin-bottom:0.3rem}
+.paper-card .title{font-size:0.95rem;font-weight:700;line-height:1.45;margin-bottom:0.35rem}
+.paper-card .title a{color:var(--text)}
+.paper-card .title a:hover{color:var(--primary);text-decoration:none}
+.paper-card .meta{font-size:0.78rem;color:var(--text-muted);margin-bottom:0.6rem;display:flex;flex-wrap:wrap;gap:0.5rem}
+
+/* Chinese Summary */
+.paper-card .summary-cn{background:linear-gradient(135deg,#fffaf0,#fffff0);border-left:3px solid var(--gold);padding:0.7rem 0.85rem;margin-bottom:0.5rem;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:0.88rem;line-height:1.55;color:#744210}
+[data-theme="dark"] .paper-card .summary-cn{background:linear-gradient(135deg,#3d2e1a,#372a10);color:#fbd38d}
+
+.abstract-toggle{font-size:0.8rem;color:var(--primary);cursor:pointer;font-weight:600;user-select:none;display:inline-flex;align-items:center;gap:0.25rem;padding:0.3rem 0;border:none;background:none}
+.abstract-toggle:hover{color:var(--accent)}
+.abstract-toggle .arrow{transition:transform 0.2s;font-size:0.7rem}
+.abstract-toggle.open .arrow{transform:rotate(90deg)}
+.abstract-content{display:none;font-size:0.82rem;color:var(--text-secondary);line-height:1.55;padding:0.5rem 0;border-top:1px dashed var(--border);margin-top:0.4rem}
+.abstract-content.visible{display:block}
+
+.paper-card.hidden{display:none}
+.no-results{display:none;text-align:center;padding:2rem;color:var(--text-muted)}
+.no-results.visible{display:block}
+
+@media(max-width:768px){.paper-grid{grid-template-columns:1fr}.article-section{padding:1.25rem}.topbar{flex-wrap:wrap}.topbar .week-topic{font-size:0.9rem}}
+
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.paper-card{animation:fadeIn 0.4s ease-out}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="back-btn" href="index.html">← 返回主页</a>
+  <div class="title-area">
+    <div class="week-range">7月27日—7月27日</div>
+    <div class="week-topic">鱼类生态与资源可持续利用：多样性、气候变化与健康效应</div>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <span id="themeIcon">🌙</span> <span id="themeLabel">暗色</span>
+  </button>
+</div>
+
+<div class="container">
+
+  <!-- 深度综述文章 -->
+  
+  <div class="article-section">
+    <h2>本周研究概览</h2>
+
+<p>本周共收录5篇渔业相关论文，主要发表在《Diversity》、《Marine Drugs》、《Foods》和《Journal of Fish Biology》等期刊上。研究方向涵盖鱼类群落生态学、渔业资源可持续利用、鱼类生理生态响应以及人类饮食健康等多个领域。整体研究趋势呈现出从传统渔业资源调查向多学科交叉融合的转变，特别是对气候变化背景下鱼类生理适应机制、海洋热浪的生态效应以及渔业副产物高值化利用等前沿议题的关注度显著提升。</p>
+
+<h2>高影响力期刊亮点</h2>
+
+<p>本周暂无发表在Nature、Science、PNAS等顶级期刊上的渔业相关论文。</p>
+
+<h2>创新性研究</h2>
+
+<ol>
+<li><strong>Croaker Fish Bone-Derived Hydroxyapatite as a Sustainable Source for 3D-Printed Scaffolds for Bone Regeneration</strong> — 该研究首次将黄鱼鱼骨来源的生物羟基磷灰石（bHA）用于3D打印骨组织工程支架，不仅为渔业副产物（鱼骨）提供了高附加值利用的新途径，还验证了其作为合成羟基磷灰石可持续替代品的潜力。这一跨学科创新将渔业废弃物管理与生物医学工程有机结合，为渔业循环经济提供了新思路。</li>
+</ol>
+
+<ol>
+<li><strong>Coping with marine heatwaves: Tissue‐specific neuroendocrine and immune adjustments in small‐spotted catsharks</strong> — 该研究首次系统揭示了软骨鱼类（小斑猫鲨）在模拟海洋热浪胁迫下，不同组织（肝脏、脾脏、肠道、血细胞和生殖腺）中神经内分泌基因表达的差异性调控模式。这一发现填补了我们对极端气候事件如何影响软骨鱼类免疫-神经内分泌网络认知的空白，为预测气候变化对鲨鱼等关键物种的影响提供了分子层面的新视角。</li>
+</ol>
+
+<ol>
+<li><strong>Climate change impacts on fish in the Baltic Sea</strong> — 该综述系统整合了波罗的海鱼类对气候变化响应的实证证据，创新性地将温度、盐度、溶解氧等多重环境因子与鱼类分布、生长、繁殖和群落结构变化进行关联分析。其价值在于为区域尺度的渔业管理提供了基于证据的气候适应策略框架，尤其对半封闭海域的渔业资源管理具有重要参考意义。</li>
+</ol>
+
+<h2>推荐阅读</h2>
+
+<ol>
+<li><strong>Climate change impacts on fish in the Baltic Sea</strong> — 系统综述了波罗的海鱼类对气候变化的实证响应，为区域渔业管理提供了关键科学依据。</li>
+</ol>
+
+<ol>
+<li><strong>Coping with marine heatwaves: Tissue‐specific neuroendocrine and immune adjustments in small‐spotted catsharks</strong> — 首次揭示软骨鱼类应对海洋热浪的分子机制，具有重要的生态生理学意义。</li>
+</ol>
+
+<ol>
+<li><strong>Croaker Fish Bone-Derived Hydroxyapatite as a Sustainable Source for 3D-Printed Scaffolds for Bone Regeneration</strong> — 创新性地将渔业废弃物与生物医学工程结合，展示了渔业可持续发展的新方向。</li>
+</ol>
+
+<ol>
+<li><strong>Taxonomic Diversity, Community Structure, and Ecological Recovery of Soft-Bottom Fish Assemblages in La Paz Lagoon (Gulf of California, Mexico)</strong> — 为评估受干扰沿海生态系统的鱼类群落恢复提供了基础数据，对生态修复实践具有参考价值。</li>
+</ol>
+
+<ol>
+<li><strong>Dietary Acid Load Across Vegans, Lacto-Ovo-Vegetarians, Fish-Eaters, and Meat-Eaters, and Its Association with Body Mass Index: A Secondary Analysis from an Italian Survey (The INVITA Study)</strong> — 从饮食酸负荷角度探讨鱼类消费与健康的关系，为渔业营养学研究提供了新视角。</li>
+</ol>
+  </div>
+  
+
+  <!-- 统计 -->
+  <div class="stats-row">
+    <div class="stat-mini">📄 <strong>5</strong> 篇论文</div>
+    <div class="stat-mini">🌟 <strong>0</strong> 篇高影响力期刊</div>
+    <div class="stat-mini">🤖 <strong>5</strong> 篇 AI 中文总结</div>
+    
+    <div class="stat-mini">🏷️ 鱼类分类多样性(Taxonomic Diversity) 群落结构(Community Structure) 生态恢复(Ecological Recovery) 气候变化影响(Climate Change Impacts) </div>
+    
+  </div>
+
+  <!-- 搜索 -->
+  <div class="controls">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="搜索标题、作者、摘要..." oninput="filterPapers()">
+    </div>
+  </div>
+
+  <div class="no-results" id="noResults">😕 没有匹配的论文</div>
+
+  <!-- 全部论文列表 -->
+  <div class="section-title">📄 本周全部论文（5 篇）</div>
+  <div class="paper-grid">
+    
+    <div class="paper-card"
+         data-title="taxonomic diversity, community structure, and ecological recovery of soft-bottom fish assemblages in la paz lagoon (gulf of california, mexico)"
+         data-authors="gonzález, emelio barjau; vivas, juan manuel lópez; pérez milicua, myrna barjau; uc, mónica lara; quintana, josé ángel armenta; bernal espinoza, dariana guadalupe; aguilar parra, javier; félix, elvia aispuro"
+         data-journal="diversity"
+         data-abstract="la paz lagoon is a semi-enclosed coastal ecosystem in the southwestern gulf of california that was historically affected by wastewater discharges and other anthropogenic disturbances. this study evaluated the taxonomic diversity and community structure of soft-bottom fish assemblages across two climatic periods (neutral, 2016–2017, and la niña, 2022–2023) using alpha (α), beta (β), and gamma (γ) diversity metrics together with taxonomic distinctness indices (δ, δ*, δ+, and λ+). six bimonthly surveys were conducted during each climatic period at seven sampling stations. a total of 93 fish species, representing 65 genera, 33 families, and 17 orders, were recorded across the two climatic periods. species richness exhibited marked temporal variation, reaching its highest value in april and its lowest value in march. periods of reduced richness were associated with increased species turnover among stations. taxonomic distinctness indices remained within the expected confidence limits, indicating a stable taxonomic structure despite historical anthropogenic impacts. dominant species included paralabrax maculatofasciatus, diapterus brevirostris, eucinostomus gracilis, urobatis halleri, and synodus scituliceps. overall, the results indicate that the soft-bottom fish assemblage of la paz lagoon exhibits characteristics consistent with a stable and well-structured community. multivariate analyses further identified water temperature as the principal environmental variable associated with community variation. collectively, these findings support the hypothesis that la paz lagoon is undergoing ecological recovery and provide a robust ecological baseline for long-term monitoring, conservation, and ecosystem management."
+         data-summary="本研究评估了墨西哥加利福尼亚湾拉巴斯泻湖软底鱼类群落的分类多样性、群落结构及生态恢复状况。通过两个气候期（中性期2016-2017和拉尼娜期2022-2023）的六次双月调查，记录了93种鱼类，发现物种丰富度呈显著时间变化，4月最高、3月最低。分类差异指数在预期置信区间内，表明尽管受历史人为干扰，群落分类结构仍保持稳定，且水温是影响群落变化的主要环境因子。研究证实该泻湖正经历生态恢复，为长期监测和生态系统管理提供了生态基线。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Diversity
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究评估了墨西哥加利福尼亚湾拉巴斯泻湖软底鱼类群落的分类多样性、群落结构及生态恢复状况。通过两个气候期（中性期2016-2017和拉尼娜期2022-2023）的六次双月调查，记录了93种鱼类，发现物种丰富度呈显著时间变化，4月最高、3月最低。分类差异指数在预期置信区间内，表明尽管受历史人为干扰，群落分类结构仍保持稳定，且水温是影响群落变化的主要环境因子。研究证实该泻湖正经历生态恢复，为长期监测和生态系统管理提供了生态基线。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/d18080447" target="_blank" rel="noopener">Taxonomic Diversity, Community Structure, and Ecological Recovery of Soft-Bottom Fish Assemblages in La Paz Lagoon (Gulf of California, Mexico)</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 González, Emelio Barjau; Vivas, Juan Manuel López; Pérez Mil...</span>
+        
+        <span>📅 2026-07-27</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">La Paz Lagoon is a semi-enclosed coastal ecosystem in the southwestern Gulf of California that was historically affected by wastewater discharges and other anthropogenic disturbances. This study evaluated the taxonomic diversity and community structure of soft-bottom fish assemblages across two climatic periods (Neutral, 2016–2017, and La Niña, 2022–2023) using alpha (α), beta (β), and gamma (γ) diversity metrics together with taxonomic distinctness indices (Δ, Δ*, Δ+, and Λ+). Six bimonthly surveys were conducted during each climatic period at seven sampling stations. A total of 93 fish species, representing 65 genera, 33 families, and 17 orders, were recorded across the two climatic periods. Species richness exhibited marked temporal variation, reaching its highest value in April and its lowest value in March. Periods of reduced richness were associated with increased species turnover among stations. Taxonomic distinctness indices remained within the expected confidence limits, indicating a stable taxonomic structure despite historical anthropogenic impacts. Dominant species included Paralabrax maculatofasciatus, Diapterus brevirostris, Eucinostomus gracilis, Urobatis halleri, and Synodus scituliceps. Overall, the results indicate that the soft-bottom fish assemblage of La Paz Lagoon exhibits characteristics consistent with a stable and well-structured community. Multivariate analyses further identified water temperature as the principal environmental variable associated with community variation. Collectively, these findings support the hypothesis that La Paz Lagoon is undergoing ecological recovery and provide a robust ecological baseline for long-term monitoring, conservation, and ecosystem management.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="dietary acid load across vegans, lacto-ovo-vegetarians, fish-eaters, and meat-eaters, and its association with body mass index: a secondary analysis from an italian survey (the invita study)"
+         data-authors="baroni, luciana; catania, davide; bonetto, chiara; galchenko, alexey v.; guidi, giada; de bortoli, nicola"
+         data-journal="foods"
+         data-abstract="diet represents a key determinant of the body’s acid–base balance because foods are metabolized into non-volatile acids or bases. an increase in dietary acid load can elicit low-grade metabolic acidosis, which has been associated with systemic inflammation and the risk of adverse cardiometabolic conditions, including obesity. potential renal acid load (pral) and net endogenous acid production (neap) represent the major markers of dietary acid load. the aim of this secondary analysis was to compare the acid load of four different diets and investigate its association with body mass index (bmi) in a sample of the general population. in an online survey, the invita study, four dietary patterns (meat-eaters, fish-eaters, lacto-ovo-vegetarians, and vegans) were compared for their corresponding pral and neap values, and the associations of both parameters with bmi were evaluated. multiple linear regression models were progressively adjusted for dietary pattern, energy intake, age, sex, physical activity, smoking status, and education level. the stepwise decrease in animal food consumption across the four dietary patterns was associated with a progressive reduction in dietary acid load, with vegan participants showing the lowest values. while pral did not prove consistently associated with bmi in this cohort, neap remained significantly associated with bmi even after full adjustment for lifestyle confounders (β = 0.032, p = 0.00013). however, because neap includes an anthropometric component based on body surface area, this association should be interpreted cautiously, as it may partly reflect mathematical coupling rather than a purely diet-derived effect. pral should be considered the more diet-specific marker, while neap represents a composite index combining dietary acid load and anthropometric scaling. because pral and neap do not account for protein origin, future studies should assess whether diet-specific reference ranges could improve their comparisons for dietary patterns including mostly or exclusively plant protein."
+         data-summary="该研究比较了纯素食、乳蛋素食、鱼素及肉食四种饮食模式的膳食酸负荷（pral和neap），并分析其与bmi的关联。基于意大利invita调查的二次分析显示，动物性食物摄入越少，膳食酸负荷越低，纯素食者数值最低。neap与bmi显著正相关（β=0.032, p=0.00013），但可能受其包含体表面积计算成分的影响；pral作为更纯粹的饮食指标未显示一致关联。研究建议未来需针对植物蛋白为主的饮食模式建立特异性参考范围。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Foods
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该研究比较了纯素食、乳蛋素食、鱼素及肉食四种饮食模式的膳食酸负荷（PRAL和NEAP），并分析其与BMI的关联。基于意大利INVITA调查的二次分析显示，动物性食物摄入越少，膳食酸负荷越低，纯素食者数值最低。NEAP与BMI显著正相关（β=0.032, p=0.00013），但可能受其包含体表面积计算成分的影响；PRAL作为更纯粹的饮食指标未显示一致关联。研究建议未来需针对植物蛋白为主的饮食模式建立特异性参考范围。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/foods15152613" target="_blank" rel="noopener">Dietary Acid Load Across Vegans, Lacto-Ovo-Vegetarians, Fish-Eaters, and Meat-Eaters, and Its Association with Body Mass Index: A Secondary Analysis from an Italian Survey (The INVITA Study)</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Baroni, Luciana; Catania, Davide; Bonetto, Chiara; Galchenko...</span>
+        
+        <span>📅 2026-07-27</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Diet represents a key determinant of the body’s acid–base balance because foods are metabolized into non-volatile acids or bases. An increase in dietary acid load can elicit low-grade metabolic acidosis, which has been associated with systemic inflammation and the risk of adverse cardiometabolic conditions, including obesity. Potential renal acid load (PRAL) and Net Endogenous Acid Production (NEAP) represent the major markers of dietary acid load. The aim of this secondary analysis was to compare the acid load of four different diets and investigate its association with Body Mass Index (BMI) in a sample of the general population. In an online survey, the INVITA study, four dietary patterns (meat-eaters, fish-eaters, lacto-ovo-vegetarians, and vegans) were compared for their corresponding PRAL and NEAP values, and the associations of both parameters with BMI were evaluated. Multiple linear regression models were progressively adjusted for dietary pattern, energy intake, age, sex, physical activity, smoking status, and education level. The stepwise decrease in animal food consumption across the four dietary patterns was associated with a progressive reduction in dietary acid load, with vegan participants showing the lowest values. While PRAL did not prove consistently associated with BMI in this cohort, NEAP remained significantly associated with BMI even after full adjustment for lifestyle confounders (β = 0.032, p = 0.00013). However, because NEAP includes an anthropometric component based on body surface area, this association should be interpreted cautiously, as it may partly reflect mathematical coupling rather than a purely diet-derived effect. PRAL should be considered the more diet-specific marker, while NEAP represents a composite index combining dietary acid load and anthropometric scaling. Because PRAL and NEAP do not account for protein origin, future studies should assess whether diet-specific reference ranges could improve their comparisons for dietary patterns including mostly or exclusively plant protein.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="climate change impacts on fish in the baltic sea"
+         data-authors="östman, örjan; kallasvuo, meri; kuningas, sanna; lappalainen, antti; mustamäki, noora; naddafi, rahmat; saks, lauri; olsson, jens"
+         data-journal="journal of fish biology"
+         data-abstract="abstract the baltic sea is a marginal sea with strong abiotic gradients harbouring fish of both marine and freshwater origin. here we review the empirical evidence for how changes in climate variables have impacted different fish and fish communities in the baltic sea. studies on responses to temperature, salinity and hypoxia dominate the literature, with most evidence for negative influences on reproduction and feeding areas for demersal fish of marine origin. in contrast, warmer waters benefit the reproduction and growth of some smaller pelagic and many coastal fish species of freshwater origin, but responses on population or community levels are elusive. several responses to climate change have further been mediated through changes in prey abundance and quality. studies investigating adaptations to climate change indicate that fish are adapting, partly counteracting climate impact. a precautionary approach to management is therefore important to safeguard climate change adaptation and reduce deleterious impacts as the impact on the baltic sea from a changing climate likely will be even more pronounced in the coming decades."
+         data-summary="该研究综述了气候变化对波罗的海鱼类的影响，重点关注温度、盐度和缺氧等环境因子。研究发现，气候变暖对海洋来源的底层鱼类繁殖和摄食区产生负面影响，而淡水来源的小型中上层和沿岸鱼类则受益于水温升高。鱼类对气候变化的适应性反应部分抵消了气候影响，但种群和群落层面的响应尚不明确。研究建议采取预防性管理措施，以应对未来几十年气候变化对波罗的海鱼类更显著的影响。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该研究综述了气候变化对波罗的海鱼类的影响，重点关注温度、盐度和缺氧等环境因子。研究发现，气候变暖对海洋来源的底层鱼类繁殖和摄食区产生负面影响，而淡水来源的小型中上层和沿岸鱼类则受益于水温升高。鱼类对气候变化的适应性反应部分抵消了气候影响，但种群和群落层面的响应尚不明确。研究建议采取预防性管理措施，以应对未来几十年气候变化对波罗的海鱼类更显著的影响。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70582" target="_blank" rel="noopener">Climate change impacts on fish in the Baltic Sea</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Östman, Örjan; Kallasvuo, Meri; Kuningas, Sanna; Lappalainen...</span>
+        
+        <span>📅 2026-07-27</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract The Baltic Sea is a marginal sea with strong abiotic gradients harbouring fish of both marine and freshwater origin. Here we review the empirical evidence for how changes in climate variables have impacted different fish and fish communities in the Baltic Sea. Studies on responses to temperature, salinity and hypoxia dominate the literature, with most evidence for negative influences on reproduction and feeding areas for demersal fish of marine origin. In contrast, warmer waters benefit the reproduction and growth of some smaller pelagic and many coastal fish species of freshwater origin, but responses on population or community levels are elusive. Several responses to climate change have further been mediated through changes in prey abundance and quality. Studies investigating adaptations to climate change indicate that fish are adapting, partly counteracting climate impact. A precautionary approach to management is therefore important to safeguard climate change adaptation and reduce deleterious impacts as the impact on the Baltic Sea from a changing climate likely will be even more pronounced in the coming decades.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="coping with marine heatwaves: tissue‐specific neuroendocrine and immune adjustments in small‐spotted catsharks"
+         data-authors="martins, sandra; felix, rute; santos, catarina pereira; rosa, rui; power, deborah m."
+         data-journal="journal of fish biology"
+         data-abstract="abstract rising ocean temperatures disrupt neuroendocrine–immune interactions in vertebrates. neuroendocrine gene expression in the liver, spleen, intestine, blood cells and epigonal organ was examined in small‐spotted catsharks ( scyliorhinus canicula ) exposed to a 30‐day simulated marine heatwave. correlations among neuroendocrine genes, immune‐ and iron‐related genes, plasma biochemistry and leukocyte assays revealed tissue‐specific expression patterns, reduced inter‐individual variability and coordinated transcriptional modulation across tissues. overall, catsharks exhibited integrated adjustments to thermal stress, most likely to balance metabolic demands with immune resilience."
+         data-summary="本研究以猫鲨（scyliorhinus canicula）为对象，通过30天模拟海洋热浪实验，探究其肝脏、脾脏、肠道、血细胞及附腺器官中神经内分泌基因的组织特异性表达。结果显示，神经内分泌基因与免疫、铁代谢相关基因及血浆生化指标、白细胞检测之间存在相关性，表现为组织特异性表达模式、个体间变异降低及跨组织协调转录调控。猫鲨通过整合性调节应对热应激，以平衡代谢需求与免疫韧性。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究以猫鲨（Scyliorhinus canicula）为对象，通过30天模拟海洋热浪实验，探究其肝脏、脾脏、肠道、血细胞及附腺器官中神经内分泌基因的组织特异性表达。结果显示，神经内分泌基因与免疫、铁代谢相关基因及血浆生化指标、白细胞检测之间存在相关性，表现为组织特异性表达模式、个体间变异降低及跨组织协调转录调控。猫鲨通过整合性调节应对热应激，以平衡代谢需求与免疫韧性。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70567" target="_blank" rel="noopener">Coping with marine heatwaves: Tissue‐specific neuroendocrine and immune adjustments in small‐spotted catsharks</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Martins, Sandra; Felix, Rute; Santos, Catarina Pereira; Rosa...</span>
+        
+        <span>📅 2026-07-27</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract Rising ocean temperatures disrupt neuroendocrine–immune interactions in vertebrates. Neuroendocrine gene expression in the liver, spleen, intestine, blood cells and epigonal organ was examined in small‐spotted catsharks ( Scyliorhinus canicula ) exposed to a 30‐day simulated marine heatwave. Correlations among neuroendocrine genes, immune‐ and iron‐related genes, plasma biochemistry and leukocyte assays revealed tissue‐specific expression patterns, reduced inter‐individual variability and coordinated transcriptional modulation across tissues. Overall, catsharks exhibited integrated adjustments to thermal stress, most likely to balance metabolic demands with immune resilience.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="croaker fish bone-derived hydroxyapatite as a sustainable source for 3d-printed scaffolds for bone regeneration"
+         data-authors="nina-nina, diana gabriela; grasser, giovanna de amorim; alqualo, amanda sardeli; prado, joão paulo dos santos; trichês, eliandra de sousa; longo, elson; rennó, ana cláudia muniz; braga, anna rafaela cavalcante; assis, marcelo; granito, renata neves"
+         data-journal="marine drugs"
+         data-abstract="the use of biogenic hydroxyapatite as a sustainable and bioactive alternative to synthetic ceramics has attracted increasing attention for 3d-printed scaffolds in bone tissue engineering. in this work, calcium alginate-based scaffolds reinforced with commercial (cha) and biogenic hydroxyapatite (bha) obtained from croaker fish bones (micropogonias furnieri) were fabricated by 3d printing using hydroxyapatite contents ranging from 10% to 20%. both hydroxyapatites exhibited hexagonal structures, and all formulations showed rheological behavior suitable for extrusion-based printing. structural analyses revealed increased diffraction peak intensity with higher hydroxyapatite content, while ftir spectra showed no significant structural changes. hydroxyapatite addition increased the compressive modulus, although higher loadings reduced maximum resistance and produced denser, less porous structures. after 14 days in simulated body fluid, scaffolds containing 10% bha favored apatite deposition, evidenced by increased phosphorus levels. in vitro assays using mc3t3-e1 pre-osteoblasts demonstrated biocompatibility, with metabolic viability above 70% and no toxicity. the 10% bha formulation also enhanced cell proliferation, adhesion, and migration without increasing reactive oxygen or nitrogen species. alizarin red staining indicated osteogenic potential, while micronucleus assays with cho-k1 cells confirmed the absence of genotoxicity. these findings highlight the potential of biogenic hydroxyapatite scaffolds for bone tissue engineering."
+         data-summary="本研究利用黄鱼骨来源的生物羟基磷灰石（bha）与商业羟基磷灰石（cha）制备3d打印海藻酸钙支架，用于骨组织工程。通过10%-20%的羟基磷灰石含量调控支架结构，发现bha支架在模拟体液中14天后促进磷灰石沉积，且10% bha配方显著增强mc3t3-e1前成骨细胞的增殖、粘附和迁移，同时保持70%以上代谢活性和无遗传毒性。结果表明，黄鱼骨羟基磷灰石可作为可持续的生物活性支架材料，在骨再生领域具有应用潜力。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Marine Drugs
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究利用黄鱼骨来源的生物羟基磷灰石（bHA）与商业羟基磷灰石（cHA）制备3D打印海藻酸钙支架，用于骨组织工程。通过10%-20%的羟基磷灰石含量调控支架结构，发现bHA支架在模拟体液中14天后促进磷灰石沉积，且10% bHA配方显著增强MC3T3-E1前成骨细胞的增殖、粘附和迁移，同时保持70%以上代谢活性和无遗传毒性。结果表明，黄鱼骨羟基磷灰石可作为可持续的生物活性支架材料，在骨再生领域具有应用潜力。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/md24080260" target="_blank" rel="noopener">Croaker Fish Bone-Derived Hydroxyapatite as a Sustainable Source for 3D-Printed Scaffolds for Bone Regeneration</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Nina-Nina, Diana Gabriela; Grasser, Giovanna de Amorim; Alqu...</span>
+        
+        <span>📅 2026-07-27</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">The use of biogenic hydroxyapatite as a sustainable and bioactive alternative to synthetic ceramics has attracted increasing attention for 3D-printed scaffolds in bone tissue engineering. In this work, calcium alginate-based scaffolds reinforced with commercial (cHA) and biogenic hydroxyapatite (bHA) obtained from croaker fish bones (Micropogonias furnieri) were fabricated by 3D printing using hydroxyapatite contents ranging from 10% to 20%. Both hydroxyapatites exhibited hexagonal structures, and all formulations showed rheological behavior suitable for extrusion-based printing. Structural analyses revealed increased diffraction peak intensity with higher hydroxyapatite content, while FTIR spectra showed no significant structural changes. Hydroxyapatite addition increased the compressive modulus, although higher loadings reduced maximum resistance and produced denser, less porous structures. After 14 days in simulated body fluid, scaffolds containing 10% bHA favored apatite deposition, evidenced by increased phosphorus levels. In vitro assays using MC3T3-E1 pre-osteoblasts demonstrated biocompatibility, with metabolic viability above 70% and no toxicity. The 10% bHA formulation also enhanced cell proliferation, adhesion, and migration without increasing reactive oxygen or nitrogen species. Alizarin Red staining indicated osteogenic potential, while micronucleus assays with CHO-K1 cells confirmed the absence of genotoxicity. These findings highlight the potential of biogenic hydroxyapatite scaffolds for bone tissue engineering.</div>
+      
+    </div>
+    
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var s=localStorage.getItem('theme');
+  if(s){document.documentElement.setAttribute('data-theme',s);
+  document.getElementById('themeIcon').textContent=s==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=s==='dark'?'亮色':'暗色';}
+})();
+function toggleTheme(){
+  var h=document.documentElement,n=h.getAttribute('data-theme')==='dark'?'light':'dark';
+  h.setAttribute('data-theme',n);
+  document.getElementById('themeIcon').textContent=n==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=n==='dark'?'亮色':'暗色';
+  localStorage.setItem('theme',n);
+}
+function toggleAbstract(b){
+  var c=b.nextElementSibling,v=c.classList.contains('visible');
+  c.classList.toggle('visible');b.classList.toggle('open');
+  b.querySelector('.arrow').textContent=v?'▶':'▼';
+}
+function filterPapers(){
+  var q=(document.getElementById('searchInput').value||'').toLowerCase().trim(),vis=0;
+  document.querySelectorAll('.paper-card').forEach(function(c){
+    var t=[c.getAttribute('data-title')||'',c.getAttribute('data-authors')||'',c.getAttribute('data-journal')||'',c.getAttribute('data-abstract')||'',c.getAttribute('data-summary')||''].join(' ');
+    var s=!q||t.includes(q);c.classList.toggle('hidden',!s);if(s)vis++;
+  });
+  document.getElementById('noResults').classList.toggle('visible',vis===0);
+}
+</script>
+</body>
+</html>

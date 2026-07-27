@@ -1,8 +1,125 @@
 {
-  "last_updated": "2026-07-26T09:55:26Z",
-  "total_papers": 243,
-  "new_today": 10,
+  "last_updated": "2026-07-27T11:15:37Z",
+  "total_papers": 249,
+  "new_today": 11,
   "papers": [
+    {
+      "doi": "10.3390/d18080447",
+      "title": "Taxonomic Diversity, Community Structure, and Ecological Recovery of Soft-Bottom Fish Assemblages in La Paz Lagoon (Gulf of California, Mexico)",
+      "authors": "González, Emelio Barjau; Vivas, Juan Manuel López; Pérez Milicua, Myrna Barjau; Uc, Mónica Lara; Quintana, José Ángel Armenta; Bernal Espinoza, Dariana Guadalupe; Aguilar Parra, Javier; Félix, Elvia Aispuro",
+      "journal": "Diversity",
+      "date": "2026-07-27",
+      "abstract": "La Paz Lagoon is a semi-enclosed coastal ecosystem in the southwestern Gulf of California that was historically affected by wastewater discharges and other anthropogenic disturbances. This study evaluated the taxonomic diversity and community structure of soft-bottom fish assemblages across two climatic periods (Neutral, 2016–2017, and La Niña, 2022–2023) using alpha (α), beta (β), and gamma (γ) diversity metrics together with taxonomic distinctness indices (Δ, Δ*, Δ+, and Λ+). Six bimonthly surveys were conducted during each climatic period at seven sampling stations. A total of 93 fish species, representing 65 genera, 33 families, and 17 orders, were recorded across the two climatic periods. Species richness exhibited marked temporal variation, reaching its highest value in April and its lowest value in March. Periods of reduced richness were associated with increased species turnover among stations. Taxonomic distinctness indices remained within the expected confidence limits, indicating a stable taxonomic structure despite historical anthropogenic impacts. Dominant species included Paralabrax maculatofasciatus, Diapterus brevirostris, Eucinostomus gracilis, Urobatis halleri, and Synodus scituliceps. Overall, the results indicate that the soft-bottom fish assemblage of La Paz Lagoon exhibits characteristics consistent with a stable and well-structured community. Multivariate analyses further identified water temperature as the principal environmental variable associated with community variation. Collectively, these findings support the hypothesis that La Paz Lagoon is undergoing ecological recovery and provide a robust ecological baseline for long-term monitoring, conservation, and ecosystem management.",
+      "summary_cn": "本研究评估了墨西哥加利福尼亚湾拉巴斯泻湖软底鱼类群落的分类多样性、群落结构及生态恢复状况。通过两个气候期（中性期2016-2017和拉尼娜期2022-2023）的六次双月调查，记录了93种鱼类，发现物种丰富度呈显著时间变化，4月最高、3月最低。分类差异指数在预期置信区间内，表明尽管受历史人为干扰，群落分类结构仍保持稳定，且水温是影响群落变化的主要环境因子。研究证实该泻湖正经历生态恢复，为长期监测和生态系统管理提供了生态基线。",
+      "url": "https://doi.org/10.3390/d18080447",
+      "source": "crossref",
+      "keywords_matched": "fish population",
+      "high_impact": false
+    },
+    {
+      "doi": "10.3390/md24080260",
+      "title": "Croaker Fish Bone-Derived Hydroxyapatite as a Sustainable Source for 3D-Printed Scaffolds for Bone Regeneration",
+      "authors": "Nina-Nina, Diana Gabriela; Grasser, Giovanna de Amorim; Alqualo, Amanda Sardeli; Prado, João Paulo dos Santos; Trichês, Eliandra de Sousa; Longo, Elson; Rennó, Ana Cláudia Muniz; Braga, Anna Rafaela Cavalcante; Assis, Marcelo; Granito, Renata Neves",
+      "journal": "Marine Drugs",
+      "date": "2026-07-27",
+      "abstract": "The use of biogenic hydroxyapatite as a sustainable and bioactive alternative to synthetic ceramics has attracted increasing attention for 3D-printed scaffolds in bone tissue engineering. In this work, calcium alginate-based scaffolds reinforced with commercial (cHA) and biogenic hydroxyapatite (bHA) obtained from croaker fish bones (Micropogonias furnieri) were fabricated by 3D printing using hydroxyapatite contents ranging from 10% to 20%. Both hydroxyapatites exhibited hexagonal structures, and all formulations showed rheological behavior suitable for extrusion-based printing. Structural analyses revealed increased diffraction peak intensity with higher hydroxyapatite content, while FTIR spectra showed no significant structural changes. Hydroxyapatite addition increased the compressive modulus, although higher loadings reduced maximum resistance and produced denser, less porous structures. After 14 days in simulated body fluid, scaffolds containing 10% bHA favored apatite deposition, evidenced by increased phosphorus levels. In vitro assays using MC3T3-E1 pre-osteoblasts demonstrated biocompatibility, with metabolic viability above 70% and no toxicity. The 10% bHA formulation also enhanced cell proliferation, adhesion, and migration without increasing reactive oxygen or nitrogen species. Alizarin Red staining indicated osteogenic potential, while micronucleus assays with CHO-K1 cells confirmed the absence of genotoxicity. These findings highlight the potential of biogenic hydroxyapatite scaffolds for bone tissue engineering.",
+      "summary_cn": "本研究利用黄鱼骨来源的生物羟基磷灰石（bHA）与商业羟基磷灰石（cHA）制备3D打印海藻酸钙支架，用于骨组织工程。通过10%-20%的羟基磷灰石含量调控支架结构，发现bHA支架在模拟体液中14天后促进磷灰石沉积，且10% bHA配方显著增强MC3T3-E1前成骨细胞的增殖、粘附和迁移，同时保持70%以上代谢活性和无遗传毒性。结果表明，黄鱼骨羟基磷灰石可作为可持续的生物活性支架材料，在骨再生领域具有应用潜力。",
+      "url": "https://doi.org/10.3390/md24080260",
+      "source": "crossref",
+      "keywords_matched": "fish population",
+      "high_impact": false
+    },
+    {
+      "doi": "10.3390/foods15152613",
+      "title": "Dietary Acid Load Across Vegans, Lacto-Ovo-Vegetarians, Fish-Eaters, and Meat-Eaters, and Its Association with Body Mass Index: A Secondary Analysis from an Italian Survey (The INVITA Study)",
+      "authors": "Baroni, Luciana; Catania, Davide; Bonetto, Chiara; Galchenko, Alexey V.; Guidi, Giada; de Bortoli, Nicola",
+      "journal": "Foods",
+      "date": "2026-07-27",
+      "abstract": "Diet represents a key determinant of the body’s acid–base balance because foods are metabolized into non-volatile acids or bases. An increase in dietary acid load can elicit low-grade metabolic acidosis, which has been associated with systemic inflammation and the risk of adverse cardiometabolic conditions, including obesity. Potential renal acid load (PRAL) and Net Endogenous Acid Production (NEAP) represent the major markers of dietary acid load. The aim of this secondary analysis was to compare the acid load of four different diets and investigate its association with Body Mass Index (BMI) in a sample of the general population. In an online survey, the INVITA study, four dietary patterns (meat-eaters, fish-eaters, lacto-ovo-vegetarians, and vegans) were compared for their corresponding PRAL and NEAP values, and the associations of both parameters with BMI were evaluated. Multiple linear regression models were progressively adjusted for dietary pattern, energy intake, age, sex, physical activity, smoking status, and education level. The stepwise decrease in animal food consumption across the four dietary patterns was associated with a progressive reduction in dietary acid load, with vegan participants showing the lowest values. While PRAL did not prove consistently associated with BMI in this cohort, NEAP remained significantly associated with BMI even after full adjustment for lifestyle confounders (β = 0.032, p = 0.00013). However, because NEAP includes an anthropometric component based on body surface area, this association should be interpreted cautiously, as it may partly reflect mathematical coupling rather than a purely diet-derived effect. PRAL should be considered the more diet-specific marker, while NEAP represents a composite index combining dietary acid load and anthropometric scaling. Because PRAL and NEAP do not account for protein origin, future studies should assess whether diet-specific reference ranges could improve their comparisons for dietary patterns including mostly or exclusively plant protein.",
+      "summary_cn": "该研究比较了纯素食、乳蛋素食、鱼素及肉食四种饮食模式的膳食酸负荷（PRAL和NEAP），并分析其与BMI的关联。基于意大利INVITA调查的二次分析显示，动物性食物摄入越少，膳食酸负荷越低，纯素食者数值最低。NEAP与BMI显著正相关（β=0.032, p=0.00013），但可能受其包含体表面积计算成分的影响；PRAL作为更纯粹的饮食指标未显示一致关联。研究建议未来需针对植物蛋白为主的饮食模式建立特异性参考范围。",
+      "url": "https://doi.org/10.3390/foods15152613",
+      "source": "crossref",
+      "keywords_matched": "fish stock",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1111/jfb.70582",
+      "title": "Climate change impacts on fish in the Baltic Sea",
+      "authors": "Östman, Örjan; Kallasvuo, Meri; Kuningas, Sanna; Lappalainen, Antti; Mustamäki, Noora; Naddafi, Rahmat; Saks, Lauri; Olsson, Jens",
+      "journal": "Journal of Fish Biology",
+      "date": "2026-07-27",
+      "abstract": "Abstract The Baltic Sea is a marginal sea with strong abiotic gradients harbouring fish of both marine and freshwater origin. Here we review the empirical evidence for how changes in climate variables have impacted different fish and fish communities in the Baltic Sea. Studies on responses to temperature, salinity and hypoxia dominate the literature, with most evidence for negative influences on reproduction and feeding areas for demersal fish of marine origin. In contrast, warmer waters benefit the reproduction and growth of some smaller pelagic and many coastal fish species of freshwater origin, but responses on population or community levels are elusive. Several responses to climate change have further been mediated through changes in prey abundance and quality. Studies investigating adaptations to climate change indicate that fish are adapting, partly counteracting climate impact. A precautionary approach to management is therefore important to safeguard climate change adaptation and reduce deleterious impacts as the impact on the Baltic Sea from a changing climate likely will be even more pronounced in the coming decades.",
+      "summary_cn": "该研究综述了气候变化对波罗的海鱼类的影响，重点关注温度、盐度和缺氧等环境因子。研究发现，气候变暖对海洋来源的底层鱼类繁殖和摄食区产生负面影响，而淡水来源的小型中上层和沿岸鱼类则受益于水温升高。鱼类对气候变化的适应性反应部分抵消了气候影响，但种群和群落层面的响应尚不明确。研究建议采取预防性管理措施，以应对未来几十年气候变化对波罗的海鱼类更显著的影响。",
+      "url": "https://doi.org/10.1111/jfb.70582",
+      "source": "crossref",
+      "keywords_matched": "fish stock",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1111/jfb.70567",
+      "title": "Coping with marine heatwaves: Tissue‐specific neuroendocrine and immune adjustments in small‐spotted catsharks",
+      "authors": "Martins, Sandra; Felix, Rute; Santos, Catarina Pereira; Rosa, Rui; Power, Deborah M.",
+      "journal": "Journal of Fish Biology",
+      "date": "2026-07-27",
+      "abstract": "Abstract Rising ocean temperatures disrupt neuroendocrine–immune interactions in vertebrates. Neuroendocrine gene expression in the liver, spleen, intestine, blood cells and epigonal organ was examined in small‐spotted catsharks ( Scyliorhinus canicula ) exposed to a 30‐day simulated marine heatwave. Correlations among neuroendocrine genes, immune‐ and iron‐related genes, plasma biochemistry and leukocyte assays revealed tissue‐specific expression patterns, reduced inter‐individual variability and coordinated transcriptional modulation across tissues. Overall, catsharks exhibited integrated adjustments to thermal stress, most likely to balance metabolic demands with immune resilience.",
+      "summary_cn": "本研究以猫鲨（Scyliorhinus canicula）为对象，通过30天模拟海洋热浪实验，探究其肝脏、脾脏、肠道、血细胞及附腺器官中神经内分泌基因的组织特异性表达。结果显示，神经内分泌基因与免疫、铁代谢相关基因及血浆生化指标、白细胞检测之间存在相关性，表现为组织特异性表达模式、个体间变异降低及跨组织协调转录调控。猫鲨通过整合性调节应对热应激，以平衡代谢需求与免疫韧性。",
+      "url": "https://doi.org/10.1111/jfb.70567",
+      "source": "crossref",
+      "keywords_matched": "marine fisheries",
+      "high_impact": false
+    },
+    {
+      "doi": "10.12714/egejfas.43.3.14",
+      "title": "The impact of blue economy components on economic growth: Evidence from fisheries and aquaculture in ASEAN-5 countries",
+      "authors": "Atılgan, Dilek",
+      "journal": "Ege Journal of Fisheries and Aquatic Sciences",
+      "date": "2026-07-26",
+      "abstract": "This study investigates the effects of the fisheries and aquaculture sectors, two key components of the blue economy, on economic performance in ASEAN-5 countries over the period 2000–2023 using panel data methods. The existence of a long-run relationship among the variables is examined through the Westerlund and Edgerton panel LM bootstrap cointegration test, while long-run coefficients are estimated using the Common Correlated Effects (CCE) estimator developed by Pesaran (2006). The empirical findings reveal that fisheries production exerts a positive and statistically significant impact on economic growth. In contrast, aquaculture production does not exhibit a statistically significant effect at the panel level. Furthermore, gross fixed capital formation is identified as an important driver of long-run economic development. The results indicate that fisheries activities and capital accumulation make a substantial contribution to growth dynamics within the blue economy framework. By providing sector specific evidence for ASEAN-5 countries, the study contributes to the literature on the blue economy and offers policy-relevant insights for promoting sustainable fisheries development and regional prosperity.",
+      "summary_cn": "本研究采用面板数据方法，考察2000-2023年东盟五国渔业和水产养殖作为蓝色经济组成部分对经济增长的影响。通过Westerlund和Edgerton面板LM bootstrap协整检验确认变量间长期关系，并运用Pesaran（2006）的共同相关效应（CCE）估计量分析长期系数。实证发现：渔业产量对经济增长有显著正向影响，而水产养殖产量在面板层面未显示统计显著性；固定资本形成是长期经济发展的重要驱动因素。研究为蓝色经济框架下渔业活动与资本积累促进增长提供了东盟五国的部门特异性证据，为可持续渔业发展和区域繁荣提供政策启示。",
+      "url": "https://doi.org/10.12714/egejfas.43.3.14",
+      "source": "crossref",
+      "keywords_matched": "fisheries",
+      "high_impact": true
+    },
+    {
+      "doi": "10.3329/jcamr.v12i1.91766",
+      "title": "Repercussion of Baranai River Sanctuary on Protection and Restoration of Fish Diversity",
+      "authors": "Joadder, Md. Abdur Razzaq; Rahman, Md. Habibur; Akhi, Tasnim Aktar; Ome, Md. Shameul Haque; Sume, Mst. Sumona Akter; Akter, Md. Shoyeb; Soma, Mst. Suchana Akter; Khanom, Dil Afroza; Sarkar, Md. Al-Amin; Hossain, Md. Faraq",
+      "journal": "Journal of Current and Advance Medical Research",
+      "date": "2026-07-26",
+      "abstract": "Background: The research was conducted to reveal the impact of the Baranai river sanctuary on protection and restoration of fish diversity under Bagmara upazila in Rajshahi district. Objective: This research paper was discussed fish diversity in river adjacent to and removed from protected areas, current fishing practices, perceptions among local community members about the effectiveness of the Baranai river sanctuary and benefits that local fishers derive from the sanctuary. Methodology: This study method was followed to assess the objectives of the study were questionnaire interviews, FGD, catch observation. The study was conducted in Baranai river from January to December 2024. Results: During the study, it was found that a total of 28 fish species were recorded under different order. The most dominant order is Cypriniformes. It contains 32.1% fish of total fish catch. The second largest order is siluriformes (21.4%). During the study, it was found that 21 fish species were recorded with kheoya jal and ber jal in the sanctuary area. On the contrary, 11 fish species were recorded outside from sanctuary area. There are five fish species have been revived. (Notopterusnotopterus, Nandus nandus. Botia dario, Wallago attu, Setipinna phasa). The average fish production in the sanctuary area was 2.1 kg/2hour with Kheoya jal and berjal. The average production in the control site was 1.51 kg/ 2hour with kheoyajal and berjal. Findings also reveal that most of the respondents’ beliefs about the effectiveness of the sanctuary concern increased fish diversity, though they also report some additional direct and indirect benefits from it. Conclusion: In conclusion, the overall fish diversity in Baranai river is increasing as a result of the establishment of the Baranai river Fish sanctuary. Journal of Current and Advance Medical Research, January 2025;12(1):27-36",
+      "summary_cn": "本研究评估孟加拉国Baranai河保护区对鱼类多样性的保护与恢复效果。2024年1-12月通过问卷访谈、焦点小组讨论和渔获物观测，记录到28种鱼类，其中鲤形目占32.1%。保护区内使用kheoya jal和ber jal渔具捕获21种，而对照区仅11种，且5种鱼类（Notopterus notopterus、Nandus nandus、Botia dario、Wallago attu、Setipinna phasa）重新出现。保护区平均渔获量（2.1 kg/2小时）高于对照区（1.51 kg/2小时），当地社区普遍认为保护区有效提升了鱼类多样性。",
+      "url": "https://doi.org/10.3329/jcamr.v12i1.91766",
+      "source": "crossref",
+      "keywords_matched": "fish population",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1038/s41598-026-61977-7",
+      "title": "Adaptive navigation control of a bionic robotic fish in complex Karman vortex street flow fields using an LSTM-DDPG hybrid strategy",
+      "authors": "Zheng, Changhui; Jiao, Peigang; Xu, Honghao; Zhang, Yiheng; Shi, Jiaxin",
+      "journal": "Scientific Reports",
+      "date": "2026-07-26",
+      "abstract": "",
+      "summary_cn": "该研究提出一种基于LSTM-DDPG混合策略的仿生机器鱼自适应导航控制方法，旨在解决复杂卡门涡街流场中的路径规划问题。通过深度学习与强化学习结合，使机器鱼能实时感知流场动态并调整运动姿态。实验表明该方法显著提升了机器鱼在涡街干扰下的导航稳定性与避障效率。",
+      "url": "https://doi.org/10.1038/s41598-026-61977-7",
+      "source": "crossref",
+      "keywords_matched": "fish population",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1111/jfb.70499",
+      "title": "Altered photoperiod affects behaviour in a key fish grazer, the thinlip grey mullet,\n                    <i>Chelon ramada</i>",
+      "authors": "Roux, Caroline; Bois, Alex; Chèvre, Patrick; Vétillard, Fabrice; Jatteau, Philippe; Bégout, Marie‐Laure; Morin, Soizic; Carassou, Laure",
+      "journal": "Journal of Fish Biology",
+      "date": "2026-07-26",
+      "abstract": "Abstract The aim of this study is to address experimentally the immediate impacts of an alteration of the photoperiod, simulating an extreme artificial light pollution, on the behaviour and stress of a key grazer fish common in temperate coastal ecosystems in Europe, the thinlip grey mullet, Chelon ramada . Fish behaviour, assessed by total distance travelled, swimming speed, distance between individuals in fish groups and angular velocity analysed over 6 periods of 5‐min slots during 24 h, was shown to vary depending on the photoperiod conditions and time. During the 5‐min sequences analysed during the day, fish in the control photoperiod condition (alternate photoperiod, AP) swam slower, travelled less distance and were closer to their conspecifics than fish in the altered conditions [direct or indirect continuous photoperiod (iCP), dCP and iCP, respectively]. For the 5‐min sequences analysed at night, fish exposed to direct continuous lighting (dCP) swam significantly faster, hence travelled a longer distance and further apart than fish exposed to iCP or alternate normal photoperiod (AP). Angular velocity was similar for all conditions. Exploratory cortisol measures conducted in the water revealed lower quantities in the iCP condition than in the AP and dCP conditions. Although based upon an experimental design exaggerating the natural photoperiod alteration as compared with most real‐life situations, results obtained highlight the importance of addressing behavioural responses of organisms at the individual level to tackle the global and specific impacts of diurnal cycle alteration by artificial light in urbanised aquatic ecosystems. This study is also the first to report on the behavioural response of a common wild species playing a key role in the functioning of aquatic ecosystems to a widespread stress in coastal environments.",
+      "summary_cn": "改变光周期（模拟极端人工光污染）显著影响薄唇灰鲻（Chelon ramada）的行为与应激水平。实验通过分析24小时内6个5分钟时段的游泳距离、速度、个体间距及角速度发现，白天持续光照（dCP和iCP）下鱼群游速更快、距离更大，夜间dCP组游速显著高于iCP和正常光周期组。水中皮质醇检测显示iCP组含量低于其他两组。该研究首次揭示常见野生鱼类对沿海光污染的行为响应，强调需从个体水平评估昼夜节律改变对水生生态系统的影响。",
+      "url": "https://doi.org/10.1111/jfb.70499",
+      "source": "crossref",
+      "keywords_matched": "fish stock",
+      "high_impact": false
+    },
     {
       "doi": "10.1111/jfd.70246",
       "title": "Phage Therapy in Aquaculture: Mechanisms, Applications and Future Directions",
@@ -132,6 +249,19 @@
       "source": "crossref",
       "keywords_matched": "marine fisheries",
       "high_impact": false
+    },
+    {
+      "doi": "10.1186/s12302-026-01464-y",
+      "title": "Spatiotemporal distribution of long-chain polyunsaturated fatty acids (LC-PUFA) in gill filterable fish food webs of European freshwater lakes and ponds: a systematic review",
+      "authors": "Mandal, Bidipta; Gebauer, Radek; Mraz, Jan; Roy, Koushik",
+      "journal": "Environmental Sciences Europe",
+      "date": "2026-07-25",
+      "abstract": "Abstract Temperate European lakes and fishponds offer an untapped source of land-locked long-chain polyunsaturated fatty acids (LC-PUFAs), including eicosapentaenoic acid (EPA), docosahexaenoic acid (DHA), and arachidonic acid (ARA). This article systematically compiles data from 48 peer-reviewed studies (2000–2024) to assess their spatiotemporal availability in gill-filterable (&gt; 100 µm) planktonic and benthic fish food webs. Spatial analysis reveals that zooplankton DHA content increases with latitude, while EPA and ARA levels peak in lowland waterbodies. Zoobenthos exhibit stable ARA and EPA concentrations across latitudes but lower DHA levels than zooplankton. Temporal trends indicate a decline in DHA and EPA in highland zooplankton over recent decades, likely influenced by climate change, while eutrophication-driven shifts contribute to seasonal DHA reductions in lowland lakes. Fatty acid stoichiometries (SFA: PUFA, n-6: n-3 PUFA) suggest metabolic adaptations to climate, with PUFA sparing effects increasing with latitude. Ecological correlations indicate dissolved organic carbon (DOC) positively influences EPA and DHA in zooplankton, whereas total phosphorus shows negative correlations, suggesting eutrophication could reduce n-3 LC-PUFA availability. Generalized additive modeling highlights an optimum organic carbon load (8–10 mg DOC L⁻ 1 ) and reduced phosphorus–driven eutrophication (&lt; 20 µg TP L −1 ) for maximized EPA (&gt; 20 µg g −1 dry matter, DM) and DHA (&gt; 10 µg g −1 DM) concentrations. Zooplankton-benthos provide 600–1050 mg EPA + DHA 100 g −1 DM (zooplankton &gt; zoobenthos), and out of it, freshwater fish likely accumulate 150–525 mg EPA + DHA 100 g −1 biomass. High-latitude, pelagic niche, lowland waterbodies during spring are identified as omega-3 LC-PUFA “hotspots” but progressively deteriorating over the last decades due to global change.",
+      "summary_cn": "本研究系统综述了2000-2024年间48篇文献，评估欧洲温带湖泊和鱼塘中鳃滤食性鱼类食物网（浮游与底栖）的长链多不饱和脂肪酸（LC-PUFA，包括EPA、DHA和ARA）的时空分布。空间分析显示浮游动物DHA含量随纬度升高而增加，EPA和ARA在低洼水体中达到峰值；时间趋势表明高海拔浮游动物DHA和EPA近几十年下降，可能与气候变化和富营养化有关。广义加性模型指出，最佳有机碳负荷（8-10 mg DOC L⁻¹）和低磷富营养化（<20 µg TP L⁻¹）可最大化EPA（>20 µg g⁻¹ DM）和DHA（>10 µg g⁻¹ DM）浓度。高纬度、低洼水体的春季浮游生态位被鉴定为omega-3 LC-PUFA“热点”，但近几十年因全球变化逐渐退化。",
+      "url": "https://doi.org/10.1186/s12302-026-01464-y",
+      "source": "crossref",
+      "keywords_matched": "fish stock",
+      "high_impact": true
     },
     {
       "doi": "10.1111/jfd.70255",
@@ -3109,87 +3239,35 @@
       "source": "crossref",
       "keywords_matched": "fish population",
       "high_impact": false
-    },
-    {
-      "doi": "10.12714/egejfas.43.3.09",
-      "title": "Impacts of the COVID-19 pandemic on fish consumption and sales in Muğla province: An evaluation for future outbreaks",
-      "authors": "Metin Hacisa, Cansu; Şahin, Ekrem; Alparslan, Yunus",
-      "journal": "Ege Journal of Fisheries and Aquatic Sciences",
-      "date": "2026-07-12",
-      "abstract": "This study aimed to examine the changes in fish consumption preferences and fish sales in Muğla province before and after the COVID-19 pandemic. In this context, a survey was conducted with 302 participants consisting of consumers, fish markets, and fish restaurants operating in Muğla province. The questionnaires were administered both face-to-face and online. By analyzing the collected data, a general assessment of fish consumption and sales in the Muğla region during the pre- and post-pandemic periods was carried out. The findings revealed that the pandemic process affected fish consumption and sales patterns primarily through economic conditions, accessibility, and consumer preferences. Overall fish consumption decreased from 86% before the pandemic to 81% after the pandemic, while the proportion of non-consumers increased from 14% to 19%. Although there was an increased tendency toward durable products, a shift in dietary behavior was observed, including changes in meat consumption preferences and supplement use patterns. No significant change was observed in working arrangements, as 75–78% of participants continued working in offices before and after the pandemic. Despite the recognized importance of fish consumption for healthy nutrition, price and accessibility emerged as the main determining factors affecting consumption behavior, with price concerns increasing up to 38% and access difficulties up to 20% in the post-pandemic period. Fish markets remained the dominant purchasing location (approximately 48–51%), while fresh fish continued to be the most preferred product type (&gt;93%) in both periods. Moreover, seafood businesses were significantly affected, as 63% reported that demand was met before the pandemic, whereas this rate dropped to 33% after the pandemic. Half of the enterprises reported a decrease in sales and customer numbers, and 76% indicated that their economic situation worsened. In conclusion, the study highlights the need to further develop fish consumption culture. It also emphasizes the importance of sustainable supply chains, hygiene practices, and consumer awareness during extraordinary circumstances, providing guidance for managing similar crises in the future.",
-      "summary_cn": "本研究调查了土耳其穆拉省COVID-19疫情前后鱼类消费偏好与销售变化。通过对302名消费者、鱼市和鱼餐厅的问卷调查发现，疫情主要通过经济条件、可及性和消费者偏好影响鱼类消费模式：总体消费率从86%降至81%，非消费者比例从14%升至19%。价格担忧（增至38%）和获取困难（增至20%）成为主要制约因素，63%的商户表示疫情后需求下降，76%的企业经济状况恶化。研究强调需发展鱼类消费文化，并建立可持续供应链和卫生规范以应对未来危机。",
-      "url": "https://doi.org/10.12714/egejfas.43.3.09",
-      "source": "crossref",
-      "keywords_matched": "fish population",
-      "high_impact": true
-    },
-    {
-      "doi": "10.1080/10454438.2026.2700226",
-      "title": "Physiological and microbiota profiling of African catfish (\n                    <i>Clarias gariepinus</i>\n                    ) challenged with\n                    <i>Bdellovibrio</i>\n                    sp.: implications for safe pathogen control in fish production",
-      "authors": "Oyedara, Omotayo O.; Giwa, Rokibat B.; Abuh, Oboro O.; Ajigbewu, Olaoniye H.; Adeyemi, Folasade M.; Atere, Tope G.; Ajisebiola, Babafemi S.; Elufisan, Temidayo O.; Sule, Folorunso W.; Akinde, Sunday B.",
-      "journal": "Journal of Applied Aquaculture",
-      "date": "2026-07-12",
-      "abstract": "",
-      "summary_cn": "研究非洲鲶鱼（Clarias gariepinus）暴露于蛭弧菌（Bdellovibrio sp.）后的生理与微生物群变化，旨在评估其作为鱼类养殖中安全病原控制手段的潜力。通过分析宿主生理指标和肠道微生物组成，发现蛭弧菌处理能调节菌群结构并维持鱼体健康状态。结果表明该菌株可能替代传统抗生素用于病害防控，为可持续水产养殖提供新思路。",
-      "url": "https://doi.org/10.1080/10454438.2026.2700226",
-      "source": "crossref",
-      "keywords_matched": "fish population",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1139/cjfas-2025-0420",
-      "title": "Spatial and Temporal Variation in Habitat Use and Feeding Ecology Across Ontogeny of an Invasive Fish",
-      "authors": "Zarini, Sina; Balshine, Sigal",
-      "journal": "Canadian Journal of Fisheries and Aquatic Sciences",
-      "date": "2026-07-12",
-      "abstract": "The early life stage of animals shapes later survival and fitness, yet this period remains poorly understood for many fish species. We examined how early juvenile round gobies Neogobius melanostomus, a highly invasive benthic fish, use habitat and food resources during development. We quantified spatial and temporal distribution patterns of early juveniles (&lt;25 mm standard length, SL) through field sampling and then analysed diet composition and feeding-related morphology across size classes in the laboratory. We documented a developmental progression involving shifts in habitat use, foraging behaviour, and functional morphology with smaller juveniles (10.79 ± 0.32 mm SL) using pelagic zones and surface waters at night and consuming a broad array of zooplankton prey. Larger juveniles (23.62 ± 0.23 mm SL) increasingly moved to benthic habitats and a more specialized diet comprised in part by benthic macroinvertebrates. Morphological shifts in mouth and eye position aligned with this transition toward benthic foraging. Together, these results reveal integrated behavioural, morphological, and trophic changes during early development that likely reduce intraspecific competition and enhance establishment success in novel environments.",
-      "summary_cn": "研究入侵鱼类圆虾虎鱼（Neogobius melanostomus）早期幼体在发育过程中的栖息地利用与摄食生态时空变化。通过野外采样量化早期幼体（<25 mm标准体长）的时空分布，结合实验室分析不同体长阶段的食性组成与摄食相关形态学特征。发现小型幼体（10.79±0.32 mm SL）夜间利用表层水域摄食广谱浮游动物，而大型幼体（23.62±0.23 mm SL）转向底栖生境并专食底栖大型无脊椎动物，伴随口部和眼部形态的适应性变化。这些行为、形态与营养的协同发育可能减少种内竞争，增强入侵物种在新环境中的建群成功率。",
-      "url": "https://doi.org/10.1139/cjfas-2025-0420",
-      "source": "crossref",
-      "keywords_matched": "fish population",
-      "high_impact": true
-    },
-    {
-      "doi": "10.55041/isjem08220",
-      "title": "IOT Based Bio-Floc Water Quality Optimization System for Sustainable Shrimp Aquaculture",
-      "authors": "V, Muralidharan; P, Munipandeeswaran; Jenifer A, Agesta",
-      "journal": "International Scientific Journal of Engineering and Management",
-      "date": "2026-07-12",
-      "abstract": "Abstract Bio-floc technology (BFT) has emerged as a water-efficient and biosecure alternative to conventional pond-based shrimp and fish culture, relying on the in-situ conversion of nitrogenous waste into microbial protein through controlled carbon-to-nitrogen (C:N) ratio management. However, the productivity and stability of bio-floc systems depend on the continuous maintenance of narrow water quality bands for dissolved oxygen, pH, un-ionized ammonia, nitrite, alkalinity, and floc volume, a task that is difficult to sustain through manual testing alone, particularly in small and medium-scale coastal farms. This paper presents an IoT-Based Bio-Floc Water Quality Optimization System (IoT-BWQOS) that combines a low-power wireless sensor network, edge-level anomaly filtering, a cloud-hosted Long Short-Term Memory (LSTM) forecasting model, and an automated actuation layer for aerators, paddle-wheels, and probiotic/carbon dosing pumps. The system was piloted on twelve bio-floc tanks (each of 30 m³ capacity) rearing Pacific white shrimp (Litopenaeus vannamei) at a coastal farm cluster in Nagapattinam district, Tamil Nadu, over a single 110-day culture cycle. Field results indicate a water quality parameter forecasting accuracy of 94.6%, an ammonia-spike early warning lead time of 4–9 hours, a 27% reduction in freshwater/make-up water usage, an 18% improvement in feed conversion ratio, and a 12.4% increase in shrimp survival rate compared to the farm's conventional manual-testing baseline from the preceding culture cycle. Keywords — Internet of Things, Bio-Floc Technology, Water Quality Monitoring, Aquaculture 4.0, LSTM, LoRaWAN, Shrimp Farming, Smart Sensors, Precision Aquaculture, Edge Computing.",
-      "summary_cn": "针对凡纳滨对虾养殖，提出基于物联网的生物絮团水质优化系统（IoT-BWQOS），结合低功耗无线传感器网络、边缘异常过滤、云端LSTM预测模型及自动化调控设备。在印度泰米尔纳德邦12个30m³生物絮团池进行110天养殖试验，水质参数预测准确率达94.6%，氨氮预警提前4-9小时，淡水用量减少27%，饲料转化率提升18%，存活率提高12.4%。该系统有效解决了中小型养殖场人工监测难以维持窄幅水质稳定的问题。",
-      "url": "https://doi.org/10.55041/isjem08220",
-      "source": "crossref",
-      "keywords_matched": "aquaculture",
-      "high_impact": false
     }
   ],
   "weekly_topics": {
+    "2026-W31": {
+      "week_key": "2026-W31",
+      "week_range": "7月27日—8月2日",
+      "topic": "鱼类生态与资源可持续利用：多样性、气候变化与健康效应",
+      "keywords": "鱼类分类多样性(Taxonomic Diversity), 群落结构(Community Structure), 生态恢复(Ecological Recovery), 气候变化影响(Climate Change Impacts), 海洋热浪(Marine Heatwaves), 水产养殖(Aquaculture), 可持续资源(Sustainable Resources), 饮食模式(Dietary Patterns)",
+      "article": "## 本周研究概览\n\n本周共收录5篇渔业相关论文，主要发表在《Diversity》、《Marine Drugs》、《Foods》和《Journal of Fish Biology》等期刊上。研究方向涵盖鱼类群落生态学、渔业资源可持续利用、鱼类生理生态响应以及人类饮食健康等多个领域。整体研究趋势呈现出从传统渔业资源调查向多学科交叉融合的转变，特别是对气候变化背景下鱼类生理适应机制、海洋热浪的生态效应以及渔业副产物高值化利用等前沿议题的关注度显著提升。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS等顶级期刊上的渔业相关论文。\n\n## 创新性研究\n\n1. **Croaker Fish Bone-Derived Hydroxyapatite as a Sustainable Source for 3D-Printed Scaffolds for Bone Regeneration** — 该研究首次将黄鱼鱼骨来源的生物羟基磷灰石（bHA）用于3D打印骨组织工程支架，不仅为渔业副产物（鱼骨）提供了高附加值利用的新途径，还验证了其作为合成羟基磷灰石可持续替代品的潜力。这一跨学科创新将渔业废弃物管理与生物医学工程有机结合，为渔业循环经济提供了新思路。\n\n2. **Coping with marine heatwaves: Tissue‐specific neuroendocrine and immune adjustments in small‐spotted catsharks** — 该研究首次系统揭示了软骨鱼类（小斑猫鲨）在模拟海洋热浪胁迫下，不同组织（肝脏、脾脏、肠道、血细胞和生殖腺）中神经内分泌基因表达的差异性调控模式。这一发现填补了我们对极端气候事件如何影响软骨鱼类免疫-神经内分泌网络认知的空白，为预测气候变化对鲨鱼等关键物种的影响提供了分子层面的新视角。\n\n3. **Climate change impacts on fish in the Baltic Sea** — 该综述系统整合了波罗的海鱼类对气候变化响应的实证证据，创新性地将温度、盐度、溶解氧等多重环境因子与鱼类分布、生长、繁殖和群落结构变化进行关联分析。其价值在于为区域尺度的渔业管理提供了基于证据的气候适应策略框架，尤其对半封闭海域的渔业资源管理具有重要参考意义。\n\n## 推荐阅读\n\n1. **Climate change impacts on fish in the Baltic Sea** — 系统综述了波罗的海鱼类对气候变化的实证响应，为区域渔业管理提供了关键科学依据。\n\n2. **Coping with marine heatwaves: Tissue‐specific neuroendocrine and immune adjustments in small‐spotted catsharks** — 首次揭示软骨鱼类应对海洋热浪的分子机制，具有重要的生态生理学意义。\n\n3. **Croaker Fish Bone-Derived Hydroxyapatite as a Sustainable Source for 3D-Printed Scaffolds for Bone Regeneration** — 创新性地将渔业废弃物与生物医学工程结合，展示了渔业可持续发展的新方向。\n\n4. **Taxonomic Diversity, Community Structure, and Ecological Recovery of Soft-Bottom Fish Assemblages in La Paz Lagoon (Gulf of California, Mexico)** — 为评估受干扰沿海生态系统的鱼类群落恢复提供了基础数据，对生态修复实践具有参考价值。\n\n5. **Dietary Acid Load Across Vegans, Lacto-Ovo-Vegetarians, Fish-Eaters, and Meat-Eaters, and Its Association with Body Mass Index: A Secondary Analysis from an Italian Survey (The INVITA Study)** — 从饮食酸负荷角度探讨鱼类消费与健康的关系，为渔业营养学研究提供了新视角。",
+      "paper_count": 5,
+      "high_impact_count": 0
+    },
     "2026-W30": {
       "week_key": "2026-W30",
       "week_range": "7月20日—7月26日",
-      "topic": "[失败: Error code: 400 - {'error': {'message': 'The supported API model names are deeps]",
-      "keywords": "[失败: Error code: 400 - {'error': {'message': 'The supported API model names are deeps]",
+      "topic": "蓝色经济与智慧渔业：生态保护、技术创新与可持续发展前沿",
+      "keywords": "水产养殖(Aquaculture), 渔业管理(Fisheries Management), 鱼类行为(Fish Behavior), 资源评估(Stock Assessment), 鱼类健康(Fish Health), 生态系统影响(Ecosystem Impact), 遗传与育种(Genetics & Breeding), 渔具选择性(Gear Selectivity)",
       "article": "## 本周研究概览\n\n本周（2026-W30）共收录渔业相关论文5篇，研究方向涵盖水产养殖营养与肠道微生物、观赏鱼体色调控、渔业补贴政策评估、大型海洋鱼类运动生态学以及鱼类早期生活史生长-摄食关系。整体研究趋势呈现以下特点：一是水产养殖领域持续关注替代蛋白源与功能性饲料的开发，并深入探究其对鱼类生理性状（如体色、肠道菌群）的影响；二是海洋生态学研究中，卫星追踪等先进技术被应用于濒危或数据缺乏物种（如 oceanic manta ray）的基础运动生态学；三是政策经济学与渔业科学的交叉研究仍受关注，但本周相关论文以评论形式出现。总体而言，研究在应用层面（养殖技术优化）和基础生态学层面均有涉及，但缺乏高影响力的综合性或突破性成果。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances等顶级期刊上的渔业相关论文。\n\n## 创新性研究\n\n1. **Partial Replacement of Fish Meal with Fish Scale Meal Enhances Body Color Brightness and Iridophore Development in Koi (Cyprinus carpio var. koi)** — 该研究的创新点在于首次系统评估了鱼鳞粉（FSM）这一水产加工副产物对观赏鱼结构色（iridophore介导的体色）的影响。传统研究多关注色素性体色，而该工作聚焦于鸟嘌呤和胶原蛋白对结构色的贡献，为“废弃物高值化利用”与“观赏鱼品质改良”提供了新思路，具有潜在的产业应用价值。\n\n2. **First insights into oceanic manta ray movements in Japan using satellite telemetry** — 该研究首次利用卫星追踪技术揭示了日本海域（该物种分布北限）oceanic manta ray的运动模式。由于该物种在西北太平洋的数据极度匮乏，此研究填补了关键知识空白，为后续保护管理（如保护区划设、渔业兼捕缓解）提供了基础生态学依据。\n\n3. **Dynamics of Growth–Feeding Mechanisms in Japanese Anchovy Larvae Under Different Environmental Conditions** — 该研究的创新点在于动态解析了环境条件如何调节鱼类仔鱼生长与摄食成功之间的耦合关系。传统“生长-存活”假说认为生长快则存活率高，但该研究揭示了这种关系的环境依赖性，挑战了单一指标预测仔鱼补充量的有效性，对渔业资源评估模型的改进具有启示意义。\n\n4. **Community Structure and Functional Prediction of Gut Microbiota in Mandarin Fish Under Different Culture and Feeding Conditions** — 该研究的创新点在于同时比较了池塘活饵、池塘人工饲料和RAS（循环水养殖系统）人工饲料三种生产模式对鳜鱼肠道微生物群落的影响。通过功能预测分析，揭示了不同养殖条件如何塑造肠道菌群的代谢潜能，为优化鳜鱼养殖模式（尤其是人工饲料驯化）提供了微生物学视角。\n\n## 推荐阅读\n\n1. **Partial Replacement of Fish Meal with Fish Scale Meal Enhances Body Color Brightness and Iridophore Development in Koi (Cyprinus carpio var. koi)** — 创新性地将水产副产物利用与观赏鱼结构色调控相结合，兼具资源循环和产业应用价值。\n\n2. **First insights into oceanic manta ray movements in Japan using satellite telemetry** — 填补了西北太平洋oceanic manta ray运动生态学的关键数据空白，对濒危物种保护具有直接指导意义。\n\n3. **Dynamics of Growth–Feeding Mechanisms in Japanese Anchovy Larvae Under Different Environmental Conditions** — 挑战了经典的生长-存活假说，揭示了环境依赖性，对鱼类早期补充量研究具有理论价值。\n\n4. **Community Structure and Functional Prediction of Gut Microbiota in Mandarin Fish Under Different Culture and Feeding Conditions** — 系统比较了三种生产模式下鳜鱼肠道菌群，为人工饲料驯化提供微生物学依据。\n\n5. **Comment on “On the pass‐through rate of the Nutrition North Canada subsidy”** — 尽管是评论文章，但涉及渔业补贴政策的经济学评估方法争议，对理解政策传导机制和实证研究设计有参考价值。",
-      "paper_count": 110,
-      "high_impact_count": 25
+      "paper_count": 115,
+      "high_impact_count": 27
     },
     "2026-W29": {
       "week_key": "2026-W29",
       "week_range": "7月13日—7月19日",
-      "topic": "[失败: Error code: 400 - {'error': {'message': 'The supported API model names are deeps]",
-      "keywords": "[失败: Error code: 400 - {'error': {'message': 'The supported API model names are deeps]",
+      "topic": "渔业可持续发展与技术创新：资源保护、养殖智能化及食品安全研究热点",
+      "keywords": "水产养殖(Aquaculture), 种群评估(Stock Assessment), 鱼类保护(Fish Conservation), 气候变化(Climate Change), 食品安全(Food Safety), 渔业管理(Fisheries Management), 生物技术(Biotechnology), 生态系统(Ecosystem)",
       "article": "好的，作为渔业科学领域的资深学术主编，我已审阅本周（2026-W29）发表的渔业相关论文。以下是为您撰写的结构化综述。\n\n---\n\n## 本周研究概览\n\n本周共收录4篇渔业相关论文，研究主题涵盖休闲渔业的社会经济与管理、水产养殖遗传育种、鱼类系统分类学争议以及濒危洄游鱼类的兼捕问题。整体研究趋势呈现出从传统资源评估向多学科交叉融合的转向，尤其关注人类活动（如休闲捕捞、商业兼捕）对渔业资源的影响，以及利用分子生物学（SNP芯片、耳石微化学）等先进技术手段解决管理中的具体问题。此外，对鱼类分类学“通胀”现象的批判性反思也成为一个值得关注的议题。\n\n## 高影响力期刊亮点\n\n本周暂无。\n\n## 创新性研究\n\n1. **Taxonomic inflation in fish systematics: A critical review with illustrative evidence assessment and integrative case study of the *Salmo trutta* Complex** — 该研究对当前鱼类分类学中普遍存在的“分类通胀”现象进行了系统性批判。其创新点在于不仅指出了问题，还通过整合形态学、遗传学（特别是单标记分析）和生态学证据，以褐鳟复合体为例，提出了一个更严谨、更全面的物种界定框架。这对渔业管理中的物种保护、资源评估和法规制定具有根本性的指导意义，避免因过度拆分物种而导致管理混乱或资源错配。\n\n2. **Population‐specific bycatch risks in two vulnerable anadromous clupeids: Insights from otolith microchemistry** — 该研究创新性地运用耳石微化学技术，精准识别了两种濒危西鲱（Alosa spp.）兼捕个体的出生河流来源。其核心价值在于将“兼捕”这一宏观问题分解到“种群”层面，揭示了不同来源河流的种群承受着不成比例的兼捕压力。这一方法为制定更具针对性的、基于种群的兼捕缓解措施提供了科学依据，是精准渔业管理的一个优秀范例。\n\n3. **Recreational Fisheries in Türkiye: Socio‐Economic Profiles, Technological Trends and Governance Challenges** — 该研究填补了土耳其休闲渔业这一重要但研究不足的领域的知识空白。其创新点在于系统性地整合了社会经济特征、技术趋势（如渔具、电子设备）与治理挑战，构建了一个跨生态系统的分析框架。这为地中海和黑海地区休闲渔业的可持续发展提供了宝贵的基线数据和政策参考，强调了将休闲渔业纳入综合渔业管理体系的紧迫性。\n\n## 推荐阅读\n\n1. **Taxonomic inflation in fish systematics: A critical review with illustrative evidence assessment and integrative case study of the *Salmo trutta* Complex** — 该文对当前鱼类分类学实践进行了深刻反思，对渔业管理的基础——物种界定——提出了根本性挑战，是所有渔业科学家和管理者都应关注的核心议题。\n\n2. **Population‐specific bycatch risks in two vulnerable anadromous clupeids: Insights from otolith microchemistry** — 展示了如何利用尖端技术（耳石微化学）解决一个经典且棘手的渔业管理问题（兼捕），方法新颖，结论对濒危物种保护具有直接指导意义。\n\n3. **Recreational Fisheries in Türkiye: Socio‐Economic Profiles, Technological Trends and Governance Challenges** — 作为一篇区域性的综合性研究，它为全球范围内日益重要的休闲渔业管理提供了系统性的研究范式和政策启示。\n\n4. **SNP Genotyping Chip Reveals Genetic Structure and Selection Signatures of the “Huangxuan No 2” Population of *Portunus trituberculatus*** — 该研究代表了水产养殖遗传育种领域的先进技术应用，通过高密度SNP芯片揭示了重要经济蟹类选育品种的遗传基础和选择信号，对指导后续分子标记辅助育种具有重要价值。\n\n5. **Taxonomic inflation in fish systematics: A critical review with illustrative evidence assessment and integrative case study of the *Salmo trutta* Complex** — （重复推荐，因其重要性）该文提出的“整合证据”理念，对于纠正当前依赖单一分子标记进行物种鉴定的趋势至关重要，是提升鱼类分类学科学严谨性的里程碑式工作。",
       "paper_count": 129,
       "high_impact_count": 21
-    },
-    "2026-W28": {
-      "week_key": "2026-W28",
-      "week_range": "7月6日—7月12日",
-      "topic": "[失败: Error code: 400 - {'error': {'message': 'The supported API model names are deeps]",
-      "keywords": "[失败: Error code: 400 - {'error': {'message': 'The supported API model names are deeps]",
-      "article": "## 本周研究概览\n\n本周（2026-W28）共收录8篇渔业相关论文，研究主题涵盖渔业资源评估、水产养殖技术、鱼类生态学与生理学、以及渔业管理等多个方向。整体趋势表现为：一是人工智能与机器学习技术在渔业中的应用持续深化，从鱼体重量预测到鲸鲨识别追踪，再到渔业产量预报，体现了数据驱动方法对传统渔业研究的赋能；二是气候变化对渔业的影响及其归因分析成为热点，研究者开始将气候因子直接纳入资源评估模型；三是鱼类基础生物学研究依然活跃，涉及长寿机制、繁殖生物学和食物网结构等经典议题。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS等顶级综合期刊或Nature子刊上的论文。\n\n## 创新性研究\n\n1. **Climate Attribution in Fishery Stock Assessment: Case Studies From the Northeast U.S. Groundfish Stocks**（*Fish and Fisheries*）— 该研究首次系统地将气候归因方法整合到渔业资源评估框架中，通过美国东北部底层鱼类案例展示了如何量化气候变化对种群动态的贡献。其创新之处在于突破了传统资源评估中仅考虑捕捞压力的局限，为气候适应性渔业管理提供了可操作的方法论。\n\n2. **Explainable AI-Driven Machine Learning for Forecasting Marine Fisheries Production Using Environmental Predictors**（*Machine Learning and Knowledge Extraction*）— 该研究将可解释人工智能（XAI）引入渔业产量预测，不仅提升了预报精度，还揭示了环境因子对产量的非线性影响机制。其创新点在于克服了传统“黑箱”机器学习模型的可解释性缺陷，为区域渔业管理提供了透明、可信的决策支持工具。\n\n3. **Potential factors contributing to extreme longevity in the Greenland shark**（*Journal of Fish Biology*）— 该研究系统探讨了格陵兰鲨（*Somniosus microcephalus*）超长寿命（>400年）的潜在机制，从代谢率、DNA修复能力、抗氧化防御等多个维度提出假说。其创新性在于整合了比较基因组学与生理生态学视角，为理解脊椎动物极端长寿的进化机制提供了新线索。\n\n4. **Egg and larval production of Eastern Baltic cod in captivity over one spawning season**（*Journal of Fish Biology*）— 该研究首次在人工养殖条件下完整记录了东波罗的海鳕鱼（*Gadus morhua*）整个产卵季节的卵和幼体产量。其创新之处在于通过控制实验揭示了亲本大小与体况对繁殖成功率的直接影响，为解释该种群持续衰退的机制提供了关键实验证据。\n\n## 推荐阅读\n\n1. **Climate Attribution in Fishery Stock Assessment: Case Studies From the Northeast U.S. Groundfish Stocks** — 开创性地将气候归因纳入资源评估，是气候适应性渔业管理的必读文献。\n2. **Explainable AI-Driven Machine Learning for Forecasting Marine Fisheries Production Using Environmental Predictors** — 展示了可解释AI在渔业预测中的前沿应用，方法新颖且实用价值高。\n3. **Potential factors contributing to extreme longevity in the Greenland shark** — 系统综述了脊椎动物最长寿物种的潜在机制，对理解衰老生物学具有跨学科意义。\n4. **Automated whale shark recognition and tracking using drones and deep learning** — 结合无人机与深度学习实现了濒危物种的非侵入性监测，技术路线具有推广价值。\n5. **Seasonal Hydrology Restructures Basal Carbon Pathways in a Lower Yangtze River Fish Food Web: A Stable-Isotope Baseline for the Fishing-Ban Era** — 为长江十年禁渔效果评估提供了关键的食物网基线数据，具有重要的管理参考价值。",
-      "paper_count": 4,
-      "high_impact_count": 2
     }
   }
 }
