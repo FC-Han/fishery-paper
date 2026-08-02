@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-01T09:55:09Z",
+  "last_updated": "2026-08-02T09:52:36Z",
   "total_papers": 246,
-  "new_today": 18,
+  "new_today": 98,
   "papers": [
     {
       "doi": "10.59543/jidmis.v3.1222",
@@ -28,6 +28,45 @@
       "source": "crossref",
       "keywords_matched": "aquaculture",
       "high_impact": true
+    },
+    {
+      "doi": "10.1038/s41598-026-62227-6",
+      "title": "A self-training approach to improve multispecies school classification models in fisheries acoustics data",
+      "authors": "Lekanda, Aitor; Boyra, Guillermo; Handegard, Nils Olav; Louzao, Maite",
+      "journal": "Scientific Reports",
+      "date": "2026-08-01",
+      "abstract": "Abstract Automatic classification models of pelagic species based on trawl–acoustic survey data link echotrace characteristics observed in echosounder echograms to species caught in pelagic trawl hauls. In multispecies ecosystems, developing such models is particularly challenging because pelagic trawls provide probabilistic, proportion‑based species information rather than unambiguous labels for individual schools, which limits the applicability of strictly supervised training and motivates weakly-supervised (probabilistic) learning approaches. This study aims to improve the performance of a previously developed weakly-supervised multi-output classification model through a conservative self-training technique. Using the model’s probabilistic multispecies outputs, self-training gradually transforms the most confident predictions among the poorly-labelled cases into pseudo-labelled ones, increasing the ratio of labelled data and strengthening both model learning and evaluation for the next iterations. The approach was tested on a multi-output classification model trained on small pelagic species in the Bay of Biscay. Self-training improved overall out-of-sample accuracy from 63.5% to 72% (F1-score from 53.7% to 60.7%), maintaining or improving performance for each individual species. Notably, it substantially enhanced performance for species that are abundant but rarely captured in monospecific trawls, such as sardine, whose accuracy increased from 50% to 86% (F1-score from 27.3% to 52.7%). In contrast, performance for species with enough labelled cases remained stable throughout the process.",
+      "summary_cn": "本研究提出一种保守自训练方法，以提升多物种声学数据中鱼类学校分类模型的性能。该方法基于拖网-声学调查数据，利用弱监督多输出模型，逐步将低置信度样本转化为伪标签，增加标记数据比例。在比斯开湾小型中上层鱼类测试中，总体样本外准确率从63.5%提升至72%，F1分数从53.7%升至60.7%，其中沙丁鱼等丰度高但单种拖网捕获少的物种准确率从50%增至86%。该方法有效增强稀有标签物种的分类性能，同时保持其他物种稳定性。",
+      "url": "https://doi.org/10.1038/s41598-026-62227-6",
+      "source": "crossref",
+      "keywords_matched": "fisheries",
+      "high_impact": false
+    },
+    {
+      "doi": "10.12912/27197050/225594",
+      "title": "An intelligent autonomous floating net cage system for water quality management based on adaptive repositioning in aquaculture environments",
+      "authors": "Suprapto, Bhakti Yudho; Dwijayanti, Suci; Okta Setiawan, I Ketut; Irmawan, Irmawan; Arifin, Bustanul; Wai Yie, Leong",
+      "journal": "Ecological Engineering &amp; Environmental Technology",
+      "date": "2026-08-01",
+      "abstract": "",
+      "summary_cn": "本研究提出一种基于自适应重定位的智能自主浮式网箱系统，用于水产养殖环境中的水质管理。系统通过动态调整网箱位置以优化水质条件，旨在提升养殖效率和可持续性。该系统集成智能控制技术，适用于开放水域养殖场景。",
+      "url": "https://doi.org/10.12912/27197050/225594",
+      "source": "crossref",
+      "keywords_matched": "aquaculture",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1038/s41597-026-07518-3",
+      "title": "Chromosome-level genome assembly of three Sparidae fish genomes (goldlined seabream Rhabdosargus sarba, blackhead seabream Acanthopagrus schlegelii, and crimson seabream Evynnis cardinalis) using PacBio and Hi-C sequencing technologies",
+      "authors": "Zhu, Kecheng; Liu, Baosuo; Guo, Huayang; Zhang, Nan; Zhang, Dianchang",
+      "journal": "Scientific Data",
+      "date": "2026-08-01",
+      "abstract": "Abstract Rhabdosargus sarba , Acanthopagrus schlegelii , and Evynnis cardinalis are representative Sparidae fish in the northern South China Sea. In the past century, these species have become economically important marine fishery species in the western Pacific region. Although they are economically very important fish species, high-quality genetic maps for germplasm resource evaluation research are lacking. With the use of PacBio and Hi-C sequencing technologies, the chromosome-level genomes of R. sarba , A. schlegelii , and E. cardinalis were constructed. The final assembly sizes of R. sarba , A. schlegelii , and E. cardinalis were 731.5 Mb, 701.7 Mb, and 736.7 Mb, respectively, with contig N50 values of 6.6 Mb, 16.4 Mb, and 6.9 Mb, respectively. Moreover, 99.75%, 99.11%, and 98.87% of these three Sparidae fish genome sequences on 24 chromosomes with total lengths of 729.6 Mb, 695.5 Mb, and 728.4 Mb, respectively, were successfully anchored. In addition, the average chromosome lengths of these three Sparidae fishes were 30.4 Mb, 29.0 Mb, and 30.3 Mb, respectively. A total of 207.8 Mb, 187.0 Mb, and 205.8 Mb of interspersed repeats and 21,674, 22,011, and 21,915 protein-coding genes were annotated in the genomes of R. sarba , A. schlegelii , and E. cardinalis , respectively. The genomes of these three Sparidae fish species will provide a theoretical foundation not only for facilitating comparative genomic studies but also for genetic breeding programs for the three Sparidae species.",
+      "summary_cn": "本研究利用PacBio和Hi-C测序技术，构建了三种鲷科鱼类（金线鲷、黑头鲷和绯鲷）的染色体水平基因组，组装大小分别为731.5 Mb、701.7 Mb和736.7 Mb，contig N50达6.6–16.4 Mb，并将98.87%–99.75%的序列锚定至24条染色体。基因组注释鉴定出21,674–22,011个蛋白编码基因及大量散在重复序列。这些高质量基因组为三种鲷科鱼类的比较基因组学研究和遗传育种计划提供了重要基础。",
+      "url": "https://doi.org/10.1038/s41597-026-07518-3",
+      "source": "crossref",
+      "keywords_matched": "Scientific Data",
+      "high_impact": false
     },
     {
       "doi": "10.25182/jgp.2026.21.2.127-136",
@@ -1265,6 +1304,19 @@
       "high_impact": false
     },
     {
+      "doi": "10.1016/j.fishres.2026.107828",
+      "title": "Editorial Board",
+      "authors": "",
+      "journal": "Fisheries Research",
+      "date": "2026-07-28",
+      "abstract": "",
+      "summary_cn": "非渔业相关",
+      "url": "https://doi.org/10.1016/j.fishres.2026.107828",
+      "source": "crossref_issn",
+      "keywords_matched": "Fisheries Research",
+      "high_impact": false
+    },
+    {
       "doi": "10.3390/d18080447",
       "title": "Taxonomic Diversity, Community Structure, and Ecological Recovery of Soft-Bottom Fish Assemblages in La Paz Lagoon (Gulf of California, Mexico)",
       "authors": "González, Emelio Barjau; Vivas, Juan Manuel López; Pérez Milicua, Myrna Barjau; Uc, Mónica Lara; Quintana, José Ángel Armenta; Bernal Espinoza, Dariana Guadalupe; Aguilar Parra, Javier; Félix, Elvia Aispuro",
@@ -2240,6 +2292,19 @@
       "high_impact": false
     },
     {
+      "doi": "10.1016/j.jenvman.2026.130489",
+      "title": "Designing free-surface bypasses for fish-friendly inclined bar rack: A CFD parametric study",
+      "authors": "Bon, Guillaume; Chatellier, Ludovic; Le Guer, Yves; Bellot, Cécile; Casiot, Xavier; David, Laurent",
+      "journal": "Journal of Environmental Management",
+      "date": "2026-07-23",
+      "abstract": "",
+      "summary_cn": "本研究通过计算流体力学（CFD）参数化分析，设计鱼友好型倾斜栅条拦污栅的自由水面旁通通道。研究旨在优化旁通结构参数，以改善鱼类通过效率并减少损伤。主要发现包括不同几何配置对水流模式和鱼类通行路径的影响，为实际工程提供设计依据。",
+      "url": "https://doi.org/10.1016/j.jenvman.2026.130489",
+      "source": "crossref",
+      "keywords_matched": "fish population",
+      "high_impact": false
+    },
+    {
       "doi": "10.47191/rajar/v12i7.08",
       "title": "Whatsapp Technology and its Impact on Library Services: A Study of Federal College of Freshwater Fisheries Technology, New-Bussa, Niger State, Nigeria.",
       "authors": "PhD, Olatundun Oluwatoyin OYEWUMI,; BAMIKOLE, Ayobami Oluwabunmi; PhD, Adebola Aderemi OLATOYE,",
@@ -2513,6 +2578,19 @@
       "high_impact": false
     },
     {
+      "doi": "10.1016/j.fishres.2026.107818",
+      "title": "Using life-history information to identify management priorities within an emergent multi-species grey mullet fishery",
+      "authors": "Pritchard, Calum J.; Han, Ayşegül Tuğçe; Macleod, Andrew; Turnbull, Rachel M.; Small, Jamie; Birchenough, Sarah; Pengelly, Simon; Ciotti, Benjamin J.",
+      "journal": "Fisheries Research",
+      "date": "2026-07-22",
+      "abstract": "",
+      "summary_cn": "本研究利用生活史信息为新兴的多物种鲻鱼渔业确定管理优先级。通过分析不同鲻鱼物种的生长、繁殖和死亡等生活史参数，识别出对捕捞压力最敏感的物种和种群特征。研究结果为该渔业的可持续管理提供了基于生态学依据的优先行动建议，有助于优化资源分配和保护措施。",
+      "url": "https://doi.org/10.1016/j.fishres.2026.107818",
+      "source": "crossref_issn",
+      "keywords_matched": "Fisheries Research",
+      "high_impact": false
+    },
+    {
       "doi": "10.20950/1678-2305/bip.2026.52.e1014",
       "title": "Composition of the bycatch associated with Arapaima gigas fisheries in lotic and lentic environments of the Cautário River basin, Rondônia, Brazil Authors",
       "authors": "Pereira, amíria Bárbara Brito; Silva, Eduarda Fernanda de Oliveira da; Pereira, Samara Bruna Brito; Varão, Chirlaine Alves Ribeiro; Barreto, Rodrigo Rios; Chagas, Thales Quintão; Gonzaga Junior, Marcondes Agostinho; Sousa, Raniere Garcez Costa",
@@ -2719,6 +2797,19 @@
       "source": "crossref_issn",
       "keywords_matched": "Canadian J. Fisheries & Aquatic Sciences",
       "high_impact": true
+    },
+    {
+      "doi": "10.1016/j.fishres.2026.107821",
+      "title": "Vulnerability of socio-ecological systems: Assessing the Mayan octopus (Octopus maya) fishery of the Yucatán Peninsula",
+      "authors": "Núñez, Adrian; Salas, Silvia; Velázquez-Abunader, Iván; Arreguín-Sánchez, Francisco",
+      "journal": "Fisheries Research",
+      "date": "2026-07-21",
+      "abstract": "",
+      "summary_cn": "本研究评估了尤卡坦半岛玛雅章鱼（Octopus maya）渔业的 socio-ecological 系统脆弱性，旨在整合生态与社会经济维度以识别关键风险源。通过构建脆弱性评估框架，分析了气候变化、过度捕捞及治理因素对渔业可持续性的综合影响。结果显示，该渔业对环境波动高度敏感，且社区适应能力存在空间差异，为区域化管理提供了优先干预依据。",
+      "url": "https://doi.org/10.1016/j.fishres.2026.107821",
+      "source": "crossref_issn",
+      "keywords_matched": "Fisheries Research",
+      "high_impact": false
     },
     {
       "doi": "10.3390/life16071194",
@@ -3046,6 +3137,32 @@
       "high_impact": false
     },
     {
+      "doi": "10.1016/j.jclepro.2026.148888",
+      "title": "Recirculating aquaculture can reconcile food supply and afforestation in Great Britain",
+      "authors": "Morello, T.F.R.S.; Tingley, D.; Silvestri, A.; Williamson, D.; Bacri, T.; Wilson, R.W.; Bateman, I.J.",
+      "journal": "Journal of Cleaner Production",
+      "date": "2026-07-20",
+      "abstract": "",
+      "summary_cn": "循环水养殖（Recirculating aquaculture）可在英国同时保障食物供应与植树造林目标，通过减少土地占用和水资源消耗，缓解农业与林业用地冲突。该模式有望成为兼顾粮食安全与生态恢复的可持续解决方案。",
+      "url": "https://doi.org/10.1016/j.jclepro.2026.148888",
+      "source": "crossref",
+      "keywords_matched": "aquaculture",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1016/j.fishres.2026.107823",
+      "title": "Extreme environmental conditions are associated with poor recruitment of an estuarine sportfish",
+      "authors": "Coffill-Rivera, Manuel E.; Liu, Zhilong; Lehrter, John C.; Dzwonkowski, Brian; Cope, Jason M.; Gross, Julie M.; Mareska, John; Powers, Sean P.",
+      "journal": "Fisheries Research",
+      "date": "2026-07-20",
+      "abstract": "",
+      "summary_cn": "极端环境条件与河口游钓鱼类（sportfish）的低补充量显著相关。研究基于环境数据与种群补充量关联分析，揭示极端温度、盐度或溶解氧等条件对幼鱼存活和补充成功的负面影响。该发现为河口鱼类资源管理和保护策略制定提供了关键环境指标参考。",
+      "url": "https://doi.org/10.1016/j.fishres.2026.107823",
+      "source": "crossref_issn",
+      "keywords_matched": "Fisheries Research",
+      "high_impact": false
+    },
+    {
       "doi": "10.1142/s1793048026500050",
       "title": "Stability Analysis of a Single Species Fish Population Model with Migration",
       "authors": "Philip, Tony; Dilip, D. S.",
@@ -3083,152 +3200,35 @@
       "source": "crossref",
       "keywords_matched": "seafood sustainability",
       "high_impact": false
-    },
-    {
-      "doi": "10.1111/fog.70064",
-      "title": "Celebrating the Life of Dr. Andrew “Andy” Bakun",
-      "authors": "Werner, Francisco E.; Alheit, Jürgen; Agostini, Vera; Bograd, Steven; Field, John; Hollowed, Anne B.; Lluch‐Cota, Salvador; Mantua, Nate; Perry, R. Ian; Rykaczewski, Ryan R.",
-      "journal": "Fisheries Oceanography",
-      "date": "2026-07-18",
-      "abstract": "",
-      "summary_cn": "非渔业相关",
-      "url": "https://doi.org/10.1111/fog.70064",
-      "source": "crossref_issn",
-      "keywords_matched": "Fisheries Oceanography",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1093/aob/mcag215",
-      "title": "Assessing the potential fish and macroinvertebrate habitat provisioning services of kelp aquaculture in Southeast Alaska",
-      "authors": "Hollarmith, Jordan A; Cates, Rebecca; Valdes, Leah; Domke, Lia; Ledger, Kimberly J; Baetscher, Diana S; Bishop, Alicia; Bayer, Skylar",
-      "journal": "Annals of Botany",
-      "date": "2026-07-18",
-      "abstract": "Abstract Background and Aims Kelp aquaculture is a growing industry in Alaska where it has the potential to influence habitat provisioning for commercially and culturally important species. Given the seasonal presence of cultivated kelp mid-water, farms present a potentially novel habitat that could influence species’ use of the nearshore zone. Methods Over one year, we surveyed two commercial farm sites paired with comparable non-farm control sites, assessing how the biotic assemblages and abiotic environment may be influenced by seasonal farm activities. We used environmental DNA to describe benthic and pelagic fish communities, and visual surveys on SCUBA to identify benthic macroinvertebrates and characterize the benthic environment. We also measured nutrient concentrations, temperature, and salinity. Key Results Fish communities were structured significantly by season (30% of variation) and depth (7.9%) while macroinvertebrate communities were structured significantly by region (17.5%). Due to a missed sample event, the significance of the farm treatment could not be calculated, however the farm treatment 4.3% and 22.3% of variation in the fish and macroinvertebrate communities, respectively. The high effect size of both farm treatment and region in explaining macroinverterbate community variation suggests that communities may be spatially heterogeneous rather than specifically responding to the farm presence. Abiotic variables measured differed seasonally and by depth with no significant difference by farm treatment. Conclusions Our findings suggest minimal influence of the kelp farms on the biotic communities or abiotic environments surveyed. We did not observe unique biotic assemblages in the kelp farm sites which would be indicative of farms providing novel habitat provisioning services. At the farm size and location surveyed, kelp aquaculture did not appear to detract from the important habitat already present. Our results should aid regulators as they make decisions to support the sustainable growth of the industry.",
-      "summary_cn": "本研究评估了阿拉斯加东南部海藻养殖对鱼类和大型底栖无脊椎动物栖息地供给的潜在影响。通过环境DNA和SCUBA视觉调查，对比了商业养殖场与非养殖对照点的生物群落和理化环境。结果显示，鱼类群落主要受季节和深度影响，而大型底栖无脊椎动物群落受区域差异影响显著，养殖处理对群落变异的解释度较低（鱼类4.3%，无脊椎动物22.3%）。结论表明，当前规模和位置的海藻养殖未显著改变近岸生物群落或提供新型栖息地服务，为可持续产业发展提供了监管依据。",
-      "url": "https://doi.org/10.1093/aob/mcag215",
-      "source": "crossref",
-      "keywords_matched": "fish population",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1007/s11665-026-14580-w",
-      "title": "PMMA-Integrated Fish Bone Biowaste-Derived HA-PLGA Scaffolds: Mechanical Strength and Biological Efficacy in Bone Tissue Engineering",
-      "authors": "Deb, Payel; Das Lala, Sumit; Barua, Emon; Nath, Amitabha; Deoghare, Ashish B.",
-      "journal": "Journal of Materials Engineering and Performance",
-      "date": "2026-07-18",
-      "abstract": "",
-      "summary_cn": "利用PMMA整合鱼骨生物废弃物提取的HA-PLGA支架，评估其在骨组织工程中的力学强度与生物效能。研究发现该支架具备良好的机械性能与细胞相容性，为渔业废弃物高值化利用提供新方向。",
-      "url": "https://doi.org/10.1007/s11665-026-14580-w",
-      "source": "crossref",
-      "keywords_matched": "fish population",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1038/s41598-026-61443-4",
-      "title": "Development of an off-grid solar photovoltaic thermoelectric cooling system for sustainable fish preservation",
-      "authors": "El-Sebaee, Islam; Helal, Helal Samy; Elhaddad, Abeer Wagdy; Ibrahim, Ayman",
-      "journal": "Scientific Reports",
-      "date": "2026-07-18",
-      "abstract": "Abstract Keeping fish refrigerated during the fishing process significantly enhances the quality and safety of the fish. This process is highly reliant on traditional and industrial methods, most of which are costly for small-scale fishermen, have reduced effectiveness for some, and depend on fossil fuels, hence generating GHG emissions. Therefore, a shift to controlled clean solar energy is necessary due to its feasibility and potential to reduce GHG emissions. Therefore, it aimed to assess solar energy (SE) use to develop a solar cooling unit (SCU) based on the thermoelectric cooling prototype powered by a solar photovoltaic system for fish preservation during the fishing process. Cooling chamber, heat exchanger, Peltier Modules (PMs), solar power unit, and control unit are considered the main components of the designed SCU. The results indicated that the greatest temperature reduction inside the SCU, 4 ᵒC, was achieved using a triple PM configuration at the highest specific energy consumption with a value of 0.079 kWh/kg, and a minimum performance cooling coefficient with a value of 0.039. Also, the relative cooling performance improvement values were 67 and 108% for dual and triple PM, compared to the single PM, according to the Monte Carlo statistical analysis. Moreover, the economic feasibility study indicators showed that the triple PM attached with the developed SCU is the most economically advantageous, enhancing the shortest payback period of 0.15 years. Furthermore, the robust Monte Carlo simulation revealed that the triple-PM setup provides a 76.2% probability of successfully maintaining critical preservation temperatures (T cool ≤ 7ᵒC) under dynamic field conditions. The findings show that the thermoelectric module has a high potential in improving a direct cooling method. However, future adoption of this cooling system lies critically on new, better conversion efficiency thermoelectric material discoveries and development of higher efficiency systems.",
-      "summary_cn": "本研究开发了一种离网太阳能光伏热电冷却系统，用于渔获物的可持续保鲜。通过评估太阳能利用，构建了基于热电冷却原型和光伏系统的太阳能冷却单元，主要组件包括冷却室、换热器、帕尔贴模块、太阳能电源和控制单元。实验表明，三模块配置可实现最大4°C降温，能耗0.079 kWh/kg，冷却系数0.039；相比单模块，双模块和三模块的相对冷却性能分别提升67%和108%。经济性分析显示三模块配置回收期最短（0.15年），蒙特卡洛模拟表明其在动态条件下维持保鲜温度（≤7°C）的成功概率达76.2%。该热电模块在直接冷却方法中潜力显著，但未来应用依赖于更高转换效率的热电材料突破。",
-      "url": "https://doi.org/10.1038/s41598-026-61443-4",
-      "source": "crossref",
-      "keywords_matched": "fish stock",
-      "high_impact": false
-    },
-    {
-      "doi": "10.9734/ajrcos/2026/v19i7888",
-      "title": "Automated Water Quality Monitoring and Maintenance for Aquaculture Systems",
-      "authors": "Basumatary, Jyotirmoy; Siva, G. J. V.; Harijan, Raj Kuamr; Bhattacharjee, Abhishek; Laskar, Mariam Jabali",
-      "journal": "Asian Journal of Research in Computer Science",
-      "date": "2026-07-18",
-      "abstract": "Maintaining suitable water quality is essential for small-scale aquaculture, but manual monitoring and maintenance can be labour-intensive and inconsistent. This study presents an Internet of Things (IoT)-based automated water monitoring and maintenance system designed for Rohu (Labeo rohita) cultivation. The system integrates pH, temperature, turbidity, and ultrasonic sensors with ESP32 microcontrollers and a Blynk-based mobile interface for real-time monitoring and remote control. The prototype also includes automated fish feeding, pH-balancing substance dispensing, water-level control through a pump, and a water-surface waste-cleaning robot. Sensor performance was evaluated by comparing pH readings with distilled-water measurements, temperature readings with room-temperature measurements, and ultrasonic readings with measured distances. The pH sensor showed a mean absolute error of 0.034 and a root mean square error of 0.044, while the temperature sensor showed a mean absolute error of 0.33 °C and a root mean square error of 0.45 °C. The water-surface waste-cleaning robot was tested in an artificial pond and was able to collect approximately 250 g of floating debris per cleaning cycle. The proposed system demonstrates the feasibility of combining low-cost sensing, wireless monitoring, and automated maintenance functions for small-scale aquaculture. Further field validation is required under operational pond conditions.",
-      "summary_cn": "针对罗非鱼养殖，开发了一套基于物联网的自动化水质监测与维护系统，集成pH、温度、浊度及超声波传感器，通过ESP32微控制器和Blynk移动界面实现实时监控与远程控制。系统还包含自动投饵、pH调节、水位控制及水面垃圾清理机器人功能。传感器测试显示pH和温度的平均绝对误差分别为0.034和0.33°C，垃圾清理机器人单次可收集约250克漂浮物，验证了低成本传感与自动化维护在小规模水产养殖中的可行性。",
-      "url": "https://doi.org/10.9734/ajrcos/2026/v19i7888",
-      "source": "crossref",
-      "keywords_matched": "aquaculture",
-      "high_impact": true
-    },
-    {
-      "doi": "10.1038/s41598-026-61959-9",
-      "title": "Fishery variability across distinct habitat groups in the Indian exclusive economic zone and its teleconnections to large-scale climate drivers",
-      "authors": "Hamza, Faseela; Valsala, Vinu; Varikoden, Hamza",
-      "journal": "Scientific Reports",
-      "date": "2026-07-18",
-      "abstract": "",
-      "summary_cn": "基于印度专属经济区内不同栖息地类型的渔业变异性分析，探讨其与大规模气候驱动因子的遥相关关系。研究发现，不同栖息地群组的渔获量波动与ENSO、IOD等气候模式存在显著关联。该研究为理解气候变化对印度洋渔业资源动态的影响提供了区域尺度的证据。",
-      "url": "https://doi.org/10.1038/s41598-026-61959-9",
-      "source": "crossref",
-      "keywords_matched": "fish habitat",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1139/cjz-2026-0018",
-      "title": "Linking extrinsic with intrinsic factors: the effects of stress on reproduction may be adaptive",
-      "authors": "Blachford, Alistair",
-      "journal": "Canadian Journal of Zoology",
-      "date": "2026-07-18",
-      "abstract": "In small mammal population cycles, after explosive reproduction during the phase of increasing population density the animals slow their reproductive rate during the high-mortality decline phase. Existing theory about reproductive restraint involves delayed compensating benefits, but those are of little value during the decline phase when survival is very unlikely. Changing prevalence of differing genotypes has been ruled out for small mammal populations, so now the reproductive slowdown is attributed to stress, which is known to suppress reproduction and have trans-generation effects. But why are there no stress-immune animals that keep reproducing at a high rate regardless of circumstances? This analysis shows why there is an immediate benefit of reproductive restraint: it both slows the rate of decline and diminishes the probability of local extinction. With a simple model I calculate how reproduction should vary to maximize the probability of persistence under differing mortality rates, and then simulate the evolution of a reaction norm of reproductive effort under cycling mortality rates. I find that animals should restrain reproduction when mortality rates are high or very low. These results link the death rates produced by extrinsic factors with the intrinsic change in reproductive output and show why the effects of stress on reproductive output seem appropriate.",
-      "summary_cn": "本研究探讨小型哺乳动物种群周期中，高死亡率下降阶段繁殖减缓的适应性意义。通过构建模型计算不同死亡率下最大化持续概率的繁殖策略，并模拟循环死亡率下繁殖努力反应规范的进化。结果表明，当死亡率高或极低时，动物应抑制繁殖，这既能减缓种群下降速度，又能降低局部灭绝风险。研究将外在因素导致的死亡率与内在繁殖产出的变化联系起来，解释了应激对繁殖的抑制效应具有适应性。",
-      "url": "https://doi.org/10.1139/cjz-2026-0018",
-      "source": "crossref",
-      "keywords_matched": "fish reproduction",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1111/jfb.70549",
-      "title": "Molecular identification and functional characterization of glucose‐dependent insulinotropic peptide (\n                    <scp>GIP</scp>\n                    ) and its receptor (\n                    <scp>GIPR</scp>\n                    ) in\n                    <i>Micropterus salmoides</i>",
-      "authors": "Yin, Mingyue; Guo, Shihui; Gu, Jianing; Zhang, Ying; Yang, Lili; Zhang, Yanmin; Zhang, Xindang; Chang, Xulu; Feng, Shikun; Naiel, Mohammed A. E.",
-      "journal": "Journal of Fish Biology",
-      "date": "2026-07-18",
-      "abstract": "Abstract As the cheapest feed ingredient, carbohydrates exert a protein‐sparing effect. However, excessive carbohydrate intake can induce hepatic metabolic disorders and lead to metabolic diseases in fish. The GIP/GIPR axis plays a vital role in regulating lipid metabolism and glucose uptake. To evaluate the functions of GIP and GIPR in largemouth bass, we cloned their cDNA sequences. We analysed the tissue‐specific expression of both genes and assessed the role of GIP in regulating glucose and lipid metabolism using hepatocyte studies and GIP interference assays. The largemouth bass gip gene (318 bp) encodes a protein of 105 amino acids, whereas the gipr gene (1614 bp) encodes a protein of 537 amino acids. Tissue distribution analysis revealed high expression of gip mRNA in the stomach. Additionally, gipr mRNA was highly expressed in the brain, foregut, midgut and hindgut. Both high‐carbohydrate and high‐fat intake in largemouth bass resulted in higher gip mRNA in the stomach and lower gipr mRNA expression in the foregut. Primary hepatocyte experiments showed that GIP treatment increased the expression of g6pase , acc1 and fas and decreased the expression of gk , pfk , hsl and lpl . Intraperitoneal injection of GIP small interfering RNA (siRNA) demonstrated that inhibiting GIP expression significantly reduced serum glucose and triglyceride levels. It also decreased the hepatic expression of g6pase , fbp1 , pygl , acc1 , fas and lpl , while increasing the expression of gys2 and hsl . These results suggest that GIP and GIPR regulate glucose and lipid metabolism in largemouth bass.",
-      "summary_cn": "克隆了加州鲈（Micropterus salmoides）GIP和GIPR的cDNA序列，分析其组织表达特征，并通过肝细胞实验和RNA干扰探究GIP对糖脂代谢的调控作用。结果显示，gip mRNA在胃中高表达，gipr mRNA在脑和前中后肠高表达；高糖高脂摄入上调胃gip、下调前肠gipr表达。GIP处理肝细胞上调g6pase、acc1、fas，下调gk、pfk、hsl、lpl；腹腔注射GIP siRNA显著降低血清葡萄糖和甘油三酯，并改变肝脏糖脂代谢相关基因表达。研究表明GIP/GIPR轴参与加州鲈糖脂代谢调控。",
-      "url": "https://doi.org/10.1111/jfb.70549",
-      "source": "crossref_issn",
-      "keywords_matched": "Journal of Fish Biology",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1111/jfb.70578",
-      "title": "Resource use by threatened, native Bull Trout (\n                    <i>Salvelinus confluentus</i>\n                    ) in the presence of two non‐native salmonids",
-      "authors": "Pallard, Jacqueline; Jardine, Tim; Poesch, Mark S.",
-      "journal": "Journal of Fish Biology",
-      "date": "2026-07-18",
-      "abstract": "Abstract Introduction of non‐native species contributes to the global decline of freshwater fishes by disrupting the diet and resources of native species through competition. Despite the potential for non‐native trout (Family: Salmonidae) to compete with native trout, non‐native trout species have been widely introduced worldwide to support recreational fishing. In this study, we examined resource use by native Bull Trout ( Salvelinus confluentus ), a Threatened species, and non‐native Brook Trout ( Salvelinus fontinalis ) and Brown Trout ( Salmo trutta ) in headwater streams in Alberta, Canada. Our objective was to investigate potential for competition and its implications for Bull Trout populations. To assess changes in diet, we used stable isotope analysis. Brook Trout and Brown Trout had higher trophic positions (3.49 ± 0.02 and 3.53 ± 0.02) and greater proportions of terrestrial resources in their diets (0.53 ± 0.02, 0.54 ± 0.03) than Bull Trout (TP = 3.38 ± 0.02, proportion terrestrial = 0.36 ± 0.02), suggesting the non‐native species may outcompete Bull Trout for preferred resources and larger prey. Moreover, a relatively wide isotopic niche of Bull Trout led to a lack of niche partitioning and substantial overlap in niche utilization between sympatric Brook Trout and Bull Trout, supporting the potential for future niche displacement, particularly in scenarios where resources are scarce. These findings underscore the importance of monitoring and managing the invasion of non‐native salmonids in streams where native salmonid populations exist, and the challenges in understanding multi‐species interactions in dynamic habitats. It highlights the need for effective fisheries management and conservation efforts in regions where native freshwater fishes are facing population declines.",
-      "summary_cn": "本研究通过稳定同位素分析，探究加拿大艾伯塔省源头溪流中受威胁的本地Bull Trout与两种非本地鲑科鱼类（Brook Trout和Brown Trout）的资源利用竞争。结果显示，非本地鱼类的营养级（3.49-3.53）和陆源食物比例（0.53-0.54）均显著高于Bull Trout（3.38和0.36），且Bull Trout的生态位宽度较大导致与Brook Trout高度重叠，表明非本地物种可能在资源竞争中占据优势，尤其在资源稀缺时可能引发生态位置换。研究强调需加强非本地鲑科鱼类入侵的监测与管理，以保护本地鱼类种群。",
-      "url": "https://doi.org/10.1111/jfb.70578",
-      "source": "crossref_issn",
-      "keywords_matched": "Journal of Fish Biology",
-      "high_impact": false
     }
   ],
   "weekly_topics": {
     "2026-W31": {
       "week_key": "2026-W31",
       "week_range": "7月27日—8月2日",
-      "topic": "智慧渔业与水产养殖可持续发展前沿",
-      "keywords": "智能水产养殖(Smart Aquaculture), 种群评估(Stock Assessment), 水产食品加工(Fish Food Processing), 鱼类遗传学(Fish Genetics), 渔业管理(Fisheries Management), 鱼类营养(Fish Nutrition), 鱼类迁移(Fish Migration), 水产病害防控(Aquatic Disease Control)",
+      "topic": "智慧养殖与基因组技术：渔业科学前沿热点透视",
+      "keywords": "智能水产养殖(Smart Aquaculture), 种群评估(Stock Assessment), 基因组学(Genomics), 鱼类营养(Fish Nutrition), 渔业管理(Fisheries Management), 水产养殖技术(Aquaculture Technology), 鱼类生态(Fish Ecology), 食品安全(Food Safety)",
       "article": "## 本周研究概览\n\n本周共收录5篇渔业相关论文，主要发表在《Diversity》、《Marine Drugs》、《Foods》和《Journal of Fish Biology》等期刊上。研究方向涵盖鱼类群落生态学、渔业资源可持续利用、鱼类生理生态响应以及人类饮食健康等多个领域。整体研究趋势呈现出从传统渔业资源调查向多学科交叉融合的转变，特别是对气候变化背景下鱼类生理适应机制、海洋热浪的生态效应以及渔业副产物高值化利用等前沿议题的关注度显著提升。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS等顶级期刊上的渔业相关论文。\n\n## 创新性研究\n\n1. **Croaker Fish Bone-Derived Hydroxyapatite as a Sustainable Source for 3D-Printed Scaffolds for Bone Regeneration** — 该研究首次将黄鱼鱼骨来源的生物羟基磷灰石（bHA）用于3D打印骨组织工程支架，不仅为渔业副产物（鱼骨）提供了高附加值利用的新途径，还验证了其作为合成羟基磷灰石可持续替代品的潜力。这一跨学科创新将渔业废弃物管理与生物医学工程有机结合，为渔业循环经济提供了新思路。\n\n2. **Coping with marine heatwaves: Tissue‐specific neuroendocrine and immune adjustments in small‐spotted catsharks** — 该研究首次系统揭示了软骨鱼类（小斑猫鲨）在模拟海洋热浪胁迫下，不同组织（肝脏、脾脏、肠道、血细胞和生殖腺）中神经内分泌基因表达的差异性调控模式。这一发现填补了我们对极端气候事件如何影响软骨鱼类免疫-神经内分泌网络认知的空白，为预测气候变化对鲨鱼等关键物种的影响提供了分子层面的新视角。\n\n3. **Climate change impacts on fish in the Baltic Sea** — 该综述系统整合了波罗的海鱼类对气候变化响应的实证证据，创新性地将温度、盐度、溶解氧等多重环境因子与鱼类分布、生长、繁殖和群落结构变化进行关联分析。其价值在于为区域尺度的渔业管理提供了基于证据的气候适应策略框架，尤其对半封闭海域的渔业资源管理具有重要参考意义。\n\n## 推荐阅读\n\n1. **Climate change impacts on fish in the Baltic Sea** — 系统综述了波罗的海鱼类对气候变化的实证响应，为区域渔业管理提供了关键科学依据。\n\n2. **Coping with marine heatwaves: Tissue‐specific neuroendocrine and immune adjustments in small‐spotted catsharks** — 首次揭示软骨鱼类应对海洋热浪的分子机制，具有重要的生态生理学意义。\n\n3. **Croaker Fish Bone-Derived Hydroxyapatite as a Sustainable Source for 3D-Printed Scaffolds for Bone Regeneration** — 创新性地将渔业废弃物与生物医学工程结合，展示了渔业可持续发展的新方向。\n\n4. **Taxonomic Diversity, Community Structure, and Ecological Recovery of Soft-Bottom Fish Assemblages in La Paz Lagoon (Gulf of California, Mexico)** — 为评估受干扰沿海生态系统的鱼类群落恢复提供了基础数据，对生态修复实践具有参考价值。\n\n5. **Dietary Acid Load Across Vegans, Lacto-Ovo-Vegetarians, Fish-Eaters, and Meat-Eaters, and Its Association with Body Mass Index: A Secondary Analysis from an Italian Survey (The INVITA Study)** — 从饮食酸负荷角度探讨鱼类消费与健康的关系，为渔业营养学研究提供了新视角。",
-      "paper_count": 116,
+      "paper_count": 120,
       "high_impact_count": 17
     },
     "2026-W30": {
       "week_key": "2026-W30",
       "week_range": "7月20日—7月26日",
-      "topic": "蓝色经济与智慧渔业：资源保护、技术创新与可持续发展",
-      "keywords": "水产养殖(Aquaculture), 渔业管理(Fisheries Management), 鱼类行为( Fish Behavior), 鱼类健康(Fish Health), 资源评估(Stock Assessment), 生态修复(Ecological Restoration), 食品安全(Food Safety), 气候变化(Climate Change)",
+      "topic": "蓝色经济与智慧渔业：养殖技术、生态保护及可持续发展前沿",
+      "keywords": "水产养殖(Aquaculture), 渔业管理(Fisheries Management), 鱼类行为( Fish Behavior), 病害防控(Disease Control), 生态修复(Ecological Restoration), 种群评估(Stock Assessment), 渔具选择性(Gear Selectivity), 食品安全(Food Safety)",
       "article": "## 本周研究概览\n\n本周（2026-W30）共收录渔业相关论文5篇，研究方向涵盖水产养殖营养与肠道微生物、观赏鱼体色调控、渔业补贴政策评估、大型海洋鱼类运动生态学以及鱼类早期生活史生长-摄食关系。整体研究趋势呈现以下特点：一是水产养殖领域持续关注替代蛋白源与功能性饲料的开发，并深入探究其对鱼类生理性状（如体色、肠道菌群）的影响；二是海洋生态学研究中，卫星追踪等先进技术被应用于濒危或数据缺乏物种（如 oceanic manta ray）的基础运动生态学；三是政策经济学与渔业科学的交叉研究仍受关注，但本周相关论文以评论形式出现。总体而言，研究在应用层面（养殖技术优化）和基础生态学层面均有涉及，但缺乏高影响力的综合性或突破性成果。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances等顶级期刊上的渔业相关论文。\n\n## 创新性研究\n\n1. **Partial Replacement of Fish Meal with Fish Scale Meal Enhances Body Color Brightness and Iridophore Development in Koi (Cyprinus carpio var. koi)** — 该研究的创新点在于首次系统评估了鱼鳞粉（FSM）这一水产加工副产物对观赏鱼结构色（iridophore介导的体色）的影响。传统研究多关注色素性体色，而该工作聚焦于鸟嘌呤和胶原蛋白对结构色的贡献，为“废弃物高值化利用”与“观赏鱼品质改良”提供了新思路，具有潜在的产业应用价值。\n\n2. **First insights into oceanic manta ray movements in Japan using satellite telemetry** — 该研究首次利用卫星追踪技术揭示了日本海域（该物种分布北限）oceanic manta ray的运动模式。由于该物种在西北太平洋的数据极度匮乏，此研究填补了关键知识空白，为后续保护管理（如保护区划设、渔业兼捕缓解）提供了基础生态学依据。\n\n3. **Dynamics of Growth–Feeding Mechanisms in Japanese Anchovy Larvae Under Different Environmental Conditions** — 该研究的创新点在于动态解析了环境条件如何调节鱼类仔鱼生长与摄食成功之间的耦合关系。传统“生长-存活”假说认为生长快则存活率高，但该研究揭示了这种关系的环境依赖性，挑战了单一指标预测仔鱼补充量的有效性，对渔业资源评估模型的改进具有启示意义。\n\n4. **Community Structure and Functional Prediction of Gut Microbiota in Mandarin Fish Under Different Culture and Feeding Conditions** — 该研究的创新点在于同时比较了池塘活饵、池塘人工饲料和RAS（循环水养殖系统）人工饲料三种生产模式对鳜鱼肠道微生物群落的影响。通过功能预测分析，揭示了不同养殖条件如何塑造肠道菌群的代谢潜能，为优化鳜鱼养殖模式（尤其是人工饲料驯化）提供了微生物学视角。\n\n## 推荐阅读\n\n1. **Partial Replacement of Fish Meal with Fish Scale Meal Enhances Body Color Brightness and Iridophore Development in Koi (Cyprinus carpio var. koi)** — 创新性地将水产副产物利用与观赏鱼结构色调控相结合，兼具资源循环和产业应用价值。\n\n2. **First insights into oceanic manta ray movements in Japan using satellite telemetry** — 填补了西北太平洋oceanic manta ray运动生态学的关键数据空白，对濒危物种保护具有直接指导意义。\n\n3. **Dynamics of Growth–Feeding Mechanisms in Japanese Anchovy Larvae Under Different Environmental Conditions** — 挑战了经典的生长-存活假说，揭示了环境依赖性，对鱼类早期补充量研究具有理论价值。\n\n4. **Community Structure and Functional Prediction of Gut Microbiota in Mandarin Fish Under Different Culture and Feeding Conditions** — 系统比较了三种生产模式下鳜鱼肠道菌群，为人工饲料驯化提供微生物学依据。\n\n5. **Comment on “On the pass‐through rate of the Nutrition North Canada subsidy”** — 尽管是评论文章，但涉及渔业补贴政策的经济学评估方法争议，对理解政策传导机制和实证研究设计有参考价值。",
-      "paper_count": 118,
+      "paper_count": 123,
       "high_impact_count": 29
     },
     "2026-W29": {
       "week_key": "2026-W29",
       "week_range": "7月13日—7月19日",
       "topic": "渔业资源保护与可持续利用研究进展",
-      "keywords": "种群评估(Stock Assessment), 水产养殖(Aquaculture), 鱼类洄游(Fish Migration), 濒危物种保护(Endangered Species Conservation), 渔业资源管理(Fisheries Management), 鱼类生理应激(Fish Stress Physiology), 可持续渔业(Sustainable Fisheries), 栖息地服务(Habitat Services)",
+      "keywords": "种群评估(Stock Assessment), 种质保存(Germplasm Conservation), 濒危鱼类(Endangered Fish), 洄游模型(Migration Model), 发酵水产(Fermented Seafood), 食品安全(Food Safety), 生殖生物学(Reproductive Biology), 资源保护(Conservation)",
       "article": "好的，作为渔业科学领域的资深学术主编，我已审阅本周（2026-W29）发表的渔业相关论文。以下是为您撰写的结构化综述。\n\n---\n\n## 本周研究概览\n\n本周共收录4篇渔业相关论文，研究主题涵盖休闲渔业的社会经济与管理、水产养殖遗传育种、鱼类系统分类学争议以及濒危洄游鱼类的兼捕问题。整体研究趋势呈现出从传统资源评估向多学科交叉融合的转向，尤其关注人类活动（如休闲捕捞、商业兼捕）对渔业资源的影响，以及利用分子生物学（SNP芯片、耳石微化学）等先进技术手段解决管理中的具体问题。此外，对鱼类分类学“通胀”现象的批判性反思也成为一个值得关注的议题。\n\n## 高影响力期刊亮点\n\n本周暂无。\n\n## 创新性研究\n\n1. **Taxonomic inflation in fish systematics: A critical review with illustrative evidence assessment and integrative case study of the *Salmo trutta* Complex** — 该研究对当前鱼类分类学中普遍存在的“分类通胀”现象进行了系统性批判。其创新点在于不仅指出了问题，还通过整合形态学、遗传学（特别是单标记分析）和生态学证据，以褐鳟复合体为例，提出了一个更严谨、更全面的物种界定框架。这对渔业管理中的物种保护、资源评估和法规制定具有根本性的指导意义，避免因过度拆分物种而导致管理混乱或资源错配。\n\n2. **Population‐specific bycatch risks in two vulnerable anadromous clupeids: Insights from otolith microchemistry** — 该研究创新性地运用耳石微化学技术，精准识别了两种濒危西鲱（Alosa spp.）兼捕个体的出生河流来源。其核心价值在于将“兼捕”这一宏观问题分解到“种群”层面，揭示了不同来源河流的种群承受着不成比例的兼捕压力。这一方法为制定更具针对性的、基于种群的兼捕缓解措施提供了科学依据，是精准渔业管理的一个优秀范例。\n\n3. **Recreational Fisheries in Türkiye: Socio‐Economic Profiles, Technological Trends and Governance Challenges** — 该研究填补了土耳其休闲渔业这一重要但研究不足的领域的知识空白。其创新点在于系统性地整合了社会经济特征、技术趋势（如渔具、电子设备）与治理挑战，构建了一个跨生态系统的分析框架。这为地中海和黑海地区休闲渔业的可持续发展提供了宝贵的基线数据和政策参考，强调了将休闲渔业纳入综合渔业管理体系的紧迫性。\n\n## 推荐阅读\n\n1. **Taxonomic inflation in fish systematics: A critical review with illustrative evidence assessment and integrative case study of the *Salmo trutta* Complex** — 该文对当前鱼类分类学实践进行了深刻反思，对渔业管理的基础——物种界定——提出了根本性挑战，是所有渔业科学家和管理者都应关注的核心议题。\n\n2. **Population‐specific bycatch risks in two vulnerable anadromous clupeids: Insights from otolith microchemistry** — 展示了如何利用尖端技术（耳石微化学）解决一个经典且棘手的渔业管理问题（兼捕），方法新颖，结论对濒危物种保护具有直接指导意义。\n\n3. **Recreational Fisheries in Türkiye: Socio‐Economic Profiles, Technological Trends and Governance Challenges** — 作为一篇区域性的综合性研究，它为全球范围内日益重要的休闲渔业管理提供了系统性的研究范式和政策启示。\n\n4. **SNP Genotyping Chip Reveals Genetic Structure and Selection Signatures of the “Huangxuan No 2” Population of *Portunus trituberculatus*** — 该研究代表了水产养殖遗传育种领域的先进技术应用，通过高密度SNP芯片揭示了重要经济蟹类选育品种的遗传基础和选择信号，对指导后续分子标记辅助育种具有重要价值。\n\n5. **Taxonomic inflation in fish systematics: A critical review with illustrative evidence assessment and integrative case study of the *Salmo trutta* Complex** — （重复推荐，因其重要性）该文提出的“整合证据”理念，对于纠正当前依赖单一分子标记进行物种鉴定的趋势至关重要，是提升鱼类分类学科学严谨性的里程碑式工作。",
-      "paper_count": 12,
-      "high_impact_count": 1
+      "paper_count": 3,
+      "high_impact_count": 0
     }
   }
 }
