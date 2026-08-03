@@ -1,8 +1,112 @@
 {
-  "last_updated": "2026-08-02T09:52:36Z",
-  "total_papers": 246,
-  "new_today": 98,
+  "last_updated": "2026-08-03T11:20:15Z",
+  "total_papers": 251,
+  "new_today": 8,
   "papers": [
+    {
+      "doi": "10.3390/w18151882",
+      "title": "Assessing Invasion Risk and Associated Economic Loss of Fish Species Across Global Watersheds Using Machine Learning Algorithms",
+      "authors": "Suh, Sang-Ik; Kim, Dahui; Lee, Bumseok; Lee, Soheon; Ki, Seo Jin",
+      "journal": "Water",
+      "date": "2026-08-03",
+      "abstract": "The intention of this study is to compare invasion risk and economic loss for selected fish species in both different watersheds and countries on a global scale. The potential risk of invasion for four different species was assessed by the prediction models developed from machine learning algorithms and joint dataset comprising species occurrence records and relevant environmental information. Combining invasion risk and unit economic costs derived from a comprehensive invasion cost database also enabled us to calculate the economic loss of invaders in three example countries. Results showed that the multi-layer perceptron algorithm, which was selected as the best model out of them, successfully identified areas of very-high-to-no risk for four selected fishes. The potential risk of invasion was relatively high for Perccottus glenii and low for Salmo trutta in the Republic of Korea, as compared to that of Japan and Australia. In addition, both invasion risk and unit economic costs were found to be largely responsible for the economic loss of selected fish species, specifically the species Petromyzon marinus in Australia. We expect that the methodology proposed in this study can be used to address the potential risk of invasion for non-native species along with other similar models such as species distribution models, and can be used to recommend affordable management options for controlling their populations.",
+      "summary_cn": "本研究利用机器学习算法结合物种分布记录与环境数据，构建预测模型评估全球流域和不同国家中四种鱼类的入侵风险，并整合入侵成本数据库计算经济损失。结果显示多层感知器算法表现最佳，成功划分从极高到无风险区域；在韩国，葛鲈（Perccottus glenii）入侵风险较高，而褐鳟（Salmo trutta）较低，与日本和澳大利亚相比差异显著。经济损失主要受入侵风险和单位经济成本驱动，尤其以澳大利亚的海七鳃鳗（Petromyzon marinus）最为突出。该方法可推广至其他非本地物种的入侵风险评估，并为制定经济可行的种群管控策略提供支持。",
+      "url": "https://doi.org/10.3390/w18151882",
+      "source": "crossref",
+      "keywords_matched": "fish population",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1111/jfb.70603",
+      "title": "Invasives in the dark: An established population of the arrow bulleye\n                    <i>Priacanthus sagittarius</i>\n                    on the aphotic continental slope of the eastern Mediterranean",
+      "authors": "Stern, Nir; Nazarova, Sophia",
+      "journal": "Journal of Fish Biology",
+      "date": "2026-08-03",
+      "abstract": "Abstract Although the eastern Mediterranean is recognized as the most heavily invaded marine region worldwide, such incursions have been documented almost exclusively in coastal and upper‐shelf habitats. Here, we present the first record of a fish invasion into the Mediterranean's aphotic zone, reporting nine specimens of the arrow bulleye Priacanthus sagittarius captured at a depth of 420 m on the sandy continental slope off the Israeli coast. DNA‐based analysis of stomach contents identified deep‐sea prey taxa, providing robust evidence that this non‐indigenous species is actively feeding within the deep benthic environments of the Mediterranean Sea. In addition, analyses of genetic population structure indicate a downward expansion of local continental populations and reveal cryptic diversity between native populations along the Indian and West Pacific Ocean and the Red Sea and invasive Mediterranean populations. The potential ecological consequences of colonizing and exploiting new deep‐sea habitats are also explored.",
+      "summary_cn": "本研究首次记录鱼类入侵地中海无光区，在以色列海岸外420米深的砂质大陆坡捕获9尾箭大眼鲷（Priacanthus sagittarius）。基于DNA的胃含物分析鉴定出深海底栖猎物，证实该外来种在地中海深水环境中主动摄食。种群遗传结构分析显示，本地大陆种群存在向下扩张，并揭示印度洋-西太平洋原生种群与红海-地中海入侵种群间的隐性多样性。研究还探讨了拓殖和利用新深海栖息地的潜在生态后果。",
+      "url": "https://doi.org/10.1111/jfb.70603",
+      "source": "crossref",
+      "keywords_matched": "fish population",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1111/raq.70197",
+      "title": "An Update on Advancement in Genomics Resources for Spiny Lobster Aquaculture Development",
+      "authors": "Lewis, Courtney; Farhadi, Ahmad; Glendinning, Susan; Banks, Thomas; Kelly, Tara; Jeffs, Andrew G.; Villamil, Sandra Infante; Breen, John; Cobcroft, Jennifer M.; Vazirzadeh, Arya",
+      "journal": "Reviews in Aquaculture",
+      "date": "2026-08-03",
+      "abstract": "ABSTRACT The rapid advancement of high‐throughput sequencing technologies has transformed aquaculture genomics, enabling unprecedented insights into the biology and improvement of non‐model aquatic species. Among crustaceans, lobsters represent one of the most commercially valuable yet genomically underexplored taxa. This review synthesises the current state of genomic and transcriptomic resources available for spiny and slipper lobsters (Achelata), contextualising these within the broader decapod framework. We outline key genomic assemblies, transcriptomic atlases, and molecular tools that underpin emerging research on reproduction, nutrition, growth, stress tolerance, and disease resistance. We further highlight how omics‐driven approaches—spanning whole‐genome sequencing, SNP discovery, RNA interference, and nutrigenomics—are reshaping opportunities for selective breeding, reproductive control, and feed optimisation. Recent progress in establishing closed‐cycle aquaculture of Panulirus ornatus now provides the foundation for applying these molecular resources to address key production bottlenecks, including larval duration, cannibalism, and asynchronous moulting. We propose future directions integrating genomics, transcriptomics, and functional tools to accelerate sustainable domestication and genetic improvement of lobsters. Together, these advances mark a pivotal shift toward genomically informed spiny lobster aquaculture.",
+      "summary_cn": "该综述总结了刺龙虾和蝉虾（Achelata）基因组与转录组资源的最新进展，涵盖基因组组装、转录组图谱及分子工具在繁殖、营养、生长、应激耐受和抗病研究中的应用。重点阐述了全基因组测序、SNP发现、RNA干扰及营养基因组学等组学方法如何推动选择性育种、繁殖调控和饲料优化。基于Panulirus ornatus闭式循环养殖的近期突破，提出整合基因组学与功能工具以解决幼虫周期、同类相食和蜕皮不同步等生产瓶颈的未来方向，标志着向基因组指导的刺龙虾养殖转型。",
+      "url": "https://doi.org/10.1111/raq.70197",
+      "source": "crossref",
+      "keywords_matched": "aquaculture",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1111/jfb.70602",
+      "title": "Trophic niche overlap between native and non‐native fishes in central\n                    <scp>Anatolian</scp>\n                    lakes,\n                    <scp>Türkiye</scp>",
+      "authors": "Ramírez‐García, Arely; Korkmaz, Mustafa; Pacheco, Juan Pablo; Tavşanoğlu, Ülkü Nihan; Pita‐Zamudio, Marco V.; Acar, Vildan; Aznarez, Celina; Metin, Melisa; Dede, Cemreay; Yılmaz, Gültekin",
+      "journal": "Journal of Fish Biology",
+      "date": "2026-08-03",
+      "abstract": "Abstract The Central Anatolian region of Türkiye exhibits exceptionally high freshwater fish diversity and endemism and is increasingly exposed to the introduction of non‐native taxa. We examined the diet composition, prey selectivity and interspecific dietary overlap among eight native and five non‐native fish species across seven lakes in Central Anatolia. Fish were sampled using multimesh gill nets and fyke nets, and their stomach contents were identified. In addition, zooplankton and benthic macroinvertebrate communities were quantified to evaluate prey selectivity patterns. Aquatic insects were the main food sources (averaging 60%), followed by cladocerans (25%), for both native and non‐native fish species. Horn's index indicated a high dietary overlap (&gt;0.60) between several native and non‐native species, suggesting substantial overlap in resource use and the potential for exploitative interactions. Native species generally exhibited more specialized diets, whereas non‐native species tended to be generalists. Prey selectivity analysis revealed that both native and non‐native species preferentially consumed aquatic insects over other available prey types, indicating shared reliance on benthic food resources. These findings suggest that non‐native fishes may influence trophic structure and resource use patterns in freshwater ecosystems with high endemism. We emphasize the importance of region‐specific monitoring and management strategies to mitigate the ecological impacts of non‐native fishes and support the conservation of Türkiye's freshwater biodiversity.",
+      "summary_cn": "本研究分析了土耳其安纳托利亚中部7个湖泊中8种本地和5种外来鱼类的食性组成、猎物选择及种间食性重叠。结果显示，水生昆虫（平均60%）和枝角类（25%）是主要食物来源，Horn指数表明多种本地与外来鱼类间存在高度食性重叠（>0.60），且本地种食性更特化，外来种更偏向泛化。两者均优先摄食水生昆虫，提示外来鱼类可能通过资源竞争影响高特有性淡水生态系统的营养结构，需加强区域监测与管理以保护当地生物多样性。",
+      "url": "https://doi.org/10.1111/jfb.70602",
+      "source": "crossref_issn",
+      "keywords_matched": "Journal of Fish Biology",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1111/jfb.70596",
+      "title": "Insights into diet and niche separation in the context of prey availability between two sympatric whiprays in a tropical intertidal estuary",
+      "authors": "Myers, Jaelen; Sheaves, Marcus; Barnett, Adam",
+      "journal": "Journal of Fish Biology",
+      "date": "2026-08-03",
+      "abstract": "Abstract Increasing evidence supports associations between various elasmobranch species and estuarine habitats, particularly during early life stages. However, with substantial knowledge gaps surrounding spatial habitat use and trophic ecology of estuary‐associated species in Australia, we cannot reliably assess the functional importance of these areas or identify relevant drivers of resource partitioning in estuarine food webs. Here, we compared the diets and trophic niches of two sympatric dasyatid species, the Australian whipray Himantura australis and brown whipray Maculabatis toshi, in a tropical estuary in North Queensland. Stomach contents were collected from juvenile specimens in 2022–2025 using gastric lavage, muscle tissue samples were analysed for stable isotopes (δ 13 C, δ 15 N) and invertebrate communities were surveyed to contextualise prey availability in the intertidal zone. Dietary composition differed significantly between species, with H. australis showing a stronger reliance on burrowing crustaceans (e.g., Callianassidae and Mictyridae), while M. toshi consumed more epibenthic crustaceans (e.g., Ogyrididae, Penaeidae, Portunidae). Himantura australis occupied a larger isotopic niche space than M. toshi , and there was no trophic overlap of larger size classes of H. australis (&gt;50 cm disc width) with M. toshi or with smaller conspecifics (&lt;50 cm disc width). Prey availability was spatially variable and indicated that while both species target locally abundant crustacean taxa, resources may be partitioned across different sediment layers. These findings highlight the importance of estuaries as feeding grounds for juvenile rays and suggest that morphological and behavioural adaptations may drive dietary variability between similar species.",
+      "summary_cn": "本研究比较了澳大利亚热带河口两种同域分布的魟鱼——澳洲魟（Himantura australis）和褐魟（Maculabatis toshi）的食性与营养生态位，通过胃内容物分析、稳定同位素（δ¹³C、δ¹⁵N）测定及底栖无脊椎动物群落调查，揭示了猎物可利用性对资源分配的影响。结果显示，两物种食性显著分化：澳洲魟更依赖穴居甲壳类（如Callianassidae和Mictyridae），而褐魟主要摄食表栖甲壳类（如Ogyrididae、Penaeidae、Portunidae）；澳洲魟占据更宽的isotopic niche空间，且大型个体（>50 cm disc width）与褐魟及小型同种个体无营养重叠。猎物空间分布不均，表明两物种虽均利用当地丰富的甲壳类资源，但可能通过不同沉积层进行资源分割。研究强调了河口作为幼年魟鱼摄食场的重要性，并提示形态和行为适应驱动了相似物种间的食性差异。",
+      "url": "https://doi.org/10.1111/jfb.70596",
+      "source": "crossref_issn",
+      "keywords_matched": "Journal of Fish Biology",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1111/jfb.70597",
+      "title": "Biochemical analysis and antimicrobial potential of\n                    <i>Mastacembelus armatus</i>\n                    epidermal mucus",
+      "authors": "Khan, Muhammad Saeed; Ali, Shandana; Qasim, Muhammad; Dawar, Farman Ullah; Ullah, Waheed",
+      "journal": "Journal of Fish Biology",
+      "date": "2026-08-03",
+      "abstract": "Abstract The epidermal mucus of fish plays an important role in innate immunity, providing both physical and biochemical protection through a complex matrix of bioactive molecules. The present study explored the biochemical characterization, bactericidal, and fungicidal activities of Mastacembelus armatus (Zig‐Zag eel) epidermal mucus treated with Aeromonas hydrophila . Extracts of epidermal mucus (ethanolic and acidic) of Mastacembelus armatus showed antimicrobial activity against selected resistant bacteria and fungi. The zone of inhibition (ZOI), which was measured in millimetres, revealed differences in activity between different fungi and bacteria. The acidic extract demonstrated noticeably higher ZOI values against various MDR bacteria and fungi was more effective than the ethanolic extract. Strong peaks in the Fourier transform infrared (FTIR) spectrum of Mastacembelus armatus indicated the presence of metabolic components in the epidermal mucus. The O–H and N–H stretching vibrations, which are indicative of water content and protein‐based molecules such as mucins or amide, are shown by a large peak at 3272.60 cm −1 . This result suggests that fish epidermal mucus has the potential to contribute enormously to the defence of fish against bacteria and fungi. Therefore, this study could be evidence in favour of the substitution of chemical antibiotics with fish epidermal mucus as a new ‘antimicrobial’ introduced in aquaculture and in humans against bacterial infections.",
+      "summary_cn": "本研究对刺鳅（*Mastacembelus armatus*）表皮黏液进行生化分析，并评估其经嗜水气单胞菌诱导后的抗菌和抗真菌活性。酸性提取物对多种多重耐药（MDR）细菌和真菌的抑菌圈（ZOI）显著高于乙醇提取物，FTIR光谱显示3272.60 cm⁻¹处强峰表明存在蛋白质类生物活性分子（如黏蛋白）。结果表明，鱼类表皮黏液可作为水产养殖及人类抗细菌感染的潜在天然抗菌替代品。",
+      "url": "https://doi.org/10.1111/jfb.70597",
+      "source": "crossref_issn",
+      "keywords_matched": "Journal of Fish Biology",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1111/fog.70074",
+      "title": "Tracking Eastward Displacement of Pacific Saury Fishing Grounds Using Nighttime Fishing Radiance: The Role of Early‐Season Kuroshio Extension Variability",
+      "authors": "Tian, Hao; Abe, Hiroto; Liu, Yang; Chen, Bingqing; Kang, Bin; Li, Jianchao; Saitoh, Sei‐Ichi; Cao, Chang; Li, Wenjia; Xu, Hui",
+      "journal": "Fisheries Oceanography",
+      "date": "2026-08-03",
+      "abstract": "ABSTRACT Pacific saury ( Cololabis saira ) is an ecologically and commercially important small pelagic species in the northwestern Pacific, where fishing grounds have shifted markedly eastward in recent years. However, the role of early‐season oceanographic variability in shaping this redistribution remains poorly understood. Using catch records, Automatic identification systems‐derived fishing hours, vessel registry data, and nighttime light (NTL) observations, we examined fishing activity during 2012–2020 and linked fishing‐ground displacement to environmental variability and Kuroshio Extension system (KES) hydrographic conditions. NTL radiance outperformed CPUE and fishing hours in representing environmentally structured fishing‐ground variability, highlighting its value for tracking transboundary displacement in this light‐luring fishery. The optimal random forest model identified mixed layer depth, sea surface salinity, phytoplankton carbon, and sea surface temperature (SST) as the dominant predictors. Radiance‐weighted centers of gravity revealed especially strong eastward displacement in 2019–2020. Early‐season (May–July) displacement was strongly associated with annual displacement, indicating that the annual fishing‐ground pattern was largely preconditioned during the early‐season. Among the dominant environmental variables, SST displacement in the traditional fishing grounds showed the strongest relationship with the eastward shift. Years with longer Kuroshio Extension fronts and higher regional mean KE showed greater eastward displacement, indicating an association between early‐season KES‐related hydrographic variability, thermal reorganization of the traditional fishing grounds, and eastward redistribution. These findings demonstrate the value of nighttime fishing radiance for detecting environmentally structured fishery redistribution and suggest that early‐season KES‐related hydrographic variability is an important oceanographic context for the recent eastward shift of saury fishing grounds.",
+      "summary_cn": "本研究利用2012–2020年捕捞记录、AIS渔船作业时长、船籍数据及夜间灯光（NTL）遥感观测，追踪太平洋秋刀鱼（Cololabis saira）渔场东移动态，并分析其与黑潮延伸体系统（KES）水文变异的关联。NTL辐射度在表征环境驱动的渔场变动方面优于CPUE和作业时长，随机森林模型识别出混合层深度、海表盐度、浮游植物碳及海表温度（SST）为主要预测因子。结果显示2019–2020年渔场重心显著东移，且早期（5–7月）位移与年度位移高度相关，表明年度格局受早期环境条件预 conditioning。传统渔场SST位移与东移关联最强，而黑潮延伸体锋面延长及区域平均动能升高年份对应更大东移幅度，揭示早期KES水文变异通过热重组驱动渔场东向再分布。研究凸显夜间灯光遥感在追踪跨界渔业位移中的价值，并为秋刀鱼渔场近期东移提供重要海洋学背景。",
+      "url": "https://doi.org/10.1111/fog.70074",
+      "source": "crossref_issn",
+      "keywords_matched": "Fisheries Oceanography",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1038/s41598-026-61369-x",
+      "title": "Purple sulfur bacteria convert aquaculture waste into antioxidant-rich single-cell protein through biofloc technology",
+      "authors": "Vahdat, Saeid; Asrami, Manizheh Biabani; Safari, Reza",
+      "journal": "Scientific Reports",
+      "date": "2026-08-02",
+      "abstract": "",
+      "summary_cn": "本研究探讨了紫色硫细菌（purple sulfur bacteria）通过生物絮团技术（biofloc technology）将水产养殖废弃物转化为富含抗氧化剂的单细胞蛋白的可行性。研究重点在于评估该生物转化过程的效率及产物营养价值，为养殖废弃物资源化利用提供新途径。结果表明，该技术可同步实现废弃物减量与高价值蛋白生产，具有在水产饲料中替代传统蛋白源的潜力。",
+      "url": "https://doi.org/10.1038/s41598-026-61369-x",
+      "source": "crossref",
+      "keywords_matched": "aquaculture",
+      "high_impact": false
+    },
     {
       "doi": "10.59543/jidmis.v3.1222",
       "title": "Smart Technology and Innovation in Seaweed Aquaculture: A Global Bibliometric and Scientometric Review",
@@ -3161,74 +3265,35 @@
       "source": "crossref_issn",
       "keywords_matched": "Fisheries Research",
       "high_impact": false
-    },
-    {
-      "doi": "10.1142/s1793048026500050",
-      "title": "Stability Analysis of a Single Species Fish Population Model with Migration",
-      "authors": "Philip, Tony; Dilip, D. S.",
-      "journal": "Biophysical Reviews and Letters",
-      "date": "2026-07-19",
-      "abstract": "In marine fisheries management, the development of suitable harvesting strategies is important for maintaining a substantial proportion of the unharvested fish population. In this paper, we study the spatial dynamics of the fish population put forward by Lundberg and Jonzen, in which the total population is distributed over two habitats, where one area is kept as a reserve and the migration of a certain proportion of adults from the reserve to the harvesting area is allowed. We find out the equilibrium populations, discuss their nature, and derive the conditions for the asymptotic stability of these equilibrium populations of this model represented by a rational system. The results obtained in this paper are useful in obtaining the optimal harvesting strategies with respect to the maximum population growth rates. We also use phase space diagrams to discuss the dynamics of the equilibrium populations.",
-      "summary_cn": "研究单物种鱼类种群迁移模型的空间动态，探讨保护区与捕捞区之间的成鱼迁移对种群平衡的影响。通过分析有理系统模型的平衡点及其渐近稳定性条件，为基于最大种群增长率的优化捕捞策略提供理论依据。相空间图解进一步揭示了平衡种群的动态行为。",
-      "url": "https://doi.org/10.1142/s1793048026500050",
-      "source": "crossref",
-      "keywords_matched": "fish stock",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1007/s10641-026-01877-x",
-      "title": "Characterization and preservation of germline stem cells in endangered beluga sturgeon (Huso huso) gonads: implications for conservation",
-      "authors": "Fadakar, Hediye; Mirzapour, Tooba; Jamshidi, Shirin; Sohrabi, Tooraj",
-      "journal": "Environmental Biology of Fishes",
-      "date": "2026-07-19",
-      "abstract": "",
-      "summary_cn": "本研究旨在表征濒危欧洲鳇（Huso huso）性腺中的生殖干细胞，并探索其保存方法。通过组织学与分子标记鉴定，成功分离并培养了生殖干细胞，为种质资源保存提供了技术基础。该发现对濒危鲟鱼物种的遗传多样性保护及人工繁殖具有重要应用价值。",
-      "url": "https://doi.org/10.1007/s10641-026-01877-x",
-      "source": "crossref",
-      "keywords_matched": "fish conservation",
-      "high_impact": false
-    },
-    {
-      "doi": "10.63338/ijftm.2026.000029",
-      "title": "Global Fermented Meat and Seafood Products: Safety, Processing, and Future Prospects",
-      "authors": "Muruganandam, Kisha; Evander Jebson, David; Mathiyalagan, Madhumitha; Nagarethinam, Baskaran; Sivanandham, Vignesh",
-      "journal": "International Journal of Food Technology and Management",
-      "date": "2026-07-19",
-      "abstract": "Fermented meat and seafood products represent a significant category of traditional foods that have evolved from ancient preservation practices into functionally enriched foods with growing global market relevance. These products are developed through natural or controlled fermentation, where selected microbial communities transform raw substrates into safer, shelf-stable, and sensory-enhanced products. The fermentation process leads to the generation of organic acids, bioactive compounds, and antioxidant metabolites that contribute to improved nutritional quality, extended shelf life, and functional health benefits. With consumer demand shifting toward minimally processed, culturally rooted, and clean-label foods, fermented animal-based products are witnessing renewed interest across both traditional markets and modern food industries. This review consolidates global insights on traditional processing practices, microbial interactions, biochemical transformations, health implications, safety regulations, and market trends related to fermented meat and seafood. It further explores emerging advancements such as precision-controlled fermentation, sustainable bioprocessing, and circular utilization of by-products, highlighting their potential in shaping the future of fermented food systems. By integrating heritage knowledge with contemporary biotechnological innovations, fermented meat and seafood products stand at the intersection of nutrition, culture, safety, and commercial opportunity, positioning them as promising candidates for future-ready functional food development.",
-      "summary_cn": "该综述系统梳理了全球发酵肉及水产品的传统加工工艺、微生物互作、生化转化及健康效应，并探讨了精准发酵、可持续生物加工等新兴技术。研究发现，发酵过程产生的有机酸和生物活性物质可提升产品营养品质与货架期，且消费者对清洁标签食品的需求正推动该领域复兴。文章整合了安全性法规与市场趋势，指出将传统知识与现代生物技术结合，是开发未来功能性发酵食品的关键方向。",
-      "url": "https://doi.org/10.63338/ijftm.2026.000029",
-      "source": "crossref",
-      "keywords_matched": "seafood sustainability",
-      "high_impact": false
     }
   ],
   "weekly_topics": {
+    "2026-W32": {
+      "week_key": "2026-W32",
+      "week_range": "8月3日—8月9日",
+      "topic": "全球鱼类入侵风险与渔业资源演变研究进展",
+      "keywords": "入侵风险(Invasion Risk), 生态位分化(Niche Partitioning), 渔业资源评估(Fisheries Stock Assessment), 基因组学(Genomics), 深海生态(Deep-sea Ecology), 渔场变动(Fishing Ground Shift), 抗菌活性(Antimicrobial Activity), 经济评估(Economic Assessment)",
+      "article": "## 本周研究概览\n\n本周共收录渔业相关论文7篇，研究主题集中于鱼类入侵生态学、营养生态学、渔业海洋学及水产养殖基因组学等方向。其中，入侵生物学占据较大比重（3篇），涵盖全球尺度入侵风险评估、深海aphotic zone入侵记录及外来与本土鱼类的营养生态位重叠分析；此外，渔业资源变动与环境驱动因子的关联研究、鱼类黏膜免疫活性物质开发以及龙虾基因组资源综述亦各有涉及。整体来看，本周研究呈现出从传统资源评估向多学科交叉（机器学习、分子生物学、遥感技术）拓展的趋势，且对生态入侵与气候变化背景下渔业资源响应的关注度显著提升。\n\n## 高影响力期刊亮点\n\n本周暂无发表于Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances等高水平期刊的论文。\n\n## 创新性研究\n\n1. **Assessing Invasion Risk and Associated Economic Loss of Fish Species Across Global Watersheds Using Machine Learning Algorithms**（*Water*）— 该研究将机器学习算法引入全球流域尺度的鱼类入侵风险评估，并首次将经济损失量化纳入预测框架，实现了生态风险与经济影响的耦合分析，为入侵物种管理提供了决策支持新工具。\n\n2. **Invasives in the dark: An established population of the arrow bulleye *Priacanthus sagittarius* on the aphotic continental slope of the eastern Mediterranean**（*Journal of Fish Biology*）— 该研究首次记录鱼类入侵至地中海aphotic zone（无光层），打破了此前入侵记录几乎全部局限于沿岸及上陆架生境的认知，提示深海生态系统同样面临生物入侵威胁，拓展了入侵生态学的研究边界。\n\n3. **Trophic niche overlap between native and non-native fishes in central Anatolian lakes, Türkiye**（*Journal of Fish Biology*）— 该研究系统比较了安纳托利亚中部湖泊中8种本土与5种外来鱼类的食性组成、猎物选择及种间营养重叠，揭示了外来种与高特有性本土鱼类之间的竞争格局，为生物多样性热点区域的入侵管理提供了精细化生态学依据。\n\n4. **Tracking Eastward Displacement of Pacific Saury Fishing Grounds Using Nighttime Fishing Radiance: The Role of Early-Season Kuroshio Extension Variability**（*Fisheries Oceanography*）— 该研究创新性地利用夜间渔船灯光遥感数据追踪秋刀鱼渔场东移过程，并将其与黑潮延伸体早期季节变异建立关联，为理解气候变化背景下小型中上层鱼类资源再分布提供了新的观测手段与分析视角。\n\n## 推荐阅读\n\n1. **Invasives in the dark: An established population of the arrow bulleye *Priacanthus sagittarius* on the aphotic continental slope of the eastern Mediterranean** — 首次揭示深海无光层鱼类入侵现象，具有重要生态学意义与原创性。\n2. **Assessing Invasion Risk and Associated Economic Loss of Fish Species Across Global Watersheds Using Machine Learning Algorithms** — 机器学习与经济损失评估相结合，为入侵物种管理提供了创新性的量化工具。\n3. **Trophic niche overlap between native and non-native fishes in central Anatolian lakes, Türkiye** — 对高特有性湖泊生态系统中外来种竞争效应的细致解析，具有重要保护生物学价值。\n4. **Tracking Eastward Displacement of Pacific Saury Fishing Grounds Using Nighttime Fishing Radiance: The Role of Early-Season Kuroshio Extension Variability** — 遥感夜间灯光数据在渔业海洋学中的创新应用，对理解气候驱动的渔场变迁具有现实意义。\n5. **An Update on Advancement in Genomics Resources for Spiny Lobster Aquaculture Development** — 系统梳理龙虾基因组学最新进展，对水产养殖育种与资源可持续利用具有重要参考价值。",
+      "paper_count": 7,
+      "high_impact_count": 0
+    },
     "2026-W31": {
       "week_key": "2026-W31",
       "week_range": "7月27日—8月2日",
-      "topic": "智慧养殖与基因组技术：渔业科学前沿热点透视",
-      "keywords": "智能水产养殖(Smart Aquaculture), 种群评估(Stock Assessment), 基因组学(Genomics), 鱼类营养(Fish Nutrition), 渔业管理(Fisheries Management), 水产养殖技术(Aquaculture Technology), 鱼类生态(Fish Ecology), 食品安全(Food Safety)",
+      "topic": "智慧养殖与可持续渔业：基因组、智能技术及资源管理新进展",
+      "keywords": "智能水产养殖(Smart Aquaculture), 基因组学(Genomics), 种群评估(Stock Assessment), 鱼类营养(Fish Nutrition), 水产养殖废弃物利用(Aquaculture Waste Utilization), 渔业管理(Fisheries Management), 食品安全(Food Safety), 栖息地模型(Habitat Modeling)",
       "article": "## 本周研究概览\n\n本周共收录5篇渔业相关论文，主要发表在《Diversity》、《Marine Drugs》、《Foods》和《Journal of Fish Biology》等期刊上。研究方向涵盖鱼类群落生态学、渔业资源可持续利用、鱼类生理生态响应以及人类饮食健康等多个领域。整体研究趋势呈现出从传统渔业资源调查向多学科交叉融合的转变，特别是对气候变化背景下鱼类生理适应机制、海洋热浪的生态效应以及渔业副产物高值化利用等前沿议题的关注度显著提升。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS等顶级期刊上的渔业相关论文。\n\n## 创新性研究\n\n1. **Croaker Fish Bone-Derived Hydroxyapatite as a Sustainable Source for 3D-Printed Scaffolds for Bone Regeneration** — 该研究首次将黄鱼鱼骨来源的生物羟基磷灰石（bHA）用于3D打印骨组织工程支架，不仅为渔业副产物（鱼骨）提供了高附加值利用的新途径，还验证了其作为合成羟基磷灰石可持续替代品的潜力。这一跨学科创新将渔业废弃物管理与生物医学工程有机结合，为渔业循环经济提供了新思路。\n\n2. **Coping with marine heatwaves: Tissue‐specific neuroendocrine and immune adjustments in small‐spotted catsharks** — 该研究首次系统揭示了软骨鱼类（小斑猫鲨）在模拟海洋热浪胁迫下，不同组织（肝脏、脾脏、肠道、血细胞和生殖腺）中神经内分泌基因表达的差异性调控模式。这一发现填补了我们对极端气候事件如何影响软骨鱼类免疫-神经内分泌网络认知的空白，为预测气候变化对鲨鱼等关键物种的影响提供了分子层面的新视角。\n\n3. **Climate change impacts on fish in the Baltic Sea** — 该综述系统整合了波罗的海鱼类对气候变化响应的实证证据，创新性地将温度、盐度、溶解氧等多重环境因子与鱼类分布、生长、繁殖和群落结构变化进行关联分析。其价值在于为区域尺度的渔业管理提供了基于证据的气候适应策略框架，尤其对半封闭海域的渔业资源管理具有重要参考意义。\n\n## 推荐阅读\n\n1. **Climate change impacts on fish in the Baltic Sea** — 系统综述了波罗的海鱼类对气候变化的实证响应，为区域渔业管理提供了关键科学依据。\n\n2. **Coping with marine heatwaves: Tissue‐specific neuroendocrine and immune adjustments in small‐spotted catsharks** — 首次揭示软骨鱼类应对海洋热浪的分子机制，具有重要的生态生理学意义。\n\n3. **Croaker Fish Bone-Derived Hydroxyapatite as a Sustainable Source for 3D-Printed Scaffolds for Bone Regeneration** — 创新性地将渔业废弃物与生物医学工程结合，展示了渔业可持续发展的新方向。\n\n4. **Taxonomic Diversity, Community Structure, and Ecological Recovery of Soft-Bottom Fish Assemblages in La Paz Lagoon (Gulf of California, Mexico)** — 为评估受干扰沿海生态系统的鱼类群落恢复提供了基础数据，对生态修复实践具有参考价值。\n\n5. **Dietary Acid Load Across Vegans, Lacto-Ovo-Vegetarians, Fish-Eaters, and Meat-Eaters, and Its Association with Body Mass Index: A Secondary Analysis from an Italian Survey (The INVITA Study)** — 从饮食酸负荷角度探讨鱼类消费与健康的关系，为渔业营养学研究提供了新视角。",
-      "paper_count": 120,
+      "paper_count": 121,
       "high_impact_count": 17
     },
     "2026-W30": {
       "week_key": "2026-W30",
       "week_range": "7月20日—7月26日",
-      "topic": "蓝色经济与智慧渔业：养殖技术、生态保护及可持续发展前沿",
-      "keywords": "水产养殖(Aquaculture), 渔业管理(Fisheries Management), 鱼类行为( Fish Behavior), 病害防控(Disease Control), 生态修复(Ecological Restoration), 种群评估(Stock Assessment), 渔具选择性(Gear Selectivity), 食品安全(Food Safety)",
+      "topic": "蓝色经济与智慧养殖：渔业可持续发展前沿",
+      "keywords": "水产养殖(Aquaculture), 鱼类生物学(Fish Biology), 渔业管理(Fisheries Management), 资源评估(Stock Assessment), 病害防控(Disease Control), 生态修复(Ecological Restoration), 智能渔业(Intelligent Fisheries), 食品安全(Food Safety)",
       "article": "## 本周研究概览\n\n本周（2026-W30）共收录渔业相关论文5篇，研究方向涵盖水产养殖营养与肠道微生物、观赏鱼体色调控、渔业补贴政策评估、大型海洋鱼类运动生态学以及鱼类早期生活史生长-摄食关系。整体研究趋势呈现以下特点：一是水产养殖领域持续关注替代蛋白源与功能性饲料的开发，并深入探究其对鱼类生理性状（如体色、肠道菌群）的影响；二是海洋生态学研究中，卫星追踪等先进技术被应用于濒危或数据缺乏物种（如 oceanic manta ray）的基础运动生态学；三是政策经济学与渔业科学的交叉研究仍受关注，但本周相关论文以评论形式出现。总体而言，研究在应用层面（养殖技术优化）和基础生态学层面均有涉及，但缺乏高影响力的综合性或突破性成果。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances等顶级期刊上的渔业相关论文。\n\n## 创新性研究\n\n1. **Partial Replacement of Fish Meal with Fish Scale Meal Enhances Body Color Brightness and Iridophore Development in Koi (Cyprinus carpio var. koi)** — 该研究的创新点在于首次系统评估了鱼鳞粉（FSM）这一水产加工副产物对观赏鱼结构色（iridophore介导的体色）的影响。传统研究多关注色素性体色，而该工作聚焦于鸟嘌呤和胶原蛋白对结构色的贡献，为“废弃物高值化利用”与“观赏鱼品质改良”提供了新思路，具有潜在的产业应用价值。\n\n2. **First insights into oceanic manta ray movements in Japan using satellite telemetry** — 该研究首次利用卫星追踪技术揭示了日本海域（该物种分布北限）oceanic manta ray的运动模式。由于该物种在西北太平洋的数据极度匮乏，此研究填补了关键知识空白，为后续保护管理（如保护区划设、渔业兼捕缓解）提供了基础生态学依据。\n\n3. **Dynamics of Growth–Feeding Mechanisms in Japanese Anchovy Larvae Under Different Environmental Conditions** — 该研究的创新点在于动态解析了环境条件如何调节鱼类仔鱼生长与摄食成功之间的耦合关系。传统“生长-存活”假说认为生长快则存活率高，但该研究揭示了这种关系的环境依赖性，挑战了单一指标预测仔鱼补充量的有效性，对渔业资源评估模型的改进具有启示意义。\n\n4. **Community Structure and Functional Prediction of Gut Microbiota in Mandarin Fish Under Different Culture and Feeding Conditions** — 该研究的创新点在于同时比较了池塘活饵、池塘人工饲料和RAS（循环水养殖系统）人工饲料三种生产模式对鳜鱼肠道微生物群落的影响。通过功能预测分析，揭示了不同养殖条件如何塑造肠道菌群的代谢潜能，为优化鳜鱼养殖模式（尤其是人工饲料驯化）提供了微生物学视角。\n\n## 推荐阅读\n\n1. **Partial Replacement of Fish Meal with Fish Scale Meal Enhances Body Color Brightness and Iridophore Development in Koi (Cyprinus carpio var. koi)** — 创新性地将水产副产物利用与观赏鱼结构色调控相结合，兼具资源循环和产业应用价值。\n\n2. **First insights into oceanic manta ray movements in Japan using satellite telemetry** — 填补了西北太平洋oceanic manta ray运动生态学的关键数据空白，对濒危物种保护具有直接指导意义。\n\n3. **Dynamics of Growth–Feeding Mechanisms in Japanese Anchovy Larvae Under Different Environmental Conditions** — 挑战了经典的生长-存活假说，揭示了环境依赖性，对鱼类早期补充量研究具有理论价值。\n\n4. **Community Structure and Functional Prediction of Gut Microbiota in Mandarin Fish Under Different Culture and Feeding Conditions** — 系统比较了三种生产模式下鳜鱼肠道菌群，为人工饲料驯化提供微生物学依据。\n\n5. **Comment on “On the pass‐through rate of the Nutrition North Canada subsidy”** — 尽管是评论文章，但涉及渔业补贴政策的经济学评估方法争议，对理解政策传导机制和实证研究设计有参考价值。",
       "paper_count": 123,
       "high_impact_count": 29
-    },
-    "2026-W29": {
-      "week_key": "2026-W29",
-      "week_range": "7月13日—7月19日",
-      "topic": "渔业资源保护与可持续利用研究进展",
-      "keywords": "种群评估(Stock Assessment), 种质保存(Germplasm Conservation), 濒危鱼类(Endangered Fish), 洄游模型(Migration Model), 发酵水产(Fermented Seafood), 食品安全(Food Safety), 生殖生物学(Reproductive Biology), 资源保护(Conservation)",
-      "article": "好的，作为渔业科学领域的资深学术主编，我已审阅本周（2026-W29）发表的渔业相关论文。以下是为您撰写的结构化综述。\n\n---\n\n## 本周研究概览\n\n本周共收录4篇渔业相关论文，研究主题涵盖休闲渔业的社会经济与管理、水产养殖遗传育种、鱼类系统分类学争议以及濒危洄游鱼类的兼捕问题。整体研究趋势呈现出从传统资源评估向多学科交叉融合的转向，尤其关注人类活动（如休闲捕捞、商业兼捕）对渔业资源的影响，以及利用分子生物学（SNP芯片、耳石微化学）等先进技术手段解决管理中的具体问题。此外，对鱼类分类学“通胀”现象的批判性反思也成为一个值得关注的议题。\n\n## 高影响力期刊亮点\n\n本周暂无。\n\n## 创新性研究\n\n1. **Taxonomic inflation in fish systematics: A critical review with illustrative evidence assessment and integrative case study of the *Salmo trutta* Complex** — 该研究对当前鱼类分类学中普遍存在的“分类通胀”现象进行了系统性批判。其创新点在于不仅指出了问题，还通过整合形态学、遗传学（特别是单标记分析）和生态学证据，以褐鳟复合体为例，提出了一个更严谨、更全面的物种界定框架。这对渔业管理中的物种保护、资源评估和法规制定具有根本性的指导意义，避免因过度拆分物种而导致管理混乱或资源错配。\n\n2. **Population‐specific bycatch risks in two vulnerable anadromous clupeids: Insights from otolith microchemistry** — 该研究创新性地运用耳石微化学技术，精准识别了两种濒危西鲱（Alosa spp.）兼捕个体的出生河流来源。其核心价值在于将“兼捕”这一宏观问题分解到“种群”层面，揭示了不同来源河流的种群承受着不成比例的兼捕压力。这一方法为制定更具针对性的、基于种群的兼捕缓解措施提供了科学依据，是精准渔业管理的一个优秀范例。\n\n3. **Recreational Fisheries in Türkiye: Socio‐Economic Profiles, Technological Trends and Governance Challenges** — 该研究填补了土耳其休闲渔业这一重要但研究不足的领域的知识空白。其创新点在于系统性地整合了社会经济特征、技术趋势（如渔具、电子设备）与治理挑战，构建了一个跨生态系统的分析框架。这为地中海和黑海地区休闲渔业的可持续发展提供了宝贵的基线数据和政策参考，强调了将休闲渔业纳入综合渔业管理体系的紧迫性。\n\n## 推荐阅读\n\n1. **Taxonomic inflation in fish systematics: A critical review with illustrative evidence assessment and integrative case study of the *Salmo trutta* Complex** — 该文对当前鱼类分类学实践进行了深刻反思，对渔业管理的基础——物种界定——提出了根本性挑战，是所有渔业科学家和管理者都应关注的核心议题。\n\n2. **Population‐specific bycatch risks in two vulnerable anadromous clupeids: Insights from otolith microchemistry** — 展示了如何利用尖端技术（耳石微化学）解决一个经典且棘手的渔业管理问题（兼捕），方法新颖，结论对濒危物种保护具有直接指导意义。\n\n3. **Recreational Fisheries in Türkiye: Socio‐Economic Profiles, Technological Trends and Governance Challenges** — 作为一篇区域性的综合性研究，它为全球范围内日益重要的休闲渔业管理提供了系统性的研究范式和政策启示。\n\n4. **SNP Genotyping Chip Reveals Genetic Structure and Selection Signatures of the “Huangxuan No 2” Population of *Portunus trituberculatus*** — 该研究代表了水产养殖遗传育种领域的先进技术应用，通过高密度SNP芯片揭示了重要经济蟹类选育品种的遗传基础和选择信号，对指导后续分子标记辅助育种具有重要价值。\n\n5. **Taxonomic inflation in fish systematics: A critical review with illustrative evidence assessment and integrative case study of the *Salmo trutta* Complex** — （重复推荐，因其重要性）该文提出的“整合证据”理念，对于纠正当前依赖单一分子标记进行物种鉴定的趋势至关重要，是提升鱼类分类学科学严谨性的里程碑式工作。",
-      "paper_count": 3,
-      "high_impact_count": 0
     }
   }
 }

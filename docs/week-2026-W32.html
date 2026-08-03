@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球鱼类入侵风险与渔业资源演变研究进展 — 渔业文献每周速览</title>
+<style>
+:root {
+  --bg: #f7fafc; --bg-card: #ffffff; --text: #2d3748;
+  --text-secondary: #718096; --text-muted: #a0aec0; --border: #e2e8f0;
+  --primary: #2b6cb0; --primary-light: #bee3f8; --primary-dark: #1a365d;
+  --accent: #e76f51; --accent-light: #fed7d7;
+  --teal: #319795; --teal-light: #b2f5ea;
+  --gold: #d69e2e; --gold-light: #fefcbf;
+  --shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.10);
+  --radius: 12px; --radius-sm: 8px;
+}
+[data-theme="dark"] {
+  --bg: #1a202c; --bg-card: #2d3748; --text: #e2e8f0;
+  --text-secondary: #a0aec0; --text-muted: #718096; --border: #4a5568;
+  --primary: #90cdf4; --primary-light: #2a4365; --primary-dark: #bee3f8;
+  --accent: #fc8181; --accent-light: #742a2a;
+  --teal: #81e6d9; --teal-light: #234e52;
+  --gold: #f6e05e; --gold-light: #3d3a1a;
+  --shadow: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.5);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;transition:background 0.3s,color 0.3s}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* === Top Bar === */
+.topbar{background:linear-gradient(135deg,#1a365d,#2b6cb0);color:#fff;padding:0.8rem 1.5rem;display:flex;align-items:center;gap:1rem;position:sticky;top:0;z-index:100}
+.back-btn{color:#fff;font-size:0.95rem;font-weight:600;padding:0.4rem 0.8rem;border-radius:var(--radius-sm);border:1.5px solid rgba(255,255,255,0.3);transition:all 0.2s;white-space:nowrap}
+.back-btn:hover{background:rgba(255,255,255,0.15);text-decoration:none}
+.topbar .title-area{flex:1;min-width:0}
+.topbar .week-range{font-size:0.78rem;opacity:0.8}
+.topbar .week-topic{font-size:1rem;font-weight:700;line-height:1.3}
+.topbar .theme-toggle{padding:0.4rem 0.8rem;border:1.5px solid rgba(255,255,255,0.3);border-radius:var(--radius-sm);background:transparent;color:#fff;cursor:pointer;font-size:0.85rem;transition:all 0.2s;white-space:nowrap}
+.topbar .theme-toggle:hover{background:rgba(255,255,255,0.15)}
+
+.container{max-width:1100px;margin:0 auto;padding:1.5rem}
+
+/* === Article Section === */
+.article-section{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;margin-bottom:1.5rem;box-shadow:var(--shadow)}
+.article-section h2{font-size:1.3rem;color:var(--primary-dark);margin:1.5rem 0 0.75rem;padding-bottom:0.4rem;border-bottom:2px solid var(--primary-light)}
+.article-section h2:first-child{margin-top:0}
+.article-section p{margin-bottom:0.8rem;line-height:1.8;color:var(--text)}
+.article-section strong{color:var(--primary-dark)}
+.article-section ol,.article-section ul{padding-left:1.5rem;margin-bottom:0.8rem}
+.article-section li{margin-bottom:0.5rem;line-height:1.7}
+.article-tag{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-right:0.5rem}
+.tag-overview{background:var(--primary-light);color:var(--primary-dark)}
+.tag-highlight{background:var(--accent-light);color:var(--accent)}
+.tag-innovative{background:var(--gold-light);color:var(--gold)}
+.tag-recommend{background:var(--teal-light);color:var(--teal)}
+
+/* === Stats Row === */
+.stats-row{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.stat-mini{padding:0.5rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-secondary)}
+.stat-mini strong{color:var(--primary);font-size:1.1rem}
+
+/* === Controls === */
+.controls{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.search-box{flex:1;min-width:200px;position:relative}
+.search-box input{width:100%;padding:0.6rem 1rem 0.6rem 2.5rem;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:0.9rem;background:var(--bg-card);color:var(--text);transition:border-color 0.2s}
+.search-box input:focus{outline:none;border-color:var(--primary)}
+.search-box .search-icon{position:absolute;left:0.8rem;top:50%;transform:translateY(-50%);color:var(--text-muted);pointer-events:none}
+
+/* === Paper Grid === */
+.section-title{font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:0.75rem;display:flex;align-items:center;gap:0.5rem}
+.paper-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:0.85rem;margin-bottom:1.5rem}
+.paper-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1.1rem;transition:all 0.25s;display:flex;flex-direction:column;position:relative}
+.paper-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);border-color:var(--primary-light)}
+.paper-card.high-impact{border-left:3px solid var(--accent)}
+.paper-card .hi-badge{position:absolute;top:0.5rem;right:0.5rem;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:10px;background:var(--accent-light);color:var(--accent);font-weight:700}
+.paper-card .journal{font-size:0.78rem;color:var(--teal);font-weight:600;margin-bottom:0.3rem}
+.paper-card .title{font-size:0.95rem;font-weight:700;line-height:1.45;margin-bottom:0.35rem}
+.paper-card .title a{color:var(--text)}
+.paper-card .title a:hover{color:var(--primary);text-decoration:none}
+.paper-card .meta{font-size:0.78rem;color:var(--text-muted);margin-bottom:0.6rem;display:flex;flex-wrap:wrap;gap:0.5rem}
+
+/* Chinese Summary */
+.paper-card .summary-cn{background:linear-gradient(135deg,#fffaf0,#fffff0);border-left:3px solid var(--gold);padding:0.7rem 0.85rem;margin-bottom:0.5rem;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:0.88rem;line-height:1.55;color:#744210}
+[data-theme="dark"] .paper-card .summary-cn{background:linear-gradient(135deg,#3d2e1a,#372a10);color:#fbd38d}
+
+.abstract-toggle{font-size:0.8rem;color:var(--primary);cursor:pointer;font-weight:600;user-select:none;display:inline-flex;align-items:center;gap:0.25rem;padding:0.3rem 0;border:none;background:none}
+.abstract-toggle:hover{color:var(--accent)}
+.abstract-toggle .arrow{transition:transform 0.2s;font-size:0.7rem}
+.abstract-toggle.open .arrow{transform:rotate(90deg)}
+.abstract-content{display:none;font-size:0.82rem;color:var(--text-secondary);line-height:1.55;padding:0.5rem 0;border-top:1px dashed var(--border);margin-top:0.4rem}
+.abstract-content.visible{display:block}
+
+.paper-card.hidden{display:none}
+.no-results{display:none;text-align:center;padding:2rem;color:var(--text-muted)}
+.no-results.visible{display:block}
+
+@media(max-width:768px){.paper-grid{grid-template-columns:1fr}.article-section{padding:1.25rem}.topbar{flex-wrap:wrap}.topbar .week-topic{font-size:0.9rem}}
+
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.paper-card{animation:fadeIn 0.4s ease-out}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="back-btn" href="index.html">← 返回主页</a>
+  <div class="title-area">
+    <div class="week-range">8月3日—8月3日</div>
+    <div class="week-topic">全球鱼类入侵风险与渔业资源演变研究进展</div>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <span id="themeIcon">🌙</span> <span id="themeLabel">暗色</span>
+  </button>
+</div>
+
+<div class="container">
+
+  <!-- 深度综述文章 -->
+  
+  <div class="article-section">
+    <h2>本周研究概览</h2>
+
+<p>本周共收录渔业相关论文7篇，研究主题集中于鱼类入侵生态学、营养生态学、渔业海洋学及水产养殖基因组学等方向。其中，入侵生物学占据较大比重（3篇），涵盖全球尺度入侵风险评估、深海aphotic zone入侵记录及外来与本土鱼类的营养生态位重叠分析；此外，渔业资源变动与环境驱动因子的关联研究、鱼类黏膜免疫活性物质开发以及龙虾基因组资源综述亦各有涉及。整体来看，本周研究呈现出从传统资源评估向多学科交叉（机器学习、分子生物学、遥感技术）拓展的趋势，且对生态入侵与气候变化背景下渔业资源响应的关注度显著提升。</p>
+
+<h2>高影响力期刊亮点</h2>
+
+<p>本周暂无发表于Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances等高水平期刊的论文。</p>
+
+<h2>创新性研究</h2>
+
+<ol>
+<li><strong>Assessing Invasion Risk and Associated Economic Loss of Fish Species Across Global Watersheds Using Machine Learning Algorithms</strong>（*Water*）— 该研究将机器学习算法引入全球流域尺度的鱼类入侵风险评估，并首次将经济损失量化纳入预测框架，实现了生态风险与经济影响的耦合分析，为入侵物种管理提供了决策支持新工具。</li>
+</ol>
+
+<ol>
+<li><strong>Invasives in the dark: An established population of the arrow bulleye *Priacanthus sagittarius* on the aphotic continental slope of the eastern Mediterranean</strong>（*Journal of Fish Biology*）— 该研究首次记录鱼类入侵至地中海aphotic zone（无光层），打破了此前入侵记录几乎全部局限于沿岸及上陆架生境的认知，提示深海生态系统同样面临生物入侵威胁，拓展了入侵生态学的研究边界。</li>
+</ol>
+
+<ol>
+<li><strong>Trophic niche overlap between native and non-native fishes in central Anatolian lakes, Türkiye</strong>（*Journal of Fish Biology*）— 该研究系统比较了安纳托利亚中部湖泊中8种本土与5种外来鱼类的食性组成、猎物选择及种间营养重叠，揭示了外来种与高特有性本土鱼类之间的竞争格局，为生物多样性热点区域的入侵管理提供了精细化生态学依据。</li>
+</ol>
+
+<ol>
+<li><strong>Tracking Eastward Displacement of Pacific Saury Fishing Grounds Using Nighttime Fishing Radiance: The Role of Early-Season Kuroshio Extension Variability</strong>（*Fisheries Oceanography*）— 该研究创新性地利用夜间渔船灯光遥感数据追踪秋刀鱼渔场东移过程，并将其与黑潮延伸体早期季节变异建立关联，为理解气候变化背景下小型中上层鱼类资源再分布提供了新的观测手段与分析视角。</li>
+</ol>
+
+<h2>推荐阅读</h2>
+
+<ol>
+<li><strong>Invasives in the dark: An established population of the arrow bulleye *Priacanthus sagittarius* on the aphotic continental slope of the eastern Mediterranean</strong> — 首次揭示深海无光层鱼类入侵现象，具有重要生态学意义与原创性。</li>
+<li><strong>Assessing Invasion Risk and Associated Economic Loss of Fish Species Across Global Watersheds Using Machine Learning Algorithms</strong> — 机器学习与经济损失评估相结合，为入侵物种管理提供了创新性的量化工具。</li>
+<li><strong>Trophic niche overlap between native and non-native fishes in central Anatolian lakes, Türkiye</strong> — 对高特有性湖泊生态系统中外来种竞争效应的细致解析，具有重要保护生物学价值。</li>
+<li><strong>Tracking Eastward Displacement of Pacific Saury Fishing Grounds Using Nighttime Fishing Radiance: The Role of Early-Season Kuroshio Extension Variability</strong> — 遥感夜间灯光数据在渔业海洋学中的创新应用，对理解气候驱动的渔场变迁具有现实意义。</li>
+<li><strong>An Update on Advancement in Genomics Resources for Spiny Lobster Aquaculture Development</strong> — 系统梳理龙虾基因组学最新进展，对水产养殖育种与资源可持续利用具有重要参考价值。</li>
+</ol>
+  </div>
+  
+
+  <!-- 统计 -->
+  <div class="stats-row">
+    <div class="stat-mini">📄 <strong>7</strong> 篇论文</div>
+    <div class="stat-mini">🌟 <strong>0</strong> 篇高影响力期刊</div>
+    <div class="stat-mini">🤖 <strong>7</strong> 篇 AI 中文总结</div>
+    
+    <div class="stat-mini">🏷️ 入侵风险(Invasion Risk) 生态位分化(Niche Partitioning) 渔业资源评估(Fisheries Stock Assessment) 基因组学(Genomics) </div>
+    
+  </div>
+
+  <!-- 搜索 -->
+  <div class="controls">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="搜索标题、作者、摘要..." oninput="filterPapers()">
+    </div>
+  </div>
+
+  <div class="no-results" id="noResults">😕 没有匹配的论文</div>
+
+  <!-- 全部论文列表 -->
+  <div class="section-title">📄 本周全部论文（7 篇）</div>
+  <div class="paper-grid">
+    
+    <div class="paper-card"
+         data-title="tracking eastward displacement of pacific saury fishing grounds using nighttime fishing radiance: the role of early‐season kuroshio extension variability"
+         data-authors="tian, hao; abe, hiroto; liu, yang; chen, bingqing; kang, bin; li, jianchao; saitoh, sei‐ichi; cao, chang; li, wenjia; xu, hui"
+         data-journal="fisheries oceanography"
+         data-abstract="abstract pacific saury ( cololabis saira ) is an ecologically and commercially important small pelagic species in the northwestern pacific, where fishing grounds have shifted markedly eastward in recent years. however, the role of early‐season oceanographic variability in shaping this redistribution remains poorly understood. using catch records, automatic identification systems‐derived fishing hours, vessel registry data, and nighttime light (ntl) observations, we examined fishing activity during 2012–2020 and linked fishing‐ground displacement to environmental variability and kuroshio extension system (kes) hydrographic conditions. ntl radiance outperformed cpue and fishing hours in representing environmentally structured fishing‐ground variability, highlighting its value for tracking transboundary displacement in this light‐luring fishery. the optimal random forest model identified mixed layer depth, sea surface salinity, phytoplankton carbon, and sea surface temperature (sst) as the dominant predictors. radiance‐weighted centers of gravity revealed especially strong eastward displacement in 2019–2020. early‐season (may–july) displacement was strongly associated with annual displacement, indicating that the annual fishing‐ground pattern was largely preconditioned during the early‐season. among the dominant environmental variables, sst displacement in the traditional fishing grounds showed the strongest relationship with the eastward shift. years with longer kuroshio extension fronts and higher regional mean ke showed greater eastward displacement, indicating an association between early‐season kes‐related hydrographic variability, thermal reorganization of the traditional fishing grounds, and eastward redistribution. these findings demonstrate the value of nighttime fishing radiance for detecting environmentally structured fishery redistribution and suggest that early‐season kes‐related hydrographic variability is an important oceanographic context for the recent eastward shift of saury fishing grounds."
+         data-summary="本研究利用2012–2020年捕捞记录、ais渔船作业时长、船籍数据及夜间灯光（ntl）遥感观测，追踪太平洋秋刀鱼（cololabis saira）渔场东移动态，并分析其与黑潮延伸体系统（kes）水文变异的关联。ntl辐射度在表征环境驱动的渔场变动方面优于cpue和作业时长，随机森林模型识别出混合层深度、海表盐度、浮游植物碳及海表温度（sst）为主要预测因子。结果显示2019–2020年渔场重心显著东移，且早期（5–7月）位移与年度位移高度相关，表明年度格局受早期环境条件预 conditioning。传统渔场sst位移与东移关联最强，而黑潮延伸体锋面延长及区域平均动能升高年份对应更大东移幅度，揭示早期kes水文变异通过热重组驱动渔场东向再分布。研究凸显夜间灯光遥感在追踪跨界渔业位移中的价值，并为秋刀鱼渔场近期东移提供重要海洋学背景。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Fisheries Oceanography
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究利用2012–2020年捕捞记录、AIS渔船作业时长、船籍数据及夜间灯光（NTL）遥感观测，追踪太平洋秋刀鱼（Cololabis saira）渔场东移动态，并分析其与黑潮延伸体系统（KES）水文变异的关联。NTL辐射度在表征环境驱动的渔场变动方面优于CPUE和作业时长，随机森林模型识别出混合层深度、海表盐度、浮游植物碳及海表温度（SST）为主要预测因子。结果显示2019–2020年渔场重心显著东移，且早期（5–7月）位移与年度位移高度相关，表明年度格局受早期环境条件预 conditioning。传统渔场SST位移与东移关联最强，而黑潮延伸体锋面延长及区域平均动能升高年份对应更大东移幅度，揭示早期KES水文变异通过热重组驱动渔场东向再分布。研究凸显夜间灯光遥感在追踪跨界渔业位移中的价值，并为秋刀鱼渔场近期东移提供重要海洋学背景。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/fog.70074" target="_blank" rel="noopener">Tracking Eastward Displacement of Pacific Saury Fishing Grounds Using Nighttime Fishing Radiance: The Role of Early‐Season Kuroshio Extension Variability</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Tian, Hao; Abe, Hiroto; Liu, Yang; Chen, Bingqing; Kang, Bin...</span>
+        
+        <span>📅 2026-08-03</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">ABSTRACT Pacific saury ( Cololabis saira ) is an ecologically and commercially important small pelagic species in the northwestern Pacific, where fishing grounds have shifted markedly eastward in recent years. However, the role of early‐season oceanographic variability in shaping this redistribution remains poorly understood. Using catch records, Automatic identification systems‐derived fishing hours, vessel registry data, and nighttime light (NTL) observations, we examined fishing activity during 2012–2020 and linked fishing‐ground displacement to environmental variability and Kuroshio Extension system (KES) hydrographic conditions. NTL radiance outperformed CPUE and fishing hours in representing environmentally structured fishing‐ground variability, highlighting its value for tracking transboundary displacement in this light‐luring fishery. The optimal random forest model identified mixed layer depth, sea surface salinity, phytoplankton carbon, and sea surface temperature (SST) as the dominant predictors. Radiance‐weighted centers of gravity revealed especially strong eastward displacement in 2019–2020. Early‐season (May–July) displacement was strongly associated with annual displacement, indicating that the annual fishing‐ground pattern was largely preconditioned during the early‐season. Among the dominant environmental variables, SST displacement in the traditional fishing grounds showed the strongest relationship with the eastward shift. Years with longer Kuroshio Extension fronts and higher regional mean KE showed greater eastward displacement, indicating an association between early‐season KES‐related hydrographic variability, thermal reorganization of the traditional fishing grounds, and eastward redistribution. These findings demonstrate the value of nighttime fishing radiance for detecting environmentally structured fishery redistribution and suggest that early‐season KES‐related hydrographic variability is an important oceanographic context for the recent eastward shift of saury fishing grounds.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="invasives in the dark: an established population of the arrow bulleye
+                    <i>priacanthus sagittarius</i>
+                    on the aphotic continental slope of the eastern mediterranean"
+         data-authors="stern, nir; nazarova, sophia"
+         data-journal="journal of fish biology"
+         data-abstract="abstract although the eastern mediterranean is recognized as the most heavily invaded marine region worldwide, such incursions have been documented almost exclusively in coastal and upper‐shelf habitats. here, we present the first record of a fish invasion into the mediterranean's aphotic zone, reporting nine specimens of the arrow bulleye priacanthus sagittarius captured at a depth of 420 m on the sandy continental slope off the israeli coast. dna‐based analysis of stomach contents identified deep‐sea prey taxa, providing robust evidence that this non‐indigenous species is actively feeding within the deep benthic environments of the mediterranean sea. in addition, analyses of genetic population structure indicate a downward expansion of local continental populations and reveal cryptic diversity between native populations along the indian and west pacific ocean and the red sea and invasive mediterranean populations. the potential ecological consequences of colonizing and exploiting new deep‐sea habitats are also explored."
+         data-summary="本研究首次记录鱼类入侵地中海无光区，在以色列海岸外420米深的砂质大陆坡捕获9尾箭大眼鲷（priacanthus sagittarius）。基于dna的胃含物分析鉴定出深海底栖猎物，证实该外来种在地中海深水环境中主动摄食。种群遗传结构分析显示，本地大陆种群存在向下扩张，并揭示印度洋-西太平洋原生种群与红海-地中海入侵种群间的隐性多样性。研究还探讨了拓殖和利用新深海栖息地的潜在生态后果。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究首次记录鱼类入侵地中海无光区，在以色列海岸外420米深的砂质大陆坡捕获9尾箭大眼鲷（Priacanthus sagittarius）。基于DNA的胃含物分析鉴定出深海底栖猎物，证实该外来种在地中海深水环境中主动摄食。种群遗传结构分析显示，本地大陆种群存在向下扩张，并揭示印度洋-西太平洋原生种群与红海-地中海入侵种群间的隐性多样性。研究还探讨了拓殖和利用新深海栖息地的潜在生态后果。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70603" target="_blank" rel="noopener">Invasives in the dark: An established population of the arrow bulleye
+                    <i>Priacanthus sagittarius</i>
+                    on the aphotic continental slope of the eastern Mediterranean</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Stern, Nir; Nazarova, Sophia</span>
+        
+        <span>📅 2026-08-03</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract Although the eastern Mediterranean is recognized as the most heavily invaded marine region worldwide, such incursions have been documented almost exclusively in coastal and upper‐shelf habitats. Here, we present the first record of a fish invasion into the Mediterranean's aphotic zone, reporting nine specimens of the arrow bulleye Priacanthus sagittarius captured at a depth of 420 m on the sandy continental slope off the Israeli coast. DNA‐based analysis of stomach contents identified deep‐sea prey taxa, providing robust evidence that this non‐indigenous species is actively feeding within the deep benthic environments of the Mediterranean Sea. In addition, analyses of genetic population structure indicate a downward expansion of local continental populations and reveal cryptic diversity between native populations along the Indian and West Pacific Ocean and the Red Sea and invasive Mediterranean populations. The potential ecological consequences of colonizing and exploiting new deep‐sea habitats are also explored.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="trophic niche overlap between native and non‐native fishes in central
+                    <scp>anatolian</scp>
+                    lakes,
+                    <scp>türkiye</scp>"
+         data-authors="ramírez‐garcía, arely; korkmaz, mustafa; pacheco, juan pablo; tavşanoğlu, ülkü nihan; pita‐zamudio, marco v.; acar, vildan; aznarez, celina; metin, melisa; dede, cemreay; yılmaz, gültekin"
+         data-journal="journal of fish biology"
+         data-abstract="abstract the central anatolian region of türkiye exhibits exceptionally high freshwater fish diversity and endemism and is increasingly exposed to the introduction of non‐native taxa. we examined the diet composition, prey selectivity and interspecific dietary overlap among eight native and five non‐native fish species across seven lakes in central anatolia. fish were sampled using multimesh gill nets and fyke nets, and their stomach contents were identified. in addition, zooplankton and benthic macroinvertebrate communities were quantified to evaluate prey selectivity patterns. aquatic insects were the main food sources (averaging 60%), followed by cladocerans (25%), for both native and non‐native fish species. horn's index indicated a high dietary overlap (&gt;0.60) between several native and non‐native species, suggesting substantial overlap in resource use and the potential for exploitative interactions. native species generally exhibited more specialized diets, whereas non‐native species tended to be generalists. prey selectivity analysis revealed that both native and non‐native species preferentially consumed aquatic insects over other available prey types, indicating shared reliance on benthic food resources. these findings suggest that non‐native fishes may influence trophic structure and resource use patterns in freshwater ecosystems with high endemism. we emphasize the importance of region‐specific monitoring and management strategies to mitigate the ecological impacts of non‐native fishes and support the conservation of türkiye's freshwater biodiversity."
+         data-summary="本研究分析了土耳其安纳托利亚中部7个湖泊中8种本地和5种外来鱼类的食性组成、猎物选择及种间食性重叠。结果显示，水生昆虫（平均60%）和枝角类（25%）是主要食物来源，horn指数表明多种本地与外来鱼类间存在高度食性重叠（>0.60），且本地种食性更特化，外来种更偏向泛化。两者均优先摄食水生昆虫，提示外来鱼类可能通过资源竞争影响高特有性淡水生态系统的营养结构，需加强区域监测与管理以保护当地生物多样性。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究分析了土耳其安纳托利亚中部7个湖泊中8种本地和5种外来鱼类的食性组成、猎物选择及种间食性重叠。结果显示，水生昆虫（平均60%）和枝角类（25%）是主要食物来源，Horn指数表明多种本地与外来鱼类间存在高度食性重叠（>0.60），且本地种食性更特化，外来种更偏向泛化。两者均优先摄食水生昆虫，提示外来鱼类可能通过资源竞争影响高特有性淡水生态系统的营养结构，需加强区域监测与管理以保护当地生物多样性。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70602" target="_blank" rel="noopener">Trophic niche overlap between native and non‐native fishes in central
+                    <scp>Anatolian</scp>
+                    lakes,
+                    <scp>Türkiye</scp></a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Ramírez‐García, Arely; Korkmaz, Mustafa; Pacheco, Juan Pablo...</span>
+        
+        <span>📅 2026-08-03</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract The Central Anatolian region of Türkiye exhibits exceptionally high freshwater fish diversity and endemism and is increasingly exposed to the introduction of non‐native taxa. We examined the diet composition, prey selectivity and interspecific dietary overlap among eight native and five non‐native fish species across seven lakes in Central Anatolia. Fish were sampled using multimesh gill nets and fyke nets, and their stomach contents were identified. In addition, zooplankton and benthic macroinvertebrate communities were quantified to evaluate prey selectivity patterns. Aquatic insects were the main food sources (averaging 60%), followed by cladocerans (25%), for both native and non‐native fish species. Horn's index indicated a high dietary overlap (&gt;0.60) between several native and non‐native species, suggesting substantial overlap in resource use and the potential for exploitative interactions. Native species generally exhibited more specialized diets, whereas non‐native species tended to be generalists. Prey selectivity analysis revealed that both native and non‐native species preferentially consumed aquatic insects over other available prey types, indicating shared reliance on benthic food resources. These findings suggest that non‐native fishes may influence trophic structure and resource use patterns in freshwater ecosystems with high endemism. We emphasize the importance of region‐specific monitoring and management strategies to mitigate the ecological impacts of non‐native fishes and support the conservation of Türkiye's freshwater biodiversity.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="insights into diet and niche separation in the context of prey availability between two sympatric whiprays in a tropical intertidal estuary"
+         data-authors="myers, jaelen; sheaves, marcus; barnett, adam"
+         data-journal="journal of fish biology"
+         data-abstract="abstract increasing evidence supports associations between various elasmobranch species and estuarine habitats, particularly during early life stages. however, with substantial knowledge gaps surrounding spatial habitat use and trophic ecology of estuary‐associated species in australia, we cannot reliably assess the functional importance of these areas or identify relevant drivers of resource partitioning in estuarine food webs. here, we compared the diets and trophic niches of two sympatric dasyatid species, the australian whipray himantura australis and brown whipray maculabatis toshi, in a tropical estuary in north queensland. stomach contents were collected from juvenile specimens in 2022–2025 using gastric lavage, muscle tissue samples were analysed for stable isotopes (δ 13 c, δ 15 n) and invertebrate communities were surveyed to contextualise prey availability in the intertidal zone. dietary composition differed significantly between species, with h. australis showing a stronger reliance on burrowing crustaceans (e.g., callianassidae and mictyridae), while m. toshi consumed more epibenthic crustaceans (e.g., ogyrididae, penaeidae, portunidae). himantura australis occupied a larger isotopic niche space than m. toshi , and there was no trophic overlap of larger size classes of h. australis (&gt;50 cm disc width) with m. toshi or with smaller conspecifics (&lt;50 cm disc width). prey availability was spatially variable and indicated that while both species target locally abundant crustacean taxa, resources may be partitioned across different sediment layers. these findings highlight the importance of estuaries as feeding grounds for juvenile rays and suggest that morphological and behavioural adaptations may drive dietary variability between similar species."
+         data-summary="本研究比较了澳大利亚热带河口两种同域分布的魟鱼——澳洲魟（himantura australis）和褐魟（maculabatis toshi）的食性与营养生态位，通过胃内容物分析、稳定同位素（δ¹³c、δ¹⁵n）测定及底栖无脊椎动物群落调查，揭示了猎物可利用性对资源分配的影响。结果显示，两物种食性显著分化：澳洲魟更依赖穴居甲壳类（如callianassidae和mictyridae），而褐魟主要摄食表栖甲壳类（如ogyrididae、penaeidae、portunidae）；澳洲魟占据更宽的isotopic niche空间，且大型个体（>50 cm disc width）与褐魟及小型同种个体无营养重叠。猎物空间分布不均，表明两物种虽均利用当地丰富的甲壳类资源，但可能通过不同沉积层进行资源分割。研究强调了河口作为幼年魟鱼摄食场的重要性，并提示形态和行为适应驱动了相似物种间的食性差异。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究比较了澳大利亚热带河口两种同域分布的魟鱼——澳洲魟（Himantura australis）和褐魟（Maculabatis toshi）的食性与营养生态位，通过胃内容物分析、稳定同位素（δ¹³C、δ¹⁵N）测定及底栖无脊椎动物群落调查，揭示了猎物可利用性对资源分配的影响。结果显示，两物种食性显著分化：澳洲魟更依赖穴居甲壳类（如Callianassidae和Mictyridae），而褐魟主要摄食表栖甲壳类（如Ogyrididae、Penaeidae、Portunidae）；澳洲魟占据更宽的isotopic niche空间，且大型个体（>50 cm disc width）与褐魟及小型同种个体无营养重叠。猎物空间分布不均，表明两物种虽均利用当地丰富的甲壳类资源，但可能通过不同沉积层进行资源分割。研究强调了河口作为幼年魟鱼摄食场的重要性，并提示形态和行为适应驱动了相似物种间的食性差异。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70596" target="_blank" rel="noopener">Insights into diet and niche separation in the context of prey availability between two sympatric whiprays in a tropical intertidal estuary</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Myers, Jaelen; Sheaves, Marcus; Barnett, Adam</span>
+        
+        <span>📅 2026-08-03</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract Increasing evidence supports associations between various elasmobranch species and estuarine habitats, particularly during early life stages. However, with substantial knowledge gaps surrounding spatial habitat use and trophic ecology of estuary‐associated species in Australia, we cannot reliably assess the functional importance of these areas or identify relevant drivers of resource partitioning in estuarine food webs. Here, we compared the diets and trophic niches of two sympatric dasyatid species, the Australian whipray Himantura australis and brown whipray Maculabatis toshi, in a tropical estuary in North Queensland. Stomach contents were collected from juvenile specimens in 2022–2025 using gastric lavage, muscle tissue samples were analysed for stable isotopes (δ 13 C, δ 15 N) and invertebrate communities were surveyed to contextualise prey availability in the intertidal zone. Dietary composition differed significantly between species, with H. australis showing a stronger reliance on burrowing crustaceans (e.g., Callianassidae and Mictyridae), while M. toshi consumed more epibenthic crustaceans (e.g., Ogyrididae, Penaeidae, Portunidae). Himantura australis occupied a larger isotopic niche space than M. toshi , and there was no trophic overlap of larger size classes of H. australis (&gt;50 cm disc width) with M. toshi or with smaller conspecifics (&lt;50 cm disc width). Prey availability was spatially variable and indicated that while both species target locally abundant crustacean taxa, resources may be partitioned across different sediment layers. These findings highlight the importance of estuaries as feeding grounds for juvenile rays and suggest that morphological and behavioural adaptations may drive dietary variability between similar species.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="biochemical analysis and antimicrobial potential of
+                    <i>mastacembelus armatus</i>
+                    epidermal mucus"
+         data-authors="khan, muhammad saeed; ali, shandana; qasim, muhammad; dawar, farman ullah; ullah, waheed"
+         data-journal="journal of fish biology"
+         data-abstract="abstract the epidermal mucus of fish plays an important role in innate immunity, providing both physical and biochemical protection through a complex matrix of bioactive molecules. the present study explored the biochemical characterization, bactericidal, and fungicidal activities of mastacembelus armatus (zig‐zag eel) epidermal mucus treated with aeromonas hydrophila . extracts of epidermal mucus (ethanolic and acidic) of mastacembelus armatus showed antimicrobial activity against selected resistant bacteria and fungi. the zone of inhibition (zoi), which was measured in millimetres, revealed differences in activity between different fungi and bacteria. the acidic extract demonstrated noticeably higher zoi values against various mdr bacteria and fungi was more effective than the ethanolic extract. strong peaks in the fourier transform infrared (ftir) spectrum of mastacembelus armatus indicated the presence of metabolic components in the epidermal mucus. the o–h and n–h stretching vibrations, which are indicative of water content and protein‐based molecules such as mucins or amide, are shown by a large peak at 3272.60 cm −1 . this result suggests that fish epidermal mucus has the potential to contribute enormously to the defence of fish against bacteria and fungi. therefore, this study could be evidence in favour of the substitution of chemical antibiotics with fish epidermal mucus as a new ‘antimicrobial’ introduced in aquaculture and in humans against bacterial infections."
+         data-summary="本研究对刺鳅（*mastacembelus armatus*）表皮黏液进行生化分析，并评估其经嗜水气单胞菌诱导后的抗菌和抗真菌活性。酸性提取物对多种多重耐药（mdr）细菌和真菌的抑菌圈（zoi）显著高于乙醇提取物，ftir光谱显示3272.60 cm⁻¹处强峰表明存在蛋白质类生物活性分子（如黏蛋白）。结果表明，鱼类表皮黏液可作为水产养殖及人类抗细菌感染的潜在天然抗菌替代品。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究对刺鳅（*Mastacembelus armatus*）表皮黏液进行生化分析，并评估其经嗜水气单胞菌诱导后的抗菌和抗真菌活性。酸性提取物对多种多重耐药（MDR）细菌和真菌的抑菌圈（ZOI）显著高于乙醇提取物，FTIR光谱显示3272.60 cm⁻¹处强峰表明存在蛋白质类生物活性分子（如黏蛋白）。结果表明，鱼类表皮黏液可作为水产养殖及人类抗细菌感染的潜在天然抗菌替代品。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70597" target="_blank" rel="noopener">Biochemical analysis and antimicrobial potential of
+                    <i>Mastacembelus armatus</i>
+                    epidermal mucus</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Khan, Muhammad Saeed; Ali, Shandana; Qasim, Muhammad; Dawar,...</span>
+        
+        <span>📅 2026-08-03</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract The epidermal mucus of fish plays an important role in innate immunity, providing both physical and biochemical protection through a complex matrix of bioactive molecules. The present study explored the biochemical characterization, bactericidal, and fungicidal activities of Mastacembelus armatus (Zig‐Zag eel) epidermal mucus treated with Aeromonas hydrophila . Extracts of epidermal mucus (ethanolic and acidic) of Mastacembelus armatus showed antimicrobial activity against selected resistant bacteria and fungi. The zone of inhibition (ZOI), which was measured in millimetres, revealed differences in activity between different fungi and bacteria. The acidic extract demonstrated noticeably higher ZOI values against various MDR bacteria and fungi was more effective than the ethanolic extract. Strong peaks in the Fourier transform infrared (FTIR) spectrum of Mastacembelus armatus indicated the presence of metabolic components in the epidermal mucus. The O–H and N–H stretching vibrations, which are indicative of water content and protein‐based molecules such as mucins or amide, are shown by a large peak at 3272.60 cm −1 . This result suggests that fish epidermal mucus has the potential to contribute enormously to the defence of fish against bacteria and fungi. Therefore, this study could be evidence in favour of the substitution of chemical antibiotics with fish epidermal mucus as a new ‘antimicrobial’ introduced in aquaculture and in humans against bacterial infections.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="an update on advancement in genomics resources for spiny lobster aquaculture development"
+         data-authors="lewis, courtney; farhadi, ahmad; glendinning, susan; banks, thomas; kelly, tara; jeffs, andrew g.; villamil, sandra infante; breen, john; cobcroft, jennifer m.; vazirzadeh, arya"
+         data-journal="reviews in aquaculture"
+         data-abstract="abstract the rapid advancement of high‐throughput sequencing technologies has transformed aquaculture genomics, enabling unprecedented insights into the biology and improvement of non‐model aquatic species. among crustaceans, lobsters represent one of the most commercially valuable yet genomically underexplored taxa. this review synthesises the current state of genomic and transcriptomic resources available for spiny and slipper lobsters (achelata), contextualising these within the broader decapod framework. we outline key genomic assemblies, transcriptomic atlases, and molecular tools that underpin emerging research on reproduction, nutrition, growth, stress tolerance, and disease resistance. we further highlight how omics‐driven approaches—spanning whole‐genome sequencing, snp discovery, rna interference, and nutrigenomics—are reshaping opportunities for selective breeding, reproductive control, and feed optimisation. recent progress in establishing closed‐cycle aquaculture of panulirus ornatus now provides the foundation for applying these molecular resources to address key production bottlenecks, including larval duration, cannibalism, and asynchronous moulting. we propose future directions integrating genomics, transcriptomics, and functional tools to accelerate sustainable domestication and genetic improvement of lobsters. together, these advances mark a pivotal shift toward genomically informed spiny lobster aquaculture."
+         data-summary="该综述总结了刺龙虾和蝉虾（achelata）基因组与转录组资源的最新进展，涵盖基因组组装、转录组图谱及分子工具在繁殖、营养、生长、应激耐受和抗病研究中的应用。重点阐述了全基因组测序、snp发现、rna干扰及营养基因组学等组学方法如何推动选择性育种、繁殖调控和饲料优化。基于panulirus ornatus闭式循环养殖的近期突破，提出整合基因组学与功能工具以解决幼虫周期、同类相食和蜕皮不同步等生产瓶颈的未来方向，标志着向基因组指导的刺龙虾养殖转型。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Reviews in Aquaculture
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该综述总结了刺龙虾和蝉虾（Achelata）基因组与转录组资源的最新进展，涵盖基因组组装、转录组图谱及分子工具在繁殖、营养、生长、应激耐受和抗病研究中的应用。重点阐述了全基因组测序、SNP发现、RNA干扰及营养基因组学等组学方法如何推动选择性育种、繁殖调控和饲料优化。基于Panulirus ornatus闭式循环养殖的近期突破，提出整合基因组学与功能工具以解决幼虫周期、同类相食和蜕皮不同步等生产瓶颈的未来方向，标志着向基因组指导的刺龙虾养殖转型。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/raq.70197" target="_blank" rel="noopener">An Update on Advancement in Genomics Resources for Spiny Lobster Aquaculture Development</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Lewis, Courtney; Farhadi, Ahmad; Glendinning, Susan; Banks, ...</span>
+        
+        <span>📅 2026-08-03</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">ABSTRACT The rapid advancement of high‐throughput sequencing technologies has transformed aquaculture genomics, enabling unprecedented insights into the biology and improvement of non‐model aquatic species. Among crustaceans, lobsters represent one of the most commercially valuable yet genomically underexplored taxa. This review synthesises the current state of genomic and transcriptomic resources available for spiny and slipper lobsters (Achelata), contextualising these within the broader decapod framework. We outline key genomic assemblies, transcriptomic atlases, and molecular tools that underpin emerging research on reproduction, nutrition, growth, stress tolerance, and disease resistance. We further highlight how omics‐driven approaches—spanning whole‐genome sequencing, SNP discovery, RNA interference, and nutrigenomics—are reshaping opportunities for selective breeding, reproductive control, and feed optimisation. Recent progress in establishing closed‐cycle aquaculture of Panulirus ornatus now provides the foundation for applying these molecular resources to address key production bottlenecks, including larval duration, cannibalism, and asynchronous moulting. We propose future directions integrating genomics, transcriptomics, and functional tools to accelerate sustainable domestication and genetic improvement of lobsters. Together, these advances mark a pivotal shift toward genomically informed spiny lobster aquaculture.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="assessing invasion risk and associated economic loss of fish species across global watersheds using machine learning algorithms"
+         data-authors="suh, sang-ik; kim, dahui; lee, bumseok; lee, soheon; ki, seo jin"
+         data-journal="water"
+         data-abstract="the intention of this study is to compare invasion risk and economic loss for selected fish species in both different watersheds and countries on a global scale. the potential risk of invasion for four different species was assessed by the prediction models developed from machine learning algorithms and joint dataset comprising species occurrence records and relevant environmental information. combining invasion risk and unit economic costs derived from a comprehensive invasion cost database also enabled us to calculate the economic loss of invaders in three example countries. results showed that the multi-layer perceptron algorithm, which was selected as the best model out of them, successfully identified areas of very-high-to-no risk for four selected fishes. the potential risk of invasion was relatively high for perccottus glenii and low for salmo trutta in the republic of korea, as compared to that of japan and australia. in addition, both invasion risk and unit economic costs were found to be largely responsible for the economic loss of selected fish species, specifically the species petromyzon marinus in australia. we expect that the methodology proposed in this study can be used to address the potential risk of invasion for non-native species along with other similar models such as species distribution models, and can be used to recommend affordable management options for controlling their populations."
+         data-summary="本研究利用机器学习算法结合物种分布记录与环境数据，构建预测模型评估全球流域和不同国家中四种鱼类的入侵风险，并整合入侵成本数据库计算经济损失。结果显示多层感知器算法表现最佳，成功划分从极高到无风险区域；在韩国，葛鲈（perccottus glenii）入侵风险较高，而褐鳟（salmo trutta）较低，与日本和澳大利亚相比差异显著。经济损失主要受入侵风险和单位经济成本驱动，尤其以澳大利亚的海七鳃鳗（petromyzon marinus）最为突出。该方法可推广至其他非本地物种的入侵风险评估，并为制定经济可行的种群管控策略提供支持。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Water
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究利用机器学习算法结合物种分布记录与环境数据，构建预测模型评估全球流域和不同国家中四种鱼类的入侵风险，并整合入侵成本数据库计算经济损失。结果显示多层感知器算法表现最佳，成功划分从极高到无风险区域；在韩国，葛鲈（Perccottus glenii）入侵风险较高，而褐鳟（Salmo trutta）较低，与日本和澳大利亚相比差异显著。经济损失主要受入侵风险和单位经济成本驱动，尤其以澳大利亚的海七鳃鳗（Petromyzon marinus）最为突出。该方法可推广至其他非本地物种的入侵风险评估，并为制定经济可行的种群管控策略提供支持。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/w18151882" target="_blank" rel="noopener">Assessing Invasion Risk and Associated Economic Loss of Fish Species Across Global Watersheds Using Machine Learning Algorithms</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Suh, Sang-Ik; Kim, Dahui; Lee, Bumseok; Lee, Soheon; Ki, Seo...</span>
+        
+        <span>📅 2026-08-03</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">The intention of this study is to compare invasion risk and economic loss for selected fish species in both different watersheds and countries on a global scale. The potential risk of invasion for four different species was assessed by the prediction models developed from machine learning algorithms and joint dataset comprising species occurrence records and relevant environmental information. Combining invasion risk and unit economic costs derived from a comprehensive invasion cost database also enabled us to calculate the economic loss of invaders in three example countries. Results showed that the multi-layer perceptron algorithm, which was selected as the best model out of them, successfully identified areas of very-high-to-no risk for four selected fishes. The potential risk of invasion was relatively high for Perccottus glenii and low for Salmo trutta in the Republic of Korea, as compared to that of Japan and Australia. In addition, both invasion risk and unit economic costs were found to be largely responsible for the economic loss of selected fish species, specifically the species Petromyzon marinus in Australia. We expect that the methodology proposed in this study can be used to address the potential risk of invasion for non-native species along with other similar models such as species distribution models, and can be used to recommend affordable management options for controlling their populations.</div>
+      
+    </div>
+    
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var s=localStorage.getItem('theme');
+  if(s){document.documentElement.setAttribute('data-theme',s);
+  document.getElementById('themeIcon').textContent=s==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=s==='dark'?'亮色':'暗色';}
+})();
+function toggleTheme(){
+  var h=document.documentElement,n=h.getAttribute('data-theme')==='dark'?'light':'dark';
+  h.setAttribute('data-theme',n);
+  document.getElementById('themeIcon').textContent=n==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=n==='dark'?'亮色':'暗色';
+  localStorage.setItem('theme',n);
+}
+function toggleAbstract(b){
+  var c=b.nextElementSibling,v=c.classList.contains('visible');
+  c.classList.toggle('visible');b.classList.toggle('open');
+  b.querySelector('.arrow').textContent=v?'▶':'▼';
+}
+function filterPapers(){
+  var q=(document.getElementById('searchInput').value||'').toLowerCase().trim(),vis=0;
+  document.querySelectorAll('.paper-card').forEach(function(c){
+    var t=[c.getAttribute('data-title')||'',c.getAttribute('data-authors')||'',c.getAttribute('data-journal')||'',c.getAttribute('data-abstract')||'',c.getAttribute('data-summary')||''].join(' ');
+    var s=!q||t.includes(q);c.classList.toggle('hidden',!s);if(s)vis++;
+  });
+  document.getElementById('noResults').classList.toggle('visible',vis===0);
+}
+</script>
+</body>
+</html>
