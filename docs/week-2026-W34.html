@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>亚硝胺检测与鱼类分类及演化研究进展 — 渔业文献每周速览</title>
+<style>
+:root {
+  --bg: #f7fafc; --bg-card: #ffffff; --text: #2d3748;
+  --text-secondary: #718096; --text-muted: #a0aec0; --border: #e2e8f0;
+  --primary: #2b6cb0; --primary-light: #bee3f8; --primary-dark: #1a365d;
+  --accent: #e76f51; --accent-light: #fed7d7;
+  --teal: #319795; --teal-light: #b2f5ea;
+  --gold: #d69e2e; --gold-light: #fefcbf;
+  --shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.10);
+  --radius: 12px; --radius-sm: 8px;
+}
+[data-theme="dark"] {
+  --bg: #1a202c; --bg-card: #2d3748; --text: #e2e8f0;
+  --text-secondary: #a0aec0; --text-muted: #718096; --border: #4a5568;
+  --primary: #90cdf4; --primary-light: #2a4365; --primary-dark: #bee3f8;
+  --accent: #fc8181; --accent-light: #742a2a;
+  --teal: #81e6d9; --teal-light: #234e52;
+  --gold: #f6e05e; --gold-light: #3d3a1a;
+  --shadow: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.5);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;transition:background 0.3s,color 0.3s}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* === Top Bar === */
+.topbar{background:linear-gradient(135deg,#1a365d,#2b6cb0);color:#fff;padding:0.8rem 1.5rem;display:flex;align-items:center;gap:1rem;position:sticky;top:0;z-index:100}
+.back-btn{color:#fff;font-size:0.95rem;font-weight:600;padding:0.4rem 0.8rem;border-radius:var(--radius-sm);border:1.5px solid rgba(255,255,255,0.3);transition:all 0.2s;white-space:nowrap}
+.back-btn:hover{background:rgba(255,255,255,0.15);text-decoration:none}
+.topbar .title-area{flex:1;min-width:0}
+.topbar .week-range{font-size:0.78rem;opacity:0.8}
+.topbar .week-topic{font-size:1rem;font-weight:700;line-height:1.3}
+.topbar .theme-toggle{padding:0.4rem 0.8rem;border:1.5px solid rgba(255,255,255,0.3);border-radius:var(--radius-sm);background:transparent;color:#fff;cursor:pointer;font-size:0.85rem;transition:all 0.2s;white-space:nowrap}
+.topbar .theme-toggle:hover{background:rgba(255,255,255,0.15)}
+
+.container{max-width:1100px;margin:0 auto;padding:1.5rem}
+
+/* === Article Section === */
+.article-section{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;margin-bottom:1.5rem;box-shadow:var(--shadow)}
+.article-section h2{font-size:1.3rem;color:var(--primary-dark);margin:1.5rem 0 0.75rem;padding-bottom:0.4rem;border-bottom:2px solid var(--primary-light)}
+.article-section h2:first-child{margin-top:0}
+.article-section p{margin-bottom:0.8rem;line-height:1.8;color:var(--text)}
+.article-section strong{color:var(--primary-dark)}
+.article-section ol,.article-section ul{padding-left:1.5rem;margin-bottom:0.8rem}
+.article-section li{margin-bottom:0.5rem;line-height:1.7}
+.article-tag{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-right:0.5rem}
+.tag-overview{background:var(--primary-light);color:var(--primary-dark)}
+.tag-highlight{background:var(--accent-light);color:var(--accent)}
+.tag-innovative{background:var(--gold-light);color:var(--gold)}
+.tag-recommend{background:var(--teal-light);color:var(--teal)}
+
+/* === Stats Row === */
+.stats-row{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.stat-mini{padding:0.5rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-secondary)}
+.stat-mini strong{color:var(--primary);font-size:1.1rem}
+
+/* === Controls === */
+.controls{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.search-box{flex:1;min-width:200px;position:relative}
+.search-box input{width:100%;padding:0.6rem 1rem 0.6rem 2.5rem;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:0.9rem;background:var(--bg-card);color:var(--text);transition:border-color 0.2s}
+.search-box input:focus{outline:none;border-color:var(--primary)}
+.search-box .search-icon{position:absolute;left:0.8rem;top:50%;transform:translateY(-50%);color:var(--text-muted);pointer-events:none}
+
+/* === Paper Grid === */
+.section-title{font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:0.75rem;display:flex;align-items:center;gap:0.5rem}
+.paper-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:0.85rem;margin-bottom:1.5rem}
+.paper-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1.1rem;transition:all 0.25s;display:flex;flex-direction:column;position:relative}
+.paper-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);border-color:var(--primary-light)}
+.paper-card.high-impact{border-left:3px solid var(--accent)}
+.paper-card .hi-badge{position:absolute;top:0.5rem;right:0.5rem;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:10px;background:var(--accent-light);color:var(--accent);font-weight:700}
+.paper-card .journal{font-size:0.78rem;color:var(--teal);font-weight:600;margin-bottom:0.3rem}
+.paper-card .title{font-size:0.95rem;font-weight:700;line-height:1.45;margin-bottom:0.35rem}
+.paper-card .title a{color:var(--text)}
+.paper-card .title a:hover{color:var(--primary);text-decoration:none}
+.paper-card .meta{font-size:0.78rem;color:var(--text-muted);margin-bottom:0.6rem;display:flex;flex-wrap:wrap;gap:0.5rem}
+
+/* Chinese Summary */
+.paper-card .summary-cn{background:linear-gradient(135deg,#fffaf0,#fffff0);border-left:3px solid var(--gold);padding:0.7rem 0.85rem;margin-bottom:0.5rem;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:0.88rem;line-height:1.55;color:#744210}
+[data-theme="dark"] .paper-card .summary-cn{background:linear-gradient(135deg,#3d2e1a,#372a10);color:#fbd38d}
+
+.abstract-toggle{font-size:0.8rem;color:var(--primary);cursor:pointer;font-weight:600;user-select:none;display:inline-flex;align-items:center;gap:0.25rem;padding:0.3rem 0;border:none;background:none}
+.abstract-toggle:hover{color:var(--accent)}
+.abstract-toggle .arrow{transition:transform 0.2s;font-size:0.7rem}
+.abstract-toggle.open .arrow{transform:rotate(90deg)}
+.abstract-content{display:none;font-size:0.82rem;color:var(--text-secondary);line-height:1.55;padding:0.5rem 0;border-top:1px dashed var(--border);margin-top:0.4rem}
+.abstract-content.visible{display:block}
+
+.paper-card.hidden{display:none}
+.no-results{display:none;text-align:center;padding:2rem;color:var(--text-muted)}
+.no-results.visible{display:block}
+
+@media(max-width:768px){.paper-grid{grid-template-columns:1fr}.article-section{padding:1.25rem}.topbar{flex-wrap:wrap}.topbar .week-topic{font-size:0.9rem}}
+
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.paper-card{animation:fadeIn 0.4s ease-out}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="back-btn" href="index.html">← 返回主页</a>
+  <div class="title-area">
+    <div class="week-range">8月17日—8月17日</div>
+    <div class="week-topic">亚硝胺检测与鱼类分类及演化研究进展</div>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <span id="themeIcon">🌙</span> <span id="themeLabel">暗色</span>
+  </button>
+</div>
+
+<div class="container">
+
+  <!-- 深度综述文章 -->
+  
+  <div class="article-section">
+    <h2>本周研究概览</h2>
+
+<p>本周共收录渔业相关论文3篇，研究方向较为分散，涵盖水产品安全检测、鱼类分类学与形态学、以及岛屿生物地理学与演化生物学三大领域。整体来看，本周研究以基础生物学和生态学为主，缺乏大规模渔业资源评估或管理政策类研究，但其中涉及的方法学进展（如多基质污染物同步检测）和演化机制探讨（如夏威夷特有鱼类的起源）仍具一定学术价值。研究地域上，南亚（尼泊尔）和太平洋岛屿（夏威夷）成为关注热点，反映出渔业科学向区域性、精细化方向发展的趋势。</p>
+
+<h2>高影响力期刊亮点</h2>
+
+<p>本周暂无发表在Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances等高水平期刊上的论文。</p>
+
+<h2>创新性研究</h2>
+
+<ol>
+<li><strong>Validation of a multi-matrix GC–MS/MS method for simultaneous determination of nine N-nitrosamines in seafood and water</strong>（*International Journal of Environmental Analytical Chemistry*）— 该研究开发并验证了同时测定水产品及水体中9种N-亚硝胺的GC-MS/MS多基质方法。N-亚硝胺作为一类强致癌物，在水产品加工过程中可能形成，但此前缺乏高效的多残留同步检测方案。该方法的建立填补了水产品安全检测领域的技术空白，对食品安全监管和风险评估具有直接应用价值。</li>
+</ol>
+
+<ol>
+<li><strong>Taxonomic assessment of the glyptosternoid catfish *Parachiloglanis hodgarti* based on morphometric analysis of type specimens and riverine populations in Nepal</strong>（*Journal of Fish Biology*）— 该研究首次系统比较了尼泊尔三大河流水系（Gandaki、Koshi、Karnali）中*Parachiloglanis hodgarti*的形态差异，并纳入模式标本进行对比分析。其创新之处在于将传统形态测量与现代统计方法结合，揭示了该物种的种内形态变异格局，为喜马拉雅地区鲇形目鱼类的分类修订和生物多样性保护提供了关键基础数据。</li>
+</ol>
+
+<ol>
+<li><strong>Origins and relationships of endemic Hawaiian sabre‐toothed blennies in the genus *Plagiotremus</strong>*（*Journal of Fish Biology*）— 该研究聚焦夏威夷特有的剑齿鳚属鱼类，通过系统发育分析探讨其起源与亲缘关系。夏威夷群岛作为海洋生物多样性热点区域，其特有鱼类的演化历史一直是生物地理学的重要议题。该研究揭示了*Plagiotremus*属在夏威夷的殖民和分化模式，为理解太平洋岛屿鱼类的生物地理格局和物种形成机制提供了新见解。</li>
+</ol>
+
+<h2>推荐阅读</h2>
+
+<ol>
+<li><strong>Validation of a multi-matrix GC–MS/MS method for simultaneous determination of nine N-nitrosamines in seafood and water</strong> — 方法学创新性强，对水产品安全检测具有直接应用价值，值得食品安全领域研究者关注。</li>
+<li><strong>Taxonomic assessment of the glyptosternoid catfish *Parachiloglanis hodgarti* based on morphometric analysis of type specimens and riverine populations in Nepal</strong> — 填补了喜马拉雅地区特有鱼类分类学研究的空白，对生物多样性保护有重要参考意义。</li>
+<li><strong>Origins and relationships of endemic Hawaiian sabre‐toothed blennies in the genus *Plagiotremus</strong>* — 为理解太平洋岛屿特有鱼类的演化历史提供了新的系统发育证据，生物地理学研究者值得一读。</li>
+</ol>
+  </div>
+  
+
+  <!-- 统计 -->
+  <div class="stats-row">
+    <div class="stat-mini">📄 <strong>3</strong> 篇论文</div>
+    <div class="stat-mini">🌟 <strong>0</strong> 篇高影响力期刊</div>
+    <div class="stat-mini">🤖 <strong>3</strong> 篇 AI 中文总结</div>
+    
+    <div class="stat-mini">🏷️ 亚硝胺检测(Nitrosamine Detection) 鱼类分类学(Fish Taxonomy) 形态测量学(Morphometrics) 物种鉴定(Species Identification) </div>
+    
+  </div>
+
+  <!-- 搜索 -->
+  <div class="controls">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="搜索标题、作者、摘要..." oninput="filterPapers()">
+    </div>
+  </div>
+
+  <div class="no-results" id="noResults">😕 没有匹配的论文</div>
+
+  <!-- 全部论文列表 -->
+  <div class="section-title">📄 本周全部论文（3 篇）</div>
+  <div class="paper-grid">
+    
+    <div class="paper-card"
+         data-title="validation of a multi-matrix gc–ms/ms method for simultaneous determination of nine n-nitrosamines in seafood and water"
+         data-authors="le, dinh vu; truong, van nhan; nguyen, duc tuan"
+         data-journal="international journal of environmental analytical chemistry"
+         data-abstract=""
+         data-summary="本研究开发并验证了一种多基质gc–ms/ms方法，用于同时测定海产品和水样中九种n-亚硝胺。方法涵盖样品前处理优化及仪器分析条件，旨在实现复杂基质中的高灵敏度与选择性检测。该方法为海产品及水环境中亚硝胺污染监测提供了可靠工具，适用于食品安全风险评估。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 International Journal of Environmental Analytical Chemistry
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究开发并验证了一种多基质GC–MS/MS方法，用于同时测定海产品和水样中九种N-亚硝胺。方法涵盖样品前处理优化及仪器分析条件，旨在实现复杂基质中的高灵敏度与选择性检测。该方法为海产品及水环境中亚硝胺污染监测提供了可靠工具，适用于食品安全风险评估。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1080/03067319.2026.2714103" target="_blank" rel="noopener">Validation of a multi-matrix GC–MS/MS method for simultaneous determination of nine N-nitrosamines in seafood and water</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Le, Dinh Vu; Truong, Van Nhan; Nguyen, Duc Tuan</span>
+        
+        <span>📅 2026-08-17</span>
+      </div>
+
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="taxonomic assessment of the glyptosternoid catfish
+                    <i>parachiloglanis hodgarti</i>
+                    (hora, 1923) based on morphometric analysis of type specimens and riverine populations in nepal"
+         data-authors="amatya, bhaba; sapkota, kumar"
+         data-journal="journal of fish biology"
+         data-abstract="abstract this study addresses a major gap in knowledge regarding intraspecific morphological variation in parachiloglanis hodgarti (hora, 1923) (sisoridae) by conducting comparative morphometric analyses of populations from nepal's principal river drainages (gandaki, koshi and karnali), the topotypic population from pharping, and the holotype to evaluate the taxonomic implications of this variation. eighteen size‐corrected morphometric traits were analysed in 108 specimens collected from pharping ( n = 24), gandaki ( n = 28), koshi ( n = 28) and karnali ( n = 28). principal component analysis (pca) and linear discriminant analysis (lda) revealed pronounced population structuring, with the karnali population showing the strongest multivariate differentiation. variation among populations was primarily associated with body proportions, head morphology and fin morphology. univariate analyses detected significant differences in individual morphometric traits among populations, with pharping showing the highest number of significantly differentiated traits and gandaki the fewest. comparisons with the holotype revealed morphometric differences across all populations. although the karnali population differed from the holotype in the greatest number of traits (11), it differed from the pharping topotypic population in only three traits. because the pharping topotypic population represents the closest extant proxy for the holotype and closely resembles it in overall morphometric characteristics, the greater divergence between karnali and the holotype is likely attributable to preservation‐related deformation, historical and contemporary differences in measurement protocols, or both, rather than genuine taxonomic differentiation. collectively, these findings demonstrate geographically structured morphological variation while supporting continuous intraspecific differentiation rather than discrete taxonomic separation. the morphological differentiation observed in the karnali population may reflect localised evolutionary divergence associated with geographic isolation and environmental heterogeneity, although confirmation will require integrative molecular and ecological investigations. this study establishes a population‐level morphometric framework for p. hodgarti in nepal and provides a baseline for future taxonomic, evolutionary and ecological research."
+         data-summary="本研究通过形态计量分析，评估了尼泊尔主要河流流域（gandaki、koshi、karnali）及模式产地pharping的parachiloglanis hodgarti种群间形态变异及其分类学意义。基于108个个体的18个尺寸校正形态特征，主成分分析（pca）和线性判别分析（lda）揭示了显著种群结构，其中karnali种群分化最强，变异主要涉及身体比例、头部和鳍部形态。与holotype比较显示所有种群均存在差异，但karnali与pharping模式种群仅3个特征不同，表明其差异可能源于保存变形或测量方法而非真实分类分化。研究支持种内连续分化而非离散分类单元，karnali的形态特化可能反映地理隔离驱动的局部进化，需分子和生态学证据进一步验证。该研究为p. hodgarti在尼泊尔的种群水平形态计量框架奠定了基础。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究通过形态计量分析，评估了尼泊尔主要河流流域（Gandaki、Koshi、Karnali）及模式产地Pharping的Parachiloglanis hodgarti种群间形态变异及其分类学意义。基于108个个体的18个尺寸校正形态特征，主成分分析（PCA）和线性判别分析（LDA）揭示了显著种群结构，其中Karnali种群分化最强，变异主要涉及身体比例、头部和鳍部形态。与holotype比较显示所有种群均存在差异，但Karnali与Pharping模式种群仅3个特征不同，表明其差异可能源于保存变形或测量方法而非真实分类分化。研究支持种内连续分化而非离散分类单元，Karnali的形态特化可能反映地理隔离驱动的局部进化，需分子和生态学证据进一步验证。该研究为P. hodgarti在尼泊尔的种群水平形态计量框架奠定了基础。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70613" target="_blank" rel="noopener">Taxonomic assessment of the glyptosternoid catfish
+                    <i>Parachiloglanis hodgarti</i>
+                    (Hora, 1923) based on morphometric analysis of type specimens and riverine populations in Nepal</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Amatya, Bhaba; Sapkota, Kumar</span>
+        
+        <span>📅 2026-08-17</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract This study addresses a major gap in knowledge regarding intraspecific morphological variation in Parachiloglanis hodgarti (Hora, 1923) (Sisoridae) by conducting comparative morphometric analyses of populations from Nepal's principal river drainages (Gandaki, Koshi and Karnali), the topotypic population from Pharping, and the holotype to evaluate the taxonomic implications of this variation. Eighteen size‐corrected morphometric traits were analysed in 108 specimens collected from Pharping ( n = 24), Gandaki ( n = 28), Koshi ( n = 28) and Karnali ( n = 28). Principal component analysis (PCA) and linear discriminant analysis (LDA) revealed pronounced population structuring, with the Karnali population showing the strongest multivariate differentiation. Variation among populations was primarily associated with body proportions, head morphology and fin morphology. Univariate analyses detected significant differences in individual morphometric traits among populations, with Pharping showing the highest number of significantly differentiated traits and Gandaki the fewest. Comparisons with the holotype revealed morphometric differences across all populations. Although the Karnali population differed from the holotype in the greatest number of traits (11), it differed from the Pharping topotypic population in only three traits. Because the Pharping topotypic population represents the closest extant proxy for the holotype and closely resembles it in overall morphometric characteristics, the greater divergence between Karnali and the holotype is likely attributable to preservation‐related deformation, historical and contemporary differences in measurement protocols, or both, rather than genuine taxonomic differentiation. Collectively, these findings demonstrate geographically structured morphological variation while supporting continuous intraspecific differentiation rather than discrete taxonomic separation. The morphological differentiation observed in the Karnali population may reflect localised evolutionary divergence associated with geographic isolation and environmental heterogeneity, although confirmation will require integrative molecular and ecological investigations. This study establishes a population‐level morphometric framework for P. hodgarti in Nepal and provides a baseline for future taxonomic, evolutionary and ecological research.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="origins and relationships of endemic hawaiian sabre‐toothed blennies in the genus
+                    <i>plagiotremus</i>
+                    (blennioidei: blenniidae)"
+         data-authors="hoban, mykle l.; walsh, cameron a. j.; kosaki, randall k.; bowen, brian w."
+         data-journal="journal of fish biology"
+         data-abstract="abstract the sabre‐toothed blennies (tribe nemophini) are renowned for vivid colouration and several evolutionary adaptations, including a venom that resembles opioids in both chemistry and function. the genus plagiotremus contains 11 species distributed across the indo‐pacific and red sea, including two nominal species endemic to hawai'i. here, we use mitochondrial coi and cytb in addition to select morphological characters to examine the relationships of hawaiian endemics to their widely distributed sister species, along with their phylogeography and evolutionary relationships above and below the species level. the hawaiian endemic p. ewaensis was fully diverged from the widespread p. rhinorhynchos at coi (~4.5%), with genetic diversity patterns suggesting the possibility of a hawaiian origin for the species pair. in contrast, the endemic p. goslinei was polyphyletic with the widespread p. tapeinosoma , sharing several haplotypes in both coi and cytb and indicating recent/ongoing contact and population‐level separation. the marquesan population of p. tapeinosoma was morphologically and genetically distinct and ~1.7%–2.9% divergent from all other groups, and may warrant elevation to species. the p. goslinei / tapeinosoma group showed significant population differentiation across the indo‐pacific (coi φ st = 0.786, p &lt; 0.001, cytb φ st = 0.801, p &lt; 0.001), although this was largely driven by the hawaiian and marquesan populations. in contrast, the ewaensis / rhinorhynchos group showed low non‐significant differentiation (coi φ st = 0.073, p = 0.06) with one frequent coi haplotype shared within p. rhinorhynchos across the indo‐pacific. ancestral reconstruction analyses of p. goslinei / tapeinosoma / azaleus invoke the tantalizing possibility of an east pacific origin for the species group. our findings provide further support for biodiversity feedback in the indo‐pacific and show that endemic hawaiian species with widely distributed sister taxa may have dramatically different evolutionary histories."
+         data-summary="本研究利用线粒体coi和cytb基因及形态特征，解析夏威夷特有犬牙鳚属（plagiotremus）两种鱼类的系统发育关系与谱系地理。结果显示，特有种p. ewaensis与广布种p. rhinorhynchos在coi上完全分化（~4.5%），提示可能起源于夏威夷；而p. goslinei与p. tapeinosoma呈多系且共享单倍型，表明近期或持续基因交流。马克萨斯群岛的p. tapeinosoma种群在遗传和形态上显著分化（~1.7%–2.9%），可能提升为独立种。研究支持印度-太平洋生物多样性反馈假说，并揭示同域特有物种的演化历史差异显著。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究利用线粒体COI和cytb基因及形态特征，解析夏威夷特有犬牙鳚属（Plagiotremus）两种鱼类的系统发育关系与谱系地理。结果显示，特有种P. ewaensis与广布种P. rhinorhynchos在COI上完全分化（~4.5%），提示可能起源于夏威夷；而P. goslinei与P. tapeinosoma呈多系且共享单倍型，表明近期或持续基因交流。马克萨斯群岛的P. tapeinosoma种群在遗传和形态上显著分化（~1.7%–2.9%），可能提升为独立种。研究支持印度-太平洋生物多样性反馈假说，并揭示同域特有物种的演化历史差异显著。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70614" target="_blank" rel="noopener">Origins and relationships of endemic Hawaiian sabre‐toothed blennies in the genus
+                    <i>Plagiotremus</i>
+                    (Blennioidei: Blenniidae)</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Hoban, Mykle L.; Walsh, Cameron A. J.; Kosaki, Randall K.; B...</span>
+        
+        <span>📅 2026-08-17</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract The sabre‐toothed blennies (tribe Nemophini) are renowned for vivid colouration and several evolutionary adaptations, including a venom that resembles opioids in both chemistry and function. The genus Plagiotremus contains 11 species distributed across the Indo‐Pacific and Red Sea, including two nominal species endemic to Hawai'i. Here, we use mitochondrial COI and cytb in addition to select morphological characters to examine the relationships of Hawaiian endemics to their widely distributed sister species, along with their phylogeography and evolutionary relationships above and below the species level. The Hawaiian endemic P. ewaensis was fully diverged from the widespread P. rhinorhynchos at COI (~4.5%), with genetic diversity patterns suggesting the possibility of a Hawaiian origin for the species pair. In contrast, the endemic P. goslinei was polyphyletic with the widespread P. tapeinosoma , sharing several haplotypes in both COI and cytb and indicating recent/ongoing contact and population‐level separation. The Marquesan population of P. tapeinosoma was morphologically and genetically distinct and ~1.7%–2.9% divergent from all other groups, and may warrant elevation to species. The P. goslinei / tapeinosoma group showed significant population differentiation across the Indo‐Pacific (COI Φ st = 0.786, p &lt; 0.001, cytb Φ st = 0.801, p &lt; 0.001), although this was largely driven by the Hawaiian and Marquesan populations. In contrast, the ewaensis / rhinorhynchos group showed low non‐significant differentiation (COI Φ st = 0.073, p = 0.06) with one frequent COI haplotype shared within P. rhinorhynchos across the Indo‐Pacific. Ancestral reconstruction analyses of P. goslinei / tapeinosoma / azaleus invoke the tantalizing possibility of an East Pacific origin for the species group. Our findings provide further support for biodiversity feedback in the Indo‐Pacific and show that endemic Hawaiian species with widely distributed sister taxa may have dramatically different evolutionary histories.</div>
+      
+    </div>
+    
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var s=localStorage.getItem('theme');
+  if(s){document.documentElement.setAttribute('data-theme',s);
+  document.getElementById('themeIcon').textContent=s==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=s==='dark'?'亮色':'暗色';}
+})();
+function toggleTheme(){
+  var h=document.documentElement,n=h.getAttribute('data-theme')==='dark'?'light':'dark';
+  h.setAttribute('data-theme',n);
+  document.getElementById('themeIcon').textContent=n==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=n==='dark'?'亮色':'暗色';
+  localStorage.setItem('theme',n);
+}
+function toggleAbstract(b){
+  var c=b.nextElementSibling,v=c.classList.contains('visible');
+  c.classList.toggle('visible');b.classList.toggle('open');
+  b.querySelector('.arrow').textContent=v?'▶':'▼';
+}
+function filterPapers(){
+  var q=(document.getElementById('searchInput').value||'').toLowerCase().trim(),vis=0;
+  document.querySelectorAll('.paper-card').forEach(function(c){
+    var t=[c.getAttribute('data-title')||'',c.getAttribute('data-authors')||'',c.getAttribute('data-journal')||'',c.getAttribute('data-abstract')||'',c.getAttribute('data-summary')||''].join(' ');
+    var s=!q||t.includes(q);c.classList.toggle('hidden',!s);if(s)vis++;
+  });
+  document.getElementById('noResults').classList.toggle('visible',vis===0);
+}
+</script>
+</body>
+</html>
