@@ -1,8 +1,47 @@
 {
-  "last_updated": "2026-08-23T08:23:38Z",
-  "total_papers": 255,
-  "new_today": 13,
+  "last_updated": "2026-08-24T08:41:39Z",
+  "total_papers": 253,
+  "new_today": 3,
   "papers": [
+    {
+      "doi": "10.1002/jat.70368",
+      "title": "Cellular Toxicity of Short‐ and Long‐Term Exposures to Polystyrene Nanoplastics and Microplastics in Fish Skin Cell Derived From Fathead Minnow (\n                    <scp>\n                      <i>Pimephales promelas</i>\n                    </scp>\n                    )",
+      "authors": "Nguyen, Trang Thi; Park, Kiyun; Kwak, Ihn‐Sil",
+      "journal": "Journal of Applied Toxicology",
+      "date": "2026-08-24",
+      "abstract": "ABSTRACT The ubiquitous presence of microplastics and nanoplastics (MNPs) is raising concerns about their impact on the health of humans and other living organisms. Due to its tiny size, this particle can accumulate and circulate in the body after uptake, resulting in a variety of harmful outcomes on the organism, such as increased oxidative stress and induced inflammation. This study aimed to investigate the effects of polystyrene MNPS on the epithelioma paulosum cyrini (EPC) cell line. The results of the MTT assay indicated that 0.2 and 1 μm of MNPs did not cause acute cytotoxicity in the cells after 48 h of exposure; however, at longer term exposure with these particles, cytotoxicity was observed in a dose‐dependent manner. The accumulation of both nano‐ and micro‐sized plastics was increased as time‐dependent manner on EPC cells. However, they showed strong adherence to the cell surface. The fluorescence intensity as accumulated MNPs for short‐term exposure was higher in 1 μm of MNPs than 0.2 μm of MNPs. Short‐term incubation with MNPs did not induce oxidative stress, as indicated by the insignificant change in intracellular ROS levels. Notably, MNPs did not significantly impact the expression of stress‐related genes in either short‐ or long‐term exposure but altered the expression of some cytokine genes in both instances. About 1 μm of PS particles increased pro‐inflammatory cytokines, including TNF‐α at both time points and IL1‐β after 2 weeks. While both sizes of PS plastics inhibited the expression of anti‐inflammatory cytokine at long‐term incubation, only the larger size altered the expression of this gene at 48 h. These results suggested that long‐term exposure to MNPs can decrease EPC cell survival and induce cell inflammation.",
+      "summary_cn": "本研究以胖头鱥（*Pimephales promelas*）皮肤来源的EPC细胞系为模型，评估聚苯乙烯纳米/微塑料（MNPs，粒径0.2和1 μm）的短期（48 h）与长期（2周）暴露毒性。MTT实验显示，短期暴露未引起急性细胞毒性，但长期暴露呈剂量依赖性降低细胞存活率；两种粒径的MNPs均以时间依赖性方式在细胞表面累积，且1 μm颗粒的短期累积荧光强度高于0.2 μm。氧化应激指标（ROS水平）在短期暴露中无显著变化，且MNPs未显著影响应激相关基因表达，但长期暴露显著抑制抗炎细胞因子表达，而1 μm颗粒在两种时间点均上调促炎因子TNF-α，并在2周后诱导IL1-β表达。结果表明，长期MNPs暴露可降低EPC细胞活力并诱发炎症反应，提示鱼类皮肤细胞对微塑料的慢性毒性具有敏感性。",
+      "url": "https://doi.org/10.1002/jat.70368",
+      "source": "crossref",
+      "keywords_matched": "fish population",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1080/23308249.2026.2720881",
+      "title": "When Will We Do What is Needed for U.S. Aquaculture to Grow?",
+      "authors": "Belle, Sebastian; Bowker, Jim; Engle, Carole; Freeze, Mike; Glennon, Robert; Stone, Nathan; Zajicek, Paul",
+      "journal": "Reviews in Fisheries Science &amp; Aquaculture",
+      "date": "2026-08-24",
+      "abstract": "",
+      "summary_cn": "本文探讨了美国水产养殖业增长所需的政策与行动时机，分析了当前制约行业发展的监管、环境及经济因素。研究指出，尽管水产养殖潜力巨大，但缺乏系统性改革和投资将延缓其规模化进程。文章呼吁采取协调一致的措施，以促进可持续养殖发展并保障粮食安全。",
+      "url": "https://doi.org/10.1080/23308249.2026.2720881",
+      "source": "crossref",
+      "keywords_matched": "aquaculture",
+      "high_impact": true
+    },
+    {
+      "doi": "10.1111/fog.70071",
+      "title": "Sex‐Specific Multidecadal Growth of Red Drum (\n                    <scp>\n                      <i>Sciaenops ocellatus</i>\n                    </scp>\n                    ) in Relation to Environmental Drivers and Oil Spill Events in the Gulf of America",
+      "authors": "Smith, Geoffrey H.; Murie, Debra J.; Croteau, Amanda C.; Parkyn, Daryl C.",
+      "journal": "Fisheries Oceanography",
+      "date": "2026-08-24",
+      "abstract": "ABSTRACT Environmental drivers and stochastic events, such as hurricanes and oil spills, can potentially affect the growth of red drum ( Sciaenops ocellatus ) and hence their fisheries productivity. We assessed multidecadal changes in their growth using otolith sclerochronology, applying correlational analysis and linear mixed‐effects models (LMMs). Sex‐specific growth patterns were estimated using annual otolith increments of fish 15+ years old from Louisiana (impacted region for oil spills; N = 233) and from the west coast of Florida (region without oil spill impacts; N = 201), collected from 2005–2015. Both methods indicated that growth of males and females was positively related to spring sea surface temperatures in Louisiana but not in Florida. Annual Atlantic Multidecadal Oscillation appeared to be the strongest, positive driving factor for growth of both sexes in both regions based on LMMs. In Florida, there was a negative relationship between Tampa Bay discharge and growth in both males and females, whereas no relationship was detected in Louisiana with Mississippi River discharge. Growth in Louisiana was not related to the extent of the Gulf hypoxic zone, the occurrence and strength of hurricanes/storms, or the volume of major oil spills, including the Deepwater Horizon . Both correlational sclerochronology and LMMs resulted in similar significant relationships between growth and various environmental factors, but the significant drivers of growth varied by both region and sex. In addition, although red drum males and females have similar growth overall, the factors that drive that growth varied and hence changes in ocean conditions may affect the growth of males and females differently.",
+      "summary_cn": "本研究利用耳石硬组织年代学（otolith sclerochronology）结合相关分析和线性混合效应模型（LMMs），评估了墨西哥湾红鼓鱼（Sciaenops ocellatus）的多十年生长变化，样本来自路易斯安那州（受石油泄漏影响区，N=233）和佛罗里达西海岸（无泄漏影响区，N=201），涵盖2005–2015年。结果显示，春季海表温度对路易斯安那州两性生长有正向影响，但佛罗里达州无此效应；大西洋多年代际振荡（AMO）是两区域两性生长最强的正向驱动因子。佛罗里达州坦帕湾径流与生长呈负相关，而路易斯安那州密西西比河径流无显著关系；生长与墨西哥湾缺氧区范围、飓风强度及重大石油泄漏（含Deepwater Horizon事件）均无关联。尽管两性总体生长相似，但驱动因子因区域和性别而异，表明海洋条件变化可能对雌雄生长产生差异化影响。",
+      "url": "https://doi.org/10.1111/fog.70071",
+      "source": "crossref_issn",
+      "keywords_matched": "Fisheries Oceanography",
+      "high_impact": false
+    },
     {
       "doi": "10.55549/ephels.176",
       "title": "Impact of Natural Disaster and Essential Spawning Habitat (ESH) Characteristics on the Conservation of the Vulnerable Endemic Bilih Fish (Mystacoleucus padangensis) in Lake Singkarak, Indonesia",
@@ -3252,79 +3291,23 @@
       "source": "crossref",
       "keywords_matched": "Scientific Data",
       "high_impact": false
-    },
-    {
-      "doi": "10.35885/1684-7318-2026-2-219-234",
-      "title": "Mercury (Hg) accumulation in the organs and muscle tissue of commercial fish species in water reservoirs of the Middle Volga",
-      "authors": "Revukhin, A. A.; Shurganova, G. V.; Kudrin, I. A.; Voronin, R. E.; Gremyachikh, V. A.; Komov, V. T.",
-      "journal": "Povolzhskiy Journal of Ecology",
-      "date": "2026-08-09",
-      "abstract": "The paper provides a comparative analysis of mercury (Hg) accumulation in the muscle tissue and organs of commercial fish in the Gor’ky and Cheboksary reservoirs. The research material consisted of 120 specimens of four fish species, namely: Blicca bjoerkna , Abramis brama , Rutilus rutilus , and Perca fluviatilis . The mercury concentrations in the muscles, liver, gills, and gonads were analyzed for each species group. The results showed a pronounced species specificity of accumulation, namely: the highest Hg concentrations were recorded in the muscle tissue and liver, the lowest it in the gills and gonads. Predatory perch is characterized by a higher mercury level, which reflects the influence of its trophic position. Correlation and covariance analysis revealed a significant dependence of mercury concentration in muscles on body length in most fish species, whereas this dependence was less pronounced and variable for the liver, gills, and gonads. The data obtained confirm the informative value of muscle tissue as an indicator of long-term mercury pollution and emphasize the need to take into account the species composition and size-age structure in the environmental monitoring of reservoirs.",
-      "summary_cn": "本研究比较分析了高尔基与切博克萨雷水库中四种经济鱼类（Blicca bjoerkna、Abramis brama、Rutilus rutilus、Perca fluviatilis）肌肉及器官中的汞（Hg）积累情况，共检测120个样本。结果显示汞积累具有显著物种特异性，肌肉和肝脏中浓度最高，鳃和性腺中最低；捕食性鲈鱼汞水平较高，反映其营养级影响。相关与协方差分析表明，多数鱼类肌肉汞浓度与体长显著相关，而肝脏、鳃和性腺的相关性较弱且多变。研究证实肌肉组织可作为长期汞污染的有效指示物，并强调环境监测需考虑物种组成和大小年龄结构。",
-      "url": "https://doi.org/10.35885/1684-7318-2026-2-219-234",
-      "source": "crossref",
-      "keywords_matched": "fish population",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1007/s44163-026-01950-5",
-      "title": "A hybrid machine learning framework using fractional order dynamics to predict fish toxicity in aquatic ecosystems",
-      "authors": "Amilo, David; Sadri, Khadijeh; Nwekwo, Chidi Wilson; Farman, Muhammad; Hafez, Mohamed; Bayram, Mustafa",
-      "journal": "Discover Artificial Intelligence",
-      "date": "2026-08-09",
-      "abstract": "",
-      "summary_cn": "本研究提出一种基于分数阶动力学的混合机器学习框架，用于预测水生生态系统中鱼类的毒性效应。该方法整合了分数阶微分方程与机器学习算法，以捕捉毒性响应中的非线性动态特征。研究旨在提升对化学污染物鱼类毒性预测的准确性和鲁棒性，为生态风险评估提供更可靠的工具。",
-      "url": "https://doi.org/10.1007/s44163-026-01950-5",
-      "source": "crossref",
-      "keywords_matched": "fish population",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1038/s41598-026-65235-8",
-      "title": "Isolation and identification of Pseudomonas fluoeroscens and evaluation of its antimicrobial sensitivity from fish in Lake Haramaya, East Hararghe Zone, Oromia Regional State, Ethiopia",
-      "authors": "Feleke, Melaku Getahun; Edao, Mustefa Hinika; Yilhal, Getachew Alemu; Mekasha, Yesuneh Tefera; Mekonen, Abibo Wondie; Fenta, Melkie Dagnaw; Mengistu, Bemrew Admassu; Berihun, Asnakew Mulaw; Getnet, Mengesha Ayehu; Demessie, Yitayew",
-      "journal": "Scientific Reports",
-      "date": "2026-08-09",
-      "abstract": "Abstract Pseudomonas fluorescens ( P. fluorescens ) is an opportunistic Gram-negative bacterium associated with disease in freshwater and marine fish, resulting in economic losses to aquaculture. This study aimed to isolate and identify P. fluorescens from wild Nile tilapia ( Oreochromis niloticus ) and African catfish ( Clarias gariepinus ) collected from Lake Haramaya, Ethiopia, and to evaluate the antimicrobial susceptibility profile of the isolates. A cross-sectional study was conducted from December 2022 to May 2023. A total of 50 fish (32 Nile tilapia and 18 African catfish) were sampled, and 250 swab specimens were collected from the skin, gills, intestine, liver, and kidney. Isolation and identification were performed using conventional cultural, morphological, and biochemical methods. Antimicrobial susceptibility testing was conducted on 10 representative presumptive isolates using the Kirby–Bauer disk diffusion method according to Clinical and Laboratory Standards Institute (CLSI) guidelines. Presumptive P. fluorescens was detected in 21 of 50 (42.0%) wild fish examined. A total of 27 presumptive isolates were recovered from the sampled organs based on their cultural, morphological, and biochemical characteristics. The highest isolate-level occurrence was observed in the skin (20%), followed by the intestine (14%), gills (12%), liver (6%), and kidney (2%). Bacterial occurrence differed significantly among organs ( P &lt; 0.05), whereas no significant association was observed with fish species or sex ( P &gt; 0.05). Among the 10 representative isolates tested, all were resistant to tetracycline and ciprofloxacin, whereas 90% and 70% were susceptible to kanamycin and gentamicin, respectively. These findings provide preliminary evidence of the occurrence of presumptive P. fluorescens and antimicrobial-resistant isolates in wild fish from Lake Haramaya. Molecular confirmation of species identity and comprehensive antimicrobial susceptibility testing using a larger number of isolates are needed, as identification was based solely on phenotypic methods and antimicrobial susceptibility testing was limited to 10 representative isolates. The findings establish baseline information for future surveillance of P. fluorescens and antimicrobial resistance in Ethiopian freshwater ecosystems within a One Health framework.",
-      "summary_cn": "本研究从埃塞俄比亚Haramaya湖的野生尼罗罗非鱼和非洲鲶鱼中分离鉴定荧光假单胞菌（P. fluorescens），并评估其抗菌药物敏感性。共采集50尾鱼（250份拭子样本），通过传统培养、形态学和生化方法鉴定，并采用Kirby-Bauer纸片扩散法对10株代表性分离株进行药敏试验。结果显示，42%的鱼检出疑似P. fluorescens，皮肤分离率最高（20%），所有测试菌株对四环素和环丙沙星耐药，90%和70%分别对卡那霉素和庆大霉素敏感。该研究为埃塞俄比亚淡水生态系统中P. fluorescens及其耐药性的监测提供了基线数据，但需分子鉴定和更大样本量验证。",
-      "url": "https://doi.org/10.1038/s41598-026-65235-8",
-      "source": "crossref",
-      "keywords_matched": "fish population",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1111/faf.70045",
-      "title": "Issue Information",
-      "authors": "",
-      "journal": "Fish and Fisheries",
-      "date": "2026-08-09",
-      "abstract": "",
-      "summary_cn": "非渔业相关",
-      "url": "https://doi.org/10.1111/faf.70045",
-      "source": "crossref_issn",
-      "keywords_matched": "Fish and Fisheries",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1111/jfb.70606",
-      "title": "Dietary parsley seed powder attenuates acrylamide‐waterborne toxicity hazards on growth, redox status, immunity and gene regulations in\n                    <i>Oreochromis niloticus</i>",
-      "authors": "Naiel, Mohammed A. E.; Zaki, Eman M.; Abdelhakim, Taghrid M. N.; Moustafa, Mahmoud; Al‐Shehri, Mohammed; Al‐zaban, Mayasar I.; Ismael, Nahla. E. M.",
-      "journal": "Journal of Fish Biology",
-      "date": "2026-08-09",
-      "abstract": "Abstract This study evaluated the protective role of dietary parsley seed powder (PSP) against acrylamide (ACR) toxicity in Nile tilapia ( Oreochromis niloticus ). A total of 200 juvenile fish (15.98 ± 0.01 g) were randomly assigned to four dietary groups (0.0, 2.5, 5.0 and 10.0 g PSP/kg diet) and exposed for 56 days to a sublethal ACR concentration (3.46 mg/L). Throughout the experiment, growth performance, blood biochemical indices, immune responses, oxidative stress biomarkers, digestive enzyme activities, histopathology and hepatic gene expression were thoroughly assessed. The results revealed that PSP supplementation, particularly at 10.0 g/kg, significantly improved final body weight, body weight gained, daily weight gain and survival rate ( p ≤ 0.05), while reducing feed conversion ratio significantly at 2.5 g/kg ( p ≤ 0.001). Moreover, blood AST activity was significantly decreased in the 5.0 and 10.0 g/kg groups ( p ≤ 0.01), accompanied by significantly elevated total protein and albumin ( p &lt; 0.01), and reduced uric acid and creatinine levels ( p ≤ 0.001), indicating hepatoprotective and nephroprotective effects. Additionally, PSP exerted anti‐inflammatory and antioxidant benefits, as evidenced by significantly reduced serum tumour necrosis factor‐α (TNF‐α) levels ( p ≤ 0.001) and increased glutathione (GSH) concentration ( p ≤ 0.05), especially in the 10.0 g/kg group. Digestive enzymes (amylase and pepsin) exhibited a significant increase at all PSP levels ( p ≤ 0.05 or 0.01), with the highest levels observed in the DP 3 group (10.0 g PSP/kg diet). Histopathological evaluation indicated a dose‐dependent attenuation of intestinal and hepatopancreatic alterations with increasing PSP levels, as evidenced by reduced lesion severity, decreased necrotic changes and better preservation of tissue architecture. Furthermore, gene expression analysis revealed significant downregulation of cysteine–aspartic acid protease‐3 ( caspase‐3 ) and tumour necrosis factor‐alpha 2 ( tnf‐2α ) genes ( p ≤ 0.01) and upregulation of insulin‐like growth factor 1 ( igf‐1 ) and growth hormone ( gh ) ( p ≤ 0.01) genes in the 10.0 g/kg group, indicating enhanced growth and cellular resilience. In conclusion, dietary PSP at 10.0 g/kg significantly alleviates ACR toxicity by enhancing physiological, biochemical, immunological and molecular responses in Nile tilapia.",
-      "summary_cn": "本研究评估了饲料中添加欧芹籽粉（PSP）对尼罗罗非鱼（Oreochromis niloticus）丙烯酰胺（ACR）毒性的保护作用。实验将200尾幼鱼（15.98 ± 0.01 g）随机分为四组，分别饲喂0.0、2.5、5.0和10.0 g PSP/kg饲料，并在亚致死ACR浓度（3.46 mg/L）下暴露56天。结果表明，PSP补充（尤其10.0 g/kg组）显著改善最终体重、增重、日增重和存活率，并降低饲料转化率；同时降低血清AST活性，提高总蛋白和白蛋白水平，减少尿酸和肌酐含量，发挥肝保护和肾保护作用。此外，PSP通过降低TNF-α水平、增加谷胱甘肽浓度、提升消化酶活性及下调caspase-3和tnf-2α基因、上调igf-1和gh基因表达，增强抗氧化、抗炎和生长性能，并剂量依赖性地减轻肠道和肝胰腺组织病理损伤。",
-      "url": "https://doi.org/10.1111/jfb.70606",
-      "source": "crossref_issn",
-      "keywords_matched": "Journal of Fish Biology",
-      "high_impact": false
     }
   ],
   "weekly_topics": {
+    "2026-W35": {
+      "week_key": "2026-W35",
+      "week_range": "8月24日—8月30日",
+      "topic": "微塑料毒性、水产养殖与红鼓鱼生长研究进展",
+      "keywords": "纳米塑料毒性(Nanoplastic Toxicity), 水产养殖发展(Aquaculture Growth), 生长动态(Growth Dynamics), 环境驱动因子(Environmental Drivers), 鱼类皮肤细胞(Fish Skin Cells), 性别差异(Sex-Specific), 溢油影响(Oil Spill Effects), 长期暴露(Long-Term Exposure)",
+      "article": "## 本周研究概览\n\n本周共收录渔业相关论文3篇，研究方向涵盖微塑料毒理学、水产养殖政策与管理、以及鱼类种群动态与环境驱动因子分析。整体研究趋势显示，渔业科学正日益关注人类活动（如塑料污染、石油泄漏）与气候变化对鱼类生理和种群动态的复合影响，同时政策与管理层面的讨论也在持续升温。研究手段上，从细胞毒理实验到耳石年代学分析，体现了从分子到生态尺度的多层次研究范式。\n\n## 高影响力期刊亮点\n\n本周暂无。\n\n## 创新性研究\n\n1. **Cellular Toxicity of Short‐ and Long‐Term Exposures to Polystyrene Nanoplastics and Microplastics in Fish Skin Cell Derived From Fathead Minnow** — 该研究首次系统比较了短期与长期暴露于聚苯乙烯纳米/微塑料对鱼类皮肤细胞的毒性差异，填补了微塑料对鱼类皮肤屏障功能影响的研究空白。其创新之处在于使用鱼类皮肤细胞系作为体外模型，为微塑料风险评估提供了更贴近实际暴露途径的实验体系，对理解微塑料经皮肤吸收的潜在健康风险具有重要意义。\n\n2. **Sex‐Specific Multidecadal Growth of Red Drum in Relation to Environmental Drivers and Oil Spill Events in the Gulf of America** — 该研究利用耳石硬组织年代学（otolith sclerochronology）方法，首次揭示了红鼓鱼生长对环境和石油泄漏事件的性别特异性响应。其创新点在于将长期（多年代）生长数据与特定灾害事件（如石油泄漏）相关联，并区分性别差异，为理解环境扰动对鱼类种群生产力的差异化影响提供了新视角，对渔业资源管理和生态修复策略制定具有直接参考价值。\n\n3. **When Will We Do What is Needed for U.S. Aquaculture to Grow?** — 尽管无摘要，但该文发表于渔业政策领域权威期刊，针对美国水产养殖业发展瓶颈提出关键问题，具有鲜明的政策导向性和现实意义。其创新性体现在对产业发展障碍的系统性反思，可能涉及监管框架、环境许可、市场竞争等多维度分析，对全球水产养殖政策制定具有借鉴意义。\n\n## 推荐阅读\n\n1. **Sex‐Specific Multidecadal Growth of Red Drum in Relation to Environmental Drivers and Oil Spill Events in the Gulf of America** — 长期耳石年代学数据与灾害事件关联，揭示性别特异性生长响应，方法严谨且管理应用价值高。\n2. **Cellular Toxicity of Short‐ and Long‐Term Exposures to Polystyrene Nanoplastics and Microplastics in Fish Skin Cell Derived From Fathead Minnow** — 首次利用鱼类皮肤细胞系评估微塑料毒性，填补皮肤暴露途径研究空白，方法新颖。\n3. **When Will We Do What is Needed for U.S. Aquaculture to Grow?** — 聚焦水产养殖业发展核心政策议题，对产业实践具有直接指导意义。",
+      "paper_count": 3,
+      "high_impact_count": 1
+    },
     "2026-W34": {
       "week_key": "2026-W34",
       "week_range": "8月17日—8月23日",
-      "topic": "鱼类保护与可持续养殖：环境胁迫、营养调控及技术创新的前沿进展",
-      "keywords": "水产养殖(Aquaculture), 鱼类保护(Fish Conservation), 繁殖生物学(Reproductive Biology), 鱼类健康与免疫(Fish Health & Immunity), 环境风险评估(Environmental Risk Assessment), 鱼类分类学(Fish Taxonomy), 微塑料污染(Microplastic Pollution), 可持续渔业(Sustainable Fisheries)",
+      "topic": "鱼类保护与可持续养殖：生态、营养与健康风险研究进展",
+      "keywords": "鱼类保护(Fish Conservation), 水产养殖(Aquaculture), 鱼类饲料(Fish Feed), 重金属污染(Heavy Metal Pollution), 微塑料(Microplastics), 鱼类分类(Fish Taxonomy), 循环水养殖(RAS), 鱼类生态(Fish Ecology)",
       "article": "## 本周研究概览\n\n本周共收录渔业相关论文3篇，研究方向较为分散，涵盖水产品安全检测、鱼类分类学与形态学、以及岛屿生物地理学与演化生物学三大领域。整体来看，本周研究以基础生物学和生态学为主，缺乏大规模渔业资源评估或管理政策类研究，但其中涉及的方法学进展（如多基质污染物同步检测）和演化机制探讨（如夏威夷特有鱼类的起源）仍具一定学术价值。研究地域上，南亚（尼泊尔）和太平洋岛屿（夏威夷）成为关注热点，反映出渔业科学向区域性、精细化方向发展的趋势。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances等高水平期刊上的论文。\n\n## 创新性研究\n\n1. **Validation of a multi-matrix GC–MS/MS method for simultaneous determination of nine N-nitrosamines in seafood and water**（*International Journal of Environmental Analytical Chemistry*）— 该研究开发并验证了同时测定水产品及水体中9种N-亚硝胺的GC-MS/MS多基质方法。N-亚硝胺作为一类强致癌物，在水产品加工过程中可能形成，但此前缺乏高效的多残留同步检测方案。该方法的建立填补了水产品安全检测领域的技术空白，对食品安全监管和风险评估具有直接应用价值。\n\n2. **Taxonomic assessment of the glyptosternoid catfish *Parachiloglanis hodgarti* based on morphometric analysis of type specimens and riverine populations in Nepal**（*Journal of Fish Biology*）— 该研究首次系统比较了尼泊尔三大河流水系（Gandaki、Koshi、Karnali）中*Parachiloglanis hodgarti*的形态差异，并纳入模式标本进行对比分析。其创新之处在于将传统形态测量与现代统计方法结合，揭示了该物种的种内形态变异格局，为喜马拉雅地区鲇形目鱼类的分类修订和生物多样性保护提供了关键基础数据。\n\n3. **Origins and relationships of endemic Hawaiian sabre‐toothed blennies in the genus *Plagiotremus***（*Journal of Fish Biology*）— 该研究聚焦夏威夷特有的剑齿鳚属鱼类，通过系统发育分析探讨其起源与亲缘关系。夏威夷群岛作为海洋生物多样性热点区域，其特有鱼类的演化历史一直是生物地理学的重要议题。该研究揭示了*Plagiotremus*属在夏威夷的殖民和分化模式，为理解太平洋岛屿鱼类的生物地理格局和物种形成机制提供了新见解。\n\n## 推荐阅读\n\n1. **Validation of a multi-matrix GC–MS/MS method for simultaneous determination of nine N-nitrosamines in seafood and water** — 方法学创新性强，对水产品安全检测具有直接应用价值，值得食品安全领域研究者关注。\n2. **Taxonomic assessment of the glyptosternoid catfish *Parachiloglanis hodgarti* based on morphometric analysis of type specimens and riverine populations in Nepal** — 填补了喜马拉雅地区特有鱼类分类学研究的空白，对生物多样性保护有重要参考意义。\n3. **Origins and relationships of endemic Hawaiian sabre‐toothed blennies in the genus *Plagiotremus*** — 为理解太平洋岛屿特有鱼类的演化历史提供了新的系统发育证据，生物地理学研究者值得一读。",
       "paper_count": 124,
       "high_impact_count": 25
@@ -3332,20 +3315,11 @@
     "2026-W33": {
       "week_key": "2026-W33",
       "week_range": "8月10日—8月16日",
-      "topic": "渔业可持续发展与技术创新研究热点",
-      "keywords": "水产养殖(Aquaculture), 渔业管理(Fisheries Governance), 鱼类健康(Fish Health), 市场与营销(Marketing), 遗传与种群(Genetics & Population), 饲料替代(Feed Alternatives), 生态系统评估(Ecosystem Assessment), 非法捕捞(IUU Fishing)",
+      "topic": "渔业可持续发展与技术创新研究热点综述",
+      "keywords": "水产养殖(Aquaculture), 渔业管理(Fisheries Governance), 鱼类健康(Fish Health), 市场营销(Marketing), 种群评估(Stock Assessment), 遗传学(Genetics), 可持续发展(Sustainability), 生态系统(Ecosystem)",
       "article": "## 本周研究概览\n\n本周共收录渔业相关论文2篇，研究主题较为分散，分别涉及渔业管理政策的社会经济维度与鱼类分类学的基础生物学研究。前者聚焦西非加纳的小规模渔业燃料补贴政策及其对渔业可持续性的影响，属于渔业管理与政策评估领域；后者则报道了越南海域发现的一个盲鳗新属新种，属于渔业资源生物学与分类学范畴。整体来看，本周研究数量较少，但体现了渔业科学中“管理实践”与“基础认知”并行的学科特点，前者关注人类活动与资源利用的平衡，后者则致力于完善物种多样性的基础图谱。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances等高水平期刊上的论文。\n\n## 创新性研究\n\n1. **Small‐Scale Fisherfolk Perspectives on Premix Fuel Subsidies and Fisheries Sustainability in Ghana**（*Natural Resources Forum*）— 该研究从小型渔民主体视角切入，评估加纳政府推行的premix燃油补贴政策对渔业可持续性的实际影响。其创新之处在于将政策效果评估从宏观统计转向微观行为主体感知，揭示了补贴政策在基层执行中的复杂反馈机制，为发展中国家渔业补贴改革提供了基于实地经验的决策参考。\n\n2. **A new genus and species of hagfish from Vietnam: A transitional lineage between Rubicundinae and Myxininae**（*Journal of Fish Biology*）— 该研究基于越南近海采集的两个标本，建立了盲鳗目（Myxiniformes）下的一个新属新种*Dolichostomus leucotaenia*。其创新性体现在两个层面：一是该物种具有细长椭圆形口裂等此前未见于盲鳗目的独有形态特征；二是系统发育分析显示其处于Rubicundinae与Myxininae两个亚科之间的过渡位置，为理解盲鳗类群的演化谱系提供了关键中间环节的形态与分子证据。\n\n## 推荐阅读\n\n1. **Small‐Scale Fisherfolk Perspectives on Premix Fuel Subsidies and Fisheries Sustainability in Ghana** — 以渔民主体感知为切入点评估补贴政策效果，对发展中国家小规模渔业治理具有直接借鉴意义。\n2. **A new genus and species of hagfish from Vietnam: A transitional lineage between Rubicundinae and Myxininae** — 新属新种的发现填补了盲鳗目演化谱系的关键空白，是分类学与系统发育研究的重要补充。",
       "paper_count": 126,
       "high_impact_count": 26
-    },
-    "2026-W32": {
-      "week_key": "2026-W32",
-      "week_range": "8月3日—8月9日",
-      "topic": "渔业污染与生态风险：从汞蓄积到毒性预测研究进展",
-      "keywords": "重金属富集, 鱼类毒性预测, 机器学习, 水产病原菌, 抗菌敏感性, 饲料添加剂, 氧化应激, 基因调控",
-      "article": "## 本周研究概览\n\n本周共收录渔业相关论文7篇，研究主题集中于鱼类入侵生态学、营养生态学、渔业海洋学及水产养殖基因组学等方向。其中，入侵生物学占据较大比重（3篇），涵盖全球尺度入侵风险评估、深海aphotic zone入侵记录及外来与本土鱼类的营养生态位重叠分析；此外，渔业资源变动与环境驱动因子的关联研究、鱼类黏膜免疫活性物质开发以及龙虾基因组资源综述亦各有涉及。整体来看，本周研究呈现出从传统资源评估向多学科交叉（机器学习、分子生物学、遥感技术）拓展的趋势，且对生态入侵与气候变化背景下渔业资源响应的关注度显著提升。\n\n## 高影响力期刊亮点\n\n本周暂无发表于Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances等高水平期刊的论文。\n\n## 创新性研究\n\n1. **Assessing Invasion Risk and Associated Economic Loss of Fish Species Across Global Watersheds Using Machine Learning Algorithms**（*Water*）— 该研究将机器学习算法引入全球流域尺度的鱼类入侵风险评估，并首次将经济损失量化纳入预测框架，实现了生态风险与经济影响的耦合分析，为入侵物种管理提供了决策支持新工具。\n\n2. **Invasives in the dark: An established population of the arrow bulleye *Priacanthus sagittarius* on the aphotic continental slope of the eastern Mediterranean**（*Journal of Fish Biology*）— 该研究首次记录鱼类入侵至地中海aphotic zone（无光层），打破了此前入侵记录几乎全部局限于沿岸及上陆架生境的认知，提示深海生态系统同样面临生物入侵威胁，拓展了入侵生态学的研究边界。\n\n3. **Trophic niche overlap between native and non-native fishes in central Anatolian lakes, Türkiye**（*Journal of Fish Biology*）— 该研究系统比较了安纳托利亚中部湖泊中8种本土与5种外来鱼类的食性组成、猎物选择及种间营养重叠，揭示了外来种与高特有性本土鱼类之间的竞争格局，为生物多样性热点区域的入侵管理提供了精细化生态学依据。\n\n4. **Tracking Eastward Displacement of Pacific Saury Fishing Grounds Using Nighttime Fishing Radiance: The Role of Early-Season Kuroshio Extension Variability**（*Fisheries Oceanography*）— 该研究创新性地利用夜间渔船灯光遥感数据追踪秋刀鱼渔场东移过程，并将其与黑潮延伸体早期季节变异建立关联，为理解气候变化背景下小型中上层鱼类资源再分布提供了新的观测手段与分析视角。\n\n## 推荐阅读\n\n1. **Invasives in the dark: An established population of the arrow bulleye *Priacanthus sagittarius* on the aphotic continental slope of the eastern Mediterranean** — 首次揭示深海无光层鱼类入侵现象，具有重要生态学意义与原创性。\n2. **Assessing Invasion Risk and Associated Economic Loss of Fish Species Across Global Watersheds Using Machine Learning Algorithms** — 机器学习与经济损失评估相结合，为入侵物种管理提供了创新性的量化工具。\n3. **Trophic niche overlap between native and non-native fishes in central Anatolian lakes, Türkiye** — 对高特有性湖泊生态系统中外来种竞争效应的细致解析，具有重要保护生物学价值。\n4. **Tracking Eastward Displacement of Pacific Saury Fishing Grounds Using Nighttime Fishing Radiance: The Role of Early-Season Kuroshio Extension Variability** — 遥感夜间灯光数据在渔业海洋学中的创新应用，对理解气候驱动的渔场变迁具有现实意义。\n5. **An Update on Advancement in Genomics Resources for Spiny Lobster Aquaculture Development** — 系统梳理龙虾基因组学最新进展，对水产养殖育种与资源可持续利用具有重要参考价值。",
-      "paper_count": 5,
-      "high_impact_count": 0
     }
   }
 }
