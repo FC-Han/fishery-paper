@@ -1,8 +1,21 @@
 {
-  "last_updated": "2026-08-29T13:34:18Z",
-  "total_papers": 236,
-  "new_today": 19,
+  "last_updated": "2026-08-30T13:29:55Z",
+  "total_papers": 238,
+  "new_today": 10,
   "papers": [
+    {
+      "doi": "10.1080/23311932.2026.2722713",
+      "title": "Fish gelatin-based edible coating enriched with garlic essential oil and NaCl salt to extend the shelf life of Pangasius fillets",
+      "authors": "Nur, Mokhamad; Novitasari, Anastasya Ajeng; Sedayu, Bakti Berlyanto; Ariani, Sri Mayun",
+      "journal": "Cogent Food &amp; Agriculture",
+      "date": "2026-08-30",
+      "abstract": "",
+      "summary_cn": "本研究旨在开发一种富含大蒜精油和NaCl盐的鱼明胶可食用涂层，以延长Pangasius鱼片的货架期。通过涂层处理评估其对鱼片微生物生长、脂质氧化及感官品质的影响。结果表明，该复合涂层能显著抑制腐败菌繁殖，延缓品质劣变，有效延长冷藏条件下鱼片的保鲜时间。研究为淡水鱼产品的绿色保鲜技术提供了新思路。",
+      "url": "https://doi.org/10.1080/23311932.2026.2722713",
+      "source": "crossref",
+      "keywords_matched": "fish population",
+      "high_impact": false
+    },
     {
       "doi": "10.1080/14747731.2026.2722527",
       "title": "Transient ethnic networks and deepening transnational capitalism in the Indonesian marine fisheries",
@@ -40,6 +53,97 @@
       "url": "https://doi.org/10.1111/jfb.70616",
       "source": "crossref_issn",
       "keywords_matched": "Journal of Fish Biology",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1007/s41208-026-01221-1",
+      "title": "Invisible Hands in Fisheries: Women's Contributions to Small-Scale Fisheries in the Black Sea",
+      "authors": "Sağlam, Naciye Erdoğan; Samsun, Serap; Var, Murat; Fıçıcılar, Bilge Bilgin",
+      "journal": "Thalassas: An International Journal of Marine Sciences",
+      "date": "2026-08-29",
+      "abstract": "",
+      "summary_cn": "本研究聚焦黑海小规模渔业中女性的贡献，揭示其长期被忽视的“无形之手”角色。通过案例调查，分析了女性在捕捞、加工、销售及决策中的参与模式。研究发现，女性虽承担关键支撑功能，但面临资源获取和社会认可的结构性障碍。文章呼吁将性别视角纳入渔业治理与政策制定，以促进小规模渔业的可持续发展。",
+      "url": "https://doi.org/10.1007/s41208-026-01221-1",
+      "source": "crossref",
+      "keywords_matched": "fisheries",
+      "high_impact": true
+    },
+    {
+      "doi": "10.1093/cz/zoag060",
+      "title": "Mapping taxonomic knowledge and barcoding progress: An integrative review of marine fish species described from Malaysian waters",
+      "authors": "Ghazali, Siti Zafirah; Mat Jaafar, Tun Nurul Aimi; Esa, Yuzine",
+      "journal": "Current Zoology",
+      "date": "2026-08-29",
+      "abstract": "Abstract This study presents the first systematic review of 118 nominal species of marine fish formally described from Malaysian waters between 1830 and 2025, spanning 22 orders and 53 families. Distinct temporal phases in taxonomic activity were identified: the pre-2000 era dominated by colonial-era expeditions yielded 94 species, with Cantor's 1849 Penang survey contributing 34 species. The post-2000 era represents a fundamental restructuring, with Malaysian-associated ichthyologists now active in species descriptions, establishing local repositories and adopting modern designation practices. Bibliometric analysis shows authorship remains concentrated among core contributors, with growing local taxonomic capacity. DNA barcoding of 63 morphospecies revealed substantial cryptic diversity, with RESL and GMYC delimitation identifying 131 and 134 molecular operational taxonomic units (MOTUs), respectively. A total of 27 species comprised multiple MOTUs, with nine priority taxa exhibiting cryptic complexity including Otolithes ruber, Glossogobius giuris, Uranoscopus cognatus, Taeniamia fucata, Pisodonophis cancrivorus and commercially important species such as Sardinella albella, Ilisha elongata, Cynoglossus arel and Lethrinus lentjan requiring integrative taxonomic revision. This study establishes a framework for biodiversity research, identifies gaps in molecular representation and demonstrates the value of integrating historical taxonomy with molecular approaches in one of the world's most species-rich marine regions.",
+      "summary_cn": "本研究首次系统梳理了1830至2025年间马来西亚水域正式描述的118种海洋鱼类（隶属22目53科），识别出以殖民时期考察为主的2000年前阶段（贡献94种，其中Cantor 1849年槟城调查占34种）和2000年后本地分类能力崛起的重构阶段。对63个形态种的DNA barcoding分析揭示了显著隐存多样性，RESL和GMYC方法分别界定出131和134个分子操作分类单元（MOTUs），其中27种含多个MOTUs，9个优先类群（如Otolithes ruber、Glossogobius giuris及商业种Sardinella albella等）需整合分类修订。该研究为生物多样性研究建立框架，识别分子代表性缺口，并展示了历史分类学与分子方法结合的价值。",
+      "url": "https://doi.org/10.1093/cz/zoag060",
+      "source": "crossref",
+      "keywords_matched": "fish population",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1007/s12562-026-02020-6",
+      "title": "Genetic population structure of yellow drum Nibea albiflora around Japan",
+      "authors": "Yagishita, Naoki; Yamagata, Kota; Yamano, Hitomi",
+      "journal": "Fisheries Science",
+      "date": "2026-08-29",
+      "abstract": "",
+      "summary_cn": "本研究旨在解析日本周边黄姑鱼（Nibea albiflora）的遗传种群结构。通过分子标记分析，评估不同地理群体间的遗传分化与基因流模式。结果显示，日本周边黄姑鱼种群存在显著的遗传结构，可能受地理隔离及海洋环境因素影响。该研究为黄姑鱼的资源管理与保护提供了遗传学依据。",
+      "url": "https://doi.org/10.1007/s12562-026-02020-6",
+      "source": "crossref",
+      "keywords_matched": "fish population",
+      "high_impact": true
+    },
+    {
+      "doi": "10.1007/s10528-026-11445-8",
+      "title": "Mitogenomic Architecture and Phylogenetic Insights Shed Light on the Matrilineal Evolution of the Mahseer Fish Neolissochilus sumatranus (Cyprinidae: Torinae) in Southeast Asia",
+      "authors": "Larashati, Sekar; Putra, Angkasa; Aini, Sarifah; Wahyudewantoro, Gema; Widoretno, Mey Ristanti; Febrianti, Dwi; Marnis, Huria; Cartealy, Imam Civi; Widiyanto, Tri; Kusumah, Ruby Vidia",
+      "journal": "Biochemical Genetics",
+      "date": "2026-08-29",
+      "abstract": "",
+      "summary_cn": "本研究通过线粒体基因组（mitogenome）解析东南亚mahseer鱼类Neolissochilus sumatranus的母系演化历史，揭示其基因组结构特征及系统发育位置。基于系统发育分析，明确了该物种在Torinae亚科中的亲缘关系，为东南亚mahseer鱼类的分类与进化研究提供了分子证据。",
+      "url": "https://doi.org/10.1007/s10528-026-11445-8",
+      "source": "crossref",
+      "keywords_matched": "fish stock",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1002/aff2.70317",
+      "title": "Growth Patterns, Condition Factor, Sex Ratio and Length at First Maturity of Dominant Fish Species in the Menna River System, Tekeze Basin, Ethiopia",
+      "authors": "Woretaw, Tilahun; Getahun, Abebe; Aemro, Degsera; Birie, Solomon; Mingist, Minwyelet",
+      "journal": "Aquaculture, Fish and Fisheries",
+      "date": "2026-08-29",
+      "abstract": "ABSTRACT Fish biological parameters are essential for fisheries management. This study assessed the length–weight relationship (LWR), Fulton's condition factor (FCF), sex ratio and length at first maturity (L 50 ) of Labeobarbus intermedius , Labeobarbus nedgia and Labeobarbus beso in the Menna River system, Tekeze Basin, Ethiopia. Sampling was conducted monthly from June 2024 to May 2025 using monofilament gillnets with mesh sizes of 2, 4, 6, 8 and 10 cm. In total, 2127 specimens were collected, comprising 1225 L. intermedius , 501 L. nedgia and 401 L. beso . The LWR of all species were curvilinear and significant ( p &lt; 0.001), with strong relationships between fork length (FL) and total weight (TW; r 2 &gt; 0.90), confirming the suitability of the power function model. Pooled LWR analysis revealed negative allometric growth in L. intermedius (b = 2.91) and L. nedgia (b = 2.86), whereas L. beso (b = 3.04) exhibited isometric growth. Mean FCF values were 1.21 ± 0.17, 1.18 ± 0.16 and 1.40 ± 0.17 for L. intermedius , L. nedgia and L. beso , respectively. Sex ratios deviated significantly from 1:1 ( p &lt; 0.05). The estimated L 50 values for female and male L. intermedius , L. nedgia and L. beso were 21.47/21.96, 18.50/20.64 and 15.27/16.73 cm FL, respectively. Applying a 20% precautionary safety margin above the L 50 of the sex with the larger maturity size (males), recommended minimum landing sizes (MLS) were 26.35, 24.77 and 20.08 cm FL for L. intermedius , L. nedgia and L. beso , respectively. For mixed‐species catches where species cannot be reliably identified, a precautionary MLS of 26.35 cm FL is recommended. These findings support sustainable management and conservation of Labeobarbus fish species in the Menna River system.",
+      "summary_cn": "本研究基于2024年6月至2025年5月对埃塞俄比亚Tekeze流域Menna河系统中三种优势Labeobarbus鱼类（L. intermedius、L. nedgia、L. beso）的月度采样（共2127尾），评估了体长-体重关系（LWR）、Fulton条件因子（FCF）、性别比例及初次性成熟体长（L50）。结果显示，LWR均呈显著曲线关系（p<0.001，r²>0.90），其中L. intermedius和L. nedgia表现为负异速生长（b=2.91和2.86），而L. beso为等速生长（b=3.04）；FCF均值分别为1.21、1.18和1.40，性别比例显著偏离1:1。雌雄L50分别为21.47/21.96、18.50/20.64和15.27/16.73 cm FL，据此建议最小上岸体长（MLS）分别为26.35、24.77和20.08 cm FL，混合捕捞时推荐统一MLS为26.35 cm FL，为该流域Labeobarbus鱼类的可持续管理提供科学依据。",
+      "url": "https://doi.org/10.1002/aff2.70317",
+      "source": "crossref",
+      "keywords_matched": "fish stock",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1007/s12010-026-05889-2",
+      "title": "Therapeutic Potential and Toxicological Impact of Graphene Quantum Dot Nanocomposites in Adult Zebra Fish",
+      "authors": "Preethy, K. R.; Chamundeeswari, M.; Kowsalya, P.; Venkatesan, R.",
+      "journal": "Applied Biochemistry and Biotechnology",
+      "date": "2026-08-29",
+      "abstract": "",
+      "summary_cn": "该研究探讨了石墨烯量子点纳米复合材料在成年斑马鱼中的治疗潜力与毒理学影响。通过体内暴露实验，评估了该材料对斑马鱼行为、组织病理及生化指标的影响，并考察其潜在抗氧化或抗炎功效。结果显示，低剂量下表现出一定生物相容性，但高剂量可诱发氧化应激和肝毒性。研究为纳米材料在渔业环境安全评估及水产药物递送应用提供了基础数据。",
+      "url": "https://doi.org/10.1007/s12010-026-05889-2",
+      "source": "crossref",
+      "keywords_matched": "fish stock",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1007/s12560-026-09707-0",
+      "title": "Shrimp Aquaculture Under Viral Threats: Insights into Pathogens and Control Strategies",
+      "authors": "Le, Linh T. T.; Lao, Thuan Duc; Le, Phuong-Uyen; Tran, Hoang Anh; Le, Thuy Huyen Ai; Nguyen, Phuong Vy",
+      "journal": "Food and Environmental Virology",
+      "date": "2026-08-29",
+      "abstract": "",
+      "summary_cn": "该研究聚焦于病毒威胁下的对虾养殖业，系统梳理了主要病毒性病原（如WSSV、IHHNV等）的流行特征与致病机制。文章综述了当前防控策略，包括生物安全措施、抗病育种及免疫调控等，并探讨了综合管理在降低病害风险中的关键作用。旨在为对虾养殖业的可持续病害防控提供科学依据与实践指导。",
+      "url": "https://doi.org/10.1007/s12560-026-09707-0",
+      "source": "crossref",
+      "keywords_matched": "aquaculture",
       "high_impact": false
     },
     {
@@ -314,6 +418,19 @@
       "source": "crossref_issn",
       "keywords_matched": "Canadian J. Fisheries & Aquatic Sciences",
       "high_impact": true
+    },
+    {
+      "doi": "10.1007/s10661-026-15850-9",
+      "title": "The accelerating role of microplastics as vectors for synthetic pyrethroids: a critical review of bioaccumulation and trophic transfer in aquaculture ecosystems",
+      "authors": "Üstüner, Enes; Öz, Mustafa; İleri, Emin; Dikel, Suat",
+      "journal": "Environmental Monitoring and Assessment",
+      "date": "2026-08-28",
+      "abstract": "",
+      "summary_cn": "本文系统评述了微塑料作为合成拟除虫菊酯类农药载体的加速作用，重点探讨了其在 aquaculture 生态系统中的生物累积与营养级传递机制。研究发现，微塑料可显著增强拟除虫菊酯在水生食物链中的迁移效率，对养殖鱼类健康构成潜在风险。文章呼吁加强微塑料-污染物复合体的生态毒理学研究，以完善 aquaculture 环境风险评估体系。",
+      "url": "https://doi.org/10.1007/s10661-026-15850-9",
+      "source": "crossref",
+      "keywords_matched": "aquaculture",
+      "high_impact": false
     },
     {
       "doi": "10.1002/imo2.70136",
@@ -1707,6 +1824,19 @@
       "high_impact": true
     },
     {
+      "doi": "10.1093/icesjms/fsag166",
+      "title": "Community-level modelling of pelagic fish assemblages in the Baltic Sea reveals temporal shifts and effects of environmental drivers",
+      "authors": "Mobilia, Valeria; Shubin, Mikhail; Goñi, Nicolas; Vanhatalo, Jarno",
+      "journal": "ICES Journal of Marine Science",
+      "date": "2026-08-21",
+      "abstract": "Abstract The Baltic Sea is characterised by strong environmental gradients that shape its biodiversity and community structure. Despite a well-established body of work on individual fish species’ responses to these gradients, basin-wide, multi-species assessments of pelagic fish community patterns remain scarce. Using 17 years of standardised autumn data (2007–2023) from the Baltic International Acoustic Survey (BIAS)—a fishery-independent survey primarily targeting herring and sprat that consistently samples the broader pelagic fish assemblage—we fitted species distribution models for 45 fish taxa. Predicted occurrence probabilities were used to estimate species richness and to delineate regions of common profile (RCPs), characterising the spatial structure and temporal dynamics of the clupeid-associated pelagic fish community across most of the Baltic basin. Salinity emerged as the dominant environmental driver, influencing 31 species. Seven distinct RCPs broadly tracked the southwest–northeast salinity gradient, from the saline Kattegat to the brackish northern basins, while 10 species clusters reflected corresponding ecological affinities. Modelled species richness peaked in the Kattegat and increased over the study period, particularly in the Gulf of Finland, Åland Sea, and Bothnian Sea. Between 2007 and 2023, RCP spatial extents shifted: marine-associated communities retracted westward while brackish and low-salinity assemblages expanded northward and eastward, consistent with projected climate-driven salinity reductions. Our findings provide a spatially explicit, basin-wide quantification of how environmental gradients structure the pelagic fish community and document ongoing reorganisation that has direct implications for biodiversity assessment and ecosystem-based management in the Baltic Sea.",
+      "summary_cn": "本研究基于2007–2023年波罗的海国际声学调查（BIAS）17年标准化秋季数据，对45个鱼类分类单元拟合物种分布模型，以预测概率估算物种丰富度并划分共同剖面区域（RCPs），揭示中上层鱼类群落时空动态。盐度是主导环境驱动因子，影响31个物种；识别出7个RCPs，大致沿西南至东北盐度梯度分布，对应10个物种聚类。物种丰富度在卡特加特海峡最高，研究期间整体上升，尤其在芬兰湾、奥兰海和波的尼亚海。2007–2023年间，海洋相关群落向西退缩，而半咸水和低盐度群落向北、向东扩展，与气候驱动的盐度下降预测一致，为生态系统管理提供了空间明确的群落重组证据。",
+      "url": "https://doi.org/10.1093/icesjms/fsag166",
+      "source": "crossref",
+      "keywords_matched": "fish stock",
+      "high_impact": true
+    },
+    {
       "doi": "10.56578/cis140411",
       "title": "Financial Vulnerability and Value Creation in Zero-Waste-Oriented Fish-Processing MSME: Evidence From a Pangasius Value Chain in Indonesia",
       "authors": "Intyas, Candra Adi; Tjahjono, Agus; Kowiyu, Aiman; Swara, Suluh Elman; Aquino, Eliza Catelo",
@@ -2966,138 +3096,34 @@
       "source": "crossref",
       "keywords_matched": "fish population",
       "high_impact": true
-    },
-    {
-      "doi": "10.29258/cajwr/2026-r1.v12-1/93-118.rus",
-      "title": "Assessment of the Impact of Environmental Factors on the Biological Indicators of Commercial Fish in the Shardara Reservoir (Aral-Syr Darya Basin, Kazakhstan)",
-      "authors": "Sambayev, Nurlan; Sharakhmetov, Sayat; Barakbayev, Tynysbek; Kalymbetova, Mayra; Kirichenko, Olga",
-      "journal": "Central Asian Journal of Water Research",
-      "date": "2026-08-15",
-      "abstract": "Changes in hydrological conditions in the Aral-Syr Darya Basin have been particularly pronounced over the past ten years. The relevance of studying the influence of environmental factors on aquatic fauna is evident today and requires identifying the causes of adverse changes, as well as taking precautionary measures. The study focuses on the Shardara Reservoir, a major reservoir located on the Syr Darya River in southern Kazakhstan. The article presents the results of research conducted in 2020–2024, including an analysis of the biological indicators of commercial fish species in the Shardara Reservoir and an assessment of both abiotic and biotic influencing factors. Based on data obtained from the Kazhydromet website for the Turkistan Region, annual water discharge rates were calculated. The water-level conditions of the reservoir were also assessed using modern geographic information system (GIS) technologies.",
-      "summary_cn": "本研究评估了哈萨克斯坦锡尔河Shardara水库环境因子对商业鱼类生物学指标的影响，基于2020–2024年数据，结合水文监测与GIS技术分析水位及水量变化。主要发现：近十年流域水文条件显著改变，影响鱼类种群结构；通过量化年径流量与水库水位动态，揭示了环境因子与鱼类生物学响应间的关联。研究为区域渔业资源保护及预防性管理措施提供了科学依据。",
-      "url": "https://doi.org/10.29258/cajwr/2026-r1.v12-1/93-118.rus",
-      "source": "crossref",
-      "keywords_matched": "fish stock",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1111/jfb.70617",
-      "title": "Continuous darkness is associated with improved growth performance during a high‐temperature period and sex‐specific modulation of early gonadal development in juvenile yellowtail (\n                    <i>Seriola quinqueradiata</i>\n                    )",
-      "authors": "Hasegawa, Yuya; Shibata, Kiko; Abe, Taiga; Hotta, Takurou",
-      "journal": "Journal of Fish Biology",
-      "date": "2026-08-15",
-      "abstract": "Abstract Selective breeding of yellowtail ( Seriola quinqueradiata ) is expanding in Japan, increasing the demand for practical reproductive control tools in commercial aquaculture to reduce genetic risks from escapees. Slowing early gonadal development through environmental manipulation may support future sterilization strategies, particularly when combined with other techniques. This study aimed to examine somatic growth and early gonadal development in juvenile yellowtail reared under continuous darkness (0L:24D). Juveniles were reared under 0L:24D or a 12L:12D photoperiod (control) and sampled at Weeks 0, 2, 4, 6, 8 and 10. Growth was recorded at each time point, and gonads were examined by histology and immunohistochemistry to assess gonadal sex differentiation, germ‐cell proliferation and onset of meiosis. Water temperature increased similarly in both groups and exceeded 28°C from Week 6 onward. Despite identical feeding rations, fish reared under 0L:24D were significantly larger at Weeks 8 and 10 than controls. Gonadal sex differentiation progressed normally in both groups, and germ‐cell proliferative activity did not differ between groups. SYCP3‐positive germ cells were not detected at Week 6 under 0L:24D, whereas the proportion of SYCP3‐positive germ cells at Weeks 8 to 10 was comparable to that in controls, suggesting a possible transient difference in the initial appearance of SYCP3‐positive germ cells. In females, fish reared under 0L:24D showed lower area fraction and diameter of chromatin nucleolus‐ and perinucleolus‐stage (CN/PN) oocytes at Weeks 8 and 10, suggesting reduced development of CN/PN‐stage oocytes. These results suggest that, under the present single‐tank experimental conditions, rearing under continuous darkness was associated with improved growth performance during the high‐temperature period and sex‐specific changes in early gonadal development in juvenile yellowtail.",
-      "summary_cn": "本研究探讨持续黑暗（0L:24D）光周期对黄条鰤（Seriola quinqueradiata）幼鱼生长和早期性腺发育的影响。在高温期（水温超过28°C）下，0L:24D组幼鱼在8周和10周时体长显著大于12L:12D对照组，尽管投喂量相同。组织学和免疫组化分析显示，两组的性腺性别分化正常，但0L:24D组雌鱼在8-10周时染色质核仁期和围核仁期卵母细胞的面积比例和直径降低，且SYCP3阳性生殖细胞在6周时未检出，提示早期减数分裂起始可能延迟。结果表明，持续黑暗可改善高温期生长性能，并对雌鱼早期性腺发育产生性别特异性影响，为黄条鰤生殖控制策略提供潜在环境调控手段。",
-      "url": "https://doi.org/10.1111/jfb.70617",
-      "source": "crossref_issn",
-      "keywords_matched": "Journal of Fish Biology",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1007/s10745-026-00769-z",
-      "title": "The Resource, Users’ Socio-economic Status, and Governance in Coastal Marine Benthic Mollusk fisheries in Costa Grande, Guerrero, Mexico",
-      "authors": "Cerros-Cornelio, Juan Carlos; Torreblanca-Ramírez, Carmina; Castrejón-Ríos, Alma Rubí; Padilla-Serrato, Jesús Guadalupe; Flores-Rodríguez, Pedro; López-Rojas, Victor Ignacio; Flores-Garza, Rafael",
-      "journal": "Human Ecology",
-      "date": "2026-08-15",
-      "abstract": "",
-      "summary_cn": "本研究聚焦墨西哥格雷罗州大科斯塔沿海底栖软体动物渔业，旨在评估其资源状况、用户社会经济特征及治理机制。通过实地调查与数据分析，揭示了该渔业在资源利用、渔民生计依赖及现行管理框架间的相互作用。研究发现，资源可持续性与当地社区经济福祉紧密关联，但治理体系存在协调不足，影响长期管理成效。该研究为热带沿海小型渔业的多维度管理提供了实证参考。",
-      "url": "https://doi.org/10.1007/s10745-026-00769-z",
-      "source": "crossref",
-      "keywords_matched": "fisheries",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1007/s43621-026-04295-2",
-      "title": "Illegal unreported and unregulated fishing in Somalia a systematic review of fisheries governance and sustainable development",
-      "authors": "Ahmed, Abdikarim; Osman, Mohamed",
-      "journal": "Discover Sustainability",
-      "date": "2026-08-15",
-      "abstract": "Abstract Illegal, Unreported, and Unregulated (IUU) fishing poses a significant threat to fisheries sustainability, maritime governance, and coastal livelihoods in fragile maritime states such as Somalia. This study systematically reviews the literature on IUU fishing in Somali waters to examine its governance context, drivers, impacts, maritime security implications, and governance responses. Following the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) 2020 guidelines, a systematic search of Scopus, Web of Science, and Google Scholar identified relevant literature published between January 2001 and March 2025. After screening and full-text assessment, 25 studies met the eligibility criteria and were included in the final evidence synthesis. The findings indicate that weak governance, limited enforcement capacity, economic incentives, and transnational regulatory gaps are consistently identified as the principal drivers of IUU fishing. The review identifies substantial socio-economic and environmental impacts, including declining fish stocks, biodiversity degradation, revenue losses, and livelihood insecurity. Although links between IUU fishing and piracy remain contested, the evidence suggests that both are better understood as outcomes of broader governance failures than as a direct causal relationship. The included studies consistently propose strengthening fisheries institutions, improving maritime enforcement, enhancing regional cooperation, and promoting community participation as key governance responses. The review also identifies important research gaps, particularly the limited availability of field-based research and long-term fisheries monitoring, providing an evidence base for future research and policy development in Somalia and other fragile maritime states.",
-      "summary_cn": "本研究系统综述了索马里水域IUU捕捞的治理背景、驱动因素、影响及应对措施，遵循PRISMA 2020指南检索2001年至2025年3月的文献，最终纳入25项研究。结果显示，治理薄弱、执法能力不足、经济激励和跨国监管缺口是IUU捕捞的主要驱动因素，导致鱼类资源衰退、生物多样性退化、收入损失和生计不安全。尽管IUU捕捞与海盗的关联存在争议，但证据表明两者均是更广泛治理失败的产物而非直接因果关系。研究建议强化渔业机构、提升海上执法、加强区域合作及促进社区参与，并指出实地研究和长期监测的不足，为索马里及其他脆弱海洋国家提供政策与研究方向。",
-      "url": "https://doi.org/10.1007/s43621-026-04295-2",
-      "source": "crossref",
-      "keywords_matched": "fisheries",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1111/jpy.70219",
-      "title": "Sugar kelp (\n                    <i>Saccharina latissima</i>\n                    ) population genetics map onto geographic distance and oceanographic features across coastal Maine",
-      "authors": "Francolini, Rene D.; Sleith, Robin S.; Cammen, Kristina M.; Brady, Damian C.; Rasher, Douglas B.",
-      "journal": "Journal of Phycology",
-      "date": "2026-08-15",
-      "abstract": "Abstract Sugar kelp ( Saccharina latissima ; order Laminariales) plays a vital role in kelp forest ecosystems, as well as an expanding kelp aquaculture industry, in the Gulf of Maine, United States. However, ocean warming is eroding the resilience of Maine's kelp forests and may be compromising their local genetic diversity, with impacts on population structure and gene flow. Here, we used genome‐wide single nucleotide polymorphism (SNP) data to assess the genetic diversity, structure, and connectivity of S. latissima populations at 11 outer coastal sites spanning the historical range of kelp forests in Maine. Our analyses identified moderate genetic diversity and limited inbreeding within sites (average heterozygosity: 0.27). Further, they revealed that three clusters comprising four genetically distinct populations exist across the study region. Population structure was strongly associated with geographic distance and oceanographic features, as supported by principal coordinate analysis, F ST calculations, Bayesian clustering, and spore dispersal modeling. Lastly, our outlier analysis identified genes potentially under selection. Thus, our findings highlight distinct, genetically unique kelp populations along Maine's coast and emphasize the need for regional management strategies that support both ecosystem resilience and sustainable aquaculture under climate change.",
-      "summary_cn": "本研究利用全基因组SNP数据，分析了美国缅因州沿海11个外海岸位点的糖海带（Saccharina latissima）种群遗传多样性、结构与连通性。结果显示，种群内遗传多样性中等（平均杂合度0.27），近交有限，且研究区域存在三个聚类、四个遗传上独特的种群。种群结构与地理距离和海洋学特征显著相关，并通过主坐标分析、F_ST计算、贝叶斯聚类和孢子扩散模型得到验证。研究强调缅因州沿海存在遗传独特的海带种群，需制定区域管理策略以支持气候变化下的生态系统韧性和可持续 aquaculture。",
-      "url": "https://doi.org/10.1111/jpy.70219",
-      "source": "crossref",
-      "keywords_matched": "fish population",
-      "high_impact": false
-    },
-    {
-      "doi": "10.31849/dinamisia.v10i4.24605",
-      "title": "SNI-Based Fish Smoking and Digital Marketing in Bandarharjo",
-      "authors": "Dzakiy, M. Anas; Rakhmawati, Reni; Menarianti, Ika",
-      "journal": "Dinamisia : Jurnal Pengabdian Kepada Masyarakat",
-      "date": "2026-08-15",
-      "abstract": "The smoked fish processing center in Bandarharjo, North Semarang, faces constraints in hygienic production, product consistency, packaging, and digital marketing. This community service program aimed to improve smoked fish quality through an SNI 2725:2013-oriented smoking design, vacuum sealing, and digital marketing assistance. The program involved 20 business actors from August to October 2024 through socialization, workshops, technical training, mentoring, and evaluation using a 12-item pretest and posttest. Results showed an increase in participants knowledge from 12.08% to 88.75%, or a 76.67 percentage point improvement. Partners practiced standardized hot smoking, improved packaging, mapped business locations on Google Maps, produced digital product content using Photoroom, and promoted products through social media. The sales turnover index increased by 40%. The program strengthened hygienic production, market access, and MSME competitiveness.",
-      "summary_cn": "本研究针对北三宝垄Bandarharjo烟熏鱼加工中心存在的卫生生产、产品一致性和包装及数字营销问题，开展社区服务项目。通过SNI 2725:2013导向的烟熏设计、真空密封和数字营销培训，对20家商户进行社会化、工作坊和技术指导，结果显示参与者知识水平从12.08%提升至88.75%，销售额指数增长40%。项目强化了卫生生产、市场准入和中小微企业竞争力。",
-      "url": "https://doi.org/10.31849/dinamisia.v10i4.24605",
-      "source": "crossref",
-      "keywords_matched": "fish stock",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1186/s12917-026-05830-z",
-      "title": "Retraction Note: Nano-selenium supplementation: improving growth, digestibility and mineral absorption in freshwater fish, Catla catla",
-      "authors": "Ahmad, Nisar; Hussain, Syed Makhdoom; Ali, Shafaqat; Tahir, Muhammad Farrukh; Sarker, Pallab K.; Shahid, Mudassar",
-      "journal": "BMC Veterinary Research",
-      "date": "2026-08-15",
-      "abstract": "",
-      "summary_cn": "该撤稿声明涉及一项关于纳米硒补充对淡水鱼（Catla catla）生长、消化率及矿物质吸收影响的研究，但该研究已被撤回。因此，本文不再提供有效的研究结论，仅作为撤稿通知存在，不适用于渔业科学参考。",
-      "url": "https://doi.org/10.1186/s12917-026-05830-z",
-      "source": "crossref",
-      "keywords_matched": "fish stock",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1080/17538947.2026.2709190",
-      "title": "Dynamics of artificial aquaculture ponds in China from 2015 to 2025",
-      "authors": "Chen, Yao; Zhang, Xiuyuan; Peng, Shushi; Wang, Haoyu; Bai, Lubin; Xiong, Shuping; Li, Mei; Du, Shihong",
-      "journal": "International Journal of Digital Earth",
-      "date": "2026-08-15",
-      "abstract": "",
-      "summary_cn": "基于2015至2025年数据，研究中国人工养殖池塘的动态变化，旨在揭示其时空演变特征。通过遥感与统计分析，发现池塘面积与分布格局显著受政策及市场需求影响。该研究为水产养殖规划与资源管理提供科学依据。",
-      "url": "https://doi.org/10.1080/17538947.2026.2709190",
-      "source": "crossref",
-      "keywords_matched": "aquaculture",
-      "high_impact": false
     }
   ],
   "weekly_topics": {
     "2026-W35": {
       "week_key": "2026-W35",
       "week_range": "8月24日—8月30日",
-      "topic": "全球变化下渔业资源动态与可持续管理研究进展",
-      "keywords": "种群评估(Stock Assessment), 水产养殖(Aquaculture), 鱼类洄游(Fish Migration), 气候变化(Climate Change), 兼捕管理(Bycatch Management), 遗传多样性(Genetic Diversity), 鱼类繁殖(Fish Reproduction), 生态修复(Ecological Restoration)",
+      "topic": "渔业资源衰退与可持续管理研究前沿",
+      "keywords": "水产保鲜技术(Seafood Preservation), 遗传种群结构(Genetic Population Structure), 小规模渔业(Small-Scale Fisheries), 鱼类繁殖生物学(Fish Reproductive Biology), 水产养殖病害防控(Aquaculture Disease Control), 鱼类洄游生态(Fish Migration Ecology), 渔业管理政策(Fisheries Management Policy), 鱼类分类与条形码(Fish Taxonomy & Barcoding)",
       "article": "## 本周研究概览\n\n本周共收录渔业相关论文3篇，研究方向涵盖微塑料毒理学、水产养殖政策与管理、以及鱼类种群动态与环境驱动因子分析。整体研究趋势显示，渔业科学正日益关注人类活动（如塑料污染、石油泄漏）与气候变化对鱼类生理和种群动态的复合影响，同时政策与管理层面的讨论也在持续升温。研究手段上，从细胞毒理实验到耳石年代学分析，体现了从分子到生态尺度的多层次研究范式。\n\n## 高影响力期刊亮点\n\n本周暂无。\n\n## 创新性研究\n\n1. **Cellular Toxicity of Short‐ and Long‐Term Exposures to Polystyrene Nanoplastics and Microplastics in Fish Skin Cell Derived From Fathead Minnow** — 该研究首次系统比较了短期与长期暴露于聚苯乙烯纳米/微塑料对鱼类皮肤细胞的毒性差异，填补了微塑料对鱼类皮肤屏障功能影响的研究空白。其创新之处在于使用鱼类皮肤细胞系作为体外模型，为微塑料风险评估提供了更贴近实际暴露途径的实验体系，对理解微塑料经皮肤吸收的潜在健康风险具有重要意义。\n\n2. **Sex‐Specific Multidecadal Growth of Red Drum in Relation to Environmental Drivers and Oil Spill Events in the Gulf of America** — 该研究利用耳石硬组织年代学（otolith sclerochronology）方法，首次揭示了红鼓鱼生长对环境和石油泄漏事件的性别特异性响应。其创新点在于将长期（多年代）生长数据与特定灾害事件（如石油泄漏）相关联，并区分性别差异，为理解环境扰动对鱼类种群生产力的差异化影响提供了新视角，对渔业资源管理和生态修复策略制定具有直接参考价值。\n\n3. **When Will We Do What is Needed for U.S. Aquaculture to Grow?** — 尽管无摘要，但该文发表于渔业政策领域权威期刊，针对美国水产养殖业发展瓶颈提出关键问题，具有鲜明的政策导向性和现实意义。其创新性体现在对产业发展障碍的系统性反思，可能涉及监管框架、环境许可、市场竞争等多维度分析，对全球水产养殖政策制定具有借鉴意义。\n\n## 推荐阅读\n\n1. **Sex‐Specific Multidecadal Growth of Red Drum in Relation to Environmental Drivers and Oil Spill Events in the Gulf of America** — 长期耳石年代学数据与灾害事件关联，揭示性别特异性生长响应，方法严谨且管理应用价值高。\n2. **Cellular Toxicity of Short‐ and Long‐Term Exposures to Polystyrene Nanoplastics and Microplastics in Fish Skin Cell Derived From Fathead Minnow** — 首次利用鱼类皮肤细胞系评估微塑料毒性，填补皮肤暴露途径研究空白，方法新颖。\n3. **When Will We Do What is Needed for U.S. Aquaculture to Grow?** — 聚焦水产养殖业发展核心政策议题，对产业实践具有直接指导意义。",
-      "paper_count": 98,
-      "high_impact_count": 23
+      "paper_count": 107,
+      "high_impact_count": 25
     },
     "2026-W34": {
       "week_key": "2026-W34",
       "week_range": "8月17日—8月23日",
-      "topic": "鱼类生态保育与可持续养殖技术研究进展",
-      "keywords": "水产养殖(Aquaculture), 鱼类生物学(Fish Biology), 鱼类生态学(Fish Ecology), 鱼类健康与免疫(Fish Health & Immunity), 渔业资源评估(Fisheries Assessment), 环境胁迫(Environmental Stress), 食品安全(Food Safety), 微塑料污染(Microplastic Pollution)",
+      "topic": "鱼类生态保护与可持续养殖技术研究进展",
+      "keywords": "水产养殖(Aquaculture), 鱼类生态(Fish Ecology), 鱼类分类(Fish Classification), 重金属污染(Heavy Metal Pollution), 微塑料(Microplastics), 繁殖生物学(Reproductive Biology), 鱼类免疫(Fish Immunology), 可持续渔业(Sustainable Fisheries)",
       "article": "## 本周研究概览\n\n本周共收录渔业相关论文3篇，研究方向较为分散，涵盖水产品安全检测、鱼类分类学与形态学、以及岛屿生物地理学与演化生物学三大领域。整体来看，本周研究以基础生物学和生态学为主，缺乏大规模渔业资源评估或管理政策类研究，但其中涉及的方法学进展（如多基质污染物同步检测）和演化机制探讨（如夏威夷特有鱼类的起源）仍具一定学术价值。研究地域上，南亚（尼泊尔）和太平洋岛屿（夏威夷）成为关注热点，反映出渔业科学向区域性、精细化方向发展的趋势。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances等高水平期刊上的论文。\n\n## 创新性研究\n\n1. **Validation of a multi-matrix GC–MS/MS method for simultaneous determination of nine N-nitrosamines in seafood and water**（*International Journal of Environmental Analytical Chemistry*）— 该研究开发并验证了同时测定水产品及水体中9种N-亚硝胺的GC-MS/MS多基质方法。N-亚硝胺作为一类强致癌物，在水产品加工过程中可能形成，但此前缺乏高效的多残留同步检测方案。该方法的建立填补了水产品安全检测领域的技术空白，对食品安全监管和风险评估具有直接应用价值。\n\n2. **Taxonomic assessment of the glyptosternoid catfish *Parachiloglanis hodgarti* based on morphometric analysis of type specimens and riverine populations in Nepal**（*Journal of Fish Biology*）— 该研究首次系统比较了尼泊尔三大河流水系（Gandaki、Koshi、Karnali）中*Parachiloglanis hodgarti*的形态差异，并纳入模式标本进行对比分析。其创新之处在于将传统形态测量与现代统计方法结合，揭示了该物种的种内形态变异格局，为喜马拉雅地区鲇形目鱼类的分类修订和生物多样性保护提供了关键基础数据。\n\n3. **Origins and relationships of endemic Hawaiian sabre‐toothed blennies in the genus *Plagiotremus***（*Journal of Fish Biology*）— 该研究聚焦夏威夷特有的剑齿鳚属鱼类，通过系统发育分析探讨其起源与亲缘关系。夏威夷群岛作为海洋生物多样性热点区域，其特有鱼类的演化历史一直是生物地理学的重要议题。该研究揭示了*Plagiotremus*属在夏威夷的殖民和分化模式，为理解太平洋岛屿鱼类的生物地理格局和物种形成机制提供了新见解。\n\n## 推荐阅读\n\n1. **Validation of a multi-matrix GC–MS/MS method for simultaneous determination of nine N-nitrosamines in seafood and water** — 方法学创新性强，对水产品安全检测具有直接应用价值，值得食品安全领域研究者关注。\n2. **Taxonomic assessment of the glyptosternoid catfish *Parachiloglanis hodgarti* based on morphometric analysis of type specimens and riverine populations in Nepal** — 填补了喜马拉雅地区特有鱼类分类学研究的空白，对生物多样性保护有重要参考意义。\n3. **Origins and relationships of endemic Hawaiian sabre‐toothed blennies in the genus *Plagiotremus*** — 为理解太平洋岛屿特有鱼类的演化历史提供了新的系统发育证据，生物地理学研究者值得一读。",
-      "paper_count": 126,
-      "high_impact_count": 25
+      "paper_count": 127,
+      "high_impact_count": 26
     },
     "2026-W33": {
       "week_key": "2026-W33",
       "week_range": "8月10日—8月16日",
-      "topic": "渔业数字化与可持续发展研究热点",
-      "keywords": "水产养殖(Aquaculture), 渔业治理(Fisheries Governance), 数字营销(Digital Marketing), 鱼类生长性能(Growth Performance), 饲料替代(Feed Replacement), 抗生素耐药性(Antibiotic Resistance), 种群遗传(Population Genetics), 社会经济评估(Socio-economic Assessment)",
+      "topic": "数字营销与微金融赋能小型渔业发展研究",
+      "keywords": "水产养殖(Aquaculture), 抗菌素耐药性(Antibiotic Resistance), 小微企业经济, 数字营销, 金融素养, 替代蛋白源, 鱼类微生物群",
       "article": "## 本周研究概览\n\n本周共收录渔业相关论文2篇，研究主题较为分散，分别涉及渔业管理政策的社会经济维度与鱼类分类学的基础生物学研究。前者聚焦西非加纳的小规模渔业燃料补贴政策及其对渔业可持续性的影响，属于渔业管理与政策评估领域；后者则报道了越南海域发现的一个盲鳗新属新种，属于渔业资源生物学与分类学范畴。整体来看，本周研究数量较少，但体现了渔业科学中“管理实践”与“基础认知”并行的学科特点，前者关注人类活动与资源利用的平衡，后者则致力于完善物种多样性的基础图谱。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances等高水平期刊上的论文。\n\n## 创新性研究\n\n1. **Small‐Scale Fisherfolk Perspectives on Premix Fuel Subsidies and Fisheries Sustainability in Ghana**（*Natural Resources Forum*）— 该研究从小型渔民主体视角切入，评估加纳政府推行的premix燃油补贴政策对渔业可持续性的实际影响。其创新之处在于将政策效果评估从宏观统计转向微观行为主体感知，揭示了补贴政策在基层执行中的复杂反馈机制，为发展中国家渔业补贴改革提供了基于实地经验的决策参考。\n\n2. **A new genus and species of hagfish from Vietnam: A transitional lineage between Rubicundinae and Myxininae**（*Journal of Fish Biology*）— 该研究基于越南近海采集的两个标本，建立了盲鳗目（Myxiniformes）下的一个新属新种*Dolichostomus leucotaenia*。其创新性体现在两个层面：一是该物种具有细长椭圆形口裂等此前未见于盲鳗目的独有形态特征；二是系统发育分析显示其处于Rubicundinae与Myxininae两个亚科之间的过渡位置，为理解盲鳗类群的演化谱系提供了关键中间环节的形态与分子证据。\n\n## 推荐阅读\n\n1. **Small‐Scale Fisherfolk Perspectives on Premix Fuel Subsidies and Fisheries Sustainability in Ghana** — 以渔民主体感知为切入点评估补贴政策效果，对发展中国家小规模渔业治理具有直接借鉴意义。\n2. **A new genus and species of hagfish from Vietnam: A transitional lineage between Rubicundinae and Myxininae** — 新属新种的发现填补了盲鳗目演化谱系的关键空白，是分类学与系统发育研究的重要补充。",
-      "paper_count": 12,
+      "paper_count": 4,
       "high_impact_count": 2
     }
   }
