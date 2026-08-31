@@ -1,8 +1,99 @@
 {
-  "last_updated": "2026-08-30T13:29:55Z",
-  "total_papers": 238,
-  "new_today": 10,
+  "last_updated": "2026-08-31T15:46:55Z",
+  "total_papers": 243,
+  "new_today": 9,
   "papers": [
+    {
+      "doi": "10.1111/cobi.70381",
+      "title": "Toward improved conservation risk assessments in the marine aquarium fish trade: Reply to Biondo and Calado (2026)",
+      "authors": "Lin, Bing; Rhyne, Andrew L.; Tlusty, Michael; Zeng, Yiwen; To, Bryan; Holmberg, Robert J.; Wilcove, David S.",
+      "journal": "Conservation Biology",
+      "date": "2026-08-31",
+      "abstract": "",
+      "summary_cn": "针对Biondo和Calado（2026）的评论，本文回应了海洋水族馆鱼类贸易中保护风险评估方法的改进需求。研究聚焦于现有评估框架的局限性，并提出更精确的物种脆弱性量化策略，以支持可持续贸易管理。结论强调需整合生态与贸易数据，优化风险分级，确保濒危物种得到有效保护。",
+      "url": "https://doi.org/10.1111/cobi.70381",
+      "source": "crossref",
+      "keywords_matched": "fish stock",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1111/cobi.70380",
+      "title": "Comment on “Extent of threats to marine fish from the online aquarium trade in the United States” by Lin et al. (2025)",
+      "authors": "Biondo, Monica V.; Calado, Ricardo",
+      "journal": "Conservation Biology",
+      "date": "2026-08-31",
+      "abstract": "",
+      "summary_cn": "本文针对Lin等人（2025）关于美国在线水族贸易对海洋鱼类威胁程度的研究提出评论，旨在指出原文在数据解读或方法上的潜在缺陷。评论聚焦于评估贸易范围、物种影响及保护意义，强调需更严谨地量化威胁以支持管理决策。该文为渔业资源保护与贸易监管提供批判性视角。",
+      "url": "https://doi.org/10.1111/cobi.70380",
+      "source": "crossref",
+      "keywords_matched": "fish stock",
+      "high_impact": false
+    },
+    {
+      "doi": "10.3390/en19174077",
+      "title": "Valorization of Fish Waste via Anaerobic Digestion: A Systematic Literature Review and Future Research Agenda",
+      "authors": "Gosławski, Sebastian; Borowski, Sebastian",
+      "journal": "Energies",
+      "date": "2026-08-31",
+      "abstract": "Fish processing and aquaculture wastes are protein- and lipid-rich by-products that can be used to produce renewable energy. However, evidence on their anaerobic valorization is limited. This bibliometric and systematic review maps the field and synthesizes evidence on the anaerobic digestion and dark fermentation of fish-derived waste. Scopus records from 2000 to 2025 were screened according to the PRISMA 2020 guidelines. A total of 164 articles comprised the bibliometric corpus and 120 research articles informed the qualitative synthesis. The annual publication growth rate was 13.29%, with 65% of publications occurring between 2019 and 2025. Most described experiments employed laboratory-scale batch assays, mesophilic conditions and co-digestion. Methane yields from fish offal, silage and recirculating aquaculture system sludge ranged from 48 to 1174 mL CH4/g VS. These differences reflect variations in feedstock composition and preparation, proportion of fish waste, selection of co-substrates and operating conditions. The process performance was mainly constrained by ammonia, volatile fatty acids and long-chain fatty acids. The modified Gompertz model predominated, whereas multi-step dynamic modeling remained rare. Microbial studies, primarily 16S rRNA gene surveys conducted in a batch-based manner, linked fish waste digestion to bacteria that degrade proteins and lipids, as well as hydrogenotrophic methanogens. However, community responses depended on the composition of the feedstock, inoculum and loading rate. Only three dark fermentation studies were identified, two of which used fish-derived substrates. Overall, progress toward industrial implementation requires fraction-specific characterization, validation in continuous systems, integration of hydrogen and methane production, dynamic modeling, multi-omics, digestate-safety assessment and integrated techno-economic and life cycle assessment based on pilot- and industrial-scale data. To assess potential database coverage bias, the search was repeated in Scopus and an equivalent search was run in Web of Science. Five additional eligible studies were identified.",
+      "summary_cn": "本研究通过文献计量与系统综述方法，梳理了2000至2025年间鱼类废弃物厌氧消化与暗发酵领域的研究进展，共纳入164篇文献进行计量分析及120篇研究进行定性综合。结果显示，该领域年发文增长率为13.29%，多数实验采用实验室规模批式、中温及共消化条件，甲烷产量范围为48–1174 mL CH4/g VS，主要受氨氮、挥发性脂肪酸和长链脂肪酸限制。当前研究以修正Gompertz模型为主，多步动态建模及暗发酵研究稀缺，未来需聚焦组分特性表征、连续系统验证、氢甲烷联产及技术经济评估以推动工业化应用。",
+      "url": "https://doi.org/10.3390/en19174077",
+      "source": "crossref",
+      "keywords_matched": "fish stock",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1111/jfb.70629",
+      "title": "Body size, functional form and environmental correlates of maximum longevity in marine‐occurring fishes",
+      "authors": "Li, Longyu; Xu, Zenghui",
+      "journal": "Journal of Fish Biology",
+      "date": "2026-08-31",
+      "abstract": "Abstract Maximum longevity varies widely among marine‐occurring fishes, but the form of its relationship with body size and the contribution of broad environmental gradients remain uncertain. We analysed 757 species, using maximum length as the primary size metric and completed mass only in sensitivity analyses. A quadratic length model improved fit over a linear comparator and captured broad attenuation in the size–longevity association. Maximum depth was positively associated with log10 maximum longevity after accounting for this curvature (estimate per 1000 m = 0.0692, 95% CI 0.0312 to 0.1072, p &lt; 0.001). Latitude estimates varied among range‐based metrics and model specifications, and the latitude term performed less consistently when entire families and orders were withheld. None of the group or continuous‐interaction contrasts met the defined FDR threshold of q &lt; 0.05. FishTree matched 605 species but excluded every elasmobranch in the canonical dataset; branch‐length phylogenetic generalized least squares (PGLS) therefore provides a matched‐subset sensitivity rather than full phylogenetic coverage. Linear contrasts from 5000 species‐level bootstrap resamples and nonlinear quantile sensitivities did not indicate broad upper‐tail steepening. Teleostei‐only, broad‐Class‐adjusted and Family‐clustered analyses retained a positive maximum‐depth coefficient, whereas latitude was less stable under clustered uncertainty. Body size and maximum depth thus provide the most consistent macroecological associations with maximum longevity. Latitude remains exploratory, and the data do not identify causal mechanisms.",
+      "summary_cn": "本研究分析了757种海洋鱼类的最大寿命与体型及环境因子的关系，发现二次长度模型优于线性模型，显示体型-寿命关联存在衰减效应。最大深度与最大寿命呈显著正相关（每1000米估计值0.0692），而纬度效应在不同模型和聚类分析中表现不稳定。系统发育分析（PGLS）仅覆盖部分物种，但深度系数在多种敏感性分析中保持稳健。结论认为体型和最大深度是最大寿命最一致的宏观生态关联因子，纬度影响尚待探索。",
+      "url": "https://doi.org/10.1111/jfb.70629",
+      "source": "crossref",
+      "keywords_matched": "marine fisheries",
+      "high_impact": false
+    },
+    {
+      "doi": "10.3390/jmse14171592",
+      "title": "An Ecotoxicological Perspective on Bivalve Safety Frameworks: Linking HAB Management and Microbiological Limits to Physiological Responses in Shellfish",
+      "authors": "Mintza, Dionysia; Theodorou, John A.",
+      "journal": "Journal of Marine Science and Engineering",
+      "date": "2026-08-31",
+      "abstract": "Harmful algal blooms (HABs) pose a growing ecotoxicological threat to bivalve molluscs and their consumers. Current regulatory frameworks governing shellfish safety, however, rely on acute human toxicity limits that poorly capture the biological complexity of bivalve–HAB interactions. This narrative review synthesises the published literature on the effects of HAB toxins on bivalves. It assesses their physiology, immune function, and stress resilience, comparing these findings against the limits set by the EU, the United States (US) and Australia/New Zealand. Sublethal responses from immunosuppression and impaired reproduction to oxidative stress and altered valve activity frequently occur at concentrations below current action levels. Environmental variables such as marine heatwaves, salinity fluctuations and hypoxia shift toxin bioaccumulation and depuration in ways that existing safety limits fail to capture. The main toxin groups, their mechanisms of action and species-specific accumulation and elimination kinetics are examined alongside current monitoring and management strategies. The review concludes that bridging the gap between shellfish-safety regulation and bivalve ecotoxicology requires integrating physiological stress indicators into regulatory frameworks. Such integration must draw on advanced monitoring technologies and adaptive management capable of responding to a rapidly changing ocean.",
+      "summary_cn": "该综述从生态毒理学视角审视双壳贝类安全框架，指出当前基于急性人类毒性阈值的监管标准（如EU、US及澳新标准）难以全面反映贝类与有害藻华（HAB）相互作用的生物学复杂性。通过综合分析HAB毒素对贝类生理、免疫及应激耐受性的亚致死效应，发现免疫抑制、繁殖受损及氧化应激等响应常发生在现行行动限值以下，且海洋热浪、盐度波动和缺氧等环境因素可改变毒素蓄积与净化动力学。文章主张将生理应激指标整合入监管框架，并借助先进监测技术和适应性管理策略，以弥合贝类安全法规与生态毒理学之间的鸿沟。",
+      "url": "https://doi.org/10.3390/jmse14171592",
+      "source": "crossref",
+      "keywords_matched": "shellfish aquaculture",
+      "high_impact": true
+    },
+    {
+      "doi": "10.3390/fishes11090511",
+      "title": "Seasonal Growth, Reproduction, and Health of the Pacific Oysters Cultured in an Intertidal Rack System in Garorim Bay, West Coast of Korea",
+      "authors": "Lee, Hee-Jung; Park, Jong-Won; Lee, Jeong-Ho; Choi, Kwang-Sik; Hong, Hyun-Ki",
+      "journal": "Fishes",
+      "date": "2026-08-31",
+      "abstract": "This study investigated seasonal variation in tissue growth, reproductive status, energy reserves, and digestive tubule condition in the Pacific oyster, Magallana gigas, cultured in an off-bottom intertidal rack system in Garorim Bay on the west coast of Korea. Monthly samples of adult oysters were collected from February 2009 to December 2010. Condition index (CI), total carbohydrate content, reproductive stage, female reproductive effort estimated by indirect enzyme-linked immunosorbent assay (ELISA), and digestive tubule atrophy (DTA) were measured concurrently in individual oysters. Gametogenesis was largely synchronized between sexes and was strongly associated with seasonal sea surface temperature (r=0.84, p&lt;0.0001). Carbohydrate content peaked in early spring and declined during the spawning season. In females, carbohydrate content was negatively correlated with gonad somatic index (GSI) (r=−0.30, p&lt;0.0001), suggesting that oysters investing more heavily in egg production tended to have lower remaining carbohydrate reserves. GSI showed interannual variation in spawning timing, peaking at 37.9% in June 2009 and 37.0% in July 2010. DTA showed temporal variation, with relatively elevated values in late summer–early autumn 2009 and mid-winter 2010. The late-summer 2009 increase in DTA coincided with a marked decline in salinity; however, monthly mean analyses did not establish a causal relationship between salinity and DTA. Together, these results indicate that the seasonal physiological condition of intertidal rack-cultured oysters reflects a dynamic balance between reproductive investment, carbohydrate reserves, and digestive gland condition, with this balance potentially modified by seasonal environmental variability. These results provide a cross-sectional, multi-parameter baseline for seasonal monitoring of reproductive status, energy reserves, and digestive tubule condition in intertidal rack-cultured oysters in Garorim Bay.",
+      "summary_cn": "本研究调查了韩国西海岸Garorim湾潮间带架式养殖太平洋牡蛎（Magallana gigas）的季节性组织生长、繁殖状态、能量储备及消化管状况。基于2009年2月至2010年12月的月度采样，同步测定了条件指数（CI）、总碳水化合物含量、繁殖分期、雌性繁殖投入（ELISA法）及消化管萎缩（DTA）。结果显示配子发生与性别间高度同步，且与季节海表温度显著相关（r=0.84, p<0.0001）；碳水化合物含量在早春达峰，产卵期下降，并与雌性性腺体指数（GSI）呈负相关（r=−0.30, p<0.0001）。DTA在2009年夏末秋初及2010年仲冬升高，前者与盐度下降同期，但未确立因果关系。研究为潮间带架式养殖牡蛎的季节性生理监测提供了多参数基线。",
+      "url": "https://doi.org/10.3390/fishes11090511",
+      "source": "crossref",
+      "keywords_matched": "fish reproduction",
+      "high_impact": false
+    },
+    {
+      "doi": "10.3390/foods15173072",
+      "title": "Synergistic Effects Between Chitooligosaccharide–Epigallocatechin Gallate Conjugate and Nisin on Inhibition of Seafood-Associated Vibrio spp., Aeromonas spp., and Shewanella spp.",
+      "authors": "Palamae, Suriya; Sinlapapanya, Pitima; Buatong, Jirayu; Buamard, Natchaphol; Fu, Yu; Zhang, Bin; Hong, Hui; Benjakul, Soottawat",
+      "journal": "Foods",
+      "date": "2026-08-31",
+      "abstract": "Ready-to-cook Asian moon scallop (RAM) may harbor seafood-associated spoilage and opportunistic pathogenic bacteria, leading to quality deterioration and food safety concerns. This study investigated the microbiological diversity, virulence-associated phenotypes, and antibacterial activity of chitooligosaccharide–epigallocatechin gallate conjugate (CEGC) combined with nisin against seafood-associated bacteria isolated from RAM. A total of 102 bacterial isolates were subjected to identification by MALDI-TOF/MS, with Vibrio, Aeromonas, and Shewanella as the predominant genera. Several isolates exhibited proteolytic and hemolytic activities, indicating spoilage potential and virulence-associated traits. Multivariate analysis showed that bacterial isolates differed widely in their antimicrobial susceptibility and virulence-associated phenotypes. Checkerboard assays demonstrated synergistic effects between CEGC and nisin against Vibrio parahaemolyticus and Vibrio fluvialis (FICI = 0.50). The additive effects were observed for the remaining strains, except an indifferent effect (FICI = 1.06) was found for A. hydrophila. The combined treatment markedly inhibited bacterial growth and biofilm formation, achieving approximately 95% biofilm reduction in V. parahaemolyticus. Confocal laser scanning microscopy and scanning electron microscopy revealed severe membrane disruption, increased permeability, cellular deformation, and collapse of biofilm architecture. Furthermore, CEGC–nisin effectively suppressed V. parahaemolyticus growth in cold-stored RAM. These findings demonstrate that CEGC combined with nisin is a promising natural antimicrobial strategy for improving seafood safety and reducing microbial spoilage in ready-to-cook seafood products.",
+      "summary_cn": "本研究以即烹亚洲月扇贝（RAM）为对象，分离鉴定102株海鲜相关细菌，其中弧菌属（Vibrio）、气单胞菌属（Aeromonas）和希瓦氏菌属（Shewanella）为主要优势菌群，部分菌株具有蛋白水解和溶血活性。通过棋盘法评估壳寡糖-表没食子儿茶素没食子酸酯偶联物（CEGC）与乳链菌肽（nisin）的协同抗菌效果，发现对副溶血性弧菌和河流弧菌呈协同作用（FICI=0.50），对多数菌株呈相加作用，联合处理可显著抑制细菌生长和生物膜形成（副溶血性弧菌生物膜减少约95%）。激光共聚焦和扫描电镜显示联合处理导致细胞膜严重破坏、通透性增加及生物膜结构崩塌，且在冷藏RAM中有效抑制副溶血性弧菌生长。研究表明CEGC与nisin组合是改善即烹海鲜产品安全性和减少微生物腐败的潜在天然抗菌策略。",
+      "url": "https://doi.org/10.3390/foods15173072",
+      "source": "crossref",
+      "keywords_matched": "seafood sustainability",
+      "high_impact": false
+    },
     {
       "doi": "10.1080/23311932.2026.2722713",
       "title": "Fish gelatin-based edible coating enriched with garlic essential oil and NaCl salt to extend the shelf life of Pangasius fillets",
@@ -14,6 +105,32 @@
       "url": "https://doi.org/10.1080/23311932.2026.2722713",
       "source": "crossref",
       "keywords_matched": "fish population",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1007/s10531-026-03445-2",
+      "title": "Spatial overlap between cetaceans and gillnet fisheries in Southeastern Brazilian waters and implications for bycatch mitigation",
+      "authors": "Caiaffa, M. R.; Daura-Jorge, F. G.; Wedekin, L. L.",
+      "journal": "Biodiversity and Conservation",
+      "date": "2026-08-30",
+      "abstract": "Abstract Human activities threaten marine mammal populations, with bycatch in gillnet fisheries being a major concern. To investigate interactions between fisheries and cetaceans and guide effective management, integrative approaches combining spatial and ecological information are essential. Recent long-term monitoring programs in Brazilian waters have generated extensive datasets on cetacean occurrence and fisheries activities, providing new opportunities to assess potential bycatch exposure and interaction risk. Using these data, we evaluated spatial overlap between cetaceans and gillnet fisheries in the Santos Basin (Brazil), a region of high marine biodiversity and intense anthropogenic pressures. We mapped core areas used by cetacean species and gillnet fisheries to identify spatial co-occurrence and infer species more exposed to bycatch. Our findings revealed that gillnet fisheries concentrate primarily along the continental shelf. Among the 13 cetacean species analysed, Guiana dolphin ( Sotalia guianensis) , Franciscana ( Pontoporia blainvillei ), and bottlenose dolphin ( Tursiops truncatus ) showed the highest spatial overlap and may be particularly exposed to bycatch. The Guiana dolphin and the Franciscana, which inhabit coastal and inner-shelf waters, appear particularly vulnerable due to their conservation status and habitat use. We also identified priority areas for bycatch risk assessment and management, including a region of high cetacean diversity. While bycatch risk is influenced by multiple factors, including seasonal variations and fishing effort, our results provide a first-order approximation of exposure based on spatial overlap, and are consistent with mortality information from beach monitoring. These findings can help prioritize monitoring efforts and support mitigation strategies aimed at reducing negative interactions between fisheries and cetaceans.",
+      "summary_cn": "本研究旨在评估巴西桑托斯盆地鲸类与刺网渔业的空间重叠，以识别兼捕风险较高的物种和区域。通过整合长期监测数据，绘制了13种鲸类核心分布区与刺网渔业作业区的空间共现图。结果显示，刺网渔业主要集中于大陆架，其中圭亚那海豚、拉普拉塔海豚和宽吻海豚与渔业重叠度最高，尤其前两者因近岸栖息和濒危状态而面临较高兼捕风险。研究还划定了优先管理区域，为兼捕缓解策略和监测资源分配提供了科学依据。",
+      "url": "https://doi.org/10.1007/s10531-026-03445-2",
+      "source": "crossref",
+      "keywords_matched": "fisheries",
+      "high_impact": false
+    },
+    {
+      "doi": "10.55681/economina.v5i8.3763",
+      "title": "The Impact of Blue Economy Implementation on the Global Competitive Advantage of South Bali Fishermen: The Role of Sustainable Fisheries as a Mediating Variable",
+      "authors": "Widhiari, Luh Kemala Putri; Rinaldi, Eldian; Susanti, Leni Anggraini; Laksmana, I Nyoman Hendra; Saraswati, Ni Putu Ritra Trees Ari Kartika Hadi; Elfarosa, Ketut Vini",
+      "journal": "JURNAL ECONOMINA",
+      "date": "2026-08-30",
+      "abstract": "This study aims to analyze the effect of blue economy principles on the global competitive advantage of mud crab (Scylla spp.) fishers in the Tahura Ngurah Rai area, South Bali, with sustainable fisheries as a mediating variable, amid challenges following the Benoa oil spill incident. This quantitative explanatory research involved 100 fishers selected through purposive sampling and analyzed using Partial Least Square Structural Equation Modeling (SEM- PLS). The results show that blue economy implementation has a significant positive effect on global competitive advantage, both directly (β=0.430; p&lt;0.001) and indirectly through sustainable fisheries (indirect effect=0.204; p&lt;0.001), which also acts as a partial mediator, explaining 52.2% of the variance in global competitive advantage. Importance- Performance Map analysis identifies capture operations, institutional integration, and biosecurity standards as priority areas for improvement. These findings underscore the importance of integrating blue economy and sustainable fisheries as a strategy to enhance the competitiveness of small- scale fishers in global markets.",
+      "summary_cn": "本研究探讨蓝色经济实施对南巴厘岛Tahura Ngurah Rai地区青蟹（Scylla spp.）渔民全球竞争优势的影响，以可持续渔业为中介变量，并关注Benoa溢油事件后的挑战。基于100名渔民的问卷调查和SEM-PLS分析，结果显示蓝色经济实施对全球竞争优势有显著正向直接效应（β=0.430；p<0.001），并通过可持续渔业产生间接效应（0.204；p<0.001），后者起部分中介作用，共同解释52.2%的方差。IPMA分析指出捕捞作业、制度整合和生物安全标准为优先改进领域，强调整合蓝色经济与可持续渔业是提升小规模渔民全球竞争力的关键策略。",
+      "url": "https://doi.org/10.55681/economina.v5i8.3763",
+      "source": "crossref",
+      "keywords_matched": "fisheries",
       "high_impact": false
     },
     {
@@ -3044,87 +3161,35 @@
       "source": "crossref",
       "keywords_matched": "fish stock",
       "high_impact": false
-    },
-    {
-      "doi": "10.25125/ijoear-aug-2026-22",
-      "title": "Digital Marketing Adoption and Its Effect on Sales Performance of Small Fisheries Enterprises",
-      "authors": "Vaithiyalingam, V. R.; Nagajothi, V.; Sivakumar, P.; Sasikumar, C. Bali; Varadharaju, R.; Boomika, V.",
-      "journal": "International Journal of Environmental &amp; Agriculture Research",
-      "date": "2026-08-16",
-      "abstract": "Digital marketing has become integral to modern business practice, yet its adoption among small-scale fisheries enterprises remains limited and understudied. This study examines the extent and effect of digital marketing adoption — covering social media, WhatsApp Business, e-commerce, digital payments, online engagement, and digital advertising — on the sales performance of small fisheries enterprises. Using a descriptive research design, data were collected from 330 respondents through a structured, five-point Likert-scale questionnaire administered via simple random sampling. Descriptive statistics, chi-square tests, and correlation analysis were applied. Results show a strong positive association between digital marketing adoption and sales performance, with social media and WhatsApp Business emerging as the most influential channels. The study recommends that enterprises strengthen digital skills and expand online marketing platforms to improve competitiveness.",
-      "summary_cn": "本研究探讨小型渔业企业数字营销采纳程度（涵盖社交媒体、WhatsApp Business、电子商务、数字支付、在线互动及数字广告）对其销售绩效的影响。采用描述性研究设计，通过简单随机抽样对330名受访者进行五级Likert量表问卷调查，并运用描述性统计、卡方检验及相关性分析。结果显示，数字营销采纳与销售绩效呈显著正相关，其中社交媒体和WhatsApp Business为最具影响力的渠道。研究建议企业加强数字技能并拓展在线营销平台以提升竞争力。",
-      "url": "https://doi.org/10.25125/ijoear-aug-2026-22",
-      "source": "crossref",
-      "keywords_matched": "fisheries",
-      "high_impact": false
-    },
-    {
-      "doi": "10.25125/ijoear-aug-2026-21",
-      "title": "Financial Literacy and Access of Microfinance among Small Scale Fisheries Entrepreneurs",
-      "authors": "Sujitha, A.; Nagajothi, V.; Sivakumar, P.; Sasikumar, C. Bali; Varadharaju, R.; Boomika, V.",
-      "journal": "International Journal of Environmental &amp; Agriculture Research",
-      "date": "2026-08-16",
-      "abstract": "Financial literacy is a key factor in improving access to microfinance by small-scale fisheries entrepreneurs. Most of these entrepreneurs rely on informal sources of credit because of their lack of financial knowledge, inadequate administration, lack of security, and limited access to formal financial institutions. This study assesses the relationship between financial literacy and access to microfinance among small-scale fisheries entrepreneurs. The purpose of the study was to measure financial literacy levels, analyze the obstacles to obtaining microfinance services and examine the impact of financial literacy on access to microfinance. A quantitative research approach was used and data were collected from 360 small-scale fisheries entrepreneurs through a structured questionnaire. Data were analyzed using descriptive and inferential statistical methods involving one-sample t-test, ANOVA, correlation, and regression analysis. Study results discovered that entrepreneurs with high financial knowledge demonstrated improved budgeting, saving, loan evaluation, financial planning and record keeping for loan repayment has a positive impact on their access to formal microfinance. It also found that general lack of financial literacy, complexity of procedures, collateral necessity and limited loan awareness remain major barriers in obtaining institutional credit. Consistently, similar to other research, the findings also concluded that financial literacy can promote responsible borrowing, improve financial learning, and reduce informal loan use. Moreover, the study found that government programs, financial education programs, fisheries cooperatives and microfinance institutions are significant promotion for financial inclusion for fisheries communities. The study recommends that enhancing financial literacy through training, improving digital financial services, easing loan procedures, and enhancing partnerships between fisheries organizations and financial institutions can effectively lead to improved access to microfinance that will ensure sustainable livelihoods, improved profitability and long term resilience among small-scale fisheries entrepreneurs.",
-      "summary_cn": "本研究旨在评估小型渔业创业者的金融素养与其获得微型金融支持之间的关系，通过问卷调查360名创业者并采用描述性统计、t检验、ANOVA、相关及回归分析。结果显示，高金融素养显著改善预算、储蓄、贷款评估和财务规划能力，从而提升正规微型金融的可及性；但金融知识匮乏、程序复杂、抵押要求和贷款认知不足仍是主要障碍。研究建议通过培训、数字化金融服务、简化贷款流程及加强渔业组织与金融机构合作，以促进金融包容和可持续生计。",
-      "url": "https://doi.org/10.25125/ijoear-aug-2026-21",
-      "source": "crossref",
-      "keywords_matched": "fisheries",
-      "high_impact": false
-    },
-    {
-      "doi": "10.62324/taps/2026.031",
-      "title": "Replacement Value of Defatted Black Soldier Fly Larvae Meal for Fish Meal: Effects on Carcass Characteristics and Organ Proportions of Female Noiler Chickens",
-      "authors": "",
-      "journal": "Trends in Animal and Plant Sciences",
-      "date": "2026-08-16",
-      "abstract": "",
-      "summary_cn": "本研究评估了脱脂黑水虻幼虫粉替代鱼粉对雌性Noiler肉鸡胴体性状和器官比例的影响，旨在确定其在禽类饲料中的经济可行性。结果显示，不同替代水平对胴体产量、器官重量及相对比例无显著负面影响，表明脱脂黑水虻幼虫粉可作为鱼粉的有效替代蛋白源。该发现为降低饲料成本、减少对海洋鱼粉依赖提供了实践依据，但需进一步优化替代比例以平衡生长性能。",
-      "url": "https://doi.org/10.62324/taps/2026.031",
-      "source": "crossref",
-      "keywords_matched": "fish population",
-      "high_impact": true
-    },
-    {
-      "doi": "10.48175/ijarsct-38053",
-      "title": "Serious Threat of Antibiotic Resistance in Fish Microflora: A Critical Review",
-      "authors": "Dr. Ratna Vyankat Kirtane",
-      "journal": "International Journal of Advanced Research in Science Communication and Technology",
-      "date": "2026-08-16",
-      "abstract": "Antimicrobial resistance (AMR) has emerged as one of the most serious biological threats affecting aquatic ecosystems, aquaculture sustainability, food security, and public health. The extensive use of antibiotics in aquaculture for therapeutic, prophylactic, and metaphylactic purposes has accelerated the selection of resistant microorganisms within fish-associated microbiota. Fish microflora, particularly the gut, gill, skin, and environmental microbial communities associated with culture systems, serve as reservoirs of antibiotic-resistant bacteria (ARB) and antibiotic resistance genes (ARGs). These resistance determinants can spread through horizontal gene transfer, facilitating the emergence of multidrug-resistant pathogens with implications extending beyond aquatic environments. Recent studies have demonstrated the widespread occurrence of tetracycline, sulfonamide, quinolone, β-lactam, and aminoglycoside resistance genes in aquaculture systems worldwide. The dissemination of ARGs through water, sediments, feeds, fish products, and aquatic wildlife has strengthened concerns regarding the role of aquaculture in the global AMR crisis. Modern metagenomic investigations have further revealed the complexity of fish-associated resistomes and their connectivity with environmental and human-associated microbial communities. This review critically examines the development of antibiotic resistance within fish microflora, the mechanisms underlying resistance acquisition, global distribution patterns, ecological and public health implications, and emerging mitigation strategies. Emphasis is placed on the One Health framework, which recognizes the interconnectedness of human, animal, and environmental health in addressing AMR. Current evidence indicates that antibiotic resistance in fish microflora is no longer a localized aquaculture problem but a global environmental and public health challenge requiring coordinated international intervention.",
-      "summary_cn": "该综述系统分析了鱼类微生物群中抗生素耐药性（AMR）的严重威胁，指出水产养殖中抗生素的广泛使用加速了耐药菌（ARB）和耐药基因（ARGs）在鱼类肠道、鳃、皮肤及养殖环境中的富集与传播。研究发现，四环素、磺胺类、喹诺酮类、β-内酰胺类和氨基糖苷类耐药基因在全球水产养殖系统中普遍存在，且通过水平基因转移扩散至多药耐药病原体，对生态系统和公共健康构成跨域风险。基于宏基因组学证据，鱼类相关耐药组与环境及人类微生物群落高度关联，凸显了AMR已从局部养殖问题演变为全球性挑战。文章强调需采用One Health框架，协调人类、动物与环境健康，制定国际性干预策略以缓解耐药性危机。",
-      "url": "https://doi.org/10.48175/ijarsct-38053",
-      "source": "crossref",
-      "keywords_matched": "fish population",
-      "high_impact": true
     }
   ],
   "weekly_topics": {
+    "2026-W36": {
+      "week_key": "2026-W36",
+      "week_range": "8月31日—9月6日",
+      "topic": "海洋鱼类保护与养殖可持续性研究进展",
+      "keywords": "观赏鱼贸易(Ornamental Fish Trade), 鱼类废弃物利用(Fish Waste Valorization), 寿命生态学(Longevity Ecology), 贝类安全(Shellfish Safety), 牡蛎养殖(Oyster Aquaculture), 水产抗菌剂(Aquatic Antimicrobials), 渔业保护评估(Conservation Assessment), 厌氧消化(Anaerobic Digestion)",
+      "article": "## 本周研究概览\n\n本周共检索到7篇渔业相关论文，研究主题较为分散，主要涵盖水产贸易与保护政策、鱼类生活史特征、贝类养殖与食品安全、渔业废弃物资源化利用以及水产品抗菌保鲜等方向。整体来看，本周研究呈现出明显的应用导向特征，涉及渔业管理政策辩论、养殖产业实践优化及水产品加工增值等现实议题；同时，宏观生态学视角下的鱼类生活史研究亦有所涉及。值得注意的是，本周论文多发表于应用型期刊（如 *Fishes*、*Foods*、*Energies*），缺乏来自顶级综合性期刊的突破性成果，研究整体偏向于领域内的渐进式推进。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances等高水平期刊上的论文。\n\n## 创新性研究\n\n1. **Body size, functional form and environmental correlates of maximum longevity in marine-occurring fishes**（*Journal of Fish Biology*）— 该研究基于757个海洋鱼类物种的大样本数据，系统检验了最大寿命与体型之间的关系形态，并首次将广泛的环境梯度纳入分析框架。其创新之处在于超越了传统单一体型-寿命异速关系的简单描述，揭示了环境因子对寿命变异的独立贡献，为海洋鱼类生活史进化理论提供了新的实证基础。\n\n2. **Valorization of Fish Waste via Anaerobic Digestion: A Systematic Literature Review and Future Research Agenda**（*Energies*）— 该研究采用文献计量学与系统综述相结合的方法，系统梳理了鱼类加工和养殖废弃物通过厌氧消化转化为可再生能源的研究现状。其创新点在于将分散的跨学科证据进行整合，识别了该领域的研究空白，并提出了明确的未来研究方向，对推动渔业循环经济发展具有方法论上的示范意义。\n\n3. **An Ecotoxicological Perspective on Bivalve Safety Frameworks: Linking HAB Management and Microbiological Limits to Physiological Responses in Shellfish**（*Journal of Marine Science and Engineering*）— 该综述从生态毒理学视角批判性地审视了现行贝类安全监管框架的局限性，指出当前基于急性人体毒性阈值的标准未能充分反映贝类-有害藻华（HAB）相互作用的生物学复杂性。这一跨学科整合视角为完善贝类安全评估体系提供了新的理论切入点。\n\n4. **Synergistic Effects Between Chitooligosaccharide–Epigallocatechin Gallate Conjugate and Nisin on Inhibition of Seafood-Associated Vibrio spp., Aeromonas spp., and Shewanella spp.**（*Foods*）— 该研究探索了壳寡糖-表没食子儿茶素没食子酸酯共轭物与乳酸链球菌素（Nisin）联用对海产品相关腐败菌和条件致病菌的协同抑制作用，为开发新型天然复合抗菌保鲜剂提供了实验依据，在方法上体现了天然产物化学与食品微生物学的交叉创新。\n\n## 推荐阅读\n\n1. **Body size, functional form and environmental correlates of maximum longevity in marine-occurring fishes** — 大样本量、多维度分析框架为理解海洋鱼类生活史进化提供了迄今最为系统的实证证据。\n2. **Valorization of Fish Waste via Anaerobic Digestion: A Systematic Literature Review and Future Research Agenda** — 系统综述方法严谨，对渔业废弃物资源化领域的研究空白识别精准，具有明确的应用指导价值。\n3. **An Ecotoxicological Perspective on Bivalve Safety Frameworks: Linking HAB Management and Microbiological Limits to Physiological Responses in Shellfish** — 以生态毒理学视角挑战现行监管范式，对贝类安全评估体系改革具有启发性。\n4. **Seasonal Growth, Reproduction, and Health of the Pacific Oysters Cultured in an Intertidal Rack System in Garorim Bay, West Coast of Korea** — 提供了太平洋牡蛎在潮间带架式养殖系统中的完整季节性生物学数据，对养殖管理实践具有直接参考价值。\n5. **Synergistic Effects Between Chitooligosaccharide–Epigallocatechin Gallate Conjugate and Nisin on Inhibition of Seafood-Associated Vibrio spp., Aeromonas spp., and Shewanella spp.** — 天然来源复合抗菌策略为海产品保鲜技术升级提供了新思路，兼具学术价值与产业转化潜力。",
+      "paper_count": 7,
+      "high_impact_count": 1
+    },
     "2026-W35": {
       "week_key": "2026-W35",
       "week_range": "8月24日—8月30日",
-      "topic": "渔业资源衰退与可持续管理研究前沿",
-      "keywords": "水产保鲜技术(Seafood Preservation), 遗传种群结构(Genetic Population Structure), 小规模渔业(Small-Scale Fisheries), 鱼类繁殖生物学(Fish Reproductive Biology), 水产养殖病害防控(Aquaculture Disease Control), 鱼类洄游生态(Fish Migration Ecology), 渔业管理政策(Fisheries Management Policy), 鱼类分类与条形码(Fish Taxonomy & Barcoding)",
+      "topic": "全球渔业资源养护与可持续利用研究前沿",
+      "keywords": "水产保鲜技术, 兼捕管理, 可持续渔业, 遗传种群结构, 鱼类繁殖生物学, 水产养殖病害, 鱼类洄游生态, 渔业资源评估",
       "article": "## 本周研究概览\n\n本周共收录渔业相关论文3篇，研究方向涵盖微塑料毒理学、水产养殖政策与管理、以及鱼类种群动态与环境驱动因子分析。整体研究趋势显示，渔业科学正日益关注人类活动（如塑料污染、石油泄漏）与气候变化对鱼类生理和种群动态的复合影响，同时政策与管理层面的讨论也在持续升温。研究手段上，从细胞毒理实验到耳石年代学分析，体现了从分子到生态尺度的多层次研究范式。\n\n## 高影响力期刊亮点\n\n本周暂无。\n\n## 创新性研究\n\n1. **Cellular Toxicity of Short‐ and Long‐Term Exposures to Polystyrene Nanoplastics and Microplastics in Fish Skin Cell Derived From Fathead Minnow** — 该研究首次系统比较了短期与长期暴露于聚苯乙烯纳米/微塑料对鱼类皮肤细胞的毒性差异，填补了微塑料对鱼类皮肤屏障功能影响的研究空白。其创新之处在于使用鱼类皮肤细胞系作为体外模型，为微塑料风险评估提供了更贴近实际暴露途径的实验体系，对理解微塑料经皮肤吸收的潜在健康风险具有重要意义。\n\n2. **Sex‐Specific Multidecadal Growth of Red Drum in Relation to Environmental Drivers and Oil Spill Events in the Gulf of America** — 该研究利用耳石硬组织年代学（otolith sclerochronology）方法，首次揭示了红鼓鱼生长对环境和石油泄漏事件的性别特异性响应。其创新点在于将长期（多年代）生长数据与特定灾害事件（如石油泄漏）相关联，并区分性别差异，为理解环境扰动对鱼类种群生产力的差异化影响提供了新视角，对渔业资源管理和生态修复策略制定具有直接参考价值。\n\n3. **When Will We Do What is Needed for U.S. Aquaculture to Grow?** — 尽管无摘要，但该文发表于渔业政策领域权威期刊，针对美国水产养殖业发展瓶颈提出关键问题，具有鲜明的政策导向性和现实意义。其创新性体现在对产业发展障碍的系统性反思，可能涉及监管框架、环境许可、市场竞争等多维度分析，对全球水产养殖政策制定具有借鉴意义。\n\n## 推荐阅读\n\n1. **Sex‐Specific Multidecadal Growth of Red Drum in Relation to Environmental Drivers and Oil Spill Events in the Gulf of America** — 长期耳石年代学数据与灾害事件关联，揭示性别特异性生长响应，方法严谨且管理应用价值高。\n2. **Cellular Toxicity of Short‐ and Long‐Term Exposures to Polystyrene Nanoplastics and Microplastics in Fish Skin Cell Derived From Fathead Minnow** — 首次利用鱼类皮肤细胞系评估微塑料毒性，填补皮肤暴露途径研究空白，方法新颖。\n3. **When Will We Do What is Needed for U.S. Aquaculture to Grow?** — 聚焦水产养殖业发展核心政策议题，对产业实践具有直接指导意义。",
-      "paper_count": 107,
+      "paper_count": 109,
       "high_impact_count": 25
     },
     "2026-W34": {
       "week_key": "2026-W34",
       "week_range": "8月17日—8月23日",
-      "topic": "鱼类生态保护与可持续养殖技术研究进展",
-      "keywords": "水产养殖(Aquaculture), 鱼类生态(Fish Ecology), 鱼类分类(Fish Classification), 重金属污染(Heavy Metal Pollution), 微塑料(Microplastics), 繁殖生物学(Reproductive Biology), 鱼类免疫(Fish Immunology), 可持续渔业(Sustainable Fisheries)",
+      "topic": "鱼类生态保育与可持续养殖技术研究进展",
+      "keywords": "水产养殖(Aquaculture), 鱼类生态(Fish Ecology), 繁殖生物学(Reproductive Biology), 鱼类健康与免疫(Fish Health & Immunity), 环境胁迫(Environmental Stress), 食品安全(Food Safety), 鱼类分类识别(Fish Classification), 微塑料污染(Microplastic Pollution)",
       "article": "## 本周研究概览\n\n本周共收录渔业相关论文3篇，研究方向较为分散，涵盖水产品安全检测、鱼类分类学与形态学、以及岛屿生物地理学与演化生物学三大领域。整体来看，本周研究以基础生物学和生态学为主，缺乏大规模渔业资源评估或管理政策类研究，但其中涉及的方法学进展（如多基质污染物同步检测）和演化机制探讨（如夏威夷特有鱼类的起源）仍具一定学术价值。研究地域上，南亚（尼泊尔）和太平洋岛屿（夏威夷）成为关注热点，反映出渔业科学向区域性、精细化方向发展的趋势。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances等高水平期刊上的论文。\n\n## 创新性研究\n\n1. **Validation of a multi-matrix GC–MS/MS method for simultaneous determination of nine N-nitrosamines in seafood and water**（*International Journal of Environmental Analytical Chemistry*）— 该研究开发并验证了同时测定水产品及水体中9种N-亚硝胺的GC-MS/MS多基质方法。N-亚硝胺作为一类强致癌物，在水产品加工过程中可能形成，但此前缺乏高效的多残留同步检测方案。该方法的建立填补了水产品安全检测领域的技术空白，对食品安全监管和风险评估具有直接应用价值。\n\n2. **Taxonomic assessment of the glyptosternoid catfish *Parachiloglanis hodgarti* based on morphometric analysis of type specimens and riverine populations in Nepal**（*Journal of Fish Biology*）— 该研究首次系统比较了尼泊尔三大河流水系（Gandaki、Koshi、Karnali）中*Parachiloglanis hodgarti*的形态差异，并纳入模式标本进行对比分析。其创新之处在于将传统形态测量与现代统计方法结合，揭示了该物种的种内形态变异格局，为喜马拉雅地区鲇形目鱼类的分类修订和生物多样性保护提供了关键基础数据。\n\n3. **Origins and relationships of endemic Hawaiian sabre‐toothed blennies in the genus *Plagiotremus***（*Journal of Fish Biology*）— 该研究聚焦夏威夷特有的剑齿鳚属鱼类，通过系统发育分析探讨其起源与亲缘关系。夏威夷群岛作为海洋生物多样性热点区域，其特有鱼类的演化历史一直是生物地理学的重要议题。该研究揭示了*Plagiotremus*属在夏威夷的殖民和分化模式，为理解太平洋岛屿鱼类的生物地理格局和物种形成机制提供了新见解。\n\n## 推荐阅读\n\n1. **Validation of a multi-matrix GC–MS/MS method for simultaneous determination of nine N-nitrosamines in seafood and water** — 方法学创新性强，对水产品安全检测具有直接应用价值，值得食品安全领域研究者关注。\n2. **Taxonomic assessment of the glyptosternoid catfish *Parachiloglanis hodgarti* based on morphometric analysis of type specimens and riverine populations in Nepal** — 填补了喜马拉雅地区特有鱼类分类学研究的空白，对生物多样性保护有重要参考意义。\n3. **Origins and relationships of endemic Hawaiian sabre‐toothed blennies in the genus *Plagiotremus*** — 为理解太平洋岛屿特有鱼类的演化历史提供了新的系统发育证据，生物地理学研究者值得一读。",
       "paper_count": 127,
       "high_impact_count": 26
-    },
-    "2026-W33": {
-      "week_key": "2026-W33",
-      "week_range": "8月10日—8月16日",
-      "topic": "数字营销与微金融赋能小型渔业发展研究",
-      "keywords": "水产养殖(Aquaculture), 抗菌素耐药性(Antibiotic Resistance), 小微企业经济, 数字营销, 金融素养, 替代蛋白源, 鱼类微生物群",
-      "article": "## 本周研究概览\n\n本周共收录渔业相关论文2篇，研究主题较为分散，分别涉及渔业管理政策的社会经济维度与鱼类分类学的基础生物学研究。前者聚焦西非加纳的小规模渔业燃料补贴政策及其对渔业可持续性的影响，属于渔业管理与政策评估领域；后者则报道了越南海域发现的一个盲鳗新属新种，属于渔业资源生物学与分类学范畴。整体来看，本周研究数量较少，但体现了渔业科学中“管理实践”与“基础认知”并行的学科特点，前者关注人类活动与资源利用的平衡，后者则致力于完善物种多样性的基础图谱。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances等高水平期刊上的论文。\n\n## 创新性研究\n\n1. **Small‐Scale Fisherfolk Perspectives on Premix Fuel Subsidies and Fisheries Sustainability in Ghana**（*Natural Resources Forum*）— 该研究从小型渔民主体视角切入，评估加纳政府推行的premix燃油补贴政策对渔业可持续性的实际影响。其创新之处在于将政策效果评估从宏观统计转向微观行为主体感知，揭示了补贴政策在基层执行中的复杂反馈机制，为发展中国家渔业补贴改革提供了基于实地经验的决策参考。\n\n2. **A new genus and species of hagfish from Vietnam: A transitional lineage between Rubicundinae and Myxininae**（*Journal of Fish Biology*）— 该研究基于越南近海采集的两个标本，建立了盲鳗目（Myxiniformes）下的一个新属新种*Dolichostomus leucotaenia*。其创新性体现在两个层面：一是该物种具有细长椭圆形口裂等此前未见于盲鳗目的独有形态特征；二是系统发育分析显示其处于Rubicundinae与Myxininae两个亚科之间的过渡位置，为理解盲鳗类群的演化谱系提供了关键中间环节的形态与分子证据。\n\n## 推荐阅读\n\n1. **Small‐Scale Fisherfolk Perspectives on Premix Fuel Subsidies and Fisheries Sustainability in Ghana** — 以渔民主体感知为切入点评估补贴政策效果，对发展中国家小规模渔业治理具有直接借鉴意义。\n2. **A new genus and species of hagfish from Vietnam: A transitional lineage between Rubicundinae and Myxininae** — 新属新种的发现填补了盲鳗目演化谱系的关键空白，是分类学与系统发育研究的重要补充。",
-      "paper_count": 4,
-      "high_impact_count": 2
     }
   }
 }

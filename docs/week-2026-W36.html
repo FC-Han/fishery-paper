@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>海洋鱼类保护与养殖可持续性研究进展 — 渔业文献每周速览</title>
+<style>
+:root {
+  --bg: #f7fafc; --bg-card: #ffffff; --text: #2d3748;
+  --text-secondary: #718096; --text-muted: #a0aec0; --border: #e2e8f0;
+  --primary: #2b6cb0; --primary-light: #bee3f8; --primary-dark: #1a365d;
+  --accent: #e76f51; --accent-light: #fed7d7;
+  --teal: #319795; --teal-light: #b2f5ea;
+  --gold: #d69e2e; --gold-light: #fefcbf;
+  --shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.10);
+  --radius: 12px; --radius-sm: 8px;
+}
+[data-theme="dark"] {
+  --bg: #1a202c; --bg-card: #2d3748; --text: #e2e8f0;
+  --text-secondary: #a0aec0; --text-muted: #718096; --border: #4a5568;
+  --primary: #90cdf4; --primary-light: #2a4365; --primary-dark: #bee3f8;
+  --accent: #fc8181; --accent-light: #742a2a;
+  --teal: #81e6d9; --teal-light: #234e52;
+  --gold: #f6e05e; --gold-light: #3d3a1a;
+  --shadow: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.5);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;transition:background 0.3s,color 0.3s}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* === Top Bar === */
+.topbar{background:linear-gradient(135deg,#1a365d,#2b6cb0);color:#fff;padding:0.8rem 1.5rem;display:flex;align-items:center;gap:1rem;position:sticky;top:0;z-index:100}
+.back-btn{color:#fff;font-size:0.95rem;font-weight:600;padding:0.4rem 0.8rem;border-radius:var(--radius-sm);border:1.5px solid rgba(255,255,255,0.3);transition:all 0.2s;white-space:nowrap}
+.back-btn:hover{background:rgba(255,255,255,0.15);text-decoration:none}
+.topbar .title-area{flex:1;min-width:0}
+.topbar .week-range{font-size:0.78rem;opacity:0.8}
+.topbar .week-topic{font-size:1rem;font-weight:700;line-height:1.3}
+.topbar .theme-toggle{padding:0.4rem 0.8rem;border:1.5px solid rgba(255,255,255,0.3);border-radius:var(--radius-sm);background:transparent;color:#fff;cursor:pointer;font-size:0.85rem;transition:all 0.2s;white-space:nowrap}
+.topbar .theme-toggle:hover{background:rgba(255,255,255,0.15)}
+
+.container{max-width:1100px;margin:0 auto;padding:1.5rem}
+
+/* === Article Section === */
+.article-section{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;margin-bottom:1.5rem;box-shadow:var(--shadow)}
+.article-section h2{font-size:1.3rem;color:var(--primary-dark);margin:1.5rem 0 0.75rem;padding-bottom:0.4rem;border-bottom:2px solid var(--primary-light)}
+.article-section h2:first-child{margin-top:0}
+.article-section p{margin-bottom:0.8rem;line-height:1.8;color:var(--text)}
+.article-section strong{color:var(--primary-dark)}
+.article-section ol,.article-section ul{padding-left:1.5rem;margin-bottom:0.8rem}
+.article-section li{margin-bottom:0.5rem;line-height:1.7}
+.article-tag{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-right:0.5rem}
+.tag-overview{background:var(--primary-light);color:var(--primary-dark)}
+.tag-highlight{background:var(--accent-light);color:var(--accent)}
+.tag-innovative{background:var(--gold-light);color:var(--gold)}
+.tag-recommend{background:var(--teal-light);color:var(--teal)}
+
+/* === Stats Row === */
+.stats-row{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.stat-mini{padding:0.5rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-secondary)}
+.stat-mini strong{color:var(--primary);font-size:1.1rem}
+
+/* === Controls === */
+.controls{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.search-box{flex:1;min-width:200px;position:relative}
+.search-box input{width:100%;padding:0.6rem 1rem 0.6rem 2.5rem;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:0.9rem;background:var(--bg-card);color:var(--text);transition:border-color 0.2s}
+.search-box input:focus{outline:none;border-color:var(--primary)}
+.search-box .search-icon{position:absolute;left:0.8rem;top:50%;transform:translateY(-50%);color:var(--text-muted);pointer-events:none}
+
+/* === Paper Grid === */
+.section-title{font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:0.75rem;display:flex;align-items:center;gap:0.5rem}
+.paper-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:0.85rem;margin-bottom:1.5rem}
+.paper-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1.1rem;transition:all 0.25s;display:flex;flex-direction:column;position:relative}
+.paper-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);border-color:var(--primary-light)}
+.paper-card.high-impact{border-left:3px solid var(--accent)}
+.paper-card .hi-badge{position:absolute;top:0.5rem;right:0.5rem;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:10px;background:var(--accent-light);color:var(--accent);font-weight:700}
+.paper-card .journal{font-size:0.78rem;color:var(--teal);font-weight:600;margin-bottom:0.3rem}
+.paper-card .title{font-size:0.95rem;font-weight:700;line-height:1.45;margin-bottom:0.35rem}
+.paper-card .title a{color:var(--text)}
+.paper-card .title a:hover{color:var(--primary);text-decoration:none}
+.paper-card .meta{font-size:0.78rem;color:var(--text-muted);margin-bottom:0.6rem;display:flex;flex-wrap:wrap;gap:0.5rem}
+
+/* Chinese Summary */
+.paper-card .summary-cn{background:linear-gradient(135deg,#fffaf0,#fffff0);border-left:3px solid var(--gold);padding:0.7rem 0.85rem;margin-bottom:0.5rem;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:0.88rem;line-height:1.55;color:#744210}
+[data-theme="dark"] .paper-card .summary-cn{background:linear-gradient(135deg,#3d2e1a,#372a10);color:#fbd38d}
+
+.abstract-toggle{font-size:0.8rem;color:var(--primary);cursor:pointer;font-weight:600;user-select:none;display:inline-flex;align-items:center;gap:0.25rem;padding:0.3rem 0;border:none;background:none}
+.abstract-toggle:hover{color:var(--accent)}
+.abstract-toggle .arrow{transition:transform 0.2s;font-size:0.7rem}
+.abstract-toggle.open .arrow{transform:rotate(90deg)}
+.abstract-content{display:none;font-size:0.82rem;color:var(--text-secondary);line-height:1.55;padding:0.5rem 0;border-top:1px dashed var(--border);margin-top:0.4rem}
+.abstract-content.visible{display:block}
+
+.paper-card.hidden{display:none}
+.no-results{display:none;text-align:center;padding:2rem;color:var(--text-muted)}
+.no-results.visible{display:block}
+
+@media(max-width:768px){.paper-grid{grid-template-columns:1fr}.article-section{padding:1.25rem}.topbar{flex-wrap:wrap}.topbar .week-topic{font-size:0.9rem}}
+
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.paper-card{animation:fadeIn 0.4s ease-out}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="back-btn" href="index.html">← 返回主页</a>
+  <div class="title-area">
+    <div class="week-range">8月31日—8月31日</div>
+    <div class="week-topic">海洋鱼类保护与养殖可持续性研究进展</div>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <span id="themeIcon">🌙</span> <span id="themeLabel">暗色</span>
+  </button>
+</div>
+
+<div class="container">
+
+  <!-- 深度综述文章 -->
+  
+  <div class="article-section">
+    <h2>本周研究概览</h2>
+
+<p>本周共检索到7篇渔业相关论文，研究主题较为分散，主要涵盖水产贸易与保护政策、鱼类生活史特征、贝类养殖与食品安全、渔业废弃物资源化利用以及水产品抗菌保鲜等方向。整体来看，本周研究呈现出明显的应用导向特征，涉及渔业管理政策辩论、养殖产业实践优化及水产品加工增值等现实议题；同时，宏观生态学视角下的鱼类生活史研究亦有所涉及。值得注意的是，本周论文多发表于应用型期刊（如 *Fishes*、*Foods*、*Energies*），缺乏来自顶级综合性期刊的突破性成果，研究整体偏向于领域内的渐进式推进。</p>
+
+<h2>高影响力期刊亮点</h2>
+
+<p>本周暂无发表在Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances等高水平期刊上的论文。</p>
+
+<h2>创新性研究</h2>
+
+<ol>
+<li><strong>Body size, functional form and environmental correlates of maximum longevity in marine-occurring fishes</strong>（*Journal of Fish Biology*）— 该研究基于757个海洋鱼类物种的大样本数据，系统检验了最大寿命与体型之间的关系形态，并首次将广泛的环境梯度纳入分析框架。其创新之处在于超越了传统单一体型-寿命异速关系的简单描述，揭示了环境因子对寿命变异的独立贡献，为海洋鱼类生活史进化理论提供了新的实证基础。</li>
+</ol>
+
+<ol>
+<li><strong>Valorization of Fish Waste via Anaerobic Digestion: A Systematic Literature Review and Future Research Agenda</strong>（*Energies*）— 该研究采用文献计量学与系统综述相结合的方法，系统梳理了鱼类加工和养殖废弃物通过厌氧消化转化为可再生能源的研究现状。其创新点在于将分散的跨学科证据进行整合，识别了该领域的研究空白，并提出了明确的未来研究方向，对推动渔业循环经济发展具有方法论上的示范意义。</li>
+</ol>
+
+<ol>
+<li><strong>An Ecotoxicological Perspective on Bivalve Safety Frameworks: Linking HAB Management and Microbiological Limits to Physiological Responses in Shellfish</strong>（*Journal of Marine Science and Engineering*）— 该综述从生态毒理学视角批判性地审视了现行贝类安全监管框架的局限性，指出当前基于急性人体毒性阈值的标准未能充分反映贝类-有害藻华（HAB）相互作用的生物学复杂性。这一跨学科整合视角为完善贝类安全评估体系提供了新的理论切入点。</li>
+</ol>
+
+<ol>
+<li><strong>Synergistic Effects Between Chitooligosaccharide–Epigallocatechin Gallate Conjugate and Nisin on Inhibition of Seafood-Associated Vibrio spp., Aeromonas spp., and Shewanella spp.</strong>（*Foods*）— 该研究探索了壳寡糖-表没食子儿茶素没食子酸酯共轭物与乳酸链球菌素（Nisin）联用对海产品相关腐败菌和条件致病菌的协同抑制作用，为开发新型天然复合抗菌保鲜剂提供了实验依据，在方法上体现了天然产物化学与食品微生物学的交叉创新。</li>
+</ol>
+
+<h2>推荐阅读</h2>
+
+<ol>
+<li><strong>Body size, functional form and environmental correlates of maximum longevity in marine-occurring fishes</strong> — 大样本量、多维度分析框架为理解海洋鱼类生活史进化提供了迄今最为系统的实证证据。</li>
+<li><strong>Valorization of Fish Waste via Anaerobic Digestion: A Systematic Literature Review and Future Research Agenda</strong> — 系统综述方法严谨，对渔业废弃物资源化领域的研究空白识别精准，具有明确的应用指导价值。</li>
+<li><strong>An Ecotoxicological Perspective on Bivalve Safety Frameworks: Linking HAB Management and Microbiological Limits to Physiological Responses in Shellfish</strong> — 以生态毒理学视角挑战现行监管范式，对贝类安全评估体系改革具有启发性。</li>
+<li><strong>Seasonal Growth, Reproduction, and Health of the Pacific Oysters Cultured in an Intertidal Rack System in Garorim Bay, West Coast of Korea</strong> — 提供了太平洋牡蛎在潮间带架式养殖系统中的完整季节性生物学数据，对养殖管理实践具有直接参考价值。</li>
+<li><strong>Synergistic Effects Between Chitooligosaccharide–Epigallocatechin Gallate Conjugate and Nisin on Inhibition of Seafood-Associated Vibrio spp., Aeromonas spp., and Shewanella spp.</strong> — 天然来源复合抗菌策略为海产品保鲜技术升级提供了新思路，兼具学术价值与产业转化潜力。</li>
+</ol>
+  </div>
+  
+
+  <!-- 统计 -->
+  <div class="stats-row">
+    <div class="stat-mini">📄 <strong>7</strong> 篇论文</div>
+    <div class="stat-mini">🌟 <strong>1</strong> 篇高影响力期刊</div>
+    <div class="stat-mini">🤖 <strong>7</strong> 篇 AI 中文总结</div>
+    
+    <div class="stat-mini">🏷️ 观赏鱼贸易(Ornamental Fish Trade) 鱼类废弃物利用(Fish Waste Valorization) 寿命生态学(Longevity Ecology) 贝类安全(Shellfish Safety) </div>
+    
+  </div>
+
+  <!-- 搜索 -->
+  <div class="controls">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="搜索标题、作者、摘要..." oninput="filterPapers()">
+    </div>
+  </div>
+
+  <div class="no-results" id="noResults">😕 没有匹配的论文</div>
+
+  <!-- 全部论文列表 -->
+  <div class="section-title">📄 本周全部论文（7 篇）</div>
+  <div class="paper-grid">
+    
+    <div class="paper-card"
+         data-title="toward improved conservation risk assessments in the marine aquarium fish trade: reply to biondo and calado (2026)"
+         data-authors="lin, bing; rhyne, andrew l.; tlusty, michael; zeng, yiwen; to, bryan; holmberg, robert j.; wilcove, david s."
+         data-journal="conservation biology"
+         data-abstract=""
+         data-summary="针对biondo和calado（2026）的评论，本文回应了海洋水族馆鱼类贸易中保护风险评估方法的改进需求。研究聚焦于现有评估框架的局限性，并提出更精确的物种脆弱性量化策略，以支持可持续贸易管理。结论强调需整合生态与贸易数据，优化风险分级，确保濒危物种得到有效保护。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Conservation Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 针对Biondo和Calado（2026）的评论，本文回应了海洋水族馆鱼类贸易中保护风险评估方法的改进需求。研究聚焦于现有评估框架的局限性，并提出更精确的物种脆弱性量化策略，以支持可持续贸易管理。结论强调需整合生态与贸易数据，优化风险分级，确保濒危物种得到有效保护。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/cobi.70381" target="_blank" rel="noopener">Toward improved conservation risk assessments in the marine aquarium fish trade: Reply to Biondo and Calado (2026)</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Lin, Bing; Rhyne, Andrew L.; Tlusty, Michael; Zeng, Yiwen; T...</span>
+        
+        <span>📅 2026-08-31</span>
+      </div>
+
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="comment on “extent of threats to marine fish from the online aquarium trade in the united states” by lin et al. (2025)"
+         data-authors="biondo, monica v.; calado, ricardo"
+         data-journal="conservation biology"
+         data-abstract=""
+         data-summary="本文针对lin等人（2025）关于美国在线水族贸易对海洋鱼类威胁程度的研究提出评论，旨在指出原文在数据解读或方法上的潜在缺陷。评论聚焦于评估贸易范围、物种影响及保护意义，强调需更严谨地量化威胁以支持管理决策。该文为渔业资源保护与贸易监管提供批判性视角。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Conservation Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本文针对Lin等人（2025）关于美国在线水族贸易对海洋鱼类威胁程度的研究提出评论，旨在指出原文在数据解读或方法上的潜在缺陷。评论聚焦于评估贸易范围、物种影响及保护意义，强调需更严谨地量化威胁以支持管理决策。该文为渔业资源保护与贸易监管提供批判性视角。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/cobi.70380" target="_blank" rel="noopener">Comment on “Extent of threats to marine fish from the online aquarium trade in the United States” by Lin et al. (2025)</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Biondo, Monica V.; Calado, Ricardo</span>
+        
+        <span>📅 2026-08-31</span>
+      </div>
+
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="valorization of fish waste via anaerobic digestion: a systematic literature review and future research agenda"
+         data-authors="gosławski, sebastian; borowski, sebastian"
+         data-journal="energies"
+         data-abstract="fish processing and aquaculture wastes are protein- and lipid-rich by-products that can be used to produce renewable energy. however, evidence on their anaerobic valorization is limited. this bibliometric and systematic review maps the field and synthesizes evidence on the anaerobic digestion and dark fermentation of fish-derived waste. scopus records from 2000 to 2025 were screened according to the prisma 2020 guidelines. a total of 164 articles comprised the bibliometric corpus and 120 research articles informed the qualitative synthesis. the annual publication growth rate was 13.29%, with 65% of publications occurring between 2019 and 2025. most described experiments employed laboratory-scale batch assays, mesophilic conditions and co-digestion. methane yields from fish offal, silage and recirculating aquaculture system sludge ranged from 48 to 1174 ml ch4/g vs. these differences reflect variations in feedstock composition and preparation, proportion of fish waste, selection of co-substrates and operating conditions. the process performance was mainly constrained by ammonia, volatile fatty acids and long-chain fatty acids. the modified gompertz model predominated, whereas multi-step dynamic modeling remained rare. microbial studies, primarily 16s rrna gene surveys conducted in a batch-based manner, linked fish waste digestion to bacteria that degrade proteins and lipids, as well as hydrogenotrophic methanogens. however, community responses depended on the composition of the feedstock, inoculum and loading rate. only three dark fermentation studies were identified, two of which used fish-derived substrates. overall, progress toward industrial implementation requires fraction-specific characterization, validation in continuous systems, integration of hydrogen and methane production, dynamic modeling, multi-omics, digestate-safety assessment and integrated techno-economic and life cycle assessment based on pilot- and industrial-scale data. to assess potential database coverage bias, the search was repeated in scopus and an equivalent search was run in web of science. five additional eligible studies were identified."
+         data-summary="本研究通过文献计量与系统综述方法，梳理了2000至2025年间鱼类废弃物厌氧消化与暗发酵领域的研究进展，共纳入164篇文献进行计量分析及120篇研究进行定性综合。结果显示，该领域年发文增长率为13.29%，多数实验采用实验室规模批式、中温及共消化条件，甲烷产量范围为48–1174 ml ch4/g vs，主要受氨氮、挥发性脂肪酸和长链脂肪酸限制。当前研究以修正gompertz模型为主，多步动态建模及暗发酵研究稀缺，未来需聚焦组分特性表征、连续系统验证、氢甲烷联产及技术经济评估以推动工业化应用。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Energies
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究通过文献计量与系统综述方法，梳理了2000至2025年间鱼类废弃物厌氧消化与暗发酵领域的研究进展，共纳入164篇文献进行计量分析及120篇研究进行定性综合。结果显示，该领域年发文增长率为13.29%，多数实验采用实验室规模批式、中温及共消化条件，甲烷产量范围为48–1174 mL CH4/g VS，主要受氨氮、挥发性脂肪酸和长链脂肪酸限制。当前研究以修正Gompertz模型为主，多步动态建模及暗发酵研究稀缺，未来需聚焦组分特性表征、连续系统验证、氢甲烷联产及技术经济评估以推动工业化应用。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/en19174077" target="_blank" rel="noopener">Valorization of Fish Waste via Anaerobic Digestion: A Systematic Literature Review and Future Research Agenda</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Gosławski, Sebastian; Borowski, Sebastian</span>
+        
+        <span>📅 2026-08-31</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Fish processing and aquaculture wastes are protein- and lipid-rich by-products that can be used to produce renewable energy. However, evidence on their anaerobic valorization is limited. This bibliometric and systematic review maps the field and synthesizes evidence on the anaerobic digestion and dark fermentation of fish-derived waste. Scopus records from 2000 to 2025 were screened according to the PRISMA 2020 guidelines. A total of 164 articles comprised the bibliometric corpus and 120 research articles informed the qualitative synthesis. The annual publication growth rate was 13.29%, with 65% of publications occurring between 2019 and 2025. Most described experiments employed laboratory-scale batch assays, mesophilic conditions and co-digestion. Methane yields from fish offal, silage and recirculating aquaculture system sludge ranged from 48 to 1174 mL CH4/g VS. These differences reflect variations in feedstock composition and preparation, proportion of fish waste, selection of co-substrates and operating conditions. The process performance was mainly constrained by ammonia, volatile fatty acids and long-chain fatty acids. The modified Gompertz model predominated, whereas multi-step dynamic modeling remained rare. Microbial studies, primarily 16S rRNA gene surveys conducted in a batch-based manner, linked fish waste digestion to bacteria that degrade proteins and lipids, as well as hydrogenotrophic methanogens. However, community responses depended on the composition of the feedstock, inoculum and loading rate. Only three dark fermentation studies were identified, two of which used fish-derived substrates. Overall, progress toward industrial implementation requires fraction-specific characterization, validation in continuous systems, integration of hydrogen and methane production, dynamic modeling, multi-omics, digestate-safety assessment and integrated techno-economic and life cycle assessment based on pilot- and industrial-scale data. To assess potential database coverage bias, the search was repeated in Scopus and an equivalent search was run in Web of Science. Five additional eligible studies were identified.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="seasonal growth, reproduction, and health of the pacific oysters cultured in an intertidal rack system in garorim bay, west coast of korea"
+         data-authors="lee, hee-jung; park, jong-won; lee, jeong-ho; choi, kwang-sik; hong, hyun-ki"
+         data-journal="fishes"
+         data-abstract="this study investigated seasonal variation in tissue growth, reproductive status, energy reserves, and digestive tubule condition in the pacific oyster, magallana gigas, cultured in an off-bottom intertidal rack system in garorim bay on the west coast of korea. monthly samples of adult oysters were collected from february 2009 to december 2010. condition index (ci), total carbohydrate content, reproductive stage, female reproductive effort estimated by indirect enzyme-linked immunosorbent assay (elisa), and digestive tubule atrophy (dta) were measured concurrently in individual oysters. gametogenesis was largely synchronized between sexes and was strongly associated with seasonal sea surface temperature (r=0.84, p&lt;0.0001). carbohydrate content peaked in early spring and declined during the spawning season. in females, carbohydrate content was negatively correlated with gonad somatic index (gsi) (r=−0.30, p&lt;0.0001), suggesting that oysters investing more heavily in egg production tended to have lower remaining carbohydrate reserves. gsi showed interannual variation in spawning timing, peaking at 37.9% in june 2009 and 37.0% in july 2010. dta showed temporal variation, with relatively elevated values in late summer–early autumn 2009 and mid-winter 2010. the late-summer 2009 increase in dta coincided with a marked decline in salinity; however, monthly mean analyses did not establish a causal relationship between salinity and dta. together, these results indicate that the seasonal physiological condition of intertidal rack-cultured oysters reflects a dynamic balance between reproductive investment, carbohydrate reserves, and digestive gland condition, with this balance potentially modified by seasonal environmental variability. these results provide a cross-sectional, multi-parameter baseline for seasonal monitoring of reproductive status, energy reserves, and digestive tubule condition in intertidal rack-cultured oysters in garorim bay."
+         data-summary="本研究调查了韩国西海岸garorim湾潮间带架式养殖太平洋牡蛎（magallana gigas）的季节性组织生长、繁殖状态、能量储备及消化管状况。基于2009年2月至2010年12月的月度采样，同步测定了条件指数（ci）、总碳水化合物含量、繁殖分期、雌性繁殖投入（elisa法）及消化管萎缩（dta）。结果显示配子发生与性别间高度同步，且与季节海表温度显著相关（r=0.84, p<0.0001）；碳水化合物含量在早春达峰，产卵期下降，并与雌性性腺体指数（gsi）呈负相关（r=−0.30, p<0.0001）。dta在2009年夏末秋初及2010年仲冬升高，前者与盐度下降同期，但未确立因果关系。研究为潮间带架式养殖牡蛎的季节性生理监测提供了多参数基线。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Fishes
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究调查了韩国西海岸Garorim湾潮间带架式养殖太平洋牡蛎（Magallana gigas）的季节性组织生长、繁殖状态、能量储备及消化管状况。基于2009年2月至2010年12月的月度采样，同步测定了条件指数（CI）、总碳水化合物含量、繁殖分期、雌性繁殖投入（ELISA法）及消化管萎缩（DTA）。结果显示配子发生与性别间高度同步，且与季节海表温度显著相关（r=0.84, p<0.0001）；碳水化合物含量在早春达峰，产卵期下降，并与雌性性腺体指数（GSI）呈负相关（r=−0.30, p<0.0001）。DTA在2009年夏末秋初及2010年仲冬升高，前者与盐度下降同期，但未确立因果关系。研究为潮间带架式养殖牡蛎的季节性生理监测提供了多参数基线。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/fishes11090511" target="_blank" rel="noopener">Seasonal Growth, Reproduction, and Health of the Pacific Oysters Cultured in an Intertidal Rack System in Garorim Bay, West Coast of Korea</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Lee, Hee-Jung; Park, Jong-Won; Lee, Jeong-Ho; Choi, Kwang-Si...</span>
+        
+        <span>📅 2026-08-31</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">This study investigated seasonal variation in tissue growth, reproductive status, energy reserves, and digestive tubule condition in the Pacific oyster, Magallana gigas, cultured in an off-bottom intertidal rack system in Garorim Bay on the west coast of Korea. Monthly samples of adult oysters were collected from February 2009 to December 2010. Condition index (CI), total carbohydrate content, reproductive stage, female reproductive effort estimated by indirect enzyme-linked immunosorbent assay (ELISA), and digestive tubule atrophy (DTA) were measured concurrently in individual oysters. Gametogenesis was largely synchronized between sexes and was strongly associated with seasonal sea surface temperature (r=0.84, p&lt;0.0001). Carbohydrate content peaked in early spring and declined during the spawning season. In females, carbohydrate content was negatively correlated with gonad somatic index (GSI) (r=−0.30, p&lt;0.0001), suggesting that oysters investing more heavily in egg production tended to have lower remaining carbohydrate reserves. GSI showed interannual variation in spawning timing, peaking at 37.9% in June 2009 and 37.0% in July 2010. DTA showed temporal variation, with relatively elevated values in late summer–early autumn 2009 and mid-winter 2010. The late-summer 2009 increase in DTA coincided with a marked decline in salinity; however, monthly mean analyses did not establish a causal relationship between salinity and DTA. Together, these results indicate that the seasonal physiological condition of intertidal rack-cultured oysters reflects a dynamic balance between reproductive investment, carbohydrate reserves, and digestive gland condition, with this balance potentially modified by seasonal environmental variability. These results provide a cross-sectional, multi-parameter baseline for seasonal monitoring of reproductive status, energy reserves, and digestive tubule condition in intertidal rack-cultured oysters in Garorim Bay.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="synergistic effects between chitooligosaccharide–epigallocatechin gallate conjugate and nisin on inhibition of seafood-associated vibrio spp., aeromonas spp., and shewanella spp."
+         data-authors="palamae, suriya; sinlapapanya, pitima; buatong, jirayu; buamard, natchaphol; fu, yu; zhang, bin; hong, hui; benjakul, soottawat"
+         data-journal="foods"
+         data-abstract="ready-to-cook asian moon scallop (ram) may harbor seafood-associated spoilage and opportunistic pathogenic bacteria, leading to quality deterioration and food safety concerns. this study investigated the microbiological diversity, virulence-associated phenotypes, and antibacterial activity of chitooligosaccharide–epigallocatechin gallate conjugate (cegc) combined with nisin against seafood-associated bacteria isolated from ram. a total of 102 bacterial isolates were subjected to identification by maldi-tof/ms, with vibrio, aeromonas, and shewanella as the predominant genera. several isolates exhibited proteolytic and hemolytic activities, indicating spoilage potential and virulence-associated traits. multivariate analysis showed that bacterial isolates differed widely in their antimicrobial susceptibility and virulence-associated phenotypes. checkerboard assays demonstrated synergistic effects between cegc and nisin against vibrio parahaemolyticus and vibrio fluvialis (fici = 0.50). the additive effects were observed for the remaining strains, except an indifferent effect (fici = 1.06) was found for a. hydrophila. the combined treatment markedly inhibited bacterial growth and biofilm formation, achieving approximately 95% biofilm reduction in v. parahaemolyticus. confocal laser scanning microscopy and scanning electron microscopy revealed severe membrane disruption, increased permeability, cellular deformation, and collapse of biofilm architecture. furthermore, cegc–nisin effectively suppressed v. parahaemolyticus growth in cold-stored ram. these findings demonstrate that cegc combined with nisin is a promising natural antimicrobial strategy for improving seafood safety and reducing microbial spoilage in ready-to-cook seafood products."
+         data-summary="本研究以即烹亚洲月扇贝（ram）为对象，分离鉴定102株海鲜相关细菌，其中弧菌属（vibrio）、气单胞菌属（aeromonas）和希瓦氏菌属（shewanella）为主要优势菌群，部分菌株具有蛋白水解和溶血活性。通过棋盘法评估壳寡糖-表没食子儿茶素没食子酸酯偶联物（cegc）与乳链菌肽（nisin）的协同抗菌效果，发现对副溶血性弧菌和河流弧菌呈协同作用（fici=0.50），对多数菌株呈相加作用，联合处理可显著抑制细菌生长和生物膜形成（副溶血性弧菌生物膜减少约95%）。激光共聚焦和扫描电镜显示联合处理导致细胞膜严重破坏、通透性增加及生物膜结构崩塌，且在冷藏ram中有效抑制副溶血性弧菌生长。研究表明cegc与nisin组合是改善即烹海鲜产品安全性和减少微生物腐败的潜在天然抗菌策略。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Foods
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究以即烹亚洲月扇贝（RAM）为对象，分离鉴定102株海鲜相关细菌，其中弧菌属（Vibrio）、气单胞菌属（Aeromonas）和希瓦氏菌属（Shewanella）为主要优势菌群，部分菌株具有蛋白水解和溶血活性。通过棋盘法评估壳寡糖-表没食子儿茶素没食子酸酯偶联物（CEGC）与乳链菌肽（nisin）的协同抗菌效果，发现对副溶血性弧菌和河流弧菌呈协同作用（FICI=0.50），对多数菌株呈相加作用，联合处理可显著抑制细菌生长和生物膜形成（副溶血性弧菌生物膜减少约95%）。激光共聚焦和扫描电镜显示联合处理导致细胞膜严重破坏、通透性增加及生物膜结构崩塌，且在冷藏RAM中有效抑制副溶血性弧菌生长。研究表明CEGC与nisin组合是改善即烹海鲜产品安全性和减少微生物腐败的潜在天然抗菌策略。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/foods15173072" target="_blank" rel="noopener">Synergistic Effects Between Chitooligosaccharide–Epigallocatechin Gallate Conjugate and Nisin on Inhibition of Seafood-Associated Vibrio spp., Aeromonas spp., and Shewanella spp.</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Palamae, Suriya; Sinlapapanya, Pitima; Buatong, Jirayu; Buam...</span>
+        
+        <span>📅 2026-08-31</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Ready-to-cook Asian moon scallop (RAM) may harbor seafood-associated spoilage and opportunistic pathogenic bacteria, leading to quality deterioration and food safety concerns. This study investigated the microbiological diversity, virulence-associated phenotypes, and antibacterial activity of chitooligosaccharide–epigallocatechin gallate conjugate (CEGC) combined with nisin against seafood-associated bacteria isolated from RAM. A total of 102 bacterial isolates were subjected to identification by MALDI-TOF/MS, with Vibrio, Aeromonas, and Shewanella as the predominant genera. Several isolates exhibited proteolytic and hemolytic activities, indicating spoilage potential and virulence-associated traits. Multivariate analysis showed that bacterial isolates differed widely in their antimicrobial susceptibility and virulence-associated phenotypes. Checkerboard assays demonstrated synergistic effects between CEGC and nisin against Vibrio parahaemolyticus and Vibrio fluvialis (FICI = 0.50). The additive effects were observed for the remaining strains, except an indifferent effect (FICI = 1.06) was found for A. hydrophila. The combined treatment markedly inhibited bacterial growth and biofilm formation, achieving approximately 95% biofilm reduction in V. parahaemolyticus. Confocal laser scanning microscopy and scanning electron microscopy revealed severe membrane disruption, increased permeability, cellular deformation, and collapse of biofilm architecture. Furthermore, CEGC–nisin effectively suppressed V. parahaemolyticus growth in cold-stored RAM. These findings demonstrate that CEGC combined with nisin is a promising natural antimicrobial strategy for improving seafood safety and reducing microbial spoilage in ready-to-cook seafood products.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="body size, functional form and environmental correlates of maximum longevity in marine‐occurring fishes"
+         data-authors="li, longyu; xu, zenghui"
+         data-journal="journal of fish biology"
+         data-abstract="abstract maximum longevity varies widely among marine‐occurring fishes, but the form of its relationship with body size and the contribution of broad environmental gradients remain uncertain. we analysed 757 species, using maximum length as the primary size metric and completed mass only in sensitivity analyses. a quadratic length model improved fit over a linear comparator and captured broad attenuation in the size–longevity association. maximum depth was positively associated with log10 maximum longevity after accounting for this curvature (estimate per 1000 m = 0.0692, 95% ci 0.0312 to 0.1072, p &lt; 0.001). latitude estimates varied among range‐based metrics and model specifications, and the latitude term performed less consistently when entire families and orders were withheld. none of the group or continuous‐interaction contrasts met the defined fdr threshold of q &lt; 0.05. fishtree matched 605 species but excluded every elasmobranch in the canonical dataset; branch‐length phylogenetic generalized least squares (pgls) therefore provides a matched‐subset sensitivity rather than full phylogenetic coverage. linear contrasts from 5000 species‐level bootstrap resamples and nonlinear quantile sensitivities did not indicate broad upper‐tail steepening. teleostei‐only, broad‐class‐adjusted and family‐clustered analyses retained a positive maximum‐depth coefficient, whereas latitude was less stable under clustered uncertainty. body size and maximum depth thus provide the most consistent macroecological associations with maximum longevity. latitude remains exploratory, and the data do not identify causal mechanisms."
+         data-summary="本研究分析了757种海洋鱼类的最大寿命与体型及环境因子的关系，发现二次长度模型优于线性模型，显示体型-寿命关联存在衰减效应。最大深度与最大寿命呈显著正相关（每1000米估计值0.0692），而纬度效应在不同模型和聚类分析中表现不稳定。系统发育分析（pgls）仅覆盖部分物种，但深度系数在多种敏感性分析中保持稳健。结论认为体型和最大深度是最大寿命最一致的宏观生态关联因子，纬度影响尚待探索。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究分析了757种海洋鱼类的最大寿命与体型及环境因子的关系，发现二次长度模型优于线性模型，显示体型-寿命关联存在衰减效应。最大深度与最大寿命呈显著正相关（每1000米估计值0.0692），而纬度效应在不同模型和聚类分析中表现不稳定。系统发育分析（PGLS）仅覆盖部分物种，但深度系数在多种敏感性分析中保持稳健。结论认为体型和最大深度是最大寿命最一致的宏观生态关联因子，纬度影响尚待探索。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70629" target="_blank" rel="noopener">Body size, functional form and environmental correlates of maximum longevity in marine‐occurring fishes</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Li, Longyu; Xu, Zenghui</span>
+        
+        <span>📅 2026-08-31</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract Maximum longevity varies widely among marine‐occurring fishes, but the form of its relationship with body size and the contribution of broad environmental gradients remain uncertain. We analysed 757 species, using maximum length as the primary size metric and completed mass only in sensitivity analyses. A quadratic length model improved fit over a linear comparator and captured broad attenuation in the size–longevity association. Maximum depth was positively associated with log10 maximum longevity after accounting for this curvature (estimate per 1000 m = 0.0692, 95% CI 0.0312 to 0.1072, p &lt; 0.001). Latitude estimates varied among range‐based metrics and model specifications, and the latitude term performed less consistently when entire families and orders were withheld. None of the group or continuous‐interaction contrasts met the defined FDR threshold of q &lt; 0.05. FishTree matched 605 species but excluded every elasmobranch in the canonical dataset; branch‐length phylogenetic generalized least squares (PGLS) therefore provides a matched‐subset sensitivity rather than full phylogenetic coverage. Linear contrasts from 5000 species‐level bootstrap resamples and nonlinear quantile sensitivities did not indicate broad upper‐tail steepening. Teleostei‐only, broad‐Class‐adjusted and Family‐clustered analyses retained a positive maximum‐depth coefficient, whereas latitude was less stable under clustered uncertainty. Body size and maximum depth thus provide the most consistent macroecological associations with maximum longevity. Latitude remains exploratory, and the data do not identify causal mechanisms.</div>
+      
+    </div>
+    
+    <div class="paper-card high-impact"
+         data-title="an ecotoxicological perspective on bivalve safety frameworks: linking hab management and microbiological limits to physiological responses in shellfish"
+         data-authors="mintza, dionysia; theodorou, john a."
+         data-journal="journal of marine science and engineering"
+         data-abstract="harmful algal blooms (habs) pose a growing ecotoxicological threat to bivalve molluscs and their consumers. current regulatory frameworks governing shellfish safety, however, rely on acute human toxicity limits that poorly capture the biological complexity of bivalve–hab interactions. this narrative review synthesises the published literature on the effects of hab toxins on bivalves. it assesses their physiology, immune function, and stress resilience, comparing these findings against the limits set by the eu, the united states (us) and australia/new zealand. sublethal responses from immunosuppression and impaired reproduction to oxidative stress and altered valve activity frequently occur at concentrations below current action levels. environmental variables such as marine heatwaves, salinity fluctuations and hypoxia shift toxin bioaccumulation and depuration in ways that existing safety limits fail to capture. the main toxin groups, their mechanisms of action and species-specific accumulation and elimination kinetics are examined alongside current monitoring and management strategies. the review concludes that bridging the gap between shellfish-safety regulation and bivalve ecotoxicology requires integrating physiological stress indicators into regulatory frameworks. such integration must draw on advanced monitoring technologies and adaptive management capable of responding to a rapidly changing ocean."
+         data-summary="该综述从生态毒理学视角审视双壳贝类安全框架，指出当前基于急性人类毒性阈值的监管标准（如eu、us及澳新标准）难以全面反映贝类与有害藻华（hab）相互作用的生物学复杂性。通过综合分析hab毒素对贝类生理、免疫及应激耐受性的亚致死效应，发现免疫抑制、繁殖受损及氧化应激等响应常发生在现行行动限值以下，且海洋热浪、盐度波动和缺氧等环境因素可改变毒素蓄积与净化动力学。文章主张将生理应激指标整合入监管框架，并借助先进监测技术和适应性管理策略，以弥合贝类安全法规与生态毒理学之间的鸿沟。"
+         data-impact="true">
+
+      
+      <div class="hi-badge">🌟 高影响力</div>
+      
+
+      
+      <div class="journal">
+        ⭐
+        📰 Journal of Marine Science and Engineering
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该综述从生态毒理学视角审视双壳贝类安全框架，指出当前基于急性人类毒性阈值的监管标准（如EU、US及澳新标准）难以全面反映贝类与有害藻华（HAB）相互作用的生物学复杂性。通过综合分析HAB毒素对贝类生理、免疫及应激耐受性的亚致死效应，发现免疫抑制、繁殖受损及氧化应激等响应常发生在现行行动限值以下，且海洋热浪、盐度波动和缺氧等环境因素可改变毒素蓄积与净化动力学。文章主张将生理应激指标整合入监管框架，并借助先进监测技术和适应性管理策略，以弥合贝类安全法规与生态毒理学之间的鸿沟。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/jmse14171592" target="_blank" rel="noopener">An Ecotoxicological Perspective on Bivalve Safety Frameworks: Linking HAB Management and Microbiological Limits to Physiological Responses in Shellfish</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Mintza, Dionysia; Theodorou, John A.</span>
+        
+        <span>📅 2026-08-31</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Harmful algal blooms (HABs) pose a growing ecotoxicological threat to bivalve molluscs and their consumers. Current regulatory frameworks governing shellfish safety, however, rely on acute human toxicity limits that poorly capture the biological complexity of bivalve–HAB interactions. This narrative review synthesises the published literature on the effects of HAB toxins on bivalves. It assesses their physiology, immune function, and stress resilience, comparing these findings against the limits set by the EU, the United States (US) and Australia/New Zealand. Sublethal responses from immunosuppression and impaired reproduction to oxidative stress and altered valve activity frequently occur at concentrations below current action levels. Environmental variables such as marine heatwaves, salinity fluctuations and hypoxia shift toxin bioaccumulation and depuration in ways that existing safety limits fail to capture. The main toxin groups, their mechanisms of action and species-specific accumulation and elimination kinetics are examined alongside current monitoring and management strategies. The review concludes that bridging the gap between shellfish-safety regulation and bivalve ecotoxicology requires integrating physiological stress indicators into regulatory frameworks. Such integration must draw on advanced monitoring technologies and adaptive management capable of responding to a rapidly changing ocean.</div>
+      
+    </div>
+    
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var s=localStorage.getItem('theme');
+  if(s){document.documentElement.setAttribute('data-theme',s);
+  document.getElementById('themeIcon').textContent=s==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=s==='dark'?'亮色':'暗色';}
+})();
+function toggleTheme(){
+  var h=document.documentElement,n=h.getAttribute('data-theme')==='dark'?'light':'dark';
+  h.setAttribute('data-theme',n);
+  document.getElementById('themeIcon').textContent=n==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=n==='dark'?'亮色':'暗色';
+  localStorage.setItem('theme',n);
+}
+function toggleAbstract(b){
+  var c=b.nextElementSibling,v=c.classList.contains('visible');
+  c.classList.toggle('visible');b.classList.toggle('open');
+  b.querySelector('.arrow').textContent=v?'▶':'▼';
+}
+function filterPapers(){
+  var q=(document.getElementById('searchInput').value||'').toLowerCase().trim(),vis=0;
+  document.querySelectorAll('.paper-card').forEach(function(c){
+    var t=[c.getAttribute('data-title')||'',c.getAttribute('data-authors')||'',c.getAttribute('data-journal')||'',c.getAttribute('data-abstract')||'',c.getAttribute('data-summary')||''].join(' ');
+    var s=!q||t.includes(q);c.classList.toggle('hidden',!s);if(s)vis++;
+  });
+  document.getElementById('noResults').classList.toggle('visible',vis===0);
+}
+</script>
+</body>
+</html>
