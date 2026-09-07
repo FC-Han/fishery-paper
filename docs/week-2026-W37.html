@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>鱼类病原疫苗与生态养殖技术研究进展 — 渔业文献每周速览</title>
+<style>
+:root {
+  --bg: #f7fafc; --bg-card: #ffffff; --text: #2d3748;
+  --text-secondary: #718096; --text-muted: #a0aec0; --border: #e2e8f0;
+  --primary: #2b6cb0; --primary-light: #bee3f8; --primary-dark: #1a365d;
+  --accent: #e76f51; --accent-light: #fed7d7;
+  --teal: #319795; --teal-light: #b2f5ea;
+  --gold: #d69e2e; --gold-light: #fefcbf;
+  --shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.10);
+  --radius: 12px; --radius-sm: 8px;
+}
+[data-theme="dark"] {
+  --bg: #1a202c; --bg-card: #2d3748; --text: #e2e8f0;
+  --text-secondary: #a0aec0; --text-muted: #718096; --border: #4a5568;
+  --primary: #90cdf4; --primary-light: #2a4365; --primary-dark: #bee3f8;
+  --accent: #fc8181; --accent-light: #742a2a;
+  --teal: #81e6d9; --teal-light: #234e52;
+  --gold: #f6e05e; --gold-light: #3d3a1a;
+  --shadow: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.5);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;transition:background 0.3s,color 0.3s}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* === Top Bar === */
+.topbar{background:linear-gradient(135deg,#1a365d,#2b6cb0);color:#fff;padding:0.8rem 1.5rem;display:flex;align-items:center;gap:1rem;position:sticky;top:0;z-index:100}
+.back-btn{color:#fff;font-size:0.95rem;font-weight:600;padding:0.4rem 0.8rem;border-radius:var(--radius-sm);border:1.5px solid rgba(255,255,255,0.3);transition:all 0.2s;white-space:nowrap}
+.back-btn:hover{background:rgba(255,255,255,0.15);text-decoration:none}
+.topbar .title-area{flex:1;min-width:0}
+.topbar .week-range{font-size:0.78rem;opacity:0.8}
+.topbar .week-topic{font-size:1rem;font-weight:700;line-height:1.3}
+.topbar .theme-toggle{padding:0.4rem 0.8rem;border:1.5px solid rgba(255,255,255,0.3);border-radius:var(--radius-sm);background:transparent;color:#fff;cursor:pointer;font-size:0.85rem;transition:all 0.2s;white-space:nowrap}
+.topbar .theme-toggle:hover{background:rgba(255,255,255,0.15)}
+
+.container{max-width:1100px;margin:0 auto;padding:1.5rem}
+
+/* === Article Section === */
+.article-section{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;margin-bottom:1.5rem;box-shadow:var(--shadow)}
+.article-section h2{font-size:1.3rem;color:var(--primary-dark);margin:1.5rem 0 0.75rem;padding-bottom:0.4rem;border-bottom:2px solid var(--primary-light)}
+.article-section h2:first-child{margin-top:0}
+.article-section p{margin-bottom:0.8rem;line-height:1.8;color:var(--text)}
+.article-section strong{color:var(--primary-dark)}
+.article-section ol,.article-section ul{padding-left:1.5rem;margin-bottom:0.8rem}
+.article-section li{margin-bottom:0.5rem;line-height:1.7}
+.article-tag{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-right:0.5rem}
+.tag-overview{background:var(--primary-light);color:var(--primary-dark)}
+.tag-highlight{background:var(--accent-light);color:var(--accent)}
+.tag-innovative{background:var(--gold-light);color:var(--gold)}
+.tag-recommend{background:var(--teal-light);color:var(--teal)}
+
+/* === Stats Row === */
+.stats-row{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.stat-mini{padding:0.5rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-secondary)}
+.stat-mini strong{color:var(--primary);font-size:1.1rem}
+
+/* === Controls === */
+.controls{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.search-box{flex:1;min-width:200px;position:relative}
+.search-box input{width:100%;padding:0.6rem 1rem 0.6rem 2.5rem;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:0.9rem;background:var(--bg-card);color:var(--text);transition:border-color 0.2s}
+.search-box input:focus{outline:none;border-color:var(--primary)}
+.search-box .search-icon{position:absolute;left:0.8rem;top:50%;transform:translateY(-50%);color:var(--text-muted);pointer-events:none}
+
+/* === Paper Grid === */
+.section-title{font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:0.75rem;display:flex;align-items:center;gap:0.5rem}
+.paper-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:0.85rem;margin-bottom:1.5rem}
+.paper-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1.1rem;transition:all 0.25s;display:flex;flex-direction:column;position:relative}
+.paper-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);border-color:var(--primary-light)}
+.paper-card.high-impact{border-left:3px solid var(--accent)}
+.paper-card .hi-badge{position:absolute;top:0.5rem;right:0.5rem;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:10px;background:var(--accent-light);color:var(--accent);font-weight:700}
+.paper-card .journal{font-size:0.78rem;color:var(--teal);font-weight:600;margin-bottom:0.3rem}
+.paper-card .title{font-size:0.95rem;font-weight:700;line-height:1.45;margin-bottom:0.35rem}
+.paper-card .title a{color:var(--text)}
+.paper-card .title a:hover{color:var(--primary);text-decoration:none}
+.paper-card .meta{font-size:0.78rem;color:var(--text-muted);margin-bottom:0.6rem;display:flex;flex-wrap:wrap;gap:0.5rem}
+
+/* Chinese Summary */
+.paper-card .summary-cn{background:linear-gradient(135deg,#fffaf0,#fffff0);border-left:3px solid var(--gold);padding:0.7rem 0.85rem;margin-bottom:0.5rem;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:0.88rem;line-height:1.55;color:#744210}
+[data-theme="dark"] .paper-card .summary-cn{background:linear-gradient(135deg,#3d2e1a,#372a10);color:#fbd38d}
+
+.abstract-toggle{font-size:0.8rem;color:var(--primary);cursor:pointer;font-weight:600;user-select:none;display:inline-flex;align-items:center;gap:0.25rem;padding:0.3rem 0;border:none;background:none}
+.abstract-toggle:hover{color:var(--accent)}
+.abstract-toggle .arrow{transition:transform 0.2s;font-size:0.7rem}
+.abstract-toggle.open .arrow{transform:rotate(90deg)}
+.abstract-content{display:none;font-size:0.82rem;color:var(--text-secondary);line-height:1.55;padding:0.5rem 0;border-top:1px dashed var(--border);margin-top:0.4rem}
+.abstract-content.visible{display:block}
+
+.paper-card.hidden{display:none}
+.no-results{display:none;text-align:center;padding:2rem;color:var(--text-muted)}
+.no-results.visible{display:block}
+
+@media(max-width:768px){.paper-grid{grid-template-columns:1fr}.article-section{padding:1.25rem}.topbar{flex-wrap:wrap}.topbar .week-topic{font-size:0.9rem}}
+
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.paper-card{animation:fadeIn 0.4s ease-out}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="back-btn" href="index.html">← 返回主页</a>
+  <div class="title-area">
+    <div class="week-range">9月7日—9月7日</div>
+    <div class="week-topic">鱼类病原疫苗与生态养殖技术研究进展</div>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <span id="themeIcon">🌙</span> <span id="themeLabel">暗色</span>
+  </button>
+</div>
+
+<div class="container">
+
+  <!-- 深度综述文章 -->
+  
+  <div class="article-section">
+    <h2>本周研究概览</h2>
+
+<p>本周共收录6篇渔业相关论文，研究方向涵盖水产病害防控、鱼类生理生态、养殖模式创新、饲料安全及副产物高值化利用等。整体来看，研究呈现出明显的应用导向特征：一方面聚焦水产养殖的可持续发展与食品安全问题（如疫苗研发、生物絮团养殖、霉菌毒素污染评估），另一方面关注环境变化与养殖管理对鱼类健康及产品质量的影响（如温度与密度对汞积累的作用）。值得注意的是，本周研究在方法上体现了从传统养殖技术向分子生物学、生态能量学及循环经济理念融合的多元化趋势。</p>
+
+<h2>高影响力期刊亮点</h2>
+
+<p>本周暂无发表在Nature、Science、PNAS等顶级期刊的论文。</p>
+
+<h2>创新性研究</h2>
+
+<ol>
+<li><strong>《The Vaccine Candidates Against Major Fish Pathogens (Pseudomonas fluorescens and Aeromonas hydrophila) from the Outer Membrane Proteins of P. fluorescens in Fish》</strong> — 该研究系统克隆并纯化了24种荧光假单胞菌外膜蛋白（OMPs），并制备了16种小鼠抗血清，探索了跨物种疫苗开发的可行性。其创新之处在于利用一种病原菌的OMPs同时应对两种主要鱼类病原菌的感染威胁，为水产养殖中广谱疫苗的研发提供了新思路，有望降低疫苗开发成本并提高防控效率。</li>
+</ol>
+
+<ol>
+<li><strong>《Ecological energetics of an imperilled fish: Physiological metrics, experimental protocols and implications for population recovery》</strong> — 针对濒危鱼类生理数据采集困难的瓶颈，该研究系统评估了多种生态能量学指标的适用性，并提出了标准化的实验方案。其创新性在于将生理学指标与种群恢复管理直接对接，为濒危鱼类的保护性养殖和野外放归提供了可操作的量化工具，填补了该领域方法学空白。</li>
+</ol>
+
+<ol>
+<li><strong>《Biofloc-based aquaculture: From monoculture to integrated systems》</strong> — 该综述突破了传统生物絮团技术（BFT）仅用于单一养殖模式的认知框架，系统梳理了其向综合养殖系统（如鱼菜共生、多营养级综合养殖）拓展的路径与潜力。其创新性在于从系统整合的视角重新审视BFT的技术价值，为水产养殖的绿色转型提供了新的理论框架和实践方向。</li>
+</ol>
+
+<ol>
+<li><strong>《Global Occurrence, Co-Contamination Patterns, and Toxic Effects of Mycotoxins in Fish Feed: A Multi-Species Perspective Review》</strong> — 该研究首次从多鱼种视角系统分析了全球鱼饲料中霉菌毒素的发生率、共污染模式及毒性效应。其创新之处在于揭示了多种霉菌毒素共存时的协同或拮抗效应，突破了以往单一毒素风险评估的局限，对饲料安全标准的制定具有重要的参考价值。</li>
+</ol>
+
+<h2>推荐阅读</h2>
+
+<ol>
+<li><strong>Biofloc‐based aquaculture: From monoculture to integrated systems</strong> — 系统梳理了BFT技术向综合养殖系统拓展的前沿方向，对理解水产养殖可持续发展路径具有重要参考价值。</li>
+<li><strong>Ecological energetics of an imperilled fish: Physiological metrics, experimental protocols and implications for population recovery</strong> — 为濒危鱼类生理生态研究提供了标准化方法学框架，兼具理论深度与管理应用价值。</li>
+<li><strong>The Vaccine Candidates Against Major Fish Pathogens (Pseudomonas fluorescens and Aeromonas hydrophila) from the Outer Membrane Proteins of P. fluorescens in Fish</strong> — 探索了跨病原菌广谱疫苗的可行性，对水产疫苗研发策略具有启发意义。</li>
+<li><strong>Global Occurrence, Co-Contamination Patterns, and Toxic Effects of Mycotoxins in Fish Feed: A Multi-Species Perspective Review</strong> — 首次系统揭示鱼饲料霉菌毒素共污染模式，对饲料安全风险评估方法具有革新意义。</li>
+<li><strong>Effects of temperature and density on mercury accumulation in Atlantic salmon (Salmo salar)</strong> — 揭示了环境温度与养殖密度对鱼类重金属积累的交互影响，对养殖管理优化和食品安全保障具有直接指导意义。</li>
+</ol>
+  </div>
+  
+
+  <!-- 统计 -->
+  <div class="stats-row">
+    <div class="stat-mini">📄 <strong>6</strong> 篇论文</div>
+    <div class="stat-mini">🌟 <strong>0</strong> 篇高影响力期刊</div>
+    <div class="stat-mini">🤖 <strong>6</strong> 篇 AI 中文总结</div>
+    
+    <div class="stat-mini">🏷️ 鱼类疫苗(Fish Vaccine) 水产养殖(Aquaculture) 生物絮团(Biofloc) 饲料安全(Feed Safety) </div>
+    
+  </div>
+
+  <!-- 搜索 -->
+  <div class="controls">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="搜索标题、作者、摘要..." oninput="filterPapers()">
+    </div>
+  </div>
+
+  <div class="no-results" id="noResults">😕 没有匹配的论文</div>
+
+  <!-- 全部论文列表 -->
+  <div class="section-title">📄 本周全部论文（6 篇）</div>
+  <div class="paper-grid">
+    
+    <div class="paper-card"
+         data-title="an in vitro study for sustainable valorization of  channa punctata fish-scale waste into bioactive  chitosan for anti-inflammatory applications"
+         data-authors="verma, kavita; mishra, yoganchal; priyanka; yadav, neelam"
+         data-journal="genetics and molecular research"
+         data-abstract="there are many acute and chronic diseases that are associated with inflammation․ there is a great demand to discover new natural and safe anti-inflammatory agents․ chitosan is a biocompatible natural polysaccharide obtained by deacetylation of chitin․ chitosan is widely studied for its various biological activities‚ including its anti-inflammatory activity․ anti-inflammatory activity of commercial chitosan was compared with the fish chitosan obtained from channa punctata․ different mechanisms of the anti-inflammatory activity of chitosan were examined‚ by assessing its ability to inhibit proteinase and hyaluronidase‚ lox activity (using synthetic substrate for lox reaction)‚ as well as its ability to stabilize the membrane of erythrocytes‚ by investigating its effect on hemolysis induced by heating and hypotonicity․ the inhibitory activities of both chitosan were compared with the anti-inflammatory drugs diclofenac sodium‚ aspirin‚ and indomethacin․ in both cases‚ a concentration-dependent inhibitory effect was observed‚ with commercial chitosan showing a stronger inhibitory effect at a lower concentration and fish chitosan at a higher concentration․ the in vitro anti inflammatory activity of fish extracts was attributed to the anti-inflammatory potential of channa punctata chitosan based on its ability to inhibit certain enzymes and stabilize the cell membrane․ the anti-inflammatory mechanism of chitosan is probably linked to the inhibition of certain enzymes involved in the inflammatory response and the stabilization of cell membranes․ thus‚ we conclude that the biological potency of chitosan is influenced by its source and concentration․ thus‚ chitosan obtained from fish (channa punctata) holds important anti-inflammatory activity and can be explored as an alternative to the commercially available chitosan obtained from other sources․ valorizing fish processing waste is a sustainable method of producing bioactive chitosan for further in vivo experiments and development into new anti inflammatory drugs for testing in clinical trials․"
+         data-summary="本研究探讨斑点鳢（channa punctata）鱼鳞废弃物提取壳聚糖的抗炎活性，旨在实现渔业废弃物的可持续高值化利用。通过体外实验比较鱼源壳聚糖与商业壳聚糖对蛋白酶、透明质酸酶及脂氧合酶（lox）的抑制能力，并评估其对红细胞膜的热及低渗诱导溶血的稳定作用，同时以双氯芬酸钠、阿司匹林和吲哚美辛为阳性对照。结果显示两种壳聚糖均呈浓度依赖性抑制效应，商业壳聚糖在低浓度下抑制更强，而鱼源壳聚糖需较高浓度达到同等效果，其抗炎机制涉及酶抑制与细胞膜稳定。研究表明鱼鳞壳聚糖具备替代商业壳聚糖的潜力，为鱼加工副产物开发抗炎药物提供了可持续途径。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Genetics and Molecular Research
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究探讨斑点鳢（Channa punctata）鱼鳞废弃物提取壳聚糖的抗炎活性，旨在实现渔业废弃物的可持续高值化利用。通过体外实验比较鱼源壳聚糖与商业壳聚糖对蛋白酶、透明质酸酶及脂氧合酶（LOX）的抑制能力，并评估其对红细胞膜的热及低渗诱导溶血的稳定作用，同时以双氯芬酸钠、阿司匹林和吲哚美辛为阳性对照。结果显示两种壳聚糖均呈浓度依赖性抑制效应，商业壳聚糖在低浓度下抑制更强，而鱼源壳聚糖需较高浓度达到同等效果，其抗炎机制涉及酶抑制与细胞膜稳定。研究表明鱼鳞壳聚糖具备替代商业壳聚糖的潜力，为鱼加工副产物开发抗炎药物提供了可持续途径。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.4238/57mfwc02" target="_blank" rel="noopener">AN IN VITRO STUDY FOR SUSTAINABLE VALORIZATION OF  CHANNA PUNCTATA FISH-SCALE WASTE INTO BIOACTIVE  CHITOSAN FOR ANTI-INFLAMMATORY APPLICATIONS</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Verma, Kavita; Mishra, Yoganchal; Priyanka; Yadav, Neelam</span>
+        
+        <span>📅 2026-09-07</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">There are many acute and chronic diseases that are associated with inflammation․ There is a great demand to discover new natural and safe anti-inflammatory agents․ Chitosan is a biocompatible natural polysaccharide obtained by deacetylation of chitin․ Chitosan is widely studied for its various biological activities‚ including its anti-inflammatory activity․ Anti-inflammatory activity of commercial chitosan was compared with the fish chitosan obtained from Channa punctata․ Different mechanisms of the anti-inflammatory activity of chitosan were examined‚ by assessing its ability to inhibit proteinase and hyaluronidase‚ LOX activity (using synthetic substrate for LOX reaction)‚ as well as its ability to stabilize the membrane of erythrocytes‚ by investigating its effect on hemolysis induced by heating and hypotonicity․ The inhibitory activities of both chitosan were compared with the anti-inflammatory drugs diclofenac sodium‚ aspirin‚ and indomethacin․ In both cases‚ a concentration-dependent inhibitory effect was observed‚ with commercial chitosan showing a stronger inhibitory effect at a lower concentration and fish chitosan at a higher concentration․ The in vitro anti inflammatory activity of fish extracts was attributed to the anti-inflammatory potential of Channa punctata chitosan based on its ability to inhibit certain enzymes and stabilize the cell membrane․ The anti-inflammatory mechanism of chitosan is probably linked to the inhibition of certain enzymes involved in the inflammatory response and the stabilization of cell membranes․ Thus‚ we conclude that the biological potency of chitosan is influenced by its source and concentration․ Thus‚ chitosan obtained from fish (Channa punctata) holds important anti-inflammatory activity and can be explored as an alternative to the commercially available chitosan obtained from other sources․ Valorizing fish processing waste is a sustainable method of producing bioactive chitosan for further in vivo experiments and development into new anti inflammatory drugs for testing in clinical trials․</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="ecological energetics of an imperilled fish: physiological metrics, experimental protocols and implications for population recovery"
+         data-authors="brownscombe, jacob w.; bzonek, paul a.; smith, kurtis; rowsey, lauren e.; drake, d. andrew r."
+         data-journal="journal of fish biology"
+         data-abstract="abstract insights about fish physiology can be useful for population management, but collecting ecologically relevant data can be challenging, especially for imperilled and sensitive species. with the goal of identifying ecologically relevant physiological metrics, we conducted a range of experiments to characterize the metabolism, food consumption, growth, temperature tolerance and bioenergetics of silver shiner ( notropis photogenis ) from an imperilled population in canada. we also assessed the potential for collecting some of these metrics with non‐lethal, field‐based studies. short‐term (≤5‐h) field‐based respirometry generated estimates of standard metabolic rate (smr) that were statistically similar to 48‐h lab‐based trials, though the abbreviated protocol may still differ from true smr. a chase‐to‐exhaustion, single‐measurement field respirometry protocol underestimated maximum metabolic rate (mmr) at warmer temperatures relative to longer (24–48 h) laboratory respirometry, possibly reflecting heightened stressor sensitivity at warm temperatures and the limitations of single‐measurement protocols for capturing peak metabolic rate in this small‐bodied species. silver shiner exhibited a eurythermal metabolism, with a broad thermal range of high aerobic scope (as; aerobic capacity above smr). however, bioenergetics measures including lab growth (observed) and field growth (modelled) showed greater growth potential from 12 to 21°c due to limitations in food consumption capacity &gt;21°c. survival was also lower above the optimal growth range, supporting links between energetics and stressor sensitivity. across the metabolic metrics evaluated, a novel metric generated here, aerobic differential (ad = as − smr), which subtracts maintenance costs from aerobic capacity, was more closely related to lab and field growth than aerobic scope or factorial aerobic scope. agitation temperatures from ct max trials also showed some consistency with the onset of energy loss and stressor sensitivity. these findings provide insights into ecologically relevant physiological metrics and experimental designs, and have implications for managing critical habitat. in particular, aerobic differential and agitation temperature show promise as ecologically relevant indicators and have potential as non‐lethal field‐based assessment methods."
+         data-summary="本研究以加拿大濒危种群银鲦（notropis photogenis）为对象，通过系列实验测定其代谢、摄食、生长、温度耐受及生物能量学特征，旨在筛选具生态相关性的生理指标，并评估非致死野外测量方法的可行性。结果显示，短时（≤5小时）野外呼吸测定法所得标准代谢率（smr）与48小时实验室结果统计相似，但追逐至力竭的单次测量法在高温下低估最大代谢率（mmr）。该鱼呈广温代谢特性，但受摄食能力限制，12–21°c时生长潜力最大，高于此范围存活率下降；新提出的有氧差（ad = as − smr）指标较有氧代谢空间（as）更紧密关联实验室及野外生长，ct max试验中的 agitation temperature 亦与能量损耗起始一致。研究建议将ad和 agitation temperature 作为生态相关指示指标，可用于非致死野外评估，为濒危鱼类关键栖息地管理提供依据。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究以加拿大濒危种群银鲦（Notropis photogenis）为对象，通过系列实验测定其代谢、摄食、生长、温度耐受及生物能量学特征，旨在筛选具生态相关性的生理指标，并评估非致死野外测量方法的可行性。结果显示，短时（≤5小时）野外呼吸测定法所得标准代谢率（SMR）与48小时实验室结果统计相似，但追逐至力竭的单次测量法在高温下低估最大代谢率（MMR）。该鱼呈广温代谢特性，但受摄食能力限制，12–21°C时生长潜力最大，高于此范围存活率下降；新提出的有氧差（AD = AS − SMR）指标较有氧代谢空间（AS）更紧密关联实验室及野外生长，CT max试验中的 agitation temperature 亦与能量损耗起始一致。研究建议将AD和 agitation temperature 作为生态相关指示指标，可用于非致死野外评估，为濒危鱼类关键栖息地管理提供依据。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70610" target="_blank" rel="noopener">Ecological energetics of an imperilled fish: Physiological metrics, experimental protocols and implications for population recovery</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Brownscombe, Jacob W.; Bzonek, Paul A.; Smith, Kurtis; Rowse...</span>
+        
+        <span>📅 2026-09-07</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract Insights about fish physiology can be useful for population management, but collecting ecologically relevant data can be challenging, especially for imperilled and sensitive species. With the goal of identifying ecologically relevant physiological metrics, we conducted a range of experiments to characterize the metabolism, food consumption, growth, temperature tolerance and bioenergetics of Silver Shiner ( Notropis photogenis ) from an imperilled population in Canada. We also assessed the potential for collecting some of these metrics with non‐lethal, field‐based studies. Short‐term (≤5‐h) field‐based respirometry generated estimates of standard metabolic rate (SMR) that were statistically similar to 48‐h lab‐based trials, though the abbreviated protocol may still differ from true SMR. A chase‐to‐exhaustion, single‐measurement field respirometry protocol underestimated maximum metabolic rate (MMR) at warmer temperatures relative to longer (24–48 h) laboratory respirometry, possibly reflecting heightened stressor sensitivity at warm temperatures and the limitations of single‐measurement protocols for capturing peak metabolic rate in this small‐bodied species. Silver Shiner exhibited a eurythermal metabolism, with a broad thermal range of high aerobic scope (AS; aerobic capacity above SMR). However, bioenergetics measures including lab growth (observed) and field growth (modelled) showed greater growth potential from 12 to 21°C due to limitations in food consumption capacity &gt;21°C. Survival was also lower above the optimal growth range, supporting links between energetics and stressor sensitivity. Across the metabolic metrics evaluated, a novel metric generated here, aerobic differential (AD = AS − SMR), which subtracts maintenance costs from aerobic capacity, was more closely related to lab and field growth than aerobic scope or factorial aerobic scope. Agitation temperatures from CT max trials also showed some consistency with the onset of energy loss and stressor sensitivity. These findings provide insights into ecologically relevant physiological metrics and experimental designs, and have implications for managing critical habitat. In particular, aerobic differential and agitation temperature show promise as ecologically relevant indicators and have potential as non‐lethal field‐based assessment methods.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="effects of temperature and density on mercury accumulation in atlantic salmon (
+                    <i>salmo salar</i>
+                    )"
+         data-authors="rutledge, ethan a.; nislow, keith h.; fuller, matthew r.; mccormick, stephen d.; chen, celia y.; norstog, jessica l."
+         data-journal="journal of fish biology"
+         data-abstract="abstract environmental temperature is a master variable governing growth and metabolism of fishes in aquatic food webs, which in turn influences the flow and accumulation of trace elements, including toxic forms of mercury (hg). growth can be influenced by population density, with high densities consistently associated with lower growth rates. given the potential for climate change to simultaneously increase stream temperature and affect population density, understanding how these factors interact to influence hg accumulation and concentration allows for better understanding of the risks of hg load to secondary consumers. under laboratory conditions and ad libitum feeding, we assessed hg concentrations in age‐0 atlantic salmon ( salmo salar ) at cool (near the thermal optimum for growth) and warm (above the thermal optimum for growth) temperatures (16 vs. 23°c) and at low and high fish density (0.53 vs. 2.65 fish/litre). in all treatments, fish grew rapidly, resulting in an approximate 3‐ to 4‐fold increase from initial size. specific growth rate was not significantly different between the warm (2.98 ± 0.86%/day) and cool (3.15 ± 0.73%/day) temperature treatments but was significantly faster at low (3.41 ± 0.86%/day) vs. high (2.99 ± 0.77%/day) density treatments. mercury accumulation was related to both temperature and density, with the highest hg concentrations under warm temperature and high population density conditions. within treatments, individuals with higher growth had lower hg at the warm temperature but equivalent or slightly lower hg at the cool temperature. this interaction among temperature, growth rank and hg likely contributed to the lack of an overall experiment‐wide relationship between individual body size and hg concentration. our results indicate that even when fish manage to maintain sufficient growth rates under increasing temperatures, energetic considerations (changes in foraging and metabolic rate) may increase hg contaminant concentration. in addition, the influence of density on energetics and growth, even when food resources are not limited, makes it essential to consider trajectories of environmental change that also influence abundance and population density when assessing contaminant pathways. these findings help clarify how growth and body size relate to contaminant accumulation, with important implications for understanding hg contamination under varying environmental change scenarios."
+         data-summary="本研究通过实验室控制实验，探讨了温度和密度对大西洋鲑（salmo salar）幼鱼汞（hg）积累的影响。实验设置16°c和23°c两种温度及低（0.53尾/升）和高（2.65尾/升）密度处理，在饱食投喂条件下测定鱼体汞浓度。结果显示，高温和高密度处理下汞积累最高，且个体生长速率与汞浓度关系受温度调节：温暖条件下高生长个体汞含量较低，而低温下差异不显著。研究表明，即使鱼类在升温下维持足够生长，能量代谢变化仍可能增加汞负荷，且密度对能量分配的影响在资源充足时也不可忽视，这对评估环境变化情景下的汞污染风险具有重要意义。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究通过实验室控制实验，探讨了温度和密度对大西洋鲑（Salmo salar）幼鱼汞（Hg）积累的影响。实验设置16°C和23°C两种温度及低（0.53尾/升）和高（2.65尾/升）密度处理，在饱食投喂条件下测定鱼体汞浓度。结果显示，高温和高密度处理下汞积累最高，且个体生长速率与汞浓度关系受温度调节：温暖条件下高生长个体汞含量较低，而低温下差异不显著。研究表明，即使鱼类在升温下维持足够生长，能量代谢变化仍可能增加汞负荷，且密度对能量分配的影响在资源充足时也不可忽视，这对评估环境变化情景下的汞污染风险具有重要意义。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70638" target="_blank" rel="noopener">Effects of temperature and density on mercury accumulation in Atlantic salmon (
+                    <i>Salmo salar</i>
+                    )</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Rutledge, Ethan A.; Nislow, Keith H.; Fuller, Matthew R.; Mc...</span>
+        
+        <span>📅 2026-09-07</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract Environmental temperature is a master variable governing growth and metabolism of fishes in aquatic food webs, which in turn influences the flow and accumulation of trace elements, including toxic forms of mercury (Hg). Growth can be influenced by population density, with high densities consistently associated with lower growth rates. Given the potential for climate change to simultaneously increase stream temperature and affect population density, understanding how these factors interact to influence Hg accumulation and concentration allows for better understanding of the risks of Hg load to secondary consumers. Under laboratory conditions and ad libitum feeding, we assessed Hg concentrations in age‐0 Atlantic salmon ( Salmo salar ) at cool (near the thermal optimum for growth) and warm (above the thermal optimum for growth) temperatures (16 vs. 23°C) and at low and high fish density (0.53 vs. 2.65 fish/litre). In all treatments, fish grew rapidly, resulting in an approximate 3‐ to 4‐fold increase from initial size. Specific growth rate was not significantly different between the warm (2.98 ± 0.86%/day) and cool (3.15 ± 0.73%/day) temperature treatments but was significantly faster at low (3.41 ± 0.86%/day) vs. high (2.99 ± 0.77%/day) density treatments. Mercury accumulation was related to both temperature and density, with the highest Hg concentrations under warm temperature and high population density conditions. Within treatments, individuals with higher growth had lower Hg at the warm temperature but equivalent or slightly lower Hg at the cool temperature. This interaction among temperature, growth rank and Hg likely contributed to the lack of an overall experiment‐wide relationship between individual body size and Hg concentration. Our results indicate that even when fish manage to maintain sufficient growth rates under increasing temperatures, energetic considerations (changes in foraging and metabolic rate) may increase Hg contaminant concentration. In addition, the influence of density on energetics and growth, even when food resources are not limited, makes it essential to consider trajectories of environmental change that also influence abundance and population density when assessing contaminant pathways. These findings help clarify how growth and body size relate to contaminant accumulation, with important implications for understanding Hg contamination under varying environmental change scenarios.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="biofloc‐based aquaculture: from monoculture to integrated systems"
+         data-authors="khanjani, mohammad hossein; pimentel, otávio augusto lacerda ferreira; singh, soibam khogen; poersch, luis henrique da silva; vieira, felipe boéchat; pereira, gabriella do vale; ghaedi, gholamreza; mohammadi, alireza; hajirezaee, saeed; ghaedi, alireza"
+         data-journal="journal of the world aquaculture society"
+         data-abstract="abstract the demand for high‐quality protein has been growing in recent years, led by population growth. the development of aquaculture has been considered one of the solutions to ensure food security worldwide. new farming technologies have been promoted to increase productivity and, at the same time, minimize environmental impacts. during the past decades, biofloc technology (bft) has emerged as a sustainable and cost‐efficient culture method. in terms of its optimization, bft can be integrated with other aquaculture systems, such as integrated multi‐trophic aquaculture (imta) and aquaponics, which is called flocponics. biological compatibility among different cultivated organisms poses a key challenge for the integration of species. the proper combination of species with different trophic levels can control dissolved nutrients and organic matter that often build up in bft. recent studies revealed that macroalgae and marine fish can promote better water quality when integrated with shrimp produced in bft. in addition, the microbial and nutrient‐rich content of biofloc effluents enables water reuse over multiple culture cycles or nutrient uptake by plants in flocponics. these different approaches are aligned with principles of circular economy and promote better input utilization and efficiency. this review investigates biofloc as the basis of imta and flocponics, presents key literature related to biofloc‐based integrated systems, and discusses current bottlenecks and future perspectives."
+         data-summary="该综述探讨了生物絮团技术（bft）从单一养殖模式向综合养殖系统的发展，重点分析其与多营养层级综合养殖（imta）和鱼菜共生（flocponics）的整合潜力。研究发现，不同营养级物种的合理搭配可有效控制bft中溶解性营养盐和有机物的积累，如大型藻类和海水鱼与虾类共养能改善水质。生物絮团 effluent 的微生物和营养丰富特性支持多周期水回用或植物养分吸收，符合循环经济原则。文章总结了生物絮团基综合系统的关键文献，并讨论了当前瓶颈与未来研究方向。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of the World Aquaculture Society
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该综述探讨了生物絮团技术（BFT）从单一养殖模式向综合养殖系统的发展，重点分析其与多营养层级综合养殖（IMTA）和鱼菜共生（FLOCponics）的整合潜力。研究发现，不同营养级物种的合理搭配可有效控制BFT中溶解性营养盐和有机物的积累，如大型藻类和海水鱼与虾类共养能改善水质。生物絮团 effluent 的微生物和营养丰富特性支持多周期水回用或植物养分吸收，符合循环经济原则。文章总结了生物絮团基综合系统的关键文献，并讨论了当前瓶颈与未来研究方向。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jwas.70150" target="_blank" rel="noopener">Biofloc‐based aquaculture: From monoculture to integrated systems</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Khanjani, Mohammad Hossein; Pimentel, Otávio Augusto Lacerda...</span>
+        
+        <span>📅 2026-09-07</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract The demand for high‐quality protein has been growing in recent years, led by population growth. The development of aquaculture has been considered one of the solutions to ensure food security worldwide. New farming technologies have been promoted to increase productivity and, at the same time, minimize environmental impacts. During the past decades, biofloc technology (BFT) has emerged as a sustainable and cost‐efficient culture method. In terms of its optimization, BFT can be integrated with other aquaculture systems, such as integrated multi‐trophic aquaculture (IMTA) and aquaponics, which is called FLOCponics. Biological compatibility among different cultivated organisms poses a key challenge for the integration of species. The proper combination of species with different trophic levels can control dissolved nutrients and organic matter that often build up in BFT. Recent studies revealed that macroalgae and marine fish can promote better water quality when integrated with shrimp produced in BFT. In addition, the microbial and nutrient‐rich content of biofloc effluents enables water reuse over multiple culture cycles or nutrient uptake by plants in FLOCponics. These different approaches are aligned with principles of circular economy and promote better input utilization and efficiency. This review investigates biofloc as the basis of IMTA and FLOCponics, presents key literature related to biofloc‐based integrated systems, and discusses current bottlenecks and future perspectives.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="the vaccine candidates against major fish pathogens (pseudomonas fluorescens and aeromonas hydrophila) from the outer membrane proteins of p. fluorescens in fish"
+         data-authors="liu, xiang; sun, wei; zhu, ling; zhan, yuhang; yu, yixin; wang, kai; hu, qinkai; huang, xuan; lu, juan; liu, xianjie"
+         data-journal="life"
+         data-abstract="vaccines have demonstrated greater efficiency in providing immunoprotection against bacterial species, making them potentially valuable in aquaculture. in this study, twenty-four outer membrane proteins (omps) of pseudomonas fluorescens were cloned, purified, and 16 omp mouse antisera were prepared, with titers all exceeding 1:3200. subsequently, these 16 antisera were used to passively immunize crucian carp (carassius auratus) followed by challenge with the pathogenic bacteria. the results showed that five omp antisera (pf0542, sura, pf1798, pf2253, and pf4616), as well as the whole omp serum, provided immune protection rates exceeding 60% against p. fluorescens and aeromonas hydrophila infection (p &lt; 0.05). moreover, these five omp antisera reduced the mrna expression of inflammatory cytokines and antioxidant factors (p &lt; 0.05), and exerted protective effects on the structural integrity of the kidney, spleen, and intestinal tissues. in addition, active immunization of crucian carp with these five identified omps followed by pathogen challenge demonstrated that these proteins could activate non-specific immune responses in fish, confer immune protection against p. fluorescens and a. hydrophila infection, reduce the mrna expression of inflammatory cytokines and antioxidant factors (p &lt; 0.05), and protect the tissue structure of the kidney, spleen, and intestine. collectively, these five omps (pf0542, sura, pf1798, pf2253, and pf4616) can activate immune responses in crucian carp, confer protection against bacterial infection, and exhibit reductions in inflammatory/oxidative responses associated with protection following bacterial challenge, and as well as viscera structure-maintaining effects. therefore, the five omps hold promise as vaccine candidates against bacterial infections (p. fluorescens and a. hydrophila) for both passive and active immunization in fish."
+         data-summary="本研究针对鱼类主要病原菌荧光假单胞菌（pseudomonas fluorescens）和嗜水气单胞菌（aeromonas hydrophila），克隆并纯化其24种外膜蛋白（omps），制备16种小鼠抗血清（效价均>1:3200），通过被动免疫鲫鱼（carassius auratus）及攻毒实验筛选疫苗候选。结果显示，5种omp抗血清（pf0542、sura、pf1798、pf2253、pf4616）及全omp血清对两种病原菌的免疫保护率均超60%（p<0.05），并能降低炎症因子和抗氧化因子mrna表达，保护肾、脾及肠道组织结构完整性。主动免疫实验进一步证实，这5种omp可激活非特异性免疫反应，提供交叉保护并维持脏器结构，因此有望作为鱼类抗荧光假单胞菌和嗜水气单胞菌感染的被动及主动免疫疫苗候选抗原。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Life
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究针对鱼类主要病原菌荧光假单胞菌（Pseudomonas fluorescens）和嗜水气单胞菌（Aeromonas hydrophila），克隆并纯化其24种外膜蛋白（OMPs），制备16种小鼠抗血清（效价均>1:3200），通过被动免疫鲫鱼（Carassius auratus）及攻毒实验筛选疫苗候选。结果显示，5种OMP抗血清（PF0542、SurA、PF1798、PF2253、PF4616）及全OMP血清对两种病原菌的免疫保护率均超60%（p<0.05），并能降低炎症因子和抗氧化因子mRNA表达，保护肾、脾及肠道组织结构完整性。主动免疫实验进一步证实，这5种OMP可激活非特异性免疫反应，提供交叉保护并维持脏器结构，因此有望作为鱼类抗荧光假单胞菌和嗜水气单胞菌感染的被动及主动免疫疫苗候选抗原。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/life16091493" target="_blank" rel="noopener">The Vaccine Candidates Against Major Fish Pathogens (Pseudomonas fluorescens and Aeromonas hydrophila) from the Outer Membrane Proteins of P. fluorescens in Fish</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Liu, Xiang; Sun, Wei; Zhu, Ling; Zhan, Yuhang; Yu, Yixin; Wa...</span>
+        
+        <span>📅 2026-09-07</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Vaccines have demonstrated greater efficiency in providing immunoprotection against bacterial species, making them potentially valuable in aquaculture. In this study, twenty-four outer membrane proteins (OMPs) of Pseudomonas fluorescens were cloned, purified, and 16 OMP mouse antisera were prepared, with titers all exceeding 1:3200. Subsequently, these 16 antisera were used to passively immunize crucian carp (Carassius auratus) followed by challenge with the pathogenic bacteria. The results showed that five OMP antisera (PF0542, SurA, PF1798, PF2253, and PF4616), as well as the whole OMP serum, provided immune protection rates exceeding 60% against P. fluorescens and Aeromonas hydrophila infection (p &lt; 0.05). Moreover, these five OMP antisera reduced the mRNA expression of inflammatory cytokines and antioxidant factors (p &lt; 0.05), and exerted protective effects on the structural integrity of the kidney, spleen, and intestinal tissues. In addition, active immunization of crucian carp with these five identified OMPs followed by pathogen challenge demonstrated that these proteins could activate non-specific immune responses in fish, confer immune protection against P. fluorescens and A. hydrophila infection, reduce the mRNA expression of inflammatory cytokines and antioxidant factors (p &lt; 0.05), and protect the tissue structure of the kidney, spleen, and intestine. Collectively, these five OMPs (PF0542, SurA, PF1798, PF2253, and PF4616) can activate immune responses in crucian carp, confer protection against bacterial infection, and exhibit reductions in inflammatory/oxidative responses associated with protection following bacterial challenge, and as well as viscera structure-maintaining effects. Therefore, the five OMPs hold promise as vaccine candidates against bacterial infections (P. fluorescens and A. hydrophila) for both passive and active immunization in fish.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="global occurrence, co-contamination patterns, and toxic effects of mycotoxins in fish feed: a multi-species perspective review"
+         data-authors="nji, queenta ngum; njobeh, patrick berka"
+         data-journal="toxins"
+         data-abstract="aquaculture has become the fastest-growing food-production sector worldwide, with increasing reliance on plant-based feed ingredients such as maize, soybean, wheat, rice, and oilseed meals. although these ingredients reduce dependence on fishmeal, they are highly susceptible to fungal contamination and subsequent mycotoxin production. global surveys reveal widespread contamination of aquafeeds with major regulated mycotoxins, including aflatoxins, fumonisins, deoxynivalenol, zearalenone, ochratoxin a, and t-2 toxin, alongside emerging toxins such as enniatins, beauvericins, and sterigmatocystin metabolites. aflatoxin b1 is the most prevalent and toxic mycotoxin, with contamination prevalence often exceeding 80–100% in africa and asia with contamination levels surpassing 400 µg/kg in some regions of these continents. fumonisins, deoxynivalenol, and zearalenone are also commonly detected, with fumonisins levels occasionally exceeding 7000 µg/kg. mycotoxins induce diverse toxic effects in fish, including growth suppression, hepatotoxicity, nephrotoxicity, immunosuppression, oxidative stress, reproductive dysfunction, and mortality. collectively, these findings highlight the urgent need for improved surveillance, feed management, and harmonized regulations addressing multi-mycotoxin exposure to safeguard aquaculture productivity, fish, and public health. this review synthesizes current knowledge on the global mycotoxin contamination patterns, analytical detection methods in fish feed and processed seafood as well as the toxicological effects of mycotoxins, with emphasis on species-specific responses and food safety implications."
+         data-summary="全球水产饲料中真菌毒素污染普遍，以黄曲霉毒素、伏马菌素等为主，非洲和亚洲污染率超80-100%，部分区域黄曲霉毒素b1水平超400 µg/kg。毒素可致鱼类生长抑制、肝毒性、免疫抑制等，综述强调需加强监测与协同管控，保障水产养殖和食品安全。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Toxins
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 全球水产饲料中真菌毒素污染普遍，以黄曲霉毒素、伏马菌素等为主，非洲和亚洲污染率超80-100%，部分区域黄曲霉毒素B1水平超400 µg/kg。毒素可致鱼类生长抑制、肝毒性、免疫抑制等，综述强调需加强监测与协同管控，保障水产养殖和食品安全。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/toxins18090383" target="_blank" rel="noopener">Global Occurrence, Co-Contamination Patterns, and Toxic Effects of Mycotoxins in Fish Feed: A Multi-Species Perspective Review</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Nji, Queenta Ngum; Njobeh, Patrick Berka</span>
+        
+        <span>📅 2026-09-07</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Aquaculture has become the fastest-growing food-production sector worldwide, with increasing reliance on plant-based feed ingredients such as maize, soybean, wheat, rice, and oilseed meals. Although these ingredients reduce dependence on fishmeal, they are highly susceptible to fungal contamination and subsequent mycotoxin production. Global surveys reveal widespread contamination of aquafeeds with major regulated mycotoxins, including aflatoxins, fumonisins, deoxynivalenol, zearalenone, ochratoxin A, and T-2 toxin, alongside emerging toxins such as enniatins, beauvericins, and sterigmatocystin metabolites. Aflatoxin B1 is the most prevalent and toxic mycotoxin, with contamination prevalence often exceeding 80–100% in Africa and Asia with contamination levels surpassing 400 µg/kg in some regions of these continents. Fumonisins, deoxynivalenol, and zearalenone are also commonly detected, with fumonisins levels occasionally exceeding 7000 µg/kg. Mycotoxins induce diverse toxic effects in fish, including growth suppression, hepatotoxicity, nephrotoxicity, immunosuppression, oxidative stress, reproductive dysfunction, and mortality. Collectively, these findings highlight the urgent need for improved surveillance, feed management, and harmonized regulations addressing multi-mycotoxin exposure to safeguard aquaculture productivity, fish, and public health. This review synthesizes current knowledge on the global mycotoxin contamination patterns, analytical detection methods in fish feed and processed seafood as well as the toxicological effects of mycotoxins, with emphasis on species-specific responses and food safety implications.</div>
+      
+    </div>
+    
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var s=localStorage.getItem('theme');
+  if(s){document.documentElement.setAttribute('data-theme',s);
+  document.getElementById('themeIcon').textContent=s==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=s==='dark'?'亮色':'暗色';}
+})();
+function toggleTheme(){
+  var h=document.documentElement,n=h.getAttribute('data-theme')==='dark'?'light':'dark';
+  h.setAttribute('data-theme',n);
+  document.getElementById('themeIcon').textContent=n==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=n==='dark'?'亮色':'暗色';
+  localStorage.setItem('theme',n);
+}
+function toggleAbstract(b){
+  var c=b.nextElementSibling,v=c.classList.contains('visible');
+  c.classList.toggle('visible');b.classList.toggle('open');
+  b.querySelector('.arrow').textContent=v?'▶':'▼';
+}
+function filterPapers(){
+  var q=(document.getElementById('searchInput').value||'').toLowerCase().trim(),vis=0;
+  document.querySelectorAll('.paper-card').forEach(function(c){
+    var t=[c.getAttribute('data-title')||'',c.getAttribute('data-authors')||'',c.getAttribute('data-journal')||'',c.getAttribute('data-abstract')||'',c.getAttribute('data-summary')||''].join(' ');
+    var s=!q||t.includes(q);c.classList.toggle('hidden',!s);if(s)vis++;
+  });
+  document.getElementById('noResults').classList.toggle('visible',vis===0);
+}
+</script>
+</body>
+</html>
