@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-12T11:57:07Z",
-  "total_papers": 254,
-  "new_today": 25,
+  "last_updated": "2026-09-13T13:04:33Z",
+  "total_papers": 253,
+  "new_today": 9,
   "papers": [
     {
       "doi": "10.1111/fog.70076",
@@ -14,6 +14,110 @@
       "url": "https://doi.org/10.1111/fog.70076",
       "source": "crossref_issn",
       "keywords_matched": "Fisheries Oceanography",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1007/s11160-026-10089-6",
+      "title": "Bioregionalization of the southwest Atlantic Ocean based on fish life-history traits: perspectives on fisheries impacts",
+      "authors": "da Silva, Ana Caroline Batista; da Silva, Victor Emmanuel Lopes; de Oliveira, Cícero Diogo Lins; Vilela, Bruno; de Azevedo Viana, Cézar Augusto Melo; de Medeiros, Pedro Ivo Torquato; Fabré, Nidia Noemi",
+      "journal": "Reviews in Fish Biology and Fisheries",
+      "date": "2026-09-12",
+      "abstract": "",
+      "summary_cn": "基于鱼类生活史特征对西南大西洋进行生物区划，以评估渔业影响的空间格局。",
+      "url": "https://doi.org/10.1007/s11160-026-10089-6",
+      "source": "crossref",
+      "keywords_matched": "fisheries",
+      "high_impact": false
+    },
+    {
+      "doi": "10.56557/upjoz/2026/v47i185869",
+      "title": "A Study on Monoculture of Indigenous Fresh Water Fish Channa striatus in a  Fresh Water Pond in Tamil Nadu, India",
+      "authors": "Sivakami, R.; Nazar, A. R.; Babu, V.; Rajendiran, A.",
+      "journal": "UTTAR PRADESH JOURNAL OF ZOOLOGY",
+      "date": "2026-09-12",
+      "abstract": "Striped murrel (Channa striatus) is an indigenous freshwater fish of economic and nutritional importance in Tamil Nadu, India. The present study evaluated its monoculture in a perennial freshwater pond at Swamimalai, Kumbakonam Taluk, Tanjore District, over a five-month period from February to July 2026. A total of 1,200 fingerlings with an initial total weight of 7.8 kg were stocked. Natural feed comprising chicken waste, fish waste, and live Gambusia fish was provided together with artificial floating and immersed feeds. Feeding was maintained at 2% of total body weight, and fish growth was assessed at 15-day intervals. At harvest, 986 fish were recovered, corresponding to a survival rate of 82.16%. The harvested fish had a total weight of 436.255 kg, with individual weights ranging from 368.4 to 516.5 g and an average weight of 442.45 g. Fish were marketed according to size at rates ranging from Rs. 320 to Rs. 450 per kg. The total income from the culture operation was Rs. 1,79,063.20, while total expenditure was Rs. 73,650.00, resulting in a net profit of Rs. 1,05,413.20 over five months. The findings indicate that pond-based monoculture of Channa striatus, when supported by appropriate stocking, feeding, and culture management, can provide a productive and economically favourable freshwater aquaculture option under the conditions examined in Tamil Nadu.",
+      "summary_cn": "本研究在印度泰米尔纳德邦一淡水池塘开展本地种线鳢（Channa striatus）单养试验，放养1200尾鱼种，投喂鸡废料、鱼废料及活体食蚊鱼并辅以人工饲料，养殖5个月。收获986尾，成活率82.16%，总产量436.255 kg，平均体重442.45 g。5个月净利润达105413.20卢比，表明在适当放养与饲养管理下线鳢池塘单养具有较好的生产性能和经济效益。",
+      "url": "https://doi.org/10.56557/upjoz/2026/v47i185869",
+      "source": "crossref",
+      "keywords_matched": "fish population",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1007/s11160-026-10090-z",
+      "title": "Geometric morphometric analyses of intragenus (Campylomormyrus) and intergenus hybrids in mormyrid fish",
+      "authors": "Amen, Rahma; Berghäuser, Timo; Kirschbaum, Frank; Tiedemann, Ralph",
+      "journal": "Reviews in Fish Biology and Fisheries",
+      "date": "2026-09-12",
+      "abstract": "Abstract Natural hybrids within the weakly electric mormyrid fish genus Campylomormyrus have not been documented in the wild. However, recent advances have enabled the artificial production of both intragenus ( Campylomormyrus ) and intergenus ( Campylomormyrus and Gnathonemus ) hybrids. While previous studies have focused mainly on phenotypic divergence in body shape, especially electric organ discharges, ecophenotypical divergence in these hybrids remains less explored. To address this gap, we used geometric morphometrics to analyze body shape variation in intragenus and intergenus hybrids relative to their parental species. Using standardized digital photographs, we examined hybrids derived from parental species with varying genetic and phenotypic distances, including distinct snout morphologies. Our results show that hybrids are morphologically distinguishable but generally remain within the phenotypic range of their parental species. In most crosses, hybrids exhibited intermediate morphology or stronger similarity to one parent, whereas transgressive shape segregation was observed only in one cross and did not involve snout length. Snout thickness and body curvature showed more variable patterns among crosses than snout length. These findings suggest that F1 hybrid morphology is shaped mainly by intermediate expression with cross-specific parental affinity, while strongly novel morphologies appear to be rare. This study improves our understanding of hybridization in Mormyridae, its potential relevance for phenotypic diversification, and provides a basis for future work on later hybrid generations.",
+      "summary_cn": "本研究利用几何形态计量学（geometric morphometrics）分析了弱电鱼科（Mormyridae）长吻鱼属（Campylomormyrus）属内杂交及长吻鱼属与Gnathonemus属间杂交后代相对于亲本的体型形态变异。结果显示，杂交个体虽可形态区分，但总体仍处于亲本表型范围内，多数杂交组合表现为中间形态或偏向某一亲本，仅一个组合出现超亲形态分离且不涉及吻长。吻厚和体弯曲在组合间变异大于吻长，表明F1杂交形态主要由中间表达和组合特异性亲本亲和力决定，显著新颖形态较为罕见。",
+      "url": "https://doi.org/10.1007/s11160-026-10090-z",
+      "source": "crossref",
+      "keywords_matched": "fish stock",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1007/s10126-026-10667-6",
+      "title": "Transcriptomic and Histological Responses to Fish Meal Substitution with Soy Protein Concentrate in Formulated Feed in Totoaba (Totoaba macdonaldi) Juveniles",
+      "authors": "Larios-Soriano, Ernesto; López-Galindo, Laura L.; Carrillo, Roberto A; Acuña, Lus M López; Mendoza-Porras, Omar; Galaviz, Mario A",
+      "journal": "Marine Biotechnology",
+      "date": "2026-09-12",
+      "abstract": "",
+      "summary_cn": "本研究以 Totoaba macdonaldi 幼鱼为对象，采用转录组学与组织学方法，评估配合饲料中以大豆浓缩蛋白（soy protein concentrate）替代鱼粉的响应。旨在揭示替代鱼粉对幼鱼基因表达及组织结构的潜在影响。",
+      "url": "https://doi.org/10.1007/s10126-026-10667-6",
+      "source": "crossref",
+      "keywords_matched": "fish stock",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1080/15226514.2026.2729100",
+      "title": "Bioremediation of sewage water by microalga\n                    <i>Graesiella emersonii</i>\n                    for sewage-fed aquaculture in East Kolkata Wetlands, a Ramsar site in India",
+      "authors": "Vanniaraj, Santhana Kumar; Sarkar, Soma Das; Sarkar, Dhruba Jyoti; Sahoo, Rumali; Dalal, Snehasis; Talukder, Anjon Kumar; Mondal, Arka; Samanta, Srikanta; Sinha, Archana; Das, Basanta Kumar",
+      "journal": "International Journal of Phytoremediation",
+      "date": "2026-09-12",
+      "abstract": "",
+      "summary_cn": "利用微藻 Graesiella emersonii 对印度东加尔各答湿地（Ramsar 湿地）污水进行生物修复，以支持污水养殖。研究为该湿地 sewage-fed aquaculture 系统的水质净化提供了微藻处理思路。",
+      "url": "https://doi.org/10.1080/15226514.2026.2729100",
+      "source": "crossref",
+      "keywords_matched": "aquaculture",
+      "high_impact": false
+    },
+    {
+      "doi": "10.32734/jst.v9i1.25059",
+      "title": "Community Empowerment in the Aquaculture of Tilapia and Milkfish in Tanjung Rejo Village",
+      "authors": "Nursa'adah; W, Harya Bimasuci; Siregar, Luthfi A M; Harahap, Edy Syah Putra",
+      "journal": "Journal of Saintech Transfer",
+      "date": "2026-09-12",
+      "abstract": "The fisheries sector plays a crucial role in rural development, particularly through the expansion of tilapia (Oreochromis niloticus) and milkfish (Chanos chanos) aquaculture, which contributes to community welfare and regional food security. Deli Serdang Regency, North Sumatra, has substantial aquaculture potential, with tilapia production reaching 16,257 tons in 2023. However, small-scale aquaculture in rural areas is still constrained by inadequate production management and post-harvest handling, resulting in limited economic optimization and market development. This study presents a community empowerment program implemented in Tanjung Rejo Village, Percut Sei Tuan District. The program involved structured training, technical mentoring, field-based practices, and the introduction of improved aquaculture technologies. Survey results indicated a significant improvement in community knowledge and skills, with 22% of respondents strongly agreeing and 78% agreeing that the polyculture pond training was beneficial. Furthermore, 75% of respondents strongly agreed and 25% agreed on the need for continued technical assistance in tilapia and milkfish aquaculture.",
+      "summary_cn": "本研究针对北苏门答腊Tanjung Rejo村罗非鱼（Oreochromis niloticus）和虱目鱼（Chanos chanos）小规模养殖中生产管理与采后处理不足的问题，实施了包含结构化培训、技术指导、田间实践和改良养殖技术引入的社区赋能项目。调查结果显示，22%的受访者非常认同、78%认同混养池塘培训有益，75%非常认同、25%认同需要持续的技术支持。研究表明社区赋能干预可有效提升养殖户的知识与技能水平。",
+      "url": "https://doi.org/10.32734/jst.v9i1.25059",
+      "source": "crossref",
+      "keywords_matched": "aquaculture",
+      "high_impact": false
+    },
+    {
+      "doi": "10.56557/upjoz/2026/v47i185867",
+      "title": "Fish Diversity and Its Relation to Water Quality Parameters of Markonahalli Reservoir, Tumkur District, Karnataka, India",
+      "authors": "S. R., Chalapathi; H. M., Lalitha",
+      "journal": "UTTAR PRADESH JOURNAL OF ZOOLOGY",
+      "date": "2026-09-12",
+      "abstract": "Markonahalli Reservoir in Tumkur District, Karnataka, is used mainly for irrigation and fishing. This study assessed fish diversity and selected physicochemical water-quality parameters from February 2024 to January 2025 to examine reservoir conditions in relation to the recorded fish community. Fish were collected with the assistance of local fishermen using nets of different sizes and types, while water samples were collected monthly from four sampling sites. Water temperature, pH, turbidity, electrical conductivity, nitrate, sulphate, dissolved oxygen, and biological oxygen demand were analysed using standard methods. A total of 16 fish species representing 14 genera, seven families, and five orders were recorded, with Cypriniformes forming the dominant taxonomic group. The measured parameters showed spatial and seasonal variation across the sampling sites. Turbidity ranged from 2.75±0.418 to 6.25±0.7275 NTU, while electrical conductivity ranged from 403±11.358 to 856.33±14.263 µS/cm. Nitrate concentrations ranged from 2.425±0.025 to 4.825±0.307 mg/L, and sulphate ranged from 5±2.00 to 34±2.122 mg/L. Dissolved oxygen varied from 4.85±0.593 to 6.5333±0.177 mg/L, whereas biological oxygen demand ranged from 2.4667±0.134 to 4.4±0.548 mg/L. The findings provide baseline information on fish diversity and seasonal water-quality conditions in Markonahalli Reservoir and support continued monitoring for the sustainable management of its fishery and aquatic resources over time.",
+      "summary_cn": "该研究于2024年2月至2025年1月对印度Karnataka州Markonahalli水库的鱼类多样性与水质参数进行了调查，通过不同网具采集鱼类并每月在四个站点测定理化指标。共记录16种鱼类，隶属14属7科5目，以Cypriniformes为优势类群；水质参数（浊度、电导率、硝酸盐、硫酸盐、溶解氧、BOD等）呈现明显的空间和季节变化。研究为该水库鱼类资源与水质的可持续管理提供了基线数据。",
+      "url": "https://doi.org/10.56557/upjoz/2026/v47i185867",
+      "source": "crossref",
+      "keywords_matched": "fish ecology",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1007/s10113-026-02675-y",
+      "title": "Projecting climate-driven biogeographic shifts and niche divergence of three endangered marine fishes in the Indo-West Pacific: implications for regional conservation priorities and transboundary management",
+      "authors": "Huang, Yixuan; Xu, Shihong; Zhou, Tao; Wu, Peng; Zhang, Zhi; Du, Feiyan; Xiao, Zhizhong; Li, Jun; Xiao, Yongshuang",
+      "journal": "Regional Environmental Change",
+      "date": "2026-09-12",
+      "abstract": "",
+      "summary_cn": "基于生态位模型预测印度-西太平洋三种濒危海鱼在气候变化情景下的生物地理迁移与生态位分化，旨在为区域保护优先区和跨境管理提供依据。",
+      "url": "https://doi.org/10.1007/s10113-026-02675-y",
+      "source": "crossref",
+      "keywords_matched": "fish conservation",
       "high_impact": false
     },
     {
@@ -327,6 +431,19 @@
       "source": "crossref_issn",
       "keywords_matched": "Journal of Fish Biology",
       "high_impact": false
+    },
+    {
+      "doi": "10.1093/bbb/zbag139",
+      "title": "Heating duration alters the low-molecular-weight compound profile of fish muscle, with pyruvic acid as a potential marker of thermal history",
+      "authors": "Furuta, Ayumi; Sugimasab, Ryu; Saba, Miyu; Tanimoto, Shota; Mabuchi, Ryota",
+      "journal": "Bioscience, Biotechnology, and Biochemistry",
+      "date": "2026-09-11",
+      "abstract": "Abstract This study used gas chromatography-mass spectrometry (GC-MS)-based metabolic profiling to assess the effects of heating duration on low-molecular-weight compound profiles in fish muscle from yellowtail, chum salmon, Alaska pollock, and Pacific herring and to identify species-independent heating history markers. Heated samples were analyzed by GC-MS, followed by compound annotation and semi-quantification. Orthogonal partial least squares regression analysis indicated that heating and extended heating altered the low-molecular-weight compound profiles of fish muscle. Pyruvic acid and glycolic acid, which showed high variable importance in prediction scores, were identified as candidate heating history markers. Quantitative analysis showed that both compounds increased with heating duration. Notably, pyruvic acid showed coefficients of determination to be ≥ 0.8 for all four fish species, supporting its potential as an effective species-independent marker of fish muscle heating history.",
+      "summary_cn": "本研究采用GC-MS代谢组学方法，分析加热时间对鰤鱼、秋鲑、阿拉斯加狭鳕和太平洋鲱鱼肌肉低分子量化合物谱的影响，以筛选不受鱼种限制的加热历史标志物。OPLS回归分析表明加热及延长加热显著改变肌肉化合物谱，丙酮酸和乙醇酸被鉴定为候选标志物。定量分析显示两者均随加热时间增加，其中丙酮酸在四种鱼中决定系数均≥0.8，可作为跨鱼种的有效加热历史标志物。",
+      "url": "https://doi.org/10.1093/bbb/zbag139",
+      "source": "crossref",
+      "keywords_matched": "fish ecology",
+      "high_impact": true
     },
     {
       "doi": "10.66563/hacqh645",
@@ -3174,153 +3291,23 @@
       "source": "crossref",
       "keywords_matched": "fisheries",
       "high_impact": false
-    },
-    {
-      "doi": "10.1080/14747731.2026.2722527",
-      "title": "Transient ethnic networks and deepening transnational capitalism in the Indonesian marine fisheries",
-      "authors": "Kwee, Hui Kian",
-      "journal": "Globalizations",
-      "date": "2026-08-29",
-      "abstract": "",
-      "summary_cn": "非渔业相关",
-      "url": "https://doi.org/10.1080/14747731.2026.2722527",
-      "source": "crossref",
-      "keywords_matched": "fisheries",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1002/oik.11371",
-      "title": "Asynchronous population trends stabilize mesopredatory coral reef fish communities in the face of global change",
-      "authors": "Karkarey, Rucha; Maire, Eva; Graham, Nicholas A. J.; Parravicini, Valeriano; Brandl, Simon. J.; Carlot, Jeremy; Adjeroud, Mehdi; Arthur, Rohan; Alcoverro, Teresa; Wilson, Shaun. K.",
-      "journal": "Oikos",
-      "date": "2026-08-29",
-      "abstract": "Biodiversity can underpin stability in communities, allowing them to withstand environmental fluctuations without changes in aggregate properties like total abundance or biomass. We investigated the influence of biodiversity on two crucial population‐level mechanisms governing abundance stability in mesopredatory coral reef fishes: 1) ‘community asynchrony', where species populations fluctuate inversely over time, and 2) ‘species population stability', where highly abundant species with significant community contributions display minimal population fluctuations. Analysing temporal data from 197 reef fish communities across the Indian and Pacific Oceans over a decade, we found that community asynchrony, rather than species population stability, primarily predicted community stability. Functional diversity, not taxonomic diversity, characterized this stability, emphasizing the role of niche differences in stabilizing communities. Heat stress had a significant direct and indirect effect on community stability, while the effect of anthropogenic pressures was weak and site‐specific. Our results suggest community attributes such as high functional diversity promote asynchronous population fluctuations, likely by enhancing response diversity, and are vital for stabilizing mesopredatory reef fish communities in the face of global change.",
-      "summary_cn": "本研究探讨了生物多样性如何通过种群层面的机制稳定中上层捕食性珊瑚礁鱼类群落，重点分析群落异步性和物种种群稳定性对总丰度稳定性的相对贡献。基于印度洋和太平洋197个礁鱼群落跨越十年的时间序列数据，发现群落异步性（而非物种种群稳定性）是预测群落稳定性的主要因素，且功能多样性（而非分类多样性）驱动了这一稳定性，凸显生态位差异的关键作用。热应激对群落稳定性有显著的直接和间接影响，而人为压力影响较弱且具位点特异性。结果表明，高功能多样性通过增强响应多样性促进异步种群波动，对全球变化下中上层捕食性礁鱼群落的稳定至关重要。",
-      "url": "https://doi.org/10.1002/oik.11371",
-      "source": "crossref",
-      "keywords_matched": "fish population",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1111/jfb.70616",
-      "title": "Reproductive dynamics of Atlantic chub mackerel\n                    <i>Scomber colias</i>\n                    Gmelin, 1789 in Senegalese waters",
-      "authors": "Ndour, Ismaïla; Thiaw, Modou; Thiam, Ndiaga; Diop, Mika",
-      "journal": "Journal of Fish Biology",
-      "date": "2026-08-29",
-      "abstract": "Abstract The Atlantic chub mackerel ( Scomber colias ) is an ecologically and commercially important species supporting artisanal and industrial fisheries in West Africa. This study updates critical reproductive parameters for S. colias in Senegalese waters to inform stock assessment and sustainable management of small pelagic fisheries within the Senegalese Exclusive Economic Zone. Based on 1134 specimens monthly sampled from commercial landings along the Petite Côte (June 2019–May 2020), sex ratio, spawning season and size at first sexual maturity (TL 50 ) were analysed. The overall sex ratio favoured females (64%), with significant size‐dependent variation (χ 2 test, p ‐value &lt;0.05). Spawning occurred from November to February, peaking in December, as indicated by gonado‐somatic index (GSI) trends (Kruskal–Wallis test, p ‐value &lt;0.001) and maturity stage frequencies. The TL 50 was estimated at 28.7 cm for males, 28.8 cm for females and 28.8 cm for combined sexes. These findings align with regional patterns but highlight local specificities, such as a slightly later spawning peak compared to northern Northwest African waters. The results provide actionable reference points for fisheries management, including potential seasonal closures (November–February) and a minimum landing size (~29 cm TL).",
-      "summary_cn": "本研究基于塞内加尔水域2019年6月至2020年5月间1134尾大西洋鲭（Scomber colias）商业渔获物样本，更新其繁殖参数以支持种群评估。结果显示雌性比例显著偏高（64%），繁殖期集中于11月至次年2月，峰值在12月；首次性成熟体长（TL50）约为28.8 cm。研究建议实施季节性禁渔（11–2月）及最小上岸体长（约29 cm）等管理措施，为西非小型中上层渔业可持续管理提供参考依据。",
-      "url": "https://doi.org/10.1111/jfb.70616",
-      "source": "crossref_issn",
-      "keywords_matched": "Journal of Fish Biology",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1007/s41208-026-01221-1",
-      "title": "Invisible Hands in Fisheries: Women's Contributions to Small-Scale Fisheries in the Black Sea",
-      "authors": "Sağlam, Naciye Erdoğan; Samsun, Serap; Var, Murat; Fıçıcılar, Bilge Bilgin",
-      "journal": "Thalassas: An International Journal of Marine Sciences",
-      "date": "2026-08-29",
-      "abstract": "",
-      "summary_cn": "本研究聚焦黑海小规模渔业中女性的贡献，揭示其长期被忽视的“无形之手”角色。通过案例调查，分析了女性在捕捞、加工、销售及决策中的参与模式。研究发现，女性虽承担关键支撑功能，但面临资源获取和社会认可的结构性障碍。文章呼吁将性别视角纳入渔业治理与政策制定，以促进小规模渔业的可持续发展。",
-      "url": "https://doi.org/10.1007/s41208-026-01221-1",
-      "source": "crossref",
-      "keywords_matched": "fisheries",
-      "high_impact": true
-    },
-    {
-      "doi": "10.1093/cz/zoag060",
-      "title": "Mapping taxonomic knowledge and barcoding progress: An integrative review of marine fish species described from Malaysian waters",
-      "authors": "Ghazali, Siti Zafirah; Mat Jaafar, Tun Nurul Aimi; Esa, Yuzine",
-      "journal": "Current Zoology",
-      "date": "2026-08-29",
-      "abstract": "Abstract This study presents the first systematic review of 118 nominal species of marine fish formally described from Malaysian waters between 1830 and 2025, spanning 22 orders and 53 families. Distinct temporal phases in taxonomic activity were identified: the pre-2000 era dominated by colonial-era expeditions yielded 94 species, with Cantor's 1849 Penang survey contributing 34 species. The post-2000 era represents a fundamental restructuring, with Malaysian-associated ichthyologists now active in species descriptions, establishing local repositories and adopting modern designation practices. Bibliometric analysis shows authorship remains concentrated among core contributors, with growing local taxonomic capacity. DNA barcoding of 63 morphospecies revealed substantial cryptic diversity, with RESL and GMYC delimitation identifying 131 and 134 molecular operational taxonomic units (MOTUs), respectively. A total of 27 species comprised multiple MOTUs, with nine priority taxa exhibiting cryptic complexity including Otolithes ruber, Glossogobius giuris, Uranoscopus cognatus, Taeniamia fucata, Pisodonophis cancrivorus and commercially important species such as Sardinella albella, Ilisha elongata, Cynoglossus arel and Lethrinus lentjan requiring integrative taxonomic revision. This study establishes a framework for biodiversity research, identifies gaps in molecular representation and demonstrates the value of integrating historical taxonomy with molecular approaches in one of the world's most species-rich marine regions.",
-      "summary_cn": "本研究首次系统梳理了1830至2025年间马来西亚水域正式描述的118种海洋鱼类（隶属22目53科），识别出以殖民时期考察为主的2000年前阶段（贡献94种，其中Cantor 1849年槟城调查占34种）和2000年后本地分类能力崛起的重构阶段。对63个形态种的DNA barcoding分析揭示了显著隐存多样性，RESL和GMYC方法分别界定出131和134个分子操作分类单元（MOTUs），其中27种含多个MOTUs，9个优先类群（如Otolithes ruber、Glossogobius giuris及商业种Sardinella albella等）需整合分类修订。该研究为生物多样性研究建立框架，识别分子代表性缺口，并展示了历史分类学与分子方法结合的价值。",
-      "url": "https://doi.org/10.1093/cz/zoag060",
-      "source": "crossref",
-      "keywords_matched": "fish population",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1007/s12562-026-02020-6",
-      "title": "Genetic population structure of yellow drum Nibea albiflora around Japan",
-      "authors": "Yagishita, Naoki; Yamagata, Kota; Yamano, Hitomi",
-      "journal": "Fisheries Science",
-      "date": "2026-08-29",
-      "abstract": "",
-      "summary_cn": "本研究旨在解析日本周边黄姑鱼（Nibea albiflora）的遗传种群结构。通过分子标记分析，评估不同地理群体间的遗传分化与基因流模式。结果显示，日本周边黄姑鱼种群存在显著的遗传结构，可能受地理隔离及海洋环境因素影响。该研究为黄姑鱼的资源管理与保护提供了遗传学依据。",
-      "url": "https://doi.org/10.1007/s12562-026-02020-6",
-      "source": "crossref",
-      "keywords_matched": "fish population",
-      "high_impact": true
-    },
-    {
-      "doi": "10.1007/s10528-026-11445-8",
-      "title": "Mitogenomic Architecture and Phylogenetic Insights Shed Light on the Matrilineal Evolution of the Mahseer Fish Neolissochilus sumatranus (Cyprinidae: Torinae) in Southeast Asia",
-      "authors": "Larashati, Sekar; Putra, Angkasa; Aini, Sarifah; Wahyudewantoro, Gema; Widoretno, Mey Ristanti; Febrianti, Dwi; Marnis, Huria; Cartealy, Imam Civi; Widiyanto, Tri; Kusumah, Ruby Vidia",
-      "journal": "Biochemical Genetics",
-      "date": "2026-08-29",
-      "abstract": "",
-      "summary_cn": "本研究通过线粒体基因组（mitogenome）解析东南亚mahseer鱼类Neolissochilus sumatranus的母系演化历史，揭示其基因组结构特征及系统发育位置。基于系统发育分析，明确了该物种在Torinae亚科中的亲缘关系，为东南亚mahseer鱼类的分类与进化研究提供了分子证据。",
-      "url": "https://doi.org/10.1007/s10528-026-11445-8",
-      "source": "crossref",
-      "keywords_matched": "fish stock",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1002/aff2.70317",
-      "title": "Growth Patterns, Condition Factor, Sex Ratio and Length at First Maturity of Dominant Fish Species in the Menna River System, Tekeze Basin, Ethiopia",
-      "authors": "Woretaw, Tilahun; Getahun, Abebe; Aemro, Degsera; Birie, Solomon; Mingist, Minwyelet",
-      "journal": "Aquaculture, Fish and Fisheries",
-      "date": "2026-08-29",
-      "abstract": "ABSTRACT Fish biological parameters are essential for fisheries management. This study assessed the length–weight relationship (LWR), Fulton's condition factor (FCF), sex ratio and length at first maturity (L 50 ) of Labeobarbus intermedius , Labeobarbus nedgia and Labeobarbus beso in the Menna River system, Tekeze Basin, Ethiopia. Sampling was conducted monthly from June 2024 to May 2025 using monofilament gillnets with mesh sizes of 2, 4, 6, 8 and 10 cm. In total, 2127 specimens were collected, comprising 1225 L. intermedius , 501 L. nedgia and 401 L. beso . The LWR of all species were curvilinear and significant ( p &lt; 0.001), with strong relationships between fork length (FL) and total weight (TW; r 2 &gt; 0.90), confirming the suitability of the power function model. Pooled LWR analysis revealed negative allometric growth in L. intermedius (b = 2.91) and L. nedgia (b = 2.86), whereas L. beso (b = 3.04) exhibited isometric growth. Mean FCF values were 1.21 ± 0.17, 1.18 ± 0.16 and 1.40 ± 0.17 for L. intermedius , L. nedgia and L. beso , respectively. Sex ratios deviated significantly from 1:1 ( p &lt; 0.05). The estimated L 50 values for female and male L. intermedius , L. nedgia and L. beso were 21.47/21.96, 18.50/20.64 and 15.27/16.73 cm FL, respectively. Applying a 20% precautionary safety margin above the L 50 of the sex with the larger maturity size (males), recommended minimum landing sizes (MLS) were 26.35, 24.77 and 20.08 cm FL for L. intermedius , L. nedgia and L. beso , respectively. For mixed‐species catches where species cannot be reliably identified, a precautionary MLS of 26.35 cm FL is recommended. These findings support sustainable management and conservation of Labeobarbus fish species in the Menna River system.",
-      "summary_cn": "本研究基于2024年6月至2025年5月对埃塞俄比亚Tekeze流域Menna河系统中三种优势Labeobarbus鱼类（L. intermedius、L. nedgia、L. beso）的月度采样（共2127尾），评估了体长-体重关系（LWR）、Fulton条件因子（FCF）、性别比例及初次性成熟体长（L50）。结果显示，LWR均呈显著曲线关系（p<0.001，r²>0.90），其中L. intermedius和L. nedgia表现为负异速生长（b=2.91和2.86），而L. beso为等速生长（b=3.04）；FCF均值分别为1.21、1.18和1.40，性别比例显著偏离1:1。雌雄L50分别为21.47/21.96、18.50/20.64和15.27/16.73 cm FL，据此建议最小上岸体长（MLS）分别为26.35、24.77和20.08 cm FL，混合捕捞时推荐统一MLS为26.35 cm FL，为该流域Labeobarbus鱼类的可持续管理提供科学依据。",
-      "url": "https://doi.org/10.1002/aff2.70317",
-      "source": "crossref",
-      "keywords_matched": "fish stock",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1007/s12010-026-05889-2",
-      "title": "Therapeutic Potential and Toxicological Impact of Graphene Quantum Dot Nanocomposites in Adult Zebra Fish",
-      "authors": "Preethy, K. R.; Chamundeeswari, M.; Kowsalya, P.; Venkatesan, R.",
-      "journal": "Applied Biochemistry and Biotechnology",
-      "date": "2026-08-29",
-      "abstract": "",
-      "summary_cn": "该研究探讨了石墨烯量子点纳米复合材料在成年斑马鱼中的治疗潜力与毒理学影响。通过体内暴露实验，评估了该材料对斑马鱼行为、组织病理及生化指标的影响，并考察其潜在抗氧化或抗炎功效。结果显示，低剂量下表现出一定生物相容性，但高剂量可诱发氧化应激和肝毒性。研究为纳米材料在渔业环境安全评估及水产药物递送应用提供了基础数据。",
-      "url": "https://doi.org/10.1007/s12010-026-05889-2",
-      "source": "crossref",
-      "keywords_matched": "fish stock",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1007/s12560-026-09707-0",
-      "title": "Shrimp Aquaculture Under Viral Threats: Insights into Pathogens and Control Strategies",
-      "authors": "Le, Linh T. T.; Lao, Thuan Duc; Le, Phuong-Uyen; Tran, Hoang Anh; Le, Thuy Huyen Ai; Nguyen, Phuong Vy",
-      "journal": "Food and Environmental Virology",
-      "date": "2026-08-29",
-      "abstract": "",
-      "summary_cn": "该研究聚焦于病毒威胁下的对虾养殖业，系统梳理了主要病毒性病原（如WSSV、IHHNV等）的流行特征与致病机制。文章综述了当前防控策略，包括生物安全措施、抗病育种及免疫调控等，并探讨了综合管理在降低病害风险中的关键作用。旨在为对虾养殖业的可持续病害防控提供科学依据与实践指导。",
-      "url": "https://doi.org/10.1007/s12560-026-09707-0",
-      "source": "crossref",
-      "keywords_matched": "aquaculture",
-      "high_impact": false
     }
   ],
   "weekly_topics": {
     "2026-W37": {
       "week_key": "2026-W37",
       "week_range": "9月7日—9月13日",
-      "topic": "基于生态系统的渔业管理研究进展",
-      "keywords": "生态系统渔业管理(Ecosystem-Based Fisheries Management), 渔业治理(Fisheries Governance), 水产养殖(Aquaculture), 种群遗传多样性(Population Genetic Diversity), 鱼类寄生虫(Fish Parasites), 水生生态风险评估(Aquatic Ecological Risk Assessment), 气候变化与渔业(Climate Change and Fisheries), 小型渔业(Small-Scale Fisheries)",
+      "topic": "渔业生态管理与资源保护研究进展",
+      "keywords": "生态系统渔业管理(Ecosystem Approach to Fisheries), 气候变化与物种分布(Climate Change and Species Distribution), 水产养殖与饲料替代(Aquaculture and Feed Substitution), 鱼类生活史与种群结构(Fish Life History and Population Structure), 生物多样性(Biodiversity), 稳定同位素分析(Stable Isotope Analysis), 鱼类寄生虫与病害(Fish Parasites and Diseases), 微藻生物修复(Microalgae Bioremediation)",
       "article": "## 本周研究概览\n\n本周共收录6篇渔业相关论文，研究方向涵盖水产病害防控、鱼类生理生态、养殖模式创新、饲料安全及副产物高值化利用等。整体来看，研究呈现出明显的应用导向特征：一方面聚焦水产养殖的可持续发展与食品安全问题（如疫苗研发、生物絮团养殖、霉菌毒素污染评估），另一方面关注环境变化与养殖管理对鱼类健康及产品质量的影响（如温度与密度对汞积累的作用）。值得注意的是，本周研究在方法上体现了从传统养殖技术向分子生物学、生态能量学及循环经济理念融合的多元化趋势。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS等顶级期刊的论文。\n\n## 创新性研究\n\n1. **《The Vaccine Candidates Against Major Fish Pathogens (Pseudomonas fluorescens and Aeromonas hydrophila) from the Outer Membrane Proteins of P. fluorescens in Fish》** — 该研究系统克隆并纯化了24种荧光假单胞菌外膜蛋白（OMPs），并制备了16种小鼠抗血清，探索了跨物种疫苗开发的可行性。其创新之处在于利用一种病原菌的OMPs同时应对两种主要鱼类病原菌的感染威胁，为水产养殖中广谱疫苗的研发提供了新思路，有望降低疫苗开发成本并提高防控效率。\n\n2. **《Ecological energetics of an imperilled fish: Physiological metrics, experimental protocols and implications for population recovery》** — 针对濒危鱼类生理数据采集困难的瓶颈，该研究系统评估了多种生态能量学指标的适用性，并提出了标准化的实验方案。其创新性在于将生理学指标与种群恢复管理直接对接，为濒危鱼类的保护性养殖和野外放归提供了可操作的量化工具，填补了该领域方法学空白。\n\n3. **《Biofloc-based aquaculture: From monoculture to integrated systems》** — 该综述突破了传统生物絮团技术（BFT）仅用于单一养殖模式的认知框架，系统梳理了其向综合养殖系统（如鱼菜共生、多营养级综合养殖）拓展的路径与潜力。其创新性在于从系统整合的视角重新审视BFT的技术价值，为水产养殖的绿色转型提供了新的理论框架和实践方向。\n\n4. **《Global Occurrence, Co-Contamination Patterns, and Toxic Effects of Mycotoxins in Fish Feed: A Multi-Species Perspective Review》** — 该研究首次从多鱼种视角系统分析了全球鱼饲料中霉菌毒素的发生率、共污染模式及毒性效应。其创新之处在于揭示了多种霉菌毒素共存时的协同或拮抗效应，突破了以往单一毒素风险评估的局限，对饲料安全标准的制定具有重要的参考价值。\n\n## 推荐阅读\n\n1. **Biofloc‐based aquaculture: From monoculture to integrated systems** — 系统梳理了BFT技术向综合养殖系统拓展的前沿方向，对理解水产养殖可持续发展路径具有重要参考价值。\n2. **Ecological energetics of an imperilled fish: Physiological metrics, experimental protocols and implications for population recovery** — 为濒危鱼类生理生态研究提供了标准化方法学框架，兼具理论深度与管理应用价值。\n3. **The Vaccine Candidates Against Major Fish Pathogens (Pseudomonas fluorescens and Aeromonas hydrophila) from the Outer Membrane Proteins of P. fluorescens in Fish** — 探索了跨病原菌广谱疫苗的可行性，对水产疫苗研发策略具有启发意义。\n4. **Global Occurrence, Co-Contamination Patterns, and Toxic Effects of Mycotoxins in Fish Feed: A Multi-Species Perspective Review** — 首次系统揭示鱼饲料霉菌毒素共污染模式，对饲料安全风险评估方法具有革新意义。\n5. **Effects of temperature and density on mercury accumulation in Atlantic salmon (Salmo salar)** — 揭示了环境温度与养殖密度对鱼类重金属积累的交互影响，对养殖管理优化和食品安全保障具有直接指导意义。",
-      "paper_count": 129,
-      "high_impact_count": 33
+      "paper_count": 138,
+      "high_impact_count": 34
     },
     "2026-W36": {
       "week_key": "2026-W36",
       "week_range": "8月31日—9月6日",
       "topic": "渔业研究前沿：毒理、养殖与生态保护",
-      "keywords": "水产养殖(Aquaculture), 鱼类繁殖(Fish Reproduction), 毒理与生态毒理(Toxicology & Ecotoxicology), 种群评估与渔业管理(Stock Assessment & Fisheries Management), 生物多样性(Biodiversity), 气候变化(Climate Change), 鱼类早期发育(Fish Early Development), 海鲜欺诈与溯源(Seafood Fraud & Traceability)",
+      "keywords": "水产养殖(Aquaculture), 鱼类繁殖(Fish Reproduction), 生态毒理(Ecotoxicology), 种群评估(Stock Assessment), 生物多样性(Biodiversity), 气候变化(Climate Change), 海鲜欺诈(Seafood Fraud), 鱼类早期发育(Larval Development)",
       "article": "## 本周研究概览\n\n本周共检索到7篇渔业相关论文，研究主题较为分散，主要涵盖水产贸易与保护政策、鱼类生活史特征、贝类养殖与食品安全、渔业废弃物资源化利用以及水产品抗菌保鲜等方向。整体来看，本周研究呈现出明显的应用导向特征，涉及渔业管理政策辩论、养殖产业实践优化及水产品加工增值等现实议题；同时，宏观生态学视角下的鱼类生活史研究亦有所涉及。值得注意的是，本周论文多发表于应用型期刊（如 *Fishes*、*Foods*、*Energies*），缺乏来自顶级综合性期刊的突破性成果，研究整体偏向于领域内的渐进式推进。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances等高水平期刊上的论文。\n\n## 创新性研究\n\n1. **Body size, functional form and environmental correlates of maximum longevity in marine-occurring fishes**（*Journal of Fish Biology*）— 该研究基于757个海洋鱼类物种的大样本数据，系统检验了最大寿命与体型之间的关系形态，并首次将广泛的环境梯度纳入分析框架。其创新之处在于超越了传统单一体型-寿命异速关系的简单描述，揭示了环境因子对寿命变异的独立贡献，为海洋鱼类生活史进化理论提供了新的实证基础。\n\n2. **Valorization of Fish Waste via Anaerobic Digestion: A Systematic Literature Review and Future Research Agenda**（*Energies*）— 该研究采用文献计量学与系统综述相结合的方法，系统梳理了鱼类加工和养殖废弃物通过厌氧消化转化为可再生能源的研究现状。其创新点在于将分散的跨学科证据进行整合，识别了该领域的研究空白，并提出了明确的未来研究方向，对推动渔业循环经济发展具有方法论上的示范意义。\n\n3. **An Ecotoxicological Perspective on Bivalve Safety Frameworks: Linking HAB Management and Microbiological Limits to Physiological Responses in Shellfish**（*Journal of Marine Science and Engineering*）— 该综述从生态毒理学视角批判性地审视了现行贝类安全监管框架的局限性，指出当前基于急性人体毒性阈值的标准未能充分反映贝类-有害藻华（HAB）相互作用的生物学复杂性。这一跨学科整合视角为完善贝类安全评估体系提供了新的理论切入点。\n\n4. **Synergistic Effects Between Chitooligosaccharide–Epigallocatechin Gallate Conjugate and Nisin on Inhibition of Seafood-Associated Vibrio spp., Aeromonas spp., and Shewanella spp.**（*Foods*）— 该研究探索了壳寡糖-表没食子儿茶素没食子酸酯共轭物与乳酸链球菌素（Nisin）联用对海产品相关腐败菌和条件致病菌的协同抑制作用，为开发新型天然复合抗菌保鲜剂提供了实验依据，在方法上体现了天然产物化学与食品微生物学的交叉创新。\n\n## 推荐阅读\n\n1. **Body size, functional form and environmental correlates of maximum longevity in marine-occurring fishes** — 大样本量、多维度分析框架为理解海洋鱼类生活史进化提供了迄今最为系统的实证证据。\n2. **Valorization of Fish Waste via Anaerobic Digestion: A Systematic Literature Review and Future Research Agenda** — 系统综述方法严谨，对渔业废弃物资源化领域的研究空白识别精准，具有明确的应用指导价值。\n3. **An Ecotoxicological Perspective on Bivalve Safety Frameworks: Linking HAB Management and Microbiological Limits to Physiological Responses in Shellfish** — 以生态毒理学视角挑战现行监管范式，对贝类安全评估体系改革具有启发性。\n4. **Seasonal Growth, Reproduction, and Health of the Pacific Oysters Cultured in an Intertidal Rack System in Garorim Bay, West Coast of Korea** — 提供了太平洋牡蛎在潮间带架式养殖系统中的完整季节性生物学数据，对养殖管理实践具有直接参考价值。\n5. **Synergistic Effects Between Chitooligosaccharide–Epigallocatechin Gallate Conjugate and Nisin on Inhibition of Seafood-Associated Vibrio spp., Aeromonas spp., and Shewanella spp.** — 天然来源复合抗菌策略为海产品保鲜技术升级提供了新思路，兼具学术价值与产业转化潜力。",
       "paper_count": 112,
       "high_impact_count": 21
@@ -3328,11 +3315,11 @@
     "2026-W35": {
       "week_key": "2026-W35",
       "week_range": "8月24日—8月30日",
-      "topic": "渔业资源可持续利用与生态保护研究进展",
-      "keywords": "可食用涂膜(Edible Coating), 兼捕减缓(Bycatch Mitigation), 蓝色经济(Blue Economy), 可持续渔业(Sustainable Fisheries), 种群遗传结构(Population Genetic Structure), 繁殖动力学(Reproductive Dynamics), 对虾养殖病害(Shrimp Aquaculture Disease), 珊瑚礁鱼类群落(Coral Reef Fish Community)",
+      "topic": "鱼明胶涂膜、鲸豚兼捕与蓝色经济竞争力研究",
+      "keywords": "可食用涂膜(Edible Coating), 货架期(Shelf Life), 兼捕减缓(Bycatch Mitigation), 空间重叠(Spatial Overlap), 蓝色经济(Blue Economy), 可持续渔业(Sustainable Fisheries), 竞争优势(Competitive Advantage)",
       "article": "## 本周研究概览\n\n本周共收录渔业相关论文3篇，研究方向涵盖微塑料毒理学、水产养殖政策与管理、以及鱼类种群动态与环境驱动因子分析。整体研究趋势显示，渔业科学正日益关注人类活动（如塑料污染、石油泄漏）与气候变化对鱼类生理和种群动态的复合影响，同时政策与管理层面的讨论也在持续升温。研究手段上，从细胞毒理实验到耳石年代学分析，体现了从分子到生态尺度的多层次研究范式。\n\n## 高影响力期刊亮点\n\n本周暂无。\n\n## 创新性研究\n\n1. **Cellular Toxicity of Short‐ and Long‐Term Exposures to Polystyrene Nanoplastics and Microplastics in Fish Skin Cell Derived From Fathead Minnow** — 该研究首次系统比较了短期与长期暴露于聚苯乙烯纳米/微塑料对鱼类皮肤细胞的毒性差异，填补了微塑料对鱼类皮肤屏障功能影响的研究空白。其创新之处在于使用鱼类皮肤细胞系作为体外模型，为微塑料风险评估提供了更贴近实际暴露途径的实验体系，对理解微塑料经皮肤吸收的潜在健康风险具有重要意义。\n\n2. **Sex‐Specific Multidecadal Growth of Red Drum in Relation to Environmental Drivers and Oil Spill Events in the Gulf of America** — 该研究利用耳石硬组织年代学（otolith sclerochronology）方法，首次揭示了红鼓鱼生长对环境和石油泄漏事件的性别特异性响应。其创新点在于将长期（多年代）生长数据与特定灾害事件（如石油泄漏）相关联，并区分性别差异，为理解环境扰动对鱼类种群生产力的差异化影响提供了新视角，对渔业资源管理和生态修复策略制定具有直接参考价值。\n\n3. **When Will We Do What is Needed for U.S. Aquaculture to Grow?** — 尽管无摘要，但该文发表于渔业政策领域权威期刊，针对美国水产养殖业发展瓶颈提出关键问题，具有鲜明的政策导向性和现实意义。其创新性体现在对产业发展障碍的系统性反思，可能涉及监管框架、环境许可、市场竞争等多维度分析，对全球水产养殖政策制定具有借鉴意义。\n\n## 推荐阅读\n\n1. **Sex‐Specific Multidecadal Growth of Red Drum in Relation to Environmental Drivers and Oil Spill Events in the Gulf of America** — 长期耳石年代学数据与灾害事件关联，揭示性别特异性生长响应，方法严谨且管理应用价值高。\n2. **Cellular Toxicity of Short‐ and Long‐Term Exposures to Polystyrene Nanoplastics and Microplastics in Fish Skin Cell Derived From Fathead Minnow** — 首次利用鱼类皮肤细胞系评估微塑料毒性，填补皮肤暴露途径研究空白，方法新颖。\n3. **When Will We Do What is Needed for U.S. Aquaculture to Grow?** — 聚焦水产养殖业发展核心政策议题，对产业实践具有直接指导意义。",
-      "paper_count": 13,
-      "high_impact_count": 2
+      "paper_count": 3,
+      "high_impact_count": 0
     }
   }
 }
