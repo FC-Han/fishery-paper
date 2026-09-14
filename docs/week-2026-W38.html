@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>西藏裂腹鱼耳石形态特征及属级判别研究 — 渔业文献每周速览</title>
+<style>
+:root {
+  --bg: #f7fafc; --bg-card: #ffffff; --text: #2d3748;
+  --text-secondary: #718096; --text-muted: #a0aec0; --border: #e2e8f0;
+  --primary: #2b6cb0; --primary-light: #bee3f8; --primary-dark: #1a365d;
+  --accent: #e76f51; --accent-light: #fed7d7;
+  --teal: #319795; --teal-light: #b2f5ea;
+  --gold: #d69e2e; --gold-light: #fefcbf;
+  --shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.10);
+  --radius: 12px; --radius-sm: 8px;
+}
+[data-theme="dark"] {
+  --bg: #1a202c; --bg-card: #2d3748; --text: #e2e8f0;
+  --text-secondary: #a0aec0; --text-muted: #718096; --border: #4a5568;
+  --primary: #90cdf4; --primary-light: #2a4365; --primary-dark: #bee3f8;
+  --accent: #fc8181; --accent-light: #742a2a;
+  --teal: #81e6d9; --teal-light: #234e52;
+  --gold: #f6e05e; --gold-light: #3d3a1a;
+  --shadow: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.5);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;transition:background 0.3s,color 0.3s}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* === Top Bar === */
+.topbar{background:linear-gradient(135deg,#1a365d,#2b6cb0);color:#fff;padding:0.8rem 1.5rem;display:flex;align-items:center;gap:1rem;position:sticky;top:0;z-index:100}
+.back-btn{color:#fff;font-size:0.95rem;font-weight:600;padding:0.4rem 0.8rem;border-radius:var(--radius-sm);border:1.5px solid rgba(255,255,255,0.3);transition:all 0.2s;white-space:nowrap}
+.back-btn:hover{background:rgba(255,255,255,0.15);text-decoration:none}
+.topbar .title-area{flex:1;min-width:0}
+.topbar .week-range{font-size:0.78rem;opacity:0.8}
+.topbar .week-topic{font-size:1rem;font-weight:700;line-height:1.3}
+.topbar .theme-toggle{padding:0.4rem 0.8rem;border:1.5px solid rgba(255,255,255,0.3);border-radius:var(--radius-sm);background:transparent;color:#fff;cursor:pointer;font-size:0.85rem;transition:all 0.2s;white-space:nowrap}
+.topbar .theme-toggle:hover{background:rgba(255,255,255,0.15)}
+
+.container{max-width:1100px;margin:0 auto;padding:1.5rem}
+
+/* === Article Section === */
+.article-section{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;margin-bottom:1.5rem;box-shadow:var(--shadow)}
+.article-section h2{font-size:1.3rem;color:var(--primary-dark);margin:1.5rem 0 0.75rem;padding-bottom:0.4rem;border-bottom:2px solid var(--primary-light)}
+.article-section h2:first-child{margin-top:0}
+.article-section p{margin-bottom:0.8rem;line-height:1.8;color:var(--text)}
+.article-section strong{color:var(--primary-dark)}
+.article-section ol,.article-section ul{padding-left:1.5rem;margin-bottom:0.8rem}
+.article-section li{margin-bottom:0.5rem;line-height:1.7}
+.article-tag{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-right:0.5rem}
+.tag-overview{background:var(--primary-light);color:var(--primary-dark)}
+.tag-highlight{background:var(--accent-light);color:var(--accent)}
+.tag-innovative{background:var(--gold-light);color:var(--gold)}
+.tag-recommend{background:var(--teal-light);color:var(--teal)}
+
+/* === Stats Row === */
+.stats-row{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.stat-mini{padding:0.5rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-secondary)}
+.stat-mini strong{color:var(--primary);font-size:1.1rem}
+
+/* === Controls === */
+.controls{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.search-box{flex:1;min-width:200px;position:relative}
+.search-box input{width:100%;padding:0.6rem 1rem 0.6rem 2.5rem;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:0.9rem;background:var(--bg-card);color:var(--text);transition:border-color 0.2s}
+.search-box input:focus{outline:none;border-color:var(--primary)}
+.search-box .search-icon{position:absolute;left:0.8rem;top:50%;transform:translateY(-50%);color:var(--text-muted);pointer-events:none}
+
+/* === Paper Grid === */
+.section-title{font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:0.75rem;display:flex;align-items:center;gap:0.5rem}
+.paper-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:0.85rem;margin-bottom:1.5rem}
+.paper-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1.1rem;transition:all 0.25s;display:flex;flex-direction:column;position:relative}
+.paper-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);border-color:var(--primary-light)}
+.paper-card.high-impact{border-left:3px solid var(--accent)}
+.paper-card .hi-badge{position:absolute;top:0.5rem;right:0.5rem;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:10px;background:var(--accent-light);color:var(--accent);font-weight:700}
+.paper-card .journal{font-size:0.78rem;color:var(--teal);font-weight:600;margin-bottom:0.3rem}
+.paper-card .title{font-size:0.95rem;font-weight:700;line-height:1.45;margin-bottom:0.35rem}
+.paper-card .title a{color:var(--text)}
+.paper-card .title a:hover{color:var(--primary);text-decoration:none}
+.paper-card .meta{font-size:0.78rem;color:var(--text-muted);margin-bottom:0.6rem;display:flex;flex-wrap:wrap;gap:0.5rem}
+
+/* Chinese Summary */
+.paper-card .summary-cn{background:linear-gradient(135deg,#fffaf0,#fffff0);border-left:3px solid var(--gold);padding:0.7rem 0.85rem;margin-bottom:0.5rem;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:0.88rem;line-height:1.55;color:#744210}
+[data-theme="dark"] .paper-card .summary-cn{background:linear-gradient(135deg,#3d2e1a,#372a10);color:#fbd38d}
+
+.abstract-toggle{font-size:0.8rem;color:var(--primary);cursor:pointer;font-weight:600;user-select:none;display:inline-flex;align-items:center;gap:0.25rem;padding:0.3rem 0;border:none;background:none}
+.abstract-toggle:hover{color:var(--accent)}
+.abstract-toggle .arrow{transition:transform 0.2s;font-size:0.7rem}
+.abstract-toggle.open .arrow{transform:rotate(90deg)}
+.abstract-content{display:none;font-size:0.82rem;color:var(--text-secondary);line-height:1.55;padding:0.5rem 0;border-top:1px dashed var(--border);margin-top:0.4rem}
+.abstract-content.visible{display:block}
+
+.paper-card.hidden{display:none}
+.no-results{display:none;text-align:center;padding:2rem;color:var(--text-muted)}
+.no-results.visible{display:block}
+
+@media(max-width:768px){.paper-grid{grid-template-columns:1fr}.article-section{padding:1.25rem}.topbar{flex-wrap:wrap}.topbar .week-topic{font-size:0.9rem}}
+
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.paper-card{animation:fadeIn 0.4s ease-out}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="back-btn" href="index.html">← 返回主页</a>
+  <div class="title-area">
+    <div class="week-range">9月14日—9月14日</div>
+    <div class="week-topic">西藏裂腹鱼耳石形态特征及属级判别研究</div>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <span id="themeIcon">🌙</span> <span id="themeLabel">暗色</span>
+  </button>
+</div>
+
+<div class="container">
+
+  <!-- 深度综述文章 -->
+  
+  <div class="article-section">
+    <h2>本周研究概览</h2>
+
+<p>本周共收录渔业相关论文1篇，研究方向集中于高原鱼类形态学与物种鉴定。该研究以青藏高原特有的裂腹鱼亚科（Schizothoracinae）为对象，探讨耳石（otolith）形态特征在属级水平上的判别能力。整体来看，本周论文数量较少，研究主题相对单一，反映出该周渔业领域发表活动处于低谷期，但在高原鱼类分类学这一细分方向上仍有一定方法学贡献。</p>
+
+<h2>高影响力期刊亮点</h2>
+
+<p>本周暂无。</p>
+
+<h2>创新性研究</h2>
+
+<p><strong>Otolith Morphological Characteristics of Major Schizothoracinae Fish Species in Tibet and Genus-Level Morphological Discrimination</strong>（Animals）</p>
+
+<p>该研究的创新点在于将耳石形态学方法系统应用于青藏高原裂腹鱼亚科这一形态高度趋同的类群，尝试解决传统外部形态难以区分近缘属的鉴定难题。裂腹鱼亚科物种多样性丰富但外部形态极为相似，长期以来给分类学和渔业资源调查带来困扰，而耳石作为硬组织具有种属特异性形态，为判别提供了新途径。研究聚焦属级判别而非种级，这一策略在近缘种外部形态趋同、但属间耳石特征可能更稳定的前提下具有合理性，对高原鱼类资源监测和分类实践有潜在应用价值。不过，属级判别能否进一步下推至种级、以及样本量与地理覆盖范围是否充分，仍有待后续研究检验。</p>
+
+<h2>推荐阅读</h2>
+
+<ol>
+<li><strong>Otolith Morphological Characteristics of Major Schizothoracinae Fish Species in Tibet and Genus-Level Morphological Discrimination</strong> — 本周唯一论文，为高原裂腹鱼类耳石形态判别提供了基础数据与方法参考，适合从事高原鱼类分类与资源调查的研究者阅读。</li>
+</ol>
+  </div>
+  
+
+  <!-- 统计 -->
+  <div class="stats-row">
+    <div class="stat-mini">📄 <strong>1</strong> 篇论文</div>
+    <div class="stat-mini">🌟 <strong>0</strong> 篇高影响力期刊</div>
+    <div class="stat-mini">🤖 <strong>1</strong> 篇 AI 中文总结</div>
+    
+    <div class="stat-mini">🏷️ 耳石形态(Otolith Morphology) 裂腹鱼类(Schizothoracinae) 物种鉴定(Species Identification) 属级判别(Genus Discrimination) </div>
+    
+  </div>
+
+  <!-- 搜索 -->
+  <div class="controls">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="搜索标题、作者、摘要..." oninput="filterPapers()">
+    </div>
+  </div>
+
+  <div class="no-results" id="noResults">😕 没有匹配的论文</div>
+
+  <!-- 全部论文列表 -->
+  <div class="section-title">📄 本周全部论文（1 篇）</div>
+  <div class="paper-grid">
+    
+    <div class="paper-card"
+         data-title="otolith morphological characteristics of major schizothoracinae fish species in tibet and genus-level morphological discrimination"
+         data-authors="wang, yunfei; zhou, yang; qiao, liuxuan; zhang, haoran; long, lijing; su, jian; zhou, chaowei; han, zhaofang; liu, haiping"
+         data-journal="animals"
+         data-abstract="schizothoracinae represent an endemic and dominant teleost group in the qinghai–xizang plateau and adjacent regions. despite their rich species diversity, closely related schizothoracinae species exhibit remarkable external morphological similarity, which hinders traditional morphological discrimination. in this study, lapillus otoliths from 360 individuals representing 12 schizothoracinae species collected across major tibetan water systems were systematically examined. we evaluated and compared the performance of traditional scalar-based shape indices and elliptic fourier analysis (efa, 60 normalized harmonic coefficients following size-allometry correction) in otolith contour quantification and species identification. statistical analyses including one-way anova, principal component analysis (pca), non-linear manifold learning (t-sne and umap), and linear discriminant analysis (lda) were executed. one-way anova revealed highly significant differences among all 12 species across all shape indices and fourier coefficients. the overall lda classification accuracy was 35.3% for the shape index method, whereas efa achieved a higher overall accuracy of 68.3%, representing a 33.0 percentage point improvement. under efa, schizothorax lhasaensis (93.3%) and schizothorax nukiangensis (90.0%) demonstrated the highest single-species discrimination success. interspecific otolith morphological divergence was substantially higher in the riverine genus schizothorax than in lacustrine genera (gymnocypris and schizopygopsis), the latter two of which show extensive morphological overlap consistent with their low genomic differentiation. fishes of gymnocypris displayed significantly higher otolith roundness (p &lt; 0.05), which correlates with their adaptation to lacustrine or sluggish water habitats. our findings demonstrate that efa effectively captures multi-scale otolith contour harmonics, serving as a valuable morphometric approach for schizothoracinae species identification and morphological discrimination, although challenges remain for species with incomplete lineage sorting. the morphometric database established herein provides valuable morphological baselines for the conservation and management of endemic qxp fish resources."
+         data-summary="本研究系统采集了西藏主要水系12种裂腹鱼类（schizothoracinae）共360尾个体的星耳石（lapillus），比较了传统形状指数与椭圆傅里叶分析（efa）在耳石轮廓量化及物种判别中的表现。单因素方差分析显示12个物种在所有形状指标和傅里叶系数上均存在极显著差异，efa整体判别准确率达68.3%，较形状指数法（35.3%）提高33.0个百分点，其中拉萨裂腹鱼（93.3%）和怒江裂腹鱼（90.0%）判别成功率最高。河流型裂腹鱼属（schizothorax）的种间耳石形态分化显著高于湖泊型裸鲤属（gymnocypris）和重唇鱼属（schizopygopsis），后两者形态高度重叠，与其低基因组分化一致；裸鲤属耳石圆度显著偏高，与其湖泊或缓流水栖息适应相关。研究表明efa能有效捕捉多尺度耳石轮廓谐波特征，可作为裂腹鱼类物种鉴定的有效形态计量手段，所建形态数据库为青藏高原特有鱼类资源保护与管理提供了基础资料。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Animals
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究系统采集了西藏主要水系12种裂腹鱼类（Schizothoracinae）共360尾个体的星耳石（lapillus），比较了传统形状指数与椭圆傅里叶分析（EFA）在耳石轮廓量化及物种判别中的表现。单因素方差分析显示12个物种在所有形状指标和傅里叶系数上均存在极显著差异，EFA整体判别准确率达68.3%，较形状指数法（35.3%）提高33.0个百分点，其中拉萨裂腹鱼（93.3%）和怒江裂腹鱼（90.0%）判别成功率最高。河流型裂腹鱼属（Schizothorax）的种间耳石形态分化显著高于湖泊型裸鲤属（Gymnocypris）和重唇鱼属（Schizopygopsis），后两者形态高度重叠，与其低基因组分化一致；裸鲤属耳石圆度显著偏高，与其湖泊或缓流水栖息适应相关。研究表明EFA能有效捕捉多尺度耳石轮廓谐波特征，可作为裂腹鱼类物种鉴定的有效形态计量手段，所建形态数据库为青藏高原特有鱼类资源保护与管理提供了基础资料。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/ani16182883" target="_blank" rel="noopener">Otolith Morphological Characteristics of Major Schizothoracinae Fish Species in Tibet and Genus-Level Morphological Discrimination</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Wang, Yunfei; Zhou, Yang; Qiao, Liuxuan; Zhang, Haoran; Long...</span>
+        
+        <span>📅 2026-09-14</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Schizothoracinae represent an endemic and dominant teleost group in the Qinghai–Xizang Plateau and adjacent regions. Despite their rich species diversity, closely related Schizothoracinae species exhibit remarkable external morphological similarity, which hinders traditional morphological discrimination. In this study, lapillus otoliths from 360 individuals representing 12 Schizothoracinae species collected across major Tibetan water systems were systematically examined. We evaluated and compared the performance of traditional scalar-based shape indices and Elliptic Fourier Analysis (EFA, 60 normalized harmonic coefficients following size-allometry correction) in otolith contour quantification and species identification. Statistical analyses including one-way ANOVA, principal component analysis (PCA), non-linear manifold learning (t-SNE and UMAP), and linear discriminant analysis (LDA) were executed. One-way ANOVA revealed highly significant differences among all 12 species across all shape indices and Fourier coefficients. The overall LDA classification accuracy was 35.3% for the shape index method, whereas EFA achieved a higher overall accuracy of 68.3%, representing a 33.0 percentage point improvement. Under EFA, Schizothorax lhasaensis (93.3%) and Schizothorax nukiangensis (90.0%) demonstrated the highest single-species discrimination success. Interspecific otolith morphological divergence was substantially higher in the riverine genus Schizothorax than in lacustrine genera (Gymnocypris and Schizopygopsis), the latter two of which show extensive morphological overlap consistent with their low genomic differentiation. Fishes of Gymnocypris displayed significantly higher otolith roundness (p &lt; 0.05), which correlates with their adaptation to lacustrine or sluggish water habitats. Our findings demonstrate that EFA effectively captures multi-scale otolith contour harmonics, serving as a valuable morphometric approach for Schizothoracinae species identification and morphological discrimination, although challenges remain for species with incomplete lineage sorting. The morphometric database established herein provides valuable morphological baselines for the conservation and management of endemic QXP fish resources.</div>
+      
+    </div>
+    
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var s=localStorage.getItem('theme');
+  if(s){document.documentElement.setAttribute('data-theme',s);
+  document.getElementById('themeIcon').textContent=s==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=s==='dark'?'亮色':'暗色';}
+})();
+function toggleTheme(){
+  var h=document.documentElement,n=h.getAttribute('data-theme')==='dark'?'light':'dark';
+  h.setAttribute('data-theme',n);
+  document.getElementById('themeIcon').textContent=n==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=n==='dark'?'亮色':'暗色';
+  localStorage.setItem('theme',n);
+}
+function toggleAbstract(b){
+  var c=b.nextElementSibling,v=c.classList.contains('visible');
+  c.classList.toggle('visible');b.classList.toggle('open');
+  b.querySelector('.arrow').textContent=v?'▶':'▼';
+}
+function filterPapers(){
+  var q=(document.getElementById('searchInput').value||'').toLowerCase().trim(),vis=0;
+  document.querySelectorAll('.paper-card').forEach(function(c){
+    var t=[c.getAttribute('data-title')||'',c.getAttribute('data-authors')||'',c.getAttribute('data-journal')||'',c.getAttribute('data-abstract')||'',c.getAttribute('data-summary')||''].join(' ');
+    var s=!q||t.includes(q);c.classList.toggle('hidden',!s);if(s)vis++;
+  });
+  document.getElementById('noResults').classList.toggle('visible',vis===0);
+}
+</script>
+</body>
+</html>
