@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>人工智能治理与水产养殖可持续发展 — 渔业文献每周速览</title>
+<style>
+:root {
+  --bg: #f7fafc; --bg-card: #ffffff; --text: #2d3748;
+  --text-secondary: #718096; --text-muted: #a0aec0; --border: #e2e8f0;
+  --primary: #2b6cb0; --primary-light: #bee3f8; --primary-dark: #1a365d;
+  --accent: #e76f51; --accent-light: #fed7d7;
+  --teal: #319795; --teal-light: #b2f5ea;
+  --gold: #d69e2e; --gold-light: #fefcbf;
+  --shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.10);
+  --radius: 12px; --radius-sm: 8px;
+}
+[data-theme="dark"] {
+  --bg: #1a202c; --bg-card: #2d3748; --text: #e2e8f0;
+  --text-secondary: #a0aec0; --text-muted: #718096; --border: #4a5568;
+  --primary: #90cdf4; --primary-light: #2a4365; --primary-dark: #bee3f8;
+  --accent: #fc8181; --accent-light: #742a2a;
+  --teal: #81e6d9; --teal-light: #234e52;
+  --gold: #f6e05e; --gold-light: #3d3a1a;
+  --shadow: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.5);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;transition:background 0.3s,color 0.3s}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* === Top Bar === */
+.topbar{background:linear-gradient(135deg,#1a365d,#2b6cb0);color:#fff;padding:0.8rem 1.5rem;display:flex;align-items:center;gap:1rem;position:sticky;top:0;z-index:100}
+.back-btn{color:#fff;font-size:0.95rem;font-weight:600;padding:0.4rem 0.8rem;border-radius:var(--radius-sm);border:1.5px solid rgba(255,255,255,0.3);transition:all 0.2s;white-space:nowrap}
+.back-btn:hover{background:rgba(255,255,255,0.15);text-decoration:none}
+.topbar .title-area{flex:1;min-width:0}
+.topbar .week-range{font-size:0.78rem;opacity:0.8}
+.topbar .week-topic{font-size:1rem;font-weight:700;line-height:1.3}
+.topbar .theme-toggle{padding:0.4rem 0.8rem;border:1.5px solid rgba(255,255,255,0.3);border-radius:var(--radius-sm);background:transparent;color:#fff;cursor:pointer;font-size:0.85rem;transition:all 0.2s;white-space:nowrap}
+.topbar .theme-toggle:hover{background:rgba(255,255,255,0.15)}
+
+.container{max-width:1100px;margin:0 auto;padding:1.5rem}
+
+/* === Article Section === */
+.article-section{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;margin-bottom:1.5rem;box-shadow:var(--shadow)}
+.article-section h2{font-size:1.3rem;color:var(--primary-dark);margin:1.5rem 0 0.75rem;padding-bottom:0.4rem;border-bottom:2px solid var(--primary-light)}
+.article-section h2:first-child{margin-top:0}
+.article-section p{margin-bottom:0.8rem;line-height:1.8;color:var(--text)}
+.article-section strong{color:var(--primary-dark)}
+.article-section ol,.article-section ul{padding-left:1.5rem;margin-bottom:0.8rem}
+.article-section li{margin-bottom:0.5rem;line-height:1.7}
+.article-tag{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-right:0.5rem}
+.tag-overview{background:var(--primary-light);color:var(--primary-dark)}
+.tag-highlight{background:var(--accent-light);color:var(--accent)}
+.tag-innovative{background:var(--gold-light);color:var(--gold)}
+.tag-recommend{background:var(--teal-light);color:var(--teal)}
+
+/* === Stats Row === */
+.stats-row{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.stat-mini{padding:0.5rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-secondary)}
+.stat-mini strong{color:var(--primary);font-size:1.1rem}
+
+/* === Controls === */
+.controls{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.search-box{flex:1;min-width:200px;position:relative}
+.search-box input{width:100%;padding:0.6rem 1rem 0.6rem 2.5rem;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:0.9rem;background:var(--bg-card);color:var(--text);transition:border-color 0.2s}
+.search-box input:focus{outline:none;border-color:var(--primary)}
+.search-box .search-icon{position:absolute;left:0.8rem;top:50%;transform:translateY(-50%);color:var(--text-muted);pointer-events:none}
+
+/* === Paper Grid === */
+.section-title{font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:0.75rem;display:flex;align-items:center;gap:0.5rem}
+.paper-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:0.85rem;margin-bottom:1.5rem}
+.paper-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1.1rem;transition:all 0.25s;display:flex;flex-direction:column;position:relative}
+.paper-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);border-color:var(--primary-light)}
+.paper-card.high-impact{border-left:3px solid var(--accent)}
+.paper-card .hi-badge{position:absolute;top:0.5rem;right:0.5rem;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:10px;background:var(--accent-light);color:var(--accent);font-weight:700}
+.paper-card .journal{font-size:0.78rem;color:var(--teal);font-weight:600;margin-bottom:0.3rem}
+.paper-card .title{font-size:0.95rem;font-weight:700;line-height:1.45;margin-bottom:0.35rem}
+.paper-card .title a{color:var(--text)}
+.paper-card .title a:hover{color:var(--primary);text-decoration:none}
+.paper-card .meta{font-size:0.78rem;color:var(--text-muted);margin-bottom:0.6rem;display:flex;flex-wrap:wrap;gap:0.5rem}
+
+/* Chinese Summary */
+.paper-card .summary-cn{background:linear-gradient(135deg,#fffaf0,#fffff0);border-left:3px solid var(--gold);padding:0.7rem 0.85rem;margin-bottom:0.5rem;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:0.88rem;line-height:1.55;color:#744210}
+[data-theme="dark"] .paper-card .summary-cn{background:linear-gradient(135deg,#3d2e1a,#372a10);color:#fbd38d}
+
+.abstract-toggle{font-size:0.8rem;color:var(--primary);cursor:pointer;font-weight:600;user-select:none;display:inline-flex;align-items:center;gap:0.25rem;padding:0.3rem 0;border:none;background:none}
+.abstract-toggle:hover{color:var(--accent)}
+.abstract-toggle .arrow{transition:transform 0.2s;font-size:0.7rem}
+.abstract-toggle.open .arrow{transform:rotate(90deg)}
+.abstract-content{display:none;font-size:0.82rem;color:var(--text-secondary);line-height:1.55;padding:0.5rem 0;border-top:1px dashed var(--border);margin-top:0.4rem}
+.abstract-content.visible{display:block}
+
+.paper-card.hidden{display:none}
+.no-results{display:none;text-align:center;padding:2rem;color:var(--text-muted)}
+.no-results.visible{display:block}
+
+@media(max-width:768px){.paper-grid{grid-template-columns:1fr}.article-section{padding:1.25rem}.topbar{flex-wrap:wrap}.topbar .week-topic{font-size:0.9rem}}
+
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.paper-card{animation:fadeIn 0.4s ease-out}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="back-btn" href="index.html">← 返回主页</a>
+  <div class="title-area">
+    <div class="week-range">9月21日—9月21日</div>
+    <div class="week-topic">人工智能治理与水产养殖可持续发展</div>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <span id="themeIcon">🌙</span> <span id="themeLabel">暗色</span>
+  </button>
+</div>
+
+<div class="container">
+
+  <!-- 深度综述文章 -->
+  
+  <div class="article-section">
+    <h2>本周研究概览</h2>
+
+<p>本周共收录渔业相关论文15篇，研究主题涵盖水产养殖技术优化、渔业资源评估、鱼类生物学与生态学、水产品安全及人工智能应用等多个方向。从期刊分布来看，*Aquaculture, Fish and Fisheries* 和 *Journal of Fish Biology* 各发表3篇，*Problems of Fisheries* 发表4篇，其余散见于 *Aquaculture*、*Microorganisms* 等期刊。整体研究趋势呈现两个特征：一是水产养殖的可持续性议题持续升温，涉及替代蛋白源开发、养殖密度优化和季节特异性饲料设计；二是区域性渔业资源评估与生物学研究仍占重要地位，尤其以俄罗斯和韩国水域的种群研究为代表。</p>
+
+<h2>高影响力期刊亮点</h2>
+
+<p>本周暂无发表在 Nature、Science、PNAS 等上述高影响力期刊上的论文。</p>
+
+<h2>创新性研究</h2>
+
+<ol>
+<li><strong>Responsible AI Guardrails in *Aquaculture, Fish and Fisheries*: Enabling Innovation With Accountability and Integrity</strong> — 该文探讨了在水产养殖与渔业研究中部署负责任人工智能的治理框架，提出在创新与学术诚信之间建立平衡的"护栏"机制。这是渔业领域少见的AI伦理与治理讨论，对规范AI辅助研究具有前瞻性意义。</li>
+</ol>
+
+<ol>
+<li><strong>Atlantic salmon (*Salmo salar*) aquaculture in a changing climate: Quantitative insights from industry records and climate projections</strong> — 该研究将产业实际记录与降尺度气候模型相结合，定量评估气候变化对北大西洋鲑养殖的影响。其创新在于利用卫星海表温度数据进行统计降尺度，为养殖业的气候适应性规划提供了可操作的量化依据。</li>
+</ol>
+
+<ol>
+<li><strong>The Pacific seaweed pipefish *Syngnathus schlegeli* exhibits exceptionally high levels of polygynandry among fishes with paternal egg care</strong> — 该研究发现海龙科鱼类 *S. schlegeli* 具有鱼类父系抚育中极为罕见的高水平一雌多雄一雄多雌制（polygynandry），对理解性选择与交配制度演化具有重要意义。</li>
+</ol>
+
+<ol>
+<li><strong>Development of a Multiplex Quantitative PCR Assay for Simultaneous Detection of Multiple *Vibrio* Species in Aquaculture Samples</strong> — 该研究开发了可同时检测多种弧菌的多重qPCR方法，解决了水产养殖中弧菌病原快速诊断的技术瓶颈，对疾病监测和防控具有直接应用价值。</li>
+</ol>
+
+<ol>
+<li><strong>Towards Season-Specific Feeds: Maximising Protein Digestibility and Reducing Waste in Hybrid Abalone Aquaculture</strong> — 该研究提出按季节水温变化设计差异化饲料的策略，以最大化杂交鲍的蛋白质消化率并减少废物排放，体现了精准营养与环境保护相结合的理念。</li>
+</ol>
+
+<h2>推荐阅读</h2>
+
+<ol>
+<li><strong>Atlantic salmon (*Salmo salar*) aquaculture in a changing climate: Quantitative insights from industry records and climate projections</strong> — 将气候模型与产业数据结合，为鲑养殖的气候风险评估提供了方法论范例。</li>
+</ol>
+
+<ol>
+<li><strong>Development of a Multiplex Quantitative PCR Assay for Simultaneous Detection of Multiple *Vibrio* Species in Aquaculture Samples</strong> — 多重qPCR检测方法的开发对水产病害快速诊断具有重要实用价值。</li>
+</ol>
+
+<ol>
+<li><strong>The Pacific seaweed pipefish *Syngnathus schlegeli* exhibits exceptionally high levels of polygynandry among fishes with paternal egg care</strong> — 揭示了鱼类交配制度演化中的极端案例，具有较高的行为生态学理论意义。</li>
+</ol>
+
+<ol>
+<li><strong>Optimizing Culture Density to Balance Seston Transport and Mussel Growth in Gouqi Island Suspended Aquaculture</strong> — 针对筏式贻贝养殖中食物耗竭问题提出密度优化方案，兼顾生态承载力与经济效益。</li>
+</ol>
+
+<ol>
+<li><strong>Evaluating the Processing and Nutrient Digestibility of Defatted *Nannochloropsis* sp. QH25 Co-Product for Sustainable Rainbow Trout Aquaculture Diets</strong> — 评估微藻副产物作为虹鳟饲料替代蛋白源的可行性，对水产饲料可持续转型具有参考价值。</li>
+</ol>
+  </div>
+  
+
+  <!-- 统计 -->
+  <div class="stats-row">
+    <div class="stat-mini">📄 <strong>15</strong> 篇论文</div>
+    <div class="stat-mini">🌟 <strong>2</strong> 篇高影响力期刊</div>
+    <div class="stat-mini">🤖 <strong>15</strong> 篇 AI 中文总结</div>
+    
+    <div class="stat-mini">🏷️ 水产养殖(Aquaculture) 种群评估(Stock Assessment) 气候变化(Climate Change) 营养消化率(Nutrient Digestibility) </div>
+    
+  </div>
+
+  <!-- 搜索 -->
+  <div class="controls">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="搜索标题、作者、摘要..." oninput="filterPapers()">
+    </div>
+  </div>
+
+  <div class="no-results" id="noResults">😕 没有匹配的论文</div>
+
+  <!-- 全部论文列表 -->
+  <div class="section-title">📄 本周全部论文（15 篇）</div>
+  <div class="paper-grid">
+    
+    <div class="paper-card"
+         data-title="responsible ai guardrails in
+                    <i>aquaculture, fish and fisheries</i>
+                    : enabling innovation with accountability and integrity"
+         data-authors="calado, ricardo; a. becker, joy; bailey, christyn"
+         data-journal="aquaculture, fish and fisheries"
+         data-abstract=""
+         data-summary="该文探讨在水产养殖与渔业领域应用负责任ai的防护机制，旨在在创新与问责、诚信之间取得平衡。因无摘要，仅据标题可知其聚焦于ai治理框架的构建。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Aquaculture, Fish and Fisheries
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该文探讨在水产养殖与渔业领域应用负责任AI的防护机制，旨在在创新与问责、诚信之间取得平衡。因无摘要，仅据标题可知其聚焦于AI治理框架的构建。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1002/aff2.70332" target="_blank" rel="noopener">Responsible AI Guardrails in
+                    <i>Aquaculture, Fish and Fisheries</i>
+                    : Enabling Innovation With Accountability and Integrity</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Calado, Ricardo; A. Becker, Joy; Bailey, Christyn</span>
+        
+        <span>📅 2026-09-21</span>
+      </div>
+
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="geometric morphometric analysis of phenotypic population structure in hatchery and wild stocks of
+                    <i>ompok pabda</i>
+                    from bangladesh"
+         data-authors="roy, krishna; ara, dewan noor‐e‐chashmi; roy, priangka; preety, afra anjum; leon, ashikur rahman; parvez, imran"
+         data-journal="aquaculture, fish and fisheries"
+         data-abstract="abstract population structure is important for broodstock management and conservation of ompok pabda . this study evaluated phenotypic shape variation among three hatchery populations from bogura (kahalu), dinajpur (sadar) and mymensingh (muktagacha) and one wild population from arial beel , munshiganj, using 15 landmark geometric morphometrics. after data‐quality screening and generalised procrustes analysis, a small but significant common within‐group allometric effect explained 2.28% of shape variation (permutation p = 0.0413) and was removed before multivariate analysis. principal component analysis of allometry‐adjusted procrustes coordinates showed that pc1 and pc2 explained 48.08% and 18.19% of the variation, respectively (66.27% cumulative). manova detected a strong population effect on shape (wilks' λ = 0.0393, f (33, 257.02) = 15.57, p &lt; 0.001). canonical variate analysis showed that cv1 and cv2 accounted for 65.19% and 22.18% of the canonical discriminatory variation, respectively. discriminant function analysis using 11 pcs that retained 95.27% of allometry‐adjusted procrustes shape variance achieved 87.13% overall leave‐one‐out cross‐validated classification accuracy with equal prior probabilities. all pairwise mahalanobis and procrustes distances were significant, while upgma based on complete mean‐shape procrustes distances grouped bogura most closely with arial beel and identified mymensingh as the most distant population. thin‐plate spline visualisations localised major variation around the head and ventral pelvic‐anal region. the results demonstrate significant phenotypic structuring, but the unbalanced wild sample and absence of molecular data require caution when inferring genetic stock boundaries."
+         data-summary="本研究利用15个地标点的几何形态测量学方法，评估了孟加拉国三个孵化场种群（bogura、dinajpur、mymensingh）与一个野生种群（arial beel）ompok pabda之间的表型形态差异。manova显示种群对形态有显著影响（wilks' λ=0.0393, p<0.001），判别函数分析交叉验证分类准确率达87.13%，所有种群间mahalanobis和procrustes距离均显著。upgma聚类显示bogura与野生arial beel种群最为接近，mymensingh种群最为疏远，形态变异主要集中在头部及腹侧骨盆-臀鳍区域。研究表明存在显著的表型种群结构，但野生样本不平衡及缺乏分子数据，在推断遗传种群边界时需谨慎。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Aquaculture, Fish and Fisheries
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究利用15个地标点的几何形态测量学方法，评估了孟加拉国三个孵化场种群（Bogura、Dinajpur、Mymensingh）与一个野生种群（Arial Beel）Ompok pabda之间的表型形态差异。MANOVA显示种群对形态有显著影响（Wilks' λ=0.0393, p<0.001），判别函数分析交叉验证分类准确率达87.13%，所有种群间Mahalanobis和Procrustes距离均显著。UPGMA聚类显示Bogura与野生Arial Beel种群最为接近，Mymensingh种群最为疏远，形态变异主要集中在头部及腹侧骨盆-臀鳍区域。研究表明存在显著的表型种群结构，但野生样本不平衡及缺乏分子数据，在推断遗传种群边界时需谨慎。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1002/aff2.70334" target="_blank" rel="noopener">Geometric Morphometric Analysis of Phenotypic Population Structure in Hatchery and Wild Stocks of
+                    <i>Ompok pabda</i>
+                    From Bangladesh</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Roy, Krishna; Ara, Dewan Noor‐E‐Chashmi; Roy, Priangka; Pree...</span>
+        
+        <span>📅 2026-09-21</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">ABSTRACT Population structure is important for broodstock management and conservation of Ompok pabda . This study evaluated phenotypic shape variation among three hatchery populations from Bogura (Kahalu), Dinajpur (Sadar) and Mymensingh (Muktagacha) and one wild population from Arial Beel , Munshiganj, using 15 landmark geometric morphometrics. After data‐quality screening and generalised Procrustes analysis, a small but significant common within‐group allometric effect explained 2.28% of shape variation (permutation p = 0.0413) and was removed before multivariate analysis. Principal component analysis of allometry‐adjusted Procrustes coordinates showed that PC1 and PC2 explained 48.08% and 18.19% of the variation, respectively (66.27% cumulative). MANOVA detected a strong population effect on shape (Wilks' λ = 0.0393, F (33, 257.02) = 15.57, p &lt; 0.001). Canonical variate analysis showed that CV1 and CV2 accounted for 65.19% and 22.18% of the canonical discriminatory variation, respectively. Discriminant function analysis using 11 PCs that retained 95.27% of allometry‐adjusted Procrustes shape variance achieved 87.13% overall leave‐one‐out cross‐validated classification accuracy with equal prior probabilities. All pairwise Mahalanobis and Procrustes distances were significant, while UPGMA based on complete mean‐shape Procrustes distances grouped Bogura most closely with Arial Beel and identified Mymensingh as the most distant population. Thin‐plate spline visualisations localised major variation around the head and ventral pelvic‐anal region. The results demonstrate significant phenotypic structuring, but the unbalanced wild sample and absence of molecular data require caution when inferring genetic stock boundaries.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="assessment of human exposure risk from microplastic contamination in commercially important fish species sold in local markets of mawlamyine, myanmar"
+         data-authors="aung, thet htwe; tun, soe thaw thaw; latt, aung aye; tun, nyo nyo"
+         data-journal="aquaculture, fish and fisheries"
+         data-abstract="abstract microplastic (mp) contamination was investigated in the gastrointestinal tract (git) and gills of 238 fish representing eight commercially important species collected from retail markets in mawlamyine, myanmar. mps were detected in the git and/or gills of all examined fish, corresponding to a prevalence of 100%. mean total abundance ranged from 5.44 ± 1.23 particles fish −1 in rastrelliger sp. to 18.91 ± 2.74 particles fish −1 in tenualosa ilisha , while mass‐normalized concentration ranged from 0.0464 to 0.2977 particles g − 1 . paired gut–gill comparisons were evaluated using a shapiro–wilk‐dependent approach: wilcoxon signed‐rank tests were applied to six species with non‐normal paired differences, and paired‐samples t ‐tests were applied to polynemus paradiseus and t. ilisha , whose paired differences were compatible with normality. all eight tissue comparisons were significant at p &lt; 0.001. gut abundance exceeded gill abundance in six species, whereas rastrelliger sp. and t. ilisha exhibited gill‐dominant burdens. fibres were the dominant morphotype in six species, while paint‐like particles were prominent in rastrelliger sp. and t. ilisha . particles measuring 20–50 µm represented a substantial proportion of the recovered particles. atr–ftir analysis assigned 238 of 270 analysed particles (88.1%) to polyethylene terephthalate, polyethylene, polypropylene, polystyrene or polyamide/nylon. under a hypothetical sole‐species consumption scenario based on a fish intake rate of 123 g person − 1 day − 1 , estimated daily intake ranged from 5.71 to 36.62 particles person − 1 day − 1 , and body‐weight‐normalized intake ranged from 0.0990 to 0.6347 particles kg − 1 day − 1 . the exposure risk index ranged from 1.00 to 6.41 and was used only as a relative within‐study ranking; it is not a validated toxicological, regulatory or human‐health threshold."
+         data-summary="对缅甸毛淡棉零售市场8种商业重要鱼类（238尾）的胃肠道和鳃部微塑料（mp）污染进行了调查，所有样本检出率均为100%，平均丰度为5.44–18.91 particles fish⁻¹。6种鱼胃肠道丰度高于鳃部，纤维为主要形态，20–50 µm颗粒占比较大，atr–ftir鉴定88.1%的颗粒为pet、pe、pp、ps或pa/尼龙。在假设单一鱼种消费情景下（123 g person⁻¹ day⁻¹），估计每日摄入量为5.71–36.62 particles person⁻¹ day⁻¹，暴露风险指数为1.00–6.41，仅用于研究内相对排序，非经验证的健康阈值。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Aquaculture, Fish and Fisheries
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 对缅甸毛淡棉零售市场8种商业重要鱼类（238尾）的胃肠道和鳃部微塑料（MP）污染进行了调查，所有样本检出率均为100%，平均丰度为5.44–18.91 particles fish⁻¹。6种鱼胃肠道丰度高于鳃部，纤维为主要形态，20–50 µm颗粒占比较大，ATR–FTIR鉴定88.1%的颗粒为PET、PE、PP、PS或PA/尼龙。在假设单一鱼种消费情景下（123 g person⁻¹ day⁻¹），估计每日摄入量为5.71–36.62 particles person⁻¹ day⁻¹，暴露风险指数为1.00–6.41，仅用于研究内相对排序，非经验证的健康阈值。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1002/aff2.70335" target="_blank" rel="noopener">Assessment of Human Exposure Risk From Microplastic Contamination in Commercially Important Fish Species Sold in Local Markets of Mawlamyine, Myanmar</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Aung, Thet Htwe; Tun, Soe Thaw Thaw; Latt, Aung Aye; Tun, Ny...</span>
+        
+        <span>📅 2026-09-21</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">ABSTRACT Microplastic (MP) contamination was investigated in the gastrointestinal tract (GIT) and gills of 238 fish representing eight commercially important species collected from retail markets in Mawlamyine, Myanmar. MPs were detected in the GIT and/or gills of all examined fish, corresponding to a prevalence of 100%. Mean total abundance ranged from 5.44 ± 1.23 particles fish −1 in Rastrelliger sp. to 18.91 ± 2.74 particles fish −1 in Tenualosa ilisha , while mass‐normalized concentration ranged from 0.0464 to 0.2977 particles g − 1 . Paired gut–gill comparisons were evaluated using a Shapiro–Wilk‐dependent approach: Wilcoxon signed‐rank tests were applied to six species with non‐normal paired differences, and paired‐samples t ‐tests were applied to Polynemus paradiseus and T. ilisha , whose paired differences were compatible with normality. All eight tissue comparisons were significant at p &lt; 0.001. Gut abundance exceeded gill abundance in six species, whereas Rastrelliger sp. and T. ilisha exhibited gill‐dominant burdens. Fibres were the dominant morphotype in six species, while paint‐like particles were prominent in Rastrelliger sp. and T. ilisha . Particles measuring 20–50 µm represented a substantial proportion of the recovered particles. ATR–FTIR analysis assigned 238 of 270 analysed particles (88.1%) to polyethylene terephthalate, polyethylene, polypropylene, polystyrene or polyamide/nylon. Under a hypothetical sole‐species consumption scenario based on a fish intake rate of 123 g person − 1 day − 1 , estimated daily intake ranged from 5.71 to 36.62 particles person − 1 day − 1 , and body‐weight‐normalized intake ranged from 0.0990 to 0.6347 particles kg − 1 day − 1 . The Exposure Risk Index ranged from 1.00 to 6.41 and was used only as a relative within‐study ranking; it is not a validated toxicological, regulatory or human‐health threshold.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="towards season‐specific feeds: maximising protein digestibility and reducing waste in hybrid abalone (
+                    <i>haliotis rubra × haliotis laevigata)</i>
+                    aquaculture"
+         data-authors="hassan, abdul lathiff inamul; mock, thomas s.; searle, kieren; rocker, melissa m.; turchini, giovanni m.; francis, david s."
+         data-journal="aquaculture, fish and fisheries"
+         data-abstract="abstract australian abalone grow‐out aquaculture relies on formulated feeds to provide for the nutritional requirements of the animal. at the same time, grow‐out systems are subject to seasonal water temperature fluctuations. as such, the economic and environmental performance of cultured abalone is inherently tied to the utilisation efficiency of dietary nutrients and changes to water temperature. this study aimed to better understand the effect of water temperature and dietary protein level on nutrient digestibility in australian hybrid abalone ( haliotis rubra × haliotis laevigata ). hybrid abalone were fed five different levels of dietary protein for 150 days at three distinct water temperatures. digestibility, nutrient utilisation and calculations of nitrogen assimilation efficiency and undigested nitrogenous waste were assessed. protein digestibility was negatively affected during both warm (22°c) and cold (12°c) water growing conditions and appeared optimal at 17°c, whereas lipid digestibility increased as the water temperature increased from 12°c to 22°c. an increase in the dietary protein level up to 440 g kg −1 at both 17°c and 22°c improved macronutrient and amino acid digestibility, compared to diets formulated with lower dietary protein. relationships between water temperature and diet protein level were plotted on response surfaces and showed that maximum protein digestibility occurs at 16.8°c and 46.3% diet protein, whereas maximum dry matter digestibility occurs at 18.9°c and 43.1% diet protein. taken together, these findings can significantly contribute towards developing season‐specific feeds for australian hybrid abalone to maximise growth performance while minimising effluent discharge."
+         data-summary="本研究探讨水温与饲料蛋白水平对澳大利亚杂交鲍（haliotis rubra × haliotis laevigata）营养物消化率的影响，在12°c、17°c和22°c三种水温下以五个蛋白水平饲料投喂150天。结果表明，蛋白消化率在17°c时最优，在22°c和12°c下均受抑制，而脂肪消化率随水温升高而增加；饲料蛋白水平提高至440 g kg⁻¹可改善大量营养素和氨基酸消化率。响应面分析显示，最大蛋白消化率出现在16.8°c、饲料蛋白46.3%时，最大干物质消化率出现在18.9°c、饲料蛋白43.1%时，为开发季节特异性饲料以减少养殖排放提供了依据。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Aquaculture, Fish and Fisheries
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究探讨水温与饲料蛋白水平对澳大利亚杂交鲍（Haliotis rubra × Haliotis laevigata）营养物消化率的影响，在12°C、17°C和22°C三种水温下以五个蛋白水平饲料投喂150天。结果表明，蛋白消化率在17°C时最优，在22°C和12°C下均受抑制，而脂肪消化率随水温升高而增加；饲料蛋白水平提高至440 g kg⁻¹可改善大量营养素和氨基酸消化率。响应面分析显示，最大蛋白消化率出现在16.8°C、饲料蛋白46.3%时，最大干物质消化率出现在18.9°C、饲料蛋白43.1%时，为开发季节特异性饲料以减少养殖排放提供了依据。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1002/aff2.70321" target="_blank" rel="noopener">Towards Season‐Specific Feeds: Maximising Protein Digestibility and Reducing Waste in Hybrid Abalone (
+                    <i>Haliotis rubra × Haliotis laevigata)</i>
+                    Aquaculture</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Hassan, Abdul Lathiff Inamul; Mock, Thomas S.; Searle, Kiere...</span>
+        
+        <span>📅 2026-09-21</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">ABSTRACT Australian abalone grow‐out aquaculture relies on formulated feeds to provide for the nutritional requirements of the animal. At the same time, grow‐out systems are subject to seasonal water temperature fluctuations. As such, the economic and environmental performance of cultured abalone is inherently tied to the utilisation efficiency of dietary nutrients and changes to water temperature. This study aimed to better understand the effect of water temperature and dietary protein level on nutrient digestibility in Australian hybrid abalone ( Haliotis rubra × Haliotis laevigata ). Hybrid abalone were fed five different levels of dietary protein for 150 days at three distinct water temperatures. Digestibility, nutrient utilisation and calculations of nitrogen assimilation efficiency and undigested nitrogenous waste were assessed. Protein digestibility was negatively affected during both warm (22°C) and cold (12°C) water growing conditions and appeared optimal at 17°C, whereas lipid digestibility increased as the water temperature increased from 12°C to 22°C. An increase in the dietary protein level up to 440 g kg −1 at both 17°C and 22°C improved macronutrient and amino acid digestibility, compared to diets formulated with lower dietary protein. Relationships between water temperature and diet protein level were plotted on response surfaces and showed that maximum protein digestibility occurs at 16.8°C and 46.3% diet protein, whereas maximum dry matter digestibility occurs at 18.9°C and 43.1% diet protein. Taken together, these findings can significantly contribute towards developing season‐specific feeds for Australian hybrid abalone to maximise growth performance while minimising effluent discharge.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="atlantic salmon (
+                    <i>salmo salar</i>
+                    ) aquaculture in a changing climate: quantitative insights from industry records and climate projections"
+         data-authors="leeuwen, travis e. van; coté, david; konecny, cassandra; swanson, andrew; bungay, julia; pretty, christina; fast, mark d.; miller, jordan; kristiansen, trond"
+         data-journal="journal of fish biology"
+         data-abstract="abstract predicting and understanding the implications of climate change on atlantic salmon ( salmo salar ) aquaculture is a fundamental step to understanding risk and mitigating potential impacts. here, we statistically downscale established climate models using satellite‐based sea surface temperature data and in situ industry measurements to inform climate resiliency predictions for atlantic salmon aquaculture on the south coast of newfoundland, canada. our objectives were to (1) understand how local climate conditions and depth effects vary in the coastal marine environments that support farmed atlantic salmon production; (2) apply these relationships to understand how seasonal chronology and forecasted interannual changes to water temperature will affect future farmed atlantic salmon growth and sea lice ( lepeophtheirus salmonis ) exposure; and (3) identify the seasonal mortality risk to farmed atlantic salmon smolt under multiple climate change and sea lice scenarios. while the absolute growth of farmed atlantic salmon was determined to be minimally affected, the chronology of growth changed with optimal growth periods predicted at deeper sea cage depths (10 and 15 m), and shifted from unimodal growth distributions throughout the summer to scenarios with two distinct growth peaks bookending a low summer growth period for 1 and 5 m depths as the time series progressed. warm summer temperatures also increased the projected abundance of sea lice and decreased farmed atlantic salmon smolt survival. our results identify both resilience and vulnerabilities in newfoundland atlantic salmon aquaculture sites and highlight the risk to industry and an opportunity to mitigate vulnerabilities prior to their predicted onset."
+         data-summary="本研究利用卫星海表温度数据与养殖场实测记录对气候模型进行统计降尺度，预测气候变化对加拿大纽芬兰南岸大西洋鲑（salmo salar）养殖的影响。研究分析了局部气候条件与养殖深度对水温的影响，并评估了不同气候变化和海虱（lepeophtheirus salmonis）情景下养殖鲑的生长与死亡率风险。结果表明，养殖鲑绝对生长量受影响较小，但生长时序发生改变——深层网箱（10和15 m）预测出现最优生长窗口，浅层（1和5 m）则从夏季单峰生长转变为双峰模式；夏季升温还增加了海虱丰度并降低幼鲑存活率。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究利用卫星海表温度数据与养殖场实测记录对气候模型进行统计降尺度，预测气候变化对加拿大纽芬兰南岸大西洋鲑（Salmo salar）养殖的影响。研究分析了局部气候条件与养殖深度对水温的影响，并评估了不同气候变化和海虱（Lepeophtheirus salmonis）情景下养殖鲑的生长与死亡率风险。结果表明，养殖鲑绝对生长量受影响较小，但生长时序发生改变——深层网箱（10和15 m）预测出现最优生长窗口，浅层（1和5 m）则从夏季单峰生长转变为双峰模式；夏季升温还增加了海虱丰度并降低幼鲑存活率。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70655" target="_blank" rel="noopener">Atlantic salmon (
+                    <i>Salmo salar</i>
+                    ) aquaculture in a changing climate: Quantitative insights from industry records and climate projections</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Leeuwen, Travis E. Van; Coté, David; Konecny, Cassandra; Swa...</span>
+        
+        <span>📅 2026-09-21</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract Predicting and understanding the implications of climate change on Atlantic salmon ( Salmo salar ) aquaculture is a fundamental step to understanding risk and mitigating potential impacts. Here, we statistically downscale established climate models using satellite‐based sea surface temperature data and in situ industry measurements to inform climate resiliency predictions for Atlantic salmon aquaculture on the south coast of Newfoundland, Canada. Our objectives were to (1) understand how local climate conditions and depth effects vary in the coastal marine environments that support farmed Atlantic salmon production; (2) apply these relationships to understand how seasonal chronology and forecasted interannual changes to water temperature will affect future farmed Atlantic salmon growth and sea lice ( Lepeophtheirus salmonis ) exposure; and (3) identify the seasonal mortality risk to farmed Atlantic salmon smolt under multiple climate change and sea lice scenarios. While the absolute growth of farmed Atlantic salmon was determined to be minimally affected, the chronology of growth changed with optimal growth periods predicted at deeper sea cage depths (10 and 15 m), and shifted from unimodal growth distributions throughout the summer to scenarios with two distinct growth peaks bookending a low summer growth period for 1 and 5 m depths as the time series progressed. Warm summer temperatures also increased the projected abundance of sea lice and decreased farmed Atlantic salmon smolt survival. Our results identify both resilience and vulnerabilities in Newfoundland Atlantic salmon aquaculture sites and highlight the risk to industry and an opportunity to mitigate vulnerabilities prior to their predicted onset.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="growth and reproduction of japanese seabass,
+                    <i>lateolabrax japonicus</i>
+                    , in the southern waters off the korean peninsula"
+         data-authors="kang, da yeon; park, joo myun; moon, seong yong; baeck, gun wook"
+         data-journal="journal of fish biology"
+         data-abstract="abstract japanese seabass ( lateolabrax japonicus ) is a commercially and ecologically important species found in korean waters, which functions as a top predator in coastal marine ecosystems. however, research on the reproduction and growth of l. japonicus in korean waters remains limited; furthermore, comprehensive investigations integrating both reproductive and growth characteristics are lacking. therefore, we examined the growth parameters and reproductive characteristics of l. japonicus inhabiting the southern waters of korea. a total of 639 specimens (250 females and 389 males), ranging from 20.2 to 97.6 cm in total length (tl), were collected monthly between january and december 2020. the overall sex ratio (female: male) was 1:1.56, indicating male dominance; however, the proportion of females increased among individuals larger than 60 cm tl. analysis of otolith marginal increments revealed that annuli formed once annually between march and april, following the spawning period. growth parameters estimated using the von bertalanffy growth function yielded an asymptotic tl of 117.36 cm for females and 109.58 cm for males, with a maximum estimated age of 11 years in both sexes. based on monthly variation in the gonadosomatic index (gsi) and histological observations, spawning occurred from january to march. males matured earlier and exhibited a longer spawning duration than females. oocyte developmental patterns indicated that l. japonicus is a multiple spawner, releasing batches of eggs at least twice within the spawning season, and displayed group‐synchronous oocyte development. the tls at 50% maturity were estimated to be 34.2 cm for females and 27.3 cm for males. these findings provide essential information for the sustainable management of l. japonicus stocks, and support the establishment of effective conservation measures—including the designation of spawning protection areas, implementation of minimum size limits and preservation of critical habitats."
+         data-summary="本研究基于2020年逐月采集的639尾花鲈（lateolabrax japonicus）样本，利用耳石边缘增量分析、von bertalanffy生长函数及性腺组织学方法，估算了韩国南部海域该种的生长参数与繁殖特征。结果显示，雌雄渐近全长分别为117.36 cm和109.58 cm，最大年龄均为11龄；产卵期为1—3月，属多次产卵型，雌雄50%性成熟全长分别为34.2 cm和27.3 cm。研究结果为该海域花鲈的可持续管理和产卵保护措施制定提供了基础数据。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究基于2020年逐月采集的639尾花鲈（Lateolabrax japonicus）样本，利用耳石边缘增量分析、von Bertalanffy生长函数及性腺组织学方法，估算了韩国南部海域该种的生长参数与繁殖特征。结果显示，雌雄渐近全长分别为117.36 cm和109.58 cm，最大年龄均为11龄；产卵期为1—3月，属多次产卵型，雌雄50%性成熟全长分别为34.2 cm和27.3 cm。研究结果为该海域花鲈的可持续管理和产卵保护措施制定提供了基础数据。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70662" target="_blank" rel="noopener">Growth and reproduction of Japanese seabass,
+                    <i>Lateolabrax japonicus</i>
+                    , in the southern waters off the Korean Peninsula</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Kang, Da Yeon; Park, Joo Myun; Moon, Seong Yong; Baeck, Gun ...</span>
+        
+        <span>📅 2026-09-21</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract Japanese seabass ( Lateolabrax japonicus ) is a commercially and ecologically important species found in Korean waters, which functions as a top predator in coastal marine ecosystems. However, research on the reproduction and growth of L. japonicus in Korean waters remains limited; furthermore, comprehensive investigations integrating both reproductive and growth characteristics are lacking. Therefore, we examined the growth parameters and reproductive characteristics of L. japonicus inhabiting the southern waters of Korea. A total of 639 specimens (250 females and 389 males), ranging from 20.2 to 97.6 cm in total length (TL), were collected monthly between January and December 2020. The overall sex ratio (female: male) was 1:1.56, indicating male dominance; however, the proportion of females increased among individuals larger than 60 cm TL. Analysis of otolith marginal increments revealed that annuli formed once annually between March and April, following the spawning period. Growth parameters estimated using the von Bertalanffy growth function yielded an asymptotic TL of 117.36 cm for females and 109.58 cm for males, with a maximum estimated age of 11 years in both sexes. Based on monthly variation in the gonadosomatic index (GSI) and histological observations, spawning occurred from January to March. Males matured earlier and exhibited a longer spawning duration than females. Oocyte developmental patterns indicated that L. japonicus is a multiple spawner, releasing batches of eggs at least twice within the spawning season, and displayed group‐synchronous oocyte development. The TLs at 50% maturity were estimated to be 34.2 cm for females and 27.3 cm for males. These findings provide essential information for the sustainable management of L. japonicus stocks, and support the establishment of effective conservation measures—including the designation of spawning protection areas, implementation of minimum size limits and preservation of critical habitats.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="the pacific seaweed pipefish
+                    <i>syngnathus schlegeli</i>
+                    exhibits exceptionally high levels of polygynandry among fishes with paternal egg care"
+         data-authors="endo, takehiro; sekino, masashi; sogabe, atsushi"
+         data-journal="journal of fish biology"
+         data-abstract="abstract syngnathid fishes (family syngnathidae), characterised by male pregnancy via a brood pouch, provide an exceptional model system for studying the relationship between mating systems and sexual selection, as they display extraordinary diversity in both mating systems and sex roles within a single family. a previous study reported that the population of pacific seaweed pipefish syngnathus schlegeli around zhaitang island in china has a polygamous mating system but did not investigate whether females also mate with multiple partners. in this study, we used parentage analyses with eight microsatellite markers to investigate the genetic mating system of a northern population of s. schlegeli in mutsu bay, japan. all pregnant males carried full broods of 942–1729 embryos, and paternity was exclusively assigned to the brooding male. males mated with an average of five females (range 3–9), and eggs from different females were spatially segregated within each brood pouch. the occurrence of shared maternity across broods from different males indicated that females also performed multiple matings; however, females had a lower number of mates than males. these results clearly demonstrated that the mutsu bay population of s. schlegeli has a polygynandrous mating system. notably, the maximum of nine mates per male represents the highest number of multiple matings reported for syngnathid fishes and possibly for fishes with paternal egg care. we suggest that the unusually high number of mates per male may be linked to the sexual size dimorphism in this population, where males are larger than females, which is a rare pattern among syngnathids. the comparison between the zhaitang island population and the mutsu bay population of s. schlegeli revealed clear geographic variations in body size, brood size and the number of mates per male. these patterns in s. schlegeli are similar to intraspecific latitudinal trends reported in some syngnathus species, in which higher‐latitude populations tend to have greater body size, greater brood size and more mates per male. further studies across a broader geographic range are needed to verify whether s. schlegeli exhibits latitudinal variation in mating systems."
+         data-summary="以日本陆奥湾太平洋海龙（*syngnathus schlegeli*）种群为对象，利用8个微卫星标记进行亲子分析，研究其遗传交配制度。结果显示，所有怀孕雄鱼均携带全同胞 brood（942–1729枚胚胎），父权专属孵育雄鱼；雄鱼平均与5尾雌鱼交配（范围3–9），不同雌鱼的卵在育儿袋内呈空间分隔，且雌鱼亦存在多配现象但配偶数少于雄鱼。该种群为 polygynandry 交配制度，雄鱼最多9个配偶为海龙科及父系护卵鱼类中已知最高记录，可能与雄性体型大于雌性的性二型有关；与斋堂岛种群的比较揭示了体型、brood size 和配偶数的地理变异，类似 *syngnathus* 属种内纬度梯度趋势。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 以日本陆奥湾太平洋海龙（*Syngnathus schlegeli*）种群为对象，利用8个微卫星标记进行亲子分析，研究其遗传交配制度。结果显示，所有怀孕雄鱼均携带全同胞 brood（942–1729枚胚胎），父权专属孵育雄鱼；雄鱼平均与5尾雌鱼交配（范围3–9），不同雌鱼的卵在育儿袋内呈空间分隔，且雌鱼亦存在多配现象但配偶数少于雄鱼。该种群为 polygynandry 交配制度，雄鱼最多9个配偶为海龙科及父系护卵鱼类中已知最高记录，可能与雄性体型大于雌性的性二型有关；与斋堂岛种群的比较揭示了体型、brood size 和配偶数的地理变异，类似 *Syngnathus* 属种内纬度梯度趋势。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70661" target="_blank" rel="noopener">The Pacific seaweed pipefish
+                    <i>Syngnathus schlegeli</i>
+                    exhibits exceptionally high levels of polygynandry among fishes with paternal egg care</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Endo, Takehiro; Sekino, Masashi; Sogabe, Atsushi</span>
+        
+        <span>📅 2026-09-21</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract Syngnathid fishes (family Syngnathidae), characterised by male pregnancy via a brood pouch, provide an exceptional model system for studying the relationship between mating systems and sexual selection, as they display extraordinary diversity in both mating systems and sex roles within a single family. A previous study reported that the population of Pacific seaweed pipefish Syngnathus schlegeli around Zhaitang Island in China has a polygamous mating system but did not investigate whether females also mate with multiple partners. In this study, we used parentage analyses with eight microsatellite markers to investigate the genetic mating system of a northern population of S. schlegeli in Mutsu Bay, Japan. All pregnant males carried full broods of 942–1729 embryos, and paternity was exclusively assigned to the brooding male. Males mated with an average of five females (range 3–9), and eggs from different females were spatially segregated within each brood pouch. The occurrence of shared maternity across broods from different males indicated that females also performed multiple matings; however, females had a lower number of mates than males. These results clearly demonstrated that the Mutsu Bay population of S. schlegeli has a polygynandrous mating system. Notably, the maximum of nine mates per male represents the highest number of multiple matings reported for syngnathid fishes and possibly for fishes with paternal egg care. We suggest that the unusually high number of mates per male may be linked to the sexual size dimorphism in this population, where males are larger than females, which is a rare pattern among syngnathids. The comparison between the Zhaitang Island population and the Mutsu Bay population of S. schlegeli revealed clear geographic variations in body size, brood size and the number of mates per male. These patterns in S. schlegeli are similar to intraspecific latitudinal trends reported in some Syngnathus species, in which higher‐latitude populations tend to have greater body size, greater brood size and more mates per male. Further studies across a broader geographic range are needed to verify whether S. schlegeli exhibits latitudinal variation in mating systems.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="development of a multiplex quantitative
+                    <scp>pcr</scp>
+                    assay for simultaneous detection of multiple
+                    <i>vibrio</i>
+                    species in aquaculture samples"
+         data-authors="müştak, i̇nci başak; müştak, hamit kaan; i̇nce, seyyide sarıçam; uğun, doğukan; cengiz, görkem; ünal, gültekin; torun, ebru; göncüoğlu, muammer"
+         data-journal="journal of fish diseases"
+         data-abstract="abstract aquaculture associated vibrio species are important bacterial pathogens causing significant economic losses in aquaculture and zoonotic infections in humans. rapid and accurate detection of vibrio species is therefore essential for diagnosis, surveillance and control. in this study, a multiplex quantitative pcr (qpcr) assay was developed for the simultaneous detection of vibrio spp. together with v. alginolyticus , v. anguillarum , v. harveyi , v. ordalii , v. parahaemolyticus , v. vulnificus and v. cholerae . species‐specific primers and probes targeting ompa, glutamate synthase, mreb, vohb, dnaj, gyrb and lolb genes were designed, while the rpoa gene was selected for genus level vibrio detection. the assay demonstrated 100% inclusivity for all target strains without cross reactivity against non‐target bacterial species. pcr efficiency/inhibition analyses showed stable amplification dynamics across serial dilutions, with r 2 values above 0.99, amplification efficiencies between 96.8% and 98.2%, and δcq values ≤ 0.13 for all targets. limit of detection (lod) studies performed using artificially contaminated matrices demonstrated a detection limit of 10 1 –10 0 cfu/ml for all targets, with detection performance comparable to the culture‐based recovery method. overall, the developed multiplex qpcr assay provides a rapid, sensitive and analytically reliable approach for simultaneous detection of multiple vibrio species associated with aquaculture and zoonotic infections."
+         data-summary="本研究开发了一种多重定量pcr（qpcr）方法，用于同步检测水产养殖样品中的多种弧菌属（*vibrio* spp.）及溶藻弧菌、鳗弧菌、哈维氏弧菌、奥氏弧菌、副溶血弧菌、创伤弧菌和霍乱弧菌。该方法针对各目标菌种设计了特异性引物和探针，并以rpoa基因实现弧菌属水平检测，所有目标菌株 inclusivity 达100%，无交叉反应，r²>0.99，扩增效率96.8%–98.2%，检测限为10⁰–10¹ cfu/ml，性能与培养法相当。该多重qpcr方法为水产养殖相关弧菌的快速、灵敏检测提供了可靠工具。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Diseases
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究开发了一种多重定量PCR（qPCR）方法，用于同步检测水产养殖样品中的多种弧菌属（*Vibrio* spp.）及溶藻弧菌、鳗弧菌、哈维氏弧菌、奥氏弧菌、副溶血弧菌、创伤弧菌和霍乱弧菌。该方法针对各目标菌种设计了特异性引物和探针，并以rpoA基因实现弧菌属水平检测，所有目标菌株 inclusivity 达100%，无交叉反应，R²>0.99，扩增效率96.8%–98.2%，检测限为10⁰–10¹ CFU/mL，性能与培养法相当。该多重qPCR方法为水产养殖相关弧菌的快速、灵敏检测提供了可靠工具。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfd.70289" target="_blank" rel="noopener">Development of a Multiplex Quantitative
+                    <scp>PCR</scp>
+                    Assay for Simultaneous Detection of Multiple
+                    <i>Vibrio</i>
+                    Species in Aquaculture Samples</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Müştak, İnci Başak; Müştak, Hamit Kaan; İnce, Seyyide Sarıça...</span>
+        
+        <span>📅 2026-09-21</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">ABSTRACT Aquaculture associated Vibrio species are important bacterial pathogens causing significant economic losses in aquaculture and zoonotic infections in humans. Rapid and accurate detection of Vibrio species is therefore essential for diagnosis, surveillance and control. In this study, a multiplex quantitative PCR (qPCR) assay was developed for the simultaneous detection of Vibrio spp. together with V. alginolyticus , V. anguillarum , V. harveyi , V. ordalii , V. parahaemolyticus , V. vulnificus and V. cholerae . Species‐specific primers and probes targeting ompA, glutamate synthase, mreB, vohB, dnaJ, gyrB and lolB genes were designed, while the rpoA gene was selected for genus level Vibrio detection. The assay demonstrated 100% inclusivity for all target strains without cross reactivity against non‐target bacterial species. PCR efficiency/inhibition analyses showed stable amplification dynamics across serial dilutions, with R 2 values above 0.99, amplification efficiencies between 96.8% and 98.2%, and ΔCq values ≤ 0.13 for all targets. Limit of detection (LOD) studies performed using artificially contaminated matrices demonstrated a detection limit of 10 1 –10 0 CFU/mL for all targets, with detection performance comparable to the culture‐based recovery method. Overall, the developed multiplex qPCR assay provides a rapid, sensitive and analytically reliable approach for simultaneous detection of multiple Vibrio species associated with aquaculture and zoonotic infections.</div>
+      
+    </div>
+    
+    <div class="paper-card high-impact"
+         data-title="optimizing culture density to balance seston transport and mussel growth in gouqi island suspended aquaculture"
+         data-authors="cao, bofan; zhong, wei; li, yanjiao; lin, jun"
+         data-journal="journal of marine science and engineering"
+         data-abstract="intensive high-density suspended mussel aquaculture frequently experiences flow attenuation and limited hydrodynamic exchange, leading to severe internal food depletion. to address this issue, this study evaluates spatial density-optimization strategies to balance stocking scale and production performance in the gouqi island suspended aquaculture farm for the mussel mytilus coruscus gould, 1861. a three-dimensional hydrodynamic-tracer-bivalve growth model was developed within the schism framework. this approach established a dynamic two-way coupling between tracer transport and bivalve growth, capturing feedbacks among hydrodynamic transport, facility-induced obstruction, and biological depletion. field observations along the surveyed transects showed that chlorophyll-a concentrations within the aquaculture layer were 64.9–85.5% of those in adjacent non-aquaculture waters. scenario simulations revealed that while uniform density reduction improved internal food availability, it substantially reduced the total stocking scale. in contrast, a spatially heterogeneous density configuration provided a more favorable balance between food availability, growth, and stocking scale among the tested scenarios. at a total stocking scale of 2.34 million sleeves, the area with tracer concentrations below 0.65 during neap tides was reduced to 620.06 ha, representing a 25.33% reduction relative to the current scenario. additionally, an area of 174.41 ha achieved a relative individual growth increment exceeding 0.20. ultimately, aligning culture density with local hydrodynamic transport conditions can alleviate internal food limitation while maintaining a relatively high stocking scale."
+         data-summary="本研究针对枸杞岛厚壳贻贝（*mytilus coruscus*）高密度筏式养殖中水流衰减与内部饵料耗竭问题，基于schism框架构建三维水动力-示踪剂-双壳类生长双向耦合模型，评估空间密度优化策略。现场观测显示养殖层叶绿素a浓度仅为邻近非养殖水域的64.9–85.5%。模拟结果表明，均匀降低密度虽改善内部饵料供给但大幅缩减总养殖规模，而空间异质性密度配置在饵料可利用性、个体生长与养殖规模间实现更优平衡：总规模234万串时，小潮期示踪剂浓度低于0.65的区域缩减至620.06 ha（较现状减少25.33%），174.41 ha区域个体相对生长增量超过0.20。将养殖密度与局部水动力输运条件相匹配，可在维持较高养殖规模的同时缓解内部饵料限制。"
+         data-impact="true">
+
+      
+      <div class="hi-badge">🌟 高影响力</div>
+      
+
+      
+      <div class="journal">
+        ⭐
+        📰 Journal of Marine Science and Engineering
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究针对枸杞岛厚壳贻贝（*Mytilus coruscus*）高密度筏式养殖中水流衰减与内部饵料耗竭问题，基于SCHISM框架构建三维水动力-示踪剂-双壳类生长双向耦合模型，评估空间密度优化策略。现场观测显示养殖层叶绿素a浓度仅为邻近非养殖水域的64.9–85.5%。模拟结果表明，均匀降低密度虽改善内部饵料供给但大幅缩减总养殖规模，而空间异质性密度配置在饵料可利用性、个体生长与养殖规模间实现更优平衡：总规模234万串时，小潮期示踪剂浓度低于0.65的区域缩减至620.06 ha（较现状减少25.33%），174.41 ha区域个体相对生长增量超过0.20。将养殖密度与局部水动力输运条件相匹配，可在维持较高养殖规模的同时缓解内部饵料限制。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/jmse14181752" target="_blank" rel="noopener">Optimizing Culture Density to Balance Seston Transport and Mussel Growth in Gouqi Island Suspended Aquaculture</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Cao, Bofan; Zhong, Wei; Li, Yanjiao; Lin, Jun</span>
+        
+        <span>📅 2026-09-21</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Intensive high-density suspended mussel aquaculture frequently experiences flow attenuation and limited hydrodynamic exchange, leading to severe internal food depletion. To address this issue, this study evaluates spatial density-optimization strategies to balance stocking scale and production performance in the Gouqi Island suspended aquaculture farm for the mussel Mytilus coruscus Gould, 1861. A three-dimensional hydrodynamic-tracer-bivalve growth model was developed within the SCHISM framework. This approach established a dynamic two-way coupling between tracer transport and bivalve growth, capturing feedbacks among hydrodynamic transport, facility-induced obstruction, and biological depletion. Field observations along the surveyed transects showed that chlorophyll-a concentrations within the aquaculture layer were 64.9–85.5% of those in adjacent non-aquaculture waters. Scenario simulations revealed that while uniform density reduction improved internal food availability, it substantially reduced the total stocking scale. In contrast, a spatially heterogeneous density configuration provided a more favorable balance between food availability, growth, and stocking scale among the tested scenarios. At a total stocking scale of 2.34 million sleeves, the area with tracer concentrations below 0.65 during neap tides was reduced to 620.06 ha, representing a 25.33% reduction relative to the current scenario. Additionally, an area of 174.41 ha achieved a relative individual growth increment exceeding 0.20. Ultimately, aligning culture density with local hydrodynamic transport conditions can alleviate internal food limitation while maintaining a relatively high stocking scale.</div>
+      
+    </div>
+    
+    <div class="paper-card high-impact"
+         data-title="elucidating the source and metabolic impact of 2‐phenylethanol on
+                    <i>lactiplantibacillus pentosus</i>
+                    1 using a fish broth fermentation model"
+         data-authors="gao, pei; dou, yumeng; jiang, qixing; zhang, xiaojing; yu, peipei; yang, fang; liu, shaoquan; xia, wenshui"
+         data-journal="journal of the science of food and agriculture"
+         data-abstract="abstract background the quality of traditional fermented sour fish is shaped by metabolic interactions between core microbiota dominated by lactic acid bacteria (lab) and yeasts. 2‐phenylethanol (2‐pe) is a characteristic metabolite and quorum‐sensing molecule of saccharomyces cerevisiae . this study aims to identify the primary source of 2‐pe via pure culture of dominant strains, and preliminarily investigate its effects on lab in a fish broth fermentation model under different fermentation modes. results single‐strain fermentation experiments confirmed that saccharomyces cerevisiae 31 is the main producer of 2‐pe. comparative analysis of different fermentation modes revealed that yeast metabolites exerted a stronger influence than cell‐to‐cell contact. although not a dominant factor, 8 mg/l 2‐pe significantly inhibited the growth, glucose metabolism, and lactic acid accumulation of lactiplantibacillus pentosus 1. correlation analysis showed that 2‐pe had significant positive correlations with the formation of multiple alcohols, glucose consumption, ph, total acidity, lactic acid, and valine. it is speculated that 2‐pe may regulate fermentation performance by interfering with the glycolytic pathway, fatty acid metabolism, and valine metabolism in lab. conclusion this study clarifies the primary microbial source of 2‐pe in sour fish fermentation and verifies its specific regulatory effect on lab, though it is not the core effector molecule through which saccharomyces cerevisiae modulates lab metabolism. the findings provide new insights into metabolite‐mediated microbial interactions in fermented food ecosystems, and the elucidated regulatory patterns offer reference for studies on other fermentation substrates including plant‐based foods and beverages. © 2026 society of chemical industry."
+         data-summary="本研究以鱼汤发酵模型探究酸鱼发酵体系中2-苯乙醇（2-pe）的主要来源及其对乳酸菌的代谢影响。单菌发酵实验证实 saccharomyces cerevisiae 31 是2-pe的主要产生菌，且酵母代谢产物的影响强于细胞间直接接触。8 mg/l 2-pe虽非核心调控因子，但显著抑制 lactiplantibacillus pentosus 1 的生长、葡萄糖代谢及乳酸积累，推测其通过干扰糖酵解、脂肪酸代谢和缬氨酸代谢途径调控发酵性能。"
+         data-impact="true">
+
+      
+      <div class="hi-badge">🌟 高影响力</div>
+      
+
+      
+      <div class="journal">
+        ⭐
+        📰 Journal of the Science of Food and Agriculture
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究以鱼汤发酵模型探究酸鱼发酵体系中2-苯乙醇（2-PE）的主要来源及其对乳酸菌的代谢影响。单菌发酵实验证实 Saccharomyces cerevisiae 31 是2-PE的主要产生菌，且酵母代谢产物的影响强于细胞间直接接触。8 mg/L 2-PE虽非核心调控因子，但显著抑制 Lactiplantibacillus pentosus 1 的生长、葡萄糖代谢及乳酸积累，推测其通过干扰糖酵解、脂肪酸代谢和缬氨酸代谢途径调控发酵性能。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1002/jsfa.71107" target="_blank" rel="noopener">Elucidating the source and metabolic impact of 2‐phenylethanol on
+                    <i>Lactiplantibacillus pentosus</i>
+                    1 using a fish broth fermentation model</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Gao, Pei; Dou, Yumeng; Jiang, Qixing; Zhang, Xiaojing; Yu, P...</span>
+        
+        <span>📅 2026-09-21</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract BACKGROUND The quality of traditional fermented sour fish is shaped by metabolic interactions between core microbiota dominated by lactic acid bacteria (LAB) and yeasts. 2‐Phenylethanol (2‐PE) is a characteristic metabolite and quorum‐sensing molecule of Saccharomyces cerevisiae . This study aims to identify the primary source of 2‐PE via pure culture of dominant strains, and preliminarily investigate its effects on LAB in a fish broth fermentation model under different fermentation modes. RESULTS Single‐strain fermentation experiments confirmed that Saccharomyces cerevisiae 31 is the main producer of 2‐PE. Comparative analysis of different fermentation modes revealed that yeast metabolites exerted a stronger influence than cell‐to‐cell contact. Although not a dominant factor, 8 mg/L 2‐PE significantly inhibited the growth, glucose metabolism, and lactic acid accumulation of Lactiplantibacillus pentosus 1. Correlation analysis showed that 2‐PE had significant positive correlations with the formation of multiple alcohols, glucose consumption, pH, total acidity, lactic acid, and valine. It is speculated that 2‐PE may regulate fermentation performance by interfering with the glycolytic pathway, fatty acid metabolism, and valine metabolism in LAB. CONCLUSION This study clarifies the primary microbial source of 2‐PE in sour fish fermentation and verifies its specific regulatory effect on LAB, though it is not the core effector molecule through which Saccharomyces cerevisiae modulates LAB metabolism. The findings provide new insights into metabolite‐mediated microbial interactions in fermented food ecosystems, and the elucidated regulatory patterns offer reference for studies on other fermentation substrates including plant‐based foods and beverages. © 2026 Society of Chemical Industry.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="evaluating the processing and nutrient digestibility of defatted nannochloropsis sp. qh25 co-product for sustainable rainbow trout aquaculture diets"
+         data-authors="sarker, pallab k.; schoffstall, benjamin v.; kapuscinski, anne r.; fitzgerald, devin; datta, anindita; gwynne, duncan; greenwood, connor"
+         data-journal="microorganisms"
+         data-abstract="the sustainability limitations of fishmeal and fish oil have increased interest in nutrient- rich microalgal co-products for aquafeeds. this study evaluated the effects of processing on the nutritional composition and apparent digestibility of a defatted nannochloropsis sp. qh25 co-product in rainbow trout (oncorhynchus mykiss). experiment 1 assessed the effects of extrusion at 90 °c or 127 °c, with or without precooking, and enzymatic treatment with protease, xylanase, and β-glucanase. based on nutrient composition, the 90 °c extrusion treatment without precooking was selected for experiment 2, which compared a reference diet with three diets containing 30% raw, extruded, or enzyme-treated co-product, using four replicate tanks per diet. extrusion at 127 °c reduced crude protein, gross energy, and methionine concentrations, whereas extrusion at 90 °c largely preserved nutrient composition. precooking reduced several essential amino acids but increased methionine and did not affect tryptophan. crude protein digestibility was numerically higher in the extruded co-product than in the raw co-product, although the difference was not statistically significant. most essential amino acids showed similar digestibility in the raw and extruded treatments, whereas enzymatic processing resulted in lower crude protein and amino acid digestibility. omega-3 fatty acid digestibility remained high across diets. overall, the raw co-product showed high nutrient digestibility, while extrusion resulted in only small, generally non-significant numerical differences and enzymatic processing generally resulted in lower nutrient digestibility under the conditions evaluated."
+         data-summary="本研究评估了加工方式对脱脂微藻（nannochloropsis sp. qh25）副产物在虹鳟（oncorhynchus mykiss）中营养成分及表观消化率的影响。实验一比较了90 °c与127 °c挤压、预煮及酶处理（蛋白酶、木聚糖酶、β-葡聚糖酶）的效果，发现127 °c挤压降低粗蛋白、总能和蛋氨酸含量，而90 °c挤压基本保持养分组成。实验二以30%未处理、挤压或酶处理副产物替代参考饲料，结果显示未处理副产物养分消化率较高，挤压处理差异较小且多不显著，酶处理则普遍降低粗蛋白和氨基酸消化率，而omega-3脂肪酸消化率在各组中均保持较高水平。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Microorganisms
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究评估了加工方式对脱脂微藻（Nannochloropsis sp. QH25）副产物在虹鳟（Oncorhynchus mykiss）中营养成分及表观消化率的影响。实验一比较了90 °C与127 °C挤压、预煮及酶处理（蛋白酶、木聚糖酶、β-葡聚糖酶）的效果，发现127 °C挤压降低粗蛋白、总能和蛋氨酸含量，而90 °C挤压基本保持养分组成。实验二以30%未处理、挤压或酶处理副产物替代参考饲料，结果显示未处理副产物养分消化率较高，挤压处理差异较小且多不显著，酶处理则普遍降低粗蛋白和氨基酸消化率，而omega-3脂肪酸消化率在各组中均保持较高水平。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/microorganisms14092104" target="_blank" rel="noopener">Evaluating the Processing and Nutrient Digestibility of Defatted Nannochloropsis sp. QH25 Co-Product for Sustainable Rainbow Trout Aquaculture Diets</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Sarker, Pallab K.; Schoffstall, Benjamin V.; Kapuscinski, An...</span>
+        
+        <span>📅 2026-09-21</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">The sustainability limitations of fishmeal and fish oil have increased interest in nutrient- rich microalgal co-products for aquafeeds. This study evaluated the effects of processing on the nutritional composition and apparent digestibility of a defatted Nannochloropsis sp. QH25 co-product in rainbow trout (Oncorhynchus mykiss). Experiment 1 assessed the effects of extrusion at 90 °C or 127 °C, with or without precooking, and enzymatic treatment with protease, xylanase, and β-glucanase. Based on nutrient composition, the 90 °C extrusion treatment without precooking was selected for Experiment 2, which compared a reference diet with three diets containing 30% raw, extruded, or enzyme-treated co-product, using four replicate tanks per diet. Extrusion at 127 °C reduced crude protein, gross energy, and methionine concentrations, whereas extrusion at 90 °C largely preserved nutrient composition. Precooking reduced several essential amino acids but increased methionine and did not affect tryptophan. Crude protein digestibility was numerically higher in the extruded co-product than in the raw co-product, although the difference was not statistically significant. Most essential amino acids showed similar digestibility in the raw and extruded treatments, whereas enzymatic processing resulted in lower crude protein and amino acid digestibility. Omega-3 fatty acid digestibility remained high across diets. Overall, the raw co-product showed high nutrient digestibility, while extrusion resulted in only small, generally non-significant numerical differences and enzymatic processing generally resulted in lower nutrient digestibility under the conditions evaluated.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="zander sander lucioperca (percidae) population state in vazuza reservoir at present: stock assessment and potential catch volume"
+         data-authors="grebonos, m. o.; chirkova, p. n.; vinogradov, e. v."
+         data-journal="problems of fisheries"
+         data-abstract="the paper presents the main fishery characteristics of the pike-perch population in the vazuza reservoir, obtained during the 2025 research within the state assignment of the russian federal research institute of fisheries and oceanography (vniro). the age structure of the commercial part of the population, as well as the dynamics of linear and weight growth of fish, were evaluated. differences in the growth rates of males and females, determined by the biological characteristics of the species and energy expenditures for primary oogenesis, were noted. it was established that the basis of the catches consists of individuals aged 2+ to 8+ years, with the dominance of two modal groups aged 4+ and 5+. the volume of possible removal was calculated taking into account a comprehensive approach to stock exploitation and amounted to 27,68 tons."
+         data-summary="该研究基于2025年vniro在vazuza水库的调查数据，评估了梭鲈（sander lucioperca）种群的渔业生物学特征及可捕量。研究分析了商业种群年龄结构及线性与体重生长动态，发现雌雄生长速率存在差异，渔获以2+至8+龄个体为主，其中4+和5+龄为优势组群。综合种群开发评估，建议可捕量为27.68吨。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Problems of Fisheries
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该研究基于2025年VNIRO在Vazuza水库的调查数据，评估了梭鲈（Sander lucioperca）种群的渔业生物学特征及可捕量。研究分析了商业种群年龄结构及线性与体重生长动态，发现雌雄生长速率存在差异，渔获以2+至8+龄个体为主，其中4+和5+龄为优势组群。综合种群开发评估，建议可捕量为27.68吨。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.36038/0234-2774-2026-27-3-161-168" target="_blank" rel="noopener">Zander Sander lucioperca (Percidae) population state in Vazuza reservoir at present: stock assessment and potential catch volume</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Grebonos, M. O.; Chirkova, P. N.; Vinogradov, E. V.</span>
+        
+        <span>📅 2026-09-21</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">The paper presents the main fishery characteristics of the pike-perch population in the Vazuza Reservoir, obtained during the 2025 research within the state assignment of the Russian Federal Research Institute of Fisheries and Oceanography (VNIRO). The age structure of the commercial part of the population, as well as the dynamics of linear and weight growth of fish, were evaluated. Differences in the growth rates of males and females, determined by the biological characteristics of the species and energy expenditures for primary oogenesis, were noted. It was established that the basis of the catches consists of individuals aged 2+ to 8+ years, with the dominance of two modal groups aged 4+ and 5+. The volume of possible removal was calculated taking into account a comprehensive approach to stock exploitation and amounted to 27,68 tons.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="growth patterns and size-weight characteristics of fish in the upper dnieper river"
+         data-authors="nikitenko, a. i.; artemenkov, d. v.; goryachev, d. v.; smirnov, a. a.; stroganov, a. n.; zingis, i. v.; zhernakov, i. a.; solodovnik, a. v.; grebonos, m. o.; tuylin, d. yu."
+         data-journal="problems of fisheries"
+         data-abstract="this paper presents new data on size–weight characteristics and growth parameters for 12 common fish species inhabiting the transboundary section of the upper dnieper river (within the russian federation and the republic of belarus), including representatives of the families leuciscidae, percidae, and esocidae. the material was collected during joint russian–belarusian expeditions in 2018–2024. it is shown that the majority of the studied species (8 out of 12) exhibit isometric growth, in which relative body proportions do not change with increasing size. negative allometry, indicating a relative decrease in body depth in larger individuals, was found in bream abramis brama, white bream ballerus ballerus, and black bream ballerus sapa. for the first time in the region, the parameters of the von bertalanffy growth equation were calculated for seven species. the highest growth rates (coefficient k &gt; 0,4 year -1 ) were established for silver bream blicca bjoerkna, roach rutilus rutilus, and pikeperch sander lucioperca, which corresponds to their life strategy of early maturation and high reproductive capacity. slow growth, typical of riverine populations with long life cycles, was observed for bream (k = 0,199 year -1 ) and chub squalius cephalus (k = 0,254 year -1 ). the obtained length–weight relationships and growth parameters can serve as regional reference values for monitoring population status, stock assessment, and improving fisheries management measures in the upper dnieper river basin."
+         data-summary="本研究基于2018–2024年俄白联合科考数据，报道了上第聂伯河跨界河段12种常见鱼类（鲤科、鲈科、狗鱼科）的体长-体重关系与生长参数。结果显示，8种鱼类呈等速生长，鳊、白鳊和黑鳊表现为负异速生长；首次为该区域7种鱼类计算了von bertalanffy生长方程参数，其中银鳊、拟鲤和梭鲈生长系数最高（k>0.4 yr⁻¹），鳊（k=0.199 yr⁻¹）和圆鳍雅罗鱼（k=0.254 yr⁻¹）生长缓慢。所得体长-体重关系与生长参数可作为区域参考值，用于种群监测、stock assessment及上第聂伯河流域渔业管理。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Problems of Fisheries
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究基于2018–2024年俄白联合科考数据，报道了上第聂伯河跨界河段12种常见鱼类（鲤科、鲈科、狗鱼科）的体长-体重关系与生长参数。结果显示，8种鱼类呈等速生长，鳊、白鳊和黑鳊表现为负异速生长；首次为该区域7种鱼类计算了von Bertalanffy生长方程参数，其中银鳊、拟鲤和梭鲈生长系数最高（K>0.4 yr⁻¹），鳊（K=0.199 yr⁻¹）和圆鳍雅罗鱼（K=0.254 yr⁻¹）生长缓慢。所得体长-体重关系与生长参数可作为区域参考值，用于种群监测、stock assessment及上第聂伯河流域渔业管理。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.36038/0234-2774-2026-27-3-123-136" target="_blank" rel="noopener">Growth patterns and size-weight characteristics of fish in the Upper Dnieper river</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Nikitenko, A. I.; Artemenkov, D. V.; Goryachev, D. V.; Smirn...</span>
+        
+        <span>📅 2026-09-21</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">This paper presents new data on size–weight characteristics and growth parameters for 12 common fish species inhabiting the transboundary section of the Upper Dnieper River (within the Russian Federation and the Republic of Belarus), including representatives of the families Leuciscidae, Percidae, and Esocidae. The material was collected during joint Russian–Belarusian expeditions in 2018–2024. It is shown that the majority of the studied species (8 out of 12) exhibit isometric growth, in which relative body proportions do not change with increasing size. Negative allometry, indicating a relative decrease in body depth in larger individuals, was found in bream Abramis brama, white bream Ballerus ballerus, and black bream Ballerus sapa. For the first time in the region, the parameters of the von Bertalanffy growth equation were calculated for seven species. The highest growth rates (coefficient K &gt; 0,4 year -1 ) were established for silver bream Blicca bjoerkna, roach Rutilus rutilus, and pikeperch Sander lucioperca, which corresponds to their life strategy of early maturation and high reproductive capacity. Slow growth, typical of riverine populations with long life cycles, was observed for bream (K = 0,199 year -1 ) and chub Squalius cephalus (K = 0,254 year -1 ). The obtained length–weight relationships and growth parameters can serve as regional reference values for monitoring population status, stock assessment, and improving fisheries management measures in the Upper Dnieper River basin.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="the value of the catches of steelhead for study of the ocean ecology of pacific salmon in the gulf of alaska in the winter of 2022"
+         data-authors="beamish, r.; neville, ch.; riddell, b."
+         data-journal="problems of fisheries"
+         data-abstract="в ходе исследования зимней экологии тихоокеанских лососей в зал. аляска, проведенного с 25 февраля по 25 марта 2022 г., выловлено 57 особей микижи (также называемой стальноголовым лососем или стальноголовой форелью). для лова тихоокеанских лососей использовались экспериментальные жаберные сети и яруса, при этом микижа ловилась исключительно в жаберные сети. уловы микижи оказались выше, чем всех видов тихоокеанских лососей. большинство особей выловлено жаберными сетями в верхнем 4-метровом слое, и все они были выловлены на глубинах не более 6 м. эти результаты, а также анализ ранее опубликованных данных свидетельствуют о том, что микижа проводит практически весь период жизни в открытом океане в нескольких метрах от поверхности воды. среди выловленной микижи рыб, присутствовали 34 особи в возрасте первого морского года и 21 особь в возрасте второго морского года; при этом 9 особей достигли половой зрелости. днк-анализ половозрелых особей показал, что они происходят из бассейнов рек колумбия и насс, а также рек зал. пьюджет-саунд и западного побережья о. ванкувер. микижа заходит в реки после окончания календарной зимы и, предположительно, вскоре нерестится. еще для 45 особей методом днк-анализа были определены районы происхождения, однако эти результаты остаются предварительными из-за ограниченности исходной референсной базы. у рыб в возрасте второго морского года второе годовое кольцо на чешуе не обнаружено. у 16 из 33 особей первого морского года на чешуе имелось годовое кольцо. количество склеритов в приросте после годового кольца варьировалось от 2 до 7, что указывает на длительный период формирования годовых колец у микижи. микижа выловлена на станциях, где температура воды на поверхности превышала верхний температурный предел, ранее опубликованный для этого вида в зимний период. врожденная склонность вида обитать в приповерхностных слоях в сочетании с продолжающимся потеплением океана, включая недавние волны тепла, подчеркивает необходимость более глубокого изучения океанической экологии микижи, особенно в зимний период."
+         data-summary="2022年2月25日至3月25日在阿拉斯加湾开展的太平洋鲑冬季生态调查中，以实验性刺网和延绳钓采集太平洋鲑，共捕获57尾steelhead（虹鳟降海型），且仅见于刺网，渔获量高于所有太平洋鲑种类。多数个体在4 m以浅水层被刺网捕获，全部渔获深度不超过6 m，结合历史数据分析表明steelhead在开阔大洋中几乎整个生活史阶段均栖息于近表层数米范围内。渔获个体包括34尾第一海年鱼和21尾第二海年鱼，其中9尾已达性成熟，dna分析显示其来源于columbia河、nass河、puget sound及温哥华岛西岸等流域。研究还发现第二海年鱼鳞片缺失第二个年轮、第一海年鱼年轮形成期较长（轮纹数2–7），且渔获站位表层水温超过该物种冬季已知温度上限，提示在海洋持续变暖背景下需加强steelhead冬季海洋生态研究。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Problems of Fisheries
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 2022年2月25日至3月25日在阿拉斯加湾开展的太平洋鲑冬季生态调查中，以实验性刺网和延绳钓采集太平洋鲑，共捕获57尾steelhead（虹鳟降海型），且仅见于刺网，渔获量高于所有太平洋鲑种类。多数个体在4 m以浅水层被刺网捕获，全部渔获深度不超过6 m，结合历史数据分析表明steelhead在开阔大洋中几乎整个生活史阶段均栖息于近表层数米范围内。渔获个体包括34尾第一海年鱼和21尾第二海年鱼，其中9尾已达性成熟，DNA分析显示其来源于Columbia河、Nass河、Puget Sound及温哥华岛西岸等流域。研究还发现第二海年鱼鳞片缺失第二个年轮、第一海年鱼年轮形成期较长（轮纹数2–7），且渔获站位表层水温超过该物种冬季已知温度上限，提示在海洋持续变暖背景下需加强steelhead冬季海洋生态研究。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.36038/0234-2774-2026-27-3-27-44" target="_blank" rel="noopener">The value of the catches of steelhead for study of the ocean ecology of pacific salmon in the gulf of Alaska in the winter of 2022</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Beamish, R.; Neville, Ch.; Riddell, B.</span>
+        
+        <span>📅 2026-09-21</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">В ходе исследования зимней экологии тихоокеанских лососей в зал. Аляска, проведенного с 25 февраля по 25 марта 2022 г., выловлено 57 особей микижи (также называемой стальноголовым лососем или стальноголовой форелью). Для лова тихоокеанских лососей использовались экспериментальные жаберные сети и яруса, при этом микижа ловилась исключительно в жаберные сети. Уловы микижи оказались выше, чем всех видов тихоокеанских лососей. Большинство особей выловлено жаберными сетями в верхнем 4-метровом слое, и все они были выловлены на глубинах не более 6 м. Эти результаты, а также анализ ранее опубликованных данных свидетельствуют о том, что микижа проводит практически весь период жизни в открытом океане в нескольких метрах от поверхности воды. Среди выловленной микижи рыб, присутствовали 34 особи в возрасте первого морского года и 21 особь в возрасте второго морского года; при этом 9 особей достигли половой зрелости. ДНК-анализ половозрелых особей показал, что они происходят из бассейнов рек Колумбия и Насс, а также рек зал. Пьюджет-Саунд и западного побережья о. Ванкувер. Микижа заходит в реки после окончания календарной зимы и, предположительно, вскоре нерестится. Еще для 45 особей методом ДНК-анализа были определены районы происхождения, однако эти результаты остаются предварительными из-за ограниченности исходной референсной базы. У рыб в возрасте второго морского года второе годовое кольцо на чешуе не обнаружено. У 16 из 33 особей первого морского года на чешуе имелось годовое кольцо. Количество склеритов в приросте после годового кольца варьировалось от 2 до 7, что указывает на длительный период формирования годовых колец у микижи. Микижа выловлена на станциях, где температура воды на поверхности превышала верхний температурный предел, ранее опубликованный для этого вида в зимний период. Врожденная склонность вида обитать в приповерхностных слоях в сочетании с продолжающимся потеплением океана, включая недавние волны тепла, подчеркивает необходимость более глубокого изучения океанической экологии микижи, особенно в зимний период.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="new data on the distribution and biology of the spiny king crab paralithodes brevipes (lithodidae) in the north-eastern part of the sea of okhotsk"
+         data-authors="artemenkov, d. v.; ivanov, p. yu.; sologub, d. o.; deminov, a. n.; morozov, t. b.; ivankovich, yu. i.; shapovalov, a. s."
+         data-journal="problems of fisheries"
+         data-abstract="the spiny king crab is a commercially fished species of aquatic biological resources in the far eastern seas of the russian federation. published data on the biology of p. brevipes are available for populations in the sea of okhotsk and the sea of japan, off south-eastern kamchatka, and in the waters around the kuril islands and hokkaido. this is the first description of the life cycle, growth, and sexual and size structure of the spiny king crab inhabiting the shelikhov bay area of the sea of okhotsk. on the shelf of western kamchatka in august, the densest aggregations of males were recorded at depths of 31 to 43 m (34,7±1,5 m); the water temperature at these depths ranged from +8,9 to +10,6 °c (9,8 ± 0,4 °c), while females were found at depths of 31 to 43 m (35,7 ± 2,3 m), with temperatures ranging from +8,9 to +10,6 °c (9,8 ± 0,9°c). in september, dense aggregations of males were found at depths of 48 to 67 m (59,5±4,6 m), with water temperatures at these depths ranging from +10,4 to +10,7 °c (10,6±0,2°c), while females were found at depths ranging from 44 to 56 m (48,0 ± 2,8 m), with temperatures ranging from +10,4 to +10,7 °c (10,6 ± 0,2°c). the maximum group growth size (cwinf) for males and females was 180,4 and 132,5 mm respectively, which is higher than that of males off hokkaido – cwinf 170,4 mm. moulting of the spiny king crab in shelikhov bay presumably occurs in may, and larval release in october. the average estimated value for the onset of sexual maturity was cwmat 81,0 mm for males and 78,2 mm for females."
+         data-summary="首次报道了鄂霍次克海shelikhov湾海域spiny king crab（*paralithodes brevipes*）的生活史、生长及性比与体长结构。8月雄蟹密集分布于31–43 m（水温8.9–10.6 °c），9月移至48–67 m；雌蟹分布深度略浅。雄、雌蟹最大群体生长体长（cwinf）分别为180.4 mm和132.5 mm，雄蟹大于北海道群体（170.4 mm）；推测换壳在5月、幼体释放于10月，性成熟起始体长（cwmat）雄蟹81.0 mm、雌蟹78.2 mm。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Problems of Fisheries
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 首次报道了鄂霍次克海Shelikhov湾海域spiny king crab（*Paralithodes brevipes*）的生活史、生长及性比与体长结构。8月雄蟹密集分布于31–43 m（水温8.9–10.6 °C），9月移至48–67 m；雌蟹分布深度略浅。雄、雌蟹最大群体生长体长（CWinf）分别为180.4 mm和132.5 mm，雄蟹大于北海道群体（170.4 mm）；推测换壳在5月、幼体释放于10月，性成熟起始体长（CWmat）雄蟹81.0 mm、雌蟹78.2 mm。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.36038/0234-2774-2026-27-3-67-80" target="_blank" rel="noopener">New data on the distribution and biology of the spiny king crab Paralithodes brevipes (Lithodidae) in the North-Eastern part of the sea of Okhotsk</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Artemenkov, D. V.; Ivanov, P. Yu.; Sologub, D. O.; Deminov, ...</span>
+        
+        <span>📅 2026-09-21</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">The spiny king crab is a commercially fished species of aquatic biological resources in the Far Eastern seas of the Russian Federation. Published data on the biology of P. brevipes are available for populations in the Sea of Okhotsk and the Sea of Japan, off south-eastern Kamchatka, and in the waters around the Kuril Islands and Hokkaido. This is the first description of the life cycle, growth, and sexual and size structure of the spiny king crab inhabiting the Shelikhov Bay area of the Sea of Okhotsk. On the shelf of Western Kamchatka in August, the densest aggregations of males were recorded at depths of 31 to 43 m (34,7±1,5 m); the water temperature at these depths ranged from +8,9 to +10,6 °C (9,8 ± 0,4 °C), while females were found at depths of 31 to 43 m (35,7 ± 2,3 m), with temperatures ranging from +8,9 to +10,6 °C (9,8 ± 0,9°C). In September, dense aggregations of males were found at depths of 48 to 67 m (59,5±4,6 m), with water temperatures at these depths ranging from +10,4 to +10,7 °C (10,6±0,2°C), while females were found at depths ranging from 44 to 56 m (48,0 ± 2,8 m), with temperatures ranging from +10,4 to +10,7 °C (10,6 ± 0,2°C). The maximum group growth size (CWinf) for males and females was 180,4 and 132,5 mm respectively, which is higher than that of males off Hokkaido – CWinf 170,4 mm. Moulting of the spiny king crab in Shelikhov Bay presumably occurs in May, and larval release in October. The average estimated value for the onset of sexual maturity was CWmat 81,0 mm for males and 78,2 mm for females.</div>
+      
+    </div>
+    
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var s=localStorage.getItem('theme');
+  if(s){document.documentElement.setAttribute('data-theme',s);
+  document.getElementById('themeIcon').textContent=s==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=s==='dark'?'亮色':'暗色';}
+})();
+function toggleTheme(){
+  var h=document.documentElement,n=h.getAttribute('data-theme')==='dark'?'light':'dark';
+  h.setAttribute('data-theme',n);
+  document.getElementById('themeIcon').textContent=n==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=n==='dark'?'亮色':'暗色';
+  localStorage.setItem('theme',n);
+}
+function toggleAbstract(b){
+  var c=b.nextElementSibling,v=c.classList.contains('visible');
+  c.classList.toggle('visible');b.classList.toggle('open');
+  b.querySelector('.arrow').textContent=v?'▶':'▼';
+}
+function filterPapers(){
+  var q=(document.getElementById('searchInput').value||'').toLowerCase().trim(),vis=0;
+  document.querySelectorAll('.paper-card').forEach(function(c){
+    var t=[c.getAttribute('data-title')||'',c.getAttribute('data-authors')||'',c.getAttribute('data-journal')||'',c.getAttribute('data-abstract')||'',c.getAttribute('data-summary')||''].join(' ');
+    var s=!q||t.includes(q);c.classList.toggle('hidden',!s);if(s)vis++;
+  });
+  document.getElementById('noResults').classList.toggle('visible',vis===0);
+}
+</script>
+</body>
+</html>
