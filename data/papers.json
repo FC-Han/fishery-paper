@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-03T12:59:17Z",
-  "total_papers": 297,
-  "new_today": 24,
+  "last_updated": "2026-10-04T13:38:26Z",
+  "total_papers": 299,
+  "new_today": 10,
   "papers": [
     {
       "doi": "10.48084/etasr.20408",
@@ -53,6 +53,123 @@
       "url": "https://doi.org/10.1111/jfb.70664",
       "source": "crossref_issn",
       "keywords_matched": "Journal of Fish Biology",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1186/s12964-026-03240-0",
+      "title": "A double-stranded RNA fish reovirus activates cGAS-STING signaling and evades antiviral immunity through autophagy-mediated degradation",
+      "authors": "Peng, Zichao; Zhou, Fang; Wang, Xuyang; Li, Yongming; Zhu, Zuoyan; Wang, Yaping; He, Libo",
+      "journal": "Cell Communication and Signaling",
+      "date": "2026-10-03",
+      "abstract": "Abstract Background Double-stranded RNA (dsRNA) reoviruses are primarily sensed by the RIG-I-like receptor (RLRs) signaling pathway. However, whether these viruses can also activate the cyclic GMP-AMP synthase-stimulator of interferon genes (cGAS-STING) pathway, a central DNA-sensing system, remains poorly understood. Grass carp reovirus (GCRV), a highly virulent aquareovirus in the family Spinareoviridae , is the causative agent of hemorrhagic disease in grass carp, an economically important fish species in China. GCRV serves as an ideal model for investigating host-virus interactions during dsRNA reovirus infection. Methods Using GCRV as a reovirus model, we systematically examined the interaction between GCRV and cGAS-STING signaling pathways and investigated the mechanism underlying cGAS-STING activation. Functional analyses were performed to evaluate the antiviral role of cGAS-STING signaling and the viral immune evasion strategies used to counteract this response. Moreover, the involvement of viral proteins and host selective autophagy factors in immune evasion was further characterized. Results We show that GCRV infection activates both RLRs and cGAS-STING signaling pathways. GCRV infection induced mitochondrial membrane depolarization and cytosolic release of mitochondrial DNA, which was sensed by cGAS and triggered activation of the cGAS-STING pathway. Activation of the cGAS-STING pathway restricts GCRV replication, whereas the virus counteracts this antiviral response by inducing degradation of cGAS and STING. Mechanistically, the GCRV nonstructural protein NS26 hijacks the autophagy receptors Tollip and Parkin to promote lysosomal degradation of cGAS and STING via the autophagy-lysosome pathway. Functionally, NS26 enhances viral replication and suppresses host antiviral responses. Conclusions Our findings uncover a previously unrecognized mechanism by which a dsRNA fish reovirus manipulates host selective autophagy to antagonize cGAS-STING-mediated antiviral immunity. These results expand current understanding of cGAS-STING activation during dsRNA fish reovirus infection and highlight a potentially conserved immune evasion strategy shared by both RNA and DNA viruses.",
+      "summary_cn": "草鱼呼肠孤病毒（GCRV）感染可同时激活RLRs和cGAS-STING信号通路，后者通过感知线粒体DNA胞质释放发挥抗病毒作用。病毒非结构蛋白NS26劫持自噬受体Tollip和Parkin，经自噬-溶酶体途径降解cGAS和STING，从而逃逸宿主抗病毒免疫。该研究揭示了dsRNA鱼源呼肠孤病毒利用选择性自噬拮抗cGAS-STING免疫的新机制。",
+      "url": "https://doi.org/10.1186/s12964-026-03240-0",
+      "source": "crossref",
+      "keywords_matched": "fish population",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1007/s11694-026-04950-2",
+      "title": "Development and validation of a reversed-phase high-performance liquid chromatography method for simultaneous quantification of eicosapentaenoic acid and docosahexaenoic acid in their ethyl ester form from oral fish oil emulsion",
+      "authors": "Kulkarni, Anup; Gharge, Vikram; Gawade, Ashwini",
+      "journal": "Journal of Food Measurement and Characterization",
+      "date": "2026-10-03",
+      "abstract": "",
+      "summary_cn": "建立了反相高效液相色谱（RP-HPLC）方法，用于同时定量口服鱼油乳剂中二十碳五烯酸（EPA）和二十二碳六烯酸（DHA）的乙酯形式，并完成方法学验证。",
+      "url": "https://doi.org/10.1007/s11694-026-04950-2",
+      "source": "crossref",
+      "keywords_matched": "fish population",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1007/s10499-026-02690-0",
+      "title": "The beneficial effects of nanoparticles loaded with plant essential oils on growth performance, immunity, health status, and bacterial pathogens in sustainable fish farming: a comprehensive review",
+      "authors": "Shukry, Mustafa; Elshopakey, Gehad E.; Shosha, Amany M.; Mostafa, Ahmed E. A.; Albokhadaim, Ibrahim; Alhojaily, Samir; Alameen, Ahmed O.; Elbahnaswy, Samia",
+      "journal": "Aquaculture International",
+      "date": "2026-10-03",
+      "abstract": "",
+      "summary_cn": "该综述系统梳理了负载植物精油的纳米颗粒在可持续水产养殖中的应用，重点评估其对鱼类生长性能、免疫力、健康状况及细菌性病原体的影响。文章综合分析了纳米载体提升精油稳定性与生物利用度的机制，及其作为抗生素替代品防控细菌性疾病的潜力。",
+      "url": "https://doi.org/10.1007/s10499-026-02690-0",
+      "source": "crossref",
+      "keywords_matched": "fish stock",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1007/s10750-026-06399-2",
+      "title": "Fish fauna indicators of the Rome marine protected area (Western Mediterranean Sea): shallow rocky banks as conservation priorities",
+      "authors": "Desiderà, Elena; Secco, Silvia; Bava, Simone; Casoli, Edoardo; Di Blasi, Davide; Guidetti, Marta; Mirasole, Alice; Palazzo, Luca; Guidetti, Paolo",
+      "journal": "Hydrobiologia",
+      "date": "2026-10-03",
+      "abstract": "",
+      "summary_cn": "该研究以罗马 MPA（西地中海）为对象，基于鱼类群落指标评估其保护成效，并识别浅水岩礁滩作为保护优先区域。",
+      "url": "https://doi.org/10.1007/s10750-026-06399-2",
+      "source": "crossref",
+      "keywords_matched": "fish stock",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1111/vop.70277",
+      "title": "Standardized Ophthalmic Examination Protocol For Fish Developed During Assessment of 274 Eyes in Rockfish (Family Sebastidae)",
+      "authors": "White, Clara R.; Bliss, Cassandra D.; Miller‐Morgan, Timothy J.; Babbidge, Abigail",
+      "journal": "Veterinary Ophthalmology",
+      "date": "2026-10-03",
+      "abstract": "ABSTRACT Objective To develop and evaluate a practical, standardized ophthalmic examination protocol for teleost fish using captive rockfish (Family Sebastidae) as a pilot population. Methods One hundred twenty‐seven captive rockfish housed at Hatfield Marine Science Center and 11 newly acquired rockfish at the Oregon Coast Aquarium, representing 9 Sebastes and 1 Sebastolobus species. A total of 138 ophthalmic examinations (274 eyes) were performed. Ophthalmic examinations were conducted concurrently with routine health assessments over an 8‐month period. Examinations included photodocumentation, slit‐lamp biomicroscopy, indirect ophthalmoscopy, rebound tonometry, ocular ultrasonography, pachymetry, corneal diameter measurements, and collection of biometric data (body length and weight). Diagnostic feasibility, reproducibility, and workflow efficiency were evaluated. Statistical analyses assessed relationships between ocular measurements and biometric variables. Results A Standardized Ophthalmic Examination Protocol for Fish (SOEP‐F) was developed that enabled collection of 22 discrete ocular and biometric data points in &lt; 3 min per fish. Certain ultrasonographic measurements (e.g., choroidal thickness) were excluded due to poor reproducibility, whereas pachymetry provided consistent corneal thickness measurements. In juvenile copper rockfish, a strong positive correlation was identified between body length and corneal diameter. Mean IOP values did not differ significantly between eyes, and dorsal corneal quadrant measurements demonstrated the lowest variability. The protocol was integrated into routine physical examinations without increasing anesthetic risk. Conclusions The SOEP‐F provides a practical framework applicable to clinical and research settings in teleost fish. Clinical Relevance Standardized ophthalmic examination protocols in teleost fish may improve diagnostic consistency, facilitate multicenter data sharing, and support the development of species‐specific reference values.",
+      "summary_cn": "研究以圈养岩鱼（Sebastidae科，9种Sebastes及1种Sebastolobus）为对象，在8个月内完成138次眼科检查（274只眼），旨在建立适用于硬骨鱼类的标准化眼科检查方案（SOEP-F）。该方案可在3分钟内采集22项眼部及生物计量数据，其中pachymetry测量角膜厚度可重复性良好，而部分超声测量（如脉络膜厚度）因重复性差被剔除；幼年铜岩鱼体长与角膜直径呈强正相关，双眼IOP无显著差异，背侧角膜象限测量变异性最低。SOEP-F可整合入常规体检而不增加麻醉风险，有助于提升诊断一致性、促进多中心数据共享及物种特异性参考值建立。",
+      "url": "https://doi.org/10.1111/vop.70277",
+      "source": "crossref",
+      "keywords_matched": "fish stock",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1007/s10452-026-10360-9",
+      "title": "Anthropogenic disturbance drives compositional and structural shifts in cerrado stream fish assemblages",
+      "authors": "Sulzbacher, Rosalva; Benone, Naraiana Loureiro; Salvador, Gilberto Nepomuceno; Alves, Carlos Bernardo Mascarenhas; Formagio, Paulo Sérgio; Pompeu, Paulo Santos",
+      "journal": "Aquatic Ecology",
+      "date": "2026-10-03",
+      "abstract": "Abstract Currently, one of the main threats to freshwater ecosystems is the conversion of natural areas into croplands, pastures, and urban landscapes. Therefore, understanding how fish assemblages respond to gradients of land use related anthropogenic disturbance is essential. This study aimed to assess shifts in species composition and structure across a stream disturbance gradient, and to examine the association of rare and non-native species with each disturbance level. We evaluated 40 tributary streams of the Upper Grande River (Paraná Basin), ranked according to the Integrated Disturbance Index (IDI), which was calculated based on human modifications on multiple scales. Species composition and structure differed between least and most disturbed streams, with no significant differences involving intermediate streams. Rare and native species prevailed in least disturbed sites, whereas tolerant and non-native species were indicators of most disturbed ones. Our findings demonstrate that stream fish assemblages are sensitive to disturbance intensity. Least-disturbed streams may serve as sources for recolonization if impacts are mitigated and connectivity restored, providing baselines for ecological assessments in highly modified landscapes lacking pristine conditions.",
+      "summary_cn": "本研究旨在评估土地利用相关人为干扰梯度下溪流鱼类群落的物种组成与结构变化，并分析稀有物种与外来物种在各干扰等级中的分布特征。以Paraná Basin上游Grande River的40条支流为对象，基于多尺度人类改造构建的综合干扰指数（IDI）进行排序。结果显示，低干扰与高干扰溪流间鱼类组成和结构差异显著，稀有及本地物种集中于低干扰溪流，而耐污种和外来种为高干扰溪流的指示种。低干扰溪流可作为恢复连通性后的再定殖源，为高度改造景观中的生态评估提供基线参照。",
+      "url": "https://doi.org/10.1007/s10452-026-10360-9",
+      "source": "crossref",
+      "keywords_matched": "fish stock",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1021/acsomega.6c09378",
+      "title": "Evaluating Kelp\nFeedstock for Alginate-Based Materials:\nPhysicochemical Characterization of Sodium Alginate and Aquaculture\nConsiderations",
+      "authors": "Smith, Hayley A.; Graham, Crystal A.; Wheeler, Mikhailey D.; Kozak, Christopher M.; Buckley, Heather L.",
+      "journal": "ACS Omega",
+      "date": "2026-10-03",
+      "abstract": "Abstract Cultivated kelps are a scalable marine feedstock for renewable polymers, but regional aquaculture supply chains lack engineering benchmarks for the alginate yield and quality. Here, we apply a lower-hazard citrate-based process to quantify bioplastics-relevant alginate metrics across cultivated northeast Pacific kelps from commercial farms in British Columbia (Canada) and Alaska (USA). Ten blade biomass samples spanning five species were screened. Two samples failed to undergo phase separation after extraction and centrifugation, indicating biomass-dependent extractability as a process risk. For the remaining eight feedstocks, yields ranged from 11.95 to 26.11% (dry weight). Weight-average molar mass (Mw) ranged from 36.6 to 623 kDa, with 7/8 samples exceeding 400 kDa. Uronic acid composition spanned M/G = 0.14–1.38, with variation in G/M block compositions (block fractions and block lengths) relevant to cross-linking. Multivariate analysis resolved dominant gradients linking the uronic acid composition and molar mass distributions. The studied kelps were evaluated in the context of known seasonal, tissue-specific, and environment-driven effects and climate-related stressors that can alter productivity. Collectively, these results provide a regional benchmark for lower hazard alginate production from cultivated kelps and an engineering screening framework to support consistent feedstock selection for scalable manufacturing of alginate-based films, coatings, and related bio-based materials.",
+      "summary_cn": "研究以加拿大不列颠哥伦比亚和美国阿拉斯加商业养殖的东北太平洋海带为原料，采用低危害柠檬酸工艺评估其作为藻酸盐生物塑料原料的提取率与品质。10份海带叶片样品（涵盖5个物种）中2份提取后无法相分离，其余8份藻酸盐产率为11.95%–26.11%（干重），重均分子量（Mw）为36.6–623 kDa（7/8超过400 kDa），糖醛酸组成M/G为0.14–1.38。多变量分析揭示了糖醛酸组成与分子量分布的主导梯度，为养殖海带藻酸盐原料的工程化筛选和规模化生产提供了区域基准。",
+      "url": "https://doi.org/10.1021/acsomega.6c09378",
+      "source": "crossref",
+      "keywords_matched": "aquaculture",
+      "high_impact": false
+    },
+    {
+      "doi": "10.9734/jsrr/2026/v32i104568",
+      "title": "Selection of Aeration Systems for Aquaculture Based on Oxygen Transfer Efficiency, Pond Size and Economic Performance",
+      "authors": "Tandel, Mayur; Nikhil, A. N.; Tandel, Bhavika; Tandel, Mitul; Janbandhu, Shubham; Tembhurne, Meena Charandas",
+      "journal": "Journal of Scientific Research and Reports",
+      "date": "2026-10-03",
+      "abstract": "Aeration is a component of intensive aquaculture because dissolved oxygen influences fish respiration, metabolism, feeding, growth, survival, and water quality. However, selection of an appropriate aerator requires consideration of oxygen-transfer performance, pond volume, energy consumption, capital cost, maintenance, and operating conditions. The present paper reviews and compares aeration systems used in aquaculture, with particular emphasis on standard oxygen transfer rate (SOTR), standard aeration efficiency (SAE), oxygen transfer characteristics, cost, and suitability for different pond sizes. The objective of this review is to identify an efficient aeration system according to pond size, water volume and biomass. Findings indicate substantial variation among paddle-wheel, propeller-aspirator, diffused-air, spiral, cascade, and perforated-tray aerators. Gravity-based cascade and perforated-tray systems offer simple construction and effective oxygen transfer and are particularly relevant to smaller culture systems. Circular stepped cascade and pooled circular stepped cascade aerators have been reported as economical options for ponds below 1,000 m³, while paddle-wheel aerators, particularly 1- and 2-HP units, provide higher oxygen-transfer capacity and water circulation and are more suitable for ponds exceeding 5,000 m³. Perforated-tray and gravity aerators also demonstrate potential where low complexity and energy-efficient operation are desired. Overall, aerator selection should match oxygen demand, pond size, biomass, culture intensity, and economic constraints rather than relying solely on oxygen-transfer efficiency. This approach can improve aeration effectiveness and economic sustainability. From 1984 to 2024, many researchers investigated the development of efficient aeration systems; more than twenty-five articles were reviewed in preparing this article.",
+      "summary_cn": "本文综述并比较了水产养殖中各类增氧系统，重点分析标准氧转移率（SOTR）、标准增氧效率（SAE）、成本及对不同池塘规模的适用性，旨在依据池塘大小、水体体积和生物量筛选高效增氧方案。结果表明，叶轮式、螺旋桨-射流式、扩散式、螺旋式、跌水式和穿孔盘式增氧机性能差异显著：跌水式和穿孔盘式结构简单、增氧有效，适合小型养殖系统；圆形阶梯跌水及组合式跌水增氧机在1000 m³以下池塘中经济性较好；叶轮式增氧机（尤其1–2 HP机型）氧转移能力和水体循环能力更强，更适合5000 m³以上池塘。增氧机选型应综合匹配氧需求、池塘规模、生物量、养殖强度和经济约束，而非仅依据氧转移效率。",
+      "url": "https://doi.org/10.9734/jsrr/2026/v32i104568",
+      "source": "crossref",
+      "keywords_matched": "aquaculture",
+      "high_impact": false
+    },
+    {
+      "doi": "10.9734/ajee/2026/v25i101029",
+      "title": "Shellfish as Bio-indicators of Petroleum-related Pollution in a Tropical Oil-producing Estuarine Ecosystem of the Niger Delta, Nigeria",
+      "authors": "Otiasah, Christian Livingstone; Chukwudi, Ohanuna,; Perron, Sampson, Adonis",
+      "journal": "Asian Journal of Environment &amp; Ecology",
+      "date": "2026-10-03",
+      "abstract": "Petroleum-producing estuaries of the Niger Delta support shellfish harvesting while receiving complex, spatially variable mixtures of hydrocarbons and other contaminants. Shellfish can integrate biologically accessible exposure, but their interpretation is complicated by differences in habitat, taxonomy, physiology and analytical practice. This critical narrative review evaluates the conditions under which shellfish provide reliable evidence of petroleum-related contamination, biological effects and potential dietary exposure. Search-engine-assisted scholarly retrieval, bibliographic verification and thematic appraisal covered literature published from 2000 to 30 July 2026, with emphasis on regional field investigations and experimentally supported mechanisms. The evidence supports sediment-associated periwinkles and locally verified mangrove oysters as complementary sentinel candidates, rather than interchangeable monitors. Niger Delta studies demonstrate hydrocarbon and metal occurrence, heterogeneous tissue burdens and biological disturbance, but frequently provide weaker evidence for source-specific attribution, causal injury or population-level consequences. Apparent disagreements among seafood risk assessments arise partly from different analyte panels, tissue-weight bases, consumption assumptions, treatment of non-detects and interpretation of screening values. Petroleum hydrocarbon totals, individual biochemical responses and tissue-to-sediment ratios cannot independently establish ecological impairment or consumer safety. Recent molecular and rapid-screening approaches improve investigative capacity, although local calibration and independent validation remain necessary. An integrated monitoring framework is proposed that combines taxonomically verified organisms, paired environmental chemistry, exposure and effect measurements, seasonally matched comparisons, and separately conducted dietary assessments. Its central requirement is to preserve distinctions between contaminant detection, source attribution, biological injury, ecological recovery and human exposure. Immediate priorities are harmonised regional sampling, reproducible analytical quality assurance, experimentally validated biomarker panels and transparent reassessment of published risk calculations. Shellfish are defensible bio-indicators when embedded within this chain of evidence; they are not self-sufficient forensic tools or substitutes for representative food-safety surveillance.",
+      "summary_cn": "该综述评估了尼日尔三角洲产油河口区贝类作为石油污染生物指示物的可靠性，基于2000—2026年文献，重点分析区域野外调查与实验机制证据。研究认为，沉积物相关的滨螺和当地验证的红树林牡蛎可作为互补性sentinel物种，而非可互换的监测工具；现有研究虽能证实烃类和金属暴露及生物扰动，但在污染源归因、因果损伤和种群水平效应方面证据不足。作者提出整合监测框架，强调须区分污染物检出、源归因、生物损伤、生态恢复与人体暴露，并优先推进区域采样标准化、分析质量保证和生物标志物验证。",
+      "url": "https://doi.org/10.9734/ajee/2026/v25i101029",
+      "source": "crossref",
+      "keywords_matched": "shellfish aquaculture",
       "high_impact": false
     },
     {
@@ -885,6 +1002,19 @@
       "url": "https://doi.org/10.33256/36.4.261266",
       "source": "crossref",
       "keywords_matched": "fisheries",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1093/gbe/evag246",
+      "title": "Genomic evidence for facultative selfing in the cichlid fish\n                    <i>Cyphotilapia frontosa</i>",
+      "authors": "Uysal, M Efe; Souza-Costa, Daniela; Marks, Allison; Indermaur, Adrian; Gessl, Wolfgang; Salzburger, Walter; Barth, Julia M I",
+      "journal": "Genome Biology and Evolution",
+      "date": "2026-09-30",
+      "abstract": "Abstract Organisms have evolved a remarkable diversity of reproductive strategies in response to environmental variations and selective pressures. Although most vertebrates do reproduce biparentally, rare alternative modes such as selfing (self-fertilization) and different forms of parthenogenesis exist, but remain poorly characterized. Here, we investigated an unusual reproductive event in the normally biparental cichlid fish Cyphotilapia frontosa, in which a female produced offspring in the absence of a male. Using whole-genome sequencing data, we analyzed whether reproduction occurred via selfing or parthenogenesis by comparing patterns of heterozygosity with those from a wild, genetically diverse C. frontosa family collected in Lake Tanganyika and a closely related inbred Ctenochromis benthicola family. The uniparental family exhibited reduced genetic diversity, elevated relatedness, and genome-wide patterns of homozygosity distinct from those expected under parthenogenesis or inbreeding, but consistent with self-fertilization. Our study provides rare genomic evidence of selfing in a vertebrate and suggests that such alternative reproductive modes may be overlooked rather than truly absent. These findings contribute to a broader understanding of how alternative reproductive strategies evolve in vertebrate lineages.",
+      "summary_cn": "对通常行两性生殖的慈鲷科鱼类 *Cyphotilapia frontosa* 中一例雌鱼在无雄鱼条件下产仔的异常生殖事件进行了基因组学分析。通过全基因组测序，将单亲家系的杂合度模式与坦噶尼喀湖野生遗传多样性家系及近交的 *Ctenochromis benthicola* 家系比较，发现该单亲家系遗传多样性降低、亲缘度升高，其全基因组纯合模式区别于 parthenogenesis 或近交预期，而与 self-fertilization 一致。研究提供了脊椎动物中罕见的 selfing 基因组证据，提示此类替代生殖模式可能被忽视而非真正缺失。",
+      "url": "https://doi.org/10.1093/gbe/evag246",
+      "source": "crossref",
+      "keywords_matched": "fish stock",
       "high_impact": false
     },
     {
@@ -3759,126 +3889,22 @@
       "source": "crossref",
       "keywords_matched": "fish ecology",
       "high_impact": false
-    },
-    {
-      "doi": "10.1111/jfb.70654",
-      "title": "The habitat use of ariid catfishes in coral reefs in northeastern\n                    <scp>Brazil</scp>",
-      "authors": "Lima, Romullo Guimarães; Soares, Bruno Eleres; da Silva Pereira, Clecio; Bezerra, Wesley Ruan Fernandes; da Silva, Paloma Rocha; Jesuino, Livian Kertleen Pôrto; dos Santos Gemaque, Mariana Vitória; Soares, Carlos Alberto Cavalcanti; Vendel, Ana Lúcia; Marceniuk, Alexandre P.",
-      "journal": "Journal of Fish Biology",
-      "date": "2026-09-19",
-      "abstract": "Abstract Ariidae species occur across a wide range of habitats from freshwater to fully marine environments and are typically associated with soft‐bottom substrates. However, they are sometimes associated with hard‐bottom substrates such as coral reefs, but such association is poorly documented. This study describes the occurrence and habitat use of six ariid species in the coral reef of Penha Beach, northeastern Brazil. We deployed gill nets monthly alongside the coral reef over a year between 2023 and 2024, and we sampled 256 individuals representing six ariid species. Bagre filamentosus , a marine catfish, was the most abundant species throughout the year. Species composition varied seasonally, and an RDA analysis showed that variation in species abundances was associated with precipitation and air temperature, with Cathorops spixii occurring primarily during the wet season. B. filamentosus and Sciades proops showed male‐biased sex ratios across all seasons (exact binomial tests), and males of B. filamentosus exhibited higher mass gain per unit length during the dry season (t‐test). Diet composition varied among months and according to the species' habitat affinity, although effect sizes were small and seasonal differences were weak. These findings suggest that ariid catfishes use coral reef systems as opportunistic foraging and refuge habitats, with habitat use probably linked to their life cycle and the connections between coral reefs and estuaries.",
-      "summary_cn": "本研究旨在揭示巴西东北部珊瑚礁中海鲶科（Ariidae）鱼类的栖息地利用模式，该类群通常与软底质环境相关，其在硬底质珊瑚礁中的出现记录甚少。作者于2023—2024年在Penha Beach珊瑚礁旁每月布设刺网，共采集6种256尾个体，并结合RDA分析环境因子与物种丰度的关系。结果显示，Bagre filamentosus为全年优势种，群落组成呈季节性变化，与降水量和气温相关；B. filamentosus和Sciades proops各季节均呈雄性偏倚的性比，且前者旱季单位体长增重更高。研究表明，海鲶科鱼类将珊瑚礁作为机会性摄食与庇护栖息地，其栖息地利用可能与生活史及珊瑚礁—河口连通性有关。",
-      "url": "https://doi.org/10.1111/jfb.70654",
-      "source": "crossref",
-      "keywords_matched": "fish habitat",
-      "high_impact": false
-    },
-    {
-      "doi": "10.9734/air/2026/v27i51732",
-      "title": "Nutritional Profiling of Dried Puntius sophore (Hamilton, 1822), a Principal Raw Material for the Traditional Fermented Fish Product Ngari in Manipur, India",
-      "authors": "Bipinchandra, Urikhimbam; Singh, Pebam Bidyananda; Devi, Thounaojam Babina; Meetei, Khangembam Brajamani; Nongmaithem, Bijayalakshmi Devi; Ngangbam, Ajit Kumar",
-      "journal": "Advances in Research",
-      "date": "2026-09-19",
-      "abstract": "The small indigenous fish species Puntius sophore is an important raw material used in the preparation of Ngari, a traditional fermented fish product of Manipur, India. Fresh adult P. sophore were collected from Loktak Lake, Manipur, during August to September 2025 and processed into dried fish for nutritional evaluation. The fish were cleaned, washed, sun-dried, pulverised and stored before laboratory analysis. This study analysed the proximate composition, fatty acid profile and amino acid composition of dried P. sophore to generate baseline information relevant to its use in traditional fermentation. Analyses were performed in triplicate, and the results were expressed as mean±standard deviation. The dried sample had a low moisture content of 3.34±0.12%, indicating effective dehydration. Crude protein and crude fat contents were 40.03±0.24% and 30.15±0.008%, respectively, while ash and carbohydrate contents were 14.42±0.02% and 12.06±0.024%, respectively. Fatty acid analysis showed saturated fatty acids at 13.25±0.04%, monounsaturated fatty acids at 12.66±0.03% and polyunsaturated fatty acids at 4.24±0.016%, with no trans fat detected. Amino acid profiling confirmed the presence of both essential and non-essential amino acids. Glycine (3.14±0.01%), glutamic acid (3.06±0.01%), proline (2.39±0.008%), leucine (2.72±0.03%) and phenylalanine (1.88±0.01%) were the major constituents recorded, whereas histidine and lysine were not detected in the sample. Overall, the findings indicate that dried P. sophore is a protein- and lipid-rich fish material with appreciable ash content and a diverse amino acid profile. The study provides preliminary nutritional data that may support quality assessment of dried fish used for Ngari production and related traditional fermentation systems in Manipur.",
-      "summary_cn": "本研究以印度曼尼普尔邦传统发酵鱼制品Ngari的主要原料——小型本土鱼类Puntius sophore为对象，对其干制品的营养成分进行了评价。测定了样品的近似组成、脂肪酸谱及氨基酸组成，结果显示干鱼水分含量低（3.34%），粗蛋白（40.03%）和粗脂肪（30.15%）含量丰富，灰分14.42%，碳水化合物12.06%；脂肪酸以饱和脂肪酸（13.25%）和单不饱和脂肪酸（12.66%）为主，未检出反式脂肪；氨基酸中以甘氨酸、谷氨酸、脯氨酸、亮氨酸和苯丙氨酸为主要成分，未检出组氨酸和赖氨酸。研究表明干制P. sophore是一种高蛋白、高脂且氨基酸组成多样的鱼类原料，为其作为Ngari发酵原料的质量评价提供了基础营养数据。",
-      "url": "https://doi.org/10.9734/air/2026/v27i51732",
-      "source": "crossref",
-      "keywords_matched": "fish population",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1007/s11160-026-10084-x",
-      "title": "A synthesis of fish life-history parameters in the four largest African Great Lakes",
-      "authors": "Muehl, Madison F.; Ervin, Allegra C.; Olin, Jill A.; Aller, Josephine Y.; Cerrato, Robert M.",
-      "journal": "Reviews in Fish Biology and Fisheries",
-      "date": "2026-09-19",
-      "abstract": "",
-      "summary_cn": "该研究综合整理了非洲四大湖（维多利亚湖、坦噶尼喀湖、马拉维湖和图尔卡纳湖）鱼类的 life-history 参数。",
-      "url": "https://doi.org/10.1007/s11160-026-10084-x",
-      "source": "crossref",
-      "keywords_matched": "fish population",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1007/s10811-026-04014-4",
-      "title": "Correction to: Full life cycle cultivation of three local kelp species (Ecklonia maxima, Laminaria pallida and Macrocystis pyrifera) in an aquaculture setting in Small Bay of Saldanha Bay, South Africa",
-      "authors": "Botes, Lizeth; Schalkwyk, Musadiq; Moosa, Waqeefah",
-      "journal": "Journal of Applied Phycology",
-      "date": "2026-09-19",
-      "abstract": "",
-      "summary_cn": "该文为对南非Saldanha Bay小湾三种本地海带（Ecklonia maxima、Laminaria pallida和Macrocystis pyrifera）水产养殖环境下全生命周期培养研究的更正说明，无摘要可供总结。",
-      "url": "https://doi.org/10.1007/s10811-026-04014-4",
-      "source": "crossref",
-      "keywords_matched": "aquaculture",
-      "high_impact": false
-    },
-    {
-      "doi": "10.65405/pj51wh88",
-      "title": "Determination of Total Mercury in Selected Seafood Samples Using Cold Vapor Atomic Absorption Spectrometry (CVAAS)",
-      "authors": "Omema Khalid Atia; Safa Abd Alwahhab Albakkoush",
-      "journal": "Al-Farooq Journal of Sciences",
-      "date": "2026-09-19",
-      "abstract": "Mercury (Hg) is a persistent environmental contaminant that can accumulate in aquatic organisms and enter the human diet through seafood consumption. Monitoring total mercury concentrations in seafood is therefore important for food-safety assessment and environmental surveillance. This study aimed to determine and compare total mercury concentrations in selected seafood samples, including squid, prawn, fresh fish (mackerel), and canned fish, using cold vapor atomic absorption spectrometry (CVAAS) following microwave-assisted acid digestion. The analytical procedure was also assessed in terms of calibration linearity, recovery, and repeatability. Homogenized seafood samples (approximately 0.20 g) were digested with concentrated nitric acid using a closed-vessel microwave digestion system. Mercury was measured using a NIC RA-3000 Mercury Analyzer, with the standard addition method used to minimize matrix effects. The calibration curves demonstrated good linearity, with coefficients of determination (R²) ranging from 0.9883 to 0.9956. The measured total mercury concentrations were 1.74 ppb in squid, 1.22 ppb in prawn, 5.69 ppb in fresh fish, and 6.92 ppb in canned fish. Recovery values ranged from 65% to 102%, while repeatability assessment for canned fish produced an RSD of 5.57%. Total mercury concentrations varied among the investigated seafood samples, with the highest measured value in canned fish and the lowest in prawn. However, the limited sampling design prevents statistical generalization, and the higher value in canned fish cannot be attributed to canning. Further studies should include larger representative samples, independent biological replicates, comprehensive analytical validation, and mercury speciation to better evaluate contamination and potential dietary exposure.",
-      "summary_cn": "本研究采用微波辅助酸消解结合冷原子吸收光谱法（CVAAS）测定鱿鱼、对虾、鲜鲭鱼和罐头鱼等海产品中的总汞含量，并评估了校准线性、回收率和重复性等分析性能。结果显示，总汞浓度分别为鱿鱼1.74 ppb、对虾1.22 ppb、鲜鱼5.69 ppb、罐头鱼6.92 ppb，回收率为65%~102%，罐头鱼重复性RSD为5.57%。各样品汞含量存在差异，罐头鱼最高、对虾最低，但受限于采样设计，尚不能进行统计推断或归因于罐装工艺，后续需扩大代表性样本并结合汞形态分析以评估膳食暴露风险。",
-      "url": "https://doi.org/10.65405/pj51wh88",
-      "source": "crossref",
-      "keywords_matched": "seafood sustainability",
-      "high_impact": true
-    },
-    {
-      "doi": "10.1007/s10266-026-01551-9",
-      "title": "Synergistic effects of fish scale–derived nanohydroxyapatite and arginine on enamel surface recovery: a multi-modal in vitro analysis",
-      "authors": "Thomas, Nebu George; Oommen, Vimal Thomas; Xavier, Arun Mamachan; Das, Revu; Binsi, P. K.; Vellappally, Sajith; Naik, Sachin; Alfrisany, Najm M.; Mani, Blessy M.; Sunny, Steffy M.",
-      "journal": "Odontology",
-      "date": "2026-09-19",
-      "abstract": "Abstract Dental caries arises from an imbalance between demineralization and remineralization of dental hard tissues, leading to progressive mineral loss and early lesion formation. Fluoride enhances remineralization but mainly affects the enamel surface. Nanohydroxyapatite (n-HA), structurally similar to enamel apatite, may promote mineral deposition, while arginine increases local pH and supports remineralization. This in vitro study evaluated the combined remineralization potential of sustainably sourced, fish scale–derived n-HA and arginine, used alongside fluoride toothpaste, for early enamel lesions using a multimodal analytical approach. Forty human premolars were demineralized for 96 h to produce artificial lesions and randomly allocated into five groups ( n = 8): (1) fluoride toothpaste, (2) 10% n-HA, (3) 10% n-HA + 10% arginine, (4) fluoride toothpaste + 10% n-HA + 10% arginine, and (5) demineralized control. Specimens underwent pH cycling with respective remineralizing slurries for 28 days. Surface changes were evaluated using surface microhardness, scanning electron microscopy (SEM), atomic force microscopy (AFM), and Raman microscopy. The fluoride + n-HA + arginine group showed the greatest increase in microhardness (Vickers Hardness Number [VHN] 367.48 ± 26.95 kgf/mm²), significantly higher than the demineralized control (191.24 ± 13.86; p &lt; 0.001). The n-HA + arginine group also showed a substantial increase in microhardness (319.10 ± 28.75 kgf/mm²). SEM and AFM analyses revealed greater surface smoothing and pore reduction in the combination group compared with fluoride alone, suggesting enhanced surface recovery and mineral deposition. Fish scale–derived n-HA combined with arginine enhances the in vitro remineralization potential of fluoride toothpaste and may represent a promising strategy for managing early enamel lesions. Graphical abstract The combination of fish scale-derived n-HA with arginine increases the enamel surface remineralization capacity of fluoride toothpaste in an in vitro caries model. Forty extracted human premolar teeth were submitted to artificial demineralization and divided into five groups ( n = 8): fluoride toothpaste, 10% n-HA, 10% n-HA + 10% arginine, fluoride toothpaste + 10% n-HA + 10% arginine, and demineralized control. After 28 days of pH cycling, the highest enamel microhardness was achieved by the group treated with fluoride toothpaste + 10% n-HA + 10% arginine (367.48 ± 26.95 VHN) compared with the demineralized control (191.24 ± 13.86 VHN; p &lt; 0.001). The results indicated reduced surface porosity and structural imperfections of the enamel surface along with a homogeneous enamel surface, confirmed by morphological and topographical analysis by SEM and AFM. Abbreviations: n-HA, nanohydroxyapatite; VHN, Vickers hardness number; SEM, scanning electron microscopy; AFM, atomic force microscopy",
-      "summary_cn": "本研究评估鱼鳞来源纳米羟基磷灰石（n-HA）与精氨酸联合氟化物牙膏对早期釉质病变的再矿化效果。采用离体人前磨牙人工脱矿模型，经28天pH循环后通过表面显微硬度、SEM、AFM及拉曼光谱分析。结果显示氟化物+n-HA+精氨酸组显微硬度提升最显著（VHN 367.48 vs 脱矿对照191.24，p<0.001），表面孔隙减少、结构更均匀。鱼鳞来源n-HA与精氨酸可增强氟化物牙膏的再矿化潜力，是早期釉质病变管理的潜在策略。",
-      "url": "https://doi.org/10.1007/s10266-026-01551-9",
-      "source": "crossref",
-      "keywords_matched": "fish population",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1093/jaoacint/qsag087",
-      "title": "Edible Fish as a Source of\n                    <i>Klebsiella pneumoniae</i>\n                    : Incidence, Virulence, Biofilm Formation, Antimicrobial Resistance and Control Strategies",
-      "authors": "Kusunur, Ahamed Basha; Medidi, Prasanna Kumar; Kumar, Sradha Dinesh; Nakka, Alekhya; Chigilipalli, Himabindu; Gattu, Rudrappa; Sivam, Visnuvinayagam; Rangasamy, Anandan; Vaiyapuri, Murugudas; Badireddy, Madhusudana Rao",
-      "journal": "Journal of AOAC International",
-      "date": "2026-09-19",
-      "abstract": "Abstract Background Fish sold in retail markets are prone to contamination with pathogenic bacteria. Investigations on occurrence of Klebsiella pneumoniae, its characterization in seafood are essential for the protection of consumer health. Objective The present study investigated the incidence of K. pneumoniae in fish and characterized their virulence profile, biofilm-forming ability, antimicrobial resistance and their control using water-soluble chitosan and postbiotics. Methods In total, 144 fish and processing water samples from fish retail markets of Visakhapatnam, India were screened for presence of K. pneumoniae using MacConkey agar and amplifying khe gene. Virulence characterization (entB, mrkD, kfu, allS, rmpA, ybtS, iutA) antibiotic susceptibility test (disc diffusion assay against 28 antibiotics) biofilm-forming ability and anti-K. pneumoniae activity of water-soluble chitosan (microtiter plate assay) were studied. Results Eleven fish samples showed presence of K. pneumoniae. All the isolates possessed entB gene, however, 91% of the isolates carried mrkD and kfu genes. Antibiogram studies showed that all isolates were multidrug resistant (MDR), and their Multiple Antibiotic Resistance (MAR) index ranged from 0.19 to 0.39. Resistance genes detected in K. pneumoniae were bla SHV (91%), bla TEM (27%), sul1(18%), tetA (9%), tetD (9%), and catA2 (9%). Majority of K. pneumoniae isolates were moderate biofilm formers (63.6%) and the biofilm-forming ability was potentiated by supplementation with lactose (100%) followed by fructose (90.9%) and ribose (90.9%) sugars. Water-soluble chitosan (1%) showed effective control of all K. pneumoniae. Conclusion The present study showed majority of the K. pneumoniae isolates from seafood were found to be virulent, multidrug-resistant, ESBL producers, and moderate biofilm formers indicating potential health risk to fish consumers. Water-soluble chitosan showed a significant inhibitory effect on growth of all K. pneumoniae isolates. Highlights The detection of virulent and MDR K. pneumoniae in edible fish meat, albeit at a low level, poses a significant threat to consumers.",
-      "summary_cn": "本研究调查了印度Visakhapatnam零售市场鱼类及加工水中Klebsiella pneumoniae的污染情况，通过khe基因扩增确认11份鱼样阳性，并对其毒力基因、生物膜形成能力及耐药谱进行了系统表征。结果显示所有分离株均为MDR，MAR指数0.19~0.39，主要携带bla SHV（91%）和bla TEM（27%）等耐药基因，多数为中等生物膜形成者，且生物膜形成受乳糖等糖类增强。水溶性壳聚糖（1%）对所有分离株均表现出显著抑制效果，提示食用鱼中virulent且MDR的K. pneumoniae对消费者构成潜在健康风险。",
-      "url": "https://doi.org/10.1093/jaoacint/qsag087",
-      "source": "crossref",
-      "keywords_matched": "fish ecology",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1093/iob/obag056",
-      "title": "Functional distinctions in feeding behavior of two herbivorous reef fish lineages",
-      "authors": "Luenenborg, A; Mihalitsis, M; Wainwright, P C",
-      "journal": "Integrative Organismal Biology",
-      "date": "2026-09-19",
-      "abstract": "Abstract Understanding the mechanisms and variation of how herbivorous fishes feed is key to understanding the dynamics of herbivory on coral reefs. In our comparative study of closely related nominally herbivorous fishes, we investigate the use of ten distinct behaviors used to support feeding on algae. We found that species within Siganidae share 5 out of the 10 behaviors with Acanthuridae while also exhibiting two additional family-specific behaviors: presence of nibbling and extra jaw closure. Siganids predominantly use movements of the jaws whereas acanthurids also employ body and head movements while detaching algae from the substrate. A comparison among siganid species revealed an axis of diversity in the frequency and extent of their feeding behaviors, with the main axis of variation being strongly associated with sociality (schooling vs. pairing) and morphology (short-snouted vs. long-snouted). Overall, we show that siganids and acanthurids display distinct behaviors during feeding. Thus, our results suggest potential niche differences between two major groups of herbivorous reef fishes.",
-      "summary_cn": "比较研究揭示了两种主要草食性珊瑚礁鱼类（Siganidae 与 Acanthuridae）在摄食行为上的功能差异。Siganidae 与 Acanthuridae 共享10种摄食行为中的5种，但前者具有啃咬和额外颌闭合两种科特异性行为，且主要依赖颌部运动，而后者还借助身体和头部运动剥离藻类。Siganidae 种间摄食行为频率和程度的变异主要与社群性（群游 vs 成对）和形态（短吻 vs 长吻）相关。结果表明这两大类群存在潜在的生态位分化。",
-      "url": "https://doi.org/10.1093/iob/obag056",
-      "source": "crossref",
-      "keywords_matched": "coral reef fisheries",
-      "high_impact": false
     }
   ],
   "weekly_topics": {
     "2026-W40": {
       "week_key": "2026-W40",
       "week_range": "9月28日—10月4日",
-      "topic": "人工智能与可持续水产养殖研究进展",
-      "keywords": "深度学习(Deep Learning), 可持续水产饲料(Sustainable Aquafeed), 纳米抗菌材料(Nanoparticle Antibacterial), 鱼类性别分化(Sexual Divergence), IUU渔业治理(IUU Fishing Governance), 种群结构(Population Structure), 鱼类免疫应答(Fish Immune Response), 珊瑚礁生态(Coral Reef Ecology)",
+      "topic": "人工智能与纳米技术赋能水产养殖可持续发展",
+      "keywords": "深度学习(Deep Learning), 可持续水产饲料(Sustainable Aquafeed), 纳米颗粒(Nanoparticles), 鱼类免疫(Fish Immunity), 海洋保护区(Marine Protected Area), 种群结构(Population Structure), 水质管理(Water Quality Management), 渔业治理(Fisheries Governance)",
       "article": "## 本周研究概览\n\n本周共收录渔业相关论文10篇，研究方向涵盖水产养殖营养与饲料替代、鱼类寄生虫分类学、鱼类生殖生物学与种群遗传学、渔业可持续性评估、鱼类病毒性疾病防控以及微藻水处理技术等多个领域。整体来看，水产养殖的可持续发展是本周的核心议题，多篇论文围绕饲料替代、天然活性物质应用和水质净化展开研究。与此同时，分类学与生态学基础研究亦有新发现，包括泰国淡水鱼类寄生虫新种和台湾吻虾虎鱼隐存种的描述。研究方法上，稳定同位素分析、中性粒模糊评价框架等新方法的应用值得关注。\n\n## 高影响力期刊亮点\n\n本周暂无发表在Nature、Science、PNAS等上述高影响力期刊上的渔业相关论文。\n\n## 创新性研究\n\n1. **β-myrcene: A nature-identical compound for sustainable aquaculture**（Journal of the World Aquaculture Society）\n该研究提出β-月桂烯（β-myrcene）作为一种天然等同化合物在水产养殖中的可持续应用潜力。其创新之处在于将植物源天然化合物系统引入水产养殖的病害防控与生长促进领域，为减少化学药物依赖提供了新思路，对推动绿色水产养殖具有潜在影响。\n\n2. **Assessing the Sustainability Performance of Fishing Harbors Under Uncertainty: A Gaussian-Neutrosophic Framework**（Sustainable Development）\n该研究首次将高斯中性模糊集（Gaussian-Neutrosophic）框架引入渔港可持续性评估，有效处理了评价过程中的不确定性问题。其方法论创新为渔业基础设施的可持续管理提供了更稳健的决策工具，有望推广至其他渔业管理场景。\n\n3. **A new cryptic species of Rhinogobius from northern Taiwan**（Journal of Fish Biology）\n该研究描述了采自台湾翡翠水库的吻虾虎鱼隐存种——*Rhinogobius feitsuiensis* sp. nov.，并对*R. similis*种复合体内的隐存多样性进行了讨论。隐存种的发现提示该物种复合体的多样性可能被严重低估，对台湾及东亚淡水鱼类生物多样性保护与分类学修订具有重要意义。\n\n4. **Antiviral activity of chlorogenic acid against largemouth bass virus**（Journal of Fish Biology）\n该研究首次系统评估了绿原酸（chlorogenic acid, CGA）对大口黑鲈病毒（LMBV）的体内外抗病毒活性。将天然多酚化合物应用于鱼类病毒病防控，为水产养殖中抗病毒药物的开发提供了候选分子，也为替代传统化学抗病毒策略开辟了新路径。\n\n5. **Identification of Microalgae, Evaluation of Water Purification Efficiency, and Optimization of Large-Scale Production Conditions Based on RAS**（Plants）\n该研究筛选了四种微藻对循环水养殖系统（RAS）废水中氨氮和亚硝态氮的去除能力，并优化了大规模生产条件。其创新在于将微藻水处理与RAS实际工况相结合，为养殖尾水的生物净化提供了可规模化实施的方案。\n\n## 推荐阅读\n\n1. **Antiviral activity of chlorogenic acid against largemouth bass virus (*Micropterus salmoides*) in vitro and in vivo** — 天然化合物抗鱼类病毒的新尝试，体内外实验结合，具有较强的应用转化潜力。\n2. **A new cryptic species of *Rhinogobius* from northern Taiwan, with remarks on the cryptic diversity within the *Rhinogobius similis* species complex** — 隐存种描述对东亚淡水鱼类分类学与保护生物学具有重要参考价值。\n3. **Assessing the Sustainability Performance of Fishing Harbors Under Uncertainty: A Gaussian-Neutrosophic Framework** — 方法论创新突出，为渔业可持续性评估提供了处理不确定性的新工具。\n4. **Ontogenetic and spatial variation in the trophic ecology of the shortfin mako shark (*Isurus oxyrinchus*) in temperate eastern Australia** — 对全球关注度高的濒危鲨鱼物种进行营养生态学分析，数据稀缺区域的研究填补了知识空白。\n5. **β-myrcene: A nature-identical compound for sustainable aquaculture** — 选题契合水产养殖绿色转型趋势，天然等同化合物的应用前景值得关注。",
-      "paper_count": 130,
+      "paper_count": 140,
       "high_impact_count": 31
     },
     "2026-W39": {
       "week_key": "2026-W39",
       "week_range": "9月21日—9月27日",
-      "topic": "水产养殖可持续发展与气候变化应对研究进展",
+      "topic": "水产养殖可持续发展：气候适应、智能技术与生态治理",
       "keywords": "水产养殖(Aquaculture), 气候变化(Climate Change), 可持续渔业(Sustainable Fisheries), 鱼类行为(Fish Behavior), 环境DNA(Environmental DNA), 益生菌(Probiotics), 有害藻华(Harmful Algal Blooms), 遗传多样性(Genetic Diversity)",
       "article": "## 本周研究概览\n\n本周共收录渔业相关论文15篇，研究主题涵盖水产养殖技术优化、渔业资源评估、鱼类生物学与生态学、水产品安全及人工智能应用等多个方向。从期刊分布来看，*Aquaculture, Fish and Fisheries* 和 *Journal of Fish Biology* 各发表3篇，*Problems of Fisheries* 发表4篇，其余散见于 *Aquaculture*、*Microorganisms* 等期刊。整体研究趋势呈现两个特征：一是水产养殖的可持续性议题持续升温，涉及替代蛋白源开发、养殖密度优化和季节特异性饲料设计；二是区域性渔业资源评估与生物学研究仍占重要地位，尤其以俄罗斯和韩国水域的种群研究为代表。\n\n## 高影响力期刊亮点\n\n本周暂无发表在 Nature、Science、PNAS 等上述高影响力期刊上的论文。\n\n## 创新性研究\n\n1. **Responsible AI Guardrails in *Aquaculture, Fish and Fisheries*: Enabling Innovation With Accountability and Integrity** — 该文探讨了在水产养殖与渔业研究中部署负责任人工智能的治理框架，提出在创新与学术诚信之间建立平衡的\"护栏\"机制。这是渔业领域少见的AI伦理与治理讨论，对规范AI辅助研究具有前瞻性意义。\n\n2. **Atlantic salmon (*Salmo salar*) aquaculture in a changing climate: Quantitative insights from industry records and climate projections** — 该研究将产业实际记录与降尺度气候模型相结合，定量评估气候变化对北大西洋鲑养殖的影响。其创新在于利用卫星海表温度数据进行统计降尺度，为养殖业的气候适应性规划提供了可操作的量化依据。\n\n3. **The Pacific seaweed pipefish *Syngnathus schlegeli* exhibits exceptionally high levels of polygynandry among fishes with paternal egg care** — 该研究发现海龙科鱼类 *S. schlegeli* 具有鱼类父系抚育中极为罕见的高水平一雌多雄一雄多雌制（polygynandry），对理解性选择与交配制度演化具有重要意义。\n\n4. **Development of a Multiplex Quantitative PCR Assay for Simultaneous Detection of Multiple *Vibrio* Species in Aquaculture Samples** — 该研究开发了可同时检测多种弧菌的多重qPCR方法，解决了水产养殖中弧菌病原快速诊断的技术瓶颈，对疾病监测和防控具有直接应用价值。\n\n5. **Towards Season-Specific Feeds: Maximising Protein Digestibility and Reducing Waste in Hybrid Abalone Aquaculture** — 该研究提出按季节水温变化设计差异化饲料的策略，以最大化杂交鲍的蛋白质消化率并减少废物排放，体现了精准营养与环境保护相结合的理念。\n\n## 推荐阅读\n\n1. **Atlantic salmon (*Salmo salar*) aquaculture in a changing climate: Quantitative insights from industry records and climate projections** — 将气候模型与产业数据结合，为鲑养殖的气候风险评估提供了方法论范例。\n\n2. **Development of a Multiplex Quantitative PCR Assay for Simultaneous Detection of Multiple *Vibrio* Species in Aquaculture Samples** — 多重qPCR检测方法的开发对水产病害快速诊断具有重要实用价值。\n\n3. **The Pacific seaweed pipefish *Syngnathus schlegeli* exhibits exceptionally high levels of polygynandry among fishes with paternal egg care** — 揭示了鱼类交配制度演化中的极端案例，具有较高的行为生态学理论意义。\n\n4. **Optimizing Culture Density to Balance Seston Transport and Mussel Growth in Gouqi Island Suspended Aquaculture** — 针对筏式贻贝养殖中食物耗竭问题提出密度优化方案，兼顾生态承载力与经济效益。\n\n5. **Evaluating the Processing and Nutrient Digestibility of Defatted *Nannochloropsis* sp. QH25 Co-Product for Sustainable Rainbow Trout Aquaculture Diets** — 评估微藻副产物作为虹鳟饲料替代蛋白源的可行性，对水产饲料可持续转型具有参考价值。",
       "paper_count": 158,
@@ -3887,11 +3913,11 @@
     "2026-W38": {
       "week_key": "2026-W38",
       "week_range": "9月14日—9月20日",
-      "topic": "鱼类生活史与摄食生态及食品安全研究",
-      "keywords": "食性转变(Dietary Shift), 栖息地利用(Habitat Use), 生活史参数(Life-history Parameters), 营养组成(Nutritional Profiling), 海水养殖(Mariculture), 食品安全(Food Safety), 摄食行为(Feeding Behavior), 抗菌耐药(Antimicrobial Resistance)",
+      "topic": "亚洲尖吻鲈个体发育中的形态与食性转变",
+      "keywords": "个体发育(Ontogeny), 食性转变(Dietary Shift), 亚洲尖吻鲈(Asian Seabass), 摄食生态(Feeding Ecology), 形态变化(Morphological Change), 鱼类早期生活史(Early Life History)",
       "article": "## 本周研究概览\n\n本周共收录渔业相关论文1篇，研究方向集中于高原鱼类形态学与物种鉴定。该研究以青藏高原特有的裂腹鱼亚科（Schizothoracinae）为对象，探讨耳石（otolith）形态特征在属级水平上的判别能力。整体来看，本周论文数量较少，研究主题相对单一，反映出该周渔业领域发表活动处于低谷期，但在高原鱼类分类学这一细分方向上仍有一定方法学贡献。\n\n## 高影响力期刊亮点\n\n本周暂无。\n\n## 创新性研究\n\n**Otolith Morphological Characteristics of Major Schizothoracinae Fish Species in Tibet and Genus-Level Morphological Discrimination**（Animals）\n\n该研究的创新点在于将耳石形态学方法系统应用于青藏高原裂腹鱼亚科这一形态高度趋同的类群，尝试解决传统外部形态难以区分近缘属的鉴定难题。裂腹鱼亚科物种多样性丰富但外部形态极为相似，长期以来给分类学和渔业资源调查带来困扰，而耳石作为硬组织具有种属特异性形态，为判别提供了新途径。研究聚焦属级判别而非种级，这一策略在近缘种外部形态趋同、但属间耳石特征可能更稳定的前提下具有合理性，对高原鱼类资源监测和分类实践有潜在应用价值。不过，属级判别能否进一步下推至种级、以及样本量与地理覆盖范围是否充分，仍有待后续研究检验。\n\n## 推荐阅读\n\n1. **Otolith Morphological Characteristics of Major Schizothoracinae Fish Species in Tibet and Genus-Level Morphological Discrimination** — 本周唯一论文，为高原裂腹鱼类耳石形态判别提供了基础数据与方法参考，适合从事高原鱼类分类与资源调查的研究者阅读。",
-      "paper_count": 9,
-      "high_impact_count": 1
+      "paper_count": 1,
+      "high_impact_count": 0
     }
   }
 }
