@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>鱼类基因组保存与杂交及免疫研究进展 — 渔业文献每周速览</title>
+<style>
+:root {
+  --bg: #f7fafc; --bg-card: #ffffff; --text: #2d3748;
+  --text-secondary: #718096; --text-muted: #a0aec0; --border: #e2e8f0;
+  --primary: #2b6cb0; --primary-light: #bee3f8; --primary-dark: #1a365d;
+  --accent: #e76f51; --accent-light: #fed7d7;
+  --teal: #319795; --teal-light: #b2f5ea;
+  --gold: #d69e2e; --gold-light: #fefcbf;
+  --shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.10);
+  --radius: 12px; --radius-sm: 8px;
+}
+[data-theme="dark"] {
+  --bg: #1a202c; --bg-card: #2d3748; --text: #e2e8f0;
+  --text-secondary: #a0aec0; --text-muted: #718096; --border: #4a5568;
+  --primary: #90cdf4; --primary-light: #2a4365; --primary-dark: #bee3f8;
+  --accent: #fc8181; --accent-light: #742a2a;
+  --teal: #81e6d9; --teal-light: #234e52;
+  --gold: #f6e05e; --gold-light: #3d3a1a;
+  --shadow: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.5);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;transition:background 0.3s,color 0.3s}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* === Top Bar === */
+.topbar{background:linear-gradient(135deg,#1a365d,#2b6cb0);color:#fff;padding:0.8rem 1.5rem;display:flex;align-items:center;gap:1rem;position:sticky;top:0;z-index:100}
+.back-btn{color:#fff;font-size:0.95rem;font-weight:600;padding:0.4rem 0.8rem;border-radius:var(--radius-sm);border:1.5px solid rgba(255,255,255,0.3);transition:all 0.2s;white-space:nowrap}
+.back-btn:hover{background:rgba(255,255,255,0.15);text-decoration:none}
+.topbar .title-area{flex:1;min-width:0}
+.topbar .week-range{font-size:0.78rem;opacity:0.8}
+.topbar .week-topic{font-size:1rem;font-weight:700;line-height:1.3}
+.topbar .theme-toggle{padding:0.4rem 0.8rem;border:1.5px solid rgba(255,255,255,0.3);border-radius:var(--radius-sm);background:transparent;color:#fff;cursor:pointer;font-size:0.85rem;transition:all 0.2s;white-space:nowrap}
+.topbar .theme-toggle:hover{background:rgba(255,255,255,0.15)}
+
+.container{max-width:1100px;margin:0 auto;padding:1.5rem}
+
+/* === Article Section === */
+.article-section{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;margin-bottom:1.5rem;box-shadow:var(--shadow)}
+.article-section h2{font-size:1.3rem;color:var(--primary-dark);margin:1.5rem 0 0.75rem;padding-bottom:0.4rem;border-bottom:2px solid var(--primary-light)}
+.article-section h2:first-child{margin-top:0}
+.article-section p{margin-bottom:0.8rem;line-height:1.8;color:var(--text)}
+.article-section strong{color:var(--primary-dark)}
+.article-section ol,.article-section ul{padding-left:1.5rem;margin-bottom:0.8rem}
+.article-section li{margin-bottom:0.5rem;line-height:1.7}
+.article-tag{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-right:0.5rem}
+.tag-overview{background:var(--primary-light);color:var(--primary-dark)}
+.tag-highlight{background:var(--accent-light);color:var(--accent)}
+.tag-innovative{background:var(--gold-light);color:var(--gold)}
+.tag-recommend{background:var(--teal-light);color:var(--teal)}
+
+/* === Stats Row === */
+.stats-row{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.stat-mini{padding:0.5rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-secondary)}
+.stat-mini strong{color:var(--primary);font-size:1.1rem}
+
+/* === Controls === */
+.controls{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.search-box{flex:1;min-width:200px;position:relative}
+.search-box input{width:100%;padding:0.6rem 1rem 0.6rem 2.5rem;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:0.9rem;background:var(--bg-card);color:var(--text);transition:border-color 0.2s}
+.search-box input:focus{outline:none;border-color:var(--primary)}
+.search-box .search-icon{position:absolute;left:0.8rem;top:50%;transform:translateY(-50%);color:var(--text-muted);pointer-events:none}
+
+/* === Paper Grid === */
+.section-title{font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:0.75rem;display:flex;align-items:center;gap:0.5rem}
+.paper-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:0.85rem;margin-bottom:1.5rem}
+.paper-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1.1rem;transition:all 0.25s;display:flex;flex-direction:column;position:relative}
+.paper-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);border-color:var(--primary-light)}
+.paper-card.high-impact{border-left:3px solid var(--accent)}
+.paper-card .hi-badge{position:absolute;top:0.5rem;right:0.5rem;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:10px;background:var(--accent-light);color:var(--accent);font-weight:700}
+.paper-card .journal{font-size:0.78rem;color:var(--teal);font-weight:600;margin-bottom:0.3rem}
+.paper-card .title{font-size:0.95rem;font-weight:700;line-height:1.45;margin-bottom:0.35rem}
+.paper-card .title a{color:var(--text)}
+.paper-card .title a:hover{color:var(--primary);text-decoration:none}
+.paper-card .meta{font-size:0.78rem;color:var(--text-muted);margin-bottom:0.6rem;display:flex;flex-wrap:wrap;gap:0.5rem}
+
+/* Chinese Summary */
+.paper-card .summary-cn{background:linear-gradient(135deg,#fffaf0,#fffff0);border-left:3px solid var(--gold);padding:0.7rem 0.85rem;margin-bottom:0.5rem;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:0.88rem;line-height:1.55;color:#744210}
+[data-theme="dark"] .paper-card .summary-cn{background:linear-gradient(135deg,#3d2e1a,#372a10);color:#fbd38d}
+
+.abstract-toggle{font-size:0.8rem;color:var(--primary);cursor:pointer;font-weight:600;user-select:none;display:inline-flex;align-items:center;gap:0.25rem;padding:0.3rem 0;border:none;background:none}
+.abstract-toggle:hover{color:var(--accent)}
+.abstract-toggle .arrow{transition:transform 0.2s;font-size:0.7rem}
+.abstract-toggle.open .arrow{transform:rotate(90deg)}
+.abstract-content{display:none;font-size:0.82rem;color:var(--text-secondary);line-height:1.55;padding:0.5rem 0;border-top:1px dashed var(--border);margin-top:0.4rem}
+.abstract-content.visible{display:block}
+
+.paper-card.hidden{display:none}
+.no-results{display:none;text-align:center;padding:2rem;color:var(--text-muted)}
+.no-results.visible{display:block}
+
+@media(max-width:768px){.paper-grid{grid-template-columns:1fr}.article-section{padding:1.25rem}.topbar{flex-wrap:wrap}.topbar .week-topic{font-size:0.9rem}}
+
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.paper-card{animation:fadeIn 0.4s ease-out}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="back-btn" href="index.html">← 返回主页</a>
+  <div class="title-area">
+    <div class="week-range">10月12日—10月12日</div>
+    <div class="week-topic">鱼类基因组保存与杂交及免疫研究进展</div>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <span id="themeIcon">🌙</span> <span id="themeLabel">暗色</span>
+  </button>
+</div>
+
+<div class="container">
+
+  <!-- 深度综述文章 -->
+  
+  <div class="article-section">
+    <h2>本周研究概览</h2>
+
+<p>本周共收录4篇渔业相关论文，全部发表于 *Journal of Fish Biology*，研究方向涵盖分子生态学方法、物种杂交与保护遗传学、气候变化下的鱼类分布变动以及水产养殖免疫机制。整体来看，本周研究呈现出两个鲜明特征：一是方法学导向的研究（如DNA保存方案优化）为后续生态-遗传数据整合提供技术支撑；二是应用导向的研究（如杂交监测、北极鳕鱼分布扩展、细菌感染免疫应答）直接回应保护管理与养殖生产的现实需求。值得注意的是，多篇论文均涉及人为活动（如气候变暖、栖息地改造）对鱼类种群的影响，反映出当前渔业科学对全球变化背景下种群响应机制的高度关注。</p>
+
+<h2>高影响力期刊亮点</h2>
+
+<p>本周暂无发表于 Nature、Science、PNAS、Nature Climate Change、Nature Ecology & Evolution、Nature Sustainability、Nature Communications、Science Advances 等高影响力期刊的渔业相关论文。</p>
+
+<h2>创新性研究</h2>
+
+<ol>
+<li><strong>Active nuclease inhibition over passive freezing secures the genomic archive of fish eye lenses</strong>（*Journal of Fish Biology*）</li>
+</ol>
+<p>该研究的创新点在于系统比较了主动核酸酶抑制与被动冷冻两种策略对鱼眼晶状体基因组DNA保存效果的影响，并首次为这一兼具生态与遗传信息价值的组织提出了标准化保存方案。鱼眼晶状体可提供个体生活史的时间序列档案，但死后核酸酶降解长期制约着生态与遗传数据的整合。该方法的建立有望推动鱼类个体水平“生态-基因组”联合研究在野外和博物馆样本中的广泛应用。</p>
+
+<ol>
+<li><strong>Widespread hybridization in sympatric populations of allis shad *Alosa alosa* and twaite shad *Alosa fallax*: A transnational perspective for conservation and management</strong>（*Journal of Fish Biology*）</li>
+</ol>
+<p>该研究以跨国尺度揭示了同域分布的西鲱（allis shad）与芬塔西鲱（twaite shad）之间存在广泛的杂交现象，创新性地将杂交格局与人为环境改造联系起来。研究结果对两种鲱鱼的保护单元界定和渔业管理策略提出了直接挑战，提示在制定保护措施时需充分考虑杂交对遗传完整性的潜在侵蚀。</p>
+
+<ol>
+<li><strong>Seasonal presence, movements and behaviour of Atlantic cod (*Gadus morhua*) in Isfjorden, Svalbard</strong>（*Journal of Fish Biology*）</li>
+</ol>
+<p>该研究聚焦北极化（Atlantification）背景下大西洋鳕鱼向斯瓦尔巴群岛峡湾的北向扩张，通过监测其季节性出现、移动和行为模式，提供了 boreal 物种入侵北极生态系统的直接行为学证据。其创新之处在于将气候变化驱动的海洋环境变动与鱼类个体行为响应相衔接，为预测北极渔业资源重组提供了关键基线数据。</p>
+
+<ol>
+<li><strong>Transcriptomic analysis reveals the immune response mechanisms of *Acrossocheilus fasciatus* against *Citrobacter freundii* infection</strong>（*Journal of Fish Biology*）</li>
+</ol>
+<p>该研究结合组织学观察与RNA-seq技术，系统解析了光唇鱼（*Acrossocheilus fasciatus*）肠道和脾脏对弗氏柠檬酸杆菌感染的免疫应答机制。其创新点在于首次为该经济鱼种提供了细菌感染的转录组水平免疫图谱，为水产养殖中该病的防控和抗病育种提供了候选基因资源。</p>
+
+<h2>推荐阅读</h2>
+
+<ol>
+<li><strong>Active nuclease inhibition over passive freezing secures the genomic archive of fish eye lenses</strong> — 为鱼眼晶状体这一特殊组织的DNA保存提供了首个标准化方案，方法学价值突出，值得从事生态-遗传整合研究的学者关注。</li>
+<li><strong>Widespread hybridization in sympatric populations of allis shad *Alosa alosa* and twaite shad *Alosa fallax*: A transnational perspective for conservation and management</strong> — 跨国尺度的杂交监测为鲱鱼保护管理敲响警钟，对保护遗传学和管理实践均有重要参考意义。</li>
+<li><strong>Seasonal presence, movements and behaviour of Atlantic cod (*Gadus morhua*) in Isfjorden, Svalbard</strong> — 提供了北极化背景下鳕鱼北扩的行为学证据，是气候变化与渔业资源变动交叉领域的重要案例。</li>
+<li><strong>Transcriptomic analysis reveals the immune response mechanisms of *Acrossocheilus fasciatus* against *Citrobacter freundii* infection</strong> — 为水产养殖中细菌性疾病防控提供了转录组水平的机制解析和候选基因资源。</li>
+<li><strong>Widespread hybridization in sympatric populations of allis shad *Alosa alosa* and twaite shad *Alosa fallax*: A transnational perspective for conservation and management</strong> — 再次推荐，因其跨国合作框架和明确的保护管理指向，对区域渔业管理具有直接政策意义。</li>
+</ol>
+  </div>
+  
+
+  <!-- 统计 -->
+  <div class="stats-row">
+    <div class="stat-mini">📄 <strong>4</strong> 篇论文</div>
+    <div class="stat-mini">🌟 <strong>0</strong> 篇高影响力期刊</div>
+    <div class="stat-mini">🤖 <strong>4</strong> 篇 AI 中文总结</div>
+    
+    <div class="stat-mini">🏷️ 基因组保存(Genomic Preservation) 杂交保护(Hybridization Conservation) 鱼类免疫(Fish Immunity) 季节洄游(Seasonal Migration) </div>
+    
+  </div>
+
+  <!-- 搜索 -->
+  <div class="controls">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="搜索标题、作者、摘要..." oninput="filterPapers()">
+    </div>
+  </div>
+
+  <div class="no-results" id="noResults">😕 没有匹配的论文</div>
+
+  <!-- 全部论文列表 -->
+  <div class="section-title">📄 本周全部论文（4 篇）</div>
+  <div class="paper-grid">
+    
+    <div class="paper-card"
+         data-title="active nuclease inhibition over passive freezing secures the genomic archive of fish eye lenses"
+         data-authors="klarian, sebastian a.; avendaño‐herrera, ruben; valdes, juan antonio; vargas‐perez, juan; cárcamo, carolina; araya‐león, henry; fernandoy, francisco"
+         data-journal="journal of fish biology"
+         data-abstract="abstract fish eye lenses offer a chronological archive of individual life histories and preserve genomic dna. however, integrating ecological and genetic data is hindered by post‐mortem nuclease degradation, and standardized dna preservation protocols for this tissue remain undefined. we evaluated chemical and thermal preservation methods to maximize dna yield and integrity from fish lenses. using a paired experimental design across three marine species, we demonstrate that chemical stabilization with trizol yields significantly higher dna quantities (2654.7 ± 331.5 ng) than ultra‐low temperature freezing at −80°c (1425.4 ± 866.6 ng) or standard freezing at −20°c. trizol denatures endogenous nucleases upon contact, preventing the enzymatic fragmentation associated with passive freezing. this optimized protocol establishes a methodological standard for eco‐isotopic genomics, enabling the direct coupling of phenotypic chronologies with genotypes to assess marine population resilience."
+         data-summary="研究旨在解决鱼眼晶状体死后核酸酶降解阻碍生态与遗传数据整合的问题，比较化学与低温保存方法对dna产量和完整性的影响。以三种海洋鱼类进行配对实验，发现trizol化学稳定法提取的dna量（2654.7 ± 331.5 ng）显著高于−80°c超低温冷冻（1425.4 ± 866.6 ng）和−20°c常规冷冻。trizol通过接触变性内源性核酸酶，防止被动冷冻导致的酶切片段化，为生态同位素基因组学建立了方法学标准，有助于将表型时间序列与基因型直接耦合以评估海洋种群恢复力。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 研究旨在解决鱼眼晶状体死后核酸酶降解阻碍生态与遗传数据整合的问题，比较化学与低温保存方法对DNA产量和完整性的影响。以三种海洋鱼类进行配对实验，发现TRIzol化学稳定法提取的DNA量（2654.7 ± 331.5 ng）显著高于−80°C超低温冷冻（1425.4 ± 866.6 ng）和−20°C常规冷冻。TRIzol通过接触变性内源性核酸酶，防止被动冷冻导致的酶切片段化，为生态同位素基因组学建立了方法学标准，有助于将表型时间序列与基因型直接耦合以评估海洋种群恢复力。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70679" target="_blank" rel="noopener">Active nuclease inhibition over passive freezing secures the genomic archive of fish eye lenses</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Klarian, Sebastian A.; Avendaño‐Herrera, Ruben; Valdes, Juan...</span>
+        
+        <span>📅 2026-10-12</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract Fish eye lenses offer a chronological archive of individual life histories and preserve genomic DNA. However, integrating ecological and genetic data is hindered by post‐mortem nuclease degradation, and standardized DNA preservation protocols for this tissue remain undefined. We evaluated chemical and thermal preservation methods to maximize DNA yield and integrity from fish lenses. Using a paired experimental design across three marine species, we demonstrate that chemical stabilization with TRIzol yields significantly higher DNA quantities (2654.7 ± 331.5 ng) than ultra‐low temperature freezing at −80°C (1425.4 ± 866.6 ng) or standard freezing at −20°C. TRIzol denatures endogenous nucleases upon contact, preventing the enzymatic fragmentation associated with passive freezing. This optimized protocol establishes a methodological standard for eco‐isotopic genomics, enabling the direct coupling of phenotypic chronologies with genotypes to assess marine population resilience.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="widespread hybridization in sympatric populations of allis shad
+                    <i>alosa alosa</i>
+                    (l.1758) and twaite shad
+                    <i>alosa fallax</i>
+                    (lacépède 1803): a transnational perspective for conservation and management"
+         data-authors="belo, ana f.; lepais, olivier; mateus, catarina s.; quintella, bernardo r.; almeida, pedro r.; nachón, david j.; o'leary, ciara; roche, william; lassalle, géraldine; lambert, patrick"
+         data-journal="journal of fish biology"
+         data-abstract="abstract the dynamics of hybridization between co‐occurring species in environments that have been modified by anthropogenic activities are important for generating new understandings of how species respond to disturbance and to support conservation management. accordingly, the patterns of hybridization between anadromous allis shad alosa alosa (l.1758) and twaite shad alosa fallax (lacépède 1803) were investigated, where these species historically co‐occurred across rivers in europe. genetic and meristic data from 1102 individuals sampled at 24 coastal and riverine sites revealed hybridization occurred across their overlapping atlantic range, with hybrids detected in all regions, including both first‐generation and later‐generation crosses, with prevalence and hybrid class distribution varying geographically. four main hybridization patterns were identified, shaped by local species composition, spawning behaviour and habitat connectivity. gill raker counts reliably distinguished parental species and f1 hybrids, but not later‐generation hybrids. fork length, gill raker number and body condition differed between species and sexes, and were influenced by regional and habitat context. intermediate traits in hybrids suggest potential ecological distinctiveness. straying by a. alosa into catchments dominated by a. fallax likely promotes repeated hybridization and introgression. it is suggested that hybridization in this species complex is not solely a by‐product of anthropogenic disturbance but may also reflect adaptive processes enhancing population resilience and colonization capacity. conservation and management frameworks should thus account for hybrids as a dynamic and functionally relevant component of alosa spp. populations, and consider phenotypic thresholds (e.g. size) for improved identification and protection in the field."
+         data-summary="研究旨在揭示同域分布的西鲱（alosa alosa）与芬塔西鲱（alosa fallax）在欧洲重叠分布区的杂交格局，基于24个沿海及河流站点1102个个体的遗传与形态计数数据进行分析。结果显示杂交在整个大西洋分布区普遍存在，涵盖f1及后代杂交个体，其分布受本地物种组成、产卵行为和栖息地连通性影响，呈现四种主要杂交模式。鳃耙计数可可靠区分亲本与f1，但无法识别后代杂交个体；杂交个体表型居中，可能具有独特生态位。研究认为该杂交并非单纯人为干扰的副产物，可能具有适应性意义，建议保护管理中将杂交个体视为alosa属种群的动态功能组分。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 研究旨在揭示同域分布的西鲱（Alosa alosa）与芬塔西鲱（Alosa fallax）在欧洲重叠分布区的杂交格局，基于24个沿海及河流站点1102个个体的遗传与形态计数数据进行分析。结果显示杂交在整个大西洋分布区普遍存在，涵盖F1及后代杂交个体，其分布受本地物种组成、产卵行为和栖息地连通性影响，呈现四种主要杂交模式。鳃耙计数可可靠区分亲本与F1，但无法识别后代杂交个体；杂交个体表型居中，可能具有独特生态位。研究认为该杂交并非单纯人为干扰的副产物，可能具有适应性意义，建议保护管理中将杂交个体视为Alosa属种群的动态功能组分。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70600" target="_blank" rel="noopener">Widespread hybridization in sympatric populations of allis shad
+                    <i>Alosa alosa</i>
+                    (L.1758) and twaite shad
+                    <i>Alosa fallax</i>
+                    (Lacépède 1803): A transnational perspective for conservation and management</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Belo, Ana F.; Lepais, Olivier; Mateus, Catarina S.; Quintell...</span>
+        
+        <span>📅 2026-10-12</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract The dynamics of hybridization between co‐occurring species in environments that have been modified by anthropogenic activities are important for generating new understandings of how species respond to disturbance and to support conservation management. Accordingly, the patterns of hybridization between anadromous allis shad Alosa alosa (L.1758) and twaite shad Alosa fallax (Lacépède 1803) were investigated, where these species historically co‐occurred across rivers in Europe. Genetic and meristic data from 1102 individuals sampled at 24 coastal and riverine sites revealed hybridization occurred across their overlapping Atlantic range, with hybrids detected in all regions, including both first‐generation and later‐generation crosses, with prevalence and hybrid class distribution varying geographically. Four main hybridization patterns were identified, shaped by local species composition, spawning behaviour and habitat connectivity. Gill raker counts reliably distinguished parental species and F1 hybrids, but not later‐generation hybrids. Fork length, gill raker number and body condition differed between species and sexes, and were influenced by regional and habitat context. Intermediate traits in hybrids suggest potential ecological distinctiveness. Straying by A. alosa into catchments dominated by A. fallax likely promotes repeated hybridization and introgression. It is suggested that hybridization in this species complex is not solely a by‐product of anthropogenic disturbance but may also reflect adaptive processes enhancing population resilience and colonization capacity. Conservation and management frameworks should thus account for hybrids as a dynamic and functionally relevant component of Alosa spp. populations, and consider phenotypic thresholds (e.g. size) for improved identification and protection in the field.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="seasonal presence, movements and behaviour of atlantic cod (
+                    <i>gadus morhua</i>
+                    ) in isfjorden, svalbard"
+         data-authors="oddekalv, mathilde; berhe, saron; beumer, larissa t.; dahlmo, lotte s.; velle, gaute; haraldstad, tormod; hoff, siv nam khang; jentoft, sissel; vollset, knut wiik; lennox, robert j."
+         data-journal="journal of fish biology"
+         data-abstract="abstract atlantification is increasing the inflow of warm, salty atlantic water into the arctic region. the fjords on the western coast of svalbard are experiencing atlantification, enabling boreal species, such as atlantic cod ( gadus morhua ), to expand their distribution northwards. monitoring the seasonal occurrence and behaviour of species like atlantic cod in arctic fjords is therefore key for understanding how ocean warming may restructure arctic ecosystems and affect native prey species like polar cod ( boreogadus saida ), supporting improved management under climate change. by using acoustic telemetry, this study investigated the seasonal presence and movement patterns of 27 atlantic cod in isfjorden, svalbard, over the course of 1 year, from august 2023 to august 2024. atlantic cod showed seasonal changes in vertical distribution in isfjorden, occurring at greater depths during winter and closer to the surface during summer. their occurrence was also more frequent along the shoreline of the fjord. furthermore, we observed that some of the atlantic cod left the fjord during the winter months, and few individuals were observed returning, suggesting seasonal use of the fjord. genomic analyses suggest that the atlantic cod sampled include specimens that are genetically more similar to the non‐migratory norwegian coastal cod as well as individuals that display genetic signals characteristic for the well‐known migratory northeast arctic cod. remarkably, 2 years after tagging, one of the specimens, displaying a genomic signal most often associated with the non‐migratory coastal cod, was caught in lofoten. our findings highlight the potential shift in movement patterns and usage of isfjorden as a habitat for the iconic migratory ecotype in recent years, but they underscore the need for further studies to illuminate the coupling of the genomic characteristics and their altered migratory behaviour. finally, our study exemplifies how climate change is reshaping arctic food webs."
+         data-summary="本研究利用声学遥测技术，对斯瓦尔巴isfjorden的27尾大西洋鳕（gadus morhua）进行了为期一年（2023年8月至2024年8月）的季节性存在与移动模式监测，旨在评估北极峡湾增暖（atlantification）背景下该物种的分布扩张及其对北极生态系统的潜在影响。结果显示，鳕鱼冬季分布于较深水层、夏季靠近表层，且更多出现在峡湾岸线附近；部分个体冬季离开峡湾且极少返回，表明其对峡湾的季节性利用。基因组分析显示样本中兼有类似非洄游性挪威沿岸鳕和洄游性东北北极鳕的遗传信号，其中一尾标记2年后在lofoten被捕获，提示isfjorden作为洄游生态型栖息地的利用模式可能正在发生转变。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究利用声学遥测技术，对斯瓦尔巴Isfjorden的27尾大西洋鳕（Gadus morhua）进行了为期一年（2023年8月至2024年8月）的季节性存在与移动模式监测，旨在评估北极峡湾增暖（Atlantification）背景下该物种的分布扩张及其对北极生态系统的潜在影响。结果显示，鳕鱼冬季分布于较深水层、夏季靠近表层，且更多出现在峡湾岸线附近；部分个体冬季离开峡湾且极少返回，表明其对峡湾的季节性利用。基因组分析显示样本中兼有类似非洄游性挪威沿岸鳕和洄游性东北北极鳕的遗传信号，其中一尾标记2年后在Lofoten被捕获，提示Isfjorden作为洄游生态型栖息地的利用模式可能正在发生转变。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70681" target="_blank" rel="noopener">Seasonal presence, movements and behaviour of Atlantic cod (
+                    <i>Gadus morhua</i>
+                    ) in Isfjorden, Svalbard</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Oddekalv, Mathilde; Berhe, Saron; Beumer, Larissa T.; Dahlmo...</span>
+        
+        <span>📅 2026-10-12</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract Atlantification is increasing the inflow of warm, salty Atlantic water into the Arctic region. The fjords on the western coast of Svalbard are experiencing Atlantification, enabling boreal species, such as Atlantic cod ( Gadus morhua ), to expand their distribution northwards. Monitoring the seasonal occurrence and behaviour of species like Atlantic cod in Arctic fjords is therefore key for understanding how ocean warming may restructure Arctic ecosystems and affect native prey species like polar cod ( Boreogadus saida ), supporting improved management under climate change. By using acoustic telemetry, this study investigated the seasonal presence and movement patterns of 27 Atlantic cod in Isfjorden, Svalbard, over the course of 1 year, from August 2023 to August 2024. Atlantic cod showed seasonal changes in vertical distribution in Isfjorden, occurring at greater depths during winter and closer to the surface during summer. Their occurrence was also more frequent along the shoreline of the fjord. Furthermore, we observed that some of the Atlantic cod left the fjord during the winter months, and few individuals were observed returning, suggesting seasonal use of the fjord. Genomic analyses suggest that the Atlantic cod sampled include specimens that are genetically more similar to the non‐migratory Norwegian coastal cod as well as individuals that display genetic signals characteristic for the well‐known migratory Northeast Arctic cod. Remarkably, 2 years after tagging, one of the specimens, displaying a genomic signal most often associated with the non‐migratory coastal cod, was caught in Lofoten. Our findings highlight the potential shift in movement patterns and usage of Isfjorden as a habitat for the iconic migratory ecotype in recent years, but they underscore the need for further studies to illuminate the coupling of the genomic characteristics and their altered migratory behaviour. Finally, our study exemplifies how climate change is reshaping Arctic food webs.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="transcriptomic analysis reveals the immune response mechanisms of
+                    <i>acrossocheilus fasciatus</i>
+                    against
+                    <i>citrobacter freundii</i>
+                    infection"
+         data-authors="wu, zihang; fang, wenbin; huang, renxuan; zheng, shanjian"
+         data-journal="journal of fish biology"
+         data-abstract="abstract acrossocheilus fasciatus is an economically important freshwater fish species in china. in recent years, citrobacter freundii infection has caused significant harm to the aquaculture industry. in this study, we performed histological observation and rna‐seq analysis of the intestines and spleens of control (ck) and c. freundii infected a. fasciatus (eg). the results showed that infected fish exhibited abdominal haemorrhage, intestinal villous shedding, hydropic degeneration of hepatocytes and splenic sinus dilation with congestion. rna‐seq analysis identified 3054 degs in the intestine and 7706 degs in the spleen, with 1247 overlapping degs identified by combined analysis. a substantial portion of these genes clustered within biological activities linked to immunity and metabolic regulation, particularly engaging immune‐related routes such as endoplasmic reticulum‐based protein maturation, alongside the complement system and coagulation signalling cascades. this study systematically reveals the synergy and division of labor between the intestine and spleen during c. freundii infection, providing fundamental data for understanding the immune response mechanisms of a. fasciatus and a theoretical basis for optimising disease prevention and control strategies."
+         data-summary="本研究对感染 citrobacter freundii 的 acrossocheilus fasciatus 肠道和脾脏进行组织学观察与 rna-seq 分析，以揭示其免疫应答机制。感染鱼出现腹部出血、肠绒毛脱落、肝细胞水样变性及脾窦扩张充血等病理变化，肠道和脾脏分别鉴定出3054和7706个degs，其中1247个为重叠基因，主要富集于免疫与代谢调控相关通路，包括内质网蛋白成熟、补体系统和凝血信号级联。研究系统揭示了肠道与脾脏在抗感染过程中的协同分工，为优化疾病防控策略提供了理论基础。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究对感染 Citrobacter freundii 的 Acrossocheilus fasciatus 肠道和脾脏进行组织学观察与 RNA-seq 分析，以揭示其免疫应答机制。感染鱼出现腹部出血、肠绒毛脱落、肝细胞水样变性及脾窦扩张充血等病理变化，肠道和脾脏分别鉴定出3054和7706个DEGs，其中1247个为重叠基因，主要富集于免疫与代谢调控相关通路，包括内质网蛋白成熟、补体系统和凝血信号级联。研究系统揭示了肠道与脾脏在抗感染过程中的协同分工，为优化疾病防控策略提供了理论基础。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70663" target="_blank" rel="noopener">Transcriptomic analysis reveals the immune response mechanisms of
+                    <i>Acrossocheilus fasciatus</i>
+                    against
+                    <i>Citrobacter freundii</i>
+                    infection</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Wu, Zihang; Fang, Wenbin; Huang, Renxuan; Zheng, Shanjian</span>
+        
+        <span>📅 2026-10-12</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract Acrossocheilus fasciatus is an economically important freshwater fish species in China. In recent years, Citrobacter freundii infection has caused significant harm to the aquaculture industry. In this study, we performed histological observation and RNA‐seq analysis of the intestines and spleens of control (CK) and C. freundii infected A. fasciatus (EG). The results showed that infected fish exhibited abdominal haemorrhage, intestinal villous shedding, hydropic degeneration of hepatocytes and splenic sinus dilation with congestion. RNA‐seq analysis identified 3054 DEGs in the intestine and 7706 DEGs in the spleen, with 1247 overlapping DEGs identified by combined analysis. A substantial portion of these genes clustered within biological activities linked to immunity and metabolic regulation, particularly engaging immune‐related routes such as endoplasmic reticulum‐based protein maturation, alongside the complement system and coagulation signalling cascades. This study systematically reveals the synergy and division of labor between the intestine and spleen during C. freundii infection, providing fundamental data for understanding the immune response mechanisms of A. fasciatus and a theoretical basis for optimising disease prevention and control strategies.</div>
+      
+    </div>
+    
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var s=localStorage.getItem('theme');
+  if(s){document.documentElement.setAttribute('data-theme',s);
+  document.getElementById('themeIcon').textContent=s==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=s==='dark'?'亮色':'暗色';}
+})();
+function toggleTheme(){
+  var h=document.documentElement,n=h.getAttribute('data-theme')==='dark'?'light':'dark';
+  h.setAttribute('data-theme',n);
+  document.getElementById('themeIcon').textContent=n==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=n==='dark'?'亮色':'暗色';
+  localStorage.setItem('theme',n);
+}
+function toggleAbstract(b){
+  var c=b.nextElementSibling,v=c.classList.contains('visible');
+  c.classList.toggle('visible');b.classList.toggle('open');
+  b.querySelector('.arrow').textContent=v?'▶':'▼';
+}
+function filterPapers(){
+  var q=(document.getElementById('searchInput').value||'').toLowerCase().trim(),vis=0;
+  document.querySelectorAll('.paper-card').forEach(function(c){
+    var t=[c.getAttribute('data-title')||'',c.getAttribute('data-authors')||'',c.getAttribute('data-journal')||'',c.getAttribute('data-abstract')||'',c.getAttribute('data-summary')||''].join(' ');
+    var s=!q||t.includes(q);c.classList.toggle('hidden',!s);if(s)vis++;
+  });
+  document.getElementById('noResults').classList.toggle('visible',vis===0);
+}
+</script>
+</body>
+</html>
