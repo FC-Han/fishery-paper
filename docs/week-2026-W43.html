@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>海洋热浪与微塑料污染成渔业研究热点 — 渔业文献每周速览</title>
+<style>
+:root {
+  --bg: #f7fafc; --bg-card: #ffffff; --text: #2d3748;
+  --text-secondary: #718096; --text-muted: #a0aec0; --border: #e2e8f0;
+  --primary: #2b6cb0; --primary-light: #bee3f8; --primary-dark: #1a365d;
+  --accent: #e76f51; --accent-light: #fed7d7;
+  --teal: #319795; --teal-light: #b2f5ea;
+  --gold: #d69e2e; --gold-light: #fefcbf;
+  --shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.10);
+  --radius: 12px; --radius-sm: 8px;
+}
+[data-theme="dark"] {
+  --bg: #1a202c; --bg-card: #2d3748; --text: #e2e8f0;
+  --text-secondary: #a0aec0; --text-muted: #718096; --border: #4a5568;
+  --primary: #90cdf4; --primary-light: #2a4365; --primary-dark: #bee3f8;
+  --accent: #fc8181; --accent-light: #742a2a;
+  --teal: #81e6d9; --teal-light: #234e52;
+  --gold: #f6e05e; --gold-light: #3d3a1a;
+  --shadow: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.5);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;transition:background 0.3s,color 0.3s}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* === Top Bar === */
+.topbar{background:linear-gradient(135deg,#1a365d,#2b6cb0);color:#fff;padding:0.8rem 1.5rem;display:flex;align-items:center;gap:1rem;position:sticky;top:0;z-index:100}
+.back-btn{color:#fff;font-size:0.95rem;font-weight:600;padding:0.4rem 0.8rem;border-radius:var(--radius-sm);border:1.5px solid rgba(255,255,255,0.3);transition:all 0.2s;white-space:nowrap}
+.back-btn:hover{background:rgba(255,255,255,0.15);text-decoration:none}
+.topbar .title-area{flex:1;min-width:0}
+.topbar .week-range{font-size:0.78rem;opacity:0.8}
+.topbar .week-topic{font-size:1rem;font-weight:700;line-height:1.3}
+.topbar .theme-toggle{padding:0.4rem 0.8rem;border:1.5px solid rgba(255,255,255,0.3);border-radius:var(--radius-sm);background:transparent;color:#fff;cursor:pointer;font-size:0.85rem;transition:all 0.2s;white-space:nowrap}
+.topbar .theme-toggle:hover{background:rgba(255,255,255,0.15)}
+
+.container{max-width:1100px;margin:0 auto;padding:1.5rem}
+
+/* === Article Section === */
+.article-section{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;margin-bottom:1.5rem;box-shadow:var(--shadow)}
+.article-section h2{font-size:1.3rem;color:var(--primary-dark);margin:1.5rem 0 0.75rem;padding-bottom:0.4rem;border-bottom:2px solid var(--primary-light)}
+.article-section h2:first-child{margin-top:0}
+.article-section p{margin-bottom:0.8rem;line-height:1.8;color:var(--text)}
+.article-section strong{color:var(--primary-dark)}
+.article-section ol,.article-section ul{padding-left:1.5rem;margin-bottom:0.8rem}
+.article-section li{margin-bottom:0.5rem;line-height:1.7}
+.article-tag{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-right:0.5rem}
+.tag-overview{background:var(--primary-light);color:var(--primary-dark)}
+.tag-highlight{background:var(--accent-light);color:var(--accent)}
+.tag-innovative{background:var(--gold-light);color:var(--gold)}
+.tag-recommend{background:var(--teal-light);color:var(--teal)}
+
+/* === Stats Row === */
+.stats-row{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.stat-mini{padding:0.5rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-secondary)}
+.stat-mini strong{color:var(--primary);font-size:1.1rem}
+
+/* === Controls === */
+.controls{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.search-box{flex:1;min-width:200px;position:relative}
+.search-box input{width:100%;padding:0.6rem 1rem 0.6rem 2.5rem;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:0.9rem;background:var(--bg-card);color:var(--text);transition:border-color 0.2s}
+.search-box input:focus{outline:none;border-color:var(--primary)}
+.search-box .search-icon{position:absolute;left:0.8rem;top:50%;transform:translateY(-50%);color:var(--text-muted);pointer-events:none}
+
+/* === Paper Grid === */
+.section-title{font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:0.75rem;display:flex;align-items:center;gap:0.5rem}
+.paper-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:0.85rem;margin-bottom:1.5rem}
+.paper-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1.1rem;transition:all 0.25s;display:flex;flex-direction:column;position:relative}
+.paper-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);border-color:var(--primary-light)}
+.paper-card.high-impact{border-left:3px solid var(--accent)}
+.paper-card .hi-badge{position:absolute;top:0.5rem;right:0.5rem;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:10px;background:var(--accent-light);color:var(--accent);font-weight:700}
+.paper-card .journal{font-size:0.78rem;color:var(--teal);font-weight:600;margin-bottom:0.3rem}
+.paper-card .title{font-size:0.95rem;font-weight:700;line-height:1.45;margin-bottom:0.35rem}
+.paper-card .title a{color:var(--text)}
+.paper-card .title a:hover{color:var(--primary);text-decoration:none}
+.paper-card .meta{font-size:0.78rem;color:var(--text-muted);margin-bottom:0.6rem;display:flex;flex-wrap:wrap;gap:0.5rem}
+
+/* Chinese Summary */
+.paper-card .summary-cn{background:linear-gradient(135deg,#fffaf0,#fffff0);border-left:3px solid var(--gold);padding:0.7rem 0.85rem;margin-bottom:0.5rem;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:0.88rem;line-height:1.55;color:#744210}
+[data-theme="dark"] .paper-card .summary-cn{background:linear-gradient(135deg,#3d2e1a,#372a10);color:#fbd38d}
+
+.abstract-toggle{font-size:0.8rem;color:var(--primary);cursor:pointer;font-weight:600;user-select:none;display:inline-flex;align-items:center;gap:0.25rem;padding:0.3rem 0;border:none;background:none}
+.abstract-toggle:hover{color:var(--accent)}
+.abstract-toggle .arrow{transition:transform 0.2s;font-size:0.7rem}
+.abstract-toggle.open .arrow{transform:rotate(90deg)}
+.abstract-content{display:none;font-size:0.82rem;color:var(--text-secondary);line-height:1.55;padding:0.5rem 0;border-top:1px dashed var(--border);margin-top:0.4rem}
+.abstract-content.visible{display:block}
+
+.paper-card.hidden{display:none}
+.no-results{display:none;text-align:center;padding:2rem;color:var(--text-muted)}
+.no-results.visible{display:block}
+
+@media(max-width:768px){.paper-grid{grid-template-columns:1fr}.article-section{padding:1.25rem}.topbar{flex-wrap:wrap}.topbar .week-topic{font-size:0.9rem}}
+
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.paper-card{animation:fadeIn 0.4s ease-out}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="back-btn" href="index.html">← 返回主页</a>
+  <div class="title-area">
+    <div class="week-range">10月19日—10月20日</div>
+    <div class="week-topic">海洋热浪与微塑料污染成渔业研究热点</div>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <span id="themeIcon">🌙</span> <span id="themeLabel">暗色</span>
+  </button>
+</div>
+
+<div class="container">
+
+  <!-- 深度综述文章 -->
+  
+  <div class="article-section">
+    <h2>本周研究概览</h2>
+
+<p>本周共收录渔业相关论文17篇，研究主题涵盖气候变化对渔业资源的影响、渔业数据整合与种群评估、水产养殖环境效应与病害监测、微塑料污染、鱼类检测技术及渔业社会经济等多个方向。整体来看，本周研究呈现出两个显著趋势：一是气候变化与人类活动对渔业生态系统的复合影响受到持续关注，尤其是海洋热浪引发的生态连锁反应；二是方法学创新突出，包括将渔民知识纳入种群评估、物理信息神经网络用于海洋浮标轨迹预测、以及无酸微波消解等绿色分析化学方法。此外，微塑料污染在水产养殖和海产品中的分布与风险仍是热点议题。</p>
+
+<h2>高影响力期刊亮点</h2>
+
+<p><strong>PNAS</strong> 发表了两篇值得关注的论文。其一，*A Bering Sea marine heatwave triggers unprecedented crab hybridization, challenging fisheries management*，记录了白令海海洋热浪发生7年后出现的意外生态响应——先前未见的蟹类杂交现象，揭示了海洋热浪通过延迟性生态途径产生管理挑战的机制，对渔业资源管理具有重要警示意义。其二，*Biodiversity supports coastal nutrient cycling with a stable source of fish excretion*，探讨了生物多样性对鱼类排泄物养分供给稳定性的支撑作用，为理解生物多样性与生态系统功能的关系提供了新证据。</p>
+
+<p><strong>Communications Sustainability</strong> 刊发了 *Hidden population declines revealed by integrating long-term fisheries data with fishers' knowledge*，该研究将1972–2022年长期渔业统计数据与渔民知识相结合，揭示了"技术蠕变"（technological creep）如何掩盖种群下降并偏倚渔业评估，为改进渔业资源评估方法提供了重要思路。</p>
+
+<h2>创新性研究</h2>
+
+<ol>
+<li><strong>Hidden population declines revealed by integrating long-term fisheries data with fishers' knowledge</strong>（Communications Sustainability）：创新性地将渔民口述知识与长期统计序列整合，弥补了技术采纳历史数据缺失的空白，为纠正技术蠕变导致的评估偏差提供了可操作框架，对数据有限渔业的管理具有广泛借鉴意义。</li>
+</ol>
+
+<ol>
+<li><strong>Physics-informed LSTMNet for short-term marine buoy trajectory prediction under dynamic ocean environmental conditions</strong>（Frontiers in Marine Science）：将物理约束嵌入LSTM网络用于海洋浮标短期轨迹预测，兼顾了数据驱动模型的灵活性与物理规律的一致性，在航行安全与搜救成本降低方面具有应用潜力。</li>
+</ol>
+
+<ol>
+<li><strong>A Greener Acid-free Microwave-Assisted Digestion Method for Multielement Analysis of Fish Tissues by ICP–MS</strong>（ACS Omega）：开发了仅基于H₂O₂的无酸微波消解方法用于鱼组织多元素分析，显著降低了传统酸消解的环境负担和操作风险，为渔业环境监测的绿色分析化学提供了新方案。</li>
+</ol>
+
+<ol>
+<li><strong>SAG-DETR: spatio-spectral adaptive gating with prompt-aware state-space refinement for underwater fish detection</strong>（Aquaculture International）：提出融合空谱自适应门控与提示感知状态空间细化的水下鱼类检测框架，针对水下图像退化问题设计了专门的结构改进，对水产养殖智能化监测具有推进作用。</li>
+</ol>
+
+<ol>
+<li><strong>Management implications of misspecification in observed recreational removals for reef fish and coastal pelagic stocks</strong>（Canadian Journal of Fisheries and Aquatic Sciences）：基于美国东海岸休闲渔业移除量可能被高估30–40%的实证发现，系统评估了观测误差对管理策略的影响，为休闲渔业统计体系改进提供了定量依据。</li>
+</ol>
+
+<h2>推荐阅读</h2>
+
+<ol>
+<li><strong>A Bering Sea marine heatwave triggers unprecedented crab hybridization, challenging fisheries management</strong> — PNAS刊发，首次记录海洋热浪引发的蟹类杂交这一意外生态响应，对渔业管理具有直接警示价值。</li>
+<li><strong>Hidden population declines revealed by integrating long-term fisheries data with fishers' knowledge</strong> — 方法学创新突出，渔民知识与统计数据的整合框架对数据有限渔业评估具有推广意义。</li>
+<li><strong>Biodiversity supports coastal nutrient cycling with a stable source of fish excretion</strong> — PNAS刊发，为生物多样性—生态系统功能关系提供了鱼类排泄物养分供给的新视角。</li>
+<li><strong>Management implications of misspecification in observed recreational removals for reef fish and coastal pelagic stocks</strong> — 定量揭示了休闲渔业统计误差的管理后果，对渔业政策制定有直接参考价值。</li>
+<li><strong>Global, depth-resolved marine fish occurrences from digitized natural history collections</strong> — Scientific Data刊发，提供了全球深度分辨的海洋鱼类 Occurrence 数据集，对宏观生态学与生物地理学研究具有基础数据价值。</li>
+</ol>
+  </div>
+  
+
+  <!-- 统计 -->
+  <div class="stats-row">
+    <div class="stat-mini">📄 <strong>17</strong> 篇论文</div>
+    <div class="stat-mini">🌟 <strong>6</strong> 篇高影响力期刊</div>
+    <div class="stat-mini">🤖 <strong>17</strong> 篇 AI 中文总结</div>
+    
+    <div class="stat-mini">🏷️ 海洋热浪(Marine Heatwave) 种群下降(Population Decline) 微塑料(Microplastics) 水产养殖(Aquaculture) </div>
+    
+  </div>
+
+  <!-- 搜索 -->
+  <div class="controls">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="搜索标题、作者、摘要..." oninput="filterPapers()">
+    </div>
+  </div>
+
+  <div class="no-results" id="noResults">😕 没有匹配的论文</div>
+
+  <!-- 全部论文列表 -->
+  <div class="section-title">📄 本周全部论文（17 篇）</div>
+  <div class="paper-grid">
+    
+    <div class="paper-card"
+         data-title="a greener acid-free
+microwave-assisted digestion method
+for multielement analysis of fish tissues by icp–ms"
+         data-authors="pereira, marcos v. s.; fonseca, elisânia k. b.; de jesus, jemmyson r.; arruda, marco a. z."
+         data-journal="acs omega"
+         data-abstract="abstract trace element monitoring in fish tissues requires reliable and sustainable sample preparation methods, particularly for complex biological matrices. in this study, an acid-free microwave-assisted digestion (afmad) method based exclusively on h2o2 was developed and optimized for multielement determination in fish tissues by icp–ms. a central composite design coupled with response surface methodology was employed to evaluate the influence of h2o2 concentration, ramp time, and digestion temperature on matrix decomposition efficiency using 100 mg of dry fish tissue subsamples throughout the method development. the optimized conditions consisted of 30% (v/v)h2o2, 8 min ramp time, a 20 min hold time and 240 °c, resulting in residual carbon contents below 20%, which indicates efficient oxidation of the organic matrix using h2o2 in the absence of hno3. the analytical performance of the proposed method was evaluated using cod muscle certified reference material (bcr-422), providing recoveries ranging from 76 to 101% for fe, cu, zn, mn, as, and cd. excellent linearity was obtained for all analytes (r2 &amp;gt; 0.990) within the 0–50 μg l–1 range. limits of detection ranged from 0.0004 to 0.04 μg g–1, demonstrating suitable sensitivity for trace elemental analysis in fish matrices. the applicability of the method was demonstrated through the analysis of five commercial fish species collected in the mariana-mg region. concentrations of toxic elements were found in megaleporinus conirostris (cd, 0.003 mg kg–1) and cichla ocellaris (as, 0.07 mg kg–1) and remained below the maximum limits established by brazilian legislation. the proposed afmad method demonstrated satisfactory analytical performance for complex fish matrices while eliminating the use of concentrated mineral acids, reducing hazardous reagent consumption, and improving the sustainability characteristics of sample preparation procedures for elemental analysis."
+         data-summary="研究开发了一种仅以h2o2为试剂的免酸微波消解（afmad）方法，结合icp–ms用于鱼组织多元素分析，并通过中心复合设计优化了h2o2浓度、升温时间和消解温度。优化条件为30%（v/v）h2o2、8 min升温、20 min保持、240 °c，残碳率低于20%，表明无hno3条件下有机基质被有效氧化。以鳕鱼肌肉标准参考物质bcr-422验证，fe、cu、zn、mn、as、cd回收率为76–101%，检出限0.0004–0.04 μg g–1；应用于mariana-mg地区5种商品鱼，有毒元素（megaleporinus conirostris中cd 0.003 mg kg–1、cichla ocellaris中as 0.07 mg kg–1）均低于巴西法规限量。该方法在复杂鱼基质中分析性能良好，避免了浓矿物酸使用，提升了样品制备的可持续性。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 ACS Omega
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 研究开发了一种仅以H2O2为试剂的免酸微波消解（AFMAD）方法，结合ICP–MS用于鱼组织多元素分析，并通过中心复合设计优化了H2O2浓度、升温时间和消解温度。优化条件为30%（v/v）H2O2、8 min升温、20 min保持、240 °C，残碳率低于20%，表明无HNO3条件下有机基质被有效氧化。以鳕鱼肌肉标准参考物质BCR-422验证，Fe、Cu、Zn、Mn、As、Cd回收率为76–101%，检出限0.0004–0.04 μg g–1；应用于Mariana-MG地区5种商品鱼，有毒元素（Megaleporinus conirostris中Cd 0.003 mg kg–1、Cichla ocellaris中As 0.07 mg kg–1）均低于巴西法规限量。该方法在复杂鱼基质中分析性能良好，避免了浓矿物酸使用，提升了样品制备的可持续性。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1021/acsomega.6c08049" target="_blank" rel="noopener">A Greener Acid-free
+Microwave-Assisted Digestion Method
+for Multielement Analysis of Fish Tissues by ICP–MS</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Pereira, Marcos V. S.; Fonseca, Elisânia K. B.; de Jesus, J...</span>
+        
+        <span>📅 2026-10-19</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract Trace element monitoring in fish tissues requires reliable and sustainable sample preparation methods, particularly for complex biological matrices. In this study, an acid-free microwave-assisted digestion (AFMAD) method based exclusively on H2O2 was developed and optimized for multielement determination in fish tissues by ICP–MS. A central composite design coupled with response surface methodology was employed to evaluate the influence of H2O2 concentration, ramp time, and digestion temperature on matrix decomposition efficiency using 100 mg of dry fish tissue subsamples throughout the method development. The optimized conditions consisted of 30% (v/v)H2O2, 8 min ramp time, a 20 min hold time and 240 °C, resulting in residual carbon contents below 20%, which indicates efficient oxidation of the organic matrix using H2O2 in the absence of HNO3. The analytical performance of the proposed method was evaluated using cod muscle certified reference material (BCR-422), providing recoveries ranging from 76 to 101% for Fe, Cu, Zn, Mn, As, and Cd. Excellent linearity was obtained for all analytes (R2 &amp;gt; 0.990) within the 0–50 μg L–1 range. Limits of detection ranged from 0.0004 to 0.04 μg g–1, demonstrating suitable sensitivity for trace elemental analysis in fish matrices. The applicability of the method was demonstrated through the analysis of five commercial fish species collected in the Mariana-MG region. Concentrations of toxic elements were found in Megaleporinus conirostris (Cd, 0.003 mg kg–1) and Cichla ocellaris (As, 0.07 mg kg–1) and remained below the maximum limits established by Brazilian legislation. The proposed AFMAD method demonstrated satisfactory analytical performance for complex fish matrices while eliminating the use of concentrated mineral acids, reducing hazardous reagent consumption, and improving the sustainability characteristics of sample preparation procedures for elemental analysis.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="sag-detr: spatio-spectral adaptive gating with prompt-aware state-space refinement for underwater fish detection"
+         data-authors="li, guoyan; zhang, haochen; mei, yupeng; liu, meng; yang, ling"
+         data-journal="aquaculture international"
+         data-abstract=""
+         data-summary="该研究提出sag-detr模型，用于水下鱼类检测，融合空间-光谱自适应门控与提示感知状态空间细化机制。模型旨在提升复杂水下环境中鱼类目标的检测精度与鲁棒性。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Aquaculture International
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该研究提出SAG-DETR模型，用于水下鱼类检测，融合空间-光谱自适应门控与提示感知状态空间细化机制。模型旨在提升复杂水下环境中鱼类目标的检测精度与鲁棒性。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1007/s10499-026-02702-z" target="_blank" rel="noopener">SAG-DETR: spatio-spectral adaptive gating with prompt-aware state-space refinement for underwater fish detection</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Li, Guoyan; Zhang, Haochen; Mei, Yupeng; Liu, Meng; Yang, Li...</span>
+        
+        <span>📅 2026-10-19</span>
+      </div>
+
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="effects of fish farming prior to farm removal on macrozoobenthic crustacean and molluscan assemblages in a major turkish aquaculture gulf: integrating historical data with literature insights"
+         data-authors="aslan, berivan elif; mutlu, erhan"
+         data-journal="aquaculture journal"
+         data-abstract="fish farming can significantly impact benthic ecosystems, particularly through alterations in water and sediment quality, potentially disrupting ecosystem functioning and biodiversity. this study investigates the effects of fish-farming on crustacean and molluscan assemblages in güllük gulf and bozburun bay along turkey’s aegean coast. macrozoobenthic samples were collected from fish farm sites and corresponding control sites, representing a baseline prior to the relocation of many farms to offshore areas in the 2010s. a total of 114 crustacean and 54 molluscan species were identified at farm sites, compared to 88 crustaceans and 52 molluscs at control sites. crustaceans, particularly amphipods, were the most diverse group, while bivalves dominated the molluscan assemblages. species such as moerella donacina and varicorbula gibba (bivalvia) were most abundant at farm sites, whereas chondrochelia savignyi (tanaidacea) and apseudopsis latreillii (tanaidacea) were dominant at control sites. ecological differences between güllük gulf and bozburun bay, as well as between farm and control sites, were evident, with faunal abundance at farm sites showing stronger correlations with environmental variables, including orthophosphate, silicate, and temperature. biomass emerged as a key indicator for assessing ecological status, alongside abundance and species composition. fish-farm capacity, as determined by the number of fish cages, played a significant role in shaping faunal patterns, with higher capacity farms exhibiting greater ecological disturbance. this study provides a crucial baseline for future research on the long-term ecological impacts of fish farming, including ecosystem recovery and the role of environmental variables. the findings suggest the importance of incorporating biomass-based indicators and considering farm capacity and site-specific conditions in fish-farming management strategies to mitigate environmental degradation."
+         data-summary="本研究基于土耳其爱琴海沿岸güllük湾和bozburun湾鱼类养殖场迁移前的基线调查数据，比较了养殖场站点与对照站点大型底栖甲壳类和软体动物群落差异。共鉴定甲壳类114种、软体动物54种（养殖场站点）对88种和52种（对照站点），养殖场站点以双壳类moerella donacina和varicorbula gibba为优势种，对照站点以端足类chondrochelia savignyi和apseudopsis latreillii为主。养殖场站点动物丰度与环境变量（正磷酸盐、硅酸盐、温度）相关性更强，生物量可作为评估生态状况的关键指标，养殖容量（网箱数量）越大生态扰动越明显。研究强调在鱼类养殖管理策略中应纳入基于生物量的指标并考虑养殖容量和站点特异性条件。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Aquaculture Journal
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究基于土耳其爱琴海沿岸Güllük湾和Bozburun湾鱼类养殖场迁移前的基线调查数据，比较了养殖场站点与对照站点大型底栖甲壳类和软体动物群落差异。共鉴定甲壳类114种、软体动物54种（养殖场站点）对88种和52种（对照站点），养殖场站点以双壳类Moerella donacina和Varicorbula gibba为优势种，对照站点以端足类Chondrochelia savignyi和Apseudopsis latreillii为主。养殖场站点动物丰度与环境变量（正磷酸盐、硅酸盐、温度）相关性更强，生物量可作为评估生态状况的关键指标，养殖容量（网箱数量）越大生态扰动越明显。研究强调在鱼类养殖管理策略中应纳入基于生物量的指标并考虑养殖容量和站点特异性条件。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/aquacj6040050" target="_blank" rel="noopener">Effects of Fish Farming Prior to Farm Removal on Macrozoobenthic Crustacean and Molluscan Assemblages in a Major Turkish Aquaculture Gulf: Integrating Historical Data with Literature Insights</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Aslan, Berivan Elif; Mutlu, Erhan</span>
+        
+        <span>📅 2026-10-19</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Fish farming can significantly impact benthic ecosystems, particularly through alterations in water and sediment quality, potentially disrupting ecosystem functioning and biodiversity. This study investigates the effects of fish-farming on crustacean and molluscan assemblages in Güllük Gulf and Bozburun bay along Turkey’s Aegean coast. Macrozoobenthic samples were collected from fish farm sites and corresponding control sites, representing a baseline prior to the relocation of many farms to offshore areas in the 2010s. A total of 114 crustacean and 54 molluscan species were identified at farm sites, compared to 88 crustaceans and 52 molluscs at control sites. Crustaceans, particularly amphipods, were the most diverse group, while bivalves dominated the molluscan assemblages. Species such as Moerella donacina and Varicorbula gibba (Bivalvia) were most abundant at farm sites, whereas Chondrochelia savignyi (Tanaidacea) and Apseudopsis latreillii (Tanaidacea) were dominant at control sites. Ecological differences between Güllük Gulf and Bozburun bay, as well as between farm and control sites, were evident, with faunal abundance at farm sites showing stronger correlations with environmental variables, including orthophosphate, silicate, and temperature. Biomass emerged as a key indicator for assessing ecological status, alongside abundance and species composition. Fish-farm capacity, as determined by the number of fish cages, played a significant role in shaping faunal patterns, with higher capacity farms exhibiting greater ecological disturbance. This study provides a crucial baseline for future research on the long-term ecological impacts of fish farming, including ecosystem recovery and the role of environmental variables. The findings suggest the importance of incorporating biomass-based indicators and considering farm capacity and site-specific conditions in fish-farming management strategies to mitigate environmental degradation.</div>
+      
+    </div>
+    
+    <div class="paper-card high-impact"
+         data-title="management implications of misspecification in observed recreational removals for reef fish and coastal pelagic stocks"
+         data-authors="peterson, cassidy d; sagarese, skyler r; vaughan, nathan r.; smith, matthew w.; denson, latreese; siegfried, kate i."
+         data-journal="canadian journal of fisheries and aquatic sciences"
+         data-abstract="recreational removals of fishes are particularly challenging to estimate accurately. a recent pilot study indicated that u.s. east coast recreational removals may be overestimated by 30-40%, which is concerning in the southeast, where recreational removals often exceed commercial. management strategy evaluation was used to identify the management implications of recreational removal misspecification on nine reef and coastal pelagic fishes in the u.s. gulf of america. the r package ssmse was used to test performance of “status quo” management across seven removal misspecification scenarios. when recreational removals were misspecified, absolute stock magnitude was not estimated accurately. however, relative status reference points were generally well estimated when there was constant or randomly varying misspecification (representative relative index of removals), such that status quo management was still able to meet biomass, exploitation, and yield targets. the ability to identify reference points and manage the stock was adversely impacted by abrupt shifts or annually time-varying trends in misspecification (non-representative index of removals). results emphasize that a relative index of recreational removals is generally sufficient to successfully manage a stock."
+         data-summary="该研究利用 management strategy evaluation（r package ssmse）评估休闲渔业渔获量误估对美国墨西哥湾九种礁鱼和近海pelagic鱼类种群管理的影响，测试“status quo”管理在七种误估情景下的表现。结果表明，当误估为恒定或随机变化时，绝对种群规模估计不准确，但相对状态参考点通常可较好估计，管理仍能满足生物量、开发率和产量目标；而误估发生突变或呈年际时间趋势时，参考点识别与管理能力受到不利影响。研究强调，相对休闲渔获量指数通常足以支撑种群的成功管理。"
+         data-impact="true">
+
+      
+      <div class="hi-badge">🌟 高影响力</div>
+      
+
+      
+      <div class="journal">
+        ⭐
+        📰 Canadian Journal of Fisheries and Aquatic Sciences
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该研究利用 management strategy evaluation（R package SSMSE）评估休闲渔业渔获量误估对美国墨西哥湾九种礁鱼和近海pelagic鱼类种群管理的影响，测试“Status Quo”管理在七种误估情景下的表现。结果表明，当误估为恒定或随机变化时，绝对种群规模估计不准确，但相对状态参考点通常可较好估计，管理仍能满足生物量、开发率和产量目标；而误估发生突变或呈年际时间趋势时，参考点识别与管理能力受到不利影响。研究强调，相对休闲渔获量指数通常足以支撑种群的成功管理。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1139/cjfas-2026-0135" target="_blank" rel="noopener">Management implications of misspecification in observed recreational removals for reef fish and coastal pelagic stocks</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Peterson, Cassidy D; Sagarese, Skyler R; Vaughan, Nathan R.;...</span>
+        
+        <span>📅 2026-10-19</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Recreational removals of fishes are particularly challenging to estimate accurately. A recent pilot study indicated that U.S. East Coast recreational removals may be overestimated by 30-40%, which is concerning in the Southeast, where recreational removals often exceed commercial. Management strategy evaluation was used to identify the management implications of recreational removal misspecification on nine reef and coastal pelagic fishes in the U.S. Gulf of America. The R package SSMSE was used to test performance of “Status Quo” management across seven removal misspecification scenarios. When recreational removals were misspecified, absolute stock magnitude was not estimated accurately. However, relative status reference points were generally well estimated when there was constant or randomly varying misspecification (representative relative index of removals), such that Status Quo management was still able to meet biomass, exploitation, and yield targets. The ability to identify reference points and manage the stock was adversely impacted by abrupt shifts or annually time-varying trends in misspecification (non-representative index of removals). Results emphasize that a relative index of recreational removals is generally sufficient to successfully manage a stock.</div>
+      
+    </div>
+    
+    <div class="paper-card high-impact"
+         data-title="behrangi’s the little black fish: a tale of endless resistance and resilience"
+         data-authors="şencan, selin"
+         data-journal="cankaya university journal of humanities and social sciences"
+         data-abstract="reading samad behrangi’s the little black fish (1968) as a children’s story of political and philosophical significance, this article examines how the fish’s movement from the pond toward the sea reconfigures relations among space, authority, and agency. drawing on beauvais’s distinction between adult authority and child might, the article argues that resistance develops as the younger subject tests inherited knowledge across changing spatial and social conditions. the pond establishes an enclosed order sustained by inherited knowledge and collective conformity, whereas the fish’s departure brings it into encounters that alter its understanding and capacity to act. the sea intensifies this tension by combining expanded mobility with continuing exposure to capture and violence. the article also considers the story’s framing structure, in which the grandmother fish recounts the journey to a younger generation and one red fish remains awake thinking about the sea. this final act of transmission gives the narrative a pedagogical dimension. the article argues that the little black fish presents resistance as a relational process produced through questioning, encounter, and collective action, while resilience emerges through the capacity to retain, adapt, and reactivate knowledge across changing spatial conditions. beauvais’s account of authority and child might consequently intersects with the tale’s changing geographies where agency develops through what the younger subject learns, carries forward, and makes usable under circumstances that could not have been anticipated in advance."
+         data-summary="非渔业相关"
+         data-impact="true">
+
+      
+      <div class="hi-badge">🌟 高影响力</div>
+      
+
+      
+      <div class="journal">
+        ⭐
+        📰 Cankaya University Journal of Humanities and Social Sciences
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 非渔业相关</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.47777/cankujhss.1919824" target="_blank" rel="noopener">Behrangi’s The Little Black Fish: A Tale of Endless Resistance and Resilience</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Şencan, Selin</span>
+        
+        <span>📅 2026-10-19</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Reading Samad Behrangi’s The Little Black Fish (1968) as a children’s story of political and philosophical significance, this article examines how the fish’s movement from the pond toward the sea reconfigures relations among space, authority, and agency. Drawing on Beauvais’s distinction between adult authority and child might, the article argues that resistance develops as the younger subject tests inherited knowledge across changing spatial and social conditions. The pond establishes an enclosed order sustained by inherited knowledge and collective conformity, whereas the fish’s departure brings it into encounters that alter its understanding and capacity to act. The sea intensifies this tension by combining expanded mobility with continuing exposure to capture and violence. The article also considers the story’s framing structure, in which the grandmother fish recounts the journey to a younger generation and one red fish remains awake thinking about the sea. This final act of transmission gives the narrative a pedagogical dimension. The article argues that The Little Black Fish presents resistance as a relational process produced through questioning, encounter, and collective action, while resilience emerges through the capacity to retain, adapt, and reactivate knowledge across changing spatial conditions. Beauvais’s account of authority and child might consequently intersects with the tale’s changing geographies where agency develops through what the younger subject learns, carries forward, and makes usable under circumstances that could not have been anticipated in advance.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="hidden population declines revealed by integrating long-term fisheries data with fishers’ knowledge"
+         data-authors="nishimoto, makoto; aoki, yoshinori; matsubara, naoto; hamer, paul; kim, kyuhan; tsuda, yuichi"
+         data-journal="communications sustainability"
+         data-abstract="abstract technological creep, the gradual increase in fishing power due to technological innovation, can mask population declines and bias fisheries assessments, yet information on historical technology adoption is rarely available. here, we integrate long-term fisheries statistics (1972–2022) with structured interviews with experienced fishers to reconstruct technological change in the japanese pole-and-line skipjack tuna ( katsuwonus pelamis ) fishery. we estimate population trajectories over five decades using a bayesian state-space model with time-varying catchability informed by questionnaire data. biomass estimates decline substantially when catchability increases over time, by approximately 3.5-fold over the study period, equivalent to about 2.5% annually, relative to models assuming constant catchability. the resulting biomass trajectory indicates that the stock off japan is below levels compatible with maximum sustainable yield (msy). fishers’ perceptions corroborate the inferred decline in skipjack tuna abundance despite apparently stable catch rates. our findings highlight the importance of incorporating dynamic catchability into population models and provide a scalable framework for correcting for technological creep using fishers’ knowledge."
+         data-summary="研究将1972–2022年长期渔业统计与经验渔民结构化访谈相结合，重建日本竿钓鲣鱼（katsuwonus pelamis）渔业的技术变迁，并采用以问卷信息驱动时变可捕性的贝叶斯状态空间模型估算五十年种群轨迹。结果显示，捕捞能力在研究期内约增长3.5倍（年均约2.5%），考虑时变可捕性后生物量估算显著下降，日本近海种群已低于msy兼容水平。渔民感知印证了尽管cpue表观稳定但资源实际衰退，表明种群模型须纳入动态可捕性，渔民知识可为校正技术蠕变提供可扩展框架。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Communications Sustainability
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 研究将1972–2022年长期渔业统计与经验渔民结构化访谈相结合，重建日本竿钓鲣鱼（Katsuwonus pelamis）渔业的技术变迁，并采用以问卷信息驱动时变可捕性的贝叶斯状态空间模型估算五十年种群轨迹。结果显示，捕捞能力在研究期内约增长3.5倍（年均约2.5%），考虑时变可捕性后生物量估算显著下降，日本近海种群已低于MSY兼容水平。渔民感知印证了尽管CPUE表观稳定但资源实际衰退，表明种群模型须纳入动态可捕性，渔民知识可为校正技术蠕变提供可扩展框架。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1038/s44458-026-00177-w" target="_blank" rel="noopener">Hidden population declines revealed by integrating long-term fisheries data with fishers’ knowledge</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Nishimoto, Makoto; Aoki, Yoshinori; Matsubara, Naoto; Hamer,...</span>
+        
+        <span>📅 2026-10-19</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract Technological creep, the gradual increase in fishing power due to technological innovation, can mask population declines and bias fisheries assessments, yet information on historical technology adoption is rarely available. Here, we integrate long-term fisheries statistics (1972–2022) with structured interviews with experienced fishers to reconstruct technological change in the Japanese pole-and-line skipjack tuna ( Katsuwonus pelamis ) fishery. We estimate population trajectories over five decades using a Bayesian state-space model with time-varying catchability informed by questionnaire data. Biomass estimates decline substantially when catchability increases over time, by approximately 3.5-fold over the study period, equivalent to about 2.5% annually, relative to models assuming constant catchability. The resulting biomass trajectory indicates that the stock off Japan is below levels compatible with maximum sustainable yield (MSY). Fishers’ perceptions corroborate the inferred decline in skipjack tuna abundance despite apparently stable catch rates. Our findings highlight the importance of incorporating dynamic catchability into population models and provide a scalable framework for correcting for technological creep using fishers’ knowledge.</div>
+      
+    </div>
+    
+    <div class="paper-card high-impact"
+         data-title="physics-informed lstmnet for short-term marine buoy trajectory prediction under dynamic ocean environmental conditions"
+         data-authors="zhou, tianrui; wang, jinggai; li, hao"
+         data-journal="frontiers in marine science"
+         data-abstract="introduction marine buoys are essential aids to navigation, yet their positions can vary continuously under dynamic environmental forcing. it is therefore important for navigational safety, maintenance planning, and reducing search-and-recovery costs to achieve accurate short-term prediction of buoy displacement. physics-based models often depend on accurately specified hydrodynamic and meteorological parameters, whereas many existing data-driven approaches employ shallow, unidirectional recurrent architectures that may not fully capture the temporal context embedded in historical observations. methods to address these limitations, this study proposes lstmnet, a two-layer bidirectional long short-term memory network for next-step buoy trajectory prediction. the model learns temporal dependencies from multivariate buoy observations and predicts future buoy positions under dynamic marine conditions. results the model was evaluated using hourly observations collected from a marine buoy during may 2026. on the held-out test set, lstmnet achieved a mean geodesic distance error of 18.297 m, representing a 9.747% reduction relative to a single-layer unidirectional lstm baseline. these results indicate that combining stacked recurrent learning with bidirectional temporal encoding improves the extraction of contextual dependencies from recent observations and enhances short-term buoy trajectory prediction. discussion the proposed framework provides a practical data-driven approach for forecasting buoy displacement and may support safer and more efficient management of marine navigation infrastructure."
+         data-summary="针对动态海洋环境条件下浮标位置持续漂移、基于物理模型依赖精确参数且现有数据驱动方法多为浅层单向结构的问题，本研究提出lstmnet——一种双层双向长短期记忆网络，利用多变量浮标观测数据学习时间依赖关系并预测下一时刻浮标位置。基于2026年5月某海洋浮标逐时观测数据的测试表明，lstmnet的平均测地距离误差为18.297 m，较单层单向lstm基线降低9.747%，说明堆叠循环学习与双向时间编码相结合可更有效提取近期观测中的上下文依赖。该框架为浮标位移预测提供了实用的数据驱动方法，有望支持海上导航基础设施的安全高效管理。"
+         data-impact="true">
+
+      
+      <div class="hi-badge">🌟 高影响力</div>
+      
+
+      
+      <div class="journal">
+        ⭐
+        📰 Frontiers in Marine Science
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 针对动态海洋环境条件下浮标位置持续漂移、基于物理模型依赖精确参数且现有数据驱动方法多为浅层单向结构的问题，本研究提出LSTMNet——一种双层双向长短期记忆网络，利用多变量浮标观测数据学习时间依赖关系并预测下一时刻浮标位置。基于2026年5月某海洋浮标逐时观测数据的测试表明，LSTMNet的平均测地距离误差为18.297 m，较单层单向LSTM基线降低9.747%，说明堆叠循环学习与双向时间编码相结合可更有效提取近期观测中的上下文依赖。该框架为浮标位移预测提供了实用的数据驱动方法，有望支持海上导航基础设施的安全高效管理。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3389/fmars.2026.1953622" target="_blank" rel="noopener">Physics-informed LSTMNet for short-term marine buoy trajectory prediction under dynamic ocean environmental conditions</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Zhou, Tianrui; Wang, Jinggai; Li, Hao</span>
+        
+        <span>📅 2026-10-19</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Introduction Marine buoys are essential aids to navigation, yet their positions can vary continuously under dynamic environmental forcing. It is therefore important for navigational safety, maintenance planning, and reducing search-and-recovery costs to achieve accurate short-term prediction of buoy displacement. Physics-based models often depend on accurately specified hydrodynamic and meteorological parameters, whereas many existing data-driven approaches employ shallow, unidirectional recurrent architectures that may not fully capture the temporal context embedded in historical observations. Methods To address these limitations, this study proposes LSTMNet, a two-layer bidirectional long short-term memory network for next-step buoy trajectory prediction. The model learns temporal dependencies from multivariate buoy observations and predicts future buoy positions under dynamic marine conditions. Results The model was evaluated using hourly observations collected from a marine buoy during May 2026. On the held-out test set, LSTMNet achieved a mean geodesic distance error of 18.297 m, representing a 9.747% reduction relative to a single-layer unidirectional LSTM baseline. These results indicate that combining stacked recurrent learning with bidirectional temporal encoding improves the extraction of contextual dependencies from recent observations and enhances short-term buoy trajectory prediction. Discussion The proposed framework provides a practical data-driven approach for forecasting buoy displacement and may support safer and more efficient management of marine navigation infrastructure.</div>
+      
+    </div>
+    
+    <div class="paper-card high-impact"
+         data-title="epidemiological surveillance reveals major pathogen dynamics in brazilian nile tilapia aquaculture from 2023 to 2025"
+         data-authors="cardoso-guimarães, mateus; fernandez-alarcon, miguel frederico; correa, rodolfo; miyoko-natori, mariene; galetti, renata; brito de souza, adrielli; squizatto, ana cristina; silva, rafael; araújo de almeida, luana; mota sátiro, thaise"
+         data-journal="frontiers in veterinary science"
+         data-abstract="introduction brazil is among the world’s largest producers of nile tilapia ( oreochromis niloticus ), a species increasingly challenged by a complex of cocirculating pathogens that threatens production sustainability. methods we conducted a structured epidemiological surveillance program across the three main tilapia-producing macro-regions of brazil (southeast, central-west, and northeast) between 2023 and 2025. a total of 26,057 diagnostic samples, generating 68,514 pathogen-specific tests, were analyzed for aeromonas spp., edwardsiella spp., flavobacterium spp., francisella orientalis , infectious spleen and kidney necrosis virus (isknv), lactococcus spp., and streptococcus spp. using standardized bacteriological, real-time pcr, and maldi-tof ms protocols, and antimicrobial susceptibility (minimum inhibitory concentration, mic) was determined for four antimicrobials. generalized linear models (with a farm-clustered mixed-model sensitivity analysis), time-series analysis (adf stationarity, arima), co-detection network analysis, and gamma-log mic modelling were applied. results the cumulative overall detection positivity rate (dpr) was 18.1%, with flavobacterium spp. showing the highest cumulative positivity (21.6%) on the smallest testing base, and lactococcus spp. (18.4%), isknv (23.3%), and streptococcus spp. (15.2%) representing the dominant, most widely sampled agents; s. agalactiae serotype ia was not detected by serotype-specific qpcr. detection was structured principally by macro-region and pathogen-specific temporal dynamics, whereas host developmental stage exerted a heterogeneous, generally weak influence. five of the seven pathogens showed stationary, endemically compatible dynamics; streptococcus spp. was non-stationary, consistent with active geographic expansion into the northeast, whereas non-stationarity in flavobacterium spp. reflected sampling instability rather than directional change. quarterly aggregation minimized forecast error among the frequencies evaluated. co-detection was predominantly independent, with only a weak module linking the three dominant agents. antimicrobial resistance was structured by pathogen and antibiotic, with significant pathogen-specific interactions, and the fry stage showed higher mics. discussion these findings reframe the historically streptococcus -centered view of brazilian tilapia health and, within the constraints of a structured but non-probabilistic design, provide a descriptive, data-driven baseline to inform regionalized early-warning systems and rational antimicrobial stewardship in brazilian tilapia aquaculture."
+         data-summary="本研究于2023—2025年在巴西三大罗非鱼主产区开展结构化流行病学监测，对26,057份诊断样本进行68,514项病原特异性检测，覆盖aeromonas spp.、edwardsiella spp.、flavobacterium spp.、francisella orientalis、isknv、lactococcus spp.和streptococcus spp.，并结合广义线性模型、时间序列分析、共检出网络分析及mic建模。总体检出阳性率为18.1%，lactococcus spp.、isknv和streptococcus spp.为采样最广泛的主要病原；检出格局主要由宏观区域和病原特异性时间动态决定，streptococcus spp.呈非平稳动态，提示其向东北部活跃扩散。共检出以独立发生为主，抗菌药物耐药性因病原和药物而异，鱼苗阶段mic较高。研究结果重塑了巴西罗非鱼健康以streptococcus为中心的传统认识，为区域化早期预警和合理抗菌药物管理提供数据驱动基线。"
+         data-impact="true">
+
+      
+      <div class="hi-badge">🌟 高影响力</div>
+      
+
+      
+      <div class="journal">
+        ⭐
+        📰 Frontiers in Veterinary Science
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究于2023—2025年在巴西三大罗非鱼主产区开展结构化流行病学监测，对26,057份诊断样本进行68,514项病原特异性检测，覆盖Aeromonas spp.、Edwardsiella spp.、Flavobacterium spp.、Francisella orientalis、ISKNV、Lactococcus spp.和Streptococcus spp.，并结合广义线性模型、时间序列分析、共检出网络分析及MIC建模。总体检出阳性率为18.1%，Lactococcus spp.、ISKNV和Streptococcus spp.为采样最广泛的主要病原；检出格局主要由宏观区域和病原特异性时间动态决定，Streptococcus spp.呈非平稳动态，提示其向东北部活跃扩散。共检出以独立发生为主，抗菌药物耐药性因病原和药物而异，鱼苗阶段MIC较高。研究结果重塑了巴西罗非鱼健康以Streptococcus为中心的传统认识，为区域化早期预警和合理抗菌药物管理提供数据驱动基线。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3389/fvets.2026.1944605" target="_blank" rel="noopener">Epidemiological surveillance reveals major pathogen dynamics in Brazilian Nile tilapia aquaculture from 2023 to 2025</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Cardoso-Guimarães, Mateus; Fernandez-Alarcon, Miguel Frederi...</span>
+        
+        <span>📅 2026-10-19</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Introduction Brazil is among the world’s largest producers of Nile tilapia ( Oreochromis niloticus ), a species increasingly challenged by a complex of cocirculating pathogens that threatens production sustainability. Methods We conducted a structured epidemiological surveillance program across the three main tilapia-producing macro-regions of Brazil (Southeast, Central-West, and Northeast) between 2023 and 2025. A total of 26,057 diagnostic samples, generating 68,514 pathogen-specific tests, were analyzed for Aeromonas spp., Edwardsiella spp., Flavobacterium spp., Francisella orientalis , Infectious Spleen and Kidney Necrosis Virus (ISKNV), Lactococcus spp., and Streptococcus spp. using standardized bacteriological, real-time PCR, and MALDI-TOF MS protocols, and antimicrobial susceptibility (minimum inhibitory concentration, MIC) was determined for four antimicrobials. Generalized linear models (with a farm-clustered mixed-model sensitivity analysis), time-series analysis (ADF stationarity, ARIMA), co-detection network analysis, and Gamma-log MIC modelling were applied. Results The cumulative overall detection positivity rate (DPR) was 18.1%, with Flavobacterium spp. showing the highest cumulative positivity (21.6%) on the smallest testing base, and Lactococcus spp. (18.4%), ISKNV (23.3%), and Streptococcus spp. (15.2%) representing the dominant, most widely sampled agents; S. agalactiae serotype Ia was not detected by serotype-specific qPCR. Detection was structured principally by macro-region and pathogen-specific temporal dynamics, whereas host developmental stage exerted a heterogeneous, generally weak influence. Five of the seven pathogens showed stationary, endemically compatible dynamics; Streptococcus spp. was non-stationary, consistent with active geographic expansion into the Northeast, whereas non-stationarity in Flavobacterium spp. reflected sampling instability rather than directional change. Quarterly aggregation minimized forecast error among the frequencies evaluated. Co-detection was predominantly independent, with only a weak module linking the three dominant agents. Antimicrobial resistance was structured by pathogen and antibiotic, with significant pathogen-specific interactions, and the fry stage showed higher MICs. Discussion These findings reframe the historically Streptococcus -centered view of Brazilian tilapia health and, within the constraints of a structured but non-probabilistic design, provide a descriptive, data-driven baseline to inform regionalized early-warning systems and rational antimicrobial stewardship in Brazilian tilapia aquaculture.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="the perceived impact of the single-use plastics implementation for micro fish vendors in island garden city of samal"
+         data-authors="t. debalos, shania mariz; a. galanido, christine; o. loreño, rhea jane; r. monteroso, cornelio jr."
+         data-journal="international journal of innovative research in multidisciplinary education"
+         data-abstract="the study evaluated the perceived effects of implementing single-use plastic regulations on micro fish vendors in the island garden city of samal. it used a quantitative descriptive-comparative study design to examine the vendors' demographic characteristics and their perceptions of the regulation's impact on their business operations. the study also found no differences in perceived impact among vendors when divided into groups by age, gender, and educational attainment. a structured questionnaire, which was adopted, was used to collect data from the registered micro fish vendors in the three districts of the island garden city of samal. the results highlighted that the vendors were mostly female, of working age, and with secondary-level education. the vendors felt that the implementation of single-use plastic had a moderate impact, mainly on packaging practices, operating costs, and customer-related aspects of the business. in addition, statistical analysis revealed no significant differences in perceived impacts when vendors were grouped by age, gender, and educational attainment, suggesting that regulatory difficulties were fairly evenly distributed across groups. the findings were analyzed using kurt lewin's change management theory and nudge theory to provide insights into how vendors respond to regulatory changes and adjust their approach towards more sustainable methods. the study sheds light on the need for inclusive and accessible support mechanisms, such as information campaigns, capacity building, low-cost, eco-friendly packaging options, and livelihood support, to help micro fish vendors adapt to environmental regulations while continuing their economic activities. the study offers relevant suggestions for the local government and various stakeholders to balance environmental protection with the livelihoods and economic sustainability of micro fish vendors."
+         data-summary="本研究评估了萨马尔岛花园城市一次性塑料禁令对微型鱼类销售商的影响，采用定量描述比较设计，通过结构化问卷对三个区注册微型鱼贩进行调查。结果显示，销售商以女性、劳动年龄、中等教育水平为主，认为该禁令对包装实践、经营成本和客户相关业务产生中等程度影响；按年龄、性别和教育程度分组，感知影响无显著差异。研究基于kurt lewin变革管理理论和助推理论分析，建议地方政府提供信息宣传、能力建设、低成本环保包装和生计支持等包容性配套措施，以平衡环境保护与微型鱼贩的经济可持续性。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 International Journal of Innovative Research in Multidisciplinary Education
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究评估了萨马尔岛花园城市一次性塑料禁令对微型鱼类销售商的影响，采用定量描述比较设计，通过结构化问卷对三个区注册微型鱼贩进行调查。结果显示，销售商以女性、劳动年龄、中等教育水平为主，认为该禁令对包装实践、经营成本和客户相关业务产生中等程度影响；按年龄、性别和教育程度分组，感知影响无显著差异。研究基于Kurt Lewin变革管理理论和助推理论分析，建议地方政府提供信息宣传、能力建设、低成本环保包装和生计支持等包容性配套措施，以平衡环境保护与微型鱼贩的经济可持续性。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.58806/ijirme.2026.v5i10n02" target="_blank" rel="noopener">The Perceived Impact of the Single-Use Plastics Implementation for Micro Fish Vendors in Island Garden City of Samal</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 T. Debalos, Shania Mariz; A. Galanido, Christine; O. Loreño,...</span>
+        
+        <span>📅 2026-10-19</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">The study evaluated the perceived effects of implementing single-use plastic regulations on micro fish vendors in the Island Garden City of Samal. It used a quantitative descriptive-comparative study design to examine the vendors' demographic characteristics and their perceptions of the regulation's impact on their business operations. The study also found no differences in perceived impact among vendors when divided into groups by age, gender, and educational attainment. A structured questionnaire, which was adopted, was used to collect data from the registered micro fish vendors in the three districts of the Island Garden City of Samal. The results highlighted that the vendors were mostly female, of working age, and with secondary-level education. The vendors felt that the implementation of single-use plastic had a moderate impact, mainly on packaging practices, operating costs, and customer-related aspects of the business. In addition, statistical analysis revealed no significant differences in perceived impacts when vendors were grouped by age, gender, and educational attainment, suggesting that regulatory difficulties were fairly evenly distributed across groups. The findings were analyzed using Kurt Lewin's Change Management Theory and Nudge Theory to provide insights into how vendors respond to regulatory changes and adjust their approach towards more sustainable methods. The study sheds light on the need for inclusive and accessible support mechanisms, such as information campaigns, capacity building, low-cost, eco-friendly packaging options, and livelihood support, to help micro fish vendors adapt to environmental regulations while continuing their economic activities. The study offers relevant suggestions for the local government and various stakeholders to balance environmental protection with the livelihoods and economic sustainability of micro fish vendors.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="molecular and morphological identification of yellow tonguefish (
+                    <scp>
+                      <i>symphurus williamsi</i>
+                      )
+                    </scp>
+                    and darkcheek tonguefish (
+                    <scp>
+                      <i>symphurus chabanaudi</i>
+                    </scp>
+                    ) at the southern and entrance to the gulf of california"
+         data-authors="camacho‐gastélum, rosabel; sánchez‐velasco, laura; jiménez‐rosenberg, sylvia p. a.; garcía‐rodríguez, francisco j.; díaz‐viloria, noé"
+         data-journal="journal of fish biology"
+         data-abstract="abstract the genus symphurus is a group of demersal fish with high diversity and taxonomic challenges during their early development. this study addressed the morphological and molecular identification of symphurus larvae in la bahía de la paz and the entrance to the gulf of california. zooplankton samples were collected during the day and night at 58 stations in october 2022. based on morphological characteristics such as meristics and pigmentation, seven symphurus morphotypes were pre‐classified and genetically analysed using the mitochondrial genes cytochrome c oxidase subunit i (coi) and 16s rrna (16s). genetic analysis identified four morphotypes: three of them corresponded to a single species, symphurus williamsi , with 100% similarity in the 16s gene, while the other morphotype was identified as symphurus chabanaudi , with 100% similarity in both markers (coi and 16s). the pigmentation patterns described after molecular identification were consistent and allowed differentiation between the two species. s. williamsi presented three to five strongly stellate melanophores on the dorsal side and five to six melanophores on the ventral side during the preflexion to postflexion stages, while s. chabanaudi had three prominent melanophores in the central part of the notochord (lateral line), as well as a series of small melanophores positioned on the dorsal and ventral sides. s. williamsi larvae were located throughout the entire entrance to the gulf of california, mainly in transitional water, while symphurus chabanaudi was collected only in la bahía de la paz in gulf of california water. these results demonstrated that the integration of genetic and morphological tools is fundamental in taxonomic studies of ichthyoplankton, particularly for the identification of species in early developmental stages that exhibit high morphological similarity. in addition, water masses might be a signal of spawning habitat of different species."
+         data-summary="本研究针对墨西哥拉巴斯湾及加利福尼亚湾入口海域的舌鳎属（symphurus）仔鱼，结合形态学（计数特征与色素模式）和分子标记（coi、16s rrna）进行种类鉴定。遗传分析将7个形态型归并为4个分子型，分别对应symphurus williamsi（16s 100%相似）和s. chabanaudi（coi与16s均100%相似），并据此描述了两种仔鱼在屈曲前至屈曲后阶段可区分的色素特征。s. williamsi仔鱼广泛分布于加利福尼亚湾入口的transitional water，而s. chabanaudi仅见于拉巴斯湾的gulf of california water，提示水团类型可能反映不同种类的产卵生境。结果表明，遗传与形态工具的结合对早期发育阶段形态相似鱼卵仔鱼的分类鉴定至关重要。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究针对墨西哥拉巴斯湾及加利福尼亚湾入口海域的舌鳎属（Symphurus）仔鱼，结合形态学（计数特征与色素模式）和分子标记（COI、16S rRNA）进行种类鉴定。遗传分析将7个形态型归并为4个分子型，分别对应Symphurus williamsi（16S 100%相似）和S. chabanaudi（COI与16S均100%相似），并据此描述了两种仔鱼在屈曲前至屈曲后阶段可区分的色素特征。S. williamsi仔鱼广泛分布于加利福尼亚湾入口的Transitional Water，而S. chabanaudi仅见于拉巴斯湾的Gulf of California Water，提示水团类型可能反映不同种类的产卵生境。结果表明，遗传与形态工具的结合对早期发育阶段形态相似鱼卵仔鱼的分类鉴定至关重要。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70703" target="_blank" rel="noopener">Molecular and morphological identification of yellow tonguefish (
+                    <scp>
+                      <i>Symphurus williamsi</i>
+                      )
+                    </scp>
+                    and darkcheek tonguefish (
+                    <scp>
+                      <i>Symphurus chabanaudi</i>
+                    </scp>
+                    ) at the southern and entrance to the Gulf of California</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Camacho‐Gastélum, Rosabel; Sánchez‐Velasco, Laura; Jiménez‐R...</span>
+        
+        <span>📅 2026-10-19</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract The genus Symphurus is a group of demersal fish with high diversity and taxonomic challenges during their early development. This study addressed the morphological and molecular identification of Symphurus larvae in La Bahía de la Paz and the entrance to the Gulf of California. Zooplankton samples were collected during the day and night at 58 stations in October 2022. Based on morphological characteristics such as meristics and pigmentation, seven Symphurus morphotypes were pre‐classified and genetically analysed using the mitochondrial genes cytochrome c oxidase subunit I (COI) and 16S rRNA (16S). Genetic analysis identified four morphotypes: three of them corresponded to a single species, Symphurus williamsi , with 100% similarity in the 16S gene, while the other morphotype was identified as Symphurus chabanaudi , with 100% similarity in both markers (COI and 16S). The pigmentation patterns described after molecular identification were consistent and allowed differentiation between the two species. S. williamsi presented three to five strongly stellate melanophores on the dorsal side and five to six melanophores on the ventral side during the preflexion to postflexion stages, while S. chabanaudi had three prominent melanophores in the central part of the notochord (lateral line), as well as a series of small melanophores positioned on the dorsal and ventral sides. S. williamsi larvae were located throughout the entire entrance to the Gulf of California, mainly in Transitional Water, while Symphurus chabanaudi was collected only in La Bahía de la Paz in Gulf of California Water. These results demonstrated that the integration of genetic and morphological tools is fundamental in taxonomic studies of ichthyoplankton, particularly for the identification of species in early developmental stages that exhibit high morphological similarity. In addition, water masses might be a signal of spawning habitat of different species.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="electrophysiological evaluation of paralytic shellfish toxins in bivalves"
+         data-authors="yonekura, runa; numano, satoshi; watanabe, ryuichi; yoshida, ikkei; obara, fumiko; okumura, junko; cho, yuko; kudo, yuta; nagasawa, kazuo; yotsu-yamashita, mari"
+         data-journal="marine drugs"
+         data-abstract="paralytic shellfish toxins (psts) represented by saxitoxin (stx) are lethal; pre-shipment toxicity testing of shellfish is mandatory. in japan, screening methods that reliably guarantee toxin concentrations below shipment regulatory limits (0.8 mg stx·2hcl eq./kg) are permitted. in this study, we aimed to develop an electrophysiological method for psts by utilizing their property of inhibiting voltage-gated sodium channels (nav) expressed in mouse neuroblastoma neuro 2a cells. in addition to the three reference standards of dcstx, gtx2/3, and c1/2, extracts from the digestive glands of toxic patinopecten yessoensis and those from the whole edible parts of p. yessoensis, mimachlamys nobilis, perna viridis, and mytilus galloprovincialis were tested. as a result, the toxicity required to inhibit nav by 50% was 1–4 µg stx·2hcl eq./kg, which was well below the shipment regulatory limits and roughly consistent across the three reference standards and all the bivalve extracts. a calibration curve was constructed by globally fitting the dose–response curves obtained from electrophysiological experiments using various bivalve extracts. the electrophysiological toxicity of each extract was then estimated using this calibration curve. the correlation coefficient (r) between the electrophysiological toxicity and the toxicity determined by lc-ms/ms was 0.90. thus, these findings provide fundamental insights for establishing an electrophysiological screening method for psts."
+         data-summary="本研究旨在利用麻痹性贝类毒素（psts）抑制小鼠神经母细胞瘤neuro 2a细胞电压门控钠通道（nav）的特性，开发一种电生理检测方法。以dcstx、gtx2/3和c1/2三种标准品及虾夷扇贝（patinopecten yessoensis）消化腺、虾夷扇贝可食部、mimachlamys nobilis、perna viridis和mytilus galloprovincialis全可食部提取物进行测试，抑制nav 50%所需毒性为1–4 µg stx·2hcl eq./kg，远低于出货限量，且各标准品与贝类提取物间基本一致。基于全局拟合剂量-反应曲线构建校准曲线估算各提取物电生理毒性，其与lc-ms/ms测定毒性的相关系数r为0.90。研究为建立psts电生理筛查方法提供了基础依据。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Marine Drugs
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究旨在利用麻痹性贝类毒素（PSTs）抑制小鼠神经母细胞瘤Neuro 2a细胞电压门控钠通道（Nav）的特性，开发一种电生理检测方法。以dcSTX、GTX2/3和C1/2三种标准品及虾夷扇贝（Patinopecten yessoensis）消化腺、虾夷扇贝可食部、Mimachlamys nobilis、Perna viridis和Mytilus galloprovincialis全可食部提取物进行测试，抑制Nav 50%所需毒性为1–4 µg STX·2HCl eq./kg，远低于出货限量，且各标准品与贝类提取物间基本一致。基于全局拟合剂量-反应曲线构建校准曲线估算各提取物电生理毒性，其与LC-MS/MS测定毒性的相关系数r为0.90。研究为建立PSTs电生理筛查方法提供了基础依据。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/md24100365" target="_blank" rel="noopener">Electrophysiological Evaluation of Paralytic Shellfish Toxins in Bivalves</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Yonekura, Runa; Numano, Satoshi; Watanabe, Ryuichi; Yoshida,...</span>
+        
+        <span>📅 2026-10-19</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Paralytic shellfish toxins (PSTs) represented by saxitoxin (STX) are lethal; pre-shipment toxicity testing of shellfish is mandatory. In Japan, screening methods that reliably guarantee toxin concentrations below shipment regulatory limits (0.8 mg STX·2HCl eq./kg) are permitted. In this study, we aimed to develop an electrophysiological method for PSTs by utilizing their property of inhibiting voltage-gated sodium channels (Nav) expressed in mouse neuroblastoma Neuro 2a cells. In addition to the three reference standards of dcSTX, GTX2/3, and C1/2, extracts from the digestive glands of toxic Patinopecten yessoensis and those from the whole edible parts of P. yessoensis, Mimachlamys nobilis, Perna viridis, and Mytilus galloprovincialis were tested. As a result, the toxicity required to inhibit Nav by 50% was 1–4 µg STX·2HCl eq./kg, which was well below the shipment regulatory limits and roughly consistent across the three reference standards and all the bivalve extracts. A calibration curve was constructed by globally fitting the dose–response curves obtained from electrophysiological experiments using various bivalve extracts. The electrophysiological toxicity of each extract was then estimated using this calibration curve. The correlation coefficient (r) between the electrophysiological toxicity and the toxicity determined by LC-MS/MS was 0.90. Thus, these findings provide fundamental insights for establishing an electrophysiological screening method for PSTs.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="detection and characterization of microplastics and other anthropogenic particles in seafood from southern thailand markets"
+         data-authors="saetang, jirakrit; benjakul, soottawat; mittal, ajay; nuthong, pornpot; singh, avtar"
+         data-journal="microplastics"
+         data-abstract="market-sold seafood can integrate anthropogenic particles (aps) including artificial solid/microparticles from aquatic environments and introduced during capture, transport, storage, or retail handling. this study found visually suspected fiber-like or film-like particles in edible tissues of seven different widely consumed seafood commodities procured from three different fish markets of southern thailand. the mass-weighted market abundances were 0.382, 0.359, and 0.507 suspected fiber-like items g−1 wet tissue for pattani, songkhla, and narathiwat, respectively. among the different seafoods, seabass, black pomfret, green mussel, trevally, threadfin bream, short mackerel, and pacific white shrimp showed the combined abundance of 0.681 items g−1, 0.545 items g−1, 0.477 items g−1, 0.396 items g−1, 0.393 items g−1, 0.287 items g−1, and 0.131 items g−1 of fiber-like items. in addition, clustered film-like particles were also observed in shrimp and short mackerel, but overlapping prevented complete enumeration. raman spectroscopy classified two representative particles as probable poly(ethylene terephthalate), three as probable cellulose acetate, eight as cellulosic, one contained an indigo-type colorant without substrate identification, and seven were inconclusive. sem supported fiber-/line-like and sheet-/film-like morphology. the location and seafood group patterns are therefore descriptive estimates of visually suspected particles including microplastics, cellulosic materials, etc."
+         data-summary="该研究检测了泰国南部三个鱼市七种常见海产品可食组织中的疑似人为颗粒（aps），质量加权丰度在0.359–0.507 items g⁻¹湿重之间，其中海鲈和黑鲳较高、太平洋白虾最低。raman光谱鉴定部分颗粒为 probable poly(ethylene terephthalate、cellulose acetate及cellulosic材料，sem确认了纤维状和膜状形态。结果为该区域海产品中微塑料及纤维素类颗粒的污染水平提供了描述性基线数据。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Microplastics
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该研究检测了泰国南部三个鱼市七种常见海产品可食组织中的疑似人为颗粒（APs），质量加权丰度在0.359–0.507 items g⁻¹湿重之间，其中海鲈和黑鲳较高、太平洋白虾最低。Raman光谱鉴定部分颗粒为 probable poly(ethylene terephthalate、cellulose acetate及cellulosic材料，SEM确认了纤维状和膜状形态。结果为该区域海产品中微塑料及纤维素类颗粒的污染水平提供了描述性基线数据。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/microplastics5040209" target="_blank" rel="noopener">Detection and Characterization of Microplastics and Other Anthropogenic Particles in Seafood from Southern Thailand Markets</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Saetang, Jirakrit; Benjakul, Soottawat; Mittal, Ajay; Nuthon...</span>
+        
+        <span>📅 2026-10-19</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Market-sold seafood can integrate anthropogenic particles (APs) including artificial solid/microparticles from aquatic environments and introduced during capture, transport, storage, or retail handling. This study found visually suspected fiber-like or film-like particles in edible tissues of seven different widely consumed seafood commodities procured from three different fish markets of Southern Thailand. The mass-weighted market abundances were 0.382, 0.359, and 0.507 suspected fiber-like items g−1 wet tissue for Pattani, Songkhla, and Narathiwat, respectively. Among the different seafoods, seabass, black pomfret, green mussel, trevally, threadfin bream, short mackerel, and Pacific white shrimp showed the combined abundance of 0.681 items g−1, 0.545 items g−1, 0.477 items g−1, 0.396 items g−1, 0.393 items g−1, 0.287 items g−1, and 0.131 items g−1 of fiber-like items. In addition, clustered film-like particles were also observed in shrimp and short mackerel, but overlapping prevented complete enumeration. Raman spectroscopy classified two representative particles as probable poly(ethylene terephthalate), three as probable cellulose acetate, eight as cellulosic, one contained an indigo-type colorant without substrate identification, and seven were inconclusive. SEM supported fiber-/line-like and sheet-/film-like morphology. The location and seafood group patterns are therefore descriptive estimates of visually suspected particles including microplastics, cellulosic materials, etc.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="pelatihan dan pendampingan scotch fish egg sebagai menu fusion berbasis ikan lokal di yogi café &amp; resto, pulau merah, banyuwangi"
+         data-authors="rudi tri handoko; diana martalia; yulianandaris yulianandaris; nur wulan indah sari; ary manis anggreni; neza aulia efendi"
+         data-journal="pandawa : pusat publikasi hasil pengabdian masyarakat"
+         data-abstract="yogi café &amp; resto in the pulau merah tourism area, banyuwangi, faced low ratings (3.5) due to long production times, inconsistent taste, limited menu innovation, and the absence of standard operating procedures (sop). this community service aimed to enhance the partner’s capacity through training and mentoring in processing scotch fish egg as a fusion menu based on local fish. a participatory method with an experiential learning approach was applied through theoretical sessions and hands-on practice on april 28, 2026, followed by a demi chef competency test on may 1, 2026. the training involved ten participants consisting of the owner and operational staff of yogi café &amp; resto; two participants took the competency test. evaluation instruments included pre-test/post-test, practical checklist, simple sensory observation, production-time observation, and the demi chef competency test. the results showed that participants who joined the practice were able to produce scotch fish egg with a crispy exterior, soft interior, and no fishy odor. the provision of standard recipes and sop served as written references expected to improve taste consistency and production efficiency. two participants passed the demi chef competency test conducted with the professional certification institute (lsp) pgsp; this result is not generalized to all partner staff. this innovation has the potential to become a signature menu, enhancing business competitiveness and supporting creative economy development and sustainable utilization of local fish resources."
+         data-summary="该社区服务研究针对banyuwangi pulau merah旅游区yogi café & resto因出餐慢、口味不稳定、菜单创新不足及缺乏sop导致评分偏低（3.5）的问题，通过参与式方法与体验式学习开展scotch fish egg融合菜单加工培训与辅导。2026年4月28日进行理论授课与实操，5月1日开展demi chef能力测试，共10名业主及运营人员参加，其中2人参加测试。结果显示学员能制作出外酥内嫩、无鱼腥味的scotch fish egg，标准配方与sop的提供有望提升口味一致性与生产效率，2名学员通过lsp pgsp的demi chef能力测试（结果未推广至全体人员）。该创新有望成为招牌菜单，提升企业竞争力并促进本地鱼类资源的可持续利用。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Pandawa : Pusat Publikasi Hasil Pengabdian Masyarakat
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该社区服务研究针对Banyuwangi Pulau Merah旅游区Yogi Café & Resto因出餐慢、口味不稳定、菜单创新不足及缺乏SOP导致评分偏低（3.5）的问题，通过参与式方法与体验式学习开展Scotch Fish Egg融合菜单加工培训与辅导。2026年4月28日进行理论授课与实操，5月1日开展Demi Chef能力测试，共10名业主及运营人员参加，其中2人参加测试。结果显示学员能制作出外酥内嫩、无鱼腥味的Scotch Fish Egg，标准配方与SOP的提供有望提升口味一致性与生产效率，2名学员通过LSP PGSP的Demi Chef能力测试（结果未推广至全体人员）。该创新有望成为招牌菜单，提升企业竞争力并促进本地鱼类资源的可持续利用。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.61132/pandawa.v4i4.3127" target="_blank" rel="noopener">Pelatihan dan Pendampingan Scotch Fish Egg sebagai Menu Fusion Berbasis Ikan Lokal di Yogi Café &amp; Resto, Pulau Merah, Banyuwangi</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Rudi Tri Handoko; Diana Martalia; Yulianandaris Yulianandari...</span>
+        
+        <span>📅 2026-10-19</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Yogi Café &amp; Resto in the Pulau Merah tourism area, Banyuwangi, faced low ratings (3.5) due to long production times, inconsistent taste, limited menu innovation, and the absence of Standard Operating Procedures (SOP). This community service aimed to enhance the partner’s capacity through training and mentoring in processing Scotch Fish Egg as a fusion menu based on local fish. A participatory method with an experiential learning approach was applied through theoretical sessions and hands-on practice on April 28, 2026, followed by a Demi Chef competency test on May 1, 2026. The training involved ten participants consisting of the owner and operational staff of Yogi Café &amp; Resto; two participants took the competency test. Evaluation instruments included pre-test/post-test, practical checklist, simple sensory observation, production-time observation, and the Demi Chef competency test. The results showed that participants who joined the practice were able to produce Scotch Fish Egg with a crispy exterior, soft interior, and no fishy odor. The provision of standard recipes and SOP served as written references expected to improve taste consistency and production efficiency. Two participants passed the Demi Chef competency test conducted with the Professional Certification Institute (LSP) PGSP; this result is not generalized to all partner staff. This innovation has the potential to become a signature menu, enhancing business competitiveness and supporting creative economy development and sustainable utilization of local fish resources.</div>
+      
+    </div>
+    
+    <div class="paper-card high-impact"
+         data-title="a bering sea marine heatwave triggers unprecedented crab hybridization, challenging fisheries management"
+         data-authors="fedewa, erin j.; ryznar, emily r.; cleary, connor p.; gardner, jennifer l.; hennessey, shannon m.; long, w. christopher; richar, jon i.; zacher, leah s.; litzow, michael a."
+         data-journal="proceedings of the national academy of sciences"
+         data-abstract="marine heatwaves are increasingly recognized for their capacity to generate ecological surprises, yet the pathways that propagate these unexpected responses are often poorly understood. here, we document an unanticipated ecological response 7 y after a bering sea marine heatwave, in which formerly rare snow crab ( chionoecetes opilio ) × tanner crab ( c. bairdi ) hybrid abundance increased 13.4-fold, and the proportion of commercial-sized hybrid males increased 13.1-fold, relative to historical averages. using causal modeling, we show that the hybrid crab surge was mediated by a heatwave-induced collapse of snow crab rather than direct thermal effects on hybrid survival or increased spatial overlap between mature snow and tanner crab. our results reveal an indirect cascading pathway through which an extreme climate event triggered unexpected ecological consequences and unforeseen challenges for fisheries management in the bering sea. the dramatic increase in abundance of harvestable hybrid crab, coupled with their exclusion from existing management frameworks, highlights the vulnerability of inflexible management systems to unanticipated ecosystem responses."
+         data-summary="研究记录了白令海海洋热浪发生7年后，雪蟹（chionoecetes opilio）与tanner蟹（c. bairdi）杂交种的丰度较历史均值增加13.4倍，商业规格雄性杂交个体比例增加13.1倍。因果模型表明，杂交种激增由热浪导致的雪蟹种群崩溃间接介导，而非热效应对杂交种存活或亲本空间重叠的直接影响。可捕捞杂交蟹的急剧增加及其被排除在现有管理框架之外，凸显了刚性渔业管理制度面对突发生态系统响应的脆弱性。"
+         data-impact="true">
+
+      
+      <div class="hi-badge">🌟 高影响力</div>
+      
+
+      
+      <div class="journal">
+        ⭐
+        📰 Proceedings of the National Academy of Sciences
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 研究记录了白令海海洋热浪发生7年后，雪蟹（Chionoecetes opilio）与Tanner蟹（C. bairdi）杂交种的丰度较历史均值增加13.4倍，商业规格雄性杂交个体比例增加13.1倍。因果模型表明，杂交种激增由热浪导致的雪蟹种群崩溃间接介导，而非热效应对杂交种存活或亲本空间重叠的直接影响。可捕捞杂交蟹的急剧增加及其被排除在现有管理框架之外，凸显了刚性渔业管理制度面对突发生态系统响应的脆弱性。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1073/pnas.2625670123" target="_blank" rel="noopener">A Bering Sea marine heatwave triggers unprecedented crab hybridization, challenging fisheries management</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Fedewa, Erin J.; Ryznar, Emily R.; Cleary, Connor P.; Gardne...</span>
+        
+        <span>📅 2026-10-19</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Marine heatwaves are increasingly recognized for their capacity to generate ecological surprises, yet the pathways that propagate these unexpected responses are often poorly understood. Here, we document an unanticipated ecological response 7 y after a Bering Sea marine heatwave, in which formerly rare snow crab ( Chionoecetes opilio ) × Tanner crab ( C. bairdi ) hybrid abundance increased 13.4-fold, and the proportion of commercial-sized hybrid males increased 13.1-fold, relative to historical averages. Using causal modeling, we show that the hybrid crab surge was mediated by a heatwave-induced collapse of snow crab rather than direct thermal effects on hybrid survival or increased spatial overlap between mature snow and Tanner crab. Our results reveal an indirect cascading pathway through which an extreme climate event triggered unexpected ecological consequences and unforeseen challenges for fisheries management in the Bering Sea. The dramatic increase in abundance of harvestable hybrid crab, coupled with their exclusion from existing management frameworks, highlights the vulnerability of inflexible management systems to unanticipated ecosystem responses.</div>
+      
+    </div>
+    
+    <div class="paper-card high-impact"
+         data-title="biodiversity supports coastal nutrient cycling with a stable source of fish excretion"
+         data-authors="subalusky, amanda l."
+         data-journal="proceedings of the national academy of sciences"
+         data-abstract=""
+         data-summary="该研究探讨生物多样性对沿海营养循环的支撑作用，重点关注鱼类排泄物作为稳定营养来源的贡献。基于标题推断，可能通过比较不同生物多样性水平下鱼类排泄养分供给的稳定性，揭示多样性维持营养循环功能的机制。"
+         data-impact="true">
+
+      
+      <div class="hi-badge">🌟 高影响力</div>
+      
+
+      
+      <div class="journal">
+        ⭐
+        📰 Proceedings of the National Academy of Sciences
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该研究探讨生物多样性对沿海营养循环的支撑作用，重点关注鱼类排泄物作为稳定营养来源的贡献。基于标题推断，可能通过比较不同生物多样性水平下鱼类排泄养分供给的稳定性，揭示多样性维持营养循环功能的机制。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1073/pnas.2630042123" target="_blank" rel="noopener">Biodiversity supports coastal nutrient cycling with a stable source of fish excretion</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Subalusky, Amanda L.</span>
+        
+        <span>📅 2026-10-19</span>
+      </div>
+
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="global, depth-resolved marine fish occurrences from digitized natural history collections"
+         data-authors="singer, randal a.; owens, hannah l."
+         data-journal="scientific data"
+         data-abstract=""
+         data-summary="基于数字化自然历史馆藏构建了全球、按深度解析的海洋鱼类出现记录数据集，为海洋鱼类分布格局与生物多样性研究提供基础数据支撑。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Scientific Data
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 基于数字化自然历史馆藏构建了全球、按深度解析的海洋鱼类出现记录数据集，为海洋鱼类分布格局与生物多样性研究提供基础数据支撑。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1038/s41597-026-08535-y" target="_blank" rel="noopener">Global, depth-resolved marine fish occurrences from digitized natural history collections</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Singer, Randal A.; Owens, Hannah L.</span>
+        
+        <span>📅 2026-10-19</span>
+      </div>
+
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="spatial heterogeneity and ecological risks of microplastics in freshwater aquaculture ponds across poyang lake basin"
+         data-authors="yao, na; hu, chao; zhou, yurou; li, jiaying; zhang, yuanyan; wang, qipei; liu, zugen; zhang, meng"
+         data-journal="water"
+         data-abstract="freshwater aquaculture ponds are increasingly recognized as potential reservoirs and sources of microplastic (mp) pollution, yet the spatial heterogeneity and potential environmental drivers of mps in inland aquaculture systems remain poorly understood. water and surface-sediment samples were collected from 12 representative ponds in four regions of the poyang lake basin (jiangxi province, china) during october–november 2022. mps were extracted by density flotation and digestion and characterized by stereomicroscopy and raman spectroscopy; spatial patterns were evaluated using one-way analysis of variance, principal component analysis, correlation analysis, and linear regression, and the polymer-related ecological risk was assessed with the polymer hazard index (phi). mp abundances averaged 893.10 ± 87.61 items m−3 in surface water and 608.87 ± 186.68 items kg−1 dry weight in sediment; fibers dominated (about 51%), and 86.58–91.33% of particles measured 0.02–1 mm. polyethylene (67.86%) and polypropylene (21.43%) dominated the water column, whereas polyamide (pa: 21.43%) was markedly enriched in sediment, and the first two principal components explained 90.0% of the total variance. mp abundance was positively associated with stocking density and with nh4+-n (r = 0.623, p &lt; 0.05). phl values indicated low polymer-related risk in the water column (mean: 8.79) but moderate risk in sediment (mean: 17.90). sediment therefore acts as a long-term accumulation sink for denser and more hazardous polymers and warrants priority in monitoring and source-control strategies."
+         data-summary="本研究调查了鄱阳湖流域淡水养殖池塘中微塑料（mp）的空间异质性及生态风险，于2022年10—11月在4个区域的12口代表性池塘采集水体和表层沉积物样品，采用密度浮选、消解、显微观察和拉曼光谱进行mp表征，并结合anova、pca、相关分析和线性回归评估空间格局及聚合物危害指数（phi）。结果显示，表层水mp丰度为893.10 ± 87.61 items m⁻³，沉积物为608.87 ± 186.68 items kg⁻¹干重，以纤维为主（约51%），86.58%–91.33%的颗粒粒径为0.02–1 mm；水体以聚乙烯（67.86%）和聚丙烯（21.43%）为主，沉积物中聚酰胺（pa）明显富集，前两个主成分解释90.0%的总方差。mp丰度与放养密度及nh₄⁺-n呈正相关（r = 0.623，p < 0.05）；phi表明水体聚合物风险较低（均值8.79），沉积物为中等风险（均值17.90），沉积物是高密度及高危害聚合物的长期累积汇，应优先纳入监测和源头控制策略。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Water
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究调查了鄱阳湖流域淡水养殖池塘中微塑料（MP）的空间异质性及生态风险，于2022年10—11月在4个区域的12口代表性池塘采集水体和表层沉积物样品，采用密度浮选、消解、显微观察和拉曼光谱进行MP表征，并结合ANOVA、PCA、相关分析和线性回归评估空间格局及聚合物危害指数（PHI）。结果显示，表层水MP丰度为893.10 ± 87.61 items m⁻³，沉积物为608.87 ± 186.68 items kg⁻¹干重，以纤维为主（约51%），86.58%–91.33%的颗粒粒径为0.02–1 mm；水体以聚乙烯（67.86%）和聚丙烯（21.43%）为主，沉积物中聚酰胺（PA）明显富集，前两个主成分解释90.0%的总方差。MP丰度与放养密度及NH₄⁺-N呈正相关（r = 0.623，p < 0.05）；PHI表明水体聚合物风险较低（均值8.79），沉积物为中等风险（均值17.90），沉积物是高密度及高危害聚合物的长期累积汇，应优先纳入监测和源头控制策略。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/w18202600" target="_blank" rel="noopener">Spatial Heterogeneity and Ecological Risks of Microplastics in Freshwater Aquaculture Ponds Across Poyang Lake Basin</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Yao, Na; Hu, Chao; Zhou, Yurou; Li, Jiaying; Zhang, Yuanyan;...</span>
+        
+        <span>📅 2026-10-19</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Freshwater aquaculture ponds are increasingly recognized as potential reservoirs and sources of microplastic (MP) pollution, yet the spatial heterogeneity and potential environmental drivers of MPs in inland aquaculture systems remain poorly understood. Water and surface-sediment samples were collected from 12 representative ponds in four regions of the Poyang Lake Basin (Jiangxi Province, China) during October–November 2022. MPs were extracted by density flotation and digestion and characterized by stereomicroscopy and Raman spectroscopy; spatial patterns were evaluated using one-way analysis of variance, principal component analysis, correlation analysis, and linear regression, and the polymer-related ecological risk was assessed with the polymer hazard index (PHI). MP abundances averaged 893.10 ± 87.61 items m−3 in surface water and 608.87 ± 186.68 items kg−1 dry weight in sediment; fibers dominated (about 51%), and 86.58–91.33% of particles measured 0.02–1 mm. Polyethylene (67.86%) and polypropylene (21.43%) dominated the water column, whereas polyamide (PA: 21.43%) was markedly enriched in sediment, and the first two principal components explained 90.0% of the total variance. MP abundance was positively associated with stocking density and with NH4+-N (r = 0.623, p &lt; 0.05). PHl values indicated low polymer-related risk in the water column (mean: 8.79) but moderate risk in sediment (mean: 17.90). Sediment therefore acts as a long-term accumulation sink for denser and more hazardous polymers and warrants priority in monitoring and source-control strategies.</div>
+      
+    </div>
+    
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var s=localStorage.getItem('theme');
+  if(s){document.documentElement.setAttribute('data-theme',s);
+  document.getElementById('themeIcon').textContent=s==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=s==='dark'?'亮色':'暗色';}
+})();
+function toggleTheme(){
+  var h=document.documentElement,n=h.getAttribute('data-theme')==='dark'?'light':'dark';
+  h.setAttribute('data-theme',n);
+  document.getElementById('themeIcon').textContent=n==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=n==='dark'?'亮色':'暗色';
+  localStorage.setItem('theme',n);
+}
+function toggleAbstract(b){
+  var c=b.nextElementSibling,v=c.classList.contains('visible');
+  c.classList.toggle('visible');b.classList.toggle('open');
+  b.querySelector('.arrow').textContent=v?'▶':'▼';
+}
+function filterPapers(){
+  var q=(document.getElementById('searchInput').value||'').toLowerCase().trim(),vis=0;
+  document.querySelectorAll('.paper-card').forEach(function(c){
+    var t=[c.getAttribute('data-title')||'',c.getAttribute('data-authors')||'',c.getAttribute('data-journal')||'',c.getAttribute('data-abstract')||'',c.getAttribute('data-summary')||''].join(' ');
+    var s=!q||t.includes(q);c.classList.toggle('hidden',!s);if(s)vis++;
+  });
+  document.getElementById('noResults').classList.toggle('visible',vis===0);
+}
+</script>
+</body>
+</html>
