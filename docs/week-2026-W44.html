@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>水产养殖智能监测与病害快速检测 — 渔业文献每周速览</title>
+<style>
+:root {
+  --bg: #f7fafc; --bg-card: #ffffff; --text: #2d3748;
+  --text-secondary: #718096; --text-muted: #a0aec0; --border: #e2e8f0;
+  --primary: #2b6cb0; --primary-light: #bee3f8; --primary-dark: #1a365d;
+  --accent: #e76f51; --accent-light: #fed7d7;
+  --teal: #319795; --teal-light: #b2f5ea;
+  --gold: #d69e2e; --gold-light: #fefcbf;
+  --shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.10);
+  --radius: 12px; --radius-sm: 8px;
+}
+[data-theme="dark"] {
+  --bg: #1a202c; --bg-card: #2d3748; --text: #e2e8f0;
+  --text-secondary: #a0aec0; --text-muted: #718096; --border: #4a5568;
+  --primary: #90cdf4; --primary-light: #2a4365; --primary-dark: #bee3f8;
+  --accent: #fc8181; --accent-light: #742a2a;
+  --teal: #81e6d9; --teal-light: #234e52;
+  --gold: #f6e05e; --gold-light: #3d3a1a;
+  --shadow: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.5);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;transition:background 0.3s,color 0.3s}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* === Top Bar === */
+.topbar{background:linear-gradient(135deg,#1a365d,#2b6cb0);color:#fff;padding:0.8rem 1.5rem;display:flex;align-items:center;gap:1rem;position:sticky;top:0;z-index:100}
+.back-btn{color:#fff;font-size:0.95rem;font-weight:600;padding:0.4rem 0.8rem;border-radius:var(--radius-sm);border:1.5px solid rgba(255,255,255,0.3);transition:all 0.2s;white-space:nowrap}
+.back-btn:hover{background:rgba(255,255,255,0.15);text-decoration:none}
+.topbar .title-area{flex:1;min-width:0}
+.topbar .week-range{font-size:0.78rem;opacity:0.8}
+.topbar .week-topic{font-size:1rem;font-weight:700;line-height:1.3}
+.topbar .theme-toggle{padding:0.4rem 0.8rem;border:1.5px solid rgba(255,255,255,0.3);border-radius:var(--radius-sm);background:transparent;color:#fff;cursor:pointer;font-size:0.85rem;transition:all 0.2s;white-space:nowrap}
+.topbar .theme-toggle:hover{background:rgba(255,255,255,0.15)}
+
+.container{max-width:1100px;margin:0 auto;padding:1.5rem}
+
+/* === Article Section === */
+.article-section{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;margin-bottom:1.5rem;box-shadow:var(--shadow)}
+.article-section h2{font-size:1.3rem;color:var(--primary-dark);margin:1.5rem 0 0.75rem;padding-bottom:0.4rem;border-bottom:2px solid var(--primary-light)}
+.article-section h2:first-child{margin-top:0}
+.article-section p{margin-bottom:0.8rem;line-height:1.8;color:var(--text)}
+.article-section strong{color:var(--primary-dark)}
+.article-section ol,.article-section ul{padding-left:1.5rem;margin-bottom:0.8rem}
+.article-section li{margin-bottom:0.5rem;line-height:1.7}
+.article-tag{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-right:0.5rem}
+.tag-overview{background:var(--primary-light);color:var(--primary-dark)}
+.tag-highlight{background:var(--accent-light);color:var(--accent)}
+.tag-innovative{background:var(--gold-light);color:var(--gold)}
+.tag-recommend{background:var(--teal-light);color:var(--teal)}
+
+/* === Stats Row === */
+.stats-row{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.stat-mini{padding:0.5rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-secondary)}
+.stat-mini strong{color:var(--primary);font-size:1.1rem}
+
+/* === Controls === */
+.controls{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.search-box{flex:1;min-width:200px;position:relative}
+.search-box input{width:100%;padding:0.6rem 1rem 0.6rem 2.5rem;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:0.9rem;background:var(--bg-card);color:var(--text);transition:border-color 0.2s}
+.search-box input:focus{outline:none;border-color:var(--primary)}
+.search-box .search-icon{position:absolute;left:0.8rem;top:50%;transform:translateY(-50%);color:var(--text-muted);pointer-events:none}
+
+/* === Paper Grid === */
+.section-title{font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:0.75rem;display:flex;align-items:center;gap:0.5rem}
+.paper-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:0.85rem;margin-bottom:1.5rem}
+.paper-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1.1rem;transition:all 0.25s;display:flex;flex-direction:column;position:relative}
+.paper-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);border-color:var(--primary-light)}
+.paper-card.high-impact{border-left:3px solid var(--accent)}
+.paper-card .hi-badge{position:absolute;top:0.5rem;right:0.5rem;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:10px;background:var(--accent-light);color:var(--accent);font-weight:700}
+.paper-card .journal{font-size:0.78rem;color:var(--teal);font-weight:600;margin-bottom:0.3rem}
+.paper-card .title{font-size:0.95rem;font-weight:700;line-height:1.45;margin-bottom:0.35rem}
+.paper-card .title a{color:var(--text)}
+.paper-card .title a:hover{color:var(--primary);text-decoration:none}
+.paper-card .meta{font-size:0.78rem;color:var(--text-muted);margin-bottom:0.6rem;display:flex;flex-wrap:wrap;gap:0.5rem}
+
+/* Chinese Summary */
+.paper-card .summary-cn{background:linear-gradient(135deg,#fffaf0,#fffff0);border-left:3px solid var(--gold);padding:0.7rem 0.85rem;margin-bottom:0.5rem;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:0.88rem;line-height:1.55;color:#744210}
+[data-theme="dark"] .paper-card .summary-cn{background:linear-gradient(135deg,#3d2e1a,#372a10);color:#fbd38d}
+
+.abstract-toggle{font-size:0.8rem;color:var(--primary);cursor:pointer;font-weight:600;user-select:none;display:inline-flex;align-items:center;gap:0.25rem;padding:0.3rem 0;border:none;background:none}
+.abstract-toggle:hover{color:var(--accent)}
+.abstract-toggle .arrow{transition:transform 0.2s;font-size:0.7rem}
+.abstract-toggle.open .arrow{transform:rotate(90deg)}
+.abstract-content{display:none;font-size:0.82rem;color:var(--text-secondary);line-height:1.55;padding:0.5rem 0;border-top:1px dashed var(--border);margin-top:0.4rem}
+.abstract-content.visible{display:block}
+
+.paper-card.hidden{display:none}
+.no-results{display:none;text-align:center;padding:2rem;color:var(--text-muted)}
+.no-results.visible{display:block}
+
+@media(max-width:768px){.paper-grid{grid-template-columns:1fr}.article-section{padding:1.25rem}.topbar{flex-wrap:wrap}.topbar .week-topic{font-size:0.9rem}}
+
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.paper-card{animation:fadeIn 0.4s ease-out}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="back-btn" href="index.html">← 返回主页</a>
+  <div class="title-area">
+    <div class="week-range">10月26日—10月26日</div>
+    <div class="week-topic">水产养殖智能监测与病害快速检测</div>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <span id="themeIcon">🌙</span> <span id="themeLabel">暗色</span>
+  </button>
+</div>
+
+<div class="container">
+
+  <!-- 深度综述文章 -->
+  
+  <div class="article-section">
+    <h2>本周研究概览</h2>
+
+<p>本周共收录8篇渔业相关论文，研究方向涵盖渔业治理与政策（采购问责、鲑鱼养殖标签与追溯）、渔业生态学（温盐锋对饵料鱼营养生态的影响、鳟鱼捕获放流的能量代价）、水产养殖工程与微生物学（RAS生物滤器低温运行、鱼类加工废弃物堆肥）、水产病害快速检测（*Perkinsus olseni* RPA-PfAgo检测）以及海洋生物技术（深度学习辅助抗菌肽发现）。整体来看，本周论文以应用导向为主，治理法规类与病害检测类研究占比偏高，基础生态学研究相对有限；跨学科方法（深度学习、等温扩增）向水产领域的渗透是值得关注的趋势。本周无高影响力综合期刊论文发表。</p>
+
+<h2>高影响力期刊亮点</h2>
+
+<p>本周暂无。</p>
+
+<h2>创新性研究</h2>
+
+<ol>
+<li><strong>Deep-Learning-Assisted Discovery of Marine Antimicrobial Peptides</strong>（*Marine Drugs*）— 该综述提出将组学挖掘与结构引导的扩散模型设计相整合的技术路线，并明确指向可持续水产养殖的转化应用。其创新点在于不止于候选肽生成，而是将效力、宿主安全性、稳定性与可制造性纳入同一设计框架，为水产抗菌替代方案提供了系统化路径。</li>
+</ol>
+
+<ol>
+<li><strong>Recombinase Polymerase Amplification Combined With PfAgo for Rapid Detection of *Perkinsus olseni</strong>*（*Journal of Fish Diseases*）— 将RPA等温扩增与可编程核酸酶PfAgo切割相结合，实现对OIE名录病原*P. olseni*的快速检测，有望摆脱传统培养法和PCR对设备与时间的依赖。该方法对贝类养殖现场诊断具有直接应用潜力。</li>
+</ol>
+
+<ol>
+<li><strong>Long-Term Low- and Normal-Temperature Operation of Commercial RAS Biofilters</strong>（*Microorganisms*）— 针对商业规模RAS生物滤器在低温胁迫下的微生物群落响应开展长期观测，弥补了以往多基于实验室规模短期的不足。研究对比了低温与常温条件下群落结构与氮循环功能预测的差异，对寒冷地区RAS运行管理具有参考价值。</li>
+</ol>
+
+<ol>
+<li><strong>Energetic costs of catch and release angling in Brook Trout at two temperatures</strong>（*Journal of Fish Biology*）— 将C&R的生理胁迫量化为恢复期的能量支出与摄食停滞代价，并考察温度的双重调节作用。该研究把休闲渔业管理中的"放流即无害"假设置于能量学检验之下，对变暖背景下C&R规范制定有直接意义。</li>
+</ol>
+
+<h2>推荐阅读</h2>
+
+<ol>
+<li><strong>Deep-Learning-Assisted Discovery of Marine Antimicrobial Peptides: A Roadmap Integrating Omics Mining, Structure-Guided Diffusion Design, and Sustainable Aquaculture Translation</strong> — 方法学视野开阔，是本周最具跨学科前瞻性的论文。</li>
+<li><strong>Recombinase Polymerase Amplification Combined With the Programmable Nuclease PfAgo for Rapid Detection of *Perkinsus olseni* in Shellfish</strong> — 检测技术新颖且贴合养殖现场需求，实用性强。</li>
+<li><strong>Long-Term Low- and Normal-Temperature Operation of Commercial Recirculating Aquaculture System Biofilters</strong> — 基于商业规模长期数据，对RAS低温运行有直接指导价值。</li>
+<li><strong>Influence of a thermohaline front on the trophic ecology of the small pelagic fish *Lycengraulis grossidens</strong>* — 将物理海洋过程与渔业物种营养生态耦合，生态学意义明确。</li>
+<li><strong>Energetic costs of catch and release angling in Brook Trout (*Salvelinus fontinalis*) at two temperatures</strong> — 为休闲渔业管理提供了可量化的生理学依据。</li>
+</ol>
+  </div>
+  
+
+  <!-- 统计 -->
+  <div class="stats-row">
+    <div class="stat-mini">📄 <strong>8</strong> 篇论文</div>
+    <div class="stat-mini">🌟 <strong>0</strong> 篇高影响力期刊</div>
+    <div class="stat-mini">🤖 <strong>8</strong> 篇 AI 中文总结</div>
+    
+    <div class="stat-mini">🏷️ 水产养殖(Aquaculture) 循环水系统(Recirculating Aquaculture System) 抗菌肽(Antimicrobial Peptides) 病原检测(Pathogen Detection) </div>
+    
+  </div>
+
+  <!-- 搜索 -->
+  <div class="controls">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="搜索标题、作者、摘要..." oninput="filterPapers()">
+    </div>
+  </div>
+
+  <div class="no-results" id="noResults">😕 没有匹配的论文</div>
+
+  <!-- 全部论文列表 -->
+  <div class="section-title">📄 本周全部论文（8 篇）</div>
+  <div class="paper-grid">
+    
+    <div class="paper-card"
+         data-title="the influence of accountability on procurement performance: a case study ministry of blue economy and fisheries zanzibar"
+         data-authors="manzi, abdillah; sama, hamisi"
+         data-journal="african journal of empirical research"
+         data-abstract="accountability is a foundational pillar of procurement governance, yet quantitative evidence on how accountability mechanisms specifically shape procurement outcomes within individual government ministries in zanzibar remains scarce. this study examined the influence of accountability on procurement performance at the ministry of blue economy and fisheries (mobef), zanzibar. guided by institutional theory and attached in a positivist research philosophy, study adopted a descriptive and explanatory quantitative design where a structured, five-point likert-scale questionnaire was administered to 85 respondents drawn from a target population of 108 procurement officers, tender board members, finance officers, user department representatives, internal auditors, and registered suppliers, selected through stratified random sampling using yamane’s (1967) formula. data were analyzed descriptively and inferentially using ibm spss version 23, incorporating reliability testing, correlation, and multiple linear regressions. descriptive results revealed that accountability practices were generally well established at mobef, with mean scores ranging from 3.90 to 4.12. review and approval procedures and documentation practices attracted the strongest endorsement, while disciplinary enforcement for procurement irregularities recorded both the lowest mean (m = 3.90) and the greatest variability (sd = 0.89), indicating a structural enforcement gap within the ministry’s accountability system. multiple regression analysis confirmed that accountability significantly and positively predicted procurement performance (β = 0.27, se = 0.07, t = 3.57, p = .001), alongside fairness (β = 0.31, p &lt; .001) and transparency (β = 0.29, p = .002); the overall model was statistically significant (f(3, 81) = 28.45, p &lt; .001, r² = 0.520). the null hypothesis was rejected. these findings confirm that while formal accountability structures are well established within mobef, inconsistent disciplinary enforcement limits their full effect on procurement performance. the study recommends strengthening audit follow-through, enforcing consistent sanctions for non-compliance, and institutionalizing structured monitoring systems."
+         data-summary="本研究以桑给巴尔蓝色经济与渔业部（mobef）为例，基于制度理论，采用描述性与解释性定量设计，通过问卷对85名采购相关人员调查，检验问责机制对采购绩效的影响。结果显示问责实践总体建立良好，但违规纪律执行得分最低且变异最大，存在结构性执行缺口。多元回归表明问责显著正向预测采购绩效（β=0.27, p=.001），公平性与透明度亦为显著预测因子（模型r²=0.520）。研究建议强化审计跟踪、统一违规惩戒并制度化监测体系。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 African Journal of Empirical Research
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究以桑给巴尔蓝色经济与渔业部（MoBEF）为例，基于制度理论，采用描述性与解释性定量设计，通过问卷对85名采购相关人员调查，检验问责机制对采购绩效的影响。结果显示问责实践总体建立良好，但违规纪律执行得分最低且变异最大，存在结构性执行缺口。多元回归表明问责显著正向预测采购绩效（β=0.27, p=.001），公平性与透明度亦为显著预测因子（模型R²=0.520）。研究建议强化审计跟踪、统一违规惩戒并制度化监测体系。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.51867/ajernet.7.4.72" target="_blank" rel="noopener">The influence of accountability on procurement performance: a case study ministry of blue economy and fisheries Zanzibar</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Manzi, Abdillah; Sama, Hamisi</span>
+        
+        <span>📅 2026-10-26</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Accountability is a foundational pillar of procurement governance, yet quantitative evidence on how accountability mechanisms specifically shape procurement outcomes within individual government ministries in Zanzibar remains scarce. This study examined the influence of accountability on procurement performance at the Ministry of Blue Economy and Fisheries (MoBEF), Zanzibar. Guided by Institutional Theory and attached in a positivist research philosophy, study adopted a descriptive and explanatory quantitative design where a structured, five-point Likert-scale questionnaire was administered to 85 respondents drawn from a target population of 108 procurement officers, tender board members, finance officers, user department representatives, internal auditors, and registered suppliers, selected through stratified random sampling using Yamane’s (1967) formula. Data were analyzed descriptively and inferentially using IBM SPSS version 23, incorporating reliability testing, correlation, and multiple linear regressions. Descriptive results revealed that accountability practices were generally well established at MoBEF, with mean scores ranging from 3.90 to 4.12. Review and approval procedures and documentation practices attracted the strongest endorsement, while disciplinary enforcement for procurement irregularities recorded both the lowest mean (M = 3.90) and the greatest variability (SD = 0.89), indicating a structural enforcement gap within the Ministry’s accountability system. Multiple regression analysis confirmed that accountability significantly and positively predicted procurement performance (β = 0.27, SE = 0.07, t = 3.57, p = .001), alongside fairness (β = 0.31, p &lt; .001) and transparency (β = 0.29, p = .002); the overall model was statistically significant (F(3, 81) = 28.45, p &lt; .001, R² = 0.520). The null hypothesis was rejected. These findings confirm that while formal accountability structures are well established within MoBEF, inconsistent disciplinary enforcement limits their full effect on procurement performance. The study recommends strengthening audit follow-through, enforcing consistent sanctions for non-compliance, and institutionalizing structured monitoring systems.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="influence of a thermohaline front on the trophic ecology of the small pelagic fish
+                    <i>lycengraulis grossidens</i>
+                    (clupeiformes: engraulidae)"
+         data-authors="marcilese, maría manuela; parietti, manuela; temperoni, brenda; buratti, german esteban; buratti, claudio césar"
+         data-journal="journal of fish biology"
+         data-abstract="abstract lycengraulis grossidens is economically important for artisanal fisheries and prey of top predators in the río de la plata (rp) (sw atlantic). in particular, samborombón bay (sb)—ramsar site and key marine summer feeding area for the species—is strongly affected by climate variability. diet composition, feeding strategy and dietary shifts related to fish size and to an existing thermohaline front between two sb zones were determined in late austral summer (april). a high incidence of brackish/marine prey was hypothesized, varying ontogenetically and in relation with the front. trophic incidence exceeded 90%. neomysis americana (mysidacea) dominated the diet, followed by decapod larvae, gastropods and teleosts. the feeding strategy was specialist at the population level for n. americana but generalist for other prey. both nmds and glm analyses supported the hypothesis, as n. americana , copepods and gastropods were more consumed in north sb, while teleosts south sb, linked to the thermohaline front affecting prey distribution. smaller individuals (&lt;100 mm) consumed copepods and decapod larvae, whereas larger individuals (&gt;150 mm) increasingly fed on n. americana and gastropods. unlike previous studies reporting piscivory at larger sizes, sb specimens maintained a zooplankton‐based diet, with a strong preference for n. americana . results highlight the species' trophic plasticity and the influence of environmental and ontogenetic factors. this study provides valuable new information on the trophic ecology of l. grossidens in marine waters after a gap of over 60 years, contributing to a better understanding of its trophic role in highly dynamic estuarine and coastal ecosystems."
+         data-summary="本研究分析了热盐锋对samborombón湾小型中上层鱼类*lycengraulis grossidens*摄食生态的影响，通过胃含物分析确定其食物组成、摄食策略及随鱼体大小和锋面位置的变化。结果显示该鱼种摄食发生率超过90%，以*neomysis americana*为主，种群水平表现为专食性但整体为广食性；热盐锋通过影响猎物分布导致南北湾食物组成差异，且小型个体摄食桡足类和十足目幼体、大型个体更多摄食*n. americana*和腹足类。研究表明该鱼种在海洋环境中维持浮游动物食性并具有较强摄食可塑性，填补了60余年来其摄食生态的研究空白。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究分析了热盐锋对Samborombón湾小型中上层鱼类*Lycengraulis grossidens*摄食生态的影响，通过胃含物分析确定其食物组成、摄食策略及随鱼体大小和锋面位置的变化。结果显示该鱼种摄食发生率超过90%，以*Neomysis americana*为主，种群水平表现为专食性但整体为广食性；热盐锋通过影响猎物分布导致南北湾食物组成差异，且小型个体摄食桡足类和十足目幼体、大型个体更多摄食*N. americana*和腹足类。研究表明该鱼种在海洋环境中维持浮游动物食性并具有较强摄食可塑性，填补了60余年来其摄食生态的研究空白。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70687" target="_blank" rel="noopener">Influence of a thermohaline front on the trophic ecology of the small pelagic fish
+                    <i>Lycengraulis grossidens</i>
+                    (Clupeiformes: Engraulidae)</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Marcilese, María Manuela; Parietti, Manuela; Temperoni, Bren...</span>
+        
+        <span>📅 2026-10-26</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract Lycengraulis grossidens is economically important for artisanal fisheries and prey of top predators in the Río de la Plata (RP) (SW Atlantic). In particular, Samborombón Bay (SB)—RAMSAR site and key marine summer feeding area for the species—is strongly affected by climate variability. Diet composition, feeding strategy and dietary shifts related to fish size and to an existing thermohaline front between two SB zones were determined in late austral summer (April). A high incidence of brackish/marine prey was hypothesized, varying ontogenetically and in relation with the front. Trophic incidence exceeded 90%. Neomysis americana (Mysidacea) dominated the diet, followed by decapod larvae, gastropods and teleosts. The feeding strategy was specialist at the population level for N. americana but generalist for other prey. Both nMDS and GLM analyses supported the hypothesis, as N. americana , copepods and gastropods were more consumed in North SB, while teleosts South SB, linked to the thermohaline front affecting prey distribution. Smaller individuals (&lt;100 mm) consumed copepods and decapod larvae, whereas larger individuals (&gt;150 mm) increasingly fed on N. americana and gastropods. Unlike previous studies reporting piscivory at larger sizes, SB specimens maintained a zooplankton‐based diet, with a strong preference for N. americana . Results highlight the species' trophic plasticity and the influence of environmental and ontogenetic factors. This study provides valuable new information on the trophic ecology of L. grossidens in marine waters after a gap of over 60 years, contributing to a better understanding of its trophic role in highly dynamic estuarine and coastal ecosystems.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="energetic costs of catch and release angling in
+                    <scp>b</scp>
+                    rook
+                    <scp>t</scp>
+                    rout (
+                    <scp>
+                      <i>s</i>
+                    </scp>
+                    <i>alvelinus fontinalis</i>
+                    ) at two temperatures"
+         data-authors="hodgson, ryan y.; holder, peter e.; nowell, liane b.; cooke, steven j.; brownscombe, jacob w."
+         data-journal="journal of fish biology"
+         data-abstract="abstract catch and release (c&amp;r) angling is a common practice in recreational fisheries, which can involve a range of acute stressors for fish that lead to physiological and behavioural impairments. following a c&amp;r event, energy is expended to fuel recovery, while a cessation in feeding can limit energy intake. while the physiological and behavioural consequences of c&amp;r have been extensively studied, the extent of the bioenergetic impacts has rarely been characterized. this study aimed to assess the energetic impacts of c&amp;r stressors on brook trout ( salvelinus fontinalis )—a cold‐water salmonid sensitive to temperature perturbations and air exposure. adult brook trout were subjected to simulated angling events (i.e. 30s chase, 30s chase and 10s air exposure) or served as controls at 10°c and 15°c. respirometry was used to measure energy expenditure through excess post‐exercise oxygen consumption (epoc), while a feeding experiment determined the time to return to feeding. energy expenditure and reductions in energy consumption were incorporated into a bioenergetics model to predict growth outcomes following captures (i.e. 1, 3, 5) over 30 days. the stressors simulated here resulted in a maximum growth deviation of 4.1% (95% ci [2.8–6.5]) after a single capture and 21.0% (95% ci [14.6–33.4]) after five captures. across temperatures, brook trout experienced higher peak metabolic rates at 15°c, but rapid recovery resulted in similar energetic costs of recovery to 10°c. however, our bioenergetic simulations revealed that prolonged (24 h) elevated daily temperature (15°c) occupancy raised metabolic energy expenditure negating the benefits of a faster resumption of feeding. nevertheless, the moderate simulated c&amp;r stressors tested here within the optimal temperature range of brook trout resulted in relatively small energetic consequences, even with numerous simulated captures. future research should explore the bioenergetic effects of more intense (but still reasonably common) c&amp;r stressors, including longer air exposure periods, hooking injuries and temperature extremes."
+         data-summary="本研究旨在量化模拟捕获放流（c&r）应激对溪红点鲑（brook trout, salvelinus fontinalis）的能量学影响。成鱼在10°c和15°c下接受模拟钓捕处理（30秒追逐、30秒追逐+10秒暴露空气）或作为对照，通过呼吸测定法测定运动后过量耗氧（epoc），并结合摄食恢复实验将能量消耗与摄食减少纳入生物能量学模型预测30天生长。结果显示，单次捕获后最大生长偏差为4.1%，五次捕获后达21.0%；15°c下峰值代谢率更高但恢复迅速，能量恢复成本与10°c相似，然而持续24小时处于15°c会因代谢能耗增加而抵消摄食恢复加快的收益。总体而言，在溪红点鲑适宜温度范围内，中等强度的c&r应激即使多次捕获也仅产生较小的能量学后果，未来需关注更强烈应激源（如长时间暴露空气、钩伤及极端温度）的影响。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Biology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究旨在量化模拟捕获放流（C&R）应激对溪红点鲑（Brook Trout, Salvelinus fontinalis）的能量学影响。成鱼在10°C和15°C下接受模拟钓捕处理（30秒追逐、30秒追逐+10秒暴露空气）或作为对照，通过呼吸测定法测定运动后过量耗氧（EPOC），并结合摄食恢复实验将能量消耗与摄食减少纳入生物能量学模型预测30天生长。结果显示，单次捕获后最大生长偏差为4.1%，五次捕获后达21.0%；15°C下峰值代谢率更高但恢复迅速，能量恢复成本与10°C相似，然而持续24小时处于15°C会因代谢能耗增加而抵消摄食恢复加快的收益。总体而言，在溪红点鲑适宜温度范围内，中等强度的C&R应激即使多次捕获也仅产生较小的能量学后果，未来需关注更强烈应激源（如长时间暴露空气、钩伤及极端温度）的影响。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfb.70696" target="_blank" rel="noopener">Energetic costs of catch and release angling in
+                    <scp>B</scp>
+                    rook
+                    <scp>T</scp>
+                    rout (
+                    <scp>
+                      <i>S</i>
+                    </scp>
+                    <i>alvelinus fontinalis</i>
+                    ) at two temperatures</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Hodgson, Ryan Y.; Holder, Peter E.; Nowell, Liane B.; Cooke,...</span>
+        
+        <span>📅 2026-10-26</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract Catch and release (C&amp;R) angling is a common practice in recreational fisheries, which can involve a range of acute stressors for fish that lead to physiological and behavioural impairments. Following a C&amp;R event, energy is expended to fuel recovery, while a cessation in feeding can limit energy intake. While the physiological and behavioural consequences of C&amp;R have been extensively studied, the extent of the bioenergetic impacts has rarely been characterized. This study aimed to assess the energetic impacts of C&amp;R stressors on Brook Trout ( Salvelinus fontinalis )—a cold‐water salmonid sensitive to temperature perturbations and air exposure. Adult Brook Trout were subjected to simulated angling events (i.e. 30s chase, 30s chase and 10s air exposure) or served as controls at 10°C and 15°C. Respirometry was used to measure energy expenditure through excess post‐exercise oxygen consumption (EPOC), while a feeding experiment determined the time to return to feeding. Energy expenditure and reductions in energy consumption were incorporated into a bioenergetics model to predict growth outcomes following captures (i.e. 1, 3, 5) over 30 days. The stressors simulated here resulted in a maximum growth deviation of 4.1% (95% CI [2.8–6.5]) after a single capture and 21.0% (95% CI [14.6–33.4]) after five captures. Across temperatures, Brook Trout experienced higher peak metabolic rates at 15°C, but rapid recovery resulted in similar energetic costs of recovery to 10°C. However, our bioenergetic simulations revealed that prolonged (24 h) elevated daily temperature (15°C) occupancy raised metabolic energy expenditure negating the benefits of a faster resumption of feeding. Nevertheless, the moderate simulated C&amp;R stressors tested here within the optimal temperature range of Brook Trout resulted in relatively small energetic consequences, even with numerous simulated captures. Future research should explore the bioenergetic effects of more intense (but still reasonably common) C&amp;R stressors, including longer air exposure periods, hooking injuries and temperature extremes.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="recombinase polymerase amplification combined with the programmable nuclease
+                    <i>pf</i>
+                    ago for rapid detection of
+                    <i>perkinsus olseni</i>
+                    in shellfish"
+         data-authors="wang, pei; qin, yuxin; huang, yidan; ren, yuxuan; lin, yan; wu, huiling; zhu, huabiao; ding, hong; li, yanan; gao, song"
+         data-journal="journal of fish diseases"
+         data-abstract="abstract perkinsus olseni is a major pathogenic parasite that threatens shellfish aquaculture and can trigger mass mortality and considerable economic losses. conventional culture‐based assays and pcr‐based detection protocols for p. olseni recommended by the world organization for animal health (oie) involve long assay durations and heavy dependence on sophisticated instruments, making them unsuitable for on‐site rapid screening. to establish a simple, rapid and highly sensitive detection method for early warning of p. olseni at aquaculture sites, this study integrated isothermal recombinase polymerase amplification (rpa) with the specific‐recognition capacity of pf ago nuclease to construct an rpa‐ pf ago detection assay. the assay achieved favourable specificity with a limit of detection as low as 30 copies. its practical applicability was validated using 55 real‐world shellfish samples. performing at constant temperatures, the rpa‐ pf ago detection assay features a simple procedure and short turnaround time, effectively addressing the drawbacks of conventional detection approaches. this assay is suitable for shellfish seed quarantine and routine pathogen surveillance in shellfish farms, and provides solid support for the early prevention and control of perkinsosis caused by p. olseni ."
+         data-summary="本研究针对威胁贝类养殖的致病性寄生虫perkinsus olseni，将等温重组酶聚合酶扩增（rpa）与pf ago核酸酶的特异性识别能力相结合，构建了rpa-pf ago快速检测方法。该方法特异性良好，检测限低至30拷贝，并经55份实际贝类样品验证了实用性。该检测在恒温下操作简便、周转时间短，适用于贝类苗种检疫和养殖场常规病原监测，为perkinsosis的早期防控提供支持。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Fish Diseases
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究针对威胁贝类养殖的致病性寄生虫Perkinsus olseni，将等温重组酶聚合酶扩增（RPA）与Pf Ago核酸酶的特异性识别能力相结合，构建了RPA-Pf Ago快速检测方法。该方法特异性良好，检测限低至30拷贝，并经55份实际贝类样品验证了实用性。该检测在恒温下操作简便、周转时间短，适用于贝类苗种检疫和养殖场常规病原监测，为perkinsosis的早期防控提供支持。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/jfd.70314" target="_blank" rel="noopener">Recombinase Polymerase Amplification Combined With the Programmable Nuclease
+                    <i>Pf</i>
+                    Ago for Rapid Detection of
+                    <i>Perkinsus olseni</i>
+                    in Shellfish</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Wang, Pei; Qin, Yuxin; Huang, Yidan; Ren, Yuxuan; Lin, Yan; ...</span>
+        
+        <span>📅 2026-10-26</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">ABSTRACT Perkinsus olseni is a major pathogenic parasite that threatens shellfish aquaculture and can trigger mass mortality and considerable economic losses. Conventional culture‐based assays and PCR‐based detection protocols for P. olseni recommended by the World Organization for Animal Health (OIE) involve long assay durations and heavy dependence on sophisticated instruments, making them unsuitable for on‐site rapid screening. To establish a simple, rapid and highly sensitive detection method for early warning of P. olseni at aquaculture sites, this study integrated isothermal recombinase polymerase amplification (RPA) with the specific‐recognition capacity of Pf Ago nuclease to construct an RPA‐ Pf Ago detection assay. The assay achieved favourable specificity with a limit of detection as low as 30 copies. Its practical applicability was validated using 55 real‐world shellfish samples. Performing at constant temperatures, the RPA‐ Pf Ago detection assay features a simple procedure and short turnaround time, effectively addressing the drawbacks of conventional detection approaches. This assay is suitable for shellfish seed quarantine and routine pathogen surveillance in shellfish farms, and provides solid support for the early prevention and control of perkinsosis caused by P. olseni .</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="microbial contamination of fish production waste after processing in eco biocomposters"
+         data-authors="khomenko, r. m.; alexandrov, v. v.; knysh, i. v.; simeyko, a. v."
+         data-journal="legal regulation in veterinary medicine"
+         data-abstract="currently, the problem of processing various types of organic waste from agricultural and food production is becoming the most urgent, as they often have to be disposed of by paying for this service. at the same time, the cost of protein components of feed and, consequently, compound feeds is constantly increasing. in this regard, the development of new technologies and technical solutions for processing agricultural and food waste for possible use in animal feeding is becoming relevant. one of these technologies, which allows the production of animal feed products, is the biothermal processing of organic waste using special installations, for example, biothermal composters "eco" produced by llc radian proekt and jsc pk eco. technological solutions used in eco biocomposters have made it possible to create a fully autonomous machine for the disposal of food and organic waste of various volumes. the article presents the results of a chemical analysis of the resulting compost after processing fish waste (adult rainbow trout) for compliance with certain qualitative indicators. in the conducted studies, it was found that the average mass of waste and bacteria (bio-mixture) loaded for processing at one time decreased by 16.1 times and amounted to 1,9 ± 0,2 kg, the moisture content was 1.9%, the mass fraction of water-soluble carbohydrates increased to 6,8%, the protein content increased to 10,5% compared with the initial product."
+         data-summary="本研究评估了生态生物堆肥机处理虹鳟成鱼加工废弃物后所得堆肥的化学与微生物质量，旨在探索鱼类加工废弃物的资源化利用途径。研究测定了堆肥前后物料质量、含水量、水溶性碳水化合物及蛋白质含量等指标。结果显示，单次处理物料（废弃物与菌剂混合物）平均质量降至1.9±0.2 kg（减少16.1倍），含水量为1.9%，水溶性碳水化合物升至6.8%，蛋白质含量升至10.5%。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Legal regulation in veterinary medicine
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究评估了生态生物堆肥机处理虹鳟成鱼加工废弃物后所得堆肥的化学与微生物质量，旨在探索鱼类加工废弃物的资源化利用途径。研究测定了堆肥前后物料质量、含水量、水溶性碳水化合物及蛋白质含量等指标。结果显示，单次处理物料（废弃物与菌剂混合物）平均质量降至1.9±0.2 kg（减少16.1倍），含水量为1.9%，水溶性碳水化合物升至6.8%，蛋白质含量升至10.5%。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.52419/issn2782-6252.2026.3.166" target="_blank" rel="noopener">Microbial contamination of fish production waste after processing in eco biocomposters</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Khomenko, R. M.; Alexandrov, V. V.; Knysh, I. V.; Simeyko, A...</span>
+        
+        <span>📅 2026-10-26</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Currently, the problem of processing various types of organic waste from agricultural and food production is becoming the most urgent, as they often have to be disposed of by paying for this service. At the same time, the cost of protein components of feed and, consequently, compound feeds is constantly increasing. In this regard, the development of new technologies and technical solutions for processing agricultural and food waste for possible use in animal feeding is becoming relevant. One of these technologies, which allows the production of animal feed products, is the biothermal processing of organic waste using special installations, for example, biothermal composters "ECO" produced by LLC Radian Proekt and JSC PK ECO. Technological solutions used in ECO biocomposters have made it possible to create a fully autonomous machine for the disposal of food and organic waste of various volumes. The article presents the results of a chemical analysis of the resulting compost after processing fish waste (adult rainbow trout) for compliance with certain qualitative indicators. In the conducted studies, it was found that the average mass of waste and bacteria (bio-mixture) loaded for processing at one time decreased by 16.1 times and amounted to 1,9 ± 0,2 kg, the moisture content was 1.9%, the mass fraction of water-soluble carbohydrates increased to 6,8%, the protein content increased to 10,5% compared with the initial product.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="labeling and accounting of salmon species aquaculture facilities in cage farming in the context of modern regulatory and legal regulation in the russian federation and integration into veterinary information systems"
+         data-authors="akimova, n. s.; markov, t. i."
+         data-journal="legal regulation in veterinary medicine"
+         data-abstract="the article is devoted to the analysis of the current state of the system of labeling and accounting of salmon aquaculture facilities in cage farming. the regulatory framework for regulating this area in the russian federation is being considered, including federal law no. 148-fz "on aquaculture (fish farming)", decree of the government of the russian federation no. 550 "on approval of the list of animal species subject to labeling and accounting" and eaeu technical regulation 040/2016 "on the safety of fish and fish products". the practical aspects of the introduction of fish identification systems using group and individual labeling methods, the specifics of the use of product traceability technologies are analyzed. the key problems of the existing accounting system have been identified, from the technological difficulties of installing microchips to insufficient integration of information systems. the necessity of modernizing labeling approaches is substantiated, taking into account the biological characteristics of salmon and the technological conditions of cage cultivation. the directions of improving the regulatory framework and practical accounting mechanisms for aquaculture facilities are proposed."
+         data-summary="该文分析俄罗斯网箱养殖鲑科鱼类设施的标签与追溯体系现状，梳理了联邦法律第148-fz号、政府令第550号及eaeu技术法规040/2016等监管框架。研究评估了群体与个体标记方法及产品追溯技术的实践应用，识别出从微芯片植入的技术难点到信息系统整合不足等关键问题。文章论证了结合鲑鱼生物学特性与网箱养殖技术条件现代化标签方法的必要性，并提出完善法规框架与核算机制的方向。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Legal regulation in veterinary medicine
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该文分析俄罗斯网箱养殖鲑科鱼类设施的标签与追溯体系现状，梳理了联邦法律第148-FZ号、政府令第550号及EAEU技术法规040/2016等监管框架。研究评估了群体与个体标记方法及产品追溯技术的实践应用，识别出从微芯片植入的技术难点到信息系统整合不足等关键问题。文章论证了结合鲑鱼生物学特性与网箱养殖技术条件现代化标签方法的必要性，并提出完善法规框架与核算机制的方向。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.52419/issn2782-6252.2026.3.34" target="_blank" rel="noopener">Labeling and accounting of salmon species aquaculture facilities in cage farming in the context of modern regulatory and legal regulation in the Russian Federation and integration into veterinary information systems</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Akimova, N. S.; Markov, T. I.</span>
+        
+        <span>📅 2026-10-26</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">The article is devoted to the analysis of the current state of the system of labeling and accounting of salmon aquaculture facilities in cage farming. The regulatory framework for regulating this area in the Russian Federation is being considered, including Federal Law No. 148-FZ "On Aquaculture (Fish Farming)", Decree of the Government of the Russian Federation No. 550 "On Approval of the List of Animal Species Subject to Labeling and Accounting" and EAEU Technical Regulation 040/2016 "On the Safety of Fish and Fish Products". The practical aspects of the introduction of fish identification systems using group and individual labeling methods, the specifics of the use of product traceability technologies are analyzed. The key problems of the existing accounting system have been identified, from the technological difficulties of installing microchips to insufficient integration of information systems. The necessity of modernizing labeling approaches is substantiated, taking into account the biological characteristics of salmon and the technological conditions of cage cultivation. The directions of improving the regulatory framework and practical accounting mechanisms for aquaculture facilities are proposed.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="deep-learning-assisted discovery of marine antimicrobial peptides: a roadmap integrating omics mining, structure-guided diffusion design, and sustainable aquaculture translation"
+         data-authors="liu, bo; liu, hanjing; jia, yunna; he, jie; wang, ye; jiang, haiyan; xue, zhiyang; guo, shuqi; zhu, yuanquan; kong, lingcong"
+         data-journal="marine drugs"
+         data-abstract="antimicrobial peptides (amps) offer diverse antibacterial mechanisms, but candidate generation alone does not resolve the linked demands of potency, host safety, stability, manufacturability, and application-specific exposure. this review presents a roadmap that integrates two complementary computational routes for marine amp discovery. de novo generation expands sequence space, whereas omics mining preserves biological provenance and enables recovery of encoded or encrypted peptides from marine organisms and microbiomes. structure-guided diffusion is positioned as a selective third route when a defined target, motif, or stable structural template is available, rather than as a universal replacement for sequence-based amp models. we further examine aquaculture as a translational setting in which efficacy must be evaluated together with salt and feed tolerance, environmental fate, tissue residues, resistance risk, and export-related requirements. current evidence remains limited at the direct intersection of marine provenance and deep learning, particularly for target-conditioned structural design. we therefore propose an evidence-based workflow that links marine sequence resources, model selection, matched experimental validation, and application-specific deployment. this framework is intended to move marine amp research from candidate prediction toward reproducible and testable translation."
+         data-summary="该综述提出整合组学挖掘与深度学习生成的海源抗菌肽（amp）发现路线图：de novo生成扩展序列空间，omics mining保留生物来源并回收编码/加密肽，结构引导扩散仅在明确靶标或结构模板时作为选择性第三条路线。水产养殖被作为转化场景，需同时评估盐度与饲料耐受性、环境归趋、组织残留及耐药风险。当前海源来源与深度学习直接交叉的证据有限，作者据此提出连接海洋序列资源、模型选择、匹配实验验证与应用部署的循证工作流。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Marine Drugs
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该综述提出整合组学挖掘与深度学习生成的海源抗菌肽（AMP）发现路线图：de novo生成扩展序列空间，omics mining保留生物来源并回收编码/加密肽，结构引导扩散仅在明确靶标或结构模板时作为选择性第三条路线。水产养殖被作为转化场景，需同时评估盐度与饲料耐受性、环境归趋、组织残留及耐药风险。当前海源来源与深度学习直接交叉的证据有限，作者据此提出连接海洋序列资源、模型选择、匹配实验验证与应用部署的循证工作流。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/md24110375" target="_blank" rel="noopener">Deep-Learning-Assisted Discovery of Marine Antimicrobial Peptides: A Roadmap Integrating Omics Mining, Structure-Guided Diffusion Design, and Sustainable Aquaculture Translation</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Liu, Bo; Liu, Hanjing; Jia, Yunna; He, Jie; Wang, Ye; Jiang,...</span>
+        
+        <span>📅 2026-10-26</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Antimicrobial peptides (AMPs) offer diverse antibacterial mechanisms, but candidate generation alone does not resolve the linked demands of potency, host safety, stability, manufacturability, and application-specific exposure. This review presents a roadmap that integrates two complementary computational routes for marine AMP discovery. De novo generation expands sequence space, whereas omics mining preserves biological provenance and enables recovery of encoded or encrypted peptides from marine organisms and microbiomes. Structure-guided diffusion is positioned as a selective third route when a defined target, motif, or stable structural template is available, rather than as a universal replacement for sequence-based AMP models. We further examine aquaculture as a translational setting in which efficacy must be evaluated together with salt and feed tolerance, environmental fate, tissue residues, resistance risk, and export-related requirements. Current evidence remains limited at the direct intersection of marine provenance and deep learning, particularly for target-conditioned structural design. We therefore propose an evidence-based workflow that links marine sequence resources, model selection, matched experimental validation, and application-specific deployment. This framework is intended to move marine AMP research from candidate prediction toward reproducible and testable translation.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="long-term low- and normal-temperature operation of commercial recirculating aquaculture system biofilters: contrasting microbial communities and predicted nitrogen-cycling profiles"
+         data-authors="jiang, wenwen; fu, qi; liu, tingting; li, li; wang, guodong; guo, enmian"
+         data-journal="microorganisms"
+         data-abstract="microorganisms in biofilters are essential to recirculating aquaculture systems (rass). low temperature is an important environmental stress influencing the performance of the biofilter in rass. however, how the microorganisms in the biofilters respond to low temperature remains unclear. in this study, we compared the microbial communities of two commercial ras biofilters operating under low- and normal-temperature regimes across four seasons. both biofilters generally kept low ammonia and nitrite concentrations, although the low-temperature biofilter exhibited higher nitrite levels overall with a more pronounced seasonal increase. the low-temperature biofilter also exhibited lower bacterial diversity, fewer detected taxa, and substantial shifts in community composition. the microbial communities were strongly associated with toc, alkalinity, and inorganic nitrogen. its co-occurrence network was smaller and more centralized, with greater clustering and shorter average path lengths, indicating highly concentrated microbial associations. predicted nitrogen-cycle profiles also differed between the two biofilters. the predicted nitrification profile did not differ significantly, whereas the predicted denitrification profile was lower in the low-temperature biofilter. these findings indicate that the two commercial systems harbored distinctly different microbial communities, reflecting differences in specific processes. collectively, mature ras biofilters sustained ammonia and nitrite removal despite substantial community simplification, whereas individual predicted nitrogen-cycling processes exhibited distinct predicted patterns under the two operating regimes."
+         data-summary="本研究比较了两套商业ras生物滤器在低温与常温运行下四个季节的微生物群落差异。低温滤器亚硝酸盐水平更高且季节波动更明显，细菌多样性较低、检出类群更少，群落组成变化显著，并与toc、碱度和无机氮密切相关；其共现网络更小、更集中。预测氮循环中硝化谱无显著差异，但低温滤器反硝化谱较低。结果表明成熟ras生物滤器在群落显著简化的条件下仍能维持氨和亚硝酸盐去除，但各氮循环过程在两种运行模式下呈现不同预测格局。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Microorganisms
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究比较了两套商业RAS生物滤器在低温与常温运行下四个季节的微生物群落差异。低温滤器亚硝酸盐水平更高且季节波动更明显，细菌多样性较低、检出类群更少，群落组成变化显著，并与TOC、碱度和无机氮密切相关；其共现网络更小、更集中。预测氮循环中硝化谱无显著差异，但低温滤器反硝化谱较低。结果表明成熟RAS生物滤器在群落显著简化的条件下仍能维持氨和亚硝酸盐去除，但各氮循环过程在两种运行模式下呈现不同预测格局。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/microorganisms14112448" target="_blank" rel="noopener">Long-Term Low- and Normal-Temperature Operation of Commercial Recirculating Aquaculture System Biofilters: Contrasting Microbial Communities and Predicted Nitrogen-Cycling Profiles</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Jiang, Wenwen; Fu, Qi; Liu, Tingting; Li, Li; Wang, Guodong;...</span>
+        
+        <span>📅 2026-10-26</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Microorganisms in biofilters are essential to recirculating aquaculture systems (RASs). Low temperature is an important environmental stress influencing the performance of the biofilter in RASs. However, how the microorganisms in the biofilters respond to low temperature remains unclear. In this study, we compared the microbial communities of two commercial RAS biofilters operating under low- and normal-temperature regimes across four seasons. Both biofilters generally kept low ammonia and nitrite concentrations, although the low-temperature biofilter exhibited higher nitrite levels overall with a more pronounced seasonal increase. The low-temperature biofilter also exhibited lower bacterial diversity, fewer detected taxa, and substantial shifts in community composition. The microbial communities were strongly associated with TOC, alkalinity, and inorganic nitrogen. Its co-occurrence network was smaller and more centralized, with greater clustering and shorter average path lengths, indicating highly concentrated microbial associations. Predicted nitrogen-cycle profiles also differed between the two biofilters. The predicted nitrification profile did not differ significantly, whereas the predicted denitrification profile was lower in the low-temperature biofilter. These findings indicate that the two commercial systems harbored distinctly different microbial communities, reflecting differences in specific processes. Collectively, mature RAS biofilters sustained ammonia and nitrite removal despite substantial community simplification, whereas individual predicted nitrogen-cycling processes exhibited distinct predicted patterns under the two operating regimes.</div>
+      
+    </div>
+    
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var s=localStorage.getItem('theme');
+  if(s){document.documentElement.setAttribute('data-theme',s);
+  document.getElementById('themeIcon').textContent=s==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=s==='dark'?'亮色':'暗色';}
+})();
+function toggleTheme(){
+  var h=document.documentElement,n=h.getAttribute('data-theme')==='dark'?'light':'dark';
+  h.setAttribute('data-theme',n);
+  document.getElementById('themeIcon').textContent=n==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=n==='dark'?'亮色':'暗色';
+  localStorage.setItem('theme',n);
+}
+function toggleAbstract(b){
+  var c=b.nextElementSibling,v=c.classList.contains('visible');
+  c.classList.toggle('visible');b.classList.toggle('open');
+  b.querySelector('.arrow').textContent=v?'▶':'▼';
+}
+function filterPapers(){
+  var q=(document.getElementById('searchInput').value||'').toLowerCase().trim(),vis=0;
+  document.querySelectorAll('.paper-card').forEach(function(c){
+    var t=[c.getAttribute('data-title')||'',c.getAttribute('data-authors')||'',c.getAttribute('data-journal')||'',c.getAttribute('data-abstract')||'',c.getAttribute('data-summary')||''].join(' ');
+    var s=!q||t.includes(q);c.classList.toggle('hidden',!s);if(s)vis++;
+  });
+  document.getElementById('noResults').classList.toggle('visible',vis===0);
+}
+</script>
+</body>
+</html>
