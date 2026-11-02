@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>鱼类免疫与抗病机制研究进展 — 渔业文献每周速览</title>
+<style>
+:root {
+  --bg: #f7fafc; --bg-card: #ffffff; --text: #2d3748;
+  --text-secondary: #718096; --text-muted: #a0aec0; --border: #e2e8f0;
+  --primary: #2b6cb0; --primary-light: #bee3f8; --primary-dark: #1a365d;
+  --accent: #e76f51; --accent-light: #fed7d7;
+  --teal: #319795; --teal-light: #b2f5ea;
+  --gold: #d69e2e; --gold-light: #fefcbf;
+  --shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.10);
+  --radius: 12px; --radius-sm: 8px;
+}
+[data-theme="dark"] {
+  --bg: #1a202c; --bg-card: #2d3748; --text: #e2e8f0;
+  --text-secondary: #a0aec0; --text-muted: #718096; --border: #4a5568;
+  --primary: #90cdf4; --primary-light: #2a4365; --primary-dark: #bee3f8;
+  --accent: #fc8181; --accent-light: #742a2a;
+  --teal: #81e6d9; --teal-light: #234e52;
+  --gold: #f6e05e; --gold-light: #3d3a1a;
+  --shadow: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.5);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;transition:background 0.3s,color 0.3s}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* === Top Bar === */
+.topbar{background:linear-gradient(135deg,#1a365d,#2b6cb0);color:#fff;padding:0.8rem 1.5rem;display:flex;align-items:center;gap:1rem;position:sticky;top:0;z-index:100}
+.back-btn{color:#fff;font-size:0.95rem;font-weight:600;padding:0.4rem 0.8rem;border-radius:var(--radius-sm);border:1.5px solid rgba(255,255,255,0.3);transition:all 0.2s;white-space:nowrap}
+.back-btn:hover{background:rgba(255,255,255,0.15);text-decoration:none}
+.topbar .title-area{flex:1;min-width:0}
+.topbar .week-range{font-size:0.78rem;opacity:0.8}
+.topbar .week-topic{font-size:1rem;font-weight:700;line-height:1.3}
+.topbar .theme-toggle{padding:0.4rem 0.8rem;border:1.5px solid rgba(255,255,255,0.3);border-radius:var(--radius-sm);background:transparent;color:#fff;cursor:pointer;font-size:0.85rem;transition:all 0.2s;white-space:nowrap}
+.topbar .theme-toggle:hover{background:rgba(255,255,255,0.15)}
+
+.container{max-width:1100px;margin:0 auto;padding:1.5rem}
+
+/* === Article Section === */
+.article-section{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;margin-bottom:1.5rem;box-shadow:var(--shadow)}
+.article-section h2{font-size:1.3rem;color:var(--primary-dark);margin:1.5rem 0 0.75rem;padding-bottom:0.4rem;border-bottom:2px solid var(--primary-light)}
+.article-section h2:first-child{margin-top:0}
+.article-section p{margin-bottom:0.8rem;line-height:1.8;color:var(--text)}
+.article-section strong{color:var(--primary-dark)}
+.article-section ol,.article-section ul{padding-left:1.5rem;margin-bottom:0.8rem}
+.article-section li{margin-bottom:0.5rem;line-height:1.7}
+.article-tag{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-right:0.5rem}
+.tag-overview{background:var(--primary-light);color:var(--primary-dark)}
+.tag-highlight{background:var(--accent-light);color:var(--accent)}
+.tag-innovative{background:var(--gold-light);color:var(--gold)}
+.tag-recommend{background:var(--teal-light);color:var(--teal)}
+
+/* === Stats Row === */
+.stats-row{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.stat-mini{padding:0.5rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-secondary)}
+.stat-mini strong{color:var(--primary);font-size:1.1rem}
+
+/* === Controls === */
+.controls{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.search-box{flex:1;min-width:200px;position:relative}
+.search-box input{width:100%;padding:0.6rem 1rem 0.6rem 2.5rem;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:0.9rem;background:var(--bg-card);color:var(--text);transition:border-color 0.2s}
+.search-box input:focus{outline:none;border-color:var(--primary)}
+.search-box .search-icon{position:absolute;left:0.8rem;top:50%;transform:translateY(-50%);color:var(--text-muted);pointer-events:none}
+
+/* === Paper Grid === */
+.section-title{font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:0.75rem;display:flex;align-items:center;gap:0.5rem}
+.paper-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:0.85rem;margin-bottom:1.5rem}
+.paper-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1.1rem;transition:all 0.25s;display:flex;flex-direction:column;position:relative}
+.paper-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);border-color:var(--primary-light)}
+.paper-card.high-impact{border-left:3px solid var(--accent)}
+.paper-card .hi-badge{position:absolute;top:0.5rem;right:0.5rem;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:10px;background:var(--accent-light);color:var(--accent);font-weight:700}
+.paper-card .journal{font-size:0.78rem;color:var(--teal);font-weight:600;margin-bottom:0.3rem}
+.paper-card .title{font-size:0.95rem;font-weight:700;line-height:1.45;margin-bottom:0.35rem}
+.paper-card .title a{color:var(--text)}
+.paper-card .title a:hover{color:var(--primary);text-decoration:none}
+.paper-card .meta{font-size:0.78rem;color:var(--text-muted);margin-bottom:0.6rem;display:flex;flex-wrap:wrap;gap:0.5rem}
+
+/* Chinese Summary */
+.paper-card .summary-cn{background:linear-gradient(135deg,#fffaf0,#fffff0);border-left:3px solid var(--gold);padding:0.7rem 0.85rem;margin-bottom:0.5rem;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:0.88rem;line-height:1.55;color:#744210}
+[data-theme="dark"] .paper-card .summary-cn{background:linear-gradient(135deg,#3d2e1a,#372a10);color:#fbd38d}
+
+.abstract-toggle{font-size:0.8rem;color:var(--primary);cursor:pointer;font-weight:600;user-select:none;display:inline-flex;align-items:center;gap:0.25rem;padding:0.3rem 0;border:none;background:none}
+.abstract-toggle:hover{color:var(--accent)}
+.abstract-toggle .arrow{transition:transform 0.2s;font-size:0.7rem}
+.abstract-toggle.open .arrow{transform:rotate(90deg)}
+.abstract-content{display:none;font-size:0.82rem;color:var(--text-secondary);line-height:1.55;padding:0.5rem 0;border-top:1px dashed var(--border);margin-top:0.4rem}
+.abstract-content.visible{display:block}
+
+.paper-card.hidden{display:none}
+.no-results{display:none;text-align:center;padding:2rem;color:var(--text-muted)}
+.no-results.visible{display:block}
+
+@media(max-width:768px){.paper-grid{grid-template-columns:1fr}.article-section{padding:1.25rem}.topbar{flex-wrap:wrap}.topbar .week-topic{font-size:0.9rem}}
+
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.paper-card{animation:fadeIn 0.4s ease-out}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="back-btn" href="index.html">← 返回主页</a>
+  <div class="title-area">
+    <div class="week-range">11月2日—11月2日</div>
+    <div class="week-topic">鱼类免疫与抗病机制研究进展</div>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <span id="themeIcon">🌙</span> <span id="themeLabel">暗色</span>
+  </button>
+</div>
+
+<div class="container">
+
+  <!-- 深度综述文章 -->
+  
+  <div class="article-section">
+    <h2>本周研究概览</h2>
+
+<p>本周共收录4篇论文，其中1篇为勘误声明，实际研究性论文仅3篇，且均未提供完整摘要，综述深度受到一定限制。研究方向集中于水产养殖动物的免疫应答与疾病防控，涉及鲤科鱼类（gibel carp）的炎症调控和海水鱼类（大黄鱼与真鲷）对刺激隐核虫（*Cryptocaryon irritans*）的敏感性差异机制。此外，一篇关于公牛鲨（*Carcharhinus leucas*）近岸水域出现驱动因素的勘误提示该方向仍有持续关注。整体来看，本周论文数量偏少，研究主题以宿主-病原互作和免疫调控为主，未见宏观渔业资源管理或气候效应方面的新成果。</p>
+
+<h2>高影响力期刊亮点</h2>
+
+<p>本周暂无。</p>
+
+<h2>创新性研究</h2>
+
+<ol>
+<li><strong>Effects of waterborne exposure to crude mulberry leaf polysaccharides on lipopolysaccharide-induced acute inflammatory responses in gibel carp (*Carassius gibelio*): insights into host immune and intestinal responses</strong>（*Aquaculture*）</li>
+</ol>
+<p>该研究的创新点在于采用水体暴露（waterborne exposure）途径递送桑叶粗多糖，而非传统的饲料添加方式，并同时考察宿主免疫与肠道响应两个层面。若结果证实水体暴露可有效调控LPS诱导的急性炎症，将为水产养殖中免疫增强剂的给药方式提供低成本、低应激的替代方案，对集约化养殖中的炎症性疾病管理具有潜在应用价值。</p>
+
+<ol>
+<li><strong>Comparative analysis of immune responses reveals mechanisms underlying different susceptibility to *Cryptocaryon irritans* in large yellow croaker (*Larimichthys crocea*) and red sea bream (*Pagrus major*)</strong>（*Aquaculture*）</li>
+</ol>
+<p>该研究以两种经济海水鱼为对象，通过比较免疫应答解析对刺激隐核虫易感性差异的机制，创新性体现在以“同病原、异宿主”的比较免疫学框架定位种间抗性差异的关键环节。研究结果有望为抗病育种标记筛选和物种混养策略提供理论依据，对海水网箱养殖中白点病的防控具有直接参考意义。</p>
+
+<ol>
+<li><strong>Comparison of EBER flow FISH results from two facilities</strong>（*Cytometry Part B: Clinical Cytometry*）</li>
+</ol>
+<p>该文虽属临床病毒学范畴，但其方法学核心——EBER flow FISH的跨机构可比性验证——对渔业免疫学中流式细胞术方法的标准化具有借鉴意义。多中心方法一致性评估的思路可迁移至鱼类免疫细胞表型分析的质量控制，提示本领域在方法学报告规范上仍有提升空间。</p>
+
+<h2>推荐阅读</h2>
+
+<ol>
+<li><strong>Comparative analysis of immune responses reveals mechanisms underlying different susceptibility to *Cryptocaryon irritans* in large yellow croaker (*Larimichthys crocea*) and red sea bream (*Pagrus major*)</strong> — 比较免疫学视角解析海水鱼抗寄生虫机制，对病害防控与抗病育种均有参考价值。</li>
+<li><strong>Effects of waterborne exposure to crude mulberry leaf polysaccharides on lipopolysaccharide-induced acute inflammatory responses in gibel carp (*Carassius gibelio*): insights into host immune and intestinal responses</strong> — 探索植物多糖水体给药途径，兼具方法创新与应用潜力。</li>
+<li><strong>Corrigendum to “Drivers of bull shark (*Carcharhinus leucas*) occurrence in nearshore waters: Insights from the Queensland Shark Control Program, Australia”</strong> — 虽为勘误，但原文涉及鲨鱼控制项目的人-鲨冲突管理，建议读者回溯原文以了解该方向最新数据修正。</li>
+<li><strong>Comparison of EBER flow FISH results from two facilities</strong> — 跨机构流式方法一致性评估，对渔业免疫学实验标准化有方法学借鉴意义。</li>
+<li><strong>Effects of waterborne exposure to crude mulberry leaf polysaccharides...</strong> — 若关注肠道免疫与炎症调控，该文是本周唯一涉及肠道响应层面的研究，值得细读。</li>
+</ol>
+
+<p><strong>说明</strong>：本周论文数量少、摘要缺失较多，部分判断基于标题信息，建议读者查阅全文后自行核实。</p>
+  </div>
+  
+
+  <!-- 统计 -->
+  <div class="stats-row">
+    <div class="stat-mini">📄 <strong>4</strong> 篇论文</div>
+    <div class="stat-mini">🌟 <strong>0</strong> 篇高影响力期刊</div>
+    <div class="stat-mini">🤖 <strong>4</strong> 篇 AI 中文总结</div>
+    
+    <div class="stat-mini">🏷️ 免疫应答(Immune Response) 寄生虫感染(Parasite Infection) 炎症反应(Inflammatory Response) 肠道免疫(Intestinal Immunity) </div>
+    
+  </div>
+
+  <!-- 搜索 -->
+  <div class="controls">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="搜索标题、作者、摘要..." oninput="filterPapers()">
+    </div>
+  </div>
+
+  <div class="no-results" id="noResults">😕 没有匹配的论文</div>
+
+  <!-- 全部论文列表 -->
+  <div class="section-title">📄 本周全部论文（4 篇）</div>
+  <div class="paper-grid">
+    
+    <div class="paper-card"
+         data-title="effects of waterborne exposure to crude mulberry leaf polysaccharides on lipopolysaccharide-induced acute inflammatory responses in gibel carp (carassius gibelio): insights into host immune and intestinal responses"
+         data-authors="fei, xintong; xie, xinyi; tarique, imran; liu, xiuhong; fang, xingxing; yang, ping"
+         data-journal="aquaculture"
+         data-abstract=""
+         data-summary="本研究以异育银鲫（carassius gibelio）为对象，探讨水体暴露桑叶粗多糖对lps诱导急性炎症反应的调节作用，并从宿主免疫与肠道响应角度分析其机制。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Aquaculture
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究以异育银鲫（Carassius gibelio）为对象，探讨水体暴露桑叶粗多糖对LPS诱导急性炎症反应的调节作用，并从宿主免疫与肠道响应角度分析其机制。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1016/j.aquaculture.2026.744686" target="_blank" rel="noopener">Effects of waterborne exposure to crude mulberry leaf polysaccharides on lipopolysaccharide-induced acute inflammatory responses in gibel carp (Carassius gibelio): insights into host immune and intestinal responses</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Fei, Xintong; Xie, Xinyi; Tarique, Imran; Liu, Xiuhong; Fang...</span>
+        
+        <span>📅 2026-11-02</span>
+      </div>
+
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="comparative analysis of immune responses reveals mechanisms underlying different susceptibility to cryptocaryon irritans in large yellow croaker (larimichthys crocea) and red sea bream (pagrus major)"
+         data-authors="chen, xin xin; chen, xi pan; li, meng qing; liu, yang"
+         data-journal="aquaculture"
+         data-abstract=""
+         data-summary="该研究比较大黄鱼（larimichthys crocea）与真鲷（pagrus major）对刺激隐核虫（cryptocaryon irritans）感染的免疫应答差异，以解析二者易感性不同的机制。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Aquaculture
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该研究比较大黄鱼（Larimichthys crocea）与真鲷（Pagrus major）对刺激隐核虫（Cryptocaryon irritans）感染的免疫应答差异，以解析二者易感性不同的机制。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1016/j.aquaculture.2026.744684" target="_blank" rel="noopener">Comparative analysis of immune responses reveals mechanisms underlying different susceptibility to Cryptocaryon irritans in large yellow croaker (Larimichthys crocea) and red sea bream (Pagrus major)</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Chen, Xin Xin; Chen, Xi Pan; Li, Meng Qing; Liu, Yang</span>
+        
+        <span>📅 2026-11-02</span>
+      </div>
+
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="comparison of
+                    <scp>eber</scp>
+                    flow
+                    <scp>fish</scp>
+                    results from two facilities"
+         data-authors="nishimura, madoka; tomomasa, dan; watanabe, eri; tsuchiya, kazumi; sato, natsuko; takachi, takayuki; imai, kohsuke; akiyama, hiroki; ueki, masahiro; yoshifuji, kota"
+         data-journal="cytometry part b: clinical cytometry"
+         data-abstract="abstract epstein–barr virus (ebv) primarily infects b cells but can occasionally target t and/or nk cells, leading to chronic active ebv disease or ebv‐associated hemophagocytic lymphohistiocytosis, which are often difficult to treat. ebv‐associated diseases exhibit a wide range of phenotypes. ebv‐infected cells play a major role in pathogenesis, making their identification essential for diagnosis. ebv‐encoded small rna (eber) flow fluorescence in situ hybridization (fish), combined with multicolor flow cytometry, allows highly sensitive detection of ebv‐infected cells, even from limited samples. however, eber flow fish is labor‐intensive and requires technical expertise, limiting its use in standard facilities. we investigated whether the technique used in our department could be successfully implemented in other facilities. we performed eber flow fish at our department (facility a) on cryopreserved peripheral blood mononuclear cell samples from seven patients diagnosed with ebv‐associated diseases. the same assay was then conducted at facility b, and results were compared for cell populations and the frequency of eber‐positive cells within each population. significant correlations were observed between facilities for both cell fraction proportions and the proportion of eber‐positive cells. among data points where both facilities detected ≥5% eber‐positive cells, 6 of 8 data points (75%) were within the acceptance interval of ±20%. although one patient with very low proportions of eber‐positive cells showed inconsistent findings, overall results did not differ significantly between facilities. although further validation in larger multicenter studies is required, these findings suggest preliminary interlaboratory comparability and support the potential transferability of eber flow fish across institutions."
+         data-summary="该研究比较了两个实验室开展eber flow fish检测ebv感染细胞的结果一致性，以评估该技术在不同机构间推广的可行性。研究对7例ebv相关疾病患者的冻存外周血单个核细胞样本在a、b两个实验室分别进行eber flow fish检测，比较各细胞亚群比例及eber阳性细胞频率。结果显示两机构间细胞组分比例及eber阳性细胞比例均呈显著相关，在双方均检出≥5% eber阳性细胞的8个数据点中有6个（75%）落在±20%的可接受区间内。尽管1例eber阳性细胞比例极低的患者结果不一致，总体结果无显著差异，提示该技术具有初步的实验室间可比性和跨机构转移潜力。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Cytometry Part B: Clinical Cytometry
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该研究比较了两个实验室开展EBER flow FISH检测EBV感染细胞的结果一致性，以评估该技术在不同机构间推广的可行性。研究对7例EBV相关疾病患者的冻存外周血单个核细胞样本在A、B两个实验室分别进行EBER flow FISH检测，比较各细胞亚群比例及EBER阳性细胞频率。结果显示两机构间细胞组分比例及EBER阳性细胞比例均呈显著相关，在双方均检出≥5% EBER阳性细胞的8个数据点中有6个（75%）落在±20%的可接受区间内。尽管1例EBER阳性细胞比例极低的患者结果不一致，总体结果无显著差异，提示该技术具有初步的实验室间可比性和跨机构转移潜力。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1002/cyto.b.70091" target="_blank" rel="noopener">Comparison of
+                    <scp>EBER</scp>
+                    flow
+                    <scp>FISH</scp>
+                    results from two facilities</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Nishimura, Madoka; Tomomasa, Dan; Watanabe, Eri; Tsuchiya, K...</span>
+        
+        <span>📅 2026-11-02</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract Epstein–Barr virus (EBV) primarily infects B cells but can occasionally target T and/or NK cells, leading to chronic active EBV disease or EBV‐associated hemophagocytic lymphohistiocytosis, which are often difficult to treat. EBV‐associated diseases exhibit a wide range of phenotypes. EBV‐infected cells play a major role in pathogenesis, making their identification essential for diagnosis. EBV‐encoded small RNA (EBER) flow fluorescence in situ hybridization (FISH), combined with multicolor flow cytometry, allows highly sensitive detection of EBV‐infected cells, even from limited samples. However, EBER flow FISH is labor‐intensive and requires technical expertise, limiting its use in standard facilities. We investigated whether the technique used in our department could be successfully implemented in other facilities. We performed EBER flow FISH at our department (Facility A) on cryopreserved peripheral blood mononuclear cell samples from seven patients diagnosed with EBV‐associated diseases. The same assay was then conducted at Facility B, and results were compared for cell populations and the frequency of EBER‐positive cells within each population. Significant correlations were observed between facilities for both cell fraction proportions and the proportion of EBER‐positive cells. Among data points where both facilities detected ≥5% EBER‐positive cells, 6 of 8 data points (75%) were within the acceptance interval of ±20%. Although one patient with very low proportions of EBER‐positive cells showed inconsistent findings, overall results did not differ significantly between facilities. Although further validation in larger multicenter studies is required, these findings suggest preliminary interlaboratory comparability and support the potential transferability of EBER flow FISH across institutions.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="corrigendum to “drivers of bull shark (carcharhinus leucas) occurrence in nearshore waters: insights from the queensland shark control program, australia” [fish. res. 303 (2026) 107882]"
+         data-authors="banaghan, riley w.; levengood, alexis l.; holmes, bonnie j."
+         data-journal="fisheries research"
+         data-abstract=""
+         data-summary="该文为对原文的更正说明，原文研究基于澳大利亚昆士兰鲨鱼控制计划（queensland shark control program）数据，分析公牛鲨（carcharhinus leucas）近岸水域出现规律的驱动因素。更正内容未提供摘要，具体修正信息需参见原文。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Fisheries Research
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该文为对原文的更正说明，原文研究基于澳大利亚昆士兰鲨鱼控制计划（Queensland Shark Control Program）数据，分析公牛鲨（Carcharhinus leucas）近岸水域出现规律的驱动因素。更正内容未提供摘要，具体修正信息需参见原文。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1016/j.fishres.2026.107913" target="_blank" rel="noopener">Corrigendum to “Drivers of bull shark (Carcharhinus leucas) occurrence in nearshore waters: Insights from the Queensland Shark Control Program, Australia” [Fish. Res. 303 (2026) 107882]</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Banaghan, Riley W.; Levengood, Alexis L.; Holmes, Bonnie J.</span>
+        
+        <span>📅 2026-11-02</span>
+      </div>
+
+      
+    </div>
+    
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var s=localStorage.getItem('theme');
+  if(s){document.documentElement.setAttribute('data-theme',s);
+  document.getElementById('themeIcon').textContent=s==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=s==='dark'?'亮色':'暗色';}
+})();
+function toggleTheme(){
+  var h=document.documentElement,n=h.getAttribute('data-theme')==='dark'?'light':'dark';
+  h.setAttribute('data-theme',n);
+  document.getElementById('themeIcon').textContent=n==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=n==='dark'?'亮色':'暗色';
+  localStorage.setItem('theme',n);
+}
+function toggleAbstract(b){
+  var c=b.nextElementSibling,v=c.classList.contains('visible');
+  c.classList.toggle('visible');b.classList.toggle('open');
+  b.querySelector('.arrow').textContent=v?'▶':'▼';
+}
+function filterPapers(){
+  var q=(document.getElementById('searchInput').value||'').toLowerCase().trim(),vis=0;
+  document.querySelectorAll('.paper-card').forEach(function(c){
+    var t=[c.getAttribute('data-title')||'',c.getAttribute('data-authors')||'',c.getAttribute('data-journal')||'',c.getAttribute('data-abstract')||'',c.getAttribute('data-summary')||''].join(' ');
+    var s=!q||t.includes(q);c.classList.toggle('hidden',!s);if(s)vis++;
+  });
+  document.getElementById('noResults').classList.toggle('visible',vis===0);
+}
+</script>
+</body>
+</html>
