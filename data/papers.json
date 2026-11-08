@@ -1,8 +1,21 @@
 {
-  "last_updated": "2026-11-07T14:37:45Z",
-  "total_papers": 253,
-  "new_today": 14,
+  "last_updated": "2026-11-08T14:44:14Z",
+  "total_papers": 243,
+  "new_today": 4,
   "papers": [
+    {
+      "doi": "10.37229/fas.2026.004",
+      "title": "Food Security in the Sultanate of Oman, 1975–2025: Fisheries, Falaj Agriculture and the Rise of Diversified Self-Sufficiency",
+      "authors": "Nosir, Walid",
+      "journal": "The Future of Applied Science",
+      "date": "2026-11-08",
+      "abstract": "Oman differs from its Gulf neighbours in several respects relevant to food security: a long Arabian Sea coastline with productive fisheries, a monsoon-influenced southern region (Dhofar), an ancient irrigation tradition based on the falaj system, and major ports at Sohar, Duqm and Salalah that lie outside, or at the mouth of, the Strait of Hormuz. Since the start of the modern state in 1970, its population has grown from well under one million to over five million, and food demand has risen accordingly. This review traces Oman's food-security trajectory over five decades, drawing on National Centre for Statistics and Information data, ministry production statistics reported in the national press, the Global Food Security Index and the scholarly literature. Over the period, coastal agriculture on the Al Batinah plain suffered severe groundwater salinisation, which undermined date and lime cultivation. Since about 2010, however, deliberate investment in fisheries, aquaculture, dairy, poultry, eggs and protected vegetables has raised overall food self-sufficiency to about 65.8% in 2024, with sector ratios of 144.5% for fish, 87.3% for animal production, 66.4% for food and beverage industries and 49.4% for agricultural crop products. At commodity level, the latest reported self-sufficiency is about 146–162% for fish, 97–99% for dates, 92–97% for milk and 92–95% for eggs, while poultry stood at 55–60% and red meat at 46% in 2023. Oman scored 71.2 in the 2022 GFSI (35th of 113), and its gain of 13.8 points since 2012 was the largest improvement of any country. The review concludes that Oman's combination of marine resources, targeted investment and port diversification offers a model for arid states, while water quality, climate risk and feed dependence remain the principal constraints.",
+      "summary_cn": "该综述基于国家统计、部委产量数据、Global Food Security Index及学术文献，梳理阿曼1975–2025年粮食安全轨迹：人口从不足百万增至逾五百万，Al Batinah平原沿海农业因地下水盐渍化致椰枣与青柠种植受损。自2010年前后对渔业、水产养殖、乳业、禽蛋及保护地蔬菜的定向投资，使2024年整体粮食自给率升至约65.8%，其中鱼类144.5%、动物生产87.3%；鱼类自给率约146–162%，禽肉55–60%、红肉46%。2022年GFSI得分71.2（113国中第35位），2012年以来提升13.8分为各国最大增幅；水质、气候风险与饲料依赖仍为主要约束。",
+      "url": "https://doi.org/10.37229/fas.2026.004",
+      "source": "crossref",
+      "keywords_matched": "fisheries",
+      "high_impact": true
+    },
     {
       "doi": "10.1111/reel.70103",
       "title": "Judicial review of bottom‐trawling restrictions in EU marine protected areas: Case T‐265/23\n                    <i>VDK v Commission</i>",
@@ -15,6 +28,45 @@
       "source": "crossref",
       "keywords_matched": "marine fisheries",
       "high_impact": false
+    },
+    {
+      "doi": "10.1186/s12302-026-01523-4",
+      "title": "Physiological and histological study of the toxicity and biocompatibility of graphene oxide and GO–PVA nanocomposite hydrogels in the treatment of metal-contaminated water for Oreochromis niloticus aquaculture",
+      "authors": "Moustafa, Basma H.; Serag, Eman; Zeid, Salma M. S.",
+      "journal": "Environmental Sciences Europe",
+      "date": "2026-11-07",
+      "abstract": "Abstract Heavy metals in aquaculture water from industrial effluent, mining, and agricultural runoff pose risks to ecosystems and human health. Graphene oxide (GO) effectively adsorbs heavy metal ions but can be toxic to fish. A composite of PVA hydrogel with GO enhances water quality maintenance in aquaculture. While PVA-GO hydrogel's adsorption capacity has been studied, its environmental and toxicological impacts are unclear. This study examines the biocompatibility of low-concentration PVA-GO hydrogel composites for water treatment, comparing untreated, metal-contaminated, and treated water samples in Oreochromis niloticus aquaculture. The synthesis of GO and PVA-GO hydrogel was analyzed using X-ray diffraction (XRD), scanning electron microscopy (SEM), and FTIR spectra. The results indicated that heavy metal-contaminated water caused significant anemia and altered plasma biochemistry, while the biomarkers in treated groups returned to levels similar to the control. Additionally, GO and PVA-GO hydrogels exhibited intestinal antibacterial activity. This research suggests that combining GO with PVA hydrogel reduces toxicity to fish, improves heavy metal removal, and enhances their health in aquaculture environments.",
+      "summary_cn": "本研究评估了氧化石墨烯（GO）及GO–PVA纳米复合水凝胶处理重金属污染水对尼罗罗非鱼（Oreochromis niloticus）的毒性与生物相容性，通过XRD、SEM和FTIR对材料进行表征，并比较未处理、重金属污染及处理后水体养殖组的生理与组织学指标。结果显示，重金属污染水导致鱼类显著贫血及血浆生化改变，而处理组生物标志物恢复至接近对照组水平；GO与PVA-GO水凝胶还表现出肠道抗菌活性。研究表明，GO与PVA水凝胶复合可降低对鱼的毒性、提高重金属去除效果并改善养殖环境中的鱼体健康。",
+      "url": "https://doi.org/10.1186/s12302-026-01523-4",
+      "source": "crossref",
+      "keywords_matched": "aquaculture",
+      "high_impact": true
+    },
+    {
+      "doi": "10.1139/cjz-2026-0046",
+      "title": "Estimating divergence and migration times of sticklebacks (Gasterosteidae): a fossil-based analysis using the Adaptive Beta method",
+      "authors": "Frank, Tanner Matthew; Marshall, Charles R.; Bell, Michael A.",
+      "journal": "Canadian Journal of Zoology",
+      "date": "2026-11-07",
+      "abstract": "The timing of major events in stickleback evolution is important for determining rates of molecular evolution within the group. Inferred substitution rates depend on fossil-calibrated divergence times, but in sticklebacks these currently rest on the single oldest fossil occurrence or calibrations largely from other fish taxa, leaving them vulnerable to the idiosyncrasies of the fossil record. We infer a chronology for major events in stickleback evolution using the Adaptive Beta method (ABM) on subsets of a record of 53 gasterosteid fossil occurrences. By incorporating multiple fossil ages in a Bayesian framework, this approach produces credible intervals that account for varying fossil recovery potential through time. Our analysis indicates that the Gasterosteidae originated approximately 32.9 Mya (95% CI: 24.5-54.3 Mya), with the divergence between Gasterosteus and other genera, including Pungitius, occurring at approximately 20.8 Mya (95% CI: 13.8-40.7 Mya). Furthermore, the results inform the timing of inter-oceanic dispersal: we find that Gasterosteus aculeatus Linnaeus, 1758 likely entered the Atlantic only 0.9 Mya (95% CI: 0.6-1.7 Mya). Inclusion of uncertain early Atlantic basin fossils pushes this invasion back to 6.4 Mya (95% CI: 4.8-10.4 Mya). These interval-based estimates provide a reliable chronological framework for calibrating rates of nucleotide substitution in sticklebacks.",
+      "summary_cn": "研究利用Adaptive Beta方法对53个刺鱼科（Gasterosteidae）化石记录进行贝叶斯分析，以估计该科主要演化事件的时间及分子进化速率校准框架。结果显示刺鱼科约起源于32.9 Mya，Gasterosteus与其他属（含Pungitius）的分歧约发生于20.8 Mya；Gasterosteus aculeatus进入大西洋约在0.9 Mya，若纳入不确定的早期大西洋盆地化石则推前至6.4 Mya。该基于区间估计的年代框架为刺鱼核苷酸替换率的校准提供了可靠依据。",
+      "url": "https://doi.org/10.1139/cjz-2026-0046",
+      "source": "crossref",
+      "keywords_matched": "fish migration",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1007/s12562-026-02041-1",
+      "title": "Initial predation risk of different developmental stages of juvenile Japanese eels released into two upper estuaries in Japan",
+      "authors": "Hasegawa, Yuha; Fukuda, Nobuto; Matsushige, Kazuki; Nanjo, Kusuto; Miki, Ryohei; Tanaka, Toshimitsu; Kawabata, Yuuki",
+      "journal": "Fisheries Science",
+      "date": "2026-11-07",
+      "abstract": "",
+      "summary_cn": "本研究关注日本鳗鲡幼鳗在放流初期的被捕食风险，比较了不同发育阶段个体在日本两处上游河口放流后的捕食压力差异。由于缺乏摘要，具体方法与结果无法获知，建议结合放流点生境特征与捕食者群落评估放流时机与规格。",
+      "url": "https://doi.org/10.1007/s12562-026-02041-1",
+      "source": "crossref_issn",
+      "keywords_matched": "Fisheries Science",
+      "high_impact": true
     },
     {
       "doi": "10.1111/jfd.70306",
@@ -3109,205 +3161,23 @@
       "source": "crossref",
       "keywords_matched": "fish stock",
       "high_impact": false
-    },
-    {
-      "doi": "10.1007/s40011-026-01814-z",
-      "title": "Reproductive Dynamics of Himalayan Snowtrouts: Relevance to Conservation and Fisheries Management",
-      "authors": "Mir, Farooq Ahmad; Kaur, Navpreet; Mir, Javaid Iqbal; Ganaie, Farroq Ahmad; War, Tariq Ahmad",
-      "journal": "Proceedings of the National Academy of Sciences, India Section B: Biological Sciences",
-      "date": "2026-10-24",
-      "abstract": "",
-      "summary_cn": "该研究聚焦喜马拉雅雪鳟的繁殖动态，探讨其繁殖特征对物种保护与渔业管理的意义。由于摘要缺失，具体方法与发现无法概述，建议关注其繁殖物候、性成熟及产卵习性等参数在 stock assessment 与保护区设计中的应用。",
-      "url": "https://doi.org/10.1007/s40011-026-01814-z",
-      "source": "crossref",
-      "keywords_matched": "fisheries",
-      "high_impact": true
-    },
-    {
-      "doi": "10.1038/s41598-026-76241-1",
-      "title": "Predicting fish spoilage through adsorption and detection of volatile sulfur compounds on B2N monolayers: a computational study",
-      "authors": "Rahimi, Rezvan; Solimannejad, Mohammad",
-      "journal": "Scientific Reports",
-      "date": "2026-10-24",
-      "abstract": "",
-      "summary_cn": "利用B2N单层吸附并检测挥发性硫化合物以预测鱼类腐败的计算研究。",
-      "url": "https://doi.org/10.1038/s41598-026-76241-1",
-      "source": "crossref",
-      "keywords_matched": "fish population",
-      "high_impact": false
-    },
-    {
-      "doi": "10.63158/journalisi.v8i5.1798",
-      "title": "Image-Based Asymmetric Feature Fusion Using EfficientNet-B0 and MobileNetV3Large for Multi-Class Fish Disease Classification&lt;b&gt;&lt;/b&gt;",
-      "authors": "Helmud, Ellya; Kiswanto",
-      "journal": "Journal of Information Systems and Informatics",
-      "date": "2026-10-24",
-      "abstract": "This study proposes an asymmetric hybrid feature-fusion network that combines EfficientNet-B0 and MobileNetV3Large in parallel for multi-class classification of eight fish disease categories. The approach is designed to exploit the complementary feature-learning capabilities of both lightweight convolutional neural network architectures while maintaining computational efficiency for potential diagnostic applications. The model was evaluated on a public dataset of 2,400 digital images, divided into training, validation, and test sets using an 80:10:10 ratio. The held-out test set contained 240 unseen images, with 30 images representing each class. As all data partitions originated from the same dataset, the evaluation reflects performance on the same source distribution rather than external generalization. The proposed architecture fuses spatial feature representations through parallel Global Average Pooling (GAP) and Global Max Pooling (GMP) layers. Training followed a progressive two-phase strategy comprising top-layer warm-up and micro deep fine-tuning with a learning rate of \\(10^{-5}\\) and label smoothing. Experimental results achieved a validation accuracy of 0.9667 with a loss of 0.5843, and a test accuracy of 0.9833 with a loss of 0.5375 and a macro-average ROC-AUC of 0.9998. On an NVIDIA RTX 3080 GPU, the model recorded an average inference time of 8.61 ms per image, equivalent to 116.18 FPS. Further evaluation using external farm datasets and low-power edge devices is required before real-world deployment.",
-      "summary_cn": "提出一种并行融合EfficientNet-B0与MobileNetV3Large的非对称混合特征融合网络，用于八类鱼病图像分类，通过GAP与GMP融合空间特征并采用两阶段渐进训练策略。在2,400张公开图像（8:1:1划分）上，验证集准确率0.9667、测试集准确率0.9833，macro-average ROC-AUC达0.9998，单图推理耗时8.61 ms（116.18 FPS）。作者指出评估限于同源数据分布，需在外部养殖场数据集与低功耗边缘设备上进一步验证方可实际部署。",
-      "url": "https://doi.org/10.63158/journalisi.v8i5.1798",
-      "source": "crossref",
-      "keywords_matched": "fish stock",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1021/acsesttox.6c00068",
-      "title": "fishFingers: Prioritization\nof High-Resolution Mass\nSpectrometry Features by Prediction of Bioconcentration Factors in\nFish Species",
-      "authors": "Szabo, Drew; MacOscar, Kian; Plaisted, Katie; McGarrigle, Marie; Boxall, Alistair B. A.; Mosely, Jackie A.",
-      "journal": "ACS ES&amp;T Toxicology",
-      "date": "2026-10-24",
-      "abstract": "Abstract The number of novel entities produced around the world exceeds our capacity to evaluate the risk of each chemical under traditional frameworks. Detecting, prioritizing, and identifying thousands of chemicals present in the environment is a challenge to understanding this planetary boundary. Machine learning has demonstrated quick and accurate predictions for ecotoxicological end points for chemicals with structural fingerprints derived from high-resolution mass spectrometry (HRMS). This study provides a new nontargeted screening strategy to prioritize HRMS features by the prediction of bioconcentration factors (BCF) without a priori structural annotation. An XGBoost model was trained on a database with structural fingerprints from 1285 unique substances and log10 BCF measurements from 111 species of fish. Validation was performed using structural fingerprints derived from high-quality tandem mass spectrometry (MS2), with RMSE = 1.02, MAE = 0.81, and ρ = 0.50, demonstrating its capability in predicting log10 BCF and to rank HRMS features by predicted bioconcentration from a wide chemical space. Variations in BCF were observed in species such as common carp (Cyprinus carpio), which exhibits lower average BCF compared with zebrafish (Danio rerio). Halogenation, aliphatic and aromatic carbon, and heteroatomaticity were among the most important structural fingerprints for BCF. The model and package are available from https://github.com/drewszabo/fishFingers.",
-      "summary_cn": "本研究开发了fishFingers工具，利用XGBoost模型基于高分辨率质谱（HRMS）结构指纹预测鱼类生物富集因子（BCF），无需先验结构注释即可对HRMS特征进行优先级排序。模型在1285种物质和111种鱼类的数据上训练，验证结果显示RMSE=1.02、MAE=0.81、ρ=0.50。研究发现鲤鱼（Cyprinus carpio）的平均BCF低于斑马鱼（Danio rerio），卤化、脂肪族和芳香族碳及杂芳香性是最重要的结构指纹特征。",
-      "url": "https://doi.org/10.1021/acsesttox.6c00068",
-      "source": "crossref",
-      "keywords_matched": "fish stock",
-      "high_impact": false
-    },
-    {
-      "doi": "10.21534/ai.v27i1.210",
-      "title": "Utilization of Fish Waste Flour as a Substitute for Fish Meal on the Growth Rate and Survival of Catfish (Clarias sp.)",
-      "authors": "Kaka Avinsha, Rezha; Wisnu Ariyati, Restiana; Vivi Endar Herawati, Vivi Endar Herawati",
-      "journal": "Aquacultura Indonesiana",
-      "date": "2026-10-24",
-      "abstract": "Catfish (Clarias sp.) is a type of fish that is relatively easy to cultivate and has relatively fast growth. The quality and quantity of raw materials used to make feed must be considered to enhance the development of catfish. One of the nutrients in the feed needed by catfish is protein. Catfish utilize protein for the growth process. One alternative protein source to fish meal is fish waste meal. Fish waste meal contains a protein content of 46.02% and has a lysine amino acid profile content of 3.68%. This research aims to determine the effect of substituting fish waste flour for fish flour in feed on the growth performance of catfish. This study employed an experimental method with a completely randomized design (CRD) consisting of 5 treatments and 3 replications. The treatments tested were treatment A (40% fish waste flour), B (30% fish waste flour), C (20% fish waste flour), D (10% fish waste flour), and E (0% fish waste flour). The test fish used were Sangkuriang catfish weighing 2.85-3.15 grams and stocking density of 10 per container. The catfish was reared in an aquarium with a water volume of 35 liters. Maintenance was carried out for 42 days with feeding three times a day at 08:00, 12:00, and 16:00. The research results indicate that substituting fish meal with fish waste flour significantly affects (P&lt;0.05) TFC, FUE, FCR, SGR, and absolute weight. The best dose of fish meal substitution with fish waste flour is treatment B (30% substitution of fish waste flour), which can produce TPW of 191.61±1.910 grams; FUE of 61.74±0.441 % FCR of 1.62±0.012; SGR of 3.87±0.043% per day; and absolute weight of 11.98±0.193 grams.",
-      "summary_cn": "本研究旨在探究以鱼废弃物粉替代鱼粉对鲶鱼（Clarias sp.）生长性能的影响。试验采用完全随机设计，设5个替代水平（0%、10%、20%、30%、40%），养殖42天。结果表明，替代显著影响总摄食量、饲料利用效率、FCR、SGR和绝对增重，其中30%替代组表现最佳（绝对增重11.98±0.193 g，SGR 3.87%/天，FCR 1.62）。鱼废弃物粉可有效替代鱼粉用于鲶鱼配合饲料。",
-      "url": "https://doi.org/10.21534/ai.v27i1.210",
-      "source": "crossref",
-      "keywords_matched": "fish stock",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1007/s10750-026-06456-w",
-      "title": "Filtration of the fish pathogen Flavobacterium psychrophilum by the freshwater mussel Diplodon chilensis and associated physiological responses",
-      "authors": "Bianchi, Virginia A.; Castro, Juan M.; Moreno, Pablo; Herbert, Lucila T.; Pascual, Mariano M.; Rocchetta, Iara; Luquet, Carlos M.",
-      "journal": "Hydrobiologia",
-      "date": "2026-10-24",
-      "abstract": "",
-      "summary_cn": "研究探讨淡水贻贝 Diplodon chilensis 对鱼类病原体 Flavobacterium psychrophilum 的滤除作用及其相关生理响应，为利用双壳类生物防控水产病原提供依据。",
-      "url": "https://doi.org/10.1007/s10750-026-06456-w",
-      "source": "crossref",
-      "keywords_matched": "fish stock",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1007/s10499-026-02732-7",
-      "title": "Next-generation probiotics and microbiome engineering for sustainable aquaculture",
-      "authors": "Subbarayalu, Alagendran; Dhanaraj, Suresh; Rajan, Elanchezhian",
-      "journal": "Aquaculture International",
-      "date": "2026-10-24",
-      "abstract": "",
-      "summary_cn": "该研究聚焦下一代益生菌（next-generation probiotics）与微生物组工程在可持续水产养殖中的应用，探讨通过定向调控养殖动物肠道微生物群落来替代抗生素、提升生长与抗病能力的策略。",
-      "url": "https://doi.org/10.1007/s10499-026-02732-7",
-      "source": "crossref",
-      "keywords_matched": "aquaculture",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1007/s41208-026-01258-2",
-      "title": "Feeding Ecology of the Shovel-nosed Lobster Thenus unimaculatus Burton and Davie, 2007 in the Southwest Coast of India",
-      "authors": "Chakraborty, Rekha Devi; Vidhya, P. V.; Ragesh, N; Sreesanth, L; Sunil, K. T. S.",
-      "journal": "Thalassas: An International Journal of Marine Sciences",
-      "date": "2026-10-24",
-      "abstract": "",
-      "summary_cn": "研究了印度西南海岸铲鼻龙虾（Thenus unimaculatus）的摄食生态，基于胃含物分析探讨其饵料组成与摄食习性。",
-      "url": "https://doi.org/10.1007/s41208-026-01258-2",
-      "source": "crossref",
-      "keywords_matched": "fish ecology",
-      "high_impact": true
-    },
-    {
-      "doi": "10.1007/s10750-026-06434-2",
-      "title": "Experimental evaluation of habitat preferences of invasive crayfish species in Europe in context of co-invasions",
-      "authors": "Plichta, Zuzanna; Maciaszek, Rafał; Augustyniak, Mateusz; Kakareko, Tomasz; Jermacz, Łukasz; Kobak, Jarosław",
-      "journal": "Hydrobiologia",
-      "date": "2026-10-24",
-      "abstract": "Abstract Biological invasions commonly occur in series, leading to new interactions between multiple invaders in novel habitats. Their coexistence or competitive exclusion depends on the width and overlap of their habitat preferences. We evaluated the habitat preferences of North American crayfishes invasive in Europe: Faxonius limosus ( FL ), Procambarus clarkii ( PC ) and Procambarus virginalis ( PV ), to check their selectivity for substratum grain sizes, shelter sizes, and shells of various bivalve species as shelters. All the species exhibited overlapping grain size preferences (diameter: 2 mm), PV being the least selective (preference extending to 5 mm). FL selected smaller shelters than PC . FL and PC preferred shells of the alien Sinanodonta woodiana over native unionid mussels, whereas PV was non-selective for unionid shells. All species avoided the smaller Corbicula shells. Altogether, in our study, FL was the most, whereas PV the least selective, and PC the most explorative. The high overlap of habitat preferences and low probability of habitat partitioning suggests that the coexistence of these crayfishes will be temporary, and FL is likely to get displaced by new Procambarus invaders, P. clarkii being more explorative and aggressive, P. virginalis being less selective.",
-      "summary_cn": "本研究通过实验评估了三种入侵欧洲的北美螯虾——Faxonius limosus（FL）、Procambarus clarkii（PC）和Procambarus virginalis（PV）——在底质粒径、庇护所尺寸及双壳类贝壳作为庇护所方面的栖息地偏好，以探讨多重入侵情境下的共存机制。结果显示三种螯虾的粒径偏好高度重叠（约2 mm），PV选择性最低（偏好延伸至5 mm）；FL偏好较小庇护所；FL和PC偏好外来种Sinanodonta woodiana贝壳而非本土unionid贝类，PV则无选择性；所有种均回避较小的Corbicula贝壳。总体上FL选择性最强、PV最弱、PC探索性最强，栖息地偏好高度重叠且栖息地分割概率低，表明三者共存可能是暂时的，FL likely将被新的Procambarus入侵者取代。",
-      "url": "https://doi.org/10.1007/s10750-026-06434-2",
-      "source": "crossref",
-      "keywords_matched": "fish habitat",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1007/s11160-026-10097-6",
-      "title": "Quantifying surgeonfish functions in coral reef sediment dynamics: an ecological and evolutionary perspective",
-      "authors": "Ng, Isabelle; Tebbett, Sterling B.; Bellwood, David R.; Gahan, James; Strugnell, Jan M.; Siqueira, Alexandre C.",
-      "journal": "Reviews in Fish Biology and Fisheries",
-      "date": "2026-10-24",
-      "abstract": "",
-      "summary_cn": "该研究从生态与进化视角探讨刺尾鱼（surgeonfish）在珊瑚礁沉积物动态中的作用，旨在量化其对礁区生物沉积过程的贡献。由于摘要缺失，具体方法与结果无法获知，建议查阅全文以了解其功能群划分与定量评估框架。",
-      "url": "https://doi.org/10.1007/s11160-026-10097-6",
-      "source": "crossref",
-      "keywords_matched": "coral reef fisheries",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1139/cjfas-2026-0122",
-      "title": "Variable dissolved organic carbon trends in the tributaries of the St. Lawrence River driven by natural geographic features and human activities",
-      "authors": "Dormoy-Boulanger, Jade; Lapierre, Jean-François; Guillemette, François",
-      "journal": "Canadian J. Fisheries & Aquatic Sciences",
-      "date": "2026-10-24",
-      "abstract": "Over the past decades, dissolved organic carbon (DOC) concentrations in boreal rivers have increased broadly. At the regional scale, however, the magnitude of these trends varies, likely reflecting differences in natural and anthropogenic catchment features that remain poorly understood. Here we examined long-term DOC trends data from 89 stations located on 54 tributaries of the St. Lawrence River (Qc, Canada) over 35 years, assessing DOC changes among catchments with contrasting natural characteristics and land-use patterns. We observed a significant increase in DOC in 46 stations (0.08–1.54% per year), and a significant decrease in 19 stations (−0.25 to −1.59% per year). When considering climatic variables and land cover features, the proportion of forested area within the watershed emerged as the most significant factor; DOC tended to increase at forest cover &gt;60% and to be stable or decrease at forest cover &lt;60%. Watershed slope, water area, and annual mean precipitation were also significantly associated with DOC changes. This study emphasizes the importance of accounting for land-use differences when interpreting regional patterns of river DOC trends.",
-      "summary_cn": "基于加拿大圣劳伦斯河54条支流89个站点35年的长期数据，分析了溶解有机碳（DOC）浓度的变化趋势及其与流域自然特征和土地利用的关系。结果显示46个站点DOC显著上升（0.08–1.54%/年），19个站点显著下降（−0.25至−1.59%/年）。森林覆盖率是最重要的影响因素：覆盖率>60%的流域DOC趋于上升，<60%的流域趋于稳定或下降；流域坡度、水域面积和年均降水量也与DOC变化显著相关。研究强调在解释区域河流DOC趋势时需考虑土地利用差异。",
-      "url": "https://doi.org/10.1139/cjfas-2026-0122",
-      "source": "crossref_issn",
-      "keywords_matched": "Canadian J. Fisheries & Aquatic Sciences",
-      "high_impact": true
-    },
-    {
-      "doi": "10.1139/cjfas-2025-0320",
-      "title": "An integrated approach to estimating the effective sampling area of baited underwater camera traps",
-      "authors": "Goldstein, Benjamin R.; Pacifici, Krishna; Buckel, Jeffrey A.; Bacheler, Nathan M.; Schliep, Erin M; Reich, Brian J; Shertzer, Kyle W.; Patterson, William F.; Tarnecki, Joseph H; Hostetter, Nathan J",
-      "journal": "Canadian J. Fisheries & Aquatic Sciences",
-      "date": "2026-10-24",
-      "abstract": "Baited remote underwater video (BRUV) surveys are increasingly used to monitor fish, but estimating absolute abundance remains challenging because effective sampling areas (ESA) are unknown. We present an approach to estimate ESAs using an unmarked spatial capture-recapture (USCR) framework where observed counts arise from fish movement and space use. The model integrates telemetry data on movement and counts from independent remotely operated vehicle surveys. We applied this method to red snapper (Lutjanus campechanus) at two sites in the southeastern United States. At Chicken Rock, North Carolina, estimated ESAs were 8,806-10,532 m^2, consistent with estimates from previous studies and telemetry data. At Turtle Mound, Florida, estimated ESAs were unrealistically large (230,129-444,977 m^2), with low estimated abundance (241-528). Poor performance at Turtle Mound likely resulted from wide camera spacing and limited information on the spatial distribution of individuals from telemetry data. Our results demonstrate the potential of USCR models to estimate fish density, absolute abundance, and BRUV ESAs, while emphasizing the sensitivity of model performance to camera placement and robust auxiliary data in heterogeneous systems.",
-      "summary_cn": "该研究旨在解决baited remote underwater video（BRUV）调查中有效采样面积（ESA）未知、难以估算绝对丰度的问题，提出基于未标记空间捕获-再捕获（USCR）框架的ESA估算方法，整合遥测运动数据与ROV调查计数。在美国东南部两个站点应用于红鲷（Lutjanus campechanus）：北卡罗来纳Chicken Rock估算ESA为8,806–10,532 m²，与既往研究和遥测数据一致；佛罗里达Turtle Mound估算ESA异常偏大（230,129–444,977 m²）且丰度偏低（241–528），可能源于相机间距过大及遥测空间分布信息不足。结果表明USCR模型在估算鱼类密度、绝对丰度和BRUV ESA方面具有潜力，但模型表现对相机布设和异质系统中的辅助数据质量高度敏感。",
-      "url": "https://doi.org/10.1139/cjfas-2025-0320",
-      "source": "crossref_issn",
-      "keywords_matched": "Canadian J. Fisheries & Aquatic Sciences",
-      "high_impact": true
-    },
-    {
-      "doi": "10.15403/jgld-6938",
-      "title": "A Fish Bone Embedded in the Submucosa and Muscularis Propria of the Esophagus",
-      "authors": "Hu, Lifen; Chen, Yijin",
-      "journal": "Journal of Gastrointestinal and Liver Diseases",
-      "date": "2026-10-24",
-      "abstract": "",
-      "summary_cn": "非渔业相关",
-      "url": "https://doi.org/10.15403/jgld-6938",
-      "source": "crossref",
-      "keywords_matched": "fish stock",
-      "high_impact": false
-    },
-    {
-      "doi": "10.1016/j.fishres.2026.107910",
-      "title": "Quantifying diets using Bayesian inference: A case study comparing juvenile fish diets among restored seascapes",
-      "authors": "de Barros, Matheus; Martin, Charles W.; Grabowski, Jonathan H.; Baker, Ronald",
-      "journal": "Fisheries Research",
-      "date": "2026-10-24",
-      "abstract": "",
-      "summary_cn": "该研究提出基于Bayesian inference的方法定量分析鱼类摄食组成，并以幼鱼为案例比较不同修复海景（restored seascapes）间的食性差异。",
-      "url": "https://doi.org/10.1016/j.fishres.2026.107910",
-      "source": "crossref_issn",
-      "keywords_matched": "Fisheries Research",
-      "high_impact": false
     }
   ],
   "weekly_topics": {
     "2026-W45": {
       "week_key": "2026-W45",
       "week_range": "11月2日—11月8日",
-      "topic": "水产养殖病害防控与渔业可持续发展研究进展",
-      "keywords": "水产养殖(Aquaculture), 气候变化适应(Climate Change Adaptation), 鱼类病害防控(Fish Disease Control), 渔业管理(Fisheries Management), 鱼类通道(Fishway), 微塑料污染(Microplastic Pollution), 鱼类肠道微生物(Gut Microbiome), 休闲渔业(Recreational Fisheries)",
+      "topic": "渔业可持续发展：气候适应与生态健康研究新趋势",
+      "keywords": "渔业管理(Fisheries Management), 水产养殖(Aquaculture), 气候变化适应(Climate Change Adaptation), 海洋保护区(Marine Protected Area), 鱼类健康(Fish Health), 生物多样性(Biodiversity), 渔业经济(Fisheries Economics), 塑料污染(Plastic Pollution)",
       "article": "## 本周研究概览\n\n本周共收录4篇论文，其中1篇为勘误声明，实际研究性论文仅3篇，且均未提供完整摘要，综述深度受到一定限制。研究方向集中于水产养殖动物的免疫应答与疾病防控，涉及鲤科鱼类（gibel carp）的炎症调控和海水鱼类（大黄鱼与真鲷）对刺激隐核虫（*Cryptocaryon irritans*）的敏感性差异机制。此外，一篇关于公牛鲨（*Carcharhinus leucas*）近岸水域出现驱动因素的勘误提示该方向仍有持续关注。整体来看，本周论文数量偏少，研究主题以宿主-病原互作和免疫调控为主，未见宏观渔业资源管理或气候效应方面的新成果。\n\n## 高影响力期刊亮点\n\n本周暂无。\n\n## 创新性研究\n\n1. **Effects of waterborne exposure to crude mulberry leaf polysaccharides on lipopolysaccharide-induced acute inflammatory responses in gibel carp (*Carassius gibelio*): insights into host immune and intestinal responses**（*Aquaculture*）\n   该研究的创新点在于采用水体暴露（waterborne exposure）途径递送桑叶粗多糖，而非传统的饲料添加方式，并同时考察宿主免疫与肠道响应两个层面。若结果证实水体暴露可有效调控LPS诱导的急性炎症，将为水产养殖中免疫增强剂的给药方式提供低成本、低应激的替代方案，对集约化养殖中的炎症性疾病管理具有潜在应用价值。\n\n2. **Comparative analysis of immune responses reveals mechanisms underlying different susceptibility to *Cryptocaryon irritans* in large yellow croaker (*Larimichthys crocea*) and red sea bream (*Pagrus major*)**（*Aquaculture*）\n   该研究以两种经济海水鱼为对象，通过比较免疫应答解析对刺激隐核虫易感性差异的机制，创新性体现在以“同病原、异宿主”的比较免疫学框架定位种间抗性差异的关键环节。研究结果有望为抗病育种标记筛选和物种混养策略提供理论依据，对海水网箱养殖中白点病的防控具有直接参考意义。\n\n3. **Comparison of EBER flow FISH results from two facilities**（*Cytometry Part B: Clinical Cytometry*）\n   该文虽属临床病毒学范畴，但其方法学核心——EBER flow FISH的跨机构可比性验证——对渔业免疫学中流式细胞术方法的标准化具有借鉴意义。多中心方法一致性评估的思路可迁移至鱼类免疫细胞表型分析的质量控制，提示本领域在方法学报告规范上仍有提升空间。\n\n## 推荐阅读\n\n1. **Comparative analysis of immune responses reveals mechanisms underlying different susceptibility to *Cryptocaryon irritans* in large yellow croaker (*Larimichthys crocea*) and red sea bream (*Pagrus major*)** — 比较免疫学视角解析海水鱼抗寄生虫机制，对病害防控与抗病育种均有参考价值。\n2. **Effects of waterborne exposure to crude mulberry leaf polysaccharides on lipopolysaccharide-induced acute inflammatory responses in gibel carp (*Carassius gibelio*): insights into host immune and intestinal responses** — 探索植物多糖水体给药途径，兼具方法创新与应用潜力。\n3. **Corrigendum to “Drivers of bull shark (*Carcharhinus leucas*) occurrence in nearshore waters: Insights from the Queensland Shark Control Program, Australia”** — 虽为勘误，但原文涉及鲨鱼控制项目的人-鲨冲突管理，建议读者回溯原文以了解该方向最新数据修正。\n4. **Comparison of EBER flow FISH results from two facilities** — 跨机构流式方法一致性评估，对渔业免疫学实验标准化有方法学借鉴意义。\n5. **Effects of waterborne exposure to crude mulberry leaf polysaccharides...** — 若关注肠道免疫与炎症调控，该文是本周唯一涉及肠道响应层面的研究，值得细读。\n\n**说明**：本周论文数量少、摘要缺失较多，部分判断基于标题信息，建议读者查阅全文后自行核实。",
-      "paper_count": 83,
-      "high_impact_count": 23
+      "paper_count": 87,
+      "high_impact_count": 26
     },
     "2026-W44": {
       "week_key": "2026-W44",
       "week_range": "10月26日—11月1日",
       "topic": "人工智能与水产养殖可持续发展研究进展",
-      "keywords": "水产养殖AI(Artificial Intelligence in Aquaculture), 抗病毒免疫(Antiviral Immunity), 珊瑚礁鱼类(Reef Fish), 兼捕与放流存活(Bycatch and Post-release Survival), 水产养殖废水处理(Aquaculture Wastewater Treatment), 抗菌素耐药性(Antimicrobial Resistance), 渔业数字化(Fishery Digitalization), 入侵鱼类多样性(Invasive Fish Diversity)",
+      "keywords": "人工智能(AI), 水产养殖(Aquaculture), 抗病毒免疫(Antiviral Immunity), 珊瑚礁鱼类(Reef Fish), 兼捕与选择性(Bycatch & Selectivity), 抗菌耐药(Antimicrobial Resistance), 可持续供应链(Sustainable Supply Chain), 渔业数字化(Fishery Digitalization)",
       "article": "## 本周研究概览\n\n本周共收录8篇渔业相关论文，研究方向涵盖渔业治理与政策（采购问责、鲑鱼养殖标签与追溯）、渔业生态学（温盐锋对饵料鱼营养生态的影响、鳟鱼捕获放流的能量代价）、水产养殖工程与微生物学（RAS生物滤器低温运行、鱼类加工废弃物堆肥）、水产病害快速检测（*Perkinsus olseni* RPA-PfAgo检测）以及海洋生物技术（深度学习辅助抗菌肽发现）。整体来看，本周论文以应用导向为主，治理法规类与病害检测类研究占比偏高，基础生态学研究相对有限；跨学科方法（深度学习、等温扩增）向水产领域的渗透是值得关注的趋势。本周无高影响力综合期刊论文发表。\n\n## 高影响力期刊亮点\n\n本周暂无。\n\n## 创新性研究\n\n1. **Deep-Learning-Assisted Discovery of Marine Antimicrobial Peptides**（*Marine Drugs*）— 该综述提出将组学挖掘与结构引导的扩散模型设计相整合的技术路线，并明确指向可持续水产养殖的转化应用。其创新点在于不止于候选肽生成，而是将效力、宿主安全性、稳定性与可制造性纳入同一设计框架，为水产抗菌替代方案提供了系统化路径。\n\n2. **Recombinase Polymerase Amplification Combined With PfAgo for Rapid Detection of *Perkinsus olseni***（*Journal of Fish Diseases*）— 将RPA等温扩增与可编程核酸酶PfAgo切割相结合，实现对OIE名录病原*P. olseni*的快速检测，有望摆脱传统培养法和PCR对设备与时间的依赖。该方法对贝类养殖现场诊断具有直接应用潜力。\n\n3. **Long-Term Low- and Normal-Temperature Operation of Commercial RAS Biofilters**（*Microorganisms*）— 针对商业规模RAS生物滤器在低温胁迫下的微生物群落响应开展长期观测，弥补了以往多基于实验室规模短期的不足。研究对比了低温与常温条件下群落结构与氮循环功能预测的差异，对寒冷地区RAS运行管理具有参考价值。\n\n4. **Energetic costs of catch and release angling in Brook Trout at two temperatures**（*Journal of Fish Biology*）— 将C&R的生理胁迫量化为恢复期的能量支出与摄食停滞代价，并考察温度的双重调节作用。该研究把休闲渔业管理中的\"放流即无害\"假设置于能量学检验之下，对变暖背景下C&R规范制定有直接意义。\n\n## 推荐阅读\n\n1. **Deep-Learning-Assisted Discovery of Marine Antimicrobial Peptides: A Roadmap Integrating Omics Mining, Structure-Guided Diffusion Design, and Sustainable Aquaculture Translation** — 方法学视野开阔，是本周最具跨学科前瞻性的论文。\n2. **Recombinase Polymerase Amplification Combined With the Programmable Nuclease PfAgo for Rapid Detection of *Perkinsus olseni* in Shellfish** — 检测技术新颖且贴合养殖现场需求，实用性强。\n3. **Long-Term Low- and Normal-Temperature Operation of Commercial Recirculating Aquaculture System Biofilters** — 基于商业规模长期数据，对RAS低温运行有直接指导价值。\n4. **Influence of a thermohaline front on the trophic ecology of the small pelagic fish *Lycengraulis grossidens*** — 将物理海洋过程与渔业物种营养生态耦合，生态学意义明确。\n5. **Energetic costs of catch and release angling in Brook Trout (*Salvelinus fontinalis*) at two temperatures** — 为休闲渔业管理提供了可量化的生理学依据。",
       "paper_count": 153,
       "high_impact_count": 26
@@ -3315,11 +3185,11 @@
     "2026-W43": {
       "week_key": "2026-W43",
       "week_range": "10月19日—10月25日",
-      "topic": "基于进化途径的保育水产养殖与鱼类健康多维研究趋势",
-      "keywords": "保护水产养殖(Conservation Aquaculture), 鱼类疾病分类(Fish Disease Classification), 生物富集因子(Bioconcentration Factors), 可持续水产养殖(Sustainable Aquaculture), 摄食生态(Feeding Ecology), 鱼类腐败预测(Fish Spoilage Prediction), 栖息地偏好(Habitat Preferences), 食草作用(Herbivory)",
+      "topic": "水产养殖保护与鱼类遗传毒性及植食性研究进展",
+      "keywords": "保护水产养殖(Conservation Aquaculture), 遗传改良(Genetic Improvement), 渔业增殖(Fishery Enhancement), 基因毒性(Genotoxicity), 纳米颗粒(Nanoparticles), 淡水鱼(Freshwater Fish), 植食性(Herbivory), 礁区生态(Reef Ecology)",
       "article": "## 本周研究概览\n\n本周共收录渔业相关论文17篇，研究主题涵盖气候变化对渔业资源的影响、渔业数据整合与种群评估、水产养殖环境效应与病害监测、微塑料污染、鱼类检测技术及渔业社会经济等多个方向。整体来看，本周研究呈现出两个显著趋势：一是气候变化与人类活动对渔业生态系统的复合影响受到持续关注，尤其是海洋热浪引发的生态连锁反应；二是方法学创新突出，包括将渔民知识纳入种群评估、物理信息神经网络用于海洋浮标轨迹预测、以及无酸微波消解等绿色分析化学方法。此外，微塑料污染在水产养殖和海产品中的分布与风险仍是热点议题。\n\n## 高影响力期刊亮点\n\n**PNAS** 发表了两篇值得关注的论文。其一，*A Bering Sea marine heatwave triggers unprecedented crab hybridization, challenging fisheries management*，记录了白令海海洋热浪发生7年后出现的意外生态响应——先前未见的蟹类杂交现象，揭示了海洋热浪通过延迟性生态途径产生管理挑战的机制，对渔业资源管理具有重要警示意义。其二，*Biodiversity supports coastal nutrient cycling with a stable source of fish excretion*，探讨了生物多样性对鱼类排泄物养分供给稳定性的支撑作用，为理解生物多样性与生态系统功能的关系提供了新证据。\n\n**Communications Sustainability** 刊发了 *Hidden population declines revealed by integrating long-term fisheries data with fishers' knowledge*，该研究将1972–2022年长期渔业统计数据与渔民知识相结合，揭示了\"技术蠕变\"（technological creep）如何掩盖种群下降并偏倚渔业评估，为改进渔业资源评估方法提供了重要思路。\n\n## 创新性研究\n\n1. **Hidden population declines revealed by integrating long-term fisheries data with fishers' knowledge**（Communications Sustainability）：创新性地将渔民口述知识与长期统计序列整合，弥补了技术采纳历史数据缺失的空白，为纠正技术蠕变导致的评估偏差提供了可操作框架，对数据有限渔业的管理具有广泛借鉴意义。\n\n2. **Physics-informed LSTMNet for short-term marine buoy trajectory prediction under dynamic ocean environmental conditions**（Frontiers in Marine Science）：将物理约束嵌入LSTM网络用于海洋浮标短期轨迹预测，兼顾了数据驱动模型的灵活性与物理规律的一致性，在航行安全与搜救成本降低方面具有应用潜力。\n\n3. **A Greener Acid-free Microwave-Assisted Digestion Method for Multielement Analysis of Fish Tissues by ICP–MS**（ACS Omega）：开发了仅基于H₂O₂的无酸微波消解方法用于鱼组织多元素分析，显著降低了传统酸消解的环境负担和操作风险，为渔业环境监测的绿色分析化学提供了新方案。\n\n4. **SAG-DETR: spatio-spectral adaptive gating with prompt-aware state-space refinement for underwater fish detection**（Aquaculture International）：提出融合空谱自适应门控与提示感知状态空间细化的水下鱼类检测框架，针对水下图像退化问题设计了专门的结构改进，对水产养殖智能化监测具有推进作用。\n\n5. **Management implications of misspecification in observed recreational removals for reef fish and coastal pelagic stocks**（Canadian Journal of Fisheries and Aquatic Sciences）：基于美国东海岸休闲渔业移除量可能被高估30–40%的实证发现，系统评估了观测误差对管理策略的影响，为休闲渔业统计体系改进提供了定量依据。\n\n## 推荐阅读\n\n1. **A Bering Sea marine heatwave triggers unprecedented crab hybridization, challenging fisheries management** — PNAS刊发，首次记录海洋热浪引发的蟹类杂交这一意外生态响应，对渔业管理具有直接警示价值。\n2. **Hidden population declines revealed by integrating long-term fisheries data with fishers' knowledge** — 方法学创新突出，渔民知识与统计数据的整合框架对数据有限渔业评估具有推广意义。\n3. **Biodiversity supports coastal nutrient cycling with a stable source of fish excretion** — PNAS刊发，为生物多样性—生态系统功能关系提供了鱼类排泄物养分供给的新视角。\n4. **Management implications of misspecification in observed recreational removals for reef fish and coastal pelagic stocks** — 定量揭示了休闲渔业统计误差的管理后果，对渔业政策制定有直接参考价值。\n5. **Global, depth-resolved marine fish occurrences from digitized natural history collections** — Scientific Data刊发，提供了全球深度分辨的海洋鱼类 Occurrence 数据集，对宏观生态学与生物地理学研究具有基础数据价值。",
-      "paper_count": 17,
-      "high_impact_count": 4
+      "paper_count": 3,
+      "high_impact_count": 0
     }
   }
 }
