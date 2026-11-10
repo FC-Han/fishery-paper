@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>渔业资源保护与养殖技术创新 — 渔业文献每周速览</title>
+<style>
+:root {
+  --bg: #f7fafc; --bg-card: #ffffff; --text: #2d3748;
+  --text-secondary: #718096; --text-muted: #a0aec0; --border: #e2e8f0;
+  --primary: #2b6cb0; --primary-light: #bee3f8; --primary-dark: #1a365d;
+  --accent: #e76f51; --accent-light: #fed7d7;
+  --teal: #319795; --teal-light: #b2f5ea;
+  --gold: #d69e2e; --gold-light: #fefcbf;
+  --shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.10);
+  --radius: 12px; --radius-sm: 8px;
+}
+[data-theme="dark"] {
+  --bg: #1a202c; --bg-card: #2d3748; --text: #e2e8f0;
+  --text-secondary: #a0aec0; --text-muted: #718096; --border: #4a5568;
+  --primary: #90cdf4; --primary-light: #2a4365; --primary-dark: #bee3f8;
+  --accent: #fc8181; --accent-light: #742a2a;
+  --teal: #81e6d9; --teal-light: #234e52;
+  --gold: #f6e05e; --gold-light: #3d3a1a;
+  --shadow: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.5);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;transition:background 0.3s,color 0.3s}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* === Top Bar === */
+.topbar{background:linear-gradient(135deg,#1a365d,#2b6cb0);color:#fff;padding:0.8rem 1.5rem;display:flex;align-items:center;gap:1rem;position:sticky;top:0;z-index:100}
+.back-btn{color:#fff;font-size:0.95rem;font-weight:600;padding:0.4rem 0.8rem;border-radius:var(--radius-sm);border:1.5px solid rgba(255,255,255,0.3);transition:all 0.2s;white-space:nowrap}
+.back-btn:hover{background:rgba(255,255,255,0.15);text-decoration:none}
+.topbar .title-area{flex:1;min-width:0}
+.topbar .week-range{font-size:0.78rem;opacity:0.8}
+.topbar .week-topic{font-size:1rem;font-weight:700;line-height:1.3}
+.topbar .theme-toggle{padding:0.4rem 0.8rem;border:1.5px solid rgba(255,255,255,0.3);border-radius:var(--radius-sm);background:transparent;color:#fff;cursor:pointer;font-size:0.85rem;transition:all 0.2s;white-space:nowrap}
+.topbar .theme-toggle:hover{background:rgba(255,255,255,0.15)}
+
+.container{max-width:1100px;margin:0 auto;padding:1.5rem}
+
+/* === Article Section === */
+.article-section{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;margin-bottom:1.5rem;box-shadow:var(--shadow)}
+.article-section h2{font-size:1.3rem;color:var(--primary-dark);margin:1.5rem 0 0.75rem;padding-bottom:0.4rem;border-bottom:2px solid var(--primary-light)}
+.article-section h2:first-child{margin-top:0}
+.article-section p{margin-bottom:0.8rem;line-height:1.8;color:var(--text)}
+.article-section strong{color:var(--primary-dark)}
+.article-section ol,.article-section ul{padding-left:1.5rem;margin-bottom:0.8rem}
+.article-section li{margin-bottom:0.5rem;line-height:1.7}
+.article-tag{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-right:0.5rem}
+.tag-overview{background:var(--primary-light);color:var(--primary-dark)}
+.tag-highlight{background:var(--accent-light);color:var(--accent)}
+.tag-innovative{background:var(--gold-light);color:var(--gold)}
+.tag-recommend{background:var(--teal-light);color:var(--teal)}
+
+/* === Stats Row === */
+.stats-row{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.stat-mini{padding:0.5rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-secondary)}
+.stat-mini strong{color:var(--primary);font-size:1.1rem}
+
+/* === Controls === */
+.controls{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.search-box{flex:1;min-width:200px;position:relative}
+.search-box input{width:100%;padding:0.6rem 1rem 0.6rem 2.5rem;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:0.9rem;background:var(--bg-card);color:var(--text);transition:border-color 0.2s}
+.search-box input:focus{outline:none;border-color:var(--primary)}
+.search-box .search-icon{position:absolute;left:0.8rem;top:50%;transform:translateY(-50%);color:var(--text-muted);pointer-events:none}
+
+/* === Paper Grid === */
+.section-title{font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:0.75rem;display:flex;align-items:center;gap:0.5rem}
+.paper-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:0.85rem;margin-bottom:1.5rem}
+.paper-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1.1rem;transition:all 0.25s;display:flex;flex-direction:column;position:relative}
+.paper-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);border-color:var(--primary-light)}
+.paper-card.high-impact{border-left:3px solid var(--accent)}
+.paper-card .hi-badge{position:absolute;top:0.5rem;right:0.5rem;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:10px;background:var(--accent-light);color:var(--accent);font-weight:700}
+.paper-card .journal{font-size:0.78rem;color:var(--teal);font-weight:600;margin-bottom:0.3rem}
+.paper-card .title{font-size:0.95rem;font-weight:700;line-height:1.45;margin-bottom:0.35rem}
+.paper-card .title a{color:var(--text)}
+.paper-card .title a:hover{color:var(--primary);text-decoration:none}
+.paper-card .meta{font-size:0.78rem;color:var(--text-muted);margin-bottom:0.6rem;display:flex;flex-wrap:wrap;gap:0.5rem}
+
+/* Chinese Summary */
+.paper-card .summary-cn{background:linear-gradient(135deg,#fffaf0,#fffff0);border-left:3px solid var(--gold);padding:0.7rem 0.85rem;margin-bottom:0.5rem;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:0.88rem;line-height:1.55;color:#744210}
+[data-theme="dark"] .paper-card .summary-cn{background:linear-gradient(135deg,#3d2e1a,#372a10);color:#fbd38d}
+
+.abstract-toggle{font-size:0.8rem;color:var(--primary);cursor:pointer;font-weight:600;user-select:none;display:inline-flex;align-items:center;gap:0.25rem;padding:0.3rem 0;border:none;background:none}
+.abstract-toggle:hover{color:var(--accent)}
+.abstract-toggle .arrow{transition:transform 0.2s;font-size:0.7rem}
+.abstract-toggle.open .arrow{transform:rotate(90deg)}
+.abstract-content{display:none;font-size:0.82rem;color:var(--text-secondary);line-height:1.55;padding:0.5rem 0;border-top:1px dashed var(--border);margin-top:0.4rem}
+.abstract-content.visible{display:block}
+
+.paper-card.hidden{display:none}
+.no-results{display:none;text-align:center;padding:2rem;color:var(--text-muted)}
+.no-results.visible{display:block}
+
+@media(max-width:768px){.paper-grid{grid-template-columns:1fr}.article-section{padding:1.25rem}.topbar{flex-wrap:wrap}.topbar .week-topic{font-size:0.9rem}}
+
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.paper-card{animation:fadeIn 0.4s ease-out}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="back-btn" href="index.html">← 返回主页</a>
+  <div class="title-area">
+    <div class="week-range">11月9日—11月10日</div>
+    <div class="week-topic">渔业资源保护与养殖技术创新</div>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <span id="themeIcon">🌙</span> <span id="themeLabel">暗色</span>
+  </button>
+</div>
+
+<div class="container">
+
+  <!-- 深度综述文章 -->
+  
+  <div class="article-section">
+    <h2>本周研究概览</h2>
+
+<p>本周共收录渔业相关论文27篇，研究覆盖面较为广泛，涉及水产养殖技术与管理、鱼类生理与遗传、渔业生态与栖息地、鱼类病害与食品安全、以及渔业社会经济等多个方向。从研究区域看，论文来自中国、韩国、印度尼西亚、尼日利亚、罗马尼亚、希腊、菲律宾、阿根廷等多个国家和地区，呈现出明显的国际化特征。整体研究趋势上，水产养殖的可持续性（替代饲料、生物材料利用、病害防控）与渔业生态连通性（eDNA、栖息地评估）构成本周的两大主线，同时应用型社区研究和技术方法创新也占有一定比例。</p>
+
+<h2>高影响力期刊亮点</h2>
+
+<p>本周有两篇论文发表于 *Proceedings of the National Academy of Sciences*（PNAS），值得重点关注。</p>
+
+<p><strong>Sub-ice thermal gradients strongly influence winter depth use of an iconic cold-water fish</strong> — 该研究聚焦二季混合湖（dimictic lake）冬季逆温分层条件下鱼类的深度利用行为，弥补了以往研究偏重夏季热分层的不足。研究揭示了冰下热梯度对冷水性鱼类冬季栖息地选择的强烈影响，对理解气候变化背景下湖泊鱼类越冬生态具有重要意义。</p>
+
+<p><strong>Rapid vaterite-mediated shell repair for acid-induced damage in a deep-sea mussel</strong> — 该研究通过原位实验报道了深海贻贝以球霰石（vaterite）为介导的快速壳修复过程，深化了对深海钙化生物生物矿化分子机制的认识。其发现对理解海洋酸化背景下深海贝类的适应能力具有潜在价值。</p>
+
+<h2>创新性研究</h2>
+
+<ol>
+<li><strong>eDNA metabarcoding and random forest identify super-connector fish species across mangrove–seagrass–coral reef continuums in the South China Sea</strong>（*Frontiers in Ecology and Evolution*）— 将eDNA宏条形码与随机森林机器学习相结合，识别跨红树林—海草—珊瑚礁连续体的"超级连接者"鱼类物种。方法学上把分子生态学与数据驱动模型融合，为热带海景生态连通性研究提供了可推广的分析框架。</li>
+</ol>
+
+<ol>
+<li><strong>The Wearing Layer Influences Long-Term Material Loss from Composite Floats for Oyster Aquaculture</strong>（*Aquaculture Journal*）— 针对牡蛎养殖中发泡聚苯乙烯浮球作为海洋微塑料来源的问题，采用加速风化实验对八种候选材料的长期质量损失进行定量比较。该研究填补了替代材料认证标准缺失的空白，对水产养殖塑料污染的源头治理具有直接指导意义。</li>
+</ol>
+
+<ol>
+<li><strong>Integrating morphology and otolith chemistry for distinguishing hatchery-reared and wild Japanese glass eels</strong>（*Fisheries Science*）— 将形态学与耳石化学相结合区分人工放流与野生日本玻璃鳗。多指标融合的思路提高了放流效果评估的可靠性，对鳗鲡资源增殖管理具有方法学参考价值。</li>
+</ol>
+
+<ol>
+<li><strong>Oceanic spawning migration of tropical Indian Ocean eels from Madagascar</strong>（*Marine Ecology Progress Series*）— 揭示了马达加斯加热带印度洋鳗鲡的海洋产卵洄游，拓展了热带鳗鲡生活史认知的地理范围。对印度洋鳗鲡资源管理与保护策略制定具有基础性意义。</li>
+</ol>
+
+<ol>
+<li><strong>Phytobiotics from the Lamiaceae, Asteraceae, and Fabaceae families: Mechanisms, efficacy, and emerging nanotechnological applications in sustainable aquaculture</strong>（*Veterinary Research Communications*）— 系统综述了三大植物科植物源生物制剂在水产养殖中的作用机制与纳米技术应用前景。将传统植物提取物与纳米递送技术相衔接，为抗生素替代和可持续病害防控提供了新思路。</li>
+</ol>
+
+<h2>推荐阅读</h2>
+
+<ol>
+<li><strong>Sub-ice thermal gradients strongly influence winter depth use of an iconic cold-water fish</strong> — PNAS发表，填补冬季冰下鱼类栖息地选择研究的空白，对冷水湖泊管理与气候变化应对具有高参考价值。</li>
+<li><strong>Rapid vaterite-mediated shell repair for acid-induced damage in a deep-sea mussel</strong> — PNAS发表，首次原位揭示深海贻贝球霰石介导的壳修复机制，生物矿化领域的重要进展。</li>
+<li><strong>eDNA metabarcoding and random forest identify super-connector fish species across mangrove–seagrass–coral reef continuums in the South China Sea</strong> — eDNA与机器学习融合识别生态连接者，方法新颖且可推广至其他海景系统。</li>
+<li><strong>The Wearing Layer Influences Long-Term Material Loss from Composite Floats for Oyster Aquaculture</strong> — 直面水产养殖微塑料污染问题，加速风化实验设计严谨，对材料认证标准制定有直接政策意义。</li>
+<li><strong>Comparative Analysis of the Economic Feasibility of Using Extruded Pellets and Raw Fish-Based Moist Pellets as Aquafeed in Olive Flounder (Paralichthys olivaceus) Aquaculture in South Korea</strong> — 结合生长性能与经济可行性评估饲料替代方案，为牙鲆养殖的可持续转型提供了实证依据。</li>
+</ol>
+  </div>
+  
+
+  <!-- 统计 -->
+  <div class="stats-row">
+    <div class="stat-mini">📄 <strong>27</strong> 篇论文</div>
+    <div class="stat-mini">🌟 <strong>5</strong> 篇高影响力期刊</div>
+    <div class="stat-mini">🤖 <strong>27</strong> 篇 AI 中文总结</div>
+    
+    <div class="stat-mini">🏷️ 水产养殖(Aquaculture) 鱼类多样性(Fish Diversity) 种群遗传结构(Population Genetic Structure) 生物蓄积与健康风险(Bioaccumulation and Health Risk) </div>
+    
+  </div>
+
+  <!-- 搜索 -->
+  <div class="controls">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="搜索标题、作者、摘要..." oninput="filterPapers()">
+    </div>
+  </div>
+
+  <div class="no-results" id="noResults">😕 没有匹配的论文</div>
+
+  <!-- 全部论文列表 -->
+  <div class="section-title">📄 本周全部论文（27 篇）</div>
+  <div class="paper-grid">
+    
+    <div class="paper-card"
+         data-title="determining the aquaculture potential of campus ponds based on water quality parameters for nile tilapia (oreochromis niloticus) farming"
+         data-authors="khairunnisa, eka nurriza; wahyu, ilham; horisanto, abraham; yadi, aril; ridwansyah, ahmad"
+         data-journal="ajarcde (asian journal of applied research for community development and empowerment)"
+         data-abstract="water quality largely determines the success of nile tilapia (oreochromis niloticus) cultivation. this study assessed whether two campus ponds at politeknik negeri sriwijaya banyuasin, indonesia, are suitable for tilapia culture, using physical and chemical water-quality parameters and a descriptive quantitative design. water was sampled at three stations per pond (inlet, center, outlet) on two occasions, with duplicate measurements. we reported temperature, total dissolved solids (tds), dissolved oxygen (do), ph, ammonia, phosphate, biochemical oxygen demand (bod), and chemical oxygen demand (cod). mean temperature was 32.00 ± 0.43 °c in pond 1 and 32.42 ± 0.51 °c in pond 2, and do was relatively high (6.53 ± 0.19 and 6.55 ± 0.20 mg/l). tds was low (26.42 ± 2.07 and 30.50 ± 1.68 mg/l). mean ph was slightly acidic (6.09 ± 0.14 and 6.15 ± 0.14): below the 6.5–8.5 range used for tilapia culture, but inside the 6–9 range of class ii in government regulation no. 22/2021. ammonia (0.48 ± 0.06 and 0.41 ± 0.10 mg/l), phosphate (1.25 ± 0.08 and 1.36 ± 0.09 mg/l), bod (8.84 ± 1.44 and 10.93 ± 2.79 mg/l), and cod (29.00 ± 6.64 and 35.67 ± 9.11 mg/l) exceeded the comparison values used. both ponds therefore offer supportive oxygen conditions but are constrained by organic loading and nutrient enrichment. they should be regarded as usable only after water-quality management and confirmatory monitoring, including dawn-time do, nitrite, alkalinity, and the analytical basis of ammonia and phosphate. contribution to sustainable development goals (sdgs):sdg 2 (zero hunger)sdg 4 (quality education)sdg 6 (clean water and sanitation)sdg 12 (responsible consumption and production)"
+         data-summary="本研究评估印度尼西亚两处校园池塘是否适合养殖尼罗罗非鱼（oreochromis niloticus），采用描述性定量设计，在各池塘进水口、中心和出水口三个站点采样，测定温度、tds、do、ph、氨氮、磷酸盐、bod和cod等理化指标。结果显示溶氧条件良好（约6.5 mg/l），但ph偏酸（约6.1），氨氮、磷酸盐、bod和cod均超出参考限值，表明存在有机负荷和营养盐富集问题。两池塘须经水质管理和验证性监测后方可用于罗非鱼养殖。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 AJARCDE (Asian Journal of Applied Research for Community Development and Empowerment)
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究评估印度尼西亚两处校园池塘是否适合养殖尼罗罗非鱼（Oreochromis niloticus），采用描述性定量设计，在各池塘进水口、中心和出水口三个站点采样，测定温度、TDS、DO、pH、氨氮、磷酸盐、BOD和COD等理化指标。结果显示溶氧条件良好（约6.5 mg/L），但pH偏酸（约6.1），氨氮、磷酸盐、BOD和COD均超出参考限值，表明存在有机负荷和营养盐富集问题。两池塘须经水质管理和验证性监测后方可用于罗非鱼养殖。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.29165/ajarcde.v11i1.1511" target="_blank" rel="noopener">Determining the Aquaculture Potential of Campus Ponds Based on Water Quality Parameters for Nile Tilapia (Oreochromis niloticus) Farming</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Khairunnisa, Eka Nurriza; Wahyu, Ilham; Horisanto, Abraham; ...</span>
+        
+        <span>📅 2026-11-09</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Water quality largely determines the success of Nile tilapia (Oreochromis niloticus) cultivation. This study assessed whether two campus ponds at Politeknik Negeri Sriwijaya Banyuasin, Indonesia, are suitable for tilapia culture, using physical and chemical water-quality parameters and a descriptive quantitative design. Water was sampled at three stations per pond (inlet, center, outlet) on two occasions, with duplicate measurements. We reported temperature, total dissolved solids (TDS), dissolved oxygen (DO), pH, ammonia, phosphate, biochemical oxygen demand (BOD), and chemical oxygen demand (COD). Mean temperature was 32.00 ± 0.43 °C in Pond 1 and 32.42 ± 0.51 °C in Pond 2, and DO was relatively high (6.53 ± 0.19 and 6.55 ± 0.20 mg/L). TDS was low (26.42 ± 2.07 and 30.50 ± 1.68 mg/L). Mean pH was slightly acidic (6.09 ± 0.14 and 6.15 ± 0.14): below the 6.5–8.5 range used for tilapia culture, but inside the 6–9 range of Class II in Government Regulation No. 22/2021. Ammonia (0.48 ± 0.06 and 0.41 ± 0.10 mg/L), phosphate (1.25 ± 0.08 and 1.36 ± 0.09 mg/L), BOD (8.84 ± 1.44 and 10.93 ± 2.79 mg/L), and COD (29.00 ± 6.64 and 35.67 ± 9.11 mg/L) exceeded the comparison values used. Both ponds therefore offer supportive oxygen conditions but are constrained by organic loading and nutrient enrichment. They should be regarded as usable only after water-quality management and confirmatory monitoring, including dawn-time DO, nitrite, alkalinity, and the analytical basis of ammonia and phosphate. Contribution to Sustainable Development Goals (SDGs):SDG 2 (Zero Hunger)SDG 4 (Quality Education)SDG 6 (Clean Water and Sanitation)SDG 12 (Responsible Consumption and Production)</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="the wearing layer influences long-term material loss from composite floats for oyster aquaculture: an accelerated-weathering comparison of eight candidate materials"
+         data-authors="mun, so youn; jang, pilseong; jang, jun hwan"
+         data-journal="aquaculture journal"
+         data-abstract="expanded polystyrene floats have been identified as a significant source of marine microplastic in oyster aquaculture, yet no certification criterion assesses the material that the certified alternatives shed. gravimetric mass loss, normalised to a common exposed area of 7200 mm2, is reported under accredited accelerated weathering to ks f 2274 for eight float materials: expanded polystyrene at three densities, expanded polypropylene, three injection-moulded polymers, and a continuous-fibre basalt-reinforced thermoplastic composite. specimens were dried to constant mass before weighing, so the quantity measured is a net change: an upper bound on particulate release, not a measure of it. mass exceeded the initial value in all three stabilised expanded polypropylene specimens. at 3000 h the loss spanned a factor of 54, and every foamed material exceeded every non-foamed one, while tripling the density of expanded polystyrene reduced loss by only 25% (n = 3; p &lt; 0.0001 across the foamed groups). for ten injection-moulded grades the accelerated ranking reproduced that of 2.5 years outdoors (spearman ρ = 0.89), though the ratio varied from 0.4 to 6.3. a wear model indicates that the pure-polymer barrier providing water tightness contains 905–1180 g l−1 of polymer against 578 g l−1 for the laminate beneath, so the wearing layer, not the bulk material, may govern release in service."
+         data-summary="研究比较了8种牡蛎养殖浮球材料在ks f 2274加速风化条件下的质量损失，以评估认证替代材料的颗粒释放潜力。结果显示发泡材料损失普遍高于非发泡材料，3000 h时组间差异达54倍，而发泡聚苯乙烯密度增至三倍仅使损失降低25%。10种注塑材料的加速老化排序与2.5年户外暴露一致（spearman ρ = 0.89）。磨损模型表明，提供水密性的纯聚合物耐磨层聚合物含量（905–1180 g l⁻¹）远高于下层 laminate（578 g l⁻¹），提示实际使用中释放可能由耐磨层而非主体材料决定。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Aquaculture Journal
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 研究比较了8种牡蛎养殖浮球材料在KS F 2274加速风化条件下的质量损失，以评估认证替代材料的颗粒释放潜力。结果显示发泡材料损失普遍高于非发泡材料，3000 h时组间差异达54倍，而发泡聚苯乙烯密度增至三倍仅使损失降低25%。10种注塑材料的加速老化排序与2.5年户外暴露一致（Spearman ρ = 0.89）。磨损模型表明，提供水密性的纯聚合物耐磨层聚合物含量（905–1180 g L⁻¹）远高于下层 laminate（578 g L⁻¹），提示实际使用中释放可能由耐磨层而非主体材料决定。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/aquacj6040056" target="_blank" rel="noopener">The Wearing Layer Influences Long-Term Material Loss from Composite Floats for Oyster Aquaculture: An Accelerated-Weathering Comparison of Eight Candidate Materials</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Mun, So Youn; Jang, Pilseong; Jang, Jun Hwan</span>
+        
+        <span>📅 2026-11-09</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Expanded polystyrene floats have been identified as a significant source of marine microplastic in oyster aquaculture, yet no certification criterion assesses the material that the certified alternatives shed. Gravimetric mass loss, normalised to a common exposed area of 7200 mm2, is reported under accredited accelerated weathering to KS F 2274 for eight float materials: expanded polystyrene at three densities, expanded polypropylene, three injection-moulded polymers, and a continuous-fibre basalt-reinforced thermoplastic composite. Specimens were dried to constant mass before weighing, so the quantity measured is a net change: an upper bound on particulate release, not a measure of it. Mass exceeded the initial value in all three stabilised expanded polypropylene specimens. At 3000 h the loss spanned a factor of 54, and every foamed material exceeded every non-foamed one, while tripling the density of expanded polystyrene reduced loss by only 25% (n = 3; p &lt; 0.0001 across the foamed groups). For ten injection-moulded grades the accelerated ranking reproduced that of 2.5 years outdoors (Spearman ρ = 0.89), though the ratio varied from 0.4 to 6.3. A wear model indicates that the pure-polymer barrier providing water tightness contains 905–1180 g L−1 of polymer against 578 g L−1 for the laminate beneath, so the wearing layer, not the bulk material, may govern release in service.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="evaluation of semen quality indices in cultured and wild broodstock of  clarias gariepinus: implications for aquaculture reproduction and  broodstock management"
+         data-authors="uruku, ndekimbe mamndeyati; abutu, agnes; uruku, ndenyangtse ndekimbe"
+         data-journal="asian journal of research in zoology"
+         data-abstract="african catfish (clarias gariepinus) is an economically important aquaculture species in nigeria, and sustainable hatchery production depends partly on the availability of suitable male broodstock and good-quality semen. this study compared selected semen quality parameters of cultured and wild male c. gariepinus to assess differences associated with broodstock source. six sexually mature males, comprising three (3) cultured and three (3) wild individuals, were examined. semen was obtained through testicular extraction following dissection. the evaluated parameters included gonad weight, gonadosomatic index (gsi), milt volume, sperm motility, sperm concentration, sperm viability, sperm morphology, and semen ph. descriptive comparisons indicated that wild broodstock had higher mean gonad weight (5.33 ± 1.20 g), milt volume (2.72 ± 0.10 ml), and sperm concentration (5.82 ± 0.23 × 10¹⁰ sperm cells ml⁻¹) than cultured broodstock, which recorded 3.50 ± 0.76 g, 2.58 ± 0.17 ml, and 5.56 ± 0.11 × 10¹⁰ sperm cells ml⁻¹, respectively. the percentage of active spermatozoa was also numerically higher in wild fish (69.17 ± 7.77%) than in cultured fish (63.33 ± 14.00%). semen ph was 7.00 in both groups. wild broodstock recorded a higher mean proportion of morphologically normal spermatozoa (88.00 ± 2.16%) than cultured broodstock (76.80 ± 12.95%). the reported statistical analysis, however, indicated no significant differences between the groups (p &gt; 0.05). qualitative characteristics, including semen colour, viscosity, and liquefaction time, varied between the two sources. these findings indicate that both cultured and wild broodstock produced measurable quantities of testicular semen with broadly comparable characteristics under the conditions investigated. further studies involving larger numbers of broodstock and controlled fertilisation trials are necessary to determine whether the observed differences influence fertilisation success, hatchability, and larval performance. this study provides preliminary information that may contribute to broodstock evaluation and management in african catfish aquaculture."
+         data-summary="本研究比较了养殖与野生非洲鲶（clarias gariepinus）雄鱼亲鱼的精液质量指标，以评估亲鱼来源对繁殖性能的潜在影响。通过解剖取精，测定了性腺重、gsi、精液量、精子活力、精子浓度、精子存活率、精子形态及精液ph等参数。野生亲鱼在性腺重、精液量、精子浓度及形态正常精子比例上均值较高，但统计分析显示组间无显著差异（p > 0.05）。作者建议扩大样本并结合可控受精试验，以明确这些差异是否影响受精率、孵化率及仔鱼表现。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Asian Journal of Research in Zoology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究比较了养殖与野生非洲鲶（Clarias gariepinus）雄鱼亲鱼的精液质量指标，以评估亲鱼来源对繁殖性能的潜在影响。通过解剖取精，测定了性腺重、GSI、精液量、精子活力、精子浓度、精子存活率、精子形态及精液pH等参数。野生亲鱼在性腺重、精液量、精子浓度及形态正常精子比例上均值较高，但统计分析显示组间无显著差异（P > 0.05）。作者建议扩大样本并结合可控受精试验，以明确这些差异是否影响受精率、孵化率及仔鱼表现。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.9734/ajriz/2026/v9i4330" target="_blank" rel="noopener">Evaluation of Semen Quality Indices in Cultured and Wild Broodstock of  Clarias gariepinus: Implications for Aquaculture Reproduction and  Broodstock Management</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Uruku, Ndekimbe Mamndeyati; Abutu, Agnes; Uruku, Ndenyangtse...</span>
+        
+        <span>📅 2026-11-09</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">African catfish (Clarias gariepinus) is an economically important aquaculture species in Nigeria, and sustainable hatchery production depends partly on the availability of suitable male broodstock and good-quality semen. This study compared selected semen quality parameters of cultured and wild male C. gariepinus to assess differences associated with broodstock source. Six sexually mature males, comprising three (3) cultured and three (3) wild individuals, were examined. Semen was obtained through testicular extraction following dissection. The evaluated parameters included gonad weight, gonadosomatic index (GSI), milt volume, sperm motility, sperm concentration, sperm viability, sperm morphology, and semen pH. Descriptive comparisons indicated that wild broodstock had higher mean gonad weight (5.33 ± 1.20 g), milt volume (2.72 ± 0.10 mL), and sperm concentration (5.82 ± 0.23 × 10¹⁰ sperm cells mL⁻¹) than cultured broodstock, which recorded 3.50 ± 0.76 g, 2.58 ± 0.17 mL, and 5.56 ± 0.11 × 10¹⁰ sperm cells mL⁻¹, respectively. The percentage of active spermatozoa was also numerically higher in wild fish (69.17 ± 7.77%) than in cultured fish (63.33 ± 14.00%). Semen pH was 7.00 in both groups. Wild broodstock recorded a higher mean proportion of morphologically normal spermatozoa (88.00 ± 2.16%) than cultured broodstock (76.80 ± 12.95%). The reported statistical analysis, however, indicated no significant differences between the groups (P &gt; 0.05). Qualitative characteristics, including semen colour, viscosity, and liquefaction time, varied between the two sources. These findings indicate that both cultured and wild broodstock produced measurable quantities of testicular semen with broadly comparable characteristics under the conditions investigated. Further studies involving larger numbers of broodstock and controlled fertilisation trials are necessary to determine whether the observed differences influence fertilisation success, hatchability, and larval performance. This study provides preliminary information that may contribute to broodstock evaluation and management in African catfish aquaculture.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="macrobenthic fauna associated with maërl beds near aquaculture installations in the north-eastern corinthian gulf, greece, with remarks on two taxa"
+         data-authors="chatzigeorgiou, georgios; lampa, maria; rallis, ioannis; maidanou, maria; naletaki, maria; plaitis, wanda"
+         data-journal="biodiversity data journal"
+         data-abstract="maërl beds, also known as rhodolith beds, are biogenic benthic habitats formed by unattached coralline algae and support diverse macrobenthic assemblages. in the mediterranean, especially its eastern basin, information on their distribution, ecological condition and associated fauna remains limited. maërl beds are sensitive to physical disturbance, sedimentation and organic enrichment, including pressures associated with aquaculture activities. this data paper describes the macrobenthic fauna associated with maërl beds located near and further from finfish farms in the traxilos area of the north-eastern corinthian gulf, greece. the dataset comprises eight sampling events and 328 abundance-based occurrence records representing 6,410 individuals. the paper also provides morphological notes on two polychaete taxa, syllis nigricirris and the neanthioides acuminata species complex, documenting variation in diagnostically relevant characters."
+         data-summary="本研究记录了希腊科林斯湾东北部traxilos海域鱼类养殖场附近及远离养殖场的maërl beds（rhodolith beds）大型底栖动物群落，填补了东地中海该生境分布与生态状况数据不足的空白。数据集包含8次采样、328条基于丰度的出现记录，共6,410个个体。文中还对两种多毛类分类群（syllis nigricirris和neanthioides acuminata种复合体）的形态鉴别特征变异进行了描述。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Biodiversity Data Journal
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究记录了希腊科林斯湾东北部Traxilos海域鱼类养殖场附近及远离养殖场的maërl beds（rhodolith beds）大型底栖动物群落，填补了东地中海该生境分布与生态状况数据不足的空白。数据集包含8次采样、328条基于丰度的出现记录，共6,410个个体。文中还对两种多毛类分类群（Syllis nigricirris和Neanthioides acuminata种复合体）的形态鉴别特征变异进行了描述。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3897/bdj.14.e209360" target="_blank" rel="noopener">Macrobenthic fauna associated with maërl beds near aquaculture installations in the north-eastern Corinthian Gulf, Greece, with remarks on two taxa</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Chatzigeorgiou, Georgios; Lampa, Maria; Rallis, Ioannis; Mai...</span>
+        
+        <span>📅 2026-11-09</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Maërl beds, also known as rhodolith beds, are biogenic benthic habitats formed by unattached coralline algae and support diverse macrobenthic assemblages. In the Mediterranean, especially its eastern basin, information on their distribution, ecological condition and associated fauna remains limited. Maërl beds are sensitive to physical disturbance, sedimentation and organic enrichment, including pressures associated with aquaculture activities. This data paper describes the macrobenthic fauna associated with maërl beds located near and further from finfish farms in the Traxilos area of the north-eastern Corinthian Gulf, Greece. The dataset comprises eight sampling events and 328 abundance-based occurrence records representing 6,410 individuals. The paper also provides morphological notes on two polychaete taxa, Syllis nigricirris and the Neanthioides acuminata species complex, documenting variation in diagnostically relevant characters.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="dopaminergic stimulation of intestinal maltase activity in the freshwater fish oligosarcus jenynsii"
+         data-authors="albanesi, camila; domanski, dardo; michiels, maria soledad"
+         data-journal="canadian journal of zoology"
+         data-abstract="intestinal disaccharidases are key determinants of carbohydrate assimilation in fish. here, we characterized maltase and sucrase activity in juveniles of oligosarcus jenynsii (günther, 1864) and evaluated the modulation of maltase activity by dopamine. maltase activity was detected across a broad ph (6.0–8.0) and temperature (4–45 °c) range and followed michaelis–menten kinetics (km :1.22 mm), whereas sucrase activity was not detected. in vitro assays showed that dopamine significantly stimulated maltase activity in a concentration-dependent manner, with increases at 10-4 and 10-3 m. this stimulatory effect was not observed in the presence of the d1 receptor antagonist sch-23390 or the d2 receptor antagonist chlorpromazine. these results demonstrate that intestinal maltase activity is responsive to dopaminergic stimulation under in vitro conditions and suggest the participation of dopaminergic pathways in this response. the physiological significance of this modulation in vivo remains to be established. these findings contribute to the understanding of the biochemical regulation of intestinal disaccharidases in a freshwater fish species."
+         data-summary="本研究表征了淡水鱼oligosarcus jenynsii幼鱼的肠道二糖酶活性，并评估多巴胺对maltase活性的调控作用。结果显示maltase在ph 6.0–8.0和4–45 °c范围内均有活性，符合michaelis–menten动力学（km 1.22 mm），而未检测到sucrase活性。体外实验表明多巴胺以浓度依赖方式显著刺激maltase活性（10⁻⁴和10⁻³ m），该效应可被d1受体拮抗剂sch-23390和d2受体拮抗剂氯丙嗪阻断，提示多巴胺能通路参与该调控，但其体内生理意义尚待阐明。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Canadian Journal of Zoology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究表征了淡水鱼Oligosarcus jenynsii幼鱼的肠道二糖酶活性，并评估多巴胺对maltase活性的调控作用。结果显示maltase在pH 6.0–8.0和4–45 °C范围内均有活性，符合Michaelis–Menten动力学（Km 1.22 mM），而未检测到sucrase活性。体外实验表明多巴胺以浓度依赖方式显著刺激maltase活性（10⁻⁴和10⁻³ M），该效应可被D1受体拮抗剂SCH-23390和D2受体拮抗剂氯丙嗪阻断，提示多巴胺能通路参与该调控，但其体内生理意义尚待阐明。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1139/cjz-2026-0108" target="_blank" rel="noopener">Dopaminergic stimulation of intestinal maltase activity in the freshwater fish Oligosarcus jenynsii</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Albanesi, Camila; Domanski, Dardo; Michiels, Maria Soledad</span>
+        
+        <span>📅 2026-11-09</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Intestinal disaccharidases are key determinants of carbohydrate assimilation in fish. Here, we characterized maltase and sucrase activity in juveniles of Oligosarcus jenynsii (Günther, 1864) and evaluated the modulation of maltase activity by dopamine. Maltase activity was detected across a broad pH (6.0–8.0) and temperature (4–45 °C) range and followed Michaelis–Menten kinetics (Km :1.22 mM), whereas sucrase activity was not detected. In vitro assays showed that dopamine significantly stimulated maltase activity in a concentration-dependent manner, with increases at 10-4 and 10-3 M. This stimulatory effect was not observed in the presence of the D1 receptor antagonist SCH-23390 or the D2 receptor antagonist chlorpromazine. These results demonstrate that intestinal maltase activity is responsive to dopaminergic stimulation under in vitro conditions and suggest the participation of dopaminergic pathways in this response. The physiological significance of this modulation in vivo remains to be established. These findings contribute to the understanding of the biochemical regulation of intestinal disaccharidases in a freshwater fish species.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="material-dependent effects of fish-scale-derived nano-hydroxyapatite on the mechanical, physicochemical, and optical properties of conventional glass ionomer cements"
+         data-authors="abozaid, dina; el-aal, mohamed abd; ahmed, mohammed h.; azab, amr; alhotan, abdulaziz; mohamed, pansai a."
+         data-journal="clinical oral investigations"
+         data-abstract=""
+         data-summary="该研究评估鱼鳞来源纳米羟基磷灰石（nano-hydroxyapatite）对传统玻璃离子水门汀（glass ionomer cement）力学、理化及光学性能的材料依赖性影响，属牙科修复材料领域，与渔业科学无关。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Clinical Oral Investigations
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该研究评估鱼鳞来源纳米羟基磷灰石（nano-hydroxyapatite）对传统玻璃离子水门汀（glass ionomer cement）力学、理化及光学性能的材料依赖性影响，属牙科修复材料领域，与渔业科学无关。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1007/s00784-026-07252-5" target="_blank" rel="noopener">Material-dependent effects of fish-scale-derived nano-hydroxyapatite on the mechanical, physicochemical, and optical properties of conventional glass ionomer cements</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Abozaid, Dina; El-Aal, Mohamed Abd; Ahmed, Mohammed H.; Azab...</span>
+        
+        <span>📅 2026-11-09</span>
+      </div>
+
+      
+    </div>
+    
+    <div class="paper-card high-impact"
+         data-title="integrating morphology and otolith chemistry for distinguishing hatchery-reared and wild japanese glass eels"
+         data-authors="gishi, ryunosuke; okamura, akihiro; yamada, yoshiaki; shirai, kotaro; kuroki, mari"
+         data-journal="fisheries science"
+         data-abstract=""
+         data-summary="该研究旨在整合形态学与耳石化学手段区分日本玻璃鳗的放流个体与野生个体，为增殖放流效果评估和资源管理提供技术支撑。"
+         data-impact="true">
+
+      
+      <div class="hi-badge">🌟 高影响力</div>
+      
+
+      
+      <div class="journal">
+        ⭐
+        📰 Fisheries Science
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该研究旨在整合形态学与耳石化学手段区分日本玻璃鳗的放流个体与野生个体，为增殖放流效果评估和资源管理提供技术支撑。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1007/s12562-026-02042-0" target="_blank" rel="noopener">Integrating morphology and otolith chemistry for distinguishing hatchery-reared and wild Japanese glass eels</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Gishi, Ryunosuke; Okamura, Akihiro; Yamada, Yoshiaki; Shirai...</span>
+        
+        <span>📅 2026-11-09</span>
+      </div>
+
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="comparative analysis of the economic feasibility of using extruded pellets and raw fish-based moist pellets as aquafeed in olive flounder (paralichthys olivaceus) aquaculture in south korea"
+         data-authors="kim, nam-lee; hur, sang woo; park, kyoung-il; jeong, seong-mok; choi, ji yong; kim, kang-woong; kim, do-hoon"
+         data-journal="fishes"
+         data-abstract="south korea’s olive flounder aquaculture industry predominantly relies on raw fish-based moist pellets (mp), raising concerns regarding marine resource use and environmental sustainability. this study compared the growth performance and economic feasibility of extruded pellets (ep) and mp through a 12-month feeding trial conducted at two commercial olive flounder farms in wando, south korea. at each farm, three replicate tanks were assigned to each dietary treatment. economic feasibility was assessed using net present value (npv), internal rate of return (irr), and sensitivity analyses of key production and cost variables. final body weight and survival rate were significantly higher in the mp groups than in the ep groups at both farms. in the baseline analysis without government subsidies, farm a recorded an npv of usd 793,446 and an irr of 14.1% for ep, compared with usd 2,244,588 and 28.8% for mp. at farm b, the corresponding values were usd 705,580 and 13.1% for ep, compared with usd 2,836,482 and 34.3% for mp. although both feeding systems were economically feasible, mp demonstrated greater economic returns, primarily due to higher growth performance and lower feed costs. these findings highlight the need to improve ep performance and cost-effectiveness while considering the long-term sustainability of aquaculture feeding strategies."
+         data-summary="本研究通过在南韩莞岛两个商业养殖场开展为期12个月的投喂试验，比较了挤压颗粒饲料（ep）与生鱼基湿性颗粒饲料（mp）在牙鲆（paralichthys olivaceus）养殖中的生长性能与经济可行性，并采用净现值（npv）、内部收益率（irr）及敏感性分析进行评估。结果显示，两养殖场mp组的终末体重与存活率均显著高于ep组；无补贴基准情形下，养殖场a的ep与mp的npv分别为793,446与2,244,588美元（irr 14.1% vs 28.8%），养殖场b分别为705,580与2,836,482美元（irr 13.1% vs 34.3%）。两种投喂方式均经济可行，但mp因生长性能更优、饲料成本更低而经济回报更高，提示需提升ep的性能与成本效益，并兼顾养殖投喂策略的长期可持续性。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Fishes
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究通过在南韩莞岛两个商业养殖场开展为期12个月的投喂试验，比较了挤压颗粒饲料（EP）与生鱼基湿性颗粒饲料（MP）在牙鲆（Paralichthys olivaceus）养殖中的生长性能与经济可行性，并采用净现值（NPV）、内部收益率（IRR）及敏感性分析进行评估。结果显示，两养殖场MP组的终末体重与存活率均显著高于EP组；无补贴基准情形下，养殖场A的EP与MP的NPV分别为793,446与2,244,588美元（IRR 14.1% vs 28.8%），养殖场B分别为705,580与2,836,482美元（IRR 13.1% vs 34.3%）。两种投喂方式均经济可行，但MP因生长性能更优、饲料成本更低而经济回报更高，提示需提升EP的性能与成本效益，并兼顾养殖投喂策略的长期可持续性。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/fishes11110654" target="_blank" rel="noopener">Comparative Analysis of the Economic Feasibility of Using Extruded Pellets and Raw Fish-Based Moist Pellets as Aquafeed in Olive Flounder (Paralichthys olivaceus) Aquaculture in South Korea</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Kim, Nam-Lee; Hur, Sang Woo; Park, Kyoung-Il; Jeong, Seong-M...</span>
+        
+        <span>📅 2026-11-09</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">South Korea’s olive flounder aquaculture industry predominantly relies on raw fish-based moist pellets (MP), raising concerns regarding marine resource use and environmental sustainability. This study compared the growth performance and economic feasibility of extruded pellets (EP) and MP through a 12-month feeding trial conducted at two commercial olive flounder farms in Wando, South Korea. At each farm, three replicate tanks were assigned to each dietary treatment. Economic feasibility was assessed using net present value (NPV), internal rate of return (IRR), and sensitivity analyses of key production and cost variables. Final body weight and survival rate were significantly higher in the MP groups than in the EP groups at both farms. In the baseline analysis without government subsidies, Farm A recorded an NPV of USD 793,446 and an IRR of 14.1% for EP, compared with USD 2,244,588 and 28.8% for MP. At Farm B, the corresponding values were USD 705,580 and 13.1% for EP, compared with USD 2,836,482 and 34.3% for MP. Although both feeding systems were economically feasible, MP demonstrated greater economic returns, primarily due to higher growth performance and lower feed costs. These findings highlight the need to improve EP performance and cost-effectiveness while considering the long-term sustainability of aquaculture feeding strategies.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="edna metabarcoding and random forest identify super-connector fish species across mangrove–seagrass–coral reef continuums in the south china sea"
+         data-authors="liu, chunchun; wu, gongguo; zou, chujun; wu, donghai; xie, pengfei; wang, sai; wang, ping"
+         data-journal="frontiers in ecology and evolution"
+         data-abstract="background tropical coastal seascapes rely on ecological connectivity between mangrove, seagrass, and coral reef habitats to sustain fish biodiversity and fisheries productivity. however, identifying key fish species that facilitate cross-habitat energy flows remains challenging due to limitations of traditional survey methods in turbid, structurally complex environments. methods we integrated environmental dna (edna) metabarcoding with random forest (rf) machine learning to map fish assemblages across a mangrove-seagrass-coral reef continuum in hainan island, south china sea. results we detected 234 fish species across 78 families - a 4.03-fold increase over conventional gillnet surveys (58 species, paired t-test, t = 11.34, p &amp;lt; 0.001). using rf classification, we identified 23 "connector species" with high cross-habitat fidelity, of which three super-connectors - lutjanus russellii , siganus fuscescens , and gerres oyena - accounted for 47% of cross-habitat network flow. simulated removal of these three species reduced overall network connectivity by 68%. the rf model achieved 90.7% accuracy (kappa = 0.86) in predicting habitat occurrence from edna data. variable importance analysis revealed a salinity threshold at 28 psu and a distance-to-reef threshold at 2.5 km as primary drivers of community turnover. our bipartite network analysis showed significant nestedness (nodf = 47.3, p &amp;lt; 0.001), indicating that generalist species disproportionately maintain seascape connectivity. discussion these findings demonstrate that integrating edna with machine learning provides a scalable, high-resolution toolkit for defining functional connectivity and prioritizing species for ecosystem-based fisheries management in the anthropocene."
+         data-summary="本研究旨在识别红树林—海草床—珊瑚礁连续体中对跨生境能量流动起关键作用的鱼类。方法上整合edna metabarcoding与随机森林机器学习，在海南岛南海沿岸海景中解析鱼类群落。共检测到234种鱼类（78科），为传统刺网调查的4.03倍；随机森林模型以90.7%准确率识别出23种高跨生境保真度的“connector species”，其中lutjanus russellii、siganus fuscescens和gerres oyena三种super-connectors贡献了47%的跨生境网络流量，模拟移除后网络连通性下降68%。盐度28 psu和距礁距离2.5 km是群落更替的主要驱动因子，二分网络分析显示显著嵌套结构（nodf=47.3），表明广适种对维持海景连通性具有不成比例的作用。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Frontiers in Ecology and Evolution
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究旨在识别红树林—海草床—珊瑚礁连续体中对跨生境能量流动起关键作用的鱼类。方法上整合eDNA metabarcoding与随机森林机器学习，在海南岛南海沿岸海景中解析鱼类群落。共检测到234种鱼类（78科），为传统刺网调查的4.03倍；随机森林模型以90.7%准确率识别出23种高跨生境保真度的“connector species”，其中Lutjanus russellii、Siganus fuscescens和Gerres oyena三种super-connectors贡献了47%的跨生境网络流量，模拟移除后网络连通性下降68%。盐度28 PSU和距礁距离2.5 km是群落更替的主要驱动因子，二分网络分析显示显著嵌套结构（NODF=47.3），表明广适种对维持海景连通性具有不成比例的作用。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3389/fevo.2026.1960019" target="_blank" rel="noopener">eDNA metabarcoding and random forest identify super-connector fish species across mangrove–seagrass–coral reef continuums in the South China Sea</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Liu, Chunchun; Wu, Gongguo; Zou, Chujun; Wu, Donghai; Xie, P...</span>
+        
+        <span>📅 2026-11-09</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Background Tropical coastal seascapes rely on ecological connectivity between mangrove, seagrass, and coral reef habitats to sustain fish biodiversity and fisheries productivity. However, identifying key fish species that facilitate cross-habitat energy flows remains challenging due to limitations of traditional survey methods in turbid, structurally complex environments. Methods We integrated environmental DNA (eDNA) metabarcoding with Random Forest (RF) machine learning to map fish assemblages across a mangrove-seagrass-coral reef continuum in Hainan Island, South China Sea. Results We detected 234 fish species across 78 families - a 4.03-fold increase over conventional gillnet surveys (58 species, paired t-test, t = 11.34, p &amp;lt; 0.001). Using RF classification, we identified 23 "connector species" with high cross-habitat fidelity, of which three super-connectors - Lutjanus russellii , Siganus fuscescens , and Gerres oyena - accounted for 47% of cross-habitat network flow. Simulated removal of these three species reduced overall network connectivity by 68%. The RF model achieved 90.7% accuracy (Kappa = 0.86) in predicting habitat occurrence from eDNA data. Variable importance analysis revealed a salinity threshold at 28 PSU and a distance-to-reef threshold at 2.5 km as primary drivers of community turnover. Our bipartite network analysis showed significant nestedness (NODF = 47.3, p &amp;lt; 0.001), indicating that generalist species disproportionately maintain seascape connectivity. Discussion These findings demonstrate that integrating eDNA with machine learning provides a scalable, high-resolution toolkit for defining functional connectivity and prioritizing species for ecosystem-based fisheries management in the Anthropocene.</div>
+      
+    </div>
+    
+    <div class="paper-card high-impact"
+         data-title="environmental radioactivity in marine food webs of the tamil nadu coast: sources, transfer pathways and radiological implications"
+         data-authors="singaravel, vijayapoopathi; moovendhan, meivelu"
+         data-journal="frontiers in marine science"
+         data-abstract="seafood constitutes a major pathway for the transfer of naturally occurring and anthropogenic radionuclides from marine ecosystems to humans. the tamil nadu coast, spanning the bay of bengal, palk bay, gulf of mannar and the indian ocean, supports intensive fisheries, aquaculture and seafood consumption while encompassing nuclear installations, mineral-rich coastal sediments, major ports, estuaries, industrial zones and riverine inputs that collectively influence marine radioactivity. this review critically synthesises current knowledge of radionuclides in marine fish, crustaceans, molluscs, seaweeds and other edible organisms along the tamil nadu coast, with emphasis on their sources, environmental behaviour, bioaccumulation, trophic transfer and implications for seafood safety. naturally occurring and cosmogenic radionuclides (^210po, ^210pb, ^226ra, ^228ra, ^238u, ^232th, ^40k and ^14c), together with surveillance-relevant anthropogenic radionuclides (^137cs, ^134cs, ^90sr, ^3h, ^99tc and plutonium isotopes), are evaluated with respect to environmental sources, sediment interactions, tissue-specific accumulation, spatial variability and radiological significance. under normal/background conditions, across tamil nadu studies that quantified radionuclide ingestion dose, ^210po ^210po frequently represented the largest contributor among the radionuclides assessed, although the magnitude of exposure varied substantially with seafood group, tissue selection, processing state and consumption assumptions. anthropogenic radionuclides were less extensively characterised and generally contributed smaller reported doses in the available surveillance studies; however, their relative radiological importance may increase substantially following accidental or off-normal releases. comparability among studies remains constrained by differences in sampling design, target species, tissue selection, analytical methods, reporting basis, detection limits, seafood-consumption data and dose-assessment assumptions. this review therefore emphasises the need for harmonised, long-term radioecological monitoring integrating seawater, sediments, plankton, representative marine biota and commercially important seafood, together with robust qa/qc, whole organism ecological dose assessment and category-specific probabilistic dietary exposure modelling. establishing spatially and temporally resolved baseline datasets will strengthen seafood-safety assessments, improve source attribution, support rapid evaluation of accidental releases and provide a more robust basis for environmental protection and coastal management along the tamil nadu coast."
+         data-summary="该综述系统梳理了泰米尔纳德邦海岸海洋食物网中天然与人为放射性核素的来源、环境行为、生物累积及营养级传递，重点评估了^210po、^210pb、^226ra、^40k及^137cs、^90sr等核素在海产品中的辐射剂量意义。研究表明，本底条件下^210po通常是海产品摄入剂量的最大贡献者，人为核素在常规监测中贡献较小，但在事故释放情景下其相对重要性可能显著上升。研究间因采样设计、组织选择、分析方法和消费假设差异而可比性受限，呼吁建立统一的长周期radioecological监测体系并整合海水、沉积物、浮游生物及代表性海产品，以支撑海产品安全评估与海岸带管理。"
+         data-impact="true">
+
+      
+      <div class="hi-badge">🌟 高影响力</div>
+      
+
+      
+      <div class="journal">
+        ⭐
+        📰 Frontiers in Marine Science
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该综述系统梳理了泰米尔纳德邦海岸海洋食物网中天然与人为放射性核素的来源、环境行为、生物累积及营养级传递，重点评估了^210Po、^210Pb、^226Ra、^40K及^137Cs、^90Sr等核素在海产品中的辐射剂量意义。研究表明，本底条件下^210Po通常是海产品摄入剂量的最大贡献者，人为核素在常规监测中贡献较小，但在事故释放情景下其相对重要性可能显著上升。研究间因采样设计、组织选择、分析方法和消费假设差异而可比性受限，呼吁建立统一的长周期radioecological监测体系并整合海水、沉积物、浮游生物及代表性海产品，以支撑海产品安全评估与海岸带管理。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3389/fmars.2026.1943975" target="_blank" rel="noopener">Environmental radioactivity in marine food webs of the Tamil Nadu coast: sources, transfer pathways and radiological implications</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Singaravel, Vijayapoopathi; Moovendhan, Meivelu</span>
+        
+        <span>📅 2026-11-09</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Seafood constitutes a major pathway for the transfer of naturally occurring and anthropogenic radionuclides from marine ecosystems to humans. The Tamil Nadu coast, spanning the Bay of Bengal, Palk Bay, Gulf of Mannar and the Indian Ocean, supports intensive fisheries, aquaculture and seafood consumption while encompassing nuclear installations, mineral-rich coastal sediments, major ports, estuaries, industrial zones and riverine inputs that collectively influence marine radioactivity. This review critically synthesises current knowledge of radionuclides in marine fish, crustaceans, molluscs, seaweeds and other edible organisms along the Tamil Nadu coast, with emphasis on their sources, environmental behaviour, bioaccumulation, trophic transfer and implications for seafood safety. Naturally occurring and cosmogenic radionuclides (^210Po, ^210Pb, ^226Ra, ^228Ra, ^238U, ^232Th, ^40K and ^14C), together with surveillance-relevant anthropogenic radionuclides (^137Cs, ^134Cs, ^90Sr, ^3H, ^99Tc and plutonium isotopes), are evaluated with respect to environmental sources, sediment interactions, tissue-specific accumulation, spatial variability and radiological significance. Under normal/background conditions, across Tamil Nadu studies that quantified radionuclide ingestion dose, ^210Po ^210Po frequently represented the largest contributor among the radionuclides assessed, although the magnitude of exposure varied substantially with seafood group, tissue selection, processing state and consumption assumptions. Anthropogenic radionuclides were less extensively characterised and generally contributed smaller reported doses in the available surveillance studies; however, their relative radiological importance may increase substantially following accidental or off-normal releases. Comparability among studies remains constrained by differences in sampling design, target species, tissue selection, analytical methods, reporting basis, detection limits, seafood-consumption data and dose-assessment assumptions. This review therefore emphasises the need for harmonised, long-term radioecological monitoring integrating seawater, sediments, plankton, representative marine biota and commercially important seafood, together with robust QA/QC, whole organism ecological dose assessment and category-specific probabilistic dietary exposure modelling. Establishing spatially and temporally resolved baseline datasets will strengthen seafood-safety assessments, improve source attribution, support rapid evaluation of accidental releases and provide a more robust basis for environmental protection and coastal management along the Tamil Nadu coast.</div>
+      
+    </div>
+    
+    <div class="paper-card high-impact"
+         data-title="socio-economic characteristics and constraints of fish farmers in three agricultural zones of imo state, nigeria"
+         data-authors="agbabiaka, c. n."
+         data-journal="international journal of agriculture and earth science"
+         data-abstract="this study assessed the socioeconomic characteristics and constraints confronting fish farmers in three agricultural zones (owerri, orlu and okigwe), of imo state, nigeria. targeted population were fish farmers whose sources of livelihood were from fish farming using earthen and concrete ponds fish culture system. a structured close-ended questionnaires were administered, in a random sampling procedure to a total of one hundred and twenty (120) fish farmers who were selected for the study, with forty (40) each from the three agricultural zones in imo state. items on the questionnaires were organized, categorized and coded correctly. data were analyzed using statistical package for social sciences (ibm/spss) software version 22.0. the results obtained indicated that majority of the fish farmers were male (75%) across the three zones indicating gender disparities which may be due to land tenure system. the active workforce is within the age bracket of 40-49 years (35%). majority of the farmers are married and has large family size. in terms of tenancy, it was observed that most of the farmers are tenants in owerri unlike the other zones. it was also observed that (38%) of the fish farmers possess tertiary education certificate. in the study area, 13% of the respondents identified lack of storage facilities for fish products as a constraint, in addition, 73% of the respondents attributed poor power supply as a challenge confronting them in the aquaculture operations in the study area. similarly, 67%) of the respondents ascribed inability to access loans or credit facilities as one of the challenges facing aquaculture. besides, 83% and 92% of the respondents ascribed high cost of feed and inadequate capital respectively as major challenges confronting aquaculture activities in these area. while 13%, 20% and 23% of the respondents believed that poaching, high cost of land and high cost of fingerlings respectively were the challenges confronting them in fish farming. moreover, poor pricing of harvested fish (30%), poor water supply (13%) and lack of technical skills (87%) were some of other significant (p &lt; 0.05) constraints faced by fish farmers in the studied areas in imo state. therefore to enhance the development of aquaculture in the state, measures should be taken to reduce the cost of fish production through subsidizing cost of inputs, giving grants, organizing workshops, trainings, seminars, field days, radio programs and the use of extension agents (eas). the state government through the imo state ministry of agriculture can establish fish demonstration farms in the three agricultural zones to serve as fish skill acquisition farms, for regular training of fish farmers in the state. all these will definitely assist in the development of aquaculture in imo state"
+         data-summary="本研究调查了尼日利亚伊莫州三个农业区（owerri、orlu、okigwe）养殖渔民的社会经济特征与制约因素，采用结构化问卷对120名以池塘养殖为生的渔民进行随机抽样分析。结果显示，渔民以男性为主（75%），主力劳动力年龄为40~49岁，38%具有高等教育学历；主要制约因素包括饲料成本高（83%）、资金不足（92%）、缺乏技术技能（87%）、电力供应差（73%）及贷款渠道不畅（67%）。研究建议通过投入品补贴、培训推广及建立鱼类示范农场等措施促进该州水产养殖发展。"
+         data-impact="true">
+
+      
+      <div class="hi-badge">🌟 高影响力</div>
+      
+
+      
+      <div class="journal">
+        ⭐
+        📰 INTERNATIONAL JOURNAL OF AGRICULTURE AND EARTH SCIENCE
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究调查了尼日利亚伊莫州三个农业区（Owerri、Orlu、Okigwe）养殖渔民的社会经济特征与制约因素，采用结构化问卷对120名以池塘养殖为生的渔民进行随机抽样分析。结果显示，渔民以男性为主（75%），主力劳动力年龄为40~49岁，38%具有高等教育学历；主要制约因素包括饲料成本高（83%）、资金不足（92%）、缺乏技术技能（87%）、电力供应差（73%）及贷款渠道不畅（67%）。研究建议通过投入品补贴、培训推广及建立鱼类示范农场等措施促进该州水产养殖发展。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.56201/ijaes.v10.no10.2024.pg162.176" target="_blank" rel="noopener">Socio-Economic Characteristics and Constraints of Fish Farmers in Three Agricultural Zones of Imo State, Nigeria</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Agbabiaka, C. N.</span>
+        
+        <span>📅 2026-11-09</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">This study assessed the socioeconomic characteristics and constraints confronting fish farmers in three agricultural zones (Owerri, Orlu and Okigwe), of Imo State, Nigeria. Targeted population were fish farmers whose sources of livelihood were from fish farming using earthen and concrete ponds fish culture system. A structured close-ended questionnaires were administered, in a random sampling procedure to a total of one hundred and twenty (120) fish farmers who were selected for the study, with forty (40) each from the three agricultural zones in Imo State. Items on the questionnaires were organized, categorized and coded correctly. Data were analyzed using Statistical Package for Social Sciences (IBM/SPSS) software version 22.0. The results obtained indicated that majority of the fish farmers were male (75%) across the three zones indicating gender disparities which may be due to land tenure system. The active workforce is within the age bracket of 40-49 years (35%). Majority of the farmers are married and has large family size. In terms of tenancy, it was observed that most of the farmers are tenants in Owerri unlike the other zones. It was also observed that (38%) of the fish farmers possess tertiary education certificate. In the study area, 13% of the respondents identified lack of storage facilities for fish products as a constraint, In addition, 73% of the respondents attributed poor power supply as a challenge confronting them in the aquaculture operations in the study area. Similarly, 67%) of the respondents ascribed inability to access loans or credit facilities as one of the challenges facing aquaculture. Besides, 83% and 92% of the respondents ascribed high cost of feed and inadequate capital respectively as major challenges confronting aquaculture activities in these area. While 13%, 20% and 23% of the respondents believed that poaching, high cost of land and high cost of fingerlings respectively were the challenges confronting them in fish farming. Moreover, poor pricing of harvested fish (30%), poor water supply (13%) and lack of technical skills (87%) were some of other significant (p &lt; 0.05) constraints faced by fish farmers in the studied areas in Imo State. Therefore to enhance the development of aquaculture in the state, measures should be taken to reduce the cost of fish production through subsidizing cost of inputs, giving grants, organizing workshops, trainings, seminars, field days, radio programs and the use of Extension Agents (EAs). The state government through the Imo State Ministry of Agriculture can establish Fish Demonstration Farms in the three agricultural zones to serve as fish skill acquisition farms, for regular training of fish farmers in the state. All these will definitely assist in the development of aquaculture in Imo State</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="maternal genetic diversity and population structure of four mandarin fish (
+                    <i>siniperca chuatsi</i>
+                    ) populations inferred from mitochondrial d-loop sequences"
+         data-authors="yao, yuefei; li, fei; zhu, chao; jiang, wenping; chi, meili; liu, shili; cheng, shun; luo, junzhi; zheng, jianbo; zhang, haiqi"
+         data-journal="israeli journal of aquaculture - bamidgeh"
+         data-abstract="mandarin fish ( siniperca chuatsi ) is an economically important freshwater aquaculture species in china, yet the maternal genetic composition of cultured stocks from different regions remains insufficiently characterized. to assess maternal genetic diversity and population structure, 120 individuals were sampled from one wild-origin population from huzhou, zhejiang province (zjhz), and three cultured populations from chizhou, anhui province (ahcz), wuhan, hubei province (hbwh), and jiangmen, guangdong province (gdjm). mitochondrial d-loop sequencing generated 118 high-quality sequences and identified 22 haplotypes. haplotype diversity ranged from 0.543 to 0.805, and nucleotide diversity from 0.00604 to 0.01095. three common haplotypes were shared by all four populations and represented 94 of the 118 individuals, whereas most remaining haplotypes were population-specific and occurred at low frequencies. amova attributed 94.17% of the mitochondrial variation to within-population differences and 5.83% to among-population differences, with the among-population component being statistically significant (fst = 0.05831, p = 0.00196). pairwise fst tests detected significant maternal differentiation between gdjm and each of the other three populations, whereas differentiation among ahcz, zjhz, and hbwh was generally low. overall, the four populations shared a broad maternal genetic background while retaining low-frequency variation within individual stocks. these findings provide population-specific baseline information for maternal-lineage identification and female broodstock management in s. chuatsi . however, mitochondrial d-loop data do not capture paternal contributions or genome-wide diversity. broader geographic sampling combined with genome-wide nuclear markers and pedigree information will therefore be required for a comprehensive assessment of broodstock genetic structure."
+         data-summary="研究对鳜（siniperca chuatsi）1个野生群体（浙江湖州）和3个养殖群体（安徽池州、湖北武汉、广东江门）共120个个体进行线粒体d-loop测序，获得118条高质量序列和22个单倍型，单倍型多样性为0.543~0.805，核苷酸多样性为0.00604~0.01095。3个共同单倍型为4个群体共享，涵盖118个个体中的94个，其余多为群体特异低频单倍型。amova显示94.17%的变异来自群体内，群体间分化显著（fst=0.05831，p=0.00196），其中gdjm与其他3个群体间存在显著母系分化，而ahcz、zjhz与hbwh间分化较低。研究为鳜母系溯源和雌性亲本管理提供了群体特异性基线资料，但作者指出线粒体d-loop数据无法反映父系贡献和全基因组多样性，需结合核基因组标记和系谱信息进一步评估。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Israeli Journal of Aquaculture - Bamidgeh
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 研究对鳜（Siniperca chuatsi）1个野生群体（浙江湖州）和3个养殖群体（安徽池州、湖北武汉、广东江门）共120个个体进行线粒体D-loop测序，获得118条高质量序列和22个单倍型，单倍型多样性为0.543~0.805，核苷酸多样性为0.00604~0.01095。3个共同单倍型为4个群体共享，涵盖118个个体中的94个，其余多为群体特异低频单倍型。AMOVA显示94.17%的变异来自群体内，群体间分化显著（FST=0.05831，P=0.00196），其中GDJM与其他3个群体间存在显著母系分化，而AHCZ、ZJHZ与HBWH间分化较低。研究为鳜母系溯源和雌性亲本管理提供了群体特异性基线资料，但作者指出线粒体D-loop数据无法反映父系贡献和全基因组多样性，需结合核基因组标记和系谱信息进一步评估。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.46989/001c.173408" target="_blank" rel="noopener">Maternal genetic diversity and population structure of four mandarin fish (
+                    <i>Siniperca chuatsi</i>
+                    ) populations inferred from mitochondrial D-loop sequences</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Yao, Yuefei; Li, Fei; Zhu, Chao; Jiang, Wenping; Chi, Meili;...</span>
+        
+        <span>📅 2026-11-09</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Mandarin fish ( Siniperca chuatsi ) is an economically important freshwater aquaculture species in China, yet the maternal genetic composition of cultured stocks from different regions remains insufficiently characterized. To assess maternal genetic diversity and population structure, 120 individuals were sampled from one wild-origin population from Huzhou, Zhejiang Province (ZJHZ), and three cultured populations from Chizhou, Anhui Province (AHCZ), Wuhan, Hubei Province (HBWH), and Jiangmen, Guangdong Province (GDJM). Mitochondrial D-loop sequencing generated 118 high-quality sequences and identified 22 haplotypes. Haplotype diversity ranged from 0.543 to 0.805, and nucleotide diversity from 0.00604 to 0.01095. Three common haplotypes were shared by all four populations and represented 94 of the 118 individuals, whereas most remaining haplotypes were population-specific and occurred at low frequencies. AMOVA attributed 94.17% of the mitochondrial variation to within-population differences and 5.83% to among-population differences, with the among-population component being statistically significant (FST = 0.05831, P = 0.00196). Pairwise FST tests detected significant maternal differentiation between GDJM and each of the other three populations, whereas differentiation among AHCZ, ZJHZ, and HBWH was generally low. Overall, the four populations shared a broad maternal genetic background while retaining low-frequency variation within individual stocks. These findings provide population-specific baseline information for maternal-lineage identification and female broodstock management in S. chuatsi . However, mitochondrial D-loop data do not capture paternal contributions or genome-wide diversity. Broader geographic sampling combined with genome-wide nuclear markers and pedigree information will therefore be required for a comprehensive assessment of broodstock genetic structure.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="strengthening the mandiri consumer cooperative through grade c fish valorization: a community empowerment program for fermented feed production in belitung, indonesia"
+         data-authors="mayasari, dessy; lokantara, i gede wyana"
+         data-journal="journal of universal community empowerment provision"
+         data-abstract="the consumer cooperative usaha mandiri in tanjung binga village, belitung regency, encounters challenges in valorizing underutilized grade c fish catches, while local livestock farmers remain reliant on relatively expensive commercial feed sourced externally. this community engagement initiative sought to enhance cooperative capacity by converting low-value fish resources into fermented feed ingredients within a circular economy framework. conducted over eight months, the program utilized a participatory approach that included needs assessment, community engagement, technical training, technology transfer, production trials, and ongoing institutional mentoring. the initiative's unique contribution is the integration of fish boiling, rice bran addition, brown sugar and em4 supplementation, anaerobic fermentation, and product development into a cooperative-based fish valorization model. the intervention enabled the transformation of underutilized fish resources into value-added feed products and strengthened members' technical skills and business management practices, particularly in financial record-keeping, production planning, and market development. laboratory analysis indicated an energy content of 392 kcal, protein content of 73.97 g, fat content of 8.97 g, and carbohydrate content of 3.93 g per 100 g. this initiative provides a foundation for reinforcing local value chains that connect fisheries, cooperatives, and livestock production. future initiatives should focus on formulation standardization, nutritional validation, feed safety assessment, economic feasibility, and regulatory compliance to ensure product quality and long-term business sustainability."
+         data-summary="本研究旨在通过将低值c级渔获转化为发酵饲料原料，提升印尼勿里洞tanjung binga村usaha mandiri消费合作社的能力，缓解当地养殖户对高价外购商业饲料的依赖。项目历时八个月，采用参与式方法开展需求评估、技术培训、技术转移、生产试验和机构辅导，将煮鱼、米糠、红糖及em4添加与厌氧发酵相结合，构建合作社为基础的鱼类增值模式。实验室分析显示产品含能量392 kcal、蛋白质73.97 g、脂肪8.97 g、碳水化合物3.93 g（每100 g），并提升了成员在财务记录、生产计划和市场开发方面的能力。后续需聚焦配方标准化、营养验证、饲料安全评估、经济可行性及法规合规，以保障产品质量与业务可持续性。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of Universal Community Empowerment Provision
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究旨在通过将低值C级渔获转化为发酵饲料原料，提升印尼勿里洞Tanjung Binga村Usaha Mandiri消费合作社的能力，缓解当地养殖户对高价外购商业饲料的依赖。项目历时八个月，采用参与式方法开展需求评估、技术培训、技术转移、生产试验和机构辅导，将煮鱼、米糠、红糖及EM4添加与厌氧发酵相结合，构建合作社为基础的鱼类增值模式。实验室分析显示产品含能量392 kcal、蛋白质73.97 g、脂肪8.97 g、碳水化合物3.93 g（每100 g），并提升了成员在财务记录、生产计划和市场开发方面的能力。后续需聚焦配方标准化、营养验证、饲料安全评估、经济可行性及法规合规，以保障产品质量与业务可持续性。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.55885/jucep.v6i2.1231" target="_blank" rel="noopener">Strengthening the Mandiri Consumer Cooperative through Grade C Fish Valorization: A Community Empowerment Program for Fermented Feed Production in Belitung, Indonesia</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Mayasari, Dessy; Lokantara, I Gede Wyana</span>
+        
+        <span>📅 2026-11-09</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">The Consumer Cooperative Usaha Mandiri in Tanjung Binga Village, Belitung Regency, encounters challenges in valorizing underutilized grade C fish catches, while local livestock farmers remain reliant on relatively expensive commercial feed sourced externally. This community engagement initiative sought to enhance cooperative capacity by converting low-value fish resources into fermented feed ingredients within a circular economy framework. Conducted over eight months, the program utilized a participatory approach that included needs assessment, community engagement, technical training, technology transfer, production trials, and ongoing institutional mentoring. The initiative's unique contribution is the integration of fish boiling, rice bran addition, brown sugar and EM4 supplementation, anaerobic fermentation, and product development into a cooperative-based fish valorization model. The intervention enabled the transformation of underutilized fish resources into value-added feed products and strengthened members' technical skills and business management practices, particularly in financial record-keeping, production planning, and market development. Laboratory analysis indicated an energy content of 392 kcal, protein content of 73.97 g, fat content of 8.97 g, and carbohydrate content of 3.93 g per 100 g. This initiative provides a foundation for reinforcing local value chains that connect fisheries, cooperatives, and livestock production. Future initiatives should focus on formulation standardization, nutritional validation, feed safety assessment, economic feasibility, and regulatory compliance to ensure product quality and long-term business sustainability.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="compositional features and biomedical applications of fish-derived decellularized extracellular matrix as a sustainable biomaterial platform"
+         data-authors="kim, bosong; kim, jinu; yang, yun jung"
+         data-journal="korean journal of chemical engineering"
+         data-abstract=""
+         data-summary="该研究聚焦鱼源脱细胞细胞外基质（decm）的组成特征及其生物医学应用，探讨其作为可持续生物材料平台的潜力。由于摘要缺失，具体方法与发现无法概述，仅从标题可知其涉及鱼源decm的组分分析与生物医学转化方向。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Korean Journal of Chemical Engineering
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该研究聚焦鱼源脱细胞细胞外基质（dECM）的组成特征及其生物医学应用，探讨其作为可持续生物材料平台的潜力。由于摘要缺失，具体方法与发现无法概述，仅从标题可知其涉及鱼源dECM的组分分析与生物医学转化方向。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1007/s11814-026-00876-z" target="_blank" rel="noopener">Compositional Features and Biomedical Applications of Fish-derived Decellularized Extracellular Matrix as a Sustainable Biomaterial Platform</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Kim, Bosong; Kim, Jinu; Yang, Yun Jung</span>
+        
+        <span>📅 2026-11-09</span>
+      </div>
+
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="oceanic spawning migration of tropical indian ocean eels from madagascar"
+         data-authors="schabetsberger, robert; chang, yu-lin eda; razafindranaivo, estelle fenohanta; andriamahefa, denis miranto; higuchi, takatoshi; sztatecsny, marc; tambets, meelis; ratsoavina, mihaja fanomezana; feunteun, eric; o'brien, gordon"
+         data-journal="marine ecology progress series"
+         data-abstract=""
+         data-summary="该研究聚焦马达加斯加热带印度洋鳗鲡的海洋产卵洄游，但摘要缺失，仅凭标题推测其可能利用标记或追踪手段揭示鳗鲡从马达加斯加水域向产卵场的迁移路线。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Marine Ecology Progress Series
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该研究聚焦马达加斯加热带印度洋鳗鲡的海洋产卵洄游，但摘要缺失，仅凭标题推测其可能利用标记或追踪手段揭示鳗鲡从马达加斯加水域向产卵场的迁移路线。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3354/meps15367" target="_blank" rel="noopener">Oceanic spawning migration of tropical Indian Ocean eels from Madagascar</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Schabetsberger, Robert; Chang, Yu-Lin Eda; Razafindranaivo, ...</span>
+        
+        <span>📅 2026-11-09</span>
+      </div>
+
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="rubble, refuge and season: grouper recruitment across habitat types in the philippines"
+         data-authors="tupper, mark h; shipway, j reuben"
+         data-journal="marine ecology progress series"
+         data-abstract=""
+         data-summary="该研究关注菲律宾石斑鱼在不同生境类型中的补充过程，考察碎石、庇护所与季节因素对幼鱼补充的影响。由于摘要缺失，具体方法与结果无法获知，建议查阅全文以了解不同生境对 grouper recruitment 的相对贡献。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Marine Ecology Progress Series
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该研究关注菲律宾石斑鱼在不同生境类型中的补充过程，考察碎石、庇护所与季节因素对幼鱼补充的影响。由于摘要缺失，具体方法与结果无法获知，建议查阅全文以了解不同生境对 grouper recruitment 的相对贡献。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3354/meps15369" target="_blank" rel="noopener">Rubble, refuge and season: grouper recruitment across habitat types in the Philippines</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Tupper, Mark H; Shipway, J Reuben</span>
+        
+        <span>📅 2026-11-09</span>
+      </div>
+
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="variables associated with the distribution of a recovering south american sea lion population in patagonia, argentina"
+         data-authors="grandi, maría florencia; sánchez-carnero, noela; pisoni, juan pablo; rodríguez pérez, daniel"
+         data-journal="marine ecology progress series"
+         data-abstract=""
+         data-summary="本研究关注阿根廷巴塔哥尼亚地区南美海狮恢复种群分布的相关变量，但摘要缺失，仅从标题可见其分析种群分布与环境或人为因素的关系。具体方法、变量及发现无法获知。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Marine Ecology Progress Series
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究关注阿根廷巴塔哥尼亚地区南美海狮恢复种群分布的相关变量，但摘要缺失，仅从标题可见其分析种群分布与环境或人为因素的关系。具体方法、变量及发现无法获知。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3354/meps15368" target="_blank" rel="noopener">Variables associated with the distribution of a recovering South American sea lion population in Patagonia, Argentina</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Grandi, María Florencia; Sánchez-Carnero, Noela; Pisoni, Jua...</span>
+        
+        <span>📅 2026-11-09</span>
+      </div>
+
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="space use during foraging is individually consistent within and among breeding seasons for atlantic leach’s storm-petrels hydrobates leucorhous"
+         data-authors="collins, sydney morgan; hedd, april; studholme, katharine r.; fifield, dave a.; montevecchi, william alan; wilson, david r."
+         data-journal="marine ecology progress series"
+         data-abstract=""
+         data-summary="该研究关注大西洋leach's storm-petrel（hydrobates leucorhous）繁殖期觅食空间利用的个体一致性，但摘要缺失，无法获知具体方法与结果。建议补充摘要后进一步评估其与渔业管理的关联。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Marine Ecology Progress Series
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该研究关注大西洋Leach's storm-petrel（Hydrobates leucorhous）繁殖期觅食空间利用的个体一致性，但摘要缺失，无法获知具体方法与结果。建议补充摘要后进一步评估其与渔业管理的关联。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3354/meps15365" target="_blank" rel="noopener">Space use during foraging is individually consistent within and among breeding seasons for Atlantic Leach’s storm-petrels Hydrobates leucorhous</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Collins, Sydney Morgan; Hedd, April; Studholme, Katharine R....</span>
+        
+        <span>📅 2026-11-09</span>
+      </div>
+
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="habitat complexity and benthic structure drive tidepool fish assemblage and diet on sandstone reefs in the northeastern brazil"
+         data-authors="alves, josé carlos albuquerque; albuquerque, maria luísa de araújo; vieira, edson a.; machado pessanha, andré luiz"
+         data-journal="marine ecology progress series"
+         data-abstract=""
+         data-summary="该研究聚焦巴西东北部砂岩礁潮池，探讨生境复杂性与底栖结构对潮池鱼类群落组成及食性的驱动作用。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Marine Ecology Progress Series
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该研究聚焦巴西东北部砂岩礁潮池，探讨生境复杂性与底栖结构对潮池鱼类群落组成及食性的驱动作用。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3354/meps15366" target="_blank" rel="noopener">Habitat complexity and benthic structure drive tidepool fish assemblage and diet on sandstone reefs in the northeastern Brazil</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Alves, José Carlos Albuquerque; Albuquerque, Maria Luísa de ...</span>
+        
+        <span>📅 2026-11-09</span>
+      </div>
+
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="two snapshots of fish diversity and body size in an amazonian market"
+         data-authors="bartolotta, lilia r.; fasulo, nicholas j.; kapusinsky, collin j.; madigosky, stephen r.; swierk, lindsey"
+         data-journal="neotropical biology and conservation"
+         data-abstract="tropical freshwater fisheries support both biodiversity and human livelihoods, yet long-term fishery characteristics data remain scarce across much of the amazon basin. fish markets offer an opportunity to assess patterns in fish diversity and body sizes from exploited aquatic communities. fish diversity and body sizes (standard length; sl) of common, locally harvested fish sold in mercado belén, iquitos (peruvian amazon), were measured using photographic surveys conducted 11 years apart, in 2008 and 2019. mean sl of the 10 most abundant species or genera differed significantly between these two years for seven taxa, increasing in five taxa (including prochilodus nigricans and plagioscion squamosissimus ) and decreasing in two, notably in a large, predatory cichla sp. taxonomic richness and diversity showed small declines between these two years. minor differences in community composition were observed between years, but the dominant taxa were similar. these two time points serve as a baseline for future comparisons and by themselves do not demonstrate temporal or regional trends. market surveys provide a useful, low-cost complement to field-based ecological studies in tropical freshwater ecosystems."
+         data-summary="本研究利用相隔11年（2008年和2019年）的摄影调查，评估秘鲁亚马逊iquitos的belén市场中常见捕捞鱼类的多样性和体长（sl）。10个最丰富物种或属中有7个类群的平均sl在两年间差异显著，5个类群体长增加（包括prochilodus nigricans和plagioscion squamosissimus），2个类群体长减小，尤其是大型捕食性cichla sp.。分类丰富度和多样性略有下降，群落组成年际差异较小但优势类群相似。该研究为未来比较提供基线，并表明市场调查是热带淡水生态系统野外生态学研究的低成本补充手段。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Neotropical Biology and Conservation
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究利用相隔11年（2008年和2019年）的摄影调查，评估秘鲁亚马逊Iquitos的Belén市场中常见捕捞鱼类的多样性和体长（SL）。10个最丰富物种或属中有7个类群的平均SL在两年间差异显著，5个类群体长增加（包括Prochilodus nigricans和Plagioscion squamosissimus），2个类群体长减小，尤其是大型捕食性Cichla sp.。分类丰富度和多样性略有下降，群落组成年际差异较小但优势类群相似。该研究为未来比较提供基线，并表明市场调查是热带淡水生态系统野外生态学研究的低成本补充手段。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3897/neotropical.21.e212775" target="_blank" rel="noopener">Two snapshots of fish diversity and body size in an Amazonian market</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Bartolotta, Lilia R.; Fasulo, Nicholas J.; Kapusinsky, Colli...</span>
+        
+        <span>📅 2026-11-09</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Tropical freshwater fisheries support both biodiversity and human livelihoods, yet long-term fishery characteristics data remain scarce across much of the Amazon Basin. Fish markets offer an opportunity to assess patterns in fish diversity and body sizes from exploited aquatic communities. Fish diversity and body sizes (standard length; SL) of common, locally harvested fish sold in Mercado Belén, Iquitos (Peruvian Amazon), were measured using photographic surveys conducted 11 years apart, in 2008 and 2019. Mean SL of the 10 most abundant species or genera differed significantly between these two years for seven taxa, increasing in five taxa (including Prochilodus nigricans and Plagioscion squamosissimus ) and decreasing in two, notably in a large, predatory Cichla sp. Taxonomic richness and diversity showed small declines between these two years. Minor differences in community composition were observed between years, but the dominant taxa were similar. These two time points serve as a baseline for future comparisons and by themselves do not demonstrate temporal or regional trends. Market surveys provide a useful, low-cost complement to field-based ecological studies in tropical freshwater ecosystems.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="evidence of natural nervous necrosis virus infection in juvenile greenfin horse-faced filefish (thamnaconus septentrionalis) during an aquaculture mortality event"
+         data-authors="wang, yu; chen, xiao-ling; qiu, liang; huang, jie"
+         data-journal="pathogens"
+         data-abstract="viral nervous necrosis (vnn), caused by nervous necrosis virus (nnv), is a devastating viral disease affecting marine fish aquaculture worldwide, particularly during larval and juvenile stages. although nnv has a broad and expanding host range, the susceptibility of greenfin horse-faced filefish (thamnaconus septentrionalis) has not been established. to determine whether t. septentrionalis is susceptible to nnv, we investigated an outbreak of abnormal mortality in juveniles from a marine aquaculture farm in rizhao, shandong province, china. a comprehensive etiological investigation combined bacterial isolation and identification, real-time quantitative rt-pcr (rt-qpcr), tissue-distribution analysis, histopathology, transmission electron microscopy (tem), and rna2-based phylogenetic analysis. diseased fish exhibited characteristic vnn-like neurological signs, including spiral swimming, loss of equilibrium, anorexia, and body darkening. several bacterial taxa, including vibrio- and tenacibaculum-related isolates, were recovered from diseased fish, indicating the possibility of bacterial involvement. however, the concurrent detection of abundant nnv rna in neural tissues, together with characteristic neurological signs, compatible histopathological lesions, and nnv-like particles, provided convergent evidence supporting natural nnv infection. nnv rna was detected in all ten diseased fish, whereas the other screened viral pathogens were not detected. pooled brain–eye samples contained 4.62 × 108 to 1.33 × 109 nnv rna copies/μg total rna, and abundant nnv rna was also detected in brain, spleen, kidney, and trunk tissues. histological examination showed vacuolar and degenerative lesions in the brain and retina, and tem revealed numerous non-enveloped, spherical virus-like particles approximately 25 nm in diameter in neural tissues, consistent with nnv morphology. phylogenetic analysis of the rna2 capsid protein gene placed the detected virus within the rgnnv rna2 lineage. together, the neurological signs, nnv rna detection, compatible histopathological lesions, nnv-like particles in neural tissues, and rna2 phylogenetic evidence provide evidence of natural nnv infection in t. septentrionalis. these findings document evidence of natural nnv infection in t. septentrionalis under aquaculture conditions, highlight the need for further investigations into pathogenicity and transmission, and provide a basis for vnn surveillance and biosecurity management in filefish aquaculture."
+         data-summary="为确认绿鳍马面鲀（thamnaconus septentrionalis）是否对 nervous necrosis virus（nnv）易感，本研究对山东日照某海水养殖场幼鱼异常死亡事件开展了病原学调查，综合采用细菌分离鉴定、rt-qpcr、组织分布分析、组织病理学、透射电镜及基于 rna2 的系统发育分析。病鱼表现螺旋游动、失衡、厌食和体色发暗等 vnn 样神经症状，虽分离到弧菌和黄杆菌类细菌，但脑眼组织 nnv rna 载量高达 4.62×10⁸–1.33×10⁹ copies/μg total rna，并伴有脑和视网膜空泡变性及约 25 nm 的无囊膜球形病毒样颗粒，rna2 系统发育分析归入 rgnnv 谱系。多项证据共同支持绿鳍马面鲀自然感染 nnv，提示需进一步研究其致病性与传播途径，并为该鱼种养殖的 vnn 监测和生物安全管理提供依据。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Pathogens
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 为确认绿鳍马面鲀（Thamnaconus septentrionalis）是否对 nervous necrosis virus（NNV）易感，本研究对山东日照某海水养殖场幼鱼异常死亡事件开展了病原学调查，综合采用细菌分离鉴定、RT-qPCR、组织分布分析、组织病理学、透射电镜及基于 RNA2 的系统发育分析。病鱼表现螺旋游动、失衡、厌食和体色发暗等 VNN 样神经症状，虽分离到弧菌和黄杆菌类细菌，但脑眼组织 NNV RNA 载量高达 4.62×10⁸–1.33×10⁹ copies/μg total RNA，并伴有脑和视网膜空泡变性及约 25 nm 的无囊膜球形病毒样颗粒，RNA2 系统发育分析归入 RGNNV 谱系。多项证据共同支持绿鳍马面鲀自然感染 NNV，提示需进一步研究其致病性与传播途径，并为该鱼种养殖的 VNN 监测和生物安全管理提供依据。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/pathogens15111176" target="_blank" rel="noopener">Evidence of Natural Nervous Necrosis Virus Infection in Juvenile Greenfin Horse-Faced Filefish (Thamnaconus septentrionalis) During an Aquaculture Mortality Event</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Wang, Yu; Chen, Xiao-Ling; Qiu, Liang; Huang, Jie</span>
+        
+        <span>📅 2026-11-09</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Viral nervous necrosis (VNN), caused by nervous necrosis virus (NNV), is a devastating viral disease affecting marine fish aquaculture worldwide, particularly during larval and juvenile stages. Although NNV has a broad and expanding host range, the susceptibility of greenfin horse-faced filefish (Thamnaconus septentrionalis) has not been established. To determine whether T. septentrionalis is susceptible to NNV, we investigated an outbreak of abnormal mortality in juveniles from a marine aquaculture farm in Rizhao, Shandong Province, China. A comprehensive etiological investigation combined bacterial isolation and identification, real-time quantitative RT-PCR (RT-qPCR), tissue-distribution analysis, histopathology, transmission electron microscopy (TEM), and RNA2-based phylogenetic analysis. Diseased fish exhibited characteristic VNN-like neurological signs, including spiral swimming, loss of equilibrium, anorexia, and body darkening. Several bacterial taxa, including Vibrio- and Tenacibaculum-related isolates, were recovered from diseased fish, indicating the possibility of bacterial involvement. However, the concurrent detection of abundant NNV RNA in neural tissues, together with characteristic neurological signs, compatible histopathological lesions, and NNV-like particles, provided convergent evidence supporting natural NNV infection. NNV RNA was detected in all ten diseased fish, whereas the other screened viral pathogens were not detected. Pooled brain–eye samples contained 4.62 × 108 to 1.33 × 109 NNV RNA copies/μg total RNA, and abundant NNV RNA was also detected in brain, spleen, kidney, and trunk tissues. Histological examination showed vacuolar and degenerative lesions in the brain and retina, and TEM revealed numerous non-enveloped, spherical virus-like particles approximately 25 nm in diameter in neural tissues, consistent with NNV morphology. Phylogenetic analysis of the RNA2 capsid protein gene placed the detected virus within the RGNNV RNA2 lineage. Together, the neurological signs, NNV RNA detection, compatible histopathological lesions, NNV-like particles in neural tissues, and RNA2 phylogenetic evidence provide evidence of natural NNV infection in T. septentrionalis. These findings document evidence of natural NNV infection in T. septentrionalis under aquaculture conditions, highlight the need for further investigations into pathogenicity and transmission, and provide a basis for VNN surveillance and biosecurity management in filefish aquaculture.</div>
+      
+    </div>
+    
+    <div class="paper-card high-impact"
+         data-title="sub-ice thermal gradients strongly influence winter depth use of an iconic cold-water fish"
+         data-authors="shi, lidi; wells, mathew g.; ridgway, mark s.; dunlop, erin s.; mcmeans, bailey c.; fisk, aaron t.; blanchfield, paul j.; cooke, steven j.; rennie, michael d.; young, joelle d."
+         data-journal="proceedings of the national academy of sciences"
+         data-abstract="in a thermally stratified lake, freshwater fish select habitats that align with their thermal preferences. while most studies of dimictic lakes have focused on habitat selection during summer stratification, less attention has been given to winter when inverse thermal stratification occurs with water temperatures between 0 to 4 °c. our results show that winter thermal stratifications vary considerably among lakes. much of the variation in winter depth use by the cold-water predator, lake trout ( salvelinus namaycush ), can be explained by the depth of the 2 °c isotherm. selection ratios further support preferential use of this thermal boundary after accounting for habitat availability. larger, shallower, and windier lakes tend to exhibit colder mean temperatures near 0 °c and deeper isotherms, typically within the 1 to 2 °c range. in contrast, deeper or more sheltered lakes maintained warmer temperatures close to 4 °c and a shallower 2 °c isotherm. using multiyear acoustic telemetry of lake trout from 11 different lakes, we found that in warmer lakes with depth-averaged temperatures above 2 °c, lake trout used thermal habitat averaging 2.6 ± 0.6 °c, which occurred in relatively shallow depths (0.1 to 11.3 m). in contrast, in the one large, shallow lake studied, where maximum water temperatures were below 2 °c, lake trout occupied the deepest waters during winter (16.8 to 26.4 m) and experienced average temperatures of 1.5 ± 0.4 °c. applying our model to 877,927 canadian and alaskan lakes predicted a roughly even split between warm and cold winter conditions; however, 73% of the 66,500 known lake trout lakes exhibited warmer winter conditions, where lake trout would occupy the upper water column during winter."
+         data-summary="研究基于11个湖泊的多年声学遥测数据，探讨冬季逆温分层下湖鳟（lake trout）深度利用与热梯度的关系。结果表明，2 °c等温线深度可解释湖鳟冬季深度利用的大部分变异，且其偏好利用该热边界。较大、较浅、风浪较强的湖泊近表层温度接近0 °c且等温线较深，而较深或遮蔽良好的湖泊温度接近4 °c且2 °c等温线较浅；在平均温度高于2 °c的湖泊中湖鳟利用约2.6 °c的浅层热栖息地，而在最大水温低于2 °c的浅湖中则占据最深水域。模型预测加拿大和阿拉斯加湖泊冷暖冬季条件大致各半，但73%的已知湖鳟湖泊为暖冬季条件。"
+         data-impact="true">
+
+      
+      <div class="hi-badge">🌟 高影响力</div>
+      
+
+      
+      <div class="journal">
+        ⭐
+        📰 Proceedings of the National Academy of Sciences
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 研究基于11个湖泊的多年声学遥测数据，探讨冬季逆温分层下湖鳟（Lake Trout）深度利用与热梯度的关系。结果表明，2 °C等温线深度可解释湖鳟冬季深度利用的大部分变异，且其偏好利用该热边界。较大、较浅、风浪较强的湖泊近表层温度接近0 °C且等温线较深，而较深或遮蔽良好的湖泊温度接近4 °C且2 °C等温线较浅；在平均温度高于2 °C的湖泊中湖鳟利用约2.6 °C的浅层热栖息地，而在最大水温低于2 °C的浅湖中则占据最深水域。模型预测加拿大和阿拉斯加湖泊冷暖冬季条件大致各半，但73%的已知湖鳟湖泊为暖冬季条件。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1073/pnas.2600502123" target="_blank" rel="noopener">Sub-ice thermal gradients strongly influence winter depth use of an iconic cold-water fish</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Shi, Lidi; Wells, Mathew G.; Ridgway, Mark S.; Dunlop, Erin ...</span>
+        
+        <span>📅 2026-11-09</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">In a thermally stratified lake, freshwater fish select habitats that align with their thermal preferences. While most studies of dimictic lakes have focused on habitat selection during summer stratification, less attention has been given to winter when inverse thermal stratification occurs with water temperatures between 0 to 4 °C. Our results show that winter thermal stratifications vary considerably among lakes. Much of the variation in winter depth use by the cold-water predator, Lake Trout ( Salvelinus namaycush ), can be explained by the depth of the 2 °C isotherm. Selection ratios further support preferential use of this thermal boundary after accounting for habitat availability. Larger, shallower, and windier lakes tend to exhibit colder mean temperatures near 0 °C and deeper isotherms, typically within the 1 to 2 °C range. In contrast, deeper or more sheltered lakes maintained warmer temperatures close to 4 °C and a shallower 2 °C isotherm. Using multiyear acoustic telemetry of Lake Trout from 11 different lakes, we found that in warmer lakes with depth-averaged temperatures above 2 °C, Lake Trout used thermal habitat averaging 2.6 ± 0.6 °C, which occurred in relatively shallow depths (0.1 to 11.3 m). In contrast, in the one large, shallow lake studied, where maximum water temperatures were below 2 °C, Lake Trout occupied the deepest waters during winter (16.8 to 26.4 m) and experienced average temperatures of 1.5 ± 0.4 °C. Applying our model to 877,927 Canadian and Alaskan lakes predicted a roughly even split between warm and cold winter conditions; however, 73% of the 66,500 known Lake Trout lakes exhibited warmer winter conditions, where Lake Trout would occupy the upper water column during winter.</div>
+      
+    </div>
+    
+    <div class="paper-card high-impact"
+         data-title="rapid vaterite-mediated shell repair for acid-induced damage in a deep-sea mussel"
+         data-authors="chen, yu; jia, zice; kiel, steffen; liu, yali; xu, chenlu; lu, yang; wang, xudong; li, niu; li, jie; zhang, si"
+         data-journal="proceedings of the national academy of sciences"
+         data-abstract="mollusks are able to secrete and repair the most diverse and complex calcareous tissues in the animal kingdom, yet the detailed molecular mechanisms of these biomineralization processes, especially for the deep-sea calcifiers, remain to be elucidated. here, using an in situ experiment, we report a repair mechanism for acid-induced shell damage via biologically mediated vaterite formation in the deep-sea cold-seep mussel gigantidas haimaensis . interestingly, the mussels secreted and recrystallized amorphous calcium carbonate into vaterite to seal the acid-induced dissolution porosities within 30 h. calcium and nucleation substrates were potentially supplied by the mantle, including calcium-binding proteins and hydroxyapatite. calcium then reacted with readily available carbonate in the extrapallial space, whose precipitation can be promoted by the nucleation substrates. this rapid repair mechanism is likely an advantage in the habitat of these mussels, which are characterized by pulsed acidification events from the seeping fluids. furthermore, our finding expands our understanding of the diverse biomineralization mechanisms by which mollusks maintain their protective shells."
+         data-summary="本研究通过原位实验探究深海冷泉贻贝 *gigantidas haimaensis* 对酸诱导壳损伤的修复机制。研究发现，贻贝在30小时内将无定形碳酸钙分泌并重结晶为vaterite（球霰石），以封闭酸蚀孔隙；钙源与成核底物（含钙结合蛋白和羟基磷灰石）可能由外套膜供给，并在外套腔中与可用碳酸根反应沉淀。该快速修复机制可能是对渗流流体脉冲式酸化生境的适应，拓展了对软体动物生物矿化多样性的认识。"
+         data-impact="true">
+
+      
+      <div class="hi-badge">🌟 高影响力</div>
+      
+
+      
+      <div class="journal">
+        ⭐
+        📰 Proceedings of the National Academy of Sciences
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究通过原位实验探究深海冷泉贻贝 *Gigantidas haimaensis* 对酸诱导壳损伤的修复机制。研究发现，贻贝在30小时内将无定形碳酸钙分泌并重结晶为vaterite（球霰石），以封闭酸蚀孔隙；钙源与成核底物（含钙结合蛋白和羟基磷灰石）可能由外套膜供给，并在外套腔中与可用碳酸根反应沉淀。该快速修复机制可能是对渗流流体脉冲式酸化生境的适应，拓展了对软体动物生物矿化多样性的认识。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1073/pnas.2616760123" target="_blank" rel="noopener">Rapid vaterite-mediated shell repair for acid-induced damage in a deep-sea mussel</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Chen, Yu; Jia, Zice; Kiel, Steffen; Liu, Yali; Xu, Chenlu; L...</span>
+        
+        <span>📅 2026-11-09</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Mollusks are able to secrete and repair the most diverse and complex calcareous tissues in the animal kingdom, yet the detailed molecular mechanisms of these biomineralization processes, especially for the deep-sea calcifiers, remain to be elucidated. Here, using an in situ experiment, we report a repair mechanism for acid-induced shell damage via biologically mediated vaterite formation in the deep-sea cold-seep mussel Gigantidas haimaensis . Interestingly, the mussels secreted and recrystallized amorphous calcium carbonate into vaterite to seal the acid-induced dissolution porosities within 30 h. Calcium and nucleation substrates were potentially supplied by the mantle, including calcium-binding proteins and hydroxyapatite. Calcium then reacted with readily available carbonate in the extrapallial space, whose precipitation can be promoted by the nucleation substrates. This rapid repair mechanism is likely an advantage in the habitat of these mussels, which are characterized by pulsed acidification events from the seeping fluids. Furthermore, our finding expands our understanding of the diverse biomineralization mechanisms by which mollusks maintain their protective shells.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="potentially toxic elements (ptes) bioaccumulation in fish from the aries river, romania: screening-level human health risk assessment"
+         data-authors="voica, cezara; marincas, olivian; gati, gabriel; feher, ioana"
+         data-journal="sci"
+         data-abstract="background: the arieș river basin in romania is historically mining-impacted, and data on metal accumulation in its fish and the associated risk to consumers are scarce. aims: this study investigated elemental accumulation in fish from the arieș river and evaluated the potential health risks associated with fish consumption. methods: a total of 40 fish representing five species were collected by angling between june and september 2025, after the legal fishing prohibition period. eight tissues per fish (muscle, gills, liver, skin, bones, scales, eyes, and caudal fin) were analyzed by inductively coupled plasma–mass spectrometry (icp-ms). contamination and exposure were evaluated using the pollution index (pi), metal contamination index (mci), estimated daily intake (edi), target hazard quotient (thq), and hazard index (hi) for non-carcinogenic risk, and carcinogenic risk and total carcinogenic risk (tcr) for carcinogenic risk. species and tissue patterns were examined by multivariate analysis, including linear discriminant analysis (lda). results: multivariate statistical analysis revealed distinct species- and tissue-related patterns in elemental composition. lda differentiated species with an initial classification accuracy of 82.5% and a leave-one-out cross-validated accuracy of 72.5%, with cr, mn, pb, sr, and ni having the highest contribution. tissue discrimination was lower (approximately 60%), with sr, zn, and cu as main discrimination variable. thq values for individual elements and hi were below 1, indicating no appreciable non-carcinogenic risk under the assumed exposure conditions. the highest cr values were associated with ni (nase muscle, 2.26 × 10−6) and as (nase skin, 6.28 × 10−7). tcr ranged from 3.16 × 10−7 to 3.37 × 10−6 and remained below 1 × 10−4, within the acceptable range. conclusions: elemental contamination in fish from the arieș river was generally low, and species and tissue type influenced elemental composition and dietary relevance. continued monitoring is advised, with seasonal sampling, inorganic arsenic speciation, and attention to species such as nase when assessing consumption risk."
+         data-summary="本研究分析了罗马尼亚arieș河5种40尾鱼8种组织中的8种潜在毒性元素（ptes），采用icp-ms测定并结合pi、mci、edi、thq、hi及致癌风险指标进行健康风险评估。多元统计（含lda）显示元素组成呈明显的物种和组织特异性，物种判别准确率82.5%（交叉验证72.5%），cr、mn、pb、sr、ni贡献最大。thq与hi均小于1，tcr为3.16×10⁻⁷~3.37×10⁻⁶，表明假定暴露条件下无显著非致癌风险，致癌风险在可接受范围内。作者建议继续开展季节性监测、无机砷形态分析，并重点关注nase等物种的消费风险。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Sci
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究分析了罗马尼亚Arieș河5种40尾鱼8种组织中的8种潜在毒性元素（PTEs），采用ICP-MS测定并结合PI、MCI、EDI、THQ、HI及致癌风险指标进行健康风险评估。多元统计（含LDA）显示元素组成呈明显的物种和组织特异性，物种判别准确率82.5%（交叉验证72.5%），Cr、Mn、Pb、Sr、Ni贡献最大。THQ与HI均小于1，TCR为3.16×10⁻⁷~3.37×10⁻⁶，表明假定暴露条件下无显著非致癌风险，致癌风险在可接受范围内。作者建议继续开展季节性监测、无机砷形态分析，并重点关注nase等物种的消费风险。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.3390/sci8110361" target="_blank" rel="noopener">Potentially Toxic Elements (PTEs) Bioaccumulation in Fish from the Aries River, Romania: Screening-Level Human Health Risk Assessment</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Voica, Cezara; Marincas, Olivian; Gati, Gabriel; Feher, Ioan...</span>
+        
+        <span>📅 2026-11-09</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Background: The Arieș River basin in Romania is historically mining-impacted, and data on metal accumulation in its fish and the associated risk to consumers are scarce. Aims: This study investigated elemental accumulation in fish from the Arieș River and evaluated the potential health risks associated with fish consumption. Methods: A total of 40 fish representing five species were collected by angling between June and September 2025, after the legal fishing prohibition period. Eight tissues per fish (muscle, gills, liver, skin, bones, scales, eyes, and caudal fin) were analyzed by inductively coupled plasma–mass spectrometry (ICP-MS). Contamination and exposure were evaluated using the pollution index (PI), metal contamination index (MCI), estimated daily intake (EDI), target hazard quotient (THQ), and hazard index (HI) for non-carcinogenic risk, and carcinogenic risk and total carcinogenic risk (TCR) for carcinogenic risk. Species and tissue patterns were examined by multivariate analysis, including linear discriminant analysis (LDA). Results: Multivariate statistical analysis revealed distinct species- and tissue-related patterns in elemental composition. LDA differentiated species with an initial classification accuracy of 82.5% and a leave-one-out cross-validated accuracy of 72.5%, with Cr, Mn, Pb, Sr, and Ni having the highest contribution. Tissue discrimination was lower (approximately 60%), with Sr, Zn, and Cu as main discrimination variable. THQ values for individual elements and HI were below 1, indicating no appreciable non-carcinogenic risk under the assumed exposure conditions. The highest CR values were associated with Ni (nase muscle, 2.26 × 10−6) and As (nase skin, 6.28 × 10−7). TCR ranged from 3.16 × 10−7 to 3.37 × 10−6 and remained below 1 × 10−4, within the acceptable range. Conclusions: Elemental contamination in fish from the Arieș River was generally low, and species and tissue type influenced elemental composition and dietary relevance. Continued monitoring is advised, with seasonal sampling, inorganic arsenic speciation, and attention to species such as nase when assessing consumption risk.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="chemical energy dispatch and multi‐objective programming based on multi‐population optimization and
+                    <scp>bas</scp>"
+         data-authors="yang, tingting; li, xunlai"
+         data-journal="the canadian journal of chemical engineering"
+         data-abstract="abstract due to the highly continuous, complex energy coupling, and multi‐energy synergy characteristics of chemical production processes, traditional experience‐based or single‐objective energy scheduling methods struggle to simultaneously address energy consumption, fluctuations, and carbon emission constraints. therefore, this paper constructs a multi‐objective energy scheduling model for chemical production, targeting operating costs, carbon emissions, and scheduling stability, and proposes an improved beetle foraging algorithm that integrates multiple swarming mechanisms. experiments show that in a typical chemical energy system, the comprehensive energy utilization rate of this method was increased by 12.34% compared with the traditional method, the steam‐power supply and demand balance deviation was reduced by 27.81%, and the system energy efficiency stability coefficient was increased to 0.93. the results show that the proposed model not only realizes the economic and low‐carbon collaborative optimization of chemical energy dispatch, but also provides a generalizable technical path and engineering reference value for intelligent dispatch and green manufacturing of complex process systems."
+         data-summary="该研究针对化工生产过程能量耦合复杂、多能协同困难的问题，构建了以运行成本、碳排放和调度稳定性为目标的多目标能源调度模型，并提出融合多种群机制的改进甲虫觅食算法（bas）进行求解。典型化工能源系统实验表明，该方法综合能源利用率较传统方法提高12.34%，蒸汽-电力供需平衡偏差降低27.81%，系统能效稳定系数提升至0.93。研究实现了化工能源调度的经济与低碳协同优化，为复杂流程系统的智能调度与绿色制造提供了可推广的技术路径。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 The Canadian Journal of Chemical Engineering
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该研究针对化工生产过程能量耦合复杂、多能协同困难的问题，构建了以运行成本、碳排放和调度稳定性为目标的多目标能源调度模型，并提出融合多种群机制的改进甲虫觅食算法（BAS）进行求解。典型化工能源系统实验表明，该方法综合能源利用率较传统方法提高12.34%，蒸汽-电力供需平衡偏差降低27.81%，系统能效稳定系数提升至0.93。研究实现了化工能源调度的经济与低碳协同优化，为复杂流程系统的智能调度与绿色制造提供了可推广的技术路径。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1002/cjce.70632" target="_blank" rel="noopener">Chemical energy dispatch and multi‐objective programming based on multi‐population optimization and
+                    <scp>BAS</scp></a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Yang, Tingting; Li, Xunlai</span>
+        
+        <span>📅 2026-11-10</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Abstract Due to the highly continuous, complex energy coupling, and multi‐energy synergy characteristics of chemical production processes, traditional experience‐based or single‐objective energy scheduling methods struggle to simultaneously address energy consumption, fluctuations, and carbon emission constraints. Therefore, this paper constructs a multi‐objective energy scheduling model for chemical production, targeting operating costs, carbon emissions, and scheduling stability, and proposes an improved beetle foraging algorithm that integrates multiple swarming mechanisms. Experiments show that in a typical chemical energy system, the comprehensive energy utilization rate of this method was increased by 12.34% compared with the traditional method, the steam‐power supply and demand balance deviation was reduced by 27.81%, and the system energy efficiency stability coefficient was increased to 0.93. The results show that the proposed model not only realizes the economic and low‐carbon collaborative optimization of chemical energy dispatch, but also provides a generalizable technical path and engineering reference value for intelligent dispatch and green manufacturing of complex process systems.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="growth performance of tilapia (oreochromis niloticus) cultured in a rainwater-harvesting aquaculture pond"
+         data-authors="nathaniel, k. geethanjali; sudhakar, s."
+         data-journal="uttar pradesh journal of zoology"
+         data-abstract="rainwater-harvesting ponds offer opportunities for freshwater aquaculture by enabling the additional productive use of existing water-storage structures. nile tilapia (oreochromis niloticus) is widely cultured because of its adaptability to different freshwater environments. however, evaluating its growth under site-specific pond conditions is essential for understanding its performance and the potential suitability of rainwater-harvesting ponds for fish culture. this study described the weekly growth of nile tilapia (oreochromis niloticus) cultured in a rainwater-harvesting aquaculture pond at h.h. the rajah’s college, pudukkottai, from september 2023 to february 2024. fish received commercial feed daily, and average body weight and body length were recorded at weekly intervals over a 24-week culture period. the initial recorded mean weight and length in week 1 were 3.0 g and 1.5 cm, respectively. by week 12, mean weight had increased to 110.0 g and mean length to 16.9 cm. at week 24, the corresponding values reached 550.0 g and 30.2 cm. across the recorded observations, average body weight increased by 547.0 g and average body length by 28.7 cm. both measurements increased in every successive weekly record. weight gains were smaller during the initial weeks and larger in absolute terms during the later stages, whereas increases in length followed a steadier pattern. these results document a continuous rise in mean fish size during one culture cycle in the study pond. however, the absence of a comparison pond, water-quality measurements, fish counts, variability estimates and feed-utilisation data prevents attribution of the growth pattern to the rainwater-harvesting system or assessment of production efficiency. the observations indicate that this pond supported tilapia growth during the monitored period, while further measurements would be required to evaluate broader culture performance."
+         data-summary="本研究记录了印度pudukkottai地区雨水收集养殖塘中尼罗罗非鱼（oreochromis niloticus）24周（2023年9月至2024年2月）的周生长表现，鱼体每日投喂商业饲料并每周测定体重与体长。初始均重3.0 g、体长1.5 cm，第12周增至110.0 g和16.9 cm，第24周达550.0 g和30.2 cm，整个养殖周期体重净增547.0 g、体长净增28.7 cm，体重呈前期增长较慢、后期绝对增量较大的趋势，体长增长则较为平稳。结果表明该雨水收集塘在监测期内可支持罗非鱼持续生长，但缺乏对照塘、水质数据、放养数量、变异估计及饲料利用数据，尚无法将生长表现归因于雨水收集系统本身或评估其生产效率。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 UTTAR PRADESH JOURNAL OF ZOOLOGY
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究记录了印度Pudukkottai地区雨水收集养殖塘中尼罗罗非鱼（Oreochromis niloticus）24周（2023年9月至2024年2月）的周生长表现，鱼体每日投喂商业饲料并每周测定体重与体长。初始均重3.0 g、体长1.5 cm，第12周增至110.0 g和16.9 cm，第24周达550.0 g和30.2 cm，整个养殖周期体重净增547.0 g、体长净增28.7 cm，体重呈前期增长较慢、后期绝对增量较大的趋势，体长增长则较为平稳。结果表明该雨水收集塘在监测期内可支持罗非鱼持续生长，但缺乏对照塘、水质数据、放养数量、变异估计及饲料利用数据，尚无法将生长表现归因于雨水收集系统本身或评估其生产效率。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.56557/upjoz/2026/v47i215945" target="_blank" rel="noopener">Growth Performance of Tilapia (Oreochromis niloticus) Cultured in a Rainwater-Harvesting Aquaculture Pond</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Nathaniel, K. Geethanjali; Sudhakar, S.</span>
+        
+        <span>📅 2026-11-09</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">Rainwater-harvesting ponds offer opportunities for freshwater aquaculture by enabling the additional productive use of existing water-storage structures. Nile tilapia (Oreochromis niloticus) is widely cultured because of its adaptability to different freshwater environments. However, evaluating its growth under site-specific pond conditions is essential for understanding its performance and the potential suitability of rainwater-harvesting ponds for fish culture. This study described the weekly growth of Nile tilapia (Oreochromis niloticus) cultured in a rainwater-harvesting aquaculture pond at H.H. The Rajah’s College, Pudukkottai, from September 2023 to February 2024. Fish received commercial feed daily, and average body weight and body length were recorded at weekly intervals over a 24-week culture period. The initial recorded mean weight and length in Week 1 were 3.0 g and 1.5 cm, respectively. By Week 12, mean weight had increased to 110.0 g and mean length to 16.9 cm. At Week 24, the corresponding values reached 550.0 g and 30.2 cm. Across the recorded observations, average body weight increased by 547.0 g and average body length by 28.7 cm. Both measurements increased in every successive weekly record. Weight gains were smaller during the initial weeks and larger in absolute terms during the later stages, whereas increases in length followed a steadier pattern. These results document a continuous rise in mean fish size during one culture cycle in the study pond. However, the absence of a comparison pond, water-quality measurements, fish counts, variability estimates and feed-utilisation data prevents attribution of the growth pattern to the rainwater-harvesting system or assessment of production efficiency. The observations indicate that this pond supported tilapia growth during the monitored period, while further measurements would be required to evaluate broader culture performance.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="phytobiotics from the lamiaceae, asteraceae, and fabaceae families: mechanisms, efficacy, and emerging nanotechnological applications in sustainable aquaculture"
+         data-authors="ashouri, ghasem; imperatore, roberta; paolucci, marina; hoseinifar, seyed hossein; nekouei fard, ali; bagherzadeh lakani, forouzan; torfi mozanzadeh, mansour; rezaeishoorijeh, reyhaneh; hoseini, marziyeh; ghafarifarsani, hamed"
+         data-journal="veterinary research communications"
+         data-abstract=""
+         data-summary="该文综述唇形科、菊科和豆科植物源植物素（phytobiotics）在水产养殖中的作用机制、应用效果及纳米技术应用前景，因无摘要仅据标题简介。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Veterinary Research Communications
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 该文综述唇形科、菊科和豆科植物源植物素（phytobiotics）在水产养殖中的作用机制、应用效果及纳米技术应用前景，因无摘要仅据标题简介。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1007/s11259-026-11599-1" target="_blank" rel="noopener">Phytobiotics from the Lamiaceae, Asteraceae, and Fabaceae families: Mechanisms, efficacy, and emerging nanotechnological applications in sustainable aquaculture</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Ashouri, Ghasem; Imperatore, Roberta; Paolucci, Marina; Hose...</span>
+        
+        <span>📅 2026-11-09</span>
+      </div>
+
+      
+    </div>
+    
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var s=localStorage.getItem('theme');
+  if(s){document.documentElement.setAttribute('data-theme',s);
+  document.getElementById('themeIcon').textContent=s==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=s==='dark'?'亮色':'暗色';}
+})();
+function toggleTheme(){
+  var h=document.documentElement,n=h.getAttribute('data-theme')==='dark'?'light':'dark';
+  h.setAttribute('data-theme',n);
+  document.getElementById('themeIcon').textContent=n==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=n==='dark'?'亮色':'暗色';
+  localStorage.setItem('theme',n);
+}
+function toggleAbstract(b){
+  var c=b.nextElementSibling,v=c.classList.contains('visible');
+  c.classList.toggle('visible');b.classList.toggle('open');
+  b.querySelector('.arrow').textContent=v?'▶':'▼';
+}
+function filterPapers(){
+  var q=(document.getElementById('searchInput').value||'').toLowerCase().trim(),vis=0;
+  document.querySelectorAll('.paper-card').forEach(function(c){
+    var t=[c.getAttribute('data-title')||'',c.getAttribute('data-authors')||'',c.getAttribute('data-journal')||'',c.getAttribute('data-abstract')||'',c.getAttribute('data-summary')||''].join(' ');
+    var s=!q||t.includes(q);c.classList.toggle('hidden',!s);if(s)vis++;
+  });
+  document.getElementById('noResults').classList.toggle('visible',vis===0);
+}
+</script>
+</body>
+</html>
