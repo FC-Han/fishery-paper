@@ -1,8 +1,60 @@
 {
-  "last_updated": "2026-11-22T15:51:56Z",
-  "total_papers": 252,
-  "new_today": 13,
+  "last_updated": "2026-11-23T19:45:42Z",
+  "total_papers": 258,
+  "new_today": 7,
   "papers": [
+    {
+      "doi": "10.1111/eff.70054",
+      "title": "Evaluating Fish Assemblage Turnover in Relation to Hydrologic Extremes Across the United States",
+      "authors": "Lewis, Samuel T.; Kanno, Yoichiro; Carlisle, Daren M.; Franssen, Nathan R.; Freeman, Mary C.; Gido, Keith B.; Luce, Charles; Mims, Meryl C.; Olden, Julian D.; Poff, N. LeRoy",
+      "journal": "Ecology of Freshwater Fish",
+      "date": "2026-11-23",
+      "abstract": "ABSTRACT Stream flows are widely regarded as a master variable affecting fish assemblages, with extreme events (e.g., floods, droughts) reorganising assemblages. Although assemblage turnover (temporal beta diversity) is common following hydrologic extremes, we have limited knowledge on how hydrologic extremes influence assemblage turnover across a broad spatial extent. In this study, we analysed time‐series counts of stream fish assemblages at 34 sites in the conterminous US to characterise the relationship between assemblage turnover with high‐ and low‐flow anomalies. We found that flow anomalies were equally important in explaining fish assemblage turnover when analysed across study sites. One‐year lag effects of flow extremes were equally important to current‐year effects. Temporal changes in relative abundance were a stronger factor of fish assemblage turnover than assemblage composition (i.e., species loss and gain). Species with the greatest contributions to assemblage turnover tended to be fluvial species that were locally abundant. Our study showed that neither high nor low flows influence stream fish assemblage turnover consistently across sites, suggesting context dependence. Further research with additional sites across ecoregions could identify factors determining this context dependency, which will help stream fish management under climate‐change‐induced hydrologic uncertainty and increasing human demand for water.",
+      "summary_cn": "研究基于美国本土34个站点的溪流鱼类群落时间序列数据，分析群落周转（temporal beta diversity）与高、低流量异常的关系。结果表明，流量异常对群落周转的解释力与站点尺度相当，滞后一年的极端流量效应与当年效应同等重要；相对丰度的时序变化比物种组成变化（物种得失）更能驱动群落周转，贡献最大的多为当地丰度较高的流水性物种。高流量与低流量对群落周转的影响在不同站点间并不一致，呈现明显的环境依赖性，需跨生态区扩展站点研究以识别其决定因素，为气候变化下水文不确定性及人类用水需求增加背景下的溪流鱼类管理提供依据。",
+      "url": "https://doi.org/10.1111/eff.70054",
+      "source": "crossref",
+      "keywords_matched": "fish ecology",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1111/fme.70134",
+      "title": "Safeguarding the Eastern Himalayan Freshwater Ecosystems: An Integrated Biosecurity, Policy, and Community‐Led Framework to Prevent Invasive Fish Introductions in Northeast India",
+      "authors": "Inaotombi, Shaikhom",
+      "journal": "Fisheries Management and Ecology",
+      "date": "2026-11-23",
+      "abstract": "ABSTRACT Freshwater ecosystems in the Eastern Himalayan Region of India—a global biodiversity hotspot—are threatened by invasive alien fish species perhaps facilitated by exotic aquaculture, the aquarium trade, climate change, and inadequate regulation. The invasion of alien species disrupts native biodiversity, causes ecological imbalances, and threatens livelihoods dependent on freshwater resources. To address this, the present study develops an integrated management framework by synthesizing and adapting global biosecurity protocols, policy tools, and community‐led conservation. The framework integrates three pillars: (1) advanced biosecurity, with real‐time monitoring and predictive modeling for early detection; (2) strengthened, context‐sensitive policies to regulate high‐risk species trade and aquaculture while respecting local economies; and (3) community empowerment through stewardship programs using traditional knowledge, sustainable livelihoods, and awareness. Recognizing the region's unique geological history and the convergence of two biodiversity hotspots in Northeast India, the framework's strength lies in its tailored design, which explicitly leverages local communities and their traditional practices to provide culturally grounded, sustainable solutions. By fostering regional collaboration, using technology, and engaging communities, this approach aims to disrupt invasion pathways, protect biodiversity, and enhance ecosystem resilience, thereby contributing to global conservation goals.",
+      "summary_cn": "研究旨在应对印度东北部东喜马拉雅地区淡水生态系统面临的外来入侵鱼类威胁（由外来水产养殖、水族贸易、气候变化及监管不足等因素驱动）。作者综合全球生物安全协议、政策工具与社区主导保护经验，构建了整合三大支柱的管理框架：实时监测与预测建模的先进biosecurity体系、针对高风险物种贸易和水产养殖的情境敏感政策、以及基于传统知识的社区赋权与可持续生计项目。该框架强调利用当地社区及传统实践，通过区域协作与技术应用阻断invasion pathways，保护生物多样性并提升生态系统韧性。",
+      "url": "https://doi.org/10.1111/fme.70134",
+      "source": "crossref",
+      "keywords_matched": "fish ecology",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1002/jaa2.70061",
+      "title": "An assessment of technical efficiency in U.S. aquaculture production",
+      "authors": "He, Qingxin; Lee, Jonathan",
+      "journal": "Journal of the Agricultural and Applied Economics Association",
+      "date": "2026-11-23",
+      "abstract": "ABSTRACT A four‐component stochastic frontier model is applied separately to nine broadly classified species group panels of U.S. aquaculture farms covering the years 2007 to 2017 to identify both time‐varying and persistent inefficiencies for catfish, trout, “other” food fish, bait fish, ornamental fish, sport fish, crustaceans, mollusks, and “other” aquaculture products. We find considerable efficiency gaps in aquaculture production driven primarily by growers' persistent inefficiencies; average overall technical efficiency ranges from 43.8% to 53.7% for “other” aquaculture products and trout, respectively. This finding suggests that increased extension efforts promoting best planning practices for potential entrants can significantly improve U.S. aquaculture efficiency.",
+      "summary_cn": "研究采用四分量随机前沿模型，分别对美国水产养殖场2007—2017年九大类物种面板数据（鲶鱼、鳟鱼、其他食用鱼、饵料鱼、观赏鱼、游钓鱼、甲壳类、软体类及其他水产品）进行技术效率评估，以识别时变性与持续性低效。结果显示，养殖生产者持续性低效是效率缺口的主要来源，总体平均技术效率介于43.8%（其他水产品）至53.7%（鳟鱼）之间。研究表明，针对潜在进入者加强最佳规划实践的技术推广可显著提升美国水产养殖效率。",
+      "url": "https://doi.org/10.1002/jaa2.70061",
+      "source": "crossref",
+      "keywords_matched": "shellfish aquaculture",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1111/fog.70095",
+      "title": "Seasonal Variability in Nutrient Sources and Phytoplankton Primary Productivity in a Shellfish Culture Area of Miyazu Bay, Sea of Japan",
+      "authors": "Kuragano, Mao; Nakajima, Toshimi; Sugimoto, Ryo",
+      "journal": "Fisheries Oceanography",
+      "date": "2026-11-23",
+      "abstract": "ABSTRACT Phytoplankton primary production is essential to coastal food webs. However, the roles of different nutrient sources in semienclosed bays characterized by strong seasonal variability in physical conditions and nutrient availability are not well understood. We investigated seasonal variations in phytoplankton biomass and primary productivity over 2 years (June 2021–November 2023) at a shellfish aquaculture site in Miyazu Bay, Japan, where nutrients are supplied via offshore seawater intrusion and river discharge as well as submarine groundwater discharge (SGD). Vertically integrated chlorophyll a (Chl‐a) and electron transport rate‐based primary production were highest in winter, coinciding with elevated dissolved inorganic nutrient concentrations associated with offshore water inputs. However, Chl‐a‐specific productivity and photosynthetic activity declined in winter due to reduced solar radiation, indicating that phytoplankton biomass accumulated under nutrient‐rich conditions despite light limitation. Photosynthetically active radiation (PAR) within the water column was governed primarily by surface PAR rather than by the light attenuation coefficient, which was low and showed no seasonality. In contrast, Chl‐a‐specific productivity and photosynthetic activity peaked in summer, when surface nutrient concentrations were low but solar radiation was high. Geochemical tracers ( 222 Rn and 224 Ra) revealed continuous inputs of nutrient‐rich groundwater near the seabed, suggesting that SGD may supplement nutrient availability during nutrient‐depleted summer conditions. Size‐fractionated analyses revealed that small phytoplankton (&lt; 20 μm) dominated biomass and production throughout the year. These results also highlight SGD as a relatively persistent nutrient pathway that may supplement nutrient availability under light‐rich but nutrient‐poor summer conditions.",
+      "summary_cn": "本研究旨在明确日本宫津湾贝类养殖区不同营养盐来源对浮游植物初级生产的贡献及其季节变化。作者于2021年6月至2023年11月开展了为期两年的季节性观测，结合叶绿素a、基于电子传递速率的初级生产力测定以及222Rn和224Ra地球化学示踪，解析了外海水入侵、河流输入与海底地下水排放（SGD）的作用。结果表明，水柱积分叶绿素a和初级生产力在冬季最高，与外海水输入带来的高溶解无机营养盐浓度一致，但光限制使单位叶绿素a生产力下降；夏季表层营养盐低而光照充足，单位叶绿素a生产力和光合活性达到峰值。SGD在近海底持续输入富营养地下水，可能在夏季营养盐匮乏时补充营养盐供应；小型浮游植物（<20 μm）全年主导生物量和生产力。",
+      "url": "https://doi.org/10.1111/fog.70095",
+      "source": "crossref",
+      "keywords_matched": "shellfish aquaculture",
+      "high_impact": false
+    },
     {
       "doi": "10.7759/cureus.120061",
       "title": "Fatal Gastric Perforation by an Ingested Fish Bone With Hepatic Abscess and Generalized Peritonitis: A Case Report",
@@ -28,6 +80,45 @@
       "source": "crossref",
       "keywords_matched": "aquaculture",
       "high_impact": true
+    },
+    {
+      "doi": "10.71317/kjard.2.11.2026.1099",
+      "title": "eDNA Metabarcoding and Population Genomics of Commercially Important Marine Fish for Biodiversity Assessment and Sustainable Fisheries Management Along the Pakistan Coast&lt;b&gt;&lt;/b&gt;",
+      "authors": "Khan, Ilman; Mairaj, Mushaiyada; Shaikh, Wajiha",
+      "journal": "Kashmir Journal of Academic Research and Development",
+      "date": "2026-11-22",
+      "abstract": "The northern Arabian Sea along Pakistan's 1,001 km coastline represents a biologically productive yet increasingly threatened marine ecosystem, supporting over 500 cataloged fish species of substantial commercial and ecological importance. Escalating anthropogenic pressures, including overfishing, illegal, unreported, and unregulated (IUU) fishing, habitat degradation, and the intensifying Arabian Sea Oxygen Minimum Zone (OMZ), have severely altered fish community structures and precipitated declines in key commercial stocks. Traditional monitoring approaches, reliant on catch landings, net trawling, and morphological taxonomy, are constrained by phenotypic plasticity, cryptic speciation, specimen damage, and an inability to identify early life stages or processed products. This review synthesizes the transformative potential of two complementary molecular technologies environmental DNA (eDNA) metabarcoding and population genomics for biodiversity assessment and sustainable fisheries management along the Pakistan coast. eDNA metabarcoding enables non-invasive, high-throughput, multi-taxa community profiling through mitochondrial markers (COI, Cyt b, 12S/16S rRNA), facilitating detection of elusive, endangered, and cryptic species, including remnant sawfish populations and coral-associated assemblages in Astola Island MPA. Population genomics, leveraging SNPs and mitochondrial sequencing, resolves stock boundaries, genetic diversity, and demographic histories, revealing distinct Evolutionary Significant Units in silver pomfret (Pampus argenteus) and genetic connectivity patterns in Spanish mackerel (Scomberomorus commerson). Integrated applications extend to seafood traceability via DNA-based QR codes, IUU fishing detection, and Blue Economy policy alignment with SDG 14. Key challenges include eDNA degradation under high temperatures, PCR bias, incomplete regional reference databases, and infrastructural capacity gaps. Strategic multi-institutional partnerships and sustained investment are essential for operational implementation, offering a paradigm shift toward resilient, evidence-based fisheries governance in Pakistan.",
+      "summary_cn": "该综述旨在评估eDNA metabarcoding与population genomics两种互补分子技术在巴基斯坦海岸生物多样性评估和可持续渔业管理中的应用潜力。eDNA metabarcoding通过线粒体标记（COI、Cyt b、12S/16S rRNA）实现非侵入性、高通量群落分析，可检测隐存种和濒危物种；population genomics利用SNPs解析stock boundaries和遗传多样性，在银鲳（Pampus argenteus）中识别出独立进化显著单元，在康氏马鲛（Scomberomorus commerson）中揭示遗传连通性。整合应用可延伸至海产品溯源、IUU fishing检测及蓝色经济政策对接，但面临eDNA高温降解、PCR偏差和区域参考数据库不完整等挑战。",
+      "url": "https://doi.org/10.71317/kjard.2.11.2026.1099",
+      "source": "crossref",
+      "keywords_matched": "fisheries",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1111/jfd.70328",
+      "title": "Size‐Related Patterns of Hyperostosis in the Carangid Fish\n                    <scp>\n                      <i>OLIGOPLITES PALOMETA</i>\n                    </scp>\n                    (Cuvier, 1832)",
+      "authors": "Henriques, Alice Barbosa; de Sá, Alice Miranda Cardoso; Ferreira, Camila Vitória Gonçalves; dos Santos, Davi Abrahão Lettieri; D’Almeida Lima, Ana Júlia Araújo Rosa; de Oliveira, Maykon Victor Rezende; Santana, Angélica Pereira Palace; Salomão, Márcia Carolina; Lavrado, Helena Passeri; Moreira, Cristiano Rangel",
+      "journal": "Journal of Fish Diseases",
+      "date": "2026-11-22",
+      "abstract": "ABSTRACT Hyperostosis in wild fishes remains poorly documented and quantitative information on its size‐related onset and anatomical distribution in Oligoplites palometa (Cuvier, 1832) is limited. We quantified hyperostosis prevalence and described its skeletal distribution across size classes in O. palometa from two estuarine systems on the coast of Rio de Janeiro, Brazil (Guanabara Bay and Sepetiba Bay). A total of 31 specimens ranging from 45 to 510 mm TL were examined by radiography, followed by excision and morphometric analysis of the unaffected and affected bones. Hyperostosis was observed in all examined individuals ≥ 315 mm TL, whereas none was detected in specimens ≤ 82 mm. No individuals between 82 and 315 mm total length (TL) were available, limiting the assessment of the onset and progression of hyperostosis within this size range. Hyperostoses were detected in the cranium, cleithrum, dorsal pterygiophores and anal pterygiophores, with the cleithrum showing the highest prevalence (80.64%), followed by dorsal pterygiophores (77.41%), anal pterygiophores (67.7%) and cranium (61.29%). These findings indicate a consistent size‐related pattern of skeletal involvement, highlighting the importance of population size structure when evaluating hyperostosis in wild fish populations.",
+      "summary_cn": "本研究旨在量化巴西里约热内卢沿岸两个河口系统中革鲹科鱼类 *Oligoplites palometa* 的骨质增生（hyperostosis）流行率及其与体长的关系。对31尾标本（45–510 mm TL）进行X射线检查及骨骼形态计量分析，发现所有≥315 mm TL个体均存在骨质增生，而≤82 mm个体均未检出。骨质增生见于颅骨、匙骨（cleithrum）、背鳍支鳍骨和臀鳍支鳍骨，以匙骨流行率最高（80.64%）。结果表明骨质增生具有明显的体长相关模式，评估野生鱼类种群骨质增生时需考虑种群规格结构。",
+      "url": "https://doi.org/10.1111/jfd.70328",
+      "source": "crossref",
+      "keywords_matched": "fish ecology",
+      "high_impact": false
+    },
+    {
+      "doi": "10.1002/ccr3.73996",
+      "title": "Fish Bone in the Esophagus",
+      "authors": "Su, Dongshuai; Tan, Yanqiu; Tang, Xichao; Yang, Qingyu",
+      "journal": "Clinical Case Reports",
+      "date": "2026-11-22",
+      "abstract": "ABSTRACT Emergency endoscopy within 2 h is standard for esophageal foreign body impaction; retention beyond 24 h increases serious complication risk by 14.1‐fold. This awake cap‐assisted technique with patient cooperation appears safe and effective in selected patients intolerant of general anesthesia or standard sedation.",
+      "summary_cn": "非渔业相关",
+      "url": "https://doi.org/10.1002/ccr3.73996",
+      "source": "crossref",
+      "keywords_matched": "fish ecology",
+      "high_impact": false
     },
     {
       "doi": "10.1163/15718085-20261060",
@@ -3265,48 +3356,35 @@
       "source": "crossref",
       "keywords_matched": "PNAS",
       "high_impact": true
-    },
-    {
-      "doi": "10.37229/fas.2026.004",
-      "title": "Food Security in the Sultanate of Oman, 1975–2025: Fisheries, Falaj Agriculture and the Rise of Diversified Self-Sufficiency",
-      "authors": "Nosir, Walid",
-      "journal": "The Future of Applied Science",
-      "date": "2026-11-08",
-      "abstract": "Oman differs from its Gulf neighbours in several respects relevant to food security: a long Arabian Sea coastline with productive fisheries, a monsoon-influenced southern region (Dhofar), an ancient irrigation tradition based on the falaj system, and major ports at Sohar, Duqm and Salalah that lie outside, or at the mouth of, the Strait of Hormuz. Since the start of the modern state in 1970, its population has grown from well under one million to over five million, and food demand has risen accordingly. This review traces Oman's food-security trajectory over five decades, drawing on National Centre for Statistics and Information data, ministry production statistics reported in the national press, the Global Food Security Index and the scholarly literature. Over the period, coastal agriculture on the Al Batinah plain suffered severe groundwater salinisation, which undermined date and lime cultivation. Since about 2010, however, deliberate investment in fisheries, aquaculture, dairy, poultry, eggs and protected vegetables has raised overall food self-sufficiency to about 65.8% in 2024, with sector ratios of 144.5% for fish, 87.3% for animal production, 66.4% for food and beverage industries and 49.4% for agricultural crop products. At commodity level, the latest reported self-sufficiency is about 146–162% for fish, 97–99% for dates, 92–97% for milk and 92–95% for eggs, while poultry stood at 55–60% and red meat at 46% in 2023. Oman scored 71.2 in the 2022 GFSI (35th of 113), and its gain of 13.8 points since 2012 was the largest improvement of any country. The review concludes that Oman's combination of marine resources, targeted investment and port diversification offers a model for arid states, while water quality, climate risk and feed dependence remain the principal constraints.",
-      "summary_cn": "该综述基于国家统计、部委产量数据、Global Food Security Index及学术文献，梳理阿曼1975–2025年粮食安全轨迹：人口从不足百万增至逾五百万，Al Batinah平原沿海农业因地下水盐渍化致椰枣与青柠种植受损。自2010年前后对渔业、水产养殖、乳业、禽蛋及保护地蔬菜的定向投资，使2024年整体粮食自给率升至约65.8%，其中鱼类144.5%、动物生产87.3%；鱼类自给率约146–162%，禽肉55–60%、红肉46%。2022年GFSI得分71.2（113国中第35位），2012年以来提升13.8分为各国最大增幅；水质、气候风险与饲料依赖仍为主要约束。",
-      "url": "https://doi.org/10.37229/fas.2026.004",
-      "source": "crossref",
-      "keywords_matched": "fisheries",
-      "high_impact": true
     }
   ],
   "weekly_topics": {
+    "2026-W48": {
+      "week_key": "2026-W48",
+      "week_range": "11月23日—11月29日",
+      "topic": "水文极端事件与水产养殖效率及生态安全研究进展",
+      "keywords": "水文极端(Hydrologic Extremes), 生物安全(Biosecurity), 外来鱼类入侵(Invasive Fish), 水产养殖效率(Aquaculture Efficiency), 浮游植物生产力(Phytoplankton Productivity), 鱼类群落周转(Fish Assemblage Turnover), 贝类养殖区(Shellfish Culture Area)",
+      "article": "## 本周研究概览\n\n本周共收录4篇渔业相关论文，研究尺度从美国全国河流鱼类群落到日本宫津湾贝类养殖区，涵盖水文极端事件对鱼类群落周转的影响、喜马拉雅东部淡水生态系统的入侵鱼类生物安全框架、美国水产养殖技术效率评估，以及半封闭海湾浮游植物初级生产力的营养盐来源解析。整体来看，本周研究呈现出\"宏观生态格局—入侵防控治理—养殖经济效率—养殖海域生态过程\"的多层次格局，既有对气候水文驱动机制的探讨，也有面向管理决策的政策与效率分析，体现了渔业科学在生态机制与管理应用之间的持续衔接。值得注意的是，本周论文以区域性和应用性研究为主，缺少方法学层面的突破性进展。\n\n## 高影响力期刊亮点\n\n本周暂无。\n\n## 创新性研究\n\n1. **Evaluating Fish Assemblage Turnover in Relation to Hydrologic Extremes Across the United States**（Ecology of Freshwater Fish）\n   该研究以时间beta多样性（temporal beta diversity）为切入点，在全国尺度上系统评估水文极端事件与鱼类群落周转的关系，将群落动态与水文极值事件直接耦合。其创新在于跨流域的大尺度比较设计，有助于识别不同水文情势下群落重组的普遍性与地域差异，为气候变化背景下的河流鱼类监测提供可操作的指标框架。\n\n2. **Safeguarding the Eastern Himalayan Freshwater Ecosystems: An Integrated Biosecurity, Policy, and Community‐Led Framework to Prevent Invasive Fish Introductions in Northeast India**（Fisheries Management and Ecology）\n   该文提出将生物安全、政策工具与社区主导行动整合为一体的入侵鱼类防控框架，突破了以往单一关注检疫或法规的研究路径。其创新点在于把社区参与纳入生物安全治理链条，对生物多样性热点地区的外来种管理具有可推广的制度设计价值。\n\n3. **An assessment of technical efficiency in U.S. aquaculture production**（Journal of the Agricultural and Applied Economics Association）\n   研究采用四分量随机前沿模型（four-component stochastic frontier model），将技术非效率分解为时变与非持久性成分，并分九个养殖种类面板进行估计。该方法学处理使长期结构性低效与短期波动得以区分，为水产养殖效率评估提供了更精细的分解工具，对产业政策制定具有参考意义。\n\n4. **Seasonal Variability in Nutrient Sources and Phytoplankton Primary Productivity in a Shellfish Culture Area of Miyazu Bay, Sea of Japan**（Fisheries Oceanography）\n   该研究聚焦半封闭海湾中不同营养盐来源对浮游植物初级生产力的季节贡献，弥补了物理条件与营养盐供给强季节变化背景下来源解析的不足。其创新在于将营养盐来源识别与初级生产力估算结合，对贝类养殖容量评估与海域营养管理具有直接应用价值。\n\n## 推荐阅读\n\n1. **Evaluating Fish Assemblage Turnover in Relation to Hydrologic Extremes Across the United States** — 全国尺度上水文极值与群落周转的耦合分析，方法框架对气候变化下的鱼类监测具有借鉴意义。\n2. **An assessment of technical efficiency in U.S. aquaculture production** — 四分量随机前沿模型对效率的时变/持久分解处理细致，是养殖经济效率研究的方法学参考。\n3. **Safeguarding the Eastern Himalayan Freshwater Ecosystems: An Integrated Biosecurity, Policy, and Community‐Led Framework to Prevent Invasive Fish Introductions in Northeast India** — 生物安全与社区治理整合的制度设计，对入侵种防控政策研究有启发。\n4. **Seasonal Variability in Nutrient Sources and Phytoplankton Primary Productivity in a Shellfish Culture Area of Miyazu Bay, Sea of Japan** — 营养盐来源与初级生产力季节动态的结合分析，支撑养殖容量与海域管理。\n5. **Evaluating Fish Assemblage Turnover in Relation to Hydrologic Extremes Across the United States** — 若关注群落生态学与水文驱动的交叉议题，该文的跨流域比较设计值得优先细读。",
+      "paper_count": 4,
+      "high_impact_count": 0
+    },
     "2026-W47": {
       "week_key": "2026-W47",
       "week_range": "11月16日—11月22日",
-      "topic": "水产养殖智能监测与生态风险防控",
-      "keywords": "水产养殖(Aquaculture), 渔业政策(Fisheries Policy), 微塑料污染(Microplastic Contamination), 鱼类种群动态(Fish Population Dynamics), 重金属积累(Heavy Metal Accumulation), 循环水养殖系统(Recirculating Aquaculture System), 鱼类疾病检测(Fish Disease Detection), 海洋保护区(Marine Protected Area)",
+      "topic": "水产养殖环境治理与渔业资源管理研究进展",
+      "keywords": "水产养殖(Aquaculture), 渔业管理(Fisheries Management), 种群基因组学(Population Genomics), 微塑料污染(Microplastic Contamination), 鱼类疾病检测(Fish Disease Detection), 重金属风险评估(Heavy Metal Risk Assessment), 增殖容量模型(Ecological Carrying Capacity), 鱼类种群同步性(Fish Population Synchrony)",
       "article": "## 本周研究概览\n\n本周共收录6篇渔业相关论文，研究覆盖鱼类多样性保护、渔业资源评估与管理、鱼类分类学、渔业经济政策以及水产品加工与食品安全等多个方向。从研究区域看，非洲内陆水域（埃塞俄比亚Lake Tana、坦桑尼亚盐碱裂谷湖、尼日利亚渔业贸易）和南美洲（阿根廷Bermejo流域）成为本周的关注热点，反映出全球渔业研究对发展中国家内陆渔业可持续性的持续关切。方法学上，本周论文涵盖了传统形态分类与分子遗传学结合、时间序列计量经济分析、以及生物化学层面的污染物-蛋白互作机制等多种手段，整体呈现出渔业科学跨学科交叉的研究态势。\n\n## 高影响力期刊亮点\n\n本周暂无。\n\n## 创新性研究\n\n1. **Interaction Mechanism Between Grass Carp Fish Maw Collagen and Heavy-Metal Ions**（*International Journal of Molecular Sciences*）\n该研究首次系统表征了草鱼鱼鳔胶原蛋白（热溶性胶原HSC及另一组分）与常见重金属离子的结合行为与分子机制，填补了鱼鳔胶原-金属离子互作分子层面认识的空白。其创新点在于将水产品加工副产物的安全性问题与蛋白质-金属配位化学相结合，为鱼鳔类产品的重金属风险评估和脱除工艺开发提供了分子基础。\n\n2. **Ageing imprecision compounds the effects of fishing selectivity, increasing bias in estimates of growth parameters**（*Journal of Fish Biology*）\n该研究的创新之处在于首次将 ageing error（年龄鉴定误差）与 fishing selectivity（捕捞选择性）的联合效应纳入生长参数估计偏差的量化框架，而非此前惯常的独立分析。这一发现对渔业资源评估中生长参数的可靠性具有直接影响，提示管理者在数据质量欠佳的情境下需重新审视基于长度频率的评估结论。\n\n3. **A new species of *Pimelodella* from the upper Bermejo basin**（*Journal of Fish Biology*）\n该文以形态学与遗传数据相结合的方式描述并命名了Bermejo流域上游的*Pimelodella*属新种，以椎骨数目（37–39）和短脂鳍基等特征与同属多数物种相区分。其意义在于丰富了La Plata basin鱼类区系记录，并为该属的系统分类与生物地理学研究提供了新的分类学依据。\n\n4. **Fished to the Edge: Severe Overfishing Threatens Fish Stocks in Tanzania's Saline Rift Valley Lakes**（*Fisheries Management and Ecology*）\n该研究对坦桑尼亚Kitangiri和Singida两个盐碱裂谷湖的鱼类种群状况进行了系统评估，基于渔获量、物种组成和单位努力渔获量等指标揭示了过度捕捞的严重程度。其价值在于为数据匮乏的内陆小型渔业提供了可操作的资源状态诊断框架，对东非裂谷湖区渔业管理具有直接警示意义。\n\n## 推荐阅读\n\n1. **Ageing imprecision compounds the effects of fishing selectivity, increasing bias in estimates of growth parameters** — 揭示了年龄鉴定误差与捕捞选择性交互放大生长参数偏差的机制，对资源评估实践具有直接方法学警示。\n2. **Interaction Mechanism Between Grass Carp Fish Maw Collagen and Heavy-Metal Ions** — 从分子层面阐明鱼鳔胶原与重金属的结合行为，为水产品安全风险评估提供了新视角。\n3. **Fished to the Edge: Severe Overfishing Threatens Fish Stocks in Tanzania's Saline Rift Valley Lakes** — 针对数据稀缺的内陆渔业提供了种群状态评估的实证案例，区域管理参考价值突出。\n4. **A new species of *Pimelodella* from the upper Bermejo basin** — 形态与遗传证据兼备的新种描述，为南美淡水鱼类分类学与多样性编目增添基础资料。\n5. **Fish Species Diversity, Seasonal Dynamics and Land Use Land Cover Associations With Fish Assemblages in the Gulf of Lake Tana, Ethiopia** — 聚焦全球唯一的鲤科鱼类物种群，将群落季节动态与土地利用覆被变化相联系，兼具保护生物学与景观生态学意义。",
-      "paper_count": 117,
+      "paper_count": 120,
       "high_impact_count": 33
     },
     "2026-W46": {
       "week_key": "2026-W46",
       "week_range": "11月9日—11月15日",
-      "topic": "水产养殖可持续发展与渔业资源管理研究热点",
-      "keywords": "水产养殖(Aquaculture), 渔业资源评估(Stock Assessment), 基因组选择(Genomic Selection), 鱼类营养与饲料(Fish Nutrition and Feed), 水产病害与益生菌(Aquatic Disease and Probiotics), 鱼类早期生活史(Early Life History), 海洋捕捞监测(Marine Capture Monitoring), 水产品加工与利用(Seafood Processing and Utilization)",
+      "topic": "水产养殖可持续发展与渔业资源管理",
+      "keywords": "水产养殖(Aquaculture), 渔业资源评估(Stock Assessment), 基因组选育(Genomic Selection), 鱼类营养(Fish Nutrition), 可持续渔业(Sustainable Fisheries), 鱼类病害防控(Fish Disease Control), 海洋捕捞监测(Marine Capture Monitoring), 鱼类加工(Fish Processing)",
       "article": "## 本周研究概览\n\n本周共收录渔业相关论文27篇，研究覆盖面较为广泛，涉及水产养殖技术与管理、鱼类生理与遗传、渔业生态与栖息地、鱼类病害与食品安全、以及渔业社会经济等多个方向。从研究区域看，论文来自中国、韩国、印度尼西亚、尼日利亚、罗马尼亚、希腊、菲律宾、阿根廷等多个国家和地区，呈现出明显的国际化特征。整体研究趋势上，水产养殖的可持续性（替代饲料、生物材料利用、病害防控）与渔业生态连通性（eDNA、栖息地评估）构成本周的两大主线，同时应用型社区研究和技术方法创新也占有一定比例。\n\n## 高影响力期刊亮点\n\n本周有两篇论文发表于 *Proceedings of the National Academy of Sciences*（PNAS），值得重点关注。\n\n**Sub-ice thermal gradients strongly influence winter depth use of an iconic cold-water fish** — 该研究聚焦二季混合湖（dimictic lake）冬季逆温分层条件下鱼类的深度利用行为，弥补了以往研究偏重夏季热分层的不足。研究揭示了冰下热梯度对冷水性鱼类冬季栖息地选择的强烈影响，对理解气候变化背景下湖泊鱼类越冬生态具有重要意义。\n\n**Rapid vaterite-mediated shell repair for acid-induced damage in a deep-sea mussel** — 该研究通过原位实验报道了深海贻贝以球霰石（vaterite）为介导的快速壳修复过程，深化了对深海钙化生物生物矿化分子机制的认识。其发现对理解海洋酸化背景下深海贝类的适应能力具有潜在价值。\n\n## 创新性研究\n\n1. **eDNA metabarcoding and random forest identify super-connector fish species across mangrove–seagrass–coral reef continuums in the South China Sea**（*Frontiers in Ecology and Evolution*）— 将eDNA宏条形码与随机森林机器学习相结合，识别跨红树林—海草—珊瑚礁连续体的\"超级连接者\"鱼类物种。方法学上把分子生态学与数据驱动模型融合，为热带海景生态连通性研究提供了可推广的分析框架。\n\n2. **The Wearing Layer Influences Long-Term Material Loss from Composite Floats for Oyster Aquaculture**（*Aquaculture Journal*）— 针对牡蛎养殖中发泡聚苯乙烯浮球作为海洋微塑料来源的问题，采用加速风化实验对八种候选材料的长期质量损失进行定量比较。该研究填补了替代材料认证标准缺失的空白，对水产养殖塑料污染的源头治理具有直接指导意义。\n\n3. **Integrating morphology and otolith chemistry for distinguishing hatchery-reared and wild Japanese glass eels**（*Fisheries Science*）— 将形态学与耳石化学相结合区分人工放流与野生日本玻璃鳗。多指标融合的思路提高了放流效果评估的可靠性，对鳗鲡资源增殖管理具有方法学参考价值。\n\n4. **Oceanic spawning migration of tropical Indian Ocean eels from Madagascar**（*Marine Ecology Progress Series*）— 揭示了马达加斯加热带印度洋鳗鲡的海洋产卵洄游，拓展了热带鳗鲡生活史认知的地理范围。对印度洋鳗鲡资源管理与保护策略制定具有基础性意义。\n\n5. **Phytobiotics from the Lamiaceae, Asteraceae, and Fabaceae families: Mechanisms, efficacy, and emerging nanotechnological applications in sustainable aquaculture**（*Veterinary Research Communications*）— 系统综述了三大植物科植物源生物制剂在水产养殖中的作用机制与纳米技术应用前景。将传统植物提取物与纳米递送技术相衔接，为抗生素替代和可持续病害防控提供了新思路。\n\n## 推荐阅读\n\n1. **Sub-ice thermal gradients strongly influence winter depth use of an iconic cold-water fish** — PNAS发表，填补冬季冰下鱼类栖息地选择研究的空白，对冷水湖泊管理与气候变化应对具有高参考价值。\n2. **Rapid vaterite-mediated shell repair for acid-induced damage in a deep-sea mussel** — PNAS发表，首次原位揭示深海贻贝球霰石介导的壳修复机制，生物矿化领域的重要进展。\n3. **eDNA metabarcoding and random forest identify super-connector fish species across mangrove–seagrass–coral reef continuums in the South China Sea** — eDNA与机器学习融合识别生态连接者，方法新颖且可推广至其他海景系统。\n4. **The Wearing Layer Influences Long-Term Material Loss from Composite Floats for Oyster Aquaculture** — 直面水产养殖微塑料污染问题，加速风化实验设计严谨，对材料认证标准制定有直接政策意义。\n5. **Comparative Analysis of the Economic Feasibility of Using Extruded Pellets and Raw Fish-Based Moist Pellets as Aquafeed in Olive Flounder (Paralichthys olivaceus) Aquaculture in South Korea** — 结合生长性能与经济可行性评估饲料替代方案，为牙鲆养殖的可持续转型提供了实证依据。",
       "paper_count": 134,
       "high_impact_count": 38
-    },
-    "2026-W45": {
-      "week_key": "2026-W45",
-      "week_range": "11月2日—11月8日",
-      "topic": "阿曼粮食安全五十年：渔业与灌溉农业的多元化自给之路",
-      "keywords": "粮食安全(Food Security), 渔业生产(Fisheries Production), 灌溉农业(Irrigated Agriculture), 自给自足(Self-Sufficiency), 水产养殖(Aquaculture), 经济多元化(Economic Diversification)",
-      "article": "## 本周研究概览\n\n本周共收录4篇论文，其中1篇为勘误声明，实际研究性论文仅3篇，且均未提供完整摘要，综述深度受到一定限制。研究方向集中于水产养殖动物的免疫应答与疾病防控，涉及鲤科鱼类（gibel carp）的炎症调控和海水鱼类（大黄鱼与真鲷）对刺激隐核虫（*Cryptocaryon irritans*）的敏感性差异机制。此外，一篇关于公牛鲨（*Carcharhinus leucas*）近岸水域出现驱动因素的勘误提示该方向仍有持续关注。整体来看，本周论文数量偏少，研究主题以宿主-病原互作和免疫调控为主，未见宏观渔业资源管理或气候效应方面的新成果。\n\n## 高影响力期刊亮点\n\n本周暂无。\n\n## 创新性研究\n\n1. **Effects of waterborne exposure to crude mulberry leaf polysaccharides on lipopolysaccharide-induced acute inflammatory responses in gibel carp (*Carassius gibelio*): insights into host immune and intestinal responses**（*Aquaculture*）\n   该研究的创新点在于采用水体暴露（waterborne exposure）途径递送桑叶粗多糖，而非传统的饲料添加方式，并同时考察宿主免疫与肠道响应两个层面。若结果证实水体暴露可有效调控LPS诱导的急性炎症，将为水产养殖中免疫增强剂的给药方式提供低成本、低应激的替代方案，对集约化养殖中的炎症性疾病管理具有潜在应用价值。\n\n2. **Comparative analysis of immune responses reveals mechanisms underlying different susceptibility to *Cryptocaryon irritans* in large yellow croaker (*Larimichthys crocea*) and red sea bream (*Pagrus major*)**（*Aquaculture*）\n   该研究以两种经济海水鱼为对象，通过比较免疫应答解析对刺激隐核虫易感性差异的机制，创新性体现在以“同病原、异宿主”的比较免疫学框架定位种间抗性差异的关键环节。研究结果有望为抗病育种标记筛选和物种混养策略提供理论依据，对海水网箱养殖中白点病的防控具有直接参考意义。\n\n3. **Comparison of EBER flow FISH results from two facilities**（*Cytometry Part B: Clinical Cytometry*）\n   该文虽属临床病毒学范畴，但其方法学核心——EBER flow FISH的跨机构可比性验证——对渔业免疫学中流式细胞术方法的标准化具有借鉴意义。多中心方法一致性评估的思路可迁移至鱼类免疫细胞表型分析的质量控制，提示本领域在方法学报告规范上仍有提升空间。\n\n## 推荐阅读\n\n1. **Comparative analysis of immune responses reveals mechanisms underlying different susceptibility to *Cryptocaryon irritans* in large yellow croaker (*Larimichthys crocea*) and red sea bream (*Pagrus major*)** — 比较免疫学视角解析海水鱼抗寄生虫机制，对病害防控与抗病育种均有参考价值。\n2. **Effects of waterborne exposure to crude mulberry leaf polysaccharides on lipopolysaccharide-induced acute inflammatory responses in gibel carp (*Carassius gibelio*): insights into host immune and intestinal responses** — 探索植物多糖水体给药途径，兼具方法创新与应用潜力。\n3. **Corrigendum to “Drivers of bull shark (*Carcharhinus leucas*) occurrence in nearshore waters: Insights from the Queensland Shark Control Program, Australia”** — 虽为勘误，但原文涉及鲨鱼控制项目的人-鲨冲突管理，建议读者回溯原文以了解该方向最新数据修正。\n4. **Comparison of EBER flow FISH results from two facilities** — 跨机构流式方法一致性评估，对渔业免疫学实验标准化有方法学借鉴意义。\n5. **Effects of waterborne exposure to crude mulberry leaf polysaccharides...** — 若关注肠道免疫与炎症调控，该文是本周唯一涉及肠道响应层面的研究，值得细读。\n\n**说明**：本周论文数量少、摘要缺失较多，部分判断基于标题信息，建议读者查阅全文后自行核实。",
-      "paper_count": 1,
-      "high_impact_count": 1
     }
   }
 }

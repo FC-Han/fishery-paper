@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>水文极端事件与水产养殖效率及生态安全研究进展 — 渔业文献每周速览</title>
+<style>
+:root {
+  --bg: #f7fafc; --bg-card: #ffffff; --text: #2d3748;
+  --text-secondary: #718096; --text-muted: #a0aec0; --border: #e2e8f0;
+  --primary: #2b6cb0; --primary-light: #bee3f8; --primary-dark: #1a365d;
+  --accent: #e76f51; --accent-light: #fed7d7;
+  --teal: #319795; --teal-light: #b2f5ea;
+  --gold: #d69e2e; --gold-light: #fefcbf;
+  --shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.10);
+  --radius: 12px; --radius-sm: 8px;
+}
+[data-theme="dark"] {
+  --bg: #1a202c; --bg-card: #2d3748; --text: #e2e8f0;
+  --text-secondary: #a0aec0; --text-muted: #718096; --border: #4a5568;
+  --primary: #90cdf4; --primary-light: #2a4365; --primary-dark: #bee3f8;
+  --accent: #fc8181; --accent-light: #742a2a;
+  --teal: #81e6d9; --teal-light: #234e52;
+  --gold: #f6e05e; --gold-light: #3d3a1a;
+  --shadow: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.5);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;transition:background 0.3s,color 0.3s}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* === Top Bar === */
+.topbar{background:linear-gradient(135deg,#1a365d,#2b6cb0);color:#fff;padding:0.8rem 1.5rem;display:flex;align-items:center;gap:1rem;position:sticky;top:0;z-index:100}
+.back-btn{color:#fff;font-size:0.95rem;font-weight:600;padding:0.4rem 0.8rem;border-radius:var(--radius-sm);border:1.5px solid rgba(255,255,255,0.3);transition:all 0.2s;white-space:nowrap}
+.back-btn:hover{background:rgba(255,255,255,0.15);text-decoration:none}
+.topbar .title-area{flex:1;min-width:0}
+.topbar .week-range{font-size:0.78rem;opacity:0.8}
+.topbar .week-topic{font-size:1rem;font-weight:700;line-height:1.3}
+.topbar .theme-toggle{padding:0.4rem 0.8rem;border:1.5px solid rgba(255,255,255,0.3);border-radius:var(--radius-sm);background:transparent;color:#fff;cursor:pointer;font-size:0.85rem;transition:all 0.2s;white-space:nowrap}
+.topbar .theme-toggle:hover{background:rgba(255,255,255,0.15)}
+
+.container{max-width:1100px;margin:0 auto;padding:1.5rem}
+
+/* === Article Section === */
+.article-section{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;margin-bottom:1.5rem;box-shadow:var(--shadow)}
+.article-section h2{font-size:1.3rem;color:var(--primary-dark);margin:1.5rem 0 0.75rem;padding-bottom:0.4rem;border-bottom:2px solid var(--primary-light)}
+.article-section h2:first-child{margin-top:0}
+.article-section p{margin-bottom:0.8rem;line-height:1.8;color:var(--text)}
+.article-section strong{color:var(--primary-dark)}
+.article-section ol,.article-section ul{padding-left:1.5rem;margin-bottom:0.8rem}
+.article-section li{margin-bottom:0.5rem;line-height:1.7}
+.article-tag{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-right:0.5rem}
+.tag-overview{background:var(--primary-light);color:var(--primary-dark)}
+.tag-highlight{background:var(--accent-light);color:var(--accent)}
+.tag-innovative{background:var(--gold-light);color:var(--gold)}
+.tag-recommend{background:var(--teal-light);color:var(--teal)}
+
+/* === Stats Row === */
+.stats-row{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.stat-mini{padding:0.5rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-secondary)}
+.stat-mini strong{color:var(--primary);font-size:1.1rem}
+
+/* === Controls === */
+.controls{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.search-box{flex:1;min-width:200px;position:relative}
+.search-box input{width:100%;padding:0.6rem 1rem 0.6rem 2.5rem;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:0.9rem;background:var(--bg-card);color:var(--text);transition:border-color 0.2s}
+.search-box input:focus{outline:none;border-color:var(--primary)}
+.search-box .search-icon{position:absolute;left:0.8rem;top:50%;transform:translateY(-50%);color:var(--text-muted);pointer-events:none}
+
+/* === Paper Grid === */
+.section-title{font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:0.75rem;display:flex;align-items:center;gap:0.5rem}
+.paper-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:0.85rem;margin-bottom:1.5rem}
+.paper-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1.1rem;transition:all 0.25s;display:flex;flex-direction:column;position:relative}
+.paper-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);border-color:var(--primary-light)}
+.paper-card.high-impact{border-left:3px solid var(--accent)}
+.paper-card .hi-badge{position:absolute;top:0.5rem;right:0.5rem;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:10px;background:var(--accent-light);color:var(--accent);font-weight:700}
+.paper-card .journal{font-size:0.78rem;color:var(--teal);font-weight:600;margin-bottom:0.3rem}
+.paper-card .title{font-size:0.95rem;font-weight:700;line-height:1.45;margin-bottom:0.35rem}
+.paper-card .title a{color:var(--text)}
+.paper-card .title a:hover{color:var(--primary);text-decoration:none}
+.paper-card .meta{font-size:0.78rem;color:var(--text-muted);margin-bottom:0.6rem;display:flex;flex-wrap:wrap;gap:0.5rem}
+
+/* Chinese Summary */
+.paper-card .summary-cn{background:linear-gradient(135deg,#fffaf0,#fffff0);border-left:3px solid var(--gold);padding:0.7rem 0.85rem;margin-bottom:0.5rem;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:0.88rem;line-height:1.55;color:#744210}
+[data-theme="dark"] .paper-card .summary-cn{background:linear-gradient(135deg,#3d2e1a,#372a10);color:#fbd38d}
+
+.abstract-toggle{font-size:0.8rem;color:var(--primary);cursor:pointer;font-weight:600;user-select:none;display:inline-flex;align-items:center;gap:0.25rem;padding:0.3rem 0;border:none;background:none}
+.abstract-toggle:hover{color:var(--accent)}
+.abstract-toggle .arrow{transition:transform 0.2s;font-size:0.7rem}
+.abstract-toggle.open .arrow{transform:rotate(90deg)}
+.abstract-content{display:none;font-size:0.82rem;color:var(--text-secondary);line-height:1.55;padding:0.5rem 0;border-top:1px dashed var(--border);margin-top:0.4rem}
+.abstract-content.visible{display:block}
+
+.paper-card.hidden{display:none}
+.no-results{display:none;text-align:center;padding:2rem;color:var(--text-muted)}
+.no-results.visible{display:block}
+
+@media(max-width:768px){.paper-grid{grid-template-columns:1fr}.article-section{padding:1.25rem}.topbar{flex-wrap:wrap}.topbar .week-topic{font-size:0.9rem}}
+
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.paper-card{animation:fadeIn 0.4s ease-out}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="back-btn" href="index.html">← 返回主页</a>
+  <div class="title-area">
+    <div class="week-range">11月23日—11月23日</div>
+    <div class="week-topic">水文极端事件与水产养殖效率及生态安全研究进展</div>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <span id="themeIcon">🌙</span> <span id="themeLabel">暗色</span>
+  </button>
+</div>
+
+<div class="container">
+
+  <!-- 深度综述文章 -->
+  
+  <div class="article-section">
+    <h2>本周研究概览</h2>
+
+<p>本周共收录4篇渔业相关论文，研究尺度从美国全国河流鱼类群落到日本宫津湾贝类养殖区，涵盖水文极端事件对鱼类群落周转的影响、喜马拉雅东部淡水生态系统的入侵鱼类生物安全框架、美国水产养殖技术效率评估，以及半封闭海湾浮游植物初级生产力的营养盐来源解析。整体来看，本周研究呈现出"宏观生态格局—入侵防控治理—养殖经济效率—养殖海域生态过程"的多层次格局，既有对气候水文驱动机制的探讨，也有面向管理决策的政策与效率分析，体现了渔业科学在生态机制与管理应用之间的持续衔接。值得注意的是，本周论文以区域性和应用性研究为主，缺少方法学层面的突破性进展。</p>
+
+<h2>高影响力期刊亮点</h2>
+
+<p>本周暂无。</p>
+
+<h2>创新性研究</h2>
+
+<ol>
+<li><strong>Evaluating Fish Assemblage Turnover in Relation to Hydrologic Extremes Across the United States</strong>（Ecology of Freshwater Fish）</li>
+</ol>
+<p>该研究以时间beta多样性（temporal beta diversity）为切入点，在全国尺度上系统评估水文极端事件与鱼类群落周转的关系，将群落动态与水文极值事件直接耦合。其创新在于跨流域的大尺度比较设计，有助于识别不同水文情势下群落重组的普遍性与地域差异，为气候变化背景下的河流鱼类监测提供可操作的指标框架。</p>
+
+<ol>
+<li><strong>Safeguarding the Eastern Himalayan Freshwater Ecosystems: An Integrated Biosecurity, Policy, and Community‐Led Framework to Prevent Invasive Fish Introductions in Northeast India</strong>（Fisheries Management and Ecology）</li>
+</ol>
+<p>该文提出将生物安全、政策工具与社区主导行动整合为一体的入侵鱼类防控框架，突破了以往单一关注检疫或法规的研究路径。其创新点在于把社区参与纳入生物安全治理链条，对生物多样性热点地区的外来种管理具有可推广的制度设计价值。</p>
+
+<ol>
+<li><strong>An assessment of technical efficiency in U.S. aquaculture production</strong>（Journal of the Agricultural and Applied Economics Association）</li>
+</ol>
+<p>研究采用四分量随机前沿模型（four-component stochastic frontier model），将技术非效率分解为时变与非持久性成分，并分九个养殖种类面板进行估计。该方法学处理使长期结构性低效与短期波动得以区分，为水产养殖效率评估提供了更精细的分解工具，对产业政策制定具有参考意义。</p>
+
+<ol>
+<li><strong>Seasonal Variability in Nutrient Sources and Phytoplankton Primary Productivity in a Shellfish Culture Area of Miyazu Bay, Sea of Japan</strong>（Fisheries Oceanography）</li>
+</ol>
+<p>该研究聚焦半封闭海湾中不同营养盐来源对浮游植物初级生产力的季节贡献，弥补了物理条件与营养盐供给强季节变化背景下来源解析的不足。其创新在于将营养盐来源识别与初级生产力估算结合，对贝类养殖容量评估与海域营养管理具有直接应用价值。</p>
+
+<h2>推荐阅读</h2>
+
+<ol>
+<li><strong>Evaluating Fish Assemblage Turnover in Relation to Hydrologic Extremes Across the United States</strong> — 全国尺度上水文极值与群落周转的耦合分析，方法框架对气候变化下的鱼类监测具有借鉴意义。</li>
+<li><strong>An assessment of technical efficiency in U.S. aquaculture production</strong> — 四分量随机前沿模型对效率的时变/持久分解处理细致，是养殖经济效率研究的方法学参考。</li>
+<li><strong>Safeguarding the Eastern Himalayan Freshwater Ecosystems: An Integrated Biosecurity, Policy, and Community‐Led Framework to Prevent Invasive Fish Introductions in Northeast India</strong> — 生物安全与社区治理整合的制度设计，对入侵种防控政策研究有启发。</li>
+<li><strong>Seasonal Variability in Nutrient Sources and Phytoplankton Primary Productivity in a Shellfish Culture Area of Miyazu Bay, Sea of Japan</strong> — 营养盐来源与初级生产力季节动态的结合分析，支撑养殖容量与海域管理。</li>
+<li><strong>Evaluating Fish Assemblage Turnover in Relation to Hydrologic Extremes Across the United States</strong> — 若关注群落生态学与水文驱动的交叉议题，该文的跨流域比较设计值得优先细读。</li>
+</ol>
+  </div>
+  
+
+  <!-- 统计 -->
+  <div class="stats-row">
+    <div class="stat-mini">📄 <strong>4</strong> 篇论文</div>
+    <div class="stat-mini">🌟 <strong>0</strong> 篇高影响力期刊</div>
+    <div class="stat-mini">🤖 <strong>4</strong> 篇 AI 中文总结</div>
+    
+    <div class="stat-mini">🏷️ 水文极端(Hydrologic Extremes) 生物安全(Biosecurity) 外来鱼类入侵(Invasive Fish) 水产养殖效率(Aquaculture Efficiency) </div>
+    
+  </div>
+
+  <!-- 搜索 -->
+  <div class="controls">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="搜索标题、作者、摘要..." oninput="filterPapers()">
+    </div>
+  </div>
+
+  <div class="no-results" id="noResults">😕 没有匹配的论文</div>
+
+  <!-- 全部论文列表 -->
+  <div class="section-title">📄 本周全部论文（4 篇）</div>
+  <div class="paper-grid">
+    
+    <div class="paper-card"
+         data-title="evaluating fish assemblage turnover in relation to hydrologic extremes across the united states"
+         data-authors="lewis, samuel t.; kanno, yoichiro; carlisle, daren m.; franssen, nathan r.; freeman, mary c.; gido, keith b.; luce, charles; mims, meryl c.; olden, julian d.; poff, n. leroy"
+         data-journal="ecology of freshwater fish"
+         data-abstract="abstract stream flows are widely regarded as a master variable affecting fish assemblages, with extreme events (e.g., floods, droughts) reorganising assemblages. although assemblage turnover (temporal beta diversity) is common following hydrologic extremes, we have limited knowledge on how hydrologic extremes influence assemblage turnover across a broad spatial extent. in this study, we analysed time‐series counts of stream fish assemblages at 34 sites in the conterminous us to characterise the relationship between assemblage turnover with high‐ and low‐flow anomalies. we found that flow anomalies were equally important in explaining fish assemblage turnover when analysed across study sites. one‐year lag effects of flow extremes were equally important to current‐year effects. temporal changes in relative abundance were a stronger factor of fish assemblage turnover than assemblage composition (i.e., species loss and gain). species with the greatest contributions to assemblage turnover tended to be fluvial species that were locally abundant. our study showed that neither high nor low flows influence stream fish assemblage turnover consistently across sites, suggesting context dependence. further research with additional sites across ecoregions could identify factors determining this context dependency, which will help stream fish management under climate‐change‐induced hydrologic uncertainty and increasing human demand for water."
+         data-summary="研究基于美国本土34个站点的溪流鱼类群落时间序列数据，分析群落周转（temporal beta diversity）与高、低流量异常的关系。结果表明，流量异常对群落周转的解释力与站点尺度相当，滞后一年的极端流量效应与当年效应同等重要；相对丰度的时序变化比物种组成变化（物种得失）更能驱动群落周转，贡献最大的多为当地丰度较高的流水性物种。高流量与低流量对群落周转的影响在不同站点间并不一致，呈现明显的环境依赖性，需跨生态区扩展站点研究以识别其决定因素，为气候变化下水文不确定性及人类用水需求增加背景下的溪流鱼类管理提供依据。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Ecology of Freshwater Fish
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 研究基于美国本土34个站点的溪流鱼类群落时间序列数据，分析群落周转（temporal beta diversity）与高、低流量异常的关系。结果表明，流量异常对群落周转的解释力与站点尺度相当，滞后一年的极端流量效应与当年效应同等重要；相对丰度的时序变化比物种组成变化（物种得失）更能驱动群落周转，贡献最大的多为当地丰度较高的流水性物种。高流量与低流量对群落周转的影响在不同站点间并不一致，呈现明显的环境依赖性，需跨生态区扩展站点研究以识别其决定因素，为气候变化下水文不确定性及人类用水需求增加背景下的溪流鱼类管理提供依据。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/eff.70054" target="_blank" rel="noopener">Evaluating Fish Assemblage Turnover in Relation to Hydrologic Extremes Across the United States</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Lewis, Samuel T.; Kanno, Yoichiro; Carlisle, Daren M.; Frans...</span>
+        
+        <span>📅 2026-11-23</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">ABSTRACT Stream flows are widely regarded as a master variable affecting fish assemblages, with extreme events (e.g., floods, droughts) reorganising assemblages. Although assemblage turnover (temporal beta diversity) is common following hydrologic extremes, we have limited knowledge on how hydrologic extremes influence assemblage turnover across a broad spatial extent. In this study, we analysed time‐series counts of stream fish assemblages at 34 sites in the conterminous US to characterise the relationship between assemblage turnover with high‐ and low‐flow anomalies. We found that flow anomalies were equally important in explaining fish assemblage turnover when analysed across study sites. One‐year lag effects of flow extremes were equally important to current‐year effects. Temporal changes in relative abundance were a stronger factor of fish assemblage turnover than assemblage composition (i.e., species loss and gain). Species with the greatest contributions to assemblage turnover tended to be fluvial species that were locally abundant. Our study showed that neither high nor low flows influence stream fish assemblage turnover consistently across sites, suggesting context dependence. Further research with additional sites across ecoregions could identify factors determining this context dependency, which will help stream fish management under climate‐change‐induced hydrologic uncertainty and increasing human demand for water.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="safeguarding the eastern himalayan freshwater ecosystems: an integrated biosecurity, policy, and community‐led framework to prevent invasive fish introductions in northeast india"
+         data-authors="inaotombi, shaikhom"
+         data-journal="fisheries management and ecology"
+         data-abstract="abstract freshwater ecosystems in the eastern himalayan region of india—a global biodiversity hotspot—are threatened by invasive alien fish species perhaps facilitated by exotic aquaculture, the aquarium trade, climate change, and inadequate regulation. the invasion of alien species disrupts native biodiversity, causes ecological imbalances, and threatens livelihoods dependent on freshwater resources. to address this, the present study develops an integrated management framework by synthesizing and adapting global biosecurity protocols, policy tools, and community‐led conservation. the framework integrates three pillars: (1) advanced biosecurity, with real‐time monitoring and predictive modeling for early detection; (2) strengthened, context‐sensitive policies to regulate high‐risk species trade and aquaculture while respecting local economies; and (3) community empowerment through stewardship programs using traditional knowledge, sustainable livelihoods, and awareness. recognizing the region's unique geological history and the convergence of two biodiversity hotspots in northeast india, the framework's strength lies in its tailored design, which explicitly leverages local communities and their traditional practices to provide culturally grounded, sustainable solutions. by fostering regional collaboration, using technology, and engaging communities, this approach aims to disrupt invasion pathways, protect biodiversity, and enhance ecosystem resilience, thereby contributing to global conservation goals."
+         data-summary="研究旨在应对印度东北部东喜马拉雅地区淡水生态系统面临的外来入侵鱼类威胁（由外来水产养殖、水族贸易、气候变化及监管不足等因素驱动）。作者综合全球生物安全协议、政策工具与社区主导保护经验，构建了整合三大支柱的管理框架：实时监测与预测建模的先进biosecurity体系、针对高风险物种贸易和水产养殖的情境敏感政策、以及基于传统知识的社区赋权与可持续生计项目。该框架强调利用当地社区及传统实践，通过区域协作与技术应用阻断invasion pathways，保护生物多样性并提升生态系统韧性。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Fisheries Management and Ecology
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 研究旨在应对印度东北部东喜马拉雅地区淡水生态系统面临的外来入侵鱼类威胁（由外来水产养殖、水族贸易、气候变化及监管不足等因素驱动）。作者综合全球生物安全协议、政策工具与社区主导保护经验，构建了整合三大支柱的管理框架：实时监测与预测建模的先进biosecurity体系、针对高风险物种贸易和水产养殖的情境敏感政策、以及基于传统知识的社区赋权与可持续生计项目。该框架强调利用当地社区及传统实践，通过区域协作与技术应用阻断invasion pathways，保护生物多样性并提升生态系统韧性。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/fme.70134" target="_blank" rel="noopener">Safeguarding the Eastern Himalayan Freshwater Ecosystems: An Integrated Biosecurity, Policy, and Community‐Led Framework to Prevent Invasive Fish Introductions in Northeast India</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Inaotombi, Shaikhom</span>
+        
+        <span>📅 2026-11-23</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">ABSTRACT Freshwater ecosystems in the Eastern Himalayan Region of India—a global biodiversity hotspot—are threatened by invasive alien fish species perhaps facilitated by exotic aquaculture, the aquarium trade, climate change, and inadequate regulation. The invasion of alien species disrupts native biodiversity, causes ecological imbalances, and threatens livelihoods dependent on freshwater resources. To address this, the present study develops an integrated management framework by synthesizing and adapting global biosecurity protocols, policy tools, and community‐led conservation. The framework integrates three pillars: (1) advanced biosecurity, with real‐time monitoring and predictive modeling for early detection; (2) strengthened, context‐sensitive policies to regulate high‐risk species trade and aquaculture while respecting local economies; and (3) community empowerment through stewardship programs using traditional knowledge, sustainable livelihoods, and awareness. Recognizing the region's unique geological history and the convergence of two biodiversity hotspots in Northeast India, the framework's strength lies in its tailored design, which explicitly leverages local communities and their traditional practices to provide culturally grounded, sustainable solutions. By fostering regional collaboration, using technology, and engaging communities, this approach aims to disrupt invasion pathways, protect biodiversity, and enhance ecosystem resilience, thereby contributing to global conservation goals.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="seasonal variability in nutrient sources and phytoplankton primary productivity in a shellfish culture area of miyazu bay, sea of japan"
+         data-authors="kuragano, mao; nakajima, toshimi; sugimoto, ryo"
+         data-journal="fisheries oceanography"
+         data-abstract="abstract phytoplankton primary production is essential to coastal food webs. however, the roles of different nutrient sources in semienclosed bays characterized by strong seasonal variability in physical conditions and nutrient availability are not well understood. we investigated seasonal variations in phytoplankton biomass and primary productivity over 2 years (june 2021–november 2023) at a shellfish aquaculture site in miyazu bay, japan, where nutrients are supplied via offshore seawater intrusion and river discharge as well as submarine groundwater discharge (sgd). vertically integrated chlorophyll a (chl‐a) and electron transport rate‐based primary production were highest in winter, coinciding with elevated dissolved inorganic nutrient concentrations associated with offshore water inputs. however, chl‐a‐specific productivity and photosynthetic activity declined in winter due to reduced solar radiation, indicating that phytoplankton biomass accumulated under nutrient‐rich conditions despite light limitation. photosynthetically active radiation (par) within the water column was governed primarily by surface par rather than by the light attenuation coefficient, which was low and showed no seasonality. in contrast, chl‐a‐specific productivity and photosynthetic activity peaked in summer, when surface nutrient concentrations were low but solar radiation was high. geochemical tracers ( 222 rn and 224 ra) revealed continuous inputs of nutrient‐rich groundwater near the seabed, suggesting that sgd may supplement nutrient availability during nutrient‐depleted summer conditions. size‐fractionated analyses revealed that small phytoplankton (&lt; 20 μm) dominated biomass and production throughout the year. these results also highlight sgd as a relatively persistent nutrient pathway that may supplement nutrient availability under light‐rich but nutrient‐poor summer conditions."
+         data-summary="本研究旨在明确日本宫津湾贝类养殖区不同营养盐来源对浮游植物初级生产的贡献及其季节变化。作者于2021年6月至2023年11月开展了为期两年的季节性观测，结合叶绿素a、基于电子传递速率的初级生产力测定以及222rn和224ra地球化学示踪，解析了外海水入侵、河流输入与海底地下水排放（sgd）的作用。结果表明，水柱积分叶绿素a和初级生产力在冬季最高，与外海水输入带来的高溶解无机营养盐浓度一致，但光限制使单位叶绿素a生产力下降；夏季表层营养盐低而光照充足，单位叶绿素a生产力和光合活性达到峰值。sgd在近海底持续输入富营养地下水，可能在夏季营养盐匮乏时补充营养盐供应；小型浮游植物（<20 μm）全年主导生物量和生产力。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Fisheries Oceanography
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 本研究旨在明确日本宫津湾贝类养殖区不同营养盐来源对浮游植物初级生产的贡献及其季节变化。作者于2021年6月至2023年11月开展了为期两年的季节性观测，结合叶绿素a、基于电子传递速率的初级生产力测定以及222Rn和224Ra地球化学示踪，解析了外海水入侵、河流输入与海底地下水排放（SGD）的作用。结果表明，水柱积分叶绿素a和初级生产力在冬季最高，与外海水输入带来的高溶解无机营养盐浓度一致，但光限制使单位叶绿素a生产力下降；夏季表层营养盐低而光照充足，单位叶绿素a生产力和光合活性达到峰值。SGD在近海底持续输入富营养地下水，可能在夏季营养盐匮乏时补充营养盐供应；小型浮游植物（<20 μm）全年主导生物量和生产力。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1111/fog.70095" target="_blank" rel="noopener">Seasonal Variability in Nutrient Sources and Phytoplankton Primary Productivity in a Shellfish Culture Area of Miyazu Bay, Sea of Japan</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 Kuragano, Mao; Nakajima, Toshimi; Sugimoto, Ryo</span>
+        
+        <span>📅 2026-11-23</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">ABSTRACT Phytoplankton primary production is essential to coastal food webs. However, the roles of different nutrient sources in semienclosed bays characterized by strong seasonal variability in physical conditions and nutrient availability are not well understood. We investigated seasonal variations in phytoplankton biomass and primary productivity over 2 years (June 2021–November 2023) at a shellfish aquaculture site in Miyazu Bay, Japan, where nutrients are supplied via offshore seawater intrusion and river discharge as well as submarine groundwater discharge (SGD). Vertically integrated chlorophyll a (Chl‐a) and electron transport rate‐based primary production were highest in winter, coinciding with elevated dissolved inorganic nutrient concentrations associated with offshore water inputs. However, Chl‐a‐specific productivity and photosynthetic activity declined in winter due to reduced solar radiation, indicating that phytoplankton biomass accumulated under nutrient‐rich conditions despite light limitation. Photosynthetically active radiation (PAR) within the water column was governed primarily by surface PAR rather than by the light attenuation coefficient, which was low and showed no seasonality. In contrast, Chl‐a‐specific productivity and photosynthetic activity peaked in summer, when surface nutrient concentrations were low but solar radiation was high. Geochemical tracers ( 222 Rn and 224 Ra) revealed continuous inputs of nutrient‐rich groundwater near the seabed, suggesting that SGD may supplement nutrient availability during nutrient‐depleted summer conditions. Size‐fractionated analyses revealed that small phytoplankton (&lt; 20 μm) dominated biomass and production throughout the year. These results also highlight SGD as a relatively persistent nutrient pathway that may supplement nutrient availability under light‐rich but nutrient‐poor summer conditions.</div>
+      
+    </div>
+    
+    <div class="paper-card"
+         data-title="an assessment of technical efficiency in u.s. aquaculture production"
+         data-authors="he, qingxin; lee, jonathan"
+         data-journal="journal of the agricultural and applied economics association"
+         data-abstract="abstract a four‐component stochastic frontier model is applied separately to nine broadly classified species group panels of u.s. aquaculture farms covering the years 2007 to 2017 to identify both time‐varying and persistent inefficiencies for catfish, trout, “other” food fish, bait fish, ornamental fish, sport fish, crustaceans, mollusks, and “other” aquaculture products. we find considerable efficiency gaps in aquaculture production driven primarily by growers' persistent inefficiencies; average overall technical efficiency ranges from 43.8% to 53.7% for “other” aquaculture products and trout, respectively. this finding suggests that increased extension efforts promoting best planning practices for potential entrants can significantly improve u.s. aquaculture efficiency."
+         data-summary="研究采用四分量随机前沿模型，分别对美国水产养殖场2007—2017年九大类物种面板数据（鲶鱼、鳟鱼、其他食用鱼、饵料鱼、观赏鱼、游钓鱼、甲壳类、软体类及其他水产品）进行技术效率评估，以识别时变性与持续性低效。结果显示，养殖生产者持续性低效是效率缺口的主要来源，总体平均技术效率介于43.8%（其他水产品）至53.7%（鳟鱼）之间。研究表明，针对潜在进入者加强最佳规划实践的技术推广可显著提升美国水产养殖效率。"
+         data-impact="false">
+
+      
+
+      
+      <div class="journal">
+        
+        📰 Journal of the Agricultural and Applied Economics Association
+      </div>
+      
+
+      
+      <div class="summary-cn">💡 研究采用四分量随机前沿模型，分别对美国水产养殖场2007—2017年九大类物种面板数据（鲶鱼、鳟鱼、其他食用鱼、饵料鱼、观赏鱼、游钓鱼、甲壳类、软体类及其他水产品）进行技术效率评估，以识别时变性与持续性低效。结果显示，养殖生产者持续性低效是效率缺口的主要来源，总体平均技术效率介于43.8%（其他水产品）至53.7%（鳟鱼）之间。研究表明，针对潜在进入者加强最佳规划实践的技术推广可显著提升美国水产养殖效率。</div>
+      
+
+      <div class="title">
+        <a href="https://doi.org/10.1002/jaa2.70061" target="_blank" rel="noopener">An assessment of technical efficiency in U.S. aquaculture production</a>
+      </div>
+
+      <div class="meta">
+        
+        <span>👤 He, Qingxin; Lee, Jonathan</span>
+        
+        <span>📅 2026-11-23</span>
+      </div>
+
+      
+      <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">
+        <span class="arrow">▶</span> 查看英文摘要
+      </button>
+      <div class="abstract-content">ABSTRACT A four‐component stochastic frontier model is applied separately to nine broadly classified species group panels of U.S. aquaculture farms covering the years 2007 to 2017 to identify both time‐varying and persistent inefficiencies for catfish, trout, “other” food fish, bait fish, ornamental fish, sport fish, crustaceans, mollusks, and “other” aquaculture products. We find considerable efficiency gaps in aquaculture production driven primarily by growers' persistent inefficiencies; average overall technical efficiency ranges from 43.8% to 53.7% for “other” aquaculture products and trout, respectively. This finding suggests that increased extension efforts promoting best planning practices for potential entrants can significantly improve U.S. aquaculture efficiency.</div>
+      
+    </div>
+    
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var s=localStorage.getItem('theme');
+  if(s){document.documentElement.setAttribute('data-theme',s);
+  document.getElementById('themeIcon').textContent=s==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=s==='dark'?'亮色':'暗色';}
+})();
+function toggleTheme(){
+  var h=document.documentElement,n=h.getAttribute('data-theme')==='dark'?'light':'dark';
+  h.setAttribute('data-theme',n);
+  document.getElementById('themeIcon').textContent=n==='dark'?'☀️':'🌙';
+  document.getElementById('themeLabel').textContent=n==='dark'?'亮色':'暗色';
+  localStorage.setItem('theme',n);
+}
+function toggleAbstract(b){
+  var c=b.nextElementSibling,v=c.classList.contains('visible');
+  c.classList.toggle('visible');b.classList.toggle('open');
+  b.querySelector('.arrow').textContent=v?'▶':'▼';
+}
+function filterPapers(){
+  var q=(document.getElementById('searchInput').value||'').toLowerCase().trim(),vis=0;
+  document.querySelectorAll('.paper-card').forEach(function(c){
+    var t=[c.getAttribute('data-title')||'',c.getAttribute('data-authors')||'',c.getAttribute('data-journal')||'',c.getAttribute('data-abstract')||'',c.getAttribute('data-summary')||''].join(' ');
+    var s=!q||t.includes(q);c.classList.toggle('hidden',!s);if(s)vis++;
+  });
+  document.getElementById('noResults').classList.toggle('visible',vis===0);
+}
+</script>
+</body>
+</html>
