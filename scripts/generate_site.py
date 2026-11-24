@@ -1,16 +1,20 @@
 #!/usr/bin/env python3
 """
-HTML 站点生成脚本
-生成多页面架构：
-  - docs/index.html          → 主页（每周综述卡片）
-  - docs/week-2026-W25.html  → 每周论文详情页
+站点生成脚本（单页应用版）
+
+输出：
+  docs/index.html            ← 自包含单页（数据内联，标签筛选全在前端完成）
+  docs/data/abstracts.json   ← 英文摘要，点击时懒加载
+  docs/data/papers.json      ← 完整数据（供二次开发/API 取用）
+
+用法：
+  python generate_site.py
 """
 
 import json
 import sys
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from collections import OrderedDict
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
@@ -18,6 +22,10 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_FILE = ROOT / "data" / "papers.json"
 TEMPLATE_DIR = ROOT / "templates"
 OUTPUT_DIR = ROOT / "docs"
+DATA_OUT = OUTPUT_DIR / "data"
+
+RETENTION_DAYS = 120
+BJT = timezone(timedelta(hours=8))
 
 
 def load_data() -> dict:
@@ -28,237 +36,132 @@ def load_data() -> dict:
         return json.load(f)
 
 
-def get_week_key(date_str: str) -> str:
-    if not date_str:
-        return "未知"
-    try:
-        dt = datetime.strptime(date_str[:10], "%Y-%m-%d")
-        iso = dt.isocalendar()
-        return f"{iso[0]}-W{iso[1]:02d}"
-    except ValueError:
-        return "未知"
+def build_lexicon(data: dict) -> list:
+    lex = data.get("tag_lexicon")
+    if lex:
+        return lex
+    sys.path.insert(0, str(ROOT / "scripts"))
+    from tag_papers import lexicon  # type: ignore
+    return lexicon()
 
 
-def get_week_range(week_key: str) -> str:
-    try:
-        parts = week_key.split("-W")
-        if len(parts) != 2:
-            return week_key
-        year, week = int(parts[0]), int(parts[1])
-        jan4 = datetime(year, 1, 4)
-        first_monday = jan4 - timedelta(days=jan4.isoweekday() - 1)
-        week_start = first_monday + timedelta(weeks=week - 1)
-        week_end = week_start + timedelta(days=6)
-        today = datetime.now()
-        if week_end > today:
-            week_end = today
-        return f"{week_start.month}月{week_start.day}日—{week_end.month}月{week_end.day}日"
-    except Exception:
-        return week_key
-
-
-def parse_keywords(keywords_str: str) -> list[str]:
-    """解析逗号分隔的关键词字符串为列表"""
-    if not keywords_str:
-        return []
-    kws = [kw.strip() for kw in keywords_str.replace("，", ",").split(",")]
-    return [kw for kw in kws if kw][:8]
-
-
-def markdown_to_html(text: str) -> str:
-    """将 AI 生成的综述文章从简单 Markdown 转为 HTML"""
-    import re
-    lines = text.strip().split("\n")
-    html_lines = []
-    in_list = False
-    list_tag = ""
-
-    for line in lines:
-        stripped = line.strip()
-
-        # 标题 ## Heading
-        if stripped.startswith("## "):
-            if in_list:
-                html_lines.append(f"</{list_tag}>")
-                in_list = False
-            heading = stripped[3:]
-            html_lines.append(f'<h2>{heading}</h2>')
-
-        # 有序列表 1. item
-        elif re.match(r"^\d+\.\s", stripped):
-            if not in_list or list_tag != "ol":
-                if in_list:
-                    html_lines.append(f"</{list_tag}>")
-                html_lines.append("<ol>")
-                in_list = True
-                list_tag = "ol"
-            item = re.sub(r"^\d+\.\s+", "", stripped)
-            # 加粗处理
-            item = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", item)
-            html_lines.append(f"<li>{item}</li>")
-
-        # 空行
-        elif not stripped:
-            if in_list:
-                html_lines.append(f"</{list_tag}>")
-                in_list = False
-            html_lines.append("")
-
-        # 普通段落
-        else:
-            if in_list:
-                html_lines.append(f"</{list_tag}>")
-                in_list = False
-            # 加粗处理
-            para = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", stripped)
-            html_lines.append(f"<p>{para}</p>")
-
-    if in_list:
-        html_lines.append(f"</{list_tag}>")
-
-    return "\n".join(html_lines)
-
-
-def get_summary_count(papers: list[dict]) -> int:
-    count = 0
+def visible_papers(papers: list) -> list:
+    """站点只展示与渔业科学相关的论文"""
+    keep = []
     for p in papers:
-        s = p.get("summary_cn", "").strip()
-        if s and not s.startswith("[失败") and not s.startswith("["):
-            count += 1
-    return count
+        if not p.get("doi") or not p.get("title") or not p.get("date"):
+            continue
+        if p.get("off_topic"):
+            continue
+        keep.append(p)
+    keep.sort(key=lambda x: x.get("date", ""), reverse=True)
+    return keep
 
 
-def get_journal_count(papers: list[dict]) -> int:
-    journals = set()
-    for p in papers:
-        j = p.get("journal", "").strip()
-        if j:
-            journals.add(j.lower())
-    return len(journals)
+def short_abs(abstract: str, n: int = 220) -> str:
+    """无中文摘要时，截取英文摘要首段做兜底展示"""
+    a = (abstract or "").strip()
+    if a.upper().startswith("ABSTRACT"):
+        a = a[8:].strip()
+    if len(a) <= n:
+        return a
+    cut = a[:n]
+    for sep in (". ", "; "):
+        idx = cut.rfind(sep)
+        if idx > n * 0.5:
+            return cut[:idx + 1]
+    return cut.rstrip() + "…"
 
 
-def build_weeks(papers: list[dict], weekly_topics: dict) -> list[dict]:
-    """构建每周数据"""
-    week_groups = OrderedDict()
-    for paper in papers:
-        wk = get_week_key(paper.get("date", ""))
-        if wk not in week_groups:
-            week_groups[wk] = []
-        week_groups[wk].append(paper)
-
-    weeks = []
-    for wk in sorted(week_groups.keys(), reverse=True):
-        papers_in_week = week_groups[wk]
-        papers_in_week.sort(key=lambda x: x.get("journal", ""))
-
-        topic_info = weekly_topics.get(wk, {})
-        if isinstance(topic_info, dict):
-            topic = topic_info.get("topic", "")
-            keywords = topic_info.get("keywords", "")
-            article = topic_info.get("article", "")
-            high_impact_count = topic_info.get("high_impact_count", 0)
-        else:
-            topic = str(topic_info) if topic_info else ""
-            keywords = ""
-            article = ""
-            high_impact_count = 0
-
-        if not topic:
-            topic = f"渔业文献精选 · {len(papers_in_week)} 篇"
-
-        keywords_list = parse_keywords(keywords)
-
-        weeks.append({
-            "week_key": wk,
-            "week_range": get_week_range(wk),
-            "topic": topic,
-            "keywords": keywords,
-            "keywords_list": keywords_list,
-            "article": article,
-            "article_html": markdown_to_html(article) if article else "",
-            "high_impact_count": high_impact_count,
-            "papers": papers_in_week,
-        })
-
-    return weeks
+def slim(p: dict) -> dict:
+    """内联到 HTML 的精简记录（不含完整英文摘要）"""
+    cn = (p.get("summary_cn") or "").strip()
+    usable_cn = cn and not cn.startswith("[") and "非渔业相关" not in cn
+    return {
+        "doi": p.get("doi", ""),
+        "title": p.get("title", ""),
+        "authors": p.get("authors", ""),
+        "journal": p.get("journal", ""),
+        "date": p.get("date", ""),
+        "summary": cn if usable_cn else short_abs(p.get("abstract", "")),
+        "summary_en": not usable_cn,
+        "url": p.get("url") or f"https://doi.org/{p.get('doi', '')}",
+        "tags": p.get("tags", {}),
+        "is_review": bool(p.get("is_review")),
+        "high_impact": bool(p.get("high_impact")),
+    }
 
 
-def generate():
-    print("📖 加载论文数据...")
+def main():
     data = load_data()
-    papers = data.get("papers", [])
-    weekly_topics = data.get("weekly_topics", {})
+    papers = visible_papers(data.get("papers", []))
+    if not papers:
+        print("❌ 没有可展示的论文")
+        sys.exit(1)
 
-    print(f"📊 {len(papers)} 篇论文")
+    lexicon = build_lexicon(data)
 
-    weeks = build_weeks(papers, weekly_topics)
+    dates = sorted({p["date"] for p in papers})
+    journals = {p.get("journal", "").strip().lower() for p in papers if p.get("journal")}
+    tag_kinds = len({(t["dim"], t["id"]) for t in lexicon})
 
-    # 格式化更新时间
-    update_time = data.get("last_updated", datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"))
+    last_updated = data.get("last_updated", "")
     try:
-        ut = datetime.strptime(update_time, "%Y-%m-%dT%H:%M:%SZ")
-        update_display = ut.strftime("%Y年%m月%d日 %H:%M UTC")
-    except ValueError:
-        update_display = update_time
+        ut = datetime.strptime(last_updated, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+        update_display = ut.astimezone(BJT).strftime("%Y年%m月%d日 %H:%M（北京时间）")
+    except (ValueError, AttributeError):
+        update_display = last_updated or "—"
 
-    # Jinja2 环境
+    payload = {
+        "generated_at": last_updated,
+        "count": len(papers),
+        "lexicon": lexicon,
+        "papers": [slim(p) for p in papers],
+    }
+    data_json = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
+    data_json = (data_json.replace("</", "<\\/")
+                          .replace("\u2028", "\\u2028")
+                          .replace("\u2029", "\\u2029"))
+
     env = Environment(
         loader=FileSystemLoader(str(TEMPLATE_DIR)),
         autoescape=select_autoescape(["html", "xml"]),
     )
+    tpl = env.get_template("app.html.jinja2")
+    html = tpl.render(
+        data_json=data_json,
+        update_display=update_display,
+        journal_total=len(journals),
+        retention_days=RETENTION_DAYS,
+        stats={
+            "papers": len(papers),
+            "days": len(dates),
+            "journals": len(journals),
+            "tag_kinds": tag_kinds,
+        },
+    )
 
-    # 计算运行天数
-    running_days = 1
-    if papers:
-        dates = sorted([p.get("date", "") for p in papers if p.get("date")])
-        if dates:
-            try:
-                first = datetime.strptime(dates[0][:10], "%Y-%m-%d")
-                running_days = max(1, (datetime.now() - first).days + 1)
-            except ValueError:
-                pass
-
-    # === 生成主页 ===
-    print("\n🏠 生成主页...")
-    index_context = {
-        "update_time": update_display,
-        "total_papers": len(papers),
-        "week_count": len(weeks),
-        "summary_count": get_summary_count(papers),
-        "journal_count": get_journal_count(papers),
-        "running_days": running_days,
-        "weeks": weeks,
-    }
-    index_template = env.get_template("index.html.jinja2")
-    index_html = index_template.render(**index_context)
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    DATA_OUT.mkdir(parents=True, exist_ok=True)
+
     index_path = OUTPUT_DIR / "index.html"
     with open(index_path, "w", encoding="utf-8") as f:
-        f.write(index_html)
-    print(f"  ✅ {index_path} ({len(index_html) / 1024:.0f} KB)")
+        f.write(html)
+    print(f"✅ {index_path.relative_to(ROOT)}  ({len(html.encode('utf-8')) / 1024:.0f} KB)")
 
-    # === 生成每周详情页 ===
-    print(f"\n📄 生成 {len(weeks)} 个周详情页...")
-    week_template = env.get_template("week.html.jinja2")
-    for week in weeks:
-        wk = week["week_key"]
-        summary_in_week = sum(1 for p in week["papers"]
-                             if p.get("summary_cn","").strip() and not p.get("summary_cn","").startswith("["))
-        week_context = {
-            "week": week,
-            "update_time": update_display,
-            "summary_count": summary_in_week,
-        }
-        week_html = week_template.render(**week_context)
-        week_path = OUTPUT_DIR / f"week-{wk}.html"
-        with open(week_path, "w", encoding="utf-8") as f:
-            f.write(week_html)
-        print(f"  ✅ week-{wk}.html ({len(week_html) / 1024:.0f} KB) — {len(week['papers'])} 篇")
+    abstracts = {p["doi"]: p.get("abstract", "") for p in papers if p.get("abstract")}
+    abs_path = DATA_OUT / "abstracts.json"
+    with open(abs_path, "w", encoding="utf-8") as f:
+        json.dump(abstracts, f, ensure_ascii=False, separators=(",", ":"))
+    print(f"✅ {abs_path.relative_to(ROOT)}  ({abs_path.stat().st_size / 1024:.0f} KB, {len(abstracts)} 条)")
 
-    print(f"\n🎉 全部完成！")
-    print(f"   主页: {OUTPUT_DIR / 'index.html'}")
-    print(f"   周页: {OUTPUT_DIR / 'week-*.html'} 共 {len(weeks)} 个")
+    api_path = DATA_OUT / "papers.json"
+    with open(api_path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=1)
+    print(f"✅ {api_path.relative_to(ROOT)}  ({api_path.stat().st_size / 1024:.0f} KB)")
+
+    print(f"\n📊 {len(papers)} 篇 · {len(dates)} 天 · {len(journals)} 本期刊 · {tag_kinds} 种标签")
 
 
 if __name__ == "__main__":
-    generate()
+    main()

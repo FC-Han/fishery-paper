@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>渔业文献速览 · 每日 · 多维标签</title>
+<meta name="description" content="每日自动抓取渔业与水产领域最新论文，AI 中文摘要，按研究主题、鱼种、海域、方法多维检索。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐟</text></svg>">
+<style>
+/* ========== 主题变量 ========== */
+:root{
+  --bg:#f3f6f7; --bg-tint:#e9eef0; --card:#ffffff; --card-2:#fafcfc;
+  --ink:#0d1f26; --ink-2:#3a5560; --ink-3:#6f8a95; --ink-4:#9db0b8;
+  --line:#e2e9ec; --line-2:#eef3f5;
+  --teal:#0e7c72; --teal-soft:#e2f3f0; --teal-ink:#095c55;
+  --coral:#c65433; --coral-soft:#fceee9; --coral-ink:#9d4026;
+  --indigo:#4a56c4; --indigo-soft:#ebecfb; --indigo-ink:#39429c;
+  --amber:#9a6a10; --amber-soft:#fbf2dd; --amber-ink:#7a5310;
+  --gold:#a9761a; --gold-soft:#fdf5e2;
+  --hi:#0e7c72;
+  --shadow-sm:0 1px 2px rgba(13,31,38,.05);
+  --shadow:0 2px 10px rgba(13,31,38,.06), 0 1px 2px rgba(13,31,38,.04);
+  --shadow-lg:0 14px 40px rgba(13,31,38,.12);
+  --r:14px; --r-sm:9px; --r-lg:20px;
+  --hero-1:#06282b; --hero-2:#0b4247; --hero-3:#155e63;
+  --serif:ui-serif,"Iowan Old Style","Palatino Linotype",Georgia,serif;
+}
+[data-theme="dark"]{
+  --bg:#0a1114; --bg-tint:#0e181c; --card:#121d22; --card-2:#16232a;
+  --ink:#e7f0f3; --ink-2:#b3c6cd; --ink-3:#87a0a9; --ink-4:#65808a;
+  --line:#22323a; --line-2:#1a272e;
+  --teal:#4fd1c0; --teal-soft:#0f2f2c; --teal-ink:#7fe3d5;
+  --coral:#f0906f; --coral-soft:#2f1a13; --coral-ink:#f6ab92;
+  --indigo:#9aa5f5; --indigo-soft:#1b1f3c; --indigo-ink:#b6bffa;
+  --amber:#e0b45c; --amber-soft:#2c2412; --amber-ink:#eec97f;
+  --gold:#e3b45c; --gold-soft:#2b2314;
+  --hi:#4fd1c0;
+  --shadow-sm:0 1px 2px rgba(0,0,0,.4);
+  --shadow:0 2px 12px rgba(0,0,0,.35), 0 1px 2px rgba(0,0,0,.3);
+  --shadow-lg:0 16px 44px rgba(0,0,0,.55);
+  --hero-1:#04201f; --hero-2:#07373a; --hero-3:#0b4a4d;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth; -webkit-text-size-adjust:100%}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  background:var(--bg); color:var(--ink); line-height:1.6; font-size:15px;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  transition:background .35s ease, color .35s ease;
+}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+::selection{background:var(--teal-soft);color:var(--teal-ink)}
+
+/* ========== Hero ========== */
+.hero{
+  position:relative; overflow:hidden; isolation:isolate;
+  background:radial-gradient(120% 140% at 12% -10%, var(--hero-3) 0%, var(--hero-2) 42%, var(--hero-1) 100%);
+  color:#eaf6f6; padding:0;
+}
+.hero::after{
+  content:""; position:absolute; inset:0; z-index:-1; opacity:.5;
+  background-image:radial-gradient(circle at 78% 18%, rgba(94,234,212,.25), transparent 46%),
+                   radial-gradient(circle at 22% 78%, rgba(56,189,248,.16), transparent 52%);
+}
+.hero-grid{
+  max-width:1240px; margin:0 auto; padding:1.15rem 1.75rem 0;
+  display:flex; align-items:center; gap:1rem;
+}
+.brand{display:flex; align-items:center; gap:.6rem; font-weight:700; letter-spacing:.01em}
+.brand-mark{
+  width:30px;height:30px;border-radius:9px;display:grid;place-items:center;font-size:15px;
+  background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.18);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.14);
+}
+.brand-txt{font-size:.94rem; opacity:.94}
+.brand-txt small{display:block; font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; opacity:.55; font-weight:600}
+.hero-nav{margin-left:auto; display:flex; align-items:center; gap:.5rem}
+.icon-btn{
+  width:36px;height:36px;border-radius:10px;display:grid;place-items:center;font-size:15px;
+  background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.16); color:#eaf6f6;
+  transition:.2s;
+}
+.icon-btn:hover{background:rgba(255,255,255,.16); transform:translateY(-1px)}
+
+.hero-main{max-width:1240px; margin:0 auto; padding:2.6rem 1.75rem 0}
+.hero h1{
+  font-size:clamp(2rem,4.4vw,3.15rem); line-height:1.12; font-weight:800;
+  letter-spacing:-.028em; margin-bottom:.7rem;
+}
+.hero h1 em{
+  font-style:normal; background:linear-gradient(96deg,#5eead4,#a5f3fc 60%,#bae6fd);
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+.hero-sub{font-size:1.02rem; color:rgba(234,246,246,.72); max-width:52rem; margin-bottom:1.55rem}
+.hero-sub b{color:rgba(234,246,246,.95); font-weight:600}
+.hero-stats{display:flex; flex-wrap:wrap; gap:.55rem 2.4rem; margin-top:.4rem}
+.hstat{display:flex; align-items:baseline; gap:.45rem}
+.hstat .v{font-size:1.6rem; font-weight:750; letter-spacing:-.02em; font-variant-numeric:tabular-nums}
+.hstat .k{font-size:.78rem; color:rgba(234,246,246,.58); letter-spacing:.05em}
+.wave{display:block; width:100%; height:56px; margin-top:2.6rem; margin-bottom:-1px}
+
+/* ========== 布局 ========== */
+.shell{
+  max-width:1240px; margin:0 auto; padding:1.9rem 1.75rem 4rem;
+  display:grid; grid-template-columns:264px minmax(0,1fr); gap:2.1rem; align-items:start;
+}
+main{min-width:0}
+
+/* ========== 侧栏 ========== */
+.side{
+  position:sticky; top:1.1rem; max-height:calc(100vh - 2.2rem); overflow-y:auto;
+  padding-right:.35rem; scrollbar-width:thin;
+}
+.side::-webkit-scrollbar{width:5px}
+.side::-webkit-scrollbar-thumb{background:var(--line); border-radius:3px}
+.drawer-head{display:none}
+.drawer-close{color:var(--ink-2); background:var(--bg-tint); border-color:var(--line); width:32px; height:32px; font-size:13px}
+.search-wrap{position:relative; margin-bottom:1.05rem}
+.search-wrap svg{position:absolute; left:.75rem; top:50%; transform:translateY(-50%); opacity:.5}
+#search{
+  width:100%; padding:.66rem .8rem .66rem 2.2rem; border-radius:11px; font-size:.875rem;
+  background:var(--card); border:1px solid var(--line); color:var(--ink);
+  transition:.2s; outline:none;
+}
+#search::placeholder{color:var(--ink-4)}
+#search:focus{border-color:var(--teal); box-shadow:0 0 0 3px var(--teal-soft)}
+.kbd{
+  position:absolute; right:.55rem; top:50%; transform:translateY(-50%);
+  font-size:.68rem; padding:.1rem .34rem; border-radius:4px; color:var(--ink-4);
+  border:1px solid var(--line); background:var(--bg-tint); pointer-events:none;
+}
+#search:focus ~ .kbd{opacity:0}
+
+.side-block{margin-bottom:1.35rem}
+.side-title{
+  display:flex; align-items:center; justify-content:space-between; gap:.4rem;
+  font-size:.72rem; font-weight:700; letter-spacing:.13em; text-transform:uppercase;
+  color:var(--ink-3); margin-bottom:.6rem; padding-bottom:.42rem;
+  border-bottom:1px dashed var(--line);
+}
+.side-title .lnk{font-size:.7rem; letter-spacing:0; text-transform:none; color:var(--teal); font-weight:600; opacity:0}
+.side-block.has-sel .side-title .lnk{opacity:1}
+.side-title .lnk:hover{text-decoration:underline}
+
+.chips{display:flex; flex-wrap:wrap; gap:.34rem}
+.chip{
+  display:inline-flex; align-items:center; gap:.34rem; max-width:100%;
+  padding:.24rem .56rem; border-radius:7px; font-size:.78rem; font-weight:500;
+  border:1px solid transparent; background:var(--bg-tint); color:var(--ink);
+  transition:.15s ease; line-height:1.5;
+}
+.chip::before{
+  content:""; width:5px; height:5px; border-radius:50%; flex:none;
+  background:var(--dot, transparent); opacity:.85;
+}
+#filterSections [data-block="theme"] .chip{--dot:var(--teal)}
+#filterSections [data-block="species"] .chip{--dot:var(--coral)}
+#filterSections [data-block="region"] .chip{--dot:var(--indigo)}
+#filterSections [data-block="method"] .chip{--dot:var(--amber)}
+#filterSections [data-block="journal"] .chip{--dot:var(--ink-4)}
+.chip.on::before{opacity:1; box-shadow:0 0 0 2px color-mix(in srgb, var(--dot) 22%, transparent)}
+.chip:hover{background:var(--card); border-color:var(--line); color:var(--ink)}
+.chip .n{font-size:.68rem; opacity:.6; font-variant-numeric:tabular-nums; font-weight:600}
+.chip .zh{overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.chip[data-dim="theme"].on{background:var(--teal-soft); color:var(--teal-ink); border-color:color-mix(in srgb, var(--teal) 32%, transparent)}
+.chip[data-dim="species"].on{background:var(--coral-soft); color:var(--coral-ink); border-color:color-mix(in srgb, var(--coral) 32%, transparent)}
+.chip[data-dim="region"].on{background:var(--indigo-soft); color:var(--indigo-ink); border-color:color-mix(in srgb, var(--indigo) 32%, transparent)}
+.chip[data-dim="method"].on{background:var(--amber-soft); color:var(--amber-ink); border-color:color-mix(in srgb, var(--amber) 32%, transparent)}
+.chip[data-dim="journal"].on{background:var(--bg-tint); color:var(--ink); border-color:var(--ink-4); font-weight:600}
+.chip.on{transform:none}
+.chip.zero{opacity:.34; pointer-events:none}
+.more-btn{font-size:.74rem; color:var(--ink-3); margin-top:.42rem; font-weight:600}
+.more-btn:hover{color:var(--teal)}
+
+/* 已选条 */
+.active-bar{
+  display:none; align-items:center; gap:.45rem; flex-wrap:wrap;
+  background:var(--card); border:1px solid var(--line); border-radius:var(--r);
+  padding:.6rem .75rem; margin-bottom:1rem; box-shadow:var(--shadow-sm);
+}
+.active-bar.show{display:flex}
+.active-bar .lbl{font-size:.74rem; color:var(--ink-3); letter-spacing:.04em}
+.clear-all{font-size:.76rem; color:var(--coral); font-weight:600; margin-left:auto; padding:.2rem .45rem; border-radius:6px}
+.clear-all:hover{background:var(--coral-soft)}
+
+/* ========== 工具条 ========== */
+.toolbar{
+  display:flex; align-items:center; gap:.7rem; flex-wrap:wrap;
+  margin-bottom:1.15rem;
+}
+.result-count{font-size:.88rem; color:var(--ink-3)}
+.result-count b{color:var(--ink); font-weight:700; font-variant-numeric:tabular-nums}
+.seg{display:flex; background:var(--card); border:1px solid var(--line); border-radius:10px; padding:2px; box-shadow:var(--shadow-sm)}
+.seg button{padding:.3rem .62rem; border-radius:8px; font-size:.79rem; color:var(--ink-3); font-weight:500; transition:.15s; white-space:nowrap}
+.seg button.on{background:var(--teal); color:#fff; box-shadow:var(--shadow-sm)}
+[data-theme="dark"] .seg button.on{color:#04211f}
+.toolbar .spacer{flex:1}
+.select{
+  appearance:none; padding:.38rem 1.7rem .38rem .66rem; border-radius:9px; font-size:.8rem;
+  background:var(--card) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236f8a95' stroke-width='3'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right .55rem center;
+  border:1px solid var(--line); color:var(--ink-2); cursor:pointer; outline:none; box-shadow:var(--shadow-sm);
+}
+.filter-fab{display:none}
+
+/* ========== 日期分组 ========== */
+.day{margin-bottom:2.15rem}
+.day-head{
+  display:flex; align-items:center; gap:.7rem; margin-bottom:.85rem;
+  padding-bottom:.6rem; border-bottom:1px solid var(--line);
+}
+.day-date{
+  font-size:1.02rem; font-weight:750; letter-spacing:-.01em;
+  font-variant-numeric:tabular-nums; white-space:nowrap;
+}
+.day-date .y{font-size:.78rem; color:var(--ink-4); font-weight:600; margin-left:.2rem}
+.day-week{font-size:.78rem; color:var(--ink-3); padding:.08rem .42rem; border-radius:5px; background:var(--bg-tint)}
+.day-count{font-size:.76rem; color:var(--ink-3); font-variant-numeric:tabular-nums}
+.day-hot{
+  margin-left:auto; display:flex; gap:.3rem; flex-wrap:wrap; justify-content:flex-end;
+  font-size:.72rem; color:var(--ink-3);
+}
+.day-hot span{padding:.06rem .42rem; border-radius:5px; background:var(--teal-soft); color:var(--teal-ink); font-weight:500}
+
+/* ========== 论文卡片 ========== */
+.card{
+  position:relative; background:var(--card); border:1px solid var(--line);
+  border-radius:var(--r); padding:1.05rem 1.15rem 1rem; margin-bottom:.72rem;
+  box-shadow:var(--shadow-sm); transition:box-shadow .22s ease, border-color .22s ease, transform .22s ease;
+}
+.card:hover{box-shadow:var(--shadow); border-color:color-mix(in srgb, var(--teal) 26%, var(--line)); transform:translateY(-1px)}
+.card.is-hi{border-left:3px solid var(--gold)}
+.card-top{display:flex; align-items:center; gap:.45rem; flex-wrap:wrap; margin-bottom:.5rem}
+.journal{
+  font-size:.725rem; font-weight:650; letter-spacing:.015em; color:var(--teal-ink);
+  background:var(--teal-soft); padding:.14rem .48rem; border-radius:5px; max-width:100%;
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+}
+.badge{font-size:.68rem; font-weight:650; padding:.12rem .42rem; border-radius:5px; letter-spacing:.02em}
+.badge.hi{background:var(--gold-soft); color:var(--gold)}
+.badge.rev{background:var(--indigo-soft); color:var(--indigo-ink)}
+.card-date{margin-left:auto; font-size:.72rem; color:var(--ink-4); font-variant-numeric:tabular-nums}
+.card h3{
+  font-size:1.005rem; line-height:1.48; font-weight:640; letter-spacing:-.008em;
+  margin-bottom:.5rem; color:var(--ink);
+}
+.card h3 a{background-image:linear-gradient(var(--teal),var(--teal)); background-size:0% 1.5px; background-repeat:no-repeat; background-position:0 100%; transition:background-size .3s ease, color .2s}
+.card h3 a:hover{color:var(--teal); background-size:100% 1.5px}
+.summary{
+  font-size:.885rem; line-height:1.72; color:var(--ink-2); margin-bottom:.62rem;
+  display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical; overflow:hidden;
+}
+.summary.open{-webkit-line-clamp:unset; display:block}
+.summary.none{color:var(--ink-4); font-style:italic}
+.summary.en{font-size:.855rem; color:var(--ink-3)}
+.sum-more{font-size:.75rem; color:var(--teal); font-weight:600; margin-bottom:.55rem; display:inline-block}
+.sum-more:hover{text-decoration:underline}
+
+.card-tags{display:flex; flex-wrap:wrap; gap:.3rem; margin-bottom:.62rem}
+.tg{
+  font-size:.735rem; padding:.13rem .46rem; border-radius:6px; font-weight:500;
+  border:1px solid transparent; transition:.15s;
+}
+.tg:hover{filter:brightness(.97)}
+.tg[data-dim="theme"]{background:var(--teal-soft); color:var(--teal-ink)}
+.tg[data-dim="species"]{background:var(--coral-soft); color:var(--coral-ink)}
+.tg[data-dim="region"]{background:var(--indigo-soft); color:var(--indigo-ink)}
+.tg[data-dim="method"]{background:var(--amber-soft); color:var(--amber-ink)}
+.tg.dim-dead{opacity:.75}
+
+.card-foot{display:flex; align-items:center; gap:.7rem; padding-top:.55rem; border-top:1px solid var(--line-2)}
+.authors{font-size:.755rem; color:var(--ink-3); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; flex:1; min-width:0}
+.foot-btn{font-size:.755rem; color:var(--ink-3); font-weight:600; padding:.16rem .4rem; border-radius:5px; white-space:nowrap; transition:.15s}
+.foot-btn:hover{background:var(--bg-tint); color:var(--teal)}
+.foot-btn .ar{display:inline-block; transition:transform .2s; font-size:.6rem; margin-right:.12rem}
+.foot-btn.open .ar{transform:rotate(90deg)}
+.abstract{
+  display:none; margin-top:.7rem; padding:.75rem .85rem; border-radius:var(--r-sm);
+  background:var(--card-2); border:1px solid var(--line-2);
+  font-size:.8rem; line-height:1.72; color:var(--ink-2); animation:fade .25s ease;
+}
+.abstract.show{display:block}
+.abstract .abs-loading{color:var(--ink-4); font-style:italic}
+
+/* 空状态 / 加载更多 */
+.empty{text-align:center; padding:4.5rem 1rem; color:var(--ink-3)}
+.empty .ico{font-size:2.6rem; margin-bottom:.8rem; opacity:.55}
+.empty h2{font-size:1.05rem; color:var(--ink-2); margin-bottom:.35rem}
+.load-more{
+  display:block; width:100%; padding:.85rem; border-radius:var(--r); font-size:.86rem; font-weight:650;
+  color:var(--teal-ink); background:var(--card); border:1px dashed color-mix(in srgb, var(--teal) 34%, var(--line));
+  transition:.2s; margin-top:.4rem;
+}
+.load-more:hover{background:var(--teal-soft); border-style:solid}
+.load-more small{color:var(--ink-3); font-weight:500; margin-left:.3rem}
+
+/* ========== 页脚 ========== */
+.site-foot{
+  border-top:1px solid var(--line); margin-top:1rem; padding:2.2rem 1.75rem 2.8rem;
+  text-align:center; font-size:.79rem; color:var(--ink-4); line-height:1.9;
+}
+.site-foot a{color:var(--ink-3); border-bottom:1px solid var(--line); transition:.2s}
+.site-foot a:hover{color:var(--teal); border-color:var(--teal)}
+.site-foot .sep{margin:0 .45rem; opacity:.4}
+
+/* ========== 动效 ========== */
+@keyframes fade{from{opacity:0; transform:translateY(3px)}to{opacity:1;transform:none}}
+.day{animation:fade .3s ease both}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important; transition:none!important; scroll-behavior:auto!important}
+}
+
+/* ========== 响应式 ========== */
+@media (max-width:1000px){
+  .shell{grid-template-columns:minmax(0,1fr); padding:1.5rem 1.1rem 3rem; gap:0}
+  .side{
+    position:fixed; inset:0 auto 0 0; width:min(88vw,340px); z-index:60; max-height:none;
+    background:var(--card); border-right:1px solid var(--line); box-shadow:var(--shadow-lg);
+    padding:1rem 1rem 3rem; transform:translateX(-102%); transition:transform .28s cubic-bezier(.4,0,.2,1);
+    overflow-y:auto; overscroll-behavior:contain;
+  }
+  .side.open{transform:none}
+  .scrim{
+    position:fixed; inset:0; z-index:55; background:rgba(6,20,24,.45); backdrop-filter:blur(2px);
+    opacity:0; pointer-events:none; transition:opacity .25s;
+  }
+  .scrim.show{opacity:1; pointer-events:auto}
+  .filter-fab{
+    display:flex; align-items:center; gap:.4rem; position:sticky; bottom:1.1rem; z-index:40;
+    width:fit-content; margin:1.2rem auto 0; padding:.66rem 1.15rem; border-radius:999px; font-size:.85rem; font-weight:650;
+    background:var(--ink); color:var(--bg); box-shadow:var(--shadow-lg);
+  }
+  [data-theme="dark"] .filter-fab{background:var(--teal); color:#04211f}
+  .filter-fab .cnt{background:rgba(255,255,255,.22); padding:.02rem .4rem; border-radius:99px; font-size:.74rem}
+  .drawer-head{
+    display:flex; align-items:center; justify-content:space-between;
+    font-size:.95rem; font-weight:700; margin-bottom:1.1rem; padding-bottom:.7rem;
+    border-bottom:1px solid var(--line);
+  }
+  .kbd{display:none}
+  .hero-main{padding:2rem 1.1rem 0}
+  .hero-grid{padding:1rem 1.1rem 0}
+  .hero-stats{gap:.5rem 1.5rem}
+  .hstat .v{font-size:1.3rem}
+  .day-hot{display:none}
+  .card{padding:.95rem 1rem}
+  .card h3{font-size:.96rem}
+}
+@media (max-width:620px){
+  .hero h1{font-size:1.72rem}
+  .hero-sub{font-size:.9rem}
+  .toolbar{gap:.55rem}
+  .result-count{width:100%; order:-1}
+  .seg{flex:1 1 100%; order:1}
+  .seg button{flex:1; text-align:center; padding:.34rem .2rem}
+  .select{flex:1 1 100%; order:2; padding-top:.46rem; padding-bottom:.46rem}
+  .summary{-webkit-line-clamp:5}
+  main{padding-bottom:4.5rem}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-grid">
+    <div class="brand">
+      <span class="brand-mark">🐟</span>
+      <span class="brand-txt">Fishery Digest<small>每日文献速览</small></span>
+    </div>
+    <nav class="hero-nav">
+      <button class="icon-btn" id="themeBtn" title="切换主题" aria-label="切换主题">◐</button>
+    </nav>
+  </div>
+
+  <div class="hero-main">
+    <h1>渔业文献<em>每日速览</em></h1>
+    <p class="hero-sub">
+      <b>{{ stats.papers }}</b> 篇论文 · <b>{{ stats.journals }}</b> 本期刊 · AI 中文速览，
+      按<b>研究主题</b>、<b>鱼种</b>、<b>海域</b>、<b>方法</b>多维标签自由筛选。
+    </p>
+    <div class="hero-stats">
+      <div class="hstat"><span class="v">{{ stats.papers }}</span><span class="k">篇文献</span></div>
+      <div class="hstat"><span class="v">{{ stats.days }}</span><span class="k">天记录</span></div>
+      <div class="hstat"><span class="v">{{ stats.journals }}</span><span class="k">本期刊</span></div>
+      <div class="hstat"><span class="v">{{ stats.tag_kinds }}</span><span class="k">种标签</span></div>
+    </div>
+  </div>
+
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,34 C180,58 320,6 480,20 C640,34 720,56 900,42 C1060,30 1180,4 1440,26 L1440,60 L0,60 Z"
+          fill="var(--bg)" opacity=".92"></path>
+  </svg>
+</header>
+
+<div class="scrim" id="scrim"></div>
+
+<div class="shell">
+  <!-- ============ 侧栏筛选 ============ -->
+  <aside class="side" id="side">
+    <div class="drawer-head">
+      <span>筛选条件</span>
+      <button class="icon-btn drawer-close" id="drawerClose" aria-label="关闭">✕</button>
+    </div>
+    <div class="search-wrap">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input id="search" type="search" placeholder="搜索标题 / 摘要 / 期刊 / 作者" autocomplete="off">
+      <span class="kbd">/</span>
+    </div>
+
+    <div id="filterSections"></div>
+
+    <div class="side-block" style="padding-top:.3rem">
+      <button class="clear-all" id="clearSide" style="padding:.35rem .5rem">清空全部筛选</button>
+    </div>
+  </aside>
+
+  <!-- ============ 主内容 ============ -->
+  <main>
+    <div class="active-bar" id="activeBar">
+      <span class="lbl">已筛选</span>
+      <span id="activeChips" style="display:flex;gap:.34rem;flex-wrap:wrap"></span>
+      <button class="clear-all" id="clearAll">清空</button>
+    </div>
+
+    <div class="toolbar">
+      <span class="result-count" id="resultCount"></span>
+      <div class="spacer"></div>
+      <div class="seg" id="rangeSeg">
+        <button data-range="all" class="on">全部</button>
+        <button data-range="1">今天</button>
+        <button data-range="3">近 3 天</button>
+        <button data-range="7">近 7 天</button>
+        <button data-range="30">近 30 天</button>
+      </div>
+      <select class="select" id="sortSel">
+        <option value="date">最新优先</option>
+        <option value="journal">按期刊</option>
+        <option value="hi">高影响优先</option>
+      </select>
+    </div>
+
+    <div id="list"></div>
+
+    <button class="filter-fab" id="filterFab">筛选<span class="cnt" id="fabCnt">0</span></button>
+  </main>
+</div>
+
+<footer class="site-foot">
+  数据来源 <a href="https://www.crossref.org/" target="_blank" rel="noopener">Crossref</a>
+  <span class="sep">·</span>
+  <a href="https://www.semanticscholar.org/" target="_blank" rel="noopener">Semantic Scholar</a>
+  <span class="sep">·</span>
+  中文摘要由 DeepSeek 生成，标签由规则引擎自动标注
+  <br>
+  最后更新 {{ update_display }} <span class="sep">·</span> 数据保留 {{ retention_days }} 天
+</footer>
+
+<script id="payload" type="application/json">{{ data_json | safe }}</script>
+<script>
+(function(){
+  "use strict";
+  const DATA = JSON.parse(document.getElementById('payload').textContent);
+  const PAPERS = DATA.papers;
+  const LEX = DATA.lexicon;
+  const DIMS = [
+    {key:'theme',   label:'研究主题'},
+    {key:'species', label:'研究鱼种'},
+    {key:'region',  label:'海域区域'},
+    {key:'method',  label:'方法手段'}
+  ];
+  const META = {};
+  LEX.forEach(t => { META[t.dim + '|' + t.id] = t; });
+
+  // ---------- 状态 ----------
+  const state = {
+    q: '',
+    dims: {theme:new Set(), species:new Set(), region:new Set(), method:new Set()},
+    journals: new Set(),
+    range: 'all',
+    sort: 'date',
+    limit: 60
+  };
+
+  // ---------- 工具 ----------
+  const $ = s => document.querySelector(s);
+  const esc = s => String(s == null ? '' : s)
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+      .replace(/"/g,'&quot;');
+  const WD = ['周日','周一','周二','周三','周四','周五','周六'];
+  const parseDate = d => { const [y,m,dd] = d.split('-').map(Number); return new Date(y, m-1, dd); };
+  const MAXD = PAPERS.length ? parseDate(PAPERS[0].date > PAPERS[PAPERS.length-1].date ? PAPERS[0].date : PAPERS[PAPERS.length-1].date) : new Date();
+  const newestDate = PAPERS.reduce((a,p) => p.date > a ? p.date : a, '0000-00-00');
+  const ANCHOR = newestDate !== '0000-00-00' ? parseDate(newestDate) : new Date();
+
+  // 预建检索文本
+  PAPERS.forEach(p => {
+    p._text = [p.title, p.summary, p.journal, p.authors].join(' ').toLowerCase();
+    p._tagset = {};
+    DIMS.forEach(d => { p._tagset[d.key] = new Set(p.tags[d.key] || []); });
+    p._ts = parseDate(p.date).getTime();
+  });
+
+  // ---------- 筛选 ----------
+  function rangeOK(p){
+    if (state.range === 'all') return true;
+    const n = Number(state.range);
+    const diff = Math.round((ANCHOR - parseDate(p.date)) / 86400000);
+    return diff < n;
+  }
+  function dimOK(p, key, skipKey){
+    const sel = state.dims[key];
+    if (!sel || !sel.size || key === skipKey) return true;
+    for (const id of sel) if (p._tagset[key].has(id)) return true;
+    return false;
+  }
+  function journalOK(p, skip){
+    if (skip || !state.journals.size) return true;
+    return state.journals.has(p.journal);
+  }
+  function qOK(p, q){
+    if (!q) return true;
+    return p._text.includes(q);
+  }
+  function matches(p, skipKey){
+    if (p.off_topic) return false;
+    if (!rangeOK(p) || !journalOK(p, skipKey === 'journal') || !qOK(p, state.q)) return false;
+    for (const d of DIMS) if (!dimOK(p, d.key, skipKey)) return false;
+    return true;
+  }
+
+  // ---------- 侧栏渲染 ----------
+  const expanded = {};
+  function countBy(dimKey){
+    const pool = PAPERS.filter(p => matches(p, dimKey));
+    const c = {};
+    pool.forEach(p => (p.tags[dimKey] || []).forEach(id => { c[id] = (c[id] || 0) + 1; }));
+    return c;
+  }
+  function renderSide(){
+    const html = [];
+    DIMS.forEach(d => {
+      const c = countBy(d.key);
+      let items = Object.keys(c).map(id => ({id, n:c[id], meta: META[d.key+'|'+id] || {zh:id}}))
+        .sort((a,b) => b.n - a.n);
+      if (!items.length) return;
+      const isEx = !!expanded[d.key];
+      const shown = isEx ? items : items.slice(0, 9);
+      const hasSel = state.dims[d.key].size > 0;
+      html.push(`<div class="side-block${hasSel?' has-sel':''}" data-block="${d.key}">
+        <div class="side-title"><span>${d.label}</span>
+          <button class="lnk" data-reset="${d.key}">清除</button></div>
+        <div class="chips">${shown.map(it => {
+          const on = state.dims[d.key].has(it.id);
+          return `<button class="chip${on?' on':''}${it.n===0&&!on?' zero':''}" data-dim="${d.key}" data-id="${esc(it.id)}" title="${esc(it.meta.en||'')}">
+            <span class="zh">${esc(it.meta.zh)}</span><span class="n">${it.n}</span></button>`;
+        }).join('')}</div>
+        ${items.length > 9 ? `<button class="more-btn" data-more="${d.key}">${isEx?'收起':'展开全部 '+items.length+' 个'}</button>` : ''}
+      </div>`);
+    });
+
+    // 期刊
+    const jpool = PAPERS.filter(p => matches(p, 'journal'));
+    const jc = {};
+    jpool.forEach(p => { if (p.journal) jc[p.journal] = (jc[p.journal]||0)+1; });
+    const jitems = Object.keys(jc).map(j => ({id:j, n:jc[j]})).sort((a,b)=> b.n-a.n || a.id.localeCompare(b.id));
+    if (jitems.length){
+      const isEx = !!expanded.journal;
+      const shown = isEx ? jitems : jitems.slice(0, 8);
+      html.push(`<div class="side-block${state.journals.size?' has-sel':''}" data-block="journal">
+        <div class="side-title"><span>期刊来源</span><button class="lnk" data-reset="journal">清除</button></div>
+        <div class="chips">${shown.map(it => {
+          const on = state.journals.has(it.id);
+          return `<button class="chip${on?' on':''}${it.n===0&&!on?' zero':''}" data-dim="journal" data-id="${esc(it.id)}">
+            <span class="zh">${esc(it.id)}</span><span class="n">${it.n}</span></button>`;
+        }).join('')}</div>
+        ${jitems.length > 8 ? `<button class="more-btn" data-more="journal">${isEx?'收起':'展开全部 '+jitems.length+' 本'}</button>` : ''}
+      </div>`);
+    }
+    $('#filterSections').innerHTML = html.join('');
+  }
+
+  // ---------- 列表渲染 ----------
+  function sortPapers(arr){
+    const a = arr.slice();
+    if (state.sort === 'journal') a.sort((x,y) => x.journal.localeCompare(y.journal) || (y.date>x.date?1:-1));
+    else if (state.sort === 'hi') a.sort((x,y) => (y.high_impact?1:0)-(x.high_impact?1:0) || (y.date>x.date?1:-1));
+    else a.sort((x,y) => (y.date>x.date?1:-1) || x.journal.localeCompare(y.journal));
+    return a;
+  }
+
+  function cardHTML(p){
+    const tags = [];
+    DIMS.forEach(d => (p.tags[d.key]||[]).forEach(id => {
+      const m = META[d.key+'|'+id]; if (!m) return;
+      tags.push(`<button class="tg" data-dim="${d.key}" data-id="${esc(id)}" title="筛选：${esc(m.zh)}">${esc(m.zh)}</button>`);
+    }));
+    const hi = p.high_impact ? '<span class="badge hi">高影响</span>' : '';
+    const rev = p.is_review ? '<span class="badge rev">综述</span>' : '';
+    const sum = p.summary
+      ? `<p class="summary${p.summary_en ? ' en' : ''}">${esc(p.summary)}</p>`
+      : `<p class="summary none">暂无摘要</p>`;
+    return `<article class="card${p.high_impact?' is-hi':''}" data-doi="${esc(p.doi)}">
+      <div class="card-top">
+        <span class="journal" title="${esc(p.journal)}">${esc(p.journal || '未知期刊')}</span>
+        ${hi}${rev}
+      </div>
+      <h3><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a></h3>
+      ${sum}
+      <div class="card-tags">${tags.join('')}</div>
+      <div class="card-foot">
+        <span class="authors" title="${esc(p.authors)}">${esc(p.authors || '—')}</span>
+        <button class="foot-btn abs-btn"><span class="ar">▶</span>英文摘要</button>
+        <a class="foot-btn" href="${esc(p.url)}" target="_blank" rel="noopener">DOI ↗</a>
+      </div>
+      <div class="abstract"><span class="abs-loading">加载中…</span></div>
+    </article>`;
+  }
+
+  let ABS = null, absPromise = null;
+  function loadAbs(){
+    if (absPromise) return absPromise;
+    absPromise = fetch('data/abstracts.json')
+      .then(r => r.ok ? r.json() : {})
+      .catch(() => null)
+      .then(j => { ABS = j || {}; return ABS; });
+    return absPromise;
+  }
+
+  function renderList(){
+    const list = sortPapers(PAPERS.filter(p => matches(p, null)));
+    const total = list.length;
+    const shown = list.slice(0, state.limit);
+
+    $('#resultCount').innerHTML = total
+      ? `找到 <b>${total}</b> 篇${state.sort==='date'?' · 按日期倒序':''}`
+      : '没有匹配的文献';
+
+    if (!total){
+      const anySel = state.q || state.journals.size || DIMS.some(d => state.dims[d.key].size) || state.range !== 'all';
+      $('#list').innerHTML = `<div class="empty"><div class="ico">🪸</div>
+        <h2>${anySel ? '没有符合条件的论文' : '暂无文献数据'}</h2>
+        <p>${anySel ? '试试放宽筛选条件，或清空全部筛选' : '等待下一次自动抓取'}</p></div>`;
+      updateActive();
+      return;
+    }
+
+    // 按日期分组
+    const groups = [];
+    shown.forEach(p => {
+      const g = groups[groups.length-1];
+      if (g && g.date === p.date) g.items.push(p);
+      else groups.push({date:p.date, items:[p]});
+    });
+    // 当前筛选集下每天的真实总数（用于显示"共 N 篇"）
+    const dayTotals = {};
+    list.forEach(p => { dayTotals[p.date] = (dayTotals[p.date]||0)+1; });
+
+    const out = groups.map(g => {
+      const dt = parseDate(g.date);
+      const label = `${dt.getMonth()+1} 月 ${dt.getDate()} 日`;
+      const hot = {};
+      g.items.forEach(p => (p.tags.theme||[]).forEach(id => { hot[id] = (hot[id]||0)+1; }));
+      const hotTop = Object.keys(hot).sort((a,b)=>hot[b]-hot[a]).slice(0,3)
+        .map(id => `<span>${esc((META['theme|'+id]||{}).zh || id)}</span>`).join('');
+      return `<section class="day">
+        <div class="day-head">
+          <span class="day-date">${label}<span class="y">${dt.getFullYear()}</span></span>
+          <span class="day-week">${WD[dt.getDay()]}</span>
+          <span class="day-count">${dayTotals[g.date] || g.items.length} 篇</span>
+          <span class="day-hot">${hotTop}</span>
+        </div>
+        ${g.items.map(cardHTML).join('')}
+      </section>`;
+    }).join('');
+
+    const rest = total - shown.length;
+    $('#list').innerHTML = out + (rest > 0
+      ? `<button class="load-more" id="loadMore">加载更多<small>还有 ${rest} 篇</small></button>` : '');
+    updateActive();
+  }
+
+  // ---------- 已选条 ----------
+  function updateActive(){
+    const items = [];
+    DIMS.forEach(d => state.dims[d.key].forEach(id => items.push({dim:d.key, id, zh:(META[d.key+'|'+id]||{zh:id}).zh})));
+    state.journals.forEach(j => items.push({dim:'journal', id:j, zh:j}));
+    const bar = $('#activeBar');
+    if (!items.length){ bar.classList.remove('show'); }
+    else {
+      bar.classList.add('show');
+      $('#activeChips').innerHTML = items.map(it =>
+        `<button class="chip on" data-dim="${it.dim}" data-id="${esc(it.id)}" data-unset="1">
+          <span class="zh">${esc(it.zh)}</span><span class="n">×</span></button>`).join('');
+    }
+    const n = items.length;
+    $('#fabCnt').textContent = n;
+    $('#fabCnt').style.display = n ? '' : 'none';
+  }
+
+  function refresh(){ state.limit = 60; renderSide(); renderList(); }
+
+  // ---------- 交互 ----------
+  document.addEventListener('click', e => {
+    const chip = e.target.closest('.chip');
+    if (chip && chip.dataset.dim){
+      const {dim, id} = chip.dataset;
+      if (chip.dataset.unset){ // 从已选条移除
+        (dim === 'journal' ? state.journals : state.dims[dim]).delete(id);
+      } else if (dim === 'journal'){
+        state.journals.has(id) ? state.journals.delete(id) : state.journals.add(id);
+      } else {
+        const s = state.dims[dim];
+        s.has(id) ? s.delete(id) : s.add(id);
+      }
+      refresh(); return;
+    }
+    const tg = e.target.closest('.tg');
+    if (tg && tg.dataset.dim){
+      const {dim, id} = tg.dataset;
+      if (dim === 'journal') state.journals.add(id); else state.dims[dim].add(id);
+      refresh(); window.scrollTo({top:0, behavior:'smooth'}); return;
+    }
+    const more = e.target.closest('[data-more]');
+    if (more){
+      const k = more.dataset.more; expanded[k] = !expanded[k]; renderSide(); return;
+    }
+    const reset = e.target.closest('[data-reset]');
+    if (reset){
+      const k = reset.dataset.reset;
+      if (k === 'journal') state.journals.clear(); else state.dims[k].clear();
+      refresh(); return;
+    }
+    if (e.target.closest('#clearAll') || e.target.closest('#clearSide')){
+      state.q = ''; $('#search').value = '';
+      state.journals.clear(); DIMS.forEach(d => state.dims[d.key].clear());
+      state.range = 'all';
+      document.querySelectorAll('#rangeSeg button').forEach(b => b.classList.toggle('on', b.dataset.range === 'all'));
+      refresh(); return;
+    }
+    const lm = e.target.closest('#loadMore');
+    if (lm){ state.limit += 60; renderList(); return; }
+
+    // 摘要展开
+    const btn = e.target.closest('.abs-btn');
+    if (btn){
+      const card = btn.closest('.card');
+      const box = card.querySelector('.abstract');
+      const doi = card.dataset.doi;
+      const opening = !box.classList.contains('show');
+      box.classList.toggle('show', opening);
+      btn.classList.toggle('open', opening);
+      if (opening && box.dataset.filled !== '1'){
+        const p = PAPERS.find(x => x.doi === doi);
+        const local = p && p.abstract;
+        if (local){ box.textContent = local; box.dataset.filled = '1'; }
+        else loadAbs().then(map => {
+          const txt = (map && map[doi]) || '';
+          box.innerHTML = txt ? esc(txt) : '<span class="abs-loading">暂无英文摘要（出版商未提供）</span>';
+          box.dataset.filled = '1';
+        });
+      }
+      return;
+    }
+    const seg = e.target.closest('#rangeSeg button');
+    if (seg){
+      state.range = seg.dataset.range;
+      document.querySelectorAll('#rangeSeg button').forEach(b => b.classList.toggle('on', b === seg));
+      refresh(); return;
+    }
+  });
+
+  let t = null;
+  $('#search').addEventListener('input', e => {
+    clearTimeout(t);
+    t = setTimeout(() => { state.q = e.target.value.trim().toLowerCase(); refresh(); }, 160);
+  });
+  $('#sortSel').addEventListener('change', e => { state.sort = e.target.value; state.limit = 60; renderList(); });
+  document.addEventListener('keydown', e => {
+    if (e.key === '/' && document.activeElement !== $('#search')){ e.preventDefault(); $('#search').focus(); }
+    if (e.key === 'Escape'){ closeSide(); }
+  });
+
+  // 移动端抽屉
+  const side = $('#side'), scrim = $('#scrim');
+  function openSide(){ side.classList.add('open'); scrim.classList.add('show'); document.body.style.overflow='hidden'; }
+  function closeSide(){ side.classList.remove('open'); scrim.classList.remove('show'); document.body.style.overflow=''; }
+  $('#filterFab').addEventListener('click', openSide);
+  $('#drawerClose').addEventListener('click', closeSide);
+  scrim.addEventListener('click', closeSide);
+  side.addEventListener('click', e => { if (e.target.closest('.chip') && innerWidth <= 1000) {} });
+
+  // 主题
+  const themeBtn = $('#themeBtn');
+  function applyTheme(mode){
+    document.documentElement.setAttribute('data-theme', mode);
+    themeBtn.textContent = mode === 'dark' ? '☀' : '◐';
+    try { localStorage.setItem('fd-theme', mode); } catch(_){}
+  }
+  themeBtn.addEventListener('click', () => {
+    applyTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+  });
+  try {
+    const saved = localStorage.getItem('fd-theme');
+    if (saved) applyTheme(saved);
+    else if (window.matchMedia('(prefers-color-scheme: dark)').matches) applyTheme('dark');
+  } catch(_){}
+
+  // 启动
+  refresh();
+})();
+</script>
+</body>
+</html>

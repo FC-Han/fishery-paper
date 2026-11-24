@@ -1,16 +1,20 @@
-name: 渔业文献每周更新
+name: 渔业文献每日更新
 
 on:
   schedule:
-    # 每天 UTC 8:00 运行（北京时间 16:00）
+    # 每天 08:00 UTC 运行（北京时间 16:00）
     - cron: "0 8 * * *"
-  workflow_dispatch:  # 支持手动触发
+  workflow_dispatch:
   push:
     branches: [main]
     paths:
       - "scripts/**"
       - "templates/**"
       - ".github/workflows/daily-update.yml"
+
+concurrency:
+  group: daily-update
+  cancel-in-progress: false
 
 jobs:
   update-papers:
@@ -19,36 +23,39 @@ jobs:
       contents: write
 
     steps:
-      - name: 📂 Checkout 代码
+      - name: 📂 Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: 🐍 安装 Python
+      - name: 🐍 Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: "pip"
 
-      - name: 📦 安装依赖
+      - name: 📦 Install deps
         run: pip install -r requirements.txt
 
-      - name: 🔍 获取最新论文
+      - name: 🔍 抓取最新论文
         env:
           SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
           CI: "true"
         run: python scripts/fetch_papers.py
 
-      - name: 🤖 DeepSeek AI 中文总结 + 每周综述
+      - name: 🤖 DeepSeek 中文摘要
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: python scripts/summarize.py
         continue-on-error: true
 
-      - name: 🎨 生成 HTML 站点
+      - name: 🏷️ 自动打标签
+        run: python scripts/tag_papers.py --force
+
+      - name: 🎨 生成站点
         run: python scripts/generate_site.py
 
-      - name: 📤 提交并推送更新
+      - name: 📤 提交更新
         run: |
           git config user.name "Fishery Bot 🤖"
           git config user.email "fishery-bot@users.noreply.github.com"
@@ -56,6 +63,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "没有新内容，跳过提交"
           else
-            git commit -m "📰 渔业文献每周更新 - $(date +'%Y-%m-%d')"
+            git commit -m "📰 渔业文献每日更新 - $(date -u +'%Y-%m-%d')"
             git push
           fi

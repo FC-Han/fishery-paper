@@ -58,60 +58,38 @@ TITLE_QUERIES = [
 ]
 
 # === 搜索策略 2: 特定渔业期刊 ISSN ===
-# 主流渔业/水产/海洋生态期刊
+# 主流渔业 / 水产 / 海洋生态期刊（去重后）
 FISHERY_JOURNALS = [
     ("0165-7836", "Fisheries Research"),
     ("1467-2960", "Fish and Fisheries"),
     ("1054-3139", "ICES Journal of Marine Science"),
     ("0706-652X", "Canadian J. Fisheries & Aquatic Sciences"),
     ("0002-8487", "Trans. American Fisheries Society"),
+    ("0275-5947", "North American J. Fisheries Management"),
     ("0960-3166", "Reviews in Fish Biology and Fisheries"),
-    ("0044-8486", "Aquaculture"),
-    ("0022-1112", "Journal of Fish Biology"),
-    ("1054-6006", "Fisheries Oceanography"),
-    ("0308-597X", "Marine Policy"),
     ("2330-8249", "Reviews in Fisheries Science & Aquaculture"),
-    ("0919-9268", "Fisheries Science"),
-    ("0165-7836", "Fisheries Research"),
-    ("0378-1127", "Forest Ecology and Management"),  # 可能不相关，删掉
-    ("0169-5347", "Trends in Ecology & Evolution"),
-    ("0171-8630", "Marine Ecology Progress Series"),
-    ("0025-326X", "Marine Pollution Bulletin"),
-    ("0160-7383", "Annals of Tourism Research"),  # 不相关，删
-]
-
-# 更精准的渔业期刊列表（去除非渔业期刊）
-FISHERY_JOURNALS = [
-    ("0165-7836", "Fisheries Research"),
-    ("1467-2960", "Fish and Fisheries"),
-    ("1054-3139", "ICES Journal of Marine Science"),
-    ("0706-652X", "Canadian J. Fisheries & Aquatic Sciences"),
-    ("0002-8487", "Trans. American Fisheries Society"),
-    ("0960-3166", "Reviews in Fish Biology and Fisheries"),
-    ("0044-8486", "Aquaculture"),
-    ("0022-1112", "Journal of Fish Biology"),
-    ("1054-6006", "Fisheries Oceanography"),
-    ("0308-597X", "Marine Policy"),
-    ("2330-8249", "Reviews in Fisheries Science & Aquaculture"),
-    ("0919-9268", "Fisheries Science"),
-    ("0171-8630", "Marine Ecology Progress Series"),
-    ("0025-326X", "Marine Pollution Bulletin"),
-    ("0165-7836", "Fisheries Research"),
+    ("0969-997X", "Fisheries Management and Ecology"),
     ("1365-2419", "Fisheries Oceanography"),
-    ("1548-8659", "Trans. American Fisheries Society"),
-    ("1444-2906", "Fisheries Science"),
-    ("1573-5184", "Reviews in Fish Biology and Fisheries"),
-    ("0165-7836", "Fisheries Research"),
+    ("0919-9268", "Fisheries Science"),
+    ("0044-8486", "Aquaculture"),
+    ("2352-5134", "Aquaculture Reports"),
+    ("0967-6120", "Aquaculture International"),
+    ("1355-557X", "Aquaculture Research"),
+    ("1753-5123", "Reviews in Aquaculture"),
+    ("0022-1112", "Journal of Fish Biology"),
+    ("0140-7775", "Journal of Fish Diseases"),
+    ("0906-6691", "Ecology of Freshwater Fish"),
+    ("1095-6350", "Journal of Applied Ichthyology"),
+    ("2410-3888", "Fishes"),
+    ("0171-8630", "Marine Ecology Progress Series"),
+    ("0308-597X", "Marine Policy"),
+    ("0025-326X", "Marine Pollution Bulletin"),
+    ("2296-7745", "Frontiers in Marine Science"),
+    ("0018-8158", "Hydrobiologia"),
+    ("0272-7714", "Estuarine, Coastal and Shelf Science"),
 ]
 
-# 去重 ISSN
-_seen = set()
-_unique_journals = []
-for issn, name in FISHERY_JOURNALS:
-    if issn not in _seen:
-        _seen.add(issn)
-        _unique_journals.append((issn, name))
-FISHERY_JOURNALS = _unique_journals
+FISHERY_JOURNALS = list(dict.fromkeys(FISHERY_JOURNALS))
 
 # === 搜索策略 3: 综合期刊（Nature/Science/PNAS 及其子刊） ===
 # 这些期刊覆盖广，需要加渔业关键词过滤
@@ -181,7 +159,10 @@ def clean_html(raw: str) -> str:
     """去除 HTML 标签，提取纯文本"""
     if not raw:
         return ""
-    return re.sub(r"<[^>]+>", " ", raw).strip()
+    import html as _html
+    txt = _html.unescape(raw)
+    txt = re.sub(r"<[^>]+>", " ", txt)
+    return re.sub(r"\s+", " ", txt).strip()
 
 
 def clean_abstract(raw: Optional[str]) -> str:
@@ -304,13 +285,13 @@ def make_paper(item: dict, source: str, keyword: str) -> Optional[dict]:
     if not doi or doi in SEEN_DOIS:
         return None
 
-    title = item.get("title", [""])[0] if item.get("title") else ""
+    title = clean_html(item.get("title", [""])[0]) if item.get("title") else ""
     if not title:
         return None
 
     abstract = clean_abstract(item.get("abstract"))
     authors = parse_authors(item.get("author"))
-    journal = item.get("container-title", [""])[0] if item.get("container-title") else ""
+    journal = clean_html(item.get("container-title", [""])[0]) if item.get("container-title") else ""
     pub_date = parse_date(item)
 
     # 相关性过滤（仅对标题搜索和 S2 搜索启用，ISSN 期刊搜索不需要）
@@ -361,7 +342,7 @@ def fetch_crossref_by_title(query: str, from_date: str, until_date: str, rows: i
     return papers
 
 
-def fetch_crossref_by_issn(issn: str, journal_name: str, from_date: str, until_date: str, rows: int = 20) -> list[dict]:
+def fetch_crossref_by_issn(issn: str, journal_name: str, from_date: str, until_date: str, rows: int = 30) -> list[dict]:
     """策略 2: 按期刊 ISSN 直接查询最新论文"""
     params = {
         "filter": f"type:journal-article,issn:{issn},from-pub-date:{from_date},until-pub-date:{until_date}",
@@ -385,7 +366,7 @@ def fetch_crossref_by_issn(issn: str, journal_name: str, from_date: str, until_d
         if not doi or doi in SEEN_DOIS:
             continue
 
-        title = item.get("title", [""])[0] if item.get("title") else ""
+        title = clean_html(item.get("title", [""])[0]) if item.get("title") else ""
         if not title:
             continue
 
@@ -516,7 +497,7 @@ def save_papers(data: dict):
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
-def prune_old_papers(papers: list[dict], days: int = 14) -> list[dict]:
+def prune_old_papers(papers: list[dict], days: int = 120) -> list[dict]:
     """删除超过指定天数的旧论文"""
     cutoff = (datetime.now(timezone.utc) - timedelta(days=days)).strftime("%Y-%m-%d")
     return [p for p in papers if p.get("date", "") >= cutoff]
@@ -527,10 +508,10 @@ def main():
     # 日期范围
     is_ci = os.getenv("CI", "").lower() == "true" or os.getenv("GITHUB_ACTIONS", "").lower() == "true"
     if is_ci:
-        yesterday = (datetime.now(timezone.utc) - timedelta(days=1)).strftime("%Y-%m-%d")
-        from_date = yesterday
-        until_date = yesterday
-        print(f"🔍 CI 模式：获取 {from_date} 的论文")
+        # Crossref 索引有延迟，只抓"昨天"会漏掉滞后入库的论文；回看 5 天，靠 DOI 去重
+        from_date = (datetime.now(timezone.utc) - timedelta(days=5)).strftime("%Y-%m-%d")
+        until_date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        print(f"🔍 CI 模式：回看获取 {from_date} ~ {until_date} 的论文（DOI 去重）")
     else:
         today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
         week_ago = (datetime.now(timezone.utc) - timedelta(days=7)).strftime("%Y-%m-%d")

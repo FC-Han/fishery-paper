@@ -4,3 +4,15 @@ __pycache__/
 .venv/
 venv/
 .claude/
+
+# 本地测试产物
+_devtest/
+_shot_*.png
+_crop_*.png
+data/*.tmp
+
+# 本地测试产物
+_devtest/
+_shot_*.png
+_crop_*.png
+data/*.tmp
