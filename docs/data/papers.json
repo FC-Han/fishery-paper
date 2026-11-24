@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-24T01:11:32Z",
- "count": 310,
+ "generated_at": "2026-11-24T19:17:48Z",
+ "count": 321,
  "lexicon": [
   {
    "dim": "theme",
@@ -418,6 +418,245 @@
   }
  ],
  "papers": [
+  {
+   "doi": "10.18176/jiaci.1220",
+   "title": "Anaphylaxis From Inhaled Maggot and Wax Moth Larvae Fishing Bait in a Recreational Angler Previously Diagnosed With Fish Contact Allergy: IgE Profile and Tested Alternatives",
+   "authors": "Cimbollek, Stefan; Menéndez-Rivero, Estela; de Aramburu Mera, Teresa; Reguero Capilla, Marta; Pineda de la Losa, Fernando; Santano Guillén, Elena; Martínez Martínez, María José; Galán Díez, Tania",
+   "journal": "Journal of Investigational Allergology and Clinical Immunology",
+   "date": "2026-11-24",
+   "summary": "",
+   "summary_en": true,
+   "url": "https://doi.org/10.18176/jiaci.1220",
+   "tags": {
+    "theme": [
+     "misc"
+    ],
+    "species": [],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.1186/s12915-026-02798-y",
+   "title": "Integrated paternal genome governs sex-specific fertility in synthetic allopolyploid fish",
+   "authors": "Lu, Meng; Zhang, Qin-Can; Zhu, Zi-Yu; Wang, Yang; Wang, Zhong-Wei; Li, Xi-Yin; Li, Zhi; Hu, Zhen; Yu, Peng; Zhang, Xiao-Juan",
+   "journal": "BMC Biology",
+   "date": "2026-11-24",
+   "summary": "",
+   "summary_en": true,
+   "url": "https://doi.org/10.1186/s12915-026-02798-y",
+   "tags": {
+    "theme": [
+     "misc"
+    ],
+    "species": [],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.1177/02611929261507293",
+   "title": "Bioaccessibility of leached heavy metals from plastic particles in the gastrointestinal tract of fish and its associated health risks: An in vitro assessment",
+   "authors": "Bwala, Mathias Nzitiri; Gaya, Abalis Ezra; Nayaya, Ahmad Jibrin; Buba, Toma",
+   "journal": "Alternatives to Laboratory Animals",
+   "date": "2026-11-24",
+   "summary": "采用体外化学消化模型模拟鱼胃与肠道环境，评估微/纳米塑料颗粒（MNPs）中重金属的浸出能力与生物可给性（bioaccessibility）及潜在人体健康风险。结果显示不同重金属的生物可给性存在差异（如As等），该体外方法可替代活体鱼试验用于重金属生物可给性研究。",
+   "summary_en": false,
+   "url": "https://doi.org/10.1177/02611929261507293",
+   "tags": {
+    "theme": [
+     "pollution"
+    ],
+    "species": [],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.1007/s12011-026-05443-5",
+   "title": "Dietary Iron in Fish: Requirements, Metabolism, and Emerging Role of Nanotechnology in Aquaculture",
+   "authors": "Naz, Sana; Khan, Mukhtar Ahmad",
+   "journal": "Biological Trace Element Research",
+   "date": "2026-11-24",
+   "summary": "",
+   "summary_en": true,
+   "url": "https://doi.org/10.1007/s12011-026-05443-5",
+   "tags": {
+    "theme": [
+     "aqua",
+     "bio",
+     "nutri"
+    ],
+    "species": [],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.12982/cmjs.2026.113",
+   "title": "Simultaneous Nutrient Removal and Reduction in Microcystis aeruginosa Abundance in Aquaculture Wastewater During Co-cultivation with Saccharomyces cerevisiae NM2",
+   "authors": "Nguyen, Anh Thao; Dang, Thi Mai Anh; Nguyen, Minh Thu; Le, Minh Vu; Nguyen, Sy Nguyen; Duong, Thi Thuy; Nguyen, Phuong Nhue",
+   "journal": "Chiang Mai Journal of Science",
+   "date": "2026-11-24",
+   "summary": "耐盐酵母Saccharomyces cerevisiae NM2在1.5%盐度养殖废水中24 h内对COD去除率达87.34–91.35%（初始COD 100–750 mg/L），TN和TP去除率分别为64.12–71.21%和96.80–97.68%，出水TP低于0.35 mg/L。与铜绿微囊藻NA共培养时，藻丰度下降86.3–97.6%，同时COD去除率保持91.08–93.94%、TP去除率超过97%、TN去除率50.41–70.40%。藻丰度下降机制尚未明确，可能涉及营养竞争、直接抑制或其他微生物相互作用。",
+   "summary_en": false,
+   "url": "https://doi.org/10.12982/cmjs.2026.113",
+   "tags": {
+    "theme": [
+     "aqua",
+     "pollution",
+     "disease"
+    ],
+    "species": [],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.1111/raq.70232",
+   "title": "Antiviral Signaling and Innate Immune Networks in Penaeid Shrimp: WSSV -Centered Evidence and Aquaculture Health Management",
+   "authors": "Guo, Shengtao; Liu, Hongtao; Yang, Linwei; Zhang, Rusong; Zhang, Kai; Zhang, Xinhui; Bian, Chao; Shi, Qiong",
+   "journal": "Reviews in Aquaculture",
+   "date": "2026-11-24",
+   "summary": "以WSSV-对虾模型为主要证据，将Toll/IMD–NF-κB、STING–IRF–Vago–JAK/STAT、RNAi、识别-入侵双重性、细胞清除、抗菌肽及proPO相关防御整合为相互作用的抗病毒信号与先天免疫网络，并按证据权重区分宿主防御机制与水产养殖应用成熟度。指出WSSV模型不能作为RNA病毒、DIV1、螯虾、蟹或淡水虾的通用替代。核心结论是：通路生物学只有产出可针对不同疾病和生产结果验证的分子标记与管理干预，才对实际养殖有用，而非仅追求更强的免疫激活。",
+   "summary_en": false,
+   "url": "https://doi.org/10.1111/raq.70232",
+   "tags": {
+    "theme": [
+     "disease",
+     "aqua"
+    ],
+    "species": [
+     "shrimp"
+    ],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3390/hydrobiology5040049",
+   "title": "Macroinvertebrate and Fish Assemblages in Drainage Ditches and Adjacent Rivers of the Syr Darya River Basin (Central Asia: Kazakhstan)",
+   "authors": "Kobeshova, Zhansaya Bayzhighitovna; Mamilov, Nadir Shamilevich; Koshkimbayev, Karshyga Sarsenbaevich; Khassengazieva, Gulnur Kuanyshkyzy; Amirbekova, Fariza Talgatovna; Ibrayeva, Gulmira Sayfullaevna; Sharakhmetov, Sayat Ermukhanbetovich; Mazhibayeva, Zhanara Omirbekovna; Assylbek, Ayan Makhmutovich",
+   "journal": "Hydrobiology",
+   "date": "2026-11-24",
+   "summary": "在锡尔河流域，排水沟与集水沟同邻近天然河段相比，夏季水温更低、浊度更低，承载了不同的鱼类与大型无脊椎动物群落；记录的46个动物分类单元中有11个仅见于沟渠，沟渠还为蚋科（Simuliidae）幼虫提供了适宜生境。两类沟渠的鱼类群落均以非本地种为主，可能反映环境过滤与已建立种群的反复迁入。沟渠物种丰富度低于邻近河段，但支持了天然河流中未记录的物种，因而不能替代自然河流，却可提高生境异质性并在高度改造景观中补充水生生物多样性。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3390/hydrobiology5040049",
+   "tags": {
+    "theme": [
+     "eco"
+    ],
+    "species": [],
+    "region": [
+     "freshwater"
+    ],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.70963/jm.v3i2.1073",
+   "title": "Analysis Of The Added Value Of Baby Fish Nilem Crispy Products In Baby Fish MSMES Mr. O In Rancapaku Village, Tasikmalaya Regency",
+   "authors": "Fitriani, Dhean Nova; Heryadi, H. D Yadi; Jakiyah, Ulpah",
+   "journal": "Jurnal Multidisiplin",
+   "date": "2026-11-24",
+   "summary": "以Tasikmalaya县Rancapaku村Baby Fish Mr.O微小型企业为案例，采用Hayami法核算脆炸尼罗小杂鱼（crispy nilem baby fish）加工环节的附加值。结果显示，每公斤原料可产生附加值234,798印尼盾，附加值率达78.27%，属高附加值类别。该加工方式可提升副渔获物经济价值并缓解小杂鱼易腐问题。",
+   "summary_en": false,
+   "url": "https://doi.org/10.70963/jm.v3i2.1073",
+   "tags": {
+    "theme": [
+     "process"
+    ],
+    "species": [],
+    "region": [],
+    "method": [
+     "survey"
+    ]
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.1007/s10641-026-01935-4",
+   "title": "Revealing the elasmobranch diversity off the southern coast of Rio de Janeiro (22°55′S-23°27′S), an ecologically important area for conservation in the Western South Atlantic",
+   "authors": "Santos, Sérgio Ricardo; Pereira, Camila Ferreira; Julio, Tainá Guimarães; Maciel, Thaís Rodrigues; Hauser-Davis, Rachel Ann; Vianna, Marcelo",
+   "journal": "Environmental Biology of Fishes",
+   "date": "2026-11-24",
+   "summary": "2006年1月至2007年8月在里约热内卢南部Grande岛外海及Ilha Grande湾口开展14次拖网与底层延绳钓调查，并结合文献综述和公民科学数据库记录，评估该区域底栖板鳃类多样性及优势种繁殖特征。共鉴定21种，优势种为*Atlantoraja cyclophora*、*Psammopatis extenta*、*P. rutrum*、*Rioraja agassizii*和*Rhizoprionodon lalandii*，幼鱼占比高。估算*A. cyclophora*雌、雄L50分别为38 cm和37.2 cm，*R. agassizii*为29.2 cm和25.4 cm，*R. lalandii*雄鱼为59.5 cm；Arhynchobatidae雌鱼全年可见含卵或卵黄发生个体，提示全年繁殖活动。研究强调该内大陆架水域对板鳃类具有重要生态作用，需加强保护。",
+   "summary_en": false,
+   "url": "https://doi.org/10.1007/s10641-026-01935-4",
+   "tags": {
+    "theme": [
+     "conserv",
+     "gear",
+     "econ"
+    ],
+    "species": [
+     "carchar"
+    ],
+    "region": [
+     "southam"
+    ],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.61336/cjmr.1604.52",
+   "title": "Examining Green HRM Practices towards Sustainability and Circular Economy Using Fuzzy AHP: A Case",
+   "authors": "Kumar, Lalit",
+   "journal": "Canadian Journal of Marketing Research",
+   "date": "2026-11-24",
+   "summary": "针对绿色人力资源管理（Green HRM）实践对可持续性与循环经济（CE）的相对重要性难以在不确定性下评估的问题，构建基于模糊层次分析法（Fuzzy AHP）的多准则决策框架，以Dayal Fertilizers（Meerut）50名中层管理人员的两两比较数据，将12项HR可持续性参数组织为层级模型并用三角模糊数评价。结果显示，培训与意识、可持续招聘和激励机制是推动循环经济实施最有力的驱动因素，而安全保障与研究整合有待改进。",
+   "summary_en": false,
+   "url": "https://doi.org/10.61336/cjmr.1604.52",
+   "tags": {
+    "theme": [
+     "misc"
+    ],
+    "species": [],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.1080/02724634.2026.2744129",
+   "title": "First record of the batfish † Eoplatax (Acanthomorpha: ?Ephippidae) from the Eocene (Lutetian) of Pakistan, with comments on the ephippid fossil record and the distribution of Paleogene marine fishes",
+   "authors": "Saad, Hadeel; Gingerich, Philip; Friedman, Matt",
+   "journal": "Journal of Vertebrate Paleontology",
+   "date": "2026-11-24",
+   "summary": "",
+   "summary_en": true,
+   "url": "https://doi.org/10.1080/02724634.2026.2744129",
+   "tags": {
+    "theme": [
+     "misc"
+    ],
+    "species": [],
+    "region": [
+     "india"
+    ],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
   {
    "doi": "10.1111/eff.70054",
    "title": "Evaluating Fish Assemblage Turnover in Relation to Hydrologic Extremes Across the United States",

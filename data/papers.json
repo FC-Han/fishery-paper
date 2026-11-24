@@ -1,8 +1,280 @@
 {
-  "last_updated": "2026-11-24T01:11:32Z",
-  "total_papers": 317,
-  "new_today": 0,
+  "last_updated": "2026-11-24T19:17:48Z",
+  "total_papers": 328,
+  "new_today": 11,
   "papers": [
+    {
+      "doi": "10.18176/jiaci.1220",
+      "title": "Anaphylaxis From Inhaled Maggot and Wax Moth Larvae Fishing Bait in a Recreational Angler Previously Diagnosed With Fish Contact Allergy: IgE Profile and Tested Alternatives",
+      "authors": "Cimbollek, Stefan; Menéndez-Rivero, Estela; de Aramburu Mera, Teresa; Reguero Capilla, Marta; Pineda de la Losa, Fernando; Santano Guillén, Elena; Martínez Martínez, María José; Galán Díez, Tania",
+      "journal": "Journal of Investigational Allergology and Clinical Immunology",
+      "date": "2026-11-24",
+      "abstract": "",
+      "summary_cn": "",
+      "url": "https://doi.org/10.18176/jiaci.1220",
+      "source": "crossref",
+      "keywords_matched": "fish population",
+      "tags": {
+        "theme": [
+          "misc"
+        ],
+        "species": [],
+        "region": [],
+        "method": []
+      },
+      "is_review": false,
+      "high_impact": false,
+      "off_topic": false
+    },
+    {
+      "doi": "10.1186/s12915-026-02798-y",
+      "title": "Integrated paternal genome governs sex-specific fertility in synthetic allopolyploid fish",
+      "authors": "Lu, Meng; Zhang, Qin-Can; Zhu, Zi-Yu; Wang, Yang; Wang, Zhong-Wei; Li, Xi-Yin; Li, Zhi; Hu, Zhen; Yu, Peng; Zhang, Xiao-Juan",
+      "journal": "BMC Biology",
+      "date": "2026-11-24",
+      "abstract": "",
+      "summary_cn": "",
+      "url": "https://doi.org/10.1186/s12915-026-02798-y",
+      "source": "crossref",
+      "keywords_matched": "fish population",
+      "tags": {
+        "theme": [
+          "misc"
+        ],
+        "species": [],
+        "region": [],
+        "method": []
+      },
+      "is_review": false,
+      "high_impact": false,
+      "off_topic": false
+    },
+    {
+      "doi": "10.1177/02611929261507293",
+      "title": "Bioaccessibility of leached heavy metals from plastic particles in the gastrointestinal tract of fish and its associated health risks: An in vitro assessment",
+      "authors": "Bwala, Mathias Nzitiri; Gaya, Abalis Ezra; Nayaya, Ahmad Jibrin; Buba, Toma",
+      "journal": "Alternatives to Laboratory Animals",
+      "date": "2026-11-24",
+      "abstract": "Micro-sized and nano-sized plastic particles (MNPs) are ubiquitous in aquatic environments. Fish may mistake them for food or ingest them accidentally during filter feeding. Some MNPs contain heavy metals that, when ingested, can subsequently leach into the digestive tract of the fish, posing health risks to the fish themselves and to animals higher up the food chain, including humans. This study aimed to assess the bioaccessibility of heavy metals leached from MNPs by using an in chemico digestion model. Plastic pellets were crushed and sieved into micro-sized and nano-sized particles. The stomach and intestine of the fish were simulated in vitro to reproduce the digestion process, in order to evaluate leaching capacity, bioaccessibility and the potential human health risk of the heavy metals. The results indicate that heavy metals in the MNPs exhibited varying bioaccessibility (with As in vitro assay could be used to investigate the bioaccessibility of heavy metals and thus avoid the use of fish in in vivo testing.",
+      "summary_cn": "采用体外化学消化模型模拟鱼胃与肠道环境，评估微/纳米塑料颗粒（MNPs）中重金属的浸出能力与生物可给性（bioaccessibility）及潜在人体健康风险。结果显示不同重金属的生物可给性存在差异（如As等），该体外方法可替代活体鱼试验用于重金属生物可给性研究。",
+      "url": "https://doi.org/10.1177/02611929261507293",
+      "source": "crossref",
+      "keywords_matched": "fish population",
+      "tags": {
+        "theme": [
+          "pollution"
+        ],
+        "species": [],
+        "region": [],
+        "method": []
+      },
+      "is_review": false,
+      "high_impact": false,
+      "off_topic": false
+    },
+    {
+      "doi": "10.1007/s12011-026-05443-5",
+      "title": "Dietary Iron in Fish: Requirements, Metabolism, and Emerging Role of Nanotechnology in Aquaculture",
+      "authors": "Naz, Sana; Khan, Mukhtar Ahmad",
+      "journal": "Biological Trace Element Research",
+      "date": "2026-11-24",
+      "abstract": "",
+      "summary_cn": "",
+      "url": "https://doi.org/10.1007/s12011-026-05443-5",
+      "source": "crossref",
+      "keywords_matched": "fish population",
+      "tags": {
+        "theme": [
+          "aqua",
+          "bio",
+          "nutri"
+        ],
+        "species": [],
+        "region": [],
+        "method": []
+      },
+      "is_review": false,
+      "high_impact": false,
+      "off_topic": false
+    },
+    {
+      "doi": "10.12982/cmjs.2026.113",
+      "title": "Simultaneous Nutrient Removal and Reduction in Microcystis aeruginosa Abundance in Aquaculture Wastewater During Co-cultivation with Saccharomyces cerevisiae NM2",
+      "authors": "Nguyen, Anh Thao; Dang, Thi Mai Anh; Nguyen, Minh Thu; Le, Minh Vu; Nguyen, Sy Nguyen; Duong, Thi Thuy; Nguyen, Phuong Nhue",
+      "journal": "Chiang Mai Journal of Science",
+      "date": "2026-11-24",
+      "abstract": "Intensive aquaculture systems are frequently affected by nutrient accumulation and harmful cyanobacterial blooms, creating a need for biological approaches capable of addressing both issues simultaneously. This study investigated the performance of the halotolerant yeast Saccharomyces cerevisiae NM2 for concurrent nutrient removal and the population response of Microcystis aeruginosa NA during co-cultivation in aquaculture wastewater at a salinity of 1.5%. In monoculture, S. cerevisiae NM2 achieved chemical oxygen demand (COD) removal efficiencies of 87.34-91.35% at initial COD concentrations of 100-750 mg/L within 24 h. Total nitrogen (TN) and total phosphorus (TP) removal efficiencies reached 64.12-71.21% and 96.80-97.68%, respectively, resulting in residual TP concentrations below 0.35 mg/L. In co-culture with M. aeruginosa NA, cyanobacterial abundance decreased by 86.3-97.6% over the 24-h experimental period. COD and TP removal efficiencies under co-culture conditions remained high, ranging from 91.08% to 93.94% and exceeding 97%, respectively, while TN removal efficiencies ranged from 50.41% to 70.40%. The mechanism underlying the decline in M. aeruginosa NA abundance was not resolved by the present experimental design and may involve nutrient-mediated effects, direct inhibitory activity, or other microbial interactions. These findings demonstrate effective nutrient removal by S. cerevisiae NM2 accompanied by a marked decrease in M. aeruginosa NA abundance under the tested co-culture conditions.",
+      "summary_cn": "耐盐酵母Saccharomyces cerevisiae NM2在1.5%盐度养殖废水中24 h内对COD去除率达87.34–91.35%（初始COD 100–750 mg/L），TN和TP去除率分别为64.12–71.21%和96.80–97.68%，出水TP低于0.35 mg/L。与铜绿微囊藻NA共培养时，藻丰度下降86.3–97.6%，同时COD去除率保持91.08–93.94%、TP去除率超过97%、TN去除率50.41–70.40%。藻丰度下降机制尚未明确，可能涉及营养竞争、直接抑制或其他微生物相互作用。",
+      "url": "https://doi.org/10.12982/cmjs.2026.113",
+      "source": "crossref",
+      "keywords_matched": "aquaculture",
+      "tags": {
+        "theme": [
+          "aqua",
+          "pollution",
+          "disease"
+        ],
+        "species": [],
+        "region": [],
+        "method": []
+      },
+      "is_review": false,
+      "high_impact": false,
+      "off_topic": false
+    },
+    {
+      "doi": "10.1111/raq.70232",
+      "title": "Antiviral Signaling and Innate Immune Networks in Penaeid Shrimp: WSSV -Centered Evidence and Aquaculture Health Management",
+      "authors": "Guo, Shengtao; Liu, Hongtao; Yang, Linwei; Zhang, Rusong; Zhang, Kai; Zhang, Xinhui; Bian, Chao; Shi, Qiong",
+      "journal": "Reviews in Aquaculture",
+      "date": "2026-11-24",
+      "abstract": "ABSTRACT Viral disease constrains penaeid shrimp aquaculture by destabilizing production, animal welfare and aquatic food-system resilience. White spot syndrome virus (WSSV)-penaeid shrimp models provide the strongest mechanistic evidence for antiviral immunity, but they cannot serve as universal proxies for RNA viruses, decapod iridescent virus 1 (DIV1), crayfish, crabs or freshwater prawns. This review treats crustacean antiviral immunity as an evidence-weighted network rather than a catalog of immune genes, distinguishing study-level evidence for host defense from the separate maturity of proposed aquaculture applications. We integrate Toll/immune deficiency (IMD)-nuclear factor kappa B (NF-κB), stimulator of interferon genes (STING)-interferon regulatory factor (IRF)-Vago-Janus kinase/signal transducer and activator of transcription (JAK/STAT), RNA interference (RNAi), recognition-entry duality, cellular clearance, antimicrobial peptides, and prophenoloxidase (proPO)-linked defense into interacting signaling and innate immune networks. The central conclusion is that pathway biology becomes useful for practical aquaculture when it yields molecular markers and management interventions for validation against diseases and production outcomes rather than simply stronger immune activation.",
+      "summary_cn": "以WSSV-对虾模型为主要证据，将Toll/IMD–NF-κB、STING–IRF–Vago–JAK/STAT、RNAi、识别-入侵双重性、细胞清除、抗菌肽及proPO相关防御整合为相互作用的抗病毒信号与先天免疫网络，并按证据权重区分宿主防御机制与水产养殖应用成熟度。指出WSSV模型不能作为RNA病毒、DIV1、螯虾、蟹或淡水虾的通用替代。核心结论是：通路生物学只有产出可针对不同疾病和生产结果验证的分子标记与管理干预，才对实际养殖有用，而非仅追求更强的免疫激活。",
+      "url": "https://doi.org/10.1111/raq.70232",
+      "source": "crossref",
+      "keywords_matched": "aquaculture",
+      "tags": {
+        "theme": [
+          "disease",
+          "aqua"
+        ],
+        "species": [
+          "shrimp"
+        ],
+        "region": [],
+        "method": []
+      },
+      "is_review": false,
+      "high_impact": false,
+      "off_topic": false
+    },
+    {
+      "doi": "10.3390/hydrobiology5040049",
+      "title": "Macroinvertebrate and Fish Assemblages in Drainage Ditches and Adjacent Rivers of the Syr Darya River Basin (Central Asia: Kazakhstan)",
+      "authors": "Kobeshova, Zhansaya Bayzhighitovna; Mamilov, Nadir Shamilevich; Koshkimbayev, Karshyga Sarsenbaevich; Khassengazieva, Gulnur Kuanyshkyzy; Amirbekova, Fariza Talgatovna; Ibrayeva, Gulmira Sayfullaevna; Sharakhmetov, Sayat Ermukhanbetovich; Mazhibayeva, Zhanara Omirbekovna; Assylbek, Ayan Makhmutovich",
+      "journal": "Hydrobiology",
+      "date": "2026-11-24",
+      "abstract": "This study examined the contribution of drainage and collector ditches in the Syr Darya River basin to local and regional aquatic biodiversity by comparing fish and macroinvertebrate assemblages in these anthropogenic habitats with those in adjacent natural river sections. Assemblages were analyzed in relation to eight abiotic environmental variables, with particular attention to blackflies and fish. Ditches differed from adjacent river habitats in several environmental characteristics, most notably lower summer water temperatures and reduced turbidity, and supported distinct aquatic assemblages. Of the 46 animal taxa recorded, 11 were restricted to ditches, indicating that these habitats contributed a distinct component to regional biodiversity. Drainage and collector ditches also provided suitable habitats for Simuliidae larvae and supported local blackfly populations. In contrast, fish assemblages in both ditch types were dominated by non-native species, potentially reflecting environmental filtering and repeated immigration from established populations. Although ditches exhibited lower species richness than adjacent river sections, they supported several species not recorded in natural river habitats. Thus, anthropogenic ditches cannot replace natural rivers but may increase habitat heterogeneity and contribute to biodiversity conservation in highly modified landscapes. Extensive networks of irrigation canals and drainage collectors have been established throughout much of the Syr Darya River basin, substantially modifying natural freshwater habitats. This study investigated the contribution of two types of anthropogenic ditches-drainage and collector ditches-to local and regional fish and macroinvertebrate diversity by comparing their assemblages with those of adjacent natural river sections. The diversity and distribution of macroinvertebrates and fish were examined in relation to eight abiotic environmental variables, with particular attention to blackflies (Diptera: Simuliidae) and fish as ecologically and socioeconomically important components of regional aquatic ecosystems. Drainage and collector ditches differed from adjacent river habitats in several environmental characteristics, most notably lower summer water temperatures and reduced turbidity. These conditions were associated with distinct aquatic assemblages in the ditches. Of the 46 animal taxa recorded, 11 were restricted to ditches, indicating that these anthropogenic habitats supported a distinct ditch-associated component of the regional fauna. Drainage and collector ditches also provided suitable habitats for Simuliidae larvae and supported local blackfly populations. In contrast, fish assemblages in both types of ditches were dominated by non-native species. The occurrence and distribution of non-native fishes may reflect a combination of environmental filtering and repeated immigration from established populations, although the relative contribution of these mechanisms remains to be determined. Overall, the ditches exhibited lower species richness than adjacent river sections but contributed to regional biodiversity by supporting several species that were not recorded in natural river habitats. Thus, although anthropogenic ditches cannot be considered substitutes for natural river ecosystems, they increase habitat heterogeneity and provide additional aquatic habitats within highly modified landscapes. Their ecological significance should therefore be assessed not only in terms of species richness but also with regard to the composition, origin, ecological roles, and conservation status of the species they support.",
+      "summary_cn": "在锡尔河流域，排水沟与集水沟同邻近天然河段相比，夏季水温更低、浊度更低，承载了不同的鱼类与大型无脊椎动物群落；记录的46个动物分类单元中有11个仅见于沟渠，沟渠还为蚋科（Simuliidae）幼虫提供了适宜生境。两类沟渠的鱼类群落均以非本地种为主，可能反映环境过滤与已建立种群的反复迁入。沟渠物种丰富度低于邻近河段，但支持了天然河流中未记录的物种，因而不能替代自然河流，却可提高生境异质性并在高度改造景观中补充水生生物多样性。",
+      "url": "https://doi.org/10.3390/hydrobiology5040049",
+      "source": "crossref",
+      "keywords_matched": "fish ecology",
+      "tags": {
+        "theme": [
+          "eco"
+        ],
+        "species": [],
+        "region": [
+          "freshwater"
+        ],
+        "method": []
+      },
+      "is_review": false,
+      "high_impact": false,
+      "off_topic": false
+    },
+    {
+      "doi": "10.70963/jm.v3i2.1073",
+      "title": "Analysis Of The Added Value Of Baby Fish Nilem Crispy Products In Baby Fish MSMES Mr. O In Rancapaku Village, Tasikmalaya Regency",
+      "authors": "Fitriani, Dhean Nova; Heryadi, H. D Yadi; Jakiyah, Ulpah",
+      "journal": "Jurnal Multidisiplin",
+      "date": "2026-11-24",
+      "abstract": "Downstream processing activities are a strategic sector that increases the added value of fishery products and supports regional economic growth. One product with development potential is crispy nilem baby fish, which represents a strategic effort to increase the economic value of bycatch and address the fish’s tendency to spoil easily. This activity is carried out, among other places, by the Baby Fish Mr.O MSME in Rancapaku Village, Tasikmalaya Regency. This study assessed the value added generated from processing of crispy nilem baby fish in MSMEs Baby Fish Mr.O in one production. The type of research used in this study is quantitative data with a case study approach. The data collection technique is through interviews with tools in the form of questionnaires and observations. Data is obtained from primary and secondary data. The sample extraction technique is carried out by the purposive sampling method. The data analysis in this study uses the Hayami method. The results of the study show that based on the analysis of the Hayami method, the added value of processing crispy nilem baby fish in Baby Fish Mr.O MSMEs is IDR 234,798 per kilogram of raw materials with an added value ratio of 78.27%. The added value of this product is in the high category",
+      "summary_cn": "以Tasikmalaya县Rancapaku村Baby Fish Mr.O微小型企业为案例，采用Hayami法核算脆炸尼罗小杂鱼（crispy nilem baby fish）加工环节的附加值。结果显示，每公斤原料可产生附加值234,798印尼盾，附加值率达78.27%，属高附加值类别。该加工方式可提升副渔获物经济价值并缓解小杂鱼易腐问题。",
+      "url": "https://doi.org/10.70963/jm.v3i2.1073",
+      "source": "crossref",
+      "keywords_matched": "fish ecology",
+      "tags": {
+        "theme": [
+          "process"
+        ],
+        "species": [],
+        "region": [],
+        "method": [
+          "survey"
+        ]
+      },
+      "is_review": false,
+      "high_impact": false,
+      "off_topic": false
+    },
+    {
+      "doi": "10.1007/s10641-026-01935-4",
+      "title": "Revealing the elasmobranch diversity off the southern coast of Rio de Janeiro (22°55′S-23°27′S), an ecologically important area for conservation in the Western South Atlantic",
+      "authors": "Santos, Sérgio Ricardo; Pereira, Camila Ferreira; Julio, Tainá Guimarães; Maciel, Thaís Rodrigues; Hauser-Davis, Rachel Ann; Vianna, Marcelo",
+      "journal": "Environmental Biology of Fishes",
+      "date": "2026-11-24",
+      "abstract": "Abstract Elasmobranchs are key components of marine trophic webs, functioning as top and mesopredators, but they are under considerable pressure from fishing activities and environmental degradation. Although the region was among the first Brazilian areas to be settled, the sharks and rays off the southern coast of Rio de Janeiro remain poorly known. This study aimed to assess the diversity of demersal elasmobranchs in a potentially relevant region of southeastern Brazil and to investigate the reproductive aspects of the most abundant species. Fourteen campaigns were carried out along the ocean side of Grande Island and the mouth of the Ilha Grande Bay using trawls and bottom longlines, between January 2006 and August 2007. The observed diversity was supplemented by a comprehensive literature review and recent records from citizen science databases. Twenty-one species were identified, with the most abundant comprising Atlantoraja cyclophora , Psammobatis extenta , Psammobatis rutrum , Rioraja agassizii , and Rhizoprionodon lalandii , with a substantial presence of juveniles. The L 50 values for A. cyclophora were 38 cm for females and 37.2 cm for males, 29.2 cm for females and 25.4 cm for males for R. agassizii , and 59.5 cm for male R. lalandii specimens. Results suggested a year-round reproductive activity for Arhynchobatidae, as females with eggs in the uterus or displaying vitellogenic activity were captured throughout the entire study period. The study highlights the need for conservation efforts in the region’s inner coastal shelf waters, given their potentially significant ecological role for elasmobranchs.",
+      "summary_cn": "2006年1月至2007年8月在里约热内卢南部Grande岛外海及Ilha Grande湾口开展14次拖网与底层延绳钓调查，并结合文献综述和公民科学数据库记录，评估该区域底栖板鳃类多样性及优势种繁殖特征。共鉴定21种，优势种为*Atlantoraja cyclophora*、*Psammopatis extenta*、*P. rutrum*、*Rioraja agassizii*和*Rhizoprionodon lalandii*，幼鱼占比高。估算*A. cyclophora*雌、雄L50分别为38 cm和37.2 cm，*R. agassizii*为29.2 cm和25.4 cm，*R. lalandii*雄鱼为59.5 cm；Arhynchobatidae雌鱼全年可见含卵或卵黄发生个体，提示全年繁殖活动。研究强调该内大陆架水域对板鳃类具有重要生态作用，需加强保护。",
+      "url": "https://doi.org/10.1007/s10641-026-01935-4",
+      "source": "crossref",
+      "keywords_matched": "fish conservation",
+      "tags": {
+        "theme": [
+          "conserv",
+          "gear",
+          "econ"
+        ],
+        "species": [
+          "carchar"
+        ],
+        "region": [
+          "southam"
+        ],
+        "method": []
+      },
+      "is_review": false,
+      "high_impact": false,
+      "off_topic": false
+    },
+    {
+      "doi": "10.61336/cjmr.1604.52",
+      "title": "Examining Green HRM Practices towards Sustainability and Circular Economy Using Fuzzy AHP: A Case",
+      "authors": "Kumar, Lalit",
+      "journal": "Canadian Journal of Marketing Research",
+      "date": "2026-11-24",
+      "abstract": "Abstract: The transition from a linear “take-make-dispose” model to a circular economy (CE) requires organizations to integrate sustainability principles into human resource management (HRM). Green HRM practices-such as sustainable recruitment, environmental training, green performance appraisal and employee engagement-play a critical role in embedding environmental responsibility into organizational culture. However, evaluating the relative importance of multiple HR parameters influencing sustainability remains complex due to uncertainty and subjective judgments. This study proposes a Fuzzy Analytic Hierarchy Process (Fuzzy AHP)-based multi-criteria decision-making framework to prioritize Green HRM practices contributing to sustainability and circular economy adoption. Data were collected from 50 middle-management employees of Dayal Fertilizers, Meerut. Twelve HR-related sustainability parameters were structured into a hierarchical decision model and evaluated using pairwise comparisons with triangular fuzzy numbers. Results indicate that training and awareness, sustainable recruitment and incentive mechanisms are the most influential drivers of circular economy implementation, while safety assurance and research integration require improvement. The study contributes a quantitative prioritization framework for managers and extends the application of FAHP to Green HRM evaluation.",
+      "summary_cn": "针对绿色人力资源管理（Green HRM）实践对可持续性与循环经济（CE）的相对重要性难以在不确定性下评估的问题，构建基于模糊层次分析法（Fuzzy AHP）的多准则决策框架，以Dayal Fertilizers（Meerut）50名中层管理人员的两两比较数据，将12项HR可持续性参数组织为层级模型并用三角模糊数评价。结果显示，培训与意识、可持续招聘和激励机制是推动循环经济实施最有力的驱动因素，而安全保障与研究整合有待改进。",
+      "url": "https://doi.org/10.61336/cjmr.1604.52",
+      "source": "crossref",
+      "keywords_matched": "seafood sustainability",
+      "tags": {
+        "theme": [
+          "misc"
+        ],
+        "species": [],
+        "region": [],
+        "method": []
+      },
+      "is_review": false,
+      "high_impact": false,
+      "off_topic": false
+    },
+    {
+      "doi": "10.1080/02724634.2026.2744129",
+      "title": "First record of the batfish † Eoplatax (Acanthomorpha: ?Ephippidae) from the Eocene (Lutetian) of Pakistan, with comments on the ephippid fossil record and the distribution of Paleogene marine fishes",
+      "authors": "Saad, Hadeel; Gingerich, Philip; Friedman, Matt",
+      "journal": "Journal of Vertebrate Paleontology",
+      "date": "2026-11-24",
+      "abstract": "",
+      "summary_cn": "",
+      "url": "https://doi.org/10.1080/02724634.2026.2744129",
+      "source": "crossref",
+      "keywords_matched": "marine aquaculture",
+      "tags": {
+        "theme": [
+          "misc"
+        ],
+        "species": [],
+        "region": [
+          "india"
+        ],
+        "method": []
+      },
+      "is_review": false,
+      "high_impact": false,
+      "off_topic": false
+    },
     {
       "doi": "10.1111/eff.70054",
       "title": "Evaluating Fish Assemblage Turnover in Relation to Hydrologic Extremes Across the United States",
