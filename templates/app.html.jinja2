@@ -616,12 +616,12 @@ main{min-width:0}
     </article>`;
   }
 
-  let ABS = null, absPromise = null;
+  let ABS = null, absPromise = null, ABS_FAILED = false;
   function loadAbs(){
     if (absPromise) return absPromise;
     absPromise = fetch('data/abstracts.json')
-      .then(r => r.ok ? r.json() : {})
-      .catch(() => null)
+      .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .catch(() => { ABS_FAILED = true; return null; })
       .then(j => { ABS = j || {}; return ABS; });
     return absPromise;
   }
@@ -755,7 +755,9 @@ main{min-width:0}
         if (local){ box.textContent = local; box.dataset.filled = '1'; }
         else loadAbs().then(map => {
           const txt = (map && map[doi]) || '';
-          box.innerHTML = txt ? esc(txt) : '<span class="abs-loading">暂无英文摘要（出版商未提供）</span>';
+          box.innerHTML = ABS_FAILED
+            ? '<span class="abs-loading">摘要文件未能加载：请通过 HTTP 访问（cd docs && python -m http.server）</span>'
+            : (txt ? esc(txt) : '<span class="abs-loading">暂无英文摘要（出版商未提供）</span>');
           box.dataset.filled = '1';
         });
       }
