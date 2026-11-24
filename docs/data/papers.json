@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-24T00:58:43Z",
+ "generated_at": "2026-11-24T01:06:44Z",
  "count": 310,
  "lexicon": [
   {
@@ -516,8 +516,8 @@
    "authors": "Siregar, Afri Yudatama; Supriyanto, Agus; Beami, Waroka; Bakhtiar, Arfan; Ulkhaq, Muhammad Mujiya; Nawipa, Olinda; Noor, Huriyatul Fitriyah; Rahardyandini, Meiliana",
    "journal": "F1000Research",
    "date": "2026-11-23",
-   "summary": "* Fishery products are prone to quality deterioration during post-harvest handling and distribution. Therefore, the development of a sustainable cold chain requires the integration of facility planning, distribution effi…",
-   "summary_en": true,
+   "summary": "针对渔获后处理与流通环节的品质劣变问题，通过Scopus数据库系统检索（PRISMA 2020，初检396条，最终纳入12篇文献做定性主题综合），梳理渔业冷链可持续规划中设施选址-分配、沿海空间生态规划、设施可达性与社会经济韧性、碳追溯与问责四条主线。结果显示技术、生态与社会路径互补，但尚未有文献将其整合为统一的渔业冷链规划模型。据此提出“沿海冷链整合三元框架”（Coastal Cold Chain Integration Triad Framework），耦合空间生态适宜性、设施选址-分配优化与社会生态韧性及供应链完整性，为后续实证检验提供概念基础。",
+   "summary_en": false,
    "url": "https://doi.org/10.12688/f1000research.194150.1",
    "tags": {
     "theme": [
@@ -536,8 +536,8 @@
    "authors": "Karyaningsih, Dentik; Susandi, Diki; Anharudin, Anharudin; Fernando, Donny; Sugiyarta, Ahmad; Hadi, Irfan",
    "journal": "Jurnal ELTIKOM : Jurnal Teknik Elektro, Teknologi Informasi dan Komputer",
    "date": "2026-11-23",
-   "summary": "Current government aid programs in the fisheries sector often rely on reactive and uniform approaches, which may result in inefficient resource allocation.",
-   "summary_en": true,
+   "summary": "研究基于印尼万丹省Lebak县综合渔业报告应用数据（625条养殖户记录、437条渔民记录，覆盖28个街道），构建双模型机器学习框架以支持更精准的渔业援助分配：用Random Forest将捕捞渔民脆弱性分为低、中、高三类，用Gradient Boosting Machine（GBM）回归预测养殖户存活率作为成功潜力代理指标。优化后Random Forest加权F1为0.8862（中风险召回率0.9268、高风险0.8889），GBM测试集R²为0.7585、RMSE为6.0033，显示该框架可为风险识别与援助优先级评分提供定量支持。作者指出结果仅限单县数据、未经实地实施或政策干预验证，应视为经实证评估的决策支持方法而非完全验证的政策工具。",
+   "summary_en": false,
    "url": "https://doi.org/10.31961/eltikom.v10i2.2125",
    "tags": {
     "theme": [
@@ -560,8 +560,8 @@
    "authors": "Da, Chau Thi; Lan, Thai Huynh Phuong; Tam, Nguyen Thanh; Berg, Hakan",
    "journal": "Animals",
    "date": "2026-11-23",
-   "summary": "The Mekong Delta of Vietnam is one of Southeast Asia’s most important food-producing regions, supporting intensive rice cultivation, globally significant aquaculture, and diverse inland and rice-field fisheries that cont…",
-   "summary_en": true,
+   "summary": "越南湄公河三角洲稻田渔业与水生动物生产正从水文连通的多物种体系转向专业化水稻与水产养殖体系：内陆野生鱼捕捞量由1995年约16.5万吨降至2024年3万吨，水产养殖产量由约7.8万吨增至65万吨（逾8倍），稻米产量由350万吨增至760万吨。污染压力包括营养盐与有机富集、农药、药物、生活与工业废水、微塑料及酸性硫酸盐土排水，但渔业衰退不能仅归因于污染，水坝开发、洄游阻隔、捕捞压力、生境破碎化、洪泛脉冲改变与泥沙亏缺在多时空尺度交互作用。越南虽已建立较全面的渔业、环境、水资源、区域规划与气候适应政策框架，但实施仍呈碎片化；优先行动包括流域到田块一体化监测、累积风险评估、源头污染预防、排放管控、恢复季节性洪泛连通性、保护水生庇护所、社区共管及因地制宜推广浮稻、稻鱼与稻虾系统。",
+   "summary_en": false,
    "url": "https://doi.org/10.3390/ani16233721",
    "tags": {
     "theme": [
@@ -585,8 +585,8 @@
    "authors": "Weber, D. Nick; Monroe, Alison A.; Fields, Andrew T.; Swift, Dominic G.; Anderson, Eric C.; Hollenbeck, Christopher M.; Chagaris, David D.; Patterson, William F.; Portnoy, David S.",
    "journal": "Journal of Fish Biology",
    "date": "2026-11-23",
-   "summary": "Traditional fisheries stock assessments incorporate life history data (e.g., mortality, growth, maturity), indices of abundance, and catch data into models to determine stock status and estimate biological reference poin…",
-   "summary_en": true,
+   "summary": "传统渔业资源评估依赖生活史参数、丰度指数与渔获数据，但这类数据获取的准确性与时效性常受限。从非致死取样组织（如鳍条）提取DNA，可用于监测种群结构与连通性、估算绝对丰度、判定渔获或抛弃物的年龄组成及性比。将下一代基因组数据整合进 stock assessment，有望以标准化、微创且相对低成本的方式提升评估的准确性与效率，支撑海洋资源的可持续利用。",
+   "summary_en": false,
    "url": "https://doi.org/10.1111/jfb.70743",
    "tags": {
     "theme": [
@@ -608,8 +608,8 @@
    "authors": "Şimşek, Emrah",
    "journal": "Ocean Science Journal",
    "date": "2026-11-23",
-   "summary": "",
-   "summary_en": true,
+   "summary": "该研究比较拖网选择性研究与土耳其渔业法规，考察科学证据向管理政策的转化过程。无摘要，仅据标题判断其聚焦科学—政策接口（science-policy interface）在渔业管理中的运作。",
+   "summary_en": false,
    "url": "https://doi.org/10.1007/s12601-026-00319-0",
    "tags": {
     "theme": [
@@ -630,8 +630,8 @@
    "authors": "Tambunan, Rupianna; Fauzi, Muchamad Rizky; Sofa, Irma; Muamanah; Nurjanah, Siti",
    "journal": "Jurnal Pengabdian Masyarakat",
    "date": "2026-11-23",
-   "summary": "Purpose: This community engagement activity aimed to introduce Smart Costing based on Activity-Based Costing (ABC) to the Fish-Processing MSME Group in Domas Village, Pontang District, Serang Regency, and to improve part…",
-   "summary_en": true,
+   "summary": "面向Domas村（Serang县Pontang区）鱼糜加工MSME群体开展基于作业成本法（ABC）的\"Smart Costing\"培训，内容涵盖财务记录与生产成本核算的讲解及实操练习。活动于2026年10月22日实施，采用定性评估，缺少前后测分数与参与人数等定量记录，因此理解程度变化幅度无法量化。参与者初步接触了更结构化的成本核算方法，后续计划通过持续辅导推动财务记录规范化和成本核算的日常应用。",
+   "summary_en": false,
    "url": "https://doi.org/10.32815/jpm.v7i2.3170",
    "tags": {
     "theme": [
@@ -650,8 +650,8 @@
    "authors": "Li, Wu-Xin; Sun, Chun-Yan; Chen, Li-Xue; Chen, Rong; Fu, Shi-Jian; Zeng, Ling-Qing",
    "journal": "Fisheries Science",
    "date": "2026-11-23",
-   "summary": "",
-   "summary_en": true,
+   "summary": "仅凭标题可知，该研究以某种社会性鱼类为对象，比较社会剥夺与社会恢复两种经历对生长、个性、应激及免疫的影响，并考察食物可获得性在其中的调节作用。",
+   "summary_en": false,
    "url": "https://doi.org/10.1007/s12562-026-02044-y",
    "tags": {
     "theme": [
@@ -670,8 +670,8 @@
    "authors": "Taque, Manuel; Greco, Roberto; Macarringue, Lucrêncio Silvestre; Cossa, Isabel; Ribeiro, Maria Carolina Hernandez; Siegle, Eduardo; Silva, Ana Caroline Moura da; Freitas, Anderson Zanardi de; Ferreira, Anderson Targino da Silva; Wetter, Niklaus Ursus",
    "journal": "Microplastics",
    "date": "2026-11-23",
-   "summary": "Contaminants in commercially important fish provide relevant information on environmental exposure in coastal urban systems.",
-   "summary_en": true,
+   "summary": "对巴西桑托斯与莫桑比克马普托市售白姑鱼（Micropogonias furnieri）和竹荚鱼（Trachurus trachurus）胃肠道内容物，以显微观察结合µ-Raman光谱（68次光谱采集、124个组分归属）、频率分析和对应分析，考察污染物组成及其与市场类别、社会经济特征的关联。检出组分包括碳质材料、合成聚合物、纤维素类、颜料和染料等，碳与石墨最常见，合成聚合物中以PET和聚酯类为主，两地区光谱出现模式相近。卡方检验未发现材料出现与市场类别或社会经济特征存在显著依赖，但调整标准化残差与对应分析提示局部关联，属探索性结果；胃肠道检出仅反映环境暴露，不能证明可食肌肉污染或人群膳食风险。",
+   "summary_en": false,
    "url": "https://doi.org/10.3390/microplastics5040238",
    "tags": {
     "theme": [
@@ -694,8 +694,8 @@
    "authors": "Haider, Muhammad Zeshan; Iqbal, Khalid Javed; Bilal Malik, Hafiz Muhammad; Atta, Ayesha; Majeed, Hamid; Iqbal, Khalid Jamshed; Ishaq, Muhammad; Abaid-Ullah, Muhammad",
    "journal": "Aquaculture Science and Management",
    "date": "2026-11-23",
-   "summary": "",
-   "summary_en": true,
+   "summary": "该研究比较了养殖与野生印度主要鲤科鱼类的品质及消费者接受度，并探讨其对水产养殖管理的启示；因无摘要，具体指标与结果不详。",
+   "summary_en": false,
    "url": "https://doi.org/10.1186/s44365-026-00051-9",
    "tags": {
     "theme": [
@@ -718,8 +718,8 @@
    "authors": "Precious, NWACHUKWU Ozoemena; Esther, KADIENE Uzoma; Samuel, EJOH Akpoyovware",
    "journal": "UTTAR PRADESH JOURNAL OF ZOOLOGY",
    "date": "2026-11-23",
-   "summary": "Aquaculture is central to aquatic-food supply, yet expansion can intensify pressures associated with feed ingredients, energy consumption, nutrient discharge, disease, biodiversity and unequal access to technology.",
-   "summary_en": true,
+   "summary": "综述评估循环水养殖、生物絮团、多营养层级综合养殖、精准传感与AI、替代饲料、分子健康工具及环境导向选址等技术在生物性能、资源核算、商业可行性、福利、环境效应与治理维度的表现，证据主要来自2015年至2026年9月的同行评审文献与权威机构报告。受控水处理、营养转化、选择育种和成熟疫苗接种方案的机制证据较强，但全产业链净效益不确定性大；循环水可减少取水并捕获尾水，却增加对电力与处理设施的依赖，生物絮团与提取性共养的营养保留效果取决于悬浮物、微生物稳定性、物种兼容性及系统边界。数字方法提升观测与预测能力，但农场尺度前瞻验证、可迁移性和独立成本效益评估仍有限，新型饲料原料可缓解鱼粉鱼油压力却未必降低土地利用、加工能耗或营养竞争。提出以生命周期影响、营养收支、健康福利、经济韧性与分配效应为维度的决策框架，强调可持续水产养殖应依赖情境化技术组合而非普适的“智能”方案排序。",
+   "summary_en": false,
    "url": "https://doi.org/10.56557/upjoz/2026/v47i225956",
    "tags": {
     "theme": [
@@ -740,8 +740,8 @@
    "authors": "Liansyah, Afry; Aldayanti, Dania; Setyawan, Fauzan Dwi; Nurhasanah; Antoro, Damas Dwi",
    "journal": "Jurnal Pengabdian Masyarakat",
    "date": "2026-11-23",
-   "summary": "Purpose: Rural Village-Owned Enterprises (BUMDes) operating aquaculture units often face severe financial vulnerabilities and loss of Village Native Income (PADes) due to recurring night-time fish poaching and asset thef…",
-   "summary_en": true,
+   "summary": "针对东楠榜BUMDes Marga Jaya养殖单元夜间盗鱼与资产失窃导致村级收入损失的问题，通过40天KKN-T项目开展参与式案例研究，实施社会化、技术审计、四名操作人员实操培训与SOP制度化四阶段介入。项目优化了网络配置、消除监控盲区、完成手机端应用培训并建立双周维护SOP，同时将离网UPS/太阳能方案纳入村级发展规划审议。优化后的实时CCTV与社区能力建设相结合实现零盗损事件，并强化了内部劳动纪律，为高校合作弥合农村企业数字鸿沟提供了可推广模式。",
+   "summary_en": false,
    "url": "https://doi.org/10.32815/jpm.v7i2.3098",
    "tags": {
     "theme": [
@@ -763,8 +763,8 @@
    "authors": "Terziev, Neven; Ürkü, Çiğdem",
    "journal": "Bulgarian One Health Journal",
    "date": "2026-11-23",
-   "summary": "The increasing demand for sustainable aquaculture has accelerated the search for probiotic microorganisms capable of improving fish health and reducing dependence on antibiotics.",
-   "summary_en": true,
+   "summary": "从循环水鱼菜共生系统（尼罗罗非鱼养殖）水样中经MALDI-TOF MS鉴定出4株细菌（Bacillus mycoides、B. marisflavi、B. thuringiensis、Lactococcus lactis），并评估其拮抗病原、溶血、药敏、生物膜形成、pH与胆盐耐受及胞外酶产生等益生潜力。B. thuringiensis表现最优：对Lactococcus garvieae抑菌圈达2.32±0.012 cm，对Aeromonas hydrophila和A. caviae无抑制作用；呈γ-溶血，除卡那霉素中度敏感外对所用抗生素均敏感，不形成生物膜，最适生长pH为5.0。",
+   "summary_en": false,
    "url": "https://doi.org/10.59496/20261ah5",
    "tags": {
     "theme": [
@@ -787,8 +787,8 @@
    "authors": "Deshpande, Paritosh C.; Ashaolu, Toluse Priscilla; Klingsheim, Karl",
    "journal": "Environmental Science & Technology",
    "date": "2026-11-23",
-   "summary": "Marine plastic pollution is an increasing environmental concern, yet aquaculture’s contribution remains poorly quantified despite its rapid expansion and reliance on plastic infrastructure.",
-   "summary_en": true,
+   "summary": "挪威海基大西洋鲑养殖塑料物质流分析显示，年海洋塑料流失约2737 t，相当于每吨鲑鱼产量1.2–1.7 kg，饲料管道、走道部件和消耗性绳索为主要泄漏源；年收集废弃塑料约37,400 t，其中42%焚烧回收能量、22%填埋，回收再利用率有限。研究基于设备制造商、供应商、运营商及废弃物管理方数据构建静态MFA，首次建立国家尺度定量基线，识别泄漏热点，为EPR和循环经济策略提供依据。",
+   "summary_en": false,
    "url": "https://doi.org/10.1021/acs.est.6c09109",
    "tags": {
     "theme": [
@@ -810,8 +810,8 @@
    "authors": "Wang, Mengjie; Yang, Tong; Bao, Ting; Li, Fengbo; Feng, Jinfei; Huang, Jianliang; Fang, Fuping",
    "journal": "Agronomy",
    "date": "2026-11-23",
-   "summary": "Aquaculture ponds are an important anthropogenic source of CH4, and rice-fish co-culture has been proposed as a mitigation strategy;",
-   "summary_en": true,
+   "summary": "稻鱼共作可降低养殖塘CH4排放，但不同水稻品种的减排效果及其形态性状基础尚不明确。两年田间试验比较6个水稻品种，发现共作较单养鱼塘减排24.2%–43.9%（2024）和25.1%–41.8%（2025），其中浙粳优1578两年均为最低排放品种。CH4累积排放与沉积物pmoA丰度及根系径向氧损失（ROL）负相关、与植株介导传输正相关；随机森林表明根数对pmoA丰度预测重要性最高，根重和根长与ROL正相关，分蘖数促进而根数和根重降低植株介导传输。根系发达、ROL高、分蘖适中的品种兼具强根际甲烷氧化和低植株传输，是低排放品种的关键形态特征。",
+   "summary_en": false,
    "url": "https://doi.org/10.3390/agronomy16232356",
    "tags": {
     "theme": [
@@ -830,8 +830,8 @@
    "authors": "Esperon, Bruna Muradás; Guerra Tenório, Bernardo; Poester, Vanice Rodrigues; Alarcão Bernardes, João Paulo Romualdo; Munhoz, Lívia Silveira; Bauer, Amanda; Gowert, Yan; Garcia, Alexandre Miranda; Rodrigues, Lucas; Virginia Marquez Marquez, Raquel",
    "journal": "Medical Mycology",
    "date": "2026-11-23",
-   "summary": "Sporothrix brasiliensis is an emerging zoonotic fungal pathogen that has transformed sporotrichosis in Brazil from a sapronotic ‘gardener’s disease’ into a major zoonotic epidemic in South America.",
-   "summary_en": true,
+   "summary": "对巴西南部沿海989尾鱼进行ITS宏条形码检测，67.3%的混合样本中检出与Sporothrix brasiliensis匹配的序列，并从部分样本中培养出活菌。基因组分型显示鱼源和鸟源分离株归属于巴西临床相关的S. brasiliensis谱系，提示水生—海岸界面可能参与该新兴人兽共患真菌病原体的生态循环与陆海溢出风险。",
+   "summary_en": false,
    "url": "https://doi.org/10.1093/mmy/myag132",
    "tags": {
     "theme": [
@@ -852,8 +852,8 @@
    "authors": "Yang, Fuwei; Xing, Qinwang; Ito, Shin-ichi; Zhou, Jinxin; Yu, Haiqing; Yu, Wei; Chen, Xinjun",
    "journal": "Reviews in Fish Biology and Fisheries",
    "date": "2026-11-23",
-   "summary": "",
-   "summary_en": true,
+   "summary": "基于卫星遥感的中尺度锋面数据可提升栖息地模型表现，并用于解释近十年尺度变异下柔鱼（neon flying squid）的分布与丰度变化。",
+   "summary_en": false,
    "url": "https://doi.org/10.1007/s11160-026-10116-6",
    "tags": {
     "theme": [
@@ -874,8 +874,8 @@
    "authors": "Abun, Abun; Haetami, Kiki; Mulki, Munir Alinu; Ramdhan, Rahmad Fani; Saefulhadjar, Deny; Rusmana, Denny",
    "journal": "Animals",
    "date": "2026-11-23",
-   "summary": "Fermented Pangasius by-products may replace conventional feed ingredients, but such substitutions alter several dietary nutrients simultaneously.",
-   "summary_en": true,
+   "summary": "用发酵巴沙鱼副产物提取物（0.5%–2.0%）配合糖棕淀粉部分替代豆粕和鱼粕，饲喂150只Hisex Brown蛋鸡60天，比较产蛋性能、蛋品质、蛋黄胆固醇、脂肪酸及血液指标。P3、P4组产蛋率（79.76%、80.36%）显著高于对照组P0（61.91%，p=0.0053），饲料转化率无显著差异；P4组蛋黄胆固醇（995.6 mg/100 g DM）低于P0（1384.1 mg/100 g DM）。由于替代同时改变多种日粮组分，结果仅反映全日粮关联，不能归因于单一成分效应或确定最佳添加水平。",
+   "summary_en": false,
    "url": "https://doi.org/10.3390/ani16233718",
    "tags": {
     "theme": [
@@ -897,8 +897,8 @@
    "authors": "Yu, Mengjie; Herrmann, Bent; Zhang, Hanfei; Tang, Yanli",
    "journal": "Reviews in Fish Biology and Fisheries",
    "date": "2026-11-23",
-   "summary": "",
-   "summary_en": true,
+   "summary": "可降解PLA刺网在中国黄海混合种类渔业中的渔获性能。",
+   "summary_en": false,
    "url": "https://doi.org/10.1007/s11160-026-10115-7",
    "tags": {
     "theme": [
@@ -920,8 +920,8 @@
    "authors": "Moore, Daniel M.; McNamara-Langton, Molly; Owen, Rachel",
    "journal": "Journal of Fish Biology",
    "date": "2026-11-23",
-   "summary": "The deep-sea catsharks in the genus Apristurus (Pentanchidae) constitute one of the most species-rich yet least resolved elasmobranch lineages.",
-   "summary_en": true,
+   "summary": "深海猫鲨属 Apristurus 是物种最丰富却分类最混乱的板鳃类之一，现生种43个、灭绝种3个。该属全球分布（不含极地和地中海），栖息深度约24–2652 m，形态上以头部背腹扁平和铲状吻部为特征，系统发育证据支持其单系性及brunneus、spongiceps、longicephalus三个种组。该属为卵生，卵囊常聚集于海绵、珊瑚等复杂基质上，主要威胁来自深海拖网兼捕和海底新兴产业，其长发育期、低繁殖力等生活史特征加剧了敏感性，但因数据匮乏多数种仍列为Least Concern。研究缺口包括整合分类学、公开遗传参考库、原位行为观察、兼捕与放归死亡率量化及气候与采矿对育幼生境影响的评估。",
+   "summary_en": false,
    "url": "https://doi.org/10.1111/jfb.70724",
    "tags": {
     "theme": [
@@ -944,8 +944,8 @@
    "authors": "Tang, Shoujie; Yue, Yichao; Cao, Lu; Zhang, Minbo; Chen, Jiahe; Zhao, Jinliang",
    "journal": "Fishes",
    "date": "2026-11-23",
-   "summary": "Mandarin fish (Siniperca chuatsi) refuse artificial diets, but some individuals can be domesticated. To identify candidate molecular pathways and preliminary genomic loci associated with feed domestication difficulty, we…",
-   "summary_en": true,
+   "summary": "鳜（Siniperca chuatsi）拒食人工饲料但部分个体可被驯化，该研究以易驯化组（T）与难驯化组（W）为对象，分别进行脑转录组测序（每组n=15）和全基因组重测序（每组n=30），以筛选与摄食驯化难度相关的候选分子通路和基因组位点。转录组鉴定出761个差异表达基因（DEG），T组以下调基因为主；GSEA显示T组神经递质转运体活性、钠同向转运体活性及Wnt信号呈名义显著正富集，而细胞因子-细胞因子受体互作下调；WGCNA识别出MEtan模块与驯化相关生长性能性状负相关，富集于核小体、染色质和蛋白-DNA复合物。重测序获得2,650,994个高质量SNP，组间差异SNP注释到14,956个基因，多组学整合优先筛选出32个候选基因，涉及神经信号/转运、染色质/核小体、免疫/炎症、类固醇/脂质代谢及细胞结构等，核心候选包括slc1a5、gpr84、olfml2bb和组蛋白家族基因，其中gpr84和olfml2bb的SNP在组间呈名义差异。结果提示神经递质再循环与突触可塑性增强、神经免疫激活降低及染色质调控与摄食驯化成功相关，",
+   "summary_en": false,
    "url": "https://doi.org/10.3390/fishes11120686",
    "tags": {
     "theme": [
@@ -967,8 +967,8 @@
    "authors": "Ren, Yuanhao; Yue, Yanfeng; Liu, Chuang; Zhai, Xinfeng; Li, Saishuai; Jia, Xiaojuan; Ye, Bingcong; Shen, Fengyuan; Wei, Cun; Jiang, Keji",
    "journal": "Fishes",
    "date": "2026-11-23",
-   "summary": "Growth rate represents a core economic trait that determines both aquaculture production performance and market value of the foxface rabbitfish (Siganus vulpinus).",
-   "summary_en": true,
+   "summary": "以同父同母、相同养殖条件下的狐篮子鱼（Siganus vulpinus）为材料，按生长性能分为快长组（RG）与慢长组（SG），对骨骼肌进行转录组测序以筛选生长相关候选基因。共检测到24,036个表达基因，两组共表达13,663个，差异表达基因707个（RG组上调329个、下调378个），主要富集于能量代谢、蛋白质周转、氨基酸代谢、细胞骨架组织及肌肉结构维持等通路，其中糖酵解/糖异生通路显著富集。Eno3在RG组显著上调并为该通路核心基因，其ORF长1305 bp、编码435个氨基酸，具烯醇化酶家族保守结构特征，系统发育与序列比对支持其为参与糖酵解调控的β-烯醇化酶同源体。结果提示Eno3可能通过调节糖酵解通量、ATP生成及代谢中间产物供给促进肌肉快速生长，为狐篮子鱼生长性状分子机制解析与分子育种提供了候选基因资源。",
+   "summary_en": false,
    "url": "https://doi.org/10.3390/fishes11120685",
    "tags": {
     "theme": [
@@ -989,8 +989,8 @@
    "authors": "Shin, Chae-eun; Park, Subong",
    "journal": "Fishes",
    "date": "2026-11-23",
-   "summary": "Abandoned, lost, or otherwise discarded fishing gear (ALDFG) poses persistent environmental and management challenges.",
-   "summary_en": true,
+   "summary": "研究评估韩国渔具押金制度下6种刺网直接标记方法与4种渔具核算单元，综合AHP权重、145名渔民和8家渔具企业偏好，以及9块网片1856个标记的脱落观测。在统一两周期终点下，纺织双面胶纤维标签得分最高（0.829），其次为超声波焊接（0.823）和凝胶型胶带标签（0.817）；改用各网最后可得观测后超声波焊接居首（0.718），剔除三疣梭子蟹观测后凝胶型标签领先。标记单元在专家—利益相关者等权下网片居首，仅用专家AHP则重量优先；结果为情境特异的候选方案，需进一步野外测试，并非普适最优技术或押金制度有效性的证据。",
+   "summary_en": false,
    "url": "https://doi.org/10.3390/fishes11120684",
    "tags": {
     "theme": [
@@ -1011,8 +1011,8 @@
    "authors": "Nakase, Hidefumi; Horiuchi, Moemi; Kazeto, Yukinori; Ijiri, Shigeho",
    "journal": "Fishes",
    "date": "2026-11-23",
-   "summary": "Aromatase (Cyp19a1), which converts testosterone to 17β-estradiol, plays a critical role in ovarian differentiation in teleosts.",
-   "summary_en": true,
+   "summary": "日本鳗鲡性腺分化中芳香化酶基因cyp19a1的转录调控机制尚不清楚，该研究用荧光素酶报告基因法在HEK293T和JTC-35细胞中检测Ad4bp/Sf-1、Foxl2a/b、Foxl3a/b及Fsh信号对cyp19a1启动子（-5292/+38）的单独与组合作用。单因子均不能激活全长启动子，而Ad4bp/Sf-1、Foxl2a与Fsh信号联合转录活性最高；Foxl3a在两种细胞中均表现强激活潜力，尽管foxl3a/b在体内呈精巢偏向表达。缺失分析显示-847/+38近端区域含Ad4bp/Sf-1、Foxl2结合位点及CRE，是多重调控因子响应的关键区。",
+   "summary_en": false,
    "url": "https://doi.org/10.3390/fishes11120683",
    "tags": {
     "theme": [
@@ -1033,8 +1033,8 @@
    "authors": "Azcuy, Rosendo L.; Villasante, Alejandro; Ramírez, Carolina; Casaretto, Matías E.; Morales, Gabriel A.; Dantagnan, Patricio; Romero, Jaime",
    "journal": "Fishes",
    "date": "2026-11-23",
-   "summary": "Replacing fish oil (FO) in salmonid feeds alters long-chain polyunsaturated fatty acid (LC-PUFA) supply, but the combined effects on hepatic fatty acids, elongase expression and gut microbiota are poorly known when the l…",
-   "summary_en": true,
+   "summary": "以低鱼粉（10%）饲料投喂幼虹鳟60天，比较鱼油、虾副产物油、亚麻荠油、菜籽油及其混合油（SHCA、COCA）作为唯一脂肪源变量时对肝脏脂肪酸、延长酶表达和肠道菌群的影响。虾油和鱼油组肝脏DHA最高，菜籽油提高油酸和花生四烯酸；elovl5表达在饲料间存在差异。",
+   "summary_en": false,
    "url": "https://doi.org/10.3390/fishes11120682",
    "tags": {
     "theme": [
@@ -1056,8 +1056,8 @@
    "authors": "Lin, Yuxuan; Guo, Lingyun; Kong, Yongyi; Zhao, Hailiang",
    "journal": "Frontiers in Marine Science",
    "date": "2026-11-23",
-   "summary": "Offshore wind site selection requires transparent comparison of resource quality, marine exposure, engineering constraints, and project-scale characteristics.",
-   "summary_en": true,
+   "summary": "针对16个欧洲海上风电项目及候选场址，构建PCA-模糊综合评价（PCA-FCEM）筛选流程，在完成原始数据库溯源审计后，以风速、波浪暴露、水深、离岸距离和装机容量5项指标在项目/场址尺度开展比较。PCA提取的3个主成分解释92.42%方差并用于客观赋权，Hollandse Kust Zuid得分最高（3.696），Sørvest F最低（2.350），后者风能潜力被高波浪暴露、较大水深和偏远位置抵消。权重与模糊划分扰动下排名一致性高（Spearman ρ最低分别为0.938和0.982），但非补偿性max-min压力测试显著改变排序（ρ=0.357），且熵权-FCEM和CRITIC-FCEM与PCA排序的ρ分别为0.679和0.894，表明结论对赋权策略敏感，该框架定位为透明筛选工具而非最终投资排序。",
+   "summary_en": false,
    "url": "https://doi.org/10.3389/fmars.2026.1888907",
    "tags": {
     "theme": [
@@ -1078,8 +1078,8 @@
    "authors": "Li, Jiaran; Fang, Chen",
    "journal": "Frontiers in Marine Science",
    "date": "2026-11-23",
-   "summary": "Introduction Protecting and restoring blue carbon ecosystems is an important nature-based solution for mitigating global warming and promoting sustainable coastal development.",
-   "summary_en": true,
+   "summary": "构建开发商、第三方核查机构与政府监管方的三方演化博弈模型，区分真实项目的低努力核查与虚假项目的合谋核查，结合稳定性分析与数值模拟考察蓝碳信用治理中的策略互动。提高开发补贴及双方声誉收益，使合规策略获得支付优势，是实现理想治理状态的关键；该状态在监管强度下降时仍可维持。激励型政策在三种初始条件下均能达成理想状态，激励与罚款组合政策则进一步加快收敛。",
+   "summary_en": false,
    "url": "https://doi.org/10.3389/fmars.2026.1946690",
    "tags": {
     "theme": [
@@ -1101,8 +1101,8 @@
    "authors": "Peng, Jie; Liu, Jiliang; Li, Liang; Lin, Yiyan; Lai, Qi; Chen, Chufan",
    "journal": "Frontiers in Marine Science",
    "date": "2026-11-23",
-   "summary": "This study investigates the non-linear dynamic response and fatigue damage accumulation of a monopile offshore wind turbine support structure under combined wind, wave, and current loading.",
-   "summary_en": true,
+   "summary": "针对单桩海上风机支撑结构在风-浪-流联合荷载下的非线性动力响应与疲劳损伤，将波流相互作用直接嵌入Morison水动力模型，在3个风速×3个流速共9种工况下量化其对谐响应与疲劳的影响。线性叠加荷载相较耦合方法低估应力幅值7.6%–23.1%，差异集中于泥面附近；临界泥面截面25年设计寿命内耦合疲劳损伤达0.912（非耦合为0.768），疲劳寿命被高估约19%。波流差频耦合引起谱重塑，放大低频疲劳循环，该机制无法由线性叠加捕捉；基于Kriging代理模型（R²=0.968）的约束优化使疲劳等效应力降低24.2%、结构质量减少7.7%，预测疲劳寿命由27.4年延长至36.1年。",
+   "summary_en": false,
    "url": "https://doi.org/10.3389/fmars.2026.1886191",
    "tags": {
     "theme": [
@@ -1121,8 +1121,8 @@
    "authors": "Guo, Penglu; Wang, Xiaoxu",
    "journal": "Frontiers in Marine Science",
    "date": "2026-11-23",
-   "summary": "Introduction Blue carbon credits are increasingly advocated as a way to finance the conservation and restoration of coastal ecosystems;",
-   "summary_en": true,
+   "summary": "中国自愿碳市场中蓝碳信用的法律治理研究，以法教义学分析、制度比较与定性风险评估方法，围绕额外性、量化准确性、持久性、泄漏控制、防重复计算及独立验证核查透明度六项要素，梳理CCER监管框架、《生态环境法典》及红树林造林、滨海盐沼修复和海草床修复方法学。发现现行规则在项目准入、碳核算、第三方核查与集中登记方面已建立基本保障，但未充分处理既有保护义务与额外性的交互、基线不确定性、长期逆转责任、跨机制信息协调及生态问责等问题，合规与登记均不足以确保签发信用的环境完整性。建议细化准入要求、强化MRV、建立可执行的逆转风险管理、完善信息系统协调并明确法律责任，将碳信用治理与海洋生态保护整合，转向覆盖全生命周期的法律保障。",
+   "summary_en": false,
    "url": "https://doi.org/10.3389/fmars.2026.2040572",
    "tags": {
     "theme": [
@@ -1145,8 +1145,8 @@
    "authors": "Yu, Bo; Jiang, Fan; Ma, Ruidi; Gao, Song; Shang, Jie; Ge, Yong; Jiang, Peilin; Ren, Dianjun",
    "journal": "Frontiers in Marine Science",
    "date": "2026-11-23",
-   "summary": "Two strong-wind events along the Yellow Sea coast produced opposite water-level responses despite comparable peak wind speeds.",
-   "summary_en": true,
+   "summary": "黄海沿岸两次峰值风速相近的强风事件产生了相反的水位响应：E01事件（风速>10.8 m/s持续47–48 h，沿岸应力冲量东向+12.67~+13.87 N h m⁻²）造成约0.47 m的setdown，E08事件（>阈值21–23 h，西向冲量−3.03~−2.37 N h m⁻²）则产生0.32–0.33 m的setup。观测核心层沿岸输运异常方向与冲量一致（E01东向、E08西向），但跨岸响应存在站点差异；CMEMS较好地再现了subtidal水位变化（r=0.982–0.997），极值出现时间自日照至石岛随距离增加而延迟。结果表明共享的水位与沿岸输运响应受制于不同的风应力历史与区域海面调整过程，E08期间局地风减弱后气压梯度仍持续发展，潮汐与水文差异也可能对响应有所贡献。",
+   "summary_en": false,
    "url": "https://doi.org/10.3389/fmars.2026.1977826",
    "tags": {
     "theme": [
@@ -1167,8 +1167,8 @@
    "authors": "Șuteu, Anca-Mihaela; Goia, Irina; Pușcaș, Mihai",
    "journal": "Hydrobiologia",
    "date": "2026-11-23",
-   "summary": "",
-   "summary_en": true,
+   "summary": "苔藓基质与环境过滤在喀斯特泉表生苔藓硅藻群落构建中的作用；无摘要，仅据标题可知该研究关注基质类型与环境筛选对这类硅藻群落结构的相对贡献。",
+   "summary_en": false,
    "url": "https://doi.org/10.1007/s10750-026-06484-6",
    "tags": {
     "theme": [
@@ -1189,8 +1189,8 @@
    "authors": "Giovacchini, Simone; Mirone, Enrico; Bruno, Antonia; Ramazzotti, Fausto; Caprotti, Luca; Monaco, Pamela; Belluardo, Francesco; Di Febbraro, Mirko; Jamwal, Pushpinder S.; Manfrin, Chiara",
    "journal": "Hydrobiologia",
    "date": "2026-11-23",
-   "summary": "",
-   "summary_en": true,
+   "summary": "该标题描述了一种基于qPCR的环境DNA监测方案，用于同时检测淡水中的濒危物种与外来物种；摘要缺失，无法获取采样设计、引物特异性及检出限等具体信息。",
+   "summary_en": false,
    "url": "https://doi.org/10.1007/s10750-026-06466-8",
    "tags": {
     "theme": [
@@ -1282,8 +1282,8 @@
    "authors": "Suárez, Raibel; Pérez, Juan; Cárcamo, Diego; Santibáñez, Natacha; Escalona, Carla; Pérez, Tatiana; Vega, Matías; Oliver, Cristian; Romero, Alex",
    "journal": "Journal of Fish Diseases",
    "date": "2026-11-22",
-   "summary": "Climate change is expected to increase seawater salinity, potentially altering the physiological responses of marine organisms.",
-   "summary_en": true,
+   "summary": "高盐度（16、20 g/L NaCl）显著增加虹鳟肠道上皮细胞系RTgutGC的通透性、破坏紧密连接屏障（cld-3、zo-1表达改变），并激活渗透调节（tsc22、nka）与免疫相关基因（il-1β、il-10）表达。对照条件（8 g/L NaCl）下未检出细菌跨上皮转运，而高盐度显著促进Piscirickettsia salmonis跨单层上皮转运，并在20 g/L时加重感染相关细胞毒性。结果提示气候驱动的海水盐度升高可损害肠道屏障功能并增强上皮对细菌病原的易感性，为盐度影响鲑科鱼类piscirickettsiosis发病机制提供了机制证据。",
+   "summary_en": false,
    "url": "https://doi.org/10.1111/jfd.70326",
    "tags": {
     "theme": [
@@ -1306,8 +1306,8 @@
    "authors": "Sutthakiet, Onprang; Khang, Luu Tang Phuc; Wisetkaeo, Suwanna; Phetduang, Kritsada; Nuisiri, Apinan; Permpoonpattana, Patima; Linh, Nguyen Vu",
    "journal": "Journal of Fish Diseases",
    "date": "2026-11-22",
-   "summary": "Tilapia lake virus is a major constraint to sustainable Nile tilapia ( Oreochromis niloticus ) production, yet effective antiviral interventions remain limited.",
-   "summary_en": true,
+   "summary": "原花青素在E-11细胞中对罗非鱼湖病毒（TiLV）呈浓度依赖性抗病毒活性，0.0128 mg/mL非细胞毒性浓度下可阻止细胞病变并将上清TiLV RNA降至RT-qPCR检出限以下。300尾尼罗罗非鱼体内攻毒试验中，感染前24 h或感染后给药分别将存活率由未处理组的43.33%提升至80.00%和73.33%（相对存活率64.44%和52.22%），脑组织病毒载量最多下降3.12 log10，脑与肝组织形态保存更好。肝脏转录谱显示炎症、先天免疫识别、抗原呈递、细胞免疫及干扰素信号通路表达模式随处理改变，预处理对抗病毒基因的诱导最强；保护机制尚待阐明。",
+   "summary_en": false,
    "url": "https://doi.org/10.1111/jfd.70325",
    "tags": {
     "theme": [
@@ -1973,8 +1973,8 @@
    "authors": "Wang, Xiaoling; Zhu, Ren; Jia, Yintao; Qiao, Zhixian; Chen, Yifeng; Feng, Xiu; Sui, Xiaoyun",
    "journal": "Reviews in Fish Biology and Fisheries",
    "date": "2026-11-20",
-   "summary": "",
-   "summary_en": true,
+   "summary": "对地理隔离的多个非本地鲫（Carassius auratus）种群，比较遗传多样性趋势与功能层面的选择信号；标题提示各地理种群间遗传多样性变化一致，但功能选择特征并不一致。",
+   "summary_en": false,
    "url": "https://doi.org/10.1007/s11160-026-10110-y",
    "tags": {
     "theme": [
@@ -1995,8 +1995,8 @@
    "authors": "Bond, Morgan H.; Copeland, Timothy; Naman, Sean M.; Benjamin, Joseph R.; Bellmore, J. Ryan; See, Kevin E.; Beechie, Tim; Greene, Correigh; Bayer, Jennifer M.; Dethloff, Meg",
    "journal": "Reviews in Fish Biology and Fisheries",
    "date": "2026-11-20",
-   "summary": "Fish ecologists and managers have an interest in estimating the efficacy of freshwater habitat restoration, comparing among restoration options and basins.",
-   "summary_en": true,
+   "summary": "淡水溪流鱼类养殖容量（capacity）估算方法可归为五类：栖息地扩展法（将观测鱼类密度高分位数外推至栖息地面积或体积）、stock-recruit 关系拟合、分位数回归、微栖息地尺度模型（将统计适宜性或个体生物能量学需求上推至种群水平）以及食物网模型（估算初级与次级生产经食物网流向鱼类的能量）。方法选择取决于可用数据、管理问题、估算的紧迫性与成本以及所需时空尺度。容量作为栖息地比较、修复方案评估与生命周期模型的通用指标，其核心假设是容量由限制丰度的因子决定，改善这些因子可提升种群丰度。",
+   "summary_en": false,
    "url": "https://doi.org/10.1007/s11160-026-10109-5",
    "tags": {
     "theme": [
@@ -2020,8 +2020,8 @@
    "authors": "Zoral, Mehmet Arif; Lajbner, Zdeněk; Zifcakova, Lucia; Alves, Alexandra; Purkayastha, Abhijeet; Gestal, Camino; Costa, María M.; González-Alonso, Andrea; Abbo, Lisa; Azad, Kamrun Naher",
    "journal": "Reviews in Fisheries Science & Aquaculture",
    "date": "2026-11-20",
-   "summary": "",
-   "summary_en": true,
+   "summary": "由于缺少摘要，仅能从标题判断：该文探讨头足类（Cephalopod）健康管理的综合方法，可能涉及养殖或实验种群疾病防控、福利与生理监测等多学科整合策略，具体内容与数据无法确认。",
+   "summary_en": false,
    "url": "https://doi.org/10.1080/23308249.2026.2748998",
    "tags": {
     "theme": [
@@ -2042,8 +2042,8 @@
    "authors": "Bjerck, Helge Bostwick; Irgens, Christian; Urke, Henning Andre; Sægrov, Harald; Haugen, Thrond Oddvar; Hellen, Bjart Are; Imsland, Albert Kjartan Dagbjartson; Kristensen, Torstein",
    "journal": "Fisheries Management and Ecology",
    "date": "2026-11-20",
-   "summary": "Estimates of outmigration timing of Atlantic salmon smolt ( Salmo salar ) have become crucial inputs for predictive models that quantify effects of anthropogenic impacts.",
-   "summary_en": true,
+   "summary": "在挪威西部两条河流连续三个洄游季（2019–2021）对比了PIT标记、声学遥测标记与水下视频断面监测三种方法估算大西洋鲑降海银鲑（smolt）洄游时序的差异；各方法虽在洄游分位数上存在偏差，但常捕捉到相同的局部洄游峰；标记位置影响最大，湖泊上游个体抵达峡湾平均晚13.4天，而银鲑体长与形态银鲑指数对时序影响可忽略。",
+   "summary_en": false,
    "url": "https://doi.org/10.1111/fme.70133",
    "tags": {
     "theme": [
@@ -2064,8 +2064,8 @@
    "authors": "Anoop, Vasudevan Komalavally; Dahanukar, Neelesh; Freyhof, Jörg; Raghavan, Rajeev",
    "journal": "Journal of Fish Biology",
    "date": "2026-11-20",
-   "summary": "Two new species of the ‘ Mesonoemacheilus guentheri ’ group are described from the Western Ghats Hotspot, based on morphological and multi-locus molecular data (mitochondrial cytochrome oxidase subunit 1, cytochrome b an…",
-   "summary_en": true,
+   "summary": "基于形态学与多基因分子数据（线粒体COI、cyt b及核基因RAG1），描述西高止山脉热点区“Mesonoemacheilus guentheri”种组两新种：Mesonoemacheilus mannanorum（Periyar河源头溪流，棕色背景上三列白色斑块，8–9根分枝胸鳍鳍条）与M. sabariensis（Pamba河源头溪流，中侧列排列规则的白色斑块具宽棕色边缘，鼻瓣条尖长）。该属现含11种，均为西高止山脉生物多样性热点区河流特有种。",
+   "summary_en": false,
    "url": "https://doi.org/10.1111/jfb.70741",
    "tags": {
     "theme": [
@@ -2088,8 +2088,8 @@
    "authors": "da Silva, Nárcia Carolina Santos; Magalhães, Thamara Bentivole; Silva, Sidney dos Santos; Souza, Rafael José Furtado; Martins, Wagner Junio de Freitas; Finamor, Isabela Andres; Baldisserotto, Bernardo; Pavanato, Maria Amalia; Nakayama, Cintia Labussière; Favero, Gisele Cristina",
    "journal": "Fishes",
    "date": "2026-11-20",
-   "summary": "This study compared biofloc technology (BFT) and recirculating aquaculture systems (RAS) for juvenile Piaractus brachypomus and tested whether responses depended on commercial feed.",
-   "summary_en": true,
+   "summary": "90 天 2×2 析因试验比较 BFT 与 RAS 养殖规格约 175 g 的 Piaractus brachypomus 幼鱼，投喂标示 24% 或 32% 粗蛋白（CP）的两种商品饲料。BFT 与 RAS 的终末体重（约 444 g）和存活率（95.6% vs 91.1%）无显著差异；24% CP 组在 45–90 天增重（126.06 vs 91.96 g）和特定生长率（0.69 vs 0.54% day⁻¹）更高，可能与摄食量较大（3.86 vs 2.14 g fish⁻¹ day⁻¹）有关。BFT 组及 32% CP 组的肝脏 TBARS 分别高于 RAS 组和 24% CP 组。两种系统均可支持该鱼幼鱼养成，所试饲料中 24% CP 产品兼具较高生长与较低肝脏脂质过氧化。",
+   "summary_en": false,
    "url": "https://doi.org/10.3390/fishes11110680",
    "tags": {
     "theme": [
@@ -2109,8 +2109,8 @@
    "authors": "Machaieie, Célio Arlindo; Gamil, Amr Ahmed Adelrahim; Gislefoss, Elisabeth; Mondlane-Milisse, Amélia; Pondja, Alberto; Hoguane, António; Fafetine, José; Mutoloki, Stephen",
    "journal": "Fishes",
    "date": "2026-11-20",
-   "summary": "The present study optimized and evaluated a lower-cost SYBR Green qPCR assay for White Spot Syndrome Virus (WSSV) detection and applied it to wild Penaeus monodon and Penaeus indicus from coastal Mozambique.",
-   "summary_en": true,
+   "summary": "以VP19、VP24、VP26和VP28为靶标比较引物组，优化并评估了低成本SYBR Green qPCR法检测WSSV，其中VP24_I分析性能良好（扩增效率95.0%，R²=0.9988），与IHHNV和DIV1无交叉扩增，试剂成本较商业化MAXDETECT试剂盒降低85%（每反应1.88 vs 12.55美元）。对莫桑比克沿海330尾野生斑节对虾和印度明对虾进行检测，并结合同次调查300尾虾的一步法PCR结果，校正地理区域、检测方法和站点聚类后，印度明对虾WSSV检出 odds 高于斑节对虾但差异不显著（OR=1.60，95% CI 0.86–2.98，p=0.139），两个数据集单独分析时趋势一致。VP24_I可作为WSSV监测的低成本候选方法，物种间差异需谨慎解读。",
+   "summary_en": false,
    "url": "https://doi.org/10.3390/fishes11110681",
    "tags": {
     "theme": [
@@ -2135,8 +2135,8 @@
    "authors": "Mendoza-Portillo, Francisco J; Gómez-Gutiérrez, Jaime; García-Fernández, Franklin; Martínez-Lopez, Aída; Ambriz-Arreola, Israel; De Silva-Dávila, Roxana; Palomares-García, Ricardo J; Aceves-Medina, Gerardo; Angulo-Campillo, Orso; Robinson, Carlos J",
    "journal": "Marine Ecology Progress Series",
    "date": "2026-11-20",
-   "summary": "",
-   "summary_en": true,
+   "summary": "2007年1月与7月在加利福尼亚湾同步观测浮游植物化学分类群与浮游动物丰度和生物量，分析二者之间的关联模式。",
+   "summary_en": false,
    "url": "https://doi.org/10.3354/meps15379",
    "tags": {
     "theme": [
@@ -2156,8 +2156,8 @@
    "authors": "Wolf, Fabian; Pansch, Christian; Hattich, Giannina Saskia Isabelle; Weinberger, Florian",
    "journal": "Marine Ecology Progress Series",
    "date": "2026-11-20",
-   "summary": "",
-   "summary_en": true,
+   "summary": "该研究关注热微气候在塑造鳗草（eelgrass）对长期增温响应中的作用；因无摘要，具体方法、数据与结论无法确认。",
+   "summary_en": false,
    "url": "https://doi.org/10.3354/meps15378",
    "tags": {
     "theme": [
@@ -2178,8 +2178,8 @@
    "authors": "Fayet, Annette L.; Scott, Samantha Luise; Layton-Matthews, Kate; Buckingham, Lila; Singsaas, Frode Thomassen; Christensen-Dalsgaard, Signe",
    "journal": "Marine Ecology Progress Series",
    "date": "2026-11-20",
-   "summary": "",
-   "summary_en": true,
+   "summary": "该综述围绕海鸟大规模死亡事件的成因展开叙述性梳理，涉及食物匮乏、极端气候、污染、病原及渔业兼捕等潜在驱动因素；因无摘要，具体案例与结论无法概述。",
+   "summary_en": false,
    "url": "https://doi.org/10.3354/meps15382",
    "tags": {
     "theme": [
@@ -2201,8 +2201,8 @@
    "authors": "Kakehi, Shigeho; Teramoto, Wataru; Nemoto, Yoshiharu; Shirato, Haruki; Niizeki, Kouji; Kurita, Yutaka",
    "journal": "Marine Ecology Progress Series",
    "date": "2026-11-20",
-   "summary": "",
-   "summary_en": true,
+   "summary": "日本福岛县近海黄鮟鱇（Lophius litulon）分布与生物量随环境变化的响应，因无摘要仅能从标题判断为基于调查数据的环境—资源变动分析。",
+   "summary_en": false,
    "url": "https://doi.org/10.3354/meps15381",
    "tags": {
     "theme": [
@@ -2221,8 +2221,8 @@
    "authors": "Lopez, Amanda M.; Lee, Christine M.; Blackwood, Carmen; Gierach, Michelle; Juang, Caroline S.; Pascolini-Campbell, Madeleine; Hestir, Erin L.",
    "journal": "Frontiers in Marine Science",
    "date": "2026-11-20",
-   "summary": "Nearly four billion people depend on coastal ecosystems, where the growing influence of wildfire remains an understudied threat to ecosystem health.",
-   "summary_en": true,
+   "summary": "野火通过改变流域水文、动员泥沙、营养盐和污染物输入近海，威胁海岸带水质与海洋生境，但现有研究多聚焦流域水文与内陆水体，鲜少评估卫星对“野火—海岸”传输路径的可观测性。以加州为例梳理观测缺口，并首次开展全球尺度筛查，识别高风险海区。提出未来由高光谱、多光谱、热红外与雷达传感器组成的互补卫星星座可衔接海洋监测、捕捉野火级联影响，并用简化全球脆弱性指数标示火险、人口密集区与关键海洋资源重叠区域。",
+   "summary_en": false,
    "url": "https://doi.org/10.3389/fmars.2026.2020587",
    "tags": {
     "theme": [
@@ -2246,8 +2246,8 @@
    "authors": "Wang, Bingkun; Zhang, Miming; Chen, Zhongwei",
    "journal": "Frontiers in Marine Science",
    "date": "2026-11-20",
-   "summary": "With the rapid expansion of coastal nuclear and coal-fired power plants, the environmental impacts of thermal discharge on adjacent marine ecosystems have become a major concern in environmental science.",
-   "summary_en": true,
+   "summary": "综述整合海水理化性质、浮游生物群落与微生物功能生态，区分两类影响路径：冷却系统取水导致的卷载/撞击，以及排放羽流中的原位升温；并比较核电厂与燃煤电厂排放差异。指出氯化副产物、营养盐富集与排放改变的水动力会混淆现场信号，许多野外格局属多胁迫叠加响应，不能单独归因于升温。热排放降低溶解氧与pH、加速营养盐循环、提高污染物生物可利用性，改变浮游植物、浮游动物与微生物群落，进而影响食物网稳定性和生物地球化学过程，并提出候选指示类群与功能性状及监测管理建议。",
+   "summary_en": false,
    "url": "https://doi.org/10.3389/fmars.2026.2006926",
    "tags": {
     "theme": [
@@ -2268,8 +2268,8 @@
    "authors": "Elkholy, Hassan; Pizarro, Oscar; Ludvigsen, Martin",
    "journal": "Frontiers in Marine Science",
    "date": "2026-11-20",
-   "summary": "Benthic imagery constitutes a primary data source for studying seafloor habitats, providing rich visual information essential for ecological assessment and marine ecosystem monitoring.",
-   "summary_en": true,
+   "summary": "针对水下底栖图像标注成本高、标注数据稀缺且类别不平衡的问题，构建基于预训练视觉表征的 few-shot 分类（FSC）框架，系统比较骨干网络家族、模型规模、支持集构建策略与适配算法的影响，并测试基于嵌入空间聚类的优先支持集构建策略。在三个底栖图像数据集上，DINOv3 ViT-S/16 总体分类性能最优，增大骨干规模并未稳定提升精度，LinearSVC 在各数据集上表现稳定；优先标注策略在数据集 B、C 上较类别均衡随机采样分别提升 7.62 和 5.02 个百分点（95% CI 不含零），但未稳定转化为更高的 macro-F1。基于标注时间建模，FSC 相较传统 fine-tuning 在数据集 A、B 上估计分别减少 6.7% 和 21.7% 标注时间，数据集 C 上传统 fine-tuning 仅具 1.3% 的不确定优势，表明基于 DINOv3 的 few-shot 分类可作为低标注支持的有效途径，其标注时间收益取决于数据集规模、分类精度与标注成本。",
+   "summary_en": false,
    "url": "https://doi.org/10.3389/fmars.2026.1925773",
    "tags": {
     "theme": [
@@ -2291,8 +2291,8 @@
    "authors": "Yan, Huajing; Saderne, Vincent; Alshareef, Ethraa; Cortada Galvao, Abel; Giorgi, Aurora; Johnson, Maggie D.",
    "journal": "Frontiers in Marine Science",
    "date": "2026-11-20",
-   "summary": "Calcifying macroalgae play critical roles in coral reef ecosystem functioning and carbonate dynamics. However, the metabolic responses underpinning several of their ecological functions remain poorly characterized, parti…",
-   "summary_en": true,
+   "summary": "红海中部两种钙化大型海藻的代谢速率存在明显时间变异：绿藻 Halimeda opuntia 在潟湖与礁区生境的代谢均随时间显著波动，而壳状珊瑚藻 Lithophyllum sp. 的明期钙化较稳定，暗期钙化、呼吸与净光合仍变化，且整体不呈一致季节性。H. opuntia 明期钙化速率超过 Lithophyllum sp. 两倍，与其快速生长、产沙功能及礁体稳定者角色相符。基于2022–2024年春秋两季原位测定，结果为该极端环境海域优势钙化海藻提供了物种分辨的代谢基线。",
+   "summary_en": false,
    "url": "https://doi.org/10.3389/fmars.2026.1907711",
    "tags": {
     "theme": [
@@ -2770,8 +2770,8 @@
    "authors": "Work, Kirsten; Thompson, Emily; Barnard, Tessa; Filipello, Tabor; Diamond, Kayla; King, Kathryn",
    "journal": "Aquatic Invasions",
    "date": "2026-11-19",
-   "summary": "Invasions by nonnative species pose a major threat to freshwater ecosystem function and integrity. Freshwater springs, particularly those in Florida, are threatened by loss of water quantity, degradation of water quality…",
-   "summary_en": true,
+   "summary": "佛罗里达一级泉中，非本地鱼类和螺类的个体数少于本地种，但因体型更大，其总生物量（biomass）与本地种大致相当。研究通过围网、浮潜和视频调查采样鱼类，以随机底质样方采集螺类，并由体长估算体重计算生物量。小型 poeciliids 和 killifish 是数量最多的鱼，微型 hydrobiid 螺是数量最多的螺，而多数非本地种体型达到或超过最大的本地种。鉴于大个体对生态系统过程影响更强，这些非本地种对该泉的实际影响可能远大于其数量所显示的。",
+   "summary_en": false,
    "url": "https://doi.org/10.3391/ai.2026.21.4.218006",
    "tags": {
     "theme": [
@@ -2792,8 +2792,8 @@
    "authors": "Wu, Ruixue; Lin, Haining; Zhang, Houze; Hu, Deyan; Cao, Min",
    "journal": "Fishes",
    "date": "2026-11-19",
-   "summary": "Zona pellucida (ZP) proteins form the egg envelope, but the ZP gene repertoire of viviparous teleosts remains incompletely characterized.",
-   "summary_en": true,
+   "summary": "在黑石斑鱼（Sebastes schlegelii）中鉴定出22个ZP基因，分布于11条染色体，包括3个ZPAX1、7个ZP3、7个ZP4和5个ZP3-like基因；系统发育分析将107个脊椎动物ZP蛋白归入ZP1/4、ZP2、ZP3和ZPAX相关类群，各候选基因共享ZP结构域但外显子组织和辅助结构域存在差异。8个基因的卵巢表达分析显示转录丰度具有发育阶段依赖性，ZP4.5在FM-1至FM-3期升高、FM-4期下降、FM-5期维持较高水平，原位杂交信号在FY期和FM-3期最强。",
+   "summary_en": false,
    "url": "https://doi.org/10.3390/fishes11110677",
    "tags": {
     "theme": [
@@ -2814,8 +2814,8 @@
    "authors": "Ljubobratović, Uroš; Horváth, Ákos; Kitanović, Nevena; Fazekas, Georgina Lea; Stanivuk, Jelena; Milla, Sylvain; Nagy, Zoltán; Vass, Norbert; Fazekas, Dorottya Lilla; Marinović, Zoran",
    "journal": "Fishes",
    "date": "2026-11-19",
-   "summary": "This study evaluated how daily feeding regimens and photothermal induction duration modify reproductive performance in pikeperch (Sander lucioperca) during out-of-season reproduction.",
-   "summary_en": true,
+   "summary": "在非繁殖季对梭鲈（Sander lucioperca）亲鱼进行两个连续周期的试验，比较短降温（1周，2021）与长降温（5周，2022）及饱食（0.5%生物量/天）与限制投喂（0.4%生物量/天）对配子质量的影响。限制投喂缩短了雌鱼潜伏期、减少油球碎裂、提高胚胎存活率并降低仔鱼畸形率（饱食条件下畸形率翻倍以上），但不影响精子质量；降温时长则呈性别差异效应，长降温降低卵质量却提升精子质量。作者建议降温期避免饱食投喂，并提示卵母细胞直径超过1000 µm时诱导可能降低卵质量，但该阈值尚需正式验证。",
+   "summary_en": false,
    "url": "https://doi.org/10.3390/fishes11110676",
    "tags": {
     "theme": [
@@ -2839,8 +2839,8 @@
    "authors": "Castriota, Luca; Falautano, Manuela; Maggio, Teresa; Perzia, Patrizia",
    "journal": "Fishes",
    "date": "2026-11-19",
-   "summary": "Climate-driven ocean warming is altering the distribution of many marine species, but records at higher latitudes do not necessarily demonstrate a directional shift in the population core.",
-   "summary_en": true,
+   "summary": "基于1984–2025年出现记录，用GIS空间统计（平均中心、标准距离、标准差椭圆）分四个时段评估西西里海峡及地中海与欧洲大西洋Seriola rivoliana的分布动态，并补充新标本的形态、计数与分子鉴定。地中海记录的地理分布范围扩大，欧洲大西洋记录纬度逐步升高，但出现记录的地理质心并未持续北移。整体格局更符合地理分布区扩张而非种群核心定向位移，升温背景下的高纬记录不足以证明北移。",
+   "summary_en": false,
    "url": "https://doi.org/10.3390/fishes11110674",
    "tags": {
     "theme": [
@@ -2865,8 +2865,8 @@
    "authors": "Martin, Lucas; Benoît, Hugues P.; Fisher, Jonathan A.D.; Robert, Dominique",
    "journal": "Frontiers in Marine Science",
    "date": "2026-11-19",
-   "summary": "Understanding marine species distribution and habitat use contributes to the development of effective population conservation and management.",
-   "summary_en": true,
+   "summary": "基于水槽实验与39尾格陵兰大比目鱼（Atlantic halibut）及2个固定PSAT的现场数据，评估PSAT三轴加速度计倾角值估算水平游泳速度的可行性。倾角与流速呈渐近关系，附着设计仅在低流速下有轻微影响；环境水流引起的倾角在约0.25 m s⁻¹以下会混淆游泳速度估计，且倾角-速度非线性关系与流向未知使精细校正不可行。垂直运动对倾角影响较小且基本可校正，活跃行为下平均水平游泳速度估计为0.66 m s⁻¹。PSAT加速度计可可靠评估活动模式，但外挂单系留设计的水动力效应限制了游泳速度估计精度。",
+   "summary_en": false,
    "url": "https://doi.org/10.3389/fmars.2026.1914036",
    "tags": {
     "theme": [
@@ -2889,8 +2889,8 @@
    "authors": "Mbugua, James; Kipkulei, Harison K.; Watene, George; Ogega, Obed; Osuka-Edeye, Kennedy; Obura, David",
    "journal": "Frontiers in Marine Science",
    "date": "2026-11-19",
-   "summary": "Shoreline management in the Western Indian Ocean (WIO) is largely informed by small-scale studies with coarse temporal resolution, potentially obscuring fine spatial patterns and interannual dynamics.",
-   "summary_en": true,
+   "summary": "基于2000–2024年25期Landsat岸线数据与DSAS的加权线性回归（12 455条断面），分析肯尼亚400 km海岸的岸线变化及其与GLORYS12V1再分析海平面趋势/变率的关联，并采用OLS、空间滞后模型和GWR检验空间依赖。岸线变化呈显著空间异质性：Kilifi与Kwale-Mombasa岸段净淤积（平均WLR分别为0.57和0.51 m/yr），Tana-Manda岸段净侵蚀（-0.92 m/yr，36.23%断面显著侵蚀），全国平均净岸线位移+9.45 m掩盖了这种差异；岸线变化具强空间自相关（Moran's I=0.866），12.01%断面构成显著局部聚集。在预测因子原生尺度上海平面趋势与变率均未检出与岸线变化的关联（OLS R²≤0.028，GWR调整R²<0），岸线变化更可能受局部地貌与人为因素驱动，海岸管理需以空间显式、不确定性加权的评估替代全国平均值。",
+   "summary_en": false,
    "url": "https://doi.org/10.3389/fmars.2026.1952449",
    "tags": {
     "theme": [
@@ -2914,8 +2914,8 @@
    "authors": "Speed, Conrad W.; Jaworski, Samantha; Bornt, Katrina; Ierodiaconou, Daniel; Galaiduk, Ronen; Brown, Aimee; McCormack, Samuel; Case, Mark; Wyatt, Mathew; Vaughan, Brigit",
    "journal": "Frontiers in Marine Science",
    "date": "2026-11-19",
-   "summary": "Offshore habitats of the world’s oceans are increasingly being altered by human activities, particularly where energy extraction and production require infrastructure.",
-   "summary_en": true,
+   "summary": "针对澳大利亚东南部Gippsland Basin油气设施退役前的评估需求，结合ROV、BRUV与eDNA宏条形码三种方法，对油气基础设施及自然生境中的软骨鱼类群落进行了四年调查。三种方法共记录19科39个分类单元，约30%为澳大利亚特有种，含6种受保护物种；尽管ROV在管道处观测到的分类单元更多，但平均丰富度以邻近礁区最高，BRUV在管道与自然参照点间的丰富度无差异。底栖种类如Port Jackson shark和draughtboard shark在平台底部及管道沿线丰富（含卵鞘），而Urolophus属魟类多见于软沉积物自然生境；受胁物种记录包括white shark、Australian longnose skate和Greenback stingray。软骨鱼类丰度冬季为夏季的2.3倍、白天高于夜间、随深度增加，BRUV还记录到幼鱼和新生个体，提示潜在近岸育幼场；方法比较表明ROV和eDNA对高移动性和稀有物种适用性较差，BRUV更合适。",
+   "summary_en": false,
    "url": "https://doi.org/10.3389/fmars.2026.1976573",
    "tags": {
     "theme": [
@@ -2941,8 +2941,8 @@
    "authors": "Park, Chan; Seo, Ziwon; Ha, Jihun; Khan, Habib; Im, Hyohyuk",
    "journal": "Frontiers in Marine Science",
    "date": "2026-11-19",
-   "summary": "Introduction Daily grid-scale forecasts of catch occurrence are increasingly used for operational planning and to track species redistribution under climate change, yet what sets their predictability limit is rarely quan…",
-   "summary_en": true,
+   "summary": "韩国海域太平洋褶柔鱼（Todarodes pacificus）逐日渔获出现概率预报的可预测性上限研究，基于2020–2025年逐日渔获、船舶活动与海洋再分析数据（0.05°网格、2035万网格日、零渔获占比逾99%）。2025年留出集呈现真实分布漂移（33个协变量中32个PSI低于0.25阈值，固定最适温度生境内单船渔获下降11.9倍），逐日出现预报精度受持续性基线约束（提前一天8邻域F1=0.506），三种改进模型（Focal-Tversky损失、ConvLSTM-Transformer混合、验证加权集成）及两种嵌入持续性设计均未显著超越该基线。约束源于记录本身而非模型容量：渔业统计以全部作业船舶存在而非专向捕捞努力计量，努力为正的网格日中仅1.81%有柔鱼渔获，船舶存在场持续性近确定性（F1=0.923），前一日邻域渔获使当日渔获概率提高14.4倍而环境窗口无增益；强度分量环境解释力弱（最优R²约0.05），故出现与强度分开建模。该上限反映统计采集方式而非建模方法，专向捕捞努力记录是决定性下一步输入。",
+   "summary_en": false,
    "url": "https://doi.org/10.3389/fmars.2026.1966604",
    "tags": {
     "theme": [
@@ -2963,8 +2963,8 @@
    "authors": "Dela Paz, Erica Silk P.; Mandia, Emelina H.; Virtusio, John Jethro",
    "journal": "Hydrobiologia",
    "date": "2026-11-19",
-   "summary": "",
-   "summary_en": true,
+   "summary": "该标题指向2005—2025年淡水浮游动物研究的全球文献计量分析，关注研究趋势、主题格局与学科演进；因无摘要，具体数据与方法无法确认。",
+   "summary_en": false,
    "url": "https://doi.org/10.1007/s10750-026-06482-8",
    "tags": {
     "theme": [
@@ -2986,8 +2986,8 @@
    "authors": "Di Crescenzo, Simone; Pani, Chiara; Başusta, Nuri; Bellodi, Andrea; Cariani, Alessia; Catalano, Giusy; Crobe, Valentina; Crocetta, Fabio; Dragičević, Branko; Ferrari, Alice",
    "journal": "Hydrobiologia",
    "date": "2026-11-19",
-   "summary": "",
-   "summary_en": true,
+   "summary": "地中海钩鳞鲨（Oxynotus centrina）的遗传变异与种群结构研究，基于分子标记分析其种群分化格局，并探讨钩鳞鲨科（Oxynotidae）在角鲨目中的系统发育位置。",
+   "summary_en": false,
    "url": "https://doi.org/10.1007/s10750-026-06474-8",
    "tags": {
     "theme": [
@@ -7478,8 +7478,8 @@
    "authors": "Xiang, Ping; Tang, Yan; Zhang, Na; Zhang, Yong-Fei; Fu, Shi-Jian",
    "journal": "Journal of Experimental Biology",
    "date": "2026-11-02",
-   "summary": "Freshwater habitats display highly diverse flow regimes and oxygen tension (PO2) dynamics, driving lentic and lotic fish to evolve distinct physiological strategies for sustaining oxygen supply capacity (α) under hypoxic…",
-   "summary_en": true,
+   "summary": "缓流与急流鲤科鱼类在低氧耐受上的种间与种内差异：以耐低氧的 Pseudorasbora parva（缓流）与 Acrossocheilus fasciatus（急流）对比，缓流种通过更高的供氧能力（α）、肝糖原储备及低氧诱导的 LDH 上调，表现出更低的 Pcrit-MMR、Pcrit 和 PLOE；急流种则具更高 MMR 以匹配其有氧需求。种内 α 升高与更低的 Pcrit-MMR、Pcrit 和 PLOE 相关，但 α 与 MMR 无关联。生化分析显示，P. parva 的脑 LDH 活性是低氧耐受的关键决定因素，而 A. fasciatus 因器官间转运效率不足导致脑乳酸积累与葡萄糖耗竭，限制了其低氧耐受。",
+   "summary_en": false,
    "url": "https://doi.org/10.1242/jeb.252974",
    "tags": {
     "theme": [
