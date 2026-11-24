@@ -13,6 +13,7 @@ DeepSeek 中文摘要脚本
 
 import json
 import os
+import re
 import sys
 import time
 from datetime import datetime, timezone
@@ -38,11 +39,15 @@ SUMMARY_SYSTEM = """你是渔业科学学术编辑。把英文论文标题与摘
 
 要求：
 1. 2-4 句话：研究目的 / 方法或数据 / 主要发现或结论，信息密度高
-2. 摘要缺失时，仅根据标题写一句客观简介，不要编造数据
+2. 只依据给出的摘要内容，不得编造数据、方法或结论
 3. 面向渔业与水产研究者，术语准确，关键术语可保留英文（如 stock assessment、MPA）
 4. 单纯描述现象，不加"本文研究了"这类空话开头，直接说做了什么、发现了什么
 5. 只输出正文，不加标题、前缀、序号
 6. 明显与渔业水产无关的内容，只输出：非渔业相关"""
+
+# 原文没有摘要时不要调用模型：基于标题硬写只会产出"摘要缺失，无法获取…"这类
+# 既占版面又无信息量的伪摘要。这类论文交由站点显示空白。
+DEGENERATE = re.compile(r"摘要缺失|摘要为空|无摘要|未提供摘要|无法获取.{0,10}摘要|缺少摘要")
 
 
 def get_client() -> Optional[OpenAI]:
@@ -107,12 +112,30 @@ def main():
         print("📭 没有论文数据，请先运行 fetch_papers.py")
         return
 
+    # 清理历史遗留的无效摘要（原文无摘要时模型硬写出来的空话）
+    purged = 0
+    for p in papers:
+        cn = (p.get("summary_cn") or "").strip()
+        if cn and not (p.get("abstract") or "").strip() and DEGENERATE.search(cn):
+            p["summary_cn"] = ""
+            purged += 1
+    if purged:
+        save(data)
+        print(f"🧹 清除 {purged} 条无效摘要（原文缺失摘要）")
+
+    no_abs = [p for p in papers if not (p.get("abstract") or "").strip()]
     todo = papers if force else [p for p in papers if not (p.get("summary_cn") or "").strip()]
+    skipped = [p for p in todo if not (p.get("abstract") or "").strip()]
+    todo = [p for p in todo if (p.get("abstract") or "").strip()]
     if limit:
         todo = todo[:limit]
 
     if not todo:
-        print("✅ 所有论文均已有中文摘要")
+        save(data)
+        msg = "✅ 所有论文均已有中文摘要"
+        if skipped:
+            msg += f"（{len(skipped)} 篇原文无摘要，已跳过）"
+        print(msg)
         return
 
     client = get_client()
@@ -120,7 +143,10 @@ def main():
         sys.exit(1)
 
     total = len(todo)
-    print(f"🤖 DeepSeek 摘要生成：{total} 篇\n")
+    print(f"🤖 DeepSeek 摘要生成：{total} 篇")
+    if skipped:
+        print(f"   ⏭️ 跳过 {len(skipped)} 篇原文无摘要的论文（省钱且避免伪摘要）")
+    print()
     ok = 0
     for i, p in enumerate(todo, 1):
         t = p.get("title", "")

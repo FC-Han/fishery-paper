@@ -598,7 +598,7 @@ main{min-width:0}
     const rev = p.is_review ? '<span class="badge rev">综述</span>' : '';
     const sum = p.summary
       ? `<p class="summary${p.summary_en ? ' en' : ''}">${esc(p.summary)}</p>`
-      : `<p class="summary none">暂无摘要</p>`;
+      : '';
     return `<article class="card${p.high_impact?' is-hi':''}" data-doi="${esc(p.doi)}">
       <div class="card-top">
         <span class="journal" title="${esc(p.journal)}">${esc(p.journal || '未知期刊')}</span>
