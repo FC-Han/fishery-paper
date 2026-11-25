@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-24T19:17:48Z",
- "count": 321,
+ "generated_at": "2026-11-25T18:24:09Z",
+ "count": 377,
  "lexicon": [
   {
    "dim": "theme",
@@ -419,6 +419,1096 @@
  ],
  "papers": [
   {
+   "doi": "10.3390/su182312002",
+   "title": "Do MSC Assessment Scores Reflect Fish Stock Sustainability? Evidence from Certified and Uncertified Fisheries",
+   "authors": "Wakamatsu, Hiroki; Sakai, Yutaro; Toyofuku, Shuto; Yagi, Nobuyuki",
+   "journal": "Sustainability",
+   "date": "2026-11-25",
+   "summary": "研究将MSC评估得分与RAM Legacy Stock Assessment Database中的渔业种群状态按科学种名和渔场匹配，并构建在不同渔区捕捞相同物种的未认证渔业对照组，检验评估得分是否与种群可持续性相符。结果显示，MSC认证渔业对应更高的种群水平和更低的开发率，总体上支持认证后种群水平更高的判断。对48个认证渔业的随机森林和自适应LASSO回归表明，MSC评估得分与种群状态和捕捞率同时存在正、负相关。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3390/su182312002",
+   "tags": {
+    "theme": [
+     "stock",
+     "econ"
+    ],
+    "species": [],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.1111/fme.70124",
+   "title": "Dominica's Small-Scale Fisheries: Biological Sampling Underpins the Need for Balanced Fishing on Inshore and Offshore, Reef and Pelagic Species",
+   "authors": "Engelhard, Georg H.; Pinnegar, John K.; Norris, Norman J.; Degallerie, Diana; Joseph, Wynnona; Baron, Zethra; Harrod, Olivia L.; Defoe, Jullan; Hilton, Kurt; Theophille, Derrick",
+   "journal": "Fisheries Management and Ecology",
+   "date": "2026-11-25",
+   "summary": "2018–2019年在多米尼克12个上岸点对渔获物开展生物学采样，共获得3007尾测量数据，用以刻画近岸与 offshore、礁区与 pelagic 物种的渔获组成及体长分布。关键 pelagic 物种鲯鳅（Coryphaena hippurus）99%的个体超过 length-at-maturity，开发状况总体可持续；而部分礁区鱼类小型化明显，如黑鳍笛鲷（Lutjanus buccanella）71%的个体未达性成熟。结果表明需在近岸与 offshore、礁区与 pelagic 物种间实现均衡捕捞，并加强长期数据收集以支撑基于证据的管理、提升气候韧性。",
+   "summary_en": false,
+   "url": "https://doi.org/10.1111/fme.70124",
+   "tags": {
+    "theme": [
+     "econ"
+    ],
+    "species": [],
+    "region": [],
+    "method": [
+     "monitor"
+    ]
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3390/foods15234227",
+   "title": "Toxic Metal Contamination, Seasonal Variation, Cooking Effects, and Human Health Risks Associated with Fish Consumption from the Suez Canal, Egypt",
+   "authors": "Ahdy, Asmaa Mohammed; Imre, Kálmán; Zakaria, Amira Ibrahim; Morar, Adriana; Imre, Mirela; Sallam, Khalid Ibrahim",
+   "journal": "Foods",
+   "date": "2026-11-25",
+   "summary": "评估埃及苏伊士运河金头鲷（Sparus aurata）、鳎（Solea solea）和蓝子鱼（Siganus rivulatus）三种鱼类的重金属暴露健康风险，测定Hg、总As、Pb、Cd含量并分析季节变化与烹饪影响。三种鱼间各金属浓度无显著差异，但分别有52–58%、88–100%、12–16%和24–34%的样品超过Hg、As、Pb、Cd的最大允许限量，夏季浓度高于冬季；热烹饪通过汁液渗出使Pb、Cd湿重浓度表观下降而非元素破坏。各金属EDI均低于PTDI，但所有鱼种Hg的THQ>1.0，提示非致癌风险，As相关致癌风险值超过1×10⁻⁴；因无机砷按总砷10%估算而非直接形态分析，砷风险结果为暂定值，需谨慎解读。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3390/foods15234227",
+   "tags": {
+    "theme": [
+     "pollution",
+     "process",
+     "gear"
+    ],
+    "species": [
+     "flatfish",
+     "seabass"
+    ],
+    "region": [
+     "africa"
+    ],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.29244/agrokreatif.12.3.551-559",
+   "title": "Utilization of Catfish Waste for Fish Pellet Production by Elderly Women’s Group in Mejono Village",
+   "authors": "Gretania Residiwati; Mohamad Wildan Fathur Ilmi; Anggie Almira Putri",
+   "journal": "Agrokreatif: Jurnal Ilmiah Pengabdian kepada Masyarakat",
+   "date": "2026-11-25",
+   "summary": "利用鲶鱼（Clarias sp.）内脏和鱼骨等本地有机废弃物作为替代鱼饲料的营养添加原料，以缓解商业饲料价格持续上涨的问题，并向Kediri县Mejono村Melati 2老年妇女小组开展教育和培训。活动前学生团队先行试验以确定高效可行的配方与生产工艺，核心环节为50人参加的宣讲，涵盖营养成分、废弃物利用价值、饲料配方和制粒流程。前后测经Wilcoxon符号秩检验显示参与者理解程度显著提升。",
+   "summary_en": false,
+   "url": "https://doi.org/10.29244/agrokreatif.12.3.551-559",
+   "tags": {
+    "theme": [
+     "misc"
+    ],
+    "species": [
+     "catfish"
+    ],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.1128/aem.01597-26",
+   "title": "Isolation, characterization, and ecotoxicological testing of aquaculture-native bacterial antagonists against the fish pathogen Flavobacterium psychrophilum",
+   "authors": "Athena-Vasileiadi, Despoina; Skjolding, Lars Michael; Steffensen, Anne Østergaard; Strube, Mikael Lenz; Middelboe, Mathias; Bentzon-Tilia, Mikkel; Gram, Lone",
+   "journal": "Applied and Environmental Microbiology",
+   "date": "2026-11-25",
+   "summary": "从虹鳟循环水养殖系统中分离水产原生细菌拮抗菌，采用琼脂抑制试验结合基因组抗菌药耐药性与毒力筛查，并以羊角月牙藻和大型溞进行生态毒性评价，筛出3株对杀鲑鱼黄杆菌（Flavobacterium psychrophilum）具拮抗作用且初步安全性良好的菌株：Pseudomonas palmensis BG17、Rhodococcus qingshengii IW15和Janthinobacterium sp. CB21，其无细胞上清在体外均抑制病原生长。BG17的抑制作用随FeCl₃浓度（50、200 μM）升高而减弱，其无铁上清在405 nm附近吸收、440–445 nm发射荧光，加铁后信号改变，结合低相似度NRPS簇与阳性CAS试验，提示其产生铁响应型荧光螯合剂；IW15受铁影响随浓度而异，机制较复杂；CB21上清抑菌不受铁显著影响且基因组无专用铁载体BGC。三株菌经表观不同的机制在体外抑制F. psychrophilum，可作为生物防控候选菌株进一步评估。",
+   "summary_en": false,
+   "url": "https://doi.org/10.1128/aem.01597-26",
+   "tags": {
+    "theme": [
+     "disease",
+     "pollution",
+     "aqua"
+    ],
+    "species": [
+     "salmon"
+    ],
+    "region": [
+     "global"
+    ],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.1002/bcp.70907",
+   "title": "So long and thanks for all the fish",
+   "authors": "Cremers, Serge",
+   "journal": "British Journal of Clinical Pharmacology",
+   "date": "2026-11-25",
+   "summary": "",
+   "summary_en": true,
+   "url": "https://doi.org/10.1002/bcp.70907",
+   "tags": {
+    "theme": [
+     "misc"
+    ],
+    "species": [],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3390/d18120735",
+   "title": "Climate Change-Induced Projected Black Sea-Level Rise Effects on Dniester Estuary Fish Diversity: Potential Responses to Estuarine Habitat Diversity Transformations",
+   "authors": "Afanasyev, Sergiy; Lietytska, Olena; Gupalo, Olena; Petrovici, Milca; Bănăduc, Doru",
+   "journal": "Diversity",
+   "date": "2026-11-25",
+   "summary": "针对黑海海平面上升对德涅斯特河口鱼类多样性的风险，评估了53种鱼（以Gobiidae 18种、Cobitidae 8种、Percidae 7种为主）在河口栖息地多样性转变下的潜在响应。结果显示，海平面上升将使3种（Misgurnus fossilis、Umbra krameria、Zingel streber）受到强烈负面影响，5种中度负面、3种弱中度负面影响，4种中性，10种中性至正面影响，1种（Atherina pontica）正面影响。该河口作为鱼类多样性热点及洄游、索饵、产卵的关键生态缓冲与避难所，其鱼类区系正面临海平面上升的直接威胁。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3390/d18120735",
+   "tags": {
+    "theme": [
+     "eco",
+     "climate",
+     "gear"
+    ],
+    "species": [
+     "freshwater-other"
+    ],
+    "region": [
+     "med",
+     "freshwater"
+    ],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.1038/s41598-026-82410-z",
+   "title": "Telomere length measurement in immunophenotypically defined human leukocyte subsets using multiparametric flow-FISH",
+   "authors": "Besombes, Joévin; Lebecque, Benjamin; Voisin, Allison; Bourgne, Céline; Parisseaux, Mattéo; Dhaiby, Gabriel; Tournebize, Clara; Soucal, Mélanie; Voisin, Delphine; Ramos, Inès",
+   "journal": "Scientific Reports",
+   "date": "2026-11-25",
+   "summary": "",
+   "summary_en": true,
+   "url": "https://doi.org/10.1038/s41598-026-82410-z",
+   "tags": {
+    "theme": [
+     "disease"
+    ],
+    "species": [],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.1017/s0030605325102378",
+   "title": "The fishing cat in the Kingdom of Water: first review of presence, population size, distribution and conservation in Cambodia",
+   "authors": "Herranz Muñoz, Vanessa; Sophatt, Reaksmey; Tantipisanuh, Naruemon; Gale, George Andrew; Virgós, Emilio",
+   "journal": "Oryx",
+   "date": "2026-11-25",
+   "summary": "2017–2023年柬埔寨四个湿地点的红外相机调查显示渔猫（Prionailurus viverrinus）拍摄频率下降，2021–2023年记录确认西南部红树林湿地存在繁殖种群，而洞里萨湖洪泛平原（2021–2022）与湄公河沿岸（2022）无分布记录。湿地存在与高降水量是渔猫出现的预测因子，预测柬埔寨17%的湿地为适宜栖息地，并识别出19个优先保护与种群监测的保护地，其中沿海约5%区域为高度适宜、洞里萨洪泛平原约12.5%为中度适宜。偷猎与森林砍伐是主要威胁，基于现有数据外推柬埔寨种群约34–67只，数量偏低，亟需有效保护行动。",
+   "summary_en": false,
+   "url": "https://doi.org/10.1017/s0030605325102378",
+   "tags": {
+    "theme": [
+     "conserv",
+     "eco",
+     "review"
+    ],
+    "species": [],
+    "region": [
+     "freshwater",
+     "seasia"
+    ],
+    "method": []
+   },
+   "is_review": true,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3389/fmars.2026.1902794",
+   "title": "Regional innovation capacity and marine green economic efficiency in China: an empirical analysis using double machine learning",
+   "authors": "Tan, Yunshu; Wang, Yudan; Shu, Rui; Wang, Wenlan; Chen, Qin; Cheng, Qiuwang",
+   "journal": "Frontiers in Marine Science",
+   "date": "2026-11-25",
+   "summary": "基于2011—2022年中国11个沿海省级面板数据，采用double machine learning考察区域创新能力与海洋绿色经济效率的关系。基准结果显示二者显著正相关且经多重稳健性检验仍成立，机制分析识别出数字人才积累、产业协作和数字技术应用三条潜在路径。异质性分析显示北方、东部、南部沿海区域存在差异，东部沿海效应统计上不显著；空间分析发现区域创新能力具有显著为正的省际间接效应。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3389/fmars.2026.1902794",
+   "tags": {
+    "theme": [
+     "econ"
+    ],
+    "species": [],
+    "region": [
+     "china"
+    ],
+    "method": [
+     "ml"
+    ]
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.1080/10888705.2026.2760878",
+   "title": "Perception of Challenges and Needs Regarding Animal Welfare in Latin American and the Caribbean Aquaculture",
+   "authors": "Medina, Paula; Rosas, Carlos; López Greco, Laura; Baltazar-Guerrero, Paul; Roque, Ana; Llonch, Pol; Saraiva, João L.; Arechavala-López, Pablo; Bertini, Giovana; Blázquez, Mercedes",
+   "journal": "Journal of Applied Animal Welfare Science",
+   "date": "2026-11-25",
+   "summary": "",
+   "summary_en": true,
+   "url": "https://doi.org/10.1080/10888705.2026.2760878",
+   "tags": {
+    "theme": [
+     "aqua"
+    ],
+    "species": [],
+    "region": [
+     "carib"
+    ],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3390/aquacj6040064",
+   "title": "Building Climate Resilience in Aquaculture: A Framework for Strengthening Resilience in Kenya’s Aquaculture Value Chain",
+   "authors": "Adekola, Olalekan; Gatonye, Margaret; Orina, Paul",
+   "journal": "Aquaculture Journal",
+   "date": "2026-11-25",
+   "summary": "基于肯尼亚案例，通过研讨会、访谈和实地观察识别出受气候变化影响最大的水产养殖价值链四个环节：饲料生产、鱼类养殖、运输分销和采后加工。框架梳理了相关利益方，并提出生态系统方法、政策改革与技术创新等可在各环节共同制定的适应路径，强调多利益相关方协作及纳入性别与社会经济不平等因素的包容性方法。尽管存在制度和基础设施障碍，肯尼亚利益相关方展现出较强的集体行动意愿；该框架可作为韧性建设的实用工具，但需在不同情境下进一步检验。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3390/aquacj6040064",
+   "tags": {
+    "theme": [
+     "climate",
+     "econ",
+     "aqua"
+    ],
+    "species": [],
+    "region": [
+     "africa"
+    ],
+    "method": []
+   },
+   "is_review": true,
+   "high_impact": false
+  },
+  {
+   "doi": "10.9734/jsrr/2026/v32i114774",
+   "title": "Sustainable Aquaculture and Livelihood Improvement through Integrated Fish-Pig Farming in Kolli Hills, Tamil Nadu, India",
+   "authors": "Paulpandi, S.; Sathya, S.; Velmurugan, K.; Kannan, V.",
+   "journal": "Journal of Scientific Research and Reports",
+   "date": "2026-11-25",
+   "summary": "在印度泰米尔纳德邦Kolli Hills开展2023–2024年前线示范，比较鱼–家禽（T1）、鱼–鸭（T2）、鱼–猪（T3）综合养殖与常规养鱼（T4）的水质、鱼类生产及经济效果，示范塘约0.25–0.30 ha、放养密度8,500尾/ha，养殖6种鱼。鱼–猪系统报告的最高成活率（71.37%）和产量（4,417.67 kg）均高于常规养殖（61.50%、2,205.05 kg），鱼–家禽和鱼–鸭产量分别为3,100 kg和2,964.95 kg。0.3 ha塘的净收益以鱼–猪综合养殖最高（₹108,597），鱼–家禽为₹68,691，常规养殖仅₹22,685。示范条件下鱼–猪综合养殖伴随更高产量和经济回报，但粪肥加载量与池塘水质管理仍是实施关键。",
+   "summary_en": false,
+   "url": "https://doi.org/10.9734/jsrr/2026/v32i114774",
+   "tags": {
+    "theme": [
+     "aqua",
+     "econ"
+    ],
+    "species": [],
+    "region": [
+     "india"
+    ],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3389/faquc.2026.1992667",
+   "title": "A spatial thermal suitability assessment for offshore aquaculture of striped bass (Morone saxatilis) in the U.S",
+   "authors": "Couture, Jessica L.; Wieczorek, Daniel; Riley, Kenneth L.; Morris, James A.",
+   "journal": "Frontiers in Aquaculture",
+   "date": "2026-11-25",
+   "summary": "通过系统综述界定条纹鲈（Morone saxatilis）的生物物理限制条件，并将其叠加至模型化环境数据，评估美国专属经济区内海上养殖的空间生物物理潜力。西海岸部分海域虽有适宜温度天数，但总体未达最优温度范围；大西洋与墨西哥湾沿岸的北卡罗来纳、佛罗里达大西洋沿岸和墨西哥湾北部三个亚区潜力最高。至本世纪中叶，这些区域随海水升温仍多处于适宜范围，但处于最优温度的时间将减少。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3389/faquc.2026.1992667",
+   "tags": {
+    "theme": [
+     "aqua",
+     "gear"
+    ],
+    "species": [
+     "seabass"
+    ],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.1111/jwas.70173",
+   "title": "Community acceptance of aquaculture introduction varies across food, economic, and ecological goals",
+   "authors": "Wade, Eric; Skinner, Maximillian",
+   "journal": "Journal of the World Aquaculture Society",
+   "date": "2026-11-25",
+   "summary": "以948名北卡罗来纳州居民的结构化问卷为基础，比较了水产养殖在粮食安全、环境效益和经济发展三种框架下的社区接受度。接受度随框架显著变化：以经济效益呈现时支持度最高，以生态效益呈现时最低，且各框架下的接受度预测因子不同。感知的水产养殖必要性是唯一在所有框架下均稳定影响支持度的因素，表明水产养殖的合法性与接受度取决于所强调效益与居民价值观、气候态度及本地优先事项的匹配程度。",
+   "summary_en": false,
+   "url": "https://doi.org/10.1111/jwas.70173",
+   "tags": {
+    "theme": [
+     "econ",
+     "aqua"
+    ],
+    "species": [],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3390/d18120733",
+   "title": "Heteroptera Bycatch from Bulgarian Oil-Bearing Rose Plantations: Species Composition, Temporal Dynamics and Trap Colour Associations",
+   "authors": "Stoianova, Desislava; Karakicheva, Tania; Lozanova, Lyudmila; Baneva, Totka; Toshova, Teodora; Lazarova, Stela",
+   "journal": "Diversity",
+   "date": "2026-11-25",
+   "summary": "2024年在保加利亚两处油用玫瑰（Rosa damascena）种植园，利用监测Agrilus cuprescens的荧光黄、紫、绿及透明粘虫板，分析异翅亚目（Heteroptera）非靶标副捕获物的物种组成、多样性、营养结构与时间动态。共记录14科54种508头个体；两园间群落组成、丰度和Hill多样性无显著差异，月份间组成显著变化而丰度与多样性无显著差异，植食性种类总体占优，捕食性种类6月显著多于5月和9月。Gabarevo园中色板处理、采样间隔及其交互作用显著影响捕获组成，但多变量离散度不均且两两比较不显著，色板效应解释需谨慎；经Benjamini–Hochberg校正后仅Graphosoma italicum与荧光黄板显著关联。副捕获物可用于记录农业景观中异翅亚目物种组成与时间动态，但所用采集方法无法建立所采物种与油用玫瑰之间的营养关系。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3390/d18120733",
+   "tags": {
+    "theme": [
+     "gear",
+     "eco"
+    ],
+    "species": [],
+    "region": [],
+    "method": [
+     "monitor"
+    ]
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.1111/1462-2920.70476",
+   "title": "Distance- and Direction-Dependent Effects of Macroalgae on Early Epilithic Bacterial Assemblages and Coral Settlement Processes",
+   "authors": "Pozas-Schacre, Chloé; Bischoff, Hugo; Clerissi, Camille; Nugues, Maggy M.",
+   "journal": "Environmental Microbiology",
+   "date": "2026-11-25",
+   "summary": "以两种大型海藻（含 Dictyota bartayresiana）上、下游不同距离（1 cm 等三个距离）预处理的瓷砖，考察大型海藻对早期石面附着细菌群落及珊瑚幼体附着的影响。宏藻塑造了早期石面细菌群落，且在两藻下游 1 cm 处效应最强；离体附着实验中，Acropora pulchra 在 D. bartayresiana 上、下游 1 cm 处理瓷砖的隐蔽面附着率降低，而 Pocillopora acuta 呈相反格局，Bdellovibrionaceae、Pirellulaceae、Flavobacteriaceae 和 Rhodobacteraceae 中特定细菌类群与 P. acuta 附着相关且随藻种而异。将带珊瑚稚体的瓷砖放回礁区原位后，靠近 D. bartayresiana（尤其下游 1 cm）稚体存活率持续降低，表明大型海藻通过距离与流向依赖的厘米级效应影响珊瑚附着及附着后存活，且可能由石面细菌群落介导。",
+   "summary_en": false,
+   "url": "https://doi.org/10.1111/1462-2920.70476",
+   "tags": {
+    "theme": [
+     "disease",
+     "eco"
+    ],
+    "species": [
+     "seaweed"
+    ],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3389/fmars.2026.1976839",
+   "title": "Sedimentation regimes determine variations in the structure of macroalgal assemblages on coral reefs in the Eastern Tropical Pacific Ocean: a case study",
+   "authors": "López, Norma; Candelaria, Carlos",
+   "journal": "Frontiers in Marine Science",
+   "date": "2026-11-25",
+   "summary": "在墨西哥热带太平洋两个环境暴露条件不同的岸礁（Caleta de Chon 与 Zacatoso），2014年五个采样期同步监测了沉积速率（分细粒与粗粒组分）及大型海藻群落，并鉴定至种级。Caleta de Chon 的物种多样性与丰富度持续高于 Zacatoso，群落组成在两礁间差异显著（PERMANOVA，p=0.0074）但无显著时间变化；沉积速率则呈显著时间主效应及站点×时间交互，两礁5月同步出现沉积峰值，但前者以细粉砂为主（0.022 g m⁻² d⁻¹），后者由粗粒沉积脉冲驱动（0.0209 g m⁻² d⁻¹）。局地地貌与水动力能量通过筛选沉积物粒径组分，在局地尺度塑造了不同的大型海藻群落结构，种级组成结合粒径组分可区分流域径流与波浪驱动的底载输运，为预测沿岸开发下的底栖群落变化提供基线。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3389/fmars.2026.1976839",
+   "tags": {
+    "theme": [
+     "eco"
+    ],
+    "species": [
+     "seaweed"
+    ],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.1111/jfd.70327",
+   "title": "In Vitro Synergism and Preliminary In Vivo Efficacy of Florfenicol Combined with Oxytetracycline against Streptococcus agalactiae Infection in Nile Tilapia ( Oreochromis niloticus )",
+   "authors": "Wu, Chi-Ming; Rairat, Tirawat; Chuchird, Niti; Keetanon, Arunothai; Uchuwittayakul, Anurak; Chou, Chi-Chung",
+   "journal": "Journal of Fish Diseases",
+   "date": "2026-11-25",
+   "summary": "棋盘微量稀释法显示，10株无乳链球菌（Streptococcus agalactiae）中9株对氟苯尼考（FF）与土霉素（OTC）联用呈协同、1株呈相加作用。尼罗罗非鱼幼鱼腹腔注射耐药菌株（10⁸ CFU）后经药饵给药7天，FF 10 + OTC 50 mg/kg/day联合组存活率达100%，显著高于对照组（23.33%）、低剂量OTC组（43.33%）及FF组（53.33%），且肝脏总菌数显著低于对照组（1.05 vs 5.15×10⁷ CFU/g）。结果初步表明FF+OTC联用对无乳链球菌感染有效。",
+   "summary_en": false,
+   "url": "https://doi.org/10.1111/jfd.70327",
+   "tags": {
+    "theme": [
+     "disease"
+    ],
+    "species": [
+     "tilapia"
+    ],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3390/fishes11120688",
+   "title": "Effects of Dietary Eucommia ulmoides Extract on Growth, Serum Antioxidant Capacity, and Gut Microbiota of Large Yellow Croaker (Larimichthys crocea) Fed Oxidized Soybean Oil",
+   "authors": "Xie, Jianjun; Yang, Xinyu; Xu, Yexiang; Wang, Gengshen; Jiang, Min; Wang, Wei; Xu, Wenjun",
+   "journal": "Fishes",
+   "date": "2026-11-25",
+   "summary": "以2×2析因试验（正常/氧化豆油4% × 添加/不添加0.2%杜仲提取物，30 d）评估氧化豆油及杜仲提取物对大规格大黄鱼（184.66±10.72 g）生长、血清与肝脏指标及肠道菌群的影响。氧化豆油显著降低增重率（S组48.01±7.86% vs OS组25.81±1.15%）。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3390/fishes11120688",
+   "tags": {
+    "theme": [
+     "nutri",
+     "disease"
+    ],
+    "species": [
+     "croaker"
+    ],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3390/fishes11120690",
+   "title": "Genomic Organization and Transcriptional Regulation of Piscidin Paralogues in the Orange-Spotted Grouper (Epinephelus coioides)",
+   "authors": "Huang, Xia-Zi; Li, Zi-Ran; Chen, Lei; Zhang, Kai; Chen, Jian-Chao; Duan, Bin-Wei; Jiang, Shou-Jia; Shi, Qiong; Deng, Li",
+   "journal": "Fishes",
+   "date": "2026-11-25",
+   "summary": "橙点石斑鱼（Epinephelus coioides）4个piscidin旁系同源基因成串排列于12号染色体同一共线性簇（ecPis3-ecPis1-ecPis2-ecPis4），该排列在5种石斑鱼中保守。各基因启动子预测的转录因子结合谱存在差异，双荧光素酶实验显示MAFA/MAFBb激活ecPis1和ecPis2启动子而MAFF/MAFK抑制之，ESR1激活ecPis4、ZBTB26-like抑制ecPis3。头肾白细胞中4个基因对LPS和poly(I:C)的响应随刺激种类、剂量和时间而异，提示保守基因座下各旁系同源基因受不同转录调控，可能与其抗菌和抗病毒功能分化相关。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3390/fishes11120690",
+   "tags": {
+    "theme": [
+     "disease",
+     "gene",
+     "econ"
+    ],
+    "species": [
+     "seabass"
+    ],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3390/fishes11120691",
+   "title": "Structural and Phylogenetic Analysis of the Complete Mitochondrial Genome of Acrossocheilus longipinnis (Wu, 1939)",
+   "authors": "Zhang, Jiajun; Shao, Liming; Xiong, Fangyuan; Yan, Pan; Wang, Li; Dong, Shenhui; Mo, Xiaoyang; Shen, Zhongyuan",
+   "journal": "Fishes",
+   "date": "2026-11-25",
+   "summary": "对珠江流域特有鱼类长鳍光唇鱼（Acrossocheilus longipinnis）的线粒体全基因组进行了测定与结构、系统发育分析：基因组全长16,597 bp，含37个基因和1个控制区，A+T含量55.95%，呈明显AT偏好；13个PCGs中COX1以GTG起始、其余以ATG起始，部分基因以不完整终止密码子T–或TA–结束，共编码3619个密码子，亮氨酸密码子最多、CUA使用频率最高；22个tRNA中除trnS1缺失DHU臂外均呈典型三叶草结构。13个PCGs的Ka/Ks为0.02–0.19，均远小于1，显示受强纯化选择，其中ND6最高、COX1最低。基于13个PCGs串联序列与全线粒体基因组的系统发育树中，13个PCGs树支持采样光唇鱼属物种构成高支持率线粒体支系，长鳍光唇鱼先与GenBank序列MK296412聚在一起，再与武夷光唇鱼（A. wuyiensis）构成姐妹群；全线粒体基因组树因非编码区比对模糊出现拓扑冲突，而严格比对的13个PCGs提供了更可靠的母系信号。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3390/fishes11120691",
+   "tags": {
+    "theme": [
+     "gene"
+    ],
+    "species": [],
+    "region": [
+     "china",
+     "freshwater"
+    ],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3390/fishes11120693",
+   "title": "Pathogenic Characteristics and Host Immune Responses of Two Virulence-Differentiated Aeromonas veronii Strains Isolated from Diseased Large-Scale Loach (Paramisgurnus dabryanus)",
+   "authors": "Feng, Yongyong; Ma, Song; Zhu, Ying; Ding, Yueying; Wang, Nuo; Wang, Wenhui; Gao, Fengtao",
+   "journal": "Fishes",
+   "date": "2026-11-25",
+   "summary": "从患病大鳞副泥鳅（Paramisgurnus dabryanus）分离出两株症状不同的维氏气单胞菌（Aeromonas veronii）Ly-Av-1与Ly-Av-2，比较其溶血活性、毒力基因谱和耐药性，并经人工感染测定泥鳅血清AKP、ACP、ALT、AST、SOD、CAT、GSH-Px活性及MDA含量，同时评估肝、脾、肾、皮肤中氧化应激与免疫相关基因表达。两株均引起肝损伤并上调脾免疫基因，但携带hlyA、alt、lip的Ly-Av-1具体外溶血性、LD50更低，感染后出现皮肤肿胀、溃疡及边缘出血，并伴氧化应激损伤和炎症因子表达升高；未检出hlyA的Ly-Av-2仅致皮肤肿胀溃疡而无出血，提示皮肤出血与hlyA基因相关。两株均为多重耐药，恩诺沙星广泛使用降低了其对氟喹诺酮类的敏感性，四环素和多西环素仍有良好抑制作用；毒力基因谱差异驱动了宿主氧化应激与免疫应答的分化。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3390/fishes11120693",
+   "tags": {
+    "theme": [
+     "disease"
+    ],
+    "species": [
+     "freshwater-other"
+    ],
+    "region": [
+     "global"
+    ],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3390/fishes11120689",
+   "title": "Integrated Multi-Omics Characterizes Epithelial Barrier Remodeling and Inflammatory Signaling Associated with Adipose Eyelid Opacification in Chub Mackerel (Scomber japonicus), with Exploratory Microbial Community Profiling",
+   "authors": "Dong, Hongming; Yuan, Shipeng; Wang, Huan; An, Changting; Li, Ang; Che, Shuai; Zhang, Hesen; Liu, Shufang",
+   "journal": "Fishes",
+   "date": "2026-11-25",
+   "summary": "对300尾早期成活鱼场调发现，7%（21尾）出现脂眼睑混浊，技术人员反映患病鱼更易死亡，但未系统量化。组织学、光学、蛋白质组和转录组比较显示，混浊眼睑结构紊乱、相对混浊信号升高（600 nm处HG 30.79±9.05 vs WG 84.20±4.94），角蛋白（KRT8、KRT15）及ECM相关蛋白（COL12A1A、EMILIN1A）丰度下降，而CDH2及应激 chaperone（HSPD1、HSP90AB1）丰度上升；转录组（因技术限制仅作探索性分析）提示结构与炎症通路改变，RT-qPCR部分支持。探索性菌群分析发现弧菌属与发光杆菌属的属水平差异，但未确立感染关系。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3390/fishes11120689",
+   "tags": {
+    "theme": [
+     "disease",
+     "gene"
+    ],
+    "species": [
+     "tuna"
+    ],
+    "region": [],
+    "method": [
+     "edna"
+    ]
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3390/fishes11120692",
+   "title": "Morphological, Intestinal Physiological, and Gut Microbial Characteristics of Chinese Spiny Frogs Under Two Commercial Feeding Regimes: A Farm-Based Observational Survey",
+   "authors": "Zhao, Ji; Jiang, Pengxin; Zeng, Gaoxiong; Liao, Mengxiang; Li, Wensheng; Lin, Shengjie; Huang, Zhen; Wu, Bin; Lai, Mingyong; Xue, Lingzhan",
+   "journal": "Fishes",
+   "date": "2026-11-25",
+   "summary": "在商业养殖场对分别投喂活黄粉虫（JA）和配合饲料（JB）的两组成年棘胸蛙（Quasipaa spinosa）进行观察性比较：每组测30只的体重与形态线性指标，另取6只检测肠道形态、消化酶与抗氧化指标及基于16S rRNA的肠道菌群。JB组采样时体型更大、肠长更长，但8项肠道组织形态指标总体相当；胰蛋白酶、α-淀粉酶、脂肪酶、CAT、SOD、MDA和T-AOC均未见明显差异，仅GSH-Px活性JB组更高。肠道菌群α多样性无可检出差异，基于Bray–Curtis的探索性分析提示群落组成差异依所用指标而异；JA组若干乳酸菌相关属相对丰度较高，JB组Cetobacterium与Terrisporobacter相对丰度更高，前者曾与维生素B12代谢、后者与氨基酸发酵相关联。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3390/fishes11120692",
+   "tags": {
+    "theme": [
+     "bio",
+     "disease"
+    ],
+    "species": [],
+    "region": [
+     "china"
+    ],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3389/fmars.2026.1939537",
+   "title": "Elemental signatures in otoliths of Sparus aurata support robust differentiation of nursery habitats",
+   "authors": "Matić-Skoko, Sanja; Bašić, Sanja; Vrdoljak, Dario; Madunić, Lea; Uvanović, Hana; Pavičić, Mišo; Mertz-Kraus, Regina",
+   "journal": "Frontiers in Marine Science",
+   "date": "2026-11-25",
+   "summary": "对亚得里亚海东岸11个站点的143尾金头鲷（Sparus aurata，含2021年5–6月采集的76尾幼鱼和2023年12月–2024年4月采集的67尾3龄鱼）进行耳石LA-ICP-MS分析，基于幼鱼育幼期耳石区域的Sr、Na、Mg浓度及其Q10、Q90分布描述符，用K-means聚类（轮廓分析定簇数，bootstrap重采样结合Jaccard相似度评估稳定性）识别出两个化学特征显著不同的簇。聚类结果与育幼场类型高度对应：N1型个体92.86%归入簇1，N2型仅47.06%归入簇2且站点间变异较大；簇2及N2型的Sr相关变量较高，簇1及N1型的Na均值与Na Q10较高，Q10、Q90等分布描述符的判别力优于均值。将3龄鱼纳入分析后两簇结构基本保留，A1亚组成体主要归入簇1（66.67%，类似N1），A2亚组成体多归入簇2（64.86%），提示不同育幼场对3龄鱼采样区的贡献存在差异，但耳石化学特征重叠明显；结果表明耳石元素特征可保留具有生态学意义的育幼场信息并支持育幼来源推断，有望用于该种群的针对性保护与管理。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3389/fmars.2026.1939537",
+   "tags": {
+    "theme": [
+     "eco"
+    ],
+    "species": [
+     "seabass"
+    ],
+    "region": [],
+    "method": [
+     "otolith"
+    ]
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3389/fmars.2026.2000340",
+   "title": "Wave overtopping load transmission and landward revetment stability on a sloping sea dike with varying crest widths",
+   "authors": "Shi, Lei; Dong, Weiliang; Fang, Zhangbin; Wu, Hua’an; Yan, Yuhan",
+   "journal": "Frontiers in Marine Science",
+   "date": "2026-11-25",
+   "summary": "基于1:30 Froude相似比尺的斜坡海堤二维水槽试验，采用JONSWAP谱不规则波，覆盖4种堤顶宽度（8–20 m）、4种波水位组合（100–500年重现期，H₁₃=5.28–5.66 m，谱平均周期15.5–16.8 s）及4种背海侧护面，量化越浪压力、流速、流量与护面响应。堤顶由8 m加宽至20 m使背坡平均流速降低25.4%–30.5%，16→20 m仅再降1.6%–5.8%，压力亦随堤顶加宽而减小；200年一遇条件下16 m堤顶的平均越浪流量高于100年一遇的8 m堤顶（0.068 vs 0.042 m³/(m·s)），但背坡平均流速更低（约2.3 vs 2.6 m/s）。干砌石破坏由石块松动、局部凹陷发展至石块流失与堤身暴露，加宽堤顶可将明显失稳推迟至更严酷条件，但500年一遇下16与20 m堤顶仍存在显著冲刷；混凝土护面与螺母块体未见明显失稳，四角块体仅在8 m堤顶500年一遇下出现短暂局部抬升。堤顶宽度调控荷载传递，护面特性决定稳定性响应，评估需综合平均越浪流量、局部压力、流速",
+   "summary_en": false,
+   "url": "https://doi.org/10.3389/fmars.2026.2000340",
+   "tags": {
+    "theme": [
+     "misc"
+    ],
+    "species": [],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3389/fmars.2026.1937225",
+   "title": "Multidecadal variability of upwelling in the Campania Coastal System (Tyrrhenian Sea)",
+   "authors": "de Ruggiero, Paola; Gifuni, Luigi; Esposito, Giovanni; Napolitano, Ernesto; Iacono, Roberto; Pierini, Stefano; Cotroneo, Yuri; Budillon, Giorgio; Zambianchi, Enrico",
+   "journal": "Frontiers in Marine Science",
+   "date": "2026-11-25",
+   "summary": "基于大气再分析、卫星观测与高分辨率数值模拟，刻画了1940–2024年坎帕尼亚沿岸系统（第勒尼安海南部）7个岸段上升流有利风的强度、频率与持续时间，并评估2008–2024年SST与Chl-a响应。有利风条件频繁但短暂，1940–2024年无显著区域趋势，近几十年呈频率增加、强度减弱的倾向；约半数有利风事件后出现SST降温，降温频率随离岸Ekman输运增强而升高，夏季降温幅度明显大于冬季。2016年春季模拟显示局地沿岸降温、垂向上升流与等密度面抬升，离岸Ekman输运与pumping的贡献存在空间差异；SST降温后Chl-a并未一致升高，生物响应更为多变。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3389/fmars.2026.1937225",
+   "tags": {
+    "theme": [
+     "climate"
+    ],
+    "species": [],
+    "region": [
+     "med"
+    ],
+    "method": [
+     "remote"
+    ]
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3389/fmars.2026.1938640",
+   "title": "Seagrass as a boundary object linking science, stewardship, and resilience in Sanday, Orkney",
+   "authors": "Boyle, Joseph S.; Lilley, Richard J.; Agardy, Tundi; Stanković, Anka T.; Brogan, Kieron; Ghaleb, Jake; Lennie, William; Smith, Phillippa; Ljosland, Ragnhild; Jones, Joanna",
+   "journal": "Frontiers in Marine Science",
+   "date": "2026-11-25",
+   "summary": "以英国奥克尼Sanday岛约21 ha的Zostera marina草床为对象，通过参与式制图、生态研究、互惠能力建设、教育共建、文化实践与政策对话，将海草管护与岛屿海岸韧性议题相衔接。当地知识帮助识别了此前未记录的海草草床，并经生态研究转化为地理参照的生境证据，纳入政府数据集与区域海洋规划。海草作为“boundary object”使居民、研究者、教育者、社区组织与规划者在不要求共识或平等权威的前提下，围绕同一生态对象协调知识、意义与优先事项，将生境恢复嵌入更广泛的社会-生态系统与社区优先议程。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3389/fmars.2026.1938640",
+   "tags": {
+    "theme": [
+     "eco",
+     "climate",
+     "econ"
+    ],
+    "species": [],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3389/fmars.2026.2015479",
+   "title": "Spatial distribution patterns and driving pathways of the normalized biovolume size spectrum of zooplankton in the coastal waters of the Shandong Peninsula",
+   "authors": "Huang, Wenjing; Lei, Mingyu; Jiang, Huichao; Fu, Ping; Zhang, Yixuan; He, Jianlong; He, Xin; Zhang, Xiaowen; Qiu, Shaonan; Liu, Caili",
+   "journal": "Frontiers in Marine Science",
+   "date": "2026-11-25",
+   "summary": "基于2025年5月山东半岛近海ZooScan调查，结合d-RDA与结构方程模型解析浮游动物归一化生物体积粒径谱（NBVS）的空间格局及驱动路径。受陆源影响的渤海特征水域（高温、浅水、低盐、高TSS、营养盐和Chl-a）NBVS斜率更陡（-2.58至-0.60），平均等效球径（Mean ESD）和粒径多样性指数（PSDI）较低；深水高盐黄海斜率较平缓（-1.40至-0.10），Mean ESD与PSDI显著更高（p<0.05）。环境变量解释粒径结构变异的21.7%（p=0.001，Adj. R²=0.217），且两海区NBVS斜率的关联路径不同：渤海为Chl-a积累主导的“资源驱动”型，黄海则为水温与深度直接约束的“环境驱动”型。NBVS指标可作为近岸生态健康监测的敏感指示。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3389/fmars.2026.2015479",
+   "tags": {
+    "theme": [
+     "eco"
+    ],
+    "species": [],
+    "region": [
+     "bs",
+     "ys"
+    ],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3389/fmars.2026.2031077",
+   "title": "Spatiotemporal dynamics and multi-metric ecological risk assessment of microplastics in the typical estuarine-coastal system",
+   "authors": "Wang, Yanyun; Cheng, Dongdong; Liu, Huatai; Wang, Xinhong; Ye, Xin",
+   "journal": "Frontiers in Marine Science",
+   "date": "2026-11-25",
+   "summary": "厦门河口与近岸水域旱季微塑料丰度（2.3 ± 1.1 n/L）高于雨季（1.6 ± 0.7 n/L），淡水稀释是主因，近岸丰度则季节稳定；主要聚合物为PE、PET和PP，雨季更强光氧化与水动力扰动使<300 μm颗粒占比升至54%–59%。基于丰度的PLI（<10）与阈值型RQ（<1.0）显示基线风险较低，但基于危害的PRI将逾63%河口站点判为高风险，空间聚类显示河口是微塑料滞留过滤器、养殖邻近站点在两季均为持续风险热点。结果表明聚合物毒性而非绝对丰度主导生态风险，监测应纳入聚合物危害权重而非仅依赖颗粒计数。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3389/fmars.2026.2031077",
+   "tags": {
+    "theme": [
+     "pollution",
+     "eco"
+    ],
+    "species": [],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3389/fmars.2026.1984103",
+   "title": "Bacterial isolates, microbiome structure and host pathology during a mass mortality event in Arca noae from the Ebro Delta (Northwestern Mediterranean Sea, Spain)",
+   "authors": "López, Jose R.; Cruz-Quintana, Yanis; Reinoso, Samira; Fernández-Tejedor, Margarita; Gisbert, Enric; Furones, Dolors",
+   "journal": "Frontiers in Marine Science",
+   "date": "2026-11-25",
+   "summary": "2022年7月Ebro Delta（西北地中海）天然Arca noae种群约90%个体发生严重死亡事件；比较死亡发生点与邻近无死亡点，整合环境、微生物、组织病理与实验证据。共分离166株细菌，Acinetobacter johnsonii与Enterobacter sp.仅在死亡点样品中检出；两株代表分离株实验攻毒使宿主累积死亡率达81–85%（对照26%）。死亡点样品microbiome alpha多样性降低、群落结构改变，Acinetobacter、Enterobacter与Stenotrophomonas相对丰度升高，消化腺与鳃出现血细胞浸润、上皮脱落及坏死等较重病变；两站点温度、盐度、溶解氧与叶绿素a存在显著差异。结果支持环境条件、宿主病变与microbiome差异交互作用的多因子死亡情景。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3389/fmars.2026.1984103",
+   "tags": {
+    "theme": [
+     "disease"
+    ],
+    "species": [],
+    "region": [
+     "med"
+    ],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3389/fmars.2026.1967854",
+   "title": "Environmental procuratorial public interest litigation under the ecological and environmental code: institutional design and operational logic",
+   "authors": "Hou, Fangyu",
+   "journal": "Frontiers in Marine Science",
+   "date": "2026-11-25",
+   "summary": "《生态环境法典》首次将“生态环境检察”入法，并以九个条款系统规定生态环境检察公益诉讼职责，其中第1074条针对海洋生态环境损害设立专门规则。通过制度沿革梳理、法律规范分析与比较研究，指出该体系并非美国公民诉讼的移植，而是基于中国宪法体制的结构性制度创新，形成非海洋生态损害检察参与赔偿、海洋生态损害检察公益诉讼、环境民事公益诉讼与环境行政公益诉讼四种基本形态，兼具督促守法与协同治理功能。第1074条确立监管部门索赔优先、检察机关兜底起诉的双层结构，渤海专项实践显示出私人诉讼所缺乏的跨区域海洋治理能力；该体系在权力来源、原告身份、程序逻辑与制度功能上与美国公民诉讼存在根本差异，标志着从分散规则向集成体系的转变。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3389/fmars.2026.1967854",
+   "tags": {
+    "theme": [
+     "econ"
+    ],
+    "species": [],
+    "region": [
+     "china"
+    ],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3389/fmars.2026.1981790",
+   "title": "Temporal association of the diatom Actinocyclus cf. subtilis with the late phase of Ostreopsis blooms in Mediterranean coastal communities",
+   "authors": "Kryk, Adrian; Mann, David G.; Vila, Magda; Homedes, Sofía I.; Estrada, Marta; Laza-Martínez, Aitor; Berdalet, Elisa; Trobajo, Rosa",
+   "journal": "Frontiers in Marine Science",
+   "date": "2026-11-25",
+   "summary": "在地中海西班牙Llavaneres礁平台的两年周期观测中，产毒甲藻Ostreopsis cf. ovata暴发达到峰值后，一种大型中心目硅藻开始出现并在Ostreopsis衰退时成为优势种；该硅藻被鉴定为Actinocyclus cf. subtilis，历史标本比对显示其与英国早期记录的A. subtilis高度一致，且在其他地中海及东北大西洋站点也观察到类似的Ostreopsis后期与大型中心目硅藻共现现象。二者常在同一黏液基质中紧密共存，健康Actinocyclus与Ostreopsis并生，提示Actinocyclus可能耐受Ostreopsis产生的化感物质。研究还提供了A. cf. subtilis的活细胞识别、LM与SEM特征及基于rbcL的系统发育信息，并指出该硅藻可作为Ostreopsis暴发衰退的潜在指示种进一步探索。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3389/fmars.2026.1981790",
+   "tags": {
+    "theme": [
+     "misc"
+    ],
+    "species": [
+     "seaweed"
+    ],
+    "region": [
+     "med"
+    ],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3389/fmars.2026.1976619",
+   "title": "Occurrence patterns of elasmobranch fishes in a semi-regulated urban recreational fishery",
+   "authors": "Kolakkodan, Maryam Saleel; Ng, Sirius Z. H.; Xu, Kathy Tingting; Choy, Christina P. P.; Jaafar, Zeehan",
+   "journal": "Frontiers in Marine Science",
+   "date": "2026-11-25",
+   "summary": "基于2000–2024年977条经核实并地理定位的公开记录，刻画了数据匮乏的新加坡板鳃类鱼类的多样性与分布格局。结果显示板鳃类出现在关键沿海海洋生境中，凸显了保护这些区域的紧迫性；并讨论了城市化、休闲渔业及废弃、丢失或丢弃渔具（ALDFG）对这些受威胁类群的潜在影响。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3389/fmars.2026.1976619",
+   "tags": {
+    "theme": [
+     "conserv",
+     "gear"
+    ],
+    "species": [
+     "carchar"
+    ],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3389/fmars.2026.1962387",
+   "title": "Physics-guided curve-residual deep learning for within-domain permeability prediction of calcareous-sand concrete",
+   "authors": "Chao, Zhiming; Tan, Kun; Zeng, Jianfeng; Bai, Xiangen; Shi, Danda; Cui, Peng",
+   "journal": "Frontiers in Marine Science",
+   "date": "2026-11-25",
+   "summary": "针对钙砂混凝土在压力荷载下的气体渗透性，构建物理引导的曲线残差深度神经网络（PCR-DNN），利用77条六点压力曲线共462个渗透率测量值，在实验域内补全部分实测压力曲线。在同曲线已有4个测点的条件下，PCR-DNN对留出压力点的测试R²为0.9937，但线性与自然三次样条插值分别达0.9987和0.9990；整曲线留出时各模型对数尺度R²为0.9065~0.9523。结论是单条曲线补全宜用直接插值，PCR-DNN更适合作为域内预测与跨实验条件一致性检验的统一模型，且其曲线补全精度依赖目标曲线的实测数据用于校准。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3389/fmars.2026.1962387",
+   "tags": {
+    "theme": [
+     "misc"
+    ],
+    "species": [],
+    "region": [],
+    "method": [
+     "ml",
+     "edna"
+    ]
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3389/fmars.2026.1992082",
+   "title": "From geopolitical sanctions to environmental due diligence: fostering institutional coherence in cross-border governance of the shadow fleet",
+   "authors": "He, Sai",
+   "journal": "Frontiers in Marine Science",
+   "date": "2026-11-25",
+   "summary": "针对规避制裁的“影子船队”扩张对全球海洋秩序构成的环境与生态威胁，指出现行以单边经济制裁为核心的监管范式造成沿海国与船旗国之间的管辖权僵局，跨境损害难以救济。主张依UNCLOS将沿海国在领海、海峡、EEZ与公海的预防性执法干预合法化为履行审慎义务（due diligence）与预防性方法，并借《罗马II条例》第7、17条与1992年《民事责任公约》协同适用，对有偿付能力的直接营运方实现国内侵权救济。提出将科学风险评估机制制度化作为UNCLOS执法门槛的证据基础，并以中国2026年生态环境法典为国内转化立法范本。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3389/fmars.2026.1992082",
+   "tags": {
+    "theme": [
+     "econ"
+    ],
+    "species": [],
+    "region": [
+     "global"
+    ],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3389/fmars.2026.1958849",
+   "title": "Advancing the blue economy through resource governance of deep-sea minerals exploitation in Areas Beyond National Jurisdiction, aligning with the Sustainable Development Goals and international legal frameworks",
+   "authors": "Mingfei, Ma; Talha, Ahmad; Noor, Sehla; Sardar, Tayyaba; Sarwar, Muhammad A.",
+   "journal": "Frontiers in Marine Science",
+   "date": "2026-11-25",
+   "summary": "深海采矿活动正超前于其治理法律，ISA已发放31份勘探合同，但开采规则草案仍有30余项实质问题未决，且收益分享模型未经真实数据检验。该文结合UNCLOS、1994年执行协定及2011/2024年ITLOS咨询意见的法理分析，与生命周期影响评估（LCIA）、环境影响轮（EIW）多属性框架及采集车沉陷工程模型三类实证数据，并将ISA合同区与保护区、已知热液喷口区进行空间比对。结果显示，深海结核开采对生态系统的损害超过迄今测得的其他海底活动，现有扰动足迹计算低估采集车对海底的实际影响，名义保护区与实际许可采矿区的空间配置错位。文章提出五项改革：数值化EIA阈值、独立环境审查、生态代表性区域强制保护、海底可持续性基金及独立ISA监察机构，以将科学与地理发现转化为UNCLOS第145条下的可执行义务。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3389/fmars.2026.1958849",
+   "tags": {
+    "theme": [
+     "econ",
+     "nutri"
+    ],
+    "species": [],
+    "region": [
+     "global"
+    ],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3389/fmars.2026.1957167",
+   "title": "The influence of the unfolded form of Fowler flaps on the performance of oscillating hydrofoils",
+   "authors": "Cui, Yan; Xu, Di; Wang, Zhisui; Zhou, Xingen; Sun, Guang",
+   "journal": "Frontiers in Marine Science",
+   "date": "2026-11-25",
+   "summary": "针对振荡水翼潮流能采集装置，数值研究了Fowler襟翼两种展开运动序列（Mode-A：先平移后旋转；Mode-B：先旋转后平移）在固定雷诺数下的水动力性能差异。结果表明，Mode-A的能量采集效率比Mode-B高7–14%，平均升力系数高7.88%，平均阻力系数低13.9%；Mode-A在整个展开过程中涡脱落较缓和、流线形态良好，减少了流动分离引起的负功率做功，而Mode-B则诱发强烈涡脱落和额外阻力。建议Fowler襟翼设计采用先平移后旋转的运动序列，为潮流能振荡水翼的液压驱动机构提供参考。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3389/fmars.2026.1957167",
+   "tags": {
+    "theme": [
+     "misc"
+    ],
+    "species": [],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3389/fmars.2026.2038299",
+   "title": "International legal dilemmas in marine plastic pollution governance and China’s logic of normative mediation: insights from the global plastics treaty negotiations",
+   "authors": "Niu, Bingru",
+   "journal": "Frontiers in Marine Science",
+   "date": "2026-11-25",
+   "summary": "全球塑料条约谈判因制度碎片化而在条约规制范围、“全生命周期”定义、初级塑料聚合物总产量限制、塑料产品与化学品全球监管、资金机制与技术转让及议事规则等方面存在深刻规范争议，导致谈判陷入僵局。中国作为塑料生产大国和积极参与方，支持有法律约束力的全球框架，但反对对所有塑料类别、生命周期阶段和缔约方不加区分地适用统一规则，并通过规范识别、规范重构与程序性推动扮演“规范调解者”角色。基于此实践，提出由全球共同目标、最低共同义务、差异化国家实施和渐进趋同程序机制构成的制度框架，以推进海洋塑料污染综合治理。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3389/fmars.2026.2038299",
+   "tags": {
+    "theme": [
+     "econ",
+     "pollution"
+    ],
+    "species": [],
+    "region": [
+     "global",
+     "china"
+    ],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3389/fmars.2026.1999710",
+   "title": "Assessing the impact of the Pinglu Canal on the importance of major China-ASEAN ports",
+   "authors": "Ding, Xingong; Song, Jiaqi; Pan, Liurong; Ji, Xina",
+   "journal": "Frontiers in Marine Science",
+   "date": "2026-11-25",
+   "summary": "基于2025年第一季度航线数据构建中国—东盟集装箱航运网络，模拟平陆运河开通前后两种情景，并用多中心性指标结合TOPSIS综合评估网络特征与港口重要性变化。结果显示，开通后平均最短运输时间下降6.84%，全球网络效率提升1.79%，钦州港和南宁港的港口重要性排名分别上升14位和27位。西江中下游的梧州、贵港、肇庆、云浮等港口相对网络重要性下降，既有主要枢纽港的主导地位基本稳定。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3389/fmars.2026.1999710",
+   "tags": {
+    "theme": [
+     "econ"
+    ],
+    "species": [],
+    "region": [
+     "china"
+    ],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3389/fmars.2026.2012956",
+   "title": "Seasonal river discharge shapes sediment routing and bed adjustment during storms in an idealized estuary",
+   "authors": "Jiang, Chunhai; Wang, Tianxin; Chen, Lei; Zhang, Teng; Liu, Chenyu; Liu, Huabin",
+   "journal": "Frontiers in Marine Science",
+   "date": "2026-11-25",
+   "summary": "基于理想化沙-泥河口（参照长江口）的深度平均水动力-地貌模型耦合波浪模型，比较了年均流量相同的恒定与季节性流量过程下风暴驱动的泥沙输运与河床调整。在4 m有效波高（H4）条件下，外段风暴引起的泥沙交换异常随流量由低到高从向陆转为向海，口门处向海输沙异常增大约四倍；四个季节H4情景的侵蚀体积差异仅为其最小值的1.56%，但区域变化方向相反。风暴结束后24天仍有约82%的绝对河床异常残留；更强波浪（H5）下季节性流量的侵蚀量比恒定流量低14.8%，显示低流量历史效应增强。结果揭示了流量、前期河床状态与特定日期潮汐条件的联合影响及模型配置内的空间重组，盐度效应与泥沙参数敏感性尚未解决。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3389/fmars.2026.2012956",
+   "tags": {
+    "theme": [
+     "eco"
+    ],
+    "species": [],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3389/fmars.2026.1940364",
+   "title": "Discrete element method analysis of macro-micro mechanical responses of calcareous sand considering particle angularity-breakage coupling effect",
+   "authors": "Shi, Danda; Fan, Xuanyu; Guan, Junbin; Zhu, Jie; Chao, Zhiming; Cui, Peng; Zhang, Wenbing",
+   "journal": "Frontiers in Marine Science",
+   "date": "2026-11-25",
+   "summary": "基于离散元法（DEM）与碎片替换法建立颗粒破碎模型，对不同棱角度颗粒试样开展真三轴剪切模拟，考察棱角度与破碎的耦合效应对钙质砂宏微观力学响应的影响。棱角度增大提高峰值剪应力比但加速峰后强度衰减，相对破碎率随轴向应变单调增加，轴向应变30%时高棱角度试样相对破碎率较低棱角度试样高约40%，围压增大强化棱角度对破碎的影响；临界状态下冗余系数与孔隙比负相关，高棱角度试样在剪切前期接触各向异性更强、后期显著降低。棱角度主要影响前期强度发展与接触各向异性，颗粒破碎则在后期主导强度衰减与接触网络重构。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3389/fmars.2026.1940364",
+   "tags": {
+    "theme": [
+     "misc"
+    ],
+    "species": [],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3389/fmars.2026.1995989",
+   "title": "Regional conflict and marine biodiversity in the Gulf region: the role of the international law of the sea in environmental protection",
+   "authors": "Khwaileh, Khaled Mohammad",
+   "journal": "Frontiers in Marine Science",
+   "date": "2026-11-25",
+   "summary": "阿拉伯湾半封闭海生态脆弱，珊瑚礁、海草床、红树林及伴生动物已接近热盐耐受上限；1990—1991年海湾战争故意泄油与油井大火造成有记录以来最大海洋溢油，2026年2月28日以来敌对行动又致霍尔木兹海峡周边120起确认航运事件、油污抵达保护岛屿与红树林且数周无协调区域响应。本文以学理法律分析结合同行评议海洋科学，梳理《联合国海洋法公约》第十二部分一般义务、区域科威特公约、国际人道法规则及2022年武装冲突与环境原则构成的分层法律架构。分析识别两处缺口：公约第236条按船舶/航空器主权豁免地位而非活动豁免环境条款，区域合作在冲突爆发时趋于碎片化；提出通过落实豁免船舶一致性义务、对基础设施与航运攻击充分适用第十二部分与国际人道法、将武装冲突原则嵌入区域框架、扩展联合国赔偿委员会责任模式来收窄缺口，优先建议保护區指定、抗冲突区域监测、冲突后修复及未归属损害常设基金，强调冲突期海洋环境保护需前瞻性法律设计而非事后赔偿。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3389/fmars.2026.1995989",
+   "tags": {
+    "theme": [
+     "econ",
+     "eco",
+     "disease"
+    ],
+    "species": [],
+    "region": [
+     "global"
+    ],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.1007/s10750-026-06462-y",
+   "title": "Newly recognized macroscopic mucilaginous aggregates of Gonyostomum semen in senescing blooms exhibit pronounced cytotoxic and hemolytic activity",
+   "authors": "Kozlíková-Zapomělová, Eliška; Urajová, Petra; Hronek, Jiří; Divoká, Petra; Saurav, Kumar",
+   "journal": "Hydrobiologia",
+   "date": "2026-11-25",
+   "summary": "",
+   "summary_en": true,
+   "url": "https://doi.org/10.1007/s10750-026-06462-y",
+   "tags": {
+    "theme": [
+     "pollution"
+    ],
+    "species": [],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.1007/s10750-026-06479-3",
+   "title": "Trash or treasure? macroplastics pollution and its interaction with the reproduction of the endemic Italian spring goby",
+   "authors": "Palazzi, Adriano; Galbiati, Matteo; De Felice, Beatrice; Mondellini, Simona; Parolini, Marco",
+   "journal": "Hydrobiologia",
+   "date": "2026-11-25",
+   "summary": "",
+   "summary_en": true,
+   "url": "https://doi.org/10.1007/s10750-026-06479-3",
+   "tags": {
+    "theme": [
+     "pollution"
+    ],
+    "species": [],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.1007/s10750-026-06446-y",
+   "title": "Hydrological regimes drive life-history divergence in dormant Australian freshwater invertebrate assemblages",
+   "authors": "Stevanovic, Aster Zivana; Grieger, Rebekah; Sheldon, Fran; de Bruyn, Mark; Jones, Natalie T.",
+   "journal": "Hydrobiologia",
+   "date": "2026-11-25",
+   "summary": "在澳大利亚墨累—达令盆地北部三个历史淹水频率不同的洪泛平原样点采集沉积物，实验模拟淹水和干燥事件，检验淹水频率对休眠水生无脊椎动物群落组成及延迟孵化普遍性的影响。淹水频率显著塑造休眠无脊椎动物群落组成；介形类（Ostracoda）和线虫（Nematoda）在多次实验淹水中延迟出现，符合 bet-hedging 策略，而枝角类（Cladocera）和轮虫（Rotifera）主要在首次淹水时孵化，体现即时激活而非通过延迟孵化分散风险。不同孵化策略共存分散了种群统计风险，支撑洪泛平原无脊椎动物群落的恢复力，对澳大利亚旱地河流日益多变的流态下维持生物多样性可能至关重要。",
+   "summary_en": false,
+   "url": "https://doi.org/10.1007/s10750-026-06446-y",
+   "tags": {
+    "theme": [
+     "eco",
+     "climate"
+    ],
+    "species": [],
+    "region": [
+     "freshwater",
+     "seasia"
+    ],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.1007/s10750-026-06481-9",
+   "title": "Challenges in the detection of crayfish in large rivers with droplet digital PCR-based environmental DNA methods: a Danube River case study",
+   "authors": "Novaković, Andrea; Kračun-Kolarević, Margareta; Ilić, Marija; Andjus, Stefan; Paunović, Momir; Kolarević, Stoimir",
+   "journal": "Hydrobiologia",
+   "date": "2026-11-25",
+   "summary": "",
+   "summary_en": true,
+   "url": "https://doi.org/10.1007/s10750-026-06481-9",
+   "tags": {
+    "theme": [
+     "gene"
+    ],
+    "species": [],
+    "region": [
+     "freshwater"
+    ],
+    "method": [
+     "edna"
+    ]
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
    "doi": "10.18176/jiaci.1220",
    "title": "Anaphylaxis From Inhaled Maggot and Wax Moth Larvae Fishing Bait in a Recreational Angler Previously Diagnosed With Fish Contact Allergy: IgE Profile and Tested Alternatives",
    "authors": "Cimbollek, Stefan; Menéndez-Rivero, Estela; de Aramburu Mera, Teresa; Reguero Capilla, Marta; Pineda de la Losa, Fernando; Santano Guillén, Elena; Martínez Martínez, María José; Galán Díez, Tania",
@@ -652,6 +1742,165 @@
     "region": [
      "india"
     ],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.1139/cjfas-2026-0046",
+   "title": "Niche partitioning between sympatric skates Rostroraja alba and Raja clavata: insights from spatial ecology and dietary analysis using acoustic telemetry and faecal DNA metabarcoding",
+   "authors": "Abecasis, David; Aires, Tania; Winkler, Alexander Claus; Kraft, Sebastian",
+   "journal": "Canadian J. Fisheries & Aquatic Sciences",
+   "date": "2026-11-24",
+   "summary": "在葡萄牙Professor Luiz Saldanha海洋保护区内，结合声学遥测与DNA宏条形码比较同域白鳐（Rostroraja alba）与背棘鳐（Raja clavata）的生态位分化。声学遥测显示两者在空间利用、昼夜节律和栖息地偏好上高度重叠，无细尺度空间隔离证据；而泄殖腔拭子宏条形码显示显著食性分化，R. alba的饵料类群多样性和专属饵料数量更高，提示其摄食策略更广或更机会主义。结果表明，营养生态位分化而非空间或时间隔离支撑了这两种生态相似鳐类的共存。",
+   "summary_en": false,
+   "url": "https://doi.org/10.1139/cjfas-2026-0046",
+   "tags": {
+    "theme": [
+     "eco",
+     "nutri",
+     "gene"
+    ],
+    "species": [
+     "carchar"
+    ],
+    "region": [],
+    "method": [
+     "acoustic",
+     "edna"
+    ]
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.1139/cjfas-2025-0404",
+   "title": "A Comparative Evaluation of the Efficacy of the Tobique River Atlantic Salmon Smolt-to-Adult Supplementation Program",
+   "authors": "Holborn, Melissa; McWillian, Sherisse; Hogan, J. Derek; Jones, Ross A.; Moreau, Darek T.R.; Brodeur, Nathalie N; de Mestral, Louise Gabrielle; Bradbury, Ian; Reader, Jeffrey M; Anderson, Eric C",
+   "journal": "Canadian J. Fisheries & Aquatic Sciences",
+   "date": "2026-11-24",
+   "summary": "加拿大Tobique河大西洋鲑smolt-to-adult supplementation（SAS）项目将洄游smolt捕起、养至性成熟后放流，与放流人工繁育幼鲑的项目并行运行；对3个潜在产卵群体和5年回归成鱼采样，用亲缘分析评估产卵成功率、繁殖成功率与交配模式。SAS成鱼能在河中成功产卵，并与SAS成鱼、海河洄游鲑及未采样产卵者（可能为早熟雄性parr）交配，但其繁殖成功率低于海河洄游鲑和broodstock来源个体，broodstock来源鱼终生繁殖成功率最高。因此SAS成鱼贡献的回归成鱼补充量较少，对种群的数量统计影响较低。",
+   "summary_en": false,
+   "url": "https://doi.org/10.1139/cjfas-2025-0404",
+   "tags": {
+    "theme": [
+     "nutri"
+    ],
+    "species": [
+     "salmon"
+    ],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.1111/raq.70233",
+   "title": "Recent Advances in Multimodal Dissolved Oxygen Forecasting in Aquaculture: A Review",
+   "authors": "Li, Daoliang; Mo, Henghui; Liu, Sitao; Liu, Jianhui; Li, Zhenwei",
+   "journal": "Reviews in Aquaculture",
+   "date": "2026-11-24",
+   "summary": "溶解氧（DO）影响水产养殖动物的呼吸、摄食、生长与福利，DO 预报可预警低氧并指导增氧决策。综述梳理了从固定监测点单点时间序列预测向多模态 DO 预报的转变：环境与操作变量反映外部驱动和管理干预，生物、行为与生理观测提供需氧量和动物响应信息，空间与声学观测刻画鱼类分布与生物量。文章覆盖时空对齐、缺失值重建、多模态融合及时间、时空、多模态与混合预报模型，应用包括低氧预警、DO 场预报与重建以及预报驱动的氧气管理；指出异步观测、数据缺失和传感器可靠性差异使融合复杂化，预报时效与评估设置不同妨碍研究间比较，现场部署还受传感器漂移、生物污损和场点差异影响，未来需发展质量感知与机理—数据融合、在可比时效和事件定义下评估的可迁移模型，以及将预测误差与预警提前量、空间风险和管理效果关联的前瞻性研究。",
+   "summary_en": false,
+   "url": "https://doi.org/10.1111/raq.70233",
+   "tags": {
+    "theme": [
+     "review",
+     "climate",
+     "aqua"
+    ],
+    "species": [],
+    "region": [],
+    "method": []
+   },
+   "is_review": true,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3390/fishes11120687",
+   "title": "Improvement in Nutrient Utilization, Gut Health, and Microbiota Modulation in Nile Tilapia Supplemented with a Blend of Sodium Butyrate, Hydrolyzed Yeast, Zinc Proteinate, and a Lactobacillus acidophilus Fermentation Product",
+   "authors": "de Oliveira, Vitória Daitx; Schleder, Delano Dias; Ascoli, Bruna Gabrieli; Duarte, Isabella Gonçalves; Mussoi, Luis Felipe; Brutti, Virian Coradini; Miguel, Keyla de Oliveira Ribeiro; Silva, Maria Fernanda Oliveira da; Pettigrew, James Eugene; Valente, Luísa Maria Pinheiro",
+   "journal": "Fishes",
+   "date": "2026-11-24",
+   "summary": "在尼罗罗非鱼幼鱼基础饲料中添加含丁酸钠、水解酵母、蛋白锌及嗜酸乳杆菌发酵产物的复合功能添加剂（0.30、0.60、2.40 g/kg），限饲55天后评估生长、肠道组织与菌群。添加组饲料转化率和蛋白质保留显著改善，自愿摄食量与氮损失降低；0.30和0.60 g/kg组肠道吸收面积增大，0.60 g/kg组肌层厚度增加。日粮显著改变肠道微生物群落结构，2.40 g/kg组分类学变化最明显；日增重与饲料转化率（r=−0.845）、肠道吸收面积与自愿摄食量（r=−0.526）均呈负相关。0.30和0.60 g/kg添加水平效果最稳定，可改善幼鱼营养利用与肠道健康。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3390/fishes11120687",
+   "tags": {
+    "theme": [
+     "disease",
+     "nutri",
+     "aqua"
+    ],
+    "species": [
+     "tilapia"
+    ],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3389/fmars.2026.1975578",
+   "title": "An integrated TOPSIS-Max100 hybrid approach for the evaluation and selection of deck cadet candidates in the maritime transportation",
+   "authors": "Dal, Özgür; Altınpınar, İshak; Öztürk, Orkun Burak",
+   "journal": "Frontiers in Marine Science",
+   "date": "2026-11-24",
+   "summary": "针对航运企业甲板实习生招聘这一人力资源管理决策，构建TOPSIS–Max100集成决策支持框架，以GPA、英语知识、面试、体能、安全文化和预期海上服务时间6项准则对10名候选人进行评价，准则权重由10位海事学者的意见经Max100法确定，并用某航运公司真实招聘数据运行TOPSIS。权重最高为预期海上服务时间（0.1886），其次为面试（0.1838）、体能（0.1756）、英语（0.1637）、GPA（0.1518）和安全文化（0.1365）；候选人2贴近度最高（0.88966），明显高于候选人6（0.63859）和候选人8（0.60599），而GPA最高的候选人9仅列第七、面试分最高的候选人1列第五。结果表明多准则整合可识别有别于单一指标的招聘优先序，但候选人2的高贴近度仅反映其相对所选准则、分值与权重的优势，并不代表未来船上表现更优；该框架为候选人比较提供了透明灵活的结构化方法，同时保留专业判断在招聘决策中的作用。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3389/fmars.2026.1975578",
+   "tags": {
+    "theme": [
+     "stock"
+    ],
+    "species": [],
+    "region": [],
+    "method": [
+     "survey"
+    ]
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.3389/fmars.2026.1930771",
+   "title": "AI-enabled illumination-adaptive vessel draft mark recognition and draft measurement for sustainable ocean and coastal monitoring",
+   "authors": "Yang, Lei; Wen, Fan; Wei, Huiqiang",
+   "journal": "Frontiers in Marine Science",
+   "date": "2026-11-24",
+   "summary": "针对视觉吃水标志识别在低照度、标志模糊及船-水边界微弱条件下易失效的问题，提出一种光照自适应流程，将吃水字符、刻度结构与水线识别同公制吃水测量分为两个关联任务：轻量光照判别器将正常光照输入直接送入识别与测量后端，低光照输入则经双域增强模块处理，再由多任务网络检测吃水字符并分割水域，通过图约束刻度重建换算为吃水值。在2000张真实监控图像与2000张合成低光照图像上，全测试集MAE由0.37 m降至0.23 m，低光照MAE由0.51 m降至0.22 m，正常光照MAE保持0.24 m，表明条件式增强可在不损害正常光照性能的前提下提升低光照鲁棒性。该框架可为港口与沿海航道中的装载监督、龙骨下富余水深评估及搁浅风险防控提供可靠吃水测量支持。",
+   "summary_en": false,
+   "url": "https://doi.org/10.3389/fmars.2026.1930771",
+   "tags": {
+    "theme": [
+     "misc"
+    ],
+    "species": [],
+    "region": [],
+    "method": [
+     "monitor"
+    ]
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.1007/s10750-026-06485-5",
+   "title": "Diversifying the northern Neotropics: phylogenomics and evolutionary history of the early-diverging herichthyine cichlids Thorichthys and Trichromis",
+   "authors": "Elías, Diego J.; Alda, Fernando; Betancourt-Resendes, Isaí; Díaz-Flores, Alejandro; Domínguez-Domínguez, Omar; Rodríguez-Machado, Sheila; Velázquez-Velázquez, Ernesto; Piller, Kyle R.; Matamoros, Wilfredo A.; Mochel, Susan F.",
+   "journal": "Hydrobiologia",
+   "date": "2026-11-24",
+   "summary": "",
+   "summary_en": true,
+   "url": "https://doi.org/10.1007/s10750-026-06485-5",
+   "tags": {
+    "theme": [
+     "gene"
+    ],
+    "species": [],
+    "region": [],
     "method": []
    },
    "is_review": false,
@@ -7732,6 +8981,29 @@
     "method": [
      "edna"
     ]
+   },
+   "is_review": false,
+   "high_impact": false
+  },
+  {
+   "doi": "10.25258/ijddt.16.82s.131",
+   "title": "Comparative SEM-EDX analysis of intestinal calcium deposition in a teleost (Sardinella longiceps) and an elasmobranch (Rhinobatos annandalei): implications for marine carbonate cycling and coral reef ecosystems",
+   "authors": "L, Jeyapraba; P, Paul Sweetlin; K, Sofia Revathy; S, Nirmala; I, Viji Margaret.",
+   "journal": "International Journal of Drug Delivery Technology",
+   "date": "2026-09-17",
+   "summary": "比较了硬骨鱼（长头小沙丁鱼 Sardinella longiceps）与板鳃类（安氏犁头鳐 Rhinobatos annandalei）肠道滤出物的形态与元素组成，采用 SEM–EDX 分析干燥后的肠道液截留物。两种沉积物均检出钙，但鳐类沉积物钙含量为 27.47 wt.%（15.27 at.%），是沙丁鱼 11.82 wt.%（6.22 at.%）的 2.32 倍，差异约7倍于分析不确定度；鳐类沉积物磷更富集（14.62 vs. 6.83 wt.%），沙丁鱼沉积物则以硅为主（21.65 vs. 3.52 wt.%）并含铝（7.82 wt.%）。SEM 显示鳐类沉积物为纺锤形微晶组成的玫瑰花状及卵形颗粒，沙丁鱼沉积物中为硅藻壳；Ca/P 原子比（1.45 与 1.34）符合磷酸钙特征，仅鳐类沉积物氧含量超出氧化物化学计量（15.1 at.%），提示存在额外碳酸盐或水合相。该研究首次提供硬骨鱼与板鳃类肠道沉积物的元素对比，并指出评估板鳃类在海洋碳酸盐循环中作用所需的矿物相与重复分析。",
+   "summary_en": false,
+   "url": "https://doi.org/10.25258/ijddt.16.82s.131",
+   "tags": {
+    "theme": [
+     "eco"
+    ],
+    "species": [
+     "forage",
+     "carchar"
+    ],
+    "region": [],
+    "method": []
    },
    "is_review": false,
    "high_impact": false
