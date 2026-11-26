@@ -19,23 +19,30 @@
 | 东西 | 必需 | 说明 |
 |---|---|---|
 | GitHub 仓库 | ✅ | 本仓库，且已启用 Actions + Pages |
-| [硅基流动](https://cloud.siliconflow.cn) 账号 | ✅ | 拿 embedding key，免费额度够用 |
+| [硅基流动](https://cloud.siliconflow.cn) 账号 | ✅ | 拿 embedding key，`BAAI/bge-m3` 费用为 0 |
 | [Vercel](https://vercel.com) 账号 | ✅ | GitHub 直接登录，Hobby 免费计划即可 |
 | 自有域名 | ❌ 可选 | 只有大陆访客需要，见第 5 节 |
 
-**成本**：文档向量一天算一次（349 篇约几分钱），查询向量一天几十次调用。
-硅基流动有免费额度，Vercel Hobby 是 100 万次调用/月。实际几乎不花钱。
+**成本**：embedding 走的是免费模型，**费用为 0，不需要充值**（349 篇文档向量一天一批、
+查询向量一天几十次，账单里都显示 0）。Vercel Hobby 是 100 万次调用/月，用量不到千分之一。
+
+> 免费模型的前提：完成**实名认证**；模型 ID 必须是 `BAAI/bge-m3`，
+> 写成 `Pro/BAAI/bge-m3` 就变成收费版（¥0.07/百万 tokens）。
+> 限额（RPM/TPM）固定，不随付费消费提高，超限返回 429。
 
 ---
 
 ## 1. 拿 embedding key
 
-1. [cloud.siliconflow.cn](https://cloud.siliconflow.cn) 注册（手机号即可）
+1. [cloud.siliconflow.cn](https://cloud.siliconflow.cn) 注册（手机号即可），
+   按控制台提示完成**实名认证**（未认证无法使用免费模型，会返回 403）
 2. 左侧「API 密钥」→ 新建密钥
 3. 复制 `sk-...`，**只显示一次**，先存到记事本
 
+**不需要充值。** 价格页标注「免费」的模型费用为 0，账单里消耗显示 0，余额为 0 也能调。
+
 > DeepSeek 只有 Chat Completions，**没有 `/embeddings` 接口**，所以必须另接一家。
-> 硅基流动的 `BAAI/bge-m3` 免费额度够用，中英混排效果好，1024 维。
+> 硅基流动的 `BAAI/bge-m3` 免费、中英混排效果好、1024 维。
 
 ---
 
