@@ -790,12 +790,13 @@ mark.hl{
     return EMB.loading;
   }
 
-  // 端点不可达时（大陆直连 vercel.app 几乎必然如此）不能一直等：2.5s 超时 + 60s 冷却，
-  // 否则每次搜索都会挂一个僵尸请求，浏览器连接超时要拖几十秒
+  // 端点不可达时（大陆直连 vercel.app 可能如此）不能一直等，但也不能太紧：
+  // Vercel 冷启动 1~2s + 服务商 embedding 0.5~1.5s，2.5s 会把正常请求也砍掉。
+  // 6s 超时 + 5 分钟熔断：首次失败后不再反复拖累搜索。
   async function semanticScores(text){
-    if (EMB.failAt && Date.now() - EMB.failAt < 60000) throw new Error('cooling down');
+    if (EMB.failAt && Date.now() - EMB.failAt < 300000) throw new Error('cooling down');
     const ctl = new AbortController();
-    const timer = setTimeout(() => ctl.abort(), 2500);
+    const timer = setTimeout(() => ctl.abort(), 6000);
     let r;
     try {
       r = await fetch(EMB.api, {
