@@ -67,7 +67,7 @@ OFF_TOPIC_SOFT = [
     "nanoparticle synthesis", "antimicrobial peptide film", "concrete",
     # 法律 / 人文 / 社科（渔业法、渔业史一类对科研读者价值低）
     "gambling", "mosaic", "preaching", "litigation", "criminal liability",
-    "taxation", "jurisprudence",
+    "taxation", "jurisprudence", "carbon credit", "carbon market",
 ]
 
 # 仿生机器人：研究对象是机器不是鱼，但只在标题上判——
