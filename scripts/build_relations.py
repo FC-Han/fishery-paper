@@ -24,14 +24,16 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_FILE = ROOT / "data" / "papers.json"
 
 TOP_K = 4
-MIN_SCORE = 0.16          # 低于此分不推荐，避免硬凑
+MIN_SCORE = 0.13          # 低于此分不推荐，避免硬凑
 TEXT_WEIGHT = 0.45
 TAG_WEIGHT = 0.50
 JOURNAL_BONUS = 0.05
 
 # bigram TF-IDF 余弦的绝对尺度很小（全体中位 0.012、p99 仅 0.075），
-# 直接加权会被压成噪声，需按参考值归一化放大后再参与融合
-TEXT_REF = 0.06
+# 直接加权会被压成噪声，需按参考值归一化放大后再参与融合。
+# 参考值取 0.15（约 p99.9）而非 0.06（约 p98），否则最相关的那批会全部撞到 1.0，
+# 分数被压平、失去区分度
+TEXT_REF = 0.15
 ABS_LIMIT = 700           # 摘要只取前 N 字符，防止长摘要主导
 TITLE_BOOST = 3
 
@@ -223,6 +225,11 @@ def main():
                      for d in ("species", "region", "method")
                      for tid in (papers[pi].get("tags", {}).get(d) or [])
                      if tid in shared_ids]
+            if not names:
+                # 没有共有的实体标签，退回共有的研究主题，避免页面上只剩一个光秃秃的百分比
+                th_a = set(a_tags.get("theme") or []) - {"misc"}
+                th_b = set(papers[qi].get("tags", {}).get("theme") or []) - {"misc"}
+                names = [zh_of.get(("theme", t), t) for t in sorted(th_a & th_b)]
             # 去重保序
             seen = set()
             uniq = []
