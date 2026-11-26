@@ -13,6 +13,7 @@
 | 能力 | 说明 |
 |------|------|
 | 🔍 双通道抓取 | 标题关键词搜索 + 27 本渔业/水产/海洋期刊 ISSN 直查，另可接 Semantic Scholar 补充 |
+| 📥 摘要回捞 | Crossref 不给摘要的新论文，按 DOI 从 OpenAlex → Semantic Scholar → 出版商页面三级回捞 |
 | 🤖 中文速览 | DeepSeek 为每篇论文生成 2–4 句中文摘要，术语保留英文 |
 | 🏷️ 四维标签 | **研究主题 / 研究鱼种 / 海域区域 / 方法手段**，69 种标签，规则引擎自动标注 |
 | 🎛️ 标签筛选 | 点任意标签即筛选，同维度取并集、跨维度取交集；标签旁显示实时命中数 |
@@ -46,6 +47,24 @@ docs/
 
 结果写回 `data/papers.json` 的 `rel` 字段，生成站点时转成数组下标内联，389 篇 × 4 条约 40 KB。
 每天 CI 里全量重算（比增量更正确：新论文也要能出现在旧论文的关联里）。
+
+## 📥 摘要回捞
+
+Crossref 对 Springer / Wiley / Elsevier 等不少出版商**不返回 abstract**，这些论文只有标题：
+中文速览写不出来，BM25 检索也基本搜不到。所以入库后再按 DOI 要一次，三级依次尝试：
+
+| 级别 | 来源 | 说明 |
+|------|------|------|
+| 1 | OpenAlex | `abstract_inverted_index` 是倒排索引（词 → 位置），需还原成正文 |
+| 2 | Semantic Scholar | `fields=abstract`，覆盖略差但能捡漏 |
+| 3 | 出版商落地页 | 跟随 `doi.org` 跳转，读 `citation_abstract` / `dc.description` meta |
+
+刚落库的新 DOI 两个索引库常常都还没收录（实测 2026-11 的 DOI 在 OpenAlex 全是 404），
+这时第三级才是主力。实测 100 篇缺摘要：OpenAlex 44 篇 + 出版商 50 篇，仍缺 6 篇
+（Wiley、Taylor & Francis 有 Cloudflare 拦截，只能等索引库收录）。
+
+补到摘要后会**清空该篇的旧中文速览**——那是没摘要时硬写的，得让 `summarize.py` 用真摘要重来。
+脚本每天都跑，索引库追上来自动补上，不需要人工干预。
 
 ## 🔎 站内检索（BM25）
 
@@ -96,10 +115,11 @@ pip install -r requirements.txt
 cp .env.example .env        # 填入 DEEPSEEK_API_KEY
 
 python scripts/fetch_papers.py     # 1. 抓论文（无需 key）
-python scripts/summarize.py        # 2. 中文摘要（需 key，增量）
-python scripts/tag_papers.py       # 3. 自动打标（无需 key）
-python scripts/build_relations.py  # 4. 计算论文关联（无需 key）
-python scripts/generate_site.py    # 5. 生成站点
+python scripts/fetch_abstracts.py  # 2. 回捞 Crossref 没给的摘要（无需 key）
+python scripts/summarize.py        # 3. 中文摘要（需 key，增量）
+python scripts/tag_papers.py       # 4. 自动打标（无需 key）
+python scripts/build_relations.py  # 5. 计算论文关联（无需 key）
+python scripts/generate_site.py    # 6. 生成站点
 
 open docs/index.html               # 或：cd docs && python -m http.server 8000
 ```

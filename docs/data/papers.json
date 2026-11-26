@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-26T07:33:03Z",
+ "generated_at": "2026-11-26T07:54:08Z",
  "count": 393,
  "lexicon": [
   {
@@ -777,7 +777,7 @@
    "authors": "Dai, Hongjing; Ye, Rong; Shi, Rui; Cui, Zhibo; Xiang, Wanwan; Wang, Yue; Yu, Hong",
    "journal": "Aquaculture International",
    "date": "2026-11-26",
-   "summary": "",
+   "summary": "Robust state detection of Portunus trituberculatus in industrial aquaculture is essential for screening abnormal individuals and issuing risk alerts.",
    "summary_en": true,
    "url": "https://doi.org/10.1007/s10499-026-02749-y",
    "tags": {
@@ -1263,7 +1263,7 @@
    "authors": "Besombes, Joévin; Lebecque, Benjamin; Voisin, Allison; Bourgne, Céline; Parisseaux, Mattéo; Dhaiby, Gabriel; Tournebize, Clara; Soucal, Mélanie; Voisin, Delphine; Ramos, Inès",
    "journal": "Scientific Reports",
    "date": "2026-11-25",
-   "summary": "",
+   "summary": "Telomere length (TL) is an important biomarker of the cell replicative history with applications in aging research, telomere biology disorders and hematological malignancies.",
    "summary_en": true,
    "url": "https://doi.org/10.1038/s41598-026-82410-z",
    "tags": {
@@ -2888,7 +2888,7 @@
    "authors": "Kozlíková-Zapomělová, Eliška; Urajová, Petra; Hronek, Jiří; Divoká, Petra; Saurav, Kumar",
    "journal": "Hydrobiologia",
    "date": "2026-11-25",
-   "summary": "",
+   "summary": "This pilot study characterized a previously unrecognized life-cycle stage of the freshwater raphidophyte Gonyostomum semen and provided first indications of its potentially harmful effects.",
    "summary_en": true,
    "url": "https://doi.org/10.1007/s10750-026-06462-y",
    "tags": {
@@ -2915,7 +2915,7 @@
    "authors": "Palazzi, Adriano; Galbiati, Matteo; De Felice, Beatrice; Mondellini, Simona; Parolini, Marco",
    "journal": "Hydrobiologia",
    "date": "2026-11-25",
-   "summary": "",
+   "summary": "Macroplastics represent a threat for aquatic organisms because of ingestion, entanglement and alteration of habitat structure, but they can be opportunistically used as functional tools.",
    "summary_en": true,
    "url": "https://doi.org/10.1007/s10750-026-06479-3",
    "tags": {
@@ -3003,7 +3003,7 @@
    "authors": "Novaković, Andrea; Kračun-Kolarević, Margareta; Ilić, Marija; Andjus, Stefan; Paunović, Momir; Kolarević, Stoimir",
    "journal": "Hydrobiologia",
    "date": "2026-11-25",
-   "summary": "",
+   "summary": "The applicability of species-specific droplet digital PCR (ddPCR) was evaluated for environmental DNA (eDNA) detection of two invasive alien species in the Danube River Basin (DRB): round goby (Neogobius melanostomus) an…",
    "summary_en": true,
    "url": "https://doi.org/10.1007/s10750-026-06481-9",
    "tags": {
@@ -3127,7 +3127,7 @@
    "authors": "Lu, Meng; Zhang, Qin-Can; Zhu, Zi-Yu; Wang, Yang; Wang, Zhong-Wei; Li, Xi-Yin; Li, Zhi; Hu, Zhen; Yu, Peng; Zhang, Xiao-Juan",
    "journal": "BMC Biology",
    "date": "2026-11-24",
-   "summary": "",
+   "summary": "Changes in ploidy and genomic composition shape fertility by altering chromosome behavior during gametogenesis, providing a genetic basis for fertility control in agriculture.",
    "summary_en": true,
    "url": "https://doi.org/10.1186/s12915-026-02798-y",
    "tags": {
@@ -3211,7 +3211,7 @@
    "authors": "Naz, Sana; Khan, Mukhtar Ahmad",
    "journal": "Biological Trace Element Research",
    "date": "2026-11-24",
-   "summary": "",
+   "summary": "Iron is an essential trace element required for numerous physiological and biochemical processes in fish, including oxygen transport, energy metabolism, and antioxidant defence.",
    "summary_en": true,
    "url": "https://doi.org/10.1007/s12011-026-05443-5",
    "tags": {
@@ -3522,7 +3522,7 @@
    "authors": "Saad, Hadeel; Gingerich, Philip; Friedman, Matt",
    "journal": "Journal of Vertebrate Paleontology",
    "date": "2026-11-24",
-   "summary": "",
+   "summary": "A single fossil referable to the putative ephippid (batfish) †Eoplatax sp. is reported from the Eocene (Lutetian) Habib Rahi Formation of northwest Pakistan, where it is associated with a modest undescribed marine teleos…",
    "summary_en": true,
    "url": "https://doi.org/10.1080/02724634.2026.2744129",
    "tags": {
@@ -3832,7 +3832,7 @@
    "authors": "Elías, Diego J.; Alda, Fernando; Betancourt-Resendes, Isaí; Díaz-Flores, Alejandro; Domínguez-Domínguez, Omar; Rodríguez-Machado, Sheila; Velázquez-Velázquez, Ernesto; Piller, Kyle R.; Matamoros, Wilfredo A.; Mochel, Susan F.",
    "journal": "Hydrobiologia",
    "date": "2026-11-24",
-   "summary": "",
+   "summary": "Among Neotropical cichlids the tribe Heroini exhibits substantial ecological diversity and is one of the dominant fish groups across northern Neotropical riverscapes.",
    "summary_en": true,
    "url": "https://doi.org/10.1007/s10750-026-06485-5",
    "tags": {
@@ -4371,7 +4371,7 @@
    "authors": "Şimşek, Emrah",
    "journal": "Ocean Science Journal",
    "date": "2026-11-23",
-   "summary": "",
+   "summary": "Trawl size selectivity constitutes a critical link between fisheries science, fishing technology, and fisheries governance.",
    "summary_en": true,
    "url": "https://doi.org/10.1007/s12601-026-00319-0",
    "tags": {
@@ -4457,8 +4457,8 @@
    "authors": "Li, Wu-Xin; Sun, Chun-Yan; Chen, Li-Xue; Chen, Rong; Fu, Shi-Jian; Zeng, Ling-Qing",
    "journal": "Fisheries Science",
    "date": "2026-11-23",
-   "summary": "仅凭标题可知，该研究以某种社会性鱼类为对象，比较社会剥夺与社会恢复两种经历对生长、个性、应激及免疫的影响，并考察食物可获得性在其中的调节作用。",
-   "summary_en": false,
+   "summary": "Social isolation can induce stress responses in group-living animals, with consequences for growth, behavior, and health.",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s12562-026-02044-y",
    "tags": {
     "theme": [
@@ -4545,7 +4545,7 @@
    "authors": "Haider, Muhammad Zeshan; Iqbal, Khalid Javed; Bilal Malik, Hafiz Muhammad; Atta, Ayesha; Majeed, Hamid; Iqbal, Khalid Jamshed; Ishaq, Muhammad; Abaid-Ullah, Muhammad",
    "journal": "Aquaculture Science and Management",
    "date": "2026-11-23",
-   "summary": "",
+   "summary": "Aquaculture and inland capture fisheries both contribute substantially to food security, yet market acceptance is frequently constrained by consumer perceptions favoring wild-caught fish.",
    "summary_en": true,
    "url": "https://doi.org/10.1186/s44365-026-00051-9",
    "tags": {
@@ -4857,8 +4857,8 @@
    "authors": "Yang, Fuwei; Xing, Qinwang; Ito, Shin-ichi; Zhou, Jinxin; Yu, Haiqing; Yu, Wei; Chen, Xinjun",
    "journal": "Reviews in Fish Biology and Fisheries",
    "date": "2026-11-23",
-   "summary": "基于卫星遥感的中尺度锋面数据可提升栖息地模型表现，并用于解释近十年尺度变异下柔鱼（neon flying squid）的分布与丰度变化。",
-   "summary_en": false,
+   "summary": "Mesoscale fronts are ubiquitous oceanographic features that shape pelagic habitats through complex biophysical interactions, yet quantitative frontal indicators capturing front-induced biological hotspot and ecological b…",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s11160-026-10116-6",
    "tags": {
     "theme": [
@@ -4946,8 +4946,8 @@
    "authors": "Yu, Mengjie; Herrmann, Bent; Zhang, Hanfei; Tang, Yanli",
    "journal": "Reviews in Fish Biology and Fisheries",
    "date": "2026-11-23",
-   "summary": "可降解PLA刺网在中国黄海混合种类渔业中的渔获性能。",
-   "summary_en": false,
+   "summary": "Derelict gillnets have received increasing attention worldwide due to ghost fishing and marine plastic pollution.",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s11160-026-10115-7",
    "tags": {
     "theme": [
@@ -5480,7 +5480,7 @@
    "authors": "Șuteu, Anca-Mihaela; Goia, Irina; Pușcaș, Mihai",
    "journal": "Hydrobiologia",
    "date": "2026-11-23",
-   "summary": "",
+   "summary": "The aim of this study was to evaluate whether bryophyte host identity and growth form influence epibryophytic diatom assemblages beyond the effect of environmental filtering in karst springs.",
    "summary_en": true,
    "url": "https://doi.org/10.1007/s10750-026-06484-6",
    "tags": {
@@ -5524,7 +5524,7 @@
    "authors": "Giovacchini, Simone; Mirone, Enrico; Bruno, Antonia; Ramazzotti, Fausto; Caprotti, Luca; Monaco, Pamela; Belluardo, Francesco; Di Febbraro, Mirko; Jamwal, Pushpinder S.; Manfrin, Chiara",
    "journal": "Hydrobiologia",
    "date": "2026-11-23",
-   "summary": "",
+   "summary": "Environmental DNA (eDNA) is a sensitive tool to detect rare and elusive species, including both endangered species and invasive alien species (IAS) at early stages of colonization.",
    "summary_en": true,
    "url": "https://doi.org/10.1007/s10750-026-06466-8",
    "tags": {
@@ -5884,7 +5884,7 @@
    "authors": "Phaksopa, Jitraporn; Worachananant, Suchai; Jendanklang, Poratape",
    "journal": "Environmental Science and Pollution Research",
    "date": "2026-11-21",
-   "summary": "",
+   "summary": "Microplastics (MPs) are a serious global concern due to their potential risks to the environment, wildlife, and human health.",
    "summary_en": true,
    "url": "https://doi.org/10.1007/s11356-026-38367-7",
    "tags": {
@@ -6021,8 +6021,8 @@
    "authors": "Kuznetsova, Olga V.",
    "journal": "International Journal of Environmental Research",
    "date": "2026-11-21",
-   "summary": "该研究探讨了扇形场电感耦合等离子体质谱（sector-field ICP-MS）在分析从鱼类和沉积物中提取的微塑料所富集有毒金属方面的应用潜力，旨在提升对微塑料重金属污染的认识。",
-   "summary_en": false,
+   "summary": "One significant ecological concern regarding plastic pollution is the ability of microplastics (MPs) to adsorb and concentrate heavy metals in the marine environment.",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s41742-026-01301-3",
    "tags": {
     "theme": [
@@ -6197,8 +6197,8 @@
    "authors": "Albasri, Hatim; Sammut, Jesmond",
    "journal": "Aquaculture International",
    "date": "2026-11-21",
-   "summary": "针对多用途海洋保护区（MPA）内海水养殖分区需求，构建了定制化生态承载力模型，以协调养殖活动与保护目标的空间配置。",
-   "summary_en": false,
+   "summary": "Mariculture is recognised as a sustainable livelihood in multi-use marine protected areas (MPAs). Surprisingly, specific carrying capacity (CC) models are unavailable in the literature to manage the development of maricu…",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s10499-026-02755-0",
    "tags": {
     "theme": [
@@ -6240,8 +6240,8 @@
    "authors": "Nanami, Atsushi",
    "journal": "Environmental Biology of Fishes",
    "date": "2026-11-21",
-   "summary": "该研究记录了冲绳珊瑚礁中刺尾鱼（Ctenochaetus striatus）的产卵聚集现象，采用非致死方法分析其聚集与月相及潮汐节律的周期性关系。",
-   "summary_en": false,
+   "summary": "Surgeonfishes are a common group of fishes in coral reefs, and their spawning aggregations have been reported from various regions.",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s10641-026-01940-7",
    "tags": {
     "theme": [
@@ -6592,8 +6592,8 @@
    "authors": "Yangbo, He; Jianlin, Luo; Kaizhuo, Wang; Zhiyin, Jian; Wencong, Shang; Ting, Ye; Qin, Yin; Can, Li",
    "journal": "Aquaculture Environment Interactions",
    "date": "2026-11-20",
-   "summary": "该研究调查了中国南方喀斯特高原养殖水体、沉积物和鱼类中抗生素的赋存与分布，并开展风险评估。",
-   "summary_en": false,
+   "summary": "This study investigated the spatiotemporal distribution, ecological risks, and health hazards of antibiotics in aquaculture environments of the Karst Plateau, southern China.",
+   "summary_en": true,
    "url": "https://doi.org/10.3354/aei00543",
    "tags": {
     "theme": [
@@ -6679,8 +6679,8 @@
    "authors": "Jiang, Qijun; Yin, Xiaotong; Li, Chao",
    "journal": "Aquaculture International",
    "date": "2026-11-20",
-   "summary": "本研究探讨淡水养殖经营者绿色技术采纳对管理绩效的影响及技术路径差异，并检验劳动力禀赋的调节作用。基于标题推断，研究可能采用问卷调查与回归分析，考察不同绿色技术采纳路径与管理绩效的关系。",
-   "summary_en": false,
+   "summary": "The green transformation of aquaculture involves not only adjustments in production inputs and pollution control practices but also changes in farm management.",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s10499-026-02754-1",
    "tags": {
     "theme": [
@@ -6723,8 +6723,8 @@
    "authors": "Lembang, Miska Sanda; Amanda, Putri",
    "journal": "Aquaculture International",
    "date": "2026-11-20",
-   "summary": "该综述聚焦纳米技术在水产养殖环境管理中的应用，系统梳理了污染修复、环境监测和生物安全三个方向的研究进展，并评估了纳米材料自身的生态毒理学风险。由于缺乏摘要，本文仅基于标题提供概述。",
-   "summary_en": false,
+   "summary": "Aquaculture intensification increases pressure on water quality, disease control, contaminant surveillance, and environmental safety.",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s10499-026-02759-w",
    "tags": {
     "theme": [
@@ -6769,8 +6769,8 @@
    "authors": "Ogbuagu, Samuel Ifeanyi; Wang, Wen; Lu, Siqi; Dong, Yalun; Tao, Yifan; Qiang, Jun",
    "journal": "Aquaculture International",
    "date": "2026-11-20",
-   "summary": "尼日利亚水产养殖发展研究基于标题概述：分析尼日利亚水产养殖的增长趋势与政策制约因素，并总结可借鉴的中国经验。",
-   "summary_en": false,
+   "summary": "Nigeria, Sub-Saharan Africa’s largest aquaculture producer, faces a substantial fish supply deficit despite rapid sectoral growth, with annual import expenditures at USD 0.6–1 billion.",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s10499-026-02756-z",
    "tags": {
     "theme": [
@@ -6902,7 +6902,7 @@
    "authors": "Wu, Hongye; Wang, Ying; Lu, Guofeng; Gao, Yanghui; Feng, Siyu; Liu, Wei; He, Hehe; Gao, Kun; Chen, Ning; Deng, Xiangyuan",
    "journal": "Environmental Science and Pollution Research",
    "date": "2026-11-20",
-   "summary": "",
+   "summary": "Recirculating aquaculture systems (RAS) are intensively designed aquaculture models that rely on various water treatment technologies to maintain optimal water quality, ensuring the production of safe, healthy, and high-…",
    "summary_en": true,
    "url": "https://doi.org/10.1007/s11356-026-38430-3",
    "tags": {
@@ -6946,8 +6946,8 @@
    "authors": "Yogaswara, Deny; Arifin, Zainal; Yu, Ren-cheng; Shofarudin, Ukis; Dirhamsyah, Dirhamsyah; Falahudin, Dede",
    "journal": "Environmental Science and Pollution Research",
    "date": "2026-11-20",
-   "summary": "该研究以石油烃作为环境质量标志物，对印度尼西亚龙目岛海水养殖区开展调查，分析其赋存水平与时空分布特征，并评估相关生态风险，为养殖区环境监测与污染管理提供依据。",
-   "summary_en": false,
+   "summary": "The southern coast of Lombok Island, Indonesia, is home to ecologically significant environments, including mangroves, seagrass meadows, and coral reefs, which coexist with traditional seaweed and shellfish farming syste…",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s11356-026-38382-8",
    "tags": {
     "theme": [
@@ -6992,7 +6992,7 @@
    "authors": "Windarto, Seto; Putri, Diwyacitta Antya; Ihtifazhuddin, Muhammad Ikhwan; Fitriadi, Ren; Rachmawati, Diana; Amalia, Rosa",
    "journal": "Aquaculture International",
    "date": "2026-11-20",
-   "summary": "",
+   "summary": "This study evaluated the effects of salinity on growth, biochemical composition, sensory quality, and extract radical scavenging activity of the edible sea grape Caulerpa racemosa under controlled culture conditions.",
    "summary_en": true,
    "url": "https://doi.org/10.1007/s10499-026-02758-x",
    "tags": {
@@ -7034,8 +7034,8 @@
    "authors": "Schut, Thijs; Nugrohowardhani, Rambu L. K. R.; Kutanegara, Pande Made; Nooteboom, Gerben",
    "journal": "Maritime Studies",
    "date": "2026-11-20",
-   "summary": "该研究探讨印度尼西亚渔业政策与实践中偏向高价值鱼类的系统性偏差及其地方影响，关注既得利益如何塑造“改善食用鱼供给”的意愿。由于缺乏摘要，具体方法与发现无法概述。",
-   "summary_en": false,
+   "summary": "This paper writes against productivist tendencies in ‘fish for food’ policies, showing how they – in contrast to their aims – challenge people’s access to healthy and nutritious food.",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s40152-026-00537-1",
    "tags": {
     "theme": [
@@ -7078,8 +7078,8 @@
    "authors": "Wang, Xiaoling; Zhu, Ren; Jia, Yintao; Qiao, Zhixian; Chen, Yifeng; Feng, Xiu; Sui, Xiaoyun",
    "journal": "Reviews in Fish Biology and Fisheries",
    "date": "2026-11-20",
-   "summary": "对地理隔离的多个非本地鲫（Carassius auratus）种群，比较遗传多样性趋势与功能层面的选择信号；标题提示各地理种群间遗传多样性变化一致，但功能选择特征并不一致。",
-   "summary_en": false,
+   "summary": "Elucidating the response mechanisms of non-native populations following their introduction to different geographical locations provides a foundation for the prevention and management of invasive species.",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s11160-026-10110-y",
    "tags": {
     "theme": [
@@ -7169,7 +7169,7 @@
    "authors": "Zoral, Mehmet Arif; Lajbner, Zdeněk; Zifcakova, Lucia; Alves, Alexandra; Purkayastha, Abhijeet; Gestal, Camino; Costa, María M.; González-Alonso, Andrea; Abbo, Lisa; Azad, Kamrun Naher",
    "journal": "Reviews in Fisheries Science & Aquaculture",
    "date": "2026-11-20",
-   "summary": "",
+   "summary": "Cephalopods are emerging as important model organisms in diverse scientific fields, including neuroscience, behavior, ecology, and aquaculture, driving increased interest in their care under artificial environments such…",
    "summary_en": true,
    "url": "https://doi.org/10.1080/23308249.2026.2748998",
    "tags": {
@@ -7394,8 +7394,8 @@
    "authors": "Mendoza-Portillo, Francisco J; Gómez-Gutiérrez, Jaime; García-Fernández, Franklin; Martínez-Lopez, Aída; Ambriz-Arreola, Israel; De Silva-Dávila, Roxana; Palomares-García, Ricardo J; Aceves-Medina, Gerardo; Angulo-Campillo, Orso; Robinson, Carlos J",
    "journal": "Marine Ecology Progress Series",
    "date": "2026-11-20",
-   "summary": "2007年1月与7月在加利福尼亚湾同步观测浮游植物化学分类群与浮游动物丰度和生物量，分析二者之间的关联模式。",
-   "summary_en": false,
+   "summary": "Single-group approaches provide limited understanding of plankton organisation and variation between contrasting sampling periods in the Gulf of California.",
+   "summary_en": true,
    "url": "https://doi.org/10.3354/meps15379",
    "tags": {
     "theme": [
@@ -7437,7 +7437,7 @@
    "authors": "Wolf, Fabian; Pansch, Christian; Hattich, Giannina Saskia Isabelle; Weinberger, Florian",
    "journal": "Marine Ecology Progress Series",
    "date": "2026-11-20",
-   "summary": "",
+   "summary": "Global climate change, particularly ocean warming, can affect coastal benthic ecosystems worldwide. However, in the marine realm, little is known about how thermal variability may pre-select populations for their resilie…",
    "summary_en": true,
    "url": "https://doi.org/10.3354/meps15378",
    "tags": {
@@ -7481,7 +7481,7 @@
    "authors": "Fayet, Annette L.; Scott, Samantha Luise; Layton-Matthews, Kate; Buckingham, Lila; Singsaas, Frode Thomassen; Christensen-Dalsgaard, Signe",
    "journal": "Marine Ecology Progress Series",
    "date": "2026-11-20",
-   "summary": "",
+   "summary": "Seabird mass mortality events (MMEs) are acute episodes of unusually high mortality with potentially serious demographic impacts, projected to become more frequent or exacerbated under ongoing climate change.",
    "summary_en": true,
    "url": "https://doi.org/10.3354/meps15382",
    "tags": {
@@ -7526,7 +7526,7 @@
    "authors": "Kakehi, Shigeho; Teramoto, Wataru; Nemoto, Yoshiharu; Shirato, Haruki; Niizeki, Kouji; Kurita, Yutaka",
    "journal": "Marine Ecology Progress Series",
    "date": "2026-11-20",
-   "summary": "",
+   "summary": "Rapid changes in fish species composition, distribution, and abundance because of global warming are emerging as important issues in Fukushima Prefecture, Japan.",
    "summary_en": true,
    "url": "https://doi.org/10.3354/meps15381",
    "tags": {
@@ -7886,7 +7886,7 @@
    "authors": "Carrano, C.; Cadrin, S.X; Hansell, A.C; Walter, J.; Lauretta, M.; Golet, W.; Whitener, Z.; Kerr, L.A",
    "journal": "Reviews in Fisheries Science & Aquaculture",
    "date": "2026-11-19",
-   "summary": "",
+   "summary": "Oceanographic conditions can drive fish population dynamics, foraging, and distribution. Atlantic bluefin tuna (Thunnus thynnus) are a highly migratory and commercially valuable species, distributed throughout the North…",
    "summary_en": true,
    "url": "https://doi.org/10.1080/23308249.2026.2760249",
    "tags": {
@@ -7976,7 +7976,7 @@
    "authors": "Skvortsova, M. A.",
    "journal": "Computational Mathematics and Modeling",
    "date": "2026-11-19",
-   "summary": "",
+   "summary": "In the paper we consider a&nbsp;system of differential equations with two delays describing plankton-fish interaction.",
    "summary_en": true,
    "url": "https://doi.org/10.1007/s10598-026-09768-7",
    "tags": {
@@ -8110,8 +8110,8 @@
    "authors": "Paolucci, Esteban Marcelo; Pereira, Lilian Paula Faria; de Farias, Natália Oliveira; Braga, Esther Faria; Lopes, Claudio Cerqueira; Lopes, Rosangela Sabbatini Capella; De Aragão Umbuzeiro, Gisela; de Rezende Ayroza, Daercy Maria Monteiro",
    "journal": "Environmental Sciences Europe",
    "date": "2026-11-19",
-   "summary": "该研究关注防污涂料对淡水生物的生态毒理效应，采用急性、慢性和亚致死暴露评估其对水产养殖相关非靶标生物的影响。",
-   "summary_en": false,
+   "summary": "Biofouling control in freshwater systems often relies on antifouling coatings that may act as sources of chemical exposure to aquatic environments.",
+   "summary_en": true,
    "url": "https://doi.org/10.1186/s12302-026-01588-1",
    "tags": {
     "theme": [
@@ -8241,7 +8241,7 @@
    "authors": "Rather, Mohd Ashraf; Ghara, Suvadip; Mangral, Zahid Ahmed; Meghana, Jadi; Bhat, Irfan Ahmad; Khan, Irfan Ahmad",
    "journal": "Discover Animals",
    "date": "2026-11-19",
-   "summary": "",
+   "summary": "Rainbow trout ( Oncorhynchus mykiss ) is an important freshwater aquaculture species with high economic globally.",
    "summary_en": true,
    "url": "https://doi.org/10.1007/s44338-026-00271-2",
    "tags": {
@@ -8603,8 +8603,8 @@
    "authors": "Cao, Wenzhuo; Liang, Cui; Zhang, Zhaopeng; Sun, Xu; Xian, Weiwei",
    "journal": "Reviews in Fish Biology and Fisheries",
    "date": "2026-11-19",
-   "summary": "该研究探讨河口海域渔业无脊椎动物群落的层级构建模式及其管理启示，基于标题推测采用群落构建分析框架解析不同空间尺度上的物种共存机制。",
-   "summary_en": false,
+   "summary": "With the decline of traditional large-size fishery resources, invertebrates have become increasingly important in estuarine fisheries.",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s11160-026-10112-w",
    "tags": {
     "theme": [
@@ -9014,7 +9014,7 @@
    "authors": "Dela Paz, Erica Silk P.; Mandia, Emelina H.; Virtusio, John Jethro",
    "journal": "Hydrobiologia",
    "date": "2026-11-19",
-   "summary": "",
+   "summary": "Research on freshwater zooplankton, which are integral components of aquatic food webs, encompasses a broad range of topics, including community composition, biodiversity, and ecological interactions.",
    "summary_en": true,
    "url": "https://doi.org/10.1007/s10750-026-06482-8",
    "tags": {
@@ -9059,8 +9059,8 @@
    "authors": "Di Crescenzo, Simone; Pani, Chiara; Başusta, Nuri; Bellodi, Andrea; Cariani, Alessia; Catalano, Giusy; Crobe, Valentina; Crocetta, Fabio; Dragičević, Branko; Ferrari, Alice",
    "journal": "Hydrobiologia",
    "date": "2026-11-19",
-   "summary": "地中海钩鳞鲨（Oxynotus centrina）的遗传变异与种群结构研究，基于分子标记分析其种群分化格局，并探讨钩鳞鲨科（Oxynotidae）在角鲨目中的系统发育位置。",
-   "summary_en": false,
+   "summary": "Oxynotus centrina is the only species of the family Oxynotidae inhabiting the Mediterranean Sea. Due to its biological traits and the severe decline of its population in this area, it has been listed as Critically Endang…",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s10750-026-06474-8",
    "tags": {
     "theme": [
@@ -9235,7 +9235,7 @@
    "authors": "Bavestrello, G.",
    "journal": "The European Zoological Journal",
    "date": "2026-11-18",
-   "summary": "",
+   "summary": "Red coral (Corallium rubrum) was a major subject of eighteenth-century natural history, but during the first half of the nineteenth century it largely ceased to be an autonomous focus of biological investigation.",
    "summary_en": true,
    "url": "https://doi.org/10.1080/24750263.2026.2761793",
    "tags": {
@@ -9953,8 +9953,8 @@
    "authors": "Parietti, Manuela; Temperoni, Brenda; Orlando, Paula; Spath, M Cecilia; Menna, Bruno V; Cabreira, Ariel G; Buratti, Claudio C",
    "journal": "Marine Ecology Progress Series",
    "date": "2026-11-18",
-   "summary": "基于30年研究，分析阿根廷鳀（Engraulis anchoita）在西南大西洋34–41°S海域季节性栖息地利用的海洋学驱动因子。",
-   "summary_en": false,
+   "summary": "The Argentine anchovy ( Engraulis anchoita ) is the most abundant fish species in the Southwest Atlantic Ocean (SWAO) and plays a central ecological role as a key trophic link between zooplankton and higher predators.",
+   "summary_en": true,
    "url": "https://doi.org/10.3354/meps15372",
    "tags": {
     "theme": [
@@ -9998,7 +9998,7 @@
    "authors": "Paul, Anish; Livingston, Joanna; Shayka, Bridget F; Allgeier, Jacob",
    "journal": "Marine Ecology Progress Series",
    "date": "2026-11-18",
-   "summary": "",
+   "summary": "Anthropogenic nutrient pollution is one of the greatest threats to seagrass ecosystems. Concurrently, pervasive fishing pressure has altered fish biomass in seagrass meadows globally, reducing fish-derived nutrient input…",
    "summary_en": true,
    "url": "https://doi.org/10.3354/meps15370",
    "tags": {
@@ -10590,8 +10590,8 @@
    "authors": "Younis, Alaa M.; Khairy, Mohamed; AL-Zbedy, Amnah S.; Elkady, Eman M.",
    "journal": "Environmental Science and Pollution Research",
    "date": "2026-11-17",
-   "summary": "该研究针对沙特阿拉伯阿拉伯湾El-Khobar沿岸礁区鱼类开展痕量元素污染水平调查，并评估其消费健康风险。",
-   "summary_en": false,
+   "summary": "Aquatic organisms provide an important source of essential nutrients, but they are also known to bioaccumulate trace elements (TEs), which can cause health threats to human.",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s11356-026-38377-5",
    "tags": {
     "theme": [
@@ -11034,8 +11034,8 @@
    "authors": "Chisadza, Bright; Muchuweti, Maud",
    "journal": "Discover Sustainability",
    "date": "2026-11-16",
-   "summary": "该综述针对津巴布韦及SADC地区内陆小规模渔业，系统梳理气候智能决策支持系统的研究现状并构建概念框架，旨在为气候适应型渔业管理提供决策工具支撑。",
-   "summary_en": false,
+   "summary": "Small-scale inland fisheries support food security, nutrition and rural livelihoods but are increasingly affected by climate variability and changing hydrological conditions.",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s43621-026-05266-3",
    "tags": {
     "theme": [
@@ -11125,8 +11125,8 @@
    "authors": "Won, Suyeon; Kang, Yujin; Song, Youngkeun",
    "journal": "Landscape and Ecological Engineering",
    "date": "2026-11-16",
-   "summary": "该研究利用环境DNA（eDNA）技术，调查城市水生系统中特有鱼类与入侵鱼类在相互连通的静水（lentic）和流水（lotic）生态系统间的栖息地分化格局，旨在揭示两类鱼群在不同水体类型中的空间分布差异与共存机制。",
-   "summary_en": false,
+   "summary": "Understanding how invasive and endemic species partition habitats is essential for biodiversity management in urban freshwater ecosystems.",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s11355-026-00759-9",
    "tags": {
     "theme": [
@@ -11260,8 +11260,8 @@
    "authors": "Arshad, Shamoona; Kamara, Abdulai Merry; Inayat, Muhammad; Shah, Tufail; Sherzada, Shahid; Hou, Mengna",
    "journal": "Aquaculture International",
    "date": "2026-11-16",
-   "summary": "该研究在稻鱼共作系统中考察不同放养密度对罗胡鱼（Labeo rohita）生长、养分循环及水稻产量的影响，以确定最优放养密度。结果表明中等放养密度可兼顾鱼类生长、养分回收与水稻生产力。",
-   "summary_en": false,
+   "summary": "Rice-fish co-culture is a promising alternative culture system to monoculture. However, further studies are needed to find the optimum stocking density of Labeo rohita to provide maximum productivity, environmental healt…",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s10499-026-02745-2",
    "tags": {
     "theme": [
@@ -11305,7 +11305,7 @@
    "authors": "Jupesta, Joni; Permana, Indra; Sahari, Bandung; Gheewala, Shabbir H.",
    "journal": "Circular Economy and Sustainability",
    "date": "2026-11-16",
-   "summary": "",
+   "summary": "This study explores the use of black soldier fly (BSF) larvae as a biological agent for organic waste management and its by-products in agriculture, aquaculture, and livestock.",
    "summary_en": true,
    "url": "https://doi.org/10.1007/s43615-026-01197-3",
    "tags": {
@@ -11394,7 +11394,7 @@
    "authors": "Pérez-Lefimil, Francisco; Guzmán, Neftalí; Rojas, Eduardo; Márquez, José Luis",
    "journal": "Fish Physiology and Biochemistry",
    "date": "2026-11-16",
-   "summary": "",
+   "summary": "Atlantic salmon (Salmo salar) pass through developmental transitions linking embryogenesis, freshwater growth, smoltification, marine migration, and adult return to freshwater.",
    "summary_en": true,
    "url": "https://doi.org/10.1007/s10695-026-01833-7",
    "tags": {
@@ -11663,7 +11663,7 @@
    "authors": "Yin, Chengjie; Zhang, Rongzhen; Sun, Yuxin; Feng, Zewen; Shi, Xiaoning; Li, Renhui; Xiang, Miao; Zhang, He; Guo, Longgen",
    "journal": "Aquaculture Environment Interactions",
    "date": "2026-11-16",
-   "summary": "",
+   "summary": ":Deep-water reservoirs in China’s subtropical valley rivers serve as both urban drinking water sources and habitats for inland fisheries;",
    "summary_en": true,
    "url": "https://doi.org/10.3354/aei00542",
    "tags": {
@@ -11755,8 +11755,8 @@
    "authors": "Nilajkar, Sujata Kallappa; Ma, Wei; Pujari, Laxman Ashok; Hu, Jianyu; Yang, Jin-Yu; Xu, Yanping; Sun, Jun",
    "journal": "Marine Ecology Progress Series",
    "date": "2026-11-16",
-   "summary": "该研究探讨季风、混合与营养盐富集如何调控南海北部浮游植物演替及生物地球化学循环，基于标题推测采用现场观测与物理-生物耦合分析。研究有助于理解季风驱动下南海北部生态系统变动机制。",
-   "summary_en": false,
+   "summary": "Hydrographic structure and nutrient availability can influence phytoplankton distributions in marginal seas, but cruise-based observations may also integrate spatial and interannual variability.",
+   "summary_en": true,
    "url": "https://doi.org/10.3354/meps15373",
    "tags": {
     "theme": [
@@ -11800,8 +11800,8 @@
    "authors": "Greene, Correigh M; Dominguez, Joshua H; Chamberlin, Joshua W; Hall, Jason E; Rhodes, Linda D",
    "journal": "Marine Ecology Progress Series",
    "date": "2026-11-16",
-   "summary": "该研究探讨海岸带基础设施与水柱理化性质对胶质浮游动物（gelatinous zooplankton）物种当前及未来出现格局的多样化影响，基于物种分布数据评估多重环境驱动因子的相对作用。",
-   "summary_en": false,
+   "summary": "Gelatinous zooplankton (jellyfish) are significant components of marine ecosystems and have diverse species assemblages.",
+   "summary_en": true,
    "url": "https://doi.org/10.3354/meps15375",
    "tags": {
     "theme": [
@@ -11843,7 +11843,7 @@
    "authors": "Depot, Katelyn Marie; Whelan, Shannon; Arimitsu, Mayumi L; Clucas, Gemma V; Elliott, Kyle Hamish",
    "journal": "Marine Ecology Progress Series",
    "date": "2026-11-16",
-   "summary": "",
+   "summary": "Marine predators can serve as indicators of the abundance and distribution of their prey, including forage fish that are key to entire food webs yet can be otherwise difficult to monitor via conventional surveys.",
    "summary_en": true,
    "url": "https://doi.org/10.3354/meps15371",
    "tags": {
@@ -11889,8 +11889,8 @@
    "authors": "Omura, Takuya",
    "journal": "Cureus",
    "date": "2026-11-15",
-   "summary": "基于2015—2024年日本全国调查数据，分析日本成年人维生素D的主要膳食来源，发现鱼类和贝类是其主要摄入来源。",
-   "summary_en": false,
+   "summary": "BACKGROUND: Fish and shellfish provide most dietary vitamin D in Japan, yet their consumption has declined. This study examined their contribution to dietary vitamin D among Japanese adults and compared published mean co…",
+   "summary_en": true,
    "url": "https://doi.org/10.7759/cureus.119672",
    "tags": {
     "theme": [
@@ -12020,8 +12020,8 @@
    "authors": "Varghese, Binu; Thiruvarasu, S.; George, Grace; Al Jalees, Anees; Kumar, Ajeth",
    "journal": "Aquaculture Science and Management",
    "date": "2026-11-15",
-   "summary": "本研究以近危的西高止山脉特有鱼类红鳍锯鳞鲈（Pristolepis rubripinnis）为对象，围绕其人工繁殖与早期生活史开展研究，旨在为该物种的保育提供基础生物学依据。",
-   "summary_en": false,
+   "summary": "The red-finned catopra ( Pristolepis rubripinnis ) is a freshwater perciform endemic to the southern Western Ghats of India, where local populations have declined under the combined pressure of habitat alteration and cli…",
+   "summary_en": true,
    "url": "https://doi.org/10.1186/s44365-026-00052-8",
    "tags": {
     "theme": [
@@ -12326,8 +12326,8 @@
    "authors": "Gleisner, Grace E.",
    "journal": "Journal of Maritime Archaeology",
    "date": "2026-11-14",
-   "summary": "该研究通过分析罗马时期双耳陶罐（amphorae）遗存，探讨西班牙加的斯湾（Bay of Cádiz）地区的罗马鱼类生产与专业化分工。基于陶罐类型与分布证据，揭示该地区鱼酱（garum）等鱼产品的生产规模与贸易网络。",
-   "summary_en": false,
+   "summary": "This research seeks to uncover spatial and temporal trends relating to the food contents of amphorae from Roman Gades, the modern Bay of Cádiz, from the second century BC through the second century AD.",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s11457-026-09553-y",
    "tags": {
     "theme": [
@@ -12368,7 +12368,7 @@
    "authors": "Li, Yunge; Zeng, Yuhong; Hu, Hongliang; Yang, Fan; Chang, Jianbo",
    "journal": "Journal of Ecohydraulics",
    "date": "2026-11-14",
-   "summary": "",
+   "summary": "Determining ecologically suitable water levels is fundamental to fish habitat conservation and ecologic regulation.",
    "summary_en": true,
    "url": "https://doi.org/10.1080/24705357.2026.2761577",
    "tags": {
@@ -12413,8 +12413,8 @@
    "authors": "Van, Truong Thi Bich; Anh, Nguyen Thi Loan; Dung, Le Viet; Khang, Do Tan; Men, Tran Thanh; Thi, Nguyen Pham Anh; Ngoc, Le Hoang Bao; Nga, Pham Thi Ngoc",
    "journal": "Biotechnology Letters",
    "date": "2026-11-14",
-   "summary": "该研究针对虾类养殖中Desulfovibrio vulgaris及有毒气体问题，对噬菌体ST22和ST231进行基因组特征分析并评估其缓解效果。",
-   "summary_en": false,
+   "summary": "This study aims to address the urgent need for antibiotic alternatives in aquaculture by isolating and characterizing novel bacteriophages.",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s10529-026-03800-x",
    "tags": {
     "theme": [
@@ -12459,8 +12459,8 @@
    "authors": "Kang, Ziyi; Luan, Sheng; Xu, Chengxun; Liu, Haijun; Li, Qi",
    "journal": "Heredity",
    "date": "2026-11-14",
-   "summary": "该研究基于家系水产育种方案，提出look-ahead genomic mating策略以优化遗传增益与近交之间的权衡。",
-   "summary_en": false,
+   "summary": "Family-based aquaculture breeding programs deliver rapid genetic gains but inevitably accelerate inbreeding. Advanced mating strategies aim to manage this trade-off, yet the optimal emphasis on the rate of genetic gain (…",
+   "summary_en": true,
    "url": "https://doi.org/10.1038/s41437-026-00900-2",
    "tags": {
     "theme": [
@@ -12503,8 +12503,8 @@
    "authors": "Ghosh, Dhritishree; Alam, Sk Aftabul; Mukhopadhyay, Subhra Kanti",
    "journal": "Scientific Reports",
    "date": "2026-11-14",
-   "summary": "该研究通过基因组学、生化及分子动力学综合分析，鉴定Chromohalobacter sp. D23为具有群体感应淬灭（quorum quenching）活性的潜在益生菌，旨在为可持续水产养殖提供抗生素替代策略。",
-   "summary_en": false,
+   "summary": "Quorum sensing-driven biofilm formation is a key contributor to the persistence and multidrug resistance (MDR) of pathogenic bacteria, presenting a major challenge in combating infectious diseases.",
+   "summary_en": true,
    "url": "https://doi.org/10.1038/s41598-026-73653-x",
    "tags": {
     "theme": [
@@ -12546,7 +12546,7 @@
    "authors": "Wang, Ju-Feng; Zhang, Peng; Liu, Jie; Hammond, Michael; Tang, Hao-Tian; Wang, Xi; Zhang, Jin-Yong; Yin, Xiao-Ming; Lun, Zhao-Rong; Lukeš, Julius",
    "journal": "BMC Genomics",
    "date": "2026-11-14",
-   "summary": "",
+   "summary": "Trypanosoma carassii infects a range of fish species and is responsible for severe disease outbreaks in aquacultures.",
    "summary_en": true,
    "url": "https://doi.org/10.1186/s12864-026-13562-5",
    "tags": {
@@ -12633,7 +12633,7 @@
    "authors": "Fransis, Changoma Marko; Matsuishi, Takashi Fritz",
    "journal": "Fisheries Science",
    "date": "2026-11-14",
-   "summary": "",
+   "summary": "The shorthead anchovy Encrasicholina heteroloba is a small pelagic species of significant economic and nutritional importance in Tanzania. However, reliable stock assessment remains challenging because of limited data.",
    "summary_en": true,
    "url": "https://doi.org/10.1007/s12562-026-02054-w",
    "tags": {
@@ -12905,7 +12905,7 @@
    "authors": "Khan, Md. Badiuzzaman; Kanta, Abeer Hossain; Khan, Md. Al-Amin; Rahman, Md. Safiur; Salam, Abdus; Jiang, Jheng-Jie; Aziz, Azrina Abd; Gautam, Sneha; Min, Baehyun",
    "journal": "Scientific Reports",
    "date": "2026-11-13",
-   "summary": "",
+   "summary": "Toxic elements can be accumulated into human body through fish chain as fish is exposed to metals through water, sediment and contaminated feeds.",
    "summary_en": true,
    "url": "https://doi.org/10.1038/s41598-026-79729-y",
    "tags": {
@@ -13135,7 +13135,7 @@
    "authors": "Zhang, Manman; Xiao, Haoxiang; Ouyang, Hong; Gu, Junning; Xiao, Lijuan; Wang, Zhaohui",
    "journal": "Journal of Ocean University of China",
    "date": "2026-11-13",
-   "summary": "",
+   "summary": "The rapid expansion of cage aquaculture raises concerns about its impacts on coastal sediment ecosystems. This study investigated the long-term effect of cage fish farming on the spatiotemporal dynamics, assembly mechani…",
    "summary_en": true,
    "url": "https://doi.org/10.1007/s11802-026-6741-6",
    "tags": {
@@ -13178,8 +13178,8 @@
    "authors": "Jiang, Pengfei; Sun, Shimeng; Li, Guodong; Miao, Xiaoqing",
    "journal": "Journal of Ocean University of China",
    "date": "2026-11-13",
-   "summary": "该研究考察鱼种与炖煮时间对鱼排汤营养及风味属性的影响，属食品加工与品质评价范畴，与渔业资源、生态或管理关联有限。",
-   "summary_en": false,
+   "summary": "This study investigated the effects of fish species, simmering time, and deodorization methods on the nutrition and flavor of fish steak soups prepared from New Zealand hoki, Pacific cod, and Atlantic mackerel.",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s11802-026-6760-3",
    "tags": {
     "theme": [
@@ -13220,7 +13220,7 @@
    "authors": "Hamilton, Trevor James; Burggren, Warren W.",
    "journal": "Frontiers in Behavioral Neuroscience",
    "date": "2026-11-13",
-   "summary": "",
+   "summary": "This research topic on Neurobiology and Behavior in Fish: Insights and Innovations in Frontiers in Behavioral Neuroscience brings together seven articles on four fish species including zebrafish (Danio rerio), Japanese m…",
    "summary_en": true,
    "url": "https://doi.org/10.3389/fnbeh.2026.2016852",
    "tags": {
@@ -13262,8 +13262,8 @@
    "authors": "Li, Jian’an; Yao, Boyan; Shi, Chenyu; Liu, Shikai",
    "journal": "Journal of Ocean University of China",
    "date": "2026-11-13",
-   "summary": "该研究聚焦太平洋牡蛎（Crassostrea gigas）整合素（integrin）家族，从基因组组织、系统发育保守性及表达分化三方面解析其功能特征。基于标题推测，研究通过比较基因组学与表达谱分析，揭示整合素家族成员在生长调控与环境适应中的潜在作用。",
-   "summary_en": false,
+   "summary": "Integrins are transmembrane receptors essential for cell adhesion and signaling, with known roles in growth regulation in vertebrates.",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s11802-026-6773-y",
    "tags": {
     "theme": [
@@ -13444,7 +13444,7 @@
    "authors": "Li, Ming-Ao; Geng, Jie-Ting; Gao, Yuan-Pei; Osako, Kazufumi",
    "journal": "Fisheries Science",
    "date": "2026-11-13",
-   "summary": "",
+   "summary": "This study investigated the effects of setting temperature and time on gel properties as well as flavor compound generation and release in rabbitfish (Siganus fuscescens) surimi suwari gel.",
    "summary_en": true,
    "url": "https://doi.org/10.1007/s12562-026-02052-y",
    "tags": {
@@ -13486,8 +13486,8 @@
    "authors": "Sasaki, Taku; Matoba, Sota; Iwazaki, Yuto; Anraku, Kazuhiko; Kotani, Tomonari",
    "journal": "Fisheries Science",
    "date": "2026-11-13",
-   "summary": "研究以真鲷（Pagrus major）仔鱼为对象，探讨紫外A（UVA）光照下饵料生物可见性与摄食量的关系。基于标题推测，实验通过改变UVA照射条件评估仔鱼对饵料的摄食响应，以明确UVA视觉在早期摄食行为中的作用。",
-   "summary_en": false,
+   "summary": "We evaluated whether illumination with specific light wavelengths improves prey capture efficiency in red sea bream Pagrus major larvae reared in tanks containing rotifers as prey.",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s12562-026-02043-z",
    "tags": {
     "theme": [
@@ -13616,7 +13616,7 @@
    "authors": "Touaf, M; Mghili, B; Jellal, N; Tiwari, M; Aksissou, M",
    "journal": "African Journal of Marine Science",
    "date": "2026-11-12",
-   "summary": "",
+   "summary": "This study evaluated how coastal fishing affects sea turtles along the central Atlantic coast of Morocco, a globally significant biological region.",
    "summary_en": true,
    "url": "https://doi.org/10.2989/1814232x.2026.2662912",
    "tags": {
@@ -13662,8 +13662,8 @@
    "authors": "Dura, Hari Bahadur; Hazell, Paul J.; Wang, Hongxu; Escobedo-Diaz, Juan P.",
    "journal": "International Journal for Computational Methods in Engineering Science and Mechanics",
    "date": "2026-11-12",
-   "summary": "该研究受鱼鳞天然分级结构启发，探究防护梁的定向硬化与应力局部化机制，属仿生结构力学研究，与渔业科学无关。",
-   "summary_en": false,
+   "summary": "This paper reports the comprehensive flexural behaviour of biomimetic protective beams inspired by the hierarchical architecture of fish scales.",
+   "summary_en": true,
    "url": "https://doi.org/10.1080/15502287.2026.2759914",
    "tags": {
     "theme": [
@@ -13921,7 +13921,7 @@
    "authors": "Farmery, Anna K; Fullbrook, Liam; Allison, Edward H",
    "journal": "Environmental Research: Food Systems",
    "date": "2026-11-12",
-   "summary": "",
+   "summary": "CORRIGENDUM: Managing expectations: implementing nutrition– sensitive fisheries and aquaculture (2026 Environ. Res.: Food Syst. 3 025008), Farmery, Anna K, Fullbrook, Liam, Allison, Edward H",
    "summary_en": true,
    "url": "https://doi.org/10.1088/2976-601x/aeb1d8",
    "tags": {
@@ -14051,7 +14051,7 @@
    "authors": "Jakimowicz, Michalina; Napora-Rutkowski, Łukasz; Suchocki, Tomasz; Mirończuk, Aleksandra; Urbanek, Aneta K.; Mielczarek, Magda; Brzoza, Anita; Kamińska-Gibas, Teresa; Szyda, Joanna",
    "journal": "Journal of Applied Genetics",
    "date": "2026-11-12",
-   "summary": "",
+   "summary": "The efficacy of effective microorganism products in aquaculture covers multiple aspects that act directly on fish, such as improving resistance to fungal, bacterial, and viral infections, reproduction, feed efficiency, a…",
    "summary_en": true,
    "url": "https://doi.org/10.1007/s13353-026-01129-9",
    "tags": {
@@ -14188,8 +14188,8 @@
    "authors": "Bjørnå, Hilde",
    "journal": "Maritime Studies",
    "date": "2026-11-12",
-   "summary": "该研究以挪威北极地区水产养殖为案例，探讨地方合法性（local legitimacy）的管理问题，属于水产养殖社会治理范畴，与渔业管理及沿海社区发展相关。",
-   "summary_en": false,
+   "summary": "Salmon aquaculture is a major contributor to coastal economies in Norway, yet the industry continues to face challenges related to local legitimacy and social acceptance.",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s40152-026-00534-4",
    "tags": {
     "theme": [
@@ -14741,7 +14741,7 @@
    "authors": "Vasanthi, Kalli; Firdous, Aimen; Kumar, Sanath H; Manjusha, Lekshmi; Karunasagar, Indrani; Nayak, Binaya Bhusan",
    "journal": "Archives of Microbiology",
    "date": "2026-11-12",
-   "summary": "",
+   "summary": "The present study aimed to investigate the occurrence of Arcobacter butzleri in seafood from the Mumbai coast, India and evaluated its genetic potential associated with virulence and antimicrobial resistance through comp…",
    "summary_en": true,
    "url": "https://doi.org/10.1007/s00203-026-05302-w",
    "tags": {
@@ -14881,8 +14881,8 @@
    "authors": "Hasegawa, Ryuya; Shimizu, Munetaka",
    "journal": "Fisheries Science",
    "date": "2026-11-12",
-   "summary": "该研究以幼鱼和仔鱼阶段的西太公鱼（Spirinchus lanceolatus）为对象，探讨禁食与再投喂对组织胰岛素样生长因子（IGF）-1及IGF结合蛋白-1 mRNA表达的影响，旨在揭示其生长调控对摄食状态的响应机制。",
-   "summary_en": false,
+   "summary": "The potential utility as growth indices of mRNA levels of insulin-like growth factor (IGF)-1 and IGF-binding protein-1 subtypes in juvenile and larval shishamo smelt Spirinchus lanceolatus under captivity was examined.",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s12562-026-02049-7",
    "tags": {
     "theme": [
@@ -15157,7 +15157,7 @@
    "authors": "Pavesi, Rocco; Martínez-Cháfer, Luis; De Noni, Ivan; Orsi, Luigi",
    "journal": "European Planning Studies",
    "date": "2026-11-11",
-   "summary": "",
+   "summary": "Research on Europe’s twin transition has moved to the territorial scale, mapping where green and digital innovation co-occur and asking which regions are becoming twin innovators.",
    "summary_en": true,
    "url": "https://doi.org/10.1080/09654313.2026.2758888",
    "tags": {
@@ -15295,7 +15295,7 @@
    "authors": "Xu, Bingqing; Dong, Xiuqiang; Cui, Guangxin; Dong, Tianwei; Liu, Shude; Li, Fan; Zhang, Xiaomin",
    "journal": "Fisheries Science",
    "date": "2026-11-11",
-   "summary": "",
+   "summary": "Stock enhancement is recognized as one of the most direct and effective means for conserving aquatic biological resources.",
    "summary_en": true,
    "url": "https://doi.org/10.1007/s12562-026-02045-x",
    "tags": {
@@ -15366,8 +15366,8 @@
    "authors": "Rizgalla, Jamila; Fitori, Amani; Tiralongo, Francesco",
    "journal": "Thalassas: An International Journal of Marine Sciences",
    "date": "2026-11-11",
-   "summary": "该研究通过实地调查与公民科学（citizen science）手段，追踪利比亚海域六种非本土及分布区扩张鱼类分类群的现状与分布。",
-   "summary_en": false,
+   "summary": "In the Mediterranean Sea, citizen science projects have gained momentum in monitoring, detecting, and recording non-indigenous species.",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s41208-026-01267-1",
    "tags": {
     "theme": [
@@ -16037,7 +16037,7 @@
    "authors": "Wilson, Michelan; Barbier, Edward B.; Archambault, Philippe; Carrier-Belleau, Charlotte",
    "journal": "Marine Resource Economics",
    "date": "2026-11-10",
-   "summary": "",
+   "summary": "The Estuary and Gulf of St. Lawrence in Canada is experiencing a decline in oxygen levels, adversely affecting marine life, particularly commercial northern shrimp.",
    "summary_en": true,
    "url": "https://doi.org/10.1086/743937",
    "tags": {
@@ -16215,8 +16215,8 @@
    "authors": "Luo, Meiying; Liu, Jinhao; Wang, Junfeng; Cai, Lilin; Fu, Yiming; Liang, Shuyi; Liu, Shuai; Pan, Zhe; Liu, Shilong; Yu, Xiaolei",
    "journal": "Nutrition & Metabolism",
    "date": "2026-11-10",
-   "summary": "该研究探讨鱼油通过GPR120-CaMKK2-AMPK通路促进骨骼肌VEGF-B表达，从而增强脂肪酸跨内皮转运及肌肉脂质沉积的机制。",
-   "summary_en": false,
+   "summary": "Owing to the continuous, tight-junction-sealed architecture of capillary endothelium in skeletal muscle, the trans-endothelial transport of fatty acids from capillary lumen to myofibers constitutes a critical determinant…",
+   "summary_en": true,
    "url": "https://doi.org/10.1186/s12986-026-01241-x",
    "tags": {
     "theme": [
@@ -16257,7 +16257,7 @@
    "authors": "Banerjee, Rituparna; Kanti Roy, Pranab; Nath Talapatra, Soumendra",
    "journal": "International Journal of Science and Research (IJSR)",
    "date": "2026-11-10",
-   "summary": "",
+   "summary": "An organic compound, dimethyl phthalate (DMP) is a category of plasticizer that is commonly utilized in plastic materials.",
    "summary_en": true,
    "url": "https://doi.org/10.21275/sr261107134834",
    "tags": {
@@ -16849,8 +16849,8 @@
    "authors": "Abozaid, Dina; El-Aal, Mohamed Abd; Ahmed, Mohammed H.; Azab, Amr; Alhotan, Abdulaziz; Mohamed, Pansai A.",
    "journal": "Clinical Oral Investigations",
    "date": "2026-11-09",
-   "summary": "该研究评估鱼鳞来源纳米羟基磷灰石（nano-hydroxyapatite）对传统玻璃离子水门汀（glass ionomer cement）力学、理化及光学性能的材料依赖性影响，属牙科修复材料领域，与渔业科学无关。",
-   "summary_en": false,
+   "summary": "To evaluate the effects of fish-scale-derived nano-hydroxyapatite (nHA) incorporation on the mechanical properties, surface characteristics, hydrolytic behavior, and color stability of conventional glass ionomer cements…",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s00784-026-07252-5",
    "tags": {
     "theme": [
@@ -17028,7 +17028,7 @@
    "authors": "Kim, Bosong; Kim, Jinu; Yang, Yun Jung",
    "journal": "Korean Journal of Chemical Engineering",
    "date": "2026-11-09",
-   "summary": "",
+   "summary": "Decellularized extracellular matrix (dECM) has attracted increasing attention as a biomaterial platform that preserves the structural architecture and biochemical cues of native tissues.",
    "summary_en": true,
    "url": "https://doi.org/10.1007/s11814-026-00876-z",
    "tags": {
@@ -17116,7 +17116,7 @@
    "authors": "Ashouri, Ghasem; Imperatore, Roberta; Paolucci, Marina; Hoseinifar, Seyed Hossein; Nekouei Fard, Ali; Bagherzadeh Lakani, Forouzan; Torfi Mozanzadeh, Mansour; Rezaeishoorijeh, Reyhaneh; Hoseini, Marziyeh; Ghafarifarsani, Hamed",
    "journal": "Veterinary Research Communications",
    "date": "2026-11-09",
-   "summary": "",
+   "summary": "Global aquaculture is rapidly developing as a production system for aquatic animal-derived foods. Sustainable production in the marine industry is not only hindered by disease challenges but also limited by the use of sy…",
    "summary_en": true,
    "url": "https://doi.org/10.1007/s11259-026-11599-1",
    "tags": {
@@ -17478,8 +17478,8 @@
    "authors": "Gishi, Ryunosuke; Okamura, Akihiro; Yamada, Yoshiaki; Shirai, Kotaro; Kuroki, Mari",
    "journal": "Fisheries Science",
    "date": "2026-11-09",
-   "summary": "该研究旨在整合形态学与耳石化学手段区分日本玻璃鳗的放流个体与野生个体，为增殖放流效果评估和资源管理提供技术支撑。",
-   "summary_en": false,
+   "summary": "Advances in captive breeding techniques are expected to increase the production of artificially reared glass eels of the Japanese eel Anguilla japonica and expand their distribution in the market.",
+   "summary_en": true,
    "url": "https://doi.org/10.1007/s12562-026-02042-0",
    "tags": {
     "theme": [
@@ -17524,7 +17524,7 @@
    "authors": "Schabetsberger, Robert; Chang, Yu-Lin Eda; Razafindranaivo, Estelle Fenohanta; Andriamahefa, Denis Miranto; Higuchi, Takatoshi; Sztatecsny, Marc; Tambets, Meelis; Ratsoavina, Mihaja Fanomezana; Feunteun, Eric; O'Brien, Gordon",
    "journal": "Marine Ecology Progress Series",
    "date": "2026-11-09",
-   "summary": "",
+   "summary": "Little is known about western Indian Ocean anguillid spawning areas. Marine migrations of 15 silver-phase tropical eels (1 Anguilla bicolor bicolor , 10 A. mossambica , 4 A.",
    "summary_en": true,
    "url": "https://doi.org/10.3354/meps15367",
    "tags": {
@@ -17572,7 +17572,7 @@
    "authors": "Tupper, Mark H; Shipway, J Reuben",
    "journal": "Marine Ecology Progress Series",
    "date": "2026-11-09",
-   "summary": "",
+   "summary": "Groupers (Epinephelinae) are ecologically important reef predators and key targets of Indo-Pacific fisheries, yet quantitative data on juvenile recruitment across habitat types remain scarce.",
    "summary_en": true,
    "url": "https://doi.org/10.3354/meps15369",
    "tags": {
@@ -17619,7 +17619,7 @@
    "authors": "Grandi, María Florencia; Sánchez-Carnero, Noela; Pisoni, Juan Pablo; Rodríguez Pérez, Daniel",
    "journal": "Marine Ecology Progress Series",
    "date": "2026-11-09",
-   "summary": "",
+   "summary": "Understanding the environmental factors determining colony distribution is essential for interpreting the recovery and spatial dynamics of colonial marine predators.",
    "summary_en": true,
    "url": "https://doi.org/10.3354/meps15368",
    "tags": {
@@ -17665,7 +17665,7 @@
    "authors": "Collins, Sydney Morgan; Hedd, April; Studholme, Katharine R.; Fifield, Dave A.; Montevecchi, William Alan; Wilson, David R.",
    "journal": "Marine Ecology Progress Series",
    "date": "2026-11-09",
-   "summary": "",
+   "summary": "Several factors influence space use by animals, including consistent individual differences identified in numerous taxa.",
    "summary_en": true,
    "url": "https://doi.org/10.3354/meps15365",
    "tags": {
@@ -17709,8 +17709,8 @@
    "authors": "Alves, José Carlos Albuquerque; Albuquerque, Maria Luísa de Araújo; Vieira, Edson A.; Machado Pessanha, André Luiz",
    "journal": "Marine Ecology Progress Series",
    "date": "2026-11-09",
-   "summary": "该研究聚焦巴西东北部砂岩礁潮池，探讨生境复杂性与底栖结构对潮池鱼类群落组成及食性的驱动作用。",
-   "summary_en": false,
+   "summary": "Tidepools in sandstone reefs are dynamic habitats where environmental conditions and resource availability are strongly modulated by substrate structure, influencing resident fish assemblages.",
+   "summary_en": true,
    "url": "https://doi.org/10.3354/meps15366",
    "tags": {
     "theme": [

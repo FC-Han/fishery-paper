@@ -43,6 +43,10 @@ jobs:
           CI: "true"
         run: python scripts/fetch_papers.py
 
+      - name: 📥 回捞缺失摘要
+        run: python scripts/fetch_abstracts.py
+        continue-on-error: true
+
       - name: 🤖 DeepSeek 中文摘要
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
