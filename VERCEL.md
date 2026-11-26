@@ -9,8 +9,36 @@
    └──────────── {v:[1024 个浮点数]} ←─────────────────────┘
 
 文档向量不经过它 —— 那些由 scripts/build_embeddings.py 离线算好，
-存成 docs/data/emb.bin（393 篇 × 1024 维 int8 ≈ 400 KB），浏览器直接拿走做点积。
+存成 docs/data/emb.bin（344 篇 × 1024 维 int8 ≈ 350 KB），浏览器直接拿走做点积。
 ```
+
+## 0. 你要做的事（按顺序走完这 6 步）
+
+| # | 在哪做 | 做什么 | 拿到什么 |
+|---|---|---|---|
+| 1 | [cloud.siliconflow.cn](https://cloud.siliconflow.cn) | 注册 → API 密钥 → 新建密钥 | `sk-xxxx` |
+| 2 | [vercel.com/new](https://vercel.com/new) | Import Git Repository → 选 `FC-Han/fishery-paper` → Framework **Other**、Output Directory **docs** → Deploy | 一个 `xxx.vercel.app` 域名 |
+| 3 | Vercel → Settings → Environment Variables | 加 1 个必填 `EMBED_API_KEY`（把第 1 步的 key 粘进去） | — |
+| 4 | Vercel → Settings → Domains | **只有大陆访问才需要**：绑自己的域名，CNAME 指向 `cname-china.vercel-dns.com` | `https://api.你的域名.com` |
+| 5 | GitHub 仓库 → Settings → Secrets and variables → Actions | Secret 加 `EMBED_API_KEY`；Variables 加 `EMBED_API_BASE`、`EMBED_MODEL`、`EMBED_ENDPOINT` | — |
+| 6 | GitHub → Actions → 渔业文献每日更新 → Run workflow | 重跑一次 | 站点出现「语义增强」标签 |
+
+第 5 步要填的具体值（假设域名是 `api.example.com`）：
+
+```ini
+# Secret
+EMBED_API_KEY   = sk-你的密钥
+
+# Variables
+EMBED_API_BASE  = https://api.siliconflow.cn/v1/embeddings
+EMBED_MODEL     = BAAI/bge-m3
+EMBED_ENDPOINT  = https://api.example.com/api/embed
+```
+
+没绑自定义域名就用 `EMBED_ENDPOINT = https://你的项目名.vercel.app/api/embed`——
+但大陆用户访问不通，相当于语义检索只对海外生效。
+
+> 第 4 步不做也能跑通：只是国内用户搜索时会静默退回 BM25，功能不坏、页面不报错。
 
 ## 1. 部署
 

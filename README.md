@@ -39,14 +39,14 @@ docs/
 点卡片底部的「相关 N」展开推荐列表，点「关系图」进入可探索的关系网络：中心是当前论文，
 四周是关联最紧的文献，点任意节点即以它为中心继续走，支持返回上一级。
 
-**算法**（`scripts/build_relations.py`，纯离线、零 API 成本，389 篇约 2 秒）：
+**算法**（`scripts/build_relations.py`，纯离线、零 API 成本，344 篇约 2 秒）：
 
 - 文本相似：标题（权重 ×3）+ 英文摘要前 700 字符 + 中文速览，中英文分别按 bigram / 单词切分后做 TF-IDF 余弦
 - 标签重叠：按共有的标签**个数**加分（同维度第 2 个减半），而非 Jaccard —— 共享 1 个鱼种本身就是强信号，不该被并集除小
 - 融合：`0.45 × 文本 + 0.50 × 标签 + 0.05 × 同期刊`
 - bigram TF-IDF 的绝对尺度很小（全体中位 0.012），所以文本分先按参考值 0.06 归一化再参与融合，否则会被压成噪声
 
-结果写回 `data/papers.json` 的 `rel` 字段，生成站点时转成数组下标内联，389 篇 × 4 条约 40 KB。
+结果写回 `data/papers.json` 的 `rel` 字段，生成站点时转成数组下标内联，344 篇 × 4 条约 40 KB。
 每天 CI 里全量重算（比增量更正确：新论文也要能出现在旧论文的关联里）。
 
 ## 📥 摘要回捞
@@ -67,9 +67,44 @@ Crossref 对 Springer / Wiley / Elsevier 等不少出版商**不返回 abstract*
 补到摘要后会**清空该篇的旧中文速览**——那是没摘要时硬写的，得让 `summarize.py` 用真摘要重来。
 脚本每天都跑，索引库追上来自动补上，不需要人工干预。
 
+## 🎯 相关性过滤
+
+Crossref 的 ISSN 抓取拿的是整本期刊，而 `Frontiers in Marine Science`、`Marine Policy` 这类刊
+什么都发——航运排放法规、海堤越浪、混凝土渗透性、甚至"C 刊"的人力资源论文都会混进来。
+光靠"标题里出现 fish 就留"会把《误吞鱼刺致胃穿孔》也当成渔业文献。
+
+所以判定改成**正向证据制**（`scripts/tag_papers.py` 的 `assess_relevance()`），按优先级依次过：
+
+| 顺序 | 判据 | 结果 |
+|---|---|---|
+| 1 | 渔业/水产专业期刊（`Fish and Fisheries`、`Aquaculture`、`Fishes` …） | ✅ 免检 |
+| 2 | 医学/临床类期刊（`Cureus`、`Diagnostic*`、`*Allergolog*` …） | ❌ 直接排除 |
+| 3 | 领域标志词：航运、港口、海工、混凝土、HRM、昆虫（`OFF_TOPIC_STRICT`） | ❌ 直接排除 |
+| 4 | 标题是仿生机器人研究（`robotic fish`、`underactuated`） | ❌ 直接排除 |
+| 5 | 命中鱼种标签（黄鱼、鲑鳟、虾蟹贝…） | ✅ 保留 |
+| 6 | 命中渔业核心主题（水产养殖 / 种群评估与管理） | ✅ 保留 |
+| 7 | 临床、材料、食品包装、法律人文类词（`OFF_TOPIC_SOFT`） | ❌ 排除 |
+| 8 | 标题点到水生生物，或正文出现 ≥2 次 | ✅ 保留 |
+| 9 | 其余 | ❌ 排除 |
+
+三条设计取舍值得说：
+
+- **黑名单分两级**。`concrete`、`surgical`、`tumor`、`packaging` 这类词在真渔业论文里也会出现
+  （"earthen and concrete ponds"、"surgical implantation of acoustic transmitters"、"鱼明胶膜"），
+  所以只在鱼种/主题等正向证据都不成立时才拿来定罪；而航运、海工、HRM 这些在渔业论文里
+  基本不可能出现的词，直接前置硬拦。
+- **机器人只在标题上判**。飞鱼滑翔的论文摘要在讨论应用时会写 "biomimetic robots"，
+  但标题绝不会是机器人研究。
+- **人文/法律词放软层**。渔业法、渔业史的论文能过（有 `stock` 主题），
+  纯法学的《论鱼射击机赌博的法律责任》过不了。
+
+清理由 `scripts/prune_offtopic.py` 执行：把判定无关的论文从数据集移除，DOI 写进
+`data/offtopic.json`；`fetch_papers.py` 每次抓取先读这个黑名单并跳过，所以**删掉的不再被抓回来**。
+每日 CI 在打标之后自动跑一遍，新混进来的噪声当天就被清掉。
+
 ## 🔎 站内检索（BM25）
 
-纯前端的轻量检索引擎，打开页面即在浏览器里建好索引：**零后端、零 API 成本**，389 篇的建索引 + 单次查询都在 10 ms 内。
+纯前端的轻量检索引擎，打开页面即在浏览器里建好索引：**零后端、零 API 成本**，344 篇的建索引 + 单次查询都在 10 ms 内。
 
 - **分词**：中文不依赖词典，CJK 连续段切 bigram（"大黄鱼" → 大黄 / 黄鱼），英文按词，中英混排自动分开
 - **字段加权**：标题 ×3.2、标签 ×2.2、期刊 ×1.8、摘要 ×1.0、作者 ×0.7，`k1=1.35`、`b=0.72` 做长度归一
@@ -86,7 +121,7 @@ Crossref 对 Springer / Wiley / Elsevier 等不少出版商**不返回 abstract*
 BM25 只认字面，换个说法就搜不到了（"鱼的耳石" vs `otolith`）。语义检索补这一块：
 
 - **文档向量离线算**：`scripts/build_embeddings.py` 把标题 + 标签 + 摘要前段喂给 embedding 模型，
-  L2 归一化后 int8 量化存成 `docs/data/emb.bin`，393 篇约 400 KB，浏览器打开搜索时再取
+  L2 归一化后 int8 量化存成 `docs/data/emb.bin`，344 篇约 350 KB，浏览器打开搜索时再取
 - **查询向量实时算**：走 Vercel 上的 `api/embed.js` 代理，key 留在服务端，前端只认代理地址
 - **混合排序**：`0.55 × BM25 归一 + 0.45 × 余弦`；BM25 一篇都没命中时，余弦 ≥ 0.34 的候选会补进来
 - **优雅降级**：端点没配、请求失败、向量缺失，一律静默退回纯 BM25，不会白屏
@@ -109,7 +144,7 @@ BM25 只认字面，换个说法就搜不到了（"鱼的耳石" vs `otolith`）
 - 纯规则 + 词典，**零 API 成本**、结果稳定可复现
 - 标题命中权重 ×3，摘要命中 ×1（同一关键词摘要内最多计 3 次）
 - 各维度阈值不同：主题/鱼种需更强证据（3 分），海域/方法单次命中即可（2 分）
-- 顺带标记 `is_review`（综述）、`high_impact`（高影响期刊）、`off_topic`（医学病例、材料工程等无关文献，站点自动隐藏）
+- 顺带标记 `is_review`（综述）、`high_impact`（高影响期刊）、`off_topic` + `rel_reason`（相关性判定结果与依据）
 
 想加标签直接改 `RULES` 列表即可，`T()/S()/G()/M()` 分别是四个维度的构造函数，`!word` 表示整词匹配、`word` 表示子串匹配：
 
@@ -130,10 +165,11 @@ cp .env.example .env        # 填入 DEEPSEEK_API_KEY
 python scripts/fetch_papers.py     # 1. 抓论文（无需 key）
 python scripts/fetch_abstracts.py  # 2. 回捞 Crossref 没给的摘要（无需 key）
 python scripts/summarize.py        # 3. 中文摘要（需 key，增量）
-python scripts/tag_papers.py       # 4. 自动打标（无需 key）
-python scripts/build_embeddings.py # 5. 预计算向量（可选，需 embedding key，见 VERCEL.md）
-python scripts/build_relations.py  # 6. 计算论文关联（无需 key）
-python scripts/generate_site.py    # 7. 生成站点
+python scripts/tag_papers.py       # 4. 自动打标 + 相关性判定（无需 key）
+python scripts/prune_offtopic.py   # 5. 清理无关论文（删数据 + 记黑名单）
+python scripts/build_embeddings.py # 6. 预计算向量（可选，需 embedding key，见 VERCEL.md）
+python scripts/build_relations.py  # 7. 计算论文关联（无需 key）
+python scripts/generate_site.py    # 8. 生成站点
 
 open docs/index.html               # 或：cd docs && python -m http.server 8000
 ```

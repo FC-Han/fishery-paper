@@ -26,6 +26,8 @@ load_dotenv()
 # 项目根目录
 ROOT = Path(__file__).resolve().parent.parent
 DATA_FILE = ROOT / "data" / "papers.json"
+# 已判定与渔业无关、被清理掉的 DOI，抓取时直接跳过
+BLACKLIST_FILE = ROOT / "data" / "offtopic.json"
 
 # API 配置
 CROSSREF_BASE = "https://api.crossref.org/works"
@@ -497,6 +499,17 @@ def save_papers(data: dict):
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
+def load_offtopic_dois() -> set:
+    """读取已判定无关的 DOI 黑名单（由 prune_offtopic.py 维护）"""
+    if BLACKLIST_FILE.exists():
+        try:
+            with open(BLACKLIST_FILE, "r", encoding="utf-8") as f:
+                return set(json.load(f).get("dois", []))
+        except (json.JSONDecodeError, KeyError, OSError):
+            pass
+    return set()
+
+
 def prune_old_papers(papers: list[dict], days: int = 120) -> list[dict]:
     """删除超过指定天数的旧论文"""
     cutoff = (datetime.now(timezone.utc) - timedelta(days=days)).strftime("%Y-%m-%d")
@@ -522,8 +535,12 @@ def main():
     # 加载已有数据
     existing = load_existing_papers()
     existing_dois = {p["doi"] for p in existing.get("papers", []) if p.get("doi")}
+    blocked = load_offtopic_dois()
     global SEEN_DOIS
-    SEEN_DOIS = existing_dois.copy()
+    # 黑名单并入已见集合：清理掉的论文下次抓到也直接丢弃
+    SEEN_DOIS = existing_dois | blocked
+    if blocked:
+        print(f"🚫 跳过 {len(blocked)} 篇已判定无关的论文（data/offtopic.json）")
 
     all_new_papers = []
 

@@ -34,15 +34,90 @@ MIN_SCORE = {"theme": 3, "species": 3, "region": 2, "method": 2}
 # 每个维度最多保留几个标签
 CAP = {"theme": 3, "species": 4, "region": 2, "method": 3}
 
-# 与渔业科学无关的论文（医学病例、材料/食品工程等），站点默认隐藏
-OFF_TOPIC = [
-    "case report", "a case of", "esophagus", "oesophagus", "gastric perforation",
-    "peritonitis", "abscess", "patient", "surgical", "carcinoma", "tumor",
-    "wound healing", "hydrogel", "adsorption", "photocatal", "edible film",
-    "packaging", "nanoparticle synthesis", "drug delivery", "antimicrobial peptide film",
-    "lipoma", "sarcoma", "carcinoma", "in situ hybridization", "retrospective study",
-    "robotic fish", "biomimetic robot", "underactuated", "trajectory tracking",
+# 明确不属于渔业科学的领域，命中即判无关
+# STRICT：领域标志词，在渔业论文里基本不会出现（工程、航运、管理、昆虫）
+OFF_TOPIC_STRICT = [
+    # 勘误 / 撤稿通知，不是研究论文
+    "correction:", "erratum", "retraction note", "expression of concern",
+    # 船舶 / 航运 / 港口 / 海事管理
+    "shipping emission", "port state measure", "deck cadet", "container shipping",
+    "port importance", "seafarer", "ship crew", "maritime education",
+    # 海岸与海洋工程
+    "sea dike", "revetment", "wave overtopping", "monopile",
+    "oscillating hydrofoil", "fowler flap", "tidal energy converter",
+    "calcareous sand", "permeability prediction",
+    # 化工 / 能源调度
+    "chemical energy dispatch", "energy scheduling", "beetle antennae",
+    # 管理 / 人类行为
+    "green hrm", "human resource management", "fuzzy ahp", "candidate selection",
+    # 昆虫 / 陆生植物
+    "heteroptera", "rose plantation", "sticky trap", "agrilus",
 ]
+
+# SOFT：渔业论文里也可能出现的词（鱼类外科手术、肿瘤研究、混凝土池、包装、明胶等），
+#       只有在鱼种/渔业主题等正向证据之后仍无支撑，才判为无关
+OFF_TOPIC_SOFT = [
+    # 临床医学
+    "case report", "a case of", "perforation", "abscess", "peritonitis",
+    "duodenal", "intrahepatic", "esophagus", "oesophagus", "patient",
+    "surgical", "carcinoma", "tumor", "lipoma", "sarcoma",
+    "in situ hybridization", "retrospective study", "wound healing", "drug delivery",
+    # 材料 / 食品工程
+    "hydrogel", "adsorption", "photocatal", "edible film", "packaging",
+    "nanoparticle synthesis", "antimicrobial peptide film", "concrete",
+    # 法律 / 人文 / 社科（渔业法、渔业史一类对科研读者价值低）
+    "gambling", "mosaic", "preaching", "litigation", "criminal liability",
+    "taxation", "jurisprudence",
+]
+
+# 仿生机器人：研究对象是机器不是鱼，但只在标题上判——
+# 真正的鱼类论文（如飞鱼滑翔）也会在摘要里提 "biomimetic robots"
+ROBOTIC = ["robotic fish", "bionic fish", "robot fish", "biomimetic robot",
+           "underactuated", "trajectory tracking"]
+
+# 医学/临床类期刊：即使正文提到 fish 也不是渔业研究
+MEDICAL_JOURNAL_PATS = [
+    "cureus", "clinical case", "surgical patholog", "diagnostic",
+    "health scien", "medical journal", "medical case", "case reports",
+    "oncology", "radiology", "nursing", "allergolog", "pharmacolog",
+    "clinical immunolog",
+]
+
+OFF_TOPIC = OFF_TOPIC_STRICT + OFF_TOPIC_SOFT
+
+# 渔业 / 水产 / 水生生物学专业期刊：主题天然契合，不做相关性审查
+TRUSTED_JOURNAL_PATS = [
+    "fish biology", "fish and fisheries", "fisheries science", "fisheries research",
+    "fisheries management", "fisheries oceanography", "reviews in fish",
+    "reviews in aquaculture", "reviews in fisheries",
+    "canadian j. fisheries", "canadian journal of fisheries",
+    "north american journal of fisheries", " american fisheries society",
+    "ices journal of marine science", "aquaculture", "fishes", "fisheries",
+    "fish diseases", "fish & shellfish", "ecology of freshwater fish",
+    "ichthyolog", "journal of shellfish research", "marine and coastal fisheries",
+    "aquatic living resources", "latin american journal of aquatic research",
+    "aquatic conservation", "aquatic toxicology", "aquaculture environment",
+]
+
+# 渔业核心主题：命中即认定与渔业相关（区别于 misc 兜底）
+CORE_THEMES = {"aqua", "stock"}
+
+# 强渔业信号词：综合刊 / 海洋工程刊里的论文靠正文自证
+STRONG_FISH = re.compile(
+    r"\b(fish(?:es|ery|eries|ing)?|"
+    r"aquacultur\w*|mariculture|shellfish|seafood|bivalve\w*|mollusc\w*|"
+    r"broodstock|hatchery|fingerling|aquafeed|juvenile fish|"
+    r"overfish\w*|stock assessment|bycatch|trawl\w*|gillnet|longline|"
+    r"shrimp|prawn|crayfish|crab|lobster|oyster|mussel|scallop|clam|abalone|sea ?urchin|"
+    r"salmon|trout|tilapia|carp|catfish|tuna|cod|haddock|halibut|"
+    r"sea ?bream|seabream|seabass|flounder|grouper|snapper|mullet|eel|"
+    r"shark|roughshark|stingray|skate|"
+    r"kelp|seaweed|macroalg\w*|diatom|plankton|zooplankton|phytoplankton|"
+    r"benthos|macrobenthos|benthic invertebrate|"
+    r"seagrass|mangrove|coral reef|fish assemblage|fishery|"
+    r"marine ranching|sea ranch)\b",
+    re.IGNORECASE,
+)
 
 DIMENSIONS = {
     "theme": {"label": "研究主题", "color": "teal"},
@@ -510,9 +585,77 @@ def normalize_text(raw: str) -> str:
     return WS_RE.sub(" ", s).strip()
 
 
-def is_off_topic(title: str) -> bool:
-    tl = title.lower()
-    return any(k in tl for k in OFF_TOPIC)
+def match_any(text: str, keys) -> str:
+    tl = (text or "").lower()
+    for k in keys:
+        if k in tl:
+            return k
+    return ""
+
+
+def is_trusted_journal(journal: str) -> bool:
+    jl = re.sub(r"\s+", " ", (journal or "").lower()).strip()
+    return bool(jl) and any(k in jl for k in TRUSTED_JOURNAL_PATS)
+
+
+def is_medical_journal(journal: str) -> bool:
+    jl = re.sub(r"\s+", " ", (journal or "").lower()).strip()
+    return bool(jl) and any(k in jl for k in MEDICAL_JOURNAL_PATS)
+
+
+def assess_relevance(paper: dict, tags: dict) -> tuple:
+    """判定论文是否属于渔业科学范畴，返回 (是否相关, 判定依据)
+
+    判定顺序（越前优先级越高）：
+      1. 渔业/水产专业期刊 → 免检
+      2. 医学/临床类期刊 → 无关（"误吞鱼刺致胃穿孔"不是渔业研究）
+      3. STRICT 领域标志词（海洋工程、航运、管理、昆虫）→ 无关
+      4. 标题是仿生机器人研究 → 无关
+      5. 鱼种标签 → 相关
+      6. 渔业核心主题（养殖 / 种群评估）→ 相关
+      7. SOFT 词（临床、材料、食品工程）→ 无关
+      8. 正文出现水生生物或渔业活动词 → 相关
+      9. 其余 → 无关
+    """
+    if is_trusted_journal(paper.get("journal", "")):
+        return True, "专业期刊"
+
+    if is_medical_journal(paper.get("journal", "")):
+        return False, "医学期刊"
+
+    title = paper.get("title", "")
+    abstract = paper.get("abstract", "")
+
+    hit = match_any(title, OFF_TOPIC_STRICT) or match_any(abstract, OFF_TOPIC_STRICT)
+    if hit:
+        return False, f"无关领域:{hit}"
+
+    hit = match_any(title, ROBOTIC)
+    if hit:
+        return False, f"仿生机器人:{hit}"
+
+    if tags.get("species"):
+        return True, "鱼种:" + ",".join(tags["species"][:2])
+
+    if CORE_THEMES & set(tags.get("theme", [])):
+        core = sorted(CORE_THEMES & set(tags["theme"]))
+        return True, "核心主题:" + ",".join(core)
+
+    hit = match_any(title, OFF_TOPIC_SOFT) or match_any(abstract, OFF_TOPIC_SOFT)
+    if hit:
+        return False, f"无关领域:{hit}"
+
+    text = (title + " " + abstract).lower()
+    n = len(STRONG_FISH.findall(text))
+    if not n:
+        return False, "无渔业证据"
+
+    # 标题里点到水生生物，或正文反复出现（≥2 次）才算自证。
+    # 只看 1 次会被"社论标题引用一句 fish""政策论文顺带提一句渔业"这类噪声骗过。
+    if n >= 2 or STRONG_FISH.search(title):
+        return True, f"关键词×{n}"
+
+    return False, "无渔业证据"
 
 
 def score_paper(title: str, abstract: str) -> dict:
@@ -552,7 +695,9 @@ def tag_paper(paper: dict) -> dict:
     paper["tags"] = tags
     paper["is_review"] = bool(REVIEW_TITLE.search(title))
     paper["high_impact"] = is_high_impact(paper.get("journal", ""))
-    paper["off_topic"] = is_off_topic(title)
+    relevant, why = assess_relevance(paper, tags)
+    paper["off_topic"] = not relevant
+    paper["rel_reason"] = why
     return paper
 
 
@@ -574,7 +719,8 @@ def main():
         data = json.load(f)
 
     papers = data.get("papers", [])
-    todo = papers if force else [p for p in papers if not p.get("tags")]
+    # 没有标签的、或旧版本没留下判定依据的，都要重新过一遍
+    todo = papers if force else [p for p in papers if not p.get("tags") or "rel_reason" not in p]
     print(f"🏷️  待打标论文: {len(todo)} / {len(papers)}")
 
     stat = defaultdict(int)

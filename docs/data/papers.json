@@ -1,6 +1,6 @@
 {
  "generated_at": "2026-11-26T08:04:50Z",
- "count": 393,
+ "count": 344,
  "lexicon": [
   {
    "dim": "theme",
@@ -441,23 +441,23 @@
    },
    "rel": [
     [
-     372,
-     0.379,
+     324,
+     0.381,
      "污染与毒理"
     ],
     [
-     217,
-     0.277,
+     181,
+     0.273,
      ""
     ],
     [
-     42,
-     0.268,
+     241,
+     0.267,
      "污染与毒理"
     ],
     [
-     281,
-     0.262,
+     192,
+     0.264,
      "污染与毒理"
     ]
    ],
@@ -485,23 +485,23 @@
    },
    "rel": [
     [
-     306,
-     0.365,
+     264,
+     0.364,
      "监测与采样"
     ],
     [
-     372,
-     0.302,
+     324,
+     0.301,
      "监测与采样"
     ],
     [
-     163,
-     0.262,
+     132,
+     0.267,
      ""
     ],
     [
-     141,
-     0.257,
+     111,
+     0.253,
      "污染与毒理"
     ]
    ],
@@ -529,24 +529,24 @@
    },
    "rel": [
     [
-     266,
-     0.433,
+     227,
+     0.427,
      "加工品质与食品"
     ],
     [
-     374,
-     0.355,
-     "加工品质与食品"
-    ],
-    [
-     235,
-     0.328,
+     198,
+     0.321,
      ""
     ],
     [
-     248,
-     0.22,
+     210,
+     0.217,
      "加工品质与食品"
+    ],
+    [
+     12,
+     0.183,
+     "鲈鱼与石斑鱼"
     ]
    ],
    "is_review": false,
@@ -574,23 +574,23 @@
    },
    "rel": [
     [
-     9,
-     0.526,
+     7,
+     0.521,
      "鲶形目鱼类"
     ],
     [
-     380,
-     0.441,
+     331,
+     0.437,
      "鲶形目鱼类"
     ],
     [
-     97,
-     0.424,
+     71,
+     0.422,
      "水产养殖|疾病与免疫"
     ],
     [
-     34,
-     0.352,
+     28,
+     0.351,
      "疾病与免疫"
     ]
    ],
@@ -616,23 +616,23 @@
    },
    "rel": [
     [
-     226,
-     0.3,
+     189,
+     0.297,
      "经济与社会政策"
     ],
     [
-     382,
-     0.199,
+     333,
+     0.198,
      ""
     ],
     [
-     89,
-     0.185,
+     63,
+     0.188,
      ""
     ],
     [
-     177,
-     0.169,
+     144,
+     0.167,
      "经济与社会政策"
     ]
    ],
@@ -662,110 +662,24 @@
    },
    "rel": [
     [
-     387,
-     0.427,
+     338,
+     0.43,
      "南美海域"
     ],
     [
-     389,
-     0.251,
+     340,
+     0.252,
      "南美海域"
     ],
     [
-     256,
-     0.247,
+     218,
+     0.246,
      "水母与浮游动物"
     ],
     [
-     265,
-     0.24,
+     226,
+     0.239,
      "生态与栖息地"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.1932009",
-   "title": "Port-based measures for shipping emissions after the climate advisory opinions: due diligence within jurisdictional limits",
-   "authors": "Hu, Chenghang",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-26",
-   "summary": "国际航运排放的港口国措施法律分析：基于UNCLOS、MARPOL Annex VI及ITLOS/ICJ气候咨询意见的教义学分析，区分了文件核查、航程责任计算、燃料/能效要求、港口服务与基础设施规制及排除性后果等五类措施。UNCLOS第211(3)条仅针对作为进港条件的特定防污要求，本身不授权对全程行为的直接规制或处罚；第218条仅就排放违规赋予有条件执法管辖权，不构成文件控制、航程定价或燃料性能规制的普遍法律基础。提出\"管辖权—尽职\"分析序列（主体→国际管辖权依据→国内机构权限），并以EU ETS、海运MRV、FuelEU Maritime及AFIR为例表明港口挂靠承担不同法律功能，欧盟法依据不等于符合国际法；尽职义务不创设国际法管辖权或国内法权限。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.1932009",
-   "tags": {
-    "theme": [
-     "econ"
-    ],
-    "species": [],
-    "region": [
-     "global"
-    ],
-    "method": []
-   },
-   "rel": [
-    [
-     48,
-     0.536,
-     "全球/多区域"
-    ],
-    [
-     49,
-     0.477,
-     "全球/多区域"
-    ],
-    [
-     55,
-     0.42,
-     "全球/多区域"
-    ],
-    [
-     51,
-     0.323,
-     "全球/多区域"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.1955301",
-   "title": "Threshold dynamics in coastal vulnerability and adaptive governance pathways: a case study of Jiaozhou Bay social-ecological system",
-   "authors": "Gao, Lehua; Yang, Xueke; Zhang, Longxuan",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-26",
-   "summary": "基于DPSIR-ESA框架的39项指标与含3个存量、5个流量的系统动力学模型，结合多元有序logit回归，量化了1980—2022年胶州湾海岸社会-生态脆弱性的演变并模拟治理情景。脆弱性呈“勺形”轨迹：2000年前自然稳定（<0.05），2000—2015年快速上升（2012年峰值0.2887），2015—2022年缓降但仍处中高水平（0.1874）。气候变暖（系数13.070）与经济压力（6.036）加剧脆弱性，技术创新（−12.063）则有效抑制。三种治理路径中生态效益路径（污染物排放与捕捞强度年降2.5%）缓解效果最佳，脆弱性年增速较基准情景（年增9.68%）低2.10个百分点，优于经济路径（0.20）与技术路径（0.04）；据此提出生态红线与陆海污染联防、绿色产业转型与循环经济、智能实时监测与数字治理的分阶段适应性治理策略。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.1955301",
-   "tags": {
-    "theme": [
-     "econ"
-    ],
-    "species": [],
-    "region": [],
-    "method": []
-   },
-   "rel": [
-    [
-     249,
-     0.328,
-     "经济与社会政策"
-    ],
-    [
-     172,
-     0.314,
-     "经济与社会政策"
-    ],
-    [
-     239,
-     0.311,
-     "经济与社会政策"
-    ],
-    [
-     111,
-     0.286,
-     "经济与社会政策"
     ]
    ],
    "is_review": false,
@@ -792,22 +706,22 @@
    },
    "rel": [
     [
-     134,
-     0.351,
+     104,
+     0.356,
      ""
     ],
     [
-     103,
-     0.316,
+     77,
+     0.312,
      "蟹类"
     ],
     [
-     209,
-     0.3,
+     173,
+     0.309,
      "水产养殖"
     ],
     [
-     333,
+     289,
      0.274,
      "蟹类"
     ]
@@ -837,23 +751,23 @@
    },
    "rel": [
     [
-     380,
+     331,
      0.655,
      "鲶形目鱼类"
     ],
     [
      3,
-     0.526,
+     0.521,
      "鲶形目鱼类"
     ],
     [
-     97,
-     0.429,
+     71,
+     0.428,
      "水产养殖"
     ],
     [
-     359,
-     0.396,
+     312,
+     0.394,
      "鲶形目鱼类"
     ]
    ],
@@ -886,23 +800,23 @@
    },
    "rel": [
     [
-     228,
-     0.5,
+     191,
+     0.499,
      "捕捞技术与兼捕|种群评估与管理"
     ],
     [
-     320,
-     0.424,
+     276,
+     0.423,
      "地中海与黑海"
     ],
     [
-     250,
-     0.391,
+     212,
+     0.388,
      "经济与社会政策|捕捞技术与兼捕"
     ],
     [
-     103,
-     0.364,
+     77,
+     0.361,
      "捕捞技术与兼捕"
     ]
    ],
@@ -930,23 +844,23 @@
    },
    "rel": [
     [
-     185,
-     0.391,
+     152,
+     0.394,
      ""
     ],
     [
-     215,
+     179,
      0.294,
      "气候变化与环境"
     ],
     [
-     387,
-     0.264,
+     338,
+     0.265,
      "南美海域"
     ],
     [
-     196,
-     0.248,
+     162,
+     0.252,
      "气候变化与环境"
     ]
    ],
@@ -973,23 +887,23 @@
    },
    "rel": [
     [
-     236,
-     0.325,
+     199,
+     0.32,
      "经济与社会政策|种群评估与管理"
     ],
     [
-     89,
-     0.269,
+     63,
+     0.265,
      "种群评估与管理"
     ],
     [
-     133,
-     0.248,
-     "种群评估与管理"
-    ],
-    [
-     351,
+     103,
      0.243,
+     "种群评估与管理"
+    ],
+    [
+     304,
+     0.238,
      "经济与社会政策|种群评估与管理"
     ]
    ],
@@ -1017,23 +931,23 @@
    },
    "rel": [
     [
-     10,
-     0.315,
+     8,
+     0.316,
      "经济与社会政策"
     ],
     [
-     236,
-     0.313,
+     199,
+     0.309,
      "经济与社会政策"
     ],
     [
-     221,
-     0.271,
+     184,
+     0.27,
      "监测与采样"
     ],
     [
-     228,
-     0.266,
+     191,
+     0.265,
      "监测与采样"
     ]
    ],
@@ -1066,23 +980,23 @@
    },
    "rel": [
     [
-     372,
+     324,
      0.525,
      "捕捞技术与兼捕|污染与毒理"
     ],
     [
-     281,
+     241,
      0.476,
      "捕捞技术与兼捕|污染与毒理"
     ],
     [
-     229,
+     192,
      0.444,
      "污染与毒理"
     ],
     [
-     37,
-     0.379,
+     31,
+     0.376,
      "鲈鱼与石斑鱼"
     ]
    ],
@@ -1110,23 +1024,23 @@
    },
    "rel": [
     [
-     9,
+     7,
      0.294,
      "鲶形目鱼类"
     ],
     [
-     245,
-     0.286,
+     207,
+     0.285,
      ""
     ],
     [
-     359,
-     0.231,
+     312,
+     0.23,
      "鲶形目鱼类"
     ],
     [
      3,
-     0.226,
+     0.225,
      "鲶形目鱼类"
     ]
    ],
@@ -1158,51 +1072,24 @@
    },
    "rel": [
     [
-     224,
-     0.577,
+     187,
+     0.572,
      "鲑鳟鱼类"
     ],
     [
-     97,
-     0.439,
+     71,
+     0.437,
      "水产养殖|疾病与免疫"
     ],
     [
-     147,
-     0.388,
+     117,
+     0.386,
      "鲑鳟鱼类"
     ],
     [
-     120,
-     0.361,
+     90,
+     0.36,
      "鲑鳟鱼类"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.1002/bcp.70907",
-   "title": "So long and thanks for all the fish",
-   "authors": "Cremers, Serge",
-   "journal": "British Journal of Clinical Pharmacology",
-   "date": "2026-11-25",
-   "summary": "",
-   "summary_en": true,
-   "url": "https://doi.org/10.1002/bcp.70907",
-   "tags": {
-    "theme": [
-     "misc"
-    ],
-    "species": [],
-    "region": [],
-    "method": []
-   },
-   "rel": [
-    [
-     226,
-     0.138,
-     ""
     ]
    ],
    "is_review": false,
@@ -1234,66 +1121,24 @@
    },
    "rel": [
     [
-     280,
-     0.339,
-     "淡水与湖泊河流"
-    ],
-    [
-     155,
+     125,
      0.336,
      "其他淡水鱼|淡水与湖泊河流"
     ],
     [
-     353,
-     0.312,
+     240,
+     0.334,
      "淡水与湖泊河流"
     ],
     [
-     210,
-     0.307,
+     306,
+     0.309,
+     "淡水与湖泊河流"
+    ],
+    [
+     174,
+     0.305,
      "气候变化与环境|生态与栖息地"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.1038/s41598-026-82410-z",
-   "title": "Telomere length measurement in immunophenotypically defined human leukocyte subsets using multiparametric flow-FISH",
-   "authors": "Besombes, Joévin; Lebecque, Benjamin; Voisin, Allison; Bourgne, Céline; Parisseaux, Mattéo; Dhaiby, Gabriel; Tournebize, Clara; Soucal, Mélanie; Voisin, Delphine; Ramos, Inès",
-   "journal": "Scientific Reports",
-   "date": "2026-11-25",
-   "summary": "该研究基于市售端粒探针flow-FISH试剂盒，建立多参数flow-FISH方案，可在单次检测中同时测定多种免疫表型定义的白细胞亚群的相对端粒长度（RTL）；杂交前用BS3交联可改善免疫表型标记染色的保留，且未检出对端粒信号的明显影响，成像流式显示各亚群探针信号主要位于核内。对照样本中，flow-FISH所测RTL与分选T细胞的qPCR端粒长度相关（r=0.595，q=0.029），并随年龄下降（q=0.008）。在5例慢性髓性白血病和5例慢性淋巴细胞白血病患者中，描述性分析提示髓系白血病中性粒细胞和单核细胞RTL较低，淋系白血病CD16⁻SSClow细胞RTL异质。该概念验证研究支持在单一检测中实现细胞类型特异性端粒长度测量的可行性。",
-   "summary_en": false,
-   "url": "https://doi.org/10.1038/s41598-026-82410-z",
-   "tags": {
-    "theme": [
-     "disease"
-    ],
-    "species": [],
-    "region": [],
-    "method": []
-   },
-   "rel": [
-    [
-     157,
-     0.182,
-     "疾病与免疫"
-    ],
-    [
-     105,
-     0.143,
-     "疾病与免疫"
-    ],
-    [
-     273,
-     0.14,
-     "疾病与免疫"
-    ],
-    [
-     272,
-     0.137,
-     "疾病与免疫"
     ]
    ],
    "is_review": false,
@@ -1323,73 +1168,27 @@
    },
    "rel": [
     [
-     58,
-     0.404,
+     62,
+     0.37,
      "淡水与湖泊河流|东南亚与西太"
     ],
     [
-     88,
-     0.367,
-     "淡水与湖泊河流|东南亚与西太"
-    ],
-    [
-     300,
-     0.364,
+     258,
+     0.361,
      "东南亚与西太"
     ],
     [
-     180,
+     147,
      0.355,
      "淡水与湖泊河流"
+    ],
+    [
+     298,
+     0.333,
+     "东南亚与西太"
     ]
    ],
    "is_review": true,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.1902794",
-   "title": "Regional innovation capacity and marine green economic efficiency in China: an empirical analysis using double machine learning",
-   "authors": "Tan, Yunshu; Wang, Yudan; Shu, Rui; Wang, Wenlan; Chen, Qin; Cheng, Qiuwang",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-25",
-   "summary": "基于2011—2022年中国11个沿海省级面板数据，采用double machine learning考察区域创新能力与海洋绿色经济效率的关系。基准结果显示二者显著正相关且经多重稳健性检验仍成立，机制分析识别出数字人才积累、产业协作和数字技术应用三条潜在路径。异质性分析显示北方、东部、南部沿海区域存在差异，东部沿海效应统计上不显著；空间分析发现区域创新能力具有显著为正的省际间接效应。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.1902794",
-   "tags": {
-    "theme": [
-     "econ"
-    ],
-    "species": [],
-    "region": [
-     "china"
-    ],
-    "method": [
-     "ml"
-    ]
-   },
-   "rel": [
-    [
-     249,
-     0.4,
-     "经济与社会政策"
-    ],
-    [
-     383,
-     0.395,
-     "中国近海与内陆|机器学习与AI"
-    ],
-    [
-     172,
-     0.355,
-     "中国近海与内陆"
-    ],
-    [
-     113,
-     0.347,
-     "中国近海与内陆"
-    ]
-   ],
-   "is_review": false,
    "high_impact": false
   },
   {
@@ -1413,23 +1212,23 @@
    },
    "rel": [
     [
-     175,
-     0.351,
+     142,
+     0.345,
      "水产养殖"
     ],
     [
-     212,
-     0.281,
+     176,
+     0.278,
      "加勒比与墨西哥湾"
     ],
     [
-     216,
-     0.242,
+     180,
+     0.24,
      "加勒比与墨西哥湾"
     ],
     [
-     249,
-     0.227,
+     211,
+     0.223,
      ""
     ]
    ],
@@ -1459,23 +1258,23 @@
    },
    "rel": [
     [
-     137,
-     0.438,
+     107,
+     0.443,
      "非洲海域"
     ],
     [
-     359,
-     0.369,
+     312,
+     0.367,
      "非洲海域"
     ],
     [
-     144,
-     0.359,
+     114,
+     0.356,
      "非洲海域"
     ],
     [
-     331,
-     0.343,
+     287,
+     0.346,
      "经济与社会政策"
     ]
    ],
@@ -1504,23 +1303,23 @@
    },
    "rel": [
     [
-     208,
-     0.466,
+     172,
+     0.461,
      "印度洋与南亚"
     ],
     [
-     382,
-     0.428,
+     333,
+     0.423,
      "印度洋与南亚"
     ],
     [
-     303,
-     0.342,
+     261,
+     0.341,
      "印度洋与南亚"
     ],
     [
-     381,
-     0.326,
+     332,
+     0.323,
      "水产养殖"
     ]
    ],
@@ -1549,22 +1348,22 @@
    },
    "rel": [
     [
-     360,
-     0.234,
+     313,
+     0.232,
      "鲈鱼与石斑鱼"
     ],
     [
-     210,
-     0.226,
+     174,
+     0.223,
      "捕捞技术与兼捕"
     ],
     [
-     84,
-     0.216,
+     58,
+     0.214,
      "水产养殖"
     ],
     [
-     14,
+     12,
      0.207,
      "鲈鱼与石斑鱼"
     ]
@@ -1592,69 +1391,24 @@
    },
    "rel": [
     [
-     94,
-     0.4,
+     68,
+     0.393,
      "水产养殖|经济与社会政策"
     ],
     [
-     310,
+     268,
      0.358,
      "水产养殖|经济与社会政策"
     ],
     [
-     364,
-     0.344,
+     316,
+     0.345,
      "水产养殖|经济与社会政策"
     ],
     [
-     23,
-     0.297,
+     18,
+     0.301,
      "水产养殖|经济与社会政策"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3390/d18120733",
-   "title": "Heteroptera Bycatch from Bulgarian Oil-Bearing Rose Plantations: Species Composition, Temporal Dynamics and Trap Colour Associations",
-   "authors": "Stoianova, Desislava; Karakicheva, Tania; Lozanova, Lyudmila; Baneva, Totka; Toshova, Teodora; Lazarova, Stela",
-   "journal": "Diversity",
-   "date": "2026-11-25",
-   "summary": "2024年在保加利亚两处油用玫瑰（Rosa damascena）种植园，利用监测Agrilus cuprescens的荧光黄、紫、绿及透明粘虫板，分析异翅亚目（Heteroptera）非靶标副捕获物的物种组成、多样性、营养结构与时间动态。共记录14科54种508头个体；两园间群落组成、丰度和Hill多样性无显著差异，月份间组成显著变化而丰度与多样性无显著差异，植食性种类总体占优，捕食性种类6月显著多于5月和9月。Gabarevo园中色板处理、采样间隔及其交互作用显著影响捕获组成，但多变量离散度不均且两两比较不显著，色板效应解释需谨慎；经Benjamini–Hochberg校正后仅Graphosoma italicum与荧光黄板显著关联。副捕获物可用于记录农业景观中异翅亚目物种组成与时间动态，但所用采集方法无法建立所采物种与油用玫瑰之间的营养关系。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3390/d18120733",
-   "tags": {
-    "theme": [
-     "gear",
-     "eco"
-    ],
-    "species": [],
-    "region": [],
-    "method": [
-     "monitor"
-    ]
-   },
-   "rel": [
-    [
-     228,
-     0.466,
-     "监测与采样"
-    ],
-    [
-     243,
-     0.454,
-     "监测与采样"
-    ],
-    [
-     358,
-     0.364,
-     "监测与采样"
-    ],
-    [
-     306,
-     0.342,
-     "监测与采样"
     ]
    ],
    "is_review": false,
@@ -1682,23 +1436,23 @@
    },
    "rel": [
     [
-     29,
-     0.446,
+     23,
+     0.448,
      "藻类与海藻"
     ],
     [
-     165,
-     0.424,
+     133,
+     0.428,
      "藻类与海藻"
     ],
     [
-     292,
-     0.312,
+     250,
+     0.309,
      "藻类与海藻"
     ],
     [
-     230,
-     0.308,
+     193,
+     0.304,
      "疾病与免疫|生态与栖息地"
     ]
    ],
@@ -1726,23 +1480,23 @@
    },
    "rel": [
     [
-     212,
-     0.467,
+     176,
+     0.472,
      "生态与栖息地"
     ],
     [
-     165,
-     0.449,
+     22,
+     0.448,
      "藻类与海藻"
     ],
     [
-     28,
+     133,
      0.446,
      "藻类与海藻"
     ],
     [
-     292,
-     0.428,
+     250,
+     0.427,
      "藻类与海藻"
     ]
    ],
@@ -1770,23 +1524,23 @@
    },
    "rel": [
     [
-     121,
-     0.562,
+     91,
+     0.557,
      "罗非鱼类"
     ],
     [
-     246,
-     0.472,
+     208,
+     0.467,
      "罗非鱼类"
     ],
     [
-     381,
-     0.448,
+     332,
+     0.442,
      "罗非鱼类"
     ],
     [
-     377,
-     0.435,
+     328,
+     0.427,
      "罗非鱼类"
     ]
    ],
@@ -1815,23 +1569,23 @@
    },
    "rel": [
     [
-     109,
+     83,
      0.575,
      "疾病与免疫|营养与饲料"
     ],
     [
-     75,
-     0.441,
+     51,
+     0.436,
      "疾病与免疫|营养与饲料"
     ],
     [
-     156,
-     0.438,
+     126,
+     0.432,
      ""
     ],
     [
-     102,
-     0.396,
+     76,
+     0.394,
      "营养与饲料"
     ]
    ],
@@ -1861,23 +1615,23 @@
    },
    "rel": [
     [
-     108,
-     0.467,
+     82,
+     0.468,
      "经济与社会政策"
     ],
     [
-     187,
-     0.384,
+     154,
+     0.383,
      "遗传与基因组"
     ],
     [
-     289,
+     249,
      0.333,
      "经济与社会政策|遗传与基因组"
     ],
     [
-     386,
-     0.318,
+     337,
+     0.315,
      "鲈鱼与石斑鱼"
     ]
    ],
@@ -1906,23 +1660,23 @@
    },
    "rel": [
     [
-     369,
-     0.334,
+     321,
+     0.331,
      "遗传与基因组"
     ],
     [
-     227,
-     0.334,
+     190,
+     0.329,
      "遗传与基因组"
     ],
     [
-     187,
-     0.322,
+     154,
+     0.317,
      "遗传与基因组"
     ],
     [
-     195,
-     0.309,
+     161,
+     0.307,
      "遗传与基因组"
     ]
    ],
@@ -1952,23 +1706,23 @@
    },
    "rel": [
     [
-     105,
-     0.362,
+     79,
+     0.361,
      "其他淡水鱼"
     ],
     [
      3,
-     0.352,
+     0.351,
      "疾病与免疫"
     ],
     [
-     323,
-     0.34,
+     279,
+     0.336,
      "疾病与免疫"
     ],
     [
-     16,
-     0.304,
+     14,
+     0.303,
      "全球/多区域"
     ]
    ],
@@ -1999,23 +1753,23 @@
    },
    "rel": [
     [
-     375,
+     326,
      0.299,
      "环境DNA"
     ],
     [
-     105,
+     79,
      0.283,
      "疾病与免疫|遗传与基因组"
     ],
     [
-     36,
-     0.28,
+     30,
+     0.281,
      "疾病与免疫"
     ],
     [
-     224,
-     0.24,
+     187,
+     0.241,
      "环境DNA"
     ]
    ],
@@ -2044,23 +1798,23 @@
    },
    "rel": [
     [
-     31,
-     0.363,
+     25,
+     0.359,
      "疾病与免疫"
     ],
     [
-     230,
-     0.358,
+     193,
+     0.357,
      "疾病与免疫"
     ],
     [
-     109,
-     0.358,
+     83,
+     0.354,
      "疾病与免疫"
     ],
     [
-     156,
-     0.352,
+     126,
+     0.349,
      "生物学与生理"
     ]
    ],
@@ -2090,112 +1844,24 @@
    },
    "rel": [
     [
-     14,
-     0.379,
+     12,
+     0.376,
      "鲈鱼与石斑鱼"
     ],
     [
-     384,
-     0.295,
+     335,
+     0.294,
      "耳石与硬组织"
     ],
     [
-     232,
-     0.283,
+     195,
+     0.281,
      "耳石与硬组织"
     ],
     [
-     346,
+     300,
      0.249,
      "耳石与硬组织"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.2000340",
-   "title": "Wave overtopping load transmission and landward revetment stability on a sloping sea dike with varying crest widths",
-   "authors": "Shi, Lei; Dong, Weiliang; Fang, Zhangbin; Wu, Hua’an; Yan, Yuhan",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-25",
-   "summary": "基于1:30 Froude相似比尺的斜坡海堤二维水槽试验，采用JONSWAP谱不规则波，覆盖4种堤顶宽度（8–20 m）、4种波水位组合（100–500年重现期，H₁₃=5.28–5.66 m，谱平均周期15.5–16.8 s）及4种背海侧护面，量化越浪压力、流速、流量与护面响应。堤顶由8 m加宽至20 m使背坡平均流速降低25.4%–30.5%，16→20 m仅再降1.6%–5.8%，压力亦随堤顶加宽而减小；200年一遇条件下16 m堤顶的平均越浪流量高于100年一遇的8 m堤顶（0.068 vs 0.042 m³/(m·s)），但背坡平均流速更低（约2.3 vs 2.6 m/s）。干砌石破坏由石块松动、局部凹陷发展至石块流失与堤身暴露，加宽堤顶可将明显失稳推迟至更严酷条件，但500年一遇下16与20 m堤顶仍存在显著冲刷；混凝土护面与螺母块体未见明显失稳，四角块体仅在8 m堤顶500年一遇下出现短暂局部抬升。堤顶宽度调控荷载传递，护面特性决定稳定性响应，评估需综合平均越浪流量、局部压力、流速",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.2000340",
-   "tags": {
-    "theme": [
-     "misc"
-    ],
-    "species": [],
-    "region": [],
-    "method": []
-   },
-   "rel": [
-    [
-     53,
-     0.245,
-     ""
-    ],
-    [
-     112,
-     0.179,
-     ""
-    ],
-    [
-     114,
-     0.145,
-     ""
-    ],
-    [
-     39,
-     0.143,
-     ""
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.1937225",
-   "title": "Multidecadal variability of upwelling in the Campania Coastal System (Tyrrhenian Sea)",
-   "authors": "de Ruggiero, Paola; Gifuni, Luigi; Esposito, Giovanni; Napolitano, Ernesto; Iacono, Roberto; Pierini, Stefano; Cotroneo, Yuri; Budillon, Giorgio; Zambianchi, Enrico",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-25",
-   "summary": "基于大气再分析、卫星观测与高分辨率数值模拟，刻画了1940–2024年坎帕尼亚沿岸系统（第勒尼安海南部）7个岸段上升流有利风的强度、频率与持续时间，并评估2008–2024年SST与Chl-a响应。有利风条件频繁但短暂，1940–2024年无显著区域趋势，近几十年呈频率增加、强度减弱的倾向；约半数有利风事件后出现SST降温，降温频率随离岸Ekman输运增强而升高，夏季降温幅度明显大于冬季。2016年春季模拟显示局地沿岸降温、垂向上升流与等密度面抬升，离岸Ekman输运与pumping的贡献存在空间差异；SST降温后Chl-a并未一致升高，生物响应更为多变。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.1937225",
-   "tags": {
-    "theme": [
-     "climate"
-    ],
-    "species": [],
-    "region": [
-     "med"
-    ],
-    "method": [
-     "remote"
-    ]
-   },
-   "rel": [
-    [
-     290,
-     0.338,
-     "气候变化与环境"
-    ],
-    [
-     114,
-     0.333,
-     ""
-    ],
-    [
-     189,
-     0.319,
-     "地中海与黑海|遥感与空间分析"
-    ],
-    [
-     43,
-     0.255,
-     "地中海与黑海"
     ]
    ],
    "is_review": false,
@@ -2222,24 +1888,24 @@
    },
    "rel": [
     [
-     201,
-     0.298,
+     166,
+     0.303,
      "气候变化与环境|经济与社会政策"
     ],
     [
-     172,
+     129,
      0.281,
-     "经济与社会政策"
-    ],
-    [
-     159,
-     0.28,
      "气候变化与环境|生态与栖息地"
     ],
     [
-     55,
-     0.27,
+     84,
+     0.26,
      "生态与栖息地|经济与社会政策"
+    ],
+    [
+     259,
+     0.251,
+     "经济与社会政策"
     ]
    ],
    "is_review": false,
@@ -2267,66 +1933,23 @@
    },
    "rel": [
     [
-     158,
-     0.322,
+     128,
+     0.319,
      "生态与栖息地"
     ],
     [
-     335,
-     0.299,
+     291,
+     0.301,
      "渤海"
     ],
     [
-     185,
-     0.287,
+     152,
+     0.286,
      "生态与栖息地"
     ],
     [
-     114,
-     0.239,
-     "黄海"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.2031077",
-   "title": "Spatiotemporal dynamics and multi-metric ecological risk assessment of microplastics in the typical estuarine-coastal system",
-   "authors": "Wang, Yanyun; Cheng, Dongdong; Liu, Huatai; Wang, Xinhong; Ye, Xin",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-25",
-   "summary": "厦门河口与近岸水域旱季微塑料丰度（2.3 ± 1.1 n/L）高于雨季（1.6 ± 0.7 n/L），淡水稀释是主因，近岸丰度则季节稳定；主要聚合物为PE、PET和PP，雨季更强光氧化与水动力扰动使<300 μm颗粒占比升至54%–59%。基于丰度的PLI（<10）与阈值型RQ（<1.0）显示基线风险较低，但基于危害的PRI将逾63%河口站点判为高风险，空间聚类显示河口是微塑料滞留过滤器、养殖邻近站点在两季均为持续风险热点。结果表明聚合物毒性而非绝对丰度主导生态风险，监测应纳入聚合物危害权重而非仅依赖颗粒计数。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.2031077",
-   "tags": {
-    "theme": [
-     "pollution",
-     "eco"
-    ],
-    "species": [],
-    "region": [],
-    "method": []
-   },
-   "rel": [
-    [
-     124,
-     0.389,
-     "污染与毒理"
-    ],
-    [
-     166,
-     0.326,
-     "污染与毒理"
-    ],
-    [
-     127,
-     0.29,
-     "污染与毒理"
-    ],
-    [
-     212,
-     0.277,
+     240,
+     0.238,
      "生态与栖息地"
     ]
    ],
@@ -2354,68 +1977,24 @@
    },
    "rel": [
     [
-     160,
-     0.371,
+     130,
+     0.37,
      "疾病与免疫"
     ],
     [
-     375,
+     326,
      0.356,
      "疾病与免疫"
     ],
     [
-     320,
-     0.286,
+     276,
+     0.289,
      "地中海与黑海"
     ],
     [
-     195,
-     0.283,
+     161,
+     0.287,
      "地中海与黑海"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.1967854",
-   "title": "Environmental procuratorial public interest litigation under the ecological and environmental code: institutional design and operational logic",
-   "authors": "Hou, Fangyu",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-25",
-   "summary": "《生态环境法典》首次将“生态环境检察”入法，并以九个条款系统规定生态环境检察公益诉讼职责，其中第1074条针对海洋生态环境损害设立专门规则。通过制度沿革梳理、法律规范分析与比较研究，指出该体系并非美国公民诉讼的移植，而是基于中国宪法体制的结构性制度创新，形成非海洋生态损害检察参与赔偿、海洋生态损害检察公益诉讼、环境民事公益诉讼与环境行政公益诉讼四种基本形态，兼具督促守法与协同治理功能。第1074条确立监管部门索赔优先、检察机关兜底起诉的双层结构，渤海专项实践显示出私人诉讼所缺乏的跨区域海洋治理能力；该体系在权力来源、原告身份、程序逻辑与制度功能上与美国公民诉讼存在根本差异，标志着从分散规则向集成体系的转变。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.1967854",
-   "tags": {
-    "theme": [
-     "econ"
-    ],
-    "species": [],
-    "region": [
-     "china"
-    ],
-    "method": []
-   },
-   "rel": [
-    [
-     172,
-     0.66,
-     "中国近海与内陆"
-    ],
-    [
-     51,
-     0.438,
-     "中国近海与内陆"
-    ],
-    [
-     113,
-     0.426,
-     "中国近海与内陆"
-    ],
-    [
-     48,
-     0.36,
-     "经济与社会政策"
     ]
    ],
    "is_review": false,
@@ -2444,24 +2023,24 @@
    },
    "rel": [
     [
-     115,
-     0.321,
+     85,
+     0.318,
      "藻类与海藻"
     ],
     [
-     43,
-     0.277,
+     34,
+     0.276,
      "地中海与黑海"
     ],
     [
-     165,
-     0.268,
+     133,
+     0.271,
      "藻类与海藻"
     ],
     [
-     189,
-     0.268,
-     "地中海与黑海"
+     313,
+     0.266,
+     "藻类与海藻|地中海与黑海"
     ]
    ],
    "is_review": false,
@@ -2489,540 +2068,24 @@
    },
    "rel": [
     [
-     139,
-     0.464,
-     "鲨鱼与鳐类"
-    ],
-    [
-     69,
-     0.463,
-     "鲨鱼与鳐类"
-    ],
-    [
-     320,
-     0.349,
-     "鲨鱼与鳐类"
-    ],
-    [
-     252,
-     0.32,
-     "鲨鱼与鳐类"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.1962387",
-   "title": "Physics-guided curve-residual deep learning for within-domain permeability prediction of calcareous-sand concrete",
-   "authors": "Chao, Zhiming; Tan, Kun; Zeng, Jianfeng; Bai, Xiangen; Shi, Danda; Cui, Peng",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-25",
-   "summary": "针对钙砂混凝土在压力荷载下的气体渗透性，构建物理引导的曲线残差深度神经网络（PCR-DNN），利用77条六点压力曲线共462个渗透率测量值，在实验域内补全部分实测压力曲线。在同曲线已有4个测点的条件下，PCR-DNN对留出压力点的测试R²为0.9937，但线性与自然三次样条插值分别达0.9987和0.9990；整曲线留出时各模型对数尺度R²为0.9065~0.9523。结论是单条曲线补全宜用直接插值，PCR-DNN更适合作为域内预测与跨实验条件一致性检验的统一模型，且其曲线补全精度依赖目标曲线的实测数据用于校准。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.1962387",
-   "tags": {
-    "theme": [
-     "misc"
-    ],
-    "species": [],
-    "region": [],
-    "method": [
-     "ml",
-     "edna"
-    ]
-   },
-   "rel": [
-    [
-     178,
-     0.307,
-     "机器学习与AI"
-    ],
-    [
-     170,
-     0.285,
-     "机器学习与AI"
-    ],
-    [
-     21,
-     0.239,
-     "机器学习与AI"
-    ],
-    [
-     164,
-     0.227,
-     "机器学习与AI"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.1992082",
-   "title": "From geopolitical sanctions to environmental due diligence: fostering institutional coherence in cross-border governance of the shadow fleet",
-   "authors": "He, Sai",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-25",
-   "summary": "针对规避制裁的“影子船队”扩张对全球海洋秩序构成的环境与生态威胁，指出现行以单边经济制裁为核心的监管范式造成沿海国与船旗国之间的管辖权僵局，跨境损害难以救济。主张依UNCLOS将沿海国在领海、海峡、EEZ与公海的预防性执法干预合法化为履行审慎义务（due diligence）与预防性方法，并借《罗马II条例》第7、17条与1992年《民事责任公约》协同适用，对有偿付能力的直接营运方实现国内侵权救济。提出将科学风险评估机制制度化作为UNCLOS执法门槛的证据基础，并以中国2026年生态环境法典为国内转化立法范本。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.1992082",
-   "tags": {
-    "theme": [
-     "econ"
-    ],
-    "species": [],
-    "region": [
-     "global"
-    ],
-    "method": []
-   },
-   "rel": [
-    [
-     6,
-     0.536,
-     "全球/多区域"
-    ],
-    [
-     49,
-     0.448,
-     "全球/多区域"
-    ],
-    [
-     51,
-     0.44,
-     "全球/多区域"
-    ],
-    [
-     55,
-     0.404,
-     "全球/多区域"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.1958849",
-   "title": "Advancing the blue economy through resource governance of deep-sea minerals exploitation in Areas Beyond National Jurisdiction, aligning with the Sustainable Development Goals and international legal frameworks",
-   "authors": "Mingfei, Ma; Talha, Ahmad; Noor, Sehla; Sardar, Tayyaba; Sarwar, Muhammad A.",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-25",
-   "summary": "深海采矿活动正超前于其治理法律，ISA已发放31份勘探合同，但开采规则草案仍有30余项实质问题未决，且收益分享模型未经真实数据检验。该文结合UNCLOS、1994年执行协定及2011/2024年ITLOS咨询意见的法理分析，与生命周期影响评估（LCIA）、环境影响轮（EIW）多属性框架及采集车沉陷工程模型三类实证数据，并将ISA合同区与保护区、已知热液喷口区进行空间比对。结果显示，深海结核开采对生态系统的损害超过迄今测得的其他海底活动，现有扰动足迹计算低估采集车对海底的实际影响，名义保护区与实际许可采矿区的空间配置错位。文章提出五项改革：数值化EIA阈值、独立环境审查、生态代表性区域强制保护、海底可持续性基金及独立ISA监察机构，以将科学与地理发现转化为UNCLOS第145条下的可执行义务。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.1958849",
-   "tags": {
-    "theme": [
-     "econ",
-     "nutri"
-    ],
-    "species": [],
-    "region": [
-     "global"
-    ],
-    "method": []
-   },
-   "rel": [
-    [
-     6,
-     0.477,
-     "全球/多区域"
-    ],
-    [
-     48,
-     0.448,
-     "全球/多区域"
-    ],
-    [
-     55,
-     0.4,
-     "全球/多区域"
-    ],
-    [
-     51,
-     0.397,
-     "全球/多区域"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.1957167",
-   "title": "The influence of the unfolded form of Fowler flaps on the performance of oscillating hydrofoils",
-   "authors": "Cui, Yan; Xu, Di; Wang, Zhisui; Zhou, Xingen; Sun, Guang",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-25",
-   "summary": "针对振荡水翼潮流能采集装置，数值研究了Fowler襟翼两种展开运动序列（Mode-A：先平移后旋转；Mode-B：先旋转后平移）在固定雷诺数下的水动力性能差异。结果表明，Mode-A的能量采集效率比Mode-B高7–14%，平均升力系数高7.88%，平均阻力系数低13.9%；Mode-A在整个展开过程中涡脱落较缓和、流线形态良好，减少了流动分离引起的负功率做功，而Mode-B则诱发强烈涡脱落和额外阻力。建议Fowler襟翼设计采用先平移后旋转的运动序列，为潮流能振荡水翼的液压驱动机构提供参考。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.1957167",
-   "tags": {
-    "theme": [
-     "misc"
-    ],
-    "species": [],
-    "region": [],
-    "method": []
-   },
-   "rel": [
-    [
-     117,
-     0.142,
-     ""
-    ],
-    [
-     52,
-     0.133,
-     ""
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.2038299",
-   "title": "International legal dilemmas in marine plastic pollution governance and China’s logic of normative mediation: insights from the global plastics treaty negotiations",
-   "authors": "Niu, Bingru",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-25",
-   "summary": "全球塑料条约谈判因制度碎片化而在条约规制范围、“全生命周期”定义、初级塑料聚合物总产量限制、塑料产品与化学品全球监管、资金机制与技术转让及议事规则等方面存在深刻规范争议，导致谈判陷入僵局。中国作为塑料生产大国和积极参与方，支持有法律约束力的全球框架，但反对对所有塑料类别、生命周期阶段和缔约方不加区分地适用统一规则，并通过规范识别、规范重构与程序性推动扮演“规范调解者”角色。基于此实践，提出由全球共同目标、最低共同义务、差异化国家实施和渐进趋同程序机制构成的制度框架，以推进海洋塑料污染综合治理。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.2038299",
-   "tags": {
-    "theme": [
-     "econ",
-     "pollution"
-    ],
-    "species": [],
-    "region": [
-     "global",
-     "china"
-    ],
-    "method": []
-   },
-   "rel": [
-    [
-     172,
-     0.644,
-     "中国近海与内陆"
-    ],
-    [
-     113,
+     46,
      0.461,
-     "中国近海与内陆"
+     "鲨鱼与鳐类"
     ],
     [
-     48,
-     0.44,
-     "全球/多区域"
+     109,
+     0.46,
+     "鲨鱼与鳐类"
     ],
     [
-     44,
-     0.438,
-     "中国近海与内陆"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.1999710",
-   "title": "Assessing the impact of the Pinglu Canal on the importance of major China-ASEAN ports",
-   "authors": "Ding, Xingong; Song, Jiaqi; Pan, Liurong; Ji, Xina",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-25",
-   "summary": "基于2025年第一季度航线数据构建中国—东盟集装箱航运网络，模拟平陆运河开通前后两种情景，并用多中心性指标结合TOPSIS综合评估网络特征与港口重要性变化。结果显示，开通后平均最短运输时间下降6.84%，全球网络效率提升1.79%，钦州港和南宁港的港口重要性排名分别上升14位和27位。西江中下游的梧州、贵港、肇庆、云浮等港口相对网络重要性下降，既有主要枢纽港的主导地位基本稳定。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.1999710",
-   "tags": {
-    "theme": [
-     "econ"
-    ],
-    "species": [],
-    "region": [
-     "china"
-    ],
-    "method": []
-   },
-   "rel": [
-    [
-     6,
-     0.293,
-     "经济与社会政策"
+     276,
+     0.346,
+     "鲨鱼与鳐类"
     ],
     [
-     172,
-     0.27,
-     "中国近海与内陆"
-    ],
-    [
-     122,
-     0.256,
-     "中国近海与内陆"
-    ],
-    [
-     51,
-     0.248,
-     "中国近海与内陆"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.2012956",
-   "title": "Seasonal river discharge shapes sediment routing and bed adjustment during storms in an idealized estuary",
-   "authors": "Jiang, Chunhai; Wang, Tianxin; Chen, Lei; Zhang, Teng; Liu, Chenyu; Liu, Huabin",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-25",
-   "summary": "基于理想化沙-泥河口（参照长江口）的深度平均水动力-地貌模型耦合波浪模型，比较了年均流量相同的恒定与季节性流量过程下风暴驱动的泥沙输运与河床调整。在4 m有效波高（H4）条件下，外段风暴引起的泥沙交换异常随流量由低到高从向陆转为向海，口门处向海输沙异常增大约四倍；四个季节H4情景的侵蚀体积差异仅为其最小值的1.56%，但区域变化方向相反。风暴结束后24天仍有约82%的绝对河床异常残留；更强波浪（H5）下季节性流量的侵蚀量比恒定流量低14.8%，显示低流量历史效应增强。结果揭示了流量、前期河床状态与特定日期潮汐条件的联合影响及模型配置内的空间重组，盐度效应与泥沙参数敏感性尚未解决。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.2012956",
-   "tags": {
-    "theme": [
-     "eco"
-    ],
-    "species": [],
-    "region": [],
-    "method": []
-   },
-   "rel": [
-    [
-     353,
-     0.294,
-     "生态与栖息地"
-    ],
-    [
-     38,
-     0.245,
-     ""
-    ],
-    [
-     185,
-     0.229,
-     "生态与栖息地"
-    ],
-    [
-     29,
-     0.219,
-     "生态与栖息地"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.1940364",
-   "title": "Discrete element method analysis of macro-micro mechanical responses of calcareous sand considering particle angularity-breakage coupling effect",
-   "authors": "Shi, Danda; Fan, Xuanyu; Guan, Junbin; Zhu, Jie; Chao, Zhiming; Cui, Peng; Zhang, Wenbing",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-25",
-   "summary": "基于离散元法（DEM）与碎片替换法建立颗粒破碎模型，对不同棱角度颗粒试样开展真三轴剪切模拟，考察棱角度与破碎的耦合效应对钙质砂宏微观力学响应的影响。棱角度增大提高峰值剪应力比但加速峰后强度衰减，相对破碎率随轴向应变单调增加，轴向应变30%时高棱角度试样相对破碎率较低棱角度试样高约40%，围压增大强化棱角度对破碎的影响；临界状态下冗余系数与孔隙比负相关，高棱角度试样在剪切前期接触各向异性更强、后期显著降低。棱角度主要影响前期强度发展与接触各向异性，颗粒破碎则在后期主导强度衰减与接触网络重构。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.1940364",
-   "tags": {
-    "theme": [
-     "misc"
-    ],
-    "species": [],
-    "region": [],
-    "method": []
-   },
-   "rel": [
-    [
-     117,
-     0.195,
-     ""
-    ],
-    [
-     112,
-     0.161,
-     ""
-    ],
-    [
-     42,
-     0.147,
-     ""
-    ],
-    [
-     53,
-     0.146,
-     ""
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.1995989",
-   "title": "Regional conflict and marine biodiversity in the Gulf region: the role of the international law of the sea in environmental protection",
-   "authors": "Khwaileh, Khaled Mohammad",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-25",
-   "summary": "阿拉伯湾半封闭海生态脆弱，珊瑚礁、海草床、红树林及伴生动物已接近热盐耐受上限；1990—1991年海湾战争故意泄油与油井大火造成有记录以来最大海洋溢油，2026年2月28日以来敌对行动又致霍尔木兹海峡周边120起确认航运事件、油污抵达保护岛屿与红树林且数周无协调区域响应。本文以学理法律分析结合同行评议海洋科学，梳理《联合国海洋法公约》第十二部分一般义务、区域科威特公约、国际人道法规则及2022年武装冲突与环境原则构成的分层法律架构。分析识别两处缺口：公约第236条按船舶/航空器主权豁免地位而非活动豁免环境条款，区域合作在冲突爆发时趋于碎片化；提出通过落实豁免船舶一致性义务、对基础设施与航运攻击充分适用第十二部分与国际人道法、将武装冲突原则嵌入区域框架、扩展联合国赔偿委员会责任模式来收窄缺口，优先建议保护區指定、抗冲突区域监测、冲突后修复及未归属损害常设基金，强调冲突期海洋环境保护需前瞻性法律设计而非事后赔偿。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.1995989",
-   "tags": {
-    "theme": [
-     "econ",
-     "eco",
-     "disease"
-    ],
-    "species": [],
-    "region": [
-     "global"
-    ],
-    "method": []
-   },
-   "rel": [
-    [
-     6,
-     0.42,
-     "全球/多区域"
-    ],
-    [
-     48,
-     0.404,
-     "全球/多区域"
-    ],
-    [
-     49,
-     0.4,
-     "全球/多区域"
-    ],
-    [
-     172,
-     0.345,
-     "经济与社会政策"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.1007/s10750-026-06462-y",
-   "title": "Newly recognized macroscopic mucilaginous aggregates of Gonyostomum semen in senescing blooms exhibit pronounced cytotoxic and hemolytic activity",
-   "authors": "Kozlíková-Zapomělová, Eliška; Urajová, Petra; Hronek, Jiří; Divoká, Petra; Saurav, Kumar",
-   "journal": "Hydrobiologia",
-   "date": "2026-11-25",
-   "summary": "在捷克Zelendárky地区两个腐殖质鱼塘中，记录了淡水针胞藻Gonyostomum semen衰亡期此前未被识别的宏观黏液聚集体，其由正在分解的藻细胞及伴生细菌组成，呈致密凝胶状，分布于水面和沉积物表面。对其中一个鱼塘样品的体外细胞毒性与溶血试验显示，粗提物具有显著的非选择性细胞毒和溶血活性，剂量–效应关系陡峭（IC50 = 111.2 µg ml⁻¹），表明该终末生活史阶段伴随高效生物活性物质。结果提示，水华崩溃期聚集体形成可能富集有害物质，其化学身份、来源及对生态系统、动物健康和水体利用的影响尚待进一步研究。",
-   "summary_en": false,
-   "url": "https://doi.org/10.1007/s10750-026-06462-y",
-   "tags": {
-    "theme": [
-     "pollution"
-    ],
-    "species": [],
-    "region": [],
-    "method": []
-   },
-   "rel": [
-    [
-     120,
-     0.188,
-     "污染与毒理"
-    ],
-    [
-     367,
-     0.159,
-     ""
-    ],
-    [
-     57,
-     0.154,
-     "污染与毒理"
-    ],
-    [
-     127,
-     0.149,
-     "污染与毒理"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.1007/s10750-026-06479-3",
-   "title": "Trash or treasure? macroplastics pollution and its interaction with the reproduction of the endemic Italian spring goby",
-   "authors": "Palazzi, Adriano; Galbiati, Matteo; De Felice, Beatrice; Mondellini, Simona; Parolini, Marco",
-   "journal": "Hydrobiologia",
-   "date": "2026-11-25",
-   "summary": "对意大利北部帕达纳平原特有濒危底栖鱼类意大利春鰕虎（Orsinigobius punctatissimus）栖息的半自然地下水依赖型淡水泉进行大型塑料污染监测，并系统调查其作为繁殖基质的利用情况，逐项检查塑料上是否附卵并按形状、用途部位、颜色和聚合物组成分类。大型塑料在泉中广泛分布，以食品包装和猎枪弹壳为主，聚合物主要为聚乙烯和聚苯乙烯；该鱼显著偏好以猎枪弹壳作为繁殖基质，其特殊形状和尺寸可能模拟天然洞穴巢位并提供对捕食者和竞争者的防护。但这种机会性利用可能构成生态陷阱——塑料虽提供替代繁殖基质，却使繁殖者、卵和幼体暴露于化学与物理风险，需进一步探究生物-塑料相互作用的后果。",
-   "summary_en": false,
-   "url": "https://doi.org/10.1007/s10750-026-06479-3",
-   "tags": {
-    "theme": [
-     "pollution"
-    ],
-    "species": [],
-    "region": [],
-    "method": []
-   },
-   "rel": [
-    [
-     124,
-     0.267,
-     "污染与毒理"
-    ],
-    [
-     116,
-     0.227,
-     ""
-    ],
-    [
-     42,
-     0.2,
-     "污染与毒理"
-    ],
-    [
-     51,
-     0.197,
-     "污染与毒理"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.1007/s10750-026-06446-y",
-   "title": "Hydrological regimes drive life-history divergence in dormant Australian freshwater invertebrate assemblages",
-   "authors": "Stevanovic, Aster Zivana; Grieger, Rebekah; Sheldon, Fran; de Bruyn, Mark; Jones, Natalie T.",
-   "journal": "Hydrobiologia",
-   "date": "2026-11-25",
-   "summary": "在澳大利亚墨累—达令盆地北部三个历史淹水频率不同的洪泛平原样点采集沉积物，实验模拟淹水和干燥事件，检验淹水频率对休眠水生无脊椎动物群落组成及延迟孵化普遍性的影响。淹水频率显著塑造休眠无脊椎动物群落组成；介形类（Ostracoda）和线虫（Nematoda）在多次实验淹水中延迟出现，符合 bet-hedging 策略，而枝角类（Cladocera）和轮虫（Rotifera）主要在首次淹水时孵化，体现即时激活而非通过延迟孵化分散风险。不同孵化策略共存分散了种群统计风险，支撑洪泛平原无脊椎动物群落的恢复力，对澳大利亚旱地河流日益多变的流态下维持生物多样性可能至关重要。",
-   "summary_en": false,
-   "url": "https://doi.org/10.1007/s10750-026-06446-y",
-   "tags": {
-    "theme": [
-     "eco",
-     "climate"
-    ],
-    "species": [],
-    "region": [
-     "freshwater",
-     "seasia"
-    ],
-    "method": []
-   },
-   "rel": [
-    [
-     20,
-     0.404,
-     "淡水与湖泊河流|东南亚与西太"
-    ],
-    [
-     67,
-     0.37,
-     "淡水与湖泊河流"
-    ],
-    [
-     240,
-     0.334,
-     "淡水与湖泊河流|东南亚与西太"
-    ],
-    [
-     280,
-     0.325,
-     "淡水与湖泊河流"
+     214,
+     0.321,
+     "鲨鱼与鳐类"
     ]
    ],
    "is_review": false,
@@ -3051,22 +2114,22 @@
    },
    "rel": [
     [
-     116,
-     0.693,
+     86,
+     0.689,
      "淡水与湖泊河流|环境DNA"
     ],
     [
-     241,
-     0.535,
+     204,
+     0.532,
      "淡水与湖泊河流|环境DNA"
     ],
     [
-     224,
+     187,
      0.302,
      "淡水与湖泊河流|环境DNA"
     ],
     [
-     67,
+     44,
      0.297,
      "淡水与湖泊河流"
     ]
@@ -3097,56 +2160,24 @@
    },
    "rel": [
     [
-     213,
+     177,
      0.347,
      "鲑鳟鱼类"
     ],
     [
-     152,
-     0.344,
+     122,
+     0.342,
      "生态与渔业模型"
     ],
     [
-     207,
-     0.341,
+     171,
+     0.339,
      "鲑鳟鱼类"
     ],
     [
-     247,
-     0.309,
+     209,
+     0.308,
      "鲑鳟鱼类"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.18176/jiaci.1220",
-   "title": "Anaphylaxis From Inhaled Maggot and Wax Moth Larvae Fishing Bait in a Recreational Angler Previously Diagnosed With Fish Contact Allergy: IgE Profile and Tested Alternatives",
-   "authors": "Cimbollek, Stefan; Menéndez-Rivero, Estela; de Aramburu Mera, Teresa; Reguero Capilla, Marta; Pineda de la Losa, Fernando; Santano Guillén, Elena; Martínez Martínez, María José; Galán Díez, Tania",
-   "journal": "Journal of Investigational Allergology and Clinical Immunology",
-   "date": "2026-11-24",
-   "summary": "",
-   "summary_en": true,
-   "url": "https://doi.org/10.18176/jiaci.1220",
-   "tags": {
-    "theme": [
-     "misc"
-    ],
-    "species": [],
-    "region": [],
-    "method": []
-   },
-   "rel": [
-    [
-     245,
-     0.223,
-     ""
-    ],
-    [
-     46,
-     0.15,
-     ""
     ]
    ],
    "is_review": false,
@@ -3173,23 +2204,23 @@
    },
    "rel": [
     [
-     151,
-     0.442,
+     121,
+     0.439,
      "鲤科鱼类"
     ],
     [
-     309,
+     267,
      0.385,
      ""
     ],
     [
-     348,
-     0.26,
+     302,
+     0.259,
      ""
     ],
     [
-     227,
-     0.232,
+     190,
+     0.23,
      ""
     ]
    ],
@@ -3215,23 +2246,23 @@
    },
    "rel": [
     [
-     127,
+     97,
      0.5,
      "污染与毒理"
     ],
     [
-     281,
+     241,
      0.5,
      "污染与毒理"
     ],
     [
-     141,
-     0.435,
+     111,
+     0.429,
      "污染与毒理"
     ],
     [
-     14,
-     0.312,
+     12,
+     0.313,
      "污染与毒理"
     ]
    ],
@@ -3259,23 +2290,23 @@
    },
    "rel": [
     [
-     197,
+     163,
      0.525,
      "水产养殖|营养与饲料"
     ],
     [
-     376,
-     0.272,
+     327,
+     0.268,
      "水产养殖"
     ],
     [
-     229,
-     0.266,
+     192,
+     0.267,
      ""
     ],
     [
-     307,
-     0.261,
+     265,
+     0.256,
      "水产养殖|营养与饲料"
     ]
    ],
@@ -3303,23 +2334,23 @@
    },
    "rel": [
     [
-     308,
-     0.296,
-     "水产养殖|污染与毒理"
-    ],
-    [
-     285,
+     266,
      0.292,
      "水产养殖|污染与毒理"
     ],
     [
-     147,
-     0.281,
+     245,
+     0.287,
+     "水产养殖|污染与毒理"
+    ],
+    [
+     117,
+     0.278,
      "水产养殖"
     ],
     [
-     246,
-     0.248,
+     208,
+     0.246,
      "水产养殖|疾病与免疫"
     ]
    ],
@@ -3348,23 +2379,23 @@
    },
    "rel": [
     [
-     157,
-     0.587,
+     127,
+     0.579,
      "虾类"
     ],
     [
-     121,
-     0.47,
+     91,
+     0.469,
      "疾病与免疫"
     ],
     [
-     270,
-     0.344,
+     230,
+     0.341,
      "虾类"
     ],
     [
-     276,
-     0.296,
+     236,
+     0.294,
      "虾类"
     ]
    ],
@@ -3392,23 +2423,23 @@
    },
    "rel": [
     [
-     280,
+     240,
      0.427,
      "淡水与湖泊河流"
     ],
     [
-     240,
-     0.416,
+     203,
+     0.413,
      "淡水与湖泊河流"
     ],
     [
-     353,
-     0.402,
+     306,
+     0.398,
      "淡水与湖泊河流"
     ],
     [
-     316,
-     0.396,
+     272,
+     0.393,
      "淡水与湖泊河流"
     ]
    ],
@@ -3436,22 +2467,22 @@
    },
    "rel": [
     [
-     91,
-     0.331,
+     65,
+     0.329,
      "加工品质与食品"
     ],
     [
-     222,
-     0.267,
+     185,
+     0.269,
      "调查与问卷"
     ],
     [
-     351,
-     0.252,
+     304,
+     0.251,
      "加工品质与食品"
     ],
     [
-     282,
+     242,
      0.251,
      "调查与问卷"
     ]
@@ -3484,66 +2515,24 @@
    },
    "rel": [
     [
-     46,
-     0.463,
+     36,
+     0.461,
      "鲨鱼与鳐类"
     ],
     [
-     330,
-     0.433,
+     286,
+     0.43,
      "南美海域"
     ],
     [
-     334,
-     0.389,
+     290,
+     0.391,
      "鲨鱼与鳐类"
     ],
     [
-     139,
-     0.388,
+     109,
+     0.385,
      "鲨鱼与鳐类"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.61336/cjmr.1604.52",
-   "title": "Examining Green HRM Practices towards Sustainability and Circular Economy Using Fuzzy AHP: A Case",
-   "authors": "Kumar, Lalit",
-   "journal": "Canadian Journal of Marketing Research",
-   "date": "2026-11-24",
-   "summary": "针对绿色人力资源管理（Green HRM）实践对可持续性与循环经济（CE）的相对重要性难以在不确定性下评估的问题，构建基于模糊层次分析法（Fuzzy AHP）的多准则决策框架，以Dayal Fertilizers（Meerut）50名中层管理人员的两两比较数据，将12项HR可持续性参数组织为层级模型并用三角模糊数评价。结果显示，培训与意识、可持续招聘和激励机制是推动循环经济实施最有力的驱动因素，而安全保障与研究整合有待改进。",
-   "summary_en": false,
-   "url": "https://doi.org/10.61336/cjmr.1604.52",
-   "tags": {
-    "theme": [
-     "misc"
-    ],
-    "species": [],
-    "region": [],
-    "method": []
-   },
-   "rel": [
-    [
-     76,
-     0.242,
-     ""
-    ],
-    [
-     21,
-     0.226,
-     ""
-    ],
-    [
-     142,
-     0.219,
-     ""
-    ],
-    [
-     200,
-     0.203,
-     ""
     ]
    ],
    "is_review": false,
@@ -3570,24 +2559,24 @@
    },
    "rel": [
     [
-     118,
-     0.262,
+     88,
+     0.261,
      "印度洋与南亚"
     ],
     [
-     274,
+     234,
      0.177,
      "印度洋与南亚"
     ],
     [
-     104,
+     261,
      0.156,
-     ""
+     "印度洋与南亚"
     ],
     [
-     303,
+     78,
      0.154,
-     "印度洋与南亚"
+     ""
     ]
    ],
    "is_review": false,
@@ -3619,23 +2608,23 @@
    },
    "rel": [
     [
-     325,
-     0.5,
+     281,
+     0.502,
      "声学与遥测"
     ],
     [
-     241,
-     0.419,
+     204,
+     0.417,
      "环境DNA"
     ],
     [
-     192,
-     0.409,
+     158,
+     0.407,
      "鲨鱼与鳐类|环境DNA"
     ],
     [
-     306,
-     0.361,
+     264,
+     0.359,
      "环境DNA"
     ]
    ],
@@ -3663,23 +2652,23 @@
    },
    "rel": [
     [
-     251,
-     0.439,
+     213,
+     0.433,
      "鲑鳟鱼类"
     ],
     [
-     154,
-     0.421,
+     124,
+     0.418,
      "鲑鳟鱼类"
     ],
     [
-     180,
-     0.369,
+     147,
+     0.364,
      "鲑鳟鱼类"
     ],
     [
-     247,
-     0.356,
+     209,
+     0.353,
      "鲑鳟鱼类"
     ]
    ],
@@ -3707,23 +2696,23 @@
    },
    "rel": [
     [
-     170,
+     138,
      0.525,
      "水产养殖|综述与元分析"
     ],
     [
-     178,
-     0.329,
+     145,
+     0.326,
      "水产养殖"
     ],
     [
-     361,
-     0.288,
+     314,
+     0.287,
      "水产养殖"
     ],
     [
-     197,
-     0.274,
+     163,
+     0.272,
      "水产养殖|综述与元分析"
     ]
    ],
@@ -3753,112 +2742,24 @@
    },
    "rel": [
     [
-     246,
-     0.486,
+     208,
+     0.483,
      "罗非鱼类"
     ],
     [
-     31,
-     0.441,
+     25,
+     0.436,
      "疾病与免疫|营养与饲料"
     ],
     [
-     377,
-     0.434,
+     328,
+     0.428,
      "罗非鱼类"
     ],
     [
-     109,
+     91,
      0.425,
-     "疾病与免疫|营养与饲料"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.1975578",
-   "title": "An integrated TOPSIS-Max100 hybrid approach for the evaluation and selection of deck cadet candidates in the maritime transportation",
-   "authors": "Dal, Özgür; Altınpınar, İshak; Öztürk, Orkun Burak",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-24",
-   "summary": "针对航运企业甲板实习生招聘这一人力资源管理决策，构建TOPSIS–Max100集成决策支持框架，以GPA、英语知识、面试、体能、安全文化和预期海上服务时间6项准则对10名候选人进行评价，准则权重由10位海事学者的意见经Max100法确定，并用某航运公司真实招聘数据运行TOPSIS。权重最高为预期海上服务时间（0.1886），其次为面试（0.1838）、体能（0.1756）、英语（0.1637）、GPA（0.1518）和安全文化（0.1365）；候选人2贴近度最高（0.88966），明显高于候选人6（0.63859）和候选人8（0.60599），而GPA最高的候选人9仅列第七、面试分最高的候选人1列第五。结果表明多准则整合可识别有别于单一指标的招聘优先序，但候选人2的高贴近度仅反映其相对所选准则、分值与权重的优势，并不代表未来船上表现更优；该框架为候选人比较提供了透明灵活的结构化方法，同时保留专业判断在招聘决策中的作用。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.1975578",
-   "tags": {
-    "theme": [
-     "stock"
-    ],
-    "species": [],
-    "region": [],
-    "method": [
-     "survey"
-    ]
-   },
-   "rel": [
-    [
-     70,
-     0.242,
-     ""
-    ],
-    [
-     282,
-     0.218,
-     "调查与问卷"
-    ],
-    [
-     110,
-     0.204,
-     ""
-    ],
-    [
-     52,
-     0.203,
-     ""
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.1930771",
-   "title": "AI-enabled illumination-adaptive vessel draft mark recognition and draft measurement for sustainable ocean and coastal monitoring",
-   "authors": "Yang, Lei; Wen, Fan; Wei, Huiqiang",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-24",
-   "summary": "针对视觉吃水标志识别在低照度、标志模糊及船-水边界微弱条件下易失效的问题，提出一种光照自适应流程，将吃水字符、刻度结构与水线识别同公制吃水测量分为两个关联任务：轻量光照判别器将正常光照输入直接送入识别与测量后端，低光照输入则经双域增强模块处理，再由多任务网络检测吃水字符并分割水域，通过图约束刻度重建换算为吃水值。在2000张真实监控图像与2000张合成低光照图像上，全测试集MAE由0.37 m降至0.23 m，低光照MAE由0.51 m降至0.22 m，正常光照MAE保持0.24 m，表明条件式增强可在不损害正常光照性能的前提下提升低光照鲁棒性。该框架可为港口与沿海航道中的装载监督、龙骨下富余水深评估及搁浅风险防控提供可靠吃水测量支持。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.1930771",
-   "tags": {
-    "theme": [
-     "misc"
-    ],
-    "species": [],
-    "region": [],
-    "method": [
-     "monitor"
-    ]
-   },
-   "rel": [
-    [
-     324,
-     0.272,
-     "监测与采样"
-    ],
-    [
-     162,
-     0.245,
-     "监测与采样"
-    ],
-    [
-     262,
-     0.244,
-     "监测与采样"
-    ],
-    [
-     164,
-     0.233,
-     "监测与采样"
+     "罗非鱼类"
     ]
    ],
    "is_review": false,
@@ -3883,23 +2784,23 @@
    },
    "rel": [
     [
-     195,
-     0.211,
+     161,
+     0.21,
      "遗传与基因组"
     ],
     [
-     273,
-     0.2,
+     233,
+     0.198,
      "遗传与基因组"
     ],
     [
-     151,
+     27,
      0.18,
      "遗传与基因组"
     ],
     [
-     33,
-     0.18,
+     121,
+     0.179,
      "遗传与基因组"
     ]
    ],
@@ -3925,22 +2826,22 @@
    },
    "rel": [
     [
-     391,
-     0.396,
+     342,
+     0.392,
      "气候变化与环境"
     ],
     [
-     184,
-     0.372,
+     151,
+     0.368,
      ""
     ],
     [
-     74,
-     0.225,
+     50,
+     0.222,
      "气候变化与环境"
     ],
     [
-     81,
+     55,
      0.145,
      ""
     ]
@@ -3974,23 +2875,23 @@
    },
    "rel": [
     [
-     169,
-     0.447,
+     137,
+     0.444,
      "金枪鱼与鲭类"
     ],
     [
-     320,
-     0.446,
+     276,
+     0.444,
      "金枪鱼与鲭类|监测与采样"
     ],
     [
-     334,
-     0.426,
+     290,
+     0.425,
      "北太平洋"
     ],
     [
-     89,
-     0.407,
+     63,
+     0.406,
      "监测与采样"
     ]
    ],
@@ -4020,23 +2921,23 @@
    },
    "rel": [
     [
-     159,
-     0.527,
+     129,
+     0.522,
      "鳗鲡与鲟类"
     ],
     [
-     80,
+     54,
      0.361,
      "北太平洋"
     ],
     [
-     292,
-     0.327,
+     75,
+     0.326,
      "北太平洋"
     ],
     [
-     101,
-     0.325,
+     250,
+     0.326,
      "北太平洋"
     ]
    ],
@@ -4065,23 +2966,23 @@
    },
    "rel": [
     [
-     353,
-     0.43,
+     306,
+     0.444,
      "淡水与湖泊河流"
     ],
     [
-     358,
-     0.396,
+     311,
+     0.397,
      "生态与栖息地"
     ],
     [
-     280,
-     0.394,
+     240,
+     0.391,
      "淡水与湖泊河流"
     ],
     [
-     316,
-     0.331,
+     272,
+     0.338,
      "淡水与湖泊河流"
     ]
    ],
@@ -4112,23 +3013,23 @@
    },
    "rel": [
     [
-     116,
-     0.46,
+     86,
+     0.459,
      "淡水与湖泊河流"
     ],
     [
-     135,
-     0.375,
+     105,
+     0.374,
      "淡水与湖泊河流"
     ],
     [
-     241,
+     204,
      0.36,
      "淡水与湖泊河流"
     ],
     [
-     118,
-     0.346,
+     88,
+     0.345,
      "印度洋与南亚"
     ]
    ],
@@ -4154,23 +3055,23 @@
    },
    "rel": [
     [
-     359,
+     312,
      0.5,
      "水产养殖"
     ],
     [
-     177,
-     0.278,
+     144,
+     0.275,
      "水产养殖"
     ],
     [
-     147,
+     117,
      0.264,
      "水产养殖"
     ],
     [
-     144,
-     0.242,
+     114,
+     0.236,
      "水产养殖"
     ]
    ],
@@ -4200,24 +3101,24 @@
    },
    "rel": [
     [
-     255,
+     217,
      0.5,
      "生态与栖息地"
     ],
     [
-     158,
-     0.326,
+     128,
+     0.328,
      "生态与栖息地|种群评估与管理"
     ],
     [
-     362,
-     0.323,
-     "气候变化与环境|生态与栖息地"
+     132,
+     0.32,
+     "气候变化与环境"
     ],
     [
-     163,
-     0.318,
-     "气候变化与环境"
+     315,
+     0.319,
+     "气候变化与环境|生态与栖息地"
     ]
    ],
    "is_review": false,
@@ -4242,23 +3143,23 @@
    },
    "rel": [
     [
-     239,
+     202,
+     0.261,
+     "综述与元分析"
+    ],
+    [
+     114,
      0.258,
      "综述与元分析"
     ],
     [
-     144,
-     0.256,
-     "综述与元分析"
-    ],
-    [
-     23,
-     0.241,
+     18,
+     0.246,
      ""
     ],
     [
-     333,
-     0.239,
+     289,
+     0.236,
      "综述与元分析"
     ]
    ],
@@ -4288,24 +3189,24 @@
    },
    "rel": [
     [
-     126,
-     0.347,
+     96,
+     0.35,
      "机器学习与AI"
     ],
     [
-     383,
-     0.317,
+     334,
+     0.319,
      "机器学习与AI"
     ],
     [
-     333,
-     0.314,
+     289,
+     0.311,
      "机器学习与AI"
     ],
     [
-     359,
-     0.295,
-     "水产养殖|经济与社会政策"
+     138,
+     0.297,
+     "机器学习与AI"
     ]
    ],
    "is_review": false,
@@ -4335,23 +3236,23 @@
    },
    "rel": [
     [
-     353,
-     0.37,
+     259,
+     0.376,
      "淡水与湖泊河流"
     ],
     [
-     20,
-     0.367,
+     306,
+     0.376,
+     "淡水与湖泊河流"
+    ],
+    [
+     16,
+     0.37,
      "东南亚与西太|淡水与湖泊河流"
     ],
     [
-     301,
-     0.364,
-     "淡水与湖泊河流"
-    ],
-    [
-     285,
-     0.331,
+     245,
+     0.334,
      "东南亚与西太"
     ]
    ],
@@ -4380,23 +3281,23 @@
    },
    "rel": [
     [
-     80,
-     0.407,
+     54,
+     0.406,
      "监测与采样"
     ],
     [
-     238,
-     0.361,
+     201,
+     0.363,
      "种群评估与管理"
     ],
     [
-     275,
-     0.34,
+     235,
+     0.337,
      "种群评估与管理"
     ],
     [
-     335,
-     0.323,
+     291,
+     0.324,
      "监测与采样"
     ]
    ],
@@ -4428,23 +3329,23 @@
    },
    "rel": [
     [
-     303,
-     0.45,
+     261,
+     0.448,
      "全球/多区域"
     ],
     [
-     217,
-     0.398,
+     181,
+     0.395,
      "全球/多区域"
     ],
     [
-     238,
-     0.316,
+     201,
+     0.315,
      "种群评估与管理"
     ],
     [
-     194,
-     0.302,
+     160,
+     0.304,
      "全球/多区域"
     ]
    ],
@@ -4470,23 +3371,23 @@
    },
    "rel": [
     [
-     68,
-     0.331,
+     45,
+     0.329,
      "加工品质与食品"
     ],
     [
-     368,
-     0.258,
+     320,
+     0.256,
      ""
     ],
     [
-     96,
-     0.179,
+     70,
+     0.181,
      ""
     ],
     [
-     15,
-     0.171,
+     13,
+     0.172,
      ""
     ]
    ],
@@ -4513,23 +3414,23 @@
    },
    "rel": [
     [
-     307,
-     0.247,
+     265,
+     0.244,
      "疾病与免疫"
     ],
     [
-     156,
-     0.212,
+     126,
+     0.21,
      "生物学与生理"
     ],
     [
-     31,
-     0.193,
+     25,
+     0.192,
      "疾病与免疫"
     ],
     [
-     230,
-     0.187,
+     193,
+     0.186,
      "疾病与免疫"
     ]
    ],
@@ -4559,23 +3460,23 @@
    },
    "rel": [
     [
-     347,
-     0.273,
+     301,
+     0.27,
      "非洲海域"
     ],
     [
-     157,
-     0.272,
+     127,
+     0.27,
      "非洲海域"
     ],
     [
-     100,
-     0.268,
+     74,
+     0.267,
      "南美海域"
     ],
     [
-     366,
-     0.264,
+     318,
+     0.261,
      "南美海域"
     ]
    ],
@@ -4609,23 +3510,23 @@
    },
    "rel": [
     [
-     26,
-     0.4,
+     21,
+     0.393,
      "水产养殖|经济与社会政策"
     ],
     [
-     244,
-     0.365,
+     206,
+     0.364,
      "鲤科鱼类"
     ],
     [
-     282,
-     0.348,
+     242,
+     0.345,
      "印度洋与南亚"
     ],
     [
-     149,
-     0.333,
+     119,
+     0.33,
      "水产养殖|加工品质与食品"
     ]
    ],
@@ -4653,24 +3554,24 @@
    },
    "rel": [
     [
-     177,
-     0.338,
+     144,
+     0.337,
      "水产养殖|经济与社会政策"
-    ],
-    [
-     305,
-     0.319,
-     "水产养殖"
-    ],
-    [
-     249,
-     0.316,
-     "经济与社会政策"
     ],
     [
      263,
-     0.299,
-     "水产养殖|经济与社会政策"
+     0.324,
+     "水产养殖"
+    ],
+    [
+     211,
+     0.318,
+     "经济与社会政策"
+    ],
+    [
+     18,
+     0.297,
+     "水产养殖|气候变化与环境"
     ]
    ],
    "is_review": false,
@@ -4698,23 +3599,23 @@
    },
    "rel": [
     [
-     301,
-     0.297,
+     259,
+     0.3,
      "调查与问卷"
     ],
     [
-     368,
-     0.296,
+     320,
+     0.298,
      "经济与社会政策"
     ],
     [
-     222,
-     0.289,
+     185,
+     0.293,
      "调查与问卷"
     ],
     [
-     282,
-     0.282,
+     242,
+     0.28,
      "调查与问卷"
     ]
    ],
@@ -4744,23 +3645,23 @@
    },
    "rel": [
     [
-     272,
+     232,
      0.515,
      "水产养殖|疾病与免疫"
     ],
     [
-     381,
-     0.491,
+     332,
+     0.485,
      "罗非鱼类"
     ],
     [
-     246,
-     0.449,
+     208,
+     0.443,
      "罗非鱼类"
     ],
     [
-     16,
-     0.439,
+     14,
+     0.437,
      "水产养殖|疾病与免疫"
     ]
    ],
@@ -4789,23 +3690,23 @@
    },
    "rel": [
     [
-     224,
-     0.365,
+     167,
+     0.368,
      "鲑鳟鱼类"
     ],
     [
-     202,
-     0.365,
+     187,
+     0.361,
      "鲑鳟鱼类"
     ],
     [
-     310,
-     0.354,
+     268,
+     0.351,
      "鲑鳟鱼类"
     ],
     [
-     247,
-     0.294,
+     209,
+     0.291,
      "鲑鳟鱼类"
     ]
    ],
@@ -4831,24 +3732,24 @@
    },
    "rel": [
     [
-     244,
-     0.329,
+     206,
+     0.328,
      "水产养殖"
     ],
     [
-     377,
-     0.204,
+     328,
+     0.203,
      "水产养殖"
     ],
     [
-     381,
+     237,
      0.189,
-     "水产养殖"
+     ""
     ],
     [
-     277,
-     0.178,
-     ""
+     332,
+     0.188,
+     "水产养殖"
     ]
    ],
    "is_review": false,
@@ -4875,23 +3776,23 @@
    },
    "rel": [
     [
-     93,
-     0.268,
+     67,
+     0.267,
      "南美海域"
     ],
     [
-     389,
-     0.259,
+     340,
+     0.256,
      "南美海域"
     ],
     [
-     69,
-     0.23,
+     46,
+     0.231,
      "南美海域"
     ],
     [
-     387,
-     0.218,
+     338,
+     0.222,
      "南美海域"
     ]
    ],
@@ -4921,23 +3822,23 @@
    },
    "rel": [
     [
-     193,
-     0.353,
+     159,
+     0.351,
      "头足类"
     ],
     [
-     81,
-     0.325,
+     55,
+     0.326,
      "北太平洋"
     ],
     [
-     152,
-     0.309,
+     122,
+     0.308,
      "生态与栖息地"
     ],
     [
-     169,
-     0.309,
+     137,
+     0.307,
      "生态与栖息地"
     ]
    ],
@@ -4966,23 +3867,23 @@
    },
    "rel": [
     [
-     109,
-     0.406,
+     83,
+     0.403,
      "营养与饲料"
     ],
     [
-     31,
-     0.396,
+     25,
+     0.394,
      "营养与饲料"
     ],
     [
-     75,
-     0.296,
+     51,
+     0.294,
      "营养与饲料"
     ],
     [
-     329,
-     0.271,
+     285,
+     0.27,
      "营养与饲料"
     ]
    ],
@@ -5014,23 +3915,23 @@
    },
    "rel": [
     [
-     10,
-     0.364,
+     8,
+     0.361,
      "捕捞技术与兼捕"
     ],
     [
-     8,
-     0.316,
+     6,
+     0.312,
      "蟹类"
     ],
     [
-     328,
-     0.31,
+     284,
+     0.306,
      "捕捞技术与兼捕"
     ],
     [
-     196,
-     0.281,
+     162,
+     0.284,
      "中国近海与内陆"
     ]
    ],
@@ -5060,24 +3961,24 @@
    },
    "rel": [
     [
+     130,
+     0.309,
+     "全球/多区域"
+    ],
+    [
      160,
-     0.307,
+     0.288,
      "全球/多区域"
     ],
     [
-     194,
-     0.287,
+     64,
+     0.257,
      "全球/多区域"
     ],
     [
-     49,
-     0.283,
-     "全球/多区域"
-    ],
-    [
-     90,
-     0.259,
-     "全球/多区域"
+     36,
+     0.243,
+     "捕捞技术与兼捕"
     ]
    ],
    "is_review": true,
@@ -5105,22 +4006,22 @@
    },
    "rel": [
     [
-     106,
+     80,
      0.55,
      "遗传与基因组"
     ],
     [
-     369,
-     0.537,
+     321,
+     0.534,
      "其他淡水鱼"
     ],
     [
-     34,
-     0.362,
+     28,
+     0.361,
      "其他淡水鱼"
     ],
     [
-     32,
+     26,
      0.299,
      "疾病与免疫|遗传与基因组"
     ]
@@ -5149,23 +4050,23 @@
    },
    "rel": [
     [
-     105,
+     79,
      0.55,
      "遗传与基因组"
     ],
     [
-     187,
-     0.371,
+     154,
+     0.367,
      "遗传与基因组"
     ],
     [
-     289,
-     0.315,
+     249,
+     0.311,
      "遗传与基因组"
     ],
     [
-     33,
-     0.269,
+     27,
+     0.266,
      "遗传与基因组"
     ]
    ],
@@ -5193,24 +4094,24 @@
    },
    "rel": [
     [
-     103,
-     0.253,
+     77,
+     0.248,
      "捕捞技术与兼捕"
     ],
     [
-     328,
-     0.231,
+     284,
+     0.228,
      "捕捞技术与兼捕"
     ],
     [
-     373,
-     0.187,
+     325,
+     0.184,
      ""
     ],
     [
-     70,
-     0.158,
-     ""
+     276,
+     0.151,
+     "捕捞技术与兼捕"
     ]
    ],
    "is_review": false,
@@ -5237,22 +4138,22 @@
    },
    "rel": [
     [
-     32,
-     0.467,
+     26,
+     0.468,
      "经济与社会政策"
     ],
     [
-     384,
-     0.369,
+     335,
+     0.37,
      "鳗鲡与鲟类"
     ],
     [
-     330,
-     0.245,
+     286,
+     0.244,
      "鳗鲡与鲟类"
     ],
     [
-     385,
+     336,
      0.224,
      "鳗鲡与鲟类"
     ]
@@ -5282,155 +4183,24 @@
    },
    "rel": [
     [
-     31,
+     25,
      0.575,
      "疾病与免疫|营养与饲料"
     ],
     [
-     356,
-     0.494,
+     309,
+     0.491,
      "营养与饲料"
     ],
     [
-     347,
-     0.485,
+     301,
+     0.48,
      "鲑鳟鱼类"
     ],
     [
-     75,
-     0.425,
+     51,
+     0.422,
      "疾病与免疫|营养与饲料"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.1888907",
-   "title": "Risk-informed site screening for offshore wind development: a PCA-Fuzzy comprehensive evaluation framework applied to 16 European projects and candidate sites",
-   "authors": "Lin, Yuxuan; Guo, Lingyun; Kong, Yongyi; Zhao, Hailiang",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-23",
-   "summary": "针对16个欧洲海上风电项目及候选场址，构建PCA-模糊综合评价（PCA-FCEM）筛选流程，在完成原始数据库溯源审计后，以风速、波浪暴露、水深、离岸距离和装机容量5项指标在项目/场址尺度开展比较。PCA提取的3个主成分解释92.42%方差并用于客观赋权，Hollandse Kust Zuid得分最高（3.696），Sørvest F最低（2.350），后者风能潜力被高波浪暴露、较大水深和偏远位置抵消。权重与模糊划分扰动下排名一致性高（Spearman ρ最低分别为0.938和0.982），但非补偿性max-min压力测试显著改变排序（ρ=0.357），且熵权-FCEM和CRITIC-FCEM与PCA排序的ρ分别为0.679和0.894，表明结论对赋权策略敏感，该框架定位为透明筛选工具而非最终投资排序。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.1888907",
-   "tags": {
-    "theme": [
-     "misc"
-    ],
-    "species": [],
-    "region": [],
-    "method": [
-     "stat"
-    ]
-   },
-   "rel": [
-    [
-     111,
-     0.259,
-     "统计建模"
-    ],
-    [
-     76,
-     0.204,
-     ""
-    ],
-    [
-     172,
-     0.179,
-     ""
-    ],
-    [
-     112,
-     0.176,
-     ""
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.1946690",
-   "title": "How do incentive and penalty mechanisms enhance the credibility of blue carbon credit markets? A game-theoretic analysis of multi-stakeholder collaborative governance strategies",
-   "authors": "Li, Jiaran; Fang, Chen",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-23",
-   "summary": "构建开发商、第三方核查机构与政府监管方的三方演化博弈模型，区分真实项目的低努力核查与虚假项目的合谋核查，结合稳定性分析与数值模拟考察蓝碳信用治理中的策略互动。提高开发补贴及双方声誉收益，使合规策略获得支付优势，是实现理想治理状态的关键；该状态在监管强度下降时仍可维持。激励型政策在三种初始条件下均能达成理想状态，激励与罚款组合政策则进一步加快收敛。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.1946690",
-   "tags": {
-    "theme": [
-     "econ"
-    ],
-    "species": [],
-    "region": [],
-    "method": [
-     "sdm",
-     "stat"
-    ]
-   },
-   "rel": [
-    [
-     113,
-     0.55,
-     "经济与社会政策"
-    ],
-    [
-     172,
-     0.319,
-     "经济与社会政策"
-    ],
-    [
-     7,
-     0.286,
-     "经济与社会政策"
-    ],
-    [
-     110,
-     0.259,
-     "统计建模"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.1886191",
-   "title": "Non-linear wind-wave-current coupled dynamic response and fatigue-oriented structural optimization of offshore monopile wind turbine support structures",
-   "authors": "Peng, Jie; Liu, Jiliang; Li, Liang; Lin, Yiyan; Lai, Qi; Chen, Chufan",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-23",
-   "summary": "针对单桩海上风机支撑结构在风-浪-流联合荷载下的非线性动力响应与疲劳损伤，将波流相互作用直接嵌入Morison水动力模型，在3个风速×3个流速共9种工况下量化其对谐响应与疲劳的影响。线性叠加荷载相较耦合方法低估应力幅值7.6%–23.1%，差异集中于泥面附近；临界泥面截面25年设计寿命内耦合疲劳损伤达0.912（非耦合为0.768），疲劳寿命被高估约19%。波流差频耦合引起谱重塑，放大低频疲劳循环，该机制无法由线性叠加捕捉；基于Kriging代理模型（R²=0.968）的约束优化使疲劳等效应力降低24.2%、结构质量减少7.7%，预测疲劳寿命由27.4年延长至36.1年。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.1886191",
-   "tags": {
-    "theme": [
-     "misc"
-    ],
-    "species": [],
-    "region": [],
-    "method": []
-   },
-   "rel": [
-    [
-     53,
-     0.214,
-     ""
-    ],
-    [
-     114,
-     0.209,
-     ""
-    ],
-    [
-     38,
-     0.179,
-     ""
-    ],
-    [
-     110,
-     0.176,
-     ""
     ]
    ],
    "is_review": false,
@@ -5459,68 +4229,24 @@
    },
    "rel": [
     [
-     172,
-     0.66,
+     334,
+     0.261,
      "中国近海与内陆"
     ],
     [
-     111,
-     0.55,
+     32,
+     0.26,
+     "生态与栖息地|经济与社会政策"
+    ],
+    [
+     92,
+     0.256,
+     "中国近海与内陆"
+    ],
+    [
+     259,
+     0.245,
      "经济与社会政策"
-    ],
-    [
-     51,
-     0.461,
-     "中国近海与内陆"
-    ],
-    [
-     44,
-     0.426,
-     "中国近海与内陆"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.1977826",
-   "title": "Contrasting wind-driven setdown and setup along the Yellow Sea coast: paired observations and regional sea-level adjustment",
-   "authors": "Yu, Bo; Jiang, Fan; Ma, Ruidi; Gao, Song; Shang, Jie; Ge, Yong; Jiang, Peilin; Ren, Dianjun",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-23",
-   "summary": "黄海沿岸两次峰值风速相近的强风事件产生了相反的水位响应：E01事件（风速>10.8 m/s持续47–48 h，沿岸应力冲量东向+12.67~+13.87 N h m⁻²）造成约0.47 m的setdown，E08事件（>阈值21–23 h，西向冲量−3.03~−2.37 N h m⁻²）则产生0.32–0.33 m的setup。观测核心层沿岸输运异常方向与冲量一致（E01东向、E08西向），但跨岸响应存在站点差异；CMEMS较好地再现了subtidal水位变化（r=0.982–0.997），极值出现时间自日照至石岛随距离增加而延迟。结果表明共享的水位与沿岸输运响应受制于不同的风应力历史与区域海面调整过程，E08期间局地风减弱后气压梯度仍持续发展，潮汐与水文差异也可能对响应有所贡献。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.1977826",
-   "tags": {
-    "theme": [
-     "misc"
-    ],
-    "species": [],
-    "region": [
-     "ys"
-    ],
-    "method": []
-   },
-   "rel": [
-    [
-     39,
-     0.333,
-     ""
-    ],
-    [
-     41,
-     0.239,
-     "黄海"
-    ],
-    [
-     191,
-     0.237,
-     ""
-    ],
-    [
-     53,
-     0.218,
-     ""
     ]
    ],
    "is_review": false,
@@ -5547,22 +4273,22 @@
    },
    "rel": [
     [
-     29,
-     0.41,
+     23,
+     0.413,
      "藻类与海藻"
     ],
     [
-     45,
-     0.321,
+     35,
+     0.318,
      "藻类与海藻"
     ],
     [
-     318,
-     0.306,
+     274,
+     0.308,
      "藻类与海藻"
     ],
     [
-     28,
+     22,
      0.26,
      "藻类与海藻"
     ]
@@ -5596,24 +4322,24 @@
    },
    "rel": [
     [
-     59,
-     0.693,
+     37,
+     0.689,
      "淡水与湖泊河流|环境DNA"
     ],
     [
-     241,
-     0.67,
+     204,
+     0.665,
      "淡水与湖泊河流|环境DNA"
     ],
     [
-     83,
-     0.46,
+     57,
+     0.459,
      "淡水与湖泊河流"
     ],
     [
-     240,
-     0.384,
-     "淡水与湖泊河流|监测与采样"
+     187,
+     0.386,
+     "淡水与湖泊河流|环境DNA"
     ]
    ],
    "is_review": false,
@@ -5639,23 +4365,23 @@
    },
    "rel": [
     [
-     246,
-     0.272,
+     208,
+     0.269,
      "水产养殖"
     ],
     [
-     308,
-     0.263,
+     266,
+     0.258,
      "水产养殖|污染与毒理"
     ],
     [
-     65,
-     0.247,
+     42,
+     0.244,
      "水产养殖|污染与毒理"
     ],
     [
-     353,
-     0.231,
+     306,
+     0.243,
      "污染与毒理"
     ]
    ],
@@ -5687,23 +4413,23 @@
    },
    "rel": [
     [
-     383,
-     0.481,
+     334,
+     0.478,
      "环境DNA"
     ],
     [
-     338,
-     0.432,
+     293,
+     0.429,
      "环境DNA"
     ],
     [
-     116,
-     0.373,
-     "环境DNA"
-    ],
-    [
-     241,
+     86,
      0.371,
+     "环境DNA"
+    ],
+    [
+     204,
+     0.368,
      "环境DNA"
     ]
    ],
@@ -5729,23 +4455,23 @@
    },
    "rel": [
     [
-     69,
+     46,
      0.178,
      ""
     ],
     [
-     93,
-     0.143,
+     67,
+     0.141,
      ""
     ],
     [
-     224,
-     0.133,
+     191,
+     0.135,
      ""
     ],
     [
-     274,
-     0.133,
+     187,
+     0.135,
      ""
     ]
    ],
@@ -5775,22 +4501,22 @@
    },
    "rel": [
     [
-     121,
-     0.377,
+     91,
+     0.38,
      "疾病与免疫|遗传与基因组"
     ],
     [
-     109,
+     83,
      0.365,
      "鲑鳟鱼类"
     ],
     [
-     16,
-     0.361,
+     14,
+     0.36,
      "鲑鳟鱼类"
     ],
     [
-     202,
+     167,
      0.314,
      "鲑鳟鱼类"
     ]
@@ -5820,22 +4546,22 @@
    },
    "rel": [
     [
-     30,
-     0.562,
+     24,
+     0.557,
      "罗非鱼类"
     ],
     [
-     246,
-     0.496,
+     208,
+     0.491,
      "罗非鱼类"
     ],
     [
-     66,
-     0.47,
+     43,
+     0.469,
      "疾病与免疫"
     ],
     [
-     75,
+     51,
      0.425,
      "罗非鱼类"
     ]
@@ -5864,23 +4590,23 @@
    },
    "rel": [
     [
-     21,
-     0.344,
+     162,
+     0.263,
      "中国近海与内陆"
     ],
     [
-     172,
-     0.27,
-     "中国近海与内陆"
-    ],
-    [
-     196,
-     0.264,
-     "中国近海与内陆"
-    ],
-    [
-     52,
+     84,
      0.256,
+     "中国近海与内陆"
+    ],
+    [
+     114,
+     0.237,
+     "中国近海与内陆"
+    ],
+    [
+     77,
+     0.214,
      "中国近海与内陆"
     ]
    ],
@@ -5908,23 +4634,23 @@
    },
    "rel": [
     [
-     280,
-     0.307,
+     240,
+     0.305,
      "淡水与湖泊河流"
     ],
     [
-     353,
+     306,
      0.299,
      "淡水与湖泊河流"
     ],
     [
-     82,
-     0.281,
+     56,
+     0.282,
      "淡水与湖泊河流"
     ],
     [
-     186,
-     0.273,
+     153,
+     0.27,
      "淡水与湖泊河流"
     ]
    ],
@@ -5956,23 +4682,23 @@
    },
    "rel": [
     [
-     148,
-     0.412,
+     118,
+     0.411,
      "东南亚与西太"
     ],
     [
-     42,
-     0.389,
-     "污染与毒理"
-    ],
-    [
-     382,
-     0.353,
+     333,
+     0.355,
      "监测与采样"
     ],
     [
-     372,
-     0.345,
+     324,
+     0.349,
+     "监测与采样"
+    ],
+    [
+     255,
+     0.327,
      "监测与采样"
     ]
    ],
@@ -6003,24 +4729,24 @@
    },
    "rel": [
     [
-     206,
-     0.404,
+     170,
+     0.403,
      "东南亚与西太|调查与问卷"
     ],
     [
-     128,
-     0.388,
+     98,
+     0.387,
      "经济与社会政策"
     ],
     [
-     282,
-     0.348,
+     242,
+     0.347,
      "调查与问卷"
     ],
     [
-     222,
-     0.334,
-     "东南亚与西太|调查与问卷"
+     236,
+     0.333,
+     "东南亚与西太"
     ]
    ],
    "is_review": false,
@@ -6048,23 +4774,23 @@
    },
    "rel": [
     [
-     164,
-     0.392,
+     61,
+     0.35,
      "机器学习与AI"
     ],
     [
-     87,
-     0.347,
+     138,
+     0.342,
      "机器学习与AI"
     ],
     [
-     170,
-     0.34,
+     289,
+     0.322,
      "机器学习与AI"
     ],
     [
-     333,
-     0.324,
+     104,
+     0.284,
      "机器学习与AI"
     ]
    ],
@@ -6090,23 +4816,23 @@
    },
    "rel": [
     [
-     63,
+     40,
      0.5,
      "污染与毒理"
     ],
     [
-     141,
+     111,
      0.5,
      "污染与毒理"
     ],
     [
-     281,
-     0.457,
+     241,
+     0.452,
      "污染与毒理"
     ],
     [
-     14,
-     0.328,
+     12,
+     0.32,
      "污染与毒理"
     ]
    ],
@@ -6132,24 +4858,24 @@
    },
    "rel": [
     [
-     222,
-     0.441,
+     185,
+     0.442,
      "经济与社会政策"
     ],
     [
-     125,
-     0.388,
+     95,
+     0.387,
      "经济与社会政策"
     ],
     [
-     23,
-     0.33,
+     18,
+     0.331,
      "经济与社会政策"
     ],
     [
-     87,
+     294,
      0.281,
-     "经济与社会政策"
+     ""
     ]
    ],
    "is_review": false,
@@ -6176,23 +4902,23 @@
    },
    "rel": [
     [
-     248,
-     0.462,
+     210,
+     0.46,
      "加工品质与食品"
     ],
     [
-     169,
-     0.291,
+     137,
+     0.289,
      "金枪鱼与鲭类"
     ],
     [
-     312,
-     0.284,
+     269,
+     0.282,
      ""
     ],
     [
-     149,
-     0.265,
+     119,
+     0.263,
      "加工品质与食品"
     ]
    ],
@@ -6224,23 +4950,23 @@
    },
    "rel": [
     [
-     259,
-     0.32,
+     220,
+     0.319,
      "经济与社会政策"
     ],
     [
-     94,
-     0.313,
+     68,
+     0.308,
      "水产养殖|经济与社会政策"
     ],
     [
-     366,
-     0.297,
+     318,
+     0.295,
      "淡水与湖泊河流"
     ],
     [
-     87,
-     0.286,
+     61,
+     0.285,
      "机器学习与AI"
     ]
    ],
@@ -6267,23 +4993,23 @@
    },
    "rel": [
     [
-     325,
-     0.279,
+     281,
+     0.282,
      "保护与恢复"
     ],
     [
-     219,
+     183,
      0.244,
      "水产养殖"
     ],
     [
-     144,
-     0.213,
+     114,
+     0.21,
      "水产养殖"
     ],
     [
-     152,
-     0.2,
+     122,
+     0.201,
      "保护与恢复"
     ]
    ],
@@ -6310,24 +5036,24 @@
    },
    "rel": [
     [
-     180,
-     0.241,
+     147,
+     0.239,
      "生物学与生理|生态与栖息地"
     ],
     [
-     363,
-     0.187,
-     ""
-    ],
-    [
-     324,
-     0.185,
+     280,
+     0.19,
      "生态与栖息地"
     ],
     [
-     383,
-     0.182,
+     334,
+     0.188,
      "生态与栖息地"
+    ],
+    [
+     336,
+     0.175,
+     "生物学与生理|生态与栖息地"
     ]
    ],
    "is_review": false,
@@ -6353,23 +5079,23 @@
    },
    "rel": [
     [
-     118,
-     0.339,
+     88,
+     0.333,
      "遗传与基因组"
     ],
     [
-     278,
-     0.291,
+     238,
+     0.284,
      "种群评估与管理"
     ],
     [
-     211,
-     0.262,
+     175,
+     0.259,
      "种群评估与管理"
     ],
     [
-     12,
-     0.248,
+     10,
+     0.243,
      "种群评估与管理"
     ]
    ],
@@ -6397,23 +5123,23 @@
    },
    "rel": [
     [
-     209,
-     0.384,
+     173,
+     0.386,
      "机器学习与AI"
     ],
     [
-     8,
-     0.351,
+     6,
+     0.356,
      ""
     ],
     [
-     179,
-     0.301,
+     146,
+     0.311,
      ""
     ],
     [
-     164,
-     0.29,
+     96,
+     0.284,
      "机器学习与AI"
     ]
    ],
@@ -6442,23 +5168,23 @@
    },
    "rel": [
     [
-     365,
-     0.473,
+     317,
+     0.477,
      "淡水与湖泊河流"
     ],
     [
-     325,
-     0.436,
+     281,
+     0.43,
      "保护与恢复|生态与栖息地"
     ],
     [
-     241,
-     0.412,
+     204,
+     0.41,
      "淡水与湖泊河流"
     ],
     [
-     83,
-     0.375,
+     57,
+     0.374,
      "淡水与湖泊河流"
     ]
    ],
@@ -6484,23 +5210,23 @@
    },
    "rel": [
     [
-     365,
-     0.194,
+     317,
+     0.193,
      "生态与栖息地"
     ],
     [
-     291,
-     0.194,
-     ""
-    ],
-    [
-     240,
-     0.181,
-     "生态与栖息地"
-    ],
-    [
-     353,
+     203,
      0.18,
+     "生态与栖息地"
+    ],
+    [
+     306,
+     0.177,
+     "生态与栖息地"
+    ],
+    [
+     122,
+     0.171,
      "生态与栖息地"
     ]
    ],
@@ -6529,23 +5255,23 @@
    },
    "rel": [
     [
-     23,
-     0.438,
+     18,
+     0.443,
      "非洲海域"
     ],
     [
-     339,
-     0.327,
+     294,
+     0.333,
      ""
     ],
     [
-     201,
-     0.318,
+     166,
+     0.317,
      "经济与社会政策"
     ],
     [
-     282,
-     0.297,
+     242,
+     0.294,
      "经济与社会政策"
     ]
    ],
@@ -6574,23 +5300,23 @@
    },
    "rel": [
     [
-     310,
-     0.287,
+     268,
+     0.286,
      "极地与南大洋"
     ],
     [
-     201,
-     0.276,
+     166,
+     0.272,
      "经济与社会政策|综述与元分析"
     ],
     [
-     232,
-     0.259,
+     195,
+     0.257,
      "极地与南大洋"
     ],
     [
-     83,
-     0.241,
+     57,
+     0.243,
      "经济与社会政策"
     ]
    ],
@@ -6619,22 +5345,22 @@
    },
    "rel": [
     [
+     36,
+     0.46,
+     "鲨鱼与鳐类"
+    ],
+    [
      46,
-     0.464,
+     0.385,
      "鲨鱼与鳐类"
     ],
     [
-     69,
-     0.388,
+     290,
+     0.376,
      "鲨鱼与鳐类"
     ],
     [
-     334,
-     0.378,
-     "鲨鱼与鳐类"
-    ],
-    [
-     320,
+     276,
      0.355,
      "鲨鱼与鳐类"
     ]
@@ -6664,23 +5390,23 @@
    },
    "rel": [
     [
-     148,
-     0.369,
+     118,
+     0.374,
      "水产养殖"
     ],
     [
-     322,
-     0.302,
+     278,
+     0.307,
      "中国近海与内陆"
     ],
     [
-     141,
-     0.276,
+     111,
+     0.285,
      ""
     ],
     [
-     286,
-     0.246,
+     246,
+     0.251,
      "水产养殖|疾病与免疫"
     ]
    ],
@@ -6706,23 +5432,23 @@
    },
    "rel": [
     [
-     127,
+     97,
      0.5,
      "污染与毒理"
     ],
     [
-     281,
+     241,
      0.5,
      "污染与毒理"
     ],
     [
-     63,
-     0.435,
+     40,
+     0.429,
      "污染与毒理"
     ],
     [
-     14,
-     0.322,
+     12,
+     0.317,
      "污染与毒理"
     ]
    ],
@@ -6750,23 +5476,23 @@
    },
    "rel": [
     [
-     223,
-     0.354,
+     186,
+     0.352,
      "水产养殖"
     ],
     [
-     21,
-     0.32,
-     ""
-    ],
-    [
-     354,
-     0.301,
+     307,
+     0.3,
      "水产养殖"
     ],
     [
-     130,
+     100,
      0.274,
+     "淡水与湖泊河流"
+    ],
+    [
+     328,
+     0.272,
      "淡水与湖泊河流"
     ]
    ],
@@ -6796,24 +5522,24 @@
    },
    "rel": [
     [
-     333,
-     0.467,
+     289,
+     0.461,
      "水产养殖|综述与元分析"
-    ],
-    [
-     178,
-     0.407,
-     "监测与采样"
-    ],
-    [
-     174,
-     0.302,
-     "水产养殖|污染与毒理"
     ],
     [
      145,
-     0.298,
-     "水产养殖|综述与元分析"
+     0.403,
+     "监测与采样"
+    ],
+    [
+     141,
+     0.304,
+     "水产养殖|污染与毒理"
+    ],
+    [
+     188,
+     0.296,
+     "监测与采样"
     ]
    ],
    "is_review": true,
@@ -6843,23 +5569,23 @@
    },
    "rel": [
     [
-     359,
-     0.617,
+     312,
+     0.611,
      "非洲海域"
     ],
     [
-     371,
-     0.558,
+     323,
+     0.554,
      "非洲海域"
     ],
     [
-     234,
-     0.427,
+     197,
+     0.424,
      "非洲海域"
     ],
     [
-     23,
-     0.359,
+     18,
+     0.356,
      "非洲海域"
     ]
    ],
@@ -6887,22 +5613,22 @@
    },
    "rel": [
     [
-     143,
-     0.298,
+     113,
+     0.295,
      "水产养殖|综述与元分析"
     ],
     [
-     318,
-     0.249,
+     274,
+     0.246,
      "种群评估与管理"
     ],
     [
-     178,
-     0.239,
+     145,
+     0.235,
      "水产养殖"
     ],
     [
-     95,
+     69,
      0.231,
      "水产养殖"
     ]
@@ -6930,23 +5656,23 @@
    },
    "rel": [
     [
-     89,
-     0.279,
+     63,
+     0.275,
      "遗传与基因组"
     ],
     [
-     271,
-     0.27,
+     231,
+     0.267,
      "水产养殖|遗传与基因组"
     ],
     [
-     176,
-     0.238,
+     143,
+     0.234,
      "水产养殖"
     ],
     [
-     177,
-     0.232,
+     144,
+     0.229,
      "水产养殖|遗传与基因组"
     ]
    ],
@@ -6976,23 +5702,23 @@
    },
    "rel": [
     [
-     177,
-     0.532,
+     144,
+     0.528,
      "鲑鳟鱼类"
     ],
     [
-     340,
-     0.451,
+     295,
+     0.447,
      "水产养殖"
     ],
     [
-     347,
-     0.441,
+     301,
+     0.437,
      "鲑鳟鱼类"
     ],
     [
-     246,
-     0.426,
+     208,
+     0.422,
      "水产养殖"
     ]
    ],
@@ -7022,23 +5748,23 @@
    },
    "rel": [
     [
-     124,
-     0.412,
+     94,
+     0.411,
      "东南亚与西太"
     ],
     [
-     140,
-     0.369,
+     110,
+     0.374,
      "水产养殖"
     ],
     [
-     386,
-     0.327,
+     337,
+     0.328,
      "东南亚与西太"
     ],
     [
-     285,
-     0.292,
+     245,
+     0.29,
      "东南亚与西太"
     ]
    ],
@@ -7066,23 +5792,23 @@
    },
    "rel": [
     [
-     156,
-     0.398,
+     126,
+     0.396,
      "水产养殖"
     ],
     [
-     94,
-     0.333,
+     68,
+     0.33,
      "水产养殖|加工品质与食品"
     ],
     [
-     9,
-     0.323,
+     7,
+     0.32,
      "水产养殖|加工品质与食品"
     ],
     [
-     31,
-     0.29,
+     25,
+     0.286,
      ""
     ]
    ],
@@ -7110,23 +5836,23 @@
    },
    "rel": [
     [
-     368,
-     0.312,
+     320,
+     0.31,
      "东南亚与西太"
     ],
     [
-     351,
-     0.282,
+     304,
+     0.28,
      "东南亚与西太"
     ],
     [
-     222,
-     0.265,
+     185,
+     0.264,
      "东南亚与西太"
     ],
     [
-     223,
-     0.255,
+     186,
+     0.258,
      "东南亚与西太"
     ]
    ],
@@ -7154,23 +5880,23 @@
    },
    "rel": [
     [
-     62,
-     0.442,
+     39,
+     0.439,
      "鲤科鱼类"
     ],
     [
-     369,
-     0.324,
+     321,
+     0.32,
      "遗传与基因组"
     ],
     [
-     105,
-     0.28,
+     79,
+     0.278,
      "遗传与基因组"
     ],
     [
-     184,
-     0.265,
+     151,
+     0.268,
      "遗传与基因组"
     ]
    ],
@@ -7201,23 +5927,23 @@
    },
    "rel": [
     [
-     316,
-     0.363,
+     272,
+     0.358,
      "淡水与湖泊河流"
     ],
     [
-     60,
-     0.344,
+     38,
+     0.342,
      "生态与渔业模型"
     ],
     [
-     353,
-     0.328,
+     306,
+     0.324,
      "淡水与湖泊河流"
     ],
     [
-     20,
-     0.322,
+     16,
+     0.318,
      "淡水与湖泊河流"
     ]
    ],
@@ -7246,23 +5972,23 @@
    },
    "rel": [
     [
-     299,
-     0.489,
+     257,
+     0.487,
      "水产养殖|疾病与免疫"
     ],
     [
-     66,
-     0.283,
+     43,
+     0.282,
      "水产养殖|疾病与免疫"
     ],
     [
-     197,
-     0.239,
+     163,
+     0.243,
      "水产养殖"
     ],
     [
-     279,
-     0.239,
+     239,
+     0.24,
      "水产养殖|疾病与免疫"
     ]
    ],
@@ -7290,23 +6016,23 @@
    },
    "rel": [
     [
-     251,
-     0.54,
+     213,
+     0.531,
      "鲑鳟鱼类"
     ],
     [
-     224,
-     0.506,
+     187,
+     0.499,
      "鲑鳟鱼类"
     ],
     [
-     247,
-     0.501,
+     209,
+     0.495,
      "鲑鳟鱼类"
     ],
     [
-     73,
-     0.421,
+     49,
+     0.418,
      "鲑鳟鱼类"
     ]
    ],
@@ -7336,23 +6062,23 @@
    },
    "rel": [
     [
-     261,
+     222,
      0.397,
      "淡水与湖泊河流"
     ],
     [
-     18,
+     15,
      0.336,
      "其他淡水鱼|淡水与湖泊河流"
     ],
     [
-     369,
-     0.278,
+     321,
+     0.277,
      "其他淡水鱼"
     ],
     [
-     33,
-     0.266,
+     27,
+     0.264,
      "淡水与湖泊河流"
     ]
    ],
@@ -7379,23 +6105,23 @@
    },
    "rel": [
     [
-     31,
-     0.438,
-     ""
-    ],
-    [
-     373,
-     0.436,
+     325,
+     0.432,
      "水产养殖"
     ],
     [
-     340,
-     0.4,
+     25,
+     0.432,
+     ""
+    ],
+    [
+     295,
+     0.398,
      "水产养殖|生物学与生理"
     ],
     [
-     149,
-     0.398,
+     119,
+     0.396,
      "水产养殖"
     ]
    ],
@@ -7427,23 +6153,23 @@
    },
    "rel": [
     [
-     66,
-     0.587,
+     43,
+     0.579,
      "虾类"
     ],
     [
-     328,
-     0.389,
+     284,
+     0.387,
      "虾类|非洲海域"
     ],
     [
-     116,
-     0.354,
+     86,
+     0.357,
      "环境DNA"
     ],
     [
-     224,
-     0.321,
+     187,
+     0.324,
      "环境DNA"
     ]
    ],
@@ -7472,23 +6198,23 @@
    },
    "rel": [
     [
-     255,
-     0.58,
+     217,
+     0.582,
      "统计建模"
     ],
     [
-     338,
-     0.365,
+     293,
+     0.364,
      "统计建模"
     ],
     [
-     389,
-     0.347,
+     340,
+     0.344,
      "生态与栖息地"
     ],
     [
-     194,
-     0.345,
+     160,
+     0.342,
      "生态与栖息地"
     ]
    ],
@@ -7519,23 +6245,23 @@
    },
    "rel": [
     [
-     81,
-     0.527,
+     55,
+     0.522,
      "鳗鲡与鲟类"
     ],
     [
-     160,
-     0.303,
+     130,
+     0.305,
      "全球/多区域"
     ],
     [
-     385,
-     0.29,
+     336,
+     0.291,
      "鳗鲡与鲟类"
     ],
     [
-     362,
-     0.282,
+     315,
+     0.285,
      "全球/多区域"
     ]
    ],
@@ -7569,24 +6295,24 @@
    },
    "rel": [
     [
-     43,
-     0.371,
+     34,
+     0.37,
      "疾病与免疫"
     ],
     [
-     104,
-     0.307,
+     78,
+     0.309,
      "全球/多区域"
     ],
     [
-     162,
+     129,
      0.305,
-     "全球/多区域|监测与采样"
+     "全球/多区域"
     ],
     [
-     159,
-     0.303,
-     "全球/多区域"
+     219,
+     0.295,
+     "海龟与海鸟"
     ]
    ],
    "is_review": true,
@@ -7613,71 +6339,24 @@
    },
    "rel": [
     [
-     217,
-     0.366,
+     181,
+     0.36,
      "捕捞技术与兼捕|种群评估与管理"
     ],
     [
-     210,
-     0.322,
+     174,
+     0.325,
      "气候变化与环境|捕捞技术与兼捕"
     ],
     [
-     335,
-     0.268,
+     291,
+     0.265,
      "种群评估与管理"
     ],
     [
-     215,
-     0.265,
+     179,
+     0.262,
      "气候变化与环境"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.2020587",
-   "title": "Earth observations for monitoring wildfire impacts on coastal water quality",
-   "authors": "Lopez, Amanda M.; Lee, Christine M.; Blackwood, Carmen; Gierach, Michelle; Juang, Caroline S.; Pascolini-Campbell, Madeleine; Hestir, Erin L.",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-20",
-   "summary": "野火通过改变流域水文、动员泥沙、营养盐和污染物输入近海，威胁海岸带水质与海洋生境，但现有研究多聚焦流域水文与内陆水体，鲜少评估卫星对“野火—海岸”传输路径的可观测性。以加州为例梳理观测缺口，并首次开展全球尺度筛查，识别高风险海区。提出未来由高光谱、多光谱、热红外与雷达传感器组成的互补卫星星座可衔接海洋监测、捕捉野火级联影响，并用简化全球脆弱性指数标示火险、人口密集区与关键海洋资源重叠区域。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.2020587",
-   "tags": {
-    "theme": [
-     "process",
-     "eco"
-    ],
-    "species": [],
-    "region": [
-     "global"
-    ],
-    "method": [
-     "monitor"
-    ]
-   },
-   "rel": [
-    [
-     345,
-     0.37,
-     "全球/多区域|监测与采样"
-    ],
-    [
-     382,
-     0.33,
-     "监测与采样"
-    ],
-    [
-     361,
-     0.313,
-     "监测与采样"
-    ],
-    [
-     160,
-     0.305,
-     "全球/多区域|监测与采样"
     ]
    ],
    "is_review": false,
@@ -7704,72 +6383,27 @@
    },
    "rel": [
     [
-     306,
-     0.413,
+     264,
+     0.412,
      ""
     ],
     [
-     85,
-     0.318,
+     59,
+     0.32,
      "气候变化与环境"
     ],
     [
-     362,
-     0.296,
+     315,
+     0.292,
      "气候变化与环境"
     ],
     [
-     382,
+     333,
      0.286,
      ""
     ]
    ],
    "is_review": true,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.1925773",
-   "title": "A comparative study of vision foundation models for few-shot classification in benthic imagery",
-   "authors": "Elkholy, Hassan; Pizarro, Oscar; Ludvigsen, Martin",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-20",
-   "summary": "针对水下底栖图像标注成本高、标注数据稀缺且类别不平衡的问题，构建基于预训练视觉表征的 few-shot 分类（FSC）框架，系统比较骨干网络家族、模型规模、支持集构建策略与适配算法的影响，并测试基于嵌入空间聚类的优先支持集构建策略。在三个底栖图像数据集上，DINOv3 ViT-S/16 总体分类性能最优，增大骨干规模并未稳定提升精度，LinearSVC 在各数据集上表现稳定；优先标注策略在数据集 B、C 上较类别均衡随机采样分别提升 7.62 和 5.02 个百分点（95% CI 不含零），但未稳定转化为更高的 macro-F1。基于标注时间建模，FSC 相较传统 fine-tuning 在数据集 A、B 上估计分别减少 6.7% 和 21.7% 标注时间，数据集 C 上传统 fine-tuning 仅具 1.3% 的不确定优势，表明基于 DINOv3 的 few-shot 分类可作为低标注支持的有效途径，其标注时间收益取决于数据集规模、分类精度与标注成本。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.1925773",
-   "tags": {
-    "theme": [
-     "eco"
-    ],
-    "species": [],
-    "region": [],
-    "method": [
-     "ml",
-     "monitor"
-    ]
-   },
-   "rel": [
-    [
-     345,
-     0.65,
-     "机器学习与AI|监测与采样"
-    ],
-    [
-     324,
-     0.46,
-     "机器学习与AI|监测与采样"
-    ],
-    [
-     126,
-     0.392,
-     "机器学习与AI"
-    ],
-    [
-     218,
-     0.344,
-     "监测与采样"
-    ]
-   ],
-   "is_review": false,
    "high_impact": false
   },
   {
@@ -7795,23 +6429,23 @@
    },
    "rel": [
     [
-     29,
-     0.449,
+     23,
+     0.446,
      "藻类与海藻"
     ],
     [
-     28,
-     0.424,
+     22,
+     0.428,
      "藻类与海藻"
     ],
     [
-     318,
-     0.371,
+     274,
+     0.375,
      "藻类与海藻"
     ],
     [
-     292,
-     0.329,
+     250,
+     0.325,
      "藻类与海藻"
     ]
    ],
@@ -7840,24 +6474,24 @@
    },
    "rel": [
     [
-     174,
+     141,
      0.379,
      "淡水与湖泊河流"
     ],
     [
-     42,
-     0.326,
+     209,
+     0.311,
+     "淡水与湖泊河流"
+    ],
+    [
+     319,
+     0.3,
+     "淡水与湖泊河流"
+    ],
+    [
+     97,
+     0.287,
      "污染与毒理"
-    ],
-    [
-     247,
-     0.31,
-     "淡水与湖泊河流"
-    ],
-    [
-     367,
-     0.302,
-     "淡水与湖泊河流"
     ]
    ],
    "is_review": false,
@@ -7886,24 +6520,24 @@
    },
    "rel": [
     [
-     214,
-     0.275,
+     178,
+     0.274,
      "淡水与湖泊河流"
     ],
     [
-     236,
+     199,
      0.258,
      "非洲海域|淡水与湖泊河流"
     ],
     [
-     366,
+     318,
      0.252,
      "淡水与湖泊河流"
     ],
     [
-     299,
+     222,
      0.251,
-     "疾病与免疫"
+     "淡水与湖泊河流"
     ]
    ],
    "is_review": false,
@@ -7931,22 +6565,22 @@
    },
    "rel": [
     [
-     221,
-     0.272,
+     184,
+     0.27,
      "加勒比与墨西哥湾"
     ],
     [
-     20,
-     0.262,
+     16,
+     0.258,
      "保护与恢复"
     ],
     [
-     69,
-     0.253,
+     46,
+     0.252,
      "保护与恢复|经济与社会政策"
     ],
     [
-     212,
+     176,
      0.21,
      "加勒比与墨西哥湾"
     ]
@@ -7977,23 +6611,23 @@
    },
    "rel": [
     [
-     215,
+     179,
      0.463,
      "气候变化与环境|生态与栖息地"
     ],
     [
-     80,
-     0.447,
+     54,
+     0.444,
      "金枪鱼与鲭类"
     ],
     [
-     210,
-     0.434,
+     174,
+     0.431,
      "气候变化与环境|生态与栖息地"
     ],
     [
-     101,
-     0.309,
+     75,
+     0.307,
      "生态与栖息地"
     ]
    ],
@@ -8022,23 +6656,23 @@
    },
    "rel": [
     [
-     74,
+     50,
      0.525,
      "水产养殖|综述与元分析"
     ],
     [
-     178,
-     0.393,
+     145,
+     0.394,
      "机器学习与AI"
     ],
     [
-     333,
-     0.391,
+     289,
+     0.387,
      "机器学习与AI"
     ],
     [
-     126,
-     0.34,
+     96,
+     0.342,
      "机器学习与AI"
     ]
    ],
@@ -8064,69 +6698,24 @@
    },
    "rel": [
     [
-     158,
-     0.316,
+     128,
+     0.313,
      "生态与栖息地"
     ],
     [
-     194,
-     0.205,
+     160,
+     0.201,
      "生态与栖息地"
     ],
     [
-     85,
-     0.187,
+     59,
+     0.185,
      "生态与栖息地"
     ],
     [
-     255,
+     246,
      0.174,
      "生态与栖息地"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.2037603",
-   "title": "From pollution control to ecosystem-based life-cycle governance: ecological protection of coastal and marine engineering under China’s ecological and environmental code",
-   "authors": "Zhao, Ziyi; Liang, Boning; Lin, Xiangying; Zhang, Xiaoyuan; Wang, Lili",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-19",
-   "summary": "研究考察中国《生态环境法典》（2026年8月15日生效）如何为海岸与海洋工程的生态治理建立系统法律框架。通过比较历次立法条款并梳理项目全生命周期的监管要求，识别出三大转变：从污染控制转向生态优先与生态系统保护、从项目审批转向全生命周期治理、从碎片化责任规则转向更协调的责任分配与生态修复框架。法典的主要贡献在于系统整合既有法律制度并形成更连贯的法律解释框架，其实效取决于主管机关依法行使监管权、配套法规落实及与其他领域立法的有效衔接。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.2037603",
-   "tags": {
-    "theme": [
-     "econ",
-     "pollution"
-    ],
-    "species": [],
-    "region": [
-     "china"
-    ],
-    "method": []
-   },
-   "rel": [
-    [
-     44,
-     0.66,
-     "中国近海与内陆"
-    ],
-    [
-     113,
-     0.66,
-     "中国近海与内陆"
-    ],
-    [
-     51,
-     0.644,
-     "中国近海与内陆"
-    ],
-    [
-     48,
-     0.374,
-     "经济与社会政策"
     ]
    ],
    "is_review": false,
@@ -8156,23 +6745,23 @@
    },
    "rel": [
     [
-     292,
-     0.519,
+     250,
+     0.513,
      "藻类与海藻"
     ],
     [
-     194,
-     0.391,
+     160,
+     0.389,
      "综述与元分析"
     ],
     [
-     202,
-     0.336,
+     167,
+     0.333,
      "综述与元分析"
     ],
     [
-     360,
-     0.313,
+     313,
+     0.311,
      "藻类与海藻"
     ]
    ],
@@ -8201,23 +6790,23 @@
    },
    "rel": [
     [
-     166,
+     134,
      0.379,
      "淡水与湖泊河流"
     ],
     [
-     143,
-     0.302,
+     113,
+     0.304,
      "水产养殖|污染与毒理"
     ],
     [
-     181,
+     148,
      0.283,
      ""
     ],
     [
-     357,
-     0.261,
+     310,
+     0.263,
      "污染与毒理"
     ]
    ],
@@ -8245,23 +6834,23 @@
    },
    "rel": [
     [
-     305,
-     0.37,
+     263,
+     0.373,
      "水产养殖"
     ],
     [
-     22,
-     0.351,
+     17,
+     0.345,
      "水产养殖"
     ],
     [
-     249,
-     0.325,
+     211,
+     0.324,
      "经济与社会政策"
     ],
     [
-     144,
-     0.311,
+     114,
+     0.307,
      "水产养殖|经济与社会政策"
     ]
    ],
@@ -8287,23 +6876,23 @@
    },
    "rel": [
     [
-     271,
-     0.261,
+     231,
+     0.258,
      "水产养殖"
     ],
     [
-     146,
-     0.238,
+     116,
+     0.234,
      "水产养殖"
     ],
     [
-     263,
+     224,
      0.226,
      "水产养殖"
     ],
     [
-     177,
-     0.223,
+     144,
+     0.222,
      "水产养殖"
     ]
    ],
@@ -8336,23 +6925,23 @@
    },
    "rel": [
     [
-     147,
-     0.532,
+     117,
+     0.528,
      "鲑鳟鱼类"
     ],
     [
-     380,
+     331,
      0.428,
      "水产养殖"
     ],
     [
-     347,
-     0.39,
+     301,
+     0.385,
      "鲑鳟鱼类"
     ],
     [
-     16,
-     0.359,
+     14,
+     0.356,
      "鲑鳟鱼类"
     ]
    ],
@@ -8381,23 +6970,23 @@
    },
    "rel": [
     [
-     361,
-     0.476,
+     314,
+     0.475,
      "监测与采样"
     ],
     [
-     225,
-     0.408,
+     188,
+     0.406,
      "监测与采样"
     ],
     [
-     143,
-     0.407,
+     113,
+     0.403,
      "监测与采样"
     ],
     [
-     170,
-     0.393,
+     138,
+     0.394,
      "机器学习与AI"
     ]
    ],
@@ -8425,24 +7014,24 @@
    },
    "rel": [
     [
-     134,
-     0.301,
+     104,
+     0.311,
      ""
     ],
     [
-     126,
-     0.258,
+     96,
+     0.26,
      "水产养殖"
     ],
     [
-     164,
-     0.223,
+     60,
+     0.221,
      ""
     ],
     [
-     86,
-     0.215,
-     ""
+     173,
+     0.21,
+     "水产养殖"
     ]
    ],
    "is_review": false,
@@ -8473,24 +7062,24 @@
    },
    "rel": [
     [
-     247,
-     0.42,
+     209,
+     0.418,
      "鲑鳟鱼类|淡水与湖泊河流"
     ],
     [
-     154,
-     0.415,
+     124,
+     0.411,
      "鲑鳟鱼类"
     ],
     [
-     67,
-     0.386,
+     44,
+     0.385,
      "淡水与湖泊河流"
     ],
     [
-     73,
-     0.369,
-     "鲑鳟鱼类"
+     187,
+     0.364,
+     "鲑鳟鱼类|淡水与湖泊河流"
     ]
    ],
    "is_review": true,
@@ -8518,22 +7107,22 @@
    },
    "rel": [
     [
-     230,
+     193,
      0.63,
      "鲤科鱼类"
     ],
     [
-     307,
-     0.373,
+     265,
+     0.369,
      "鲤科鱼类"
     ],
     [
-     224,
-     0.361,
+     187,
+     0.357,
      "疾病与免疫"
     ],
     [
-     174,
+     141,
      0.283,
      ""
     ]
@@ -8564,23 +7153,23 @@
    },
    "rel": [
     [
-     240,
+     203,
      0.399,
      "淡水与湖泊河流|监测与采样"
     ],
     [
-     346,
-     0.332,
+     300,
+     0.33,
      "淡水与湖泊河流|监测与采样"
     ],
     [
-     280,
-     0.324,
+     240,
+     0.322,
      "淡水与湖泊河流|监测与采样"
     ],
     [
-     116,
-     0.308,
+     86,
+     0.309,
      "淡水与湖泊河流|监测与采样"
     ]
    ],
@@ -8609,23 +7198,23 @@
    },
    "rel": [
     [
-     380,
+     331,
      0.42,
      "加工品质与食品"
     ],
     [
-     196,
-     0.235,
+     162,
+     0.238,
      "气候变化与环境"
     ],
     [
-     345,
-     0.218,
-     "机器学习与AI"
+     155,
+     0.213,
+     "加工品质与食品"
     ],
     [
-     383,
-     0.213,
+     334,
+     0.212,
      "机器学习与AI"
     ]
    ],
@@ -8653,23 +7242,23 @@
    },
    "rel": [
     [
-     79,
-     0.372,
+     53,
+     0.368,
      ""
     ],
     [
-     151,
-     0.265,
+     121,
+     0.268,
      "遗传与基因组"
     ],
     [
-     315,
-     0.237,
+     271,
+     0.235,
      "遗传与基因组"
     ],
     [
-     194,
-     0.215,
+     160,
+     0.216,
      "综述与元分析"
     ]
    ],
@@ -8696,22 +7285,22 @@
    },
    "rel": [
     [
-     338,
-     0.435,
+     293,
+     0.444,
      "生态与栖息地"
     ],
     [
-     11,
-     0.391,
+     9,
+     0.394,
      ""
     ],
     [
-     350,
+     303,
      0.378,
      "生态与栖息地|种群评估与管理"
     ],
     [
-     335,
+     291,
      0.37,
      "种群评估与管理"
     ]
@@ -8740,24 +7329,24 @@
    },
    "rel": [
     [
-     182,
-     0.302,
+     149,
+     0.298,
      "淡水与湖泊河流"
     ],
     [
-     123,
-     0.273,
+     93,
+     0.27,
      "淡水与湖泊河流"
     ],
     [
-     353,
-     0.26,
+     306,
+     0.259,
      "淡水与湖泊河流"
     ],
     [
-     217,
-     0.25,
-     "种群评估与管理"
+     16,
+     0.247,
+     "淡水与湖泊河流"
     ]
    ],
    "is_review": false,
@@ -8784,23 +7373,23 @@
    },
    "rel": [
     [
-     203,
+     168,
      0.428,
      "鲉形目与底栖鱼"
     ],
     [
-     32,
-     0.384,
+     26,
+     0.383,
      "遗传与基因组"
     ],
     [
-     106,
-     0.371,
+     80,
+     0.367,
      "遗传与基因组"
     ],
     [
-     289,
-     0.347,
+     249,
+     0.343,
      "遗传与基因组"
     ]
    ],
@@ -8831,22 +7420,22 @@
    },
    "rel": [
     [
-     177,
+     144,
      0.356,
      "分布模型与栖息地评价|统计建模"
     ],
     [
-     105,
-     0.282,
+     79,
+     0.281,
      "其他淡水鱼"
     ],
     [
-     380,
-     0.278,
+     331,
+     0.276,
      "加工品质与食品"
     ],
     [
-     248,
+     210,
      0.226,
      "其他淡水鱼"
     ]
@@ -8879,24 +7468,24 @@
    },
    "rel": [
     [
-     39,
-     0.319,
-     "地中海与黑海|遥感与空间分析"
-    ],
-    [
-     337,
+     292,
      0.308,
      "地中海与黑海"
     ],
     [
-     45,
-     0.268,
+     35,
+     0.266,
      "地中海与黑海"
     ],
     [
-     195,
-     0.257,
+     161,
+     0.258,
      "地中海与黑海"
+    ],
+    [
+     338,
+     0.234,
+     "遥感与空间分析"
     ]
    ],
    "is_review": false,
@@ -8925,71 +7514,24 @@
    },
    "rel": [
     [
-     283,
-     0.392,
+     243,
+     0.39,
      "鲆鲽类"
     ],
     [
-     214,
-     0.309,
+     178,
+     0.306,
      "生物学与生理"
     ],
     [
-     247,
-     0.24,
+     209,
+     0.239,
      "生物学与生理|生态与栖息地"
     ],
     [
-     325,
-     0.22,
+     281,
+     0.217,
      "生态与栖息地"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.1952449",
-   "title": "Spatiotemporal shoreline and sea level dynamics along the Kenyan coast (2000-2024): patterns of erosion, accretion, and spatial autocorrelation",
-   "authors": "Mbugua, James; Kipkulei, Harison K.; Watene, George; Ogega, Obed; Osuka-Edeye, Kennedy; Obura, David",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-19",
-   "summary": "基于2000–2024年25期Landsat岸线数据与DSAS的加权线性回归（12 455条断面），分析肯尼亚400 km海岸的岸线变化及其与GLORYS12V1再分析海平面趋势/变率的关联，并采用OLS、空间滞后模型和GWR检验空间依赖。岸线变化呈显著空间异质性：Kilifi与Kwale-Mombasa岸段净淤积（平均WLR分别为0.57和0.51 m/yr），Tana-Manda岸段净侵蚀（-0.92 m/yr，36.23%断面显著侵蚀），全国平均净岸线位移+9.45 m掩盖了这种差异；岸线变化具强空间自相关（Moran's I=0.866），12.01%断面构成显著局部聚集。在预测因子原生尺度上海平面趋势与变率均未检出与岸线变化的关联（OLS R²≤0.028，GWR调整R²<0），岸线变化更可能受局部地貌与人为因素驱动，海岸管理需以空间显式、不确定性加权的评估替代全国平均值。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.1952449",
-   "tags": {
-    "theme": [
-     "misc"
-    ],
-    "species": [],
-    "region": [
-     "africa",
-     "india"
-    ],
-    "method": [
-     "sdm"
-    ]
-   },
-   "rel": [
-    [
-     210,
-     0.28,
-     "分布模型与栖息地评价"
-    ],
-    [
-     382,
-     0.272,
-     "印度洋与南亚"
-    ],
-    [
-     144,
-     0.262,
-     "非洲海域"
-    ],
-    [
-     118,
-     0.256,
-     "印度洋与南亚"
     ]
    ],
    "is_review": false,
@@ -9021,23 +7563,23 @@
    },
    "rel": [
     [
-     252,
+     214,
      0.501,
      "鲨鱼与鳐类"
     ],
     [
-     72,
-     0.409,
+     48,
+     0.407,
      "鲨鱼与鳐类|环境DNA"
     ],
     [
-     338,
-     0.357,
+     293,
+     0.354,
      "环境DNA"
     ],
     [
-     306,
-     0.343,
+     264,
+     0.34,
      "环境DNA"
     ]
    ],
@@ -9065,22 +7607,22 @@
    },
    "rel": [
     [
-     101,
-     0.353,
+     75,
+     0.351,
      "头足类"
     ],
     [
-     10,
-     0.333,
+     8,
+     0.331,
      "头足类"
     ],
     [
-     46,
-     0.225,
+     36,
+     0.226,
      "捕捞技术与兼捕"
     ],
     [
-     210,
+     174,
      0.208,
      "捕捞技术与兼捕"
     ]
@@ -9111,23 +7653,23 @@
    },
    "rel": [
     [
-     303,
-     0.482,
+     261,
+     0.483,
      "全球/多区域"
     ],
     [
-     173,
-     0.391,
+     140,
+     0.389,
      "综述与元分析"
     ],
     [
-     158,
-     0.345,
+     128,
+     0.342,
      "生态与栖息地"
     ],
     [
-     116,
-     0.339,
+     86,
+     0.341,
      "淡水与湖泊河流|全球/多区域"
     ]
    ],
@@ -9156,23 +7698,23 @@
    },
    "rel": [
     [
-     369,
-     0.377,
+     321,
+     0.375,
      "遗传与基因组"
     ],
     [
-     118,
-     0.313,
+     88,
+     0.311,
      "遗传与基因组"
     ],
     [
-     33,
-     0.309,
+     27,
+     0.307,
      "遗传与基因组"
     ],
     [
-     116,
-     0.298,
+     86,
+     0.297,
      "保护与恢复|遗传与基因组"
     ]
    ],
@@ -9200,23 +7742,23 @@
    },
    "rel": [
     [
-     383,
-     0.362,
+     334,
+     0.361,
      "中国近海与内陆"
     ],
     [
-     144,
-     0.291,
+     114,
+     0.295,
      "中国近海与内陆"
     ],
     [
-     103,
-     0.281,
+     77,
+     0.284,
      "中国近海与内陆"
     ],
     [
-     122,
-     0.264,
+     92,
+     0.263,
      "中国近海与内陆"
     ]
    ],
@@ -9244,23 +7786,23 @@
    },
    "rel": [
     [
-     64,
+     41,
      0.525,
      "水产养殖|营养与饲料"
     ],
     [
-     329,
-     0.31,
+     285,
+     0.306,
      "营养与饲料|综述与元分析"
     ],
     [
-     299,
-     0.285,
+     257,
+     0.286,
      "水产养殖"
     ],
     [
-     376,
-     0.276,
+     327,
+     0.274,
      "水产养殖|综述与元分析"
     ]
    ],
@@ -9287,23 +7829,23 @@
    },
    "rel": [
     [
-     327,
-     0.278,
+     283,
+     0.281,
      "营养与饲料"
     ],
     [
-     315,
-     0.266,
+     271,
+     0.264,
      "营养与饲料|加工品质与食品"
     ],
     [
-     258,
-     0.242,
+     269,
+     0.233,
      "营养与饲料"
     ],
     [
-     312,
-     0.235,
+     309,
+     0.216,
      "营养与饲料"
     ]
    ],
@@ -9329,66 +7871,23 @@
    },
    "rel": [
     [
-     90,
+     64,
      0.213,
      "经济与社会政策"
     ],
     [
-     254,
-     0.175,
+     216,
+     0.174,
      "经济与社会政策"
     ],
     [
-     352,
-     0.17,
-     "经济与社会政策"
-    ],
-    [
-     303,
+     305,
      0.167,
      "经济与社会政策"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.18543/baidc.3525",
-   "title": "The potential of the social economy and taxation to address challenges facing the maritime and fisheries sector in the Basque Country",
-   "authors": "Aranburu, Edriga",
-   "journal": "Boletín de la Asociación Internacional de Derecho Cooperativo",
-   "date": "2026-11-18",
-   "summary": "该研究分析社会 economy 与税收作为巴斯克地区海洋与渔业部门公正生态转型驱动力的作用，梳理了从国际准则到巴斯克经济协定下特别法律规定所赋予权力的部门现状与监管框架，重点关注社会维度。研究识别了将社会 economy 全面融入该地区经济、社会与环境发展的挑战与机遇，以助力可持续生态转型。",
-   "summary_en": false,
-   "url": "https://doi.org/10.18543/baidc.3525",
-   "tags": {
-    "theme": [
-     "gear",
-     "econ"
-    ],
-    "species": [],
-    "region": [],
-    "method": []
-   },
-   "rel": [
-    [
-     331,
-     0.399,
-     "经济与社会政策"
     ],
     [
-     172,
-     0.298,
-     "经济与社会政策"
-    ],
-    [
-     44,
-     0.249,
-     "经济与社会政策"
-    ],
-    [
-     26,
-     0.246,
+     261,
+     0.165,
      "经济与社会政策"
     ]
    ],
@@ -9416,23 +7915,23 @@
    },
    "rel": [
     [
-     137,
-     0.318,
+     107,
+     0.317,
      "经济与社会政策"
     ],
     [
-     239,
-     0.301,
+     202,
+     0.303,
      "经济与社会政策|综述与元分析"
     ],
     [
-     40,
-     0.298,
+     32,
+     0.303,
      "气候变化与环境|经济与社会政策"
     ],
     [
-     172,
-     0.29,
+     184,
+     0.274,
      "经济与社会政策"
     ]
    ],
@@ -9462,22 +7961,22 @@
    },
    "rel": [
     [
-     98,
-     0.365,
+     72,
+     0.368,
      "鲑鳟鱼类"
     ],
     [
-     194,
-     0.336,
+     160,
+     0.335,
      "综述与元分析"
     ],
     [
-     173,
-     0.336,
+     140,
+     0.333,
      "综述与元分析"
     ],
     [
-     120,
+     90,
      0.314,
      "鲑鳟鱼类"
     ]
@@ -9510,23 +8009,23 @@
    },
    "rel": [
     [
-     187,
+     154,
      0.428,
      "鲉形目与底栖鱼"
     ],
     [
-     167,
-     0.247,
+     135,
+     0.246,
      "疾病与免疫"
     ],
     [
-     85,
-     0.237,
+     59,
+     0.241,
      "北太平洋"
     ],
     [
-     292,
-     0.237,
+     250,
+     0.236,
      "北太平洋"
     ]
    ],
@@ -9552,69 +8051,19 @@
    },
    "rel": [
     [
-     74,
-     0.193,
+     50,
+     0.198,
      ""
     ],
     [
-     357,
-     0.175,
+     310,
+     0.18,
      ""
     ],
     [
-     126,
-     0.159,
+     96,
+     0.163,
      ""
-    ],
-    [
-     47,
-     0.142,
-     ""
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3390/diagnostics16223848",
-   "title": "Molecular Diagnostic Yield of NGS and MLPA/FISH in Neurofibromatosis Type 1: A Regional Romanian Cohort Study",
-   "authors": "Jurca, Aurora Alexandra; Ghitea, Timea Claudia; Buzlea-Zaha, Cristina; Hodișan, Ramona; Andreescu, Nicoleta; Chirita-Emandi, Adela; Bănescu, Claudia; Vesa, Cosmin Mihai; Iuhas, Oana; Kozma, Kinga",
-   "journal": "Diagnostics",
-   "date": "2026-11-18",
-   "summary": "Background/Objectives: Neurofibromatosis type 1 (NF1) has variable clinical expression and marked allelic heterogeneity.",
-   "summary_en": true,
-   "url": "https://doi.org/10.3390/diagnostics16223848",
-   "tags": {
-    "theme": [
-     "stock",
-     "disease"
-    ],
-    "species": [],
-    "region": [],
-    "method": [
-     "edna"
-    ]
-   },
-   "rel": [
-    [
-     220,
-     0.332,
-     ""
-    ],
-    [
-     218,
-     0.205,
-     "环境DNA"
-    ],
-    [
-     295,
-     0.197,
-     ""
-    ],
-    [
-     35,
-     0.189,
-     "环境DNA"
     ]
    ],
    "is_review": false,
@@ -9644,23 +8093,23 @@
    },
    "rel": [
     [
-     282,
-     0.519,
+     242,
+     0.518,
      "调查与问卷"
     ],
     [
-     125,
-     0.404,
+     95,
+     0.403,
      "东南亚与西太|调查与问卷"
     ],
     [
-     240,
-     0.397,
+     203,
+     0.394,
      "东南亚与西太|监测与采样"
     ],
     [
-     124,
-     0.319,
+     94,
+     0.318,
      "东南亚与西太|监测与采样"
     ]
    ],
@@ -9692,23 +8141,23 @@
    },
    "rel": [
     [
-     365,
-     0.593,
+     317,
+     0.589,
      "鲑鳟鱼类|淡水与湖泊河流"
     ],
     [
-     247,
-     0.361,
+     209,
+     0.36,
      "鲑鳟鱼类|淡水与湖泊河流"
     ],
     [
-     180,
+     147,
      0.354,
      "鲑鳟鱼类|淡水与湖泊河流"
     ],
     [
-     60,
-     0.341,
+     38,
+     0.339,
      "鲑鳟鱼类"
     ]
    ],
@@ -9736,22 +8185,22 @@
    },
    "rel": [
     [
-     24,
-     0.466,
+     19,
+     0.461,
      "印度洋与南亚"
     ],
     [
-     382,
-     0.444,
+     333,
+     0.439,
      "印度洋与南亚"
     ],
     [
-     94,
-     0.27,
+     241,
+     0.268,
      "印度洋与南亚"
     ],
     [
-     281,
+     68,
      0.268,
      "印度洋与南亚"
     ]
@@ -9783,23 +8232,23 @@
    },
    "rel": [
     [
-     134,
-     0.384,
+     104,
+     0.386,
      "机器学习与AI"
     ],
     [
-     147,
+     117,
      0.32,
      "水产养殖"
     ],
     [
-     156,
+     280,
      0.31,
-     "水产养殖|生物学与生理"
+     "机器学习与AI"
     ],
     [
-     8,
-     0.3,
+     6,
+     0.309,
      "水产养殖"
     ]
    ],
@@ -9831,23 +8280,23 @@
    },
    "rel": [
     [
-     215,
-     0.452,
+     179,
+     0.45,
      "饵料鱼类"
     ],
     [
-     169,
-     0.434,
+     137,
+     0.431,
      "气候变化与环境|生态与栖息地"
     ],
     [
-     161,
-     0.322,
+     131,
+     0.325,
      "气候变化与环境|捕捞技术与兼捕"
     ],
     [
-     392,
-     0.314,
+     343,
+     0.313,
      "饵料鱼类"
     ]
    ],
@@ -9873,22 +8322,22 @@
    },
    "rel": [
     [
-     89,
-     0.322,
+     63,
+     0.318,
      "种群评估与管理"
     ],
     [
-     335,
-     0.282,
+     291,
+     0.28,
      "种群评估与管理"
     ],
     [
-     133,
-     0.262,
+     103,
+     0.259,
      "种群评估与管理"
     ],
     [
-     185,
+     93,
      0.255,
      "种群评估与管理"
     ]
@@ -9917,24 +8366,24 @@
    },
    "rel": [
     [
-     29,
-     0.467,
+     23,
+     0.472,
      "生态与栖息地"
     ],
     [
-     324,
+     280,
      0.453,
      "加勒比与墨西哥湾"
     ],
     [
-     363,
-     0.346,
-     ""
+     180,
+     0.309,
+     "加勒比与墨西哥湾"
     ],
     [
-     216,
-     0.308,
-     "加勒比与墨西哥湾"
+     56,
+     0.304,
+     "生态与栖息地"
     ]
    ],
    "is_review": false,
@@ -9961,23 +8410,23 @@
    },
    "rel": [
     [
-     347,
-     0.379,
+     301,
+     0.375,
      "鲑鳟鱼类"
     ],
     [
-     60,
+     38,
      0.347,
      "鲑鳟鱼类"
     ],
     [
-     147,
-     0.345,
+     117,
+     0.342,
      "鲑鳟鱼类"
     ],
     [
-     177,
-     0.331,
+     144,
+     0.327,
      "鲑鳟鱼类"
     ]
    ],
@@ -10005,23 +8454,23 @@
    },
    "rel": [
     [
-     190,
-     0.309,
+     157,
+     0.306,
      "生物学与生理"
     ],
     [
-     135,
+     105,
      0.298,
      "淡水与湖泊河流"
     ],
     [
-     167,
-     0.275,
+     135,
+     0.274,
      "淡水与湖泊河流"
     ],
     [
-     236,
-     0.26,
+     199,
+     0.258,
      "淡水与湖泊河流"
     ]
    ],
@@ -10052,23 +8501,23 @@
    },
    "rel": [
     [
-     265,
+     226,
      0.63,
      "饵料鱼类"
     ],
     [
-     169,
+     137,
      0.463,
      "气候变化与环境|生态与栖息地"
     ],
     [
-     210,
-     0.452,
+     174,
+     0.45,
      "饵料鱼类"
     ],
     [
-     255,
-     0.398,
+     217,
+     0.402,
      "统计建模"
     ]
    ],
@@ -10098,23 +8547,23 @@
    },
    "rel": [
     [
-     212,
-     0.308,
+     176,
+     0.309,
      "加勒比与墨西哥湾"
     ],
     [
-     85,
-     0.293,
+     59,
+     0.291,
      "生态与栖息地|种群评估与管理"
     ],
     [
-     255,
-     0.263,
+     217,
+     0.26,
      "生态与栖息地"
     ],
     [
-     161,
-     0.249,
+     131,
+     0.248,
      "种群评估与管理"
     ]
    ],
@@ -10144,23 +8593,23 @@
    },
    "rel": [
     [
-     90,
-     0.398,
+     64,
+     0.395,
      "全球/多区域"
     ],
     [
-     161,
-     0.366,
+     131,
+     0.36,
      "捕捞技术与兼捕|种群评估与管理"
     ],
     [
-     331,
-     0.347,
+     287,
+     0.342,
      "全球/多区域"
     ],
     [
-     233,
-     0.346,
+     196,
+     0.342,
      "全球/多区域"
     ]
    ],
@@ -10193,24 +8642,24 @@
    },
    "rel": [
     [
-     224,
-     0.505,
+     187,
+     0.501,
      "鲑鳟鱼类|环境DNA"
     ],
     [
-     383,
-     0.362,
+     334,
+     0.359,
      "环境DNA"
     ],
     [
-     306,
-     0.353,
+     264,
+     0.351,
      "环境DNA|监测与采样"
     ],
     [
-     345,
-     0.348,
-     "监测与采样"
+     86,
+     0.315,
+     "环境DNA|监测与采样"
     ]
    ],
    "is_review": false,
@@ -10236,66 +8685,24 @@
    },
    "rel": [
     [
-     349,
-     0.331,
-     ""
-    ],
-    [
-     131,
+     101,
      0.244,
      "水产养殖"
     ],
     [
-     147,
-     0.211,
+     117,
+     0.212,
      "水产养殖"
     ],
     [
-     286,
-     0.184,
+     246,
+     0.185,
      "水产养殖"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.53730/ijhs.v10n3.16037",
-   "title": "role of complex karyotype in the diagnosis of chronic lymphocytic leukemia: Integration of conventional cytogenetics and FISH analysis",
-   "authors": "Caliendo, Irene; Puopolo, Francesco; Fabbricatore, Carmela; Petrizzi, Valeria Belsito; Malferà, Giuseppe; Langella, Maria; Califano, Catello",
-   "journal": "International journal of health sciences",
-   "date": "2026-11-17",
-   "summary": "Complex karyotype (CK) is an emerging high-risk feature in chronic lymphocytic leukemia (CLL). We evaluated its diagnostic and prognostic relevance by integrating conventional cytogenetic analysis (CCA) and fluorescence…",
-   "summary_en": true,
-   "url": "https://doi.org/10.53730/ijhs.v10n3.16037",
-   "tags": {
-    "theme": [
-     "gene"
-    ],
-    "species": [],
-    "region": [],
-    "method": []
-   },
-   "rel": [
-    [
-     205,
-     0.332,
-     ""
     ],
     [
-     134,
-     0.159,
-     ""
-    ],
-    [
-     89,
-     0.139,
-     "遗传与基因组"
-    ],
-    [
-     59,
-     0.134,
-     "遗传与基因组"
+     138,
+     0.167,
+     "水产养殖"
     ]
    ],
    "is_review": false,
@@ -10326,23 +8733,23 @@
    },
    "rel": [
     [
-     324,
-     0.332,
+     280,
+     0.334,
      "加勒比与墨西哥湾|监测与采样"
     ],
     [
-     239,
+     202,
      0.311,
      "经济与社会政策"
     ],
     [
-     23,
-     0.303,
+     18,
+     0.306,
      "经济与社会政策"
     ],
     [
-     32,
-     0.293,
+     26,
+     0.291,
      "鲈鱼与石斑鱼"
     ]
    ],
@@ -10372,22 +8779,22 @@
    },
    "rel": [
     [
-     128,
-     0.441,
+     98,
+     0.442,
      "经济与社会政策"
     ],
     [
-     368,
+     320,
      0.408,
      "东南亚与西太"
     ],
     [
-     351,
+     304,
      0.387,
      "东南亚与西太"
     ],
     [
-     301,
+     259,
      0.374,
      "调查与问卷"
     ]
@@ -10417,23 +8824,23 @@
    },
    "rel": [
     [
-     364,
-     0.514,
+     316,
+     0.511,
      "东南亚与西太"
     ],
     [
-     276,
-     0.404,
+     236,
+     0.4,
      "东南亚与西太"
     ],
     [
-     359,
-     0.39,
+     312,
+     0.385,
      "水产养殖|经济与社会政策"
     ],
     [
-     142,
-     0.354,
+     112,
+     0.352,
      "水产养殖"
     ]
    ],
@@ -10466,24 +8873,24 @@
    },
    "rel": [
     [
-     247,
-     0.584,
+     209,
+     0.579,
      "鲑鳟鱼类|淡水与湖泊河流"
     ],
     [
-     16,
-     0.577,
+     14,
+     0.572,
      "鲑鳟鱼类"
     ],
     [
-     154,
-     0.506,
-     "鲑鳟鱼类"
-    ],
-    [
-     218,
-     0.505,
+     182,
+     0.501,
      "鲑鳟鱼类|环境DNA"
+    ],
+    [
+     124,
+     0.499,
+     "鲑鳟鱼类"
     ]
    ],
    "is_review": false,
@@ -10510,23 +8917,23 @@
    },
    "rel": [
     [
-     361,
+     314,
      0.6,
      "监测与采样"
     ],
     [
-     178,
-     0.408,
+     145,
+     0.406,
      "监测与采样"
     ],
     [
-     147,
-     0.341,
+     117,
+     0.344,
      "水产养殖"
     ],
     [
-     305,
-     0.324,
+     263,
+     0.322,
      "水产养殖"
     ]
    ],
@@ -10556,22 +8963,22 @@
    "rel": [
     [
      4,
-     0.3,
+     0.297,
      "经济与社会政策"
     ],
     [
-     206,
-     0.247,
+     170,
+     0.246,
      "调查与问卷"
     ],
     [
-     371,
+     323,
      0.242,
      "调查与问卷"
     ],
     [
-     282,
-     0.239,
+     242,
+     0.238,
      "调查与问卷"
     ]
    ],
@@ -10597,23 +9004,23 @@
    },
    "rel": [
     [
-     33,
-     0.334,
+     27,
+     0.329,
      "遗传与基因组"
     ],
     [
-     343,
-     0.263,
+     298,
+     0.259,
      "遗传与基因组"
     ],
     [
-     62,
-     0.232,
+     39,
+     0.23,
      ""
     ],
     [
-     273,
-     0.224,
+     233,
+     0.22,
      "遗传与基因组"
     ]
    ],
@@ -10645,24 +9052,24 @@
    },
    "rel": [
     [
-     10,
-     0.5,
+     8,
+     0.499,
      "捕捞技术与兼捕|种群评估与管理"
     ],
     [
-     320,
-     0.479,
+     276,
+     0.478,
      "监测与采样"
     ],
     [
-     27,
-     0.466,
-     "监测与采样"
-    ],
-    [
-     240,
+     203,
      0.381,
      "东南亚与西太|监测与采样"
+    ],
+    [
+     264,
+     0.312,
+     "监测与采样"
     ]
    ],
    "is_review": false,
@@ -10689,23 +9096,23 @@
    },
    "rel": [
     [
-     372,
+     324,
      0.5,
      "污染与毒理"
     ],
     [
-     14,
+     12,
      0.444,
      "污染与毒理"
     ],
     [
-     281,
-     0.362,
+     241,
+     0.366,
      "污染与毒理"
     ],
     [
-     141,
-     0.271,
+     111,
+     0.27,
      "污染与毒理"
     ]
    ],
@@ -10734,23 +9141,23 @@
    },
    "rel": [
     [
-     181,
+     148,
      0.63,
      "鲤科鱼类"
     ],
     [
-     307,
-     0.367,
+     265,
+     0.366,
      "鲤科鱼类"
     ],
     [
-     36,
-     0.358,
+     30,
+     0.357,
      "疾病与免疫"
     ],
     [
-     224,
-     0.34,
+     187,
+     0.335,
      "疾病与免疫"
     ]
    ],
@@ -10778,24 +9185,24 @@
    },
    "rel": [
     [
-     391,
-     0.373,
+     342,
+     0.372,
      "生物学与生理"
     ],
     [
-     165,
-     0.22,
+     133,
+     0.219,
      ""
     ],
     [
-     316,
-     0.192,
-     ""
-    ],
-    [
-     369,
+     321,
      0.192,
      "其他淡水鱼"
+    ],
+    [
+     272,
+     0.19,
+     ""
     ]
    ],
    "is_review": false,
@@ -10826,24 +9233,24 @@
    },
    "rel": [
     [
-     37,
-     0.283,
+     31,
+     0.281,
      "耳石与硬组织"
     ],
     [
-     310,
-     0.264,
-     "极地与南大洋"
-    ],
-    [
-     169,
+     137,
      0.263,
      "生态与栖息地"
     ],
     [
-     138,
-     0.259,
+     268,
+     0.261,
      "极地与南大洋"
+    ],
+    [
+     63,
+     0.258,
+     "遗传与基因组"
     ]
    ],
    "is_review": false,
@@ -10874,22 +9281,22 @@
    },
    "rel": [
     [
-     217,
-     0.346,
+     181,
+     0.342,
      "全球/多区域"
     ],
     [
-     280,
-     0.338,
+     240,
+     0.335,
      "统计建模"
     ],
     [
-     158,
-     0.328,
+     128,
+     0.33,
      "统计建模"
     ],
     [
-     253,
+     215,
      0.324,
      "鲤科鱼类"
     ]
@@ -10919,23 +9326,23 @@
    },
    "rel": [
     [
-     144,
-     0.427,
+     114,
+     0.424,
      "非洲海域"
     ],
     [
-     359,
-     0.42,
+     312,
+     0.417,
      "非洲海域"
     ],
     [
-     371,
-     0.362,
+     323,
+     0.358,
      "非洲海域"
     ],
     [
-     243,
-     0.27,
+     205,
+     0.267,
      "非洲海域"
     ]
    ],
@@ -10964,22 +9371,22 @@
    "rel": [
     [
      2,
-     0.328,
+     0.321,
      ""
     ],
     [
-     307,
-     0.259,
+     265,
+     0.258,
      "鲤科鱼类"
     ],
     [
-     266,
-     0.215,
+     227,
+     0.211,
      ""
     ],
     [
-     253,
-     0.209,
+     215,
+     0.207,
      "鲤科鱼类"
     ]
    ],
@@ -11010,23 +9417,23 @@
    },
    "rel": [
     [
-     275,
-     0.457,
+     235,
+     0.454,
      "非洲海域"
     ],
     [
-     328,
-     0.388,
+     284,
+     0.387,
      "非洲海域"
     ],
     [
-     10,
+     8,
      0.329,
      "经济与社会政策|捕捞技术与兼捕"
     ],
     [
-     12,
-     0.325,
+     10,
+     0.32,
      "经济与社会政策|种群评估与管理"
     ]
    ],
@@ -11052,13 +9459,13 @@
    },
    "rel": [
     [
-     155,
+     125,
      0.227,
      ""
     ],
     [
-     274,
-     0.184,
+     234,
+     0.182,
      ""
     ]
    ],
@@ -11084,23 +9491,23 @@
    },
    "rel": [
     [
-     89,
-     0.361,
+     63,
+     0.363,
      "种群评估与管理"
     ],
     [
-     80,
+     54,
      0.338,
      "种群评估与管理"
     ],
     [
-     90,
-     0.316,
+     64,
+     0.315,
      "种群评估与管理"
     ],
     [
-     275,
-     0.24,
+     235,
+     0.239,
      "种群评估与管理"
     ]
    ],
@@ -11127,24 +9534,24 @@
    },
    "rel": [
     [
-     23,
-     0.332,
+     18,
+     0.334,
      "经济与社会政策"
     ],
     [
-     333,
-     0.331,
+     289,
+     0.327,
      "综述与元分析"
     ],
     [
-     7,
+     184,
      0.311,
      "经济与社会政策"
     ],
     [
-     221,
-     0.311,
-     "经济与社会政策"
+     166,
+     0.303,
+     "经济与社会政策|综述与元分析"
     ]
    ],
    "is_review": true,
@@ -11176,22 +9583,22 @@
    },
    "rel": [
     [
-     280,
-     0.498,
+     240,
+     0.497,
      "淡水与湖泊河流|监测与采样"
     ],
     [
-     67,
-     0.416,
+     44,
+     0.413,
      "淡水与湖泊河流"
     ],
     [
-     353,
-     0.411,
+     306,
+     0.408,
      "淡水与湖泊河流"
     ],
     [
-     182,
+     149,
      0.399,
      "淡水与湖泊河流|监测与采样"
     ]
@@ -11224,66 +9631,24 @@
    },
    "rel": [
     [
-     116,
-     0.67,
+     86,
+     0.665,
      "淡水与湖泊河流|环境DNA"
     ],
     [
-     59,
-     0.535,
+     37,
+     0.532,
      "淡水与湖泊河流|环境DNA"
     ],
     [
-     280,
+     240,
      0.458,
      "淡水与湖泊河流|统计建模"
     ],
     [
-     383,
-     0.447,
+     334,
+     0.444,
      "环境DNA"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/feart.2026.2043947",
-   "title": "Correction: Hydrological threshold-based ecological water withdrawal management for protecting fish egg and larval drift in a large water-transfer project",
-   "authors": "Xiong, Ling; Zhou, Song-Tao; Yan, Tao; Jiang, You-Gao; He, Bin; Cheng, Juan; Nie, Xin; Qin, Xiao-Yu; Ran, Zhi-Xian; Tian, Wei",
-   "journal": "Frontiers in Earth Science",
-   "date": "2026-11-16",
-   "summary": "",
-   "summary_en": true,
-   "url": "https://doi.org/10.3389/feart.2026.2043947",
-   "tags": {
-    "theme": [
-     "eco"
-    ],
-    "species": [],
-    "region": [],
-    "method": []
-   },
-   "rel": [
-    [
-     353,
-     0.194,
-     "生态与栖息地"
-    ],
-    [
-     292,
-     0.164,
-     "生态与栖息地"
-    ],
-    [
-     350,
-     0.16,
-     "生态与栖息地"
-    ],
-    [
-     42,
-     0.153,
-     "生态与栖息地"
     ]
    ],
    "is_review": false,
@@ -11314,23 +9679,23 @@
    },
    "rel": [
     [
-     358,
-     0.667,
+     311,
+     0.666,
      "非洲海域|监测与采样"
     ],
     [
-     371,
-     0.511,
+     323,
+     0.515,
      "非洲海域"
     ],
     [
-     27,
-     0.454,
+     240,
+     0.392,
      "监测与采样"
     ],
     [
-     280,
-     0.393,
+     324,
+     0.374,
      "监测与采样"
     ]
    ],
@@ -11359,22 +9724,22 @@
    },
    "rel": [
     [
-     340,
-     0.371,
+     295,
+     0.372,
      "水产养殖|种群评估与管理"
     ],
     [
-     94,
-     0.365,
+     68,
+     0.364,
      "鲤科鱼类"
     ],
     [
-     9,
-     0.351,
+     7,
+     0.352,
      "水产养殖"
     ],
     [
-     360,
+     313,
      0.349,
      "水产养殖|种群评估与管理"
     ]
@@ -11404,23 +9769,23 @@
    },
    "rel": [
     [
-     368,
+     320,
      0.324,
      "东南亚与西太"
     ],
     [
-     364,
-     0.292,
+     316,
+     0.288,
      "东南亚与西太"
     ],
     [
-     15,
-     0.286,
+     13,
+     0.285,
      ""
     ],
     [
-     156,
-     0.262,
+     126,
+     0.259,
      "水产养殖"
     ]
    ],
@@ -11449,23 +9814,23 @@
    },
    "rel": [
     [
-     381,
-     0.557,
+     332,
+     0.55,
      "罗非鱼类"
     ],
     [
-     377,
-     0.553,
+     328,
+     0.546,
      "罗非鱼类"
     ],
     [
-     121,
-     0.496,
+     91,
+     0.491,
      "罗非鱼类"
     ],
     [
-     75,
-     0.486,
+     51,
+     0.483,
      "罗非鱼类"
     ]
    ],
@@ -11497,23 +9862,23 @@
    },
    "rel": [
     [
-     224,
-     0.584,
+     187,
+     0.579,
      "鲑鳟鱼类|淡水与湖泊河流"
     ],
     [
-     154,
-     0.501,
+     124,
+     0.495,
      "鲑鳟鱼类"
     ],
     [
-     251,
-     0.454,
+     213,
+     0.447,
      "鲑鳟鱼类"
     ],
     [
-     180,
-     0.42,
+     147,
+     0.418,
      "鲑鳟鱼类|淡水与湖泊河流"
     ]
    ],
@@ -11542,22 +9907,22 @@
    },
    "rel": [
     [
-     129,
-     0.462,
+     99,
+     0.46,
      "加工品质与食品"
     ],
     [
-     312,
-     0.332,
+     269,
+     0.329,
      "其他淡水鱼"
     ],
     [
-     34,
-     0.227,
+     28,
+     0.226,
      "其他淡水鱼"
     ],
     [
-     188,
+     155,
      0.226,
      "其他淡水鱼"
     ]
@@ -11587,24 +9952,24 @@
    },
    "rel": [
     [
-     21,
-     0.4,
+     142,
+     0.324,
      "经济与社会政策"
     ],
     [
-     7,
-     0.328,
+     69,
+     0.318,
      "经济与社会政策"
     ],
     [
-     175,
-     0.325,
-     "经济与社会政策"
+     112,
+     0.242,
+     ""
     ],
     [
-     95,
-     0.316,
-     "经济与社会政策"
+     132,
+     0.237,
+     "加工品质与食品"
     ]
    ],
    "is_review": false,
@@ -11632,23 +9997,23 @@
    },
    "rel": [
     [
-     10,
-     0.391,
-     "经济与社会政策|捕捞技术与兼捕"
-    ],
-    [
-     301,
-     0.383,
+     259,
+     0.389,
      "南美海域"
     ],
     [
-     46,
-     0.307,
+     8,
+     0.388,
+     "经济与社会政策|捕捞技术与兼捕"
+    ],
+    [
+     36,
+     0.31,
      "捕捞技术与兼捕"
     ],
     [
-     302,
-     0.296,
+     260,
+     0.292,
      "经济与社会政策|捕捞技术与兼捕"
     ]
    ],
@@ -11676,23 +10041,23 @@
    },
    "rel": [
     [
-     154,
-     0.54,
+     124,
+     0.531,
      "鲑鳟鱼类"
     ],
     [
-     247,
-     0.454,
+     209,
+     0.447,
      "鲑鳟鱼类"
     ],
     [
-     73,
-     0.439,
+     49,
+     0.433,
      "鲑鳟鱼类"
     ],
     [
-     224,
-     0.423,
+     187,
+     0.417,
      "鲑鳟鱼类"
     ]
    ],
@@ -11721,23 +10086,23 @@
    },
    "rel": [
     [
-     192,
+     158,
      0.501,
      "鲨鱼与鳐类"
     ],
     [
-     69,
+     46,
      0.352,
      "鲨鱼与鳐类"
     ],
     [
-     46,
-     0.32,
+     36,
+     0.321,
      "鲨鱼与鳐类"
     ],
     [
-     72,
-     0.271,
+     48,
+     0.273,
      "鲨鱼与鳐类"
     ]
    ],
@@ -11770,23 +10135,23 @@
    },
    "rel": [
     [
-     280,
-     0.407,
+     240,
+     0.406,
      "淡水与湖泊河流"
     ],
     [
-     241,
-     0.38,
+     204,
+     0.382,
      "淡水与湖泊河流"
     ],
     [
-     307,
+     196,
      0.324,
      "鲤科鱼类"
     ],
     [
-     233,
-     0.324,
+     265,
+     0.323,
      "鲤科鱼类"
     ]
    ],
@@ -11816,23 +10181,23 @@
    },
    "rel": [
     [
-     180,
-     0.359,
+     147,
+     0.356,
      "鲑鳟鱼类"
     ],
     [
-     98,
-     0.269,
+     72,
+     0.268,
      "鲑鳟鱼类"
     ],
     [
-     251,
-     0.261,
+     213,
+     0.258,
      "鲑鳟鱼类"
     ],
     [
-     247,
-     0.257,
+     209,
+     0.255,
      "鲑鳟鱼类"
     ]
    ],
@@ -11863,23 +10228,23 @@
    },
    "rel": [
     [
-     158,
-     0.58,
+     128,
+     0.582,
      "统计建模"
     ],
     [
-     85,
+     59,
      0.5,
      "生态与栖息地"
     ],
     [
-     280,
-     0.43,
+     240,
+     0.434,
      "中国近海与内陆|统计建模"
     ],
     [
-     215,
-     0.398,
+     179,
+     0.402,
      "统计建模"
     ]
    ],
@@ -11908,23 +10273,23 @@
    },
    "rel": [
     [
-     387,
+     338,
+     0.274,
+     "生态与栖息地"
+    ],
+    [
+     174,
      0.266,
      "生态与栖息地"
     ],
     [
-     210,
-     0.265,
-     "生态与栖息地"
-    ],
-    [
-     280,
+     240,
      0.248,
      "生态与栖息地"
     ],
     [
      5,
-     0.247,
+     0.246,
      "水母与浮游动物"
     ]
    ],
@@ -11956,66 +10321,24 @@
    },
    "rel": [
     [
-     388,
-     0.438,
+     339,
+     0.442,
      "海龟与海鸟"
     ],
     [
-     215,
-     0.383,
+     179,
+     0.381,
      "饵料鱼类"
     ],
     [
-     265,
-     0.335,
+     226,
+     0.338,
      "饵料鱼类"
     ],
     [
-     160,
-     0.296,
+     130,
+     0.295,
      "海龟与海鸟"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.7759/cureus.119672",
-   "title": "Fish and Shellfish As the Dominant Dietary Sources of Vitamin D Among Japanese Adults: National Surveys (2015-2024)",
-   "authors": "Omura, Takuya",
-   "journal": "Cureus",
-   "date": "2026-11-15",
-   "summary": "日本成人膳食维生素D主要依赖鱼贝类。基于2015–2024年八次国民健康营养调查的已发表数据，鱼贝类在七次含成人食物来源数据的调查中提供75%–78%的膳食维生素D；2019至2023年鱼贝类摄入中位数由55.0降至45.7 g/d（−16.9%），维生素D摄入中位数由3.6降至3.1 μg/d（−13.9%），鱼贝类贡献的下降未见其他食物明显补偿，而总蛋白摄入变化很小。2019年鱼贝类分别提供维生素D 78%、维生素B12 68%，但仅提供蛋白质18%，提示微量营养素供给变化未必反映于总蛋白摄入。",
-   "summary_en": false,
-   "url": "https://doi.org/10.7759/cureus.119672",
-   "tags": {
-    "theme": [
-     "nutri"
-    ],
-    "species": [],
-    "region": [],
-    "method": []
-   },
-   "rel": [
-    [
-     327,
-     0.283,
-     "营养与饲料"
-    ],
-    [
-     198,
-     0.242,
-     "营养与饲料"
-    ],
-    [
-     64,
-     0.241,
-     "营养与饲料"
-    ],
-    [
-     322,
-     0.223,
-     "营养与饲料"
     ]
    ],
    "is_review": false,
@@ -12041,23 +10364,23 @@
    },
    "rel": [
     [
-     130,
-     0.32,
+     100,
+     0.319,
      "经济与社会政策"
     ],
     [
-     137,
-     0.254,
+     107,
+     0.256,
      "经济与社会政策"
     ],
     [
-     68,
-     0.203,
+     45,
+     0.202,
      "加工品质与食品"
     ],
     [
-     366,
-     0.203,
+     318,
+     0.202,
      "经济与社会政策"
     ]
    ],
@@ -12087,23 +10410,23 @@
    },
    "rel": [
     [
-     303,
-     0.326,
+     261,
+     0.334,
      "全球/多区域"
     ],
     [
-     90,
+     64,
      0.294,
      "全球/多区域"
     ],
     [
-     277,
-     0.288,
+     237,
+     0.292,
      "全球/多区域"
     ],
     [
-     49,
-     0.262,
+     287,
+     0.255,
      "全球/多区域"
     ]
    ],
@@ -12133,23 +10456,23 @@
    },
    "rel": [
     [
-     155,
+     125,
      0.397,
      "淡水与湖泊河流"
     ],
     [
-     380,
-     0.276,
+     331,
+     0.274,
      "水产养殖"
     ],
     [
-     177,
+     144,
      0.268,
      "水产养殖"
     ],
     [
-     241,
-     0.263,
+     204,
+     0.264,
      "淡水与湖泊河流"
     ]
    ],
@@ -12178,23 +10501,23 @@
    },
    "rel": [
     [
-     324,
-     0.391,
+     280,
+     0.394,
      "监测与采样|机器学习与AI"
     ],
     [
-     164,
-     0.326,
+     86,
+     0.279,
+     "监测与采样"
+    ],
+    [
+     145,
+     0.262,
      "监测与采样|机器学习与AI"
     ],
     [
-     345,
-     0.316,
-     "监测与采样|机器学习与AI"
-    ],
-    [
-     116,
-     0.28,
+     188,
+     0.254,
      "监测与采样"
     ]
    ],
@@ -12221,23 +10544,23 @@
    },
    "rel": [
     [
-     147,
-     0.401,
+     117,
+     0.399,
      "水产养殖"
     ],
     [
-     340,
-     0.365,
+     295,
+     0.362,
      "水产养殖"
     ],
     [
-     246,
-     0.343,
+     208,
+     0.339,
      "水产养殖"
     ],
     [
-     156,
-     0.319,
+     126,
+     0.314,
      "水产养殖"
     ]
    ],
@@ -12264,24 +10587,24 @@
    },
    "rel": [
     [
-     345,
-     0.275,
-     "生态与栖息地"
-    ],
-    [
-     363,
+     137,
      0.254,
-     "气候变化与环境"
-    ],
-    [
-     169,
-     0.25,
      "气候变化与环境|生态与栖息地"
     ],
     [
-     160,
-     0.246,
+     130,
+     0.247,
      "气候变化与环境"
+    ],
+    [
+     132,
+     0.236,
+     "气候变化与环境"
+    ],
+    [
+     48,
+     0.204,
+     "生态与栖息地"
     ]
    ],
    "is_review": false,
@@ -12309,23 +10632,23 @@
    },
    "rel": [
     [
-     215,
+     179,
      0.63,
      "饵料鱼类"
     ],
     [
-     315,
-     0.355,
+     271,
+     0.354,
      "加工品质与食品"
     ],
     [
-     257,
-     0.335,
+     219,
+     0.338,
      "饵料鱼类"
     ],
     [
-     210,
-     0.265,
+     174,
+     0.267,
      "饵料鱼类"
     ]
    ],
@@ -12352,68 +10675,23 @@
    "rel": [
     [
      2,
-     0.433,
+     0.427,
      "加工品质与食品"
     ],
     [
-     374,
-     0.418,
+     289,
+     0.218,
      "加工品质与食品"
     ],
     [
-     333,
-     0.219,
-     "加工品质与食品"
-    ],
-    [
-     235,
-     0.215,
+     198,
+     0.211,
      ""
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.66618/equalitylawandsocial.v2i2.1589",
-   "title": "Criminal Liability for Fish Shooting Machine Gambling: A Comparative Analysis of Positive Law and Islamic Criminal Law",
-   "authors": "Laila Hairani; Risalan Basri Harahap; Hendra Gunawan",
-   "journal": "Equality: Law and Social",
-   "date": "2026-11-14",
-   "summary": "该研究考察印尼Purba Tua村捕鱼机赌博活动的运作机制、成因、刑事责任及适用处罚，采用经验性法律研究与社会学-法学方法，通过访谈、观察和文献资料进行定性分析。研究发现玩家通过充值获取游戏积分并兑换现金，具备赌博与营利要素，涉及机主、经营者、场地提供者、服务员和玩家等多方主体。依印尼2023年第1号法律，组织者可能适用第426条、玩家可能适用第427条；从伊斯兰刑法角度该行为构成maisir并可归为jarimah ta'zir，违背maqashid al-syari'ah。有效防治需比例执法、法律教育、宗教引导与社区参与相结合。",
-   "summary_en": false,
-   "url": "https://doi.org/10.66618/equalitylawandsocial.v2i2.1589",
-   "tags": {
-    "theme": [
-     "econ"
-    ],
-    "species": [],
-    "region": [],
-    "method": [
-     "sdm",
-     "stat"
-    ]
-   },
-   "rel": [
-    [
-     90,
-     0.241,
-     "统计建模"
     ],
     [
-     111,
-     0.239,
-     "分布模型与栖息地评价|统计建模"
-    ],
-    [
-     177,
-     0.229,
-     "分布模型与栖息地评价|统计建模"
-    ],
-    [
-     48,
-     0.21,
-     "经济与社会政策"
+     113,
+     0.193,
+     ""
     ]
    ],
    "is_review": false,
@@ -12438,23 +10716,23 @@
    },
    "rel": [
     [
-     303,
-     0.193,
+     261,
+     0.192,
      "经济与社会政策"
     ],
     [
-     263,
-     0.193,
+     224,
+     0.19,
      "经济与社会政策"
     ],
     [
-     52,
-     0.163,
-     "经济与社会政策"
-    ],
-    [
-     199,
+     165,
      0.153,
+     "经济与社会政策"
+    ],
+    [
+     46,
+     0.148,
      "经济与社会政策"
     ]
    ],
@@ -12483,23 +10761,23 @@
    },
    "rel": [
     [
-     280,
-     0.325,
+     240,
+     0.321,
      "中国近海与内陆"
     ],
     [
-     387,
-     0.316,
+     338,
+     0.317,
      "生态与栖息地"
     ],
     [
-     152,
-     0.265,
+     122,
+     0.261,
      "生态与栖息地"
     ],
     [
-     210,
-     0.25,
+     174,
+     0.249,
      "生态与栖息地"
     ]
    ],
@@ -12531,23 +10809,23 @@
    },
    "rel": [
     [
-     66,
-     0.344,
+     43,
+     0.341,
      "虾类"
     ],
     [
-     16,
+     14,
      0.284,
      "水产养殖|疾病与免疫"
     ],
     [
-     276,
-     0.266,
+     236,
+     0.263,
      "虾类"
     ],
     [
-     157,
-     0.264,
+     127,
+     0.263,
      "虾类"
     ]
    ],
@@ -12575,23 +10853,23 @@
    },
    "rel": [
     [
-     146,
-     0.27,
+     116,
+     0.267,
      "水产养殖|遗传与基因组"
     ],
     [
-     176,
-     0.261,
+     143,
+     0.258,
      "水产养殖"
     ],
     [
-     177,
-     0.24,
+     144,
+     0.242,
      "水产养殖|经济与社会政策"
     ],
     [
-     151,
-     0.234,
+     121,
+     0.236,
      "遗传与基因组"
     ]
    ],
@@ -12619,23 +10897,23 @@
    },
    "rel": [
     [
-     97,
+     71,
      0.515,
      "水产养殖|疾病与免疫"
     ],
     [
-     344,
-     0.368,
+     299,
+     0.37,
      "疾病与免疫"
     ],
     [
-     16,
-     0.337,
+     14,
+     0.335,
      "水产养殖|疾病与免疫"
     ],
     [
-     284,
-     0.312,
+     244,
+     0.314,
      "水产养殖|疾病与免疫"
     ]
    ],
@@ -12663,23 +10941,23 @@
    },
    "rel": [
     [
-     33,
-     0.306,
+     27,
+     0.303,
      "遗传与基因组"
     ],
     [
-     187,
-     0.294,
+     154,
+     0.293,
      "遗传与基因组"
     ],
     [
-     105,
-     0.262,
+     79,
+     0.261,
      "疾病与免疫|遗传与基因组"
     ],
     [
-     343,
-     0.245,
+     298,
+     0.241,
      "遗传与基因组"
     ]
    ],
@@ -12707,23 +10985,23 @@
    },
    "rel": [
     [
-     83,
-     0.207,
+     57,
+     0.205,
      "印度洋与南亚"
     ],
     [
-     303,
-     0.197,
+     261,
+     0.196,
      "印度洋与南亚"
     ],
     [
-     118,
-     0.193,
+     88,
+     0.195,
      "印度洋与南亚"
     ],
     [
-     385,
-     0.189,
+     336,
+     0.192,
      "印度洋与南亚"
     ]
    ],
@@ -12753,22 +11031,22 @@
    },
    "rel": [
     [
-     236,
-     0.457,
+     199,
+     0.454,
      "非洲海域"
     ],
     [
-     89,
-     0.34,
+     63,
+     0.337,
      "种群评估与管理"
     ],
     [
-     215,
-     0.334,
+     179,
+     0.331,
      "饵料鱼类"
     ],
     [
-     330,
+     286,
      0.315,
      "种群评估与管理"
     ]
@@ -12800,22 +11078,22 @@
    },
    "rel": [
     [
-     364,
-     0.461,
+     316,
+     0.456,
      "东南亚与西太"
     ],
     [
-     223,
-     0.404,
+     186,
+     0.4,
      "东南亚与西太"
     ],
     [
-     285,
-     0.351,
+     245,
+     0.349,
      "东南亚与西太"
     ],
     [
-     125,
+     95,
      0.333,
      "东南亚与西太"
     ]
@@ -12845,22 +11123,22 @@
    },
    "rel": [
     [
-     217,
+     221,
+     0.292,
+     "全球/多区域"
+    ],
+    [
+     181,
      0.289,
      "全球/多区域"
     ],
     [
-     260,
-     0.288,
+     315,
+     0.287,
      "全球/多区域"
     ],
     [
-     228,
-     0.288,
-     "东南亚与西太"
-    ],
-    [
-     90,
+     64,
      0.286,
      "全球/多区域"
     ]
@@ -12887,23 +11165,23 @@
    },
    "rel": [
     [
-     133,
-     0.291,
+     103,
+     0.284,
      "种群评估与管理"
     ],
     [
-     12,
-     0.2,
+     10,
+     0.195,
      "种群评估与管理"
     ],
     [
-     331,
-     0.19,
+     152,
+     0.185,
      "种群评估与管理"
     ],
     [
-     185,
-     0.186,
+     287,
+     0.185,
      "种群评估与管理"
     ]
    ],
@@ -12931,23 +11209,23 @@
    },
    "rel": [
     [
-     26,
-     0.282,
+     21,
+     0.278,
      "水产养殖"
     ],
     [
-     175,
-     0.262,
-     "水产养殖"
-    ],
-    [
-     299,
-     0.261,
+     257,
+     0.265,
      "水产养殖|疾病与免疫"
     ],
     [
-     276,
-     0.247,
+     142,
+     0.26,
+     "水产养殖"
+    ],
+    [
+     236,
+     0.244,
      "水产养殖"
     ]
    ],
@@ -12979,24 +11257,24 @@
    },
    "rel": [
     [
-     358,
-     0.526,
+     311,
+     0.525,
      "监测与采样"
     ],
     [
-     240,
-     0.498,
+     203,
+     0.497,
      "淡水与湖泊河流|监测与采样"
     ],
     [
-     353,
-     0.459,
-     "淡水与湖泊河流"
-    ],
-    [
-     241,
+     204,
      0.458,
      "淡水与湖泊河流|统计建模"
+    ],
+    [
+     306,
+     0.454,
+     "淡水与湖泊河流"
     ]
    ],
    "is_review": false,
@@ -13026,22 +11304,22 @@
    },
    "rel": [
     [
-     372,
+     324,
      0.525,
      "捕捞技术与兼捕|污染与毒理"
     ],
     [
-     63,
+     40,
      0.5,
      "污染与毒理"
     ],
     [
-     141,
+     111,
      0.5,
      "污染与毒理"
     ],
     [
-     14,
+     12,
      0.476,
      "捕捞技术与兼捕|污染与毒理"
     ]
@@ -13074,23 +11352,23 @@
    },
    "rel": [
     [
-     206,
-     0.519,
+     170,
+     0.518,
      "调查与问卷"
     ],
     [
-     331,
-     0.384,
+     287,
+     0.382,
      "印度洋与南亚"
     ],
     [
-     301,
-     0.355,
+     259,
+     0.351,
      "调查与问卷"
     ],
     [
-     125,
-     0.348,
+     95,
+     0.347,
      "调查与问卷"
     ]
    ],
@@ -13122,23 +11400,23 @@
    },
    "rel": [
     [
-     325,
-     0.414,
+     281,
+     0.412,
      "声学与遥测"
     ],
     [
-     190,
-     0.392,
+     157,
+     0.39,
      "鲆鲽类"
     ],
     [
-     72,
-     0.327,
+     48,
+     0.328,
      "声学与遥测"
     ],
     [
-     373,
-     0.276,
+     325,
+     0.275,
      "鲆鲽类"
     ]
    ],
@@ -13166,23 +11444,23 @@
    },
    "rel": [
     [
-     97,
-     0.357,
+     71,
+     0.359,
      "水产养殖|疾病与免疫"
     ],
     [
-     344,
-     0.317,
+     299,
+     0.32,
      "疾病与免疫"
     ],
     [
-     272,
-     0.312,
+     232,
+     0.314,
      "水产养殖|疾病与免疫"
     ],
     [
-     376,
-     0.29,
+     327,
+     0.292,
      "水产养殖|疾病与免疫"
     ]
    ],
@@ -13211,23 +11489,23 @@
    },
    "rel": [
     [
-     381,
-     0.394,
+     332,
+     0.387,
      "水产养殖"
     ],
     [
-     276,
-     0.351,
+     236,
+     0.349,
      "东南亚与西太"
     ],
     [
-     88,
-     0.331,
+     62,
+     0.334,
      "东南亚与西太"
     ],
     [
-     364,
-     0.329,
+     316,
+     0.323,
      "东南亚与西太"
     ]
    ],
@@ -13255,23 +11533,23 @@
    },
    "rel": [
     [
-     338,
-     0.353,
+     293,
+     0.357,
      "生态与栖息地"
     ],
     [
-     306,
-     0.331,
+     264,
+     0.336,
      "生态与栖息地"
     ],
     [
-     230,
-     0.324,
+     193,
+     0.321,
      "疾病与免疫|生态与栖息地"
     ],
     [
-     224,
-     0.29,
+     187,
+     0.287,
      "水产养殖|疾病与免疫"
     ]
    ],
@@ -13300,23 +11578,23 @@
    },
    "rel": [
     [
-     293,
+     251,
      0.298,
      "加工品质与食品"
     ],
     [
-     351,
-     0.27,
+     304,
+     0.269,
      "东南亚与西太"
     ],
     [
-     312,
+     269,
      0.252,
      "东南亚与西太"
     ],
     [
-     129,
-     0.247,
+     99,
+     0.246,
      "加工品质与食品"
     ]
    ],
@@ -13344,23 +11622,23 @@
    },
    "rel": [
     [
-     166,
-     0.235,
+     134,
+     0.234,
      "生物学与生理"
     ],
     [
-     247,
-     0.2,
+     209,
+     0.201,
      "生物学与生理"
     ],
     [
-     105,
-     0.172,
+     79,
+     0.174,
      "遗传与基因组"
     ],
     [
-     181,
-     0.164,
+     148,
+     0.163,
      ""
     ]
    ],
@@ -13390,112 +11668,24 @@
    },
    "rel": [
     [
-     187,
-     0.347,
+     154,
+     0.343,
      "遗传与基因组"
     ],
     [
-     32,
+     26,
      0.333,
      "经济与社会政策|遗传与基因组"
     ],
     [
-     106,
-     0.315,
+     80,
+     0.311,
      "遗传与基因组"
     ],
     [
-     300,
-     0.283,
+     258,
+     0.28,
      "贝类"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.1982214",
-   "title": "Impacts of the Boreal Summer Intraseasonal Oscillation on marine heatwaves in the Taiwan Strait",
-   "authors": "Li, Shihan; Qiu, Yun; Lin, Xinyu; Hu, Shijian; Shen, Junqiang; Zhang, Ying",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-13",
-   "summary": "基于1993–2024年6–8月数据，研究了BSISO对台湾海峡marine heatwaves（MHWs）的调制作用及其局地物理过程。结果表明，台湾海峡SST和MHW发生概率随BSISO对流传播而波动，在位相4+5期间显著升高，52%的区域MHWs与该位相重合且持续时间更长、累积强度更大。晴空条件下增强的短波辐射是主要驱动因素，其贡献了约58%的混合层增温趋势，促进MHWs的生成与增强。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.1982214",
-   "tags": {
-    "theme": [
-     "climate"
-    ],
-    "species": [],
-    "region": [
-     "scs"
-    ],
-    "method": []
-   },
-   "rel": [
-    [
-     39,
-     0.338,
-     "气候变化与环境"
-    ],
-    [
-     249,
-     0.246,
-     "南海"
-    ],
-    [
-     255,
-     0.205,
-     "南海"
-    ],
-    [
-     160,
-     0.202,
-     "气候变化与环境"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.1950637",
-   "title": "A 1951-1998 Lutao coral Pb isotope record reveals site-specific, marine-integrated anthropogenic Pb pollution signals in the Northwest Pacific",
-   "authors": "Lien, Ming-Yu; Wang, Bo-Shian; You, Chen-Feng",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-13",
-   "summary": "基于台湾绿岛Porites珊瑚的1951–1998年Pb同位素记录，并与东沙及小笠原已发表记录对比，探讨单个珊瑚记录对西北太平洋区域Pb同位素历史的代表性。三站点在1953–1963年同位素差异显著，1964–1984年208Pb/207Pb区间均值差异缩小，但各站点始终保持位点特异性；1985–1998年绿岛208Pb/207Pb显著低于东沙，而绿岛自身中晚期变化未达统计显著。结果表明珊瑚Pb同位素历史存在空间异质性，将位点特异性信号外推至区域历史解释前需评估单条记录的空间代表性。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.1950637",
-   "tags": {
-    "theme": [
-     "pollution"
-    ],
-    "species": [],
-    "region": [
-     "npac"
-    ],
-    "method": []
-   },
-   "rel": [
-    [
-     80,
-     0.309,
-     "北太平洋"
-    ],
-    [
-     292,
-     0.257,
-     "北太平洋"
-    ],
-    [
-     334,
-     0.223,
-     "北太平洋"
-    ],
-    [
-     81,
-     0.216,
-     "北太平洋"
     ]
    ],
    "is_review": false,
@@ -13526,24 +11716,24 @@
    },
    "rel": [
     [
-     173,
-     0.519,
+     140,
+     0.513,
      "藻类与海藻"
     ],
     [
-     29,
-     0.428,
+     23,
+     0.427,
      "藻类与海藻"
     ],
     [
-     318,
-     0.332,
-     "藻类与海藻"
-    ],
-    [
-     165,
+     274,
      0.329,
      "藻类与海藻"
+    ],
+    [
+     55,
+     0.326,
+     "北太平洋"
     ]
    ],
    "is_review": false,
@@ -13568,23 +11758,23 @@
    },
    "rel": [
     [
-     287,
+     247,
      0.298,
      "加工品质与食品"
     ],
     [
-     129,
-     0.217,
+     99,
+     0.226,
      "加工品质与食品"
     ],
     [
-     106,
-     0.211,
+     80,
+     0.209,
      ""
     ],
     [
-     256,
-     0.195,
+     218,
+     0.192,
      "加工品质与食品"
     ]
    ],
@@ -13615,23 +11805,23 @@
    },
    "rel": [
     [
-     165,
-     0.305,
+     133,
+     0.308,
      "印度洋与南亚"
     ],
     [
      5,
-     0.205,
+     0.204,
      "水母与浮游动物"
     ],
     [
-     331,
-     0.19,
+     287,
+     0.197,
      "印度洋与南亚"
     ],
     [
-     94,
-     0.189,
+     68,
+     0.19,
      "印度洋与南亚"
     ]
    ],
@@ -13657,23 +11847,23 @@
    },
    "rel": [
     [
-     356,
-     0.321,
+     309,
+     0.316,
      ""
     ],
     [
-     109,
-     0.253,
+     83,
+     0.255,
      ""
     ],
     [
-     94,
-     0.248,
+     68,
+     0.247,
      ""
     ],
     [
-     106,
-     0.248,
+     80,
+     0.245,
      "生物学与生理"
     ]
    ],
@@ -13699,23 +11889,23 @@
    },
    "rel": [
     [
-     22,
-     0.21,
+     17,
+     0.203,
      "水产养殖"
     ],
     [
-     23,
-     0.156,
+     18,
+     0.15,
      "水产养殖"
     ],
     [
-     84,
-     0.155,
+     58,
+     0.149,
      "水产养殖"
     ],
     [
-     304,
-     0.153,
+     262,
+     0.148,
      "水产养殖"
     ]
    ],
@@ -13748,23 +11938,23 @@
    },
    "rel": [
     [
-     320,
-     0.48,
+     276,
+     0.482,
      "监测与采样"
     ],
     [
-     69,
-     0.333,
+     46,
+     0.335,
      "捕捞技术与兼捕"
     ],
     [
-     124,
-     0.32,
+     94,
+     0.327,
      "监测与采样"
     ],
     [
-     371,
-     0.305,
+     323,
+     0.303,
      "非洲海域|调查与问卷"
     ]
    ],
@@ -13792,23 +11982,23 @@
    },
    "rel": [
     [
-     251,
-     0.263,
+     213,
+     0.269,
      "鲑鳟鱼类"
     ],
     [
-     315,
-     0.2,
+     271,
+     0.201,
      "鲑鳟鱼类"
     ],
     [
-     154,
-     0.193,
+     182,
+     0.194,
      "鲑鳟鱼类"
     ],
     [
-     218,
-     0.193,
+     124,
+     0.194,
      "鲑鳟鱼类"
     ]
    ],
@@ -13836,24 +12026,24 @@
    },
    "rel": [
     [
-     153,
-     0.489,
+     123,
+     0.487,
      "水产养殖|疾病与免疫"
     ],
     [
-     375,
-     0.306,
+     326,
+     0.305,
      "水产养殖|疾病与免疫"
     ],
     [
-     120,
-     0.3,
+     90,
+     0.297,
      "疾病与免疫|污染与毒理"
     ],
     [
-     143,
+     163,
      0.286,
-     "水产养殖|污染与毒理"
+     "水产养殖"
     ]
    ],
    "is_review": false,
@@ -13882,23 +12072,23 @@
    },
    "rel": [
     [
-     317,
+     273,
      0.56,
      "东南亚与西太"
     ],
     [
-     342,
-     0.461,
+     297,
+     0.46,
      "贝类"
     ],
     [
-     20,
-     0.364,
+     16,
+     0.361,
      "东南亚与西太"
     ],
     [
-     350,
-     0.331,
+     303,
+     0.33,
      "贝类"
     ]
    ],
@@ -13929,23 +12119,23 @@
    },
    "rel": [
     [
-     250,
-     0.383,
+     212,
+     0.389,
      "南美海域"
     ],
     [
-     222,
+     62,
+     0.376,
+     "淡水与湖泊河流"
+    ],
+    [
+     185,
      0.374,
      "调查与问卷"
     ],
     [
-     88,
-     0.364,
-     "淡水与湖泊河流"
-    ],
-    [
-     282,
-     0.355,
+     242,
+     0.351,
      "调查与问卷"
     ]
    ],
@@ -13974,23 +12164,23 @@
    },
    "rel": [
     [
-     250,
-     0.296,
+     212,
+     0.292,
      "经济与社会政策|捕捞技术与兼捕"
     ],
     [
-     10,
-     0.294,
+     8,
+     0.291,
      "地中海与黑海"
     ],
     [
-     18,
-     0.284,
+     15,
+     0.283,
      "地中海与黑海"
     ],
     [
-     277,
-     0.279,
+     237,
+     0.278,
      "捕捞技术与兼捕"
     ]
    ],
@@ -14019,23 +12209,23 @@
    },
    "rel": [
     [
-     194,
-     0.482,
+     160,
+     0.483,
      "全球/多区域"
     ],
     [
-     90,
-     0.45,
+     64,
+     0.448,
      "全球/多区域"
     ],
     [
-     331,
-     0.374,
+     287,
+     0.371,
      "印度洋与南亚|全球/多区域"
     ],
     [
-     24,
-     0.342,
+     57,
+     0.343,
      "印度洋与南亚"
     ]
    ],
@@ -14062,23 +12252,23 @@
    },
    "rel": [
     [
-     26,
-     0.193,
+     21,
+     0.187,
      "水产养殖"
     ],
     [
-     223,
-     0.181,
+     186,
+     0.177,
      "水产养殖"
     ],
     [
-     279,
-     0.169,
+     268,
+     0.165,
      "水产养殖"
     ],
     [
-     310,
-     0.168,
+     239,
+     0.164,
      "水产养殖"
     ]
    ],
@@ -14104,22 +12294,22 @@
    },
    "rel": [
     [
-     175,
-     0.37,
+     142,
+     0.373,
      "水产养殖"
     ],
     [
-     225,
+     69,
      0.324,
      "水产养殖"
     ],
     [
-     95,
-     0.319,
+     188,
+     0.322,
      "水产养殖"
     ],
     [
-     263,
+     224,
      0.279,
      "水产养殖"
     ]
@@ -14149,23 +12339,23 @@
    },
    "rel": [
     [
-     338,
-     0.48,
+     293,
+     0.473,
      "环境DNA"
     ],
     [
-     241,
-     0.438,
+     204,
+     0.435,
      "环境DNA"
     ],
     [
-     280,
-     0.424,
+     240,
+     0.423,
      "监测与采样"
     ],
     [
-     163,
-     0.413,
+     132,
+     0.412,
      ""
     ]
    ],
@@ -14195,23 +12385,23 @@
    },
    "rel": [
     [
-     181,
-     0.373,
+     148,
+     0.369,
      "鲤科鱼类"
     ],
     [
-     230,
-     0.367,
+     193,
+     0.366,
      "鲤科鱼类"
     ],
     [
-     224,
-     0.349,
+     187,
+     0.345,
      "水产养殖|疾病与免疫"
     ],
     [
-     156,
-     0.346,
+     7,
+     0.344,
      "水产养殖"
     ]
    ],
@@ -14241,23 +12431,23 @@
    },
    "rel": [
     [
-     362,
-     0.336,
+     315,
+     0.335,
      "贝类"
     ],
     [
-     360,
-     0.321,
+     313,
+     0.318,
      "贝类"
     ],
     [
-     65,
-     0.296,
+     42,
+     0.292,
      "水产养殖|污染与毒理"
     ],
     [
-     117,
-     0.263,
+     87,
+     0.258,
      "水产养殖|污染与毒理"
     ]
    ],
@@ -14286,23 +12476,23 @@
    },
    "rel": [
     [
-     62,
+     39,
      0.385,
      ""
     ],
     [
-     9,
-     0.289,
+     7,
+     0.287,
      "鲶形目鱼类"
     ],
     [
      3,
-     0.266,
+     0.264,
      "鲶形目鱼类"
     ],
     [
-     380,
-     0.26,
+     331,
+     0.258,
      "鲶形目鱼类"
     ]
    ],
@@ -14333,69 +12523,24 @@
    },
    "rel": [
     [
-     26,
+     21,
      0.358,
      "水产养殖|经济与社会政策"
     ],
     [
-     98,
-     0.354,
+     72,
+     0.351,
      "鲑鳟鱼类"
     ],
     [
-     224,
-     0.298,
+     187,
+     0.295,
      "鲑鳟鱼类"
     ],
     [
-     218,
-     0.289,
+     182,
+     0.286,
      "鲑鳟鱼类"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3390/jmse14222145",
-   "title": "A Confounder-Aware Pre-Training Quality Control Workflow for Mechanically Scanned Sonar Echoes in Offshore Aquaculture Cages",
-   "authors": "Wan, Shujie; Song, Haopeng; Li, Guodong; Cheng, Jing; Yang, Hang; Wang, Zhijun; Zhang, Yutao",
-   "journal": "Journal of Marine Science and Engineering",
-   "date": "2026-11-12",
-   "summary": "针对海上养殖网箱机械扫描声呐回波，研究在物种建模前评估声学候选质量与生物可辨识性。分析两个网箱（每箱一个物种）单日22条记录、336个完整旋转的70,421帧，比较历史top-20检测器与无上限重跑下的候选筛选差异，并用盲审概率抽样评估标注一致性。无上限重跑后网箱间通过率差距由26.9个百分点降至0.4个百分点，揭示选择放大效应；双评审一致率83.6%（κ=0.627），但视觉孤立标签不足以确认单鱼身份，且物种效应与网箱效应无法分离。该案例研究强调生物分类器开发前需审计设计合格性、候选选择与评审者依赖性。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3390/jmse14222145",
-   "tags": {
-    "theme": [
-     "process",
-     "aqua"
-    ],
-    "species": [],
-    "region": [],
-    "method": [
-     "acoustic"
-    ]
-   },
-   "rel": [
-    [
-     219,
-     0.179,
-     "水产养殖"
-    ],
-    [
-     352,
-     0.175,
-     "加工品质与食品"
-    ],
-    [
-     110,
-     0.171,
-     ""
-    ],
-    [
-     283,
-     0.171,
-     "声学与遥测"
     ]
    ],
    "is_review": false,
@@ -14424,23 +12569,23 @@
    },
    "rel": [
     [
-     356,
-     0.385,
+     83,
+     0.383,
      "营养与饲料"
     ],
     [
-     109,
-     0.385,
+     309,
+     0.382,
      "营养与饲料"
     ],
     [
-     248,
-     0.332,
+     210,
+     0.329,
      "其他淡水鱼"
     ],
     [
-     129,
-     0.284,
+     99,
+     0.282,
      ""
     ]
    ],
@@ -14466,35 +12611,8 @@
    },
    "rel": [
     [
-     316,
+     272,
      0.15,
-     ""
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.26658/jmr.2072480",
-   "title": "On the Eastern Shores of Mare Nostrum: Sea, Fishing, Fish and Marine Iconography in the Mosaics of Antiocheia ad Orontem, Daphne, Seleucia Pieria, Alexandretta",
-   "authors": "Özdilek, Banu; Tıbıkoğlu, H. Onur",
-   "journal": "Journal of Mosaic Research",
-   "date": "2026-11-12",
-   "summary": "该研究以安条克（Antiocheia ad Orontem）、达芙妮、塞琉西亚·皮埃里亚和亚历山德雷塔的罗马时期马赛克为对象，系统梳理了其中33幅海洋与淡水主题作品，涵盖捕鱼Erotes、Tethys、Oceanus、Thalassa、海洋thiasus、Nereids及各类鱼类、甲壳类和软体动物形象。研究识别出多种捕鱼技法场景及海洋神话叙事，指出最早实例可追溯至公元2世纪。海洋动物区系与神话表现以不同形式延续至5–6世纪基督教建筑中的天堂场景，鱼在此期获得重要宗教象征意义，体现了从异教海神神话到基督教水与鱼象征体系的图像学连续性。",
-   "summary_en": false,
-   "url": "https://doi.org/10.26658/jmr.2072480",
-   "tags": {
-    "theme": [
-     "misc"
-    ],
-    "species": [],
-    "region": [],
-    "method": []
-   },
-   "rel": [
-    [
-     268,
-     0.145,
      ""
     ]
    ],
@@ -14524,23 +12642,23 @@
    },
    "rel": [
     [
-     356,
-     0.422,
+     309,
+     0.418,
      "营养与饲料"
     ],
     [
-     265,
-     0.355,
+     226,
+     0.354,
      "加工品质与食品"
     ],
     [
-     109,
-     0.351,
+     83,
+     0.348,
      "鲑鳟鱼类"
     ],
     [
-     177,
-     0.35,
+     144,
+     0.347,
      "鲑鳟鱼类"
     ]
    ],
@@ -14568,23 +12686,23 @@
    },
    "rel": [
     [
-     67,
-     0.396,
+     306,
+     0.405,
      "淡水与湖泊河流"
     ],
     [
-     353,
-     0.392,
+     44,
+     0.393,
      "淡水与湖泊河流"
     ],
     [
-     152,
-     0.363,
+     122,
+     0.358,
      "淡水与湖泊河流"
     ],
     [
-     82,
-     0.331,
+     56,
+     0.338,
      "淡水与湖泊河流"
     ]
    ],
@@ -14612,23 +12730,23 @@
    },
    "rel": [
     [
-     300,
+     258,
      0.56,
      "东南亚与西太"
     ],
     [
-     192,
-     0.33,
+     158,
+     0.331,
      "东南亚与西太"
     ],
     [
-     342,
-     0.316,
+     297,
+     0.317,
      ""
     ],
     [
-     58,
-     0.247,
+     118,
+     0.231,
      "东南亚与西太"
     ]
    ],
@@ -14659,23 +12777,23 @@
    },
    "rel": [
     [
-     360,
-     0.376,
+     133,
+     0.375,
      "藻类与海藻"
     ],
     [
-     165,
+     313,
      0.371,
      "藻类与海藻"
     ],
     [
-     29,
-     0.341,
+     23,
+     0.344,
      "藻类与海藻"
     ],
     [
-     292,
-     0.332,
+     250,
+     0.329,
      "藻类与海藻"
     ]
    ],
@@ -14702,23 +12820,23 @@
    },
    "rel": [
     [
-     350,
-     0.33,
+     303,
+     0.331,
      "生态与栖息地|加工品质与食品"
     ],
     [
-     353,
-     0.282,
+     306,
+     0.284,
      "生态与栖息地|加工品质与食品"
     ],
     [
-     240,
-     0.264,
+     203,
+     0.262,
      "生态与栖息地|加工品质与食品"
     ],
     [
-     269,
-     0.226,
+     229,
+     0.224,
      "生态与栖息地"
     ]
    ],
@@ -14751,23 +12869,23 @@
    },
    "rel": [
     [
-     297,
-     0.48,
+     255,
+     0.482,
      "监测与采样"
     ],
     [
-     228,
-     0.479,
+     191,
+     0.478,
      "监测与采样"
     ],
     [
-     80,
-     0.446,
+     54,
+     0.444,
      "金枪鱼与鲭类|监测与采样"
     ],
     [
-     10,
-     0.424,
+     8,
+     0.423,
      "地中海与黑海"
     ]
    ],
@@ -14795,23 +12913,23 @@
    },
    "rel": [
     [
-     115,
-     0.196,
+     85,
+     0.201,
      "藻类与海藻"
     ],
     [
-     360,
-     0.186,
+     313,
+     0.187,
      "藻类与海藻"
     ],
     [
-     28,
-     0.181,
+     22,
+     0.182,
      "藻类与海藻"
     ],
     [
-     289,
-     0.179,
+     249,
+     0.178,
      ""
     ]
    ],
@@ -14843,23 +12961,23 @@
    },
    "rel": [
     [
-     382,
+     333,
      0.45,
      ""
     ],
     [
-     140,
-     0.302,
+     110,
+     0.307,
      "中国近海与内陆"
     ],
     [
-     103,
-     0.274,
+     77,
+     0.277,
      "蟹类|中国近海与内陆"
     ],
     [
      0,
-     0.238,
+     0.241,
      "营养与饲料"
     ]
    ],
@@ -14887,23 +13005,23 @@
    },
    "rel": [
     [
-     382,
+     333,
      0.347,
      "印度洋与南亚"
     ],
     [
-     34,
-     0.34,
+     28,
+     0.336,
      "疾病与免疫"
     ],
     [
-     16,
-     0.317,
+     14,
+     0.315,
      "疾病与免疫"
     ],
     [
      3,
-     0.295,
+     0.298,
      "疾病与免疫"
     ]
    ],
@@ -14935,24 +13053,24 @@
    },
    "rel": [
     [
-     345,
-     0.579,
-     "监测与采样|机器学习与AI"
-    ],
-    [
-     164,
-     0.46,
-     "监测与采样|机器学习与AI"
-    ],
-    [
-     212,
+     176,
      0.453,
      "加勒比与墨西哥湾"
     ],
     [
-     262,
-     0.391,
+     223,
+     0.394,
      "监测与采样|机器学习与AI"
+    ],
+    [
+     334,
+     0.339,
+     "机器学习与AI"
+    ],
+    [
+     203,
+     0.337,
+     "监测与采样"
     ]
    ],
    "is_review": false,
@@ -14983,23 +13101,23 @@
    },
    "rel": [
     [
-     72,
-     0.5,
+     48,
+     0.502,
      "声学与遥测"
     ],
     [
-     135,
-     0.436,
+     105,
+     0.43,
      "保护与恢复|生态与栖息地"
     ],
     [
-     283,
-     0.414,
+     243,
+     0.412,
      "声学与遥测"
     ],
     [
-     154,
-     0.321,
+     124,
+     0.317,
      "生态与栖息地"
     ]
    ],
@@ -15025,23 +13143,23 @@
    },
    "rel": [
     [
-     156,
-     0.315,
+     126,
+     0.309,
      ""
     ],
     [
-     207,
-     0.224,
+     171,
+     0.222,
      ""
     ],
     [
-     230,
-     0.174,
+     193,
+     0.175,
      ""
     ],
     [
-     294,
-     0.169,
+     252,
+     0.17,
      ""
     ]
    ],
@@ -15070,24 +13188,24 @@
    },
    "rel": [
     [
-     156,
-     0.333,
+     126,
+     0.327,
      "水产养殖"
     ],
     [
-     355,
-     0.316,
+     308,
+     0.315,
      "营养与饲料"
     ],
     [
-     258,
-     0.283,
+     164,
+     0.281,
      "营养与饲料"
     ],
     [
-     198,
-     0.278,
-     "营养与饲料"
+     173,
+     0.274,
+     "鳗鲡与鲟类"
     ]
    ],
    "is_review": false,
@@ -15117,22 +13235,22 @@
    },
    "rel": [
     [
-     157,
-     0.389,
+     127,
+     0.387,
      "虾类|非洲海域"
     ],
     [
-     236,
-     0.388,
+     199,
+     0.387,
      "非洲海域"
     ],
     [
-     352,
-     0.378,
+     305,
+     0.374,
      "虾类"
     ],
     [
-     350,
+     303,
      0.338,
      "非洲海域"
     ]
@@ -15165,23 +13283,23 @@
    },
    "rel": [
     [
-     347,
-     0.425,
+     301,
+     0.423,
      "罗非鱼类|非洲海域"
     ],
     [
-     75,
-     0.37,
+     51,
+     0.367,
      "罗非鱼类"
     ],
     [
-     156,
-     0.318,
+     126,
+     0.314,
      "生物学与生理"
     ],
     [
-     197,
-     0.31,
+     163,
+     0.306,
      "营养与饲料|综述与元分析"
     ]
    ],
@@ -15213,23 +13331,23 @@
    },
    "rel": [
     [
-     69,
-     0.433,
+     46,
+     0.43,
      "南美海域"
     ],
     [
-     334,
-     0.428,
+     290,
+     0.425,
      "生物学与生理"
     ],
     [
-     366,
-     0.383,
+     318,
+     0.381,
      "南美海域"
     ],
     [
-     80,
-     0.337,
+     54,
+     0.334,
      "生物学与生理|种群评估与管理"
     ]
    ],
@@ -15259,23 +13377,23 @@
    },
    "rel": [
     [
-     200,
-     0.399,
-     "经济与社会政策"
-    ],
-    [
-     282,
-     0.384,
+     242,
+     0.382,
      "印度洋与南亚"
     ],
     [
-     303,
-     0.374,
+     261,
+     0.371,
      "印度洋与南亚|全球/多区域"
     ],
     [
-     217,
-     0.347,
+     18,
+     0.346,
+     "经济与社会政策"
+    ],
+    [
+     181,
+     0.342,
      "全球/多区域"
     ]
    ],
@@ -15301,18 +13419,23 @@
    },
    "rel": [
     [
-     21,
-     0.281,
+     263,
+     0.142,
      ""
     ],
     [
-     305,
-     0.137,
+     60,
+     0.139,
      ""
     ],
     [
-     86,
-     0.137,
+     142,
+     0.132,
+     ""
+    ],
+    [
+     112,
+     0.131,
      ""
     ]
    ],
@@ -15344,24 +13467,24 @@
    },
    "rel": [
     [
-     143,
-     0.467,
+     113,
+     0.461,
      "水产养殖|综述与元分析"
     ],
     [
-     170,
-     0.391,
+     138,
+     0.387,
      "机器学习与AI"
     ],
     [
-     178,
-     0.352,
+     145,
+     0.355,
      "机器学习与AI"
     ],
     [
-     345,
-     0.351,
-     "机器学习与AI"
+     202,
+     0.327,
+     "综述与元分析"
     ]
    ],
    "is_review": true,
@@ -15392,23 +13515,23 @@
    },
    "rel": [
     [
-     330,
-     0.428,
+     286,
+     0.425,
      "生物学与生理"
     ],
     [
-     80,
-     0.426,
+     54,
+     0.425,
      "北太平洋"
     ],
     [
-     69,
-     0.389,
+     46,
+     0.391,
      "鲨鱼与鳐类"
     ],
     [
-     139,
-     0.378,
+     109,
+     0.376,
      "鲨鱼与鳐类"
     ]
    ],
@@ -15440,51 +13563,24 @@
    },
    "rel": [
     [
-     185,
+     152,
      0.37,
      "种群评估与管理"
     ],
     [
-     89,
-     0.323,
+     63,
+     0.324,
      "监测与采样"
     ],
     [
-     215,
-     0.31,
+     179,
+     0.309,
      "统计建模"
     ],
     [
-     41,
-     0.299,
+     33,
+     0.301,
      "渤海"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3390/arts15110262",
-   "title": "Preaching to the Fish and Learning from the Deer: St. Hubert of Liège, St. Anthony of Padua, and Human-Animal Communication",
-   "authors": "Grén, Roni",
-   "journal": "Arts",
-   "date": "2026-11-11",
-   "summary": "This article discusses paintings of the stories of two Catholic saints from the early modern period to late 19th- and early 20th-century art: St. Hubert of Liège (c. 656-727) and St. Anthony of Padua (1195-1231).",
-   "summary_en": true,
-   "url": "https://doi.org/10.3390/arts15110262",
-   "tags": {
-    "theme": [
-     "misc"
-    ],
-    "species": [],
-    "region": [],
-    "method": []
-   },
-   "rel": [
-    [
-     137,
-     0.151,
-     ""
     ]
    ],
    "is_review": false,
@@ -15513,23 +13609,23 @@
    },
    "rel": [
     [
-     189,
+     156,
      0.308,
      "地中海与黑海"
     ],
     [
-     320,
-     0.273,
+     276,
+     0.275,
      "地中海与黑海|监测与采样"
     ],
     [
-     306,
-     0.227,
+     264,
+     0.225,
      "监测与采样"
     ],
     [
-     243,
-     0.2,
+     205,
+     0.199,
      "监测与采样"
     ]
    ],
@@ -15558,24 +13654,24 @@
    },
    "rel": [
     [
-     306,
-     0.48,
+     264,
+     0.473,
      "环境DNA"
     ],
     [
-     383,
-     0.468,
+     334,
+     0.463,
      "环境DNA"
     ],
     [
-     241,
-     0.441,
-     "环境DNA|统计建模"
-    ],
-    [
-     185,
-     0.435,
+     152,
+     0.444,
      "生态与栖息地"
+    ],
+    [
+     204,
+     0.438,
+     "环境DNA|统计建模"
     ]
    ],
    "is_review": false,
@@ -15600,23 +13696,23 @@
    },
    "rel": [
     [
-     137,
-     0.327,
+     107,
+     0.333,
      ""
     ],
     [
-     128,
-     0.28,
+     98,
+     0.281,
      ""
     ],
     [
-     211,
-     0.173,
+     175,
+     0.178,
      ""
     ],
     [
-     222,
-     0.156,
+     185,
+     0.158,
      ""
     ]
    ],
@@ -15644,23 +13740,23 @@
    },
    "rel": [
     [
-     147,
-     0.451,
+     117,
+     0.447,
      "水产养殖"
     ],
     [
-     156,
-     0.4,
+     126,
+     0.398,
      "水产养殖|生物学与生理"
     ],
     [
-     244,
-     0.371,
+     206,
+     0.372,
      "水产养殖|种群评估与管理"
     ],
     [
-     263,
-     0.365,
+     224,
+     0.362,
      "水产养殖"
     ]
    ],
@@ -15686,7 +13782,7 @@
    },
    "rel": [
     [
-     62,
+     39,
      0.137,
      ""
     ]
@@ -15715,23 +13811,23 @@
    },
    "rel": [
     [
-     300,
-     0.461,
+     258,
+     0.46,
      "贝类"
     ],
     [
-     317,
-     0.316,
+     273,
+     0.317,
      ""
     ],
     [
-     350,
+     303,
      0.231,
      "贝类"
     ],
     [
-     379,
-     0.213,
+     330,
+     0.212,
      "贝类"
     ]
    ],
@@ -15761,24 +13857,24 @@
    },
    "rel": [
     [
-     20,
-     0.334,
+     16,
+     0.333,
      "东南亚与西太"
     ],
     [
-     386,
+     337,
      0.284,
      "东南亚与西太"
     ],
     [
-     33,
-     0.282,
-     "遗传与基因组"
+     158,
+     0.279,
+     "东南亚与西太"
     ],
     [
-     192,
-     0.28,
-     "东南亚与西太"
+     27,
+     0.277,
+     "遗传与基因组"
     ]
    ],
    "is_review": false,
@@ -15804,72 +13900,24 @@
    },
    "rel": [
     [
-     272,
-     0.368,
-     "疾病与免疫"
-    ],
-    [
-     284,
-     0.317,
-     "疾病与免疫"
-    ],
-    [
-     97,
-     0.291,
-     "疾病与免疫"
-    ],
-    [
-     16,
-     0.273,
-     "疾病与免疫"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.1007/s00227-026-04950-2",
-   "title": "Humans versus machines: artificial intelligence performs similarly to manual analysis in benthic reef monitoring",
-   "authors": "Mega, Marina; Barroso, Viviane R.; Ferreira, Carlos Eduardo L.; Cordeiro, Cesar A. M. M.",
-   "journal": "Marine Biology",
-   "date": "2026-11-11",
-   "summary": "研究评估了CoralNet自动标注工具在热带珊瑚礁底栖覆盖分类中的表现，并与人工标注进行对比，同时考察图像质量对两种方法的影响。利用专家验证图像训练和测试两种方法，以Cohen's Kappa系数衡量表现并建模图像缺陷效应。结果显示，人工与自动标注在多数分类和形态功能类群上表现相近，且受图像质量影响程度相似；图像质量缺陷对标注表现的影响强于标注方式本身。表明经适当训练后自动标注可达到与人工方法相当的性能，有望支撑珊瑚礁生态系统的大尺度监测与生物多样性评估。",
-   "summary_en": false,
-   "url": "https://doi.org/10.1007/s00227-026-04950-2",
-   "tags": {
-    "theme": [
-     "eco",
-     "process"
-    ],
-    "species": [],
-    "region": [
-     "global"
-    ],
-    "method": [
-     "monitor",
-     "ml"
-    ]
-   },
-   "rel": [
-    [
-     164,
-     0.65,
-     "监测与采样|机器学习与AI"
-    ],
-    [
-     324,
-     0.579,
-     "监测与采样|机器学习与AI"
-    ],
-    [
-     116,
-     0.378,
-     "全球/多区域|监测与采样"
-    ],
-    [
-     162,
+     232,
      0.37,
-     "全球/多区域|监测与采样"
+     "疾病与免疫"
+    ],
+    [
+     244,
+     0.32,
+     "疾病与免疫"
+    ],
+    [
+     71,
+     0.292,
+     "疾病与免疫"
+    ],
+    [
+     14,
+     0.274,
+     "疾病与免疫"
     ]
    ],
    "is_review": false,
@@ -15903,23 +13951,23 @@
    },
    "rel": [
     [
-     280,
-     0.454,
+     240,
+     0.451,
      "淡水与湖泊河流|中国近海与内陆"
     ],
     [
-     384,
+     335,
      0.41,
      "耳石与硬组织"
     ],
     [
-     116,
-     0.34,
+     86,
+     0.343,
      "淡水与湖泊河流|监测与采样"
     ],
     [
-     182,
-     0.332,
+     149,
+     0.33,
      "淡水与湖泊河流|监测与采样"
     ]
    ],
@@ -15950,23 +13998,23 @@
    },
    "rel": [
     [
-     109,
-     0.485,
+     83,
+     0.48,
      "鲑鳟鱼类"
     ],
     [
-     147,
-     0.441,
+     117,
+     0.437,
      "鲑鳟鱼类"
     ],
     [
-     329,
-     0.425,
+     285,
+     0.423,
      "罗非鱼类|非洲海域"
     ],
     [
-     377,
-     0.42,
+     328,
+     0.414,
      "罗非鱼类"
     ]
    ],
@@ -15994,65 +14042,23 @@
    },
    "rel": [
     [
-     62,
-     0.26,
+     39,
+     0.259,
      ""
     ],
     [
-     189,
-     0.231,
+     156,
+     0.23,
      "鲹科与军曹鱼"
     ],
     [
-     380,
-     0.192,
+     331,
+     0.193,
      ""
     ],
     [
-     188,
-     0.192,
-     ""
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.1002/cjce.70632",
-   "title": "Chemical energy dispatch and multi-objective programming based on multi-population optimization and BAS",
-   "authors": "Yang, Tingting; Li, Xunlai",
-   "journal": "The Canadian Journal of Chemical Engineering",
-   "date": "2026-11-10",
-   "summary": "该研究针对化工生产过程能量耦合复杂、多能协同困难的问题，构建了以运行成本、碳排放和调度稳定性为目标的多目标能源调度模型，并提出融合多种群机制的改进甲虫觅食算法（BAS）进行求解。典型化工能源系统实验表明，该方法综合能源利用率较传统方法提高12.34%，蒸汽-电力供需平衡偏差降低27.81%，系统能效稳定系数提升至0.93。研究实现了化工能源调度的经济与低碳协同优化，为复杂流程系统的智能调度与绿色制造提供了可推广的技术路径。",
-   "summary_en": false,
-   "url": "https://doi.org/10.1002/cjce.70632",
-   "tags": {
-    "theme": [
-     "misc"
-    ],
-    "species": [],
-    "region": [],
-    "method": []
-   },
-   "rel": [
-    [
-     219,
-     0.331,
-     ""
-    ],
-    [
-     225,
-     0.171,
-     ""
-    ],
-    [
-     246,
-     0.159,
-     ""
-    ],
-    [
-     277,
-     0.147,
+     155,
+     0.191,
      ""
     ]
    ],
@@ -16084,22 +14090,22 @@
    },
    "rel": [
     [
-     185,
+     152,
      0.378,
      "生态与栖息地|种群评估与管理"
     ],
     [
-     243,
-     0.369,
+     205,
+     0.368,
      "非洲海域"
     ],
     [
-     240,
-     0.353,
+     203,
+     0.355,
      "生态与栖息地|加工品质与食品"
     ],
     [
-     328,
+     284,
      0.338,
      "非洲海域"
     ]
@@ -16130,23 +14136,23 @@
    },
    "rel": [
     [
-     368,
+     320,
      0.66,
      "东南亚与西太"
     ],
     [
-     222,
+     185,
      0.387,
      "东南亚与西太"
     ],
     [
-     150,
-     0.282,
+     120,
+     0.28,
      "东南亚与西太"
     ],
     [
-     287,
-     0.27,
+     247,
+     0.269,
      "东南亚与西太"
     ]
    ],
@@ -16176,23 +14182,23 @@
    },
    "rel": [
     [
-     328,
-     0.378,
+     284,
+     0.374,
      "虾类"
     ],
     [
-     276,
-     0.289,
+     236,
+     0.288,
      "虾类"
     ],
     [
-     118,
-     0.257,
+     88,
+     0.258,
      "生态与栖息地|经济与社会政策"
     ],
     [
-     350,
-     0.257,
+     303,
+     0.256,
      "生态与栖息地|加工品质与食品"
     ]
    ],
@@ -16222,23 +14228,23 @@
    },
    "rel": [
     [
-     280,
-     0.459,
-     "淡水与湖泊河流"
-    ],
-    [
-     82,
-     0.43,
-     "淡水与湖泊河流"
-    ],
-    [
      240,
-     0.411,
+     0.454,
      "淡水与湖泊河流"
     ],
     [
-     67,
-     0.402,
+     56,
+     0.444,
+     "淡水与湖泊河流"
+    ],
+    [
+     203,
+     0.408,
+     "淡水与湖泊河流"
+    ],
+    [
+     272,
+     0.405,
      "淡水与湖泊河流"
     ]
    ],
@@ -16264,23 +14270,23 @@
    },
    "rel": [
     [
-     371,
-     0.456,
+     323,
+     0.459,
      "水产养殖"
     ],
     [
-     142,
-     0.301,
+     112,
+     0.3,
      "水产养殖"
     ],
     [
-     359,
-     0.259,
+     312,
+     0.258,
      "水产养殖"
     ],
     [
-     223,
-     0.224,
+     186,
+     0.222,
      "水产养殖"
     ]
    ],
@@ -16308,23 +14314,23 @@
    },
    "rel": [
     [
-     327,
-     0.316,
+     283,
+     0.315,
      "营养与饲料"
     ],
     [
-     35,
+     29,
      0.232,
      "金枪鱼与鲭类"
     ],
     [
-     287,
+     247,
      0.222,
      "营养与饲料"
     ],
     [
-     329,
-     0.211,
+     285,
+     0.21,
      "营养与饲料"
     ]
    ],
@@ -16350,23 +14356,23 @@
    },
    "rel": [
     [
-     109,
-     0.494,
+     83,
+     0.491,
      "营养与饲料"
     ],
     [
-     315,
-     0.422,
+     271,
+     0.418,
      "营养与饲料"
     ],
     [
-     312,
-     0.385,
+     269,
+     0.382,
      "营养与饲料"
     ],
     [
-     295,
-     0.321,
+     253,
+     0.316,
      ""
     ]
    ],
@@ -16392,23 +14398,23 @@
    },
    "rel": [
     [
-     174,
-     0.261,
+     141,
+     0.263,
      "污染与毒理"
     ],
     [
-     204,
-     0.175,
+     169,
+     0.18,
      ""
     ],
     [
-     63,
-     0.161,
+     40,
+     0.162,
      "污染与毒理"
     ],
     [
-     372,
-     0.158,
+     324,
+     0.159,
      "污染与毒理"
     ]
    ],
@@ -16438,22 +14444,22 @@
    },
    "rel": [
     [
-     243,
-     0.667,
+     205,
+     0.666,
      "非洲海域|监测与采样"
     ],
     [
-     280,
-     0.526,
+     240,
+     0.525,
      "监测与采样"
     ],
     [
-     82,
-     0.396,
+     56,
+     0.397,
      "生态与栖息地"
     ],
     [
-     240,
+     203,
      0.368,
      "监测与采样"
     ]
@@ -16485,23 +14491,23 @@
    },
    "rel": [
     [
-     144,
-     0.617,
+     114,
+     0.611,
      "非洲海域"
     ],
     [
-     371,
-     0.524,
+     323,
+     0.519,
      "非洲海域"
     ],
     [
-     84,
+     58,
      0.5,
      "水产养殖"
     ],
     [
-     380,
-     0.445,
+     331,
+     0.441,
      "鲶形目鱼类|非洲海域"
     ]
    ],
@@ -16535,23 +14541,23 @@
    },
    "rel": [
     [
-     318,
-     0.376,
+     274,
+     0.371,
      "藻类与海藻"
     ],
     [
-     9,
-     0.35,
+     7,
+     0.351,
      "水产养殖"
     ],
     [
-     244,
+     206,
      0.349,
      "水产养殖|种群评估与管理"
     ],
     [
-     308,
-     0.321,
+     266,
+     0.318,
      "贝类"
     ]
    ],
@@ -16581,22 +14587,22 @@
    },
    "rel": [
     [
-     225,
+     188,
      0.6,
      "监测与采样"
     ],
     [
-     178,
-     0.476,
+     145,
+     0.475,
      "监测与采样"
     ],
     [
-     381,
-     0.403,
+     332,
+     0.402,
      "水产养殖|加工品质与食品"
     ],
     [
-     240,
+     203,
      0.343,
      "监测与采样"
     ]
@@ -16629,66 +14635,24 @@
    },
    "rel": [
     [
-     246,
-     0.339,
+     208,
+     0.344,
      "水产养殖"
     ],
     [
-     308,
-     0.336,
+     266,
+     0.335,
      "贝类"
     ],
     [
-     85,
-     0.323,
+     59,
+     0.319,
      "气候变化与环境|生态与栖息地"
     ],
     [
-     350,
-     0.314,
+     303,
+     0.311,
      "贝类"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.3389/fmars.2026.1924894",
-   "title": "Temporal dynamics of coral bleaching and live coral cover at the Cayman Crown Reef, Gulf of Honduras (2016-2025)",
-   "authors": "Giró Petersen, Ana; Mojica, Ángela María; Muñiz-Castillo, Aarón Israel; McField, Melanie",
-   "journal": "Frontiers in Marine Science",
-   "date": "2026-11-10",
-   "summary": "洪都拉斯湾Cayman Crown珊瑚礁2016–2025年间经历三次白化事件，研究评估了四个站点的白化严重程度、死亡率和恢复情况。2019–2021年第三次区域珊瑚白化事件期间Bleaching Severity Index（BSI）最高（54–59%，峰值DHW约10 °C-weeks），白化后珊瑚近乎完全恢复，显示较强的短期恢复力；而2023–2025年第四次全球珊瑚白化事件连续白化导致约29%的珊瑚死亡及持续残留白化，活珊瑚覆盖率显著下降（如CC01站点从50.3%降至34.1%），但站点间响应存在差异。结果表明，重复热胁迫下恢复窗口缩短，可能侵蚀即使离岸珊瑚礁的resilience。",
-   "summary_en": false,
-   "url": "https://doi.org/10.3389/fmars.2026.1924894",
-   "tags": {
-    "theme": [
-     "climate"
-    ],
-    "species": [],
-    "region": [],
-    "method": []
-   },
-   "rel": [
-    [
-     212,
-     0.346,
-     ""
-    ],
-    [
-     324,
-     0.295,
-     ""
-    ],
-    [
-     264,
-     0.254,
-     "气候变化与环境"
-    ],
-    [
-     39,
-     0.214,
-     "气候变化与环境"
     ]
    ],
    "is_review": false,
@@ -16716,23 +14680,23 @@
    },
    "rel": [
     [
-     223,
-     0.514,
+     186,
+     0.511,
      "东南亚与西太"
     ],
     [
-     276,
-     0.461,
+     236,
+     0.456,
      "东南亚与西太"
     ],
     [
-     26,
-     0.344,
+     21,
+     0.345,
      "水产养殖|经济与社会政策"
     ],
     [
-     285,
-     0.329,
+     245,
+     0.323,
      "东南亚与西太"
     ]
    ],
@@ -16762,23 +14726,23 @@
    },
    "rel": [
     [
-     207,
-     0.593,
+     171,
+     0.589,
      "鲑鳟鱼类|淡水与湖泊河流"
     ],
     [
-     135,
-     0.473,
+     105,
+     0.477,
      "淡水与湖泊河流"
     ],
     [
-     180,
-     0.356,
+     147,
+     0.355,
      "鲑鳟鱼类|淡水与湖泊河流"
     ],
     [
-     240,
-     0.33,
+     203,
+     0.327,
      "淡水与湖泊河流"
     ]
    ],
@@ -16808,24 +14772,24 @@
    },
    "rel": [
     [
-     330,
-     0.383,
+     286,
+     0.381,
      "南美海域"
     ],
     [
-     67,
-     0.326,
+     44,
+     0.324,
      "淡水与湖泊河流"
     ],
     [
-     253,
+     46,
+     0.31,
+     "南美海域"
+    ],
+    [
+     215,
      0.31,
      "淡水与湖泊河流"
-    ],
-    [
-     69,
-     0.307,
-     "南美海域"
     ]
    ],
    "is_review": false,
@@ -16852,23 +14816,23 @@
    },
    "rel": [
     [
-     166,
-     0.302,
+     134,
+     0.3,
      "淡水与湖泊河流"
     ],
     [
-     194,
-     0.228,
+     160,
+     0.229,
      "淡水与湖泊河流"
     ],
     [
-     353,
-     0.225,
+     306,
+     0.224,
      "淡水与湖泊河流"
     ],
     [
-     224,
-     0.218,
+     187,
+     0.221,
      "淡水与湖泊河流"
     ]
    ],
@@ -16897,23 +14861,23 @@
    },
    "rel": [
     [
-     351,
+     304,
      0.66,
      "东南亚与西太"
     ],
     [
-     222,
+     185,
      0.408,
      "东南亚与西太"
     ],
     [
-     245,
+     207,
      0.324,
      "东南亚与西太"
     ],
     [
-     150,
-     0.312,
+     120,
+     0.31,
      "东南亚与西太"
     ]
    ],
@@ -16942,23 +14906,23 @@
    },
    "rel": [
     [
-     105,
-     0.537,
+     79,
+     0.534,
      "其他淡水鱼"
     ],
     [
-     195,
-     0.377,
+     161,
+     0.375,
      "遗传与基因组"
     ],
     [
-     33,
-     0.334,
+     27,
+     0.331,
      "遗传与基因组"
     ],
     [
-     151,
-     0.324,
+     121,
+     0.32,
      "遗传与基因组"
     ]
    ],
@@ -16984,23 +14948,23 @@
    },
    "rel": [
     [
-     248,
-     0.192,
+     210,
+     0.194,
      ""
     ],
     [
-     381,
-     0.177,
+     332,
+     0.173,
      ""
     ],
     [
-     377,
-     0.169,
+     328,
+     0.165,
      ""
     ],
     [
-     246,
-     0.157,
+     208,
+     0.155,
      ""
     ]
    ],
@@ -17031,23 +14995,23 @@
    },
    "rel": [
     [
-     144,
-     0.558,
+     114,
+     0.554,
      "非洲海域"
     ],
     [
-     359,
-     0.524,
+     312,
+     0.519,
      "非洲海域"
     ],
     [
-     243,
-     0.511,
+     205,
+     0.515,
      "非洲海域"
     ],
     [
-     354,
-     0.456,
+     307,
+     0.459,
      "水产养殖"
     ]
    ],
@@ -17076,23 +15040,23 @@
    },
    "rel": [
     [
-     14,
+     12,
      0.525,
      "捕捞技术与兼捕|污染与毒理"
     ],
     [
-     281,
+     241,
      0.525,
      "捕捞技术与兼捕|污染与毒理"
     ],
     [
-     229,
+     192,
      0.5,
      "污染与毒理"
     ],
     [
      0,
-     0.379,
+     0.381,
      "污染与毒理"
     ]
    ],
@@ -17121,66 +15085,24 @@
    },
    "rel": [
     [
-     156,
-     0.436,
+     126,
+     0.432,
      "水产养殖"
     ],
     [
-     36,
-     0.277,
-     ""
-    ],
-    [
-     283,
-     0.276,
+     243,
+     0.275,
      "鲆鲽类"
     ],
     [
-     24,
+     30,
+     0.274,
+     ""
+    ],
+    [
+     19,
      0.263,
      "水产养殖|经济与社会政策"
-    ]
-   ],
-   "is_review": false,
-   "high_impact": false
-  },
-  {
-   "doi": "10.1007/s11814-026-00876-z",
-   "title": "Compositional Features and Biomedical Applications of Fish-derived Decellularized Extracellular Matrix as a Sustainable Biomaterial Platform",
-   "authors": "Kim, Bosong; Kim, Jinu; Yang, Yun Jung",
-   "journal": "Korean Journal of Chemical Engineering",
-   "date": "2026-11-09",
-   "summary": "鱼源脱细胞细胞外基质（dECM）因海洋组织丰富可再生、常作为渔业与水产养殖副产物而成为哺乳动物源dECM的可持续替代品，后者存在人畜共患病传播、免疫原性、伦理及批间变异等问题。综述梳理了鱼皮、肌肉、鳞片、鱼鳔、骨和软骨等组织来源的ECM组成与应用相关性质，比较化学、酶法和物理脱细胞方法，并总结灭菌、交联、复合水凝胶及静电纺丝等后处理策略对力学稳定性、降解性和可加工性的改善。近期研究显示鱼源dECM可制成完整片状支架、可溶水凝胶/生物墨水及电纺纤维复合材料，用于伤口修复、皮肤重建、组织建模和血管移植物，但标准化生产规范与评价标准尚未建立，长期安全性和有效性验证不足，临床转化与产业化仍受制约。",
-   "summary_en": false,
-   "url": "https://doi.org/10.1007/s11814-026-00876-z",
-   "tags": {
-    "theme": [
-     "process"
-    ],
-    "species": [],
-    "region": [],
-    "method": []
-   },
-   "rel": [
-    [
-     266,
-     0.418,
-     "加工品质与食品"
-    ],
-    [
-     2,
-     0.355,
-     "加工品质与食品"
-    ],
-    [
-     315,
-     0.22,
-     "加工品质与食品"
-    ],
-    [
-     376,
-     0.217,
-     ""
     ]
    ],
    "is_review": false,
@@ -17209,23 +15131,23 @@
    },
    "rel": [
     [
-     43,
+     34,
      0.356,
      "疾病与免疫"
     ],
     [
-     299,
-     0.306,
+     257,
+     0.305,
      "水产养殖|疾病与免疫"
     ],
     [
-     35,
+     29,
      0.299,
      "环境DNA"
     ],
     [
-     121,
-     0.291,
+     91,
+     0.289,
      "疾病与免疫|遗传与基因组"
     ]
    ],
@@ -17253,23 +15175,23 @@
    },
    "rel": [
     [
-     284,
-     0.29,
+     244,
+     0.292,
      "水产养殖|疾病与免疫"
     ],
     [
-     66,
-     0.288,
-     "水产养殖|疾病与免疫"
-    ],
-    [
-     95,
-     0.287,
+     69,
+     0.291,
      "水产养殖"
     ],
     [
-     197,
-     0.276,
+     43,
+     0.289,
+     "水产养殖|疾病与免疫"
+    ],
+    [
+     163,
+     0.274,
      "水产养殖|综述与元分析"
     ]
    ],
@@ -17299,23 +15221,23 @@
    },
    "rel": [
     [
-     381,
+     332,
      0.63,
      "罗非鱼类"
     ],
     [
-     246,
-     0.553,
+     208,
+     0.546,
      "罗非鱼类"
     ],
     [
-     97,
-     0.438,
+     71,
+     0.431,
      "罗非鱼类"
     ],
     [
-     30,
-     0.435,
+     51,
+     0.428,
      "罗非鱼类"
     ]
    ],
@@ -17342,23 +15264,23 @@
    },
    "rel": [
     [
-     338,
-     0.352,
+     293,
+     0.35,
      "生态与栖息地"
     ],
     [
-     350,
-     0.275,
+     303,
+     0.279,
      "生态与栖息地"
     ],
     [
-     81,
-     0.274,
+     55,
+     0.272,
      "生态与栖息地"
     ],
     [
-     280,
-     0.234,
+     240,
+     0.233,
      "生态与栖息地"
     ]
    ],
@@ -17386,23 +15308,23 @@
    },
    "rel": [
     [
-     362,
-     0.3,
+     315,
+     0.302,
      "贝类"
     ],
     [
-     300,
-     0.245,
+     258,
+     0.243,
      "贝类"
     ],
     [
-     308,
-     0.215,
-     "贝类"
-    ],
-    [
-     289,
+     266,
      0.214,
+     "贝类"
+    ],
+    [
+     313,
+     0.213,
      "贝类"
     ]
    ],
@@ -17433,22 +15355,22 @@
    },
    "rel": [
     [
-     9,
+     7,
      0.655,
      "鲶形目鱼类"
     ],
     [
-     359,
-     0.445,
+     312,
+     0.441,
      "鲶形目鱼类|非洲海域"
     ],
     [
      3,
-     0.441,
+     0.437,
      "鲶形目鱼类"
     ],
     [
-     177,
+     144,
      0.428,
      "水产养殖"
     ]
@@ -17479,23 +15401,23 @@
    },
    "rel": [
     [
-     377,
+     328,
      0.63,
      "罗非鱼类"
     ],
     [
-     246,
-     0.557,
+     208,
+     0.55,
      "罗非鱼类"
     ],
     [
-     97,
-     0.491,
+     71,
+     0.485,
      "罗非鱼类"
     ],
     [
-     30,
-     0.448,
+     24,
+     0.442,
      "罗非鱼类"
     ]
    ],
@@ -17525,23 +15447,23 @@
    },
    "rel": [
     [
-     322,
+     278,
      0.45,
      ""
     ],
     [
-     208,
-     0.444,
+     172,
+     0.439,
      "印度洋与南亚"
     ],
     [
-     24,
-     0.428,
+     19,
+     0.423,
      "印度洋与南亚"
     ],
     [
-     124,
-     0.353,
+     94,
+     0.355,
      "监测与采样"
     ]
    ],
@@ -17573,24 +15495,24 @@
    },
    "rel": [
     [
-     118,
-     0.481,
+     88,
+     0.478,
      "环境DNA"
     ],
     [
-     338,
-     0.468,
+     293,
+     0.463,
      "环境DNA"
     ],
     [
-     241,
-     0.447,
+     204,
+     0.444,
      "环境DNA"
     ],
     [
-     21,
-     0.395,
-     "中国近海与内陆|机器学习与AI"
+     264,
+     0.378,
+     "环境DNA"
     ]
    ],
    "is_review": false,
@@ -17619,23 +15541,23 @@
    },
    "rel": [
     [
-     346,
+     300,
      0.41,
      "耳石与硬组织"
     ],
     [
-     108,
-     0.369,
+     82,
+     0.37,
      "鳗鲡与鲟类"
     ],
     [
-     385,
-     0.323,
+     336,
+     0.321,
      "鳗鲡与鲟类"
     ],
     [
-     37,
-     0.295,
+     31,
+     0.294,
      "耳石与硬组织"
     ]
    ],
@@ -17667,23 +15589,23 @@
    },
    "rel": [
     [
-     384,
-     0.323,
+     335,
+     0.321,
      "鳗鲡与鲟类"
     ],
     [
-     159,
-     0.29,
+     129,
+     0.291,
      "鳗鲡与鲟类"
     ],
     [
-     330,
-     0.242,
+     286,
+     0.243,
      "鳗鲡与鲟类"
     ],
     [
-     329,
-     0.242,
+     285,
+     0.241,
      "非洲海域"
     ]
    ],
@@ -17714,24 +15636,24 @@
    },
    "rel": [
     [
-     240,
-     0.36,
+     203,
+     0.357,
      "东南亚与西太"
     ],
     [
-     148,
-     0.327,
+     118,
+     0.328,
      "东南亚与西太"
     ],
     [
-     32,
-     0.318,
+     26,
+     0.315,
      "鲈鱼与石斑鱼"
     ],
     [
-     124,
-     0.296,
-     "东南亚与西太"
+     176,
+     0.303,
+     "生态与栖息地"
     ]
    ],
    "is_review": false,
@@ -17763,22 +15685,22 @@
    "rel": [
     [
      5,
-     0.427,
+     0.43,
      "南美海域"
     ],
     [
-     269,
-     0.316,
+     229,
+     0.317,
      "生态与栖息地"
     ],
     [
-     210,
-     0.28,
+     174,
+     0.279,
      "生态与栖息地"
     ],
     [
-     389,
-     0.275,
+     340,
+     0.274,
      "南美海域"
     ]
    ],
@@ -17808,23 +15730,23 @@
    },
    "rel": [
     [
-     257,
-     0.438,
+     219,
+     0.442,
      "海龟与海鸟"
     ],
     [
-     160,
+     130,
      0.27,
      "海龟与海鸟"
     ],
     [
-     325,
-     0.26,
+     281,
+     0.255,
      "北大西洋"
     ],
     [
-     251,
-     0.215,
+     213,
+     0.218,
      ""
     ]
    ],
@@ -17852,23 +15774,23 @@
    },
    "rel": [
     [
-     158,
-     0.347,
+     128,
+     0.344,
      "生态与栖息地"
     ],
     [
-     29,
-     0.302,
+     23,
+     0.307,
      "生态与栖息地"
     ],
     [
-     280,
-     0.277,
+     240,
+     0.274,
      "生态与栖息地"
     ],
     [
-     387,
-     0.275,
+     338,
+     0.274,
      "南美海域"
     ]
    ],
@@ -17896,23 +15818,23 @@
    },
    "rel": [
     [
-     360,
-     0.24,
+     313,
+     0.237,
      "贝类"
     ],
     [
-     308,
-     0.222,
+     266,
+     0.221,
      "贝类"
     ],
     [
-     350,
-     0.196,
+     303,
+     0.197,
      "贝类"
     ],
     [
-     342,
-     0.191,
+     297,
+     0.192,
      "贝类"
     ]
    ],
@@ -17943,23 +15865,23 @@
    },
    "rel": [
     [
-     79,
-     0.396,
+     53,
+     0.392,
      "气候变化与环境"
     ],
     [
-     231,
-     0.373,
+     194,
+     0.372,
      "生物学与生理"
     ],
     [
-     241,
-     0.344,
+     204,
+     0.342,
      "环境DNA"
     ],
     [
-     233,
-     0.247,
+     196,
+     0.246,
      "鲤科鱼类"
     ]
    ],
@@ -17988,23 +15910,23 @@
    },
    "rel": [
     [
-     46,
-     0.315,
+     36,
+     0.314,
      "鲨鱼与鳐类"
     ],
     [
-     210,
-     0.314,
+     174,
+     0.313,
      "饵料鱼类"
     ],
     [
-     139,
-     0.294,
+     109,
+     0.292,
      "鲨鱼与鳐类"
     ],
     [
-     192,
-     0.287,
+     158,
+     0.288,
      "鲨鱼与鳐类"
     ]
    ],
