@@ -1,6 +1,6 @@
 # 🐟 渔业文献速览
 
-> Fisheries Science Daily Digest — 每日自动抓取 · DeepSeek 中文摘要 · 四维标签检索
+> Fisheries Science Daily Digest — 每日自动抓取 · AI 中文速览 · 四维标签 · BM25 + 语义检索
 
 [![Daily Update](https://github.com/FC-Han/fishery-paper/actions/workflows/daily-update.yml/badge.svg)](https://github.com/FC-Han/fishery-paper/actions/workflows/daily-update.yml)
 
@@ -28,10 +28,12 @@
 
 ```
 docs/
-├── index.html            ← 全部页面（数据内联，约 300 KB）
+├── index.html            ← 全部页面（数据内联，约 540 KB）
 └── data/
     ├── abstracts.json    ← 英文摘要，点"英文摘要"时才请求
-    └── papers.json       ← 完整结构化数据，可当 API 用
+    ├── papers.json       ← 完整结构化数据，可当 API 用
+    ├── emb.json          ← 向量元信息（349 × 1024、模型名）
+    └── emb.bin           ← 文档向量，int8 量化，约 352 KB（仅语义检索启用时存在）
 ```
 
 ## 🔗 论文关联
@@ -39,14 +41,14 @@ docs/
 点卡片底部的「相关 N」展开推荐列表，点「关系图」进入可探索的关系网络：中心是当前论文，
 四周是关联最紧的文献，点任意节点即以它为中心继续走，支持返回上一级。
 
-**算法**（`scripts/build_relations.py`，纯离线、零 API 成本，344 篇约 2 秒）：
+**算法**（`scripts/build_relations.py`，纯离线、零 API 成本，349 篇约 2 秒）：
 
 - 文本相似：标题（权重 ×3）+ 英文摘要前 700 字符 + 中文速览，中英文分别按 bigram / 单词切分后做 TF-IDF 余弦
 - 标签重叠：按共有的标签**个数**加分（同维度第 2 个减半），而非 Jaccard —— 共享 1 个鱼种本身就是强信号，不该被并集除小
 - 融合：`0.45 × 文本 + 0.50 × 标签 + 0.05 × 同期刊`
 - bigram TF-IDF 的绝对尺度很小（全体中位 0.012），所以文本分先按参考值 0.06 归一化再参与融合，否则会被压成噪声
 
-结果写回 `data/papers.json` 的 `rel` 字段，生成站点时转成数组下标内联，344 篇 × 4 条约 40 KB。
+结果写回 `data/papers.json` 的 `rel` 字段，生成站点时转成数组下标内联，349 篇共约 1400 条边、44 KB。
 每天 CI 里全量重算（比增量更正确：新论文也要能出现在旧论文的关联里）。
 
 ## 📥 摘要回捞
@@ -104,7 +106,7 @@ Crossref 的 ISSN 抓取拿的是整本期刊，而 `Frontiers in Marine Science
 
 ## 🔎 站内检索（BM25）
 
-纯前端的轻量检索引擎，打开页面即在浏览器里建好索引：**零后端、零 API 成本**，344 篇的建索引 + 单次查询都在 10 ms 内。
+纯前端的轻量检索引擎，打开页面即在浏览器里建好索引：**零后端、零 API 成本**，349 篇的建索引 + 单次查询都在 10 ms 内。
 
 - **分词**：中文不依赖词典，CJK 连续段切 bigram（"大黄鱼" → 大黄 / 黄鱼），英文按词，中英混排自动分开
 - **字段加权**：标题 ×3.2、标签 ×2.2、期刊 ×1.8、摘要 ×1.0、作者 ×0.7，`k1=1.35`、`b=0.72` 做长度归一
@@ -118,15 +120,49 @@ Crossref 的 ISSN 抓取拿的是整本期刊，而 `Frontiers in Marine Science
 
 ## 🧠 语义检索（可选）
 
-BM25 只认字面，换个说法就搜不到了（"鱼的耳石" vs `otolith`）。语义检索补这一块：
+BM25 只认字面，换个说法就搜不到了。搜「黄海」时，写 `Yellow Sea` 的论文一个都出不来；
+搜「鱼的耳石」，`otolith` 那批也全军覆没。语义检索就是补这一块。
 
-- **文档向量离线算**：`scripts/build_embeddings.py` 把标题 + 标签 + 摘要前段喂给 embedding 模型，
-  L2 归一化后 int8 量化存成 `docs/data/emb.bin`，344 篇约 350 KB，浏览器打开搜索时再取
-- **查询向量实时算**：走 Vercel 上的 `api/embed.js` 代理，key 留在服务端，前端只认代理地址
-- **混合排序**：`0.55 × BM25 归一 + 0.45 × 余弦`；BM25 一篇都没命中时，余弦 ≥ 0.34 的候选会补进来
-- **优雅降级**：端点没配、请求失败、向量缺失，一律静默退回纯 BM25，不会白屏
+**两条通道并行，加权融合：**
 
-先展示 BM25 结果，拿到向量后原地重排，所以感知延迟几乎为零。部署步骤见 **[VERCEL.md](VERCEL.md)**。
+```
+             ┌── 字面通道：BM25 倒排索引（只认字面的字)
+  查询 ──────┤
+             └── 语义通道：embedding 向量（认意思，Bohai Sea 也算渤海）
+                          ↓
+                   0.55 × 字面 + 0.45 × 语义
+```
+
+为什么不是纯向量检索：物种拉丁名（`Siniperca chuatsi`）、作者名、期刊名这类精确查询，
+BM25 一击必中，而向量反而会给你一堆"意思相近但物种不同"的论文。两条都要。
+
+**向量怎么算的：**
+
+| | 何时算 | 存哪 | 成本 |
+|---|---|---|---|
+| 文档向量（349 篇） | CI 里批量算，一天一次 | `docs/data/emb.bin`，int8 量化后 352 KB | 一次性几分钱 |
+| 查询向量（每次搜索） | 浏览器实时请求 | 不存 | 走 Vercel 代理，key 不进前端 |
+
+**关键实现参数：**
+
+- 文本来源：标题 + 标签 + 英文摘要前段，喂给 `BAAI/bge-m3`（1024 维，中英混排都能用）
+- 量化：L2 归一化后用 `int8` 存，压缩 4 倍且精度损失可忽略（余弦误差 < 0.002）
+- 混合权重：`0.55 × BM25归一 + 0.45 × 余弦`
+- 语义补充门槛：余弦 ≥ `0.34` 且不在 BM25 结果里，最多补 60 篇
+- 请求超时：**6 秒**（Vercel 冷启动 1–2s + 服务商 0.5–1.5s，2.5s 会误杀正常请求）
+- 熔断：失败后 **5 分钟内不再重试**，避免端点不可达时反复拖累搜索
+
+**降级策略：** 端点没配 / 向量缺失 / 请求失败 → 静默退回纯 BM25，页面不报错、不白屏。
+但失败原因会打到浏览器控制台，方便排查：
+
+```
+[语义检索未生效] Failed to fetch
+排查：1) 页面来源是否为 https://fc-han.github.io 2) /api/embed 能否 POST 通 3) Vercel 里 EMBED_API_KEY 是否已配
+```
+
+**交互设计：** 先渲染 BM25 结果 → 向量返回后原地重排。用户不会盯着空白页等，慢的时候只是排序晚一点变。
+
+部署完整步骤见 **[VERCEL.md](VERCEL.md)**，踩过的坑也记在里面。
 
 ## 🏷 标签体系
 
@@ -185,19 +221,49 @@ python scripts/build_relations.py --force # 改关联算法后全量重算
 
 ## 📦 部署
 
-1. **Secret**：`Settings → Secrets and variables → Actions` 添加 `DEEPSEEK_API_KEY`
-2. **Pages**：`Settings → Pages` → Source 选 `Deploy from a branch`，分支 `main`、目录 `/docs`
-3. **自动运行**：每天北京时间 16:00 抓取（回看 5 天，靠 DOI 去重，避免索引延迟漏文）
+分两层：**基础站（必须）** 和 **语义检索（可选）**。只做第一层就能完整使用除语义搜索外的全部功能。
 
-要在本地/服务器跑定时任务，把上面四条命令串起来即可。
+### 第一层：基础站（5 分钟）
+
+| # | 在哪 | 做什么 |
+|---|---|---|
+| 1 | GitHub → Settings → Secrets and variables → Actions → **Secrets** | 加 `DEEPSEEK_API_KEY`（[申请](https://platform.deepseek.com/)） |
+| 2 | GitHub → 同页 → **Variables** | 可选：`SEMANTIC_SCHOLAR_API_KEY` |
+| 3 | GitHub → Settings → **Pages** | Source 选 `Deploy from a branch`，分支 `main`、目录 `/docs` |
+| 4 | GitHub → Actions | 启用 workflow（首次会自动跑一次） |
+| 5 | Actions → 渔业文献每日更新 → **Run workflow** | 手动触发，等 2–4 分钟 |
+
+跑完访问 `https://<用户名>.github.io/fishery-paper/`。之后每天北京时间 16:00 自动更新
+（回看 5 天，靠 DOI 去重，避免索引延迟漏文）。
+
+### 第二层：语义检索（可选，约 15 分钟）
+
+需要额外的 embedding 服务 + 一个 serverless 代理。完整步骤见 **[VERCEL.md](VERCEL.md)**，简版：
+
+| # | 在哪 | 做什么 |
+|---|---|---|
+| 1 | [cloud.siliconflow.cn](https://cloud.siliconflow.cn) | 注册，新建 API 密钥，拿到 `sk-xxx` |
+| 2 | [vercel.com/new](https://vercel.com/new) | 导入本仓库，**Application Preset 必须选 `Other`**（会被误判成 Python），Output Directory 填 `docs` |
+| 3 | Vercel → Settings → Environment Variables | 加 `EMBED_API_KEY` |
+| 4 | GitHub → Settings → Secrets | 加 `EMBED_API_KEY`（同一个 key） |
+| 5 | GitHub → Settings → Variables | 加 `EMBED_API_BASE`、`EMBED_MODEL`、`EMBED_ENDPOINT` |
+| 6 | Actions → Run workflow | 重新构建，把端点烧进 HTML 并生成向量 |
+
+详细取值、踩坑记录、排错表都在 **[VERCEL.md](VERCEL.md)**。
+
+## 📋 更新记录
+
+见 **[CHANGELOG.md](CHANGELOG.md)**。
 
 ## 💰 成本
 
 | 项目 | 开销 |
 |------|------|
-| Crossref / Semantic Scholar | 免费 |
-| GitHub Actions | 免费 |
+| Crossref / OpenAlex / Semantic Scholar | 免费 |
+| GitHub Actions / Pages | 免费 |
 | DeepSeek（约 20 篇/天） | ≈ ¥0.03/天，¥1/月 |
+| embedding（向量） | 文档向量一天一次 ≈ ¥0.02，查询向量按次计，基本落在免费额度内 |
+| Vercel | Hobby 免费（100 万次调用/月），本场景用量不到千分之一 |
 
 ## 📊 文献来源
 

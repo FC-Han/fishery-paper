@@ -1,4 +1,4 @@
-# 语义检索代理（Vercel）
+# 语义检索部署指南（Vercel）
 
 站是纯静态的，任何 key 都不能进前端。这个代理只做一件事：把一小段查询文本换成向量，
 真正的 key 留在 Vercel 的环境变量里。
@@ -9,157 +9,263 @@
    └──────────── {v:[1024 个浮点数]} ←─────────────────────┘
 
 文档向量不经过它 —— 那些由 scripts/build_embeddings.py 离线算好，
-存成 docs/data/emb.bin（344 篇 × 1024 维 int8 ≈ 350 KB），浏览器直接拿走做点积。
+存成 docs/data/emb.bin（349 篇 × 1024 维 int8 ≈ 352 KB），浏览器直接拿走做点积。
 ```
 
-## 0. 你要做的事（按顺序走完这 6 步）
+---
 
-| # | 在哪做 | 做什么 | 拿到什么 |
-|---|---|---|---|
-| 1 | [cloud.siliconflow.cn](https://cloud.siliconflow.cn) | 注册 → API 密钥 → 新建密钥 | `sk-xxxx` |
-| 2 | [vercel.com/new](https://vercel.com/new) | Import Git Repository → 选 `FC-Han/fishery-paper` → Framework **Other**、Output Directory **docs** → Deploy | 一个 `xxx.vercel.app` 域名 |
-| 3 | Vercel → Settings → Environment Variables | 加 1 个必填 `EMBED_API_KEY`（把第 1 步的 key 粘进去） | — |
-| 4 | Vercel → Settings → Domains | **只有大陆访问才需要**：绑自己的域名，CNAME 指向 `cname-china.vercel-dns.com` | `https://api.你的域名.com` |
-| 5 | GitHub 仓库 → Settings → Secrets and variables → Actions | Secret 加 `EMBED_API_KEY`；Variables 加 `EMBED_API_BASE`、`EMBED_MODEL`、`EMBED_ENDPOINT` | — |
-| 6 | GitHub → Actions → 渔业文献每日更新 → Run workflow | 重跑一次 | 站点出现「语义增强」标签 |
+## 0. 需要准备什么
 
-第 5 步要填的具体值（假设域名是 `api.example.com`）：
+| 东西 | 必需 | 说明 |
+|---|---|---|
+| GitHub 仓库 | ✅ | 本仓库，且已启用 Actions + Pages |
+| [硅基流动](https://cloud.siliconflow.cn) 账号 | ✅ | 拿 embedding key，免费额度够用 |
+| [Vercel](https://vercel.com) 账号 | ✅ | GitHub 直接登录，Hobby 免费计划即可 |
+| 自有域名 | ❌ 可选 | 只有大陆访客需要，见第 5 节 |
 
-```ini
-# Secret
-EMBED_API_KEY   = sk-你的密钥
+**成本**：文档向量一天算一次（349 篇约几分钱），查询向量一天几十次调用。
+硅基流动有免费额度，Vercel Hobby 是 100 万次调用/月。实际几乎不花钱。
 
-# Variables
-EMBED_API_BASE  = https://api.siliconflow.cn/v1/embeddings
-EMBED_MODEL     = BAAI/bge-m3
-EMBED_ENDPOINT  = https://api.example.com/api/embed
+---
+
+## 1. 拿 embedding key
+
+1. [cloud.siliconflow.cn](https://cloud.siliconflow.cn) 注册（手机号即可）
+2. 左侧「API 密钥」→ 新建密钥
+3. 复制 `sk-...`，**只显示一次**，先存到记事本
+
+> DeepSeek 只有 Chat Completions，**没有 `/embeddings` 接口**，所以必须另接一家。
+> 硅基流动的 `BAAI/bge-m3` 免费额度够用，中英混排效果好，1024 维。
+
+---
+
+## 2. 部署到 Vercel
+
+1. 打开 [vercel.com/new](https://vercel.com/new)，选 `FC-Han/fishery-paper`
+2. **Project Name**：随意，默认 `fishery-paper` 即可（决定域名）
+3. **Root Directory**：保持 `./`，**不要填 docs**
+4. **Application Preset**：改成 **`Other`** ⚠️
+5. 展开 **Build and Output Settings**：
+   - Build Command：**留空**
+   - Output Directory：**`docs`**
+   - Install Command：留空
+6. 展开 **Environment Variables**，加一条：
+   - `EMBED_API_KEY` = 第 1 步的 key
+   - 环境勾 **Production**（Preview 也勾上更省事）
+7. 点 **Deploy**
+
+### ⚠️ Application Preset 必须选 Other
+
+Vercel 会"看文件猜框架"：仓库根目录有 `requirements.txt` 和 `scripts/*.py`，
+它会自动选成 **Python**。但我们的 Python 只是定时抓数据的离线脚本，**根本不跑在 Vercel 上**。
+
+选成 Python 的后果：`api/embed.js` 不会被打包成函数，访问 `/api/embed` 永远 404，
+而静态页面却能正常打开——症状非常迷惑。
+
+### 部署完先验证，别急着往下走
+
+访问 `<你的域名>/api/embed`（浏览器直接打开，GET 请求）：
+
+```json
+{"ok":true,"model":"BAAI/bge-m3"}
 ```
 
-没绑自定义域名就用 `EMBED_ENDPOINT = https://你的项目名.vercel.app/api/embed`——
-但大陆用户访问不通，相当于语义检索只对海外生效。
+| 结果 | 说明 |
+|---|---|
+| 上面这行 JSON | ✅ 函数正常，继续第 3 步 |
+| 404 `NOT_FOUND` | Preset 没选 Other，或 Root Directory 填成了 docs |
+| 500 `missing_key` | `EMBED_API_KEY` 没配，或配了没 Redeploy |
+| 401 / 要求登录 | Deployment Protection 开着，去 Settings → Deployment Protection 关掉 |
 
-> 第 4 步不做也能跑通：只是国内用户搜索时会静默退回 BM25，功能不坏、页面不报错。
+`model` 字段显示 `BAAI/bge-m3` 说明默认值兜底生效，你在 Vercel 那边不配 `EMBED_MODEL` 也行。
 
-## 1. 部署
+---
 
-仓库根目录已经有 `api/embed.js` 和 `vercel.json`，不用改代码。
+## 3. 配 GitHub 仓库
 
-**方式 A：网页导入**（推荐）
+进 GitHub 仓库 → **Settings → Secrets and variables → Actions**。注意这里有**两个标签页**，
+放错位置不会报错，只会拿到空字符串然后静默跳过。
 
-1. [vercel.com/new](https://vercel.com/new) → 选 `FC-Han/fishery-paper`
-2. Framework Preset 选 **Other**，Root Directory 保持默认
-3. Build Command 留空，Output Directory 填 `docs`
-4. Deploy
+### Secrets 标签页（1 条）
 
-**方式 B：命令行**
+点 `New repository secret`：
 
-```bash
-npm i -g vercel
-cd fishery-paper
-vercel --prod          # 首次会问项目名和目录，Output Directory 填 docs
+| Name | Secret |
+|---|---|
+| `EMBED_API_KEY` | 和第 1 步、Vercel 里**完全同一个** key |
+
+### Variables 标签页（3 条）
+
+点三次 `New repository variable`，一条一条加：
+
+| Name | Value |
+|---|---|
+| `EMBED_API_BASE` | `https://api.siliconflow.cn/v1/embeddings` |
+| `EMBED_MODEL` | `BAAI/bge-m3` |
+| `EMBED_ENDPOINT` | `https://<你的域名>/api/embed` |
+
+三条的作用不同：
+
+- `EMBED_API_BASE` / `EMBED_MODEL` → **构建脚本**用，算 349 篇文档向量
+- `EMBED_ENDPOINT` → **前端**用，构建时直接烧进 `index.html`，告诉浏览器往哪发请求
+
+> `EMBED_ENDPOINT` 是**构建时常量**。填错或漏填都必须重新跑一次流水线，改完立刻生效是不可能的。
+
+---
+
+## 4. 重跑流水线
+
+GitHub → **Actions** → 左侧 `渔业文献每日更新` → 右侧 **Run workflow**。
+
+跑 2–4 分钟，日志里应该有：
+
+```
+🧠 预计算论文向量
+✅ 349 篇 · 1024 维 · int8 量化 · 约 352 KB
 ```
 
-部署完记下地址，形如 `https://fishery-paper-xxxx.vercel.app/api/embed`。
+**不重跑等于没配**——页面里还是空端点，前端会当成没接语义检索。
 
-## 2. 环境变量
+### 验证真的点亮了
 
-Vercel → 项目 → Settings → Environment Variables：
+打开站点搜一个中文词，比如「黄海」：
 
-| 变量 | 必填 | 说明 |
-|------|------|------|
-| `EMBED_API_KEY` | ✅ | 服务商密钥，见下一节 |
-| `EMBED_API_BASE` |  | 默认 `https://api.siliconflow.cn/v1/embeddings` |
-| `EMBED_MODEL` |  | 默认 `BAAI/bge-m3` |
-| `ALLOW_ORIGINS` |  | 默认 `https://fc-han.github.io,http://localhost:8000` |
-| `DAILY_BUDGET` |  | 单实例每日放行上限，默认 3000，防刷爆额度 |
+| 现象 | 说明 |
+|---|---|
+| 结果条出现青色 **语义增强** 标签 | ✅ 通了 |
+| 结果数比纯 BM25 明显变多 | 语义补充候选生效 |
+| 标签没有，但功能正常 | 降级了，按第 7 节排错 |
 
-## 3. 选一家 embedding 服务
+鼠标悬停在「语义增强」上会显示细节：`BM25 与向量余弦混合排序，语义补充 N 篇`。
 
-DeepSeek 只有 Chat Completions，**没有 `/embeddings` 接口**，必须另接一家。下面三家都是
-OpenAI 兼容格式，改 `EMBED_API_BASE` + `EMBED_MODEL` 就能换：
+---
+
+## 5. 大陆访问与自定义域名（可选）
+
+`*.vercel.app` 在中国大陆的 DNS 解析不稳定，**打不开时会静默降级为纯 BM25**，功能不坏但用不上。
+
+实测有些域名能通、有些不能，和你所在网络有关。如果你和访客都能打开，可以先用着；
+要稳定就绑自有域名：
+
+1. Vercel → Settings → **Domains** → 添加域名（如 `fishery-api.example.com`）
+2. DNS 加一条 CNAME，指向 **`cname-china.vercel-dns.com`**
+   - 注意不是默认的 `cname.vercel-dns.com`，带 `-china` 的那个才是 Vercel 给国内的入口
+3. 等 Vercel 显示两个绿勾
+4. 回 GitHub 把 `EMBED_ENDPOINT` 改成 `https://fishery-api.example.com/api/embed`
+5. **再跑一次流水线**（端点变了必须重建）
+
+域名几十块一年。
+
+---
+
+## 6. 换一家 embedding 服务
+
+三家都是 OpenAI 兼容格式，改 `EMBED_API_BASE` + `EMBED_MODEL` 就能换：
 
 | 服务商 | 模型 | 维度 | 地址 |
-|--------|------|------|------|
+|---|---|---|---|
 | 硅基流动 | `BAAI/bge-m3` | 1024 | `https://api.siliconflow.cn/v1/embeddings` |
 | 智谱 | `embedding-3` | 2048 | `https://open.bigmodel.cn/api/paas/v4/embeddings` |
 | 阿里百炼 | `text-embedding-v4` | 1024 | `https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings` |
 
-**换模型后必须重跑 `build_embeddings.py --force`**，否则查询向量和文档向量不在同一个空间里，
-余弦相似度全是噪声。
+**换模型后必须重跑 `build_embeddings.py --force`**。
 
-## 4. 大陆访问必须要自定义域名
+原因：文档向量和查询向量必须在同一个语义空间里。换了模型但沿用旧 `emb.bin`，
+两边的向量互不对应，余弦相似度全是噪声——而且不会报错，只是搜出来的结果毫无关联。
 
-`*.vercel.app` 在中国大陆被 DNS 污染，直接访问基本打不开。绑自己的域名即可绕开：
+---
 
-1. Vercel → Settings → Domains → 添加域名（如 `fishery-api.example.com`）
-2. DNS 加一条 CNAME，指向 **`cname-china.vercel-dns.com`**
-   （不是默认的 `cname.vercel-dns.com`，带 `-china` 的那个是 Vercel 给国内的入口）
-3. 等 Vercel 显示两个绿勾
+## 7. 排错
 
-域名几十块一年。不绑域名的话，代理只在海外能用，国内用户搜索时会静默退回 BM25。
+### 先看控制台
 
-## 5. 打开站点上的语义检索
+前端失败会在浏览器 Console 打一条警告：
 
-三处要串起来：
-
-```bash
-# ① Vercel 环境变量
-EMBED_API_KEY=...            # 服务商 key
-ALLOW_ORIGINS=https://fc-han.github.io
-
-# ② GitHub 仓库 Settings → Secrets and variables → Actions
-#    Secrets: EMBED_API_KEY
-#    Variables: EMBED_API_BASE / EMBED_MODEL / EMBED_ENDPOINT
-
-# ③ 重跑一次流水线（Actions → 渔业文献每日更新 → Run workflow）
-#    它会重新算向量、并把 EMBED_ENDPOINT 写进 index.html
+```
+[语义检索未生效] Failed to fetch
+排查：1) 页面来源是否为 https://fc-han.github.io 2) /api/embed 能否 POST 通 3) Vercel 里 EMBED_API_KEY 是否已配
 ```
 
-`EMBED_ENDPOINT` 是构建时烧进 HTML 的。留空 → 站点自动退回纯 BM25，不会报错、不会有空窗。
+### 手动测一次 POST
 
-## 6. 本地验证
+Console 里粘贴，能一次定位问题层：
+
+```js
+fetch('https://<你的域名>/api/embed', {
+  method:'POST',
+  headers:{'Content-Type':'application/json'},
+  body: JSON.stringify({text:'黄海'})
+}).then(r=>r.json()).then(j=>console.log(j.dim, j.v?.slice(0,3)))
+  .catch(e=>console.error('失败', e.message))
+```
+
+### 错误码对照
+
+| 现象 | 原因 | 处理 |
+|---|---|---|
+| 404 `NOT_FOUND` | 函数没被打包 | Preset 没选 Other / Root Directory 填了 docs |
+| 403 `origin_not_allowed` | 页面来源不在白名单 | Vercel 加环境变量 `ALLOW_ORIGINS`，把站点域名加进去 |
+| 500 `missing_key` | Vercel 缺 `EMBED_API_KEY` | 补上后 **Redeploy** |
+| 429 `rate_limited` | 同 IP 每分钟超 30 次 | 正常保护，等一下即可 |
+| 429 `daily_budget_exhausted` | 触到 `DAILY_BUDGET` | 默认 3000，改大或等次日 |
+| 504 `upstream_timeout` | 服务商 8 秒没返回 | 检查 `EMBED_API_BASE` 是否正确 |
+| 502 `upstream_error` | 服务商返回错误 | 看响应里的 `detail`，多半是 key 或模型名错了 |
+| 请求报 CORS 错误 | 来源不在白名单 | 同上，配 `ALLOW_ORIGINS` |
+| 通了但页面没标签 | `EMBED_ENDPOINT` 没烧进 HTML | 重跑流水线 |
+| 有标签但结果很怪 | 换过模型没重算向量 | `build_embeddings.py --force` |
+
+### Vercel 环境变量（都在 Settings → Environment Variables）
+
+| 变量 | 必填 | 默认值 |
+|---|---|---|
+| `EMBED_API_KEY` | ✅ | — |
+| `EMBED_API_BASE` | | `https://api.siliconflow.cn/v1/embeddings` |
+| `EMBED_MODEL` | | `BAAI/bge-m3` |
+| `ALLOW_ORIGINS` | | `https://fc-han.github.io,https://fishery-paper.vercel.app,http://localhost:8000,http://127.0.0.1:8000` |
+| `DAILY_BUDGET` | | `3000` |
+
+---
+
+## 8. 本地调试（不花钱）
+
+用假向量跑通整条链路：
 
 ```bash
-# 起一个假 embedding 服务，不花一分钱就能跑通链路
-python - <<'EOF'
-import hashlib, json, re
-from http.server import BaseHTTPRequestHandler, HTTPServer
-def vec(t):
-    v=[0.0]*1024
-    for k in re.findall(r"[a-z0-9]+|[\u4e00-\u9fff]", t.lower()):
-        h=int(hashlib.md5(k.encode()).hexdigest(),16); v[h%1024]+=1; v[(h>>11)%1024]+=0.5
-    return v
-class H(BaseHTTPRequestHandler):
-    def do_POST(self):
-        b=json.loads(self.rfile.read(int(self.headers.get('Content-Length',0))) or b'{}')
-        i=b.get('input') or b.get('text') or ''; i=i if isinstance(i,list) else [i]
-        r=json.dumps({"data":[{"index":n,"embedding":vec(t)} for n,t in enumerate(i)]}).encode()
-        self.send_response(200); self.send_header('Content-Type','application/json')
-        self.send_header('Content-Length',str(len(r))); self.end_headers(); self.wfile.write(r)
-    def do_OPTIONS(self): self.send_response(204); self.end_headers()
-    def log_message(self,*a): pass
-HTTPServer(('127.0.0.1',8931),H).serve_forever()
-EOF
+python _mock_embed.py 8931     # 起一个本地假 embedding 服务
 
-EMBED_API_KEY=x EMBED_API_BASE=http://127.0.0.1:8931/v1/embeddings python scripts/build_embeddings.py
-EMBED_ENDPOINT=http://127.0.0.1:8931/v1/embeddings python scripts/generate_site.py
+EMBED_API_KEY=x EMBED_API_BASE=http://127.0.0.1:8931/v1/embeddings \
+  python scripts/build_embeddings.py
+
+EMBED_ENDPOINT=http://127.0.0.1:8931/v1/embeddings \
+  python scripts/generate_site.py
+
 cd docs && python -m http.server 8000
 ```
 
-假向量只能验证链路通不通，**别提交它生成的 `emb.bin`**。
+三个必须注意的点：
 
-## 7. 限额与排错
+1. **`file://` 打不开语义链路**——`fetch` 跨协议受限，必须起 HTTP 服务
+2. **假向量生成的 `emb.bin` 绝不能提交**，它只验证管道通不通，没有语义
+3. 假服务要同时接受 `input`（服务商格式）和 `text`（本项目代理格式），否则前端拿到全零向量，
+   表现为 `maxcos=0` 但代码不报错——很难查
 
-Hobby 免费额度：100 万次函数调用/月、4 CPU 小时、100 GB 流量 —— 这个场景一天几十次调用，
-用不完。注意 **Hobby 仅限非商业用途**，超限是暂停 30 天而不是扣费。
+---
 
-| 现象 | 原因 |
-|------|------|
-| 403 `origin_not_allowed` | `ALLOW_ORIGINS` 里没加站点域名 |
-| 429 `rate_limited` | 同 IP 每分钟超过 30 次 |
-| 429 `daily_budget_exhausted` | 触到 `DAILY_BUDGET`，改大或等次日 |
-| 504 `upstream_timeout` | 服务商 8 秒没返回，通常是网络问题 |
-| 结果里没有「语义增强」 | `EMBED_ENDPOINT` 没烧进 HTML，或 `emb.json`/`emb.bin` 没生成 |
+## 附：几个容易踩的坑
 
-前端对语义检索是**先展示 BM25 结果、拿到向量后原地重排**，任何一步失败都静默退回 BM25，
-不会白屏。
+| 坑 | 表现 | 原因 |
+|---|---|---|
+| Application Preset 自动选成 Python | `/api/embed` 404，页面正常 | 仓库里有 `requirements.txt` 和 `.py` 文件 |
+| Root Directory 填成 `docs` | 同上 | 函数在仓库根，不在 docs 里 |
+| 环境变量放错标签页 | 静默不生效 | `secrets.` 和 `vars.` 是两个命名空间 |
+| 改完变量没 Redeploy | 函数读旧值 | Vercel 环境变量只对**新部署**生效 |
+| 用部署 ID 域名做端点 | 永远跑旧代码 | `xxx-7xu5vn9i3-yyy.vercel.app` 是某次部署的固定地址，每次提交都变 |
+| 大陆访问不通 | 静默降级 | `*.vercel.app` 解析不稳定，需绑自有域名 |
+
+**关于域名怎么选**：用生产别名或分支别名，别用带部署 ID 的：
+
+```
+✅ https://fishery-paper.vercel.app/api/embed              # 生产别名
+✅ https://fishery-paper-git-main-xxx.vercel.app/api/embed # main 分支最新
+❌ https://fishery-paper-7xu5vn9i3-xxx.vercel.app/api/embed # 某次部署，写死了
+```
