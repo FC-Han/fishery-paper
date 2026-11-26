@@ -1,7 +1,7 @@
 {
- "last_updated": "2026-11-26T07:12:31Z",
- "total_papers": 396,
- "new_today": 12,
+ "last_updated": "2026-11-26T07:18:58Z",
+ "total_papers": 400,
+ "new_today": 4,
  "papers": [
   {
    "doi": "10.3389/fenvs.2026.1975174",
@@ -32,7 +32,7 @@
    "rel": [
     {
      "d": "10.3390/sci8110361",
-     "s": 0.395,
+     "s": 0.396,
      "t": [
       "污染与毒理"
      ]
@@ -46,7 +46,7 @@
     },
     {
      "d": "10.18697/ajfand.156.27670",
-     "s": 0.273,
+     "s": 0.274,
      "t": []
     },
     {
@@ -99,7 +99,7 @@
     },
     {
      "d": "10.56201/ijccp.v10.no1.2024.pg116.132",
-     "s": 0.27,
+     "s": 0.271,
      "t": [
       "污染与毒理"
      ]
@@ -145,7 +145,7 @@
     },
     {
      "d": "10.3390/ijms272210257",
-     "s": 0.329,
+     "s": 0.33,
      "t": []
     },
     {
@@ -189,32 +189,31 @@
    "off_topic": false,
    "rel": [
     {
-     "d": "10.9734/ajriz/2026/v9i4330",
-     "s": 0.445,
+     "d": "10.29303/jbt.v26i4a.13243",
+     "s": 0.515,
      "t": [
       "鲶形目鱼类"
      ]
     },
     {
      "d": "10.59496/20261ah5",
-     "s": 0.434,
+     "s": 0.438,
      "t": [
       "水产养殖",
       "疾病与免疫"
+     ]
+    },
+    {
+     "d": "10.9734/ajriz/2026/v9i4330",
+     "s": 0.432,
+     "t": [
+      "鲶形目鱼类"
      ]
     },
     {
      "d": "10.3390/fishes11120693",
-     "s": 0.36,
+     "s": 0.361,
      "t": [
-      "疾病与免疫"
-     ]
-    },
-    {
-     "d": "10.1128/aem.01597-26",
-     "s": 0.345,
-     "t": [
-      "水产养殖",
       "疾病与免疫"
      ]
     }
@@ -245,7 +244,7 @@
    "rel": [
     {
      "d": "10.3389/fsufs.2026.1901590",
-     "s": 0.304,
+     "s": 0.305,
      "t": [
       "经济与社会政策"
      ]
@@ -298,7 +297,7 @@
    "rel": [
     {
      "d": "10.3354/meps15368",
-     "s": 0.278,
+     "s": 0.279,
      "t": [
       "南美海域"
      ]
@@ -319,7 +318,7 @@
     },
     {
      "d": "10.1139/cjfas-2026-0046",
-     "s": 0.234,
+     "s": 0.233,
      "t": [
       "生态与栖息地"
      ]
@@ -413,14 +412,14 @@
     },
     {
      "d": "10.3389/fmars.2026.2037603",
-     "s": 0.324,
+     "s": 0.323,
      "t": [
       "经济与社会政策"
      ]
     },
     {
      "d": "10.3389/fmars.2026.1946690",
-     "s": 0.293,
+     "s": 0.292,
      "t": [
       "经济与社会政策"
      ]
@@ -430,6 +429,229 @@
      "s": 0.271,
      "t": [
       "经济与社会政策"
+     ]
+    }
+   ]
+  },
+  {
+   "doi": "10.1007/s10499-026-02749-y",
+   "title": "CRAB-DETR: robust state detection of Portunus trituberculatus under adverse imaging conditions in industrial aquaculture",
+   "authors": "Dai, Hongjing; Ye, Rong; Shi, Rui; Cui, Zhibo; Xiang, Wanwan; Wang, Yue; Yu, Hong",
+   "journal": "Aquaculture International",
+   "date": "2026-11-26",
+   "abstract": "",
+   "summary_cn": "",
+   "url": "https://doi.org/10.1007/s10499-026-02749-y",
+   "source": "crossref",
+   "keywords_matched": "aquaculture",
+   "tags": {
+    "theme": [
+     "aqua"
+    ],
+    "species": [
+     "crab"
+    ],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false,
+   "off_topic": false,
+   "rel": [
+    {
+     "d": "10.1007/s13353-026-01129-9",
+     "s": 0.32,
+     "t": [
+      "水产养殖"
+     ]
+    },
+    {
+     "d": "10.1007/s10750-026-06466-8",
+     "s": 0.241,
+     "t": []
+    },
+    {
+     "d": "10.3390/fishes11110673",
+     "s": 0.234,
+     "t": [
+      "水产养殖"
+     ]
+    },
+    {
+     "d": "10.1007/s10750-026-06481-9",
+     "s": 0.217,
+     "t": []
+    }
+   ]
+  },
+  {
+   "doi": "10.29303/jbt.v26i4a.13243",
+   "title": "Effect of Different Probiotic Concentrations on the Growth of Catfish (Clarias gariepinus) Cultured in a Bucket-Based Aquaculture System (Budikdamber)",
+   "authors": "Manganang, Yessi Ayu Putri; Indriani, Yeni; Mose, Numisye Iske",
+   "journal": "Jurnal Biologi Tropis",
+   "date": "2026-11-26",
+   "abstract": "Effective water quality management is essential for optimizing fish growth in the Budikdamber (fish-in-a-bucket) aquaponic system. This study evaluated the effects of different EM4 probiotic concentrations on the growth performance of catfish (Clarias gariepinus). The experiment used a completely randomized design with four treatments and three replicates: 0 (A), 10 (B), 15 (C), and 20 ml/L EM4 (D). Parameters included relative growth rate (RGR), feed utilization efficiency (EPP), survival rate (SR), and water quality. EM4 significantly affected RGR, which increased from 5.54% in the control to 7.24% in treatment D. EPP showed an increasing trend, reaching 5.27% in treatment D, although differences among treatments were not significant. Survival rates ranged from 7.77% to 44.43%, with the highest values recorded in treatments B and D. Although pH and dissolved oxygen remained within acceptable ranges, ammonia concentrations exceeded recommended standards in all treatments, while nitrate levels exceeded the limits in treatments A and B. In conclusion, EM4 at 20 ml/L produced the highest RGR but did not yield the best results across all parameters. Therefore, improved water quality management remains necessary.",
+   "summary_cn": "在Budikdamber（桶式鱼菜共生）系统中设置0、10、15、20 ml/L四个EM4益生菌浓度处理，评估其对革胡子鲶（Clarias gariepinus）生长的影响。20 ml/L处理组相对生长率最高（7.24%，对照组5.54%），饲料利用效率呈上升趋势但组间无显著差异；成活率仅7.77%–44.43%，以10和20 ml/L组最高。各处理氨氮均超标，10和20 ml/L组硝酸盐亦超标，表明高浓度EM4虽提升生长但仍需改善水质管理。",
+   "url": "https://doi.org/10.29303/jbt.v26i4a.13243",
+   "source": "crossref",
+   "keywords_matched": "aquaculture",
+   "tags": {
+    "theme": [
+     "aqua",
+     "process"
+    ],
+    "species": [
+     "catfish"
+    ],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false,
+   "off_topic": false,
+   "rel": [
+    {
+     "d": "10.9734/ajriz/2026/v9i4330",
+     "s": 0.655,
+     "t": [
+      "鲶形目鱼类"
+     ]
+    },
+    {
+     "d": "10.29303/jfh.v6i4.12251",
+     "s": 0.515,
+     "t": [
+      "鲶形目鱼类"
+     ]
+    },
+    {
+     "d": "10.59496/20261ah5",
+     "s": 0.422,
+     "t": [
+      "水产养殖"
+     ]
+    },
+    {
+     "d": "10.2478/contagri-2026-0019",
+     "s": 0.402,
+     "t": [
+      "鲶形目鱼类"
+     ]
+    }
+   ]
+  },
+  {
+   "doi": "10.1111/fme.70135",
+   "title": "Unequal Footprints: Comparing Catch Composition and Ecological Indicators Across Small-Scale Fishery Métiers",
+   "authors": "Karatza, Alexandra; Ganias, Kostas",
+   "journal": "Fisheries Management and Ecology",
+   "date": "2026-11-26",
+   "abstract": "ABSTRACT Small-scale fisheries (SSF) play an important role in coastal Mediterranean communities but may also produce high proportions of discards and interact with vulnerable marine taxa. This study provides a comparative assessment of three métiers practiced in a Mediterranean SSF, each targeting a different species using static nets: gillnets for surmullet ( Mullus surmuletus ; MULLUS), and trammel nets for common cuttlefish ( Sepia officinalis ; SEPIA) and common sole ( Solea solea ; SOLE). A total of 334 hauls were analyzed between 2019 and 2023 under commercial fishing conditions. Catch composition was recorded at species level and categorized as target, retained bycatch, and discards, while elasmobranchs, predominantly comprising batoid species of varying conservation status, were treated as a separate category. Indicators describing catch characteristics and fishing practices included the proportions of immature and physically damaged individuals, catch-category biomass, fuel consumption standardized by landed commercial catch, soak time, fishing depth, haul income, and dolphin-depredation frequency. Principal component analysis and cumulative dominance curves were used to explore métier-specific patterns. The métiers differed in catch composition and in the profiles of ecological and operational indicators. MULLUS exhibited lower discard biomass shares and negligible recorded chondrichthyans biomass compared with two trammel-net métiers, but higher proportions of immature and damaged individuals and a higher frequency of dolphin depredation than SEPIA. SOLE had a high recorded contribution of elasmobranchs, while fuel-use intensity relative to landed commercial catch was highest in SEPIA. Hypothetical reclassification scenarios also illustrated how local market practices can affect estimates of retained bycatch and discards. The findings show that métiers operating in the same fishery can exhibit contrasting profiles, underscoring the need for métier-specific assessments and tailored management measures rather than assuming that interventions will be equally effective across fishing practices.",
+   "summary_cn": "基于2019—2023年商业捕捞条件下334网次数据，比较地中海小规模渔业三种静态网作业方式（MULLUS刺网、SEPIA与SOLE三重刺网）的渔获组成与生态指标。各 métier 在渔获组成及生态、操作指标上差异明显：MULLUS 丢弃生物量占比更低、记录到的软骨鱼生物量可忽略，但未成熟与受损个体比例及海豚掠食频率高于SEPIA；SOLE 的板鳃类贡献高，SEPIA 单位上岸商业渔获的燃油消耗强度最高。PCA与累积优势曲线揭示了 métier 特异性模式，且假想重分类情景显示本地市场惯例会影响留捕副渔获与丢弃的估算。结果表明同一渔业内不同 métier 呈现迥异特征，需开展 métier 特异性评估并制定针对性管理措施，而非假定干预在各作业方式间效果等同。",
+   "url": "https://doi.org/10.1111/fme.70135",
+   "source": "crossref_issn",
+   "keywords_matched": "Fisheries Management and Ecology",
+   "tags": {
+    "theme": [
+     "gear",
+     "econ",
+     "stock"
+    ],
+    "species": [
+     "flatfish",
+     "cephalo"
+    ],
+    "region": [
+     "med"
+    ],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false,
+   "off_topic": false,
+   "rel": [
+    {
+     "d": "10.1002/nzm2.70092",
+     "s": 0.512,
+     "t": [
+      "捕捞技术与兼捕",
+      "种群评估与管理"
+     ]
+    },
+    {
+     "d": "10.3390/fishes11110665",
+     "s": 0.436,
+     "t": [
+      "地中海与黑海"
+     ]
+    },
+    {
+     "d": "10.3389/fmars.2026.1923310",
+     "s": 0.391,
+     "t": [
+      "经济与社会政策",
+      "捕捞技术与兼捕"
+     ]
+    },
+    {
+     "d": "10.1111/fme.70130",
+     "s": 0.345,
+     "t": [
+      "经济与社会政策",
+      "捕捞技术与兼捕"
+     ]
+    }
+   ]
+  },
+  {
+   "doi": "10.1111/fog.70096",
+   "title": "Modelling Co-Occurrence of Marine Pelagic Species in the Northern Humboldt Current System",
+   "authors": "Galloso, Paola; Grados, Daniel; Legendre, Pierre",
+   "journal": "Fisheries Oceanography",
+   "date": "2026-11-26",
+   "abstract": "ABSTRACT The northern Humboldt Current System (nHCS) is among the most productive marine ecosystems worldwide, supporting highly dynamic pelagic communities. However, the relative contributions of environmental conditions, spatial processes and species associations to community organization have not been quantified together. We asked to what extent community structure is dominated by environmental variables versus residual (biotic or abiotic) dependencies. We fitted year-specific Joint Species Distribution Models (JSDMs) to acoustic data for six pelagic taxa from summer surveys collected by the Instituto del Mar del Perú (IMARPE) between 2013 and 2019. We modelled the community abundance matrix using a two-part hurdle approach to account for zero inflation in the acoustic data, allowing the joint analysing of species occurrence and abundance patterns in relation to environmental and spatial drivers. Occurrence models showed good predictive performance (mean cross-validated AUC = 0.83), whereas abundance models had low explanatory power (mean = 0.07). Environmental covariates, led by distance to the shelf break, dissolved oxygen and sea surface temperature, jointly accounted for 69%-83% of the explained variance in occurrence, versus 17%-31% for the spatial random effect. Significant residual species associations were observed only in occurrence models and were weaker or absent in years of strong environmental anomalies. Environmental filtering is therefore the primary organising mechanism of pelagic community structure in the nHCS, with spatial and biotic processes modulating it among years. For ecosystem-based management, these results support monitoring and managing co-occurrence of pelagic taxa jointly, using oxygen and temperature conditions as early indicators of community reorganization under ENSO and climate variability.",
+   "summary_cn": "基于2013—2019年秘鲁IMARPE夏季声学调查数据，对北洪堡海流系统6个中上层类群拟合逐年JSDM，采用两部分hurdle模型联合分析物种出现与丰度对环境及空间驱动因子的响应。出现模型预测表现良好（交叉验证AUC均值0.83），丰度模型解释力低（均值0.07）；以陆架坡折距离、溶解氧和海表温度为首的环境协变量共同解释出现变异解释量的69%—83%，空间随机效应仅占17%—31%。显著的物种残差关联仅见于出现模型，且在环境异常强年较弱或缺失，表明环境过滤是该系统中上层群落结构的主要组织机制，空间与生物过程起年际调节作用；建议以氧和温度条件作为ENSO及气候变率下群落重组的早期指示，联合监测与管理中上层类群的共现。",
+   "url": "https://doi.org/10.1111/fog.70096",
+   "source": "crossref_issn",
+   "keywords_matched": "Fisheries Oceanography",
+   "tags": {
+    "theme": [
+     "climate"
+    ],
+    "species": [],
+    "region": [
+     "southam"
+    ],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false,
+   "off_topic": false,
+   "rel": [
+    {
+     "d": "10.3389/fmars.2026.1962143",
+     "s": 0.261,
+     "t": [
+      "气候变化与环境"
+     ]
+    },
+    {
+     "d": "10.1111/fog.70093",
+     "s": 0.26,
+     "t": [
+      "气候变化与环境"
+     ]
+    },
+    {
+     "d": "10.1111/fog.70092",
+     "s": 0.246,
+     "t": []
+    },
+    {
+     "d": "10.3897/neotropical.21.e212775",
+     "s": 0.246,
+     "t": [
+      "南美海域"
      ]
     }
    ]
@@ -460,7 +682,7 @@
    "rel": [
     {
      "d": "10.1111/fme.70130",
-     "s": 0.336,
+     "s": 0.335,
      "t": [
       "经济与社会政策",
       "种群评估与管理"
@@ -475,14 +697,14 @@
     },
     {
      "d": "10.1111/cobi.70425",
-     "s": 0.258,
+     "s": 0.257,
      "t": [
       "种群评估与管理"
      ]
     },
     {
      "d": "10.1080/23308249.2026.2760249",
-     "s": 0.256,
+     "s": 0.255,
      "t": [
       "种群评估与管理"
      ]
@@ -516,28 +738,28 @@
    "rel": [
     {
      "d": "10.1111/fme.70130",
-     "s": 0.33,
+     "s": 0.329,
+     "t": [
+      "经济与社会政策"
+     ]
+    },
+    {
+     "d": "10.1111/fme.70135",
+     "s": 0.326,
      "t": [
       "经济与社会政策"
      ]
     },
     {
      "d": "10.3390/fishes11110665",
-     "s": 0.278,
+     "s": 0.274,
      "t": [
       "监测与采样"
      ]
     },
     {
      "d": "10.3389/fmars.2026.1977454",
-     "s": 0.275,
-     "t": [
-      "监测与采样"
-     ]
-    },
-    {
-     "d": "10.1002/nzm2.70092",
-     "s": 0.273,
+     "s": 0.272,
      "t": [
       "监测与采样"
      ]
@@ -584,7 +806,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1939537",
-     "s": 0.376,
+     "s": 0.377,
      "t": [
       "鲈鱼与石斑鱼"
      ]
@@ -597,10 +819,10 @@
      ]
     },
     {
-     "d": "10.1177/02611929261507293",
-     "s": 0.335,
+     "d": "10.1111/fme.70135",
+     "s": 0.345,
      "t": [
-      "污染与毒理"
+      "鲆鲽类"
      ]
     }
    ]
@@ -631,28 +853,30 @@
    "off_topic": false,
    "rel": [
     {
+     "d": "10.29303/jbt.v26i4a.13243",
+     "s": 0.293,
+     "t": [
+      "鲶形目鱼类"
+     ]
+    },
+    {
      "d": "10.2478/contagri-2026-0019",
-     "s": 0.235,
+     "s": 0.232,
      "t": [
       "鲶形目鱼类"
      ]
     },
     {
      "d": "10.1007/s43615-026-01197-3",
-     "s": 0.23,
+     "s": 0.225,
      "t": []
     },
     {
      "d": "10.29303/jfh.v6i4.12251",
-     "s": 0.228,
+     "s": 0.224,
      "t": [
       "鲶形目鱼类"
      ]
-    },
-    {
-     "d": "10.55885/jucep.v6i2.1231",
-     "s": 0.219,
-     "t": []
     }
    ]
   },
@@ -694,14 +918,14 @@
     },
     {
      "d": "10.1007/s11356-026-38430-3",
-     "s": 0.498,
+     "s": 0.497,
      "t": [
       "鲑鳟鱼类"
      ]
     },
     {
      "d": "10.59496/20261ah5",
-     "s": 0.447,
+     "s": 0.449,
      "t": [
       "水产养殖",
       "疾病与免疫"
@@ -801,7 +1025,7 @@
     },
     {
      "d": "10.54254/2753-8818/2026.38927",
-     "s": 0.322,
+     "s": 0.321,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -862,7 +1086,7 @@
    "rel": [
     {
      "d": "10.1007/s10750-026-06446-y",
-     "s": 0.407,
+     "s": 0.406,
      "t": [
       "淡水与湖泊河流",
       "东南亚与西太"
@@ -870,14 +1094,14 @@
     },
     {
      "d": "10.1111/emr.70074",
-     "s": 0.373,
+     "s": 0.372,
      "t": [
       "东南亚与西太"
      ]
     },
     {
      "d": "10.1093/najfmt/vqag096",
-     "s": 0.368,
+     "s": 0.367,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -921,7 +1145,7 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1983862",
-     "s": 0.414,
+     "s": 0.413,
      "t": [
       "经济与社会政策"
      ]
@@ -943,7 +1167,7 @@
     },
     {
      "d": "10.1163/15718085-20261060",
-     "s": 0.355,
+     "s": 0.354,
      "t": [
       "中国近海与内陆"
      ]
@@ -991,12 +1215,12 @@
     },
     {
      "d": "10.3354/meps15368",
-     "s": 0.335,
+     "s": 0.336,
      "t": []
     },
     {
      "d": "10.3389/fmars.2026.1854986",
-     "s": 0.275,
+     "s": 0.276,
      "t": [
       "加勒比与墨西哥湾"
      ]
@@ -1032,7 +1256,7 @@
    "rel": [
     {
      "d": "10.51317/wrehv191",
-     "s": 0.438,
+     "s": 0.439,
      "t": [
       "非洲海域"
      ]
@@ -1095,7 +1319,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1943975",
-     "s": 0.423,
+     "s": 0.424,
      "t": [
       "印度洋与南亚"
      ]
@@ -1108,8 +1332,8 @@
      ]
     },
     {
-     "d": "10.29165/ajarcde.v11i1.1511",
-     "s": 0.334,
+     "d": "10.1007/s10499-026-02745-2",
+     "s": 0.332,
      "t": [
       "水产养殖"
      ]
@@ -1151,7 +1375,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1962143",
-     "s": 0.24,
+     "s": 0.239,
      "t": [
       "捕捞技术与兼捕"
      ]
@@ -1165,7 +1389,7 @@
     },
     {
      "d": "10.1007/s11356-026-38430-3",
-     "s": 0.223,
+     "s": 0.222,
      "t": [
       "水产养殖"
      ]
@@ -1257,14 +1481,14 @@
    "rel": [
     {
      "d": "10.9734/ajfar/2026/v28i111189",
-     "s": 0.481,
+     "s": 0.48,
      "t": [
       "监测与采样"
      ]
     },
     {
      "d": "10.1002/nzm2.70092",
-     "s": 0.479,
+     "s": 0.476,
      "t": [
       "监测与采样"
      ]
@@ -1278,7 +1502,7 @@
     },
     {
      "d": "10.3390/biology15222069",
-     "s": 0.353,
+     "s": 0.352,
      "t": [
       "监测与采样"
      ]
@@ -1313,7 +1537,7 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1976839",
-     "s": 0.452,
+     "s": 0.453,
      "t": [
       "藻类与海藻"
      ]
@@ -1376,7 +1600,7 @@
     },
     {
      "d": "10.1111/1462-2920.70476",
-     "s": 0.452,
+     "s": 0.453,
      "t": [
       "藻类与海藻"
      ]
@@ -1390,7 +1614,7 @@
     },
     {
      "d": "10.15517/29j0jp96",
-     "s": 0.435,
+     "s": 0.436,
      "t": [
       "藻类与海藻"
      ]
@@ -1438,14 +1662,14 @@
     },
     {
      "d": "10.29165/ajarcde.v11i1.1511",
-     "s": 0.451,
+     "s": 0.452,
      "t": [
       "罗非鱼类"
      ]
     },
     {
      "d": "10.56557/upjoz/2026/v47i215945",
-     "s": 0.439,
+     "s": 0.44,
      "t": [
       "罗非鱼类"
      ]
@@ -1501,7 +1725,7 @@
     },
     {
      "d": "10.3390/ani16233718",
-     "s": 0.408,
+     "s": 0.409,
      "t": [
       "营养与饲料"
      ]
@@ -1544,21 +1768,21 @@
     },
     {
      "d": "10.3390/fishes11110677",
-     "s": 0.401,
+     "s": 0.402,
      "t": [
       "遗传与基因组"
      ]
     },
     {
      "d": "10.1007/s11802-026-6773-y",
-     "s": 0.342,
+     "s": 0.337,
      "t": [
       "遗传与基因组"
      ]
     },
     {
      "d": "10.3390/fishes11110655",
-     "s": 0.316,
+     "s": 0.317,
      "t": [
       "鲈鱼与石斑鱼"
      ]
@@ -1607,7 +1831,7 @@
     },
     {
      "d": "10.3390/fishes11110677",
-     "s": 0.341,
+     "s": 0.342,
      "t": [
       "遗传与基因组"
      ]
@@ -1657,7 +1881,7 @@
     },
     {
      "d": "10.29303/jfh.v6i4.12251",
-     "s": 0.36,
+     "s": 0.361,
      "t": [
       "疾病与免疫"
      ]
@@ -1729,10 +1953,10 @@
      ]
     },
     {
-     "d": "10.3389/fmicb.2026.1992240",
+     "d": "10.12873/ncdh-2026-237",
      "s": 0.241,
      "t": [
-      "环境DNA"
+      "金枪鱼与鲭类"
      ]
     }
    ]
@@ -1765,7 +1989,7 @@
    "rel": [
     {
      "d": "10.3390/fishes11110680",
-     "s": 0.366,
+     "s": 0.365,
      "t": [
       "生物学与生理"
      ]
@@ -1822,7 +2046,7 @@
    "rel": [
     {
      "d": "10.3390/foods15234227",
-     "s": 0.376,
+     "s": 0.377,
      "t": [
       "鲈鱼与石斑鱼"
      ]
@@ -1885,12 +2109,12 @@
     },
     {
      "d": "10.3389/fmars.2026.1937225",
-     "s": 0.153,
+     "s": 0.152,
      "t": []
     },
     {
      "d": "10.3389/fmars.2026.1977826",
-     "s": 0.151,
+     "s": 0.15,
      "t": []
     }
    ]
@@ -1978,7 +2202,7 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.2018983",
-     "s": 0.3,
+     "s": 0.299,
      "t": [
       "气候变化与环境",
       "经济与社会政策"
@@ -1986,7 +2210,7 @@
     },
     {
      "d": "10.3389/fmars.2026.2037603",
-     "s": 0.292,
+     "s": 0.291,
      "t": [
       "经济与社会政策"
      ]
@@ -2037,28 +2261,28 @@
    "rel": [
     {
      "d": "10.1007/s10750-026-06482-8",
-     "s": 0.341,
+     "s": 0.342,
      "t": [
       "生态与栖息地"
      ]
     },
     {
      "d": "10.3354/meps15375",
-     "s": 0.301,
+     "s": 0.3,
      "t": [
       "生态与栖息地"
      ]
     },
     {
      "d": "10.3354/meps15379",
-     "s": 0.284,
+     "s": 0.285,
      "t": [
       "生态与栖息地"
      ]
     },
     {
      "d": "10.1007/s12562-026-02045-x",
-     "s": 0.26,
+     "s": 0.259,
      "t": [
       "渤海"
      ]
@@ -2112,7 +2336,7 @@
     },
     {
      "d": "10.1007/s41742-026-01301-3",
-     "s": 0.249,
+     "s": 0.25,
      "t": [
       "污染与毒理"
      ]
@@ -2146,28 +2370,28 @@
    "rel": [
     {
      "d": "10.3354/meps15382",
-     "s": 0.482,
+     "s": 0.483,
      "t": [
       "疾病与免疫"
      ]
     },
     {
      "d": "10.3390/pathogens15111176",
-     "s": 0.362,
+     "s": 0.363,
      "t": [
       "疾病与免疫"
      ]
     },
     {
      "d": "10.3390/fishes11110665",
-     "s": 0.293,
+     "s": 0.294,
      "t": [
       "地中海与黑海"
      ]
     },
     {
      "d": "10.1007/s10750-026-06474-8",
-     "s": 0.289,
+     "s": 0.284,
      "t": [
       "地中海与黑海"
      ]
@@ -2258,21 +2482,21 @@
    "rel": [
     {
      "d": "10.1007/s10750-026-06484-6",
-     "s": 0.393,
+     "s": 0.39,
      "t": [
       "藻类与海藻"
      ]
     },
     {
      "d": "10.3389/fmars.2026.1984103",
-     "s": 0.287,
+     "s": 0.283,
      "t": [
       "地中海与黑海"
      ]
     },
     {
      "d": "10.3390/fishes11110674",
-     "s": 0.278,
+     "s": 0.274,
      "t": [
       "地中海与黑海"
      ]
@@ -2314,21 +2538,21 @@
    "rel": [
     {
      "d": "10.3897/aiep.56.213543",
-     "s": 0.471,
+     "s": 0.468,
      "t": [
       "鲨鱼与鳐类"
      ]
     },
     {
      "d": "10.1007/s10641-026-01935-4",
-     "s": 0.467,
+     "s": 0.463,
      "t": [
       "鲨鱼与鳐类"
      ]
     },
     {
      "d": "10.3390/fishes11110665",
-     "s": 0.357,
+     "s": 0.352,
      "t": [
       "鲨鱼与鳐类"
      ]
@@ -2377,7 +2601,7 @@
     },
     {
      "d": "10.3390/aquacj6040059",
-     "s": 0.285,
+     "s": 0.286,
      "t": [
       "机器学习与AI"
      ]
@@ -2432,7 +2656,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1958849",
-     "s": 0.451,
+     "s": 0.452,
      "t": [
       "全球/多区域"
      ]
@@ -2488,7 +2712,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1992082",
-     "s": 0.451,
+     "s": 0.452,
      "t": [
       "全球/多区域"
      ]
@@ -2705,7 +2929,7 @@
     },
     {
      "d": "10.1111/eff.70054",
-     "s": 0.223,
+     "s": 0.221,
      "t": [
       "生态与栖息地"
      ]
@@ -2742,7 +2966,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1886191",
-     "s": 0.169,
+     "s": 0.168,
      "t": []
     },
     {
@@ -2751,7 +2975,7 @@
      "t": []
     },
     {
-     "d": "10.3389/fmars.2026.1937225",
+     "d": "10.3389/fmars.2026.2031077",
      "s": 0.146,
      "t": []
     }
@@ -2874,7 +3098,7 @@
     },
     {
      "d": "10.1007/s11802-026-6741-6",
-     "s": 0.213,
+     "s": 0.214,
      "t": []
     },
     {
@@ -2920,7 +3144,7 @@
    "rel": [
     {
      "d": "10.1017/s0030605325102378",
-     "s": 0.407,
+     "s": 0.406,
      "t": [
       "淡水与湖泊河流",
       "东南亚与西太"
@@ -2943,7 +3167,7 @@
     },
     {
      "d": "10.3390/ani16223589",
-     "s": 0.336,
+     "s": 0.335,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -3001,7 +3225,7 @@
     },
     {
      "d": "10.54254/2753-8818/2026.38927",
-     "s": 0.253,
+     "s": 0.254,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -3051,7 +3275,7 @@
     },
     {
      "d": "10.1139/cjz-2026-0062",
-     "s": 0.35,
+     "s": 0.349,
      "t": [
       "鲑鳟鱼类"
      ]
@@ -3090,7 +3314,7 @@
    "rel": [
     {
      "d": "10.1007/s43615-026-01197-3",
-     "s": 0.231,
+     "s": 0.232,
      "t": []
     },
     {
@@ -3177,14 +3401,14 @@
     },
     {
      "d": "10.56201/ijccp.v10.no1.2024.pg116.132",
-     "s": 0.437,
+     "s": 0.438,
      "t": [
       "污染与毒理"
      ]
     },
     {
      "d": "10.3390/foods15234227",
-     "s": 0.335,
+     "s": 0.337,
      "t": [
       "污染与毒理"
      ]
@@ -3247,7 +3471,7 @@
     },
     {
      "d": "10.7759/cureus.119672",
-     "s": 0.286,
+     "s": 0.287,
      "t": [
       "营养与饲料"
      ]
@@ -3281,7 +3505,7 @@
    "rel": [
     {
      "d": "10.9734/ajfar/2026/v28i111188",
-     "s": 0.303,
+     "s": 0.302,
      "t": [
       "水产养殖",
       "污染与毒理"
@@ -3297,7 +3521,7 @@
     },
     {
      "d": "10.3390/nitrogen7040137",
-     "s": 0.258,
+     "s": 0.257,
      "t": [
       "水产养殖",
       "疾病与免疫"
@@ -3305,7 +3529,7 @@
     },
     {
      "d": "10.29165/ajarcde.v11i1.1511",
-     "s": 0.247,
+     "s": 0.248,
      "t": [
       "水产养殖"
      ]
@@ -3347,14 +3571,14 @@
     },
     {
      "d": "10.1111/jfd.70325",
-     "s": 0.47,
+     "s": 0.471,
      "t": [
       "疾病与免疫"
      ]
     },
     {
      "d": "10.1007/s10529-026-03800-x",
-     "s": 0.362,
+     "s": 0.361,
      "t": [
       "虾类"
      ]
@@ -3416,7 +3640,7 @@
     },
     {
      "d": "10.1086/744906",
-     "s": 0.398,
+     "s": 0.399,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -3450,7 +3674,7 @@
    "rel": [
     {
      "d": "10.32815/jpm.v7i2.3170",
-     "s": 0.326,
+     "s": 0.327,
      "t": [
       "加工品质与食品"
      ]
@@ -3509,7 +3733,7 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1976619",
-     "s": 0.467,
+     "s": 0.463,
      "t": [
       "鲨鱼与鳐类"
      ]
@@ -3523,14 +3747,14 @@
     },
     {
      "d": "10.3856/vol54-issue5-fulltext-3674",
-     "s": 0.399,
+     "s": 0.398,
      "t": [
       "鲨鱼与鳐类"
      ]
     },
     {
      "d": "10.3897/aiep.56.213543",
-     "s": 0.393,
+     "s": 0.391,
      "t": [
       "鲨鱼与鳐类"
      ]
@@ -3577,7 +3801,7 @@
     },
     {
      "d": "10.1007/s10499-026-02754-1",
-     "s": 0.205,
+     "s": 0.204,
      "t": []
     }
    ]
@@ -3660,7 +3884,7 @@
    "rel": [
     {
      "d": "10.1139/cjfas-2025-0391",
-     "s": 0.505,
+     "s": 0.501,
      "t": [
       "声学与遥测"
      ]
@@ -3682,7 +3906,7 @@
     },
     {
      "d": "10.3390/biology15222069",
-     "s": 0.372,
+     "s": 0.371,
      "t": [
       "环境DNA"
      ]
@@ -3716,7 +3940,7 @@
    "rel": [
     {
      "d": "10.1139/cjfas-2026-0059",
-     "s": 0.443,
+     "s": 0.442,
      "t": [
       "鲑鳟鱼类"
      ]
@@ -3779,7 +4003,7 @@
     },
     {
      "d": "10.3390/aichem1040020",
-     "s": 0.34,
+     "s": 0.339,
      "t": [
       "水产养殖"
      ]
@@ -3794,7 +4018,7 @@
     },
     {
      "d": "10.3390/aquacj6040057",
-     "s": 0.296,
+     "s": 0.295,
      "t": [
       "水产养殖"
      ]
@@ -3989,26 +4213,26 @@
    "rel": [
     {
      "d": "10.1086/743937",
-     "s": 0.242,
+     "s": 0.232,
      "t": []
     },
     {
      "d": "10.3390/jmse14222189",
-     "s": 0.155,
+     "s": 0.15,
      "t": [
       "遗传与基因组"
      ]
     },
     {
      "d": "10.1111/jfb.70704",
-     "s": 0.144,
+     "s": 0.145,
      "t": [
       "遗传与基因组"
      ]
     },
     {
      "d": "10.1186/s44365-026-00052-8",
-     "s": 0.134,
+     "s": 0.135,
      "t": []
     }
    ]
@@ -4050,7 +4274,7 @@
     },
     {
      "d": "10.1111/raq.70233",
-     "s": 0.225,
+     "s": 0.226,
      "t": [
       "气候变化与环境"
      ]
@@ -4094,7 +4318,7 @@
    "rel": [
     {
      "d": "10.3390/fishes11110665",
-     "s": 0.453,
+     "s": 0.454,
      "t": [
       "金枪鱼与鲭类",
       "监测与采样"
@@ -4109,7 +4333,7 @@
     },
     {
      "d": "10.1111/jfb.70743",
-     "s": 0.412,
+     "s": 0.411,
      "t": [
       "监测与采样"
      ]
@@ -4215,7 +4439,7 @@
     },
     {
      "d": "10.3390/ani16223589",
-     "s": 0.405,
+     "s": 0.404,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -4266,7 +4490,7 @@
    "rel": [
     {
      "d": "10.1007/s10750-026-06466-8",
-     "s": 0.413,
+     "s": 0.414,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -4287,7 +4511,7 @@
     },
     {
      "d": "10.56557/upjoz/2026/v47i215953",
-     "s": 0.348,
+     "s": 0.349,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -4333,7 +4557,7 @@
     },
     {
      "d": "10.1007/s44338-026-00271-2",
-     "s": 0.255,
+     "s": 0.254,
      "t": [
       "水产养殖"
      ]
@@ -4376,14 +4600,14 @@
    "rel": [
     {
      "d": "10.3354/meps15373",
-     "s": 0.421,
+     "s": 0.422,
      "t": [
       "生态与栖息地"
      ]
     },
     {
      "d": "10.3354/meps15379",
-     "s": 0.387,
+     "s": 0.388,
      "t": [
       "生态与栖息地",
       "种群评估与管理"
@@ -4431,7 +4655,7 @@
    "rel": [
     {
      "d": "10.1007/s43621-026-05266-3",
-     "s": 0.274,
+     "s": 0.275,
      "t": [
       "综述与元分析"
      ]
@@ -4450,7 +4674,7 @@
     },
     {
      "d": "10.3389/fmars.2026.2018983",
-     "s": 0.238,
+     "s": 0.237,
      "t": [
       "综述与元分析"
      ]
@@ -4486,14 +4710,14 @@
    "rel": [
     {
      "d": "10.9734/ajrcos/2026/v19i11936",
-     "s": 0.352,
+     "s": 0.351,
      "t": [
       "机器学习与AI"
      ]
     },
     {
      "d": "10.3390/aquacj6040058",
-     "s": 0.324,
+     "s": 0.323,
      "t": [
       "机器学习与AI"
      ]
@@ -4544,7 +4768,7 @@
    "rel": [
     {
      "d": "10.54254/2753-8818/2026.38927",
-     "s": 0.379,
+     "s": 0.378,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -4566,7 +4790,7 @@
     },
     {
      "d": "10.9734/ajfar/2026/v28i111188",
-     "s": 0.338,
+     "s": 0.337,
      "t": [
       "东南亚与西太"
      ]
@@ -4601,7 +4825,7 @@
    "rel": [
     {
      "d": "10.1111/jfb.70746",
-     "s": 0.412,
+     "s": 0.411,
      "t": [
       "监测与采样"
      ]
@@ -4615,14 +4839,14 @@
     },
     {
      "d": "10.1111/faf.70123",
-     "s": 0.322,
+     "s": 0.321,
      "t": [
       "种群评估与管理"
      ]
     },
     {
      "d": "10.9734/ajfar/2026/v28i111189",
-     "s": 0.317,
+     "s": 0.315,
      "t": [
       "监测与采样"
      ]
@@ -4656,14 +4880,14 @@
    "rel": [
     {
      "d": "10.1186/s44365-026-00051-9",
-     "s": 0.458,
+     "s": 0.451,
      "t": [
       "经济与社会政策"
      ]
     },
     {
      "d": "10.1111/jfb.70727",
-     "s": 0.295,
+     "s": 0.296,
      "t": [
       "种群评估与管理"
      ]
@@ -4678,7 +4902,7 @@
     },
     {
      "d": "10.1080/23308249.2026.2760249",
-     "s": 0.276,
+     "s": 0.274,
      "t": [
       "种群评估与管理"
      ]
@@ -4710,14 +4934,14 @@
    "rel": [
     {
      "d": "10.70963/jm.v3i2.1073",
-     "s": 0.326,
+     "s": 0.327,
      "t": [
       "加工品质与食品"
      ]
     },
     {
      "d": "10.55885/jucep.v6i2.1231",
-     "s": 0.262,
+     "s": 0.261,
      "t": []
     },
     {
@@ -4727,7 +4951,7 @@
     },
     {
      "d": "10.29244/agrokreatif.12.3.551-559",
-     "s": 0.174,
+     "s": 0.175,
      "t": []
     }
    ]
@@ -4757,26 +4981,26 @@
    "rel": [
     {
      "d": "10.18543/baidc.3525",
-     "s": 0.214,
+     "s": 0.215,
      "t": []
     },
     {
      "d": "10.3390/nitrogen7040137",
-     "s": 0.198,
-     "t": [
-      "疾病与免疫"
-     ]
-    },
-    {
-     "d": "10.3390/fishes11120688",
-     "s": 0.189,
+     "s": 0.199,
      "t": [
       "疾病与免疫"
      ]
     },
     {
      "d": "10.1111/jfb.70744",
-     "s": 0.188,
+     "s": 0.189,
+     "t": [
+      "疾病与免疫"
+     ]
+    },
+    {
+     "d": "10.3390/fishes11120688",
+     "s": 0.184,
      "t": [
       "疾病与免疫"
      ]
@@ -4833,7 +5057,7 @@
     },
     {
      "d": "10.3897/neotropical.21.e212775",
-     "s": 0.268,
+     "s": 0.267,
      "t": [
       "南美海域"
      ]
@@ -4869,7 +5093,7 @@
    "rel": [
     {
      "d": "10.1007/s12601-026-00319-0",
-     "s": 0.458,
+     "s": 0.451,
      "t": [
       "经济与社会政策"
      ]
@@ -4881,7 +5105,7 @@
     },
     {
      "d": "10.9734/ajriz/2026/v9i4330",
-     "s": 0.43,
+     "s": 0.431,
      "t": [
       "水产养殖",
       "加工品质与食品"
@@ -4923,7 +5147,7 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1983862",
-     "s": 0.329,
+     "s": 0.328,
      "t": [
       "经济与社会政策"
      ]
@@ -5001,7 +5225,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1941096",
-     "s": 0.282,
+     "s": 0.283,
      "t": [
       "调查与问卷"
      ]
@@ -5037,28 +5261,28 @@
    "rel": [
     {
      "d": "10.29165/ajarcde.v11i1.1511",
-     "s": 0.495,
+     "s": 0.498,
      "t": [
       "罗非鱼类"
      ]
     },
     {
      "d": "10.1038/s41598-026-73653-x",
-     "s": 0.484,
+     "s": 0.47,
      "t": [
       "水产养殖"
      ]
     },
     {
      "d": "10.3390/nitrogen7040137",
-     "s": 0.456,
+     "s": 0.458,
      "t": [
       "罗非鱼类"
      ]
     },
     {
      "d": "10.1128/aem.01597-26",
-     "s": 0.447,
+     "s": 0.449,
      "t": [
       "水产养殖",
       "疾病与免疫"
@@ -5147,14 +5371,14 @@
    "rel": [
     {
      "d": "10.1007/s10499-026-02745-2",
-     "s": 0.377,
+     "s": 0.378,
      "t": [
       "水产养殖"
      ]
     },
     {
      "d": "10.56557/upjoz/2026/v47i215945",
-     "s": 0.206,
+     "s": 0.205,
      "t": [
       "水产养殖"
      ]
@@ -5167,9 +5391,11 @@
      ]
     },
     {
-     "d": "10.3389/fmars.2026.2012048",
-     "s": 0.178,
-     "t": []
+     "d": "10.29303/jbt.v26i4a.13243",
+     "s": 0.187,
+     "t": [
+      "水产养殖"
+     ]
     }
    ]
   },
@@ -5262,21 +5488,21 @@
     },
     {
      "d": "10.1007/s11160-026-10109-5",
-     "s": 0.313,
+     "s": 0.312,
      "t": [
       "生态与栖息地"
      ]
     },
     {
      "d": "10.3389/fmars.2026.1962143",
-     "s": 0.24,
+     "s": 0.239,
      "t": [
       "生态与栖息地"
      ]
     },
     {
      "d": "10.1007/s12562-026-02045-x",
-     "s": 0.222,
+     "s": 0.218,
      "t": []
     }
    ]
@@ -5308,6 +5534,13 @@
    "off_topic": false,
    "rel": [
     {
+     "d": "10.3390/fishes11120688",
+     "s": 0.409,
+     "t": [
+      "营养与饲料"
+     ]
+    },
+    {
      "d": "10.3390/fishes11120682",
      "s": 0.409,
      "t": [
@@ -5315,15 +5548,8 @@
      ]
     },
     {
-     "d": "10.3390/fishes11120688",
-     "s": 0.408,
-     "t": [
-      "营养与饲料"
-     ]
-    },
-    {
      "d": "10.3390/fishes11120687",
-     "s": 0.304,
+     "s": 0.303,
      "t": [
       "营养与饲料"
      ]
@@ -5364,29 +5590,29 @@
    "off_topic": false,
    "rel": [
     {
+     "d": "10.1111/fme.70135",
+     "s": 0.324,
+     "t": [
+      "捕捞技术与兼捕"
+     ]
+    },
+    {
      "d": "10.3389/fmars.2026.1977826",
-     "s": 0.301,
+     "s": 0.302,
      "t": [
       "黄海"
      ]
     },
     {
      "d": "10.3354/meps15373",
-     "s": 0.29,
+     "s": 0.291,
      "t": [
       "中国近海与内陆"
      ]
     },
     {
      "d": "10.3389/fevo.2026.1960019",
-     "s": 0.265,
-     "t": [
-      "中国近海与内陆"
-     ]
-    },
-    {
-     "d": "10.1163/15718085-20261060",
-     "s": 0.24,
+     "s": 0.264,
      "t": [
       "中国近海与内陆"
      ]
@@ -5429,14 +5655,14 @@
     },
     {
      "d": "10.3389/fmars.2026.1976619",
-     "s": 0.249,
+     "s": 0.247,
      "t": [
       "捕捞技术与兼捕"
      ]
     },
     {
      "d": "10.9734/jsrr/2026/v32i114726",
-     "s": 0.216,
+     "s": 0.215,
      "t": [
       "全球/多区域"
      ]
@@ -5588,7 +5814,7 @@
    "rel": [
     {
      "d": "10.1002/aff2.70367",
-     "s": 0.235,
+     "s": 0.234,
      "t": [
       "捕捞技术与兼捕"
      ]
@@ -5600,7 +5826,7 @@
     },
     {
      "d": "10.1007/s11160-026-10115-7",
-     "s": 0.191,
+     "s": 0.181,
      "t": [
       "捕捞技术与兼捕"
      ]
@@ -5660,7 +5886,7 @@
     },
     {
      "d": "10.3390/fishes11110655",
-     "s": 0.204,
+     "s": 0.205,
      "t": [
       "经济与社会政策"
      ]
@@ -5717,7 +5943,7 @@
     },
     {
      "d": "10.1007/s11356-026-38430-3",
-     "s": 0.474,
+     "s": 0.475,
      "t": [
       "鲑鳟鱼类"
      ]
@@ -5815,7 +6041,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1955301",
-     "s": 0.293,
+     "s": 0.292,
      "t": [
       "经济与社会政策"
      ]
@@ -5854,12 +6080,12 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.2012956",
-     "s": 0.22,
+     "s": 0.219,
      "t": []
     },
     {
      "d": "10.3389/fmars.2026.1977826",
-     "s": 0.213,
+     "s": 0.212,
      "t": []
     },
     {
@@ -5963,7 +6189,7 @@
     },
     {
      "d": "10.1007/s11160-026-10115-7",
-     "s": 0.301,
+     "s": 0.302,
      "t": [
       "黄海"
      ]
@@ -6007,7 +6233,7 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1981790",
-     "s": 0.393,
+     "s": 0.39,
      "t": [
       "藻类与海藻"
      ]
@@ -6019,7 +6245,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1976839",
-     "s": 0.148,
+     "s": 0.147,
      "t": [
       "藻类与海藻"
      ]
@@ -6077,14 +6303,14 @@
     },
     {
      "d": "10.1111/fme.70134",
-     "s": 0.413,
+     "s": 0.414,
      "t": [
       "淡水与湖泊河流"
      ]
     },
     {
      "d": "10.1111/jfb.70740",
-     "s": 0.382,
+     "s": 0.383,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -6140,7 +6366,7 @@
    "rel": [
     {
      "d": "10.1007/s11356-026-38430-3",
-     "s": 0.362,
+     "s": 0.361,
      "t": [
       "水产养殖"
      ]
@@ -6208,7 +6434,7 @@
     },
     {
      "d": "10.1111/jfb.70718",
-     "s": 0.44,
+     "s": 0.441,
      "t": [
       "环境DNA"
      ]
@@ -6264,12 +6490,12 @@
     },
     {
      "d": "10.3389/fmicb.2026.1992240",
-     "s": 0.141,
+     "s": 0.14,
      "t": []
     },
     {
      "d": "10.1002/nzm2.70092",
-     "s": 0.132,
+     "s": 0.133,
      "t": []
     }
    ]
@@ -6390,14 +6616,14 @@
     },
     {
      "d": "10.3390/nitrogen7040137",
-     "s": 0.505,
+     "s": 0.506,
      "t": [
       "罗非鱼类"
      ]
     },
     {
      "d": "10.1111/raq.70232",
-     "s": 0.47,
+     "s": 0.471,
      "t": [
       "疾病与免疫"
      ]
@@ -6438,14 +6664,14 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1902794",
-     "s": 0.355,
+     "s": 0.354,
      "t": [
       "中国近海与内陆"
      ]
     },
     {
      "d": "10.1007/s10499-026-02756-z",
-     "s": 0.34,
+     "s": 0.341,
      "t": [
       "中国近海与内陆"
      ]
@@ -6493,7 +6719,7 @@
    "rel": [
     {
      "d": "10.3390/ani16223589",
-     "s": 0.317,
+     "s": 0.316,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -6507,14 +6733,14 @@
     },
     {
      "d": "10.1111/eff.70054",
-     "s": 0.292,
+     "s": 0.291,
      "t": [
       "淡水与湖泊河流"
      ]
     },
     {
      "d": "10.3391/ai.2026.21.4.218006",
-     "s": 0.28,
+     "s": 0.279,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -6554,7 +6780,7 @@
     },
     {
      "d": "10.3856/vol54-issue5-fulltext-3674",
-     "s": 0.386,
+     "s": 0.387,
      "t": [
       "经济与社会政策"
      ]
@@ -6611,14 +6837,14 @@
     },
     {
      "d": "10.63249/j-sh.v1i2.166",
-     "s": 0.397,
+     "s": 0.398,
      "t": [
       "经济与社会政策"
      ]
     },
     {
      "d": "10.3389/fmars.2026.1941096",
-     "s": 0.354,
+     "s": 0.353,
      "t": [
       "调查与问卷"
      ]
@@ -6660,14 +6886,14 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1925773",
-     "s": 0.401,
+     "s": 0.4,
      "t": [
       "机器学习与AI"
      ]
     },
     {
      "d": "10.31961/eltikom.v10i2.2125",
-     "s": 0.352,
+     "s": 0.351,
      "t": [
       "机器学习与AI"
      ]
@@ -6720,7 +6946,7 @@
     },
     {
      "d": "10.56201/ijccp.v10.no1.2024.pg116.132",
-     "s": 0.383,
+     "s": 0.384,
      "t": [
       "污染与毒理"
      ]
@@ -6766,21 +6992,21 @@
    "rel": [
     {
      "d": "10.3389/fpos.2026.1929622",
-     "s": 0.446,
+     "s": 0.447,
      "t": [
       "经济与社会政策"
      ]
     },
     {
      "d": "10.63249/j-sh.v1i2.167",
-     "s": 0.397,
+     "s": 0.398,
      "t": [
       "经济与社会政策"
      ]
     },
     {
      "d": "10.3390/aquacj6040064",
-     "s": 0.337,
+     "s": 0.338,
      "t": [
       "经济与社会政策"
      ]
@@ -6821,14 +7047,14 @@
    "rel": [
     {
      "d": "10.3390/polym18222875",
-     "s": 0.477,
+     "s": 0.476,
      "t": [
       "加工品质与食品"
      ]
     },
     {
      "d": "10.1080/23308249.2026.2760249",
-     "s": 0.359,
+     "s": 0.36,
      "t": [
       "金枪鱼与鲭类"
      ]
@@ -6885,7 +7111,7 @@
     },
     {
      "d": "10.1186/s44365-026-00051-9",
-     "s": 0.315,
+     "s": 0.316,
      "t": [
       "水产养殖",
       "经济与社会政策"
@@ -7001,7 +7227,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1924894",
-     "s": 0.205,
+     "s": 0.206,
      "t": []
     },
     {
@@ -7047,21 +7273,21 @@
     },
     {
      "d": "10.1139/cjfas-2026-0190",
-     "s": 0.296,
+     "s": 0.295,
      "t": [
       "种群评估与管理"
      ]
     },
     {
      "d": "10.1111/faf.70123",
-     "s": 0.27,
+     "s": 0.269,
      "t": [
       "种群评估与管理"
      ]
     },
     {
      "d": "10.3390/su182312002",
-     "s": 0.258,
+     "s": 0.257,
      "t": [
       "种群评估与管理"
      ]
@@ -7095,7 +7321,7 @@
    "rel": [
     {
      "d": "10.3390/fishes11110673",
-     "s": 0.388,
+     "s": 0.385,
      "t": [
       "机器学习与AI"
      ]
@@ -7179,7 +7405,7 @@
     },
     {
      "d": "10.1139/cjfas-2025-0391",
-     "s": 0.435,
+     "s": 0.434,
      "t": [
       "保护与恢复",
       "生态与栖息地"
@@ -7194,7 +7420,7 @@
     },
     {
      "d": "10.1007/s10750-026-06466-8",
-     "s": 0.382,
+     "s": 0.383,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -7238,7 +7464,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1950637",
-     "s": 0.188,
+     "s": 0.189,
      "t": []
     },
     {
@@ -7278,22 +7504,22 @@
    "rel": [
     {
      "d": "10.3390/aquacj6040064",
-     "s": 0.438,
+     "s": 0.439,
      "t": [
       "非洲海域"
-     ]
-    },
-    {
-     "d": "10.3389/fmars.2026.2018983",
-     "s": 0.329,
-     "t": [
-      "经济与社会政策"
      ]
     },
     {
      "d": "10.70963/soc.v3i1.970",
      "s": 0.328,
      "t": []
+    },
+    {
+     "d": "10.3389/fmars.2026.2018983",
+     "s": 0.325,
+     "t": [
+      "经济与社会政策"
+     ]
     },
     {
      "d": "10.3389/fmars.2026.1941096",
@@ -7389,14 +7615,14 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1976619",
-     "s": 0.471,
+     "s": 0.468,
      "t": [
       "鲨鱼与鳐类"
      ]
     },
     {
      "d": "10.1007/s10641-026-01935-4",
-     "s": 0.393,
+     "s": 0.391,
      "t": [
       "鲨鱼与鳐类"
      ]
@@ -7410,7 +7636,7 @@
     },
     {
      "d": "10.3390/fishes11110665",
-     "s": 0.369,
+     "s": 0.364,
      "t": [
       "鲨鱼与鳐类"
      ]
@@ -7452,7 +7678,7 @@
     },
     {
      "d": "10.3389/fpubh.2026.1933985",
-     "s": 0.387,
+     "s": 0.388,
      "t": [
       "中国近海与内陆"
      ]
@@ -7496,21 +7722,21 @@
    "rel": [
     {
      "d": "10.1177/02611929261507293",
-     "s": 0.437,
+     "s": 0.438,
      "t": [
       "污染与毒理"
      ]
     },
     {
      "d": "10.1038/s41598-026-79729-y",
-     "s": 0.386,
+     "s": 0.387,
      "t": [
       "污染与毒理"
      ]
     },
     {
      "d": "10.1007/s41742-026-01301-3",
-     "s": 0.383,
+     "s": 0.384,
      "t": [
       "污染与毒理"
      ]
@@ -7615,7 +7841,7 @@
     },
     {
      "d": "10.1186/s12302-026-01588-1",
-     "s": 0.444,
+     "s": 0.443,
      "t": [
       "水产养殖",
       "污染与毒理"
@@ -7681,14 +7907,14 @@
     },
     {
      "d": "10.26437/whzcjr24",
-     "s": 0.489,
+     "s": 0.49,
      "t": [
       "非洲海域"
      ]
     },
     {
      "d": "10.9734/ajfar/2026/v28i111189",
-     "s": 0.368,
+     "s": 0.369,
      "t": [
       "非洲海域"
      ]
@@ -7730,14 +7956,14 @@
     },
     {
      "d": "10.3354/meps15382",
-     "s": 0.271,
+     "s": 0.272,
      "t": [
       "综述与元分析"
      ]
     },
     {
      "d": "10.3390/phycology6040122",
-     "s": 0.263,
+     "s": 0.262,
      "t": [
       "种群评估与管理"
      ]
@@ -7847,14 +8073,14 @@
     },
     {
      "d": "10.1128/aem.01597-26",
-     "s": 0.498,
+     "s": 0.497,
      "t": [
       "鲑鳟鱼类"
      ]
     },
     {
      "d": "10.1139/cjz-2026-0062",
-     "s": 0.487,
+     "s": 0.488,
      "t": [
       "鲑鳟鱼类"
      ]
@@ -7911,7 +8137,7 @@
     },
     {
      "d": "10.1007/s10499-026-02759-w",
-     "s": 0.299,
+     "s": 0.298,
      "t": [
       "水产养殖",
       "污染与毒理"
@@ -7951,14 +8177,14 @@
     },
     {
      "d": "10.1007/s10499-026-02756-z",
-     "s": 0.243,
+     "s": 0.241,
      "t": [
       "水产养殖"
      ]
     },
     {
      "d": "10.3390/fishes11110680",
-     "s": 0.231,
+     "s": 0.23,
      "t": [
       "水产养殖"
      ]
@@ -8020,7 +8246,7 @@
     },
     {
      "d": "10.1007/s40152-026-00534-4",
-     "s": 0.243,
+     "s": 0.244,
      "t": []
     }
    ]
@@ -8108,7 +8334,7 @@
    "rel": [
     {
      "d": "10.1086/744906",
-     "s": 0.374,
+     "s": 0.375,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -8129,7 +8355,7 @@
     },
     {
      "d": "10.1017/s0030605325102378",
-     "s": 0.33,
+     "s": 0.331,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -8163,17 +8389,17 @@
    "rel": [
     {
      "d": "10.1080/23308249.2026.2760249",
-     "s": 0.255,
+     "s": 0.253,
      "t": []
     },
     {
      "d": "10.1038/s41598-026-79729-y",
-     "s": 0.245,
+     "s": 0.246,
      "t": []
     },
     {
      "d": "10.1111/cobi.70425",
-     "s": 0.205,
+     "s": 0.204,
      "t": []
     },
     {
@@ -8210,7 +8436,7 @@
    "rel": [
     {
      "d": "10.1139/cjfas-2026-0059",
-     "s": 0.546,
+     "s": 0.547,
      "t": [
       "鲑鳟鱼类"
      ]
@@ -8320,7 +8546,7 @@
    "rel": [
     {
      "d": "10.3390/fishes11110654",
-     "s": 0.46,
+     "s": 0.457,
      "t": [
       "水产养殖"
      ]
@@ -8340,7 +8566,7 @@
     },
     {
      "d": "10.3390/fishes11120682",
-     "s": 0.402,
+     "s": 0.401,
      "t": []
     }
    ]
@@ -8452,7 +8678,7 @@
     },
     {
      "d": "10.1111/fog.70095",
-     "s": 0.387,
+     "s": 0.388,
      "t": [
       "生态与栖息地",
       "种群评估与管理"
@@ -8499,7 +8725,7 @@
     },
     {
      "d": "10.3389/fmars.2026.2006926",
-     "s": 0.229,
+     "s": 0.23,
      "t": [
       "气候变化与环境"
      ]
@@ -8541,14 +8767,14 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1984103",
-     "s": 0.482,
+     "s": 0.483,
      "t": [
       "疾病与免疫"
      ]
     },
     {
      "d": "10.3390/jmse14222209",
-     "s": 0.271,
+     "s": 0.272,
      "t": [
       "综述与元分析"
      ]
@@ -8560,7 +8786,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1854986",
-     "s": 0.196,
+     "s": 0.197,
      "t": []
     }
    ]
@@ -8590,12 +8816,12 @@
    "rel": [
     {
      "d": "10.3897/aiep.56.213543",
-     "s": 0.272,
+     "s": 0.273,
      "t": []
     },
     {
      "d": "10.3354/meps15370",
-     "s": 0.241,
+     "s": 0.242,
      "t": [
       "种群评估与管理"
      ]
@@ -8609,7 +8835,7 @@
     },
     {
      "d": "10.1007/s11160-026-10115-7",
-     "s": 0.217,
+     "s": 0.219,
      "t": []
     }
    ]
@@ -8659,7 +8885,7 @@
     },
     {
      "d": "10.1086/743937",
-     "s": 0.322,
+     "s": 0.321,
      "t": [
       "生态与栖息地",
       "加工品质与食品"
@@ -8667,7 +8893,7 @@
     },
     {
      "d": "10.3390/aquacj6040057",
-     "s": 0.322,
+     "s": 0.321,
      "t": [
       "监测与采样"
      ]
@@ -8701,7 +8927,7 @@
    "rel": [
     {
      "d": "10.3390/biology15222069",
-     "s": 0.404,
+     "s": 0.403,
      "t": []
     },
     {
@@ -8713,14 +8939,14 @@
     },
     {
      "d": "10.1139/er-2026-0153",
-     "s": 0.306,
+     "s": 0.305,
      "t": [
       "气候变化与环境"
      ]
     },
     {
      "d": "10.3389/fmars.2026.1943975",
-     "s": 0.298,
+     "s": 0.297,
      "t": []
     }
    ]
@@ -8769,14 +8995,14 @@
     },
     {
      "d": "10.9734/ajrcos/2026/v19i11936",
-     "s": 0.401,
+     "s": 0.4,
      "t": [
       "机器学习与AI"
      ]
     },
     {
      "d": "10.1111/1758-2229.70465",
-     "s": 0.36,
+     "s": 0.357,
      "t": [
       "监测与采样"
      ]
@@ -8882,7 +9108,7 @@
     },
     {
      "d": "10.1139/cjz-2026-0108",
-     "s": 0.307,
+     "s": 0.308,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -8938,17 +9164,17 @@
      ]
     },
     {
-     "d": "10.3897/neotropical.21.e212775",
-     "s": 0.259,
-     "t": [
-      "淡水与湖泊河流"
-     ]
-    },
-    {
      "d": "10.1111/fme.70130",
      "s": 0.258,
      "t": [
       "非洲海域",
+      "淡水与湖泊河流"
+     ]
+    },
+    {
+     "d": "10.3897/neotropical.21.e212775",
+     "s": 0.258,
+     "t": [
       "淡水与湖泊河流"
      ]
     }
@@ -8982,7 +9208,7 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1977454",
-     "s": 0.277,
+     "s": 0.276,
      "t": [
       "加勒比与墨西哥湾"
      ]
@@ -8996,7 +9222,7 @@
     },
     {
      "d": "10.1007/s10641-026-01935-4",
-     "s": 0.263,
+     "s": 0.264,
      "t": [
       "保护与恢复",
       "经济与社会政策"
@@ -9051,14 +9277,14 @@
     },
     {
      "d": "10.1007/s12562-026-02054-w",
-     "s": 0.423,
+     "s": 0.422,
      "t": [
       "种群评估与管理"
      ]
     },
     {
      "d": "10.6066/jtip.2026.37.3.271",
-     "s": 0.359,
+     "s": 0.36,
      "t": [
       "金枪鱼与鲭类"
      ]
@@ -9108,7 +9334,7 @@
     },
     {
      "d": "10.3390/aquacj6040058",
-     "s": 0.397,
+     "s": 0.396,
      "t": [
       "机器学习与AI"
      ]
@@ -9218,7 +9444,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1992082",
-     "s": 0.387,
+     "s": 0.386,
      "t": [
       "经济与社会政策"
      ]
@@ -9255,7 +9481,7 @@
    "rel": [
     {
      "d": "10.15517/29j0jp96",
-     "s": 0.506,
+     "s": 0.507,
      "t": [
       "藻类与海藻"
      ]
@@ -9309,7 +9535,7 @@
    "rel": [
     {
      "d": "10.1007/s10499-026-02759-w",
-     "s": 0.444,
+     "s": 0.443,
      "t": [
       "水产养殖",
       "污染与毒理"
@@ -9384,7 +9610,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1983862",
-     "s": 0.331,
+     "s": 0.332,
      "t": [
       "经济与社会政策"
      ]
@@ -9416,7 +9642,7 @@
    "rel": [
     {
      "d": "10.1007/s43615-026-01197-3",
-     "s": 0.277,
+     "s": 0.278,
      "t": [
       "水产养殖"
      ]
@@ -9486,7 +9712,7 @@
     },
     {
      "d": "10.1139/cjz-2026-0062",
-     "s": 0.422,
+     "s": 0.423,
      "t": [
       "鲑鳟鱼类"
      ]
@@ -9535,7 +9761,7 @@
     },
     {
      "d": "10.3390/aquacj6040057",
-     "s": 0.487,
+     "s": 0.486,
      "t": [
       "监测与采样"
      ]
@@ -9588,14 +9814,14 @@
     },
     {
      "d": "10.9734/ajrcos/2026/v19i11936",
-     "s": 0.263,
+     "s": 0.262,
      "t": [
       "水产养殖"
      ]
     },
     {
      "d": "10.3389/fmars.2026.1925773",
-     "s": 0.227,
+     "s": 0.226,
      "t": []
     },
     {
@@ -9736,7 +9962,7 @@
     },
     {
      "d": "10.1007/s13353-026-01129-9",
-     "s": 0.326,
+     "s": 0.323,
      "t": [
       "鲤科鱼类"
      ]
@@ -9780,7 +10006,7 @@
     },
     {
      "d": "10.1111/jfb.70719",
-     "s": 0.339,
+     "s": 0.338,
      "t": [
       "淡水与湖泊河流",
       "监测与采样"
@@ -9831,7 +10057,7 @@
    "rel": [
     {
      "d": "10.9734/ajriz/2026/v9i4330",
-     "s": 0.422,
+     "s": 0.424,
      "t": [
       "加工品质与食品"
      ]
@@ -9935,26 +10161,26 @@
    "rel": [
     {
      "d": "10.1111/jfb.70718",
-     "s": 0.433,
+     "s": 0.432,
      "t": [
       "生态与栖息地"
      ]
     },
     {
      "d": "10.9734/ajfar/2026/v28i111187",
-     "s": 0.401,
+     "s": 0.4,
      "t": [
       "生态与栖息地"
      ]
     },
     {
      "d": "10.1007/s11802-026-6741-6",
-     "s": 0.307,
+     "s": 0.306,
      "t": []
     },
     {
      "d": "10.3390/biology15222069",
-     "s": 0.286,
+     "s": 0.285,
      "t": [
       "生态与栖息地"
      ]
@@ -9995,7 +10221,7 @@
     },
     {
      "d": "10.1111/1365-2656.70408",
-     "s": 0.28,
+     "s": 0.279,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -10009,7 +10235,7 @@
     },
     {
      "d": "10.18697/ajfand.156.27670",
-     "s": 0.266,
+     "s": 0.265,
      "t": [
       "种群评估与管理"
      ]
@@ -10050,7 +10276,7 @@
     },
     {
      "d": "10.3390/fishes11120690",
-     "s": 0.401,
+     "s": 0.402,
      "t": [
       "遗传与基因组"
      ]
@@ -10064,7 +10290,7 @@
     },
     {
      "d": "10.3390/fishes11120691",
-     "s": 0.341,
+     "s": 0.342,
      "t": [
       "遗传与基因组"
      ]
@@ -10115,7 +10341,7 @@
     },
     {
      "d": "10.3390/polym18222875",
-     "s": 0.232,
+     "s": 0.231,
      "t": [
       "其他淡水鱼"
      ]
@@ -10168,21 +10394,21 @@
     },
     {
      "d": "10.1007/s10750-026-06474-8",
-     "s": 0.295,
+     "s": 0.291,
      "t": [
       "地中海与黑海"
      ]
     },
     {
      "d": "10.3389/fmars.2026.1981790",
-     "s": 0.278,
+     "s": 0.274,
      "t": [
       "地中海与黑海"
      ]
     },
     {
      "d": "10.3389/fmars.2026.1984103",
-     "s": 0.233,
+     "s": 0.229,
      "t": [
       "地中海与黑海"
      ]
@@ -10225,7 +10451,7 @@
     },
     {
      "d": "10.1111/jfb.70720",
-     "s": 0.315,
+     "s": 0.316,
      "t": [
       "生物学与生理"
      ]
@@ -10238,8 +10464,8 @@
      ]
     },
     {
-     "d": "10.3390/fishes11110654",
-     "s": 0.195,
+     "d": "10.1111/fme.70135",
+     "s": 0.216,
      "t": [
       "鲆鲽类"
      ]
@@ -10276,14 +10502,14 @@
    "rel": [
     {
      "d": "10.2989/1814232x.2026.2662912",
-     "s": 0.334,
+     "s": 0.335,
      "t": [
       "非洲海域"
      ]
     },
     {
      "d": "10.3389/fmars.2026.1962143",
-     "s": 0.287,
+     "s": 0.288,
      "t": [
       "分布模型与栖息地评价"
      ]
@@ -10336,7 +10562,7 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1937827",
-     "s": 0.498,
+     "s": 0.499,
      "t": [
       "鲨鱼与鳐类"
      ]
@@ -10398,22 +10624,22 @@
      ]
     },
     {
+     "d": "10.1111/fme.70135",
+     "s": 0.339,
+     "t": [
+      "头足类"
+     ]
+    },
+    {
      "d": "10.3389/fmars.2026.1976619",
-     "s": 0.233,
+     "s": 0.232,
      "t": [
       "捕捞技术与兼捕"
      ]
     },
     {
      "d": "10.3389/fmars.2026.1962143",
-     "s": 0.217,
-     "t": [
-      "捕捞技术与兼捕"
-     ]
-    },
-    {
-     "d": "10.1002/nzm2.70092",
-     "s": 0.208,
+     "s": 0.216,
      "t": [
       "捕捞技术与兼捕"
      ]
@@ -10455,7 +10681,7 @@
     },
     {
      "d": "10.3354/meps15375",
-     "s": 0.408,
+     "s": 0.409,
      "t": [
       "生态与栖息地"
      ]
@@ -10469,7 +10695,7 @@
     },
     {
      "d": "10.3389/fmars.2026.2015479",
-     "s": 0.341,
+     "s": 0.342,
      "t": [
       "生态与栖息地"
      ]
@@ -10504,14 +10730,14 @@
    "rel": [
     {
      "d": "10.3390/fishes11110674",
-     "s": 0.295,
+     "s": 0.291,
      "t": [
       "地中海与黑海"
      ]
     },
     {
      "d": "10.3389/fmars.2026.1984103",
-     "s": 0.289,
+     "s": 0.284,
      "t": [
       "地中海与黑海"
      ]
@@ -10579,8 +10805,8 @@
      ]
     },
     {
-     "d": "10.1111/eff.70054",
-     "s": 0.255,
+     "d": "10.1111/fog.70096",
+     "s": 0.26,
      "t": [
       "气候变化与环境"
      ]
@@ -10686,7 +10912,7 @@
     },
     {
      "d": "10.12991/jrespharm.1725886",
-     "s": 0.236,
+     "s": 0.237,
      "t": [
       "营养与饲料"
      ]
@@ -10725,21 +10951,21 @@
    "rel": [
     {
      "d": "10.1007/s12601-026-00319-0",
-     "s": 0.184,
+     "s": 0.183,
      "t": []
     },
     {
      "d": "10.1111/faf.70119",
-     "s": 0.18,
-     "t": []
-    },
-    {
-     "d": "10.1080/23308249.2026.2748998",
-     "s": 0.161,
+     "s": 0.179,
      "t": []
     },
     {
      "d": "10.3389/fmars.2026.1907711",
+     "s": 0.161,
+     "t": []
+    },
+    {
+     "d": "10.1007/s12562-026-02043-z",
      "s": 0.16,
      "t": []
     }
@@ -10826,14 +11052,14 @@
    "rel": [
     {
      "d": "10.51317/wrehv191",
-     "s": 0.329,
+     "s": 0.325,
      "t": [
       "经济与社会政策"
      ]
     },
     {
      "d": "10.3389/fmars.2026.1938640",
-     "s": 0.3,
+     "s": 0.299,
      "t": [
       "气候变化与环境",
       "经济与社会政策"
@@ -10974,7 +11200,7 @@
     },
     {
      "d": "10.1086/743937",
-     "s": 0.312,
+     "s": 0.307,
      "t": [
       "生态与栖息地"
      ]
@@ -11030,12 +11256,12 @@
     },
     {
      "d": "10.3389/fmars.2026.1962387",
-     "s": 0.151,
+     "s": 0.148,
      "t": []
     },
     {
      "d": "10.3390/aichem1040020",
-     "s": 0.143,
+     "s": 0.142,
      "t": []
     }
    ]
@@ -11068,7 +11294,7 @@
    "rel": [
     {
      "d": "10.53730/ijhs.v10n3.16037",
-     "s": 0.333,
+     "s": 0.334,
      "t": []
     },
     {
@@ -11085,7 +11311,7 @@
     },
     {
      "d": "10.3390/fishes11120689",
-     "s": 0.19,
+     "s": 0.191,
      "t": [
       "环境DNA"
      ]
@@ -11122,7 +11348,7 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1941096",
-     "s": 0.525,
+     "s": 0.524,
      "t": [
       "调查与问卷"
      ]
@@ -11184,7 +11410,7 @@
    "rel": [
     {
      "d": "10.1073/pnas.2600502123",
-     "s": 0.583,
+     "s": 0.584,
      "t": [
       "鲑鳟鱼类",
       "淡水与湖泊河流"
@@ -11192,14 +11418,14 @@
     },
     {
      "d": "10.1007/s11356-026-38430-3",
-     "s": 0.487,
+     "s": 0.488,
      "t": [
       "鲑鳟鱼类"
      ]
     },
     {
      "d": "10.1007/s44338-026-00271-2",
-     "s": 0.422,
+     "s": 0.423,
      "t": [
       "鲑鳟鱼类"
      ]
@@ -11255,7 +11481,7 @@
     },
     {
      "d": "10.1007/s11356-026-38382-8",
-     "s": 0.271,
+     "s": 0.272,
      "t": [
       "污染与毒理"
      ]
@@ -11299,21 +11525,21 @@
    "rel": [
     {
      "d": "10.1007/s11356-026-38430-3",
-     "s": 0.429,
+     "s": 0.426,
      "t": [
       "水产养殖"
      ]
     },
     {
      "d": "10.3390/fishes11110679",
-     "s": 0.388,
+     "s": 0.385,
      "t": [
       "机器学习与AI"
      ]
     },
     {
      "d": "10.3390/fishes11110680",
-     "s": 0.312,
+     "s": 0.313,
      "t": [
       "水产养殖",
       "生物学与生理"
@@ -11359,7 +11585,7 @@
    "rel": [
     {
      "d": "10.3354/meps15372",
-     "s": 0.414,
+     "s": 0.415,
      "t": [
       "饵料鱼类"
      ]
@@ -11374,14 +11600,14 @@
     },
     {
      "d": "10.25258/ijddt.16.82s.131",
-     "s": 0.309,
+     "s": 0.31,
      "t": [
       "饵料鱼类"
      ]
     },
     {
      "d": "10.3389/fmars.2026.1952449",
-     "s": 0.287,
+     "s": 0.288,
      "t": [
       "分布模型与栖息地评价"
      ]
@@ -11413,14 +11639,14 @@
    "rel": [
     {
      "d": "10.1111/jfb.70743",
-     "s": 0.322,
+     "s": 0.321,
      "t": [
       "种群评估与管理"
      ]
     },
     {
      "d": "10.1111/cobi.70425",
-     "s": 0.27,
+     "s": 0.269,
      "t": [
       "种群评估与管理"
      ]
@@ -11434,7 +11660,7 @@
     },
     {
      "d": "10.1111/1365-2656.70408",
-     "s": 0.259,
+     "s": 0.258,
      "t": [
       "种群评估与管理"
      ]
@@ -11482,7 +11708,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1924894",
-     "s": 0.351,
+     "s": 0.352,
      "t": []
     },
     {
@@ -11521,7 +11747,7 @@
    "rel": [
     {
      "d": "10.1007/s11356-026-38430-3",
-     "s": 0.43,
+     "s": 0.432,
      "t": [
       "鲑鳟鱼类"
      ]
@@ -11535,7 +11761,7 @@
     },
     {
      "d": "10.1007/s12562-026-02050-0",
-     "s": 0.385,
+     "s": 0.386,
      "t": [
       "鲑鳟鱼类"
      ]
@@ -11576,14 +11802,14 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1914036",
-     "s": 0.315,
+     "s": 0.316,
      "t": [
       "生物学与生理"
      ]
     },
     {
      "d": "10.1111/jfb.70740",
-     "s": 0.303,
+     "s": 0.302,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -11646,7 +11872,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1962143",
-     "s": 0.414,
+     "s": 0.415,
      "t": [
       "饵料鱼类"
      ]
@@ -11688,7 +11914,7 @@
    "rel": [
     {
      "d": "10.3354/meps15373",
-     "s": 0.391,
+     "s": 0.392,
      "t": [
       "生态与栖息地"
      ]
@@ -11753,14 +11979,14 @@
     },
     {
      "d": "10.9734/ajfar/2026/v28i111189",
-     "s": 0.346,
+     "s": 0.347,
      "t": [
       "生态与栖息地"
      ]
     },
     {
      "d": "10.1002/aff2.70373",
-     "s": 0.345,
+     "s": 0.346,
      "t": [
       "全球/多区域"
      ]
@@ -11875,14 +12101,14 @@
     },
     {
      "d": "10.3390/jmse14222145",
-     "s": 0.189,
+     "s": 0.188,
      "t": [
       "水产养殖"
      ]
     },
     {
      "d": "10.1007/s11356-026-38430-3",
-     "s": 0.184,
+     "s": 0.181,
      "t": [
       "水产养殖"
      ]
@@ -11914,24 +12140,24 @@
    "rel": [
     {
      "d": "10.3390/diagnostics16223848",
-     "s": 0.333,
+     "s": 0.334,
      "t": []
     },
     {
      "d": "10.1007/s12011-026-05443-5",
-     "s": 0.222,
+     "s": 0.22,
      "t": []
     },
     {
      "d": "10.1038/s41598-026-73653-x",
-     "s": 0.198,
+     "s": 0.199,
      "t": [
       "遗传与基因组"
      ]
     },
     {
      "d": "10.1080/09654313.2026.2758888",
-     "s": 0.174,
+     "s": 0.175,
      "t": []
     }
    ]
@@ -11989,7 +12215,7 @@
     },
     {
      "d": "10.3390/fishes11120690",
-     "s": 0.295,
+     "s": 0.296,
      "t": [
       "鲈鱼与石斑鱼"
      ]
@@ -12025,7 +12251,7 @@
    "rel": [
     {
      "d": "10.63249/j-sh.v1i2.166",
-     "s": 0.446,
+     "s": 0.447,
      "t": [
       "经济与社会政策"
      ]
@@ -12039,7 +12265,7 @@
     },
     {
      "d": "10.55885/jucep.v6i2.1232",
-     "s": 0.391,
+     "s": 0.39,
      "t": [
       "东南亚与西太"
      ]
@@ -12095,7 +12321,7 @@
     },
     {
      "d": "10.2478/contagri-2026-0019",
-     "s": 0.399,
+     "s": 0.4,
      "t": [
       "水产养殖",
       "经济与社会政策"
@@ -12219,7 +12445,7 @@
     },
     {
      "d": "10.1007/s11356-026-38430-3",
-     "s": 0.313,
+     "s": 0.31,
      "t": [
       "水产养殖"
      ]
@@ -12254,7 +12480,7 @@
    "rel": [
     {
      "d": "10.5194/gh-81-843-2026",
-     "s": 0.304,
+     "s": 0.305,
      "t": [
       "经济与社会政策"
      ]
@@ -12386,31 +12612,32 @@
    "off_topic": false,
    "rel": [
     {
+     "d": "10.1111/fme.70135",
+     "s": 0.512,
+     "t": [
+      "捕捞技术与兼捕",
+      "种群评估与管理"
+     ]
+    },
+    {
      "d": "10.3390/fishes11110665",
-     "s": 0.5,
+     "s": 0.493,
      "t": [
       "监测与采样"
      ]
     },
     {
      "d": "10.3390/d18120733",
-     "s": 0.479,
+     "s": 0.476,
      "t": [
       "监测与采样"
      ]
     },
     {
      "d": "10.56557/upjoz/2026/v47i215953",
-     "s": 0.386,
+     "s": 0.387,
      "t": [
       "东南亚与西太",
-      "监测与采样"
-     ]
-    },
-    {
-     "d": "10.3390/biology15222069",
-     "s": 0.32,
-     "t": [
       "监测与采样"
      ]
     }
@@ -12447,13 +12674,13 @@
      "t": []
     },
     {
-     "d": "10.1007/s11356-026-38382-8",
+     "d": "10.1038/s41598-026-79729-y",
      "s": 0.259,
      "t": []
     },
     {
-     "d": "10.1038/s41598-026-79729-y",
-     "s": 0.259,
+     "d": "10.1007/s11356-026-38382-8",
+     "s": 0.258,
      "t": []
     },
     {
@@ -12547,7 +12774,7 @@
    "rel": [
     {
      "d": "10.1242/jeb.252974",
-     "s": 0.376,
+     "s": 0.375,
      "t": [
       "生物学与生理"
      ]
@@ -12566,7 +12793,7 @@
     },
     {
      "d": "10.1111/jfb.70741",
-     "s": 0.187,
+     "s": 0.186,
      "t": [
       "其他淡水鱼"
      ]
@@ -12670,7 +12897,7 @@
     },
     {
      "d": "10.18697/ajfand.156.27670",
-     "s": 0.345,
+     "s": 0.346,
      "t": [
       "全球/多区域"
      ]
@@ -12684,7 +12911,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1854986",
-     "s": 0.308,
+     "s": 0.307,
      "t": [
       "生态与栖息地"
      ]
@@ -12719,7 +12946,7 @@
    "rel": [
     {
      "d": "10.1007/s10499-026-02756-z",
-     "s": 0.489,
+     "s": 0.49,
      "t": [
       "非洲海域"
      ]
@@ -12774,14 +13001,14 @@
    "rel": [
     {
      "d": "10.1007/s13353-026-01129-9",
-     "s": 0.358,
+     "s": 0.357,
      "t": [
       "鲤科鱼类"
      ]
     },
     {
      "d": "10.1021/acsomega.6c12717",
-     "s": 0.329,
+     "s": 0.33,
      "t": []
     },
     {
@@ -12835,24 +13062,25 @@
     },
     {
      "d": "10.1007/s12562-026-02054-w",
-     "s": 0.361,
+     "s": 0.362,
      "t": [
       "非洲海域"
      ]
     },
     {
-     "d": "10.3390/su182312002",
-     "s": 0.336,
+     "d": "10.1111/fme.70135",
+     "s": 0.345,
      "t": [
       "经济与社会政策",
-      "种群评估与管理"
+      "捕捞技术与兼捕"
      ]
     },
     {
-     "d": "10.1111/fme.70124",
-     "s": 0.33,
+     "d": "10.3390/su182312002",
+     "s": 0.335,
      "t": [
-      "经济与社会政策"
+      "经济与社会政策",
+      "种群评估与管理"
      ]
     }
    ]
@@ -12929,14 +13157,14 @@
     },
     {
      "d": "10.1111/jfb.70746",
-     "s": 0.35,
+     "s": 0.349,
      "t": [
       "种群评估与管理"
      ]
     },
     {
      "d": "10.1007/s12601-026-00319-0",
-     "s": 0.295,
+     "s": 0.296,
      "t": [
       "种群评估与管理"
      ]
@@ -12994,7 +13222,7 @@
     },
     {
      "d": "10.12688/f1000research.194150.1",
-     "s": 0.274,
+     "s": 0.275,
      "t": [
       "综述与元分析"
      ]
@@ -13048,7 +13276,7 @@
     },
     {
      "d": "10.54254/2753-8818/2026.38927",
-     "s": 0.425,
+     "s": 0.423,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -13144,7 +13372,7 @@
    "rel": [
     {
      "d": "10.54254/2753-8818/2026.38927",
-     "s": 0.204,
+     "s": 0.203,
      "t": [
       "生态与栖息地"
      ]
@@ -13163,7 +13391,7 @@
     },
     {
      "d": "10.9734/ajfar/2026/v28i111187",
-     "s": 0.171,
+     "s": 0.17,
      "t": [
       "生态与栖息地"
      ]
@@ -13209,14 +13437,14 @@
     },
     {
      "d": "10.56201/ijaes.v10.no10.2024.pg162.176",
-     "s": 0.505,
+     "s": 0.503,
      "t": [
       "非洲海域"
      ]
     },
     {
      "d": "10.3390/d18120733",
-     "s": 0.481,
+     "s": 0.48,
      "t": [
       "监测与采样"
      ]
@@ -13258,14 +13486,14 @@
    "rel": [
     {
      "d": "10.3390/agronomy16232356",
-     "s": 0.377,
+     "s": 0.378,
      "t": [
       "水产养殖"
      ]
     },
     {
      "d": "10.3390/fishes11110655",
-     "s": 0.368,
+     "s": 0.367,
      "t": [
       "水产养殖",
       "种群评估与管理"
@@ -13280,7 +13508,7 @@
     },
     {
      "d": "10.3856/vol54-issue5-fulltext-3672",
-     "s": 0.313,
+     "s": 0.312,
      "t": [
       "水产养殖",
       "种群评估与管理"
@@ -13336,7 +13564,7 @@
     },
     {
      "d": "10.3389/fpos.2026.1929622",
-     "s": 0.324,
+     "s": 0.325,
      "t": [
       "东南亚与西太"
      ]
@@ -13371,21 +13599,21 @@
    "rel": [
     {
      "d": "10.56557/upjoz/2026/v47i215945",
-     "s": 0.56,
+     "s": 0.561,
      "t": [
       "罗非鱼类"
      ]
     },
     {
      "d": "10.29165/ajarcde.v11i1.1511",
-     "s": 0.56,
+     "s": 0.561,
      "t": [
       "罗非鱼类"
      ]
     },
     {
      "d": "10.1111/jfd.70325",
-     "s": 0.505,
+     "s": 0.506,
      "t": [
       "罗非鱼类"
      ]
@@ -13483,7 +13711,7 @@
    "rel": [
     {
      "d": "10.6066/jtip.2026.37.3.271",
-     "s": 0.477,
+     "s": 0.476,
      "t": [
       "加工品质与食品"
      ]
@@ -13504,7 +13732,7 @@
     },
     {
      "d": "10.3390/fishes11110676",
-     "s": 0.232,
+     "s": 0.231,
      "t": [
       "其他淡水鱼"
      ]
@@ -13539,7 +13767,7 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1902794",
-     "s": 0.414,
+     "s": 0.413,
      "t": [
       "经济与社会政策"
      ]
@@ -13553,14 +13781,14 @@
     },
     {
      "d": "10.3390/fishes11110675",
-     "s": 0.331,
+     "s": 0.332,
      "t": [
       "经济与社会政策"
      ]
     },
     {
      "d": "10.56557/upjoz/2026/v47i225956",
-     "s": 0.329,
+     "s": 0.328,
      "t": [
       "经济与社会政策"
      ]
@@ -13594,32 +13822,33 @@
    "off_topic": false,
    "rel": [
     {
-     "d": "10.3390/su182211535",
-     "s": 0.381,
-     "t": [
-      "南美海域"
-     ]
-    },
-    {
-     "d": "10.3389/fmars.2026.1976619",
-     "s": 0.308,
-     "t": [
-      "捕捞技术与兼捕"
-     ]
-    },
-    {
-     "d": "10.52998/trjmms.2042258",
-     "s": 0.298,
+     "d": "10.1111/fme.70135",
+     "s": 0.391,
      "t": [
       "经济与社会政策",
       "捕捞技术与兼捕"
      ]
     },
     {
-     "d": "10.3897/neotropical.21.e212775",
-     "s": 0.251,
+     "d": "10.3390/su182211535",
+     "s": 0.382,
      "t": [
       "南美海域"
+     ]
+    },
+    {
+     "d": "10.3389/fmars.2026.1976619",
+     "s": 0.306,
+     "t": [
+      "捕捞技术与兼捕"
+     ]
+    },
+    {
+     "d": "10.52998/trjmms.2042258",
+     "s": 0.297,
+     "t": [
+      "经济与社会政策",
+      "捕捞技术与兼捕"
      ]
     }
    ]
@@ -13651,21 +13880,21 @@
    "rel": [
     {
      "d": "10.1111/fme.70133",
-     "s": 0.546,
+     "s": 0.547,
      "t": [
       "鲑鳟鱼类"
      ]
     },
     {
      "d": "10.1139/cjfas-2025-0404",
-     "s": 0.443,
+     "s": 0.442,
      "t": [
       "鲑鳟鱼类"
      ]
     },
     {
      "d": "10.3389/fmicb.2026.1992240",
-     "s": 0.428,
+     "s": 0.429,
      "t": [
       "鲑鳟鱼类"
      ]
@@ -13707,7 +13936,7 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1976573",
-     "s": 0.498,
+     "s": 0.499,
      "t": [
       "鲨鱼与鳐类"
      ]
@@ -13728,7 +13957,7 @@
     },
     {
      "d": "10.1139/cjfas-2026-0046",
-     "s": 0.277,
+     "s": 0.276,
      "t": [
       "鲨鱼与鳐类"
      ]
@@ -13764,7 +13993,7 @@
    "rel": [
     {
      "d": "10.1186/s44365-026-00051-9",
-     "s": 0.335,
+     "s": 0.336,
      "t": []
     },
     {
@@ -13819,7 +14048,7 @@
    "rel": [
     {
      "d": "10.1093/najfmt/vqag096",
-     "s": 0.365,
+     "s": 0.366,
      "t": [
       "鲑鳟鱼类"
      ]
@@ -13875,14 +14104,14 @@
    "rel": [
     {
      "d": "10.1111/fog.70095",
-     "s": 0.421,
+     "s": 0.422,
      "t": [
       "生态与栖息地"
      ]
     },
     {
      "d": "10.3389/fevo.2026.1960019",
-     "s": 0.414,
+     "s": 0.415,
      "t": [
       "中国近海与内陆",
       "南海"
@@ -13897,7 +14126,7 @@
     },
     {
      "d": "10.3354/meps15370",
-     "s": 0.391,
+     "s": 0.392,
      "t": [
       "生态与栖息地"
      ]
@@ -13930,7 +14159,7 @@
    "rel": [
     {
      "d": "10.1007/s10750-026-06482-8",
-     "s": 0.408,
+     "s": 0.409,
      "t": [
       "生态与栖息地"
      ]
@@ -13944,14 +14173,14 @@
     },
     {
      "d": "10.3389/fmars.2026.2015479",
-     "s": 0.301,
+     "s": 0.3,
      "t": [
       "生态与栖息地"
      ]
     },
     {
      "d": "10.1007/s12562-026-02052-y",
-     "s": 0.285,
+     "s": 0.284,
      "t": [
       "加工品质与食品"
      ]
@@ -13994,7 +14223,7 @@
     },
     {
      "d": "10.3389/fnbeh.2026.2016852",
-     "s": 0.32,
+     "s": 0.321,
      "t": []
     },
     {
@@ -14006,7 +14235,7 @@
     },
     {
      "d": "10.1086/743937",
-     "s": 0.268,
+     "s": 0.269,
      "t": [
       "生态与栖息地"
      ]
@@ -14038,7 +14267,7 @@
    "rel": [
     {
      "d": "10.1007/s12011-026-05443-5",
-     "s": 0.286,
+     "s": 0.287,
      "t": [
       "营养与饲料"
      ]
@@ -14097,7 +14326,7 @@
     },
     {
      "d": "10.51317/wrehv191",
-     "s": 0.259,
+     "s": 0.26,
      "t": [
       "经济与社会政策"
      ]
@@ -14206,14 +14435,14 @@
     },
     {
      "d": "10.1111/jfb.70704",
-     "s": 0.253,
+     "s": 0.254,
      "t": [
       "生物学与生理"
      ]
     },
     {
      "d": "10.3897/aiep.56.213543",
-     "s": 0.227,
+     "s": 0.228,
      "t": [
       "生物学与生理",
       "保护与恢复"
@@ -14221,7 +14450,7 @@
     },
     {
      "d": "10.1007/s11355-026-00759-9",
-     "s": 0.185,
+     "s": 0.186,
      "t": []
     }
    ]
@@ -14254,7 +14483,7 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1969343",
-     "s": 0.392,
+     "s": 0.393,
      "t": [
       "监测与采样",
       "机器学习与AI"
@@ -14311,7 +14540,7 @@
    "rel": [
     {
      "d": "10.1007/s11356-026-38430-3",
-     "s": 0.367,
+     "s": 0.368,
      "t": [
       "水产养殖"
      ]
@@ -14325,7 +14554,7 @@
     },
     {
      "d": "10.3390/nitrogen7040137",
-     "s": 0.348,
+     "s": 0.349,
      "t": [
       "水产养殖"
      ]
@@ -14365,21 +14594,21 @@
    "rel": [
     {
      "d": "10.1007/s00227-026-04950-2",
-     "s": 0.284,
+     "s": 0.283,
      "t": [
       "生态与栖息地"
      ]
     },
     {
      "d": "10.3389/fmars.2026.1924894",
-     "s": 0.261,
+     "s": 0.262,
      "t": [
       "气候变化与环境"
      ]
     },
     {
      "d": "10.3389/fmars.2026.2006926",
-     "s": 0.244,
+     "s": 0.243,
      "t": [
       "气候变化与环境"
      ]
@@ -14435,14 +14664,14 @@
     },
     {
      "d": "10.3389/fmars.2026.1962143",
-     "s": 0.271,
+     "s": 0.27,
      "t": [
       "饵料鱼类"
      ]
     },
     {
      "d": "10.1007/s12562-026-02054-w",
-     "s": 0.257,
+     "s": 0.258,
      "t": [
       "饵料鱼类"
      ]
@@ -14541,7 +14770,7 @@
     },
     {
      "d": "10.1163/15718085-20261060",
-     "s": 0.206,
+     "s": 0.207,
      "t": [
       "经济与社会政策"
      ]
@@ -14580,7 +14809,7 @@
    "rel": [
     {
      "d": "10.1007/s11802-026-6741-6",
-     "s": 0.177,
+     "s": 0.178,
      "t": []
     },
     {
@@ -14595,7 +14824,7 @@
     },
     {
      "d": "10.1111/jfb.70748",
-     "s": 0.13,
+     "s": 0.131,
      "t": []
     }
    ]
@@ -14651,7 +14880,7 @@
    "rel": [
     {
      "d": "10.3354/meps15367",
-     "s": 0.372,
+     "s": 0.373,
      "t": [
       "生物学与生理",
       "生态与栖息地"
@@ -14659,7 +14888,7 @@
     },
     {
      "d": "10.1093/najfmt/vqag096",
-     "s": 0.27,
+     "s": 0.271,
      "t": [
       "生物学与生理",
       "生态与栖息地"
@@ -14710,14 +14939,14 @@
    "rel": [
     {
      "d": "10.1111/raq.70232",
-     "s": 0.362,
+     "s": 0.361,
      "t": [
       "虾类"
      ]
     },
     {
      "d": "10.1086/743937",
-     "s": 0.331,
+     "s": 0.332,
      "t": [
       "虾类"
      ]
@@ -14773,7 +15002,7 @@
     },
     {
      "d": "10.1038/s41598-026-73653-x",
-     "s": 0.286,
+     "s": 0.287,
      "t": [
       "水产养殖",
       "遗传与基因组"
@@ -14821,21 +15050,21 @@
    "rel": [
     {
      "d": "10.59496/20261ah5",
-     "s": 0.484,
+     "s": 0.47,
      "t": [
       "水产养殖"
      ]
     },
     {
      "d": "10.3390/molecules31224099",
-     "s": 0.343,
+     "s": 0.345,
      "t": [
       "水产养殖"
      ]
     },
     {
      "d": "10.1038/s41437-026-00900-2",
-     "s": 0.286,
+     "s": 0.287,
      "t": [
       "水产养殖",
       "遗传与基因组"
@@ -14843,7 +15072,7 @@
     },
     {
      "d": "10.1007/s10529-026-03800-x",
-     "s": 0.275,
+     "s": 0.276,
      "t": [
       "水产养殖"
      ]
@@ -14986,7 +15215,7 @@
    "rel": [
     {
      "d": "10.1080/23308249.2026.2760249",
-     "s": 0.423,
+     "s": 0.422,
      "t": [
       "种群评估与管理"
      ]
@@ -15000,7 +15229,7 @@
     },
     {
      "d": "10.1111/fme.70130",
-     "s": 0.361,
+     "s": 0.362,
      "t": [
       "非洲海域"
      ]
@@ -15044,7 +15273,7 @@
    "rel": [
     {
      "d": "10.1108/jadee-04-2026-0301",
-     "s": 0.462,
+     "s": 0.461,
      "t": [
       "东南亚与西太"
      ]
@@ -15114,14 +15343,14 @@
     },
     {
      "d": "10.3390/fishes11110659",
-     "s": 0.293,
+     "s": 0.292,
      "t": [
       "全球/多区域"
      ]
     },
     {
      "d": "10.1002/nzm2.70092",
-     "s": 0.291,
+     "s": 0.29,
      "t": [
       "东南亚与西太"
      ]
@@ -15153,7 +15382,7 @@
    "rel": [
     {
      "d": "10.1111/cobi.70425",
-     "s": 0.296,
+     "s": 0.295,
      "t": [
       "种群评估与管理"
      ]
@@ -15174,7 +15403,7 @@
     },
     {
      "d": "10.1111/fog.70093",
-     "s": 0.196,
+     "s": 0.195,
      "t": []
     }
    ]
@@ -15266,7 +15495,7 @@
    "rel": [
     {
      "d": "10.56201/ijaes.vol.12.no10.2026.pg173.190",
-     "s": 0.536,
+     "s": 0.535,
      "t": [
       "监测与采样"
      ]
@@ -15281,14 +15510,14 @@
     },
     {
      "d": "10.54254/2753-8818/2026.38927",
-     "s": 0.475,
+     "s": 0.474,
      "t": [
       "淡水与湖泊河流"
      ]
     },
     {
      "d": "10.1111/jfb.70719",
-     "s": 0.463,
+     "s": 0.462,
      "t": [
       "中国近海与内陆",
       "淡水与湖泊河流"
@@ -15345,7 +15574,7 @@
     },
     {
      "d": "10.56201/ijccp.v10.no1.2024.pg116.132",
-     "s": 0.386,
+     "s": 0.387,
      "t": [
       "污染与毒理"
      ]
@@ -15383,7 +15612,7 @@
    "rel": [
     {
      "d": "10.65339/ijsis.v1.i4.303",
-     "s": 0.525,
+     "s": 0.524,
      "t": [
       "调查与问卷"
      ]
@@ -15404,7 +15633,7 @@
     },
     {
      "d": "10.63249/j-sh.v1i2.167",
-     "s": 0.354,
+     "s": 0.353,
      "t": [
       "调查与问卷"
      ]
@@ -15442,7 +15671,7 @@
    "rel": [
     {
      "d": "10.1139/cjfas-2025-0391",
-     "s": 0.42,
+     "s": 0.417,
      "t": [
       "声学与遥测"
      ]
@@ -15456,14 +15685,14 @@
     },
     {
      "d": "10.1139/cjfas-2026-0046",
-     "s": 0.334,
+     "s": 0.331,
      "t": [
       "声学与遥测"
      ]
     },
     {
      "d": "10.3390/fishes11110654",
-     "s": 0.279,
+     "s": 0.278,
      "t": [
       "鲆鲽类"
      ]
@@ -15497,7 +15726,7 @@
    "rel": [
     {
      "d": "10.59496/20261ah5",
-     "s": 0.364,
+     "s": 0.366,
      "t": [
       "水产养殖",
       "疾病与免疫"
@@ -15505,7 +15734,7 @@
     },
     {
      "d": "10.1038/s41598-026-73653-x",
-     "s": 0.343,
+     "s": 0.345,
      "t": [
       "水产养殖"
      ]
@@ -15569,7 +15798,7 @@
     },
     {
      "d": "10.3390/ani16233721",
-     "s": 0.338,
+     "s": 0.337,
      "t": [
       "东南亚与西太"
      ]
@@ -15609,7 +15838,7 @@
    "rel": [
     {
      "d": "10.1007/s11160-026-10112-w",
-     "s": 0.307,
+     "s": 0.306,
      "t": []
     },
     {
@@ -15656,7 +15885,7 @@
    "rel": [
     {
      "d": "10.1007/s12562-026-02052-y",
-     "s": 0.327,
+     "s": 0.326,
      "t": []
     },
     {
@@ -15668,7 +15897,7 @@
     },
     {
      "d": "10.1002/aff2.70365",
-     "s": 0.199,
+     "s": 0.2,
      "t": [
       "营养与饲料"
      ]
@@ -15707,12 +15936,12 @@
    "rel": [
     {
      "d": "10.1038/s41598-026-79729-y",
-     "s": 0.338,
+     "s": 0.339,
      "t": []
     },
     {
      "d": "10.3354/meps15371",
-     "s": 0.32,
+     "s": 0.321,
      "t": []
     },
     {
@@ -15722,7 +15951,7 @@
     },
     {
      "d": "10.1007/s10750-026-06474-8",
-     "s": 0.187,
+     "s": 0.188,
      "t": []
     }
    ]
@@ -15763,14 +15992,14 @@
     },
     {
      "d": "10.3390/fishes11120690",
-     "s": 0.342,
+     "s": 0.337,
      "t": [
       "遗传与基因组"
      ]
     },
     {
      "d": "10.3389/fmars.2026.1892884",
-     "s": 0.277,
+     "s": 0.278,
      "t": [
       "遗传与基因组"
      ]
@@ -15864,14 +16093,14 @@
    "rel": [
     {
      "d": "10.1111/jfb.70746",
-     "s": 0.323,
+     "s": 0.322,
      "t": [
       "北太平洋"
      ]
     },
     {
      "d": "10.15517/29j0jp96",
-     "s": 0.267,
+     "s": 0.266,
      "t": [
       "北太平洋"
      ]
@@ -15923,14 +16152,14 @@
    "rel": [
     {
      "d": "10.1007/s42452-026-09653-3",
-     "s": 0.506,
+     "s": 0.507,
      "t": [
       "藻类与海藻"
      ]
     },
     {
      "d": "10.3389/fmars.2026.1976839",
-     "s": 0.435,
+     "s": 0.436,
      "t": [
       "藻类与海藻"
      ]
@@ -15976,19 +16205,19 @@
    "rel": [
     {
      "d": "10.1007/s11802-026-6760-3",
-     "s": 0.327,
+     "s": 0.326,
      "t": []
     },
     {
      "d": "10.3354/meps15375",
-     "s": 0.285,
+     "s": 0.284,
      "t": [
       "加工品质与食品"
      ]
     },
     {
      "d": "10.3390/fishes11120685",
-     "s": 0.253,
+     "s": 0.254,
      "t": []
     },
     {
@@ -16125,28 +16354,28 @@
    "rel": [
     {
      "d": "10.1007/s11356-026-38430-3",
-     "s": 0.265,
+     "s": 0.263,
      "t": [
       "水产养殖"
      ]
     },
     {
      "d": "10.1007/s12011-026-05443-5",
-     "s": 0.234,
+     "s": 0.232,
      "t": [
       "水产养殖"
      ]
     },
     {
      "d": "10.1007/s44338-026-00271-2",
-     "s": 0.226,
+     "s": 0.224,
      "t": [
       "水产养殖"
      ]
     },
     {
      "d": "10.1007/s10695-026-01833-7",
-     "s": 0.221,
+     "s": 0.219,
      "t": [
       "水产养殖"
      ]
@@ -16187,14 +16416,14 @@
     },
     {
      "d": "10.3389/fmars.2026.1952449",
-     "s": 0.334,
+     "s": 0.335,
      "t": [
       "非洲海域"
      ]
     },
     {
      "d": "10.3354/meps15365",
-     "s": 0.29,
+     "s": 0.291,
      "t": [
       "海龟与海鸟"
      ]
@@ -16236,7 +16465,7 @@
     },
     {
      "d": "10.1007/s12562-026-02044-y",
-     "s": 0.146,
+     "s": 0.147,
      "t": []
     }
    ]
@@ -16268,7 +16497,7 @@
    "rel": [
     {
      "d": "10.3390/pathogens15111176",
-     "s": 0.314,
+     "s": 0.315,
      "t": [
       "水产养殖",
       "疾病与免疫"
@@ -16335,14 +16564,14 @@
     },
     {
      "d": "10.1111/rec.70597",
-     "s": 0.464,
+     "s": 0.465,
      "t": [
       "贝类"
      ]
     },
     {
      "d": "10.1017/s0030605325102378",
-     "s": 0.373,
+     "s": 0.372,
      "t": [
       "东南亚与西太"
      ]
@@ -16393,7 +16622,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1923310",
-     "s": 0.381,
+     "s": 0.382,
      "t": [
       "南美海域"
      ]
@@ -16442,10 +16671,17 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1923310",
-     "s": 0.298,
+     "s": 0.297,
      "t": [
       "经济与社会政策",
       "捕捞技术与兼捕"
+     ]
+    },
+    {
+     "d": "10.1111/fme.70135",
+     "s": 0.297,
+     "t": [
+      "地中海与黑海"
      ]
     },
     {
@@ -16457,16 +16693,8 @@
     },
     {
      "d": "10.3389/fmars.2026.2012048",
-     "s": 0.284,
+     "s": 0.282,
      "t": [
-      "捕捞技术与兼捕"
-     ]
-    },
-    {
-     "d": "10.1007/s12601-026-00319-0",
-     "s": 0.28,
-     "t": [
-      "经济与社会政策",
       "捕捞技术与兼捕"
      ]
     }
@@ -16555,21 +16783,21 @@
    "rel": [
     {
      "d": "10.1007/s40152-026-00534-4",
-     "s": 0.311,
+     "s": 0.31,
      "t": [
       "水产养殖"
      ]
     },
     {
      "d": "10.1111/jwas.70173",
-     "s": 0.185,
+     "s": 0.184,
      "t": [
       "水产养殖"
      ]
     },
     {
      "d": "10.3136/nskkk.nskkk-d-26-00032",
-     "s": 0.184,
+     "s": 0.183,
      "t": [
       "水产养殖"
      ]
@@ -16629,7 +16857,7 @@
     },
     {
      "d": "10.1111/raq.70225",
-     "s": 0.284,
+     "s": 0.283,
      "t": [
       "水产养殖"
      ]
@@ -16664,26 +16892,26 @@
    "rel": [
     {
      "d": "10.1111/jfb.70718",
-     "s": 0.494,
+     "s": 0.493,
      "t": [
       "环境DNA"
      ]
     },
     {
      "d": "10.3390/ani16223589",
-     "s": 0.439,
+     "s": 0.438,
      "t": [
       "监测与采样"
      ]
     },
     {
      "d": "10.3389/fmars.2026.2006926",
-     "s": 0.404,
+     "s": 0.403,
      "t": []
     },
     {
      "d": "10.3389/fevo.2026.1960019",
-     "s": 0.394,
+     "s": 0.392,
      "t": [
       "环境DNA"
      ]
@@ -16726,21 +16954,21 @@
     },
     {
      "d": "10.3856/vol54-issue5-fulltext-3672",
-     "s": 0.397,
+     "s": 0.393,
      "t": [
       "水产养殖"
      ]
     },
     {
      "d": "10.3390/ijms272210257",
-     "s": 0.358,
+     "s": 0.357,
      "t": [
       "鲤科鱼类"
      ]
     },
     {
      "d": "10.3389/fmicb.2026.1939609",
-     "s": 0.326,
+     "s": 0.323,
      "t": [
       "鲤科鱼类"
      ]
@@ -16776,7 +17004,7 @@
    "rel": [
     {
      "d": "10.1139/er-2026-0153",
-     "s": 0.342,
+     "s": 0.341,
      "t": [
       "贝类"
      ]
@@ -16833,30 +17061,30 @@
    "off_topic": false,
    "rel": [
     {
-     "d": "10.29303/jfh.v6i4.12251",
-     "s": 0.267,
+     "d": "10.29303/jbt.v26i4a.13243",
+     "s": 0.289,
      "t": [
       "鲶形目鱼类"
      ]
     },
     {
      "d": "10.1038/s41598-026-73653-x",
-     "s": 0.266,
+     "s": 0.267,
      "t": [
       "水产养殖",
       "遗传与基因组"
      ]
     },
     {
-     "d": "10.9734/ajriz/2026/v9i4330",
-     "s": 0.261,
+     "d": "10.29303/jfh.v6i4.12251",
+     "s": 0.263,
      "t": [
       "鲶形目鱼类"
      ]
     },
     {
-     "d": "10.2478/contagri-2026-0019",
-     "s": 0.244,
+     "d": "10.9734/ajriz/2026/v9i4330",
+     "s": 0.258,
      "t": [
       "鲶形目鱼类"
      ]
@@ -16904,7 +17132,7 @@
     },
     {
      "d": "10.1088/2976-601x/aeb1d8",
-     "s": 0.311,
+     "s": 0.31,
      "t": [
       "水产养殖"
      ]
@@ -16946,20 +17174,13 @@
    "rel": [
     {
      "d": "10.3390/en19225521",
-     "s": 0.189,
+     "s": 0.188,
      "t": [
       "水产养殖"
      ]
     },
     {
      "d": "10.1139/cjfas-2026-0083",
-     "s": 0.178,
-     "t": [
-      "声学与遥测"
-     ]
-    },
-    {
-     "d": "10.1139/cjfas-2025-0391",
      "s": 0.176,
      "t": [
       "声学与遥测"
@@ -16970,6 +17191,13 @@
      "s": 0.175,
      "t": [
       "水产养殖"
+     ]
+    },
+    {
+     "d": "10.1139/cjfas-2025-0391",
+     "s": 0.174,
+     "t": [
+      "声学与遥测"
      ]
     }
    ]
@@ -17172,7 +17400,7 @@
    "rel": [
     {
      "d": "10.3390/hydrobiology5040049",
-     "s": 0.398,
+     "s": 0.399,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -17186,7 +17414,7 @@
     },
     {
      "d": "10.1007/s11160-026-10109-5",
-     "s": 0.374,
+     "s": 0.375,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -17283,7 +17511,7 @@
    "rel": [
     {
      "d": "10.3390/fishes11110655",
-     "s": 0.388,
+     "s": 0.387,
      "t": [
       "藻类与海藻"
      ]
@@ -17297,7 +17525,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1976839",
-     "s": 0.349,
+     "s": 0.348,
      "t": [
       "藻类与海藻"
      ]
@@ -17337,7 +17565,7 @@
    "rel": [
     {
      "d": "10.9734/ajfar/2026/v28i111187",
-     "s": 0.345,
+     "s": 0.344,
      "t": [
       "生态与栖息地",
       "加工品质与食品"
@@ -17353,7 +17581,7 @@
     },
     {
      "d": "10.56557/upjoz/2026/v47i215953",
-     "s": 0.272,
+     "s": 0.271,
      "t": [
       "生态与栖息地",
       "加工品质与食品"
@@ -17400,29 +17628,29 @@
    "rel": [
     {
      "d": "10.1002/nzm2.70092",
-     "s": 0.5,
+     "s": 0.493,
      "t": [
       "监测与采样"
      ]
     },
     {
      "d": "10.1111/jfb.70746",
-     "s": 0.453,
+     "s": 0.454,
      "t": [
       "金枪鱼与鲭类",
       "监测与采样"
      ]
     },
     {
-     "d": "10.3897/aiep.56.213543",
-     "s": 0.369,
+     "d": "10.1111/fme.70135",
+     "s": 0.436,
      "t": [
-      "鲨鱼与鳐类"
+      "地中海与黑海"
      ]
     },
     {
-     "d": "10.3389/fmars.2026.1976619",
-     "s": 0.357,
+     "d": "10.3897/aiep.56.213543",
+     "s": 0.364,
      "t": [
       "鲨鱼与鳐类"
      ]
@@ -17470,7 +17698,7 @@
     },
     {
      "d": "10.15517/29j0jp96",
-     "s": 0.178,
+     "s": 0.177,
      "t": [
       "藻类与海藻"
      ]
@@ -17518,14 +17746,14 @@
     },
     {
      "d": "10.3354/aei00543",
-     "s": 0.387,
+     "s": 0.388,
      "t": [
       "中国近海与内陆"
      ]
     },
     {
      "d": "10.3389/fenvs.2026.1975174",
-     "s": 0.242,
+     "s": 0.243,
      "t": [
       "营养与饲料"
      ]
@@ -17625,7 +17853,7 @@
    "rel": [
     {
      "d": "10.1007/s00227-026-04950-2",
-     "s": 0.578,
+     "s": 0.579,
      "t": [
       "监测与采样",
       "机器学习与AI"
@@ -17648,7 +17876,7 @@
     },
     {
      "d": "10.1111/faf.70122",
-     "s": 0.392,
+     "s": 0.393,
      "t": [
       "监测与采样",
       "机器学习与AI"
@@ -17687,14 +17915,14 @@
    "rel": [
     {
      "d": "10.1139/cjfas-2026-0046",
-     "s": 0.505,
+     "s": 0.501,
      "t": [
       "声学与遥测"
      ]
     },
     {
      "d": "10.1111/jfb.70740",
-     "s": 0.435,
+     "s": 0.434,
      "t": [
       "保护与恢复",
       "生态与栖息地"
@@ -17702,7 +17930,7 @@
     },
     {
      "d": "10.1139/cjfas-2026-0083",
-     "s": 0.42,
+     "s": 0.417,
      "t": [
       "声学与遥测"
      ]
@@ -17741,7 +17969,7 @@
    "rel": [
     {
      "d": "10.3390/fishes11110680",
-     "s": 0.262,
+     "s": 0.261,
      "t": []
     },
     {
@@ -17751,12 +17979,12 @@
     },
     {
      "d": "10.1139/cjz-2026-0062",
-     "s": 0.231,
+     "s": 0.23,
      "t": []
     },
     {
      "d": "10.1007/s10499-026-02758-x",
-     "s": 0.156,
+     "s": 0.155,
      "t": []
     }
    ]
@@ -17789,14 +18017,14 @@
    "rel": [
     {
      "d": "10.3390/fishes11110680",
-     "s": 0.352,
+     "s": 0.349,
      "t": [
       "水产养殖"
      ]
     },
     {
      "d": "10.12873/ncdh-2026-237",
-     "s": 0.33,
+     "s": 0.329,
      "t": [
       "营养与饲料"
      ]
@@ -17810,7 +18038,7 @@
     },
     {
      "d": "10.3390/fishes11110673",
-     "s": 0.275,
+     "s": 0.276,
      "t": [
       "鳗鲡与鲟类"
      ]
@@ -17907,7 +18135,7 @@
    "rel": [
     {
      "d": "10.1007/s12562-026-02050-0",
-     "s": 0.433,
+     "s": 0.432,
      "t": [
       "罗非鱼类",
       "非洲海域"
@@ -17922,7 +18150,7 @@
     },
     {
      "d": "10.3390/fishes11110680",
-     "s": 0.33,
+     "s": 0.329,
      "t": [
       "生物学与生理"
      ]
@@ -17982,17 +18210,17 @@
     },
     {
      "d": "10.3897/neotropical.21.e212775",
-     "s": 0.389,
+     "s": 0.388,
      "t": [
       "南美海域"
      ]
     },
     {
-     "d": "10.3897/aiep.56.213543",
+     "d": "10.1111/jfb.70746",
      "s": 0.345,
      "t": [
       "生物学与生理",
-      "保护与恢复"
+      "种群评估与管理"
      ]
     }
    ]
@@ -18080,7 +18308,7 @@
    "rel": [
     {
      "d": "10.1007/s43615-026-01197-3",
-     "s": 0.277,
+     "s": 0.278,
      "t": []
     },
     {
@@ -18090,7 +18318,7 @@
     },
     {
      "d": "10.53730/ijhs.v10n3.16037",
-     "s": 0.174,
+     "s": 0.175,
      "t": []
     },
     {
@@ -18131,7 +18359,7 @@
    "rel": [
     {
      "d": "10.3390/aquacj6040059",
-     "s": 0.397,
+     "s": 0.396,
      "t": [
       "机器学习与AI"
      ]
@@ -18146,7 +18374,7 @@
     },
     {
      "d": "10.3390/aichem1040020",
-     "s": 0.359,
+     "s": 0.358,
      "t": [
       "机器学习与AI"
      ]
@@ -18205,7 +18433,7 @@
     },
     {
      "d": "10.1007/s10641-026-01935-4",
-     "s": 0.399,
+     "s": 0.398,
      "t": [
       "鲨鱼与鳐类"
      ]
@@ -18253,19 +18481,19 @@
     },
     {
      "d": "10.3354/aei00543",
-     "s": 0.296,
+     "s": 0.295,
      "t": []
     },
     {
      "d": "10.1080/23308249.2026.2760249",
-     "s": 0.281,
+     "s": 0.282,
      "t": [
       "种群评估与管理"
      ]
     },
     {
      "d": "10.3354/meps15368",
-     "s": 0.274,
+     "s": 0.273,
      "t": []
     }
    ]
@@ -18327,29 +18555,27 @@
    "rel": [
     {
      "d": "10.3390/biology15222069",
-     "s": 0.286,
+     "s": 0.285,
      "t": [
       "监测与采样"
      ]
     },
     {
      "d": "10.3390/ani16223589",
-     "s": 0.2,
+     "s": 0.199,
      "t": [
       "监测与采样"
      ]
     },
     {
      "d": "10.3897/neotropical.21.e212775",
-     "s": 0.19,
+     "s": 0.186,
      "t": []
     },
     {
-     "d": "10.1111/jfb.70743",
+     "d": "10.1007/s12520-026-02600-8",
      "s": 0.168,
-     "t": [
-      "监测与采样"
-     ]
+     "t": []
     }
    ]
   },
@@ -18381,28 +18607,28 @@
    "rel": [
     {
      "d": "10.3390/biology15222069",
-     "s": 0.494,
+     "s": 0.493,
      "t": [
       "环境DNA"
      ]
     },
     {
      "d": "10.3389/fevo.2026.1960019",
-     "s": 0.484,
+     "s": 0.483,
      "t": [
       "环境DNA"
      ]
     },
     {
      "d": "10.71317/kjard.2.11.2026.1099",
-     "s": 0.44,
+     "s": 0.441,
      "t": [
       "环境DNA"
      ]
     },
     {
      "d": "10.1007/s11160-026-10112-w",
-     "s": 0.433,
+     "s": 0.432,
      "t": [
       "生态与栖息地"
      ]
@@ -18444,12 +18670,12 @@
     },
     {
      "d": "10.1111/faf.70123",
-     "s": 0.178,
+     "s": 0.177,
      "t": []
     },
     {
      "d": "10.3389/fpos.2026.1929622",
-     "s": 0.163,
+     "s": 0.162,
      "t": []
     }
    ]
@@ -18489,14 +18715,14 @@
     },
     {
      "d": "10.1007/s11356-026-38430-3",
-     "s": 0.399,
+     "s": 0.396,
      "t": [
       "水产养殖"
      ]
     },
     {
      "d": "10.1007/s13353-026-01129-9",
-     "s": 0.397,
+     "s": 0.393,
      "t": [
       "水产养殖"
      ]
@@ -18539,13 +18765,13 @@
      "t": []
     },
     {
-     "d": "10.1007/s13353-026-01129-9",
-     "s": 0.135,
+     "d": "10.7759/cureus.119672",
+     "s": 0.134,
      "t": []
     },
     {
-     "d": "10.7759/cureus.119672",
-     "s": 0.134,
+     "d": "10.1007/s13353-026-01129-9",
+     "s": 0.131,
      "t": []
     }
    ]
@@ -18577,7 +18803,7 @@
    "rel": [
     {
      "d": "10.1111/emr.70074",
-     "s": 0.464,
+     "s": 0.465,
      "t": [
       "贝类"
      ]
@@ -18693,7 +18919,7 @@
     },
     {
      "d": "10.59496/20261ah5",
-     "s": 0.305,
+     "s": 0.306,
      "t": [
       "疾病与免疫"
      ]
@@ -18707,7 +18933,7 @@
     },
     {
      "d": "10.1111/jfd.70325",
-     "s": 0.279,
+     "s": 0.278,
      "t": [
       "疾病与免疫"
      ]
@@ -18753,7 +18979,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1969343",
-     "s": 0.578,
+     "s": 0.579,
      "t": [
       "监测与采样",
       "机器学习与AI"
@@ -18810,7 +19036,7 @@
    "rel": [
     {
      "d": "10.3390/ani16223589",
-     "s": 0.463,
+     "s": 0.462,
      "t": [
       "淡水与湖泊河流",
       "中国近海与内陆"
@@ -18818,14 +19044,14 @@
     },
     {
      "d": "10.1007/s12562-026-02042-0",
-     "s": 0.441,
+     "s": 0.442,
      "t": [
       "耳石与硬组织"
      ]
     },
     {
      "d": "10.1093/fshmag/vuag069",
-     "s": 0.339,
+     "s": 0.338,
      "t": [
       "淡水与湖泊河流",
       "监测与采样"
@@ -18877,21 +19103,21 @@
     },
     {
      "d": "10.1007/s11356-026-38430-3",
-     "s": 0.444,
+     "s": 0.446,
      "t": [
       "鲑鳟鱼类"
      ]
     },
     {
      "d": "10.56557/upjoz/2026/v47i215945",
-     "s": 0.434,
+     "s": 0.433,
      "t": [
       "罗非鱼类"
      ]
     },
     {
      "d": "10.1002/aff2.70365",
-     "s": 0.433,
+     "s": 0.432,
      "t": [
       "罗非鱼类",
       "非洲海域"
@@ -18926,7 +19152,7 @@
    "rel": [
     {
      "d": "10.3390/fishes11110674",
-     "s": 0.227,
+     "s": 0.228,
      "t": [
       "鲹科与军曹鱼"
      ]
@@ -18943,7 +19169,7 @@
     },
     {
      "d": "10.1371/journal.pone.0355126",
-     "s": 0.173,
+     "s": 0.174,
      "t": []
     }
    ]
@@ -18978,7 +19204,7 @@
     },
     {
      "d": "10.1186/s43067-026-00416-z",
-     "s": 0.179,
+     "s": 0.178,
      "t": []
     },
     {
@@ -19024,7 +19250,7 @@
    "rel": [
     {
      "d": "10.1007/s11160-026-10112-w",
-     "s": 0.401,
+     "s": 0.4,
      "t": [
       "生态与栖息地"
      ]
@@ -19038,7 +19264,7 @@
     },
     {
      "d": "10.56557/upjoz/2026/v47i215953",
-     "s": 0.366,
+     "s": 0.365,
      "t": [
       "生态与栖息地",
       "加工品质与食品"
@@ -19046,7 +19272,7 @@
     },
     {
      "d": "10.3390/w18222827",
-     "s": 0.345,
+     "s": 0.344,
      "t": [
       "生态与栖息地",
       "加工品质与食品"
@@ -19090,7 +19316,7 @@
     },
     {
      "d": "10.3389/fpos.2026.1929622",
-     "s": 0.391,
+     "s": 0.39,
      "t": [
       "东南亚与西太"
      ]
@@ -19147,24 +19373,24 @@
     },
     {
      "d": "10.1007/s10529-026-03800-x",
-     "s": 0.331,
+     "s": 0.332,
      "t": [
       "虾类"
      ]
     },
     {
      "d": "10.3389/fmars.2026.2020587",
-     "s": 0.322,
+     "s": 0.321,
      "t": [
       "生态与栖息地",
       "加工品质与食品"
      ]
     },
     {
-     "d": "10.3390/jmse14222189",
+     "d": "10.1108/jadee-03-2025-0120",
      "s": 0.312,
      "t": [
-      "生态与栖息地"
+      "虾类"
      ]
     }
    ]
@@ -19198,7 +19424,7 @@
    "rel": [
     {
      "d": "10.3390/ani16223589",
-     "s": 0.475,
+     "s": 0.474,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -19212,7 +19438,7 @@
     },
     {
      "d": "10.56557/upjoz/2026/v47i215953",
-     "s": 0.425,
+     "s": 0.423,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -19251,7 +19477,7 @@
    "rel": [
     {
      "d": "10.56201/ijaes.v10.no10.2024.pg162.176",
-     "s": 0.457,
+     "s": 0.455,
      "t": [
       "水产养殖"
      ]
@@ -19306,7 +19532,7 @@
    "rel": [
     {
      "d": "10.66073/refocus-conf/1311073",
-     "s": 0.33,
+     "s": 0.329,
      "t": [
       "营养与饲料"
      ]
@@ -19410,14 +19636,14 @@
    "rel": [
     {
      "d": "10.1186/s12302-026-01588-1",
-     "s": 0.26,
+     "s": 0.261,
      "t": [
       "污染与毒理"
      ]
     },
     {
      "d": "10.3390/diagnostics16223848",
-     "s": 0.162,
+     "s": 0.163,
      "t": []
     },
     {
@@ -19429,7 +19655,7 @@
     },
     {
      "d": "10.1007/s00203-026-05302-w",
-     "s": 0.138,
+     "s": 0.139,
      "t": []
     }
    ]
@@ -19471,7 +19697,7 @@
     },
     {
      "d": "10.3390/ani16223589",
-     "s": 0.536,
+     "s": 0.535,
      "t": [
       "监测与采样"
      ]
@@ -19485,7 +19711,7 @@
     },
     {
      "d": "10.56557/upjoz/2026/v47i215953",
-     "s": 0.378,
+     "s": 0.377,
      "t": [
       "监测与采样"
      ]
@@ -19529,7 +19755,7 @@
     },
     {
      "d": "10.56201/ijaes.v10.no10.2024.pg162.176",
-     "s": 0.522,
+     "s": 0.523,
      "t": [
       "非洲海域"
      ]
@@ -19543,7 +19769,7 @@
     },
     {
      "d": "10.9734/ajriz/2026/v9i4330",
-     "s": 0.443,
+     "s": 0.442,
      "t": [
       "鲶形目鱼类",
       "非洲海域"
@@ -19584,17 +19810,24 @@
    "rel": [
     {
      "d": "10.3390/phycology6040122",
-     "s": 0.388,
+     "s": 0.387,
      "t": [
       "藻类与海藻"
      ]
     },
     {
      "d": "10.1007/s10499-026-02745-2",
-     "s": 0.368,
+     "s": 0.367,
      "t": [
       "水产养殖",
       "种群评估与管理"
+     ]
+    },
+    {
+     "d": "10.29303/jbt.v26i4a.13243",
+     "s": 0.366,
+     "t": [
+      "水产养殖"
      ]
     },
     {
@@ -19602,14 +19835,6 @@
      "s": 0.329,
      "t": [
       "贝类"
-     ]
-    },
-    {
-     "d": "10.9734/jsrr/2026/v32i114774",
-     "s": 0.32,
-     "t": [
-      "水产养殖",
-      "经济与社会政策"
      ]
     }
    ]
@@ -19650,14 +19875,14 @@
     },
     {
      "d": "10.3390/aichem1040020",
-     "s": 0.487,
+     "s": 0.486,
      "t": [
       "监测与采样"
      ]
     },
     {
      "d": "10.29165/ajarcde.v11i1.1511",
-     "s": 0.42,
+     "s": 0.419,
      "t": [
       "水产养殖",
       "加工品质与食品"
@@ -19665,7 +19890,7 @@
     },
     {
      "d": "10.56557/upjoz/2026/v47i215953",
-     "s": 0.357,
+     "s": 0.355,
      "t": [
       "监测与采样"
      ]
@@ -19703,14 +19928,14 @@
    "rel": [
     {
      "d": "10.3390/ijms272210154",
-     "s": 0.342,
+     "s": 0.341,
      "t": [
       "贝类"
      ]
     },
     {
      "d": "10.3390/nitrogen7040137",
-     "s": 0.337,
+     "s": 0.338,
      "t": [
       "水产养殖"
      ]
@@ -19757,17 +19982,17 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1854986",
-     "s": 0.351,
+     "s": 0.352,
      "t": []
     },
     {
      "d": "10.3389/fmars.2026.1969343",
-     "s": 0.3,
+     "s": 0.301,
      "t": []
     },
     {
      "d": "10.1111/faf.70120",
-     "s": 0.261,
+     "s": 0.262,
      "t": [
       "气候变化与环境"
      ]
@@ -19816,7 +20041,7 @@
     },
     {
      "d": "10.1108/jadee-03-2025-0120",
-     "s": 0.462,
+     "s": 0.461,
      "t": [
       "东南亚与西太"
      ]
@@ -19867,7 +20092,7 @@
    "rel": [
     {
      "d": "10.1139/cjz-2026-0062",
-     "s": 0.583,
+     "s": 0.584,
      "t": [
       "鲑鳟鱼类",
       "淡水与湖泊河流"
@@ -19926,14 +20151,14 @@
    "rel": [
     {
      "d": "10.3856/vol54-issue5-fulltext-3526",
-     "s": 0.389,
+     "s": 0.388,
      "t": [
       "南美海域"
      ]
     },
     {
      "d": "10.3390/hydrobiology5040049",
-     "s": 0.336,
+     "s": 0.335,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -19946,8 +20171,8 @@
      ]
     },
     {
-     "d": "10.3390/ani16223589",
-     "s": 0.314,
+     "d": "10.1111/jfb.70719",
+     "s": 0.313,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -19981,7 +20206,7 @@
    "rel": [
     {
      "d": "10.1002/jat.70513",
-     "s": 0.307,
+     "s": 0.308,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -20002,7 +20227,7 @@
     },
     {
      "d": "10.1139/cjz-2026-0062",
-     "s": 0.209,
+     "s": 0.208,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -20151,7 +20376,7 @@
     },
     {
      "d": "10.3354/meps15375",
-     "s": 0.212,
+     "s": 0.211,
      "t": []
     },
     {
@@ -20203,21 +20428,21 @@
     },
     {
      "d": "10.2478/contagri-2026-0019",
-     "s": 0.522,
+     "s": 0.523,
      "t": [
       "非洲海域"
      ]
     },
     {
      "d": "10.9734/ajfar/2026/v28i111189",
-     "s": 0.505,
+     "s": 0.503,
      "t": [
       "非洲海域"
      ]
     },
     {
      "d": "10.56201/ijaes.vol.12.no10.2026.pg137.147",
-     "s": 0.457,
+     "s": 0.455,
      "t": [
       "水产养殖"
      ]
@@ -20260,7 +20485,7 @@
     },
     {
      "d": "10.3389/fenvs.2026.1975174",
-     "s": 0.395,
+     "s": 0.396,
      "t": [
       "污染与毒理"
      ]
@@ -20309,7 +20534,7 @@
    "rel": [
     {
      "d": "10.3390/fishes11110680",
-     "s": 0.46,
+     "s": 0.457,
      "t": [
       "水产养殖"
      ]
@@ -20321,7 +20546,7 @@
     },
     {
      "d": "10.1139/cjfas-2026-0083",
-     "s": 0.279,
+     "s": 0.278,
      "t": [
       "鲆鲽类"
      ]
@@ -20410,14 +20635,14 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1984103",
-     "s": 0.362,
+     "s": 0.363,
      "t": [
       "疾病与免疫"
      ]
     },
     {
      "d": "10.1111/raq.70228",
-     "s": 0.314,
+     "s": 0.315,
      "t": [
       "水产养殖",
       "疾病与免疫"
@@ -20483,7 +20708,7 @@
     },
     {
      "d": "10.1007/s10529-026-03800-x",
-     "s": 0.264,
+     "s": 0.263,
      "t": [
       "水产养殖"
      ]
@@ -20526,14 +20751,14 @@
     },
     {
      "d": "10.3390/nitrogen7040137",
-     "s": 0.56,
+     "s": 0.561,
      "t": [
       "罗非鱼类"
      ]
     },
     {
      "d": "10.59496/20261ah5",
-     "s": 0.444,
+     "s": 0.446,
      "t": [
       "罗非鱼类"
      ]
@@ -20594,7 +20819,7 @@
     },
     {
      "d": "10.3390/ani16223589",
-     "s": 0.242,
+     "s": 0.241,
      "t": [
       "生态与栖息地"
      ]
@@ -20635,7 +20860,7 @@
     },
     {
      "d": "10.1111/emr.70074",
-     "s": 0.244,
+     "s": 0.245,
      "t": [
       "贝类"
      ]
@@ -20649,7 +20874,7 @@
     },
     {
      "d": "10.1007/s11802-026-6773-y",
-     "s": 0.216,
+     "s": 0.217,
      "t": [
       "贝类"
      ]
@@ -20685,32 +20910,32 @@
    "off_topic": false,
    "rel": [
     {
-     "d": "10.29303/jfh.v6i4.12251",
-     "s": 0.445,
+     "d": "10.29303/jbt.v26i4a.13243",
+     "s": 0.655,
      "t": [
       "鲶形目鱼类"
      ]
     },
     {
      "d": "10.2478/contagri-2026-0019",
-     "s": 0.443,
+     "s": 0.442,
      "t": [
       "鲶形目鱼类",
       "非洲海域"
      ]
     },
     {
-     "d": "10.1186/s44365-026-00051-9",
-     "s": 0.43,
+     "d": "10.29303/jfh.v6i4.12251",
+     "s": 0.432,
      "t": [
-      "水产养殖",
-      "加工品质与食品"
+      "鲶形目鱼类"
      ]
     },
     {
-     "d": "10.1371/journal.pone.0355126",
-     "s": 0.422,
+     "d": "10.1186/s44365-026-00051-9",
+     "s": 0.431,
      "t": [
+      "水产养殖",
       "加工品质与食品"
      ]
     }
@@ -20752,21 +20977,21 @@
     },
     {
      "d": "10.3390/nitrogen7040137",
-     "s": 0.56,
+     "s": 0.561,
      "t": [
       "罗非鱼类"
      ]
     },
     {
      "d": "10.59496/20261ah5",
-     "s": 0.495,
+     "s": 0.498,
      "t": [
       "罗非鱼类"
      ]
     },
     {
      "d": "10.1111/jfd.70327",
-     "s": 0.451,
+     "s": 0.452,
      "t": [
       "罗非鱼类"
      ]
@@ -20814,7 +21039,7 @@
     },
     {
      "d": "10.9734/jsrr/2026/v32i114774",
-     "s": 0.423,
+     "s": 0.424,
      "t": [
       "印度洋与南亚"
      ]
@@ -20866,14 +21091,14 @@
     },
     {
      "d": "10.1111/jfb.70718",
-     "s": 0.484,
+     "s": 0.483,
      "t": [
       "环境DNA"
      ]
     },
     {
      "d": "10.3354/meps15373",
-     "s": 0.414,
+     "s": 0.415,
      "t": [
       "中国近海与内陆",
       "南海"
@@ -20918,7 +21143,7 @@
    "rel": [
     {
      "d": "10.1111/jfb.70719",
-     "s": 0.441,
+     "s": 0.442,
      "t": [
       "耳石与硬组织"
      ]
@@ -20989,7 +21214,7 @@
     },
     {
      "d": "10.1080/24705357.2026.2761577",
-     "s": 0.372,
+     "s": 0.373,
      "t": [
       "生物学与生理",
       "生态与栖息地"
@@ -20997,7 +21222,7 @@
     },
     {
      "d": "10.3856/vol54-issue5-fulltext-3526",
-     "s": 0.284,
+     "s": 0.285,
      "t": [
       "鳗鲡与鲟类"
      ]
@@ -21055,7 +21280,7 @@
     },
     {
      "d": "10.65339/ijsis.v1.i4.303",
-     "s": 0.27,
+     "s": 0.271,
      "t": [
       "东南亚与西太"
      ]
@@ -21091,24 +21316,24 @@
    "rel": [
     {
      "d": "10.1080/10888705.2026.2760878",
-     "s": 0.335,
+     "s": 0.336,
      "t": []
     },
     {
      "d": "10.1111/jfb.70723",
-     "s": 0.278,
+     "s": 0.279,
      "t": [
       "南美海域"
      ]
     },
     {
      "d": "10.1007/s12562-026-02045-x",
-     "s": 0.274,
+     "s": 0.273,
      "t": []
     },
     {
      "d": "10.3354/meps15373",
-     "s": 0.266,
+     "s": 0.267,
      "t": []
     }
    ]
@@ -21147,7 +21372,7 @@
     },
     {
      "d": "10.2989/1814232x.2026.2662912",
-     "s": 0.29,
+     "s": 0.291,
      "t": [
       "海龟与海鸟"
      ]
@@ -21193,7 +21418,7 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1976839",
-     "s": 0.324,
+     "s": 0.322,
      "t": [
       "生态与栖息地"
      ]
@@ -21255,7 +21480,7 @@
     },
     {
      "d": "10.3390/ijms272210154",
-     "s": 0.225,
+     "s": 0.224,
      "t": [
       "贝类"
      ]
@@ -21320,14 +21545,14 @@
     },
     {
      "d": "10.1111/jfb.70745",
-     "s": 0.376,
+     "s": 0.375,
      "t": [
       "生物学与生理"
      ]
     },
     {
      "d": "10.1002/aff2.70373",
-     "s": 0.256,
+     "s": 0.254,
      "t": [
       "鲤科鱼类"
      ]
@@ -21362,28 +21587,28 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1976619",
-     "s": 0.316,
+     "s": 0.312,
      "t": [
       "鲨鱼与鳐类"
      ]
     },
     {
      "d": "10.3389/fmars.2026.1962143",
-     "s": 0.309,
+     "s": 0.31,
      "t": [
       "饵料鱼类"
      ]
     },
     {
      "d": "10.3389/fmars.2026.1976573",
-     "s": 0.296,
+     "s": 0.295,
      "t": [
       "鲨鱼与鳐类"
      ]
     },
     {
      "d": "10.3897/aiep.56.213543",
-     "s": 0.292,
+     "s": 0.291,
      "t": [
       "鲨鱼与鳐类"
      ]
