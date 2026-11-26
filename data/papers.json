@@ -1,8 +1,399 @@
 {
- "last_updated": "2026-11-25T18:24:09Z",
- "total_papers": 384,
- "new_today": 56,
+ "last_updated": "2026-11-26T07:12:31Z",
+ "total_papers": 396,
+ "new_today": 12,
  "papers": [
+  {
+   "doi": "10.3389/fenvs.2026.1975174",
+   "title": "Human dietary exposure and ecological risk assessment of endocrine-disrupting pesticide residues in fish from Lake Malawi and the Shire River, Malawi",
+   "authors": "Nyirenda, Samson; Kuyeli, Stephen; Thulu, Fabiano; Kumwenda, Save; Njalam’mano, John; Kaonga, Chikumbusko C.",
+   "journal": "Frontiers in Environmental Science",
+   "date": "2026-11-26",
+   "abstract": "Fish supplies up to 30% of animal protein in Malawi, so pesticide residues in fish are a public-health concern. We assessed the dietary risk, and screened the ecological risk, posed by four endocrine-disrupting pesticides (EDPs): atrazine, malathion, total DDT (ΣDDT; DDT and its metabolites) and endosulfan. Wet-season residues were measured in two fisheries, analysed separately because each is represented by different species: Oreochromis karongae and Engraulicypris sardella from nine Lake Malawi landing sites (n = 72) and Clarias gariepinus and Oreochromis shiranus from five Shire River sites (n = 40). Estimated daily intakes for children and adults, based on national household-survey ingestion rates, were compared with USEPA reference doses to derive Hazard Indices (HIs), and ΣDDT Lifetime Cancer Risk (LCR) was estimated with the USEPA slope factor. Because water concentrations were not measured, ecological risk was screened by back-calculating water concentrations from tissue residues with literature bioconcentration factors (BCFs) and comparing them with predicted no-effect concentrations (PNECs) as risk quotients (RQs). Within each water body, residues differed significantly among sites (two-way ANOVA, p < 0.001). The maximum HI was 0.074 at baseline and 0.279 in the combined worst case. LCR fell in the tolerable range (10 -6 -10 -4 ) for three species (maximum 1.61 × 10 -5 in the worst case) and was acceptable (<10 -6 ) for E. sardella . In a 200,000-iteration Monte Carlo analysis, fewer than 0.1% of simulations gave an HI above 1. In contrast, 41%-75% gave a ΣDDT screening RQ above 1 for C. gariepinus , depending on the PNEC, and malathion RQs for the Shire River species also exceeded 1 with the more protective PNEC, although these are indicative only. At the sampled sites, dietary risk is low, but the ecological screening for the Shire River species is inconclusive and cannot be inferred from dietary safety. We recommend dry-season sampling, direct measurement of water concentrations, and precautionary dietary guidance for frequent consumers of Shire River fish.",
+   "summary_cn": "马拉维湖9个登陆点（n=72，Karongae罗非鱼与Engraulicypris sardella）和Shire河5个站点（n=40，Clarias gariepinus与Oreochromis shiranus）雨季鱼体四种内分泌干扰农药（atrazine、malathion、ΣDDT、endosulfan）残留显示，各水体内部站点间差异显著（双因素ANOVA，p<0.001）。以USEPA参考剂量推算的危害指数基线最高0.074、最坏合并情景0.279，ΣDDT终身致癌风险对三种鱼处于可耐受范围（10⁻⁶–10⁻⁴，最坏1.61×10⁻⁵），E. sardella可接受（<10⁻⁶）；20万次Monte Carlo模拟中HI>1者不足0.1%。但以文献BCF反算水体浓度与PNEC比较的生态筛查显示，C. gariepinus的ΣDDT风险商在41%–75%模拟中>1，Shire河物种malathion在更保守PNEC下RQ亦>1（仅为指示性），故膳食风险低而Shire河生态筛查结论不确定，建议旱季采样、直接测定水体浓度并对Shire河鱼高频消费者给出预防性膳食指导。",
+   "url": "https://doi.org/10.3389/fenvs.2026.1975174",
+   "source": "crossref",
+   "keywords_matched": "fish population",
+   "tags": {
+    "theme": [
+     "nutri",
+     "pollution",
+     "bio"
+    ],
+    "species": [],
+    "region": [],
+    "method": [
+     "stat"
+    ]
+   },
+   "is_review": false,
+   "high_impact": false,
+   "off_topic": false,
+   "rel": [
+    {
+     "d": "10.3390/foods15234227",
+     "s": 0.5,
+     "t": []
+    },
+    {
+     "d": "10.3389/fmars.2026.2031077",
+     "s": 0.5,
+     "t": []
+    },
+    {
+     "d": "10.56201/ijccp.v10.no1.2024.pg116.132",
+     "s": 0.5,
+     "t": []
+    },
+    {
+     "d": "10.7759/cureus.119672",
+     "s": 0.5,
+     "t": []
+    }
+   ]
+  },
+  {
+   "doi": "10.36359/scivp.2026-27-2.36",
+   "title": "FLUCTUATING ASYMMETRY AND HEAVY METAL DISTRIBUTION IN TISSUES OF FISH WITH DIFFERENT FEEDING HABITS IN THE WESTERN BUG RIVER WITHIN THE AREA OF INFLUENCE OF THE DOBROTVIR THERMAL POWER PLANT",
+   "authors": "Butsiak, V. V.; Butsiak, H. A.",
+   "journal": "Scientific and Technical Bulletin оf State Scientific Research Control Institute of Veterinary Medical Products and Fodder Additives аnd Institute of Animal Biology",
+   "date": "2026-11-26",
+   "abstract": "The intensive development of industrial-energy complexes and the increasing anthropogenic pressure on aquatic ecosystems necessitate the search for reliable bioindication methods to assess the ecological status of river basins. The middle reach of the Western Bug River near the Dobrotvir thermal power plant is affected by heated water discharge, coal combustion products, municipal wastewater carried by the Poltva River and agricultural runoff. While the results of physicochemical water monitoring capture the ecological situation only at the exact moment of sampling, aquatic organisms, particularly fish, accumulate and integrate the toxic impact of pollutants over a prolonged period. This study aims to investigate developmental stability, as well as the patterns of accumulation and topographic distribution of Cu, Zn, Fe, and Pb in target organs (muscles, liver, gills) of four fish species with different trophic preferences: roach, bleak, European perch, and Prussian carp. The research was conducted at the monitoring station near the village of Staryi Dobrotvir. Fluctuating asymmetry was assessed from five bilateral meristic traits; metals were determined by atomic absorption spectrophotometry. Fluctuating asymmetry was highest in roach (0.48) and bleak (0.42), intermediate in perch (0.35) and lowest in Prussian carp (0.21), corresponding to environmental quality classes II-IV. The mean total metal content increased in the order planktivore (bleak, 28.1 mg/kg dry weight)",
+   "summary_cn": "研究了西布格河Dobrotvir热电厂影响区四种不同食性鱼类（拟鲤、欧鳊、河鲈、普鲁士鲤）的发育稳定性与Cu、Zn、Fe、Pb在肌肉、肝脏、鳃中的积累及组织分布，以波动性不对称（fluctuating asymmetry）和原子吸收分光光度法分别评估五项双侧分体性状与金属含量。波动性不对称指数以拟鲤（0.48）和欧鳊（0.42）最高、河鲈居中（0.35）、普鲁士鲤最低（0.21），对应环境质量II–IV级。平均总金属含量按食性由浮游生物食性（欧鳊，28.1 mg/kg干重）起递增。",
+   "url": "https://doi.org/10.36359/scivp.2026-27-2.36",
+   "source": "crossref",
+   "keywords_matched": "fish population",
+   "tags": {
+    "theme": [
+     "pollution"
+    ],
+    "species": [],
+    "region": [],
+    "method": [
+     "monitor"
+    ]
+   },
+   "is_review": false,
+   "high_impact": false,
+   "off_topic": false,
+   "rel": [
+    {
+     "d": "10.3390/biology15222069",
+     "s": 0.55,
+     "t": [
+      "监测与采样"
+     ]
+    },
+    {
+     "d": "10.3390/sci8110361",
+     "s": 0.547,
+     "t": [
+      "监测与采样"
+     ]
+    },
+    {
+     "d": "10.1177/02611929261507293",
+     "s": 0.5,
+     "t": []
+    },
+    {
+     "d": "10.56201/ijccp.v10.no1.2024.pg116.132",
+     "s": 0.5,
+     "t": []
+    }
+   ]
+  },
+  {
+   "doi": "10.1021/acsomega.6c12717",
+   "title": "Marine Fish-Derived Collagen for Eco-Compatible Cartilage Tissue Engineering",
+   "authors": "Ngernyuang, Nipaporn; Srisucharitpanit, Kanokporn; Tangsongcharoen, Chontida; Chonanant, Chirapond",
+   "journal": "ACS Omega",
+   "date": "2026-11-26",
+   "abstract": "Abstract Marine fish-derived collagen has gained attention as a promising source for collagen extraction for tissue engineering applications. In this study, collagen was isolated from the scales of Asian seabass (Lates calcarifer) using acetic acid and pepsin extraction methods, followed by physicochemical characterization. Sodium dodecyl sulfate-polyacrylamide gel electrophoresis (SDS-PAGE) revealed characteristic α1, α2, and β chains, while Fourier Transform Infrared (FTIR) showed characteristic amide bands, supporting the molecular and structural similarity of the extracted collagen to standard type I collagen. The amino acid compositions, thermal stability, and structural organization were evaluated. The extracted collagen was subsequently incorporated into scaffold fabrication using the freeze-drying technique by blending with agarose, chitosan, and gelatin. The resulting scaffold demonstrated successful formation of a three-dimensional (3D) scaffold with porous and sponge-like characteristics. The fabricated scaffolds exhibited pore sizes of 75 to 200 μm, a high water absorption capacity of up to 90%, and a degradation rate of 39% after 4 weeks. Mechanical compression analysis revealed elastic modulus values ranging from 112 to 141 kPa. Furthermore, chondrocytes cultured on the scaffolds for 3 weeks were able to proliferate and grow effectively. These findings suggest that the natural biomaterial-based scaffolds developed in this study were noncytotoxic and capable of supporting chondrocyte proliferation. Importantly, the research also demonstrates the value-added utilization of fish scale waste through collagen extraction for the development of scaffolds with properties suitable for future tissue engineering applications.",
+   "summary_cn": "以醋酸和胃蛋白酶法从尖吻鲈（Lates calcarifer）鱼鳞中提取胶原，SDS-PAGE显示α1、α2和β链，FTIR显示特征酰胺带，表明其与标准I型胶原分子和结构相似。将该胶原与琼脂糖、壳聚糖、明胶共混冻干制备三维多孔海绵状支架，孔径75~200 μm，吸水率高达90%，4周降解率39%，弹性模量112~141 kPa。软骨细胞在支架上培养3周可有效增殖生长，支架无细胞毒性。研究实现了鱼鳞废弃物的增值利用，所制支架性能适合未来组织工程应用。",
+   "url": "https://doi.org/10.1021/acsomega.6c12717",
+   "source": "crossref",
+   "keywords_matched": "fish population",
+   "tags": {
+    "theme": [
+     "process"
+    ],
+    "species": [
+     "seabass"
+    ],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false,
+   "off_topic": false,
+   "rel": [
+    {
+     "d": "10.65770/unbx5666",
+     "s": 0.5,
+     "t": []
+    },
+    {
+     "d": "10.3390/polym18222875",
+     "s": 0.469,
+     "t": []
+    },
+    {
+     "d": "10.3390/ijms272210257",
+     "s": 0.45,
+     "t": []
+    },
+    {
+     "d": "10.1007/s11814-026-00876-z",
+     "s": 0.45,
+     "t": []
+    }
+   ]
+  },
+  {
+   "doi": "10.29303/jfh.v6i4.12251",
+   "title": "Isolation, Identification, and Antibiotic Resistance Profiles of Aeromonas hydrophila Isolated from Sangkuriang Catfish ( Clarias gariepinus ) at Aqsa Sabar Subur Aquaculture Farm, Kupang City",
+   "authors": "Naolin, Amanda Caroline; Sanam, Maxs Urias Ebenhaizar; Tangkonda, Elisabet; Loe, Fhady Risckhy",
+   "journal": "Journal of Fish Health",
+   "date": "2026-11-26",
+   "abstract": "Aeromonas hydrophila (A. hydrophila) is an opportunistic Gram-negative bacterium commonly found in aquatic environments and is the principal causative agent of Motile Aeromonas Septicaemia (MAS) in cultured fish, including Sangkuriang catfish (Clarias gariepinus). Infection with A. hydrophila can cause substantial economic losses due to increased morbidity and mortality in cultured fish. Bacterial infections are commonly controlled using antibiotics; however, indiscriminate and repeated antibiotic use may induce antibiotic resistance, thereby reducing treatment efficacy. This study aimed to identify the presence of A. hydrophila and to determine its resistance status against ciprofloxacin, gentamicin, and tetracycline in Sangkuriang catfish (C. gariepinus) cultured at Aqsa Sabar Subur Farm, Kupang City. A descriptive method with purposive sampling was employed. A total of 30 kidney samples from apparently healthy Sangkuriang catfish were isolated on Rimler-Shotts Agar (RSA), followed by confirmatory testing through Gram staining and biochemical assays. Antibiotic susceptibility testing was carried out using the Kirby-Bauer disc diffusion method on Mueller-Hinton Agar (MHA), with results interpreted according to Clinical and Laboratory Standards Institute (CLSI) breakpoints. Data were analysed descriptively and presented in tabular form. The results showed that 12 of 30 samples (40%) were confirmed positive for A. hydrophila. All isolates were fully susceptible to ciprofloxacin (100%) and predominantly susceptible to gentamicin (58.33% susceptible, 41.67% intermediate), whereas 25% of isolates were resistant to tetracycline, 16.67% intermediate, and 58.33% susceptible.",
+   "summary_cn": "从Kupang市Aqsa Sabar Subur养殖场外观健康的Sangkuriang鲶（Clarias gariepinus）肾脏中分离Aeromonas hydrophila，30份样本经Rimler-Shotts琼脂分离及革兰染色和生化鉴定，12份（40%）确认为阳性。采用Kirby-Bauer纸片扩散法按CLSI标准检测分离株对环丙沙星、庆大霉素和四环素的耐药性：全部菌株对环丙沙星敏感（100%），对庆大霉素以敏感为主（58.33%敏感、41.67%中介），对四环素则25%耐药、16.67%中介、58.33%敏感。",
+   "url": "https://doi.org/10.29303/jfh.v6i4.12251",
+   "source": "crossref",
+   "keywords_matched": "aquaculture",
+   "tags": {
+    "theme": [
+     "disease",
+     "aqua"
+    ],
+    "species": [
+     "catfish"
+    ],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false,
+   "off_topic": false,
+   "rel": [
+    {
+     "d": "10.9734/ajriz/2026/v9i4330",
+     "s": 0.63,
+     "t": [
+      "鲶形目鱼类"
+     ]
+    },
+    {
+     "d": "10.1128/aem.01597-26",
+     "s": 0.525,
+     "t": []
+    },
+    {
+     "d": "10.59496/20261ah5",
+     "s": 0.525,
+     "t": []
+    },
+    {
+     "d": "10.3390/pathogens15111176",
+     "s": 0.525,
+     "t": []
+    }
+   ]
+  },
+  {
+   "doi": "10.5194/gh-81-843-2026",
+   "title": "Domesticated oceans and biotechnological capital: future marine proteins in polarized Japanese seafood geographies",
+   "authors": "Ganseforth, Sonja",
+   "journal": "Geographica Helvetica",
+   "date": "2026-11-26",
+   "abstract": "This paper examines how emerging biotechnologies are transforming Japan's seafood sector, driving the exploitation of new ocean frontiers and the commodification of marine life, and reshaping food sovereignty. Drawing on ethnographic fieldwork, qualitative interviews, and industry publications, it traces how the three exemplary innovations - bioactive “functional foods”, industrialized aquaculture and genome-editing, and cell-based seafood - are reconfiguring ocean-fishery assemblages and seafood geographies. The paper argues that capital-intensive “promissory proteins” are shifting power from coastal fisheries toward urban, terrestrial centres. This polarization is intensified by recent legal reforms prioritizing corporate capital investment over community-based resource management, under the banner of promoting self-sufficiency and economic growth. Meanwhile, large transnationally operating seafood corporations are eager to expand their pharmaceutical and life sciences divisions. Corporate, biotech-driven models are thus recasting multi-species relations, consumer practices, and the governance of ocean resources, blurring the social and spatial boundaries of the ocean as the primary space of marine resource extraction and food sovereignty.",
+   "summary_cn": "日本海产行业正被新兴生物技术重塑：基于民族志田野、定性访谈与行业出版物，研究追踪了生物活性“功能性食品”、工业化养殖与基因编辑、细胞培养海产品三类创新的作用。资本密集的“承诺蛋白”将权力从沿岸渔业转向城市陆域中心，近期法律改革以自给与增长为名优先企业资本投资而非社区资源管理，加剧了这一极化。跨国海产企业积极扩张制药与生命科学部门，企业生物技术模式由此重构多物种关系、消费实践与海洋资源治理，模糊了海洋作为资源提取与食物主权首要空间的社会与空间边界。",
+   "url": "https://doi.org/10.5194/gh-81-843-2026",
+   "source": "crossref",
+   "keywords_matched": "marine fisheries",
+   "tags": {
+    "theme": [
+     "econ"
+    ],
+    "species": [],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false,
+   "off_topic": false,
+   "rel": [
+    {
+     "d": "10.3389/fsufs.2026.1901590",
+     "s": 0.5,
+     "t": []
+    },
+    {
+     "d": "10.1111/jfb.70743",
+     "s": 0.45,
+     "t": []
+    },
+    {
+     "d": "10.3389/fmars.2026.1943975",
+     "s": 0.45,
+     "t": []
+    },
+    {
+     "d": "10.1177/1973798x261507651",
+     "s": 0.383,
+     "t": []
+    }
+   ]
+  },
+  {
+   "doi": "10.1111/jfb.70723",
+   "title": "Feeding habits of the notothenioid fishes P atagonotothen sima ( R ichardson, 1845) and Patagonotothen cornucola ( R ichardson, 1844) along shallow waters of argentine patagonia",
+   "authors": "Marcinkevicius, Mauro; Bovcon, Nelson D.; Cochia, Pablo D.; Cárcamo, Damian J. A.; Opazo, Facundo A.; Jacobi, Kevin J.; Llompart, Facundo M.",
+   "journal": "Journal of Fish Biology",
+   "date": "2026-11-26",
+   "abstract": "Abstract Information on the feeding ecology of intertidal notothenioid fishes remains limited in Argentine Patagonia, particularly for Patagonotothen sima . This study examined the diets of P. sima and P. cornucola and their spatial and seasonal variation using stomach-content analysis. Sampling was conducted at four coastal localities between March 2021 and March 2022. Patagonotothen sima was collected at two localities and P. cornucola at three; the interspecific comparison was restricted to Cerro Avanzado during winter. Patagonotothen sima fed mainly on polychaetes and small crustaceans, including tanaidaceans, amphipods and decapods, and exhibited an intermediate niche breadth (0.44). In P. cornucola , amphipods and polychaetes were important at Cerro Avanzado, whereas Exosphaeroma sp. and amphipods were prominent at Yamana. At El Pique, the diet was dominated by Exosphaeroma sp., with a narrow niche breadth (0.25), compared with intermediate values at Cerro Avanzado (0.56) and Yamana (0.59). Significant Site × Season interactions were detected in both species, as well as an interspecific difference at Cerro Avanzado during winter. These findings provide a detailed characterisation of the diet of P. sima in Argentine Patagonia and highlight spatial and seasonal variation in the trophic ecology of both species.",
+   "summary_cn": "对阿根廷巴塔哥尼亚潮间带两种南极鱼科鱼类 *Patagonotothen sima* 与 *P. cornucola* 进行胃含物分析，2021年3月至2022年3月在4个沿岸地点采样，*P. sima* 采自2个地点、*P. cornucola* 采自3个地点，种间比较仅限冬季 Cerro Avanzado。*P. sima* 主要摄食多毛类和小型甲壳类（tanaidaceans、amphipods、decapods），生态位宽度居中（0.44）；*P. cornucola* 在 Cerro Avanzado 以 amphipods 和多毛类为主，Yamana 以 *Exosphaeroma* sp. 和 amphipods 为主，El Pique 以 *Exosphaeroma* sp. 为主且生态位宽度较窄（0.25），Cerro Avanzado（0.56）和 Yamana（0.59）居中。两物种均存在显著的站点×季节交互作用，冬季 Cerro Avanzado 存在种间差异，揭示了两者摄食生态的空间与季节变异。",
+   "url": "https://doi.org/10.1111/jfb.70723",
+   "source": "crossref_issn",
+   "keywords_matched": "Journal of Fish Biology",
+   "tags": {
+    "theme": [
+     "eco"
+    ],
+    "species": [
+     "jelly"
+    ],
+    "region": [
+     "southam"
+    ],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false,
+   "off_topic": false,
+   "rel": [
+    {
+     "d": "10.3354/meps15368",
+     "s": 0.531,
+     "t": [
+      "南美海域"
+     ]
+    },
+    {
+     "d": "10.1139/cjfas-2026-0046",
+     "s": 0.5,
+     "t": []
+    },
+    {
+     "d": "10.3354/meps15372",
+     "s": 0.5,
+     "t": []
+    },
+    {
+     "d": "10.1111/fog.70092",
+     "s": 0.5,
+     "t": []
+    }
+   ]
+  },
+  {
+   "doi": "10.3389/fmars.2026.1932009",
+   "title": "Port-based measures for shipping emissions after the climate advisory opinions: due diligence within jurisdictional limits",
+   "authors": "Hu, Chenghang",
+   "journal": "Frontiers in Marine Science",
+   "date": "2026-11-26",
+   "abstract": "International shipping emits greenhouse gases throughout voyages that often extend beyond the maritime zones of the States whose ports ships enter. Port calls nevertheless provide a setting in which certificates are inspected, voyage data are verified and port services are supplied, and in which certain consequences may be imposed for non-compliance where the applicable law so provides. This article examines State and regional measures that use port entry, port services or port administration as a connecting factor for shipping-emissions regulation. The analysis is doctrinal and draws on UNCLOS, MARPOL Annex VI, the climate advisory opinions of ITLOS and the ICJ, and selected EU legislation. It distinguishes documentary verification, voyage-based calculation of liability, fuel- or energy-intensity requirements, regulation of port services and infrastructure, and exclusionary consequences. UNCLOS Article 211(3) addresses particular pollution-prevention requirements established as conditions of port entry but does not by itself authorize the direct regulation of conduct throughout a voyage or the imposition of penalties for that conduct. UNCLOS Article 218 confers conditional enforcement jurisdiction in respect of discharge violations falling within its terms but provides no general legal basis for documentary control, voyage-based pricing or fuel-performance regulation. The article develops a jurisdiction-diligence sequence that begins with the actor, the international jurisdictional title and the separate question of domestic institutional competence. Under that sequence, the measure’s object, port connection and consequence are characterized before the applicable primary environmental obligation is identified and binding requirements are distinguished from considerations informing due diligence and non-binding administrative choices. Applied to the EU ETS, maritime MRV, FuelEU Maritime and AFIR, that sequence shows that port calls perform different legal functions and that an instrument’s basis within EU law does not determine its conformity with international law. Due diligence may bear on the measures reasonably expected under an applicable primary obligation and the care with which a lawfully available power is exercised. It does not confer jurisdiction under international law or competence under domestic law. A State’s capabilities may affect what the applicable due-diligence standard requires without altering the State’s jurisdiction under international law or the competence of its institutions under domestic law.",
+   "summary_cn": "国际航运排放的港口国措施法律分析：基于UNCLOS、MARPOL Annex VI及ITLOS/ICJ气候咨询意见的教义学分析，区分了文件核查、航程责任计算、燃料/能效要求、港口服务与基础设施规制及排除性后果等五类措施。UNCLOS第211(3)条仅针对作为进港条件的特定防污要求，本身不授权对全程行为的直接规制或处罚；第218条仅就排放违规赋予有条件执法管辖权，不构成文件控制、航程定价或燃料性能规制的普遍法律基础。提出\"管辖权—尽职\"分析序列（主体→国际管辖权依据→国内机构权限），并以EU ETS、海运MRV、FuelEU Maritime及AFIR为例表明港口挂靠承担不同法律功能，欧盟法依据不等于符合国际法；尽职义务不创设国际法管辖权或国内法权限。",
+   "url": "https://doi.org/10.3389/fmars.2026.1932009",
+   "source": "crossref_issn",
+   "keywords_matched": "Frontiers in Marine Science",
+   "tags": {
+    "theme": [
+     "econ"
+    ],
+    "species": [],
+    "region": [
+     "global"
+    ],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false,
+   "off_topic": false,
+   "rel": [
+    {
+     "d": "10.3389/fmars.2026.1992082",
+     "s": 0.66,
+     "t": [
+      "全球/多区域"
+     ]
+    },
+    {
+     "d": "10.3389/fmars.2026.1958849",
+     "s": 0.66,
+     "t": [
+      "全球/多区域"
+     ]
+    },
+    {
+     "d": "10.3389/fmars.2026.1995989",
+     "s": 0.66,
+     "t": [
+      "全球/多区域"
+     ]
+    },
+    {
+     "d": "10.3389/fmars.2026.1999710",
+     "s": 0.55,
+     "t": []
+    }
+   ]
+  },
+  {
+   "doi": "10.3389/fmars.2026.1955301",
+   "title": "Threshold dynamics in coastal vulnerability and adaptive governance pathways: a case study of Jiaozhou Bay social-ecological system",
+   "authors": "Gao, Lehua; Yang, Xueke; Zhang, Longxuan",
+   "journal": "Frontiers in Marine Science",
+   "date": "2026-11-26",
+   "abstract": "Introduction Under the background of United Nations Sustainable Development Goal 14 (Life Below Water), multi-agent collaborative governance of marine eco-economic systems faces prominent practical challenges. Coastal social-ecological vulnerability assessment and dynamic prediction are essential to support scientific marine governance. This study takes Jiaozhou Bay as the research area to explore the long-term evolutionary characteristics, driving factors and optimal governance paths of its coastal social-ecological vulnerability. Methods An integrated DPSIR-ESA evaluation framework with 39 indicators was established to quantify the coastal social-ecological vulnerability of Jiaozhou Bay from 1980 to 2022. A system dynamics model containing three stock variables and five flow variables was built to simulate historical vulnerability evolution and different governance scenarios. Multivariate ordered logit regression was adopted to identify the core influencing factors of vulnerability changes. Results The vulnerability of Jiaozhou Bay presents a typical “spoon-shaped” evolutionary trend: natural stable stage before 2000 (vulnerability <0.05), rapid growth stage from 2000 to 2015 (reaching the peak value of 0.2887 in 2012), and slow decline stage from 2015 to 2022 (still at a medium-high level of 0.1874). Climate warming (coefficient=13.070) and economic pressure (coefficient=6.036) are major factors exacerbating vulnerability, while technological innovation (coefficient=-12.063) can effectively curb vulnerability. Among the three designed governance paths, the ecological-benefit path (2.5% annual reduction of pollutant emission and fishing intensity) achieves the most obvious mitigation effect, with its annual vulnerability growth rate 2.10 percentage points lower than the baseline scenario (9.68% annual growth), which is superior to the economic path (0.20 percentage points) and the technological path (0.04 percentage points). The model successfully reflects the synergistic relationship among climate, economy and technology. Discussion The results verify the effectiveness of the coupled DPSIR-ESA and system dynamics framework for marine vulnerability early warning and threshold determination. The ecological-benefit oriented governance scheme performs best in vulnerability control. Accordingly, a phased adaptive governance strategy is proposed: short-term implementation of ecological red line management and land-sea pollution joint prevention and control; medium-term promotion of green industrial transformation and circular economy development; long-term construction of intelligent real-time monitoring system combined with digital governance and smart ocean programs. This study improves the adaptive prediction theory of marine eco-economic systems. It can provide decision-making support for balancing ecological conservation and socio-economic resilience in rapidly urbanized coastal areas, and offer references for sustainable ocean development and marine security guarantee.",
+   "summary_cn": "基于DPSIR-ESA框架的39项指标与含3个存量、5个流量的系统动力学模型，结合多元有序logit回归，量化了1980—2022年胶州湾海岸社会-生态脆弱性的演变并模拟治理情景。脆弱性呈“勺形”轨迹：2000年前自然稳定（<0.05），2000—2015年快速上升（2012年峰值0.2887），2015—2022年缓降但仍处中高水平（0.1874）。气候变暖（系数13.070）与经济压力（6.036）加剧脆弱性，技术创新（−12.063）则有效抑制。三种治理路径中生态效益路径（污染物排放与捕捞强度年降2.5%）缓解效果最佳，脆弱性年增速较基准情景（年增9.68%）低2.10个百分点，优于经济路径（0.20）与技术路径（0.04）；据此提出生态红线与陆海污染联防、绿色产业转型与循环经济、智能实时监测与数字治理的分阶段适应性治理策略。",
+   "url": "https://doi.org/10.3389/fmars.2026.1955301",
+   "source": "crossref_issn",
+   "keywords_matched": "Frontiers in Marine Science",
+   "tags": {
+    "theme": [
+     "econ"
+    ],
+    "species": [],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false,
+   "off_topic": false,
+   "rel": [
+    {
+     "d": "10.3389/fmars.2026.1946690",
+     "s": 0.55,
+     "t": []
+    },
+    {
+     "d": "10.3389/fmars.2026.2037603",
+     "s": 0.55,
+     "t": []
+    },
+    {
+     "d": "10.3389/fmars.2026.1983862",
+     "s": 0.55,
+     "t": []
+    },
+    {
+     "d": "10.3389/fmars.2026.2018983",
+     "s": 0.527,
+     "t": []
+    }
+   ]
+  },
   {
    "doi": "10.3390/su182312002",
    "title": "Do MSC Assessment Scores Reflect Fish Stock Sustainability? Evidence from Certified and Uncertified Fisheries",
@@ -34,7 +425,7 @@
     },
     {
      "d": "10.55885/jucep.v6i2.1232",
-     "s": 0.521,
+     "s": 0.518,
      "t": []
     },
     {
@@ -81,7 +472,7 @@
     },
     {
      "d": "10.3390/fishes11110665",
-     "s": 0.543,
+     "s": 0.545,
      "t": [
       "监测与采样"
      ]
@@ -95,7 +486,7 @@
     },
     {
      "d": "10.9734/ajfar/2026/v28i111189",
-     "s": 0.514,
+     "s": 0.507,
      "t": [
       "监测与采样"
      ]
@@ -145,12 +536,12 @@
      "t": []
     },
     {
-     "d": "10.1177/02611929261507293",
+     "d": "10.3389/fenvs.2026.1975174",
      "s": 0.5,
      "t": []
     },
     {
-     "d": "10.56201/ijccp.v10.no1.2024.pg116.132",
+     "d": "10.1177/02611929261507293",
      "s": 0.5,
      "t": []
     }
@@ -193,12 +584,12 @@
     },
     {
      "d": "10.32815/jpm.v7i2.3170",
-     "s": 0.434,
+     "s": 0.436,
      "t": []
     },
     {
      "d": "10.2478/contagri-2026-0019",
-     "s": 0.401,
+     "s": 0.393,
      "t": [
       "鲶形目鱼类"
      ]
@@ -257,7 +648,7 @@
     },
     {
      "d": "10.1111/jfd.70326",
-     "s": 0.615,
+     "s": 0.612,
      "t": [
       "鲑鳟鱼类"
      ]
@@ -289,22 +680,22 @@
    "rel": [
     {
      "d": "10.3389/fsufs.2026.1901590",
-     "s": 0.346,
+     "s": 0.347,
      "t": []
     },
     {
      "d": "10.3389/fmars.2026.2020587",
-     "s": 0.296,
+     "s": 0.298,
      "t": []
     },
     {
      "d": "10.3390/fishes11110676",
-     "s": 0.263,
+     "s": 0.264,
      "t": []
     },
     {
      "d": "10.3389/fnbeh.2026.2016852",
-     "s": 0.261,
+     "s": 0.259,
      "t": []
     }
    ]
@@ -348,7 +739,7 @@
     },
     {
      "d": "10.54254/2753-8818/2026.38927",
-     "s": 0.572,
+     "s": 0.564,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -390,22 +781,22 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1930771",
-     "s": 0.29,
-     "t": []
-    },
-    {
-     "d": "10.3897/neotropical.21.e212775",
-     "s": 0.252,
+     "s": 0.292,
      "t": []
     },
     {
      "d": "10.9734/ajrcos/2026/v19i11936",
-     "s": 0.248,
+     "s": 0.249,
+     "t": []
+    },
+    {
+     "d": "10.3897/neotropical.21.e212775",
+     "s": 0.243,
      "t": []
     },
     {
      "d": "10.3390/foods15234227",
-     "s": 0.232,
+     "s": 0.227,
      "t": []
     }
    ]
@@ -513,14 +904,14 @@
     },
     {
      "d": "10.3389/fmars.2026.2037603",
-     "s": 0.588,
+     "s": 0.587,
      "t": [
       "中国近海与内陆"
      ]
     },
     {
      "d": "10.3389/fmars.2026.2040572",
-     "s": 0.554,
+     "s": 0.556,
      "t": [
       "中国近海与内陆"
      ]
@@ -561,7 +952,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1854986",
-     "s": 0.521,
+     "s": 0.524,
      "t": [
       "加勒比与墨西哥湾"
      ]
@@ -621,7 +1012,7 @@
     },
     {
      "d": "10.1007/s10499-026-02756-z",
-     "s": 0.58,
+     "s": 0.578,
      "t": [
       "非洲海域"
      ]
@@ -675,14 +1066,14 @@
     },
     {
      "d": "10.9734/jsrr/2026/v32i114726",
-     "s": 0.556,
+     "s": 0.558,
      "t": [
       "印度洋与南亚"
      ]
     },
     {
      "d": "10.1111/fme.70134",
-     "s": 0.536,
+     "s": 0.534,
      "t": [
       "印度洋与南亚"
      ]
@@ -727,12 +1118,12 @@
     },
     {
      "d": "10.1007/s11356-026-38430-3",
-     "s": 0.487,
+     "s": 0.482,
      "t": []
     },
     {
      "d": "10.1002/jaa2.70061",
-     "s": 0.47,
+     "s": 0.467,
      "t": []
     }
    ]
@@ -886,7 +1277,7 @@
     },
     {
      "d": "10.15517/29j0jp96",
-     "s": 0.509,
+     "s": 0.512,
      "t": [
       "藻类与海藻"
      ]
@@ -941,7 +1332,7 @@
     },
     {
      "d": "10.3390/phycology6040122",
-     "s": 0.604,
+     "s": 0.602,
      "t": [
       "藻类与海藻"
      ]
@@ -1084,6 +1475,13 @@
      "t": []
     },
     {
+     "d": "10.3354/meps15369",
+     "s": 0.551,
+     "t": [
+      "鲈鱼与石斑鱼"
+     ]
+    },
+    {
      "d": "10.3390/fishes11120683",
      "s": 0.55,
      "t": []
@@ -1092,13 +1490,6 @@
      "d": "10.3390/fishes11110677",
      "s": 0.55,
      "t": []
-    },
-    {
-     "d": "10.3354/meps15369",
-     "s": 0.549,
-     "t": [
-      "鲈鱼与石斑鱼"
-     ]
     }
    ]
   },
@@ -1140,7 +1531,7 @@
     },
     {
      "d": "10.1111/jfb.70741",
-     "s": 0.526,
+     "s": 0.525,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -1181,26 +1572,26 @@
    "rel": [
     {
      "d": "10.3390/fishes11120686",
-     "s": 0.589,
+     "s": 0.591,
      "t": [
       "其他淡水鱼"
      ]
     },
     {
      "d": "10.1128/aem.01597-26",
-     "s": 0.549,
+     "s": 0.546,
      "t": [
       "全球/多区域"
      ]
     },
     {
-     "d": "10.1111/jfd.70326",
+     "d": "10.29303/jfh.v6i4.12251",
      "s": 0.5,
      "t": []
     },
     {
-     "d": "10.3390/fishes11120692",
-     "s": 0.48,
+     "d": "10.1111/jfd.70326",
+     "s": 0.5,
      "t": []
     }
    ]
@@ -1240,19 +1631,19 @@
     },
     {
      "d": "10.3390/fishes11120686",
-     "s": 0.539,
+     "s": 0.538,
      "t": []
     },
     {
      "d": "10.3390/pathogens15111176",
-     "s": 0.497,
+     "s": 0.494,
      "t": [
       "环境DNA"
      ]
     },
     {
      "d": "10.3390/fishes11120685",
-     "s": 0.443,
+     "s": 0.441,
      "t": []
     }
    ]
@@ -1341,21 +1732,21 @@
     },
     {
      "d": "10.1111/jfb.70719",
-     "s": 0.489,
+     "s": 0.488,
      "t": [
       "耳石与硬组织"
      ]
     },
     {
      "d": "10.1007/s12562-026-02042-0",
-     "s": 0.479,
+     "s": 0.482,
      "t": [
       "耳石与硬组织"
      ]
     },
     {
      "d": "10.1111/jfb.70704",
-     "s": 0.474,
+     "s": 0.476,
      "t": [
       "耳石与硬组织"
      ]
@@ -1392,17 +1783,17 @@
     },
     {
      "d": "10.3389/fmars.2026.1886191",
-     "s": 0.379,
+     "s": 0.38,
      "t": []
     },
     {
      "d": "10.3389/fmars.2026.1937225",
-     "s": 0.305,
+     "s": 0.307,
      "t": []
     },
     {
      "d": "10.3389/fmars.2026.1977826",
-     "s": 0.299,
+     "s": 0.301,
      "t": []
     }
    ]
@@ -1440,20 +1831,17 @@
      "t": []
     },
     {
-     "d": "10.3390/fishes11110674",
-     "s": 0.5,
-     "t": [
-      "地中海与黑海",
-      "遥感与空间分析"
-     ]
-    },
-    {
      "d": "10.1111/fog.70095",
      "s": 0.5,
      "t": []
     },
     {
      "d": "10.3389/fmars.2026.1977826",
+     "s": 0.5,
+     "t": []
+    },
+    {
+     "d": "10.3389/fmars.2026.1952449",
      "s": 0.5,
      "t": []
     }
@@ -1486,7 +1874,7 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.2018983",
-     "s": 0.565,
+     "s": 0.561,
      "t": []
     },
     {
@@ -1496,7 +1884,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1995989",
-     "s": 0.513,
+     "s": 0.515,
      "t": []
     },
     {
@@ -1584,17 +1972,17 @@
      "t": []
     },
     {
+     "d": "10.3389/fenvs.2026.1975174",
+     "s": 0.5,
+     "t": []
+    },
+    {
      "d": "10.1007/s41742-026-01301-3",
      "s": 0.5,
      "t": []
     },
     {
      "d": "10.1002/jat.70513",
-     "s": 0.5,
-     "t": []
-    },
-    {
-     "d": "10.1007/s11160-026-10112-w",
      "s": 0.5,
      "t": []
     }
@@ -1634,7 +2022,7 @@
     },
     {
      "d": "10.1007/s10750-026-06474-8",
-     "s": 0.558,
+     "s": 0.559,
      "t": [
       "地中海与黑海"
      ]
@@ -1740,14 +2128,14 @@
     },
     {
      "d": "10.3390/fishes11110674",
-     "s": 0.527,
+     "s": 0.529,
      "t": [
       "地中海与黑海"
      ]
     },
     {
      "d": "10.3389/fmars.2026.1984103",
-     "s": 0.477,
+     "s": 0.476,
      "t": [
       "地中海与黑海"
      ]
@@ -1801,7 +2189,7 @@
     },
     {
      "d": "10.3390/fishes11110665",
-     "s": 0.619,
+     "s": 0.623,
      "t": [
       "鲨鱼与鳐类"
      ]
@@ -1857,12 +2245,12 @@
     },
     {
      "d": "10.1088/1402-4896/aec3dd",
-     "s": 0.383,
+     "s": 0.376,
      "t": []
     },
     {
      "d": "10.3389/fmars.2026.1902794",
-     "s": 0.37,
+     "s": 0.371,
      "t": [
       "机器学习与AI"
      ]
@@ -1895,6 +2283,13 @@
    "off_topic": false,
    "rel": [
     {
+     "d": "10.3389/fmars.2026.1932009",
+     "s": 0.66,
+     "t": [
+      "全球/多区域"
+     ]
+    },
+    {
      "d": "10.3389/fmars.2026.1958849",
      "s": 0.66,
      "t": [
@@ -1914,11 +2309,6 @@
      "t": [
       "全球/多区域"
      ]
-    },
-    {
-     "d": "10.3389/fmars.2026.1967854",
-     "s": 0.55,
-     "t": []
     }
    ]
   },
@@ -1949,6 +2339,13 @@
    "off_topic": false,
    "rel": [
     {
+     "d": "10.3389/fmars.2026.1932009",
+     "s": 0.66,
+     "t": [
+      "全球/多区域"
+     ]
+    },
+    {
      "d": "10.3389/fmars.2026.1992082",
      "s": 0.66,
      "t": [
@@ -1965,13 +2362,6 @@
     {
      "d": "10.3389/fmars.2026.1995989",
      "s": 0.66,
-     "t": [
-      "全球/多区域"
-     ]
-    },
-    {
-     "d": "10.3390/fishes11110659",
-     "s": 0.566,
      "t": [
       "全球/多区域"
      ]
@@ -2003,7 +2393,7 @@
    "rel": [
     {
      "d": "10.17977/2580-2402.1277",
-     "s": 0.372,
+     "s": 0.371,
      "t": []
     },
     {
@@ -2013,12 +2403,12 @@
     },
     {
      "d": "10.3389/fmars.2026.1914036",
-     "s": 0.252,
+     "s": 0.251,
      "t": []
     },
     {
      "d": "10.1088/1402-4896/aec3dd",
-     "s": 0.247,
+     "s": 0.248,
      "t": []
     }
    ]
@@ -2106,25 +2496,23 @@
    "off_topic": false,
    "rel": [
     {
+     "d": "10.3389/fmars.2026.1932009",
+     "s": 0.55,
+     "t": []
+    },
+    {
      "d": "10.1108/jadee-03-2025-0120",
-     "s": 0.443,
+     "s": 0.446,
      "t": []
     },
     {
      "d": "10.3389/fmars.2026.1975578",
-     "s": 0.44,
+     "s": 0.429,
      "t": []
     },
     {
      "d": "10.1163/15718085-20261060",
-     "s": 0.42,
-     "t": [
-      "中国近海与内陆"
-     ]
-    },
-    {
-     "d": "10.3389/fmars.2026.2037603",
-     "s": 0.37,
+     "s": 0.417,
      "t": [
       "中国近海与内陆"
      ]
@@ -2166,12 +2554,12 @@
     },
     {
      "d": "10.1111/eff.70054",
-     "s": 0.487,
+     "s": 0.482,
      "t": []
     },
     {
      "d": "10.3389/fmars.2026.1977826",
-     "s": 0.476,
+     "s": 0.478,
      "t": []
     }
    ]
@@ -2206,17 +2594,17 @@
     },
     {
      "d": "10.3389/fmars.2026.1886191",
-     "s": 0.347,
+     "s": 0.348,
      "t": []
     },
     {
      "d": "10.3389/fmars.2026.2012956",
-     "s": 0.3,
+     "s": 0.301,
      "t": []
     },
     {
      "d": "10.3389/fmars.2026.1937225",
-     "s": 0.292,
+     "s": 0.29,
      "t": []
     }
    ]
@@ -2249,6 +2637,13 @@
    "off_topic": false,
    "rel": [
     {
+     "d": "10.3389/fmars.2026.1932009",
+     "s": 0.66,
+     "t": [
+      "全球/多区域"
+     ]
+    },
+    {
      "d": "10.3389/fmars.2026.1992082",
      "s": 0.66,
      "t": [
@@ -2264,12 +2659,7 @@
     },
     {
      "d": "10.3389/fmars.2026.2040572",
-     "s": 0.571,
-     "t": []
-    },
-    {
-     "d": "10.3389/fmars.2026.2037603",
-     "s": 0.55,
+     "s": 0.567,
      "t": []
     }
    ]
@@ -2299,22 +2689,22 @@
    "rel": [
     {
      "d": "10.9734/ajriz/2026/v9i4330",
-     "s": 0.374,
+     "s": 0.377,
      "t": []
     },
     {
      "d": "10.3389/fmars.2026.1981790",
-     "s": 0.296,
+     "s": 0.297,
      "t": []
     },
     {
      "d": "10.59496/20261ah5",
-     "s": 0.289,
+     "s": 0.292,
      "t": []
     },
     {
      "d": "10.1139/cjz-2026-0108",
-     "s": 0.251,
+     "s": 0.252,
      "t": []
     }
    ]
@@ -2354,12 +2744,12 @@
     },
     {
      "d": "10.1007/s11355-026-00759-9",
-     "s": 0.398,
+     "s": 0.4,
      "t": []
     },
     {
      "d": "10.1186/s44365-026-00052-8",
-     "s": 0.374,
+     "s": 0.376,
      "t": []
     }
    ]
@@ -2408,14 +2798,14 @@
     },
     {
      "d": "10.3390/ani16223589",
-     "s": 0.604,
+     "s": 0.6,
      "t": [
       "淡水与湖泊河流"
      ]
     },
     {
      "d": "10.1086/744906",
-     "s": 0.543,
+     "s": 0.545,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -2473,9 +2863,66 @@
     },
     {
      "d": "10.54254/2753-8818/2026.38927",
-     "s": 0.487,
+     "s": 0.469,
      "t": [
       "淡水与湖泊河流"
+     ]
+    }
+   ]
+  },
+  {
+   "doi": "10.1111/eff.70077",
+   "title": "Contrasting Landscape Features Support Salmonid Rearing in a Seasonally Warm Watershed",
+   "authors": "Ortega, Jordan D.; Hahlbeck, Nicholas; Rich, Shahnie; Tinniswood, William; Kaylor, Matthew; Davis, Melanie; Sloat, Matthew; Pess, George; Armstrong, Jonathan",
+   "journal": "Ecology of Freshwater Fish",
+   "date": "2026-11-25",
+   "abstract": "ABSTRACT Juvenile cold-water fishes inhabiting seasonally warm rivers must balance tradeoffs among temperature, food availability and energetic costs, yet the riverscape features supporting production remain poorly understood. We combined spatially extensive surveys with temporally intensive growth and bioenergetics analyses to evaluate how juvenile redband trout ( Oncorhynchus mykiss newberrii ) rear within the seasonally warm Sprague River, Upper Klamath Basin, Oregon, USA. We sampled fish distribution across 130 km of mainstem and off-channel habitats using backpack electrofishing, boat electrofishing and snorkelling, then quantified growth and consumption dynamics within core rearing habitats. Juvenile redband trout were patchily distributed, with 60% of sites containing no trout and the top 10% of sites containing 53% of all individuals sampled. Peaks in abundance were associated with two contrasting landscape features: groundwater habitats and a warm, high-gradient canyon reach lacking detectable groundwater inputs. Off-channel groundwater habitats also supported high juvenile densities and rapid growth. Surprisingly, juvenile trout in the warm high-gradient reach also maintained positive summer growth despite temperatures exceeding 27°C. Bioenergetics modelling suggested fish in this habitat compensated for elevated metabolic costs through substantially higher food consumption. Our findings demonstrate that rare riverscape features can disproportionately support salmonid rearing in seasonally warm rivers. By linking spatial patterns of abundance with temporal patterns of growth and energetics, this study provides insight into how habitat heterogeneity may promote adaptive capacity and resilience of cold-water fishes in warming environments.",
+   "summary_cn": "在季节性升温的Sprague River（美国俄勒冈Upper Klamath Basin），通过130 km主干与离岸生境的背包电捕、船电捕和浮潜调查结合生长与生物能量学分析，评估幼体redband trout（Oncorhynchus mykiss newberrii）的育肥格局。幼鱼分布高度斑块化，60%样点无鱼，数量最多的10%样点集中了53%的个体；丰度峰值对应两类对比性景观：地下水生境与无地下水输入的温暖高梯度峡谷段。离岸地下水生境维持高密度与快速生长，而温暖高梯度段幼鱼在超过27°C下仍保持夏季正生长，生物能量学模型提示其通过显著提高摄食量补偿升高的代谢成本。结果表明稀有河景特征可不成比例地支撑季节性温暖河流中的鲑科鱼类育肥，生境异质性有助于提升冷水鱼类的适应能力与韧性。",
+   "url": "https://doi.org/10.1111/eff.70077",
+   "source": "crossref_issn",
+   "keywords_matched": "Ecology of Freshwater Fish",
+   "tags": {
+    "theme": [
+     "eco"
+    ],
+    "species": [
+     "salmon"
+    ],
+    "region": [],
+    "method": [
+     "model"
+    ]
+   },
+   "is_review": false,
+   "high_impact": false,
+   "off_topic": false,
+   "rel": [
+    {
+     "d": "10.1139/cjz-2026-0062",
+     "s": 0.604,
+     "t": [
+      "鲑鳟鱼类"
+     ]
+    },
+    {
+     "d": "10.1007/s11160-026-10109-5",
+     "s": 0.6,
+     "t": [
+      "生态与渔业模型"
+     ]
+    },
+    {
+     "d": "10.1139/cjfas-2026-0179",
+     "s": 0.58,
+     "t": [
+      "鲑鳟鱼类"
+     ]
+    },
+    {
+     "d": "10.1007/s12562-026-02050-0",
+     "s": 0.577,
+     "t": [
+      "鲑鳟鱼类"
      ]
     }
    ]
@@ -2510,17 +2957,17 @@
     },
     {
      "d": "10.3389/fmars.2026.1976619",
-     "s": 0.371,
+     "s": 0.373,
      "t": []
     },
     {
      "d": "10.1177/1973798x261507651",
-     "s": 0.316,
+     "s": 0.317,
      "t": []
     },
     {
      "d": "10.3390/su182211535",
-     "s": 0.248,
+     "s": 0.249,
      "t": []
     }
    ]
@@ -2560,12 +3007,12 @@
     },
     {
      "d": "10.3390/toxins18110490",
-     "s": 0.444,
+     "s": 0.45,
      "t": []
     },
     {
-     "d": "10.3389/fmars.2026.1966604",
-     "s": 0.326,
+     "d": "10.1111/jfb.70746",
+     "s": 0.361,
      "t": []
     }
    ]
@@ -2594,6 +3041,11 @@
    "off_topic": false,
    "rel": [
     {
+     "d": "10.36359/scivp.2026-27-2.36",
+     "s": 0.5,
+     "t": []
+    },
+    {
      "d": "10.3390/foods15234227",
      "s": 0.5,
      "t": []
@@ -2605,11 +3057,6 @@
     },
     {
      "d": "10.56201/ijccp.v10.no1.2024.pg116.132",
-     "s": 0.5,
-     "t": []
-    },
-    {
-     "d": "10.1038/s41598-026-79729-y",
      "s": 0.5,
      "t": []
     }
@@ -2703,8 +3150,8 @@
      "t": []
     },
     {
-     "d": "10.17977/2580-2402.1277",
-     "s": 0.51,
+     "d": "10.29165/ajarcde.v11i1.1511",
+     "s": 0.5,
      "t": []
     }
    ]
@@ -2744,14 +3191,14 @@
     },
     {
      "d": "10.1007/s10529-026-03800-x",
-     "s": 0.592,
+     "s": 0.597,
      "t": [
       "虾类"
      ]
     },
     {
      "d": "10.1111/raq.70228",
-     "s": 0.549,
+     "s": 0.55,
      "t": []
     },
     {
@@ -2843,7 +3290,7 @@
    "rel": [
     {
      "d": "10.3389/fpos.2026.1929622",
-     "s": 0.512,
+     "s": 0.513,
      "t": [
       "调查与问卷"
      ]
@@ -2917,7 +3364,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1937827",
-     "s": 0.625,
+     "s": 0.624,
      "t": [
       "鲨鱼与鳐类"
      ]
@@ -3003,17 +3450,17 @@
     },
     {
      "d": "10.3389/fmars.2026.1950637",
-     "s": 0.406,
+     "s": 0.408,
      "t": []
     },
     {
      "d": "10.3389/fmars.2026.1976619",
-     "s": 0.315,
+     "s": 0.301,
      "t": []
     },
     {
      "d": "10.1007/s12562-026-02045-x",
-     "s": 0.268,
+     "s": 0.26,
      "t": []
     }
    ]
@@ -3064,7 +3511,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1976573",
-     "s": 0.608,
+     "s": 0.61,
      "t": [
       "鲨鱼与鳐类",
       "环境DNA"
@@ -3171,7 +3618,7 @@
     },
     {
      "d": "10.56557/upjoz/2026/v47i225956",
-     "s": 0.519,
+     "s": 0.521,
      "t": []
     },
     {
@@ -3265,7 +3712,7 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1888907",
-     "s": 0.461,
+     "s": 0.457,
      "t": []
     },
     {
@@ -3275,12 +3722,12 @@
     },
     {
      "d": "10.3389/fmars.2026.1999710",
-     "s": 0.44,
+     "s": 0.429,
      "t": []
     },
     {
-     "d": "10.18543/baidc.3525",
-     "s": 0.37,
+     "d": "10.3389/fmars.2026.1932009",
+     "s": 0.364,
      "t": []
     }
    ]
@@ -3312,7 +3759,7 @@
    "rel": [
     {
      "d": "10.1111/faf.70122",
-     "s": 0.48,
+     "s": 0.481,
      "t": [
       "监测与采样"
      ]
@@ -3326,14 +3773,14 @@
     },
     {
      "d": "10.3389/fmars.2026.2020587",
-     "s": 0.399,
+     "s": 0.394,
      "t": [
       "监测与采样"
      ]
     },
     {
      "d": "10.3390/aquacj6040057",
-     "s": 0.392,
+     "s": 0.391,
      "t": [
       "监测与采样"
      ]
@@ -3370,18 +3817,181 @@
     },
     {
      "d": "10.1186/s44365-026-00052-8",
-     "s": 0.333,
+     "s": 0.336,
      "t": []
     },
     {
      "d": "10.3354/meps15373",
-     "s": 0.322,
+     "s": 0.324,
      "t": []
     },
     {
      "d": "10.3390/jmse14222189",
-     "s": 0.311,
+     "s": 0.313,
      "t": []
+    }
+   ]
+  },
+  {
+   "doi": "10.1111/jfb.70725",
+   "title": "Should I stay or should I go: Hypoxia thresholds of the three-spined stickleback ( Gasterosteus aculeatus )",
+   "authors": "Andreasen, Magnus Heide; Behrens, Jane W.; Gorbacovs, Sergejs; Kühnemann, Leo; Brooks, Mollie Elizabeth; Norin, Tommy; Svendsen, Jon C.; Nielsen, Torkel Gissel",
+   "journal": "Journal of Fish Biology",
+   "date": "2026-11-24",
+   "abstract": "Abstract We established hypoxia avoidance thresholds of three-spined stickleback ( Gasterosteus aculeatus ) using a customized choice-flume system. Stickleback is an opportunistic species, increasing in abundance in several aquatic systems. We show that sticklebacks avoid oxygen levels commonly reported in many coastal areas. When prey was available in severe hypoxia (10% O 2 sat), fish still spent 50.9% of the 30-min feeding period in the hypoxic side, compared with 78.5% in the prey side under normoxia. These findings provide a prey-dependent estimate of hypoxia sensitivity in an abundant northern-temperate coastal fish and highlight the need to test whether laboratory thresholds predict field distributions.",
+   "summary_cn": "用定制选择水槽系统测定三刺鱼（Gasterosteus aculeatus）的低氧回避阈值，发现其回避许多沿海水域常见的低氧水平。在严重低氧（10% O₂饱和度）但有饵料时，鱼在30分钟摄食期内仍有50.9%时间停留在低氧侧，而常氧下为78.5%。结果提供了这种丰度较高的北温带沿海鱼类依赖饵料的低氧敏感性估计，并提示需检验实验室阈值能否预测野外分布。",
+   "url": "https://doi.org/10.1111/jfb.70725",
+   "source": "crossref_issn",
+   "keywords_matched": "Journal of Fish Biology",
+   "tags": {
+    "theme": [
+     "climate"
+    ],
+    "species": [],
+    "region": [],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false,
+   "off_topic": false,
+   "rel": [
+    {
+     "d": "10.1242/jeb.252974",
+     "s": 0.5,
+     "t": []
+    },
+    {
+     "d": "10.1111/raq.70233",
+     "s": 0.489,
+     "t": []
+    },
+    {
+     "d": "10.1007/s11160-026-10093-w",
+     "s": 0.45,
+     "t": []
+    },
+    {
+     "d": "10.1007/s12562-026-02043-z",
+     "s": 0.45,
+     "t": []
+    }
+   ]
+  },
+  {
+   "doi": "10.1111/jfb.70746",
+   "title": "Updated estimates of somatic growth patterns and sex ratios in albacore ( T hunnus alalunga ) from the North Pacific Ocean",
+   "authors": "Snodgrass, Owyn E.; James, Kelsey C.; Skelton, Zachary R.; Craig, Matthew T.; Dewar, Heidi; Erisman, Brad E.",
+   "journal": "Journal of Fish Biology",
+   "date": "2026-11-24",
+   "abstract": "Abstract Stock assessments for Albacore ( Thunnus alalunga ) in the North Pacific Ocean use an integrated, sex-specific model based on the hypothesis that growth and longevity are sexually dimorphic. However, the paucity of sex-specific data available to model somatic growth and understand spatial population structure was a continual source of uncertainty among past studies. We engaged in a geographically expansive sampling effort to obtain recent age, length and sex data from fisheries sources across its North Pacific range and provide an updated growth model and regional estimates of sex ratios more representative of the entire stock of North Pacific albacore. With a more complete sample distribution by sex, a combined sexes model was favoured over a sex-specific model based on both Akaike Information Criterion (AICc) and Bayesian Information Criterion (BIC). The von Bertalanffy growth parameters for combined sexes were L ∞ = 124.4 cm in fork length ( L F ), K = 0.168 years -1 and t 0 = -2.100 years. Regional (west, central and east Pacific Ocean), fishery-dependent, sample sex ratios ranged from 1.2 to 1.6 males per female for size classes up to 90 cm L F . Individuals 100 cm L F and larger were predominantly males, but large females were collected for all size classes, and males were larger than females in only one age class. In contrast with previous growth studies, our results support the use of a single model to describe growth and longevity of both male and female North Pacific albacore. The convergence of sex-specific growth curves associated with a more complete sample distribution combined with studies from other albacore populations suggests that male-skewed sex ratios among adult North Pacific albacore are likely due to sex-specific migration patterns, habitat preferences, or behaviours that impact their vulnerability to capture.",
+   "summary_cn": "北太平洋长鳍金枪鱼（Thunnus alalunga）stock assessment 长期采用性别分异的整合模型，但缺乏性别特异性生长数据是不确定性的主要来源。该研究在西北太平洋全域渔业中广泛采样，获取年龄、叉长和性别数据，更新生长模型并估算区域性别比。基于更完整的性别样本分布，AICc 和 BIC 均支持合并性别的 von Bertalanffy 生长模型（L∞=124.4 cm LF，K=0.168 yr⁻¹，t₀=−2.100 yr），而非性别特异模型；西部、中部和东部太平洋渔业依赖样本在≤90 cm LF 体长组的性别比为每雌1.2–1.6雄，≥100 cm LF 个体以雄性为主，但各体长组均采集到大型雌鱼，仅一个年龄组雄性大于雌性。结果表明北太平洋长鳍金枪鱼雌雄可采用单一生长与寿命模型，成鱼雄性偏多的性别比更可能源于性别特异性洄游、栖息地偏好或影响捕获易感性的行为，而非生长差异。",
+   "url": "https://doi.org/10.1111/jfb.70746",
+   "source": "crossref_issn",
+   "keywords_matched": "Journal of Fish Biology",
+   "tags": {
+    "theme": [
+     "bio",
+     "stock"
+    ],
+    "species": [
+     "tuna"
+    ],
+    "region": [
+     "npac"
+    ],
+    "method": [
+     "monitor"
+    ]
+   },
+   "is_review": false,
+   "high_impact": false,
+   "off_topic": false,
+   "rel": [
+    {
+     "d": "10.3390/fishes11110665",
+     "s": 0.68,
+     "t": [
+      "金枪鱼与鲭类",
+      "监测与采样"
+     ]
+    },
+    {
+     "d": "10.1111/jfb.70743",
+     "s": 0.65,
+     "t": [
+      "监测与采样"
+     ]
+    },
+    {
+     "d": "10.1111/jfb.70748",
+     "s": 0.61,
+     "t": [
+      "北太平洋"
+     ]
+    },
+    {
+     "d": "10.3856/vol54-issue5-fulltext-3674",
+     "s": 0.61,
+     "t": [
+      "北太平洋"
+     ]
+    }
+   ]
+  },
+  {
+   "doi": "10.1111/jfb.70748",
+   "title": "Seasonal changes in fish production in annual and perennial eelgrass ( Z ostera marina ) beds of the western North Pacific",
+   "authors": "Shoji, Jun; Iseki, Kanata; Kawamoto, Hotaka",
+   "journal": "Journal of Fish Biology",
+   "date": "2026-11-24",
+   "abstract": "Abstract Eelgrass ( Zostera marina ) beds form essential ecosystems that provide significant ecosystem services through carbon fixation and as nurseries for aquatic living resources. The period during which vegetation is in decline or has disappeared in annual eelgrass beds is longer than in perennial eelgrass beds. There have been no comparative studies of fish production in eelgrass beds with the different life cycles, although quantitative evaluation of fish production within habitats is an essential process for assessing the contribution of each habitat to fisheries resources. We conducted field surveys at two eelgrass beds (annual eelgrass in 2023-2024 and perennial eelgrass in 2008-2009) in temperate coastal waters of the western North Pacific to evaluate how the difference in eelgrass life cycle affects seasonal change and annual amount of fish production. Fish production was estimated by monthly seines that enabled species-specific estimates of biomass increase. The results showed that monthly fish production in the perennial eelgrass bed remained at higher levels for a longer period than in the annual eelgrass bed, and annual fish production in the perennial eelgrass bed was approximately twice that in the annual eelgrass bed. Because the increase in sea water temperature and changes in other environmental conditions under global warming are expected to shift eelgrass towards an annual life cycle, this could affect ecosystem services of eelgrass bed through changes in fish community structure and production.",
+   "summary_cn": "在西北太平洋温带沿岸，比较一年生与多年生大叶藻（Zostera marina）床中鱼类生产的季节变化与年产量，采用月度围网调查按物种估算生物量增长。多年生床的月度鱼类生产在更长时间内维持较高水平，年产量约为一年生床的两倍。由于全球变暖下海水升温等环境变化预计将使大叶藻转向一年生生活史，这可能通过改变鱼类群落结构与生产影响大叶藻床的生态系统服务。",
+   "url": "https://doi.org/10.1111/jfb.70748",
+   "source": "crossref_issn",
+   "keywords_matched": "Journal of Fish Biology",
+   "tags": {
+    "theme": [
+     "eco"
+    ],
+    "species": [
+     "eel"
+    ],
+    "region": [
+     "npac"
+    ],
+    "method": []
+   },
+   "is_review": false,
+   "high_impact": false,
+   "off_topic": false,
+   "rel": [
+    {
+     "d": "10.1111/jfb.70746",
+     "s": 0.61,
+     "t": [
+      "北太平洋"
+     ]
+    },
+    {
+     "d": "10.15517/29j0jp96",
+     "s": 0.603,
+     "t": [
+      "北太平洋"
+     ]
+    },
+    {
+     "d": "10.3354/meps15378",
+     "s": 0.58,
+     "t": [
+      "鳗鲡与鲟类"
+     ]
+    },
+    {
+     "d": "10.1111/fog.70095",
+     "s": 0.573,
+     "t": [
+      "北太平洋"
+     ]
     }
    ]
   },
@@ -3538,7 +4148,7 @@
      "t": []
     },
     {
-     "d": "10.9734/ajfar/2026/v28i111188",
+     "d": "10.2478/contagri-2026-0019",
      "s": 0.5,
      "t": []
     }
@@ -3572,6 +4182,13 @@
    "off_topic": false,
    "rel": [
     {
+     "d": "10.1111/jfb.70748",
+     "s": 0.573,
+     "t": [
+      "北太平洋"
+     ]
+    },
+    {
      "d": "10.3354/meps15379",
      "s": 0.525,
      "t": []
@@ -3583,11 +4200,6 @@
     },
     {
      "d": "10.3390/phycology6040122",
-     "s": 0.525,
-     "t": []
-    },
-    {
-     "d": "10.1139/er-2026-0153",
      "s": 0.525,
      "t": []
     }
@@ -3737,14 +4349,14 @@
     },
     {
      "d": "10.9734/ajfar/2026/v28i111188",
-     "s": 0.605,
+     "s": 0.604,
      "t": [
       "东南亚与西太"
      ]
     },
     {
      "d": "10.1017/s0030605325102378",
-     "s": 0.591,
+     "s": 0.594,
      "t": [
       "东南亚与西太",
       "淡水与湖泊河流"
@@ -3779,6 +4391,13 @@
    "off_topic": false,
    "rel": [
     {
+     "d": "10.1111/jfb.70746",
+     "s": 0.65,
+     "t": [
+      "监测与采样"
+     ]
+    },
+    {
      "d": "10.1111/jfb.70727",
      "s": 0.55,
      "t": []
@@ -3789,11 +4408,6 @@
      "t": [
       "监测与采样"
      ]
-    },
-    {
-     "d": "10.1111/jfb.70704",
-     "s": 0.509,
-     "t": []
     },
     {
      "d": "10.3390/su182312002",
@@ -3883,13 +4497,13 @@
      "t": []
     },
     {
-     "d": "10.3389/fpos.2026.1929622",
-     "s": 0.437,
+     "d": "10.29244/agrokreatif.12.3.551-559",
+     "s": 0.436,
      "t": []
     },
     {
-     "d": "10.29244/agrokreatif.12.3.551-559",
-     "s": 0.434,
+     "d": "10.3389/fpos.2026.1929622",
+     "s": 0.435,
      "t": []
     }
    ]
@@ -3924,17 +4538,17 @@
     },
     {
      "d": "10.3390/nitrogen7040137",
-     "s": 0.418,
+     "s": 0.419,
      "t": []
     },
     {
      "d": "10.3390/fishes11120688",
-     "s": 0.401,
+     "s": 0.397,
      "t": []
     },
     {
      "d": "10.1111/jfb.70744",
-     "s": 0.393,
+     "s": 0.395,
      "t": []
     }
    ]
@@ -3975,21 +4589,21 @@
     },
     {
      "d": "10.1007/s12562-026-02050-0",
-     "s": 0.514,
+     "s": 0.516,
      "t": [
       "非洲海域"
      ]
     },
     {
      "d": "10.1093/mmy/myag132",
-     "s": 0.511,
+     "s": 0.512,
      "t": [
       "南美海域"
      ]
     },
     {
      "d": "10.1111/raq.70228",
-     "s": 0.448,
+     "s": 0.446,
      "t": []
     }
    ]
@@ -4124,7 +4738,7 @@
    "rel": [
     {
      "d": "10.3390/su182211535",
-     "s": 0.531,
+     "s": 0.53,
      "t": [
       "调查与问卷"
      ]
@@ -4136,7 +4750,7 @@
     },
     {
      "d": "10.3389/fpos.2026.1929622",
-     "s": 0.503,
+     "s": 0.504,
      "t": [
       "调查与问卷"
      ]
@@ -4247,7 +4861,7 @@
     },
     {
      "d": "10.1007/s10695-026-01833-7",
-     "s": 0.511,
+     "s": 0.514,
      "t": [
       "鲑鳟鱼类"
      ]
@@ -4289,7 +4903,7 @@
     },
     {
      "d": "10.3389/fmars.2026.2012048",
-     "s": 0.448,
+     "s": 0.445,
      "t": []
     },
     {
@@ -4331,7 +4945,7 @@
    "rel": [
     {
      "d": "10.3390/microplastics5040238",
-     "s": 0.511,
+     "s": 0.512,
      "t": [
       "南美海域"
      ]
@@ -4343,7 +4957,7 @@
     },
     {
      "d": "10.3354/meps15366",
-     "s": 0.453,
+     "s": 0.455,
      "t": [
       "南美海域"
      ]
@@ -4487,21 +5101,21 @@
     },
     {
      "d": "10.3354/meps15373",
-     "s": 0.556,
+     "s": 0.56,
      "t": [
       "中国近海与内陆"
      ]
     },
     {
      "d": "10.3389/fevo.2026.1960019",
-     "s": 0.494,
+     "s": 0.497,
      "t": [
       "中国近海与内陆"
      ]
     },
     {
      "d": "10.3390/fishes11110665",
-     "s": 0.469,
+     "s": 0.472,
      "t": []
     }
    ]
@@ -4535,7 +5149,7 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1958849",
-     "s": 0.539,
+     "s": 0.542,
      "t": [
       "全球/多区域"
      ]
@@ -4552,7 +5166,7 @@
     },
     {
      "d": "10.3390/fishes11110665",
-     "s": 0.399,
+     "s": 0.401,
      "t": []
     }
    ]
@@ -4592,7 +5206,7 @@
     },
     {
      "d": "10.3390/fishes11120693",
-     "s": 0.589,
+     "s": 0.591,
      "t": [
       "其他淡水鱼"
      ]
@@ -4650,7 +5264,7 @@
      "t": []
     },
     {
-     "d": "10.3390/fishes11120692",
+     "d": "10.1007/s11802-026-6773-y",
      "s": 0.5,
      "t": []
     }
@@ -4688,7 +5302,7 @@
     },
     {
      "d": "10.3390/fishes11110654",
-     "s": 0.413,
+     "s": 0.415,
      "t": []
     },
     {
@@ -4698,7 +5312,7 @@
     },
     {
      "d": "10.61336/cjmr.1604.52",
-     "s": 0.387,
+     "s": 0.388,
      "t": []
     }
    ]
@@ -4742,7 +5356,7 @@
     },
     {
      "d": "10.3390/fishes11120686",
-     "s": 0.401,
+     "s": 0.4,
      "t": []
     },
     {
@@ -4787,7 +5401,7 @@
     },
     {
      "d": "10.3390/biology15222068",
-     "s": 0.608,
+     "s": 0.611,
      "t": [
       "鲑鳟鱼类"
      ]
@@ -4835,17 +5449,17 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1975578",
-     "s": 0.461,
+     "s": 0.457,
      "t": []
     },
     {
      "d": "10.3390/jmse14222145",
-     "s": 0.43,
+     "s": 0.433,
      "t": []
     },
     {
      "d": "10.3389/fmars.2026.1946690",
-     "s": 0.425,
+     "s": 0.426,
      "t": [
       "统计建模"
      ]
@@ -4884,6 +5498,11 @@
    "off_topic": false,
    "rel": [
     {
+     "d": "10.3389/fmars.2026.1955301",
+     "s": 0.55,
+     "t": []
+    },
+    {
      "d": "10.3389/fmars.2026.2040572",
      "s": 0.55,
      "t": []
@@ -4895,12 +5514,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1958849",
-     "s": 0.502,
-     "t": []
-    },
-    {
-     "d": "10.3389/fmars.2026.1941096",
-     "s": 0.432,
+     "s": 0.501,
      "t": []
     }
    ]
@@ -4930,22 +5544,22 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.2012956",
-     "s": 0.474,
+     "s": 0.475,
      "t": []
     },
     {
      "d": "10.3389/fmars.2026.1977826",
-     "s": 0.454,
+     "s": 0.456,
      "t": []
     },
     {
      "d": "10.17977/2580-2402.1277",
-     "s": 0.426,
+     "s": 0.428,
      "t": []
     },
     {
      "d": "10.3389/fmars.2026.2000340",
-     "s": 0.379,
+     "s": 0.38,
      "t": []
     }
    ]
@@ -5000,7 +5614,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1995989",
-     "s": 0.571,
+     "s": 0.567,
      "t": []
     }
    ]
@@ -5049,7 +5663,7 @@
     },
     {
      "d": "10.3389/fmars.2026.2012956",
-     "s": 0.476,
+     "s": 0.478,
      "t": []
     }
    ]
@@ -5093,12 +5707,12 @@
     },
     {
      "d": "10.1007/s10750-026-06466-8",
-     "s": 0.288,
+     "s": 0.291,
      "t": []
     },
     {
      "d": "10.1007/s10750-026-06481-9",
-     "s": 0.264,
+     "s": 0.267,
      "t": []
     }
    ]
@@ -5216,17 +5830,17 @@
      "t": []
     },
     {
-     "d": "10.12982/cmjs.2026.113",
-     "s": 0.51,
-     "t": []
-    },
-    {
      "d": "10.1007/s11356-026-38430-3",
      "s": 0.5,
      "t": []
     },
     {
      "d": "10.1007/s43615-026-01197-3",
+     "s": 0.5,
+     "t": []
+    },
+    {
+     "d": "10.3390/nitrogen7040137",
      "s": 0.5,
      "t": []
     }
@@ -5321,17 +5935,17 @@
     },
     {
      "d": "10.3390/microplastics5040238",
-     "s": 0.374,
+     "s": 0.371,
      "t": []
     },
     {
      "d": "10.3389/fmicb.2026.1992240",
-     "s": 0.354,
+     "s": 0.351,
      "t": []
     },
     {
      "d": "10.1002/nzm2.70092",
-     "s": 0.337,
+     "s": 0.331,
      "t": []
     }
    ]
@@ -5395,7 +6009,7 @@
     },
     {
      "d": "10.1128/aem.01597-26",
-     "s": 0.615,
+     "s": 0.612,
      "t": [
       "鲑鳟鱼类"
      ]
@@ -5504,22 +6118,24 @@
     },
     {
      "d": "10.1007/s10499-026-02756-z",
-     "s": 0.609,
+     "s": 0.61,
      "t": [
       "中国近海与内陆"
      ]
     },
     {
      "d": "10.1111/fog.70093",
-     "s": 0.509,
+     "s": 0.51,
      "t": [
       "中国近海与内陆"
      ]
     },
     {
-     "d": "10.66618/equalitylawandsocial.v2i2.1589",
-     "s": 0.462,
-     "t": []
+     "d": "10.3389/fmars.2026.2037603",
+     "s": 0.446,
+     "t": [
+      "中国近海与内陆"
+     ]
     }
    ]
   },
@@ -5571,7 +6187,7 @@
     },
     {
      "d": "10.3354/aei00542",
-     "s": 0.516,
+     "s": 0.517,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -5616,7 +6232,7 @@
     },
     {
      "d": "10.1007/s11356-026-38377-5",
-     "s": 0.488,
+     "s": 0.49,
      "t": []
     },
     {
@@ -5656,7 +6272,7 @@
    "rel": [
     {
      "d": "10.65339/ijsis.v1.i4.303",
-     "s": 0.631,
+     "s": 0.63,
      "t": [
       "东南亚与西太",
       "调查与问卷"
@@ -5664,7 +6280,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1941096",
-     "s": 0.624,
+     "s": 0.621,
      "t": [
       "调查与问卷"
      ]
@@ -5909,14 +6525,14 @@
    "rel": [
     {
      "d": "10.1186/s12302-026-01588-1",
-     "s": 0.534,
+     "s": 0.537,
      "t": [
       "淡水与湖泊河流"
      ]
     },
     {
      "d": "10.3897/neotropical.21.e212775",
-     "s": 0.527,
+     "s": 0.528,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -6005,12 +6621,12 @@
    "rel": [
     {
      "d": "10.3354/meps15367",
-     "s": 0.509,
+     "s": 0.511,
      "t": []
     },
     {
      "d": "10.1080/24705357.2026.2761577",
-     "s": 0.476,
+     "s": 0.477,
      "t": []
     },
     {
@@ -6020,7 +6636,7 @@
     },
     {
      "d": "10.56201/ijaes.vol.12.no10.2026.pg173.190",
-     "s": 0.402,
+     "s": 0.404,
      "t": []
     }
    ]
@@ -6237,13 +6853,13 @@
      "t": []
     },
     {
-     "d": "10.1073/pnas.2600502123",
-     "s": 0.423,
+     "d": "10.1007/s41208-026-01267-1",
+     "s": 0.419,
      "t": []
     },
     {
-     "d": "10.1007/s41208-026-01267-1",
-     "s": 0.419,
+     "d": "10.1073/pnas.2600502123",
+     "s": 0.417,
      "t": []
     }
    ]
@@ -6338,7 +6954,7 @@
     },
     {
      "d": "10.1111/faf.70119",
-     "s": 0.502,
+     "s": 0.503,
      "t": []
     },
     {
@@ -6432,7 +7048,7 @@
    "rel": [
     {
      "d": "10.1007/s10499-026-02756-z",
-     "s": 0.596,
+     "s": 0.6,
      "t": [
       "中国近海与内陆"
      ]
@@ -6451,7 +7067,7 @@
     },
     {
      "d": "10.3390/ani16223589",
-     "s": 0.518,
+     "s": 0.517,
      "t": [
       "中国近海与内陆"
      ]
@@ -6482,22 +7098,22 @@
    "off_topic": false,
    "rel": [
     {
+     "d": "10.3389/fenvs.2026.1975174",
+     "s": 0.5,
+     "t": []
+    },
+    {
+     "d": "10.36359/scivp.2026-27-2.36",
+     "s": 0.5,
+     "t": []
+    },
+    {
      "d": "10.3390/foods15234227",
      "s": 0.5,
      "t": []
     },
     {
      "d": "10.1177/02611929261507293",
-     "s": 0.5,
-     "t": []
-    },
-    {
-     "d": "10.1007/s41742-026-01301-3",
-     "s": 0.5,
-     "t": []
-    },
-    {
-     "d": "10.1038/s41598-026-79729-y",
      "s": 0.5,
      "t": []
     }
@@ -6530,10 +7146,15 @@
    "rel": [
     {
      "d": "10.1186/s12302-026-01588-1",
-     "s": 0.511,
+     "s": 0.513,
      "t": [
       "淡水与湖泊河流"
      ]
+    },
+    {
+     "d": "10.1007/s11356-026-38430-3",
+     "s": 0.5,
+     "t": []
     },
     {
      "d": "10.22495/cbsrv7i4art3",
@@ -6544,13 +7165,6 @@
      "d": "10.56201/ijaes.vol.12.no10.2026.pg137.147",
      "s": 0.5,
      "t": []
-    },
-    {
-     "d": "10.1007/s44187-026-01368-z",
-     "s": 0.498,
-     "t": [
-      "淡水与湖泊河流"
-     ]
     }
    ]
   },
@@ -6595,14 +7209,14 @@
     },
     {
      "d": "10.1007/s10750-026-06466-8",
-     "s": 0.55,
+     "s": 0.548,
      "t": [
       "监测与采样"
      ]
     },
     {
      "d": "10.1186/s43067-026-00416-z",
-     "s": 0.529,
+     "s": 0.527,
      "t": [
       "监测与采样"
      ]
@@ -6651,17 +7265,17 @@
      ]
     },
     {
+     "d": "10.1163/15718085-20261060",
+     "s": 0.61,
+     "t": [
+      "中国近海与内陆"
+     ]
+    },
+    {
      "d": "10.26437/whzcjr24",
      "s": 0.61,
      "t": [
       "非洲海域"
-     ]
-    },
-    {
-     "d": "10.1163/15718085-20261060",
-     "s": 0.609,
-     "t": [
-      "中国近海与内陆"
      ]
     }
    ]
@@ -6754,7 +7368,7 @@
     },
     {
      "d": "10.1007/s11160-026-10110-y",
-     "s": 0.471,
+     "s": 0.474,
      "t": []
     }
    ]
@@ -6843,7 +7457,7 @@
    "rel": [
     {
      "d": "10.1007/s43615-026-01197-3",
-     "s": 0.584,
+     "s": 0.585,
      "t": [
       "东南亚与西太"
      ]
@@ -6904,7 +7518,7 @@
     },
     {
      "d": "10.1007/s10499-026-02756-z",
-     "s": 0.462,
+     "s": 0.456,
      "t": []
     },
     {
@@ -6953,14 +7567,14 @@
     },
     {
      "d": "10.1007/s43615-026-01197-3",
-     "s": 0.47,
+     "s": 0.472,
      "t": [
       "东南亚与西太"
      ]
     },
     {
      "d": "10.55885/jucep.v6i2.1231",
-     "s": 0.456,
+     "s": 0.457,
      "t": [
       "东南亚与西太"
      ]
@@ -6999,16 +7613,16 @@
     },
     {
      "d": "10.1007/s11160-026-10093-w",
-     "s": 0.484,
+     "s": 0.488,
      "t": []
     },
     {
      "d": "10.1186/s12711-026-01094-1",
-     "s": 0.471,
+     "s": 0.474,
      "t": []
     },
     {
-     "d": "10.1007/s10750-026-06482-8",
+     "d": "10.1007/s10499-026-02756-z",
      "s": 0.45,
      "t": []
     }
@@ -7044,14 +7658,21 @@
    "rel": [
     {
      "d": "10.54254/2753-8818/2026.38927",
-     "s": 0.602,
+     "s": 0.604,
      "t": [
       "淡水与湖泊河流"
      ]
     },
     {
+     "d": "10.1111/eff.70077",
+     "s": 0.6,
+     "t": [
+      "生态与渔业模型"
+     ]
+    },
+    {
      "d": "10.3390/ani16223589",
-     "s": 0.572,
+     "s": 0.568,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -7059,13 +7680,6 @@
     {
      "d": "10.1086/744906",
      "s": 0.56,
-     "t": [
-      "淡水与湖泊河流"
-     ]
-    },
-    {
-     "d": "10.1111/eff.70054",
-     "s": 0.554,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -7203,14 +7817,14 @@
    "rel": [
     {
      "d": "10.3390/fishes11120691",
-     "s": 0.526,
+     "s": 0.525,
      "t": [
       "淡水与湖泊河流"
      ]
     },
     {
      "d": "10.46989/001c.173408",
-     "s": 0.513,
+     "s": 0.514,
      "t": [
       "其他淡水鱼"
      ]
@@ -7408,8 +8022,15 @@
    "off_topic": false,
    "rel": [
     {
+     "d": "10.1111/jfb.70748",
+     "s": 0.58,
+     "t": [
+      "鳗鲡与鲟类"
+     ]
+    },
+    {
      "d": "10.3389/fmars.2026.2006926",
-     "s": 0.5,
+     "s": 0.498,
      "t": []
     },
     {
@@ -7419,12 +8040,7 @@
     },
     {
      "d": "10.1007/s10499-026-02758-x",
-     "s": 0.379,
-     "t": []
-    },
-    {
-     "d": "10.3390/ijms272210154",
-     "s": 0.351,
+     "s": 0.388,
      "t": []
     }
    ]
@@ -7502,7 +8118,7 @@
    "rel": [
     {
      "d": "10.3354/meps15370",
-     "s": 0.45,
+     "s": 0.454,
      "t": []
     },
     {
@@ -7516,8 +8132,8 @@
      "t": []
     },
     {
-     "d": "10.1111/fog.70095",
-     "s": 0.441,
+     "d": "10.3354/meps15379",
+     "s": 0.437,
      "t": []
     }
    ]
@@ -7559,7 +8175,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1943975",
-     "s": 0.538,
+     "s": 0.536,
      "t": [
       "监测与采样"
      ]
@@ -7612,12 +8228,12 @@
      "t": []
     },
     {
-     "d": "10.3354/meps15378",
+     "d": "10.3354/meps15375",
      "s": 0.5,
      "t": []
     },
     {
-     "d": "10.3354/meps15375",
+     "d": "10.1111/faf.70120",
      "s": 0.5,
      "t": []
     }
@@ -7732,7 +8348,7 @@
     },
     {
      "d": "10.15517/29j0jp96",
-     "s": 0.552,
+     "s": 0.554,
      "t": [
       "藻类与海藻"
      ]
@@ -7830,14 +8446,14 @@
     },
     {
      "d": "10.3390/ani16223589",
-     "s": 0.466,
+     "s": 0.463,
      "t": [
       "淡水与湖泊河流"
      ]
     },
     {
      "d": "10.9734/ajfar/2026/v28i111189",
-     "s": 0.453,
+     "s": 0.451,
      "t": [
       "非洲海域"
      ]
@@ -7887,7 +8503,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1977454",
-     "s": 0.454,
+     "s": 0.453,
      "t": [
       "加勒比与墨西哥湾"
      ]
@@ -7972,7 +8588,7 @@
    "rel": [
     {
      "d": "10.3390/aquacj6040058",
-     "s": 0.652,
+     "s": 0.654,
      "t": [
       "机器学习与AI"
      ]
@@ -8029,18 +8645,18 @@
      "t": []
     },
     {
+     "d": "10.1111/jfb.70746",
+     "s": 0.45,
+     "t": []
+    },
+    {
      "d": "10.1007/s11802-026-6741-6",
      "s": 0.45,
      "t": []
     },
     {
      "d": "10.1111/jfb.70727",
-     "s": 0.368,
-     "t": []
-    },
-    {
-     "d": "10.1111/fme.70133",
-     "s": 0.329,
+     "s": 0.354,
      "t": []
     }
    ]
@@ -8094,7 +8710,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1902794",
-     "s": 0.588,
+     "s": 0.587,
      "t": [
       "中国近海与内陆"
      ]
@@ -8143,7 +8759,7 @@
     },
     {
      "d": "10.3390/fishes11110655",
-     "s": 0.523,
+     "s": 0.518,
      "t": [
       "藻类与海藻"
      ]
@@ -8190,7 +8806,7 @@
     },
     {
      "d": "10.1007/s44187-026-01368-z",
-     "s": 0.534,
+     "s": 0.537,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -8580,7 +9196,7 @@
     },
     {
      "d": "10.1007/s13353-026-01129-9",
-     "s": 0.543,
+     "s": 0.545,
      "t": [
       "鲤科鱼类"
      ]
@@ -8621,7 +9237,7 @@
    "rel": [
     {
      "d": "10.56557/upjoz/2026/v47i215953",
-     "s": 0.631,
+     "s": 0.623,
      "t": [
       "淡水与湖泊河流",
       "监测与采样"
@@ -8643,7 +9259,7 @@
     },
     {
      "d": "10.1111/jfb.70719",
-     "s": 0.537,
+     "s": 0.531,
      "t": [
       "淡水与湖泊河流",
       "监测与采样"
@@ -8694,7 +9310,7 @@
     },
     {
      "d": "10.1007/s44338-026-00271-2",
-     "s": 0.433,
+     "s": 0.436,
      "t": []
     }
    ]
@@ -8731,17 +9347,17 @@
     },
     {
      "d": "10.1007/s11160-026-10110-y",
-     "s": 0.484,
+     "s": 0.488,
+     "t": []
+    },
+    {
+     "d": "10.1111/jfb.70725",
+     "s": 0.45,
      "t": []
     },
     {
      "d": "10.1007/s10750-026-06482-8",
      "s": 0.45,
-     "t": []
-    },
-    {
-     "d": "10.1186/s12711-026-01094-1",
-     "s": 0.41,
      "t": []
     }
    ]
@@ -8825,7 +9441,7 @@
     },
     {
      "d": "10.54254/2753-8818/2026.38927",
-     "s": 0.504,
+     "s": 0.505,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -8930,16 +9546,16 @@
      "t": []
     },
     {
-     "d": "10.3390/fishes11120686",
-     "s": 0.454,
-     "t": [
-      "其他淡水鱼"
-     ]
-    },
-    {
      "d": "10.1007/s12562-026-02046-w",
      "s": 0.45,
      "t": []
+    },
+    {
+     "d": "10.3390/fishes11120686",
+     "s": 0.446,
+     "t": [
+      "其他淡水鱼"
+     ]
     }
    ]
   },
@@ -8981,21 +9597,21 @@
     },
     {
      "d": "10.3389/fmars.2026.1981790",
-     "s": 0.527,
+     "s": 0.529,
      "t": [
       "地中海与黑海"
      ]
     },
     {
      "d": "10.3389/fmars.2026.1937225",
-     "s": 0.5,
+     "s": 0.498,
      "t": [
       "地中海与黑海",
       "遥感与空间分析"
      ]
     },
     {
-     "d": "10.1080/23308249.2026.2760249",
+     "d": "10.3389/fmars.2026.1962143",
      "s": 0.45,
      "t": []
     }
@@ -9042,12 +9658,12 @@
     },
     {
      "d": "10.1139/cjfas-2025-0391",
-     "s": 0.469,
+     "s": 0.47,
      "t": []
     },
     {
      "d": "10.1093/bbb/zbag168",
-     "s": 0.361,
+     "s": 0.363,
      "t": []
     }
    ]
@@ -9099,7 +9715,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1962143",
-     "s": 0.493,
+     "s": 0.494,
      "t": [
       "分布模型与栖息地评价"
      ]
@@ -9145,7 +9761,7 @@
     },
     {
      "d": "10.1139/cjfas-2026-0046",
-     "s": 0.608,
+     "s": 0.61,
      "t": [
       "鲨鱼与鳐类",
       "环境DNA"
@@ -9206,12 +9822,12 @@
     },
     {
      "d": "10.1002/nzm2.70092",
-     "s": 0.447,
+     "s": 0.444,
      "t": []
     },
     {
      "d": "10.3389/fmars.2026.1976619",
-     "s": 0.432,
+     "s": 0.431,
      "t": []
     }
    ]
@@ -9251,7 +9867,7 @@
     },
     {
      "d": "10.1111/fme.70134",
-     "s": 0.603,
+     "s": 0.607,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -9305,7 +9921,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1984103",
-     "s": 0.558,
+     "s": 0.559,
      "t": [
       "地中海与黑海"
      ]
@@ -9356,7 +9972,7 @@
     },
     {
      "d": "10.1163/15718085-20261060",
-     "s": 0.509,
+     "s": 0.51,
      "t": [
       "中国近海与内陆"
      ]
@@ -9460,8 +10076,8 @@
      "t": []
     },
     {
-     "d": "10.3389/fpubh.2026.1933985",
-     "s": 0.466,
+     "d": "10.1002/aff2.70365",
+     "s": 0.462,
      "t": []
     }
    ]
@@ -9496,17 +10112,17 @@
     },
     {
      "d": "10.1111/faf.70119",
-     "s": 0.447,
-     "t": []
-    },
-    {
-     "d": "10.3389/fmars.2026.1907711",
-     "s": 0.399,
+     "s": 0.449,
      "t": []
     },
     {
      "d": "10.1080/23308249.2026.2748998",
-     "s": 0.399,
+     "s": 0.402,
+     "t": []
+    },
+    {
+     "d": "10.3389/fmars.2026.1907711",
+     "s": 0.401,
      "t": []
     }
    ]
@@ -9584,7 +10200,7 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1938640",
-     "s": 0.565,
+     "s": 0.561,
      "t": []
     },
     {
@@ -9594,12 +10210,12 @@
     },
     {
      "d": "10.3389/fmars.2026.1977454",
-     "s": 0.533,
+     "s": 0.531,
      "t": []
     },
     {
-     "d": "10.1139/as-2026-0032",
-     "s": 0.525,
+     "d": "10.3389/fmars.2026.1955301",
+     "s": 0.527,
      "t": []
     }
    ]
@@ -9640,7 +10256,7 @@
     },
     {
      "d": "10.1111/jfd.70326",
-     "s": 0.531,
+     "s": 0.533,
      "t": [
       "鲑鳟鱼类"
      ]
@@ -9770,7 +10386,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1962387",
-     "s": 0.383,
+     "s": 0.376,
      "t": []
     },
     {
@@ -9818,12 +10434,12 @@
     },
     {
      "d": "10.21275/sr261107134834",
-     "s": 0.411,
+     "s": 0.406,
      "t": []
     },
     {
      "d": "10.1007/s00203-026-05302-w",
-     "s": 0.349,
+     "s": 0.348,
      "t": []
     }
    ]
@@ -9866,7 +10482,7 @@
     },
     {
      "d": "10.63249/j-sh.v1i2.167",
-     "s": 0.631,
+     "s": 0.63,
      "t": [
       "东南亚与西太",
       "调查与问卷"
@@ -9926,6 +10542,13 @@
      ]
     },
     {
+     "d": "10.1111/eff.70077",
+     "s": 0.604,
+     "t": [
+      "鲑鳟鱼类"
+     ]
+    },
+    {
      "d": "10.1007/s11356-026-38430-3",
      "s": 0.58,
      "t": [
@@ -9937,13 +10560,6 @@
      "s": 0.58,
      "t": [
       "鲑鳟鱼类"
-     ]
-    },
-    {
-     "d": "10.56557/upjoz/2026/v47i215953",
-     "s": 0.547,
-     "t": [
-      "淡水与湖泊河流"
      ]
     }
    ]
@@ -9993,8 +10609,8 @@
      "t": []
     },
     {
-     "d": "10.3390/foods15234227",
-     "s": 0.456,
+     "d": "10.3389/fenvs.2026.1975174",
+     "s": 0.469,
      "t": []
     }
    ]
@@ -10098,12 +10714,12 @@
     },
     {
      "d": "10.1139/er-2026-0153",
-     "s": 0.523,
+     "s": 0.521,
      "t": []
     },
     {
      "d": "10.25258/ijddt.16.82s.131",
-     "s": 0.502,
+     "s": 0.503,
      "t": [
       "饵料鱼类"
      ]
@@ -10199,7 +10815,7 @@
     },
     {
      "d": "10.1080/10888705.2026.2760878",
-     "s": 0.521,
+     "s": 0.524,
      "t": [
       "加勒比与墨西哥湾"
      ]
@@ -10239,6 +10855,13 @@
      ]
     },
     {
+     "d": "10.1111/eff.70077",
+     "s": 0.58,
+     "t": [
+      "鲑鳟鱼类"
+     ]
+    },
+    {
      "d": "10.3390/fishes11120682",
      "s": 0.58,
      "t": [
@@ -10247,13 +10870,6 @@
     },
     {
      "d": "10.1007/s11356-026-38430-3",
-     "s": 0.58,
-     "t": [
-      "鲑鳟鱼类"
-     ]
-    },
-    {
-     "d": "10.1007/s12562-026-02050-0",
      "s": 0.58,
      "t": [
       "鲑鳟鱼类"
@@ -10288,7 +10904,7 @@
    "rel": [
     {
      "d": "10.1111/jfb.70740",
-     "s": 0.519,
+     "s": 0.518,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -10300,7 +10916,7 @@
     },
     {
      "d": "10.1111/fme.70130",
-     "s": 0.491,
+     "s": 0.489,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -10361,7 +10977,7 @@
     },
     {
      "d": "10.1111/jfb.70719",
-     "s": 0.552,
+     "s": 0.555,
      "t": [
       "饵料鱼类"
      ]
@@ -10511,7 +11127,7 @@
     },
     {
      "d": "10.3390/biology15222069",
-     "s": 0.607,
+     "s": 0.611,
      "t": [
       "环境DNA",
       "监测与采样"
@@ -10569,12 +11185,12 @@
     },
     {
      "d": "10.3390/jmse14222145",
-     "s": 0.396,
+     "s": 0.397,
      "t": []
     },
     {
      "d": "10.1007/s11356-026-38430-3",
-     "s": 0.392,
+     "s": 0.385,
      "t": []
     }
    ]
@@ -10614,12 +11230,12 @@
     },
     {
      "d": "10.1080/09654313.2026.2758888",
-     "s": 0.434,
+     "s": 0.436,
      "t": []
     },
     {
      "d": "10.1038/s41598-026-73653-x",
-     "s": 0.421,
+     "s": 0.419,
      "t": []
     }
    ]
@@ -10655,7 +11271,7 @@
    "rel": [
     {
      "d": "10.3354/meps15369",
-     "s": 0.561,
+     "s": 0.562,
      "t": [
       "鲈鱼与石斑鱼"
      ]
@@ -10669,7 +11285,7 @@
     },
     {
      "d": "10.3389/fmars.2026.2018983",
-     "s": 0.533,
+     "s": 0.531,
      "t": []
     },
     {
@@ -10892,7 +11508,7 @@
     },
     {
      "d": "10.1007/s10499-026-02759-w",
-     "s": 0.529,
+     "s": 0.527,
      "t": [
       "监测与采样"
      ]
@@ -10931,6 +11547,11 @@
    "off_topic": false,
    "rel": [
     {
+     "d": "10.5194/gh-81-843-2026",
+     "s": 0.5,
+     "t": []
+    },
+    {
      "d": "10.55885/jucep.v6i2.1232",
      "s": 0.5,
      "t": []
@@ -10943,11 +11564,6 @@
     {
      "d": "10.3389/fmars.2026.1943975",
      "s": 0.45,
-     "t": []
-    },
-    {
-     "d": "10.3390/d18120735",
-     "s": 0.435,
      "t": []
     }
    ]
@@ -11065,7 +11681,7 @@
     },
     {
      "d": "10.3390/biology15222069",
-     "s": 0.577,
+     "s": 0.575,
      "t": [
       "监测与采样"
      ]
@@ -11111,7 +11727,7 @@
     },
     {
      "d": "10.1007/s11356-026-38367-7",
-     "s": 0.488,
+     "s": 0.49,
      "t": []
     },
     {
@@ -11166,7 +11782,7 @@
     },
     {
      "d": "10.1111/jfb.70718",
-     "s": 0.513,
+     "s": 0.512,
      "t": []
     },
     {
@@ -11218,7 +11834,7 @@
     },
     {
      "d": "10.1111/raq.70230",
-     "s": 0.422,
+     "s": 0.417,
      "t": []
     }
    ]
@@ -11260,18 +11876,18 @@
      ]
     },
     {
-     "d": "10.1111/jfb.70743",
-     "s": 0.509,
-     "t": []
-    },
-    {
      "d": "10.1186/s44365-026-00052-8",
      "s": 0.5,
      "t": []
     },
     {
+     "d": "10.1111/jfb.70743",
+     "s": 0.496,
+     "t": []
+    },
+    {
      "d": "10.3389/fmars.2026.1939537",
-     "s": 0.474,
+     "s": 0.476,
      "t": [
       "耳石与硬组织"
      ]
@@ -11323,7 +11939,7 @@
     },
     {
      "d": "10.1111/jfb.70718",
-     "s": 0.563,
+     "s": 0.562,
      "t": [
       "统计建模"
      ]
@@ -11384,7 +12000,7 @@
     },
     {
      "d": "10.9734/ajfar/2026/v28i111189",
-     "s": 0.501,
+     "s": 0.502,
      "t": [
       "非洲海域"
      ]
@@ -11424,18 +12040,18 @@
      ]
     },
     {
+     "d": "10.1021/acsomega.6c12717",
+     "s": 0.45,
+     "t": []
+    },
+    {
      "d": "10.65770/unbx5666",
      "s": 0.45,
      "t": []
     },
     {
      "d": "10.3389/fcell.2026.1925369",
-     "s": 0.318,
-     "t": []
-    },
-    {
-     "d": "10.1007/s10598-026-09768-7",
-     "s": 0.309,
+     "s": 0.321,
      "t": []
     }
    ]
@@ -11524,17 +12140,17 @@
     },
     {
      "d": "10.1111/jfb.70726",
-     "s": 0.405,
+     "s": 0.403,
      "t": []
     },
     {
      "d": "10.1093/fshmag/vuag069",
-     "s": 0.333,
+     "s": 0.328,
      "t": []
     },
     {
      "d": "10.3897/bdj.14.e209360",
-     "s": 0.319,
+     "s": 0.315,
      "t": []
     }
    ]
@@ -11563,6 +12179,11 @@
    "off_topic": false,
    "rel": [
     {
+     "d": "10.1111/jfb.70746",
+     "s": 0.55,
+     "t": []
+    },
+    {
      "d": "10.1111/jfb.70743",
      "s": 0.55,
      "t": []
@@ -11575,11 +12196,6 @@
     {
      "d": "10.1007/s40152-026-00537-1",
      "s": 0.45,
-     "t": []
-    },
-    {
-     "d": "10.1186/s12711-026-01094-1",
-     "s": 0.421,
      "t": []
     }
    ]
@@ -11684,7 +12300,7 @@
     },
     {
      "d": "10.1093/fshmag/vuag069",
-     "s": 0.631,
+     "s": 0.623,
      "t": [
       "淡水与湖泊河流",
       "监测与采样"
@@ -11778,17 +12394,17 @@
     },
     {
      "d": "10.54254/2753-8818/2026.38927",
-     "s": 0.439,
+     "s": 0.435,
      "t": []
     },
     {
      "d": "10.1080/24705357.2026.2761577",
-     "s": 0.392,
+     "s": 0.386,
      "t": []
     },
     {
      "d": "10.1080/23308249.2026.2748998",
-     "s": 0.371,
+     "s": 0.375,
      "t": []
     }
    ]
@@ -11832,7 +12448,7 @@
     },
     {
      "d": "10.9734/ajfar/2026/v28i111187",
-     "s": 0.63,
+     "s": 0.628,
      "t": [
       "非洲海域"
      ]
@@ -11928,14 +12544,14 @@
    "rel": [
     {
      "d": "10.1108/jadee-04-2026-0301",
-     "s": 0.599,
+     "s": 0.6,
      "t": [
       "东南亚与西太"
      ]
     },
     {
      "d": "10.1007/s11356-026-38382-8",
-     "s": 0.584,
+     "s": 0.585,
      "t": [
       "东南亚与西太"
      ]
@@ -12047,7 +12663,7 @@
     },
     {
      "d": "10.1111/1758-2229.70465",
-     "s": 0.581,
+     "s": 0.585,
      "t": [
       "鲑鳟鱼类"
      ]
@@ -12107,13 +12723,13 @@
      "t": []
     },
     {
-     "d": "10.1007/s00784-026-07252-5",
-     "s": 0.45,
+     "d": "10.1021/acsomega.6c12717",
+     "s": 0.469,
      "t": []
     },
     {
-     "d": "10.3389/fmars.2026.2006926",
-     "s": 0.445,
+     "d": "10.1007/s00784-026-07252-5",
+     "s": 0.45,
      "t": []
     }
    ]
@@ -12145,23 +12761,23 @@
    "off_topic": false,
    "rel": [
     {
+     "d": "10.3389/fmars.2026.1955301",
+     "s": 0.55,
+     "t": []
+    },
+    {
      "d": "10.3389/fmars.2026.1902794",
      "s": 0.55,
      "t": []
     },
     {
      "d": "10.3389/fmars.2026.2037603",
-     "s": 0.545,
-     "t": []
-    },
-    {
-     "d": "10.3389/fmars.2026.1967854",
      "s": 0.539,
      "t": []
     },
     {
-     "d": "10.56557/upjoz/2026/v47i225956",
-     "s": 0.5,
+     "d": "10.3389/fmars.2026.1967854",
+     "s": 0.535,
      "t": []
     }
    ]
@@ -12210,7 +12826,7 @@
      "t": []
     },
     {
-     "d": "10.3390/ani16233721",
+     "d": "10.1111/fme.70124",
      "s": 0.499,
      "t": []
     }
@@ -12306,19 +12922,19 @@
     },
     {
      "d": "10.1007/s10641-026-01935-4",
-     "s": 0.625,
+     "s": 0.624,
      "t": [
       "鲨鱼与鳐类"
      ]
     },
     {
-     "d": "10.1139/cjfas-2025-0391",
+     "d": "10.3354/meps15372",
      "s": 0.482,
      "t": []
     },
     {
-     "d": "10.3354/meps15372",
-     "s": 0.481,
+     "d": "10.1139/cjfas-2025-0391",
+     "s": 0.479,
      "t": []
     }
    ]
@@ -12352,14 +12968,14 @@
    "rel": [
     {
      "d": "10.1111/1365-2656.70408",
-     "s": 0.516,
+     "s": 0.517,
      "t": [
       "淡水与湖泊河流"
      ]
     },
     {
      "d": "10.3390/ani16223589",
-     "s": 0.512,
+     "s": 0.509,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -12371,7 +12987,7 @@
     },
     {
      "d": "10.3390/hydrobiology5040049",
-     "s": 0.44,
+     "s": 0.436,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -12414,19 +13030,19 @@
     },
     {
      "d": "10.1139/as-2026-0032",
-     "s": 0.502,
+     "s": 0.503,
      "t": []
     },
     {
      "d": "10.1139/cjfas-2026-0059",
-     "s": 0.465,
+     "s": 0.467,
      "t": [
       "鲑鳟鱼类"
      ]
     },
     {
      "d": "10.1007/s10695-026-01833-7",
-     "s": 0.454,
+     "s": 0.458,
      "t": [
       "鲑鳟鱼类"
      ]
@@ -12469,7 +13085,7 @@
     },
     {
      "d": "10.1007/s11160-026-10115-7",
-     "s": 0.556,
+     "s": 0.56,
      "t": [
       "中国近海与内陆"
      ]
@@ -12568,7 +13184,7 @@
     },
     {
      "d": "10.3354/meps15366",
-     "s": 0.536,
+     "s": 0.539,
      "t": []
     },
     {
@@ -12578,7 +13194,7 @@
     },
     {
      "d": "10.3354/meps15379",
-     "s": 0.472,
+     "s": 0.476,
      "t": []
     }
    ]
@@ -12607,6 +13223,11 @@
    "off_topic": false,
    "rel": [
     {
+     "d": "10.3389/fenvs.2026.1975174",
+     "s": 0.5,
+     "t": []
+    },
+    {
      "d": "10.1007/s12011-026-05443-5",
      "s": 0.5,
      "t": []
@@ -12619,11 +13240,6 @@
     {
      "d": "10.56557/upjoz/2026/v47i215954",
      "s": 0.45,
-     "t": []
-    },
-    {
-     "d": "10.1007/s12562-026-02042-0",
-     "s": 0.441,
      "t": []
     }
    ]
@@ -12664,12 +13280,12 @@
     },
     {
      "d": "10.3897/neotropical.21.e212775",
-     "s": 0.461,
+     "s": 0.459,
      "t": []
     },
     {
      "d": "10.70963/jm.v3i2.1073",
-     "s": 0.447,
+     "s": 0.445,
      "t": []
     }
    ]
@@ -12703,7 +13319,7 @@
    "rel": [
     {
      "d": "10.9734/jsrr/2026/v32i114726",
-     "s": 0.599,
+     "s": 0.596,
      "t": [
       "全球/多区域"
      ]
@@ -12716,15 +13332,15 @@
      ]
     },
     {
-     "d": "10.3389/fmars.2026.2038299",
-     "s": 0.431,
+     "d": "10.3389/fmars.2026.1958849",
+     "s": 0.43,
      "t": [
       "全球/多区域"
      ]
     },
     {
-     "d": "10.3389/fmars.2026.1958849",
-     "s": 0.43,
+     "d": "10.3389/fmars.2026.2038299",
+     "s": 0.429,
      "t": [
       "全球/多区域"
      ]
@@ -12762,7 +13378,7 @@
     },
     {
      "d": "10.3897/aiep.56.213543",
-     "s": 0.46,
+     "s": 0.456,
      "t": []
     },
     {
@@ -12821,7 +13437,7 @@
     },
     {
      "d": "10.1007/s00227-026-04950-2",
-     "s": 0.595,
+     "s": 0.593,
      "t": [
       "监测与采样",
       "机器学习与AI"
@@ -12861,12 +13477,12 @@
    "off_topic": false,
    "rel": [
     {
-     "d": "10.9734/jsrr/2026/v32i114774",
+     "d": "10.56557/upjoz/2026/v47i225956",
      "s": 0.525,
      "t": []
     },
     {
-     "d": "10.56557/upjoz/2026/v47i225956",
+     "d": "10.9734/jsrr/2026/v32i114774",
      "s": 0.525,
      "t": []
     },
@@ -12923,7 +13539,7 @@
     },
     {
      "d": "10.1139/cjfas-2026-0046",
-     "s": 0.445,
+     "s": 0.443,
      "t": []
     }
    ]
@@ -12962,17 +13578,17 @@
      ]
     },
     {
+     "d": "10.1111/jfb.70723",
+     "s": 0.5,
+     "t": []
+    },
+    {
      "d": "10.3390/biology15222068",
      "s": 0.5,
      "t": []
     },
     {
      "d": "10.3390/fishes11120682",
-     "s": 0.45,
-     "t": []
-    },
-    {
-     "d": "10.1186/s12986-026-01241-x",
      "s": 0.45,
      "t": []
     }
@@ -13002,8 +13618,13 @@
    "off_topic": false,
    "rel": [
     {
+     "d": "10.1021/acsomega.6c12717",
+     "s": 0.5,
+     "t": []
+    },
+    {
      "d": "10.3390/aquacj6040058",
-     "s": 0.472,
+     "s": 0.473,
      "t": []
     },
     {
@@ -13014,11 +13635,6 @@
     {
      "d": "10.1007/s11814-026-00876-z",
      "s": 0.45,
-     "t": []
-    },
-    {
-     "d": "10.1007/s00784-026-07252-5",
-     "s": 0.443,
      "t": []
     }
    ]
@@ -13051,22 +13667,22 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1992082",
-     "s": 0.462,
+     "s": 0.454,
      "t": []
     },
     {
      "d": "10.1163/15718085-20261060",
-     "s": 0.462,
+     "s": 0.441,
      "t": []
     },
     {
      "d": "10.3389/fmars.2026.2040572",
-     "s": 0.44,
+     "s": 0.434,
      "t": []
     },
     {
      "d": "10.3389/fmars.2026.1902794",
-     "s": 0.418,
+     "s": 0.421,
      "t": []
     }
    ]
@@ -13096,7 +13712,7 @@
    "rel": [
     {
      "d": "10.1007/s11802-026-6741-6",
-     "s": 0.45,
+     "s": 0.443,
      "t": []
     },
     {
@@ -13106,12 +13722,12 @@
     },
     {
      "d": "10.1111/fog.70095",
-     "s": 0.358,
+     "s": 0.351,
      "t": []
     },
     {
-     "d": "10.51317/wrehv191",
-     "s": 0.325,
+     "d": "10.1111/jfb.70748",
+     "s": 0.326,
      "t": []
     }
    ]
@@ -13216,7 +13832,7 @@
    "rel": [
     {
      "d": "10.1111/raq.70232",
-     "s": 0.592,
+     "s": 0.597,
      "t": [
       "虾类"
      ]
@@ -13230,7 +13846,7 @@
     },
     {
      "d": "10.1128/aem.01597-26",
-     "s": 0.522,
+     "s": 0.516,
      "t": []
     },
     {
@@ -13406,12 +14022,12 @@
    "rel": [
     {
      "d": "10.1111/jfb.70721",
-     "s": 0.405,
+     "s": 0.403,
      "t": []
     },
     {
      "d": "10.3354/meps15367",
-     "s": 0.392,
+     "s": 0.388,
      "t": [
       "印度洋与南亚"
      ]
@@ -13425,7 +14041,7 @@
     },
     {
      "d": "10.1007/s11356-026-38377-5",
-     "s": 0.337,
+     "s": 0.338,
      "t": []
     }
    ]
@@ -13477,9 +14093,11 @@
      "t": []
     },
     {
-     "d": "10.3390/su182312002",
-     "s": 0.5,
-     "t": []
+     "d": "10.1111/jfb.70719",
+     "s": 0.502,
+     "t": [
+      "饵料鱼类"
+     ]
     }
    ]
   },
@@ -13583,7 +14201,7 @@
     },
     {
      "d": "10.1139/er-2026-0153",
-     "s": 0.549,
+     "s": 0.54,
      "t": [
       "全球/多区域"
      ]
@@ -13630,12 +14248,12 @@
     },
     {
      "d": "10.3390/su182312002",
-     "s": 0.447,
+     "s": 0.444,
      "t": []
     },
     {
      "d": "10.3390/fishes11110659",
-     "s": 0.422,
+     "s": 0.421,
      "t": []
     }
    ]
@@ -13672,7 +14290,7 @@
     },
     {
      "d": "10.3354/aei00543",
-     "s": 0.508,
+     "s": 0.506,
      "t": []
     },
     {
@@ -13829,7 +14447,7 @@
    "rel": [
     {
      "d": "10.63249/j-sh.v1i2.167",
-     "s": 0.624,
+     "s": 0.621,
      "t": [
       "调查与问卷"
      ]
@@ -13909,7 +14527,7 @@
     },
     {
      "d": "10.3390/fishes11110654",
-     "s": 0.501,
+     "s": 0.502,
      "t": [
       "鲆鲽类"
      ]
@@ -13948,7 +14566,7 @@
     },
     {
      "d": "10.3354/aei00543",
-     "s": 0.513,
+     "s": 0.506,
      "t": []
     },
     {
@@ -13998,14 +14616,14 @@
     },
     {
      "d": "10.3390/ani16233721",
-     "s": 0.605,
+     "s": 0.604,
      "t": [
       "东南亚与西太"
      ]
     },
     {
      "d": "10.1108/jadee-04-2026-0301",
-     "s": 0.588,
+     "s": 0.591,
      "t": [
       "东南亚与西太"
      ]
@@ -14043,12 +14661,12 @@
    "rel": [
     {
      "d": "10.9734/jsrr/2026/v32i114774",
-     "s": 0.462,
+     "s": 0.463,
      "t": []
     },
     {
      "d": "10.9734/ajfar/2026/v28i111188",
-     "s": 0.457,
+     "s": 0.451,
      "t": []
     },
     {
@@ -14057,7 +14675,7 @@
      "t": []
     },
     {
-     "d": "10.51317/wrehv191",
+     "d": "10.1007/s10598-026-09768-7",
      "s": 0.45,
      "t": []
     }
@@ -14088,7 +14706,7 @@
    "rel": [
     {
      "d": "10.12873/ncdh-2026-237",
-     "s": 0.466,
+     "s": 0.465,
      "t": []
     },
     {
@@ -14098,12 +14716,12 @@
     },
     {
      "d": "10.1002/aff2.70365",
-     "s": 0.422,
+     "s": 0.424,
      "t": []
     },
     {
      "d": "10.1111/raq.70230",
-     "s": 0.401,
+     "s": 0.403,
      "t": []
     }
    ]
@@ -14241,12 +14859,12 @@
     },
     {
      "d": "10.1086/743937",
-     "s": 0.419,
+     "s": 0.42,
      "t": []
     },
     {
      "d": "10.3389/fmars.2026.1983862",
-     "s": 0.39,
+     "s": 0.389,
      "t": [
       "南海"
      ]
@@ -14279,25 +14897,27 @@
    "off_topic": false,
    "rel": [
     {
-     "d": "10.15517/29j0jp96",
-     "s": 0.524,
+     "d": "10.1111/jfb.70746",
+     "s": 0.56,
      "t": [
       "北太平洋"
      ]
     },
     {
-     "d": "10.3389/fmars.2026.1976839",
-     "s": 0.471,
-     "t": []
+     "d": "10.15517/29j0jp96",
+     "s": 0.502,
+     "t": [
+      "北太平洋"
+     ]
     },
     {
      "d": "10.3389/fmars.2026.1924894",
-     "s": 0.471,
+     "s": 0.47,
      "t": []
     },
     {
-     "d": "10.1007/s12520-026-02600-8",
-     "s": 0.45,
+     "d": "10.3389/fmars.2026.1976839",
+     "s": 0.457,
      "t": []
     }
    ]
@@ -14339,6 +14959,13 @@
      ]
     },
     {
+     "d": "10.1111/jfb.70748",
+     "s": 0.603,
+     "t": [
+      "北太平洋"
+     ]
+    },
+    {
      "d": "10.1007/s42452-026-09653-3",
      "s": 0.58,
      "t": [
@@ -14347,16 +14974,9 @@
     },
     {
      "d": "10.3390/phycology6040122",
-     "s": 0.574,
+     "s": 0.567,
      "t": [
       "藻类与海藻"
-     ]
-    },
-    {
-     "d": "10.3856/vol54-issue5-fulltext-3674",
-     "s": 0.561,
-     "t": [
-      "北太平洋"
      ]
     }
    ]
@@ -14440,22 +15060,20 @@
     },
     {
      "d": "10.3389/fmars.2026.1907711",
-     "s": 0.48,
+     "s": 0.483,
      "t": [
       "印度洋与南亚"
      ]
+    },
+    {
+     "d": "10.1111/jfb.70725",
+     "s": 0.45,
+     "t": []
     },
     {
      "d": "10.3354/meps15371",
      "s": 0.45,
      "t": []
-    },
-    {
-     "d": "10.1186/s44365-026-00051-9",
-     "s": 0.414,
-     "t": [
-      "印度洋与南亚"
-     ]
     }
    ]
   },
@@ -14489,7 +15107,7 @@
     },
     {
      "d": "10.1002/jat.70513",
-     "s": 0.472,
+     "s": 0.464,
      "t": []
     },
     {
@@ -14544,7 +15162,7 @@
     },
     {
      "d": "10.1007/s10695-026-01833-7",
-     "s": 0.476,
+     "s": 0.477,
      "t": []
     }
    ]
@@ -14585,7 +15203,7 @@
     },
     {
      "d": "10.3354/meps15365",
-     "s": 0.527,
+     "s": 0.531,
      "t": [
       "海龟与海鸟"
      ]
@@ -14632,17 +15250,17 @@
     },
     {
      "d": "10.1007/s12562-026-02044-y",
-     "s": 0.364,
+     "s": 0.366,
      "t": []
     },
     {
      "d": "10.1007/s00784-026-07252-5",
-     "s": 0.33,
+     "s": 0.319,
      "t": []
     },
     {
-     "d": "10.3354/meps15366",
-     "s": 0.303,
+     "d": "10.3389/fmars.2026.1886191",
+     "s": 0.302,
      "t": []
     }
    ]
@@ -14679,7 +15297,7 @@
     },
     {
      "d": "10.1111/raq.70232",
-     "s": 0.549,
+     "s": 0.55,
      "t": []
     },
     {
@@ -14722,14 +15340,14 @@
    "off_topic": false,
    "rel": [
     {
-     "d": "10.1111/rec.70597",
+     "d": "10.1007/s11802-026-6773-y",
      "s": 0.63,
      "t": [
       "贝类"
      ]
     },
     {
-     "d": "10.1007/s11802-026-6773-y",
+     "d": "10.1111/rec.70597",
      "s": 0.63,
      "t": [
       "贝类"
@@ -14852,7 +15470,7 @@
     },
     {
      "d": "10.3390/d18120735",
-     "s": 0.488,
+     "s": 0.49,
      "t": [
       "地中海与黑海"
      ]
@@ -14887,7 +15505,7 @@
    "rel": [
     {
      "d": "10.3390/fishes11110659",
-     "s": 0.629,
+     "s": 0.628,
      "t": [
       "印度洋与南亚",
       "全球/多区域"
@@ -14902,7 +15520,7 @@
     },
     {
      "d": "10.1038/s44183-026-00254-6",
-     "s": 0.599,
+     "s": 0.596,
      "t": [
       "全球/多区域"
      ]
@@ -14947,7 +15565,7 @@
     },
     {
      "d": "10.1111/jwas.70173",
-     "s": 0.394,
+     "s": 0.386,
      "t": []
     },
     {
@@ -14957,7 +15575,7 @@
     },
     {
      "d": "10.22495/cbsrv7i4art3",
-     "s": 0.359,
+     "s": 0.358,
      "t": []
     }
    ]
@@ -15035,7 +15653,7 @@
    "rel": [
     {
      "d": "10.1111/1758-2229.70465",
-     "s": 0.607,
+     "s": 0.611,
      "t": [
       "环境DNA",
       "监测与采样"
@@ -15100,7 +15718,7 @@
     },
     {
      "d": "10.3389/fmicb.2026.1939609",
-     "s": 0.543,
+     "s": 0.545,
      "t": [
       "鲤科鱼类"
      ]
@@ -15146,14 +15764,14 @@
    "rel": [
     {
      "d": "10.1139/er-2026-0153",
-     "s": 0.583,
+     "s": 0.584,
      "t": [
       "贝类"
      ]
     },
     {
      "d": "10.3390/fishes11110655",
-     "s": 0.551,
+     "s": 0.552,
      "t": [
       "贝类"
      ]
@@ -15203,17 +15821,17 @@
     },
     {
      "d": "10.3390/fishes11120686",
-     "s": 0.481,
+     "s": 0.479,
      "t": []
     },
     {
      "d": "10.3390/ijms272210324",
-     "s": 0.448,
+     "s": 0.449,
      "t": []
     },
     {
      "d": "10.1007/s44307-026-00145-4",
-     "s": 0.419,
+     "s": 0.42,
      "t": []
     }
    ]
@@ -15297,22 +15915,22 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1888907",
-     "s": 0.43,
+     "s": 0.433,
      "t": []
     },
     {
      "d": "10.3390/en19225521",
-     "s": 0.396,
+     "s": 0.397,
      "t": []
     },
     {
      "d": "10.56557/upjoz/2026/v47i225956",
-     "s": 0.364,
+     "s": 0.363,
      "t": []
     },
     {
      "d": "10.3389/faquc.2026.1992667",
-     "s": 0.333,
+     "s": 0.334,
      "t": []
     }
    ]
@@ -15393,22 +16011,22 @@
    "rel": [
     {
      "d": "10.1086/744906",
-     "s": 0.406,
+     "s": 0.402,
      "t": []
     },
     {
      "d": "10.1007/s11160-026-10116-6",
-     "s": 0.338,
+     "s": 0.339,
      "t": []
     },
     {
      "d": "10.1007/s10750-026-06482-8",
-     "s": 0.302,
+     "s": 0.297,
      "t": []
     },
     {
      "d": "10.1111/jfb.70718",
-     "s": 0.281,
+     "s": 0.28,
      "t": []
     }
    ]
@@ -15443,7 +16061,7 @@
     },
     {
      "d": "10.1007/s12520-026-02600-8",
-     "s": 0.214,
+     "s": 0.215,
      "t": []
     },
     {
@@ -15452,7 +16070,7 @@
      "t": []
     },
     {
-     "d": "10.3389/fmars.2026.1983862",
+     "d": "10.1108/jadee-03-2025-0120",
      "s": 0.204,
      "t": []
     }
@@ -15487,7 +16105,7 @@
    "rel": [
     {
      "d": "10.3390/fishes11120682",
-     "s": 0.608,
+     "s": 0.611,
      "t": [
       "鲑鳟鱼类"
      ]
@@ -15659,14 +16277,14 @@
     },
     {
      "d": "10.3389/fmars.2026.1976839",
-     "s": 0.604,
+     "s": 0.602,
      "t": [
       "藻类与海藻"
      ]
     },
     {
      "d": "10.15517/29j0jp96",
-     "s": 0.574,
+     "s": 0.567,
      "t": [
       "藻类与海藻"
      ]
@@ -15750,8 +16368,16 @@
    "off_topic": false,
    "rel": [
     {
+     "d": "10.1111/jfb.70746",
+     "s": 0.68,
+     "t": [
+      "金枪鱼与鲭类",
+      "监测与采样"
+     ]
+    },
+    {
      "d": "10.3389/fmars.2026.1976619",
-     "s": 0.619,
+     "s": 0.623,
      "t": [
       "鲨鱼与鳐类"
      ]
@@ -15765,13 +16391,6 @@
     },
     {
      "d": "10.3897/aiep.56.213543",
-     "s": 0.58,
-     "t": [
-      "鲨鱼与鳐类"
-     ]
-    },
-    {
-     "d": "10.3856/vol54-issue5-fulltext-3674",
      "s": 0.58,
      "t": [
       "鲨鱼与鳐类"
@@ -15806,22 +16425,22 @@
    "rel": [
     {
      "d": "10.1007/s10695-026-01833-7",
-     "s": 0.395,
-     "t": []
-    },
-    {
-     "d": "10.1038/s41598-026-73653-x",
-     "s": 0.371,
+     "s": 0.399,
      "t": []
     },
     {
      "d": "10.3390/fishes11120685",
-     "s": 0.369,
+     "s": 0.368,
      "t": []
     },
     {
-     "d": "10.1186/s44365-026-00052-8",
-     "s": 0.358,
+     "d": "10.1038/s41598-026-73653-x",
+     "s": 0.368,
+     "t": []
+    },
+    {
+     "d": "10.1139/cjfas-2025-0404",
+     "s": 0.344,
      "t": []
     }
    ]
@@ -15863,17 +16482,17 @@
      ]
     },
     {
+     "d": "10.3389/fenvs.2026.1975174",
+     "s": 0.5,
+     "t": []
+    },
+    {
      "d": "10.1177/1973798x261507651",
-     "s": 0.466,
+     "s": 0.454,
      "t": []
     },
     {
      "d": "10.1007/s11356-026-38377-5",
-     "s": 0.45,
-     "t": []
-    },
-    {
-     "d": "10.3389/fmars.2026.1943975",
      "s": 0.45,
      "t": []
     }
@@ -15906,10 +16525,15 @@
    "rel": [
     {
      "d": "10.3389/fmars.2026.1943975",
-     "s": 0.514,
+     "s": 0.513,
      "t": [
       "印度洋与南亚"
      ]
+    },
+    {
+     "d": "10.29303/jfh.v6i4.12251",
+     "s": 0.5,
+     "t": []
     },
     {
      "d": "10.1128/aem.01597-26",
@@ -15918,12 +16542,7 @@
     },
     {
      "d": "10.3390/cimb48111198",
-     "s": 0.5,
-     "t": []
-    },
-    {
-     "d": "10.1007/s10529-026-03800-x",
-     "s": 0.46,
+     "s": 0.498,
      "t": []
     }
    ]
@@ -15982,7 +16601,7 @@
     },
     {
      "d": "10.56557/upjoz/2026/v47i215953",
-     "s": 0.612,
+     "s": 0.609,
      "t": [
       "监测与采样"
      ]
@@ -16039,7 +16658,7 @@
     },
     {
      "d": "10.3390/ani16223589",
-     "s": 0.509,
+     "s": 0.51,
      "t": [
       "监测与采样"
      ]
@@ -16086,7 +16705,7 @@
     },
     {
      "d": "10.1007/s10499-026-02758-x",
-     "s": 0.39,
+     "s": 0.389,
      "t": []
     }
    ]
@@ -16191,7 +16810,7 @@
     },
     {
      "d": "10.9734/ajfar/2026/v28i111187",
-     "s": 0.606,
+     "s": 0.607,
      "t": [
       "非洲海域"
      ]
@@ -16305,7 +16924,7 @@
      "t": []
     },
     {
-     "d": "10.3897/aiep.56.213543",
+     "d": "10.1111/jfb.70746",
      "s": 0.525,
      "t": []
     }
@@ -16340,7 +16959,7 @@
    "rel": [
     {
      "d": "10.9734/jsrr/2026/v32i114726",
-     "s": 0.629,
+     "s": 0.628,
      "t": [
       "印度洋与南亚",
       "全球/多区域"
@@ -16362,7 +16981,7 @@
     },
     {
      "d": "10.1111/fme.70134",
-     "s": 0.582,
+     "s": 0.579,
      "t": [
       "印度洋与南亚"
      ]
@@ -16404,12 +17023,12 @@
     },
     {
      "d": "10.53730/ijhs.v10n3.16037",
-     "s": 0.434,
+     "s": 0.436,
      "t": []
     },
     {
      "d": "10.12688/f1000research.194150.1",
-     "s": 0.387,
+     "s": 0.386,
      "t": []
     }
    ]
@@ -16445,7 +17064,7 @@
    "rel": [
     {
      "d": "10.3390/aquacj6040059",
-     "s": 0.652,
+     "s": 0.654,
      "t": [
       "机器学习与AI"
      ]
@@ -16517,17 +17136,17 @@
      ]
     },
     {
+     "d": "10.1111/jfb.70746",
+     "s": 0.61,
+     "t": [
+      "北太平洋"
+     ]
+    },
+    {
      "d": "10.3390/fishes11110665",
      "s": 0.58,
      "t": [
       "鲨鱼与鳐类"
-     ]
-    },
-    {
-     "d": "10.15517/29j0jp96",
-     "s": 0.561,
-     "t": [
-      "北太平洋"
      ]
     }
    ]
@@ -16574,7 +17193,7 @@
     },
     {
      "d": "10.3389/fmars.2026.2015479",
-     "s": 0.487,
+     "s": 0.485,
      "t": [
       "渤海"
      ]
@@ -16606,17 +17225,17 @@
    "rel": [
     {
      "d": "10.51317/wrehv191",
-     "s": 0.368,
+     "s": 0.369,
      "t": []
     },
     {
      "d": "10.70963/soc.v3i1.970",
-     "s": 0.308,
+     "s": 0.309,
      "t": []
     },
     {
      "d": "10.3389/fmars.2026.1902794",
-     "s": 0.235,
+     "s": 0.237,
      "t": []
     },
     {
@@ -16670,7 +17289,7 @@
     },
     {
      "d": "10.1007/s12562-026-02054-w",
-     "s": 0.39,
+     "s": 0.382,
      "t": []
     }
    ]
@@ -16766,12 +17385,12 @@
     },
     {
      "d": "10.1111/faf.70123",
-     "s": 0.445,
+     "s": 0.446,
      "t": []
     },
     {
      "d": "10.3389/fpos.2026.1929622",
-     "s": 0.41,
+     "s": 0.406,
      "t": []
     }
    ]
@@ -16848,17 +17467,17 @@
    "rel": [
     {
      "d": "10.1186/s12915-026-02798-y",
-     "s": 0.444,
+     "s": 0.45,
      "t": []
     },
     {
      "d": "10.1007/s13353-026-01129-9",
-     "s": 0.337,
+     "s": 0.338,
      "t": []
     },
     {
      "d": "10.7759/cureus.119672",
-     "s": 0.33,
+     "s": 0.335,
      "t": []
     },
     {
@@ -16907,12 +17526,12 @@
     },
     {
      "d": "10.1007/s11160-026-10109-5",
-     "s": 0.436,
+     "s": 0.437,
      "t": []
     },
     {
      "d": "10.1111/fme.70134",
-     "s": 0.423,
+     "s": 0.422,
      "t": []
     }
    ]
@@ -17127,7 +17746,7 @@
     },
     {
      "d": "10.3354/meps15372",
-     "s": 0.552,
+     "s": 0.555,
      "t": [
       "饵料鱼类"
      ]
@@ -17242,7 +17861,7 @@
     },
     {
      "d": "10.3390/fishes11110674",
-     "s": 0.372,
+     "s": 0.374,
      "t": [
       "鲹科与军曹鱼"
      ]
@@ -17284,12 +17903,12 @@
     },
     {
      "d": "10.3390/nitrogen7040137",
-     "s": 0.416,
+     "s": 0.411,
      "t": []
     },
     {
-     "d": "10.3389/fmars.2026.2012048",
-     "s": 0.369,
+     "d": "10.3389/fmars.2026.1955301",
+     "s": 0.365,
      "t": []
     }
    ]
@@ -17325,14 +17944,14 @@
    "rel": [
     {
      "d": "10.9734/ajfar/2026/v28i111189",
-     "s": 0.63,
+     "s": 0.628,
      "t": [
       "非洲海域"
      ]
     },
     {
      "d": "10.1002/aff2.70367",
-     "s": 0.606,
+     "s": 0.607,
      "t": [
       "非洲海域"
      ]
@@ -17394,7 +18013,7 @@
     },
     {
      "d": "10.3390/su182312002",
-     "s": 0.521,
+     "s": 0.518,
      "t": []
     },
     {
@@ -17554,7 +18173,7 @@
     },
     {
      "d": "10.1002/jaa2.70061",
-     "s": 0.479,
+     "s": 0.477,
      "t": []
     }
    ]
@@ -17591,12 +18210,12 @@
     },
     {
      "d": "10.1002/aff2.70365",
-     "s": 0.477,
+     "s": 0.476,
      "t": []
     },
     {
      "d": "10.1007/s11802-026-6760-3",
-     "s": 0.466,
+     "s": 0.465,
      "t": []
     },
     {
@@ -17646,7 +18265,7 @@
     },
     {
      "d": "10.3390/ani16233718",
-     "s": 0.498,
+     "s": 0.499,
      "t": []
     }
    ]
@@ -17681,17 +18300,17 @@
     },
     {
      "d": "10.3390/diagnostics16223848",
-     "s": 0.411,
-     "t": []
-    },
-    {
-     "d": "10.1088/1402-4896/aec3dd",
-     "s": 0.353,
+     "s": 0.406,
      "t": []
     },
     {
      "d": "10.1007/s00203-026-05302-w",
-     "s": 0.348,
+     "s": 0.346,
+     "t": []
+    },
+    {
+     "d": "10.1088/1402-4896/aec3dd",
+     "s": 0.336,
      "t": []
     }
    ]
@@ -17784,7 +18403,7 @@
    "rel": [
     {
      "d": "10.9734/ajriz/2026/v9i4330",
-     "s": 0.674,
+     "s": 0.673,
      "t": [
       "鲶形目鱼类",
       "非洲海域"
@@ -17853,7 +18472,7 @@
     },
     {
      "d": "10.3390/ijms272210154",
-     "s": 0.551,
+     "s": 0.552,
      "t": [
       "贝类"
      ]
@@ -17958,14 +18577,14 @@
    "rel": [
     {
      "d": "10.3390/ijms272210154",
-     "s": 0.583,
+     "s": 0.584,
      "t": [
       "贝类"
      ]
     },
     {
      "d": "10.3389/fmars.2026.2012048",
-     "s": 0.549,
+     "s": 0.54,
      "t": [
       "全球/多区域"
      ]
@@ -18022,7 +18641,7 @@
     },
     {
      "d": "10.3389/fmars.2026.1950637",
-     "s": 0.471,
+     "s": 0.47,
      "t": []
     }
    ]
@@ -18069,14 +18688,14 @@
     },
     {
      "d": "10.1007/s43615-026-01197-3",
-     "s": 0.599,
+     "s": 0.6,
      "t": [
       "东南亚与西太"
      ]
     },
     {
      "d": "10.9734/ajfar/2026/v28i111188",
-     "s": 0.588,
+     "s": 0.591,
      "t": [
       "东南亚与西太"
      ]
@@ -18127,14 +18746,14 @@
     },
     {
      "d": "10.56557/upjoz/2026/v47i215953",
-     "s": 0.579,
+     "s": 0.578,
      "t": [
       "淡水与湖泊河流"
      ]
     },
     {
      "d": "10.54254/2753-8818/2026.38927",
-     "s": 0.548,
+     "s": 0.545,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -18237,12 +18856,12 @@
     },
     {
      "d": "10.1111/jfd.70325",
-     "s": 0.432,
+     "s": 0.43,
      "t": []
     },
     {
      "d": "10.54254/2753-8818/2026.38927",
-     "s": 0.406,
+     "s": 0.407,
      "t": [
       "淡水与湖泊河流"
      ]
@@ -18298,7 +18917,7 @@
     },
     {
      "d": "10.22495/cbsrv7i4art3",
-     "s": 0.51,
+     "s": 0.509,
      "t": [
       "东南亚与西太"
      ]
@@ -18340,7 +18959,7 @@
     },
     {
      "d": "10.1111/jfb.70741",
-     "s": 0.513,
+     "s": 0.514,
      "t": [
       "其他淡水鱼"
      ]
@@ -18452,8 +19071,8 @@
      ]
     },
     {
-     "d": "10.56201/ijaes.vol.12.no10.2026.pg173.190",
-     "s": 0.561,
+     "d": "10.9734/ajfar/2026/v28i111189",
+     "s": 0.56,
      "t": [
       "非洲海域"
      ]
@@ -18494,6 +19113,13 @@
      ]
     },
     {
+     "d": "10.36359/scivp.2026-27-2.36",
+     "s": 0.547,
+     "t": [
+      "监测与采样"
+     ]
+    },
+    {
      "d": "10.3390/foods15234227",
      "s": 0.525,
      "t": []
@@ -18501,11 +19127,6 @@
     {
      "d": "10.1038/s41598-026-79729-y",
      "s": 0.525,
-     "t": []
-    },
-    {
-     "d": "10.1177/02611929261507293",
-     "s": 0.5,
      "t": []
     }
    ]
@@ -18548,7 +19169,7 @@
     },
     {
      "d": "10.1139/cjfas-2026-0083",
-     "s": 0.501,
+     "s": 0.502,
      "t": [
       "鲆鲽类"
      ]
@@ -18584,6 +19205,11 @@
    "off_topic": false,
    "rel": [
     {
+     "d": "10.1021/acsomega.6c12717",
+     "s": 0.45,
+     "t": []
+    },
+    {
      "d": "10.65770/unbx5666",
      "s": 0.45,
      "t": []
@@ -18596,11 +19222,6 @@
     {
      "d": "10.1007/s44338-026-00271-2",
      "s": 0.341,
-     "t": []
-    },
-    {
-     "d": "10.1038/s44183-026-00254-6",
-     "s": 0.302,
      "t": []
     }
    ]
@@ -18633,6 +19254,11 @@
    "off_topic": false,
    "rel": [
     {
+     "d": "10.29303/jfh.v6i4.12251",
+     "s": 0.525,
+     "t": []
+    },
+    {
      "d": "10.1111/raq.70232",
      "s": 0.525,
      "t": []
@@ -18645,11 +19271,6 @@
     {
      "d": "10.1111/raq.70228",
      "s": 0.525,
-     "t": []
-    },
-    {
-     "d": "10.3389/fmars.2026.1984103",
-     "s": 0.5,
      "t": []
     }
    ]
@@ -18786,17 +19407,17 @@
      "t": []
     },
     {
+     "d": "10.1111/jfb.70748",
+     "s": 0.5,
+     "t": []
+    },
+    {
      "d": "10.3390/ani16223589",
      "s": 0.5,
      "t": []
     },
     {
      "d": "10.1111/jfb.70718",
-     "s": 0.5,
-     "t": []
-    },
-    {
-     "d": "10.9734/ajfar/2026/v28i111187",
      "s": 0.5,
      "t": []
     }
@@ -18836,7 +19457,7 @@
     },
     {
      "d": "10.3390/microplastics5040238",
-     "s": 0.443,
+     "s": 0.445,
      "t": []
     },
     {
@@ -18848,7 +19469,7 @@
     },
     {
      "d": "10.65770/unbx5666",
-     "s": 0.387,
+     "s": 0.39,
      "t": []
     }
    ]
@@ -18883,15 +19504,22 @@
    "rel": [
     {
      "d": "10.2478/contagri-2026-0019",
-     "s": 0.674,
+     "s": 0.673,
      "t": [
       "鲶形目鱼类",
       "非洲海域"
      ]
     },
     {
+     "d": "10.29303/jfh.v6i4.12251",
+     "s": 0.63,
+     "t": [
+      "鲶形目鱼类"
+     ]
+    },
+    {
      "d": "10.3390/fishes11110681",
-     "s": 0.54,
+     "s": 0.536,
      "t": [
       "非洲海域"
      ]
@@ -18899,11 +19527,6 @@
     {
      "d": "10.1186/s44365-026-00051-9",
      "s": 0.525,
-     "t": []
-    },
-    {
-     "d": "10.1007/s44338-026-00271-2",
-     "s": 0.5,
      "t": []
     }
    ]
@@ -19186,7 +19809,7 @@
     },
     {
      "d": "10.1007/s10641-026-01940-7",
-     "s": 0.509,
+     "s": 0.511,
      "t": []
     }
    ]
@@ -19228,21 +19851,21 @@
     },
     {
      "d": "10.3389/fmars.2026.1977454",
-     "s": 0.561,
+     "s": 0.562,
      "t": [
       "鲈鱼与石斑鱼"
      ]
     },
     {
      "d": "10.3390/fishes11120690",
-     "s": 0.549,
+     "s": 0.551,
      "t": [
       "鲈鱼与石斑鱼"
      ]
     },
     {
      "d": "10.65339/ijsis.v1.i4.303",
-     "s": 0.51,
+     "s": 0.511,
      "t": [
       "东南亚与西太"
      ]
@@ -19277,6 +19900,13 @@
    "off_topic": false,
    "rel": [
     {
+     "d": "10.1111/jfb.70723",
+     "s": 0.531,
+     "t": [
+      "南美海域"
+     ]
+    },
+    {
      "d": "10.3354/meps15373",
      "s": 0.5,
      "t": []
@@ -19289,11 +19919,6 @@
     {
      "d": "10.1007/s12562-026-02045-x",
      "s": 0.45,
-     "t": []
-    },
-    {
-     "d": "10.1007/s10750-026-06474-8",
-     "s": 0.426,
      "t": []
     }
    ]
@@ -19332,19 +19957,19 @@
     },
     {
      "d": "10.2989/1814232x.2026.2662912",
-     "s": 0.527,
+     "s": 0.531,
      "t": [
       "海龟与海鸟"
      ]
     },
     {
      "d": "10.1038/s41437-026-00900-2",
-     "s": 0.438,
+     "s": 0.439,
      "t": []
     },
     {
-     "d": "10.1139/cjfas-2025-0391",
-     "s": 0.435,
+     "d": "10.1080/23308249.2026.2760249",
+     "s": 0.437,
      "t": []
     }
    ]
@@ -19376,7 +20001,7 @@
    "rel": [
     {
      "d": "10.3354/meps15371",
-     "s": 0.536,
+     "s": 0.539,
      "t": []
     },
     {
@@ -19423,7 +20048,7 @@
    "rel": [
     {
      "d": "10.3390/fishes11110655",
-     "s": 0.408,
+     "s": 0.409,
      "t": [
       "贝类"
      ]
@@ -19442,7 +20067,7 @@
     },
     {
      "d": "10.25258/ijddt.16.82s.131",
-     "s": 0.342,
+     "s": 0.343,
      "t": []
     }
    ]
@@ -19488,16 +20113,14 @@
      "t": []
     },
     {
-     "d": "10.1111/jfb.70745",
+     "d": "10.1111/jfb.70725",
      "s": 0.5,
      "t": []
     },
     {
-     "d": "10.1002/aff2.70373",
-     "s": 0.444,
-     "t": [
-      "鲤科鱼类"
-     ]
+     "d": "10.1111/jfb.70745",
+     "s": 0.5,
+     "t": []
     }
    ]
   },
@@ -19536,21 +20159,21 @@
     },
     {
      "d": "10.3897/aiep.56.213543",
-     "s": 0.535,
+     "s": 0.536,
      "t": [
       "鲨鱼与鳐类"
      ]
     },
     {
      "d": "10.1007/s10641-026-01935-4",
-     "s": 0.509,
+     "s": 0.51,
      "t": [
       "鲨鱼与鳐类"
      ]
     },
     {
      "d": "10.3389/fmars.2026.1962143",
-     "s": 0.502,
+     "s": 0.503,
      "t": [
       "饵料鱼类"
      ]
