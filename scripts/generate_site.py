@@ -12,6 +12,7 @@
 """
 
 import json
+import os
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -144,6 +145,7 @@ def main():
         update_display=update_display,
         journal_total=len(journals),
         retention_days=RETENTION_DAYS,
+        embed_api=os.environ.get("EMBED_ENDPOINT", "").strip(),
         stats={
             "papers": len(papers),
             "days": len(dates),

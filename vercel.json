@@ -1,0 +1,17 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "outputDirectory": "docs",
+  "cleanUrls": true,
+  "headers": [
+    {
+      "source": "/data/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=600" }]
+    }
+  ],
+  "functions": {
+    "api/embed.js": {
+      "maxDuration": 10,
+      "memory": 256
+    }
+  }
+}

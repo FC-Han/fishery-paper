@@ -56,10 +56,22 @@ jobs:
       - name: 🏷️ 自动打标签
         run: python scripts/tag_papers.py --force
 
+      - name: 🧠 预计算论文向量
+        # 没配 EMBED_API_KEY 时脚本会直接退出，continue-on-error 保证流水线不中断
+        env:
+          EMBED_API_KEY: ${{ secrets.EMBED_API_KEY }}
+          EMBED_API_BASE: ${{ vars.EMBED_API_BASE }}
+          EMBED_MODEL: ${{ vars.EMBED_MODEL }}
+        run: python scripts/build_embeddings.py
+        continue-on-error: true
+
       - name: 🔗 计算论文关联
         run: python scripts/build_relations.py --force
 
       - name: 🎨 生成站点
+        env:
+          # 未设置时站点自动退回纯 BM25（EMBED_ENDPOINT 为空即关闭语义检索）
+          EMBED_ENDPOINT: ${{ vars.EMBED_ENDPOINT }}
         run: python scripts/generate_site.py
 
       - name: 📤 提交更新

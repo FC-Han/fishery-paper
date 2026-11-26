@@ -204,6 +204,7 @@ main{min-width:0}
   font-style:normal; font-size:.73rem; padding:.02rem .4rem; border-radius:5px; line-height:1.5;
   background:var(--amber-soft); color:var(--amber-ink); font-weight:600;
 }
+.qn.sem{background:var(--teal-soft); color:var(--teal-ink)}
 mark.hl{
   background:color-mix(in srgb, var(--amber) 20%, transparent);
   color:inherit; border-radius:3px; padding:0 .1em; font-weight:650;
@@ -570,6 +571,7 @@ mark.hl{
   "use strict";
   const DATA = JSON.parse(document.getElementById('payload').textContent);
   const PAPERS = DATA.papers;
+  const EMBED_API = "";   // 空字符串 = 未接语义检索，退回纯 BM25
   const LEX = DATA.lexicon;
   const DIMS = [
     {key:'theme',   label:'研究主题'},
@@ -592,6 +594,9 @@ mark.hl{
     qused: 0,
     qtotal: 0,
     qms: 0,
+    sem: null,       // Map(doi -> 余弦)，语义增强结果；null 表示未启用/未就绪
+    bmax: 0,
+    semAdded: 0,
     dims: {theme:new Set(), species:new Set(), region:new Set(), method:new Set()},
     journals: new Set(),
     range: 'all',
@@ -748,6 +753,108 @@ mark.hl{
     return { search };
   })();
 
+  // ---------- 语义检索（可选） ----------
+  // 文档向量是离线算好的（scripts/build_embeddings.py，int8 量化），浏览器直接拿走；
+  // 只有「查询向量」要实时算，走 Vercel 上的 /api/embed 代理，key 不进前端。
+  const EMB = {
+    api: EMBED_API,
+    ready: false, loading: null, dim: 0, mat: null, norms: null, rowOf: null, model: ''
+  };
+  const SEM_MIN = 0.34;     // 余弦低于此值视为不相关，不进候选集
+  const SEM_TOPK = 60;      // 语义独有候选最多补这么多篇
+
+  function loadEmb(){
+    if (!EMB.api || EMB.ready) return Promise.resolve(EMB.ready);
+    if (EMB.loading) return EMB.loading;
+    EMB.loading = (async () => {
+      try {
+        const meta = await fetch('data/emb.json').then(r => r.ok ? r.json() : null);
+        if (!meta || !meta.dim || !meta.count) return false;
+        const buf = await fetch('data/emb.bin').then(r => r.ok ? r.arrayBuffer() : null);
+        if (!buf || buf.byteLength < meta.dim * meta.count) return false;
+        const dim = meta.dim, n = meta.count;
+        const mat = new Int8Array(buf, 0, dim * n);
+        const norms = new Float32Array(n);
+        for (let i = 0; i < n; i++){
+          let s = 0;
+          for (let k = 0, off = i * dim; k < dim; k++){ const x = mat[off + k] / 127; s += x * x; }
+          norms[i] = Math.sqrt(s) || 1;
+        }
+        const rowOf = {};
+        meta.items.forEach((it, i) => { rowOf[it.doi] = i; });
+        Object.assign(EMB, { ready: true, dim, mat, norms, rowOf, model: meta.model });
+        return true;
+      } catch (_) { return false; }
+    })();
+    return EMB.loading;
+  }
+
+  async function semanticScores(text){
+    const r = await fetch(EMB.api, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ text })
+    });
+    if (!r.ok) throw new Error('embed ' + r.status);
+    const j = await r.json();
+    // 代理返回 {v:[...]}；直连服务商时是 {data:[{embedding:[...]}]}，两种都认
+    const q = j && (j.v || (j.data && j.data[0] && j.data[0].embedding));
+    if (!Array.isArray(q) || q.length !== EMB.dim) throw new Error('dim mismatch');
+    let qn = 0;
+    for (let i = 0; i < q.length; i++) qn += q[i] * q[i];
+    qn = Math.sqrt(qn) || 1;
+    const out = new Map();
+    const { dim, mat, norms, rowOf } = EMB;
+    for (let i = 0; i < PAPERS.length; i++){
+      const row = rowOf[PAPERS[i].doi];
+      if (row === undefined) continue;
+      let s = 0;
+      for (let k = 0, off = row * dim; k < dim; k++) s += mat[off + k] * q[k];
+      out.set(PAPERS[i].doi, (s / 127) / norms[row] / qn);
+    }
+    return out;
+  }
+
+  let semSeq = 0;
+  function enrichSemantic(q){
+    const my = ++semSeq;
+    const go = EMB.ready ? Promise.resolve(true) : loadEmb();
+    go.then(ok => { if (ok && my === semSeq && state.q === q && !state.sem) doSemantic(q, my); });
+  }
+  function doSemantic(q, my){
+    semanticScores(q).then(cos => {
+      if (my !== semSeq || state.q !== q) return;      // 用户已经改了关键词
+      state.sem = cos;
+      // 语义独有的候选补进结果集（BM25 一个都没命中时也能有语义召回）
+      let added = 0;
+      const cands = Array.from(cos.entries()).filter(([d]) => !state.hits.has(d))
+        .sort((a, b) => b[1] - a[1]);
+      for (const [doi, c] of cands){
+        if (added >= SEM_TOPK || c < SEM_MIN) break;
+        state.hits.set(doi, 0);
+        added++;
+      }
+      state.semAdded = added;
+      if (state.sort === 'date' && state.hits.size){   // BM25 没命中、靠语义捞回来的情况
+        state.sort = 'rel';
+        const ss = $('#sortSel'); if (ss) ss.value = 'rel';
+      }
+      renderSide();
+      renderList();
+    }).catch(() => { state.sem = null; });
+  }
+
+  function relScore(p){
+    const b = state.hits.get(p.doi) || 0;
+    const bn = state.bmax ? b / state.bmax : 0;
+    let sn = 0;
+    if (state.sem){
+      const c = state.sem.get(p.doi);
+      if (c !== undefined) sn = Math.max(0, Math.min(1, (c - 0.25) / 0.6));
+    }
+    return 0.55 * bn + 0.45 * sn;
+  }
+
   // 高亮用的词面（英文按词、中文按段；长中文段补 bigram 兜底）
   function queryTerms(raw){
     const out = [];
@@ -824,6 +931,7 @@ mark.hl{
   function setQuery(raw){
     const v = String(raw == null ? '' : raw).trim();
     state.q = v;
+    state.sem = null; state.semAdded = 0; state.bmax = 0;
     if (!v){
       state.hits = null; state.hl = null; state.qterms = [];
       state.qwide = false; state.qused = 0; state.qtotal = 0; state.qms = 0;
@@ -841,6 +949,8 @@ mark.hl{
     state.qms = r ? r.ms : 0;
     state.qterms = displayTerms(v);
     state.hl = queryTerms(v);
+    state.hits.forEach(s => { if (s > state.bmax) state.bmax = s; });
+    if (v.length >= 2) enrichSemantic(v);
     if (state.sort === 'date' && state.hits.size){
       state.sort = 'rel';
       const ss = $('#sortSel'); if (ss) ss.value = 'rel';
@@ -902,8 +1012,7 @@ mark.hl{
   function sortPapers(arr){
     const a = arr.slice();
     if (state.sort === 'rel' && state.hits){
-      a.sort((x,y) => (state.hits.get(y.doi) || 0) - (state.hits.get(x.doi) || 0)
-                    || (y.date>x.date?1:-1));
+      a.sort((x,y) => relScore(y) - relScore(x) || (y.date>x.date?1:-1));
     }
     else if (state.sort === 'journal') a.sort((x,y) => x.journal.localeCompare(y.journal) || (y.date>x.date?1:-1));
     else if (state.sort === 'hi') a.sort((x,y) => (y.high_impact?1:0)-(x.high_impact?1:0) || (y.date>x.date?1:-1));
@@ -979,6 +1088,9 @@ mark.hl{
       let line = `找到 <b>${total}</b> 篇<span class="qk">${state.qterms.map(t => `<i>${esc(t)}</i>`).join('')}</span>`;
       if (state.qwide) line += `<em class="qn">已放宽为部分关键词</em>`;
       else if (state.sort === 'rel') line += `<span style="color:var(--ink-4);font-size:.79rem">按相关度排序</span>`;
+      if (state.sem){
+        line += `<em class="qn sem" title="BM25 与向量余弦混合排序${state.semAdded ? `，语义补充 ${state.semAdded} 篇` : ''}">语义增强</em>`;
+      }
       $('#resultCount').innerHTML = line;
       $('#resultCount').title = `BM25 · ${state.hits.size} 篇命中 · ${state.qused}/${state.qtotal} 个词项参与匹配 · ${state.qms.toFixed(1)} ms`;
     } else {

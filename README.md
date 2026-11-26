@@ -20,6 +20,7 @@
 | 📅 按日展示 | 不再做"每周综述"，直接按日期倒序展示每日文献，每天的热点主题一眼可见 |
 | 🔗 论文关联 | 每篇论文自动关联 4 篇最相关文献（文本相似 + 标签重叠），点开可看关系图并逐级探索 |
 | 🔎 站内检索 | BM25 全文检索（标题/摘要/标签/期刊/作者），按相关度排序 + 关键词高亮，支持 `?q=` 分享链接 |
+| 🧠 语义检索 | 可选：向量余弦 + BM25 混合排序，换个说法也能搜到；未配置时自动退回纯 BM25 |
 | ⚡ 单文件站点 | 数据内联进 `index.html`，双击即可打开；英文摘要按需懒加载 |
 | 🌗 体验 | 暗色模式、移动端抽屉式筛选、`/` 快捷搜索、`Esc` 关闭 |
 
@@ -80,6 +81,18 @@ Crossref 对 Springer / Wiley / Elsevier 等不少出版商**不返回 abstract*
 
 页面上按 `/` 可快速聚焦搜索框。
 
+## 🧠 语义检索（可选）
+
+BM25 只认字面，换个说法就搜不到了（"鱼的耳石" vs `otolith`）。语义检索补这一块：
+
+- **文档向量离线算**：`scripts/build_embeddings.py` 把标题 + 标签 + 摘要前段喂给 embedding 模型，
+  L2 归一化后 int8 量化存成 `docs/data/emb.bin`，393 篇约 400 KB，浏览器打开搜索时再取
+- **查询向量实时算**：走 Vercel 上的 `api/embed.js` 代理，key 留在服务端，前端只认代理地址
+- **混合排序**：`0.55 × BM25 归一 + 0.45 × 余弦`；BM25 一篇都没命中时，余弦 ≥ 0.34 的候选会补进来
+- **优雅降级**：端点没配、请求失败、向量缺失，一律静默退回纯 BM25，不会白屏
+
+先展示 BM25 结果，拿到向量后原地重排，所以感知延迟几乎为零。部署步骤见 **[VERCEL.md](VERCEL.md)**。
+
 ## 🏷 标签体系
 
 四个维度互不干扰，一篇论文每维最多保留 2–4 个标签：
@@ -118,8 +131,9 @@ python scripts/fetch_papers.py     # 1. 抓论文（无需 key）
 python scripts/fetch_abstracts.py  # 2. 回捞 Crossref 没给的摘要（无需 key）
 python scripts/summarize.py        # 3. 中文摘要（需 key，增量）
 python scripts/tag_papers.py       # 4. 自动打标（无需 key）
-python scripts/build_relations.py  # 5. 计算论文关联（无需 key）
-python scripts/generate_site.py    # 6. 生成站点
+python scripts/build_embeddings.py # 5. 预计算向量（可选，需 embedding key，见 VERCEL.md）
+python scripts/build_relations.py  # 6. 计算论文关联（无需 key）
+python scripts/generate_site.py    # 7. 生成站点
 
 open docs/index.html               # 或：cd docs && python -m http.server 8000
 ```
