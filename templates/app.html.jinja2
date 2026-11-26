@@ -758,7 +758,8 @@ mark.hl{
   // 只有「查询向量」要实时算，走 Vercel 上的 /api/embed 代理，key 不进前端。
   const EMB = {
     api: EMBED_API,
-    ready: false, loading: null, dim: 0, mat: null, norms: null, rowOf: null, model: ''
+    ready: false, loading: null, dim: 0, mat: null, norms: null, rowOf: null, model: '',
+    failAt: 0                 // 上次失败时间戳，用于熔断冷却
   };
   const SEM_MIN = 0.34;     // 余弦低于此值视为不相关，不进候选集
   const SEM_TOPK = 60;      // 语义独有候选最多补这么多篇
@@ -789,13 +790,27 @@ mark.hl{
     return EMB.loading;
   }
 
+  // 端点不可达时（大陆直连 vercel.app 几乎必然如此）不能一直等：2.5s 超时 + 60s 冷却，
+  // 否则每次搜索都会挂一个僵尸请求，浏览器连接超时要拖几十秒
   async function semanticScores(text){
-    const r = await fetch(EMB.api, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ text })
-    });
-    if (!r.ok) throw new Error('embed ' + r.status);
+    if (EMB.failAt && Date.now() - EMB.failAt < 60000) throw new Error('cooling down');
+    const ctl = new AbortController();
+    const timer = setTimeout(() => ctl.abort(), 2500);
+    let r;
+    try {
+      r = await fetch(EMB.api, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text }),
+        signal: ctl.signal
+      });
+    } catch (e) {
+      EMB.failAt = Date.now();
+      throw e;
+    } finally {
+      clearTimeout(timer);
+    }
+    if (!r.ok){ EMB.failAt = Date.now(); throw new Error('embed ' + r.status); }
     const j = await r.json();
     // 代理返回 {v:[...]}；直连服务商时是 {data:[{embedding:[...]}]}，两种都认
     const q = j && (j.v || (j.data && j.data[0] && j.data[0].embedding));
