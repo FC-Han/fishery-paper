@@ -52,6 +52,9 @@ jobs:
       - name: 🏷️ 自动打标签
         run: python scripts/tag_papers.py --force
 
+      - name: 🔗 计算论文关联
+        run: python scripts/build_relations.py --force
+
       - name: 🎨 生成站点
         run: python scripts/generate_site.py
 

@@ -17,6 +17,7 @@
 | 🏷️ 四维标签 | **研究主题 / 研究鱼种 / 海域区域 / 方法手段**，69 种标签，规则引擎自动标注 |
 | 🎛️ 标签筛选 | 点任意标签即筛选，同维度取并集、跨维度取交集；标签旁显示实时命中数 |
 | 📅 按日展示 | 不再做"每周综述"，直接按日期倒序展示每日文献，每天的热点主题一眼可见 |
+| 🔗 论文关联 | 每篇论文自动关联 4 篇最相关文献（文本相似 + 标签重叠），点开可看关系图并逐级探索 |
 | ⚡ 单文件站点 | 数据内联进 `index.html`，双击即可打开；英文摘要按需懒加载 |
 | 🌗 体验 | 暗色模式、移动端抽屉式筛选、`/` 快捷搜索、`Esc` 关闭 |
 
@@ -29,6 +30,21 @@ docs/
     ├── abstracts.json    ← 英文摘要，点"英文摘要"时才请求
     └── papers.json       ← 完整结构化数据，可当 API 用
 ```
+
+## 🔗 论文关联
+
+点卡片底部的「相关 N」展开推荐列表，点「关系图」进入可探索的关系网络：中心是当前论文，
+四周是关联最紧的文献，点任意节点即以它为中心继续走，支持返回上一级。
+
+**算法**（`scripts/build_relations.py`，纯离线、零 API 成本，310 篇约 2 秒）：
+
+- 文本相似：标题（权重 ×3）+ 英文摘要前 700 字符 + 中文速览，中英文分别按 bigram / 单词切分后做 TF-IDF 余弦
+- 标签重叠：按共有的标签**个数**加分（同维度第 2 个减半），而非 Jaccard —— 共享 1 个鱼种本身就是强信号，不该被并集除小
+- 融合：`0.45 × 文本 + 0.50 × 标签 + 0.05 × 同期刊`
+- bigram TF-IDF 的绝对尺度很小（全体中位 0.012），所以文本分先按参考值 0.06 归一化再参与融合，否则会被压成噪声
+
+结果写回 `data/papers.json` 的 `rel` 字段，生成站点时转成数组下标内联，310 篇 × 4 条约 30 KB。
+每天 CI 里全量重算（比增量更正确：新论文也要能出现在旧论文的关联里）。
 
 ## 🏷 标签体系
 
@@ -67,7 +83,8 @@ cp .env.example .env        # 填入 DEEPSEEK_API_KEY
 python scripts/fetch_papers.py     # 1. 抓论文（无需 key）
 python scripts/summarize.py        # 2. 中文摘要（需 key，增量）
 python scripts/tag_papers.py       # 3. 自动打标（无需 key）
-python scripts/generate_site.py    # 4. 生成站点
+python scripts/build_relations.py  # 4. 计算论文关联（无需 key）
+python scripts/generate_site.py    # 5. 生成站点
 
 open docs/index.html               # 或：cd docs && python -m http.server 8000
 ```
@@ -78,6 +95,7 @@ open docs/index.html               # 或：cd docs && python -m http.server 8000
 python scripts/fetch_papers.py            # 本地模式默认回看 7 天
 python scripts/summarize.py --limit 20    # 本次只处理 20 篇，控制花费
 python scripts/tag_papers.py --force      # 改词库后全量重标
+python scripts/build_relations.py --force # 改关联算法后全量重算
 ```
 
 ## 📦 部署

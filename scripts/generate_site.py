@@ -87,6 +87,7 @@ def slim(p: dict) -> dict:
         "summary_en": not usable_cn,
         "url": p.get("url") or f"https://doi.org/{p.get('doi', '')}",
         "tags": p.get("tags", {}),
+        "rel": p.get("rel") or [],
         "is_review": bool(p.get("is_review")),
         "high_impact": bool(p.get("high_impact")),
     }
@@ -118,6 +119,16 @@ def main():
         "lexicon": lexicon,
         "papers": [slim(p) for p in papers],
     }
+
+    # 关联索引化：doi → 数组下标，比内联完整 doi 省一个数量级体积
+    doi2i = {p["doi"]: i for i, p in enumerate(payload["papers"])}
+    edges = 0
+    for item in payload["papers"]:
+        rel = item.get("rel") or []
+        item["rel"] = [[doi2i[r["d"]], r["s"], "|".join(r.get("t") or [])]
+                       for r in rel if r.get("d") in doi2i]
+        edges += len(item["rel"])
+
     data_json = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
     data_json = (data_json.replace("</", "<\\/")
                           .replace("\u2028", "\\u2028")

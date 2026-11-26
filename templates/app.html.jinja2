@@ -23,6 +23,8 @@
   --shadow-lg:0 14px 40px rgba(13,31,38,.12);
   --r:14px; --r-sm:9px; --r-lg:20px;
   --hero-1:#06282b; --hero-2:#0b4247; --hero-3:#155e63;
+  --nd-bg:#ffffff; --nd-stroke:#d0e0dd; --nd-ink:#0d1f26; --nd-sub:#8fa5ac;
+  --nd-edge:#a9cfc8; --ctr-bg:#0b4247; --ctr-ink:#f2fbfa; --ctr-sub:#8fcfc6;
   --serif:ui-serif,"Iowan Old Style","Palatino Linotype",Georgia,serif;
 }
 [data-theme="dark"]{
@@ -39,6 +41,8 @@
   --shadow:0 2px 12px rgba(0,0,0,.35), 0 1px 2px rgba(0,0,0,.3);
   --shadow-lg:0 16px 44px rgba(0,0,0,.55);
   --hero-1:#04201f; --hero-2:#07373a; --hero-3:#0b4a4d;
+  --nd-bg:#16232a; --nd-stroke:#37525c; --nd-ink:#e7f0f3; --nd-sub:#9db5be;
+  --nd-edge:#41656f; --ctr-bg:#10474d; --ctr-ink:#eafaf7; --ctr-sub:#9fe0d6;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth; -webkit-text-size-adjust:100%}
@@ -294,6 +298,79 @@ main{min-width:0}
 .load-more:hover{background:var(--teal-soft); border-style:solid}
 .load-more small{color:var(--ink-3); font-weight:500; margin-left:.3rem}
 
+/* ========== 相关文献 ========== */
+.rel-panel{
+  display:none; margin-top:.7rem; padding:.72rem .82rem .5rem; border-radius:var(--r-sm);
+  background:var(--card-2); border:1px solid var(--line-2); animation:fade .22s ease;
+}
+.rel-panel.show{display:block}
+.rel-head{
+  display:flex; align-items:center; gap:.5rem; margin-bottom:.45rem;
+  font-size:.735rem; font-weight:700; color:var(--ink-3); letter-spacing:.03em;
+}
+.rel-head .sp{flex:1}
+.rel-graph-btn{
+  font-size:.715rem; font-weight:650; color:var(--teal); padding:.18rem .5rem;
+  border-radius:5px; background:var(--teal-soft); transition:.15s;
+}
+.rel-graph-btn:hover{background:color-mix(in srgb, var(--teal) 16%, var(--teal-soft))}
+.rel-list{display:flex; flex-direction:column; gap:.06rem}
+.rel-item{
+  display:flex; align-items:baseline; gap:.5rem; padding:.38rem .35rem;
+  border-radius:5px; font-size:.815rem; line-height:1.5; color:var(--ink-2);
+  cursor:pointer; transition:.14s; text-align:left; width:100%;
+}
+.rel-item:hover{background:var(--teal-soft); color:var(--teal-ink)}
+.rel-item .rt{flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.rel-item .re{
+  font-size:.675rem; padding:.04rem .34rem; border-radius:4px; white-space:nowrap;
+  background:var(--bg-tint); color:var(--ink-3); font-weight:500; flex:none;
+}
+.rel-item .rs{
+  font-size:.685rem; color:var(--ink-4); font-variant-numeric:tabular-nums;
+  min-width:2.3em; text-align:right; flex:none;
+}
+.card.target{outline:2px solid var(--teal); outline-offset:2px; border-color:transparent}
+
+/* ========== 关系图 ========== */
+.rel-modal{
+  position:fixed; inset:0; z-index:90; display:none;
+  background:rgba(8,32,34,.55); padding:1.4rem;
+  align-items:center; justify-content:center;
+}
+.rel-modal.show{display:flex; animation:fade .2s ease}
+.rel-box{
+  background:var(--card); border-radius:var(--r-lg); overflow:hidden;
+  width:min(940px,100%); height:min(620px,86vh); display:flex; flex-direction:column;
+  box-shadow:var(--shadow-lg);
+}
+.rel-box-head{
+  display:flex; align-items:center; gap:.55rem; padding:.8rem 1.05rem;
+  border-bottom:1px solid var(--line); flex:none; min-height:0;
+}
+.rel-box-head .t{
+  font-size:.9rem; font-weight:700; color:var(--ink);
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap; min-width:0; flex:1;
+}
+.rel-box-head .d{font-size:.72rem; color:var(--ink-4); flex:none; font-variant-numeric:tabular-nums}
+.rel-box-head button{
+  width:30px; height:30px; border-radius:8px; font-size:13px; flex:none;
+  color:var(--ink-2); background:var(--bg-tint); transition:.15s;
+}
+.rel-box-head button:hover{background:var(--line); color:var(--ink)}
+.rel-canvas{flex:1; min-height:0; padding:.3rem}
+.rel-canvas svg{width:100%; height:100%; display:block}
+.rel-canvas .nd{cursor:pointer}
+.rel-canvas .nbg{fill:var(--nd-bg); stroke:var(--nd-stroke); stroke-width:1}
+.rel-canvas .nbg.cd{fill:var(--ctr-bg); stroke:var(--ctr-bg)}
+.rel-canvas .nt{fill:var(--nd-ink)}
+.rel-canvas .ct{fill:var(--ctr-ink)}
+.rel-canvas .ns{fill:var(--nd-sub)}
+.rel-canvas .cs{fill:var(--ctr-sub)}
+.rel-canvas .eg{stroke:var(--nd-edge); fill:none}
+.rel-canvas .ed{fill:var(--nd-edge)}
+.rel-canvas .nd:hover .nbg{stroke:var(--teal); stroke-width:1.6}
+
 /* ========== 页脚 ========== */
 .site-foot{
   border-top:1px solid var(--line); margin-top:1rem; padding:2.2rem 1.75rem 2.8rem;
@@ -356,6 +433,11 @@ main{min-width:0}
   .select{flex:1 1 100%; order:2; padding-top:.46rem; padding-bottom:.46rem}
   .summary{-webkit-line-clamp:5}
   main{padding-bottom:4.5rem}
+  .rel-modal{padding:0}
+  .rel-box{width:100%; height:100%; border-radius:0}
+  .rel-item .re{display:none}
+  .rel-box-head{padding:.7rem .8rem}
+  .rel-box-head .t{font-size:.82rem}
 }
 </style>
 </head>
@@ -455,6 +537,18 @@ main{min-width:0}
   最后更新 {{ update_display }} <span class="sep">·</span> 数据保留 {{ retention_days }} 天
 </footer>
 
+<div class="rel-modal" id="relModal" role="dialog" aria-modal="true" aria-label="文献关系图">
+  <div class="rel-box">
+    <div class="rel-box-head">
+      <button id="relBack" title="返回上一级" style="display:none">←</button>
+      <span class="t" id="relTitle">关系图</span>
+      <span class="d" id="relDepth"></span>
+      <button id="relClose" title="关闭">✕</button>
+    </div>
+    <div class="rel-canvas" id="relCanvas"></div>
+  </div>
+</div>
+
 <script id="payload" type="application/json">{{ data_json | safe }}</script>
 <script>
 (function(){
@@ -470,6 +564,8 @@ main{min-width:0}
   ];
   const META = {};
   LEX.forEach(t => { META[t.dim + '|' + t.id] = t; });
+  const BY_DOI = {};
+  PAPERS.forEach(p => { BY_DOI[p.doi] = p; });
 
   // ---------- 状态 ----------
   const state = {
@@ -599,6 +695,22 @@ main{min-width:0}
     const sum = p.summary
       ? `<p class="summary${p.summary_en ? ' en' : ''}">${esc(p.summary)}</p>`
       : '';
+    const rels = p.rel || [];
+    const relBtn = rels.length
+      ? `<button class="foot-btn rel-btn"><span class="ar">▶</span>相关 ${rels.length}</button>` : '';
+    const relPanel = rels.length
+      ? `<div class="rel-panel">
+          <div class="rel-head">相关文献<span class="sp"></span>
+            <button class="rel-graph-btn" data-graph="${esc(p.doi)}">关系图 ↗</button></div>
+          <div class="rel-list">${rels.map(r => {
+            const q = PAPERS[r[0]];
+            if (!q) return '';
+            const edge = r[2] ? `<span class="re">${esc(r[2].replace(/\|/g, '、'))}</span>` : '';
+            return `<div class="rel-item" data-goto="${esc(q.doi)}">
+              <span class="rt" title="${esc(q.title)}">${esc(q.title)}</span>${edge}
+              <span class="rs">${Math.round(r[1] * 100)}%</span></div>`;
+          }).join('')}</div>
+        </div>` : '';
     return `<article class="card${p.high_impact?' is-hi':''}" data-doi="${esc(p.doi)}">
       <div class="card-top">
         <span class="journal" title="${esc(p.journal)}">${esc(p.journal || '未知期刊')}</span>
@@ -609,9 +721,11 @@ main{min-width:0}
       <div class="card-tags">${tags.join('')}</div>
       <div class="card-foot">
         <span class="authors" title="${esc(p.authors)}">${esc(p.authors || '—')}</span>
+        ${relBtn}
         <button class="foot-btn abs-btn"><span class="ar">▶</span>英文摘要</button>
         <a class="foot-btn" href="${esc(p.url)}" target="_blank" rel="noopener">DOI ↗</a>
       </div>
+      ${relPanel}
       <div class="abstract"><span class="abs-loading">加载中…</span></div>
     </article>`;
   }
@@ -679,6 +793,240 @@ main{min-width:0}
     updateActive();
   }
 
+  // ---------- 关系图 ----------
+  function charW(ch, size){
+    if (/[\u4e00-\u9fff\uff00-\uffef]/.test(ch)) return size;
+    if (/[A-Za-z0-9]/.test(ch)) return size * 0.56;
+    return size * 0.36;
+  }
+  function textW(s, size){ let w = 0; for (const ch of String(s||'')) w += charW(ch, size); return w; }
+
+  // 切 token：中文单字、英文单词/数字整体，避免英文在词中间断开
+  function splitTokens(s){
+    const out = [];
+    const re = /[\u4e00-\u9fff]|[A-Za-z0-9][A-Za-z0-9'’\-\.\/]*|[^\s]/g;
+    let m;
+    while ((m = re.exec(String(s || '').replace(/\s+/g, ' '))) !== null) out.push(m[0]);
+    return out;
+  }
+  function joinTok(cur, tok){
+    if (!cur) return tok;
+    const sp = /[A-Za-z0-9,\.;:\)\]]$/.test(cur) && /^[A-Za-z0-9]/.test(tok);
+    return cur + (sp ? ' ' : '') + tok;
+  }
+  function joinAll(toks){ let s = ''; for (const t of toks) s = joinTok(s, t); return s; }
+
+  function fitOne(s, maxW, size){
+    s = String(s || '').replace(/\s+/g, ' ').trim();
+    if (textW(s, size) <= maxW) return s;
+    const toks = splitTokens(s);
+    while (toks.length && textW(joinAll(toks) + '…', size) > maxW) toks.pop();
+    return joinAll(toks) + '…';
+  }
+
+  function splitLines(s, maxW, size, maxLines){
+    const toks = splitTokens(String(s || '').replace(/\s+/g, ' ').trim());
+    const lines = [];
+    let cur = '', i = 0;
+    while (i < toks.length){
+      const cand = joinTok(cur, toks[i]);
+      if (textW(cand, size) > maxW && cur){
+        lines.push(cur);
+        cur = '';
+        if (lines.length >= maxLines - 1){
+          const rest = toks.slice(i);
+          while (rest.length && textW(joinAll(rest) + '…', size) > maxW) rest.pop();
+          lines.push(joinAll(rest) + (i < toks.length ? '…' : ''));
+          return lines;
+        }
+      } else { cur = cand; i++; }
+    }
+    if (cur) lines.push(cur);
+    return lines;
+  }
+
+  const G = { W: 900, H: 600, VW: 460, VH: 800, stack: [] };
+
+  function svgText(x, y, txt, size, cls, weight, anchor){
+    return `<text x="${x}" y="${y}" text-anchor="${anchor || 'middle'}" dominant-baseline="central"
+      font-size="${size}" font-weight="${weight || 500}" class="${cls}">${esc(txt)}</text>`;
+  }
+
+  function nodeSVG(cx, cy, w, h, title, sub, center, doi, tag, maxLines){
+    const size = center ? 12.8 : 12.5;
+    const lines = splitLines(title, w - 28, size, maxLines || 2);
+    const lh = size * 1.42;
+    // 垂直分区：标签行(仅外围) / 标题块 / 期刊行
+    const blockCy = cy + (tag ? 2 : -7);
+    const startY = blockCy - (lines.length * lh) / 2 + lh / 2;
+    let txt = '';
+    if (tag) txt += svgText(cx, cy - h / 2 + 15, fitOne(tag, w - 28, 10.5), 10.5, 'ns', 500);
+    txt += lines.map((ln, k) =>
+      svgText(cx, startY + k * lh, ln, size, center ? 'ct' : 'nt', center ? 650 : 500)
+    ).join('');
+    if (sub) txt += svgText(cx, cy + h / 2 - 13, sub, 10.5, center ? 'cs' : 'ns', 400);
+    const attrs = center ? '' : ` class="nd" data-node="${esc(doi)}" style="cursor:pointer"`;
+    return `<g${attrs}>
+      <rect class="nbg${center ? ' cd' : ''}" x="${(cx - w / 2).toFixed(1)}" y="${(cy - h / 2).toFixed(1)}"
+        width="${w}" height="${h}" rx="11" stroke-width="1"/>
+      ${txt}</g>`;
+  }
+
+  const EDGE_LABEL_STYLE = 'paint-order:stroke;stroke:#ffffff;stroke-width:4px;stroke-linejoin:round';
+
+  function radialSVG(p, rels){
+    const { W, H } = G;
+    const CX = W / 2, CY = H / 2 + 8, R = 226;
+    const N = Math.max(1, rels.length);
+    const parts = [];
+
+    rels.forEach((r, k) => {
+      const ang = (-90 + k * 360 / N) * Math.PI / 180;
+      const ex = CX + R * Math.cos(ang), ey = CY + R * Math.sin(ang);
+      const dx = ex - CX, dy = ey - CY, len = Math.hypot(dx, dy) || 1;
+      const qx = (CX + ex) / 2 - (dy / len) * 34;
+      const qy = (CY + ey) / 2 + (dx / len) * 34;
+      parts.push(`<path class="eg" d="M${CX} ${CY} Q${qx.toFixed(1)} ${qy.toFixed(1)} ${ex.toFixed(1)} ${ey.toFixed(1)}"
+        stroke-width="${(0.9 + r.s * 2.2).toFixed(2)}" stroke-linecap="round"/>`);
+    });
+
+    rels.forEach((r, k) => {
+      const ang = (-90 + k * 360 / N) * Math.PI / 180;
+      const ex = CX + R * Math.cos(ang), ey = CY + R * Math.sin(ang);
+      const tag = (r.t ? r.t + ' · ' : '') + Math.round(r.s * 100) + '%';
+      parts.push(nodeSVG(ex, ey, 172, 90, r.q.title, fitOne(r.q.journal, 142, 10.5), false, r.q.doi, tag, 2));
+    });
+
+    parts.push(nodeSVG(CX, CY, 220, 102, p.title, fitOne(p.journal, 186, 10.5), true, p.doi, '', 3));
+    return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet"
+      xmlns="http://www.w3.org/2000/svg">${parts.join('')}</svg>`;
+  }
+
+  // 窄屏：竖排树状，避免径向图缩放后字号过小
+  function verticalSVG(p, rels){
+    const W = G.VW;
+    const HEAD_Y = 16, HEAD_H = 98, TRUNK_X = 50;
+    const ROW_TOP = 150, ROW_H = 122, ROW_GAP = 34;
+    const NODE_X = 74, NODE_W = W - NODE_X - 22;
+    const rows = rels.length || 1;
+    const H = ROW_TOP + rows * (ROW_H + ROW_GAP) - ROW_GAP + 26;
+    const parts = [];
+
+    const lastCY = ROW_TOP + (rows - 1) * (ROW_H + ROW_GAP) + ROW_H / 2;
+    parts.push(`<path class="eg" d="M${TRUNK_X} ${HEAD_Y + HEAD_H} L${TRUNK_X} ${lastCY}"
+      stroke-width="1.6" stroke-linecap="round"/>`);
+
+    rels.forEach((r, k) => {
+      const y = ROW_TOP + k * (ROW_H + ROW_GAP);
+      const cy = y + ROW_H / 2;
+      parts.push(`<path class="eg" d="M${TRUNK_X} ${cy} L${NODE_X} ${cy}"
+        stroke-width="${(0.9 + r.s * 2).toFixed(2)}" stroke-linecap="round"/>`);
+      parts.push(`<circle class="ed" cx="${TRUNK_X}" cy="${cy}" r="3"/>`);
+
+      // 节点内：共享标签 + 分数在最上一行，标题两行，期刊在最下
+      const size = 20.5;
+      const lines = splitLines(r.q.title, NODE_W - 34, size, 2);
+      const tagTxt = (r.t ? r.t + ' · ' : '') + Math.round(r.s * 100) + '%';
+      let inner = svgText(NODE_X + NODE_W / 2, y + 21, fitOne(tagTxt, NODE_W - 34, 13), 13, 'ns', 500);
+      const lh = size * 1.34;
+      const startY = cy - 6 - ((lines.length - 1) * lh) / 2;
+      inner += lines.map((ln, i) =>
+        svgText(NODE_X + NODE_W / 2, startY + i * lh, ln, size, 'nt', 500)).join('');
+      inner += svgText(NODE_X + NODE_W / 2, y + ROW_H - 17,
+        fitOne(r.q.journal, NODE_W - 34, 13), 13, 'ns', 400);
+
+      parts.push(`<g class="nd" data-node="${esc(r.q.doi)}" style="cursor:pointer">
+        <rect class="nbg" x="${NODE_X}" y="${y}" width="${NODE_W}" height="${ROW_H}" rx="12"
+          stroke-width="1"/>${inner}</g>`);
+    });
+
+    const hLines = splitLines(p.title, W - 72, 18, 2);
+    const hLh = 24;
+    const hBlockCy = HEAD_Y + 36;
+    const hStart = hBlockCy - ((hLines.length - 1) * hLh) / 2;
+    let headTxt = hLines.map((ln, i) => svgText(W / 2, hStart + i * hLh, ln, 18, 'ct', 650)).join('');
+    headTxt += svgText(W / 2, HEAD_Y + HEAD_H - 20, fitOne(p.journal, W - 72, 12), 12, 'cs', 400);
+    parts.push(`<g>
+      <rect class="nbg cd" x="22" y="${HEAD_Y}" width="${W - 44}" height="${HEAD_H}" rx="12"
+        stroke-width="1"/>${headTxt}</g>`);
+
+    return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMin meet"
+      xmlns="http://www.w3.org/2000/svg">${parts.join('')}</svg>`;
+  }
+
+  function drawGraph(doi){
+    const p = BY_DOI[doi];
+    if (!p) return;
+    const rels = (p.rel || []).map(r => ({ q: PAPERS[r[0]], s: r[1], t: (r[2] || '').replace(/\|/g, '、') }))
+      .filter(x => x.q && x.q.doi !== doi);
+
+    $('#relTitle').textContent = p.title;
+    $('#relTitle').title = p.title;
+    $('#relDepth').textContent = rels.length ? `${rels.length} 篇关联` : '无关联';
+    $('#relBack').style.display = G.stack.length > 1 ? '' : 'none';
+
+    const narrow = window.innerWidth < 680;
+    $('#relCanvas').innerHTML = narrow ? verticalSVG(p, rels) : radialSVG(p, rels);
+    $('#relCanvas').dataset.doi = doi;
+  }
+
+  function openGraph(doi){
+    G.stack = [doi];
+    drawGraph(doi);
+    $('#relModal').classList.add('show');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeGraph(){
+    $('#relModal').classList.remove('show');
+    document.body.style.overflow = '';
+    G.stack = [];
+  }
+
+  let resizeT = null;
+  window.addEventListener('resize', () => {
+    const c = $('#relCanvas');
+    if (!$('#relModal').classList.contains('show') || !c.dataset.doi) return;
+    clearTimeout(resizeT);
+    resizeT = setTimeout(() => drawGraph(c.dataset.doi), 180);
+  });
+
+  function findCard(doi){
+    return document.querySelector(`.card[data-doi="${CSS.escape(doi)}"]`);
+  }
+
+  // 在当前已渲染范围内查找；找不到就逐步扩大渲染条数
+  function locateCard(doi){
+    let el = findCard(doi);
+    while (!el && state.limit < PAPERS.length){
+      state.limit = Math.min(state.limit + 60, PAPERS.length);
+      renderList();
+      el = findCard(doi);
+    }
+    return el;
+  }
+
+  function gotoPaper(doi){
+    if (!BY_DOI[doi]) return;
+    let el = locateCard(doi);
+    if (!el){
+      // 目标被当前筛选条件排除：清空条件后重试
+      state.q = '';
+      const sb = $('#search'); if (sb) sb.value = '';
+      state.journals.clear();
+      DIMS.forEach(d => state.dims[d.key].clear());
+      state.range = 'all';
+      document.querySelectorAll('#rangeSeg button').forEach(b => b.classList.toggle('on', b.dataset.range === 'all'));
+      state.limit = 60;
+      renderList();
+      el = locateCard(doi);
+    }
+    if (!el) return;
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    el.classList.add('target');
+    clearTimeout(el._hl);
+    el._hl = setTimeout(() => el.classList.remove('target'), 2600);
+  }
+
   // ---------- 已选条 ----------
   function updateActive(){
     const items = [];
@@ -740,6 +1088,21 @@ main{min-width:0}
     const lm = e.target.closest('#loadMore');
     if (lm){ state.limit += 60; renderList(); return; }
 
+    // 相关文献展开
+    const rbtn = e.target.closest('.rel-btn');
+    if (rbtn){
+      const card = rbtn.closest('.card');
+      const panel = card.querySelector('.rel-panel');
+      const on = !panel.classList.contains('show');
+      panel.classList.toggle('show', on);
+      rbtn.classList.toggle('open', on);
+      return;
+    }
+    const gbtn = e.target.closest('.rel-graph-btn');
+    if (gbtn && gbtn.dataset.graph){ openGraph(gbtn.dataset.graph); return; }
+    const ritem = e.target.closest('.rel-item');
+    if (ritem && ritem.dataset.goto){ gotoPaper(ritem.dataset.goto); return; }
+
     // 摘要展开
     const btn = e.target.closest('.abs-btn');
     if (btn){
@@ -777,9 +1140,27 @@ main{min-width:0}
     t = setTimeout(() => { state.q = e.target.value.trim().toLowerCase(); refresh(); }, 160);
   });
   $('#sortSel').addEventListener('change', e => { state.sort = e.target.value; state.limit = 60; renderList(); });
+
+  // 关系图
+  $('#relClose').addEventListener('click', closeGraph);
+  $('#relBack').addEventListener('click', () => {
+    if (G.stack.length > 1){ G.stack.pop(); drawGraph(G.stack[G.stack.length - 1]); }
+  });
+  $('#relModal').addEventListener('click', e => { if (e.target.id === 'relModal') closeGraph(); });
+  $('#relCanvas').addEventListener('click', e => {
+    const g = e.target.closest('[data-node]');
+    if (!g || !g.dataset.node) return;
+    const d = g.dataset.node;
+    if (d === G.stack[G.stack.length - 1]) return;
+    G.stack.push(d);
+    drawGraph(d);
+  });
   document.addEventListener('keydown', e => {
     if (e.key === '/' && document.activeElement !== $('#search')){ e.preventDefault(); $('#search').focus(); }
-    if (e.key === 'Escape'){ closeSide(); }
+    if (e.key === 'Escape'){
+      if ($('#relModal').classList.contains('show')){ closeGraph(); return; }
+      closeSide();
+    }
   });
 
   // 移动端抽屉
