@@ -193,8 +193,21 @@ main{min-width:0}
   display:flex; align-items:center; gap:.7rem; flex-wrap:wrap;
   margin-bottom:1.15rem;
 }
-.result-count{font-size:.88rem; color:var(--ink-3)}
+.result-count{font-size:.88rem; color:var(--ink-3); display:flex; align-items:center; gap:.3rem; flex-wrap:wrap}
 .result-count b{color:var(--ink); font-weight:700; font-variant-numeric:tabular-nums}
+.qk{display:inline-flex; gap:.24rem; flex-wrap:wrap; margin-left:.15rem}
+.qk i{
+  font-style:normal; font-size:.75rem; padding:.02rem .4rem; border-radius:5px; line-height:1.5;
+  background:var(--teal-soft); color:var(--teal-ink); font-weight:600;
+}
+.qn{
+  font-style:normal; font-size:.73rem; padding:.02rem .4rem; border-radius:5px; line-height:1.5;
+  background:var(--amber-soft); color:var(--amber-ink); font-weight:600;
+}
+mark.hl{
+  background:color-mix(in srgb, var(--amber) 20%, transparent);
+  color:inherit; border-radius:3px; padding:0 .1em; font-weight:650;
+}
 .seg{display:flex; background:var(--card); border:1px solid var(--line); border-radius:10px; padding:2px; box-shadow:var(--shadow-sm)}
 .seg button{padding:.3rem .62rem; border-radius:8px; font-size:.79rem; color:var(--ink-3); font-weight:500; transition:.15s; white-space:nowrap}
 .seg button.on{background:var(--teal); color:#fff; box-shadow:var(--shadow-sm)}
@@ -485,7 +498,8 @@ main{min-width:0}
     </div>
     <div class="search-wrap">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
-      <input id="search" type="search" placeholder="搜索标题 / 摘要 / 期刊 / 作者" autocomplete="off">
+      <input id="search" type="search" placeholder="搜索标题 / 摘要 / 标签 / 期刊 / 作者" autocomplete="off"
+             title="多词用空格分隔（如：大黄鱼 养殖）；无精确结果时自动放宽匹配范围">
       <span class="kbd">/</span>
     </div>
 
@@ -516,6 +530,7 @@ main{min-width:0}
       </div>
       <select class="select" id="sortSel">
         <option value="date">最新优先</option>
+        <option value="rel">相关度优先</option>
         <option value="journal">按期刊</option>
         <option value="hi">高影响优先</option>
       </select>
@@ -570,6 +585,13 @@ main{min-width:0}
   // ---------- 状态 ----------
   const state = {
     q: '',
+    hits: null,      // Map(doi -> BM25 分数)，null 表示未检索
+    hl: null,        // 高亮词面
+    qterms: [],      // 结果条上展示的关键词
+    qwide: false,    // 是否已放宽匹配
+    qused: 0,
+    qtotal: 0,
+    qms: 0,
     dims: {theme:new Set(), species:new Set(), region:new Set(), method:new Set()},
     journals: new Set(),
     range: 'all',
@@ -590,11 +612,179 @@ main{min-width:0}
 
   // 预建检索文本
   PAPERS.forEach(p => {
-    p._text = [p.title, p.summary, p.journal, p.authors].join(' ').toLowerCase();
+    const tagText = DIMS.map(d => (p.tags[d.key] || []).map(id => {
+      const m = META[d.key + '|' + id];
+      return m ? (m.zh + ' ' + (m.en || '')) : id;
+    }).join(' ')).join(' ');
+    p._tagtext = tagText;
+    p._text = [p.title, p.summary, p.journal, p.authors, tagText].join(' ').toLowerCase();
     p._tagset = {};
     DIMS.forEach(d => { p._tagset[d.key] = new Set(p.tags[d.key] || []); });
     p._ts = parseDate(p.date).getTime();
   });
+
+  // ---------- BM25 检索 ----------
+  // 中文无词典分词：CJK 连续段切 bigram（"大黄鱼" → 大黄 / 黄鱼），英文按词
+  const STOP = new Set((
+    '的 了 和 与 及 在 对 为 是 有 中 上 下 之 其 等 或 被 从 由 以 而 就 但 也 都 很 不 这 那 ' +
+    '我们 本文 该 一个 一种 以及 通过 进行 基于 可以 ' +
+    'the a an of and or in on for to with from by at as is are was were be been being ' +
+    'this that these those we our its it their using used based study studies research new novel'
+  ).split(/\s+/));
+
+  function tokenize(s){
+    const out = [];
+    const re = /[\u3400-\u4dbf\u4e00-\u9fff]+|[a-z0-9][a-z0-9'\-]*/g;
+    const norm = String(s == null ? '' : s).toLowerCase().normalize('NFKC');
+    let m;
+    while ((m = re.exec(norm)) !== null){
+      const t = m[0];
+      if (/^[a-z0-9]/.test(t)){
+        if (t.length > 1 && !STOP.has(t)) out.push(t);
+        else if (t.length === 1 && /\d/.test(t)) out.push(t);
+      } else if (t.length === 1){
+        if (!STOP.has(t)) out.push(t);
+      } else {
+        for (let i = 0; i < t.length - 1; i++){
+          const bg = t.slice(i, i + 2);
+          if (!STOP.has(bg)) out.push(bg);
+        }
+      }
+    }
+    return out;
+  }
+
+  const BM25 = (function(){
+    const K1 = 1.35, B = 0.72;
+    const FW = { title: 3.2, tags: 2.2, journal: 1.8, summary: 1.0, authors: 0.7 };
+    const N = PAPERS.length;
+    const docs = new Array(N);
+    const post = new Map();   // term -> [docIdx, ...]
+    const idf = new Map();
+
+    for (let i = 0; i < N; i++){
+      const p = PAPERS[i];
+      const tf = new Map();
+      const add = (txt, w) => {
+        const tk = tokenize(txt);
+        for (let k = 0; k < tk.length; k++) tf.set(tk[k], (tf.get(tk[k]) || 0) + w);
+      };
+      add(p.title, FW.title);
+      add(p._tagtext, FW.tags);
+      add(p.journal, FW.journal);
+      add(p.summary, FW.summary);
+      add(p.authors, FW.authors);
+      let len = 0;
+      tf.forEach(v => { len += v; });
+      docs[i] = { len, tf };
+      tf.forEach((_, t) => {
+        let a = post.get(t);
+        if (!a) post.set(t, a = []);
+        a.push(i);
+      });
+    }
+    const avg = docs.reduce((s, d) => s + d.len, 0) / Math.max(1, N);
+    post.forEach((list, t) => {
+      const df = list.length;
+      idf.set(t, Math.log(1 + (N - df + 0.5) / (df + 0.5)));
+    });
+
+    // 未登录词回退：中文单字、词表外短词直接扫原文
+    function fallbackPosting(t){
+      const arr = [];
+      if (t.length > 3) return arr;
+      for (let i = 0; i < N; i++) if (PAPERS[i]._text.indexOf(t) >= 0) arr.push(i);
+      return arr;
+    }
+
+    // 返回 { hits: Map(doi -> score), terms, wide, used, total, ms }
+    function search(raw){
+      const t0 = performance.now();
+      const terms = Array.from(new Set(tokenize(raw)));
+      if (!terms.length) return null;
+
+      // 收集倒排；未登录词（中文单字等）回退到原文扫描
+      const items = [];
+      terms.forEach(t => {
+        // 中文单字：倒排里只有被标点切断的零散片段，必须全量扫描
+        let list = /^[\u3400-\u4dbf\u4e00-\u9fff]$/.test(t) ? fallbackPosting(t) : (post.get(t) || fallbackPosting(t));
+        if (!list.length) return;
+        const d = idf.has(t) ? idf.get(t) : Math.log(1 + (N - list.length + 0.5) / (list.length + 0.5));
+        items.push({ t, list, idf: d });
+      });
+      if (!items.length) return { hits: new Map(), terms, wide: false, used: 0, total: terms.length, ms: 0 };
+
+      // 逐级放宽：先要求全部词同时命中，空则依次丢掉最不具区分度的词
+      items.sort((a, b) => b.idf - a.idf);
+      let used = items.length, cover = null;
+      for (let k = items.length; k >= 1; k--){
+        const cnt = new Int16Array(N);
+        for (let j = 0; j < k; j++){
+          const list = items[j].list;
+          for (let x = 0; x < list.length; x++) cnt[list[x]]++;
+        }
+        let hit = 0;
+        for (let i = 0; i < N; i++) if (cnt[i] === k) hit++;
+        if (hit){ used = k; cover = cnt; break; }
+      }
+      if (!cover) return { hits: new Map(), terms, wide: false, used: 0, total: terms.length, ms: 0 };
+
+      // 打分仍用全部词项（排序质量更好），只保留满足当前放宽级别的文档
+      const sc = new Float64Array(N);
+      items.forEach(({ t, list, idf: d }) => {
+        for (let x = 0; x < list.length; x++){
+          const i = list[x];
+          const tf = docs[i].tf.has(t) ? docs[i].tf.get(t) : 1;
+          const norm = 1 - B + B * docs[i].len / avg;
+          sc[i] += d * (tf * (K1 + 1)) / (tf + K1 * norm);
+        }
+      });
+
+      const hits = new Map();
+      for (let i = 0; i < N; i++) if (cover[i] === used && sc[i] > 0) hits.set(PAPERS[i].doi, sc[i]);
+      return { hits, terms, wide: used < items.length, used, total: terms.length, ms: performance.now() - t0 };
+    }
+
+    return { search };
+  })();
+
+  // 高亮用的词面（英文按词、中文按段；长中文段补 bigram 兜底）
+  function queryTerms(raw){
+    const out = [];
+    const re = /[\u3400-\u4dbf\u4e00-\u9fff]+|[A-Za-z0-9][A-Za-z0-9'\-]*/g;
+    let m;
+    while ((m = re.exec(String(raw || ''))) !== null){
+      const t = m[0];
+      out.push(t);
+      if (/^[\u3400-\u9fff]+$/.test(t) && t.length > 3){
+        for (let i = 0; i < t.length - 1; i++) out.push(t.slice(i, i + 2));
+      }
+    }
+    const uniq = Array.from(new Set(out.filter(Boolean)));
+    uniq.sort((a, b) => b.length - a.length);
+    return uniq;
+  }
+
+  const RE_CACHE = {};
+  function hl(text){
+    const s = String(text == null ? '' : text);
+    const terms = state.hl;
+    if (!terms || !terms.length) return esc(s);
+    const key = terms.join('\u0000');
+    let re = RE_CACHE[key];
+    if (!re){
+      const pat = terms.map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|');
+      re = RE_CACHE[key] = new RegExp('(' + pat + ')', 'gi');
+    }
+    re.lastIndex = 0;
+    let out = '', last = 0, m;
+    while ((m = re.exec(s)) !== null){
+      if (!m[0].length){ re.lastIndex++; continue; }
+      out += esc(s.slice(last, m.index)) + '<mark class="hl">' + esc(m[0]) + '</mark>';
+      last = m.index + m[0].length;
+    }
+    return out + esc(s.slice(last));
+  }
 
   // ---------- 筛选 ----------
   function rangeOK(p){
@@ -613,15 +803,48 @@ main{min-width:0}
     if (skip || !state.journals.size) return true;
     return state.journals.has(p.journal);
   }
-  function qOK(p, q){
-    if (!q) return true;
-    return p._text.includes(q);
+  function qOK(p){
+    return !state.hits || state.hits.has(p.doi);
   }
   function matches(p, skipKey){
     if (p.off_topic) return false;
-    if (!rangeOK(p) || !journalOK(p, skipKey === 'journal') || !qOK(p, state.q)) return false;
+    if (!rangeOK(p) || !journalOK(p, skipKey === 'journal') || !qOK(p)) return false;
     for (const d of DIMS) if (!dimOK(p, d.key, skipKey)) return false;
     return true;
+  }
+
+  function displayTerms(raw){
+    const out = [];
+    const re = /[\u3400-\u4dbf\u4e00-\u9fff]+|[A-Za-z0-9][A-Za-z0-9'\-]*/g;
+    let m;
+    while ((m = re.exec(String(raw || ''))) !== null) out.push(m[0]);
+    return Array.from(new Set(out)).slice(0, 6);
+  }
+
+  function setQuery(raw){
+    const v = String(raw == null ? '' : raw).trim();
+    state.q = v;
+    if (!v){
+      state.hits = null; state.hl = null; state.qterms = [];
+      state.qwide = false; state.qused = 0; state.qtotal = 0; state.qms = 0;
+      if (state.sort === 'rel'){
+        state.sort = 'date';
+        const ss = $('#sortSel'); if (ss) ss.value = 'date';
+      }
+      return;
+    }
+    const r = BM25.search(v);
+    state.hits = r ? r.hits : new Map();
+    state.qwide = r ? r.wide : false;
+    state.qused = r ? r.used : 0;
+    state.qtotal = r ? r.total : 0;
+    state.qms = r ? r.ms : 0;
+    state.qterms = displayTerms(v);
+    state.hl = queryTerms(v);
+    if (state.sort === 'date' && state.hits.size){
+      state.sort = 'rel';
+      const ss = $('#sortSel'); if (ss) ss.value = 'rel';
+    }
   }
 
   // ---------- 侧栏渲染 ----------
@@ -678,7 +901,11 @@ main{min-width:0}
   // ---------- 列表渲染 ----------
   function sortPapers(arr){
     const a = arr.slice();
-    if (state.sort === 'journal') a.sort((x,y) => x.journal.localeCompare(y.journal) || (y.date>x.date?1:-1));
+    if (state.sort === 'rel' && state.hits){
+      a.sort((x,y) => (state.hits.get(y.doi) || 0) - (state.hits.get(x.doi) || 0)
+                    || (y.date>x.date?1:-1));
+    }
+    else if (state.sort === 'journal') a.sort((x,y) => x.journal.localeCompare(y.journal) || (y.date>x.date?1:-1));
     else if (state.sort === 'hi') a.sort((x,y) => (y.high_impact?1:0)-(x.high_impact?1:0) || (y.date>x.date?1:-1));
     else a.sort((x,y) => (y.date>x.date?1:-1) || x.journal.localeCompare(y.journal));
     return a;
@@ -693,7 +920,7 @@ main{min-width:0}
     const hi = p.high_impact ? '<span class="badge hi">高影响</span>' : '';
     const rev = p.is_review ? '<span class="badge rev">综述</span>' : '';
     const sum = p.summary
-      ? `<p class="summary${p.summary_en ? ' en' : ''}">${esc(p.summary)}</p>`
+      ? `<p class="summary${p.summary_en ? ' en' : ''}">${hl(p.summary)}</p>`
       : '';
     const rels = p.rel || [];
     const relBtn = rels.length
@@ -716,7 +943,7 @@ main{min-width:0}
         <span class="journal" title="${esc(p.journal)}">${esc(p.journal || '未知期刊')}</span>
         ${hi}${rev}
       </div>
-      <h3><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a></h3>
+      <h3><a href="${esc(p.url)}" target="_blank" rel="noopener">${hl(p.title)}</a></h3>
       ${sum}
       <div class="card-tags">${tags.join('')}</div>
       <div class="card-foot">
@@ -744,16 +971,30 @@ main{min-width:0}
     const list = sortPapers(PAPERS.filter(p => matches(p, null)));
     const total = list.length;
     const shown = list.slice(0, state.limit);
+    const searching = !!(state.q && state.hits);
 
-    $('#resultCount').innerHTML = total
-      ? `找到 <b>${total}</b> 篇${state.sort==='date'?' · 按日期倒序':''}`
-      : '没有匹配的文献';
+    if (!total){
+      $('#resultCount').textContent = '没有匹配的文献';
+    } else if (searching){
+      let line = `找到 <b>${total}</b> 篇<span class="qk">${state.qterms.map(t => `<i>${esc(t)}</i>`).join('')}</span>`;
+      if (state.qwide) line += `<em class="qn">已放宽为部分关键词</em>`;
+      else if (state.sort === 'rel') line += `<span style="color:var(--ink-4);font-size:.79rem">按相关度排序</span>`;
+      $('#resultCount').innerHTML = line;
+      $('#resultCount').title = `BM25 · ${state.hits.size} 篇命中 · ${state.qused}/${state.qtotal} 个词项参与匹配 · ${state.qms.toFixed(1)} ms`;
+    } else {
+      $('#resultCount').innerHTML = `找到 <b>${total}</b> 篇${state.sort==='date'?' · 按日期倒序':''}`;
+      $('#resultCount').title = '';
+    }
 
     if (!total){
       const anySel = state.q || state.journals.size || DIMS.some(d => state.dims[d.key].size) || state.range !== 'all';
-      $('#list').innerHTML = `<div class="empty"><div class="ico">🪸</div>
-        <h2>${anySel ? '没有符合条件的论文' : '暂无文献数据'}</h2>
-        <p>${anySel ? '试试放宽筛选条件，或清空全部筛选' : '等待下一次自动抓取'}</p></div>`;
+      const qShort = state.q.length > 22 ? state.q.slice(0, 22) + '…' : state.q;
+      $('#list').innerHTML = `<div class="empty"><div class="ico">${state.q ? '🔍' : '🪸'}</div>
+        <h2>${state.q ? `没有找到「${esc(qShort)}」` : (anySel ? '没有符合条件的论文' : '暂无文献数据')}</h2>
+        <p>${state.q
+          ? '换个更短的关键词，或把长句拆成两三个词分别搜；也可以直接用左侧标签筛选'
+          : (anySel ? '试试放宽筛选条件，或清空全部筛选' : '等待下一次自动抓取')}</p>
+        ${state.q ? '<button class="clear-all" id="clearSearch" style="margin-top:1rem">清空搜索</button>' : ''}</div>`;
       updateActive();
       return;
     }
@@ -1010,7 +1251,7 @@ main{min-width:0}
     let el = locateCard(doi);
     if (!el){
       // 目标被当前筛选条件排除：清空条件后重试
-      state.q = '';
+      setQuery('');
       const sb = $('#search'); if (sb) sb.value = '';
       state.journals.clear();
       DIMS.forEach(d => state.dims[d.key].clear());
@@ -1078,8 +1319,8 @@ main{min-width:0}
       if (k === 'journal') state.journals.clear(); else state.dims[k].clear();
       refresh(); return;
     }
-    if (e.target.closest('#clearAll') || e.target.closest('#clearSide')){
-      state.q = ''; $('#search').value = '';
+    if (e.target.closest('#clearAll') || e.target.closest('#clearSide') || e.target.closest('#clearSearch')){
+      setQuery(''); $('#search').value = '';
       state.journals.clear(); DIMS.forEach(d => state.dims[d.key].clear());
       state.range = 'all';
       document.querySelectorAll('#rangeSeg button').forEach(b => b.classList.toggle('on', b.dataset.range === 'all'));
@@ -1134,12 +1375,33 @@ main{min-width:0}
     }
   });
 
-  let t = null;
-  $('#search').addEventListener('input', e => {
+  let t = null, composing = false;
+  function runQuery(v){
+    setQuery(v);
+    state.limit = 60;
+    renderSide();
+    renderList();
+  }
+  $('#search').addEventListener('compositionstart', () => { composing = true; });
+  $('#search').addEventListener('compositionend', e => {
+    composing = false;
     clearTimeout(t);
-    t = setTimeout(() => { state.q = e.target.value.trim().toLowerCase(); refresh(); }, 160);
+    t = setTimeout(() => runQuery(e.target.value), 60);
   });
-  $('#sortSel').addEventListener('change', e => { state.sort = e.target.value; state.limit = 60; renderList(); });
+  $('#search').addEventListener('input', e => {
+    if (composing) return;
+    const v = e.target.value;
+    clearTimeout(t);
+    t = setTimeout(() => runQuery(v), 130);
+  });
+  $('#sortSel').addEventListener('change', e => {
+    if (e.target.value === 'rel' && !state.hits){
+      state.sort = 'date'; e.target.value = 'date';
+    } else {
+      state.sort = e.target.value;
+    }
+    state.limit = 60; renderList();
+  });
 
   // 关系图
   $('#relClose').addEventListener('click', closeGraph);
@@ -1189,6 +1451,10 @@ main{min-width:0}
   } catch(_){}
 
   // 启动
+  try {
+    const q0 = new URLSearchParams(location.search).get('q');   // 支持 ?q=大黄鱼 直达搜索结果
+    if (q0){ $('#search').value = q0; setQuery(q0); }
+  } catch(_){}
   refresh();
 })();
 </script>
