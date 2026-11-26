@@ -18,7 +18,7 @@
 const DEFAULTS = {
   base: "https://api.siliconflow.cn/v1/embeddings",
   model: "BAAI/bge-m3",
-  allowOrigins: "https://fc-han.github.io,http://localhost:8000,http://127.0.0.1:8000",
+  allowOrigins: "https://fc-han.github.io,https://fishery-paper.vercel.app,http://localhost:8000,http://127.0.0.1:8000",
   dailyBudget: 3000,
 };
 

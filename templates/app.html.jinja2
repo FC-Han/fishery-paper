@@ -857,7 +857,11 @@ mark.hl{
       }
       renderSide();
       renderList();
-    }).catch(() => { state.sem = null; });
+    }).catch(e => {
+      state.sem = null;
+      console.warn('[语义检索未生效]', (e && e.message) || e,
+        '\n排查：1) 页面来源是否为 https://fc-han.github.io 2) /api/embed 能否 POST 通 3) Vercel 里 EMBED_API_KEY 是否已配');
+    });
   }
 
   function relScore(p){
