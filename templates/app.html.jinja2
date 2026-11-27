@@ -880,15 +880,15 @@ mark.hl{
         <button class="ask-send" id="askSend">提问</button>
       </div>
       <details class="ask-key" id="askKeyBox">
-        <summary>生成不了答案？可以在这里填一次自己的 DeepSeek Key</summary>
+        <summary>用不了？可以填自己的 DeepSeek Key</summary>
         <div class="ask-key-row">
           <input id="askKeyIn" type="password" placeholder="sk-…" autocomplete="off" spellcheck="false">
           <button id="askKeySave" type="button">保存</button>
           <button id="askKeyClear" type="button">清除</button>
         </div>
         <div class="ask-key-note" id="askKeyNote">
-          只存在这台设备的浏览器里，随提问一起发给你的 Vercel 函数、再转发给 DeepSeek。
-          不写进网页文件，别人打开这个站看不到你的 Key。换设备需要重新填。
+          备用方案：服务端已经配好 Key 时不用填这一步。填了也不会冲突——
+          它只在你自己的浏览器里，随提问发给你的 Vercel 函数再转发给 DeepSeek，不写进网页文件。
         </div>
       </details>
       <div class="ask-out" id="askOut">
@@ -2207,8 +2207,8 @@ mark.hl{
     note.className = 'ask-key-note' + (has ? ' ok' : '');
     note.textContent = has
       ? '已保存一个 Key（只在这台设备），提问时会带上。点「清除」可移除。'
-      : '只存在这台设备的浏览器里，随提问一起发给你的 Vercel 函数、再转发给 DeepSeek。' +
-        '不写进网页文件，别人打开这个站看不到你的 Key。换设备需要重新填。';
+      : '备用方案：服务端已经配好 Key 时不用填这一步。填了也只在你自己的浏览器里，' +
+        '随提问发给你的 Vercel 函数再转发给 DeepSeek，不写进网页文件。';
     const inp = $('#askKeyIn');
     if (inp) inp.value = '';
     if (inp) inp.placeholder = has ? '已保存（重新粘贴可覆盖）' : 'sk-…';

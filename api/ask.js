@@ -131,29 +131,29 @@ module.exports = async function handler(req, res) {
     return;
   }
   if (req.method === "GET") {
-    // 自检：key 只回报长度、绝不回报内容。
-    // 其余字段全部来自 Vercel 自动注入的系统变量，用来定位「这次部署属于哪个项目 / 哪个环境」，
-    // 排查「明明加了变量却读不到」时，project + env + commit 三个值是决定性的。
+    // 健康检查：默认只回是否配置好，不暴露任何部署细节。
+    // 加 ?debug=1 才返回定位用的字段（项目 ID、commit、变量名清单）——
+    // 排查「变量加了却读不到」时用，平时不该长期公开。
     const k = readKey();
-    // 用户自己加的变量（排除 Vercel / AWS / Node 注入的系统变量），只看名字不看值
-    const sysPrefix = /^(VERCEL|AWS|NODE|npm|LAMBDA|NOW_|_$|TZ|HOME|PATH|LANG|SHELL|CI|PORT|PWD|HOSTNAME)/;
-    const userEnvNames = Object.keys(process.env)
-      .filter((n) => !sysPrefix.test(n))
-      .sort();
-    res.status(200).json({
+    const out = {
       ok: true,
       model: process.env.DEEPSEEK_MODEL || DEFAULTS.model,
-      key: k ? `set(${k.length} chars)` : "MISSING",
-      hint: k ? "" : "这台部署没读到 DEEPSEEK_API_KEY：加完变量要 Redeploy",
-      // deploymentUrl 里含着项目名，格式 <project>-<hash>-<team>.vercel.app
-      project: process.env.VERCEL_PROJECT_ID || null,
-      deploymentUrl: process.env.VERCEL_URL || null,
-      env: process.env.VERCEL_ENV || null,
-      branch: process.env.VERCEL_GIT_COMMIT_REF || null,
-      commit: (process.env.VERCEL_GIT_COMMIT_SHA || "").slice(0, 7) || null,
-      region: process.env.VERCEL_REGION || null,
-      userEnvNames,
-    });
+      key: k ? "set" : "MISSING",
+    };
+    if (!k) {
+      out.hint = "服务端没读到 DEEPSEEK_API_KEY；也可以在站点「问一问」面板里临时填自己的 Key";
+    }
+    if (/[?&]debug=1(&|$)/.test(req.url || "")) {
+      const sysPrefix = /^(VERCEL|AWS|NODE|npm|LAMBDA|NOW_|_$|TZ|HOME|PATH|LANG|SHELL|CI|PORT|PWD|HOSTNAME)/;
+      out.keyLength = k ? k.length : 0;
+      out.project = process.env.VERCEL_PROJECT_ID || null;
+      out.deploymentUrl = process.env.VERCEL_URL || null;
+      out.env = process.env.VERCEL_ENV || null;
+      out.branch = process.env.VERCEL_GIT_COMMIT_REF || null;
+      out.commit = (process.env.VERCEL_GIT_COMMIT_SHA || "").slice(0, 7) || null;
+      out.userEnvNames = Object.keys(process.env).filter((n) => !sysPrefix.test(n)).sort();
+    }
+    res.status(200).json(out);
     return;
   }
   if (req.method !== "POST") {
