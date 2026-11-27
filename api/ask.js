@@ -120,7 +120,14 @@ module.exports = async function handler(req, res) {
     return;
   }
   if (req.method === "GET") {
-    res.status(200).json({ ok: true, model: process.env.DEEPSEEK_MODEL || DEFAULTS.model });
+    // 自检：key 只回报布尔值，不泄露内容；env 表示这次部署有没有读到变量
+    const k = (process.env.DEEPSEEK_API_KEY || "").trim();
+    res.status(200).json({
+      ok: true,
+      model: process.env.DEEPSEEK_MODEL || DEFAULTS.model,
+      key: k ? `set(${k.length} chars)` : "MISSING",
+      hint: k ? "" : "这台部署没读到 DEEPSEEK_API_KEY：加完变量要 Redeploy",
+    });
     return;
   }
   if (req.method !== "POST") {
@@ -132,9 +139,13 @@ module.exports = async function handler(req, res) {
     return;
   }
 
-  const key = process.env.DEEPSEEK_API_KEY;
+  // 注意：Vercel 的环境变量是部署时注入的，加完变量不重新部署，这里永远读不到
+  const key = (process.env.DEEPSEEK_API_KEY || "").trim();
   if (!key) {
-    res.status(500).json({ error: "missing_key", hint: "在 Vercel 环境变量里设置 DEEPSEEK_API_KEY" });
+    res.status(500).json({
+      error: "missing_key",
+      hint: "Vercel 项目里没有 DEEPSEEK_API_KEY，或加完之后还没重新部署（Deployments → Redeploy）",
+    });
     return;
   }
 
@@ -207,7 +218,14 @@ module.exports = async function handler(req, res) {
     });
     if (!r.ok) {
       const detail = (await r.text()).slice(0, 300);
-      res.status(502).json({ error: "upstream_error", status: r.status, detail });
+      // 401/403 是 key 本身有问题，和「key 没注入」不是一回事，分开报
+      const authIssue = r.status === 401 || r.status === 403;
+      res.status(502).json({
+        error: authIssue ? "upstream_auth" : "upstream_error",
+        status: r.status,
+        detail,
+        hint: authIssue ? "key 无效或没权限，检查是否复制完整、有无多余空格、账户余额" : "",
+      });
       return;
     }
     const j = await r.json();

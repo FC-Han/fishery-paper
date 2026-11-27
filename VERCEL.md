@@ -147,22 +147,30 @@ Variables 标签页：
 
 ### 验证
 
-浏览器打开 `https://<你的域名>/api/ask`，应返回：
+浏览器打开 `https://<你的域名>/api/ask`，返回里看 `key` 字段：
 
 ```json
-{"ok":true,"model":"deepseek-chat"}
+{"ok":true,"model":"deepseek-chat","key":"set(51 chars)","hint":""}
 ```
+
+- `key` 是 `set(...)` → 这台部署已经读到密钥，可以正常生成答案
+- `key` 是 `MISSING` → 变量没加、加到了别的项目、或**加完还没 Redeploy**
+  （Vercel 的环境变量是部署时注入的，不重新部署，旧函数永远读不到）
+- 加了变量却还是 `MISSING`：检查是不是加在了 Preview 而不是 Production，
+  或者名字里混进了空格
 
 然后回站点问一句「深水网箱养殖的病害研究进展」：正常会看到分段答案，每个论点后面挂着绿色编号，
 点编号跳到对应论文的卡片。
 
 | 现象 | 原因 |
 |---|---|
-| 只出依据、没有答案 + 标「降级」 | `DEEPSEEK_API_KEY` 没配 / 没 redeploy / 余额不足 |
+| 只出依据、没有答案 + 标「降级」，提示「还没接上大模型」 | `DEEPSEEK_API_KEY` 没配 / 没 redeploy |
+| 提示「被上游拒绝」 | key 无效、复制不完整、带了空格或余额不足 |
 | `生成服务没连上` | 跨域被拦：确认 `ALLOW_ORIGINS` 里有你的站点域名 |
 | 答案里编号引用了不存在的文献 | 模型自己编的，`api/ask.js` 的 system prompt 已约束，仍可能出现，看依据列表为准 |
 
 > 费用：一次提问约 3–6k token，DeepSeek 下 ≈ 0.005 元。函数内有 6 次/分/IP 限流和每日 300 次软预算。
+> `api/ask.js` 在 `vercel.json` 里设了 `maxDuration: 60`，避免长答案被默认 10 秒上限切断。
 
 ---
 

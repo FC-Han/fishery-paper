@@ -11,6 +11,9 @@
   "functions": {
     "api/embed.js": {
       "maxDuration": 10
+    },
+    "api/ask.js": {
+      "maxDuration": 60
     }
   }
 }

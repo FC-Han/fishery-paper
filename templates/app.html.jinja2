@@ -2269,10 +2269,38 @@ mark.hl{
 
       if (!r.ok){
         const detail = await r.text().catch(() => '');
-        let msg = `生成服务返回 ${r.status}`;
-        try { const j = JSON.parse(detail); if (j.error) msg = j.error + (j.hint ? `（${j.hint}）` : ''); } catch (e){}
+        let code = '', hint = `生成服务返回 ${r.status}`;
+        try {
+          const j = JSON.parse(detail);
+          if (j.error) code = j.error;
+          if (j.code) code = code || j.code;
+          if (j.hint) hint = j.hint;
+          else if (j.error) hint = '';
+        } catch (e){}
+
+        // 环境变量相关问题单独给可执行的说法，不然「missing_key」根本没法定位
+        let lead = '没能生成回答：';
+        let tail = '依据已经找好了，可以直接看下面这几篇。';
+        if (code === 'missing_key'){
+          lead = '还没接上大模型：Vercel 里读不到 DEEPSEEK_API_KEY。';
+          tail = '变量加完必须重新部署（Deployments → 最新一条 → ⋯ → Redeploy）才会注入，' +
+                 '只加变量不会自动生效。先看下面的依据，可以正常用。';
+        } else if (code === 'upstream_auth'){
+          lead = 'DEEPSEEK_API_KEY 被上游拒绝了：';
+          tail = '多半是 key 填错、复制时带了空格，或余额不足。';
+        } else if (code === 'upstream_error'){
+          lead = '大模型服务报错：';
+          tail = '稍等再试一次；依据不受影响。';
+        } else if (code === 'rate_limited' || code === 'daily_budget_exhausted'){
+          lead = '今天的提问额度用完了：';
+          tail = '明天再来，或先直接看依据。';
+        }
+        const known = { missing_key:1, upstream_auth:1, upstream_error:1, rate_limited:1, daily_budget_exhausted:1 };
+        const hintTxt = (hint && !known[code])
+          ? `<br><span style="font-size:.78rem;opacity:.85">${esc(hint)}</span>` : '';
         out.innerHTML = `<div class="ask-empty" style="text-align:left">
-          没能生成回答：${esc(msg)}<br><span style="font-size:.78rem;opacity:.8">依据已经找好了，可以直接看下面这几篇。</span>
+          ${esc(lead)}${hintTxt}<br>
+          <span style="font-size:.78rem;opacity:.8">${esc(tail)}</span>
         </div>` + renderAskDocs(docs);
         $('#askState').textContent = '降级';
         return;
