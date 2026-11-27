@@ -539,6 +539,28 @@ mark.hl{
 }
 .ask-send:hover{filter:brightness(1.08)}
 .ask-send:disabled{opacity:.45; cursor:default}
+.ask-key{margin-top:.6rem; font-size:.75rem; color:var(--ink-3)}
+.ask-key summary{
+  cursor:pointer; list-style:none; width:fit-content; padding:.22rem .1rem;
+  color:var(--ink-4); transition:.15s;
+}
+.ask-key summary::-webkit-details-marker{display:none}
+.ask-key summary:hover{color:var(--teal-ink)}
+.ask-key summary::before{content:"⚙ "; opacity:.7}
+.ask-key[open] summary{color:var(--teal-ink)}
+.ask-key-row{display:flex; gap:.4rem; margin-top:.35rem; align-items:center}
+.ask-key-row input{
+  flex:1; min-width:0; font:inherit; font-size:.8rem; padding:.42rem .6rem; border-radius:8px;
+  border:1.4px solid var(--line); background:var(--card-2); color:var(--ink); outline:none;
+}
+.ask-key-row input:focus{border-color:var(--teal); box-shadow:0 0 0 3px var(--teal-soft)}
+.ask-key-row button{
+  flex:none; font-size:.76rem; font-weight:600; padding:.42rem .7rem; border-radius:8px;
+  background:var(--bg-tint); color:var(--ink-2); transition:.15s;
+}
+.ask-key-row button:hover{background:var(--teal-soft); color:var(--teal-ink)}
+.ask-key-note{margin-top:.4rem; line-height:1.6; color:var(--ink-4); font-size:.72rem}
+.ask-key-note.ok{color:var(--teal-ink)}
 .ask-out{margin-top:1rem}
 .ask-ans{font-size:.895rem; line-height:1.86; color:var(--ink-2); white-space:pre-wrap; word-break:break-word}
 .ask-ans .ct{
@@ -857,6 +879,18 @@ mark.hl{
         <textarea id="askQ" rows="1" placeholder="例如：大黄鱼养殖最近的病害研究有什么进展"></textarea>
         <button class="ask-send" id="askSend">提问</button>
       </div>
+      <details class="ask-key" id="askKeyBox">
+        <summary>生成不了答案？可以在这里填一次自己的 DeepSeek Key</summary>
+        <div class="ask-key-row">
+          <input id="askKeyIn" type="password" placeholder="sk-…" autocomplete="off" spellcheck="false">
+          <button id="askKeySave" type="button">保存</button>
+          <button id="askKeyClear" type="button">清除</button>
+        </div>
+        <div class="ask-key-note" id="askKeyNote">
+          只存在这台设备的浏览器里，随提问一起发给你的 Vercel 函数、再转发给 DeepSeek。
+          不写进网页文件，别人打开这个站看不到你的 Key。换设备需要重新填。
+        </div>
+      </details>
       <div class="ask-out" id="askOut">
         <div class="ask-empty">
           它会先用站内向量找出最相关的十来篇，再让模型只根据这些文献作答，每个论点标注来源编号。<br>
@@ -2161,6 +2195,46 @@ mark.hl{
   let asking = false;
   let lastAskDocs = [];
 
+  // 用户自己的 DeepSeek Key：只存本机 localStorage，随请求发出去一次，不落任何文件
+  const ASK_KEY_LS = 'fd-dk';
+  function userKey(){
+    try { return (localStorage.getItem(ASK_KEY_LS) || '').trim(); } catch (_) { return ''; }
+  }
+  function syncKeyUI(){
+    const has = !!userKey();
+    const note = $('#askKeyNote');
+    if (!note) return;
+    note.className = 'ask-key-note' + (has ? ' ok' : '');
+    note.textContent = has
+      ? '已保存一个 Key（只在这台设备），提问时会带上。点「清除」可移除。'
+      : '只存在这台设备的浏览器里，随提问一起发给你的 Vercel 函数、再转发给 DeepSeek。' +
+        '不写进网页文件，别人打开这个站看不到你的 Key。换设备需要重新填。';
+    const inp = $('#askKeyIn');
+    if (inp) inp.value = '';
+    if (inp) inp.placeholder = has ? '已保存（重新粘贴可覆盖）' : 'sk-…';
+  }
+  function saveUserKey(){
+    const inp = $('#askKeyIn');
+    const v = (inp.value || '').trim();
+    if (!v){
+      $('#askKeyNote').textContent = '还没填内容。DeepSeek 的 Key 是 sk- 开头的一长串。';
+      return;
+    }
+    if (v.length < 20){
+      $('#askKeyNote').textContent = '这个长度看着不像 Key（DeepSeek 的通常在 30 位以上），检查是不是只复制了一半。';
+      return;
+    }
+    try { localStorage.setItem(ASK_KEY_LS, v); } catch (_) {
+      $('#askKeyNote').textContent = '浏览器不让存（可能是隐私模式），换普通窗口再试。';
+      return;
+    }
+    syncKeyUI();
+  }
+  function clearUserKey(){
+    try { localStorage.removeItem(ASK_KEY_LS); } catch (_) {}
+    syncKeyUI();
+  }
+
   async function recallDocs(q, k){
     // 优先语义召回：问题往往不含原文关键词，向量更稳
     if (EMB.api){
@@ -2259,6 +2333,7 @@ mark.hl{
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             q,
+            k: userKey(),        // 服务端有变量时会被忽略；没有才用这个
             docs: docs.map(d => ({
               t: d.p.title, s: d.p.summary, j: d.p.journal, d: d.p.date, u: d.p.url,
             })),
@@ -2282,9 +2357,13 @@ mark.hl{
         let lead = '没能生成回答：';
         let tail = '依据已经找好了，可以直接看下面这几篇。';
         if (code === 'missing_key'){
-          lead = '还没接上大模型：Vercel 里读不到 DEEPSEEK_API_KEY。';
-          tail = '三种常见原因：变量加完没重新部署、加到了另一个项目、变量名的值没填进去。' +
-                 '先看下面的依据，可以正常用。';
+          lead = '还没接上大模型：服务端没读到 Key，你也没在页面里填自己的。';
+          tail = '已经帮你打开了上方的 Key 输入框，粘贴保存后直接重新提问即可（只存本机）；' +
+                 '想一劳永逸就去 Vercel 配 DEEPSEEK_API_KEY。依据已经找好了，可以先看。';
+          const kb = $('#askKeyBox');
+          if (kb){ kb.open = true; }
+          const ki = $('#askKeyIn');
+          if (ki) ki.focus();
         } else if (code === 'upstream_auth'){
           lead = 'DEEPSEEK_API_KEY 被上游拒绝了：';
           tail = '多半是 key 填错、复制时带了空格，或余额不足。';
@@ -2615,6 +2694,17 @@ mark.hl{
     }
   });
   $('#askSend').addEventListener('click', () => runAsk(askQ.value));
+
+  // 自己的 Key：存本机、随请求带一次
+  const keyIn = $('#askKeyIn');
+  if (keyIn){
+    $('#askKeySave').addEventListener('click', saveUserKey);
+    $('#askKeyClear').addEventListener('click', clearUserKey);
+    keyIn.addEventListener('keydown', e => {
+      if (e.key === 'Enter'){ e.preventDefault(); saveUserKey(); }
+    });
+    syncKeyUI();
+  }
 
   // 订阅：Blogtrottr 预填 feed 地址
   const subMail = $('#subMail');

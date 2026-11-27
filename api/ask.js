@@ -167,15 +167,6 @@ module.exports = async function handler(req, res) {
 
   // 注意：Vercel 的环境变量是部署时注入的，加完变量不重新部署，这里永远读不到。
   // 允许多个名字，是为了绕过「变量名里混进了零宽字符 / 尾随空格」这类复制粘贴事故。
-  const key = readKey();
-  if (!key) {
-    res.status(500).json({
-      error: "missing_key",
-      hint: "Vercel 项目里没有 DEEPSEEK_API_KEY，或加完之后还没重新部署（Deployments → Redeploy）",
-    });
-    return;
-  }
-
   if (rateLimited(clientIp(req))) {
     res.status(429).json({ error: "rate_limited", retryAfter: 60 });
     return;
@@ -193,13 +184,27 @@ module.exports = async function handler(req, res) {
 
   let q = "";
   let docs = [];
+  let clientKey = "";
   try {
     const raw = await readBody(req);
     const body = JSON.parse(raw || "{}");
     q = String(body.q || "").trim();
     docs = Array.isArray(body.docs) ? body.docs.slice(0, MAX_DOCS) : [];
+    // 浏览器自带的 key：只用于本次请求，不落库、不写日志
+    const ck = String(body.k || "").trim();
+    if (ck.length >= 20 && ck.length <= 200) clientKey = ck;
   } catch (e) {
     res.status(400).json({ error: "bad_body" });
+    return;
+  }
+
+  // 服务端变量优先；没有就用浏览器临时带来的（用户在「问一问」面板里自填）
+  const key = readKey() || clientKey;
+  if (!key) {
+    res.status(500).json({
+      error: "missing_key",
+      hint: "服务端没读到 DEEPSEEK_API_KEY，你也没有在页面上填自己的 Key",
+    });
     return;
   }
   if (!q) {

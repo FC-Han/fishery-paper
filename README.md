@@ -57,10 +57,15 @@ docs/
 |---|---|
 | 召回 | 优先语义（`emb.bin` 已在前端，零额外请求）；向量不可用时退回 BM25 + 命中词数补位 |
 | 生成 | `/api/ask.js` 转发 DeepSeek，system prompt 约束「只依据给定文献、标注编号、不足则明说」 |
+| Key | 优先读服务端环境变量（支持 `DEEPSEEK_API_KEY` / `DEEPSEEK_KEY` 等四个名字）；都没有时，用页面里自填的那份 |
 | 降级 | 没配 key / 跨域被拦 / 超时，都只丢答案、不丢依据——召回结果照常列出 |
 | 成本 | 一次提问约 3–6k token，DeepSeek 定价下 ≈ 0.005 元；限流 6 次/分/IP、每日 300 次 |
 
 配置见 [VERCEL.md](VERCEL.md) 第 3.5 节，两个环境变量：`DEEPSEEK_API_KEY`（Vercel）、`ASK_ENDPOINT`（GitHub Variables）。
+
+**不想折腾环境变量也能用**：「问一问」面板里有一行 `⚙ 生成不了答案？可以在这里填一次自己的 DeepSeek Key`。
+填进去的 Key 只存在你自己浏览器的 `localStorage`，每次提问随请求体发给自己的 Vercel 函数、再转发 DeepSeek，
+不写进任何静态文件，别人打开站点看不到。换设备要重填。这条路径让「Vercel 变量配不进去」不再阻塞使用。
 
 ## 📡 订阅
 
