@@ -384,6 +384,30 @@ mark.hl{
 .rel-canvas .eg{stroke:var(--nd-edge); fill:none}
 .rel-canvas .ed{fill:var(--nd-edge)}
 .rel-canvas .nd:hover .nbg{stroke:var(--teal); stroke-width:1.6}
+/* 节点右上角「看内容」角标 */
+.rel-canvas .nvw{cursor:pointer}
+.rel-canvas .nvw .vb{fill:var(--nd-bg); stroke:var(--nd-stroke); stroke-width:1; opacity:.6; transition:.15s}
+.rel-canvas .nvw:hover .vb{fill:var(--teal); stroke:var(--teal); opacity:1}
+.rel-canvas .nvw .vi{stroke:var(--nd-sub); fill:none; transition:.15s}
+.rel-canvas .nvw:hover .vi{stroke:#fff}
+/* 底部操作条 */
+.rel-foot{
+  display:flex; align-items:center; gap:.5rem; padding:.55rem 1.05rem;
+  border-top:1px solid var(--line); flex:none; background:var(--card);
+}
+.rel-foot .rbtn{
+  display:inline-flex; align-items:center; gap:.28rem; flex:none;
+  font-size:.79rem; font-weight:600; padding:.36rem .7rem; border-radius:8px;
+  background:var(--bg-tint); color:var(--ink-2); transition:.15s; white-space:nowrap;
+  border:0; cursor:pointer; text-decoration:none;
+}
+.rel-foot .rbtn:hover{background:var(--line); color:var(--ink)}
+.rel-foot .rbtn.primary{background:var(--teal); color:#fff}
+.rel-foot .rbtn.primary:hover{filter:brightness(1.08); color:#fff}
+.rel-foot .rhint{
+  font-size:.72rem; color:var(--ink-4); margin-left:auto;
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap; min-width:0;
+}
 
 /* ========== 页脚 ========== */
 .site-foot{
@@ -436,6 +460,8 @@ mark.hl{
   .day-hot{display:none}
   .card{padding:.95rem 1rem}
   .card h3{font-size:.96rem}
+  .rel-foot .rhint{display:none}
+  .rel-foot .rbtn{flex:1; justify-content:center}
 }
 @media (max-width:620px){
   .hero h1{font-size:1.72rem}
@@ -562,6 +588,11 @@ mark.hl{
       <button id="relClose" title="关闭">✕</button>
     </div>
     <div class="rel-canvas" id="relCanvas"></div>
+    <div class="rel-foot">
+      <button class="rbtn primary" id="raCard">查看摘要</button>
+      <a class="rbtn" id="raLink" target="_blank" rel="noopener">原文 ↗</a>
+      <span class="rhint">点节点换中心，点右上角 ⤢ 直接看内容</span>
+    </div>
   </div>
 </div>
 
@@ -1239,10 +1270,17 @@ mark.hl{
     ).join('');
     if (sub) txt += svgText(cx, cy + h / 2 - 13, sub, 10.5, center ? 'cs' : 'ns', 400);
     const attrs = center ? '' : ` class="nd" data-node="${esc(doi)}" style="cursor:pointer"`;
+    // 外围节点右上角加「直接看内容」角标：省掉「先换中心再查看」这一步
+    const bx = cx + w / 2 - 15, by = cy - h / 2 + 15;
+    const corner = center ? '' : `<g class="nvw" data-view="${esc(doi)}">
+      <circle class="vb" cx="${bx.toFixed(1)}" cy="${by.toFixed(1)}" r="11"/>
+      <path class="vi" d="M-3.4 3.4 L3.4 -3.4 M-0.4 -3.4 L3.4 -3.4 L3.4 0.4"
+        transform="translate(${bx.toFixed(1)} ${by.toFixed(1)})" stroke-width="1.7"
+        stroke-linecap="round" stroke-linejoin="round"/></g>`;
     return `<g${attrs}>
       <rect class="nbg${center ? ' cd' : ''}" x="${(cx - w / 2).toFixed(1)}" y="${(cy - h / 2).toFixed(1)}"
         width="${w}" height="${h}" rx="11" stroke-width="1"/>
-      ${txt}</g>`;
+      ${txt}${corner}</g>`;
   }
 
   const EDGE_LABEL_STYLE = 'paint-order:stroke;stroke:#ffffff;stroke-width:4px;stroke-linejoin:round';
@@ -1308,9 +1346,15 @@ mark.hl{
       inner += svgText(NODE_X + NODE_W / 2, y + ROW_H - 17,
         fitOne(r.q.journal, NODE_W - 34, 13), 13, 'ns', 400);
 
+      const vx = NODE_X + NODE_W - 28, vy = y + 22;
+      const vbtn = `<g class="nvw" data-view="${esc(r.q.doi)}">
+        <circle class="vb" cx="${vx}" cy="${vy}" r="14"/>
+        <path class="vi" d="M-3.4 3.4 L3.4 -3.4 M-0.4 -3.4 L3.4 -3.4 L3.4 0.4"
+          transform="translate(${vx} ${vy}) scale(1.3)" stroke-width="1.2"
+          stroke-linecap="round" stroke-linejoin="round"/></g>`;
       parts.push(`<g class="nd" data-node="${esc(r.q.doi)}" style="cursor:pointer">
         <rect class="nbg" x="${NODE_X}" y="${y}" width="${NODE_W}" height="${ROW_H}" rx="12"
-          stroke-width="1"/>${inner}</g>`);
+          stroke-width="1"/>${inner}${vbtn}</g>`);
     });
 
     const hLines = splitLines(p.title, W - 72, 18, 2);
@@ -1337,6 +1381,8 @@ mark.hl{
     $('#relTitle').title = p.title;
     $('#relDepth').textContent = rels.length ? `${rels.length} 篇关联` : '无关联';
     $('#relBack').style.display = G.stack.length > 1 ? '' : 'none';
+    $('#raCard').dataset.doi = doi;
+    $('#raLink').href = p.url || ('https://doi.org/' + encodeURIComponent(doi));
 
     const narrow = window.innerWidth < 680;
     $('#relCanvas').innerHTML = narrow ? verticalSVG(p, rels) : radialSVG(p, rels);
@@ -1398,6 +1444,26 @@ mark.hl{
     el.classList.add('target');
     clearTimeout(el._hl);
     el._hl = setTimeout(() => el.classList.remove('target'), 2600);
+  }
+
+  // 从关系图跳到正文卡片：关闭图层 → 定位卡片 → 展开摘要
+  function viewPaper(doi){
+    if (!BY_DOI[doi]) return;
+    closeGraph();
+    // 等 body 的 overflow 恢复并完成一次布局再滚动，否则 scrollIntoView 会被锁住
+    setTimeout(() => {
+      gotoPaper(doi);
+      const el = findCard(doi);       // gotoPaper 可能重建列表，必须重新取
+      if (!el) return;
+      const sum = el.querySelector('.summary');
+      if (sum) sum.classList.add('open');
+      else {
+        // 没有中文速览的论文，直接展开英文摘要，否则跳过来只能看到标题
+        const box = el.querySelector('.abstract');
+        const ab = el.querySelector('.abs-btn');
+        if (ab && box && !box.classList.contains('show')) ab.click();
+      }
+    }, 60);
   }
 
   // ---------- 已选条 ----------
@@ -1542,6 +1608,10 @@ mark.hl{
   });
   $('#relModal').addEventListener('click', e => { if (e.target.id === 'relModal') closeGraph(); });
   $('#relCanvas').addEventListener('click', e => {
+    // 角标优先：直接看内容，不切换中心
+    const v = e.target.closest('[data-view]');
+    if (v && v.dataset.view){ viewPaper(v.dataset.view); return; }
+
     const g = e.target.closest('[data-node]');
     if (!g || !g.dataset.node) return;
     const d = g.dataset.node;
@@ -1549,6 +1619,7 @@ mark.hl{
     G.stack.push(d);
     drawGraph(d);
   });
+  $('#raCard').addEventListener('click', () => viewPaper($('#raCard').dataset.doi));
   document.addEventListener('keydown', e => {
     if (e.key === '/' && document.activeElement !== $('#search')){ e.preventDefault(); $('#search').focus(); }
     if (e.key === 'Escape'){
