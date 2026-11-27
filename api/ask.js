@@ -31,6 +31,17 @@ const DOC_CHARS = 520;      // 每篇摘要截断，控制 token
 const MAX_BODY = 32000;
 const UPSTREAM_TIMEOUT = 45000;
 
+// 允许多个变量名：复制粘贴变量名时常混进零宽字符或尾随空格，Vercel 那边校验不出来，
+// 但运行时就是读不到。多认几个写法，等于给这类事故留条后路。
+const KEY_NAMES = ["DEEPSEEK_API_KEY", "DEEPSEEK_KEY", "DEEPSEEK_APIKEY", "DS_API_KEY"];
+function readKey() {
+  for (const n of KEY_NAMES) {
+    const v = (process.env[n] || "").trim();
+    if (v) return v;
+  }
+  return "";
+}
+
 const hits = new Map();
 let day = "";
 let dayCount = 0;
@@ -123,22 +134,25 @@ module.exports = async function handler(req, res) {
     // 自检：key 只回报长度、绝不回报内容。
     // 其余字段全部来自 Vercel 自动注入的系统变量，用来定位「这次部署属于哪个项目 / 哪个环境」，
     // 排查「明明加了变量却读不到」时，project + env + commit 三个值是决定性的。
-    const k = (process.env.DEEPSEEK_API_KEY || "").trim();
-    const related = Object.keys(process.env)
-      .filter((n) => /DEEPSEEK|EMBED|SILICON|OPENAI|API_KEY/i.test(n))
+    const k = readKey();
+    // 用户自己加的变量（排除 Vercel / AWS / Node 注入的系统变量），只看名字不看值
+    const sysPrefix = /^(VERCEL|AWS|NODE|npm|LAMBDA|NOW_|_$|TZ|HOME|PATH|LANG|SHELL|CI|PORT|PWD|HOSTNAME)/;
+    const userEnvNames = Object.keys(process.env)
+      .filter((n) => !sysPrefix.test(n))
       .sort();
     res.status(200).json({
       ok: true,
       model: process.env.DEEPSEEK_MODEL || DEFAULTS.model,
       key: k ? `set(${k.length} chars)` : "MISSING",
       hint: k ? "" : "这台部署没读到 DEEPSEEK_API_KEY：加完变量要 Redeploy",
+      // deploymentUrl 里含着项目名，格式 <project>-<hash>-<team>.vercel.app
       project: process.env.VERCEL_PROJECT_ID || null,
+      deploymentUrl: process.env.VERCEL_URL || null,
       env: process.env.VERCEL_ENV || null,
       branch: process.env.VERCEL_GIT_COMMIT_REF || null,
       commit: (process.env.VERCEL_GIT_COMMIT_SHA || "").slice(0, 7) || null,
       region: process.env.VERCEL_REGION || null,
-      // 只给变量名，不给值；看这里就知道那台机器上到底有哪些相关变量
-      relatedEnvNames: related,
+      userEnvNames,
     });
     return;
   }
@@ -151,8 +165,9 @@ module.exports = async function handler(req, res) {
     return;
   }
 
-  // 注意：Vercel 的环境变量是部署时注入的，加完变量不重新部署，这里永远读不到
-  const key = (process.env.DEEPSEEK_API_KEY || "").trim();
+  // 注意：Vercel 的环境变量是部署时注入的，加完变量不重新部署，这里永远读不到。
+  // 允许多个名字，是为了绕过「变量名里混进了零宽字符 / 尾随空格」这类复制粘贴事故。
+  const key = readKey();
   if (!key) {
     res.status(500).json({
       error: "missing_key",

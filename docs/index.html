@@ -2283,8 +2283,8 @@ mark.hl{
         let tail = '依据已经找好了，可以直接看下面这几篇。';
         if (code === 'missing_key'){
           lead = '还没接上大模型：Vercel 里读不到 DEEPSEEK_API_KEY。';
-          tail = '变量加完必须重新部署（Deployments → 最新一条 → ⋯ → Redeploy）才会注入，' +
-                 '只加变量不会自动生效。先看下面的依据，可以正常用。';
+          tail = '三种常见原因：变量加完没重新部署、加到了另一个项目、变量名的值没填进去。' +
+                 '先看下面的依据，可以正常用。';
         } else if (code === 'upstream_auth'){
           lead = 'DEEPSEEK_API_KEY 被上游拒绝了：';
           tail = '多半是 key 填错、复制时带了空格，或余额不足。';
