@@ -340,10 +340,22 @@ mark.hl{
   font-size:.675rem; padding:.04rem .34rem; border-radius:4px; white-space:nowrap;
   background:var(--bg-tint); color:var(--ink-3); font-weight:500; flex:none;
 }
+.rel-item .re.weak{
+  background:transparent; border:1px dashed var(--line); color:var(--ink-4);
+}
 .rel-item .rs{
   font-size:.685rem; color:var(--ink-4); font-variant-numeric:tabular-nums;
   min-width:2.3em; text-align:right; flex:none;
 }
+/* 超过 6 条先折叠：不是数据截断，是防止卡片被撑成一屏 */
+.rel-item.rm{display:none}
+.rel-panel.more .rel-item.rm{display:flex}
+.rel-more{
+  display:block; width:100%; margin-top:.18rem; padding:.34rem; border-radius:5px;
+  font-size:.735rem; font-weight:600; color:var(--ink-3); background:transparent;
+  transition:.14s; cursor:pointer;
+}
+.rel-more:hover{background:var(--bg-tint); color:var(--teal-ink)}
 .card.target{outline:2px solid var(--teal); outline-offset:2px; border-color:transparent}
 
 /* ========== 关系图 ========== */
@@ -355,7 +367,7 @@ mark.hl{
 .rel-modal.show{display:flex; animation:fade .2s ease}
 .rel-box{
   background:var(--card); border-radius:var(--r-lg); overflow:hidden;
-  width:min(940px,100%); height:min(620px,86vh); display:flex; flex-direction:column;
+  width:min(960px,100%); height:min(680px,88vh); display:flex; flex-direction:column;
   box-shadow:var(--shadow-lg);
 }
 .rel-box-head{
@@ -372,8 +384,10 @@ mark.hl{
   color:var(--ink-2); background:var(--bg-tint); transition:.15s;
 }
 .rel-box-head button:hover{background:var(--line); color:var(--ink)}
-.rel-canvas{flex:1; min-height:0; padding:.3rem}
+.rel-canvas{flex:1; min-height:0; padding:.3rem; overflow-y:auto; overflow-x:hidden; -webkit-overflow-scrolling:touch}
 .rel-canvas svg{width:100%; height:100%; display:block}
+/* 窄屏竖排是长图，交给容器滚动，不要压进一屏 */
+.rel-canvas.narrow svg{height:auto}
 .rel-canvas .nd{cursor:pointer}
 .rel-canvas .nbg{fill:var(--nd-bg); stroke:var(--nd-stroke); stroke-width:1}
 .rel-canvas .nbg.cd{fill:var(--ctr-bg); stroke:var(--ctr-bg)}
@@ -382,6 +396,7 @@ mark.hl{
 .rel-canvas .ns{fill:var(--nd-sub)}
 .rel-canvas .cs{fill:var(--ctr-sub)}
 .rel-canvas .eg{stroke:var(--nd-edge); fill:none}
+.rel-canvas .eg.weak{stroke-dasharray:4 5; opacity:.62}
 .rel-canvas .ed{fill:var(--nd-edge)}
 .rel-canvas .nd:hover .nbg{stroke:var(--teal); stroke-width:1.6}
 /* 节点右上角「看内容」角标 */
@@ -591,7 +606,7 @@ mark.hl{
     <div class="rel-foot">
       <button class="rbtn primary" id="raCard">查看摘要</button>
       <a class="rbtn" id="raLink" target="_blank" rel="noopener">原文 ↗</a>
-      <span class="rhint">点节点换中心，点右上角 ⤢ 直接看内容</span>
+      <span class="rhint" id="relHint">点节点换中心，点右上角 ⤢ 直接看内容</span>
     </div>
   </div>
 </div>
@@ -1085,18 +1100,21 @@ mark.hl{
     const rels = p.rel || [];
     const relBtn = rels.length
       ? `<button class="foot-btn rel-btn"><span class="ar">▶</span>相关 ${rels.length}</button>` : '';
+    // 按相似度阈值取到的全部关联，只在视觉上折叠前 6 条，数据不截断
     const relPanel = rels.length
       ? `<div class="rel-panel">
           <div class="rel-head">相关文献<span class="sp"></span>
             <button class="rel-graph-btn" data-graph="${esc(p.doi)}">关系图 ↗</button></div>
-          <div class="rel-list">${rels.map(r => {
+          <div class="rel-list">${rels.map((r, i) => {
             const q = PAPERS[r[0]];
             if (!q) return '';
+            const weak = r[3] === 1;
             const edge = r[2] ? `<span class="re">${esc(r[2].replace(/\|/g, '、'))}</span>` : '';
-            return `<div class="rel-item" data-goto="${esc(q.doi)}">
-              <span class="rt" title="${esc(q.title)}">${esc(q.title)}</span>${edge}
-              <span class="rs">${Math.round(r[1] * 100)}%</span></div>`;
+            return `<div class="rel-item${i >= 6 ? ' rm' : ''}" data-goto="${esc(q.doi)}">
+              <span class="rt" title="${esc(q.title)}">${esc(q.title)}</span>${edge}${weak ? '<span class="re weak">弱关联</span>' : ''}
+              <span class="rs">${weak ? '≈' : ''}${Math.round(r[1] * 100)}%</span></div>`;
           }).join('')}</div>
+          ${rels.length > 6 ? `<button class="rel-more">展开全部 ${rels.length} 篇 ▾</button>` : ''}
         </div>` : '';
     return `<article class="card${p.high_impact?' is-hi':''}" data-doi="${esc(p.doi)}">
       <div class="card-top">
@@ -1249,26 +1267,27 @@ mark.hl{
     return lines;
   }
 
-  const G = { W: 900, H: 600, VW: 460, VH: 800, stack: [] };
+  const G = { VW: 460, VH: 800, stack: [] };
 
   function svgText(x, y, txt, size, cls, weight, anchor){
     return `<text x="${x}" y="${y}" text-anchor="${anchor || 'middle'}" dominant-baseline="central"
       font-size="${size}" font-weight="${weight || 500}" class="${cls}">${esc(txt)}</text>`;
   }
 
-  function nodeSVG(cx, cy, w, h, title, sub, center, doi, tag, maxLines){
-    const size = center ? 12.8 : 12.5;
+  function nodeSVG(cx, cy, w, h, title, sub, center, doi, tag, maxLines, fs){
+    const size = center ? 12.8 : (fs || 12.5);
+    const sm = +(10.5 * size / 12.5).toFixed(1);   // 标签/期刊行随主字号等比缩放
     const lines = splitLines(title, w - 28, size, maxLines || 2);
     const lh = size * 1.42;
     // 垂直分区：标签行(仅外围) / 标题块 / 期刊行
     const blockCy = cy + (tag ? 2 : -7);
     const startY = blockCy - (lines.length * lh) / 2 + lh / 2;
     let txt = '';
-    if (tag) txt += svgText(cx, cy - h / 2 + 15, fitOne(tag, w - 28, 10.5), 10.5, 'ns', 500);
+    if (tag) txt += svgText(cx, cy - h / 2 + 14, fitOne(tag, w - 28, sm), sm, 'ns', 500);
     txt += lines.map((ln, k) =>
       svgText(cx, startY + k * lh, ln, size, center ? 'ct' : 'nt', center ? 650 : 500)
     ).join('');
-    if (sub) txt += svgText(cx, cy + h / 2 - 13, sub, 10.5, center ? 'cs' : 'ns', 400);
+    if (sub) txt += svgText(cx, cy + h / 2 - 12, sub, sm, center ? 'cs' : 'ns', 400);
     const attrs = center ? '' : ` class="nd" data-node="${esc(doi)}" style="cursor:pointer"`;
     // 外围节点右上角加「直接看内容」角标：省掉「先换中心再查看」这一步
     const bx = cx + w / 2 - 15, by = cy - h / 2 + 15;
@@ -1285,27 +1304,60 @@ mark.hl{
 
   const EDGE_LABEL_STYLE = 'paint-order:stroke;stroke:#ffffff;stroke-width:4px;stroke-linejoin:round';
 
-  function radialSVG(p, rels){
-    const { W, H } = G;
-    const CX = W / 2, CY = H / 2 + 8, R = 226;
-    const N = Math.max(1, rels.length);
-    const parts = [];
+  // 分层布局：按相关度从内到外填充，内环 = 最相关。
+  // 不做「只要 4 篇」的数据截断，而是让画布随关联数扩到两环；
+  // 超出画布容量的在图下明示「另有 N 篇见列表」，数据本身一篇不丢。
+  const RINGS = [
+    { R: 198, w: 164, h: 86, fs: 12.2, cap: 6 },    // 内环：强关联
+    { R: 312, w: 152, h: 78, fs: 11.6, cap: 11 },   // 外环：次级关联
+  ];
+  const GRAPH_CAP = RINGS.reduce((s, r) => s + r.cap, 0);
 
-    rels.forEach((r, k) => {
-      const ang = (-90 + k * 360 / N) * Math.PI / 180;
-      const ex = CX + R * Math.cos(ang), ey = CY + R * Math.sin(ang);
-      const dx = ex - CX, dy = ey - CY, len = Math.hypot(dx, dy) || 1;
-      const qx = (CX + ex) / 2 - (dy / len) * 34;
-      const qy = (CY + ey) / 2 + (dx / len) * 34;
-      parts.push(`<path class="eg" d="M${CX} ${CY} Q${qx.toFixed(1)} ${qy.toFixed(1)} ${ex.toFixed(1)} ${ey.toFixed(1)}"
+  function radialSVG(p, rels){
+    const one = rels.length <= 7;
+    const W = one ? 900 : 880, H = one ? 600 : 720;
+    const CX = W / 2, CY = H / 2 + (one ? 8 : 0);
+
+    // 篇数少就单环（节点最大最清楚），多了再拆内外两环
+    let plan;
+    if (one){
+      plan = [{ R: 226, w: 172, h: 90, fs: 12.5, from: 0, n: rels.length }];
+    } else {
+      const inner = Math.min(RINGS[0].cap, Math.ceil(rels.length / 2));
+      plan = [
+        { ...RINGS[0], from: 0, n: inner },
+        { ...RINGS[1], from: inner, n: Math.max(0, rels.length - inner) },
+      ].filter(x => x.n > 0);
+    }
+
+    const pos = [];
+    plan.forEach((ring, ri) => {
+      // 外环整体错开半格，免得连线正好从内环节点身上碾过去
+      const start = -90 + (ri % 2 ? 180 / ring.n : 0);
+      for (let k = 0; k < ring.n; k++){
+        const ang = (start + k * 360 / ring.n) * Math.PI / 180;
+        pos.push({
+          x: CX + ring.R * Math.cos(ang),
+          y: CY + ring.R * Math.sin(ang),
+          ring, r: rels[ring.from + k],
+        });
+      }
+    });
+
+    const parts = [];
+    pos.forEach(({ x, y, ring, r }) => {
+      const dx = x - CX, dy = y - CY, len = Math.hypot(dx, dy) || 1;
+      const bow = 22 + ring.R * 0.09;          // 半径越大弧越弯，避免压住内环节点
+      const qx = (CX + x) / 2 - (dy / len) * bow;
+      const qy = (CY + y) / 2 + (dx / len) * bow;
+      parts.push(`<path class="eg${r.w ? ' weak' : ''}" d="M${CX} ${CY} Q${qx.toFixed(1)} ${qy.toFixed(1)} ${x.toFixed(1)} ${y.toFixed(1)}"
         stroke-width="${(0.9 + r.s * 2.2).toFixed(2)}" stroke-linecap="round"/>`);
     });
 
-    rels.forEach((r, k) => {
-      const ang = (-90 + k * 360 / N) * Math.PI / 180;
-      const ex = CX + R * Math.cos(ang), ey = CY + R * Math.sin(ang);
-      const tag = (r.t ? r.t + ' · ' : '') + Math.round(r.s * 100) + '%';
-      parts.push(nodeSVG(ex, ey, 172, 90, r.q.title, fitOne(r.q.journal, 142, 10.5), false, r.q.doi, tag, 2));
+    pos.forEach(({ x, y, ring, r }) => {
+      const tag = (r.t ? r.t + ' · ' : '') + (r.w ? '弱关联 ≈' : '') + Math.round(r.s * 100) + '%';
+      parts.push(nodeSVG(x, y, ring.w, ring.h, r.q.title,
+        fitOne(r.q.journal, ring.w - 30, ring.fs * 0.85), false, r.q.doi, tag, 2, ring.fs));
     });
 
     parts.push(nodeSVG(CX, CY, 220, 102, p.title, fitOne(p.journal, 186, 10.5), true, p.doi, '', 3));
@@ -1330,14 +1382,14 @@ mark.hl{
     rels.forEach((r, k) => {
       const y = ROW_TOP + k * (ROW_H + ROW_GAP);
       const cy = y + ROW_H / 2;
-      parts.push(`<path class="eg" d="M${TRUNK_X} ${cy} L${NODE_X} ${cy}"
+      parts.push(`<path class="eg${r.w ? ' weak' : ''}" d="M${TRUNK_X} ${cy} L${NODE_X} ${cy}"
         stroke-width="${(0.9 + r.s * 2).toFixed(2)}" stroke-linecap="round"/>`);
       parts.push(`<circle class="ed" cx="${TRUNK_X}" cy="${cy}" r="3"/>`);
 
       // 节点内：共享标签 + 分数在最上一行，标题两行，期刊在最下
       const size = 20.5;
       const lines = splitLines(r.q.title, NODE_W - 34, size, 2);
-      const tagTxt = (r.t ? r.t + ' · ' : '') + Math.round(r.s * 100) + '%';
+      const tagTxt = (r.t ? r.t + ' · ' : '') + (r.w ? '弱关联 ≈' : '') + Math.round(r.s * 100) + '%';
       let inner = svgText(NODE_X + NODE_W / 2, y + 21, fitOne(tagTxt, NODE_W - 34, 13), 13, 'ns', 500);
       const lh = size * 1.34;
       const startY = cy - 6 - ((lines.length - 1) * lh) / 2;
@@ -1374,19 +1426,33 @@ mark.hl{
   function drawGraph(doi){
     const p = BY_DOI[doi];
     if (!p) return;
-    const rels = (p.rel || []).map(r => ({ q: PAPERS[r[0]], s: r[1], t: (r[2] || '').replace(/\|/g, '、') }))
-      .filter(x => x.q && x.q.doi !== doi);
+    const all = (p.rel || [])
+      .map(r => ({ q: PAPERS[r[0]], s: r[1], t: (r[2] || '').replace(/\|/g, '、'), w: r[3] === 1 }))
+      .filter(x => x.q && x.q.doi !== doi)
+      .sort((a, b) => b.s - a.s);
+
+    const narrow = window.innerWidth < 680;
+    const rels = all.slice(0, narrow ? 16 : GRAPH_CAP);
+    const more = all.length - rels.length;
 
     $('#relTitle').textContent = p.title;
     $('#relTitle').title = p.title;
-    $('#relDepth').textContent = rels.length ? `${rels.length} 篇关联` : '无关联';
+    // 窄屏底部提示被隐藏，篇数说明改挂到标题栏
+    $('#relDepth').textContent = all.length
+      ? (narrow && more > 0 ? `${all.length} 篇 · 图内 ${rels.length}` : `${all.length} 篇关联`)
+      : '无关联';
     $('#relBack').style.display = G.stack.length > 1 ? '' : 'none';
     $('#raCard').dataset.doi = doi;
     $('#raLink').href = p.url || ('https://doi.org/' + encodeURIComponent(doi));
+    $('#relHint').textContent = more > 0
+      ? `图内为相关度最高的 ${rels.length} 篇，另有 ${more} 篇可在卡片列表查看`
+      : '点节点换中心，点右上角 ⤢ 直接看内容';
 
-    const narrow = window.innerWidth < 680;
-    $('#relCanvas').innerHTML = narrow ? verticalSVG(p, rels) : radialSVG(p, rels);
-    $('#relCanvas').dataset.doi = doi;
+    const canvas = $('#relCanvas');
+    canvas.classList.toggle('narrow', narrow);
+    canvas.innerHTML = narrow ? verticalSVG(p, rels) : radialSVG(p, rels);
+    canvas.dataset.doi = doi;
+    canvas.scrollTop = 0;
   }
 
   function openGraph(doi){
@@ -1539,6 +1605,15 @@ mark.hl{
     }
     const gbtn = e.target.closest('.rel-graph-btn');
     if (gbtn && gbtn.dataset.graph){ openGraph(gbtn.dataset.graph); return; }
+    const rmore = e.target.closest('.rel-more');
+    if (rmore){
+      const panel = rmore.closest('.rel-panel');
+      const on = !panel.classList.contains('more');
+      panel.classList.toggle('more', on);
+      rmore.textContent = on ? '收起 ▴'
+        : `展开全部 ${panel.querySelectorAll('.rel-item').length} 篇 ▾`;
+      return;
+    }
     const ritem = e.target.closest('.rel-item');
     if (ritem && ritem.dataset.goto){ gotoPaper(ritem.dataset.goto); return; }
 

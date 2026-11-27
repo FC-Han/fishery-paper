@@ -126,7 +126,9 @@ def main():
     edges = 0
     for item in payload["papers"]:
         rel = item.get("rel") or []
+        # 第 4 位仅在「弱关联」（无一篇过阈值时的兜底）出现
         item["rel"] = [[doi2i[r["d"]], r["s"], "|".join(r.get("t") or [])]
+                       + ([1] if r.get("w") else [])
                        for r in rel if r.get("d") in doi2i]
         edges += len(item["rel"])
 

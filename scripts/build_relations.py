@@ -2,7 +2,8 @@
 """
 论文关联计算（离线，零 API 成本）
 
-对每篇论文计算 top-K 篇最相关论文，用于「相关文献」推荐与关系图。
+对每篇论文计算「相关文献」，用于「相关文献」推荐与关系图。
+**不按固定篇数截断，改用相似度阈值**：够分就进，分数不够就不进，至少保底 1 篇。
 相关性 = 文本语义相似度（TF-IDF 余弦） + 标签重叠（分维度加权 Jaccard）
 
 用法：
@@ -11,6 +12,7 @@
 
 输出写入 data/papers.json 每篇的 rel 字段：
   [{"d": "10.xxx", "s": 0.42, "t": ["黄海", "声学遥测"]}]
+  弱关联兜底那条额外带 "w": 1
 """
 
 import json
@@ -23,8 +25,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DATA_FILE = ROOT / "data" / "papers.json"
 
-TOP_K = 4
-MIN_SCORE = 0.13          # 低于此分不推荐，避免硬凑
+# 不按「固定篇数」截断，改按相似度阈值：够分就进，分数不够就不进。
+# 阈值实测定标：0.13 时平均每篇 51 篇（共享主题 0.10 + 同刊 0.05 就过线，形同虚设）；
+# 0.25 时中位 7 篇、p90 17 篇、最多 38 篇，既留住真关联又不灌水。
+MIN_SCORE = 0.25
+MAX_REL = 60              # 纯安全阀，实测最大 38 篇，正常不会碰到
+FALLBACK_MIN = 0.08       # 「至少 1 篇」兜底时，最高分低于此值就不硬凑
 TEXT_WEIGHT = 0.45
 TAG_WEIGHT = 0.50
 JOURNAL_BONUS = 0.05
@@ -212,14 +218,19 @@ def main():
             same_j = (papers[qi].get("journal") or "").strip().lower() == \
                      (papers[pi].get("journal") or "").strip().lower()
             score = TEXT_WEIGHT * cos + TAG_WEIGHT * tsim + (JOURNAL_BONUS if same_j else 0.0)
-            if score >= MIN_SCORE:
-                scored.append((score, qi, shared_ids))
+            scored.append((score, qi, shared_ids))
 
         scored.sort(key=lambda x: -x[0])
-        top = scored[:TOP_K]
+        picked = [x for x in scored if x[0] >= MIN_SCORE][:MAX_REL]
+        weak = False
+        if not picked and scored and scored[0][0] >= FALLBACK_MIN:
+            # 最少 1 篇：没有一篇过阈值时，退让给分数最高的那篇，并打「弱关联」标记，
+            # 避免卡片上出现「零关联」的死角（孤立节点在小样本下没有信息量）
+            picked = scored[:1]
+            weak = True
 
         rel = []
-        for score, qi, shared_ids in top:
+        for score, qi, shared_ids in picked:
             # 优先用非主题标签做边标注，最多 2 个
             names = [zh_of.get((d, tid), tid)
                      for d in ("species", "region", "method")
@@ -241,6 +252,11 @@ def main():
                 "d": papers[qi]["doi"],
                 "s": round(score, 3),
                 "t": uniq[:2],
+                "w": 1,          # 仅兜底那条带 w，正常关联不写（省体积）
+            } if weak else {
+                "d": papers[qi]["doi"],
+                "s": round(score, 3),
+                "t": uniq[:2],
             })
 
         papers[pi]["rel"] = rel
@@ -249,12 +265,18 @@ def main():
     # 统计
     with_rel = sum(1 for i in idx if papers[i].get("rel"))
     no_rel = [papers[i].get("title", "")[:60] for i in idx if not papers[i].get("rel")]
+    weak_n = sum(1 for i in idx for r in (papers[i].get("rel") or []) if r.get("w"))
     avg = total_edges / max(1, with_rel)
+    degs = sorted(len(papers[i].get("rel") or []) for i in idx)
+    p = lambda q: degs[min(len(degs) - 1, int(len(degs) * q))]
 
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
 
     print(f"✅ 完成：{with_rel}/{len(idx)} 篇有关联，共 {total_edges} 条边，平均 {avg:.1f} 条/篇")
+    print(f"   档位（阈值 {MIN_SCORE}）：最少 {degs[0]} · p25 {p(.25)} · 中位 {p(.5)} · p90 {p(.9)} · 最多 {degs[-1]}")
+    if weak_n:
+        print(f"   {weak_n} 篇无过线关联，已兜底 1 篇并标为「弱关联」")
     if no_rel:
         print(f"⚠️ {len(no_rel)} 篇无关联（孤立节点，多为无摘要的短记录）")
         for t in no_rel[:5]:
