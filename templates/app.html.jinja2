@@ -6,6 +6,7 @@
 <title>渔业文献速览 · 每日 · 多维标签</title>
 <meta name="description" content="每日自动抓取渔业与水产领域最新论文，AI 中文摘要，按研究主题、鱼种、海域、方法多维检索。">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐟</text></svg>">
+<link rel="alternate" type="application/rss+xml" title="Fishery Digest 每日文献" href="{{ feed_url }}">
 <style>
 /* ========== 主题变量 ========== */
 :root{
@@ -286,8 +287,8 @@ mark.hl{
 .tg[data-dim="method"]{background:var(--amber-soft); color:var(--amber-ink)}
 .tg.dim-dead{opacity:.75}
 
-.card-foot{display:flex; align-items:center; gap:.7rem; padding-top:.55rem; border-top:1px solid var(--line-2)}
-.authors{font-size:.755rem; color:var(--ink-3); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; flex:1; min-width:0}
+.card-foot{display:flex; align-items:center; gap:.5rem; padding-top:.55rem; border-top:1px solid var(--line-2); flex-wrap:wrap}
+.authors{font-size:.755rem; color:var(--ink-3); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; flex:1 1 150px; min-width:0}
 .foot-btn{font-size:.755rem; color:var(--ink-3); font-weight:600; padding:.16rem .4rem; border-radius:5px; white-space:nowrap; transition:.15s}
 .foot-btn:hover{background:var(--bg-tint); color:var(--teal)}
 .foot-btn .ar{display:inline-block; transition:transform .2s; font-size:.6rem; margin-right:.12rem}
@@ -424,6 +425,217 @@ mark.hl{
   overflow:hidden; text-overflow:ellipsis; white-space:nowrap; min-width:0;
 }
 
+/* ========== 顶部导航按钮 ========== */
+.nav-btn{
+  display:inline-flex; align-items:center; gap:.36rem; height:36px; padding:0 .8rem;
+  border-radius:10px; font-size:.8rem; font-weight:650; color:#eaf6f6; white-space:nowrap;
+  background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.16); transition:.2s;
+}
+.nav-btn:hover{background:rgba(255,255,255,.16); transform:translateY(-1px)}
+.nav-btn.on{background:rgba(255,255,255,.24); border-color:rgba(255,255,255,.34)}
+.nav-btn.primary{
+  background:linear-gradient(118deg,#14b8a6,#38cfe0); border-color:transparent;
+  color:#04282b; font-weight:750;
+}
+.nav-btn.primary:hover{filter:brightness(1.06)}
+.nav-cnt{
+  min-width:1.25em; padding:0 .3em; border-radius:99px; font-size:.68rem; font-weight:700;
+  background:rgba(255,255,255,.2); text-align:center;
+}
+.nav-btn.hide-cnt .nav-cnt{display:none}
+
+/* ========== 通用弹层 ========== */
+.modal{
+  position:fixed; inset:0; z-index:92; display:none; padding:1.4rem;
+  background:rgba(8,32,34,.55); align-items:center; justify-content:center;
+}
+.modal.show{display:flex; animation:fade .2s ease}
+.mbox{
+  background:var(--card); border-radius:var(--r-lg); overflow:hidden;
+  width:min(880px,100%); height:min(760px,90vh); display:flex; flex-direction:column;
+  box-shadow:var(--shadow-lg);
+}
+.mbox.narrow{width:min(680px,100%); height:auto; max-height:min(700px,90vh)}
+.mbox.tall{width:min(920px,100%)}
+.mhead{
+  display:flex; align-items:center; gap:.55rem; padding:.8rem 1.05rem;
+  border-bottom:1px solid var(--line); flex:none; min-height:0;
+}
+.mhead .t{
+  font-size:.92rem; font-weight:700; color:var(--ink); flex:1; min-width:0;
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+}
+.mhead .sub{font-size:.72rem; color:var(--ink-4); flex:none; font-variant-numeric:tabular-nums}
+.mclose{
+  width:30px; height:30px; border-radius:8px; display:grid; place-items:center;
+  color:var(--ink-3); flex:none; transition:.15s;
+}
+.mclose:hover{background:var(--line); color:var(--ink)}
+.mbody{flex:1; min-height:0; overflow-y:auto; padding:1rem 1.05rem}
+.mfoot{
+  display:flex; align-items:center; gap:.5rem; padding:.55rem 1.05rem;
+  border-top:1px solid var(--line); flex:none; font-size:.72rem; color:var(--ink-4);
+}
+
+/* ========== 卡片工具（收藏 / 勾选） ========== */
+.card-tools{margin-left:auto; display:flex; align-items:center; gap:.18rem; flex:none}
+.icon-mini{
+  width:26px; height:26px; border-radius:7px; display:grid; place-items:center;
+  font-size:.85rem; color:var(--ink-4); transition:.15s; line-height:1;
+}
+.icon-mini:hover{background:var(--bg-tint); color:var(--teal)}
+.icon-mini.on{color:var(--gold)}
+.sel-box{
+  width:17px; height:17px; border-radius:5px; border:1.6px solid var(--line);
+  display:grid; place-items:center; color:transparent; font-size:.62rem;
+  transition:.15s; background:var(--card);
+}
+.sel-box:hover{border-color:var(--teal)}
+.sel-box.on{background:var(--teal); border-color:var(--teal); color:#fff}
+.foot-btn .ar{font-size:.6rem}
+.author-link{
+  color:inherit; border-bottom:1px dotted var(--ink-4); padding-bottom:1px;
+  transition:.15s; cursor:pointer;
+}
+.author-link:hover{color:var(--teal); border-bottom-color:var(--teal)}
+
+/* 批量操作条 */
+.bulkbar{
+  position:fixed; left:50%; bottom:1.3rem; transform:translate(-50%,140%);
+  z-index:78; display:flex; align-items:center; gap:.55rem; padding:.55rem .6rem .55rem .95rem;
+  border-radius:14px; background:var(--ink); color:var(--bg);
+  box-shadow:0 10px 34px rgba(0,0,0,.28); transition:transform .24s cubic-bezier(.2,.8,.3,1);
+  max-width:calc(100vw - 2rem);
+}
+.bulkbar.show{transform:translate(-50%,0)}
+.bulkbar .b-n{font-size:.8rem; font-weight:650; white-space:nowrap}
+.bulkbar button{
+  font-size:.76rem; font-weight:600; padding:.34rem .68rem; border-radius:8px;
+  background:rgba(255,255,255,.13); color:inherit; white-space:nowrap; transition:.15s;
+}
+.bulkbar button:hover{background:rgba(255,255,255,.24)}
+.bulkbar button.ghost{background:transparent; opacity:.7}
+
+/* ========== 问一问 ========== */
+.ask-hints{display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:.85rem}
+.ask-hint{
+  font-size:.75rem; padding:.3rem .62rem; border-radius:99px;
+  background:var(--bg-tint); color:var(--ink-2); transition:.15s;
+}
+.ask-hint:hover{background:var(--teal-soft); color:var(--teal-ink)}
+.ask-input{
+  display:flex; gap:.5rem; align-items:flex-end; padding:.5rem .55rem .5rem .7rem;
+  border:1.5px solid var(--line); border-radius:13px; background:var(--card-2); transition:.18s;
+}
+.ask-input:focus-within{border-color:var(--teal); box-shadow:0 0 0 3px var(--teal-soft)}
+.ask-input textarea{
+  flex:1; border:0; background:none; resize:none; font:inherit; font-size:.9rem;
+  color:var(--ink); outline:none; max-height:120px; line-height:1.55; padding:.2rem 0;
+}
+.ask-input textarea::placeholder{color:var(--ink-4)}
+.ask-send{
+  flex:none; height:32px; padding:0 .85rem; border-radius:9px; font-size:.8rem; font-weight:700;
+  background:var(--teal); color:#fff; transition:.15s;
+}
+.ask-send:hover{filter:brightness(1.08)}
+.ask-send:disabled{opacity:.45; cursor:default}
+.ask-out{margin-top:1rem}
+.ask-ans{font-size:.895rem; line-height:1.86; color:var(--ink-2); white-space:pre-wrap; word-break:break-word}
+.ask-ans .ct{
+  display:inline-grid; place-items:center; min-width:1.35em; height:1.35em; padding:0 .2em;
+  margin:0 .1em; border-radius:5px; font-size:.68rem; font-weight:700; vertical-align:1px;
+  background:var(--teal-soft); color:var(--teal-ink); cursor:pointer;
+}
+.ask-ans .ct:hover{background:var(--teal); color:#fff}
+.ask-docs{margin-top:1.1rem; padding-top:.85rem; border-top:1px dashed var(--line)}
+.ask-docs .h{font-size:.72rem; font-weight:700; color:var(--ink-3); letter-spacing:.04em; margin-bottom:.45rem}
+.ask-doc{
+  display:flex; gap:.55rem; padding:.5rem .4rem; border-radius:7px; cursor:pointer;
+  font-size:.8rem; line-height:1.5; color:var(--ink-2); transition:.14s;
+}
+.ask-doc:hover{background:var(--teal-soft); color:var(--teal-ink)}
+.ask-doc .n{
+  flex:none; width:1.3em; text-align:center; font-weight:700; font-size:.72rem; color:var(--ink-4);
+  font-variant-numeric:tabular-nums;
+}
+.ask-doc .tx{flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.ask-loading{display:flex; align-items:center; gap:.55rem; font-size:.84rem; color:var(--ink-3); padding:.4rem 0}
+.spin{
+  width:14px; height:14px; border-radius:50%; flex:none;
+  border:2px solid var(--line); border-top-color:var(--teal); animation:spin .8s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+.ask-empty{font-size:.85rem; color:var(--ink-3); text-align:center; padding:2.2rem 1rem; line-height:1.9}
+
+/* ========== 趋势 ========== */
+.trend-tabs{display:flex; gap:.4rem; margin-bottom:.75rem; flex-wrap:wrap}
+.trend-tab{
+  font-size:.78rem; font-weight:650; padding:.32rem .72rem; border-radius:8px;
+  background:var(--bg-tint); color:var(--ink-2); transition:.15s;
+}
+.trend-tab.on{background:var(--teal); color:#fff}
+.trend-tab:hover{color:var(--teal-ink)}
+.trend-tab.on:hover{color:#fff}
+.trend-svg{width:100%; height:auto; display:block; overflow:visible}
+.trend-svg .ax{stroke:var(--line); stroke-width:1}
+.trend-svg .gl{stroke:var(--line-2); stroke-width:1}
+.trend-svg .lb{fill:var(--ink-4); font-size:11px}
+.trend-svg .ln{fill:none; stroke-width:2.2; stroke-linejoin:round; stroke-linecap:round}
+.trend-svg .pt{stroke:var(--card); stroke-width:1.4}
+.trend-legend{display:flex; flex-wrap:wrap; gap:.4rem .85rem; margin-top:.7rem}
+.trend-legend button{
+  display:inline-flex; align-items:center; gap:.36rem; font-size:.75rem; color:var(--ink-2);
+  padding:.16rem .3rem; border-radius:5px; transition:.14s;
+}
+.trend-legend button:hover{background:var(--bg-tint)}
+.trend-legend button.off{opacity:.34; text-decoration:line-through}
+.trend-legend i{width:11px; height:3px; border-radius:2px; display:block; flex:none}
+.trend-legend b{font-variant-numeric:tabular-nums; font-weight:600; color:var(--ink-4); font-size:.7rem}
+.trend-note{font-size:.73rem; color:var(--ink-4); margin-top:.9rem; line-height:1.7}
+
+/* ========== 订阅 ========== */
+.sub-row{display:flex; gap:.5rem; align-items:center; margin:.6rem 0 1.1rem}
+.sub-url{
+  flex:1; min-width:0; font-size:.78rem; font-family:ui-monospace,Menlo,Consolas,monospace;
+  padding:.5rem .65rem; border-radius:9px; background:var(--bg-tint); color:var(--ink-2);
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  border:0; outline:0; appearance:none;
+}
+.sub-url:focus{outline:0}
+.sub-copy{
+  flex:none; font-size:.78rem; font-weight:650; padding:.48rem .8rem; border-radius:9px;
+  background:var(--teal); color:#fff;
+}
+.sub-copy:hover{filter:brightness(1.08)}
+.sub-list{display:flex; flex-direction:column; gap:.55rem}
+.sub-item{
+  display:flex; gap:.6rem; padding:.7rem .8rem; border-radius:10px;
+  background:var(--card-2); border:1px solid var(--line-2);
+}
+.sub-item .ic{flex:none; font-size:1.05rem; line-height:1.4}
+.sub-item .tx{flex:1; min-width:0}
+.sub-item .tx b{display:block; font-size:.82rem; color:var(--ink); margin-bottom:.12rem}
+.sub-item .tx span{font-size:.76rem; color:var(--ink-3); line-height:1.65}
+.sub-item a{color:var(--teal); border-bottom:1px solid var(--teal-soft)}
+
+/* ========== 作者面板 ========== */
+.au-head{display:flex; align-items:baseline; gap:.6rem; margin-bottom:.8rem; flex-wrap:wrap}
+.au-name{font-size:1.02rem; font-weight:700; color:var(--ink)}
+.au-meta{font-size:.75rem; color:var(--ink-4)}
+.au-list{display:flex; flex-direction:column; gap:.1rem}
+
+/* 收藏态：左侧一道极淡的金线，不打扰阅读 */
+.card.is-fav{box-shadow:inset 3px 0 0 var(--gold), var(--shadow)}
+
+/* 轻提示 */
+.toast{
+  position:fixed; left:50%; bottom:5.2rem; transform:translate(-50%,12px);
+  z-index:120; padding:.5rem .9rem; border-radius:10px; font-size:.79rem; font-weight:600;
+  background:var(--ink); color:var(--bg); box-shadow:0 8px 26px rgba(0,0,0,.24);
+  opacity:0; pointer-events:none; transition:.22s ease; max-width:80vw; text-align:center;
+}
+.toast.show{opacity:1; transform:translate(-50%,0)}
+
 /* ========== 页脚 ========== */
 .site-foot{
   border-top:1px solid var(--line); margin-top:1rem; padding:2.2rem 1.75rem 2.8rem;
@@ -456,12 +668,17 @@ mark.hl{
   }
   .scrim.show{opacity:1; pointer-events:auto}
   .filter-fab{
-    display:flex; align-items:center; gap:.4rem; position:sticky; bottom:1.1rem; z-index:40;
-    width:fit-content; margin:1.2rem auto 0; padding:.66rem 1.15rem; border-radius:999px; font-size:.85rem; font-weight:650;
+    display:grid; place-items:center; position:fixed; right:.85rem; bottom:1rem; z-index:40;
+    width:46px; height:46px; padding:0; border-radius:50%; font-size:.85rem; font-weight:650;
     background:var(--ink); color:var(--bg); box-shadow:var(--shadow-lg);
   }
+  .filter-fab .fl{display:none}
   [data-theme="dark"] .filter-fab{background:var(--teal); color:#04211f}
-  .filter-fab .cnt{background:rgba(255,255,255,.22); padding:.02rem .4rem; border-radius:99px; font-size:.74rem}
+  .filter-fab .cnt{
+    position:absolute; top:-3px; right:-3px; min-width:18px; height:18px; padding:0 .28rem;
+    display:grid; place-items:center; border-radius:99px; font-size:.66rem; font-weight:700;
+    background:var(--coral); color:#fff; border:2px solid var(--bg);
+  }
   .drawer-head{
     display:flex; align-items:center; justify-content:space-between;
     font-size:.95rem; font-weight:700; margin-bottom:1.1rem; padding-bottom:.7rem;
@@ -493,6 +710,21 @@ mark.hl{
   .rel-item .re{display:none}
   .rel-box-head{padding:.7rem .8rem}
   .rel-box-head .t{font-size:.82rem}
+
+  /* 电话上导航只留图标 */
+  .nav-btn{padding:0 .52rem; height:34px}
+  .nav-btn .lbl{display:none}
+  .nav-cnt{font-size:.62rem}
+  .modal{padding:0}
+  .mbox,.mbox.narrow,.mbox.tall{width:100%; height:100%; max-height:none; border-radius:0}
+  /* 内容不长的面板别硬撑满屏 */
+  #trendModal .mbox,#subModal .mbox,#auModal .mbox{height:auto; max-height:100%}
+  .mbody{padding:.9rem .85rem}
+  .bulkbar{bottom:.8rem; width:calc(100vw - 1.4rem); justify-content:center}
+  .bulkbar .b-n{font-size:.74rem}
+  .bulkbar button{font-size:.72rem; padding:.32rem .55rem}
+  .trend-legend{gap:.3rem .55rem}
+  .ask-ans{font-size:.87rem}
 }
 </style>
 </head>
@@ -505,6 +737,21 @@ mark.hl{
       <span class="brand-txt">Fishery Digest<small>每日文献速览</small></span>
     </div>
     <nav class="hero-nav">
+      <button class="nav-btn primary" id="askBtn" title="用问题检索站内文献">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 01-9 8.4 8.9 8.9 0 01-3.9-.9L3 21l1.9-4.9A8.4 8.4 0 013.4 11 8.4 8.4 0 0112 3a8.4 8.4 0 019 8.5z"/></svg>
+        <span class="lbl">问一问</span>
+      </button>
+      <button class="nav-btn" id="trendBtn" title="主题 / 鱼种 / 期刊的时间趋势">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5.5-6.5 4 3.5L21 5"/><path d="M16 5h5v5"/></svg>
+        <span class="lbl">趋势</span>
+      </button>
+      <button class="nav-btn hide-cnt" id="favBtn" title="只看收藏">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3.4l2.7 5.5 6 .9-4.35 4.25 1.03 6-5.38-2.83-5.38 2.83 1.03-6L3.3 9.8l6-.9z"/></svg>
+        <span class="lbl">收藏</span><span class="nav-cnt" id="favCnt">0</span>
+      </button>
+      <button class="icon-btn" id="subBtn" title="RSS / 邮件订阅" aria-label="订阅">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="6" cy="18" r="1.6" fill="currentColor" stroke="none"/><path d="M4 11a9 9 0 019 9"/><path d="M4 4.5A15.5 15.5 0 0120 20"/></svg>
+      </button>
       <button class="icon-btn" id="themeBtn" title="切换主题" aria-label="切换主题">◐</button>
     </nav>
   </div>
@@ -580,7 +827,10 @@ mark.hl{
 
     <div id="list"></div>
 
-    <button class="filter-fab" id="filterFab">筛选<span class="cnt" id="fabCnt">0</span></button>
+    <button class="filter-fab" id="filterFab" aria-label="筛选">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18l-7.2 8.2V20l-3.6 1.6v-8.4z"/></svg>
+      <span class="fl">筛选</span><span class="cnt" id="fabCnt">0</span>
+    </button>
   </main>
 </div>
 
@@ -593,6 +843,101 @@ mark.hl{
   <br>
   最后更新 {{ update_display }} <span class="sep">·</span> 数据保留 {{ retention_days }} 天
 </footer>
+
+<div class="modal" id="askModal" role="dialog" aria-modal="true" aria-label="文献问答">
+  <div class="mbox tall">
+    <div class="mhead">
+      <span class="t">问一问 · 在 {{ stats.papers }} 篇文献里找答案</span>
+      <span class="sub" id="askState"></span>
+      <button class="mclose" data-close="askModal" aria-label="关闭">✕</button>
+    </div>
+    <div class="mbody" id="askBody">
+      <div class="ask-hints" id="askHints"></div>
+      <div class="ask-input">
+        <textarea id="askQ" rows="1" placeholder="例如：大黄鱼养殖最近的病害研究有什么进展"></textarea>
+        <button class="ask-send" id="askSend">提问</button>
+      </div>
+      <div class="ask-out" id="askOut">
+        <div class="ask-empty">
+          它会先用站内向量找出最相关的十来篇，再让模型只根据这些文献作答，每个论点标注来源编号。<br>
+          答案是「读文献的起点」，不是结论本身 —— 点编号可跳到原文。
+        </div>
+      </div>
+    </div>
+    <div class="mfoot">回答由 DeepSeek 基于站内召回文献生成，引用编号对应下方依据，可能存在误读</div>
+  </div>
+</div>
+
+<div class="modal" id="trendModal" role="dialog" aria-modal="true" aria-label="趋势">
+  <div class="mbox">
+    <div class="mhead">
+      <span class="t">趋势 · 哪个方向在升温</span>
+      <span class="sub" id="trendSub"></span>
+      <button class="mclose" data-close="trendModal" aria-label="关闭">✕</button>
+    </div>
+    <div class="mbody">
+      <div class="trend-tabs" id="trendTabs"></div>
+      <div id="trendChart"></div>
+      <div class="trend-legend" id="trendLegend"></div>
+      <div class="trend-note" id="trendNote"></div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="subModal" role="dialog" aria-modal="true" aria-label="订阅">
+  <div class="mbox narrow">
+    <div class="mhead">
+      <span class="t">订阅 · 不用每天开网页</span>
+      <button class="mclose" data-close="subModal" aria-label="关闭">✕</button>
+    </div>
+    <div class="mbody">
+      <p style="font-size:.84rem;color:var(--ink-3);line-height:1.75;margin-bottom:.2rem">
+        每天北京时间下午定时更新，订阅后新论文会自己送到你面前。
+      </p>
+      <div class="sub-row">
+        <input class="sub-url" id="subUrl" readonly value="{{ feed_url }}">
+        <button class="sub-copy" id="subCopy">复制</button>
+      </div>
+      <div class="sub-list">
+        <div class="sub-item">
+          <span class="ic">📡</span>
+          <div class="tx"><b>RSS 阅读器（推荐）</b>
+            <span>把上面的地址粘进 Feedly / Inoreader / NetNewsWire / 任意 RSS 客户端即可。</span></div>
+        </div>
+        <div class="sub-item">
+          <span class="ic">✉️</span>
+          <div class="tx"><b>邮件推送</b>
+            <span>没有服务器发信，用第三方把 RSS 转邮件：
+              <a id="subMail" target="_blank" rel="noopener">Blogtrottr</a> 填入邮箱和上面的地址，
+              每天早上就能收到一封汇总邮件。</span></div>
+        </div>
+        <div class="sub-item">
+          <span class="ic">🪝</span>
+          <div class="tx"><b>接自动化</b>
+            <span>地址是标准 RSS 2.0（title / link / pubDate / category），可以直接喂给 n8n、Zapier、IFTTT。</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="auModal" role="dialog" aria-modal="true" aria-label="作者论文">
+  <div class="mbox narrow">
+    <div class="mhead">
+      <span class="t" id="auTitle">作者</span>
+      <span class="sub" id="auCount"></span>
+      <button class="mclose" data-close="auModal" aria-label="关闭">✕</button>
+    </div>
+    <div class="mbody" id="auBody"></div>
+  </div>
+</div>
+
+<div class="bulkbar" id="bulkBar">
+  <span class="b-n" id="bulkN">已选 0 篇</span>
+  <button id="bulkBib">导出 BibTeX</button>
+  <button id="bulkFav">加入收藏</button>
+  <button class="ghost" id="bulkClear">取消</button>
+</div>
 
 <div class="rel-modal" id="relModal" role="dialog" aria-modal="true" aria-label="文献关系图">
   <div class="rel-box">
@@ -618,6 +963,8 @@ mark.hl{
   const DATA = JSON.parse(document.getElementById('payload').textContent);
   const PAPERS = DATA.papers;
   const EMBED_API = {{ embed_api | tojson }};   // 空字符串 = 未接语义检索，退回纯 BM25
+  const ASK_API = {{ ask_api | tojson }};       // 空字符串 = 未配问答代理，按钮隐藏
+  const FEED_URL = {{ feed_url | tojson }};
   const LEX = DATA.lexicon;
   const DIMS = [
     {key:'theme',   label:'研究主题'},
@@ -647,7 +994,9 @@ mark.hl{
     journals: new Set(),
     range: 'all',
     sort: 'date',
-    limit: 60
+    limit: 60,
+    favOnly: false,   // 只看收藏
+    sel: new Set()    // 批量勾选的 doi
   };
 
   // ---------- 工具 ----------
@@ -660,6 +1009,81 @@ mark.hl{
   const MAXD = PAPERS.length ? parseDate(PAPERS[0].date > PAPERS[PAPERS.length-1].date ? PAPERS[0].date : PAPERS[PAPERS.length-1].date) : new Date();
   const newestDate = PAPERS.reduce((a,p) => p.date > a ? p.date : a, '0000-00-00');
   const ANCHOR = newestDate !== '0000-00-00' ? parseDate(newestDate) : new Date();
+
+  // ---------- 剪贴板 / 下载 / 轻提示 ----------
+  function copyText(t){
+    if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(t);
+    return new Promise((ok, bad) => {
+      const ta = document.createElement('textarea');
+      ta.value = t; ta.style.cssText = 'position:fixed;top:-9999px;opacity:0';
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy') ? ok() : bad(new Error('copy')); }
+      catch (e){ bad(e); }
+      ta.remove();
+    });
+  }
+  function saveFile(name, text, mime){
+    const blob = new Blob([text], {type: mime || 'text/plain;charset=utf-8'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = name;
+    document.body.appendChild(a); a.click();
+    setTimeout(() => { URL.revokeObjectURL(url); a.remove(); }, 1200);
+  }
+  let toastTimer = null;
+  function toast(msg){
+    let el = $('#toast');
+    if (!el){ el = document.createElement('div'); el.id = 'toast'; el.className = 'toast'; document.body.appendChild(el); }
+    el.textContent = msg;
+    el.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => el.classList.remove('show'), 1900);
+  }
+
+  // ---------- BibTeX ----------
+  const bibEsc = s => String(s || '').replace(/([&%$#_])/g, '\\$1').replace(/\s+/g, ' ').trim();
+  function bibKey(p){
+    const first = ((p.authors || '').split(';')[0] || '').split(',')[0].replace(/[^A-Za-z]/g, '') || 'ref';
+    const y = (p.date || '').slice(0, 4);
+    const w = ((p.title || '').split(/\s+/).find(x => x.length > 3 && /^[a-z]/i.test(x)) || '')
+      .replace(/[^A-Za-z]/g, '').toLowerCase();
+    return (first.toLowerCase() + y + w) || ('ref' + y);
+  }
+  function bibtex(p){
+    const au = (p.authors || '').split(';').map(s => s.trim()).filter(Boolean).join(' and ');
+    const lines = [
+      `@article{${bibKey(p)},`,
+      `  title   = {${bibEsc(p.title)}},`,
+      au ? `  author  = {${bibEsc(au)}},` : '',
+      p.journal ? `  journal = {${bibEsc(p.journal)}},` : '',
+      p.date ? `  year    = {${p.date.slice(0, 4)}},` : '',
+      p.doi ? `  doi     = {${p.doi}},` : '',
+      p.url ? `  url     = {${p.url}}` : '',
+      '}',
+    ].filter(Boolean);
+    return lines.join('\n');
+  }
+  function bibAll(list){
+    const head = `% Fishery Digest · ${list.length} records · ${new Date().toISOString().slice(0, 10)}\n\n`;
+    return head + list.map(bibtex).join('\n\n') + '\n';
+  }
+  function copyBib(list, label){
+    const text = list.length === 1 ? bibtex(list[0]) : bibAll(list);
+    copyText(text)
+      .then(() => toast(list.length === 1 ? 'BibTeX 已复制，粘进 .bib 或用 \u005cparencite' : `已复制 ${list.length} 条 BibTeX`))
+      .catch(() => { saveFile('fishery-refs.bib', text, 'application/x-bibtex'); toast('复制受限，已下载 .bib'); });
+  }
+
+  // ---------- 收藏（localStorage） ----------
+  const FAV_KEY = 'fd:fav:v1';
+  let FAV = new Set();
+  try { FAV = new Set(JSON.parse(localStorage.getItem(FAV_KEY) || '[]')); } catch (e){ FAV = new Set(); }
+  function saveFav(){
+    try { localStorage.setItem(FAV_KEY, JSON.stringify([...FAV])); } catch (e){}
+    $('#favCnt').textContent = FAV.size;
+    $('#favBtn').classList.toggle('hide-cnt', FAV.size === 0);
+    $('#favBtn').classList.toggle('on', state.favOnly);
+  }
 
   // 预建检索文本
   PAPERS.forEach(p => {
@@ -981,6 +1405,7 @@ mark.hl{
   }
   function matches(p, skipKey){
     if (p.off_topic) return false;
+    if (state.favOnly && !FAV.has(p.doi)) return false;
     if (!rangeOK(p) || !journalOK(p, skipKey === 'journal') || !qOK(p)) return false;
     for (const d of DIMS) if (!dimOK(p, d.key, skipKey)) return false;
     return true;
@@ -1086,6 +1511,16 @@ mark.hl{
     return a;
   }
 
+  function authorsHTML(p){
+    const list = (p.authors || '').split(';').map(s => s.trim()).filter(Boolean);
+    if (!list.length) return '—';
+    const shown = list.slice(0, 2);
+    const more = list.length - shown.length;
+    return shown.map(a =>
+      `<button class="author-link" data-author="${esc(a)}" title="查看 ${esc(a)} 的全部论文">${esc(a)}</button>`
+    ).join('、') + (more > 0 ? `<span style="opacity:.75"> 等 ${list.length} 人</span>` : '');
+  }
+
   function cardHTML(p){
     const tags = [];
     DIMS.forEach(d => (p.tags[d.key]||[]).forEach(id => {
@@ -1094,6 +1529,13 @@ mark.hl{
     }));
     const hi = p.high_impact ? '<span class="badge hi">高影响</span>' : '';
     const rev = p.is_review ? '<span class="badge rev">综述</span>' : '';
+    const favOn = FAV.has(p.doi);
+    const tools = `<span class="card-tools">
+        <button class="icon-mini${favOn ? ' on' : ''}" data-fav="${esc(p.doi)}"
+          title="${favOn ? '取消收藏' : '收藏（存本地，可导出 BibTeX）'}">${favOn ? '★' : '☆'}</button>
+        <button class="sel-box${state.sel.has(p.doi) ? ' on' : ''}" data-sel="${esc(p.doi)}"
+          title="勾选后可批量导出">✓</button>
+      </span>`;
     const sum = p.summary
       ? `<p class="summary${p.summary_en ? ' en' : ''}">${hl(p.summary)}</p>`
       : '';
@@ -1116,16 +1558,18 @@ mark.hl{
           }).join('')}</div>
           ${rels.length > 6 ? `<button class="rel-more">展开全部 ${rels.length} 篇 ▾</button>` : ''}
         </div>` : '';
-    return `<article class="card${p.high_impact?' is-hi':''}" data-doi="${esc(p.doi)}">
+    return `<article class="card${p.high_impact?' is-hi':''}${favOn ? ' is-fav' : ''}" data-doi="${esc(p.doi)}">
       <div class="card-top">
         <span class="journal" title="${esc(p.journal)}">${esc(p.journal || '未知期刊')}</span>
         ${hi}${rev}
+        ${tools}
       </div>
       <h3><a href="${esc(p.url)}" target="_blank" rel="noopener">${hl(p.title)}</a></h3>
       ${sum}
       <div class="card-tags">${tags.join('')}</div>
       <div class="card-foot">
-        <span class="authors" title="${esc(p.authors)}">${esc(p.authors || '—')}</span>
+        <span class="authors" title="${esc(p.authors)}">${authorsHTML(p)}</span>
+        <button class="foot-btn bib-btn" data-bib="${esc(p.doi)}" title="复制这篇的 BibTeX">BibTeX</button>
         ${relBtn}
         <button class="foot-btn abs-btn"><span class="ar">▶</span>英文摘要</button>
         <a class="foot-btn" href="${esc(p.url)}" target="_blank" rel="noopener">DOI ↗</a>
@@ -1550,6 +1994,307 @@ mark.hl{
     $('#fabCnt').style.display = n ? '' : 'none';
   }
 
+  // ---------- 弹层通用 ----------
+  function openModal(id){
+    $('#' + id).classList.add('show');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(id){
+    $('#' + id).classList.remove('show');
+    if (!document.querySelector('.modal.show, .rel-modal.show')) document.body.style.overflow = '';
+  }
+
+  // ---------- 批量选择 ----------
+  function syncSel(){
+    const n = state.sel.size;
+    $('#bulkN').textContent = `已选 ${n} 篇`;
+    $('#bulkBar').classList.toggle('show', n > 0);
+    document.querySelectorAll('.sel-box').forEach(b => {
+      b.classList.toggle('on', state.sel.has(b.dataset.sel));
+    });
+  }
+
+  // ---------- 作者聚合 ----------
+  function openAuthor(name){
+    const list = PAPERS.filter(p => !p.off_topic &&
+      (p.authors || '').split(';').map(s => s.trim()).includes(name));
+    list.sort((a, b) => (b.date > a.date ? 1 : -1));
+    $('#auTitle').textContent = name;
+    $('#auTitle').title = name;
+    $('#auCount').textContent = `${list.length} 篇`;
+    if (!list.length){
+      $('#auBody').innerHTML = `<div class="ask-empty">站内暂时没有 ${esc(name)} 的其他论文</div>`;
+      openModal('auModal'); return;
+    }
+    const years = {};
+    list.forEach(p => { const y = (p.date || '').slice(0, 4); years[y] = (years[y] || 0) + 1; });
+    const meta = Object.keys(years).sort().reverse()
+      .map(y => `${y} 年 ${years[y]} 篇`).join(' · ');
+    $('#auBody').innerHTML = `<div class="au-head"><span class="au-meta">${esc(meta)}</span></div>
+      <div class="au-list">${list.map(p => `
+        <div class="rel-item" data-goto="${esc(p.doi)}">
+          <span class="rt" title="${esc(p.title)}">${esc(p.title)}</span>
+          <span class="re">${esc(p.journal || '—')}</span>
+          <span class="rs">${esc(p.date.slice(5))}</span>
+        </div>`).join('')}</div>`;
+    openModal('auModal');
+  }
+
+  // ---------- 趋势 ----------
+  const TREND_PAL = ['#0e7c72', '#c65433', '#4a56c4', '#9a6a10', '#2f8f9d', '#8b5c9e', '#4d7c2f', '#b8446f'];
+  // 深色背景下要整体提亮，否则深青、砖红会糊进背景
+  const TREND_PAL_DARK = ['#4fd1c0', '#f0906f', '#9aa5f5', '#e0b45c', '#5ec9d8', '#c48fd8', '#8fc46a', '#f07aa0'];
+  const trendPal = () => document.documentElement.getAttribute('data-theme') === 'dark'
+    ? TREND_PAL_DARK : TREND_PAL;
+  const TREND_DIMS = { theme: '研究主题', species: '研究鱼种', journal: '期刊' };
+  let trendDim = 'theme';
+  const trendOff = new Set();
+  const TREND_MAX_DAYS = 45;
+
+  function ymd(d){
+    return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+  }
+
+  // 窗口跟着数据走：库里名义上跨 100 天，但 11/2 之前只有零散补录。
+  // 从今天往前逐日看，连续 3 天空档就停，避免把「一天一篇」的稀疏历史画成断崖
+  function trendDays(){
+    const have = new Set();
+    PAPERS.forEach(p => { if (!p.off_topic && p.date) have.add(p.date); });
+    let last = 0;
+    for (let i = 0; i < TREND_MAX_DAYS; i++){
+      const d = new Date(ANCHOR.getFullYear(), ANCHOR.getMonth(), ANCHOR.getDate() - i);
+      if (have.has(ymd(d))) last = i + 1;
+      else if (last && i + 1 - last >= 3) break;
+    }
+    return Math.max(7, Math.min(TREND_MAX_DAYS, last || 7));
+  }
+
+  function renderTrend(){
+    $('#trendTabs').innerHTML = Object.keys(TREND_DIMS).map(k =>
+      `<button class="trend-tab${k === trendDim ? ' on' : ''}" data-tdim="${k}">${TREND_DIMS[k]}</button>`).join('');
+
+    const nDays = trendDays();
+    const days = [];
+    for (let i = nDays - 1; i >= 0; i--){
+      const d = new Date(ANCHOR.getFullYear(), ANCHOR.getMonth(), ANCHOR.getDate() - i);
+      days.push({ key: ymd(d), label: `${d.getMonth() + 1}/${d.getDate()}` });
+    }
+    const idxOf = {};
+    days.forEach((x, i) => { idxOf[x.key] = i; });
+
+    const counts = new Map();
+    PAPERS.forEach(p => {
+      if (p.off_topic) return;
+      const i = idxOf[p.date];
+      if (i === undefined) return;
+      const keys = trendDim === 'journal'
+        ? [(p.journal || '').trim()]
+        : (p.tags[trendDim] || []).map(id => {
+            const m = META[trendDim + '|' + id]; return m ? m.zh : id;
+          });
+      keys.forEach(k => {
+        if (!k) return;
+        let arr = counts.get(k);
+        if (!arr){ arr = new Array(days.length).fill(0); counts.set(k, arr); }
+        arr[i] += 1;
+      });
+    });
+
+    const rows = [...counts.entries()]
+      .map(([k, arr]) => ({ k, arr, total: arr.reduce((a, b) => a + b, 0) }))
+      .sort((a, b) => b.total - a.total)
+      .slice(0, 8);
+
+    const W = 820, H = 330, PL = 42, PR = 14, PT = 14, PB = 36;
+    const rawMax = Math.max(1, ...rows.flatMap(r => r.arr));
+    const step = rawMax <= 5 ? 1 : rawMax <= 12 ? 2 : rawMax <= 30 ? 5 : rawMax <= 60 ? 10 : 20;
+    const ymax = Math.max(step, Math.ceil(rawMax / step) * step);
+    const X = i => PL + (W - PL - PR) * (days.length === 1 ? 0.5 : i / (days.length - 1));
+    const Y = v => PT + (H - PT - PB) * (1 - v / ymax);
+
+    const parts = [];
+    for (let v = 0; v <= ymax; v += step){
+      parts.push(`<line class="gl" x1="${PL}" y1="${Y(v).toFixed(1)}" x2="${W - PR}" y2="${Y(v).toFixed(1)}"/>`);
+      parts.push(`<text class="lb" x="${PL - 8}" y="${(Y(v) + 3.5).toFixed(1)}" text-anchor="end">${v}</text>`);
+    }
+    const every = Math.max(1, Math.ceil(days.length / 6));
+    days.forEach((d, i) => {
+      if (i % every !== 0 && i !== days.length - 1) return;
+      parts.push(`<text class="lb" x="${X(i).toFixed(1)}" y="${H - PB + 18}" text-anchor="middle">${d.label}</text>`);
+    });
+
+    const PAL = trendPal();
+    rows.forEach((r, ri) => {
+      if (trendOff.has(r.k)) return;
+      const color = PAL[ri % PAL.length];
+      const d = r.arr.map((v, i) => `${i ? 'L' : 'M'}${X(i).toFixed(1)} ${Y(v).toFixed(1)}`).join(' ');
+      parts.push(`<path class="ln" stroke="${color}" d="${d}" stroke-width="${days.length > 20 ? 1.9 : 2.4}"/>`);
+      parts.push(r.arr.map((v, i) =>
+        `<circle class="pt" cx="${X(i).toFixed(1)}" cy="${Y(v).toFixed(1)}" r="${days.length > 20 ? 2.1 : 2.9}" fill="${color}">
+          <title>${esc(r.k)} · ${days[i].label} 当日 ${v} 篇</title></circle>`).join(''));
+    });
+
+    $('#trendChart').innerHTML = `<svg class="trend-svg" viewBox="0 0 ${W} ${H}"
+      preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">${parts.join('')}</svg>`;
+
+    $('#trendLegend').innerHTML = rows.map((r, ri) => {
+      const color = PAL[ri % PAL.length];
+      return `<button class="${trendOff.has(r.k) ? 'off' : ''}" data-tkey="${esc(r.k)}">
+        <i style="background:${color}"></i>${esc(r.k.length > 18 ? r.k.slice(0, 17) + '…' : r.k)}<b>${r.total} 篇</b></button>`;
+    }).join('');
+
+    $('#trendSub').textContent = `${rows.length} 条线 · ${days[0].label}–${days[days.length - 1].label}`;
+    $('#trendNote').textContent =
+      `按日统计最近 ${nDays} 天（数据连续区间，之前的零散补录不计）。纵轴是当天新增论文数，` +
+      `曲线整体抬升或持续居高的方向更可能在升温；单日尖峰多是抓取批次差异，看三五天的走势更靠谱。` +
+      `点图例可隐藏某条线。样本 ${PAPERS.length} 篇，量小时波动大，结论别太当真。`;
+  }
+
+  // ---------- 问答（RAG） ----------
+  const ASK_HINTS = [
+    '这周有什么值得关注的新方向',
+    '深水网箱养殖的病害研究进展',
+    '气候变化对渔业资源有什么影响',
+    '有没有关于大黄鱼的研究',
+    'eDNA 怎么用于鱼类监测',
+  ];
+  let asking = false;
+  let lastAskDocs = [];
+
+  async function recallDocs(q, k){
+    // 优先语义召回：问题往往不含原文关键词，向量更稳
+    if (EMB.api){
+      try {
+        await loadEmb();
+        if (EMB.ready){
+          const sem = await semanticScores(q);
+          const top = [...sem.entries()]
+            .filter(([doi, s]) => BY_DOI[doi] && s >= 0.28)
+            .sort((a, b) => b[1] - a[1]).slice(0, k)
+            .map(([doi, s]) => ({ p: BY_DOI[doi], s }));
+          if (top.length >= 3) return { docs: top, how: 'semantic' };
+        }
+      } catch (e){ /* 熔断/超时，退到关键词 */ }
+    }
+    const r = BM25.search(q);
+    const docs = [];
+    if (r && r.hits.size){
+      const max = Math.max(...r.hits.values()) || 1;
+      [...r.hits.entries()].sort((a, b) => b[1] - a[1]).slice(0, k)
+        .forEach(([doi, s]) => { if (BY_DOI[doi]) docs.push({ p: BY_DOI[doi], s: s / max }); });
+    }
+    // 长问句在 BM25 下常常只命中一两篇（要求全部词项覆盖），再用「命中词数」补几位
+    if (docs.length < 6){
+      const terms = [...new Set(tokenize(q))].filter(t => t.length >= 2).slice(0, 12);
+      const seen = new Set(docs.map(d => d.p.doi));
+      const extra = [];
+      PAPERS.forEach(p => {
+        if (p.off_topic || seen.has(p.doi)) return;
+        let hit = 0;
+        for (const t of terms) if (p._text.indexOf(t) >= 0) hit += 1;
+        if (hit >= 2) extra.push({ p, hit });
+      });
+      extra.sort((a, b) => b.hit - a.hit);
+      extra.slice(0, 6 - docs.length).forEach(x => docs.push({ p: x.p, s: 0.05 }));
+    }
+    return { docs, how: docs.length ? 'bm25' : 'none' };
+  }
+
+  function renderAskDocs(docs){
+    return `<div class="ask-docs"><div class="h">本次依据（${docs.length} 篇）</div>
+      ${docs.map((d, i) => `<div class="ask-doc" data-askdoc="${i}">
+        <span class="n">${i + 1}</span>
+        <span class="tx" title="${esc(d.p.title)}">${esc(d.p.title)}</span>
+        <span class="re" style="font-size:.68rem;color:var(--ink-4);flex:none">${esc(d.p.journal || '')}</span>
+      </div>`).join('')}</div>`;
+  }
+
+  function answerHTML(text, docs){
+    return esc(text).replace(/\[(\d{1,2})\]/g, (m, n) => {
+      const i = +n;
+      if (i < 1 || i > docs.length) return m;
+      return `<span class="ct" data-askdoc="${i - 1}">${i}</span>`;
+    });
+  }
+
+  async function runAsk(raw){
+    const q = String(raw || '').trim();
+    if (!q || asking) return;
+    asking = true;
+    $('#askSend').disabled = true;
+    $('#askState').textContent = '召回中…';
+    const out = $('#askOut');
+    out.innerHTML = `<div class="ask-loading"><span class="spin"></span>正在从 ${PAPERS.length} 篇文献里找依据…</div>`;
+
+    let docs = [];
+    let how = 'none';
+    try {
+      const rec = await recallDocs(q, 8);
+      docs = rec.docs; how = rec.how;
+      if (!docs.length){
+        out.innerHTML = `<div class="ask-empty">没有召回到相关文献。<br>换个说法，或用左侧标签 / 搜索框先缩小范围。</div>`;
+        $('#askState').textContent = '';
+        return;
+      }
+      lastAskDocs = docs;
+
+      if (!ASK_API){
+        out.innerHTML = `<div class="ask-empty" style="text-align:left">
+          站内召回已经完成，但生成接口还没配置，所以只给依据不给答案。<br>
+          <span style="font-size:.78rem;opacity:.8">在 Vercel 给这个项目加 DEEPSEEK_API_KEY，并把 /api/ask 填进 ASK_ENDPOINT 即可开启。</span>
+        </div>` + renderAskDocs(docs);
+        $('#askState').textContent = how === 'semantic' ? '语义召回' : '关键词召回';
+        return;
+      }
+
+      $('#askState').textContent = '生成中…';
+      out.innerHTML = `<div class="ask-loading"><span class="spin"></span>已找到 ${docs.length} 篇依据，正在生成回答…</div>`;
+
+      const ctl = new AbortController();
+      const timer = setTimeout(() => ctl.abort(), 50000);
+      let r;
+      try {
+        r = await fetch(ASK_API, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            q,
+            docs: docs.map(d => ({
+              t: d.p.title, s: d.p.summary, j: d.p.journal, d: d.p.date, u: d.p.url,
+            })),
+          }),
+          signal: ctl.signal,
+        });
+      } finally { clearTimeout(timer); }
+
+      if (!r.ok){
+        const detail = await r.text().catch(() => '');
+        let msg = `生成服务返回 ${r.status}`;
+        try { const j = JSON.parse(detail); if (j.error) msg = j.error + (j.hint ? `（${j.hint}）` : ''); } catch (e){}
+        out.innerHTML = `<div class="ask-empty" style="text-align:left">
+          没能生成回答：${esc(msg)}<br><span style="font-size:.78rem;opacity:.8">依据已经找好了，可以直接看下面这几篇。</span>
+        </div>` + renderAskDocs(docs);
+        $('#askState').textContent = '降级';
+        return;
+      }
+
+      const j = await r.json();
+      out.innerHTML = `<div class="ask-ans">${answerHTML(j.a || '', docs)}</div>` + renderAskDocs(docs);
+      $('#askState').textContent = (how === 'semantic' ? '语义召回' : '关键词召回') +
+        (j.usage && j.usage.total_tokens ? ` · ${j.usage.total_tokens} tok` : '');
+    } catch (e){
+      const aborted = e && e.name === 'AbortError';
+      out.innerHTML = `<div class="ask-empty" style="text-align:left">
+        ${aborted ? '等太久了，请求已取消' : '生成服务没连上（跨域被拦或网络不通）'}${docs.length ? '，但依据已经找好了：' : ''}
+        <br><span style="font-size:.78rem;opacity:.8">${aborted ? '问句太长或文献太多时可以再试一次。' : '可以直接看下面这几篇，或用搜索框。'}</span>
+      </div>` + (docs.length ? renderAskDocs(docs) : '');
+      $('#askState').textContent = docs.length ? '降级' : '';
+    } finally {
+      asking = false;
+      $('#askSend').disabled = false;
+    }
+  }
+
   function refresh(){ state.limit = 60; renderSide(); renderList(); }
 
   // ---------- 交互 ----------
@@ -1593,6 +2338,87 @@ mark.hl{
     const lm = e.target.closest('#loadMore');
     if (lm){ state.limit += 60; renderList(); return; }
 
+    // 收藏 / 勾选 / BibTeX / 作者 / 弹层开关
+    const fav = e.target.closest('[data-fav]');
+    if (fav){
+      const doi = fav.dataset.fav;
+      FAV.has(doi) ? FAV.delete(doi) : FAV.add(doi);
+      saveFav();
+      const on = FAV.has(doi);
+      fav.textContent = on ? '★' : '☆';
+      fav.classList.toggle('on', on);
+      fav.title = on ? '取消收藏' : '收藏（存本地，可导出 BibTeX）';
+      const card = fav.closest('.card');
+      if (card) card.classList.toggle('is-fav', on);
+      if (state.favOnly && !on) renderList();
+      return;
+    }
+    const selBox = e.target.closest('[data-sel]');
+    if (selBox){
+      const doi = selBox.dataset.sel;
+      state.sel.has(doi) ? state.sel.delete(doi) : state.sel.add(doi);
+      syncSel(); return;
+    }
+    const bib = e.target.closest('[data-bib]');
+    if (bib){ const bp = BY_DOI[bib.dataset.bib]; if (bp) copyBib([bp]); return; }
+    const al = e.target.closest('[data-author]');
+    if (al){ openAuthor(al.dataset.author); return; }
+    const cl = e.target.closest('[data-close]');
+    if (cl){ closeModal(cl.dataset.close); return; }
+
+    // 批量条
+    if (e.target.closest('#bulkBib')){
+      const picked = PAPERS.filter(p => state.sel.has(p.doi));
+      if (picked.length) copyBib(picked);
+      return;
+    }
+    if (e.target.closest('#bulkFav')){
+      let add = 0;
+      state.sel.forEach(d => { if (!FAV.has(d)){ FAV.add(d); add += 1; } });
+      saveFav(); syncSel(); renderList();
+      toast(add ? `已收藏 ${add} 篇` : '这些都已经在收藏里了');
+      return;
+    }
+    if (e.target.closest('#bulkClear')){
+      state.sel.clear(); syncSel(); renderList(); return;
+    }
+
+    // 顶部入口
+    if (e.target.closest('#askBtn')){ openModal('askModal'); $('#askQ').focus(); return; }
+    if (e.target.closest('#trendBtn')){ renderTrend(); openModal('trendModal'); return; }
+    if (e.target.closest('#subBtn')){ openModal('subModal'); return; }
+    if (e.target.closest('#favBtn')){
+      state.favOnly = !state.favOnly;
+      $('#favBtn').classList.toggle('on', state.favOnly);
+      if (state.favOnly && !FAV.size) toast('还没有收藏，点卡片右上角的 ☆ 试试');
+      refresh(); return;
+    }
+
+    // 趋势交互
+    const tdim = e.target.closest('[data-tdim]');
+    if (tdim){ trendDim = tdim.dataset.tdim; trendOff.clear(); renderTrend(); return; }
+    const tkey = e.target.closest('[data-tkey]');
+    if (tkey){
+      const k = tkey.dataset.tkey;
+      trendOff.has(k) ? trendOff.delete(k) : trendOff.add(k);
+      renderTrend(); return;
+    }
+
+    // 问答：点引用编号 / 依据条目 → 跳到那篇
+    const adoc = e.target.closest('[data-askdoc]');
+    if (adoc && lastAskDocs.length){
+      const d = lastAskDocs[+adoc.dataset.askdoc];
+      if (d){ closeModal('askModal'); gotoPaper(d.p.doi); }
+      return;
+    }
+
+    // 订阅复制
+    if (e.target.closest('#subCopy')){
+      copyText(FEED_URL).then(() => toast('RSS 地址已复制'))
+        .catch(() => toast('复制受限，请手动选中地址'));
+      return;
+    }
+
     // 相关文献展开
     const rbtn = e.target.closest('.rel-btn');
     if (rbtn){
@@ -1615,7 +2441,10 @@ mark.hl{
       return;
     }
     const ritem = e.target.closest('.rel-item');
-    if (ritem && ritem.dataset.goto){ gotoPaper(ritem.dataset.goto); return; }
+    if (ritem && ritem.dataset.goto){
+      if ($('#auModal').classList.contains('show')) closeModal('auModal');
+      gotoPaper(ritem.dataset.goto); return;
+    }
 
     // 摘要展开
     const btn = e.target.closest('.abs-btn');
@@ -1696,9 +2525,13 @@ mark.hl{
   });
   $('#raCard').addEventListener('click', () => viewPaper($('#raCard').dataset.doi));
   document.addEventListener('keydown', e => {
-    if (e.key === '/' && document.activeElement !== $('#search')){ e.preventDefault(); $('#search').focus(); }
+    if (e.key === '/' && !/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)){
+      e.preventDefault(); $('#search').focus();
+    }
     if (e.key === 'Escape'){
       if ($('#relModal').classList.contains('show')){ closeGraph(); return; }
+      const openModalEl = document.querySelector('.modal.show');
+      if (openModalEl){ closeModal(openModalEl.id); return; }
       closeSide();
     }
   });
@@ -1727,6 +2560,46 @@ mark.hl{
     if (saved) applyTheme(saved);
     else if (window.matchMedia('(prefers-color-scheme: dark)').matches) applyTheme('dark');
   } catch(_){}
+
+  // ---------- 新功能初始化 ----------
+  // 点弹层背景关闭
+  document.querySelectorAll('.modal').forEach(m => {
+    m.addEventListener('click', e => { if (e.target === m) closeModal(m.id); });
+  });
+
+  // 问一问
+  const askQ = $('#askQ');
+  $('#askHints').innerHTML = ASK_HINTS.map(h => `<button class="ask-hint">${esc(h)}</button>`).join('');
+  $('#askHints').addEventListener('click', e => {
+    const h = e.target.closest('.ask-hint');
+    if (!h) return;
+    askQ.value = h.textContent;
+    runAsk(h.textContent);
+  });
+  askQ.addEventListener('input', () => {
+    askQ.style.height = 'auto';
+    askQ.style.height = Math.min(120, askQ.scrollHeight) + 'px';
+  });
+  askQ.addEventListener('keydown', e => {
+    if (e.key === 'Enter' && !e.shiftKey && !e.isComposing){
+      e.preventDefault();
+      runAsk(askQ.value);
+    }
+  });
+  $('#askSend').addEventListener('click', () => runAsk(askQ.value));
+
+  // 订阅：Blogtrottr 预填 feed 地址
+  const subMail = $('#subMail');
+  if (subMail) subMail.href = 'https://blogtrottr.com/?subscribe=' + encodeURIComponent(FEED_URL);
+
+  // 没配生成接口就别把入口装成主按钮
+  if (!ASK_API){
+    const ab = $('#askBtn');
+    ab.classList.remove('primary');
+    ab.title = '问答接口未配置，点击可先看站内召回结果';
+  }
+
+  saveFav();
 
   // 启动
   try {

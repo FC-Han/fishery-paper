@@ -76,6 +76,8 @@ jobs:
         env:
           # 未设置时站点自动退回纯 BM25（EMBED_ENDPOINT 为空即关闭语义检索）
           EMBED_ENDPOINT: ${{ vars.EMBED_ENDPOINT }}
+          # 问答代理地址，留空则「问一问」只给召回结果、不生成答案
+          ASK_ENDPOINT: ${{ vars.ASK_ENDPOINT }}
         run: python scripts/generate_site.py
 
       - name: 📤 提交更新

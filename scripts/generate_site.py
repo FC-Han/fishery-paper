@@ -16,6 +16,7 @@ import os
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from xml.sax.saxutils import escape
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
@@ -27,6 +28,11 @@ DATA_OUT = OUTPUT_DIR / "data"
 
 RETENTION_DAYS = 120
 BJT = timezone(timedelta(hours=8))
+SITE_URL = "https://fc-han.github.io/fishery-paper/"
+FEED_TITLE = "Fishery Digest · 渔业文献每日速览"
+
+WDAY = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 
 def load_data() -> dict:
@@ -94,6 +100,63 @@ def slim(p: dict) -> dict:
     }
 
 
+def rfc822(date_str: str) -> str:
+    """2026-11-27 → Fri, 27 Nov 2026 08:00:00 +0800（不用 strftime 的 %a/%b，避免受系统 locale 影响）"""
+    try:
+        dt = datetime.strptime(date_str, "%Y-%m-%d").replace(tzinfo=BJT) + timedelta(hours=8)
+    except ValueError:
+        dt = datetime.now(BJT)
+    return (f"{WDAY[dt.weekday()]}, {dt.day:02d} {MON[dt.month - 1]} {dt.year} "
+            f"{dt.hour:02d}:{dt.minute:02d}:00 +0800")
+
+
+def cdata(text: str) -> str:
+    return "<![CDATA[" + (text or "").replace("]]>", "]]&gt;") + "]]>"
+
+
+def build_feed(papers: list, zh_of: dict, limit: int = 80) -> str:
+    """最近 80 条（论文已按日期倒序）生成 RSS 2.0，供 RSS 阅读器 / 邮件订阅服务抓取"""
+    items = []
+    for p in papers[:limit]:
+        zh_tags = [zh_of.get((d, t), t)
+                   for d in ("theme", "species", "region")
+                   for t in (p.get("tags", {}).get(d) or [])][:5]
+        head = " · ".join(x for x in [p.get("journal", ""), p.get("date", "")] if x)
+        body = (p.get("summary_cn") or "").strip()
+        if not body or body.startswith("[") or "非渔业相关" in body:
+            body = short_abs(p.get("abstract", ""), 300)
+        desc = f"{head}\n\n{body}"
+        if zh_tags:
+            desc += "\n\n标签：" + "、".join(zh_tags)
+        link = p.get("url") or f"https://doi.org/{p.get('doi', '')}"
+        items.append(
+            "    <item>\n"
+            f"      <title>{escape(p.get('title', ''))}</title>\n"
+            f"      <link>{escape(link)}</link>\n"
+            f'      <guid isPermaLink="false">{escape(p.get("doi", ""))}</guid>\n'
+            f"      <pubDate>{rfc822(p.get('date', ''))}</pubDate>\n"
+            f"      <description>{cdata(desc)}</description>\n"
+            + "".join(f"      <category>{escape(t)}</category>\n" for t in zh_tags) +
+            "    </item>"
+        )
+
+    build = rfc822(papers[0]["date"]) if papers else rfc822("")
+    return (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n'
+        "  <channel>\n"
+        f"    <title>{escape(FEED_TITLE)}</title>\n"
+        f"    <link>{SITE_URL}</link>\n"
+        "    <description>每天自动抓取渔业 / 水产 / 海洋领域新论文，AI 中文速览 + 多维标签</description>\n"
+        "    <language>zh-CN</language>\n"
+        f"    <lastBuildDate>{build}</lastBuildDate>\n"
+        f'    <atom:link href="{SITE_URL}feed.xml" rel="self" type="application/rss+xml"/>\n'
+        + "\n".join(items) + "\n"
+        "  </channel>\n"
+        "</rss>\n"
+    )
+
+
 def main():
     data = load_data()
     papers = visible_papers(data.get("papers", []))
@@ -148,6 +211,9 @@ def main():
         journal_total=len(journals),
         retention_days=RETENTION_DAYS,
         embed_api=os.environ.get("EMBED_ENDPOINT", "").strip(),
+        ask_api=os.environ.get("ASK_ENDPOINT", "").strip(),
+        site_url=SITE_URL,
+        feed_url=SITE_URL + "feed.xml",
         stats={
             "papers": len(papers),
             "days": len(dates),
@@ -174,6 +240,12 @@ def main():
     with open(api_path, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=1)
     print(f"✅ {api_path.relative_to(ROOT)}  ({api_path.stat().st_size / 1024:.0f} KB)")
+
+    zh_of = {(t["dim"], t["id"]): t["zh"] for t in lexicon}
+    feed_path = OUTPUT_DIR / "feed.xml"
+    with open(feed_path, "w", encoding="utf-8") as f:
+        f.write(build_feed(papers, zh_of))
+    print(f"✅ {feed_path.relative_to(ROOT)}  ({feed_path.stat().st_size / 1024:.0f} KB, 最近 80 条)")
 
     print(f"\n📊 {len(papers)} 篇 · {len(dates)} 天 · {len(journals)} 本期刊 · {tag_kinds} 种标签")
 

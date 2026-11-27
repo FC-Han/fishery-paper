@@ -120,6 +120,52 @@ Vercel 会"看文件猜框架"：仓库根目录有 `requirements.txt` 和 `scri
 
 ---
 
+## 3.5 问答（RAG，可选）
+
+右上角的「问一问」走同一个 Vercel 项目里的第二个函数 `api/ask.js`：前端先用 `emb.bin` 召回十来篇，
+再把标题和摘要发给 DeepSeek 生成答案。**不配也能用**，只是点开只给依据、不生成答案。
+
+### Vercel 加一个密钥
+
+Settings → Environment Variables → 新增：
+
+| Name | Value | 说明 |
+|---|---|---|
+| `DEEPSEEK_API_KEY` | `sk-...` | 和 GitHub Secrets 里那个是**同一个**，但 Vercel 是独立环境，必须单独加 |
+
+加完要 **Redeploy** 一次（Deployments → 最新一条 → ⋯ → Redeploy），否则函数读到的还是旧环境。
+
+### GitHub 加一个变量
+
+Variables 标签页：
+
+| Name | Value |
+|---|---|
+| `ASK_ENDPOINT` | `https://<你的域名>/api/ask` |
+
+和 `EMBED_ENDPOINT` 一样，这是**构建时常量**，必须重跑流水线才会烧进页面。
+
+### 验证
+
+浏览器打开 `https://<你的域名>/api/ask`，应返回：
+
+```json
+{"ok":true,"model":"deepseek-chat"}
+```
+
+然后回站点问一句「深水网箱养殖的病害研究进展」：正常会看到分段答案，每个论点后面挂着绿色编号，
+点编号跳到对应论文的卡片。
+
+| 现象 | 原因 |
+|---|---|
+| 只出依据、没有答案 + 标「降级」 | `DEEPSEEK_API_KEY` 没配 / 没 redeploy / 余额不足 |
+| `生成服务没连上` | 跨域被拦：确认 `ALLOW_ORIGINS` 里有你的站点域名 |
+| 答案里编号引用了不存在的文献 | 模型自己编的，`api/ask.js` 的 system prompt 已约束，仍可能出现，看依据列表为准 |
+
+> 费用：一次提问约 3–6k token，DeepSeek 下 ≈ 0.005 元。函数内有 6 次/分/IP 限流和每日 300 次软预算。
+
+---
+
 ## 4. 重跑流水线
 
 GitHub → **Actions** → 左侧 `渔业文献每日更新` → 右侧 **Run workflow**。
