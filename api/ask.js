@@ -120,13 +120,25 @@ module.exports = async function handler(req, res) {
     return;
   }
   if (req.method === "GET") {
-    // 自检：key 只回报布尔值，不泄露内容；env 表示这次部署有没有读到变量
+    // 自检：key 只回报长度、绝不回报内容。
+    // 其余字段全部来自 Vercel 自动注入的系统变量，用来定位「这次部署属于哪个项目 / 哪个环境」，
+    // 排查「明明加了变量却读不到」时，project + env + commit 三个值是决定性的。
     const k = (process.env.DEEPSEEK_API_KEY || "").trim();
+    const related = Object.keys(process.env)
+      .filter((n) => /DEEPSEEK|EMBED|SILICON|OPENAI|API_KEY/i.test(n))
+      .sort();
     res.status(200).json({
       ok: true,
       model: process.env.DEEPSEEK_MODEL || DEFAULTS.model,
       key: k ? `set(${k.length} chars)` : "MISSING",
       hint: k ? "" : "这台部署没读到 DEEPSEEK_API_KEY：加完变量要 Redeploy",
+      project: process.env.VERCEL_PROJECT_ID || null,
+      env: process.env.VERCEL_ENV || null,
+      branch: process.env.VERCEL_GIT_COMMIT_REF || null,
+      commit: (process.env.VERCEL_GIT_COMMIT_SHA || "").slice(0, 7) || null,
+      region: process.env.VERCEL_REGION || null,
+      // 只给变量名，不给值；看这里就知道那台机器上到底有哪些相关变量
+      relatedEnvNames: related,
     });
     return;
   }
